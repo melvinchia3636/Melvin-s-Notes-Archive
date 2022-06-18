@@ -1,0 +1,7 @@
+​	According to statistical research, the vast majority of schools in Malaysia nowadays start between 7 and 8 am. Students have been complaining about this for years, but unfortunately, the Ministry of Education does not seem to bother too much about it.
+
+​	Studies indicate that a teenager should sleep at least 8 hours every day. But in fact, more often than not, students have to deal with tons of homework during the night and thus only get 6 hours or less of sleep per day. As a consequence, plenty of students fails to pay proper attention in class, which often leads to underachievement in academic performance. In addition, an unhealthy amount of sleep can lead to a weakened immune system, making them more likely to get sick.
+
+​	Undoubtedly, lack of sleep could give rise to a variety of disquieting negative influences on human body, notably for teenagers. Thus, the best bet to tackle this problem is to shorten the school hours a little. That is, if the school day started two hours later, students could get more sleep so that their brains could function properly during the day. Not to mention, getting enough sleep would give students a healthier life.
+
+​	In short, for the sake of health, the Ministry of Education should really take into consideration students' sleep habits. In other words, they should think about making the school day start two hours later.
