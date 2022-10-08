@@ -8,20 +8,13 @@
 \usepackage{color}
 \setlength{\columnseprule}{1pt}
 \setlength{\columnsep}{24pt}
-\setcounter{chapter}{11}
-
 
 \title{Senior 2 Math Part I}
 \author{Melvin Chia}
 
 
 \begin{document}
-  \newcommand{\sol}{\\~\\\noindent \textbf{Sol.}}
-
 	\maketitle
-  \newpage
-  \tableofcontents
-  \newpage
 
   \begin{multicols}{2}
 
@@ -203,7 +196,7 @@
 
 			\begin{enumerate}
 				\item $1+\frac{1}{2}+\frac{1}{3}+\ldots+\frac{1}{30}$
-				\sol
+				\\~\\\noindent \textbf{Sol.}
 					\begin{flalign*}
 						a_{1} & = 1                                                                     \\
 						a_{2}              & = \frac{1}{2}                                                           \\
@@ -214,7 +207,7 @@
 					\end{flalign*}
 
 				\item $1^{3} + 2^{3} + 3^{3} + \ldots + 50^{3}$
-				\sol
+				\\~\\\noindent \textbf{Sol.}
 					\begin{flalign*}
 						a_{1} & = 1^{3}                                               \\
 						a_{2}              & = 2^{3}                                               \\
@@ -225,7 +218,7 @@
 					\end{flalign*}
 
 				\item $1 - \frac{1}{2}+ \frac{1}{4}- \frac{1}{8}+ \frac{1}{16}$
-				\sol
+				\\~\\\noindent \textbf{Sol.}
 					\begin{flalign*}
 						a_{1} & = (-\frac{1}{2})^{1-1}                                                                      \\
 						a_{2}              & = (-\frac{1}{2})^{2-1}                                                                      \\
@@ -236,7 +229,7 @@
 					\end{flalign*}
 
 				\item $2\times4 + 4\times7 + 6\times10 + 8\times13 + 10\times16$
-				\sol
+				\\~\\\noindent \textbf{Sol.}
 					\begin{flalign*}
 						a_{1} & = 2\times1\times(3\times1+1)                                                       \\
 						a_{2}              & = 2\times2\times(3\times2+1)                                                       \\
@@ -281,7 +274,7 @@
 			\end{flalign*}
 
 		\item Given that $a_{2} = 4$ and $a_{6} = -8$, find the 10th term of the AP.
-		\sol
+		\\~\\\noindent \textbf{Sol.}
 			\begin{flalign*}
 				a_{2}                  & = 4  \\
 				a + (2-1)d             & = 4  \\
@@ -302,7 +295,7 @@
 			\end{flalign*}
 
 		\item How many multiples of 7 are there between 50 and 500?
-		\sol
+		\\~\\\noindent \textbf{Sol.}
 			\begin{flalign*}
 				a_{1}                  & = 56  \\
 				a_{n}                  & = 497 \\
@@ -314,7 +307,7 @@
 			\end{flalign*}
 
 		\item Find 5 numbers between 30 and 54 such that these numbers form an AP.
-		\sol
+		\\~\\\noindent \textbf{Sol.}
 			\begin{flalign*}
 				a_{1}                  & = 30                                                 \\
 				a_{7}                  & = 54                                                 \\
@@ -341,7 +334,7 @@
 
 	\begin{enumerate}
 		\item If 9, x, 17 are in AP, find x.
-		\sol
+		\\~\\\noindent \textbf{Sol.}
 			\begin{flalign*}
 				x                      & = \frac{9+17}{2} \\
 				                       & = \frac{26}{2}   \\
@@ -349,14 +342,14 @@
 			\end{flalign*}
 
 		\item Find the arithmetic mean of 26 and -11.
-		\sol
+		\\~\\\noindent \textbf{Sol.}
 			\begin{flalign*}
 				A                      & = \frac{26-11}{2} \\
 				                       & = \frac{15}{2}    \\
 			\end{flalign*}
 
 		\item Find x and y when 3, x, 12, y, 21 are in AP.
-		\sol
+		\\~\\\noindent \textbf{Sol.}
 			\begin{flalign*}
 				x                      & = \frac{3+12}{2}  \\
 				                       & = \frac{15}{2}    \\
@@ -385,7 +378,7 @@
 
 	\begin{enumerate}
 		\item Find the sum of the first 16 terms of the AP $22 + 18 + 14 + 10 + \ldots$
-		\sol
+		\\~\\\noindent \textbf{Sol.}
 			\begin{flalign*}
 				a_{1}                  & = 22                                   \\
 				n                      & = 16                                   \\
@@ -398,7 +391,7 @@
 			\end{flalign*}
 
 		\item If the sum of AP $23 + 19 + 15 + \ldots$ is 72, find the number of terms.
-		\sol
+		\\~\\\noindent \textbf{Sol.}
 			\begin{flalign*}
 				a_{1}                  & = 23                                 \\
 				S_{n}                  & = 72                                 \\
@@ -417,7 +410,7 @@
 
 		\item Given that $S_{n} = 2n + 3n^{2}$, find the first term and the common
 			difference of the AP.
-			\sol
+			\\~\\\noindent \textbf{Sol.}
 			\begin{flalign*}
 				S_{n}                  & = 2n + 3n^{2}              \\
 				2n + 3n^{2}            & = \frac{n}{2}(2a + (n-1)d) \\
@@ -437,7 +430,7 @@
   
   \begin{enumerate}
     \item Find the 10th terms of the AP $5, 13, 21, \ldots$
-	\sol
+	\\~\\\noindent \textbf{Sol.}
       \begin{flalign*}
         a_{1}& = 5\\
         n& = 10\\
@@ -448,7 +441,7 @@
       \end{flalign*}
 
     \item Find the 8th term of the AP $5, 4\frac{1}{4}, 3\frac{1}{2}, 2\frac{3}{4}, \ldots$
-	\sol
+	\\~\\\noindent \textbf{Sol.}
       \begin{flalign*}
         a_{1}& = 5\\
         n& = 8\\
@@ -464,7 +457,7 @@
       \begin{enumerate}
 
         \item $4, 9, \ldots, 64$
-		\sol 
+		\\~\\\noindent \textbf{Sol.} 
             \begin{flalign*}
               a_{1}& = 4\\
               a_{n}& = 64\\
@@ -476,7 +469,7 @@
             \end{flalign*}
 
           \item $4\frac{1}{3}, 3\frac{2}{3}, 3, \ldots, -10\frac{1}{3}$
-		  \sol
+		  \\~\\\noindent \textbf{Sol.}
             \begin{flalign*}
               a_{1}& = 4\frac{1}{3}\\
               a_{n}& = -10\frac{1}{3}\\
@@ -491,7 +484,7 @@
           \end{enumerate}
       
         \item The 6th term of an AP is 43, and its 10th term is 75. Find the first term and common difference of this AP.
-		\sol
+		\\~\\\noindent \textbf{Sol.}
           \begin{flalign*}
             a_{6}& = 43\\
             a_{10}& = 75\\
@@ -507,7 +500,7 @@
           \end{flalign*}
 
         \item The 7th term of an AP is -10, and the 12th term -25, find the 15th term of this AP.
-		\sol
+		\\~\\\noindent \textbf{Sol.}
           \begin{flalign*}
             a_{7}& = -10\\
             a_{12}& = -25\\
@@ -524,7 +517,7 @@
           \end{flalign*}
 
         \item How many multiples of 7 are there between 100 and 200?
-		\sol
+		\\~\\\noindent \textbf{Sol.}
           \begin{flalign*}
             a &= 105\\
             d &= 7\\
@@ -540,13 +533,13 @@
           \begin{enumerate}
 
             \item $(8, 20)$
-			\sol
+			\\~\\\noindent \textbf{Sol.}
               \begin{flalign*}
                 &\frac{8 + 20}{2} = 14
               \end{flalign*}
 
             \item $(-9, 17)$
-			\sol
+			\\~\\\noindent \textbf{Sol.}
               \begin{flalign*}
                 &\frac{-9 + 17}{2} = 4
               \end{flalign*}
@@ -554,7 +547,7 @@
           \end{enumerate}
 
         \item Find 5 numbers between 22 and 58 such that these 7 numbers are in AP.
-		\sol
+		\\~\\\noindent \textbf{Sol.}
           \begin{flalign*}
             a_{1}& = 22\\
             a_{7}& = 58\\
@@ -565,7 +558,7 @@
           \end{flalign*}
 
         \item Find the sum of first 20 terms of AP $12+15+18+\ldots$
-		\sol
+		\\~\\\noindent \textbf{Sol.}
           \begin{flalign*}
             a_{1}& = 12\\
             n& = 20\\
@@ -577,7 +570,7 @@
           \end{flalign*}
  
         \item Find the sum of first 12 terms of the AP $18 + 10 + 2 - 6 - \dots$
-		\sol
+		\\~\\\noindent \textbf{Sol.}
           \begin{flalign*}
             a_{1}& = 18\\
             n& = 12\\
@@ -589,7 +582,7 @@
           \end{flalign*}
 
         \item Find the sum of first 14 terms of the AP $\frac{1}{6} + \frac{4}{3} + \frac{5}{2} + \ldots$
-		\sol
+		\\~\\\noindent \textbf{Sol.}
           \begin{flalign*}
             a_{1}& = \frac{1}{6}\\
             n& = 14\\
@@ -602,7 +595,7 @@
           \end{flalign*}
 
         \item Find the sum of all the multiples of 13 in between 200 and 800.
-		\sol
+		\\~\\\noindent \textbf{Sol.}
           \begin{flalign*}
             a_{1}& = 208\\
             a_{n}& = 793\\
@@ -619,7 +612,7 @@
           \end{flalign*}
 
         \item If the sum of first n terms of the AP $-3, -7, -11, \ldots$ is -903, find the value of n.
-		\sol
+		\\~\\\noindent \textbf{Sol.}
           \begin{flalign*}
             a_1 &= -3\\
             d &= -4\\
@@ -637,7 +630,7 @@
           \begin{enumerate}
 
             \item The value of x
-			\sol
+			\\~\\\noindent \textbf{Sol.}
               \begin{flalign*}
                 3x-4 &= \frac{x + 2x + 7}{2}\\
                 6x-8 &= 3x + 7\\
@@ -646,7 +639,7 @@
               \end{flalign*}
 
             \item The common difference
-			\sol
+			\\~\\\noindent \textbf{Sol.}
               \begin{flalign*}
                 a_1 &= x = 5\\
                 a_2 &= 3x-4 = 3\times5 - 4 = 11\\
@@ -655,7 +648,7 @@
               \end{flalign*}
 
             \item The sum of first 10 terms.
-			\sol
+			\\~\\\noindent \textbf{Sol.}
               \begin{flalign*}
                 a_1 &= x = 5\\
                 n &= 10\\
@@ -673,7 +666,7 @@
           \begin{enumerate}
             
             \item The first term
-			\sol
+			\\~\\\noindent \textbf{Sol.}
               \begin{flalign*}
                 \frac{n(n+1)}{4} &= \frac{n}{2}(2a + (n-1)d)\\
                 n(n+1) &= 2n(2a+dn-d)\\
@@ -690,13 +683,13 @@
               \end{flalign*}
 
             \item The common difference
-			\sol
+			\\~\\\noindent \textbf{Sol.}
               \begin{flalign*}
                 d &= \frac{1}{2}
               \end{flalign*}gg
 
             \item The 6th terms
-			\sol 
+			\\~\\\noindent \textbf{Sol.} 
               \begin{flalign*}
                 a_1 &= \frac{1}{2}\\
                 n &= 6\\
@@ -707,7 +700,7 @@
               \end{flalign*}
 
             \item The sum from 6th term to 10th term
-			\sol
+			\\~\\\noindent \textbf{Sol.}
               \begin{flalign*}
                 a &= \frac{1}{2}\\
                 d &= \frac{1}{2}\\
@@ -729,7 +722,7 @@
           \end{enumerate}
 
         \item Given three numbers in an AP, the sum of these three numbers is 30, and the sum of square of these numbers is 318, find these three numbers.
-		\sol
+		\\~\\\noindent \textbf{Sol.}
           \begin{flalign*}
             a_1 + a_2 + a_3 &= 30\\
             a_1^2 + a_2^2 + a_3^2 &= 318\\
@@ -751,7 +744,7 @@
           \end{flalign*}
 
         \item Find the sum of all the numbers between 100 and 200 that are both the multiples of 2 and 3.
-		\sol
+		\\~\\\noindent \textbf{Sol.}
           \begin{flalign*}
             a_1 &= 102\\
             d &= 6\\
@@ -774,7 +767,7 @@
           \begin{enumerate}
 
             \item Find the term where the number become positive.
-			\sol
+			\\~\\\noindent \textbf{Sol.}
               \begin{flalign*}
                 a_1 &= -100\\
                 d &= 4\\
@@ -787,7 +780,7 @@
               \end{flalign*}
 
             \item Find the term where the sum of this AP becomes positive.
-			  \sol
+			  \\~\\\noindent \textbf{Sol.}
               \begin{align*}
                 S_n = \frac{n}{2}(2(-100) + (n-1)\times(4)) &> 0\\
                 \frac{n}{2}(-200 + 4n - 4) &> 0\\
@@ -802,7 +795,7 @@
           \end{enumerate}
 
         \item Find the first negative term of the AP $20, 19\frac{1}{5}, 18\frac{2}{5}, \ldots$
-          \sol
+          \\~\\\noindent \textbf{Sol.}
           \begin{flalign*}
             a_1 &= 20\\
             d &= -\frac{4}{5}\\
@@ -815,8 +808,10 @@
           \end{flalign*}
 
         \item Given an AP $10+9\frac{1}{5}+8\frac{2}{5}+\ldots$, what is the first negative term? When will the sum of the terms become negative, and what's the value of it?
-          \sol
+          \\~\\\noindent \textbf{Sol.}
           \begin{flalign*}
+            a_1 &= 10\\
+            d &= -\frac{4}{5}\\
             a_n = 10 + (n-1)\times(-\frac{4}{5}) &< 0\\
             10 - \frac{4}{5}(n - 1) &< 0\\
             50 - 4n + 4 &< 0\\
@@ -854,7 +849,7 @@
           \end{flalign*}
 
         \item Given a polygon which all their internal angles are in AP. The common difference of this AP is 6\degree, the largest angle is 135\degree. How many sides does this polygon have?
-          \sol
+          \\~\\\noindent \textbf{Sol.}
           \begin{flalign*}
             a_1 &= 135\\
             d &= -6\\
@@ -871,7 +866,7 @@
           \end{flalign*}
 
         \item Given an AP which its 5th term is 3 and the sum of its first 10 terms is $26\frac{1}{4}$. Whcih term in this AP is 0?
-          \sol
+          \\~\\\noindent \textbf{Sol.}
           \begin{flalign*}
             a_5 = a + (5-1)d &= 3\\
             a + 4d &= 3\\
@@ -894,652 +889,23 @@
           \end{flalign*}
 
         \item Given that the sum of the first 6 terms of an AP is 96, and the sum of the first 20 terms is 3 times the sum of the first 10 terms of this AP. Find the first term and the 10th term of it.
-          \sol
+          \\~\\\noindent \textbf{Sol.}
           \begin{flalign*}
             S_6 = \frac{6}{2}(2a + (6-1)d) &= 96\\
             3(2a + 5d) &= 96\\
             2a + 5d &= 32\\
-            S_{20} &= 3S_{10}\\
-            \frac{20}{2}(2a + (20-1)d) &= 3\times\frac{10}{2}(2a\\
-            &+ (10-1)d)\\
+            S_{20} &= 3S_{10}
+            \frac{20}{2}(2a + (20-1)d) &= 3\frac{10}{2}(2a + (10-1)d)\\
             10(2a + 19d) &= 15(2a + 9d)\\
-            2(2a + 19d) &= 3(2a + 9d)\\
-            4a + 38d &= 6a + 27d\\
-            2a - 11d &= 0\\
-            16d &= 32\\
-            d &= 2\\
-            a &= \frac{11\times2}{2}\\
-            &= 11\\
-            a_{10} &= 11 + (10-1)\times2\\
-            &= 29
+            2(2a + 190d) &= 15(2a + 9d)\\
+            4a + 380d &= 30a + 135d\\
+            26a &= 245d\\
+            26a - 245d &= 0\\
+            26a + 65d &= 416\\
+            310d &= 416\\
           \end{flalign*}
 
-        \item Given that $5^2\times5^4\times5^6\times\ldots\times5^{2n} = (0.04)^{-28}$, find the value of n.
-          \sol
-          \begin{flalign*}
-            (0.04)^{-28} &= \frac{1}{25}^{-28}\\
-            &= (5^{-2})^{-28}\\
-            &= 5^{56}\\
-            \because n^a \times n^b &= n^{a+b}\\
-            2+4+6+\ldots+2n &= 56\\
-            S_n = \frac{n}{2}(2\times2 + (n-1)\times2) &= 56\\
-            n(4 + 2(n-1)) &= 112\\
-            n(2 + 2n) &= 112\\
-            2n^2 + 2n &= 112\\
-            n^2 + n - 56 &= 0\\
-            (n+8)(n-7) &= 0\\
-            n &= -8\ (invalid)\\
-            n &= 7\\
-          \end{flalign*}
+  \end{enumerate}
 
-        \item Given that the 9th term of an AP is double the 5th term of it. Find the ratio of the sum of first 9 terms and the sum of first 5 terms of the AP.
-          \sol
-          \begin{flalign*}
-            a_9 &= 2a_5\\
-            a + (9-1)d &= 2(a + (5-1)d)\\
-            a + 8d &= 2a + 8d\\
-            a &= 0\\
-            S_9 : S_5 &= \frac{9}{2}(2a + a_9) : \frac{5}{2}(2a + a_5)\\
-            &= \frac{9}{2}(2a + 2a_5) : \frac{5}{2}(2a + a_5)\\
-            &= 9(a + a_5) : \frac{5}{2}(2a + a_5)\\
-            \frac{S_9}{S_5} &= \frac{9(a + a_5)}{\frac{5}{2}(2a + a_5)}\\
-            &= \frac{18(a + a_5)}{5(2a + a_5)}\\
-            &= \frac{18\times a_5}{5\times a_5}\\
-            &= \frac{18}{5}
-            \\
-            \therefore S_9 : S_5 &= 18 : 5
-          \end{flalign*}
-    \end{enumerate}
-
-    \section {Geometric Progression}
-
-    The general formula of a geometric progression (GP) is given by
-    \[
-        a_n = a_1\times r^{n-1}
-    \]
-
-    where $a_1$ is the first term, $r$ is the common ratio, and $n$ is the number of terms.
-
-    \subsection{Practice 6}
-
-    \begin{enumerate}
-
-      \item Find the 6th term of the GP $12, -18, 27, \ldots$
-        \sol
-        \begin{flalign*}
-          a_1 &= 12\\
-          r &= \frac{-18}{12}\\
-          &= -\frac{3}{2}\\
-          a_6 &= 12 \times (-\frac{3}{2})^{6-1}\\
-          &= 12 \times (-\frac{3}{2})^5\\
-          &= 12 \times (-\frac{243}{32})\\
-          &= -\frac{729}{8}
-        \end{flalign*}
-
-      \item Find the number of terms of GP $\frac{1}{64} - \frac{1}{32} + \frac{1}{16} - \frac{1}{8} + \ldots - 512$
-        \sol
-        \begin{flalign*}
-          a_1 &= \frac{1}{64}\\
-          r &= \frac{-\frac{1}{32}}{\frac{1}{64}}\\
-          &= -2\\
-          -512 &= \frac{1}{64}(-2)^{n-1}\\
-          (-2)^9 &= \frac{1}{2^6}(-2)^{n-1}\\
-          (-2)^{15} &= (-2)^{n-1}\\
-          n-1 &= 15\\
-          n &= 16
-        \end{flalign*}
-
-      \item The 5th term of a GP is 3, and its 9th term is $\frac{1}{27}$, find the first term and the common ratio of this GP.
-        \sol
-        \begin{flalign*}
-          a_5 &= ar^4 = 3\\
-          a_9 &= ar^8 = \frac{1}{27}\\
-          r^4 &= \frac{1}{27} \times \frac{1}{3}\\
-              &= \frac{1}{81}\\
-          r &= \frac{1}{3}\\
-          a_1 &= 3 \times 81\\
-              &= 243
-        \end{flalign*}
-
-      \item Find 5 numbers between $\frac{1}{2}$ and $\\frac{1}{128}$ such that these 7 numbers are in GP.
-        \sol
-        \begin{flalign*}
-          a_1 &= \frac{1}{2}\\
-          n &= 7\\
-          \frac{1}{128} &= \frac{1}{2}r^{7-1}\\
-          r^6 &= \frac{1}{64}\\
-          r &= \frac{1}{2}\\
-          \\
-          \therefore\ These \ 5\ &numbers\ are\ \frac{1}{4}, \frac{1}{8}, \frac{1}{16}, \frac{1}{32}, \frac{1}{64}
-        \end{flalign*}
-
-    \end{enumerate}
-
-    \subsubsection* {Geometric Mean}
-
-    The geometric mean G of two numbers $x$ and $y$ is given by
-    \begin{flalign*}
-      \frac{G}{x} &= \frac{G}{y}\\
-      G^2 &= xy\\
-      G &= \mp\sqrt[2]{xy}
-    \end{flalign*}
-
-    \subsection {Practice 7}
-
-    Find the geometric mean of $\frac{27}{8}$ and $\frac{2}{3}$.
-    \sol
-    \begin{flalign*}
-      G &= \pm\sqrt[2]{\frac{27}{8}\times\frac{2}{3}}\\
-      &= \pm\sqrt[2]{\frac{9}{4}}\\
-      &= \pm\frac{3}{2}
-    \end{flalign*}
-
-    \subsection* {Summation of Geometric Progression}
-
-    The sum of $n$ terms of a GP is given by
-    \[
-      S_n = \frac{a_1(1-r^n)}{1-r}\ (r \neq 1)
-    \]
-
-    \subsection {Practice 8}
-
-    \begin{enumerate}
-
-      \item Find the sum of the first 8 terms of GP $3+6+12+\ldots$
-        \sol
-        \begin{flalign*}
-          a_1 &= 3\\
-          r &= \frac{6}{3}\\
-          &= 2\\
-          n &= 8\\
-          S_n &= \frac{3(1-2^8)}{1-2}\\
-              &= \frac{3(1-256)}{1-2}\\
-              &= 3\times255\\
-              &= 765
-        \end{flalign*}
-
-      \item Find the sum of the GP $1+\sqrt{3}+3+\ldots+81$
-        \sol
-        \begin{flalign*}
-          a_1 &= 1\\
-          r &= \sqrt{3}\\
-          81 &= 1\times(\sqrt{3})^{n-1}\\
-          3^4 &= (\sqrt{3})^{n-1}\\
-          (\sqrt{3})^8 &= (\sqrt{3})^{n-1}\\
-          n-1 &= 8\\
-          n &= 9\\
-          S_n &= \frac{1(1-(\sqrt{3})^9)}{1-\sqrt{3}}\\
-          &= \frac{1-81\sqrt{3}}{1-\sqrt{3}}\\
-          &= \frac{(1-81\sqrt{3})(1+\sqrt{3})}{-2}\\
-          &= \frac{1-81\sqrt{3}+\sqrt{3}-243}{-2}\\
-          &= \frac{-242-80\sqrt(3)}{-2}\\
-          &= 121 + 40\sqrt{3}
-        \end{flalign*}
-
-      \item Given that the sum of the first n terms of GP $4\frac{4}{5}, 1\frac{3}{5}, \frac{8}{15}, \ldots$ is $7\frac{145}{729}$, find n.
-        \sol
-        \begin{flalign*}
-          a_1 &= \frac{24}{5}\\
-          r &= \frac{8}{5}\times\frac{5}{24}\\
-          &= \frac{1}{3}\\
-          S_n &= \frac{24}{5}\times\frac{1-(\frac{1}{3})^n}{1-\frac{1}{3}}\\
-          \frac{5248}{729} &= \frac{24}{5}\times\frac{1-(\frac{1}{3})^n}{\frac{2}{3}}\\
-          \frac{5248}{729} \times \frac{5}{24} \times \frac{2}{3} &= 1-(\frac{1}{3})^n\\
-          \frac{6560}{6561} &= 1-(\frac{1}{3})^n\\
-          -\frac{1}{6561} &= -(\frac{1}{3})^n\\
-          (\frac{1}{3})^8 &= (\frac{1}{3})^n\\
-          n &= 8
-        \end{flalign*}
-
-    \end{enumerate}
-
-    \subsection* {Summation of Infinite Geometric Progression}
-
-    The sum of infinite GP is given by
-    \[
-      S_\infty = \frac{a_1}{1-r}\ (-1 < r < 1)
-    \]
-
-    \subsection {Practice 9}
-
-    \begin{enumerate}
-
-      \item Find the sum of the following infinite GP.
-
-        \begin {enumerate}
-
-          \item $16+8+4+\ldots$
-            \sol
-            \begin{flalign*}
-              a_1 &= 16\\
-              r &= \frac{8}{16}\\
-              &= \frac{1}{2}\\
-              S_\infty &= \frac{16}{1-\frac{1}{2}}\\
-              &= \frac{16}{\frac{1}{2}}\\
-              &= 32
-            \end{flalign*}
-
-          \item $18-12+8+\ldots$
-            \sol
-            \begin{flalign*}
-              a_1 &= 18\\
-              r &= \frac{8}{-12}\\
-              &= -\frac{2}{3}\\
-              S_\infty &= \frac{18}{1+\frac{2}{3}}\\
-              &= \frac{18}{\frac{5}{3}}\\
-              &= \frac{54}{5}\\
-            \end{flalign*}
-
-          \item $1+\frac{3}{4}+\frac{9}{16}+\ldots$
-            \sol
-            \begin{flalign*}
-              a_1 &= 1\\
-              r &= \frac{9}{16}\times\frac{16}{9}\\
-              &= \frac{3}{4}\\
-              S_\infty &= \frac{1}{1-\frac{3}{4}}\\
-              &= \frac{1}{\frac{1}{4}}\\
-              &= 4
-            \end{flalign*}
-
-          \item $\sqrt{2}+1+\frac{1}{\sqrt{2}}+\ldots$
-            \sol
-            \begin{flalign*}
-              a_1 &= \sqrt{2}\\
-              r &= \frac{1}{\sqrt{2}}\\
-              S_\infty &= \frac{\sqrt{2}}{1-\frac{1}{\sqrt{2}}}\\
-              &= \frac{\sqrt{2}}{\frac{\sqrt2-1}{\sqrt{2}}}\\
-              &= \frac{2}{\sqrt2-1}\\
-              &= 2(\sqrt2 + 1)
-            \end{flalign*}
-
-        \end{enumerate}
-
-      \item Convert the following recurring decimals to fraction using the summation of inifinite geometric series.
-
-        \begin{enumerate}
-
-          \item $0.\overline{3}$
-            \sol
-            \begin{flalign*}
-              a_1 &= 0.3\\
-              r &= 0.1\\
-              S_\infty &= \frac{0.3}{1-0.1}\\
-              &= \frac{0.3}{0.9}\\
-              &= \frac{1}{3}\\
-              \\
-              \therefore
-              0.\overline{3} &= \frac{1}{3}
-            \end{flalign*}
-
-          \item $0.5\overline{3}$
-            \sol
-            \begin{flalign*}
-              a_1 &= 0.03\\
-              r &= 0.01\\
-              S_\infty &= \frac{0.03}{1-0.01}\\
-              &= \frac{0.03}{0.99}\\
-              &= \frac{3}{99}\\
-              \\
-              \therefore 0.5\overline3 &= \frac{5}{10} + \frac{3}{99}\\
-              &= \frac{53}{99}\\
-            \end{flalign*}
-
-        \end{enumerate}
-
-    \end{enumerate}
-
-    \subsection {Exercise 12.3}
-
-    \begin {enumerate}
-
-      \item Find the 10th term of the GP $2, 4, 8, \ldots$
-        \sol
-        \begin{flalign*}
-          a_1 &= 2\\
-          r &= \frac{4}{2}\\
-          &= 2\\
-          a_{10} &= 2\times2^{10-1}\\
-          &= 2\times512\\
-          &= 1024
-        \end{flalign*}
-
-      \item Find the 8th term of the GP $243, -162, 108, \ldots$
-        \sol
-        \begin{flalign*}
-          a_1 &= 243\\
-          r &= \frac{-162}{243}\\
-          &= -\frac{2}{3}\\
-          a_{8} &= 243\times(-\frac{2}{3})^{8-1}\\
-          &= 243\times(-\frac{128}{2187})\\
-          &= -\frac{128}{9}
-        \end{flalign*}
-
-      \item Find the number of terms of the following GP.
-
-        \begin{enumerate}
-
-          \item $8, 4, 2, 1, \ldots, \frac{1}{64}$
-            \sol
-            \begin{flalign*}
-              a_1 &= 8\\
-              r &= \frac{4}{8}\\
-              &= \frac{1}{2}\\
-              \frac{1}{64} &= 8\times(\frac{1}{2})^{n-1}\\
-              \frac{1}{512} &= (\frac{1}{2})^{n-1}\\
-              \frac{1}{2^9} &= (\frac{1}{2})^{n-1}\\
-              n-1 &= 9\\
-              n &= 10
-            \end{flalign*}
-
-          \item $6, -18, 54, \ldots, -13122$
-            \sol
-            \begin{flalign*}
-              a_1 &= 6\\
-              r &= \frac{-18}{6}\\
-              &= -3\\
-              -13122 &= 6\times(-3)^{n-1}\\
-              -2187 &= (-3)^{n-1}\\
-              (-3)^7 &= (-3)^{n-1}\\
-              n-1 &= 7\\
-              n &= 8
-            \end{flalign*}
-
-          \item $54, 36, 24, \dots, 3\frac{13}{81}$
-            \sol
-            \begin{flalign*}
-              a_1 &= 54\\
-              r &= \frac{36}{54}\\
-              &= \frac{2}{3}\\
-              \frac{256}{81} &= 54\times(\frac{2}{3})^{n-1}\\
-              \frac{256}{81} \times \frac{1}{54} &= (\frac{2}{3})^{n-1}\\
-              \frac{128}{2187} &= (\frac{2}{3})^{n-1}\\
-              (\frac{2}{3})^7 &= (\frac{2}{3})^{n-1}\\
-              n-1 &= 7\\
-              n &= 8
-            \end{flalign*}
-            
-        \end{enumerate}
-
-      \item Given that the 2nd term of a GP is 12, and its 4th term is 108, find the first term and the common ratio of it.
-        \sol
-        \begin{flalign*}
-          a_2 &= ar = 12\\
-          a_4 &= ar^3 = 109\\
-          r^2 &= 9\\
-          r &= \pm3\\
-          a_1 &= \pm4\\
-          \therefore a_1 &= 4, r = 3 \text{\ or\ } a_1 = -4, r = -3
-        \end{flalign*}
-
-      \item Given that the 3rd term of an GP is $1\frac{1}{3}$, and its 8th term is $-10\frac{1}{8}$. Find the 5th term of this AP.
-        \sol
-        \begin{flalign*}
-          a_3 &= ar^2 = \frac{4}{3}\\
-          a_8 &= ar^7 = -\frac{81}{8}\\
-          r^5 &= -\frac{81}{8}\times\frac{3}{4}\\
-          &= -\frac{243}{32}\\
-          &= (-\frac{3}{2})^5\\
-          r &= -\frac{3}{2}\\
-          a &= \frac{4}{3}\times\frac{4}{9}\\
-          &= \frac{16}{27}\\
-          a_5 &= \frac{16}{27}\times(\frac{3}{2})^4\\
-          &= \frac{16}{27}\times\frac{81}{16}\\
-          &= 3
-        \end{flalign*}
-
-      \item Find the geometric mean of 2 and 18.
-        \sol
-        \begin{flalign*}
-          G &= \pm\sqrt[2]{2\times18}\\
-          &= \pm\sqrt[2]{36}\\
-          &= \pm6
-        \end{flalign*}
-
-      \item Given that x+12, x+4 and x-2 are in GP, find the value of x and the common ratio of this GP.
-        \sol
-        \begin{flalign*}
-          x+4 &= \pm\sqrt{(x+12)(x-2)}\\
-          x^2 + 8x + 16 &= x^2 + 10x - 24\\
-          2x &= 40\\
-          x &= 20\\
-          a_1 &= 20+12 = 32\\
-          a_2 &= 20+4 = 24\\
-          r &= \frac{24}{32}\\
-          &= \frac{3}{4}\\
-        \end{flalign*}
-
-      \item Find 3 numbers between 14 and 224 such that these 5 numbersare in GP.
-        \sol
-        \begin{flalign*}
-          a_1 &= 14\\
-          a_5 &= 224\\
-          244 &= 14\times r^4\\
-          16 &= r^4\\
-          (\pm2)^4 &= r^4\\
-          r &= \pm2\\
-          \\
-          \therefore\ These\ 3\ &numbers\ are\ 28,\ 56,\ 112\\
-          or\ -28,\ &56,\ -112
-        \end{flalign*}
-
-      \item Calculate the sum of the first 6 terms of the GP $2+6+18+\ldots$
-        \sol
-        \begin{flalign*}
-          a_1 &= 2\\
-          r &= \frac{6}{2}\\
-          &= 3\\
-          S_6 &= \frac{2(1-3^6)}{1-3}\\
-          &= \frac{2(1-729)}{-2}\\
-          &= 728
-        \end{flalign*}
-
-      \item Calculate the sum of the first 8 terms of the GP $32-16+8-\ldots$
-        \sol
-        \begin{flalign*}
-          a_1 &= 32\\
-          r &= \frac{-16}{32}\\
-          &= -\frac{1}{2}\\
-          S_8 &= \frac{32(1-(\frac{1}{2})^8)}{1+\frac{1}{2}}\\
-          &= \frac{32(1-\frac{1}{256})}{\frac{3}{2}}\\
-          &= 32\times\frac{255}{256}\times\frac{2}{3}\\
-          &= \frac{85}{4}
-        \end{flalign*}
-
-      \item Find the sum of the GP $14-28+56-\ldots+3584$
-        \sol
-        \begin{flalign*}
-          a_1 &= 14\\
-          r &= \frac{-28}{14} = -2\\
-          3584 &= 14\times(-2)^{n-1}\\
-          256 &= (-2)^{n-1}\\
-          (-2)^8 &= (-2)^{n-1}\\
-          n-1 &= 8\\
-          n &= 9\\
-          S_9 &= \frac{14(1-(-2)^9)}{1-(-2)}\\
-          &= \frac{14(1+512)}{3}\\
-          &= \frac{14\times513}{3}\\
-          &= 2394
-        \end{flalign*}
-
-      \item If the first term of a GP is 7, its common ratio is 3, and the sum of its terms is 847, find the number of terms and the last term of this GP.
-        \sol
-        \begin{flalign*}
-          a_1 &= 7\\
-          r &= 3\\
-          S_n &= \frac{7(1-3^n)}{1-3} = 847\\
-          7(1-3^n) &= -1694\\
-          1-3^n &= -242\\
-          3^n &= 243\\
-          3^n &= 3^5\\
-          n &= 5\\
-          a_5 &= 7\times3^4 = 567
-        \end{flalign*}
-
-      \item Find the sum of the following infinite GP.
-
-        \begin{enumerate}
-
-          \item $24+18+13\frac{1}{2}+\ldots$
-            \sol
-            \begin{flalign*}
-              a_1 &= 24\\
-              r &= \frac{18}{24} = \frac{3}{4}\\
-              S_\infty &= \frac{24}{1-\frac{3}{4}}\\
-              &= \frac{24}{\frac{1}{4}}\\
-              &= 96
-            \end{flalign*}
-
-          \item $27-9+3-1+\ldots$
-            \sol
-            \begin{flalign*}
-              a_1 &= 27\\
-              r &= \frac{-9}{27} = -\frac{1}{3}\\
-              S_\infty &= \frac{27}{1+\frac{1}{3}}\\
-              &= \frac{27}{\frac{4}{3}}\\
-              &= \frac{81}{4}
-            \end{flalign*}
-
-          \item $2-\frac{1}{2}+\frac{1}{8}-\frac{1}{32}+\ldots$
-            \sol
-            \begin{flalign*}
-              a_1 &= 2\\
-              r &= \frac{-\frac{1}{2}}{2} = -\frac{1}{4}\\
-              S_\infty &= \frac{2}{1+\frac{1}{4}}\\
-              &= \frac{2}{\frac{5}{4}}\\
-              &= \frac{8}{5}
-            \end{flalign*}
-
-        \end{enumerate}
-
-      \item Given an infinite GP which has a sum of 24 and first term of 30, find the common difference.
-        \sol
-        \begin{flalign*}
-          a_1 &= 30\\
-          S_\infty &= 24\\
-          24 &= \frac{30}{1-r}\\
-          24(1-r) &= 30\\
-          24-24r &= 30\\
-          -24r &= 6\\
-          r &= -\frac{1}{4}
-        \end{flalign*}
-
-      \item Convert the following recurrring decimals into fractions.
-
-        \begin{enumerate}
-
-          \item $0.\overline{45}$
-            \sol
-            \begin{flalign*}
-              a_1 &= 0.45\\
-              r &= 0.01\\
-              S_\infty &= \frac{0.45}{1-0.01}\\
-              &= \frac{0.45}{0.99}\\
-              &= \frac{45}{99}\\
-              &= \frac{5}{11}\\
-              \\
-              \therefore\ &0.\overline{45} = \frac{5}{11}
-            \end{flalign*}
-
-          \item $0.\overline{037}$
-            \sol
-            \begin{flalign*}
-              a_1 &= 0.037\\
-              r &= 0.001\\
-              S_\infty &= \frac{0.037}{1-0.001}\\
-              &= \frac{0.037}{0.999}\\
-              &= \frac{37}{999}\\
-              &= \frac{1}{27}\\
-              \\
-              \therefore\ &0.\overline{037} = \frac{1}{27}
-            \end{flalign*}
-
-          \item $0.2\overline{18}$
-            \sol
-            \begin{flalign*}
-              a_1 &= 0.018\\
-              r &= 0.01\\
-              S_\infty &= \frac{0.018}{1-0.01}\\
-              &= \frac{0.018}{0.99}\\
-              &= \frac{18}{990}\\
-              &= \frac{1}{55}\\
-              \\
-              \therefore\ 0.2\overline{18} &= \frac{1}{5}+\frac{1}{55}\\
-              &= \frac{12}{55}
-            \end{flalign*}
-
-          \item $1.\overline{3}$
-            \sol
-            \begin{flalign*}
-              a_1 &= 0.3\\
-              r &= 0.1\\
-              S_\infty &= \frac{0.3}{1-0.1}\\
-              &= \frac{0.3}{0.9}\\
-              &= \frac{1}{3}\\
-              \\
-              \therefore\ 1.\overline{3} &= 1+\frac{1}{3}\\
-              &= \frac{4}{3}
-            \end{flalign*}
-
-          \end{enumerate}
-          
-          \item Three integers are in GP, summing up to 42 while accumulating up to 512, find these three integers.
-            \sol
-            \begin{flalign*}
-              a_1 + a_2 + a_3 &= 42\\
-              a_1a_2a_3 &= 512\\
-              a_2 &= \pm\sqrt{a_1a_3}\\
-              a_1a_3 &= a_2^2\\
-              a_2^3 &= 512\\
-              a_2 &= \sqrt[3]{512}\\
-              &= 8\\
-              a_1a_3 &= 64\\
-              a_3 &= \frac{64}{a_1}\\
-              a_1 + 8 + \frac{64}{a_1} &= 42\\
-              a_1 + \frac{64}{a_1} &= 34\\
-              a_1^2 + 64 &= 34a_1\\
-              a_1^2 - 34a_1 + 64 &= 0\\
-              (a_1-32)(a_1-2) &= 0\\
-              a_1 &= 32\ or\ a_1 = 2\\
-              \\
-              \therefore\ These\ three\ &integers\ are\ 2,\ 8,\ 32
-            \end{flalign*}
-
-          \item The sum of first 6 term of a GP is 9 times the sum of first 3 terms. Find the common ratio.
-            \sol
-            \begin{flalign*}
-              S_6 &= 9S_3\\
-              \frac{a(1-r^6)}{1-r} &= 9\times\frac{a(1-r^3)}{1-r}\\
-              a(1-r^6) &= 9a(1-r^3)\\
-              1-r^6 &= 9(1-r^3)\\
-              &= 9-9r^3\\
-              r^6 - 9r^3 + 8 &= 0\\
-              (r^3 - 8)(r^3 - 1) &= 0\\
-              r^3 &= 8\ or\ r^3 = 1\\
-              r &= 1\ (invalid)\\
-              r &= 2
-            \end{flalign*}
-
-          \item Given a GP, its first term is 16, last term is $\frac{1}{2}$ and its sum is $31\frac{1}{2}$, find its common ratio and number of terms.
-            \sol
-            \begin{flalign*}
-              a_1 &= 16\\
-              \frac{1}{2} &= 16r^{n-1}\\
-              \frac{1}{32} &= r^{n-1}\\
-              &= r^n \times \frac{1}{r}\\
-              r^n &= \frac{r}{32}\\
-              \frac{63}{2} &= \frac{16(1-r^n)}{1-r}\\
-              63(1-r) &= 32(1-r^n)\\
-              63-63r &= 32-32r^n\\
-              -31 &= 32r^n - 63r\\
-              -31 &= r - 63r\\
-              -31 &= -62r\\
-              r &= \frac{1}{2}\\
-              (\frac{1}{2})^{n-1} &= \frac{1}{32}\\
-              &= (\frac{1}{2})^5\\
-              n-1 &= 5\\
-              n &= 6\\
-            \end{flalign*}
-
-    \end{enumerate}
 \end{multicols}
 \end{document}
