@@ -14,3 +14,5 @@
 \contentsline {subsection}{\numberline {12.3.3}Practice 8}{13}{}%
 \contentsline {subsection}{\numberline {12.3.4}Practice 9}{14}{}%
 \contentsline {subsection}{\numberline {12.3.5}Exercise 12.3}{15}{}%
+\contentsline {section}{\numberline {12.4}Simple Summation of Special Series}{21}{}%
+\contentsline {subsection}{\numberline {12.4.1}Practice 10}{22}{}%
