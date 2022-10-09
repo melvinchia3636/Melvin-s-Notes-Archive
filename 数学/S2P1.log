@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.4)  9 OCT 2022 11:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.4)  9 OCT 2022 11:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -472,54 +472,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--40
 
 [1
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./S2P1.toc
-LaTeX Font Info:    Trying to load font information for LS1+stixscr on input line 2.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls1stixscr.fd
-File: ls1stixscr.fd 2015/04/17 v1.1.2-latex STIX script LS1 font definitions
-)
-LaTeX Font Info:    Trying to load font information for LS2+stixex on input line 2.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls2stixex.fd
-File: ls2stixex.fd 2015/04/17 v1.1.2-latex STIX extentions LS2 font definitions
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for LS1+stixfrak on input line 2.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls1stixfrak.fd
-File: ls1stixfrak.fd 2015/04/17 v1.1.2-latex STIX fraktur LS1 font definitions
-)
-LaTeX Font Info:    Trying to load font information for LS1+stixbb on input line 2.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls1stixbb.fd
-File: ls1stixbb.fd 2015/04/17 v1.1.2-latex STIX blackboard LS1 font definitions
-)
-LaTeX Font Info:    Trying to load font information for LS2+stixcal on input line 2.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls2stixcal.fd
-File: ls2stixcal.fd 2015/04/17 v1.1.2-latex STIX calligraphic LS2 font definitions
-)
-LaTeX Font Info:    Trying to load font information for LS1+stixsf on input line 2.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls1stixsf.fd
-File: ls1stixsf.fd 2015/04/17 v1.1.2-latex STIX sans-serif LS1 font definitions
-)
-LaTeX Font Info:    Trying to load font information for LS2+stixtt on input line 2.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls2stixtt.fd
-File: ls2stixtt.fd 2015/04/17 v1.1.2-latex STIX typewriter LS2 font definitions
-)
-LaTeX Font Info:    Trying to load font information for TS1+stix on input line 2.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ts1stix.fd
-File: ts1stix.fd 2015/04/17 v1.1.2-latex STIX TS1 font definitions
-))
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+No file S2P1.toc.
 \tf@toc=\write3
 \openout3 = `S2P1.toc'.
 
- [1
+[1
 
-] [2]
+]
 Chapter 12.
+LaTeX Font Info:    Trying to load font information for LS1+stixscr on input line 58.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls1stixscr.fd
+File: ls1stixscr.fd 2015/04/17 v1.1.2-latex STIX script LS1 font definitions
+)
+LaTeX Font Info:    Trying to load font information for LS2+stixex on input line 58.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls2stixex.fd
+File: ls2stixex.fd 2015/04/17 v1.1.2-latex STIX extentions LS2 font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for LS1+stixfrak on input line 58.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls1stixfrak.fd
+File: ls1stixfrak.fd 2015/04/17 v1.1.2-latex STIX fraktur LS1 font definitions
+)
+LaTeX Font Info:    Trying to load font information for LS1+stixbb on input line 58.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls1stixbb.fd
+File: ls1stixbb.fd 2015/04/17 v1.1.2-latex STIX blackboard LS1 font definitions
+)
+LaTeX Font Info:    Trying to load font information for LS2+stixcal on input line 58.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls2stixcal.fd
+File: ls2stixcal.fd 2015/04/17 v1.1.2-latex STIX calligraphic LS2 font definitions
+)
+LaTeX Font Info:    Trying to load font information for LS1+stixsf on input line 58.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls1stixsf.fd
+File: ls1stixsf.fd 2015/04/17 v1.1.2-latex STIX sans-serif LS1 font definitions
+)
+LaTeX Font Info:    Trying to load font information for LS2+stixtt on input line 58.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls2stixtt.fd
+File: ls2stixtt.fd 2015/04/17 v1.1.2-latex STIX typewriter LS2 font definitions
+)
+LaTeX Font Info:    Trying to load font information for TS1+stix on input line 58.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ts1stix.fd
+File: ts1stix.fd 2015/04/17 v1.1.2-latex STIX TS1 font definitions
+)
+/Users/melvinchia/Documents/notes/数学/S2P1.tex:63: Missing $ inserted.
+<inserted text> 
+                $
+l.63 ... term of the sequence 1, 8, 27, 64, \cdots
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/melvinchia/Documents/notes/数学/S2P1.tex:64: Missing $ inserted.
+<inserted text> 
+                $
+l.64 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/melvinchia/Documents/notes/数学/S2P1.tex:64: Missing } inserted.
+<inserted text> 
+                }
+l.64 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/Users/melvinchia/Documents/notes/数学/S2P1.tex:64: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.64 
+     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
 
 Overfull \hbox (10.00078pt too wide) detected at line 77
 []
@@ -530,7 +569,7 @@ Overfull \hbox (13.20079pt too wide) detected at line 164
 []
  []
 
-[3]
+[2]
 Overfull \hbox (7.96074pt too wide) detected at line 189
 []
  []
@@ -550,7 +589,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--246
 
  []
 
-[4]
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 255--257
 
  []
@@ -570,7 +609,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 329--330
 
  []
 
-[5]
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 353--354
 
  []
@@ -595,7 +634,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 404--405
 
  []
 
-[6]
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 421--423
 
  []
@@ -625,7 +664,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 494--496
 
  []
 
-[7]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 510--512
 
  []
@@ -655,7 +694,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 566--567
 
  []
 
-[8]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 577--578
 
  []
@@ -685,7 +724,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 643--644
 
  []
 
-[9]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 651--652
 
  []
@@ -710,7 +749,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 699--700
 
  []
 
-[10]
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 720--722
 
  []
@@ -730,7 +769,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 777--778
 
  []
 
-[11]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 791--793
 
  []
@@ -745,7 +784,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 844--847
 
  []
 
-[12]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 862--864
 
  []
@@ -765,7 +804,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 925--927
 
  []
 
-[13]
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 958--959
 
  []
@@ -785,7 +824,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 994--996
 
  []
 
-[14]
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 1019--1020
 
  []
@@ -805,7 +844,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1066--1068
 
  []
 
-[15]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 1098--1100
 
  []
@@ -830,7 +869,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1149--1151
 
  []
 
-[16]
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 1162--1164
 
  []
@@ -860,7 +899,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1233--1235
 
  []
 
-[17]
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 1249--1251
 
  []
@@ -890,7 +929,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1309--1310
 
  []
 
-[18]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 1319--1320
 
  []
@@ -915,7 +954,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1373--1375
 
  []
 
-[19]
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 1383--1385
 
  []
@@ -940,7 +979,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1437--1439
 
  []
 
-[20]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 1451--1453
 
  []
@@ -960,7 +999,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1503--1505
 
  []
 
-[21]
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 1524--1527
 
  []
@@ -975,7 +1014,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1577--1578
 
  []
 
-[22]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 1587--1588
 
  []
@@ -985,7 +1024,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1599--1600
 
  []
 
-[23]
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 1637--1639
 
  []
@@ -1015,7 +1054,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1697--1698
 
  []
 
-[24]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 1718--1720
 
  []
@@ -1040,7 +1079,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1762--1764
 
  []
 
-[25]
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 1778--1780
 
  []
@@ -1060,7 +1099,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1817--1819
 
  []
 
-[26]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 1827--1828
 
  []
@@ -1081,7 +1120,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1858--1860
  []
 
 
-Overfull \hbox (29.84813pt too wide) detected at line 1867
+Overfull \hbox (29.10812pt too wide) detected at line 1867
 []
  []
 
@@ -1100,7 +1139,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1893--1894
 
  []
 
-[27]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 1904--1906
 
  []
@@ -1130,7 +1169,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1967--1969
 
  []
 
-[28]
+[27]
 Underfull \hbox (badness 10000) in paragraph at lines 1978--1980
 
  []
@@ -1160,7 +1199,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2044--2045
 
  []
 
-[29]
+[28]
 Underfull \hbox (badness 10000) in paragraph at lines 2056--2058
 
  []
@@ -1180,7 +1219,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2121--2123
 
  []
 
-[30]
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 2148--2150
 
  []
@@ -1190,7 +1229,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2162--2164
 
  []
 
-[31]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 2185--2186
 
  []
@@ -1220,7 +1259,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2230--2231
 
  []
 
-[32]
+[31]
 Underfull \hbox (badness 10000) in paragraph at lines 2238--2240
 
  []
@@ -1245,7 +1284,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2282--2284
 
  []
 
-[33] [34]
+[32] [33]
 Chapter 13.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2312--2318
@@ -1267,7 +1306,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2383--2389
 
  []
 
-[35]
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 2416--2422
 
  []
@@ -1282,7 +1321,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2483--2489
 
  []
 
-[36]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 2514--2520
 
  []
@@ -1312,7 +1351,7 @@ Overfull \hbox (20.42424pt too wide) detected at line 2608
 []
  []
 
-[37]
+[36]
 Underfull \hbox (badness 10000) in paragraph at lines 2615--2621
 
  []
@@ -1332,7 +1371,7 @@ Overfull \hbox (32.35883pt too wide) detected at line 2683
 []
  []
 
-[38]
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 2690--2696
 
  []
@@ -1342,20 +1381,20 @@ Overfull \hbox (67.95857pt too wide) detected at line 2721
 []
  []
 
-[39] (./S2P1.aux) ) 
+[38] (./S2P1.aux) ) 
 Here is how much of TeX's memory you used:
- 7303 strings out of 478268
- 106253 string characters out of 5846347
- 417981 words of memory out of 5000000
+ 7301 strings out of 478268
+ 106235 string characters out of 5846347
+ 417979 words of memory out of 5000000
  25406 multiletter control sequences out of 15000+600000
  559097 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,14n,63p,412b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 58i,14n,63p,413b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathcal.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathscr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathsf.pfb>
-Output written on S2P1.pdf (40 pages, 242315 bytes).
+Output written on S2P1.pdf (39 pages, 241478 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
+ 182 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

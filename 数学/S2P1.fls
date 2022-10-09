@@ -406,9 +406,10 @@ OUTPUT S2P1.pdf
 INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/stix/t1-stixgeneralsc.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral.tfm
-INPUT ./S2P1.toc
-INPUT S2P1.toc
-INPUT S2P1.toc
+OUTPUT S2P1.toc
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral-bold.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral-bold.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral-bold.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/stix-mathrm.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/stix-mathrm.tfm
@@ -495,10 +496,6 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/stix/ts1stix.fd
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/ts1-stixgeneral.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/ts1-stixgeneral.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/ts1-stixgeneral.tfm
-OUTPUT S2P1.toc
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral-bold.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral-bold.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral-bold.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral-bold.tfm
