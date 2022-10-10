@@ -526,6 +526,7 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/stix-mathsf.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/stix-mathsfit.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/stix-mathtt.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/ts1-stixgeneral.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral-italic.tfm
 INPUT S2P1.aux
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-ts1.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc
@@ -535,6 +536,7 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Reg
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathcal.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathrm-bold.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathscr.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathsf.pfb

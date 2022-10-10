@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.4)  9 OCT 2022 19:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.4)  10 OCT 2022 13:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -521,20 +521,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 2201--2202
 
 [30] [31] [32]
 Chapter 13.
-[33] [34] [35] [36] [37] [38] [39] (./S2P1.aux) ) 
+[33] [34] [35] [36] [37] [38] [39] [40] [41] [42]
+Chapter 14.
+[43] [44] [45] [46] (./S2P1.aux) ) 
 Here is how much of TeX's memory you used:
- 7046 strings out of 478268
- 103471 string characters out of 5846347
- 438398 words of memory out of 5000000
- 25156 multiletter control sequences out of 15000+600000
- 558334 words of font info for 135 fonts, out of 8000000 for 9000
+ 7048 strings out of 478268
+ 103499 string characters out of 5846347
+ 427398 words of memory out of 5000000
+ 25158 multiletter control sequences out of 15000+600000
+ 561099 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,14n,63p,582b,477s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathcal.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathscr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathsf.pfb>
-Output written on S2P1.pdf (40 pages, 247782 bytes).
+ 58i,14n,63p,819b,477s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathcal.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathrm-bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathscr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathsf.pfb>
+Output written on S2P1.pdf (47 pages, 274407 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
+ 212 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

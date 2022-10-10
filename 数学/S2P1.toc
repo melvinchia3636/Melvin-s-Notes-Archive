@@ -25,3 +25,9 @@
 \contentsline {section}{\numberline {13.2}System of Equations with Three Variables}{37}{}%
 \contentsline {subsection}{\numberline {13.2.1}Practice 2}{37}{}%
 \contentsline {subsection}{\numberline {13.2.2}Exercise 13.2}{37}{}%
+\contentsline {section}{\numberline {13.3}Revision Exercise 13}{39}{}%
+\contentsline {chapter}{\numberline {14}Marix and Determinant}{43}{}%
+\contentsline {section}{\numberline {14.1}Matrix}{43}{}%
+\contentsline {subsection}{\numberline {14.1.1}Exercise 14.1}{44}{}%
+\contentsline {section}{\numberline {14.2}Matrix Addition and Substraction}{44}{}%
+\contentsline {subsection}{\numberline {14.2.1}Exercise 14.2}{45}{}%

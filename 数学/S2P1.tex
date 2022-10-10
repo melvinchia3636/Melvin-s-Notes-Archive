@@ -173,7 +173,7 @@
 
                   \begin{flalign*}
                     \textbf{sol{}.} & \sum_{n=1}^{6}{\frac{1}{n(2n+1)}}                                                   & \\
-                                    & = \frac{1}{1(2\times1+1)}+ \frac{1}{2(2\times2+1)}                                    \\                                                                                                                                                                                                                                                                                                                                                                                       & + \frac{1}{3(2\times3+1)} +
+                                    & = \frac{1}{1(2\times1+1)}+ \frac{1}{2(2\times2+1)}                                    \\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    & + \frac{1}{3(2\times3+1)} +
                     \frac{1}{4(2\times4+1)}                                                                                 \\ &+ \frac{1}{5(2\times5+1)}+ \frac{1}{6(2\times6+1)}        &  \\
                                     & = \frac{1}{3}+ \frac{1}{10}+ \frac{1}{21}+ \frac{1}{36}+ \frac{1}{55}+ \frac{1}{78}
                   \end{flalign*}
@@ -2974,6 +2974,626 @@
             \\
             \therefore\ u = -2, v = 2, w = 1                                                                         \\
             \therefore\ x = -\frac{1}{2}, y = \frac{1}{2}, z = 1
+          \end{flalign*}
+  \end{enumerate}
+
+  \section{Revision Exercise 13}
+
+  Solve the following system of equations.
+
+  \begin{enumerate}
+
+    \item \[
+            \begin{cases}
+              3x + 4y = 24 \\
+              xy = 12
+            \end{cases}
+          \]
+          \sol{}
+          \setcounter{equation}{0}
+          \begin{empheq}[left=\empheqlbrace]{align}
+            3x + 4y & = 24 \\
+            xy & = 12
+          \end{empheq}
+          \begin{flalign*}
+            (2)                          & \Rightarrow y = \frac{12}{x}          & (3) \\
+            \text{Sub (3) into (1)}      & \Rightarrow 3x + 4(\frac{12}{x}) = 24       \\
+                                         & \Rightarrow 3x^2 + 48 = 24x                 \\
+                                         & \Rightarrow x^2 - 8x + 16 = 0               \\
+                                         & \Rightarrow {(x - 4)}^2 = 0                 \\
+                                         & \Rightarrow x = 4, x = -4                   \\
+            \text{Sub $x = 4$ into (3)}  & \Rightarrow y = \frac{12}{4} = 3            \\
+            \text{Sub $x = -4$ into (3)} & \Rightarrow y = \frac{12}{-4} = -3          \\
+            \\
+            \therefore\ \begin{cases}
+                          x = 4 \\
+                          y = 3
+                        \end{cases}\     & \text{or}\ \begin{cases}
+                                                        x = -4 \\
+                                                        y = -3
+                                                      \end{cases}
+          \end{flalign*}
+
+    \item \[
+            \begin{cases}
+              x + 2y = 5             \\
+              5x^2 + 4y^2 + 12x = 29 \\
+            \end{cases}
+          \]
+          \sol{}
+          \setcounter{equation}{0}
+          \begin{empheq}[left=\empheqlbrace]{align}
+            x + 2y & = 5 \\
+            5x^2 + 4y^2 + 12x & = 29
+          \end{empheq}
+          \begin{flalign*}
+            (1)                                    & \Rightarrow x = 5-2y                              & (3) \\
+            \text{Sub (3) into (2)}                & \Rightarrow 5(5-2y)^2 + 4y^2                            \\
+                                                   & \ \ \ \ \ + 12(5-2y) = 29                               \\
+                                                   & \Rightarrow 5(25 - 20y + 4y^2)                          \\
+                                                   & \ \ \ \ \ + 4y^2 + 60 - 24y = 29                        \\
+                                                   & \Rightarrow 125 - 100y + 20y^2                          \\
+                                                   & \ \ \ \ \ + 4y^2 + 60 - 24y = 29                        \\
+                                                   & \Rightarrow 24y^2 + 124y + 156 = 0                      \\
+                                                   & \Rightarrow 6y^2 + 31y + 39 = 0                         \\
+                                                   & \Rightarrow (y - 3)(6y - 13) = 0                        \\
+                                                   & \Rightarrow y = 3, y = \frac{13}{6}                     \\
+            \text{Sub $y = 3$ into (1)}            & \Rightarrow x = 5 - 2(3) = -1                           \\
+            \text{Sub $y = \frac{13}{6}$ into (1)} & \Rightarrow x = 5 - 2(\frac{13}{6}) = \frac{2}{3}       \\
+            \\
+            \therefore\ \begin{cases}
+                          x = -1 \\
+                          y = 3
+                        \end{cases}\               & \text{or}\ \begin{cases}
+                                                                  x = \frac{2}{3} \\
+                                                                  y = \frac{13}{6}
+                                                                \end{cases}
+          \end{flalign*}
+
+    \item \[
+            \begin{cases}
+              2x+y = 7 \\
+              x^2 - xy + y^2 = 7
+            \end{cases}
+          \]
+          \sol{}
+          \setcounter{equation}{0}
+          \begin{empheq}[left=\empheqlbrace]{align}
+            2x+y & = 7 \\
+            x^2 -xy + y^2 & = 7
+          \end{empheq}
+          \begin{flalign*}
+            (1)                         & \Rightarrow y = 7 - 2x            & (3) \\
+            \text{Sub (3) into (2)}     & \Rightarrow x^2 - x(7 - 2x)             \\
+                                        & \ \ \ \ \ + (7 - 2x)^2 = 7              \\
+                                        & \Rightarrow x^2 - 7x + 2x^2 - 28x       \\
+                                        & \ \ \ \ \ + 49 + 4x^2 = 7               \\
+                                        & \Rightarrow 7x^2 - 35x + 42 = 0         \\
+                                        & \Rightarrow x^2 - 5x + 6 = 0            \\
+                                        & \Rightarrow (x - 2)(x - 3) = 0          \\
+                                        & \Rightarrow x = 2, x = 3                \\
+            \text{Sub $x = 2$ into (3)} & \Rightarrow y = 7 - 2(2) = 3            \\
+            \text{Sub $x = 3$ into (3)} & \Rightarrow y = 7 - 2(3) = 1            \\
+            \\
+            \therefore\ \begin{cases}
+                          x = 2 \\
+                          y = 3
+                        \end{cases}\    & \text{or}\ \begin{cases}
+                                                       x = 3 \\
+                                                       y = 1
+                                                     \end{cases}
+          \end{flalign*}
+
+    \item \[
+            \begin{cases}
+              2x + 3y = 7 \\
+              x^2 + xy + y^2 = 7
+            \end{cases}
+          \]
+          \sol{}
+          \setcounter{equation}{0}
+          \begin{empheq}[left=\empheqlbrace]{align}
+            2x + 3y & = 7 \\
+            x^2 + xy + y^2 & = 7
+          \end{empheq}
+          \begin{flalign*}
+            (1)                          & \Rightarrow y = \frac{7 - 2x}{3}          & (3) \\
+            \text{Sub (3) into (2)}      & \Rightarrow x^2 + x(\frac{7 - 2x}{3})           \\
+                                         & \ \ \ \ \ + (\frac{7 - 2x}{3})^2 = 7            \\
+                                         & \Rightarrow x^2 + \frac{7x - 2x^2}{3}           \\
+                                         & \ \ \ \ \ + \frac{49 - 28x + 4x^2}{9} = 7       \\
+                                         & \Rightarrow 9x^2 + 21x - 6x^2 + 49              \\
+                                         & \ \ \ \ \ - 28x + 4x^2 = 63                     \\
+                                         & \Rightarrow 7x^2 - 7x - 14 = 0                  \\
+                                         & \Rightarrow x^2 - x - 2 = 0                     \\
+                                         & \Rightarrow (x + 1)(x - 2) = 0                  \\
+                                         & \Rightarrow x = -1, x = 2                       \\
+            \text{Sub $x = -1$ into (3)} & \Rightarrow y = \frac{7 - 2(-1)}{3} = 3         \\
+            \text{Sub $x = 2$ into (3)}  & \Rightarrow y = \frac{7 - 2(2)}{3} = 1          \\
+            \\
+            \therefore\ \begin{cases}
+                          x = -1 \\
+                          y = 3
+                        \end{cases}\     & \text{or}\ \begin{cases}
+                                                        x = 2 \\
+                                                        y = 1
+                                                      \end{cases}
+          \end{flalign*}
+
+    \item \[
+            \begin{cases}
+              4x - 3y + 2 = 0  \\
+              2y + 5z - 19 = 0 \\
+              5x - 7z + 16 = 0 \\
+            \end{cases}
+          \]
+          \sol{}
+          \setcounter{equation}{0}
+          \begin{empheq}[left=\empheqlbrace]{align}
+            4x -3y + 2 & = 0 \\
+            2y + 5z -19 & = 0 \\
+            5x -7z + 16 & = 0
+          \end{empheq}
+          \begin{flalign*}
+            (1) \times 2                & \Rightarrow 8x - 6y + 4 = 0       & (4) \\
+            (2) \times 3                & \Rightarrow 6y + 15z - 57 = 0     & (5) \\
+            (4) + (5)                   & \Rightarrow 8x + 15z - 53 = 0     & (6) \\
+            (3) \times 8                & \Rightarrow 40x - 56z + 128 = 0   & (7) \\
+            (6) \times 5                & \Rightarrow 40x + 75z - 265 = 0   & (8) \\
+            (7) - (8)                   & \Rightarrow -131z + 393 = 0       & (9) \\
+                                        & \Rightarrow 131z = 393                  \\
+                                        & \Rightarrow z = 3                       \\
+            \text{Sub $z = 3$ into (8)} & \Rightarrow 40x + 75(3) - 265 = 0       \\
+                                        & \Rightarrow 40x + 225 - 265 = 0         \\
+                                        & \Rightarrow 40x - 40 = 0                \\
+                                        & \Rightarrow x = 1                       \\
+            \text{Sub $z = 3$ into (2)} & \Rightarrow 6y - 12 = 0                 \\
+                                        & \Rightarrow y = 2                       \\
+            \\
+            \therefore\ x = 1,          & \ y = 2,\ z = 3
+          \end{flalign*}
+
+    \item \[
+            \begin{cases}
+              x + y + z = 9   \\
+              3x + y - 2z = 1 \\
+              x - 2y + z = 0
+            \end{cases}
+          \]
+          \sol{}
+          \setcounter{equation}{0}
+          \begin{empheq}[left=\empheqlbrace]{align}
+            x + y + z & = 9 \\
+            3x + y -2z & = 1 \\
+            x -2y + z & = 0
+          \end{empheq}
+          \begin{flalign*}
+            (1)                         & \Rightarrow x + z = 9 - y  & (4) \\
+            \text{Sub (4) into (3)}     & \Rightarrow 9 - y - 2y = 0       \\
+                                        & \Rightarrow 3y = 9               \\
+                                        & \Rightarrow y = 3                \\
+            \text{Sub $y = 3$ into (2)} & \Rightarrow 3x - 2z = -2   & (5) \\
+            \text{Sub $y = 3$ into (3)} & \Rightarrow x + z = 6      & (6) \\
+            (6) \times 2                & \Rightarrow 2x + 2z = 12   & (7) \\
+            (5) + (7)                   & \Rightarrow 5x = 10              \\
+                                        & \Rightarrow x = 2                \\
+            \text{Sub $x = 2$ into (6)} & \Rightarrow z = 4                \\
+            \\
+            \therefore\ x = 2,          & \ y = 3,\ z = 4
+          \end{flalign*}
+
+    \item \[
+            \begin{cases}
+              2x - 3y - z = 4 \\
+              4x + y + 2z = 3 \\
+              x - 4y - 3z = 2
+            \end{cases}
+          \]
+          \sol{}
+          \setcounter{equation}{0}
+          \begin{empheq}[left=\empheqlbrace]{align}
+            2x -3y -z & = 4 \\
+            4x + y + 2z & = 3 \\
+            x -4y -3z & = 2
+          \end{empheq}
+          \begin{flalign*}
+            (1) \times 2                        & \Rightarrow 4x - 6y - 2z = 8                       & (4) \\
+            (3) \times 4                        & \Rightarrow 4x - 16y - 12z = 8                     & (5) \\
+            (2) - (4)                           & \Rightarrow 7y + 4z = -5                           & (6) \\
+            (4) - (5)                           & \Rightarrow 10y + 10z = 0                                \\
+                                                & \Rightarrow y + z = 0                                    \\
+                                                & \Rightarrow y = -z                                       \\
+            \text{Sub $y=-z$ into (6)}          & \Rightarrow 7(-z) + 4z = -5                              \\
+                                                & \Rightarrow 3z = 5                                       \\
+                                                & \Rightarrow z = \frac{5}{3}                              \\
+            y = -z                              & \Rightarrow y = -\frac{5}{3}                             \\
+            \text{Sub $y=-\frac{5}{3}$}         &                                                          \\
+            \text{and $z=\frac{5}{3}$ into (1)} & \Rightarrow 2x - 3(-\frac{5}{3}) - \frac{5}{3} = 4       \\
+                                                & \Rightarrow 2x - \frac{5}{3} = -1                        \\
+                                                & \Rightarrow 2x = \frac{2}{3}                             \\
+                                                & \Rightarrow x = \frac{1}{3}                              \\
+            \\
+            \therefore\ x = \frac{1}{3},        & \ y = -\frac{5}{3},\ z = \frac{5}{3}
+          \end{flalign*}
+
+    \item \[
+            \begin{cases}
+              \frac{3}{x+1} - \frac{1}{y+2} + \frac{1}{z-1} = 2 \\
+              \frac{2}{x+1} - \frac{3}{y+2} - \frac{1}{z-1} = 7 \\
+              \frac{1}{x+1} + \frac{1}{y+2} - \frac{4}{z-1} = 8
+            \end{cases}
+          \]
+          \sol{}
+          \setcounter{equation}{0}
+          \begin{empheq}[left=\empheqlbrace]{align}
+            \frac{3}{x+1} -\frac{1}{y+2} + \frac{1}{z-1} & = 2 \\
+            \frac{2}{x+1} -\frac{3}{y+2} -\frac{1}{z-1} & = 7 \\
+            \frac{1}{x+1} + \frac{1}{y+2} -\frac{4}{z-1} & = 8
+          \end{empheq}
+          \begin{flalign*}
+            \text{Let $u = \frac{1}{x+1}, v = \frac{1}{y+2}$,\ } & w = \frac{1}{z-1}                     \\
+            (1)                                                  & \Rightarrow 3u - v + w = 2     & (4)  \\
+            (2)                                                  & \Rightarrow 2u - 3v - w = 7    & (5)  \\
+            (3)                                                  & \Rightarrow u + v - 4w = 8     & (6)  \\
+            (4) \times 3                                         & \Rightarrow 9u - 3v + 3w = 6   & (7)  \\
+            (6) \times 3                                         & \Rightarrow 3u + 3v - 12w = 24 & (8)  \\
+            (5) + (8)                                            & \Rightarrow 5u - 13w = 31      & (9)  \\
+            (7) + (8)                                            & \Rightarrow 12u - 9w = 30             \\
+                                                                 & \Rightarrow 4u - 3w = 10       & (10) \\
+            (9) \times 4                                         & \Rightarrow 20u - 52w = 124    & (11) \\
+            (10) \times 5                                        & \Rightarrow 20u - 15w = 50     & (12) \\
+            (12) - (11)                                          & \Rightarrow 37w = -74          & (13) \\
+                                                                 & \Rightarrow w = -2                    \\
+            \text{Sub $w = -2$ into (10)}                        & \Rightarrow 4u = 4                    \\
+                                                                 & \Rightarrow u = 1                     \\
+            \text{Sub $u = 1$}                                   &                                       \\
+            \text{and $w = -2$ into (6)}                         & \Rightarrow 9 + v = 8                 \\
+                                                                 & \Rightarrow v = -1                    \\
+            \\
+            \therefore\ u = 1,                                   & \ v = -1,\ w = -2                     \\
+            \therefore\ x = 0,                                   & \ y = -3,\ z = \frac{1}{2}
+          \end{flalign*}
+  \end{enumerate}
+
+  \chapter{Marix and Determinant}
+  \section{Matrix}
+
+  \subsection*{Definition of Matrix}
+
+  \doublespacing{}
+  A matrix is a rectangular array of numbers, symbols, or expressions, arranged
+  in rows and columns. It is generally denoted as:
+  \[
+    A = \begin{pmatrix}
+      a_{11} & a_{12} & \cdots & a_{1n} \\
+      a_{21} & a_{22} & \cdots & a_{2n} \\
+      \vdots & \vdots & \ddots & \vdots \\
+      a_{m1} & a_{m2} & \cdots & a_{mn}
+    \end{pmatrix}
+  \]
+
+  where $m$ is the number of rows and $n$ is the number of columns.
+
+  Each number in the matrix is called \emph{an entry of the matrix}, the number
+  in the $i^{th}$ row and $j^{th}$ column is denoted as $a_{ij}$. Thus, a matrix
+  can also be denoted as $A = (a_{ij})$, or $A = {(a_{ij})}_{mn}$ where $m$ is
+  the number of rows and $n$ is the number of columns.
+
+  A matrix with m rows and n columns is called an $m \times n$ matrix, where $m
+    \times n$ is called the \emph{order of the matrix}. For example, the following
+  matrix is a \textbf{$\mathbf{3 \times 4}$ matrix}:
+  \[
+    A = \begin{pmatrix}
+      a_{11} & a_{12} & a_{13} & a_{14} \\
+      a_{21} & a_{22} & a_{23} & a_{24} \\
+      a_{31} & a_{32} & a_{33} & a_{34}
+    \end{pmatrix}
+  \]
+
+  When $m = n$, the matrix is called a \emph{square matrix}. For example, the
+  following matrix is a \textbf{third-order square matrix}:
+  \[
+    A = \begin{pmatrix}
+      1 & 2 & 3 \\
+      4 & 5 & 6 \\
+      7 & 8 & 9
+    \end{pmatrix}
+  \]
+
+  When $m = 1$, the matrix is called a \emph{row matrix}. For example, the
+  following matrix is a \textbf{row matrix}:
+  \[
+    A = \begin{pmatrix}
+      1 & 2 & 3 & 4 & 5
+    \end{pmatrix}
+  \]
+
+  When $n = 1$, the matrix is called a \emph{column matrix}. For example, the
+  following matrix is a \textbf{column matrix}:
+  \[
+    A = \begin{pmatrix}
+      1 \\
+      2 \\
+      3 \\
+      4 \\
+      5
+    \end{pmatrix}
+  \]
+
+  \singlespacing{}
+
+  \subsection*{Equal Matrices}
+
+  \doublespacing{}
+
+  Two matrices $A$ and $B$ are equal if they have the same order and the same
+  entries. That is, $A = B$ if and only if $A_{ij} = B_{ij}$ for all $i$ and $j$.
+
+  \singlespacing{}
+
+  \subsection*{Zero Matrix}
+
+  \doublespacing{}
+
+  The matrix with all entries equal to zero is called the \emph{zero matrix} and
+  is denoted as $O$. Zero matrix can be in any order. For exmaple, the matrix
+  below is a \textbf{$\mathbf{2 \times 2}$ zero matrix} or a \textbf{second-order
+    square zero matrix}:
+  \[
+    O = \begin{pmatrix}
+      0 & 0 \\
+      0 & 0
+    \end{pmatrix}
+  \]
+
+  \singlespacing{}
+
+  \subsection*{Identity Matrix}
+
+  \doublespacing{}
+
+  The matrix with all entries equal to zero except the entries on the main
+  diagonal, which are equal to one, is called the \emph{identity matrix} and is
+  denoted as $I$. Identity matrix can be in any order. The form of an identity
+  matrix is:
+  \[
+    I = \begin{pmatrix}
+      1      & 0      & \cdots & 0      \\
+      0      & 1      & \cdots & 0      \\
+      \vdots & \vdots & \ddots & \vdots \\
+      0      & 0      & \cdots & 1
+    \end{pmatrix}
+  \]
+
+  \singlespacing{}
+
+  \subsection*{Transpose Matrix}
+
+  \doublespacing{}
+
+  The transpose of a matrix $A$ is denoted as $A'$, $A^t$ or $A^T$ and is
+  obtained by interchanging the rows and columns of $A$. For example, given the
+  matrix:
+  \[
+    A = \begin{pmatrix}
+      1 & 2 \\
+      3 & 4 \\
+      5 & 6
+    \end{pmatrix}
+  \]
+  The transpose of $A$ is:
+  \[
+    A' = \begin{pmatrix}
+      1 & 3 & 5 \\
+      2 & 4 & 6
+    \end{pmatrix}
+  \]
+  Thus, we know that the transpose matrix of $m \times n$ matrix is a $n \times
+    m$ matrix.
+
+  \singlespacing{}
+
+  \subsection{Exercise 14.1}
+
+  \begin{enumerate}
+    \item State the order of the following matrices.
+
+          \begin{enumerate}
+
+            \item $A = \begin{pmatrix}
+                      2 \\
+                      1 \\
+                      3
+                    \end{pmatrix}$
+                  \sol{}
+                  $A$ is a matrix with order $\mathbf{3 \times 1}$.
+
+            \item $B = \begin{pmatrix}
+                      2 & 1 & 3 & 0 \\
+                      4 & 2 & 1 & 5
+                    \end{pmatrix}$
+                  \sol{}
+                  $B$ is a matrix with order $\mathbf{2 \times 4}$.
+
+            \item $C = \begin{pmatrix}
+                      3 & 2 & 1  \\
+                      4 & 3 & 0  \\
+                      2 & 1 & -1
+                    \end{pmatrix}$
+                  \sol{}
+                  $C$ is a matrix with order $\mathbf{3 \times 3}$.
+
+          \end{enumerate}
+
+    \item Given $A = \begin{pmatrix}
+              1 & 5  & -2 & 4 \\
+              2 & -4 & 3  & 1 \\
+              0 & 6  & 4  & 7
+            \end{pmatrix}$, what is $a_{23}$ and $a_{34}$?
+          \sol{}
+          $a_{23} = 3$ and $a_{34} = 7$.
+
+    \item If $\begin{pmatrix}
+              2 & 0  \\
+              1 & -4
+            \end{pmatrix} = \begin{pmatrix}
+              2 & 0 \\
+              1 & x
+            \end{pmatrix}$, what is $x$?
+          \sol{}
+          $x = -4$.
+  \end{enumerate}
+
+  \section{Matrix Addition and Substraction}
+
+  \doublespacing{}
+
+  Given two matrices $A$ and $B$ of the same order, the sum of $A$ and $B$ is
+  defined as the matrix $A + B$ whose $(i, j)$-th entry is the sum of the $(i,
+    j)$-th entries of $A$ and $B$. That is: \[A + B = \begin{pmatrix}
+      a_{11} + b_{11} & a_{12} + b_{12} & \cdots & a_{1n} + b_{1n} \\
+      a_{21} + b_{21} & a_{22} + b_{22} & \cdots & a_{2n} + b_{2n} \\
+      \vdots          & \vdots          & \ddots & \vdots          \\
+      a_{m1} + b_{m1} & a_{m2} + b_{m2} & \cdots & a_{mn} + b_{mn}
+    \end{pmatrix}\]
+
+  The difference of $A$ and $B$ is defined as the matrix $A - B$ whose $(i,
+    j)$-th entry is the difference of the $(i, j)$-th entries of $A$ and $B$. That
+  is: \[A - B = \begin{pmatrix}
+      a_{11} - b_{11} & a_{12} - b_{12} & \cdots & a_{1n} - b_{1n} \\
+      a_{21} - b_{21} & a_{22} - b_{22} & \cdots & a_{2n} - b_{2n} \\
+      \vdots          & \vdots          & \ddots & \vdots          \\
+      a_{m1} - b_{m1} & a_{m2} - b_{m2} & \cdots & a_{mn} - b_{mn}
+    \end{pmatrix}\]
+
+  Note that the order of $A$ and $B$ must be the same. For example, the following
+  metrices cannot be added or subtracted:
+  \[
+    A = \begin{pmatrix}
+      1 & 2 & 3 \\
+      4 & 5 & 6
+    \end{pmatrix}
+    \text{\ and\ }
+    B = \begin{pmatrix}
+      1 & 2 \\
+      3 & 4
+    \end{pmatrix}
+  \]
+
+  \noindent The addition of matrices has the following properties: \begin{itemize}
+    \item Commutative: $A + B = B + A$.
+    \item Associative: $(A + B) + C = A + (B + C)$.
+    \item Identity: $A \pm O = A$.
+    \item Inverse: $A + (-A) = O$.
+    \item Transpose: $(A \pm B)' = A' \pm B'$.
+  \end{itemize}
+  where $A, B, C$ are matrices of the same order and $O$ is the zero matrix of the
+  same order as $A$.
+
+  Given a matrix $A$, if $A = A'$, then $A$ is called a \emph{symmetric matrix}.
+  If $A = -A'$, then $A$ is called an \emph{antisymmetric matrix}.
+
+  For any given matrix A, $A + A'$ is symmetric, and $A - A'$ is antisymmetric.
+
+  \singlespacing{}
+
+  \subsection{Exercise 14.2}
+
+  Let $P = \begin{pmatrix}
+      -5 & 4  & 2 \\
+      6  & -4 & 3 \\
+      -2 & 1  & 6
+    \end{pmatrix}$ and $Q = \begin{pmatrix}
+      1 & -2 & 0 \\
+      3 & 2  & 1 \\
+      0 & 0  & 4
+    \end{pmatrix}$. Evaluate the following:
+
+  \begin{enumerate}
+
+    \item $(P + Q)'$
+          \sol{}
+          \begin{flalign*}
+            P + Q = \begin{pmatrix}
+                      -4 & 2  & 2  \\
+                      9  & -2 & 4  \\
+                      -2 & 1  & 10
+                    \end{pmatrix} \\
+            \\
+            \therefore\ (P + Q)' = \begin{pmatrix}
+                                     -4 & 9  & -2 \\
+                                     2  & -2 & 1  \\
+                                     2  & 4  & 10
+                                   \end{pmatrix}
+          \end{flalign*}
+
+    \item $Q' - P'$
+          \sol{}
+          \begin{flalign*}
+            Q - P = \begin{pmatrix}
+                      6  & -6 & 2  \\
+                      -3 & 6  & -2 \\
+                      2  & -1 & -2
+                    \end{pmatrix} \\
+            \\
+            \therefore\ Q' - P' = (Q - P)' = \begin{pmatrix}
+                                               6  & -3 & 2  \\
+                                               -6 & 6  & -1 \\
+                                               2  & -2 & -2
+                                             \end{pmatrix}
+          \end{flalign*}
+
+    \item $(P' - Q)'$
+          \sol{}
+          \begin{flalign*}
+            P' = \begin{pmatrix}
+                   -5 & 6  & -2 \\
+                   4  & -4 & 1  \\
+                   2  & 3  & 6
+                 \end{pmatrix}     \\
+            \\
+            P' - Q = \begin{pmatrix}
+                       -6 & 8  & -2 \\
+                       1  & -6 & 0  \\
+                       2  & 3  & 2
+                     \end{pmatrix} \\
+            \\
+            \therefore\ (P' - Q)' = \begin{pmatrix}
+                                      -6 & 1  & 2 \\
+                                      8  & -6 & 3 \\
+                                      -2 & 0  & 2
+                                    \end{pmatrix}
+          \end{flalign*}
+    \item $P' - (I - Q)'$
+          \sol{}
+          \begin{flalign*}
+            P' - (I - Q)'
+                                     & = P' - I' + Q'                                    \\
+                                     & = (P + Q)' - I'                                   \\
+                                     & = (P + Q - I)'                                    \\
+            \\
+            P + Q - I                & = \begin{pmatrix}
+                                           -4 & 2  & 2  \\
+                                           9  & -2 & 4  \\
+                                           -2 & 1  & 10
+                                         \end{pmatrix} - \begin{pmatrix}
+                                                           1 & 0 & 0 \\
+                                                           0 & 1 & 0 \\
+                                                           0 & 0 & 1
+                                                         \end{pmatrix} \\
+            \\
+                                     & = \begin{pmatrix}
+                                           -5 & 2  & 2 \\
+                                           9  & -3 & 4 \\
+                                           -2 & 1  & 9
+                                         \end{pmatrix}               \\
+            \\
+            \therefore P' - (I - Q)' & = (P + Q - I)'                                    \\
+                                     & = \begin{pmatrix}
+                                           -5 & 9  & -2 \\
+                                           2  & -3 & 1  \\
+                                           2  & 4  & 9
+                                         \end{pmatrix}
           \end{flalign*}
   \end{enumerate}
 
