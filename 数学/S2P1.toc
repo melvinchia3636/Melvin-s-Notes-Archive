@@ -30,4 +30,6 @@
 \contentsline {section}{\numberline {14.1}Matrix}{43}{}%
 \contentsline {subsection}{\numberline {14.1.1}Exercise 14.1}{44}{}%
 \contentsline {section}{\numberline {14.2}Matrix Addition and Substraction}{44}{}%
-\contentsline {subsection}{\numberline {14.2.1}Exercise 14.2}{45}{}%
+\contentsline {subsection}{\numberline {14.2.1}Practice 1}{45}{}%
+\contentsline {subsection}{\numberline {14.2.2}Exercise 14.2}{45}{}%
+\contentsline {section}{\numberline {14.3}Scalar Product of Matrices}{46}{}%
