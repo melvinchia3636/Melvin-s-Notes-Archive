@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.4)  11 OCT 2022 22:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.4)  12 OCT 2022 05:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -345,7 +345,7 @@ Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
 )
-LaTeX Font Info:    Trying to load font information for T1+stix on input line 20.
+LaTeX Font Info:    Trying to load font information for T1+stix on input line 22.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/t1stix.fd
 File: t1stix.fd 2015/04/17 v1.1.2-latex STIX T1 font definitions
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -355,32 +355,32 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 ) (./S2P1.aux)
 \openout1 = `S2P1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 20.
-LaTeX Font Info:    Trying to load font information for LS1+stix on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 22.
+LaTeX Font Info:    Trying to load font information for LS1+stix on input line 22.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls1stix.fd
 File: ls1stix.fd 2015/04/17 v1.1.2-latex STIX LS1 font definitions
 )
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 20.
-LaTeX Font Info:    Trying to load font information for LS2+stix on input line 20.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 22.
+LaTeX Font Info:    Trying to load font information for LS2+stix on input line 22.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls2stix.fd
 File: ls2stix.fd 2015/04/17 v1.1.2-latex STIX LS2 font definitions
 )
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    ... okay on input line 22.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -433,14 +433,14 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \Hy@linkcounter=\count294
 \symgns@font=\mathgroup14
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/stix/m/n --> TS1/stix/b/n on input line 20.
-Package gensymb Info: Math companion symbols declared on input line 20.
-LaTeX Info: Redefining \degree on input line 20.
-LaTeX Info: Redefining \celsius on input line 20.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 20.
-LaTeX Info: Redefining \ohm on input line 20.
-Package gensymb Info: Using \textohm for \ohm on input line 20.
-Package gensymb Info: Using \textmu for \micro on input line 20.
+(Font)                  TS1/stix/m/n --> TS1/stix/b/n on input line 22.
+Package gensymb Info: Math companion symbols declared on input line 22.
+LaTeX Info: Redefining \degree on input line 22.
+LaTeX Info: Redefining \celsius on input line 22.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 22.
+LaTeX Info: Redefining \ohm on input line 22.
+Package gensymb Info: Using \textohm for \ohm on input line 22.
+Package gensymb Info: Using \textmu for \micro on input line 22.
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count295
@@ -460,7 +460,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
 
  []
 
@@ -515,7 +515,7 @@ File: ts1stix.fd 2015/04/17 v1.1.2-latex STIX TS1 font definitions
  [2]
 Chapter 12.
 [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29]
-Underfull \hbox (badness 10000) in paragraph at lines 2201--2202
+Underfull \hbox (badness 10000) in paragraph at lines 2203--2204
 []\T1/stix/m/n/10 State the gen-eral for-mula of the se-ries
  []
 
@@ -527,13 +527,13 @@ Chapter 14.
 Here is how much of TeX's memory you used:
  7048 strings out of 478268
  103499 string characters out of 5846347
- 427398 words of memory out of 5000000
+ 431398 words of memory out of 5000000
  25158 multiletter control sequences out of 15000+600000
  561099 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,15n,63p,854b,477s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 58i,15n,63p,897b,499s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathcal.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathrm-bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathscr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathsf.pfb>
-Output written on S2P1.pdf (48 pages, 276860 bytes).
+Output written on S2P1.pdf (48 pages, 279266 bytes).
 PDF statistics:
  215 PDF objects out of 1000 (max. 8388607)
  142 compressed objects within 2 object streams

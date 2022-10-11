@@ -1,3 +1,5 @@
+% chktex-file 29
+% chktex-file 13
 \documentclass{report}
 \usepackage{setspace}
 \usepackage[a4paper, total={7in, 9in}]{geometry}
@@ -173,7 +175,7 @@
 
                   \begin{flalign*}
                     \textbf{sol{}.} & \sum_{n=1}^{6}{\frac{1}{n(2n+1)}}                                                   & \\
-                                    & = \frac{1}{1(2\times1+1)}+ \frac{1}{2(2\times2+1)}                                    \\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       & + \frac{1}{3(2\times3+1)} +
+                                    & = \frac{1}{1(2\times1+1)}+ \frac{1}{2(2\times2+1)}                                    \\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  & + \frac{1}{3(2\times3+1)} +
                     \frac{1}{4(2\times4+1)}                                                                                 \\ &+ \frac{1}{5(2\times5+1)}+ \frac{1}{6(2\times6+1)}        &  \\
                                     & = \frac{1}{3}+ \frac{1}{10}+ \frac{1}{21}+ \frac{1}{36}+ \frac{1}{55}+ \frac{1}{78}
                   \end{flalign*}
@@ -957,26 +959,26 @@
 
     \item Find the 6th term of the GP $12, -18, 27, \cdots$ \sol{}
           \begin{flalign*}
-            a_1 & = 12                             \\
-            r   & = \frac{-18}{12}                 \\
-                & = -\frac{3}{2}                   \\
-            a_6 & = 12 \times (-\frac{3}{2})^{6-1} \\
-                & = 12 \times (-\frac{3}{2})^5     \\
-                & = 12 \times (-\frac{243}{32})    \\
+            a_1 & = 12                               \\
+            r   & = \frac{-18}{12}                   \\
+                & = -\frac{3}{2}                     \\
+            a_6 & = 12 \times {(-\frac{3}{2})}^{6-1} \\
+                & = 12 \times {(-\frac{3}{2})}^5     \\
+                & = 12 \times (-\frac{243}{32})      \\
                 & = -\frac{729}{8}
           \end{flalign*}
 
     \item Find the number of terms of GP $\frac{1}{64} - \frac{1}{32} + \frac{1}{16} -
             \frac{1}{8} + \cdots - 512$ \sol{}
           \begin{flalign*}
-            a_1       & = \frac{1}{64}                       \\
-            r         & = \frac{-\frac{1}{32}}{\frac{1}{64}} \\
-                      & = -2                                 \\
-            -512      & = \frac{1}{64}(-2)^{n-1}             \\
-            (-2)^9    & = \frac{1}{2^6}(-2)^{n-1}            \\
-            (-2)^{15} & = (-2)^{n-1}                         \\
-            n-1       & = 15                                 \\
-            n         & = 16
+            a_1         & = \frac{1}{64}                       \\
+            r           & = \frac{-\frac{1}{32}}{\frac{1}{64}} \\
+                        & = -2                                 \\
+            -512        & = \frac{1}{64}{(-2)}^{n-1}           \\
+            (-2)^9      & = \frac{1}{2^6}{(-2)}^{n-1}          \\
+            {(-2)}^{15} & = {(-2)}^{n-1}                       \\
+            n-1         & = 15                                 \\
+            n           & = 16
           \end{flalign*}
 
     \item The 5th term of a GP is 3, and its 9th term is $\frac{1}{27}$, find the first
@@ -1233,14 +1235,14 @@
             \item $54, 36, 24, \dots, 3\frac{13}{81}$
                   \sol{}
                   \begin{flalign*}
-                    a_1                                & = 54                          \\
-                    r                                  & = \frac{36}{54}               \\
-                                                       & = \frac{2}{3}                 \\
-                    \frac{256}{81}                     & = 54\times(\frac{2}{3})^{n-1} \\
-                    \frac{256}{81} \times \frac{1}{54} & = (\frac{2}{3})^{n-1}         \\
-                    \frac{128}{2187}                   & = (\frac{2}{3})^{n-1}         \\
-                    (\frac{2}{3})^7                    & = (\frac{2}{3})^{n-1}         \\
-                    n-1                                & = 7                           \\
+                    a_1                                & = 54                            \\
+                    r                                  & = \frac{36}{54}                 \\
+                                                       & = \frac{2}{3}                   \\
+                    \frac{256}{81}                     & = 54\times{(\frac{2}{3})}^{n-1} \\
+                    \frac{256}{81} \times \frac{1}{54} & = {(\frac{2}{3})}^{n-1}         \\
+                    \frac{128}{2187}                   & = {(\frac{2}{3})}^{n-1}         \\
+                    {(\frac{2}{3})}^7                  & = {(\frac{2}{3})}^{n-1}         \\
+                    n-1                                & = 7                             \\
                     n                                  & = 8
                   \end{flalign*}
 
@@ -2172,7 +2174,7 @@
             a_3                          & = 10  - a_1           \\
             a_1^2 + a_3^2                & = 83  - 25            \\
                                          & = 58                  \\
-            a_1^2 + (10-a_1)^2           & = 58                  \\
+            a_1^2 + {(10-a_1)}^2         & = 58                  \\
             a_1^2 + 100  - 20a_1 + a_1^2 & = 58                  \\
             2a_1^2  - 20a_1 + 100        & = 58                  \\
             2a_1^2  - 20a_1 + 42         & = 0                   \\
@@ -2189,7 +2191,7 @@
              & \ \ \ \ 18^2  - 17^2 + 16^2  - 15^2 + \cdots + 2^2  - 1^2                     \\
              & = (18^2  - 17^2) + (16^2  - 15^2) + \cdots + (2^2  - 1^2)                     \\
              & = ({(2\times9)}^2  - {(2\times9-1)}^2) + ({(2\times8)}^2  - {(2\times8-1)}^2) \\
-             & \ \ \ \ + \cdots + ((2\times1)^2  - (2\times1-1)^2)                           \\
+             & \ \ \ \ + \cdots + ((2\times1)^2  - {(2\times1-1)}^2)                         \\
              & = \sum_{n=1}^9 \left[{(2n)}^2  - {(2n-1)}^2\right]                            \\
              & = \sum_{n=1}^9 (4n  - 1)                                                      \\
              & = 4\sum_{n=1}^9 n  - \sum_{n=1}^9 1                                           \\
@@ -2240,40 +2242,40 @@
     \item Find 5 numbers between $-\frac{1}{4}$ and $-\frac{1}{256}$ such that these 7
           numbers form a GP. \sol{}
           \begin{flalign*}
-            a_1                           & = -\frac{1}{4}                                                             \\
-            n                             & = 7                                                                        \\
-            -\frac{1}{256}                & = -\frac{1}{4}r^6                                                          \\
-            \frac{1}{64}                  & = r^6                                                                      \\
-            \left(\pm\frac{1}{2}\right)^6 & = r^6                                                                      \\
-            r                             & = \pm\frac{1}{2}                                                           \\
+            a_1                             & = -\frac{1}{4}                                                             \\
+            n                               & = 7                                                                        \\
+            -\frac{1}{256}                  & = -\frac{1}{4}r^6                                                          \\
+            \frac{1}{64}                    & = r^6                                                                      \\
+            {\left(\pm\frac{1}{2}\right)}^6 & = r^6                                                                      \\
+            r                               & = \pm\frac{1}{2}                                                           \\
             \\
-                                          & \text{When\ } r = \frac{1}{2},                                             \\
-                                          & \text{These 5 numbers are}                                                 \\
-                                          & \frac{1}{8},\ \frac{1}{16},\ \frac{1}{32},\ \frac{1}{64},\ \frac{1}{128}   \\
+                                            & \text{When\ } r = \frac{1}{2},                                             \\
+                                            & \text{These 5 numbers are}                                                 \\
+                                            & \frac{1}{8},\ \frac{1}{16},\ \frac{1}{32},\ \frac{1}{64},\ \frac{1}{128}   \\
             \\
-                                          & \text{When\ } r = -\frac{1}{2},                                            \\
-                                          & \text{These 5 numbers are}                                                 \\
-                                          & \frac{1}{8},\ -\frac{1}{16},\ \frac{1}{32},\ -\frac{1}{64},\ \frac{1}{128}
+                                            & \text{When\ } r = -\frac{1}{2},                                            \\
+                                            & \text{These 5 numbers are}                                                 \\
+                                            & \frac{1}{8},\ -\frac{1}{16},\ \frac{1}{32},\ -\frac{1}{64},\ \frac{1}{128}
           \end{flalign*}
 
     \item Find the sum of the series $\sum_{n=5}^{15} n^2(3n+1)$ \sol{}
           \begin{flalign*}
-            \sum_{n=5}^{15} n^2(3n+1) & = \sum_{n=5}^{15} n^3 + \sum_{n=5}^{15} 3n^2                                             \\
-                                      & = 3\sum_{n=5}^{15} n^3 + \sum_{n=5}^{15} n^2                                             \\
-                                      & = 3\left[\sum_{n=1}^{15} n^3  - \sum_{n=1}^{4} n^3\right]                                \\
-                                      & \ \ \ \ + \left[\sum_{n=1}^{15} n^2  - \sum_{n=1}^{4} n^2\right]                         \\
-                                      & = 3\left[\left(\frac{15\times16}{2}\right)^2  - \left(\frac{4\times5}{2}\right)^2\right] \\
-                                      & \ \ \ \ + \left[\frac{15\times16\times31}{6}  - \frac{4\times5\times9}{6}\right]         \\
-                                      & = 3\left[(15\times8)^2  - (2\times5)^2\right]                                            \\
-                                      & \ \ \ \ + 1240  - 30                                                                     \\
-                                      & = 3(14400  - 100) + 1210                                                                 \\
-                                      & = 42900 + 1210                                                                           \\
+            \sum_{n=5}^{15} n^2(3n+1) & = \sum_{n=5}^{15} n^3 + \sum_{n=5}^{15} 3n^2                                                 \\
+                                      & = 3\sum_{n=5}^{15} n^3 + \sum_{n=5}^{15} n^2                                                 \\
+                                      & = 3\left[\sum_{n=1}^{15} n^3  - \sum_{n=1}^{4} n^3\right]                                    \\
+                                      & \ \ \ \ + \left[\sum_{n=1}^{15} n^2  - \sum_{n=1}^{4} n^2\right]                             \\
+                                      & = 3\left[{\left(\frac{15\times16}{2}\right)}^2  - {\left(\frac{4\times5}{2}\right)}^2\right] \\
+                                      & \ \ \ \ + \left[\frac{15\times16\times31}{6}  - \frac{4\times5\times9}{6}\right]             \\
+                                      & = 3\left[{(15\times8)}^2  - {(2\times5)}^2\right]                                            \\
+                                      & \ \ \ \ + 1240  - 30                                                                         \\
+                                      & = 3(14400  - 100) + 1210                                                                     \\
+                                      & = 42900 + 1210                                                                               \\
                                       & = 44110
           \end{flalign*}
 
     \item Find the sum of the series $5^2 + 7^2 + 9^2 + \cdots + 25^2$ \sol{}
           \begin{flalign*}
-             & \ \ \ \ \sum_{n=1}^{11} (2n+3)^2                                                        \\
+             & \ \ \ \ \sum_{n=1}^{11} {(2n+3)}^2                                                      \\
              & = \sum_{n=1}^{11} 4n^2 + 12n + 9                                                        \\
              & = 4\sum_{n=1}^{11} n^2 + 12\sum_{n=1}^{11} n + 11                                       \\
              & = 4\left[\frac{11\times12\times23}{6}\right] + 12\left[\frac{11\times12}{2}\right] + 99 \\
@@ -2284,15 +2286,15 @@
     \item Find the sum of the series
           $2\times3+3\times12+4\times27+\cdots+(n+1)\times3n^2$ \sol{}
           \begin{flalign*}
-             & \ \ \ \ \sum_{n=1}^{n} (n+1)3n^2                                         \\
-             & = \sum_{n=1}^{n} 3n^3 + \sum_{n=1}^{n} 3n^2                              \\
-             & = 3\left[\sum_{n=1}^n n^3 + \sum_{n=1}^n n^2\right]                      \\
-             & = 3\left[\left(\frac{n(n+1)}{2}\right)^2 + \frac{n(n+1)(2n+1)}{6}\right] \\
-             & = 3\left[\frac{n^2(n+1)^2}{4} + \frac{n(n+1)(2n+1)}{6}\right]            \\
-             & = 3\left[\frac{3n^2(n+1)^2 + 2n(n+1)(2n+1)}{12}\right]                   \\
-             & = \frac{n(n+1)\left[3n^2+3n+4n+2\right]}{4}                              \\
-             & = \frac{n(n+1)\left[3n^2+7n+2\right]}{4}                                 \\
-             & = \frac{n(n+1)(n+2)(3n+1)}{4}                                            \\
+             & \ \ \ \ \sum_{n=1}^{n} (n+1)3n^2                                           \\
+             & = \sum_{n=1}^{n} 3n^3 + \sum_{n=1}^{n} 3n^2                                \\
+             & = 3\left[\sum_{n=1}^n n^3 + \sum_{n=1}^n n^2\right]                        \\
+             & = 3\left[{\left(\frac{n(n+1)}{2}\right)}^2 + \frac{n(n+1)(2n+1)}{6}\right] \\
+             & = 3\left[\frac{n^2{(n+1)}^2}{4} + \frac{n(n+1)(2n+1)}{6}\right]            \\
+             & = 3\left[\frac{3n^2{(n+1)}^2 + 2n(n+1)(2n+1)}{12}\right]                   \\
+             & = \frac{n(n+1)\left[3n^2+3n+4n+2\right]}{4}                                \\
+             & = \frac{n(n+1)\left[3n^2+7n+2\right]}{4}                                   \\
+             & = \frac{n(n+1)(n+2)(3n+1)}{4}                                              \\
           \end{flalign*}
 
   \end{enumerate}
@@ -2661,19 +2663,19 @@
             2x^2+21xy + 27y^2 &= 0
           \end{empheq}
           \begin{flalign*}
-            (1)                                & \Rightarrow x = 5-4y                                    & (3) \\
-            \text{Sub (3) into (2)}            & \Rightarrow 2\left(5-4y\right)^2 + 21\left(5-4y\right)y       \\
-                                               & \ \ \ \ \ + 27y^2 = 0                                         \\
-                                               & \Rightarrow 2\left(25-40y+16y^2\right)                        \\
-                                               & \ \ \ \ \ + 105y-84y^2 + 27y^2 = 0                            \\
-                                               & \Rightarrow 50  - 80y + 32y^2 + 105y                          \\
-                                               & \ \ \ \ \   - 57y^2 = 0                                       \\
-                                               & \Rightarrow 25y^2  - 25y  - 50 = 0                            \\
-                                               & \Rightarrow y^2  - y  - 2                                     \\
-                                               & \Rightarrow (y+1)(y-2) = 0                                    \\
-                                               & \Rightarrow y = -1 \ or\ y = 2                                \\
-            \text{Sub $y = -1$ into (1)}       & \Rightarrow x = 5-4(-1) = 9                                   \\
-            \text{Sub $y = 2$ into (1)}        & \Rightarrow x = 5-4(2) = -3                                   \\
+            (1)                                & \Rightarrow x = 5-4y                                      & (3) \\
+            \text{Sub (3) into (2)}            & \Rightarrow 2{\left(5-4y\right)}^2 + 21\left(5-4y\right)y       \\
+                                               & \ \ \ \ \ + 27y^2 = 0                                           \\
+                                               & \Rightarrow 2\left(25-40y+16y^2\right)                          \\
+                                               & \ \ \ \ \ + 105y-84y^2 + 27y^2 = 0                              \\
+                                               & \Rightarrow 50  - 80y + 32y^2 + 105y                            \\
+                                               & \ \ \ \ \   - 57y^2 = 0                                         \\
+                                               & \Rightarrow 25y^2  - 25y  - 50 = 0                              \\
+                                               & \Rightarrow y^2  - y  - 2                                       \\
+                                               & \Rightarrow (y+1)(y-2) = 0                                      \\
+                                               & \Rightarrow y = -1 \ or\ y = 2                                  \\
+            \text{Sub $y = -1$ into (1)}       & \Rightarrow x = 5-4(-1) = 9                                     \\
+            \text{Sub $y = 2$ into (1)}        & \Rightarrow x = 5-4(2) = -3                                     \\
             \\
             \therefore \left\{\begin{array}{l}
                                 x = 9 \\
@@ -3028,7 +3030,7 @@
           \end{empheq}
           \begin{flalign*}
             (1)                                    & \Rightarrow x = 5-2y                              & (3) \\
-            \text{Sub (3) into (2)}                & \Rightarrow 5(5-2y)^2 + 4y^2                            \\
+            \text{Sub (3) into (2)}                & \Rightarrow 5{(5-2y)}^2 + 4y^2                          \\
                                                    & \ \ \ \ \ + 12(5-2y) = 29                               \\
                                                    & \Rightarrow 5(25 - 20y + 4y^2)                          \\
                                                    & \ \ \ \ \ + 4y^2 + 60 - 24y = 29                        \\
@@ -3065,7 +3067,7 @@
           \begin{flalign*}
             (1)                         & \Rightarrow y = 7 - 2x            & (3) \\
             \text{Sub (3) into (2)}     & \Rightarrow x^2 - x(7 - 2x)             \\
-                                        & \ \ \ \ \ + (7 - 2x)^2 = 7              \\
+                                        & \ \ \ \ \ + {(7 - 2x)}^2 = 7            \\
                                         & \Rightarrow x^2 - 7x + 2x^2 - 28x       \\
                                         & \ \ \ \ \ + 49 + 4x^2 = 7               \\
                                         & \Rightarrow 7x^2 - 35x + 42 = 0         \\
@@ -3099,7 +3101,7 @@
           \begin{flalign*}
             (1)                          & \Rightarrow y = \frac{7 - 2x}{3}          & (3) \\
             \text{Sub (3) into (2)}      & \Rightarrow x^2 + x(\frac{7 - 2x}{3})           \\
-                                         & \ \ \ \ \ + (\frac{7 - 2x}{3})^2 = 7            \\
+                                         & \ \ \ \ \ + {(\frac{7 - 2x}{3})}^2 = 7          \\
                                          & \Rightarrow x^2 + \frac{7x - 2x^2}{3}           \\
                                          & \ \ \ \ \ + \frac{49 - 28x + 4x^2}{9} = 7       \\
                                          & \Rightarrow 9x^2 + 21x - 6x^2 + 49              \\
@@ -3761,6 +3763,186 @@
                          \end{bmatrix}
           \end{flalign*}
 
+  \end{enumerate}
+
+  \subsection{Exercise 14.3}
+
+  \begin{enumerate}
+
+    \item Let $A = \begin{bmatrix}
+              2 & 3 \\
+              1 & 0
+            \end{bmatrix}$, $B = \begin{bmatrix}
+              6 & 1 \\
+              3 & 2
+            \end{bmatrix}$, $C = \begin{bmatrix}
+              3 & 1 \\
+              1 & 0
+            \end{bmatrix}$, Calculate the following:
+
+          \begin{enumerate}
+
+            \item $2A - 3B + 4C$
+                  \sol{}
+                  \begin{flalign*}
+                     & 2A - 3B + 4C                                     \\
+                     & = \begin{bmatrix}
+                           4 & 6 \\
+                           2 & 0
+                         \end{bmatrix} - \begin{bmatrix}
+                                           18 & 3 \\
+                                           9  & 6
+                                         \end{bmatrix} + \begin{bmatrix}
+                                                           12 & 4 \\
+                                                           4  & 0
+                                                         \end{bmatrix} \\
+                     & = \begin{bmatrix}
+                           16 & 10 \\
+                           6  & 0
+                         \end{bmatrix} -
+                    \begin{bmatrix}
+                      18 & 3 \\
+                      9  & 6
+                    \end{bmatrix}                                      \\
+                     & = \begin{bmatrix}
+                           -2 & 7  \\
+                           -3 & -6
+                         \end{bmatrix}
+                  \end{flalign*}
+
+            \item $4A' - (C + B)'$
+                  \sol{}
+                  \begin{flalign*}
+                     & 4A' - (C+B')
+                    \\                          & = 4\begin{bmatrix}
+                      2 & 1 \\
+                      3 & 0
+                    \end{bmatrix} - \left(\begin{bmatrix}
+                      3 & 1 \\
+                      1 & 0
+                    \end{bmatrix} + \begin{bmatrix}
+                      6 & 3 \\
+                      1 & 2
+                    \end{bmatrix}
+                    \right)                             \\
+                     & = \begin{bmatrix}
+                           8  & 4 \\
+                           12 & 0
+                         \end{bmatrix} - \begin{bmatrix}
+                                           9 & 4 \\
+                                           2 & 2
+                                         \end{bmatrix} \\
+                     & = \begin{bmatrix}
+                           -1 & 0  \\
+                           10 & -2
+                         \end{bmatrix}
+                  \end{flalign*}
+          \end{enumerate}
+
+    \item Let $A = \begin{bmatrix}
+              1 & 2 \\
+              0 & 1 \\
+              3 & 1
+            \end{bmatrix}$, $B = \begin{bmatrix}
+              2 & 1 \\
+              4 & 3 \\
+              1 & 0
+            \end{bmatrix}$, $C = \begin{bmatrix}
+              4 & -1 \\
+              3 & 1  \\
+              2 & -3
+            \end{bmatrix}$, evaluate the following:
+
+          \begin{enumerate}
+
+            \item $3A + B - 2C$
+                  \sol{}
+                  \begin{flalign*}
+                    3A + B - 2C & = \begin{bmatrix}
+                                      3 & 6 \\
+                                      0 & 3 \\
+                                      9 & 3
+                                    \end{bmatrix} + \begin{bmatrix}
+                                                      2 & 1 \\
+                                                      4 & 3 \\
+                                                      1 & 0
+                                                    \end{bmatrix} - \begin{bmatrix}
+                                                                      8 & -2 \\
+                                                                      6 & 2  \\
+                                                                      4 & -6
+                                                                    \end{bmatrix} \\
+                                & = \begin{bmatrix}
+                                      5  & 7 \\
+                                      4  & 6 \\
+                                      10 & 3
+                                    \end{bmatrix} - \begin{bmatrix}
+                                                      8 & -2 \\
+                                                      6 & 2  \\
+                                                      4 & -6
+                                                    \end{bmatrix}                 \\
+                                & = \begin{bmatrix}
+                                      -3 & 9  \\
+                                      -2 & 4  \\
+                                      6  & -3
+                                    \end{bmatrix}
+                  \end{flalign*}
+
+            \item $3(A+C)' - B'$
+                  \sol{}
+                  \begin{flalign*}
+                     & 3(A+C)' - B'                                          \\
+                     & = 3\left(\begin{bmatrix}
+                                  1 & 2 \\
+                                  0 & 1 \\
+                                  3 & 1
+                                \end{bmatrix} + \begin{bmatrix}
+                                                  4 & -1 \\
+                                                  3 & 1  \\
+                                                  2 & -3
+                                                \end{bmatrix}
+                    \right)' - \begin{bmatrix}
+                                 2 & 1 \\
+                                 4 & 3 \\
+                                 1 & 0
+                               \end{bmatrix}'                   \\
+                     & = 3\left(\begin{bmatrix}
+                                  5 & 1  \\
+                                  3 & 2  \\
+                                  5 & -2
+                                \end{bmatrix}\right)' - \begin{bmatrix}
+                                                          2 & 4 & 1 \\
+                                                          1 & 3 & 0
+                                                        \end{bmatrix}       \\
+                     & = \begin{bmatrix}
+                           15 & 9 & 15 \\
+                           3  & 6 & -6
+                         \end{bmatrix} - \begin{bmatrix}
+                                           2 & 4 & 1 \\
+                                           1 & 3 & 0
+                                         \end{bmatrix}                      \\
+                     & = \begin{bmatrix}
+                           13 & 5 & 14 \\
+                           2  & 3 & -6
+                         \end{bmatrix}
+                  \end{flalign*}
+          \end{enumerate}
+
+    \item Given $A = \begin{bmatrix}
+              1 & 2 & 3 \\
+              0 & 1 & 1
+            \end{bmatrix}$, $B = \begin{bmatrix}
+              2 & 1 & 3 \\
+              1 & 2 & 0
+            \end{bmatrix}$, Find the matrix X in the following expression:
+
+          \begin{enumerate}
+
+            \item $X + 4A = 3(X + B) - A$
+                  \sol{}
+                  \begin{flalign*}
+                    X + 4A & = 3(X + B) - A
+                  \end{flalign*}
+          \end{enumerate}
   \end{enumerate}
 
 \end{multicols}
