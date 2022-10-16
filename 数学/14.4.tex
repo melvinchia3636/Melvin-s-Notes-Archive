@@ -1,0 +1,1134 @@
+% chktex-file 29
+% chktex-file 13
+\documentclass{report}
+\usepackage{setspace}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+\usepackage[fleqn]{amsmath}
+\usepackage{empheq}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage[fleqn]{cases}
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{stix}
+\usepackage{chngcntr}
+
+\counterwithout{equation}{chapter}
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\setcounter{chapter}{11}
+\hfuzz=100pt
+
+\begin{document}
+\newcommand{\sol}[1]{
+
+    \noindent \textbf{Sol.}
+}
+\begin{titlepage}
+    \raggedleft{}
+    \rule{1pt}{\textheight}
+    \hspace{0.02\textwidth}
+    \parbox[b]{0.75\textwidth}{
+
+    {\Huge\bfseries Solution Book of \\[0.5\baselineskip] Mathematic}\\[2\baselineskip]
+    {\large\textit{Ssnior 2 Part I}}\\[4\baselineskip]
+    {\Large\textsc{MELVIN CHIA}}
+
+    \vspace{0.5\textheight}
+
+    {\noindent Written on 9 October 2022}\\[\baselineskip]
+    }
+
+\end{titlepage}
+
+\doublespacing{}
+\tableofcontents
+\singlespacing{}
+\newpage
+
+\begin{multicols}{2}
+
+    \chapter{Marix and Determinant}
+    \section{Matrix}
+
+    \subsection*{Definition of Matrix}
+
+    \doublespacing{}
+    A matrix is a rectangular array of numbers, symbols, or expressions, arranged
+    in rows and columns. It is generally denoted as:
+    \[
+        A = \begin{bmatrix}
+            a_{11} & a_{12} & \cdots & a_{1n} \\
+            a_{21} & a_{22} & \cdots & a_{2n} \\
+            \vdots & \vdots & \ddots & \vdots \\
+            a_{m1} & a_{m2} & \cdots & a_{mn}
+        \end{bmatrix}
+    \]
+
+    where $m$ is the number of rows and $n$ is the number of columns.
+
+    Each number in the matrix is called \emph{an entry of the matrix}, the number
+    in the $i^{th}$ row and $j^{th}$ column is denoted as $a_{ij}$. Thus, a matrix
+    can also be denoted as $A = (a_{ij})$, or $A = {(a_{ij})}_{mn}$ where $m$ is
+    the number of rows and $n$ is the number of columns.
+
+    A matrix with m rows and n columns is called an $m \times n$ matrix, where $m
+        \times n$ is called the \emph{order of the matrix}. For example, the following
+    matrix is a \textbf{$\mathbf{3 \times 4}$ matrix}:
+    \[
+        A = \begin{bmatrix}
+            a_{11} & a_{12} & a_{13} & a_{14} \\
+            a_{21} & a_{22} & a_{23} & a_{24} \\
+            a_{31} & a_{32} & a_{33} & a_{34}
+        \end{bmatrix}
+    \]
+
+    When $m = n$, the matrix is called a \emph{square matrix}. For example, the
+    following matrix is a \textbf{third-order square matrix}:
+    \[
+        A = \begin{bmatrix}
+            1 & 2 & 3 \\
+            4 & 5 & 6 \\
+            7 & 8 & 9
+        \end{bmatrix}
+    \]
+
+    When $m = 1$, the matrix is called a \emph{row matrix}. For example, the
+    following matrix is a \textbf{row matrix}:
+    \[
+        A = \begin{bmatrix}
+            1 & 2 & 3 & 4 & 5
+        \end{bmatrix}
+    \]
+
+    When $n = 1$, the matrix is called a \emph{column matrix}. For example, the
+    following matrix is a \textbf{column matrix}:
+    \[
+        A = \begin{bmatrix}
+            1 \\
+            2 \\
+            3 \\
+            4 \\
+            5
+        \end{bmatrix}
+    \]
+
+    \singlespacing{}
+
+    \subsection*{Equal Matrices}
+
+    \doublespacing{}
+
+    Two matrices $A$ and $B$ are equal if they have the same order and the same
+    entries. That is, $A = B$ if and only if $A_{ij} = B_{ij}$ for all $i$ and $j$.
+
+    \singlespacing{}
+
+    \subsection*{Zero Matrix}
+
+    \doublespacing{}
+
+    The matrix with all entries equal to zero is called the \emph{zero matrix} and
+    is denoted as $O$. Zero matrix can be in any order. For exmaple, the matrix
+    below is a \textbf{$\mathbf{2 \times 2}$ zero matrix} or a \textbf{second-order
+        square zero matrix}:
+    \[
+        O = \begin{bmatrix}
+            0 & 0 \\
+            0 & 0
+        \end{bmatrix}
+    \]
+
+    \singlespacing{}
+
+    \subsection*{Identity Matrix}
+
+    \doublespacing{}
+
+    The matrix with all entries equal to zero except the entries on the main
+    diagonal, which are equal to one, is called the \emph{identity matrix} and is
+    denoted as $I$. Identity matrix can be in any order. The form of an identity
+    matrix is:
+    \[
+        I = \begin{bmatrix}
+            1      & 0      & \cdots & 0      \\
+            0      & 1      & \cdots & 0      \\
+            \vdots & \vdots & \ddots & \vdots \\
+            0      & 0      & \cdots & 1
+        \end{bmatrix}
+    \]
+
+    \singlespacing{}
+
+    \subsection*{Transpose Matrix}
+
+    \doublespacing{}
+
+    The transpose of a matrix $A$ is denoted as $A'$, $A^t$ or $A^T$ and is
+    obtained by interchanging the rows and columns of $A$. For example, given the
+    matrix:
+    \[
+        A = \begin{bmatrix}
+            1 & 2 \\
+            3 & 4 \\
+            5 & 6
+        \end{bmatrix}
+    \]
+    The transpose of $A$ is:
+    \[
+        A' = \begin{bmatrix}
+            1 & 3 & 5 \\
+            2 & 4 & 6
+        \end{bmatrix}
+    \]
+    Thus, we know that the transpose matrix of $m \times n$ matrix is a $n \times
+        m$ matrix.
+
+    \singlespacing{}
+
+    \subsection{Exercise 14.1}
+
+    \begin{enumerate}
+        \item State the order of the following matrices.
+
+              \begin{enumerate}
+
+                  \item $A = \begin{bmatrix}
+                                2 \\
+                                1 \\
+                                3
+                            \end{bmatrix}$
+                        \sol{}
+                        $A$ is a matrix with order $\mathbf{3 \times 1}$.
+
+                  \item $B = \begin{bmatrix}
+                                2 & 1 & 3 & 0 \\
+                                4 & 2 & 1 & 5
+                            \end{bmatrix}$
+                        \sol{}
+                        $B$ is a matrix with order $\mathbf{2 \times 4}$.
+
+                  \item $C = \begin{bmatrix}
+                                3 & 2 & 1  \\
+                                4 & 3 & 0  \\
+                                2 & 1 & -1
+                            \end{bmatrix}$
+                        \sol{}
+                        $C$ is a matrix with order $\mathbf{3 \times 3}$.
+
+              \end{enumerate}
+
+        \item Given $A = \begin{bmatrix}
+                      1 & 5  & -2 & 4 \\
+                      2 & -4 & 3  & 1 \\
+                      0 & 6  & 4  & 7
+                  \end{bmatrix}$, what is $a_{23}$ and $a_{34}$?
+              \sol{}
+              $a_{23} = 3$ and $a_{34} = 7$.
+
+        \item If $\begin{bmatrix}
+                      2 & 0  \\
+                      1 & -4
+                  \end{bmatrix} = \begin{bmatrix}
+                      2 & 0 \\
+                      1 & x
+                  \end{bmatrix}$, what is $x$?
+              \sol{}
+              $x = -4$.
+    \end{enumerate}
+
+    \section{Matrix Addition and Substraction}
+
+    \doublespacing{}
+
+    Given two matrices $A$ and $B$ of the same order, the sum of $A$ and $B$ is
+    defined as the matrix $A + B$ whose $(i, j)$-th entry is the sum of the $(i,
+        j)$-th entries of $A$ and $B$. That is: \[A + B = \begin{bmatrix}
+            a_{11} + b_{11} & a_{12} + b_{12} & \cdots & a_{1n} + b_{1n} \\
+            a_{21} + b_{21} & a_{22} + b_{22} & \cdots & a_{2n} + b_{2n} \\
+            \vdots          & \vdots          & \ddots & \vdots          \\
+            a_{m1} + b_{m1} & a_{m2} + b_{m2} & \cdots & a_{mn} + b_{mn}
+        \end{bmatrix}\]
+
+    The difference of $A$ and $B$ is defined as the matrix $A - B$ whose $(i,
+        j)$-th entry is the difference of the $(i, j)$-th entries of $A$ and $B$. That
+    is: \[A - B = \begin{bmatrix}
+            a_{11} - b_{11} & a_{12} - b_{12} & \cdots & a_{1n} - b_{1n} \\
+            a_{21} - b_{21} & a_{22} - b_{22} & \cdots & a_{2n} - b_{2n} \\
+            \vdots          & \vdots          & \ddots & \vdots          \\
+            a_{m1} - b_{m1} & a_{m2} - b_{m2} & \cdots & a_{mn} - b_{mn}
+        \end{bmatrix}\]
+
+    Note that the order of $A$ and $B$ must be the same. For example, the following
+    metrices cannot be added or subtracted:
+    \[
+        A = \begin{bmatrix}
+            1 & 2 & 3 \\
+            4 & 5 & 6
+        \end{bmatrix}
+        \text{\ and\ }
+        B = \begin{bmatrix}
+            1 & 2 \\
+            3 & 4
+        \end{bmatrix}
+    \]
+
+    \noindent The addition of matrices has the following properties: \begin{itemize}
+        \item Commutative: $A + B = B + A$.
+        \item Associative: $(A + B) + C = A + (B + C)$.
+        \item Identity: $A \pm O = A$.
+        \item Inverse: $A + (-A) = O$.
+        \item Transpose: $(A \pm B)' = A' \pm B'$.
+    \end{itemize}
+    where $A, B, C$ are matrices of the same order and $O$ is the zero matrix of the
+    same order as $A$.
+
+    Given a matrix $A$, if $A = A'$, then $A$ is called a \emph{symmetric matrix}.
+    If $A = -A'$, then $A$ is called an \emph{antisymmetric matrix}.
+
+    For any given matrix A, $A + A'$ is symmetric, and $A - A'$ is antisymmetric.
+
+    \singlespacing{}
+
+    \subsection{Practice 1}
+
+    Let $A = \begin{bmatrix}
+            -4 & 2  & -7 \\
+            5  & 4  & 0  \\
+            3  & -2 & -3
+        \end{bmatrix}$ and $B = \begin{bmatrix}
+            1 & 3  & 2  \\
+            3 & 1  & -5 \\
+            4 & -1 & 1
+        \end{bmatrix}$. Find the following:
+
+    \begin{enumerate}
+
+        \item $A + B'$.
+              \sol{}
+              \begin{flalign*}
+                  B'     & = \begin{bmatrix}
+                                 1 & 3  & 4  \\
+                                 3 & 1  & -1 \\
+                                 2 & -5 & 1
+                             \end{bmatrix}  \\
+                  \\
+                  A + B' & = \begin{bmatrix}
+                                 -3 & 5  & -3 \\
+                                 8  & 5  & -1 \\
+                                 5  & -7 & -2
+                             \end{bmatrix}
+              \end{flalign*}
+
+        \item (A-B)'
+              \sol{}
+              \begin{flalign*}
+                  A - B    & = \begin{bmatrix}
+                                   -5 & -1 & -9 \\
+                                   2  & 3  & 5  \\
+                                   -1 & -1 & -4
+                               \end{bmatrix} \\
+                  \\
+                  (A - B)' & = \begin{bmatrix}
+                                   -5 & 2 & -1 \\
+                                   -1 & 3 & -1 \\
+                                   -9 & 5 & -4
+                               \end{bmatrix}
+              \end{flalign*}
+
+    \end{enumerate}
+
+    \subsection{Exercise 14.2}
+
+    Let $P = \begin{bmatrix}
+            -5 & 4  & 2 \\
+            6  & -4 & 3 \\
+            -2 & 1  & 6
+        \end{bmatrix}$ and $Q = \begin{bmatrix}
+            1 & -2 & 0 \\
+            3 & 2  & 1 \\
+            0 & 0  & 4
+        \end{bmatrix}$. Evaluate the following:
+
+    \begin{enumerate}
+
+        \item $(P + Q)'$
+              \sol{}
+              \begin{flalign*}
+                  P + Q = \begin{bmatrix}
+                              -4 & 2  & 2  \\
+                              9  & -2 & 4  \\
+                              -2 & 1  & 10
+                          \end{bmatrix} \\
+                  \\
+                  \therefore\ (P + Q)' = \begin{bmatrix}
+                                             -4 & 9  & -2 \\
+                                             2  & -2 & 1  \\
+                                             2  & 4  & 10
+                                         \end{bmatrix}
+              \end{flalign*}
+
+        \item $Q' - P'$
+              \sol{}
+              \begin{flalign*}
+                  Q - P = \begin{bmatrix}
+                              6  & -6 & 2  \\
+                              -3 & 6  & -2 \\
+                              2  & -1 & -2
+                          \end{bmatrix} \\
+                  \\
+                  \therefore\ Q' - P' = (Q - P)' = \begin{bmatrix}
+                                                       6  & -3 & 2  \\
+                                                       -6 & 6  & -1 \\
+                                                       2  & -2 & -2
+                                                   \end{bmatrix}
+              \end{flalign*}
+
+        \item $(P' - Q)'$
+              \sol{}
+              \begin{flalign*}
+                  P' = \begin{bmatrix}
+                           -5 & 6  & -2 \\
+                           4  & -4 & 1  \\
+                           2  & 3  & 6
+                       \end{bmatrix}     \\
+                  \\
+                  P' - Q = \begin{bmatrix}
+                               -6 & 8  & -2 \\
+                               1  & -6 & 0  \\
+                               2  & 3  & 2
+                           \end{bmatrix} \\
+                  \\
+                  \therefore\ (P' - Q)' = \begin{bmatrix}
+                                              -6 & 1  & 2 \\
+                                              8  & -6 & 3 \\
+                                              -2 & 0  & 2
+                                          \end{bmatrix}
+              \end{flalign*}
+        \item $P' - (I - Q)'$
+              \sol{}
+              \begin{flalign*}
+                  P' - (I - Q)'
+                                           & = P' - I' + Q'                                  \\
+                                           & = (P + Q)' - I'                                 \\
+                                           & = (P + Q - I)'                                  \\
+                  \\
+                  P + Q - I                & = \begin{bmatrix}
+                                                   -4 & 2  & 2  \\
+                                                   9  & -2 & 4  \\
+                                                   -2 & 1  & 10
+                                               \end{bmatrix} - \begin{bmatrix}
+                                                                   1 & 0 & 0 \\
+                                                                   0 & 1 & 0 \\
+                                                                   0 & 0 & 1
+                                                               \end{bmatrix} \\
+                  \\
+                                           & = \begin{bmatrix}
+                                                   -5 & 2  & 2 \\
+                                                   9  & -3 & 4 \\
+                                                   -2 & 1  & 9
+                                               \end{bmatrix}               \\
+                  \\
+                  \therefore P' - (I - Q)' & = (P + Q - I)'                                  \\
+                                           & = \begin{bmatrix}
+                                                   -5 & 9  & -2 \\
+                                                   2  & -3 & 1  \\
+                                                   2  & 4  & 9
+                                               \end{bmatrix}
+              \end{flalign*}
+    \end{enumerate}
+
+    \section{Scalar Product of Matrices}
+
+    \doublespacing{}
+
+    Let $A = {(a_{ij})}_{m \times n}$ be an $m \times n$ matrix, k be any real
+    number, then $kA = {(ka_{ij})}_{m \times n}$. This is called scalar product of
+    a matrix $A$ and scalar $k$. For example:
+    \begin{flalign*}
+        k \begin{bmatrix}
+              1 & 2 & 3 \\
+              4 & 5 & 6
+          \end{bmatrix}
+         & = \begin{bmatrix}
+                 k  & 2k & 3k \\
+                 4k & 5k & 6k
+             \end{bmatrix} \\
+    \end{flalign*}
+
+    The scalar product of a matrix has the following properties:
+    \begin{itemize}
+        \item $r(A + B) = rA + sB$
+        \item $(r + s)A = rA + sA$
+        \item $(rs)A = r(sA)$
+    \end{itemize}
+
+    \singlespacing{}
+
+    \subsection{Practice 2}
+
+    Let $A = \begin{bmatrix}
+            2  & 0 \\
+            -3 & 5
+        \end{bmatrix}$ and $B = \begin{bmatrix}
+            1 & -1 \\
+            2 & -4
+        \end{bmatrix}$. Evaluate the following:
+
+    \begin{enumerate}
+
+        \item $3A + B$
+              \sol{}
+              \begin{flalign*}
+                  3A + B & = \begin{bmatrix}
+                                 6  & 0  \\
+                                 -9 & 15
+                             \end{bmatrix} + \begin{bmatrix}
+                                                 1 & -1 \\
+                                                 2 & -4
+                                             \end{bmatrix} \\
+                         & = \begin{bmatrix}
+                                 7  & -1 \\
+                                 -7 & 11
+                             \end{bmatrix}
+              \end{flalign*}
+
+        \item $2A - 3B$
+              \sol{}
+              \begin{flalign*}
+                  2A - 3B & = \begin{bmatrix}
+                                  4  & 0  \\
+                                  -6 & 10
+                              \end{bmatrix} - \begin{bmatrix}
+                                                  3 & -3  \\
+                                                  6 & -12
+                                              \end{bmatrix} \\
+                          & = \begin{bmatrix}
+                                  1   & 3  \\
+                                  -12 & 22
+                              \end{bmatrix}
+              \end{flalign*}
+
+        \item $4B - 2A$
+              \sol{}
+              \begin{flalign*}
+                  4B - 2A & = 2(2B - A)       \\
+                          & = 2\left(
+                  \begin{bmatrix}
+                      2 & -2 \\
+                      4 & -8
+                  \end{bmatrix} - \begin{bmatrix}
+                                      2  & 0 \\
+                                      -3 & 5
+                                  \end{bmatrix}
+                  \right)                     \\
+                          & = 2\begin{bmatrix}
+                                   0 & -2  \\
+                                   7 & -13
+                               \end{bmatrix} \\
+                          & = \begin{bmatrix}
+                                  0  & -4  \\
+                                  14 & -26
+                              \end{bmatrix}
+              \end{flalign*}
+
+        \item $A' - 2B'$
+              \sol{}
+              \begin{flalign*}
+                  A' - 2B' & = (A-2B)'                              \\
+                           & = \left(\begin{bmatrix}
+                                         2  & 0 \\
+                                         -3 & 5 \\
+                                     \end{bmatrix} - \begin{bmatrix}
+                                                         2 & -2 \\
+                                                         4 & -8
+                                                     \end{bmatrix}
+                  \right)'                                          \\
+                           & = \left(\begin{bmatrix}
+                                         0  & 2  \\
+                                         -7 & 13
+                                     \end{bmatrix}\right)'          \\
+                           & = \begin{bmatrix}
+                                   0 & -7 \\
+                                   2 & 13
+                               \end{bmatrix}
+              \end{flalign*}
+
+    \end{enumerate}
+
+    \subsection{Exercise 14.3}
+
+    \begin{enumerate}
+
+        \item Let $A = \begin{bmatrix}
+                      2 & 3 \\
+                      1 & 0
+                  \end{bmatrix}$, $B = \begin{bmatrix}
+                      6 & 1 \\
+                      3 & 2
+                  \end{bmatrix}$, $C = \begin{bmatrix}
+                      3 & 1 \\
+                      1 & 0
+                  \end{bmatrix}$, Calculate the following:
+
+              \begin{enumerate}
+
+                  \item $2A - 3B + 4C$
+                        \sol{}
+                        \begin{flalign*}
+                             & 2A - 3B + 4C                                     \\
+                             & = \begin{bmatrix}
+                                     4 & 6 \\
+                                     2 & 0
+                                 \end{bmatrix} - \begin{bmatrix}
+                                                     18 & 3 \\
+                                                     9  & 6
+                                                 \end{bmatrix} + \begin{bmatrix}
+                                                                     12 & 4 \\
+                                                                     4  & 0
+                                                                 \end{bmatrix} \\
+                             & = \begin{bmatrix}
+                                     16 & 10 \\
+                                     6  & 0
+                                 \end{bmatrix} -
+                            \begin{bmatrix}
+                                18 & 3 \\
+                                9  & 6
+                            \end{bmatrix}                                      \\
+                             & = \begin{bmatrix}
+                                     -2 & 7  \\
+                                     -3 & -6
+                                 \end{bmatrix}
+                        \end{flalign*}
+
+                  \item $4A' - (C + B)'$
+                        \sol{}
+                        \begin{flalign*}
+                             & 4A' - (C+B')
+                            \\                                                                                                                             & = 4\begin{bmatrix}
+                                2 & 1 \\
+                                3 & 0
+                            \end{bmatrix} - \left(\begin{bmatrix}
+                                3 & 1 \\
+                                1 & 0
+                            \end{bmatrix} + \begin{bmatrix}
+                                6 & 3 \\
+                                1 & 2
+                            \end{bmatrix}
+                            \right)                             \\
+                             & = \begin{bmatrix}
+                                     8  & 4 \\
+                                     12 & 0
+                                 \end{bmatrix} - \begin{bmatrix}
+                                                     9 & 4 \\
+                                                     2 & 2
+                                                 \end{bmatrix} \\
+                             & = \begin{bmatrix}
+                                     -1 & 0  \\
+                                     10 & -2
+                                 \end{bmatrix}
+                        \end{flalign*}
+              \end{enumerate}
+
+        \item Let $A = \begin{bmatrix}
+                      1 & 2 \\
+                      0 & 1 \\
+                      3 & 1
+                  \end{bmatrix}$, $B = \begin{bmatrix}
+                      2 & 1 \\
+                      4 & 3 \\
+                      1 & 0
+                  \end{bmatrix}$, $C = \begin{bmatrix}
+                      4 & -1 \\
+                      3 & 1  \\
+                      2 & -3
+                  \end{bmatrix}$, evaluate the following:
+
+              \begin{enumerate}
+
+                  \item $3A + B - 2C$
+                        \sol{}
+                        \begin{flalign*}
+                            3A + B - 2C & = \begin{bmatrix}
+                                                3 & 6 \\
+                                                0 & 3 \\
+                                                9 & 3
+                                            \end{bmatrix} + \begin{bmatrix}
+                                                                2 & 1 \\
+                                                                4 & 3 \\
+                                                                1 & 0
+                                                            \end{bmatrix} - \begin{bmatrix}
+                                                                                8 & -2 \\
+                                                                                6 & 2  \\
+                                                                                4 & -6
+                                                                            \end{bmatrix} \\
+                                        & = \begin{bmatrix}
+                                                5  & 7 \\
+                                                4  & 6 \\
+                                                10 & 3
+                                            \end{bmatrix} - \begin{bmatrix}
+                                                                8 & -2 \\
+                                                                6 & 2  \\
+                                                                4 & -6
+                                                            \end{bmatrix}                 \\
+                                        & = \begin{bmatrix}
+                                                -3 & 9  \\
+                                                -2 & 4  \\
+                                                6  & -3
+                                            \end{bmatrix}
+                        \end{flalign*}
+
+                  \item $3(A+C)' - B'$
+                        \sol{}
+                        \begin{flalign*}
+                             & 3(A+C)' - B'                                         \\
+                             & = 3\left(\begin{bmatrix}
+                                            1 & 2 \\
+                                            0 & 1 \\
+                                            3 & 1
+                                        \end{bmatrix} + \begin{bmatrix}
+                                                            4 & -1 \\
+                                                            3 & 1  \\
+                                                            2 & -3
+                                                        \end{bmatrix}
+                            \right)' - \begin{bmatrix}
+                                           2 & 1 \\
+                                           4 & 3 \\
+                                           1 & 0
+                                       \end{bmatrix}'                   \\
+                             & = 3\left(\begin{bmatrix}
+                                            5 & 1  \\
+                                            3 & 2  \\
+                                            5 & -2
+                                        \end{bmatrix}\right)' - \begin{bmatrix}
+                                                                    2 & 4 & 1 \\
+                                                                    1 & 3 & 0
+                                                                \end{bmatrix}      \\
+                             & = \begin{bmatrix}
+                                     15 & 9 & 15 \\
+                                     3  & 6 & -6
+                                 \end{bmatrix} - \begin{bmatrix}
+                                                     2 & 4 & 1 \\
+                                                     1 & 3 & 0
+                                                 \end{bmatrix}                     \\
+                             & = \begin{bmatrix}
+                                     13 & 5 & 14 \\
+                                     2  & 3 & -6
+                                 \end{bmatrix}
+                        \end{flalign*}
+              \end{enumerate}
+
+        \item Given $A = \begin{bmatrix}
+                      1 & 2 & 3 \\
+                      0 & 1 & 1
+                  \end{bmatrix}$, $B = \begin{bmatrix}
+                      2 & 1 & 3 \\
+                      1 & 2 & 0
+                  \end{bmatrix}$, Find the matrix X in the following expression:
+
+              \begin{enumerate}
+
+                  \item $X + 4A = 3(X + B) - A$
+                        \sol{}
+                        \begin{flalign*}
+                            X + 4A & = 3(X + B) - A                              \\
+                                   & = 3X + 3B - A                               \\
+                            2X     & = 5A - 3B                                   \\
+                            2X     & = 5\begin{bmatrix}
+                                            1 & 2 & 3 \\
+                                            0 & 1 & 1
+                                        \end{bmatrix} - 3\begin{bmatrix}
+                                                             2 & 1 & 3 \\
+                                                             1 & 2 & 0
+                                                         \end{bmatrix}          \\
+                                   & = \begin{bmatrix}
+                                           5 & 10 & 15 \\
+                                           0 & 5  & 5
+                                       \end{bmatrix} - \begin{bmatrix}
+                                                           6 & 3 & 9 \\
+                                                           3 & 6 & 0
+                                                       \end{bmatrix}            \\
+                                   & = \begin{bmatrix}
+                                           -1 & 7  & 6 \\
+                                           -3 & -1 & 5
+                                       \end{bmatrix}                            \\
+                            x      & = \begin{bmatrix}
+                                           -\frac{1}{2} & \frac{7}{2}  & 3           \\
+                                           -\frac{3}{2} & -\frac{1}{2} & \frac{5}{2}
+                                       \end{bmatrix}
+                        \end{flalign*}
+                  \item $2A - B + X' = B$
+                        \sol{}
+                        \begin{flalign*}
+                            2A - B + X' & = B                            \\
+                            X'          & = -2A + 2B                     \\
+                                        & = -2(A-B)                      \\
+                                        & = -2\left(
+                            \begin{bmatrix}
+                                1 & 2 & 3 \\
+                                0 & 1 & 1
+                            \end{bmatrix} \right.                        \\
+                                        & \left.- \begin{bmatrix}
+                                                      2 & 1 & 3 \\
+                                                      1 & 2 & 0
+                                                  \end{bmatrix}
+                            \right)                                      \\
+                                        & = -2\begin{bmatrix}
+                                                  -1 & 1  & 0 \\
+                                                  -1 & -1 & 1
+                                              \end{bmatrix}             \\
+                                        & = \begin{bmatrix}
+                                                2 & -2 & 0  \\
+                                                2 & 2  & -2
+                                            \end{bmatrix}               \\
+                            X           & = \begin{bmatrix}
+                                                2  & 2  \\
+                                                -2 & 2  \\
+                                                0  & -2
+                                            \end{bmatrix}
+                        \end{flalign*}
+              \end{enumerate}
+    \end{enumerate}
+
+    \section{Multiplication of Matrices}
+    Let $A$ and $B$ be matrices of order $m \times n$ and $n \times p$
+    respectively. Then the product of $A$ and $B$ is defined as the matrix $AB$ of
+    order $m \times p$ such that the $(i,j)^{th}$ element of $AB$ is given by
+    \begin{equation*}
+        (AB)_{ij} = \sum_{k=1}^n a_{ik}b_{kj}
+    \end{equation*}
+    The multiplication of matrices has the following properties:
+    \begin{itemize}
+        \item Associative: $A(BC) = (AB)C$
+        \item Distributive: $A(B+C) = AB + AC$ and $(B+C)A = BA + CA$
+        \item $k(AB) \neq (kA)B$ \text{ for } $k \neq 0$
+    \end{itemize}
+    \subsection{Practice 3}
+    Evaluate the following:
+    \begin{enumerate}
+        \item $\begin{bmatrix}
+                      -1 & -1 \\
+                      2  & 3
+                  \end{bmatrix} \begin{bmatrix}
+                      2  & 1 \\
+                      -1 & 2
+                  \end{bmatrix}$
+              \sol{}
+              \begin{flalign*}
+                   & \begin{bmatrix}
+                         -1 & -1 \\
+                         2  & 3
+                     \end{bmatrix} \begin{bmatrix}
+                                       2  & 1 \\
+                                       -1 & 2
+                                   \end{bmatrix}         \\
+                   & = \begin{bmatrix}
+                           -1(-1) + (-1)(2) & -1(2) + (-1)(1) \\
+                           2(2) + 3(-1)     & 2(1) + 3(2)
+                       \end{bmatrix} \\
+                   & = \begin{bmatrix}
+                           1 & -3 \\
+                           1 & 8
+                       \end{bmatrix}
+              \end{flalign*}
+        \item $\begin{bmatrix}
+                      3  & 4 \\
+                      -1 & 1
+                  \end{bmatrix} \begin{bmatrix}
+                      0 & 1  & 2 \\
+                      3 & -3 & 2
+                  \end{bmatrix}$
+              \sol{}
+              \begin{flalign*}
+                   & \begin{bmatrix}
+                         3  & 4 \\
+                         -1 & 1
+                     \end{bmatrix} \begin{bmatrix}
+                                       0 & 1  & 2 \\
+                                       3 & -3 & 2
+                                   \end{bmatrix}                  \\
+                   & = \begin{bmatrix}
+                           3(0) + 4(3)  & 3(1) + 4(-3)  & 3(2) + 4(2)  \\
+                           -1(0) + 1(3) & -1(1) + 1(-3) & -1(2) + 1(2)
+                       \end{bmatrix} \\
+                   & = \begin{bmatrix}
+                           12 & -9 & 14 \\
+                           3  & -4 & 0
+                       \end{bmatrix}
+              \end{flalign*}
+        \item $\begin{bmatrix}
+                      1 & 0  \\
+                      2 & 4  \\
+                      3 & -5
+                  \end{bmatrix} \begin{bmatrix}
+                      6  & 1 & 5 \\
+                      -2 & 3 & 2
+                  \end{bmatrix}$
+              \sol{}
+              \begin{flalign*}
+                   & \begin{bmatrix}
+                         1 & 0  \\
+                         2 & 4  \\
+                         3 & -5
+                     \end{bmatrix} \begin{bmatrix}
+                                       6  & 1 & 5 \\
+                                       -2 & 3 & 2
+                                   \end{bmatrix}                                             \\
+                   & = \begin{bmatrix}
+                           1(6) + 0(-2)    & 1(1) + 0(3)    & 1(5) + 0(2)    \\
+                           2(6) + 4(-2)    & 2(1) + 4(3)    & 2(5) + 4(2)    \\
+                           3(6) + (-5)(-2) & 3(1) + (-5)(3) & 3(5) + (-5)(2)
+                       \end{bmatrix} \\
+                   & = \begin{bmatrix}
+                           6  & 1   & 5  \\
+                           4  & 14  & 18 \\
+                           28 & -12 & 5
+                       \end{bmatrix}
+              \end{flalign*}
+        \item $\begin{bmatrix}
+                      1 & 3 & 2 \\
+                      0 & 1 & 5
+                  \end{bmatrix} \begin{bmatrix}
+                      1  & 3 \\
+                      2  & 1 \\
+                      -1 & 3
+                  \end{bmatrix}$
+              \sol{}
+              \begin{flalign*}
+                   & \begin{bmatrix}
+                         1 & 3 & 2 \\
+                         0 & 1 & 5
+                     \end{bmatrix} \begin{bmatrix}
+                                       1  & 3 \\
+                                       2  & 1 \\
+                                       -1 & 3
+                                   \end{bmatrix}  \\
+                   & = \begin{bmatrix}
+                           1(1) + 3(2) + 2(-1) & 1(3) + 3(1) + 2(3) \\
+                           0(1) + 1(2) + 5(-1) & 0(3) + 1(1) + 5(3)
+                       \end{bmatrix} \\
+                   & = \begin{bmatrix}
+                           5  & 12 \\
+                           -3 & 16
+                       \end{bmatrix}
+              \end{flalign*}
+    \end{enumerate}
+    \subsection{Exercise 14.4}
+    Calculate the following products (Question 1 to 8):
+    \begin{enumerate}
+        \item $\begin{bmatrix}
+                      1 & 2 & 3
+                  \end{bmatrix}\begin{bmatrix}
+                      1 \\
+                      2 \\
+                      3
+                  \end{bmatrix}$
+              \sol{}
+              \begin{flalign*}
+                   & \begin{bmatrix}
+                         1 & 2 & 3
+                     \end{bmatrix}\begin{bmatrix}
+                                      1 \\
+                                      2 \\
+                                      3
+                                  \end{bmatrix} \\
+                   & = \begin{bmatrix}
+                           1(1) + 2(2) + 3(3)
+                       \end{bmatrix}                \\
+                   & = \begin{bmatrix}
+                           14
+                       \end{bmatrix}
+              \end{flalign*}
+        \item $\begin{bmatrix}
+                      1 \\
+                      2 \\
+                      3
+                  \end{bmatrix}\begin{bmatrix}
+                      1 & 2 & 3
+                  \end{bmatrix}$
+              \sol{}
+              \begin{flalign*}
+                   & \begin{bmatrix}
+                         1 \\
+                         2 \\
+                         3
+                     \end{bmatrix}\begin{bmatrix}
+                                      1 & 2 & 3
+                                  \end{bmatrix}      \\
+                   & = \begin{bmatrix}
+                           1 & 2 & 3 \\
+                           2 & 4 & 6 \\
+                           3 & 6 & 9
+                       \end{bmatrix}
+              \end{flalign*}
+        \item $\begin{bmatrix}
+                      2 & -3 \\
+                      1 & 5
+                  \end{bmatrix}\begin{bmatrix}
+                      1 & 0 \\
+                      0 & 1
+                  \end{bmatrix}$
+              \sol{}
+              \begin{flalign*}
+                   & \begin{bmatrix}
+                         2 & -3 \\
+                         1 & 5
+                     \end{bmatrix}\begin{bmatrix}
+                                      1 & 0 \\
+                                      0 & 1
+                                  \end{bmatrix}       \\
+                   & = \begin{bmatrix}
+                           2(1) + (-3)(0) & 2(0) + (-3)(1) \\
+                           1(1) + 5(0)    & 1(0) + 5(1)
+                       \end{bmatrix} \\
+                   & = \begin{bmatrix}
+                           2 & -3 \\
+                           1 & 5
+                       \end{bmatrix}
+              \end{flalign*}
+        \item $\begin{bmatrix}
+                      -6 & -4 & 2  \\
+                      7  & 8  & -5
+                  \end{bmatrix}\begin{bmatrix}
+                      1 & 2 & 3
+                  \end{bmatrix}$
+              \sol{}
+              \begin{flalign*}
+                   & \begin{bmatrix}
+                         -6 & -4 & 2  \\
+                         7  & 8  & -5
+                     \end{bmatrix}\begin{bmatrix}
+                                      1 & 2 & 3
+                                  \end{bmatrix} \\
+                   & = \begin{bmatrix}
+                           -6(1) + (-4)(2) + 2(3) \\
+                           7(1) + 8(2) + (-5)(3)
+                       \end{bmatrix}    \\
+                   & = \begin{bmatrix}
+                           -8 \\
+                           8
+                       \end{bmatrix}
+              \end{flalign*}
+        \item $\begin{bmatrix}
+                      2 & 3 & 4 \\
+                      0 & 1 & 2
+                  \end{bmatrix}\begin{bmatrix}
+                      2 & 0 \\
+                      3 & 1 \\
+                      4 & 2
+                  \end{bmatrix}$
+              \sol{}
+              \begin{flalign*}
+                   & \begin{bmatrix}
+                         2 & 3 & 4 \\
+                         0 & 1 & 2
+                     \end{bmatrix}\begin{bmatrix}
+                                      2 & 0 \\
+                                      3 & 1 \\
+                                      4 & 2
+                                  \end{bmatrix}   \\
+                   & = \begin{bmatrix}
+                           2(2) + 3(3) + 4(4) & 2(0) + 3(1) + 4(2) \\
+                           0(2) + 1(3) + 2(4) & 0(0) + 1(1) + 2(2)
+                       \end{bmatrix} \\
+                   & = \begin{bmatrix}
+                           27 & 11 \\
+                           11 & 5
+                       \end{bmatrix}
+              \end{flalign*}
+        \item $\begin{bmatrix}
+                      6 & 4  & 2 \\
+                      5 & -2 & 0 \\
+                      0 & 3  & 1
+                  \end{bmatrix}\begin{bmatrix}
+                      5 \\
+                      2 \\
+                      3
+                  \end{bmatrix}$
+              \sol{}
+              \begin{flalign*}
+                   & \begin{bmatrix}
+                         6 & 4  & 2 \\
+                         5 & -2 & 0 \\
+                         0 & 3  & 1
+                     \end{bmatrix}\begin{bmatrix}
+                                      5 \\
+                                      2 \\
+                                      3
+                                  \end{bmatrix}          \\
+                   & = \begin{bmatrix}
+                           6(5) + 4(2) + 2(3)    \\
+                           5(5) + (-2)(2) + 0(3) \\
+                           0(5) + 3(2) + 1(3)
+                       \end{bmatrix} \\
+                   & = \begin{bmatrix}
+                           44 \\
+                           21 \\
+                           9
+                       \end{bmatrix}
+              \end{flalign*}
+        \item $\begin{bmatrix}
+                      0 & 1 & 0 \\
+                      1 & 0 & 0 \\
+                      0 & 0 & 1
+                  \end{bmatrix}\begin{bmatrix}
+                      0 & 1 & 0 \\
+                      1 & 0 & 0 \\
+                      0 & 0 & 1
+                  \end{bmatrix}$
+              \sol{}
+              \begin{flalign*}
+                   & \begin{bmatrix}
+                         0 & 1 & 0 \\
+                         1 & 0 & 0 \\
+                         0 & 0 & 1
+                     \end{bmatrix}\begin{bmatrix}
+                                      0 & 1 & 0 \\
+                                      1 & 0 & 0 \\
+                                      0 & 0 & 1
+                                  \end{bmatrix}                          \\
+                   & = \left[\begin{smallmatrix}
+                                     0(0) + 1(1) + 0(0) & 0(1) + 1(0) + 0(0) & 0(0) + 1(0) + 0(1) \\
+                                     1(0) + 0(1) + 0(0) & 1(1) + 0(0) + 0(0) & 1(0) + 0(0) + 0(1) \\
+                                     0(0) + 0(1) + 1(0) & 0(1) + 0(0) + 1(0) & 0(0) + 0(0) + 1(1)
+                                 \end{smallmatrix}\right] \\
+                   & = \begin{bmatrix}
+                           1 & 0 & 0 \\
+                           0 & 1 & 0 \\
+                           0 & 0 & 1
+                       \end{bmatrix}
+              \end{flalign*}
+        \item $\begin{bmatrix}
+                      1  & -1 & 1  \\
+                      -3 & 2  & -1 \\
+                      -2 & 1  & 0
+                  \end{bmatrix}\begin{bmatrix}
+                      1 & 2 & 3 \\
+                      2 & 4 & 6 \\
+                      1 & 2 & 3 \\
+                  \end{bmatrix}$
+              \sol{}
+              \begin{flalign*}
+                   & \begin{bmatrix}
+                         1  & -1 & 1  \\
+                         -3 & 2  & -1 \\
+                         -2 & 1  & 0
+                     \end{bmatrix}\begin{bmatrix}
+                                      1 & 2 & 3 \\
+                                      2 & 4 & 6 \\
+                                      1 & 2 & 3
+                                  \end{bmatrix}                    \\
+                   & = \left[\begin{smallmatrix}
+                                     1 + (-2) + 1     & 2 + (-4) + 2     & 3 + (-6) + 3     \\
+                                     (-3) + 4 + (-1) & (-6) + 8 + (-2) & (-9) + 12 + (-3) \\
+                                     (-2) + 2 + 0       & (-4) + 4 + 0       & (-6) + 6 + 0
+                                 \end{smallmatrix}\right] \\
+                   & = \begin{bmatrix}
+                           0 & 0 & 0 \\
+                           0 & 0 & 0 \\
+                           0 & 0 & 0
+                       \end{bmatrix}
+              \end{flalign*}
+    \end{enumerate}
+\end{multicols}
+\end{document}

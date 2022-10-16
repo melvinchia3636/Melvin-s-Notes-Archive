@@ -35,3 +35,6 @@
 \contentsline {section}{\numberline {14.3}Scalar Product of Matrices}{46}{}%
 \contentsline {subsection}{\numberline {14.3.1}Practice 2}{46}{}%
 \contentsline {subsection}{\numberline {14.3.2}Exercise 14.3}{47}{}%
+\contentsline {section}{\numberline {14.4}Multiplication of Matrices}{48}{}%
+\contentsline {subsection}{\numberline {14.4.1}Practice 3}{48}{}%
+\contentsline {subsection}{\numberline {14.4.2}Exercise 14.4}{48}{}%
