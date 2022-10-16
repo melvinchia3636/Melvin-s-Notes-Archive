@@ -38,3 +38,6 @@
 \contentsline {section}{\numberline {14.4}Multiplication of Matrices}{48}{}%
 \contentsline {subsection}{\numberline {14.4.1}Practice 3}{48}{}%
 \contentsline {subsection}{\numberline {14.4.2}Exercise 14.4}{48}{}%
+\contentsline {section}{\numberline {14.5}Determinants}{49}{}%
+\contentsline {subsection}{\numberline {14.5.1}Practice 4}{50}{}%
+\contentsline {subsection}{\numberline {14.5.2}Practice 5}{50}{}%
