@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.4)  16 OCT 2022 22:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.4)  22 OCT 2022 22:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/melvinchia/Documents/notes/数学/14.4.tex
-(/Users/melvinchia/Documents/notes/数学/14.4.tex
+**/Users/melvinchia/Documents/involution/数学/14.4.tex
+(/Users/melvinchia/Documents/involution/数学/14.4.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (/usr/local/texlive/2022/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
@@ -734,20 +734,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 518--522
 
  []
 
-[4] (./14.4.aux) ) 
+[4] [5] [6] (./14.4.aux) ) 
 Here is how much of TeX's memory you used:
  17819 strings out of 478268
- 337456 string characters out of 5846347
- 639035 words of memory out of 5000000
+ 337471 string characters out of 5846347
+ 641035 words of memory out of 5000000
  35707 multiletter control sequences out of 15000+600000
  523053 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,14n,104p,454b,1057s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 100i,14n,104p,459b,1057s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathcal.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb>
-Output written on 14.4.pdf (5 pages, 147529 bytes).
+Output written on 14.4.pdf (7 pages, 153434 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 67 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

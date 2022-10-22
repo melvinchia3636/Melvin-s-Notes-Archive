@@ -178,7 +178,7 @@
 
                   \begin{flalign*}
                     \textbf{sol{}.} & \sum_{n=1}^{6}{\frac{1}{n(2n+1)}}                                                   & \\
-                                    & = \frac{1}{1(2\times1+1)}+ \frac{1}{2(2\times2+1)}                                    \\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    & + \frac{1}{3(2\times3+1)} +
+                                    & = \frac{1}{1(2\times1+1)}+ \frac{1}{2(2\times2+1)}                                    \\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     & + \frac{1}{3(2\times3+1)} +
                     \frac{1}{4(2\times4+1)}                                                                                 \\ &+ \frac{1}{5(2\times5+1)}+ \frac{1}{6(2\times6+1)}        &  \\
                                     & = \frac{1}{3}+ \frac{1}{10}+ \frac{1}{21}+ \frac{1}{36}+ \frac{1}{55}+ \frac{1}{78}
                   \end{flalign*}
@@ -3817,7 +3817,7 @@
                   \sol{}
                   \begin{flalign*}
                      & 4A' - (C+B')
-                    \\                                                            & = 4\begin{bmatrix}
+                    \\                                                             & = 4\begin{bmatrix}
                       2 & 1 \\
                       3 & 0
                     \end{bmatrix} - \left(\begin{bmatrix}
@@ -4623,5 +4623,139 @@
      & = a_2b_2c_3 + a_2b_3c_2 - a_2b_2c_3 + a_3b_2c_2 + a_2b_3c_2 - a_3b_2c_2                                                                                                       \\
      & = 0
   \end{flalign*}
+
+  \subsection{Practice 6}
+  Find the value of the following 3x3 determinants.
+
+  \begin{enumerate}
+    \item $\begin{vmatrix} 4 & -2 & 1 \\ 1 & -3 & 0 \\ 2 & 7 & -1 \end{vmatrix}$
+          \sol{}
+          \begin{flalign*}
+             & \begin{vmatrix} 4 & -2 & 1 \\ 1 & -3 & 0 \\ 2 & 7 & -1 \end{vmatrix}                                                                            \\
+             & = 4\begin{vmatrix} - 3 & 0 \\ 7 & -1 \end{vmatrix} - \begin{vmatrix} -2 & 1 \\ 7 & -1 \end{vmatrix} + 2 \begin{vmatrix} -2 & 1 \\ -3 & 0 \end{vmatrix} \\
+             & = 4(3 - 0) - (2 - 7) + 2(0 + 3)                                                                                                                        \\
+             & = 12 + 5 + 6                                                                                                                                           \\
+             & = 23
+          \end{flalign*}
+
+    \item $\begin{vmatrix} 5 & -4 & 2 \\ 1 & 0 & -3 \\ 1 & -1 & 2 \end{vmatrix}$
+          \sol{}
+          \begin{flalign*}
+             & \begin{vmatrix} 5 & -4 & 2 \\ 1 & 0 & -3 \\ 1 & -1 & 2 \end{vmatrix}                                                                         \\
+             & = 5\begin{vmatrix} 0 & -3 \\ -1 & 2 \end{vmatrix} - \begin{vmatrix} -4 & 2 \\ -1 & 2 \end{vmatrix} + \begin{vmatrix} -4 & 2 \\ 0 & -3 \end{vmatrix} \\
+             & = 5(0 - 3) - (-8 + 2) + (12 + 0)                                                                                                                    \\
+             & = -15 + 6 + 12                                                                                                                                      \\
+             & = 3
+          \end{flalign*}
+
+    \item $\begin{vmatrix} 2 & 0 & 1 \\ 0 & 2 & 0 \\ 2 & 0 & -1 \end{vmatrix}$
+          \sol{}
+          \begin{flalign*}
+             & \begin{vmatrix} 2 & 0 & 1 \\ 0 & 2 & 0 \\ 2 & 0 & -1 \end{vmatrix}                                                                         \\
+             & = 2\begin{vmatrix} 2 & 0 \\ 0 & -1 \end{vmatrix} - 0\begin{vmatrix} 0 & 1 \\ 0 & -1 \end{vmatrix} + 2\begin{vmatrix} 0 & 1 \\ 2 & 0 \end{vmatrix} \\
+             & = 2(-2 - 0) + 2(-2)                                                                                                                               \\
+             & = -4 - 4                                                                                                                                          \\
+             & = -8
+          \end{flalign*}
+  \end{enumerate}
+
+  \subsection{Exercise 14.5a}
+
+  Find the value of the following determinants.
+
+  \begin{enumerate}
+    \item $\begin{vmatrix} 3 & 2 \\ 1 & -4 \end{vmatrix}$
+          \sol{}
+          \begin{flalign*}
+             & \begin{vmatrix} 3 & 2 \\ 1 & -4 \end{vmatrix} \\
+             & = 3(-4) - 2(1)                                \\
+             & = -12 - 2                                     \\
+             & = -14
+          \end{flalign*}
+
+    \item $\begin{vmatrix} 35 & -2 \\ -11 & 5 \end{vmatrix}$
+          \sol{}
+          \begin{flalign*}
+             & \begin{vmatrix} 35 & -2 \\ -11 & 5 \end{vmatrix} \\
+             & = 35(5) - (-2)(-11)                              \\
+             & = 175 - 22                                       \\
+             & = 153
+          \end{flalign*}
+
+    \item $\begin{vmatrix} 1 & a \\ -a & 1 \end{vmatrix}$
+          \sol{}
+          \begin{flalign*}
+             & \begin{vmatrix} 1 & a \\ -a & 1 \end{vmatrix} \\
+             & = 1(1) - a(-a)                                \\
+             & = 1 + a^2                                     \\
+          \end{flalign*}
+
+    \item $\begin{vmatrix} \sin{x} & -\cos{x} \\ \cos{x} & \sin{x} \end{vmatrix}$
+          \sol{}
+          \begin{flalign*}
+             & \begin{vmatrix} \sin{x} & -\cos{x} \\ \cos{x} & \sin{x} \end{vmatrix} \\
+             & = \sin{x}\sin{x} - (-\cos{x})(\cos{x})                                \\
+             & = \sin^2{x} + \cos^2{x}                                               \\
+             & = 1
+          \end{flalign*}
+
+    \item $\begin{vmatrix} 1 & -2 & 3 \\ 2 & 3 & -4 \\ 3 & -2 & 5 \end{vmatrix}$
+          \sol{}
+          \begin{flalign*}
+             & \begin{vmatrix} 1 & -2 & 3 \\ 2 & 3 & -4 \\ 3 & -2 & 5 \end{vmatrix}                                                                           \\
+             & = 1\begin{vmatrix} 3 & -4 \\ -2 & 5 \end{vmatrix} - 2\begin{vmatrix} -2 & 3 \\ -2 & 5 \end{vmatrix} + 3\begin{vmatrix} -2 & 3 \\ 3 & -4 \end{vmatrix} \\
+             & = 1(15 - 8) - 2(-10 + 6) + 3(8 - 9)                                                                                                                   \\
+             & = 7 + 8 - 3                                                                                                                                           \\
+             & = 12                                                                                                                                                  \\
+          \end{flalign*}
+
+    \item $\begin{vmatrix} 1 & -3 & 4 \\ 2 & 0 & -5 \\ 3 & -1 & 7 \end{vmatrix}$
+          \sol{}
+          \begin{flalign*}
+             & \begin{vmatrix} 1 & -3 & 4 \\ 2 & 0 & -5 \\ 3 & -1 & 7 \end{vmatrix}                                                                          \\
+             & = \begin{vmatrix} 0 & -5 \\ -1 & 7 \end{vmatrix} - 2\begin{vmatrix} -3 & 4 \\ -1 & 7 \end{vmatrix} + 3\begin{vmatrix} -3 & 4 \\ 0 & -5 \end{vmatrix} \\
+             & = (0 - 5) - 2(-21 + 4) + 3(15 - 0)                                                                                                                   \\
+             & = -5 + 34 + 45                                                                                                                                       \\
+             & = 74
+          \end{flalign*}
+
+    \item $\begin{vmatrix} -1 & 3 & -2 \\ -3 & 2 & 0 \\ 4 & 0 & 5 \end{vmatrix}$
+          \sol{}
+          \begin{flalign*}
+             & \begin{vmatrix} -1 & 3 & -2 \\ -3 & 2 & 0 \\ 4 & 0 & 5 \end{vmatrix}                                                                       \\
+             & = -1\begin{vmatrix} 2 & 0 \\ 0 & 5 \end{vmatrix} + 3\begin{vmatrix} 3 & -2 \\ 0 & 5 \end{vmatrix} + 4\begin{vmatrix} 3 & -2 \\ 2 & 0 \end{vmatrix} \\
+             & = -1(10) + 3(-15 + 0) + 4(0 + 4)                                                                                                                   \\
+             & = -10 + 45 + 16                                                                                                                                    \\
+             & = 51
+          \end{flalign*}
+
+    \item $\begin{vmatrix} 0 & -q & -r \\ q & 0 & -s \\ r & s & 0 \end{vmatrix}$
+          \sol{}
+          \begin{flalign*}
+             & \begin{vmatrix} 0 & -q & -r \\ q & 0 & -s \\ r & s & 0 \end{vmatrix}                                                                          \\
+             & = 0\begin{vmatrix} 0 & -s \\ s & 0 \end{vmatrix} - q\begin{vmatrix} -q & -r \\ s & 0 \end{vmatrix} + r\begin{vmatrix} -q & -r \\ 0 & -s \end{vmatrix} \\
+             & = 0 - q(0 + sr) + r(0 + qs)                                                                                                                           \\
+             & = 0
+          \end{flalign*}
+
+    \item $\begin{vmatrix} p & -q & r \\ q & r & -s \\ -r & s & p \end{vmatrix}$
+          \sol{}
+          \begin{flalign*}
+             & \begin{vmatrix} p & -q & r \\ q & r & -s \\ -r & s & p \end{vmatrix}                                                                         \\
+             & = p\begin{vmatrix} r & -s \\ s & p \end{vmatrix} - q\begin{vmatrix} -q & r \\ s & p \end{vmatrix} + r\begin{vmatrix} -q & r \\ r & -s \end{vmatrix} \\
+             & = p(rp + s^2) -q(-qp - sr) - r(qs - r^2)                                                                                                            \\
+             & = rp^2 + p{s}^2 + q^2 p + qsr - qsr + r^3                                                                                                           \\
+             & = rp^2 + s^2p + q^2 p - r^3
+          \end{flalign*}
+
+    \item $\begin{vmatrix} 1 & x & a \\ 1 & y & b \\ 1 & z & c \end{vmatrix}$
+          \sol{}
+          \begin{flalign*}
+             & \begin{vmatrix} 1 & x & a \\ 1 & y & b \\ 1 & z & c \end{vmatrix}                                                                    \\
+             & = \begin{vmatrix} y & b \\ z & c \end{vmatrix} - \begin{vmatrix} x & a \\ z & c \end{vmatrix} + \begin{vmatrix} x & a \\ y & b \end{vmatrix} \\
+             & = (yc - bz) - (xc - az) + (xb - ay)                                                                                                          \\
+             & = bx + cy + az - cx - ay - bz                                                                                                                \\
+          \end{flalign*}
+  \end{enumerate}
 \end{multicols}
 \end{document}

@@ -41,3 +41,5 @@
 \contentsline {section}{\numberline {14.5}Determinants}{49}{}%
 \contentsline {subsection}{\numberline {14.5.1}Practice 4}{50}{}%
 \contentsline {subsection}{\numberline {14.5.2}Practice 5}{50}{}%
+\contentsline {subsection}{\numberline {14.5.3}Practice 6}{51}{}%
+\contentsline {subsection}{\numberline {14.5.4}Exercise 14.5a}{52}{}%
