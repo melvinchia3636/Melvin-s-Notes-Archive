@@ -4757,5 +4757,153 @@
              & = bx + cy + az - cx - ay - bz                                                                                                                \\
           \end{flalign*}
   \end{enumerate}
+
+  \subsection*{Properties of Determinants}
+
+    \setcounter{theorem}{0}
+
+    \begin{theorem}
+        The value of a determinant is the same as the value of its transpose, aka $|A| = |A'|$.
+        \begin{flalign*}
+             & \begin{vmatrix} a & b \\ c & d \end{vmatrix} = \begin{vmatrix} a & c \\ b & d \end{vmatrix}
+        \end{flalign*}
+    \end{theorem}
+    \begin{theorem}
+        Switching any two rows or columns of a determinants results in the opposite value.
+        \begin{flalign*}
+             & \begin{vmatrix} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3 \end{vmatrix} = -\begin{vmatrix} a_1 & b_1 & c_1 \\ a_3 & b_3 & c_3 \\ a_2 & b_2 & c_2 \end{vmatrix}
+        \end{flalign*}
+    \end{theorem}
+
+    \subsection{Practice 7}
+
+    Given $\begin{vmatrix}
+            a & b & c \\
+            d & e & f \\
+            g & h & i
+        \end{vmatrix} = 10$, find $\begin{vmatrix}
+            b & c & a \\
+            e & f & d \\
+            h & i & g
+        \end{vmatrix}$.
+    \sol{}
+    \begin{flalign*}
+        \begin{vmatrix}
+            b & c & a \\
+            e & f & d \\
+            h & i & g
+        \end{vmatrix}
+         & = -\begin{vmatrix}
+                  a & c & b \\
+                  d & f & e \\
+                  g & i & h
+              \end{vmatrix} \\
+         & = \begin{vmatrix}
+                 a & b & c \\
+                 d & e & f \\
+                 g & h & i
+             \end{vmatrix}  \\
+         & = 10
+    \end{flalign*}
+    \begin{theorem}
+        If two rows or cols of a determinant are identical, the value of the determinant is zero.
+        \begin{flalign*}
+             & \begin{vmatrix} a & b & c \\ a & b & c \\ d & e & f \end{vmatrix} = 0 \\
+        \end{flalign*}
+    \end{theorem}
+    \begin{theorem}
+        If all elements of a row (or column) of a determinant are multiplied by some scalar number k, the value of the new determinant is k times of the given determinant.
+        \begin{flalign*}
+             & \begin{vmatrix} a_1 & b_1 & c_1 \\ ka_2 & kb_2 & kc_2 \\ a_3 & b_3 & c_3 \end{vmatrix} = k\begin{vmatrix} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3 \end{vmatrix}
+        \end{flalign*}
+    \end{theorem}
+
+    \subsection{Practice 8}
+
+    Using the properties of determinants, prove that $\begin{vmatrix}
+            10  & -12 & 2  \\
+            -15 & 18  & 3  \\
+            5   & 6   & -1
+        \end{vmatrix} = 180\begin{vmatrix}
+            1  & -1 & 1  \\
+            -1 & 1  & 1  \\
+            1  & 1  & -1
+        \end{vmatrix}$.
+    \sol{}
+    \begin{flalign*}
+         & \begin{vmatrix} 10 & -12 & 2 \\ -15 & 18 & 3 \\ 5 & 6 & -1 \end{vmatrix} \\
+         & = 5\times6\begin{vmatrix}
+                         2  & -2 & 2  \\
+                         -3 & 3  & 3  \\
+                         1  & 1  & -1
+                     \end{vmatrix}                                    \\
+         & = 5\times6\times2\times3\times\begin{vmatrix}
+                                             1  & -1 & 1  \\
+                                             -1 & 1  & 1  \\
+                                             1  & 1  & -1
+                                         \end{vmatrix}                \\
+         & = 180\begin{vmatrix}
+                    1  & -1 & 1  \\
+                    -1 & 1  & 1  \\
+                    1  & 1  & -1
+                \end{vmatrix}
+    \end{flalign*}
+
+    \begin{theorem}
+        In a determinant each element in any row (or column) consists of the sum of two terms, then the determinant can be expressed as sum of two determinants of same order.
+        \begin{flalign*}
+             & \begin{vmatrix} a_1+d_1 & b_1 & c_1 \\ a_2+d_2 & b_2 & c_2 \\ a_3+d_3 & b_3 & c_3 \end{vmatrix} = \begin{vmatrix} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3 \end{vmatrix} + \begin{vmatrix} d_1 & b_1 & c_1 \\ d_2 & b_2 & c_2 \\ d_3 & b_3 & c_3 \end{vmatrix}
+        \end{flalign*}
+    \end{theorem}
+    \begin{theorem}
+        If a determinant is obtained by adding a row or column multiplied by a some scalar number k to a different row or column, then the value of the new determinant is the same as the original determinant.
+        \begin{flalign*}
+             & \begin{vmatrix} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3 \end{vmatrix} = \begin{vmatrix} a_1+ka_2 & b_1+kb_2 & c_1+kc_2 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3 \end{vmatrix}
+        \end{flalign*}
+    \end{theorem}
+
+    \subsection{Practice 9}
+
+    Prove that $\begin{vmatrix}
+            1 & 2 & 3 \\
+            4 & 5 & 6 \\
+            7 & 8 & 9
+        \end{vmatrix} = 0$.
+    \sol{}
+    \begin{flalign*}
+         & \begin{vmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{vmatrix}                                                            \\
+         & = \begin{vmatrix} 1 & 2 & 3 \\ 3 & 3 & 3 \\ 6 & 6 & 6 \end{vmatrix}  & (\text{Adding row 1 multiplied by -1 to row 2 and 3}) \\
+         & = 2\begin{vmatrix} 1 & 2 & 3 \\ 3 & 3 & 3 \\ 3 & 3 & 3 \end{vmatrix} & (\text{Theorem 4})                                    \\
+         & = 0                                                                         & (\text{Theorem 3})
+    \end{flalign*}
+
+    \begin{theorem}
+        The determinant of product of two matrices of equal size is equal to the product of determinants of each matrix, aka $|AB| = |A||B|$.
+    \end{theorem}
+
+    \subsection{Practice 10}
+
+    Let $A = \begin{vmatrix}
+            -2 & 1 \\
+            4  & 3
+        \end{vmatrix}$ and $B = \begin{vmatrix}
+            1 & x \\
+            2 & 3
+        \end{vmatrix}$. Given that $|AB| = -18$, find $x$.
+    \sol{}
+    \begin{flalign*}
+        \because\ |AB| = |A||B|      & = -18           \\
+        \therefore\ \begin{vmatrix}
+                        -2 & 1 \\
+                        4  & 3
+                    \end{vmatrix}\begin{vmatrix}
+                                     1 & x \\
+                                     2 & 3
+                                 \end{vmatrix} & = -18 \\
+        -2(3-2x)                     & = -18           \\
+        3-2x                         & = 9             \\
+        -2x                          & = 6             \\
+        x                            & = -3
+    \end{flalign*}
 \end{multicols}
 \end{document}

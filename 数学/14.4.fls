@@ -711,6 +711,8 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral-bo
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral-bold.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral-bold.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral-italic.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/stix/t1-stixgeneral.tfm
 INPUT 14.4.aux
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.pfb

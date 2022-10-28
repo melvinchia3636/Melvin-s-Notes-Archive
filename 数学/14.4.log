@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.4)  22 OCT 2022 22:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.4)  28 OCT 2022 20:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -734,20 +734,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 518--522
 
  []
 
-[4] [5] [6] (./14.4.aux) ) 
+[4] [5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 749--758
+\T1/stix/m/n/10 Using the prop-er-ties of de-ter-mi-nants, prove that
+ []
+
+[7] (./14.4.aux) ) 
 Here is how much of TeX's memory you used:
- 17819 strings out of 478268
- 337471 string characters out of 5846347
- 641035 words of memory out of 5000000
- 35707 multiletter control sequences out of 15000+600000
- 523053 words of font info for 85 fonts, out of 8000000 for 9000
+ 17821 strings out of 478268
+ 337499 string characters out of 5846347
+ 644035 words of memory out of 5000000
+ 35709 multiletter control sequences out of 15000+600000
+ 528597 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,14n,104p,459b,1057s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathcal.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb>
-Output written on 14.4.pdf (7 pages, 153434 bytes).
+Output written on 14.4.pdf (8 pages, 160742 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 70 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

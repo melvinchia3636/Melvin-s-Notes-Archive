@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1666447622 "/Users/melvinchia/Documents/involution/数学/14.4.tex" "14.4.pdf" "14.4" 1666447623
-  "/Users/melvinchia/Documents/involution/数学/14.4.tex" 1666447622 32954 4a1983f2043a11cfae9fc4b62cc055b4 ""
+["pdflatex"] 1666959004 "/Users/melvinchia/Documents/involution/数学/14.4.tex" "14.4.pdf" "14.4" 1666959005
+  "/Users/melvinchia/Documents/involution/数学/14.4.tex" 1666959003 39055 ca6d19d344ead52be4a6f3405ad3210c ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc" 1388795362 7013 c55cc8669071ac14036c4a0c96c16202 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -151,9 +151,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1664866760 2826441 8474f380415e09890165c8b89cc75542 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "14.4.aux" 1666447623 672 ee4056ec021d63332fe9c6d612e22bc5 "pdflatex"
-  "14.4.tex" 1666447622 32954 4a1983f2043a11cfae9fc4b62cc055b4 ""
-  "14.4.toc" 1666447623 394 7758860fef317bf9bd89340953181044 "pdflatex"
+  "14.4.aux" 1666959005 1097 2038556c7f00035f2acf0c24fe34b150 "pdflatex"
+  "14.4.tex" 1666959003 39055 ca6d19d344ead52be4a6f3405ad3210c ""
+  "14.4.toc" 1666959005 655 4eae01741d9cacfc5ad97fbaa7697f08 "pdflatex"
   (generated)
   "14.4.aux"
   "14.4.log"
