@@ -13,6 +13,7 @@
 \usepackage{stix}
 \usepackage{chngcntr}
 \usepackage{tikz}
+\usepackage{enumitem}
 \usetikzlibrary{calc,matrix}
 
 \counterwithout{equation}{chapter}
@@ -189,7 +190,7 @@
 
                   \begin{flalign*}
                     \textbf{sol{}.} & \sum_{n=1}^{6}{\frac{1}{n(2n+1)}}                                                   & \\
-                                    & = \frac{1}{1(2\cdot1+1)}+ \frac{1}{2(2\cdot2+1)}                                      \\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                & + \frac{1}{3(2\cdot3+1)} +
+                                    & = \frac{1}{1(2\cdot1+1)}+ \frac{1}{2(2\cdot2+1)}                                      \\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    & + \frac{1}{3(2\cdot3+1)} +
                     \frac{1}{4(2\cdot4+1)}                                                                                  \\ &+ \frac{1}{5(2\cdot5+1)}+ \frac{1}{6(2\cdot6+1)}        &  \\
                                     & = \frac{1}{3}+ \frac{1}{10}+ \frac{1}{21}+ \frac{1}{36}+ \frac{1}{55}+ \frac{1}{78}
                   \end{flalign*}
@@ -3788,7 +3789,7 @@
                   \sol{}
                   \begin{flalign*}
                        & 4A' - (C+B')
-                    \\                                                                                           & = 4\m{
+                    \\                                                                                                   & = 4\m{
                     2  & 1            \\
                     3  & 0
                     } - \left(\m{
@@ -7080,5 +7081,1754 @@
             \therefore\  & x = \frac{1}{3},\ y = -\frac{1}{2},\ z = \frac{1}{4}
           \end{flalign*}
   \end{enumerate}
+
+  \section{Revision Exercise 14}
+
+  Calculate the following (Question 1 to 4):
+
+  \begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+
+    \item $5\m{
+              -3 & -1 \\
+              3  & 4
+            } + 4\m{
+              6 & 2  \\
+              1 & -1
+            }$
+          \sol{}
+          \begin{flalign*}
+                & 5\m{
+            -3  & -1    \\
+            3   & 4
+            } + 4\m{
+            6   & 2     \\
+            1   & -1
+            }           \\
+                & = \m{
+            -15 & -5    \\
+            15  & 20
+            } + \m{
+            24  & 8     \\
+            4   & -4
+            }           \\
+                & = \m{
+            9   & 3     \\
+            19  & 16
+            }
+          \end{flalign*}
+
+    \item $-4\m{
+              3  & 0 \\
+              -1 & 5
+            } - 3\m{
+              1  & 0 \\
+              -1 & -1
+            }$
+          \sol{}
+          \begin{flalign*}
+                & -4\m{
+            3   & 0     \\
+            -1  & 5
+            } - 3\m{
+            1   & 0     \\
+            -1  & -1
+            }           \\
+                & = \m{
+            -12 & 0     \\
+            4   & -20
+            } - \m{
+            3   & 0     \\
+            -3  & -3
+            }           \\
+                & = \m{
+            -15 & 0     \\
+            7   & 17
+            }
+          \end{flalign*}
+
+    \item $\m{
+              2 & 6  & -1 \\
+              8 & -4 & 3  \\
+              5 & 7  & -2 \\
+            } + \m{
+              4  & -2 & 1 \\
+              -2 & 1  & 0 \\
+              -3 & 5  & -4
+            }$
+          \sol{}
+          \begin{flalign*}
+               & \m{
+            2  & 6     & -1 \\
+            8  & -4    & 3  \\
+            5  & 7     & -2
+            } + \m{
+            4  & -2    & 1  \\
+            -2 & 1     & 0  \\
+            -3 & 5     & -4
+            }               \\
+               & = \m{
+            6  & 4     & 0  \\
+            6  & -3    & 3  \\
+            2  & 12    & -6
+            }
+          \end{flalign*}
+
+    \item $2\m{
+              1 & -3 & 5  \\
+              7 & 2  & 0  \\
+              2 & 4  & -4
+            } - \m{
+              -2 & -6 & 2  \\
+              -5 & 1  & 1  \\
+              0  & 0  & -2
+            }$
+          \sol{}
+          \begin{flalign*}
+               & 2\m{
+            1  & -3    & 5  \\
+            7  & 2     & 0  \\
+            2  & 4     & -4
+            } - \m{
+            -2 & -6    & 2  \\
+            -5 & 1     & 1  \\
+            0  & 0     & -2
+            }               \\
+               & = \m{
+            2  & -6    & 10 \\
+            14 & 4     & 0  \\
+            4  & 8     & -8
+            } - \m{
+            -2 & -6    & 2  \\
+            -5 & 1     & 1  \\
+            0  & 0     & -2
+            }               \\
+               & = \m{
+            4  & 0     & 8  \\
+            19 & 3     & -1 \\
+            4  & 8     & -6
+            }
+          \end{flalign*}
+
+  \end{enumerate}
+
+  \begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+    \setcounter{enumi}{4}
+
+    \item Given that $\m{2\\-3} + 3\m{5 \\ y} = \m{x\\y}$, find the value of $x$ and $y$.
+          \sol{}
+          \begin{flalign*}
+            \m{2                                    \\-3} + 3\m{5 \\ y} &= \m{x\\y} \\
+            \m{2                                    \\-3} + \m{15 \\ 3y} &= \m{x\\y} \\
+            \m{17                                   \\ -3 + 3y} &= \m{x\\y} \\
+            x             & = 17                    \\
+            y             & = -3 + 3y               \\
+            2y            & = 3                     \\
+            y             & = \frac{3}{2}           \\
+            \therefore\ x & = 17, \ y = \frac{3}{2}
+          \end{flalign*}
+
+    \item Let $P = \m{ 3 & -2 & 1 \\ -1 & 2 &-3 \\ 4 & 0 & -2 }$, $Q = \m{ 1 & -5 & -4 \\
+              -2 & 0 & 6 \\ 3 & 2 & 3 }$ and $R = \m{ 4 & 0 & 5 \\ 1 & -2 & -7 \\ 0 & -2 & 1
+            }$. Find the following:
+
+          \begin{enumerate}
+
+            \item $2Q + R'$
+                  \sol{}
+                  \begin{flalign*}
+                    2Q + R' & = 2\m{ 1 & -5 & -4 \\
+                    -2      & 0        & 6       \\ 3 & 2 & 3 } + \m{
+                    4       & 0        & 5       \\
+                    1       & -2       & -7      \\
+                    0       & -2       & 1
+                    }'                           \\
+                            & = \m{
+                    2       & -10      & -8      \\
+                    -4      & 0        & 12      \\
+                    6       & 4        & 6
+                    } + \m{
+                    4       & 1        & 0       \\
+                    0       & -2       & -2      \\
+                    5       & -7       & 1
+                    }                            \\
+                            & = \m{
+                    6       & -9       & -8      \\
+                    -4      & -2       & 10      \\
+                    11      & -3       & 7
+                    }
+                  \end{flalign*}
+
+            \item $(P-R) + 2Q'$
+                  \sol{}
+                  \begin{flalign*}
+                        & (P-R) + 2Q'                \\
+                        & = \m{ 3          & -2 & 1  \\ -1 & 2 & -3 \\ 4 & 0 & -2 } - \m{
+                    4   & 0                & 5       \\
+                    1   & -2               & -7      \\
+                    0   & -2               & 1
+                    }                                \\
+                        & \ \ \ \ + 2\m{ 1 & -5 & -4 \\
+                    -2  & 0                & 6       \\ 3 & 2 & 3 }'                          &\\
+                        & = \m{
+                    -1  & -2               & -4      \\
+                    -2  & 4                & 4       \\
+                    4   & 2                & -3
+                    } + \m{
+                    2   & -4               & 6       \\
+                    -10 & 0                & 4       \\
+                    -8  & 12               & 6
+                    }                                \\
+                        & = \m{
+                    1   & 6                & 2       \\
+                    -12 & 4                & 8       \\
+                    -4  & 14               & 3
+                    }
+                  \end{flalign*}
+
+            \item $[2(Q-P)]'$
+                  \sol{}
+                  \begin{flalign*}
+                                      & [2(Q-P)]'             &                \\
+                                      & = \left\{2\left[\m{ 1 & -5        & -4 \\
+                    -2                & 0                     & 6              \\
+                    3                 & 2                     & 3 } - \m{
+                    3                 & -2                    & 1              \\
+                    -1                & 2                     & -3             \\
+                    4                 & 0                     & -2
+                    }\right]\right\}' &                                        \\
+                                      & = \left[2\m{
+                    -2                & -3                    & -5             \\
+                    -1                & -2                    & 9              \\
+                    -1                & 2                     & 5
+                    }\right]'         &                                        \\
+                                      & = \m{
+                    -4                & -6                    & -10            \\
+                    -2                & -4                    & 18             \\
+                    -2                & 4                     & 10
+                    }'                &                                        \\
+                                      & = \m{
+                    -4                & -2                    & -2             \\
+                    -6                & -4                    & 4              \\
+                    -10               & 18                    & 10
+                    }
+                  \end{flalign*}
+
+            \item $(R'-Q)'$
+                  \sol{}
+                  \begin{flalign*}
+                    (R'-Q)' & = \left[\m{
+                    4       & 0           & 5  \\
+                    1       & -2          & -7 \\
+                    0       & -2          & 1
+                    }' - \m{
+                    1       & -5          & -4 \\
+                    -2      & 0           & 6  \\
+                    3       & 2           & 3
+                    }\right]'                  \\
+                            & = \m{
+                    4       & 0           & 5  \\
+                    1       & -2          & -7 \\
+                    0       & -2          & 1
+                    } - \m{
+                    1       & -5          & -4 \\
+                    -2      & 0           & 6  \\
+                    3       & 2           & 3
+                    }'                         \\
+                            & = \m{
+                    4       & 0           & 5  \\
+                    1       & -2          & -7 \\
+                    0       & -2          & 1
+                    } - \m{
+                    1       & -2          & 3  \\
+                    -5      & 0           & 2  \\
+                    -4      & 6           & 3
+                    }                          \\
+                            & = \m {
+                    3       & 2           & 2  \\
+                    6       & -2          & -9 \\
+                    4       & -8          & -2
+                    }
+                  \end{flalign*}
+
+          \end{enumerate}
+
+    \item Let $M = \m{ -1 & 0 \\ 4 & -3 \\ 2 & 4 }$ and $N = \m{ 3 & 6 \\ 7 & -1 \\ -4 &
+              2 }$. Find the matrix $X$ in the following equations:
+
+          \begin{enumerate}
+
+            \item $2N - 3M = 2M - X$
+                  \sol{}
+                  \begin{flalign*}
+                    2N - 3M & = 2M - X  \\
+                    X       & = 5M - 2N \\
+                            & = 5\m{
+                    -1      & 0         \\
+                    4       & -3        \\
+                    2       & 4
+                    } - 2\m{
+                    3       & 6         \\
+                    7       & -1        \\
+                    -4      & 2
+                    }                   \\
+                            & = \m{
+                    -5      & 0         \\
+                    20      & -15       \\
+                    10      & 20
+                    } - \m{
+                    6       & 12        \\
+                    14      & -2        \\
+                    -8      & 4
+                    }                   \\
+                            & = \m{
+                    -11     & -12       \\
+                    6       & -13       \\
+                    18      & 16
+                    }
+                  \end{flalign*}
+
+            \item $2(M-2N) + X = M + N$
+                  \sol{}
+                  \begin{flalign*}
+                    2(M-2N) + X & = M + N           \\
+                    X           & = M + N - 2(M-2N) \\
+                                & = M + N - 2M + 4N \\
+                                & = -M + 5N         \\
+                                & = -\m{
+                    -1          & 0                 \\
+                    4           & -3                \\
+                    2           & 4
+                    } + 5\m{
+                    3           & 6                 \\
+                    7           & -1                \\
+                    -4          & 2
+                    }                               \\
+                                & = \m{
+                    1           & 0                 \\
+                    -4          & 3                 \\
+                    -2          & -4
+                    } + \m{
+                    15          & 30                \\
+                    35          & -5                \\
+                    -20         & 10
+                    }                               \\
+                                & = \m{
+                    16          & 30                \\
+                    31          & -2                \\
+                    -22         & 6
+                    }
+                  \end{flalign*}
+
+            \item $(M + 2N)' = X$
+                  \sol{}
+                  \begin{flalign*}
+                    (M + 2N)' & = X              \\
+                    X         & = (M + 2N)'      \\
+                              & = \left[\m{
+                    -1        & 0                \\
+                    4         & -3               \\
+                    2         & 4
+                    } + 2\m{
+                    3         & 6                \\
+                    7         & -1               \\
+                    -4        & 2
+                    }\right]'                    \\
+                              & = \left[\m{
+                    -1        & 0                \\
+                    4         & -3               \\
+                    2         & 4
+                    } + \m{
+                    6         & 12               \\
+                    14        & -2               \\
+                    -8        & 4
+                    }      \right]               \\
+                              & = \m{
+                    5         & 12               \\
+                    18        & -5               \\
+                    -6        & 8
+                    }'                           \\
+                              & = \m{
+                    5         & 18          & -6 \\
+                    12        & -5          & 8
+                    }
+                  \end{flalign*}
+
+            \item $3N' - M' = 2X$
+                  \sol{}
+                  \begin{flalign*}
+                    3N' - M' & = 2X               \\
+                    2X       & = (3N - M)'        \\
+                             & = \left[3\m{
+                    3        & 6                  \\
+                    7        & -1                 \\
+                    -4       & 2
+                    } - \m{
+                    -1       & 0                  \\
+                    4        & -3                 \\
+                    2        & 4
+                    }\right]'                     \\
+                             & = \left[\m{
+                    9        & 18                 \\
+                    21       & -3                 \\
+                    -12      & 6
+                    } - \m{
+                    -1       & 0                  \\
+                    4        & -3                 \\
+                    2        & 4
+                    }\right]'                     \\
+                             & = \m{
+                    10       & 18                 \\
+                    17       & 0                  \\
+                    -14      & 2
+                    }'                            \\
+                             & = \m{
+                    10       & 17           & -14 \\
+                    18       & 0            & 2
+                    }                             \\
+                    X        & = \m{
+                    5        & \frac{17}{2} & -7  \\
+                    9        & 0            & 1
+                    }
+                  \end{flalign*}
+
+          \end{enumerate}
+
+  \end{enumerate}
+
+  \noindent Of the following matrices, determine if $AB$ and $BA$ are defined. If any of them is
+  defined, find the value of them (Question 8 to 11):
+
+  \begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+    \setcounter{enumi}{7}
+
+    \item $A = \m{
+              3 \\
+              1 \\
+              4
+            }$, $B = \m{
+              1  & 0 & 2  \\
+              -2 & 0 & 1  \\
+              1  & 1 & -1
+            }$
+          \sol{}
+          \begin{flalign*}
+               & \because\ \parbox{2.5in}{The number of columns of $A$ is not equal to the number of rows of
+            $B$}                                                                                                 \\ & \therefore\ \text{$AB$ is not defined} \\\\  & \because\ \parbox{2.5in}{The number of columns of $B$ is equal to the number of rows of $A$}
+            \\ & \therefore\ \text{$BA$ is defined} \\ & \therefore\ BA = \m{ 1 & 0 & 2 \\
+            -2 & 0                                                                                           & 1 \\ 1 & 1 & -1 } \m{ 3 \\ 1 \\ 4 } = \m{ 11 \\ -2 \\ 0 }
+          \end{flalign*}
+
+    \item $A = \m{
+              -5 & 4 & 3 \\
+              1  & 2 & 3
+            }$, $B = \m{
+              -2 & 1  \\
+              -3 & 0  \\
+              1  & -4
+            }$
+          \sol{}
+          \begin{flalign*}
+                & \because\ \parbox{2.5in}{The number of columns of $A$ is equal to the number of rows of $B$}
+            \\ & \therefore\ \text{$AB$ is defined} \\ & \therefore\ AB = \m{ -5 & 4 & 3 \\
+            1   & 2                                                                                            & 3 } \m{ -2 & 1 \\ -3 & 0 \\ 1 & -4 } = \m{ 1 & -17 \\ -5 & -11 } \\\\  &
+              \because\ \parbox{2.5in}{The number of columns of $B$ is equal to the number of rows of $A$}
+            \\ & \therefore\ \text{$BA$ is defined} \\ & \therefore\ BA = \m{ -2 & 1 \\ -3
+                & 0                                                                                                             \\ 1 & -4 } \m{ -5 & 4 & 3 \\ 1 & 2 & 3 } \\ &= \m{ 11 & -6 & -3 \\ 13  &
+            -12 & -9                                                                                                            \\ -9 & -4 & -9 }
+          \end{flalign*}
+
+    \item $A = \m{
+              3  & 2 & -1 \\
+              5  & 4 & 0  \\
+              -2 & 6 & 1
+            }$, $B = \m{
+              9  & 0 \\
+              -7 & 1 \\
+              2  & 3
+            }$
+          \sol{}
+          \begin{flalign*}
+              & \because\ \parbox{2.5in}{The number of columns of $A$ is equal to the number of rows of $B$}
+            \\ & \therefore\ \text{$AB$ is defined} \\ & \therefore\ AB = \m{ 3 & 2 & -1 \\
+            5 & 4                                                                                            & 0 \\ -2 & 6 & 1 } \m{ 9 & 0 \\ -7 & 1 \\ 2 & 3 } = \m{ 11 & -1 \\ 17 &
+            4                                                                                                    \\ -58 & 9 } \\\\  & \because\ \parbox{2.5in}{The number of columns of $B$ is not equal to the number of rows of
+            $A$}                                                                                                 \\ & \therefore\ \text{$BA$ is not defined}
+          \end{flalign*}
+
+    \item $A = \m{
+              2 & 0 \\
+              4 & 1
+            }$, $B = \m{
+              3 & 0 \\
+              1 & 4 \\
+              5 & 2
+            }$
+          \sol{}
+          \begin{flalign*}
+             & \because\ \parbox{2.5in}{The number of columns of $A$ is not equal to the number of rows of
+            $B$}                                                                                           \\ & \therefore\ \text{$AB$ is not defined} \\\\  & \because\ \parbox{2.5in}{The number of columns of $B$ is equal to the number of rows of $A$}
+            \\ & \therefore\ \text{$BA$ is defined} \\ & \therefore\ BA = \m{ 3 & 0 \\ 1 &
+            4                                                                                              \\ 5 & 2 } \m{ 2 & 0 \\ 4 & 1 } = \m{ 6 & 0 \\ 10 & 4 \\ 18 & 2 }
+          \end{flalign*}
+
+  \end{enumerate}
+
+  \begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+    \setcounter{enumi}{11}
+
+    \item Given that $A = \m{ a & 3a \\ 2b & b }$, $B = \m{ 3\\ 2 }$, $AB = \m{ 45 \\ 48
+            }$, find the value of $a$ and $b$. \sol{}
+          \begin{flalign*}
+            AB = \m{ a & 3a       \\ 2b & b } \m{ 3 \\ 2 } &= \m{ 45 \\ 48 }\\
+            \m{
+            3a + 6a               \\
+            6b + 2b
+            }          & = \m{ 45 \\ 48 }\\
+            9a         & = 45     \\
+            8b         & = 48     \\
+            a          & = 5      \\
+            b          & = 6
+          \end{flalign*}
+
+    \item Given that $A = \m{ 3 & 0 \\ 0 & 4 }$, $B = \m{ a & b \\ 0 & c }$, $A + B =
+            AB$, find the value of $a$, $b$ and $c$. \sol{}
+          \begin{flalign*}
+            A + B                        & = AB                  \\
+            \m{ 3                        & 0                     \\ 0 & 4 } + \m{ a & b \\ 0 & c } &= \m{ 3 & 0 \\ 0 & 4 } \m{ a & b \\ 0 & c } \\
+            \m{ 3 + a                    & b                     \\ 0 & 4 + c } &= \m{ 3a & 3b \\ 0 & 4c } \\
+            3 + a                        & = 3a                  \\
+            2a                           & = 3                   \\
+            b                            & = 3b                  \\
+            2b                           & = 0                   \\
+            4 + c                        & = 4c                  \\
+            3c                           & = 4                   \\
+            a          = \frac{3}{2},\ b & = 0,\ c = \frac{4}{3}
+          \end{flalign*}
+
+  \end{enumerate}
+
+  \noindent Find the value of the following determinants (Question 14 to 22):
+
+  \begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+    \setcounter{enumi}{13}
+
+    \item $\vm{
+              20 & 15\\
+              8 & 6
+            }$
+          \sol{}
+          \begin{flalign*}
+            \vm{
+            20 & 15                        \\
+            8  & 6
+            }  & = 20 \cdot 6 - 15 \cdot 8 \\
+               & = 120 - 120               \\
+               & = 0
+          \end{flalign*}
+
+    \item $\vm{
+              6 & -7\\
+              15 & -2
+            }$
+          \sol{}
+          \begin{flalign*}
+            \vm{
+            6  & -7                           \\
+            15 & -2
+            }  & = 6 \cdot -2 - (-7) \cdot 15 \\
+               & = -12 + 105                  \\
+               & = 93
+          \end{flalign*}
+
+    \item $\vm{
+              -4 & -10\\
+              12 & 7
+            }$
+          \sol{}
+          \begin{flalign*}
+            \vm{
+            -4 & -10                           \\
+            12 & 7
+            }  & = -4 \cdot 7 - (-10) \cdot 12 \\
+               & = -28 + 120                   \\
+               & = 92
+          \end{flalign*}
+
+    \item $\vm{
+              3 & 3 & -6\\
+              2 & -2 & 0\\
+              3 & 0 & -3
+            }$
+          \begin{center}
+            \begin{tikzpicture}
+              \matrix [%
+                matrix of math nodes,
+                column sep=1em,
+                row sep=1em
+              ] (sarrus) {%
+                3 & 3  & -6 & 3 & 3  \\
+                2 & -2 & 0  & 2 & -2 \\
+                3 & 0  & -3 & 3 & 0  \\
+              };
+
+              \path ($(sarrus-1-3.north east)+(0.5em,0)$) edge[dotted] ($(sarrus-3-3.south east)+(0.5em,0)$)
+              (sarrus-1-1)                          edge         (sarrus-2-2)
+              (sarrus-2-2)                          edge         (sarrus-3-3)
+              (sarrus-1-2)                          edge         (sarrus-2-3)
+              (sarrus-2-3)                          edge         (sarrus-3-4)
+              (sarrus-1-3)                          edge         (sarrus-2-4)
+              (sarrus-2-4)                          edge         (sarrus-3-5)
+              (sarrus-3-1)                          edge[dashed] (sarrus-2-2)
+              (sarrus-2-2)                          edge[dashed] (sarrus-1-3)
+              (sarrus-3-2)                          edge[dashed] (sarrus-2-3)
+              (sarrus-2-3)                          edge[dashed] (sarrus-1-4)
+              (sarrus-3-3)                          edge[dashed] (sarrus-2-4)
+              (sarrus-2-4)                          edge[dashed] (sarrus-1-5);
+
+              \foreach \c in {1,2,3} {\node[anchor=south] at (sarrus-1-\c.north) {$+$};};
+              \foreach \c in {1,2,3} {\node[anchor=north] at (sarrus-3-\c.south) {$-$};};
+            \end{tikzpicture}
+          \end{center}
+          \sol{}
+          \begin{flalign*}
+            \vm{
+            3 & 3                          & -6 \\
+            2 & -2                         & 0  \\
+            3 & 0                          & -3
+            } & = 18 + 0 + 0 - 36 - 0 + 18      \\
+              & = 0
+          \end{flalign*}
+
+    \item $\vm{
+              5 & 7 & 1\\
+              -3 & 6 & 9\\
+              4 & 7 & 3
+            }$
+          \begin{center}
+            \begin{tikzpicture}
+              \matrix [%
+                matrix of math nodes,
+                column sep=1em,
+                row sep=1em
+              ] (sarrus) {%
+                5  & 7 & 1 & 5  & 7 \\
+                -3 & 6 & 9 & -3 & 6 \\
+                4  & 7 & 3 & 4  & 7 \\
+              };
+
+              \path ($(sarrus-1-3.north east)+(0.5em,0)$) edge[dotted] ($(sarrus-3-3.south east)+(0.5em,0)$)
+              (sarrus-1-1)                          edge         (sarrus-2-2)
+              (sarrus-2-2)                          edge         (sarrus-3-3)
+              (sarrus-1-2)                          edge         (sarrus-2-3)
+              (sarrus-2-3)                          edge         (sarrus-3-4)
+              (sarrus-1-3)                          edge         (sarrus-2-4)
+              (sarrus-2-4)                          edge         (sarrus-3-5)
+              (sarrus-3-1)                          edge[dashed] (sarrus-2-2)
+              (sarrus-2-2)                          edge[dashed] (sarrus-1-3)
+              (sarrus-3-2)                          edge[dashed] (sarrus-2-3)
+              (sarrus-2-3)                          edge[dashed] (sarrus-1-4)
+              (sarrus-3-3)                          edge[dashed] (sarrus-2-4)
+              (sarrus-2-4)                          edge[dashed] (sarrus-1-5);
+
+              \foreach \c in {1,2,3} {\node[anchor=south] at (sarrus-1-\c.north) {$+$};};
+              \foreach \c in {1,2,3} {\node[anchor=north] at (sarrus-3-\c.south) {$-$};};
+            \end{tikzpicture}
+          \end{center}
+          \sol{}
+          \begin{flalign*}
+            \vm{
+            5  & 7                               & 1 \\
+            -3 & 6                               & 9 \\
+            4  & 7                               & 3
+            }  & = 90 + 252 - 21 - 24 - 315 + 63     \\
+               & = 45
+          \end{flalign*}
+
+    \item $\vm{
+              -2 & 7 & -4\\
+              3 & -5 & 2\\
+              -1 & 0 & -3
+            }$
+          \begin{center}
+            \begin{tikzpicture}
+              \matrix [%
+                matrix of math nodes,
+                column sep=1em,
+                row sep=1em
+              ] (sarrus) {%
+                -2 & 7  & -4 & -2 & 7  \\
+                3  & -5 & 2  & 3  & -5 \\
+                -1 & 0  & -3 & -1 & 0  \\
+              };
+
+              \path ($(sarrus-1-3.north east)+(0.5em,0)$) edge[dotted] ($(sarrus-3-3.south east)+(0.5em,0)$)
+              (sarrus-1-1)                          edge         (sarrus-2-2)
+              (sarrus-2-2)                          edge         (sarrus-3-3)
+              (sarrus-1-2)                          edge         (sarrus-2-3)
+              (sarrus-2-3)                          edge         (sarrus-3-4)
+              (sarrus-1-3)                          edge         (sarrus-2-4)
+              (sarrus-2-4)                          edge         (sarrus-3-5)
+              (sarrus-3-1)                          edge[dashed] (sarrus-2-2)
+              (sarrus-2-2)                          edge[dashed] (sarrus-1-3)
+              (sarrus-3-2)                          edge[dashed] (sarrus-2-3)
+              (sarrus-2-3)                          edge[dashed] (sarrus-1-4)
+              (sarrus-3-3)                          edge[dashed] (sarrus-2-4)
+              (sarrus-2-4)                          edge[dashed] (sarrus-1-5);
+
+              \foreach \c in {1,2,3} {\node[anchor=south] at (sarrus-1-\c.north) {$+$};};
+              \foreach \c in {1,2,3} {\node[anchor=north] at (sarrus-3-\c.south) {$-$};};
+            \end{tikzpicture}
+          \end{center}
+          \sol{}
+          \begin{flalign*}
+            \vm{
+            -2 & 7                            & -4 \\
+            3  & -5                           & 2  \\
+            -1 & 0                            & -3
+            }  & = -30 - 14 - 0 + 20 + 0 + 63      \\
+               & = -39
+          \end{flalign*}
+
+    \item $\vm{
+              1 & 0 & -1\\
+              3 & -2 & 5\\
+              -1 & 1 & 3
+            }$
+          \sol{}
+          \begin{flalign*}
+            \vm{
+            1  & 0                   & -1 \\
+            3  & -2                  & 5  \\
+            -1 & 1                   & 3
+            }  & = \vm{
+            -2 & 5                        \\
+            1  & 3
+            } -3 \vm{
+            0  & -1                       \\
+            1  & 3
+            } - \vm{
+            0  & -1                       \\
+            -2 & 5
+            }                             \\
+               & = -11 - 3 + 2 = -12
+          \end{flalign*}
+
+    \item $\vm{
+              2 & 6 & 4\\
+              1 & 3 & 1\\
+              -2 & -6 & 5
+            }$
+          \sol{}
+          \begin{flalign*}
+            \vm{
+            2  & 6                                              & 4 \\
+            1  & 3                                              & 1 \\
+            -2 & -6                                             & 5
+            }  & = 3\vm{
+            2  & 2                                              & 4 \\
+            1  & 1                                              & 1 \\
+            -2 & -2                                             & 5
+            }  &                                                    \\
+               & = 0\ \ \ \ \ \text{(col 1 and 2 are the same)}     \\
+          \end{flalign*}
+
+    \item $\vm{
+              10 & 8 & -2\\
+              15 & 16 & -3\\
+              -5 & -4 & 1
+            }$
+          \sol{}
+          \begin{flalign*}
+            \vm{
+            10 & 8                                              & -2 \\
+            15 & 16                                             & -3 \\
+            -5 & -4                                             & 1
+            }  & = -5\vm{
+            2  & 8                                              & 2  \\
+            3  & 16                                             & 3  \\
+            -1 & -4                                             & -1
+            }                                                        \\
+               & = 0\ \ \ \ \ \text{(col 1 and 3 are the same)}
+          \end{flalign*}
+
+  \end{enumerate}
+
+  \noindent Using the identities of determinant, prove the following equations (Question 23
+  to 24):
+
+  \begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+    \setcounter{enumi}{22}
+
+    \item $\vm{
+              bc & 1 & bc(b+c)\\
+              ca & 1 & ca(c+a)\\
+              ab & 1 & ab(a+b)
+            } = 0$
+          \prooff{}
+          \begin{flalign*}
+               & \vm{
+            bc & 1                              & bc(b+c)   \\
+            ca & 1                              & ca(c+a)   \\
+            ab & 1                              & ab(a+b)
+            }                                               \\
+               & = a^2b^2c^2\vm{
+            1  & \frac{1}{bc}                   & b+c       \\
+            1  & \frac{1}{ca}                   & c+a       \\
+            1  & \frac{1}{ab}                   & a+b
+            }                                               \\
+               & = a^2b^2c^2\vm{
+            1  & \frac{1}{bc}                   & -a        \\
+            1  & \frac{1}{ca}                   & -b        \\
+            1  & \frac{1}{ab}                   & -c
+            }  & C_3 \rightarrow C_3+(a+b+c)C_1             \\
+               & = a^2b^2c^2\vm{
+            1  & a                              & -a        \\
+            1  & b                              & -b        \\
+            1  & c                              & -c
+            }  & C_2 \rightarrow C_2 + abcC_1               \\
+               & = -a^2b^2c^2\vm{
+            1  & a                              & a         \\
+            1  & b                              & b         \\
+            1  & c                              & c
+            }                                               \\
+               & = 0                            & C_2 = C_3
+          \end{flalign*}
+
+    \item $\vm{
+              a & 1 & a^2(b+c)\\
+              b & 1 & b^2(c+a)\\
+              c & 1 & c^2(a+b)
+            } = 0$
+          \prooff{}
+          \begin{flalign*}
+                  & \vm{
+            a     & 1                                                     & a^2(b+c)            \\
+            b     & 1                                                     & b^2(c+a)            \\
+            c     & 1                                                     & c^2(a+b)
+            }                                                                                   \\
+                  & = \vm {
+            a     & 1                                                     & a^2(b+c)            \\
+            b - a & 0                                                     & b^2(c+a) - a^2(b+c) \\
+            c - a & 0                                                     & c^2(a+b) - a^2(b+c)
+            }                                                                                   \\
+                  & R_2 \rightarrow R_2 - R_1,\ R_3 \rightarrow R_3 - R_1                       \\
+                  & = \vm {
+            b-a   & b^2(c+a) - a^2(b+c)                                                         \\
+            c-a   & c^2(a+b) - a^2(b+c)
+            }                                                                                   \\
+                  & = (b-a)[c^2(a+b) - a^2(b+c)]                                                \\
+                  & \ \ \ \ - (c-a)[b^2(c+a) - a^2(b+c)]                                        \\
+                  & = c^2(b-a)(b+a) - a^2(b+c)(c-a)                                             \\
+                  & \ \ \ \ - b^2(c-a)(c+a) + a^2(b+c)(c-a)                                     \\
+                  & = c^2(b^2-a^2) - b^2(c^2-a^2)                                               \\
+                  & = b^2c^2 - a^2c^2 - b^2c^2 + a^2c^2                                         \\
+                  & = 0
+          \end{flalign*}
+
+  \end{enumerate}
+
+  Find the value of $x$ in the following expressions (Question 25 to 26):
+
+  \begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+    \setcounter{enumi}{24}
+
+    \item $\vm{
+              2x & 3 & x+5\\
+              -3 & 2 & 1\\
+              2 & 1 & 0
+            } = 5x - 1$
+          \sol{}
+          \begin{flalign*}
+            \vm{
+            2x                 & 3        & x+5 \\
+            -3                 & 2        & 1   \\
+            2                  & 1        & 0
+            }                  & = 5x - 1       \\
+            x+5\vm{
+            -3                 & 2              \\
+            2                  & 1
+            } - \vm{
+            2x                 & 3              \\
+            2                  & 1
+            }                  & = 5x - 1       \\
+            -7(x+5) - (2x - 6) & = 5x - 1       \\
+            -7x - 35 -2x + 6   & = 5x - 1       \\
+            -14x               & = 28           \\
+            x                  & = -2
+          \end{flalign*}
+
+    \item $\vm{
+              x+3 & 1 & 0\\
+              x & 3 & 0\\
+              1 & 0 & -x-2
+            } = x + 6$
+          \sol{}
+          \begin{flalign*}
+            \vm{
+            x+3             & 1                       & 0    \\
+            x               & 3                       & 0    \\
+            1               & 0                       & -x-2
+            }               & = x + 6                        \\
+            -x-2\vm{
+            x+3             & 1                              \\
+            x               & 3
+            }               & = x + 6                        \\
+            -(x+2)(3x+9-x)  & = x + 6                        \\
+            (x+2)(2x+9)     & = -x-6                         \\
+            2x^2 + 13x + 18 & = -x-6                         \\
+            2x^2 + 14x + 24 & = 0                            \\
+            x^2 + 7x + 12   & = 0                            \\
+            (x+4)(x+3)      & = 0                            \\
+            x               & = -4 \text{ or } x = -3
+          \end{flalign*}
+
+  \end{enumerate}
+
+  \begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+    \setcounter{enumi}{26}
+
+    \item Given an identity matrix $I = \m{ 1 & 0\\ 0 & 1 }$. Let $J = \m{ 0 & 1\\ -1 & 0
+            }$, ${(2I+J)}^{-1} = rI + sJ$, find the value of $r$ and $s$. \sol{}
+          \begin{flalign*}
+            {(2I+J)}^{-1}   & = {\left[2\m{
+            1               & 0                                \\
+            0               & 1
+            } + \m{
+            0               & 1                                \\
+            -1              & 0
+            }\right]}^{-1}                                     \\
+                            & = {\left[\m{
+            2               & 0                                \\
+            0               & 2
+            } + \m{
+            0               & 1                                \\
+            -1              & 0
+            }\right]}^{-1}                                     \\
+                            & = \m{
+            2               & 1                                \\
+            -1              & 2
+            }^{-1}                                             \\
+                            & = \frac{1}{5}\m{
+            2               & -1                               \\
+            1               & 2
+            }                                                  \\
+                            & = \m{
+            \frac{2}{5}     & -\frac{1}{5}                     \\
+            \frac{1}{5}     & \frac{2}{5}
+            }                                                  \\
+            rI + sJ         & = r\m{
+            1               & 0                                \\
+            0               & 1
+            } + s\m{
+            0               & 1                                \\
+            -1              & 0
+            }                                                  \\
+                            & = \m{
+            r               & 0                                \\
+            0               & r
+            } + \m{
+            0               & s                                \\
+            -s              & 0
+            }                                                  \\
+                            & = \m{
+            r               & s                                \\
+            -s              & r
+            }                                                  \\
+            {(2I + J)}^{-1} & = rI + sJ                        \\
+            \m{
+            \frac{2}{5}     & -\frac{1}{5}                     \\
+            \frac{1}{5}     & \frac{2}{5}
+            }               & = \m{
+            r               & s                                \\
+            -s              & r
+            }                                                  \\
+            \therefore\ r   & = \frac{2}{5},\ s = -\frac{1}{5}
+          \end{flalign*}
+
+  \end{enumerate}
+
+  \noindent Find the value of $a$ in the following matrices if they are non-inversible (Question 28 to 31):
+
+  \begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+    \setcounter{enumi}{27}
+
+    \item $\m{
+              3 & a\\
+              -2 & 6
+            }$
+          \sol{}
+          \begin{flalign*}
+            \vm{
+            3       & a     \\
+            -2      & 6
+            }       & = 0   \\
+            18 + 2a & = 0   \\
+            2a      & = -18 \\
+            a       & = -9
+          \end{flalign*}
+
+    \item $\m{
+              5a + 2 & 4\\
+              6 & a
+            }$
+          \sol{}
+          \begin{flalign*}
+            \vm{
+            5a + 2                            & 4              \\
+            6                                 & a
+            }                                 & = 0            \\
+            5a^2 + 2a - 24                    & = 0            \\
+            (x-2)(5x + 12)                    & = 0            \\
+            x               = 2 \text{ or } x & = \frac{12}{5}
+          \end{flalign*}
+
+    \item $\m{
+              -7 & a & 3\\
+              2 & -3 & 1\\
+              0 & -a & 4
+            }$
+          \sol{}
+          \begin{flalign*}
+            \vm{
+            -7                       & a    & 3 \\
+            2                        & -3   & 1 \\
+            0                        & -a   & 4
+            }                        & = 0      \\
+            -7\vm{
+            -3                       & 1        \\
+            -a                       & 4
+            } - 2\vm{
+            a                        & 3        \\
+            -a                       & 4
+            }                        & =0       \\
+            -7(-12 + a) - 2(4a + 3a) & = 0      \\
+            84 - 7a - 14a            & = 0      \\
+            21a                      & = 84     \\
+            a                        & = 4
+          \end{flalign*}
+
+    \item $\m{
+              a & -1 & 0\\
+              4 & 0 & -2\\
+              a+4 & a & -8
+            }$
+          \sol{}
+          \begin{flalign*}
+            \vm{
+            a                  & -1                     & 0  \\
+            4                  & 0                      & -2 \\
+            a+4                & a                      & -8
+            }                  & = 0                         \\
+            a\vm{
+            0                  & -2                          \\
+            a                  & -8
+            } + \vm {
+            4                  & -2                          \\
+            a+4                & -8
+            }                                                \\
+            2a^2 - 32 + 2a + 8 & = 0                         \\
+            2a^2 + 2a - 24     & = 0                         \\
+            a^2 + a - 12       & = 0                         \\
+            (a+4)(a-3)         & = 0                         \\
+            a                  & = -4 \text{ or } a = 3
+          \end{flalign*}
+
+  \end{enumerate}
+
+  \noindent Find the inverse of the following matrices (Question 32 to 37):
+
+  \begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+    \setcounter{enumi}{31}
+
+    \item $\m{
+              2 & 5\\
+              2 & 3
+            }$
+          \sol{}
+          \begin{flalign*}
+            \m{
+            2            & 5                 \\
+            2            & 3
+            }^{-1}       & = -\frac{1}{4}\m{
+            3            & -5                \\
+            -2           & 2
+            }                                \\
+                         & = \m{
+            -\frac{3}{4} & \frac{5}{4}       \\
+            \frac{1}{2}  & -\frac{1}{2}
+            }
+          \end{flalign*}
+
+    \item $\m{
+              -2 & -1 \\
+              4 & 6
+            }$
+          \sol{}
+          \begin{flalign*}
+            \m{
+            -2           & -1                \\
+            4            & 6
+            }^{-1}       & = -\frac{1}{8}\m{
+            6            & 1                 \\
+            -4           & -2
+            }                                \\
+                         & = \m{
+            -\frac{3}{8} & -\frac{1}{8}      \\
+            \frac{1}{2}  & \frac{1}{4}
+            }
+          \end{flalign*}
+
+    \item $\m{
+              1 & 0 & 3\\
+              3 & 1 & 9\\
+              -2 & 2 & -4
+            }$
+          \sol{}
+          \begin{flalign*}
+                & \vm{
+            1   & 0                      & 3            \\
+            3   & 1                      & 9            \\
+            -2  & 2                      & -4
+            }  = 2                                      \\
+                & \operatorname{adj} \m{
+            1   & 0                      & 3            \\
+            3   & 1                      & 9            \\
+            -2  & 2                      & -4
+            }                                           \\
+                & = \m{
+            \vm{
+            1   & 9                                     \\
+            2   & -4
+            }   & -\vm{
+            3   & 9                                     \\
+            -2  & -4
+            }   & \vm{
+            3   & 1                                     \\
+            -2  & 2
+            }                                           \\
+            -\vm{
+            0   & 3                                     \\
+            2   & -4
+            }   & \vm{
+            1   & 3                                     \\
+            -2  & -4
+            }   & -\vm{
+            1   & 0                                     \\
+            -2  & 2
+            }                                           \\
+            \vm{
+            0   & 3                                     \\
+            1   & 9                                     \\
+            }   & -\vm{
+            1   & 3                                     \\
+            3   & 9
+            }   & \vm{
+            1   & 0                                     \\
+            3   & 1
+            }
+            }'                                          \\
+                & =\m{
+            -22 & -6                     & 8            \\
+            6   & 2                      & -2           \\
+            -3  & 0                      & 1
+            }'                                          \\
+                & = \m{
+            -22 & 6                      & -3           \\
+            -6  & 2                      & 0            \\
+            8   & -2                     & 1
+            }'                                          \\
+                & \therefore\ \m{
+            1   & 0                      & 3            \\
+            3   & 1                      & 9            \\
+            -2  & 2                      & -4
+            }^{-1}                                      \\
+                & = \frac{1}{2}\m{
+            -22 & 6                      & -3           \\
+            -6  & 2                      & 0            \\
+            8   & -2                     & 1
+            }                                           \\
+                & = \m{
+            -11 & 3                      & -\frac{3}{2} \\
+            -3  & 1                      & 0            \\
+            4   & -1                     & \frac{1}{2}
+            }
+          \end{flalign*}
+
+    \item $\m{
+              1 & 2 & -3\\
+              2 & 1 & -4\\
+              -2 & 5 & 1
+            }$
+          \sol{}
+          \begin{flalign*}
+                & \vm{
+            1   & 2                      & -3           \\
+            2   & 1                      & -4           \\
+            -2  & 5                      & 1
+            }  = -3                                     \\
+                & \operatorname{adj} \m{
+            1   & 2                      & -3           \\
+            2   & 1                      & -4           \\
+            -2  & 5                      & 1
+            }                                           \\
+                & = \m{
+            \vm{
+            1   & -4                                    \\
+            5   & 1
+            }   & -\vm{
+            2   & -4                                    \\
+            -2  & 1
+            }   & \vm{
+            2   & 1                                     \\
+            -2  & 5
+            }                                           \\
+            -\vm{
+            2   & -3                                    \\
+            5   & 1
+            }   & \vm{
+            1   & -3                                    \\
+            -2  & 1
+            }   & -\vm{
+            1   & 2                                     \\
+            -2  & 5
+            }                                           \\
+            \vm{
+            2   & -3                                    \\
+            1   & -4                                    \\
+            }   & -\vm{
+            1   & -3                                    \\
+            2   & -4
+            }   & \vm{
+            1   & 2                                     \\
+            2   & 1
+            }
+            }'                                          \\
+                & = \m{
+            21  & 6                      & 12           \\
+            -17 & -5                     & -9           \\
+            -5  & -2                     & -3
+            }'                                          \\
+                & = \m{
+            21  & -17                    & -5           \\
+            6   & -5                     & -2           \\
+            12  & -9                     & -3
+            }'                                          \\
+                & \therefore\ \m{
+            1   & 2                      & -3           \\
+            2   & 1                      & -4           \\
+            -2  & 5                      & 1
+            }^{-1}                                      \\
+                & = -\frac{1}{3}\m{
+            21  & -17                    & -5           \\
+            6   & -5                     & -2           \\
+            12  & -9                     & -3
+            }                                           \\
+                & = \m{
+            -7  & -\frac{17}{3}          & -\frac{5}{3} \\
+            -2  & -\frac{5}{3}           & -\frac{2}{3} \\
+            -4  & 3                      & 1
+            }
+          \end{flalign*}
+
+    \item $\m{
+              4 & 1 & 0\\
+              0 & -2 & 3\\
+              0 & -4 & 4
+            }$
+          \sol{}
+          \begin{flalign*}
+                        & \vm{
+            4           & 1                      & 0            \\
+            0           & -2                     & 3            \\
+            0           & -4                     & 4
+            }  = 16                                             \\
+                        & \operatorname{adj} \m{
+            4           & 1                      & 0            \\
+            0           & -2                     & 3            \\
+            0           & -4                     & 4
+            }                                                   \\
+                        & = \m{
+            \vm{
+            -2          & 3                                     \\
+            -4          & 4
+            }           & -\vm{
+            0           & 3                                     \\
+            0           & 4
+            }           & \vm{
+            0           & -2                                    \\
+            0           & -4
+            }                                                   \\
+            -\vm{
+            1           & 0                                     \\
+            -4          & 4
+            }           & \vm{
+            4           & 0                                     \\
+            0           & 4
+            }           & -\vm{
+            4           & 1                                     \\
+            0           & -4
+            }                                                   \\
+            \vm{
+            1           & 0                                     \\
+            -2          & 3
+            }           & -\vm{
+            4           & 0                                     \\
+            0           & 3
+            }           & \vm{
+            4           & 1                                     \\
+            0           & -2
+            }
+            }'                                                  \\
+                        & = \m{
+            4           & 0                      & 0            \\
+            -4          & 16                     & 16           \\
+            3           & -12                    & -8
+            }'                                                  \\
+                        & = \m{
+            4           & -4                     & 0            \\
+            0           & 16                     & -12          \\
+            9           & 16                     & -8
+            }                                                   \\
+                        & \therefore\ \m{
+            4           & 1                      & 0            \\
+            0           & -2                     & 3            \\
+            0           & -4                     & 4
+            }^{-1}                                              \\
+                        & = \frac{1}{16}\m{
+            4           & -4                     & 3            \\
+            0           & 16                     & -12          \\
+            0           & 16                     & -8
+            }                                                   \\
+                        & = \m{
+            \frac{1}{4} & -\frac{1}{4}           & \frac{3}{16} \\
+            0           & 1                      & -\frac{3}{4} \\
+            0           & 1                      & -\frac{1}{2}
+            }
+          \end{flalign*}
+
+    \item $\m{
+              3 & 2 & 4\\
+              -1 & -3 & 0\\
+              1 & 0 & 3
+            }$
+          \sol{}
+          \begin{flalign*}
+                         & \vm{
+            3            & 2                      & 4            \\
+            -1           & -3                     & 0            \\
+            1            & 0                      & 3
+            }  = -9                                              \\
+                         & \operatorname{adj} \m{
+            3            & 2                      & 4            \\
+            -1           & -3                     & 0            \\
+            1            & 0                      & 3
+            }                                                    \\
+                         & = \m{
+            \vm{
+            -3           & 0                                     \\
+            0            & 3
+            }            & -\vm{
+            -1           & 0                                     \\
+            1            & 3
+            }            & \vm{
+            -1           & -3                                    \\
+            1            & 0
+            }                                                    \\
+            -\vm{
+            2            & 4                                     \\
+            0            & 3
+            }            & \vm{
+            3            & 4                                     \\
+            1            & 3
+            }            & -\vm{
+            3            & 2                                     \\
+            1            & 0
+            }                                                    \\
+            \vm{
+            2            & 4                                     \\
+            -3           & 0
+            }            & -\vm{
+            3            & 4                                     \\
+            -1           & 0
+            }            & \vm{
+            3            & 2                                     \\
+            -1           & -3
+            }
+            }'                                                   \\
+                         & = \m{
+            -9           & 3                      & 3            \\
+            -6           & 5                      & 2            \\
+            12           & -4                     & -7
+            }'                                                   \\
+                         & = \m{
+            -9           & -6                     & 12           \\
+            3            & 5                      & -4           \\
+            3            & 2                      & -7
+            }                                                    \\
+                         & \therefore\ \m{
+            3            & 2                      & 4            \\
+            -1           & -3                     & 0            \\
+            1            & 0                      & 3
+            }                                                    \\
+                         & = \frac{1}{-9}\m{
+            -9           & -6                     & 12           \\
+            3            & 5                      & -4           \\
+            3            & 2                      & -7
+            }                                                    \\
+                         & = \m{
+            -1           & \frac{2}{3}            & -\frac{4}{3} \\
+            -\frac{1}{3} & -\frac{5}{9}           & \frac{4}{9}  \\
+            -\frac{1}{3} & -\frac{2}{9}           & \frac{7}{9}
+            }
+          \end{flalign*}
+
+  \end{enumerate}
+
+  \noindent Solve the following system of equations using the method of Gauss elimination (Question 38 to 41):
+
+  \begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+    \setcounter{enumi}{37}
+
+    \item $\begin{cases}
+              2x - y + 4z = 5   \\
+              2x + 3y - 4z = -7 \\
+              x + y + z = 2
+            \end{cases}$
+          \sol{}
+          \begin{flalign*}
+                                                                               & \begin{amatrix}{3}
+                                                                                   2 & -1 & 4 & 5\\
+                                                                                   2 & 3 & -4 & -7\\
+                                                                                   1 & 1 & 1 & 2
+                                                                                 \end{amatrix}    \\
+            \xrightarrow[R_1 \rightarrow R_1 + R_3]{R_2 \rightarrow R_2 + R_1} & \begin{amatrix}{3}
+                                                                                   3 & 0 & 5 & 7\\
+                                                                                   4 & 2 & 0 & -2\\
+                                                                                   1 & 1 & 1 & 2
+                                                                                 \end{amatrix}    \\
+            \xrightarrow{R_2 \rightarrow \frac{1}{2}R_2}                       & \begin{amatrix}{3}
+                                                                                   3 & 0 & 5 & 7\\
+                                                                                   2 & 1 & 0 & -1\\
+                                                                                   1 & 1 & 1 & 2
+                                                                                 \end{amatrix}    \\
+            \xrightarrow{R_3 \rightarrow R_3 - R_2}                            & \begin{amatrix}{3}
+                                                                                   3 & 0 & 5 & 7\\
+                                                                                   2 & 1 & 0 & -1\\
+                                                                                   -1 & 0 & 1 & 3
+                                                                                 \end{amatrix}    \\
+            \xrightarrow{R_1 \rightarrow R_1 + 3R_3}                           & \begin{amatrix}{3}
+                                                                                   0 & 0 & 8 & 16\\
+                                                                                   2 & 1 & 0 & -1\\
+                                                                                   -1 & 0 & 1 & 3
+                                                                                 \end{amatrix}    \\
+            \xrightarrow{R_1 \rightarrow \frac{1}{8}R_1}                       & \begin{amatrix}{3}
+                                                                                   0 & 0 & 1 & 2\\
+                                                                                   2 & 1 & 0 & -1\\
+                                                                                   -1 & 0 & 1 & 3
+                                                                                 \end{amatrix}    \\
+            \xrightarrow{R_3 \rightarrow R_3 - R_1}                            & \begin{amatrix}{3}
+                                                                                   0 & 0 & 1 & 2\\
+                                                                                   2 & 1 & 0 & -1\\
+                                                                                   -1 & 0 & 0 & 1
+                                                                                 \end{amatrix}    \\
+            \xrightarrow[R_3 \rightarrow -R3]{R_2 \rightarrow R_2 + 2R_3}      & \begin{amatrix}{3}
+                                                                                   0 & 0 & 1 & 2\\
+                                                                                   0 & 1 & 0 & 1\\
+                                                                                   1 & 0 & 0 & -1
+                                                                                 \end{amatrix}    \\
+            \xrightarrow{R_1 \leftrightarrow R_2}                              & \begin{amatrix}{3}
+                                                                                   1 & 0 & 0 & -1\\
+                                                                                   0 & 1 & 0 & 1\\
+                                                                                   0 & 0 & 1 & 2\\
+                                                                                 \end{amatrix}    \\
+            \therefore\ x                                                      & = -1,\ y = 1,\ z = 2
+          \end{flalign*}
+
+    \item $\begin{cases}
+              x - 2y - 3z = -4 \\
+              3x + y - 4z = -5 \\
+              2x + 4y - z = -5
+            \end{cases}$
+          \sol{}
+          \begin{flalign*}
+                                                                                  & \begin{amatrix}{3}
+                                                                                      1 & -2 & -3 & -4\\
+                                                                                      3 & 1 & -4 & -5\\
+                                                                                      2 & 4 & -1 & -5
+                                                                                    \end{amatrix}    \\
+            \xrightarrow[R_2 \rightarrow R_2 - 3R_1]{R_3 \rightarrow R_3 - 2R_1}  & \begin{amatrix}{3}
+                                                                                      1 & -2 & -3 & -4\\
+                                                                                      0 & 7 & 5 & 7\\
+                                                                                      0 & 8 & 5 & 3
+                                                                                    \end{amatrix}    \\
+            \xrightarrow{R_3 \rightarrow R_3 - R_1}                               & = \begin{amatrix}{3}
+                                                                                        1 & -2 & -3 & -4\\
+                                                                                        0 & 7 & 5 & 7\\
+                                                                                        0 & 1 & 0 & -4
+                                                                                      \end{amatrix}  \\
+            \xrightarrow[R_2 \rightarrow R_2 - 7R_3]{R_1 \rightarrow R_1 + 2R_3}  & = \begin{amatrix}{3}
+                                                                                        1 & 0 & -3 & -12\\
+                                                                                        0 & 0 & 5 & 35\\
+                                                                                        0 & 1 & 0 & -4
+                                                                                      \end{amatrix}  \\
+            \xrightarrow[R_2 \leftrightarrow R_3]{R_2 \rightarrow \frac{1}{5}R_2} & = \begin{amatrix}{3}
+                                                                                        1 & 0 & -3 & -12\\
+                                                                                        0 & 1 & 0 & -4\\
+                                                                                        0 & 0 & 1 & 7
+                                                                                      \end{amatrix}  \\
+            \xrightarrow{R_1 \rightarrow R_1 + 3R_2}                              & = \begin{amatrix}{3}
+                                                                                        1 & 0 & 0 & 9\\
+                                                                                        0 & 1 & 0 & -4\\
+                                                                                        0 & 0 & 1 & 7
+                                                                                      \end{amatrix}  \\
+            \therefore\ x                                                         & = 9,\ y = -4,\ z = 7
+          \end{flalign*}
+
+    \item $\begin{cases}
+              x - 2y - z = 3  \\
+              4x - y + 2z = 1 \\
+              x + 3y = 5
+            \end{cases}$
+          \sol{}
+          \begin{flalign*}
+                                                                                    & \begin{amatrix}{3}
+                                                                                        1 & -2 & -1 & 3\\
+                                                                                        4 & -1 & 2 & 1\\
+                                                                                        1 & 3 & 0 & 5
+                                                                                      \end{amatrix}    \\
+            \xrightarrow[R_2 \rightarrow R_2 - 4R_3]{R_1 \rightarrow R_1 - R_3}     & \begin{amatrix}{3}
+                                                                                        0 & -5 & -1 & -2\\
+                                                                                        0 & -13 & 2 & -19\\
+                                                                                        1 & 3 & 0 & 5
+                                                                                      \end{amatrix}    \\
+            \xrightarrow{R_2 \rightarrow R_2 + 2R_1}                                & \begin{amatrix}{3}
+                                                                                        0 & -5 & -1 & -2\\
+                                                                                        0 & -23 & 0 & -23\\
+                                                                                        1 & 3 & 0 & 5
+                                                                                      \end{amatrix}    \\
+            \xrightarrow[R_1 \leftrightarrow R_3]{R_2 \rightarrow -\frac{1}{23}R_2} & \begin{amatrix}{3}
+                                                                                        1 & 3 & 0 & 5\\
+                                                                                        0 & 1 & 0 & 1\\
+                                                                                        0 & -5 & -1 & -2
+                                                                                      \end{amatrix}    \\
+            \xrightarrow[R_3 \rightarrow R_3 + 5R_2]{R_1 \rightarrow R_1 - 3R_2}    & \begin{amatrix}{3}
+                                                                                        1 & 0 & 0 & 2\\
+                                                                                        0 & 1 & 0 & 1\\
+                                                                                        0 & 0 & 1 & -3
+                                                                                      \end{amatrix}    \\
+            \therefore\ x                                                           & = 2,\ y = 1,\ z = -3
+          \end{flalign*}
+
+    \item $\begin{cases}
+              2x - y - z = 0   \\
+              4x - 3y + 2z = 1 \\
+              3x - 2y - 4z = -1
+            \end{cases}$
+          \sol{}
+          \begin{flalign*}
+                                                                               & \begin{amatrix}{3}
+                                                                                   2 & -1 & -1 & 0\\
+                                                                                   4 & -3 & 2 & 1\\
+                                                                                   3 & -2 & -4 & -1
+                                                                                 \end{amatrix}                                 \\
+            \xrightarrow{R_2 \rightarrow R_2 - 2R_1}                           & \begin{amatrix}{3}
+                                                                                   2 & -1 & -1 & 0\\
+                                                                                   0 & -1 & 4 & 1\\
+                                                                                   3 & -2 & -4 & -1
+                                                                                 \end{amatrix}                                 \\
+            \xrightarrow[R_1 \rightarrow R_1 - R_2]{R_3 \rightarrow R_3 + R_2} & \begin{amatrix}{3}
+                                                                                   2 & 0 & -5 & -1\\
+                                                                                   0 & -1 & 4 & 1\\
+                                                                                   3 & -3 & 0 & 0
+                                                                                 \end{amatrix}                                 \\
+            \xrightarrow{R_3 \rightarrow \frac{1}{3}R_3}                       & \begin{amatrix}{3}
+                                                                                   2 & 0 & -5 & -1\\
+                                                                                   0 & -1 & 4 & 1\\
+                                                                                   1 & -1 & 0 & 0
+                                                                                 \end{amatrix}                                 \\
+            \xrightarrow{R_2 \rightarrow R_2 - R_3}                            & \begin{amatrix}{3}
+                                                                                   2 & 0 & -5 & -1\\
+                                                                                   -1 & 0 & 4 & 1\\
+                                                                                   1 & -1 & 0 & 0
+                                                                                 \end{amatrix}                                 \\
+            \xrightarrow{R_1 \rightarrow R_1 + 2R_2}                           & \begin{amatrix}{3}
+                                                                                   0 & 0 & 3 & 1\\
+                                                                                   -1 & 0 & 4 & 1\\
+                                                                                   1 & -1 & 0 & 0
+                                                                                 \end{amatrix}                                 \\
+            \xrightarrow{R_1 \rightarrow \frac{1}{3}R_1}                       & \begin{amatrix}{3}
+                                                                                   0 & 0 & 1 & \frac{1}{3}\\
+                                                                                   -1 & 0 & 4 & 1\\
+                                                                                   1 & -1 & 0 & 0
+                                                                                 \end{amatrix}                            \\
+            \xrightarrow[R_3 \leftrightarrow R_2]{R_2 \rightarrow R_2 - 4R_1}  & \begin{amatrix}{3}
+                                                                                   1 & -1 & 0 & 0\\
+                                                                                   -1 & 0 & 0 & -\frac{1}{3}\\
+                                                                                   0 & 0 & 1 & \frac{1}{3}\\
+                                                                                 \end{amatrix}                          \\
+            \xrightarrow{R_2 \rightarrow -R_2}                                 & \begin{amatrix}{3}
+                                                                                   1 & -1 & 0 & 0\\
+                                                                                   1 & 0 & 0 & \frac{1}{3}\\
+                                                                                   0 & 0 & 1 & \frac{1}{3}\\
+                                                                                 \end{amatrix}                            \\
+            \xrightarrow{R_1 \rightarrow R_1 - R_2}                            & \begin{amatrix}{3}
+                                                                                   0 & -1 & 0 & -\frac{1}{3}\\
+                                                                                   1 & 0 & 0 & \frac{1}{3}\\
+                                                                                   0 & 0 & 1 & \frac{1}{3}\\
+                                                                                 \end{amatrix}                          \\
+            \xrightarrow{R_1 \rightarrow -R_1}                                 & \begin{amatrix}{3}
+                                                                                   0 & 1 & 0 & \frac{1}{3}\\
+                                                                                   1 & 0 & 0 & \frac{1}{3}\\
+                                                                                   0 & 0 & 1 & \frac{1}{3}\\
+                                                                                 \end{amatrix}                            \\
+            \xrightarrow{R_1 \leftrightarrow R_2}                              & \begin{amatrix}{3}
+                                                                                   1 & 0 & 0 & \frac{1}{3}\\
+                                                                                   0 & 1 & 0 & \frac{1}{3}\\
+                                                                                   0 & 0 & 1 & \frac{1}{3}\\
+                                                                                 \end{amatrix}                            \\
+            \therefore\ x                                                      & = \frac{1}{3},\ y = \frac{1}{3},\ z = \frac{1}{3}
+          \end{flalign*}
+
+  \end{enumerate}
+
+  \noindent Solve the following system of equations using the Cramer's rule (Question 42 to 45):
+
+  \begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+    \setcounter{enumi}{41}
+
+    \item $\begin{cases}
+              x - 3y - 2z = 1  \\
+              7x + 4y - 5z = 0 \\
+              3x + 9y + z = -1
+            \end{cases}$
+          \sol{}
+          \begin{flalign*}
+            \Delta        & = \vm{
+            1             & -3                                                                    & -2 \\
+            7             & 4                                                                     & -5 \\
+            3             & 9                                                                     & 1
+            }         = 13                                                                             \\
+            \Delta_x      & = \vm{
+            1             & -3                                                                    & -2 \\
+            0             & 4                                                                     & -5 \\
+            -1            & 9                                                                     & 1
+            }         = 26                                                                             \\
+            \Delta_y      & = \vm{
+            1             & 1                                                                     & -2 \\
+            7             & 0                                                                     & -5 \\
+            3             & -1                                                                    & 1
+            }         = -13                                                                            \\
+            \Delta_z      & = \vm{
+            1             & -3                                                                    & 1  \\
+            7             & 4                                                                     & 0  \\
+            3             & 9                                                                     & -1
+            }         = 26                                                                             \\
+            \therefore\ x & = \frac{26}{13} = 2,\ y = \frac{-13}{13} = -1,\ z = \frac{26}{13} = 2
+          \end{flalign*}
+
+    \item $\begin{cases}
+              x - 2y + 3z = 6   \\
+              2x + 3y - 4z = 20 \\
+              3x - 2y - 5z = 6
+            \end{cases}$
+          \sol{}
+          \begin{flalign*}
+            \Delta        & = \vm{
+            1             & -2                                                                           & 3  \\
+            2             & 3                                                                            & -4 \\
+            3             & -2                                                                           & -5
+            } = -58                                                                                           \\
+            \Delta_x      & = \vm{
+            6             & -2                                                                           & 3  \\
+            20            & 3                                                                            & -4 \\
+            6             & -2                                                                           & -5
+            } = -464                                                                                          \\
+            \Delta_y      & = \vm{
+            1             & 6                                                                            & 3  \\
+            2             & 20                                                                           & -4 \\
+            3             & 6                                                                            & -5
+            } = -232                                                                                          \\
+            \Delta_z      & = \vm{
+            1             & -2                                                                           & 6  \\
+            2             & 3                                                                            & 20 \\
+            3             & -2                                                                           & 6
+            } = -116                                                                                          \\
+            \therefore\ x & = \frac{-464}{-58} = 8,\ y = \frac{-232}{-58} = 4,\ z = \frac{-116}{-58} = 2
+          \end{flalign*}
+
+    \item $\begin{cases}
+              2x - 2y - 4z + 3 = 0 \\
+              2x + 3y + 4z - 2 = 0 \\
+              7x + 3y - 2z - 2 = 0
+            \end{cases}$
+          \sol{}
+          \begin{flalign*}
+                          & \begin{cases}
+                              2x - 2y - 4z = -3 \\
+                              2x + 3y + 4z = 2  \\
+                              7x + 3y - 2z = 2
+                            \end{cases}                                                             \\
+            \Delta        & = \vm{
+            2             & -2                                                                                            & -4 \\
+            2             & 3                                                                                             & 4  \\
+            7             & 3                                                                                             & -2
+            } = -40                                                                                                            \\
+            \Delta_x      & = \vm{
+            -3            & -2                                                                                            & -4 \\
+            2             & 3                                                                                             & 4  \\
+            2             & 3                                                                                             & -2
+            } = 30                                                                                                             \\
+            \Delta_y      & = \vm{
+            2             & -3                                                                                            & -4 \\
+            2             & 2                                                                                             & 4  \\
+            7             & 2                                                                                             & -2
+            } = -80                                                                                                            \\
+            \Delta_z      & = \vm{
+            2             & -2                                                                                            & -3 \\
+            2             & 3                                                                                             & 2  \\
+            7             & 3                                                                                             & 2
+            } = 25                                                                                                             \\
+            \therefore\ x & = \frac{30}{-40} = -\frac{3}{4},\ y = \frac{-80}{-40} = 2,\ z = \frac{25}{-40} = -\frac{5}{8}
+          \end{flalign*}
+
+    \item $\begin{cases}
+              \frac{2}{x} - \frac{5}{y} + \frac{4}{z} = -3 \\
+              \frac{4}{x} + \frac{1}{y} - \frac{2}{z} = 7  \\
+              \frac{7}{x} - \frac{3}{z} = 4
+            \end{cases}$
+          \sol{}
+          \begin{flalign*}
+            \text{Let }   & a = \frac{1}{x},\ b = \frac{1}{y},\ c = \frac{1}{z}                                                    \\
+                          & \begin{cases}
+                              2a - 5b + 4c = -3 \\
+                              4a + b - 2c = 7   \\
+                              7a - 3c = 4
+                            \end{cases}                                                                 \\
+            \Delta        & = \vm{
+            2             & -5                                                                                                & 4  \\
+            4             & 1                                                                                                 & -2 \\
+            7             & 0                                                                                                 & -3
+            } = -24                                                                                                                \\
+            \Delta_a      & = \vm{
+            -3            & -5                                                                                                & 4  \\
+            7             & 1                                                                                                 & -2 \\
+            4             & 0                                                                                                 & -3
+            } = -72                                                                                                                \\
+            \Delta_b      & = \vm{
+            2             & -3                                                                                                & 4  \\
+            4             & 7                                                                                                 & -2 \\
+            7             & 4                                                                                                 & -3
+            } = -152                                                                                                               \\
+            \Delta_c      & = \vm{
+            2             & -5                                                                                                & -3 \\
+            4             & 1                                                                                                 & 7  \\
+            7             & 0                                                                                                 & 4
+            } = -136                                                                                                               \\
+            \therefore\ a & = \frac{-72}{-24} = 3,\ b = \frac{-152}{-24} = \frac{19}{3},\ c = \frac{-136}{-24} = \frac{17}{3}      \\
+            \therefore\ x & = \frac{1}{3},\ y = \frac{3}{19},\ z = \frac{3}{17}
+          \end{flalign*}
+
+  \end{enumerate}
+
 \end{multicols}
 \end{document}
