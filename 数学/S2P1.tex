@@ -11293,5 +11293,454 @@
           \end{flalign*}
   \end{enumerate}
 
+  \section{Linear Inequalities of Two Variables}
+
+    \subsection*{Solution of Linear Inequalities of Two Variables}
+
+    A linear inequality of two variables is inequality with two variables involved.
+
+    For any linear equation of two variables, there are infinitely many solutions.
+    These solutions can be graphed in the appropriate half of a rectangular
+    coordinate plane.
+
+    \subsection{Practice 10}
+
+    Express the solution of the following linear inequalities in graph form:
+
+    \begin{enumerate}
+        \item $x + 3y < 6$
+              \sol{}
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.7]
+                      \draw[draw=none,fill, color=black!20](-2,5)--(-2,2.6666666)--(7,-0.3333)--(7,5)--cycle;
+                      \draw [-latex,thick](-2,0) -- (7,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {-1,1,2,3,4,5,6}
+                      \draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};
+                      \foreach \y in {-1,1,2,3,4}
+                      \draw (0.1,\y) -- (-0.1,\y) node [left] {$\y$};
+                      \draw [-latex,thick](0,-2) -- (0,5) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[color=black,dashed,domain=-2:7] plot (\x,-1/3*\x+2);
+                      \node at (1.5, 0.7) {$x + 3y = 6$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt]() at (0,2){};
+                      \node[circle,draw,fill=white,inner sep=1.5pt]() at (6,0){};
+                  \end{tikzpicture}
+              \end{center}
+
+        \item $2x - 5y \leq 10$
+              \sol{}
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.8]
+                      \draw[draw=none,fill, color=black!20](-2,3)--(-2,-2.8)--(6,0.4)--(6,3)--cycle;
+                      \draw [-latex,thick](-2,0) -- (6,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {-1,1,2,3,4,5}
+                      \draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};
+                      \foreach \y in {-2,-1,1,2}
+                      \draw (0.1,\y) -- (-0.1,\y) node [left] {$\y$};
+                      \draw [-latex,thick](0,-3) -- (0,3) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[color=black,domain=-2:6] plot (\x,2/5*\x-2);
+                      \node at (2, -2) {$2x - 5y = 10$};
+                      \filldraw[black] (0,-2) circle (2pt);
+                      \filldraw[black] (5,0) circle (2pt);
+                  \end{tikzpicture}
+              \end{center}
+
+        \item $4y - x + 8 > 0$
+              \sol{}
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.7]
+                      \draw[draw=none,fill, color=black!20](-1,1)--(-1,-2.25)--(9,0.25)--(9,1)--cycle;
+                      \draw [-latex,thick](-1,0) -- (9,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {1,2,3,4,5,6,7,8}
+                      \draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};
+                      \foreach \y in {-2,-1}
+                      \draw (0.1,\y) -- (-0.1,\y) node [left] {$\y$};
+                      \draw [-latex,thick](0,-3) -- (0,1) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[color=black,dashed,domain=-1:9] plot (\x,1/4*\x-2);
+                      \node at (4, -1.6) {$4y-x+8 = 0$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt]() at (0,-2){};
+                      \node[circle,draw,fill=white,inner sep=1.5pt]() at (8,0){};
+                  \end{tikzpicture}
+              \end{center}
+
+        \item $3x + 2y \leq 9$
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.7]
+                      \draw[draw=none,fill, color=black!20](-1,6)--(-1,-2)--(13/3,-2)--(4,-1.5)--cycle;
+                      \draw [-latex,thick](-1,0) -- (5,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {1,2,3,4}
+                      \draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};
+                      \foreach \y in {-1, 1, 2, 3, 4, 5, 6}
+                      \draw (0.1,\y) -- (-0.1,\y) node [left] {$\y$};
+                      \draw [-latex,thick](0,-2) -- (0,7) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[color=black,domain=-1:13/3] plot (\x,-3/2*\x+9/2);
+                      \node at (2.3,3) {$3x + 2y = 9$};
+                      \filldraw[black] (0,4.5) circle (2pt);
+                      \filldraw[black] (3,0) circle (2pt);
+                  \end{tikzpicture}
+              \end{center}
+
+    \end{enumerate}
+
+    \subsection*{Solution of System of Linear Inequalities of Two Variables}
+
+    The solution of the system of linear inequalities of two variables is the
+    intersection of the solution of individual inequalities. That is, the region
+    bounded by the lines representing each inequalitiy.
+
+    \subsection{Practice 11}
+
+    Solve the following system of inequalities:
+
+    \begin{enumerate}
+        \item $\begin{cases}
+                      x \geq 0 \\
+                      x + y - 5 \leq 0
+                  \end{cases}$
+              \sol{}
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.7]
+                      \draw[draw=none,fill, color=black!20](0,5)--(0,-1)--(6,-1)--cycle;
+                      \draw [-latex,thick](-1,0) -- (6,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {1,2,3,4,5}
+                      \draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};
+                      \foreach \y in {1, 2, 3, 4, 5}
+                      \draw (0.1,\y) -- (-0.1,\y) node [left] {$\y$};
+                      \draw [-latex,thick](0,-1) -- (0,6) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[color=black,domain=-1:6] plot (\x,-\x+5);
+                      \node at (3.5,3) {$x+y-5 = 0$};
+                  \end{tikzpicture}
+              \end{center}
+
+        \item $\begin{cases}
+                      x + y - 3 > 0 \\
+                      x - 2y + 4 < 0
+                  \end{cases}$
+              \sol{}
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.7]
+                      \draw[draw=none,fill, color=black!20](-1,6)--(-1,4)--(0.66666666,2.333333333)--(5,4.5)--(5,6)--cycle;
+                      \draw [-latex,thick](-1,0) -- (5,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {1,2,3,4}
+                      \draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};
+                      \foreach \y in {1, 2, 3, 4, 5}
+                      \draw (0.1,\y) -- (-0.1,\y) node [left] {$\y$};
+                      \draw [-latex,thick](0,-1) -- (0,6) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[color=black,dashed,domain=-1:4] plot (\x,-\x+3);
+                      \draw[color=black,dashed,domain=-1:5] plot (\x,1/2*\x+2);
+                      \node at (3.5,3) {$x-2y+4 = 0$};
+                      \node at (3.5,1) {$x+y-3 = 0$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(0.66666666,2.333333333){};
+                  \end{tikzpicture}
+              \end{center}
+
+        \item $\begin{cases}
+                      3x + 7y \leq 21 \\
+                      5x + 4y > 20
+                  \end{cases}$
+              \sol{}
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.7]
+                      \draw[draw=none,fill, color=black!20](2.435,1.957)--(9,-0.857)--(4.8,-1)--cycle;
+                      \draw [-latex,thick](-1,0) -- (9,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {1,2,3,4,5,6,7,8}
+                      \draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};
+                      \foreach \y in {1, 2, 3, 4, 5, 6}
+                      \draw (0.1,\y) -- (-0.1,\y) node [left] {$\y$};
+                      \draw [-latex,thick](0,-1) -- (0,7) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[color=black,domain=-1:9] plot (\x,-3/7*\x+3);
+                      \draw[color=black,dashed,domain=-1:4.8] plot (\x,-5/4*\x+5);
+                      \node at (6,1.2) {$3x+7y = 21$};
+                      \node at (2,4) {$5x+4y = 20$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(2.435,1.957){};
+                  \end{tikzpicture}
+              \end{center}
+
+        \item $\begin{cases}
+                      5x + 6y \leq 30 \\
+                      3x + 2y \leq 12 \\
+                      x \geq 0        \\
+                      y \geq 0
+                  \end{cases}$
+              \sol{}
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.7]
+                      \draw[draw=none,fill, color=black!20](0,5)--(0,0)--(4,0)--(1.5,3.75)--cycle;
+                      \draw [-latex,thick](-1,0) -- (9,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {1,2,3,4,5,6,7,8}
+                      \draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};
+                      \foreach \y in {1, 2, 3, 4, 5, 6, 7}
+                      \draw (0.1,\y) -- (-0.1,\y) node [left] {$\y$};
+                      \draw [-latex,thick](0,-1) -- (0,8) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[color=black,domain=-1:7] plot (\x,-5/6*\x+5);
+                      \draw[color=black,domain=-1:4.6666666666] plot (\x,-3/2*\x+6);
+                      \node at (6,1.2) {$5x+6y = 30$};
+                      \node at (2,5) {$3x+2y = 12$};
+                  \end{tikzpicture}
+              \end{center}
+
+    \end{enumerate}
+
+    \subsection{Exercise 15.7}
+
+    Solve the following system of inequalities:
+
+    \begin{enumerate}
+
+        \item $\begin{cases}
+                      y \geq 2x+1 \\
+                      x + 2y < 4
+                  \end{cases}$
+              \sol{}
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.7]
+                      \draw[draw=none,fill, color=black!20](-4,4)--(-4,-5)--(-3,-5)--(0.4,1.8)--cycle;
+                      \draw [-latex,thick](-4,0) -- (1,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {-1,-2,-3}
+                      \draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};
+                      \foreach \y in {-4, -3, -2, -1, 1, 2, 3}
+                      \draw (0.1,\y) -- (-0.1,\y) node [left] {$\y$};
+                      \draw [-latex,thick](0,-5) -- (0,4) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[color=black,domain=-3:1] plot (\x,2*\x+1);
+                      \draw[color=black,dashed,domain=-4:1] plot (\x,-1/2*\x+2);
+                      \node at (-1.7,-4.5) {$y = 2x+1$};
+                      \node at (-2,3.8) {$3x+2y = 12$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(0.4,1.8){};
+                  \end{tikzpicture}
+              \end{center}
+
+        \item $\begin{cases}
+                      x + y \leq 4 \\
+                      x + 2y \leq 6
+                  \end{cases}$
+              \sol{}
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.7]
+                      \draw[draw=none,fill, color=black!20](-1,3.5)--(-1,-1)--(5,-1)--(2,2)--cycle;
+                      \draw [-latex,thick](-1,0) -- (7,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {1, 2, 3, 4, 5, 6}
+                      \draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};
+                      \foreach \y in {1, 2, 3, 4}
+                      \draw (0.1,\y) -- (-0.1,\y) node [left] {$\y$};
+                      \draw [-latex,thick](0,-1) -- (0,5) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[color=black,domain=-1:5] plot (\x,-\x+4);
+                      \draw[color=black,domain=-1:7] plot (\x,-1/2*\x+3);
+                      \node at (5,1.2) {$2x+y = 6$};
+                      \node at (5.8,-0.7) {$x+y = 4$};
+                  \end{tikzpicture}
+              \end{center}
+
+        \item $\begin{cases}
+                      y \geq 3 - x \\
+                      y \leq \frac{x}{2} - 2
+                  \end{cases}$
+              \sol{}
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.7]
+                      \draw[draw=none,fill, color=black!20](3.333333,-0.33333)--(7,1.5)--(7,-4)--cycle;
+                      \draw [-latex,thick](-1,0) -- (7,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {1,2,3,4,5,6}
+                      \draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};
+                      \foreach \y in {-3, -2, -1, 1, 2, 3}
+                      \draw (0.1,\y) -- (-0.1,\y) node [left] {$\y$};
+                      \draw [-latex,thick](0,-4) -- (0,4) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[color=black,domain=-1:7] plot (\x,3-\x);
+                      \draw[color=black,domain=-1:7] plot (\x,1/2*\x-2);
+                      \node at (2.2,2) {$y = 3-x$};
+                      \node at (2,-1.8) {$y = \frac{x}{2}-2$};
+                  \end{tikzpicture}
+              \end{center}
+
+        \item $\begin{cases}
+                      x + 3y - 6 > 0 \\
+                      2x + y + 2 < 0
+                  \end{cases}$
+              \sol{}
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.7]
+                      \draw[draw=none,fill, color=black!20](-2.4,2.8)--(-6,4)--(-6,6)--(-4,6)--cycle;
+                      \draw [-latex,thick](-6,0) -- (1,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {-1, -2, -3, -4, -5}
+                      \draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};
+                      \foreach \y in {-3, -2, -1, 1, 2, 3, 4, 5}
+                      \draw (0.1,\y) -- (-0.1,\y) node [left] {$\y$};
+                      \draw [-latex,thick](0,-4) -- (0,6) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[color=black,dashed,domain=-6:1] plot (\x,-1/3*\x+2);
+                      \draw[color=black,dashed,domain=-4:1] plot (\x,-2*\x-2);
+                      \node at (-5,3) {$x + 3y - 6 = 0$};
+                      \node at (-3,1) {$2x + y + 2 = 0$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(-2.4,2.8){};
+                  \end{tikzpicture}
+              \end{center}
+
+        \item $\begin{cases}
+                      x > 0          \\
+                      2x + y \leq 10 \\
+                      y \leq 6
+                  \end{cases}$
+              \sol{}
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.7]
+                      \draw[draw=none,fill, color=black!20](0,6)--(2,6)--(6,-2)--(0,-2)--cycle;
+                      \draw [-latex,thick](-1,0) -- (7,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {1,2,3,4,5,6}
+                      \draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};
+                      \foreach \y in {-1, 1, 2, 3, 4, 5, 6}
+                      \draw (0.1,\y) -- (-0.1,\y) node [left] {$\y$};
+                      \draw [-latex,thick](0,-2) -- (0,7) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[color=black,domain=1.5:6] plot (\x,-2*\x+10);
+                      \draw[color=black,dashed,domain=-2:7] plot (0.02,\x);
+                      \draw[color=black,domain=-1:7] plot (\x,6);
+                      \node at (5.1,2) {$2x + y = 10$};
+                      \node at (5,6.3) {$y = 6$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(0,6){};
+                  \end{tikzpicture}
+              \end{center}
+
+        \item $\begin{cases}
+                      x + 2y \leq 12  \\
+                      3x - y \leq 6   \\
+                      0 \leq x \leq 3 \\
+                  \end{cases}$
+              \sol{}
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.7]
+                      \draw[draw=none,fill, color=black!20](0,3)--(1.5,2.25)--(1.5,1.5)--(0,-3)--cycle;
+                      \draw [-latex,thick](-1,0) -- (7,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {2,4,6,8,10,12}
+                      \draw (\x/2,0.1) -- (\x/2,-0.1) node [below] {$\x$};
+                      \foreach \y in {-8, -6, -4, -2, 2, 4, 6}
+                      \draw (0.1,\y/2) -- (-0.1,\y/2) node [left] {$\y$};
+                      \draw [-latex,thick](0,-5) -- (0,4) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[color=black,domain=-2:14] plot (\x/2,{(-1/2*\x+6)/2});
+                      \draw[color=black,domain=-1.33333:4.6666666] plot (\x/2,{(3*\x-6)/2});
+                      \draw[color=black,domain=-10:8] plot (1.5,\x/2);
+                      \node at (5,1.3) {$x + 2y = 12$};
+                      \node at (3,3) {$3x - y = 6$};
+                      \node at (2.1,-3) {$x = 3$};
+                  \end{tikzpicture}
+              \end{center}
+
+        \item $\begin{cases}
+                      x + y \geq 2  \\
+                      x + 2y \leq 6 \\
+                      x \geq 0      \\
+                      y \geq 0
+                  \end{cases}$
+              \sol{}
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.7]
+                      \draw[draw=none,fill, color=black!20](0,3)--(0,2)--(1,0)--(3,0)--cycle;
+                      \draw [-latex,thick](-2,0) -- (4,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {-2, 2, 4, 6}
+                      \draw (\x/2,0.1) -- (\x/2,-0.1) node [below] {$\x$};
+                      \foreach \y in {-4, -3, -2, -1, 1, 2, 3, 4}
+                      \draw (0.1,\y) -- (-0.1,\y) node [left] {$\y$};
+                      \draw [-latex,thick](0,-5) -- (0,5) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[color=black,domain=-3:7] plot (\x/2,-\x+2);
+                      \draw[color=black,domain=-4:8] plot (\x/2,-1/2*\x+3);
+                      \node at (2,2) {$x + y = 2$};
+                      \node at (3.5,-3) {$x + 2y = 6$};
+                  \end{tikzpicture}
+              \end{center}
+
+        \item $\begin{cases}
+                      x - y \leq 1   \\
+                      2x + 3y \geq 6 \\
+                      x \geq 0       \\
+                      y \geq 0
+                  \end{cases}$
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.7]
+                      \draw[draw=none,fill, color=black!20](0,5)--(0,2)--(1.8,0.8)--(6,5)--cycle;
+                      \draw [-latex,thick](-2,0) -- (7,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {-1, 1, 2, 3, 4, 5, 6}
+                      \draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};
+                      \foreach \y in {-1, 1, 2, 3, 4}
+                      \draw (0.1,\y) -- (-0.1,\y) node [left] {$\y$};
+                      \draw [-latex,thick](0,-2) -- (0,5) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[color=black,domain=-1:6] plot (\x,\x-1);
+                      \draw[color=black,domain=-1:6] plot (\x,-2/3*\x+2);
+                      \node at (4,2) {$x-y = 1$};
+                      \node at (3.5,-1.2) {$2x+3y = 6$};
+                  \end{tikzpicture}
+              \end{center}
+
+    \end{enumerate}
+
+    \noindent Write a system of inequalities that represents the region bounded by the
+    following graphs:
+
+    \begin{enumerate}
+        \setcounter{enumi}{8}
+
+        \item \begin{tikzpicture}[transform shape,scale=0.7]
+                  \draw[draw=none,fill, color=black!20](0,6)--(0,3)--(0.909,1.636)--(5,0)--(6,0)--(6,6)--cycle;
+                  \draw [-latex,thick](-3,0) -- (6,0) node[right] {$x$} coordinate(x axis);
+                  \foreach \x in {-2, -1, 1, 2, 3, 4, 5}
+                  \draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};
+                  \foreach \y in {-2, -1, 1, 2, 3, 4, 5}
+                  \draw (0.1,\y) -- (-0.1,\y) node [left] {$\y$};
+                  \draw [-latex,thick](0,-3) -- (0,6) node[above] {$y$} coordinate(y axis);
+                  \node at (-0.25,-0.3375) {0};
+                  \draw[color=black,domain=-2:4] plot (\x,-3/2*\x+3);
+                  \draw[color=black,domain=-3:6] plot (\x,-2/5*\x+2);
+                  \node at (-2,2) {$2x+5y = 10$};
+                  \node at (4.5,-2) {$3x+2y = 6$};
+              \end{tikzpicture}
+              \sol{}
+              \begin{flalign*}
+                  \begin{cases}
+                      2x + 5y \geq 10 \\
+                      3x - 2y \geq 6  \\
+                      x \geq 0        \\
+                      y \geq 0
+                  \end{cases}
+              \end{flalign*}
+
+        \item \begin{tikzpicture}[transform shape,scale=0.7]
+                  \draw[draw=none,fill, color=black!20](2,5)--(-3,-2)--(5,0)--cycle;
+                  \draw [-latex,thick](-4,0) -- (6,0) node[right] {$x$} coordinate(x axis);
+                  \foreach \x in {-3, -2, -1, 1, 2, 3, 4, 5}
+                  \draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};
+                  \foreach \y in {-3, -2, -1, 1, 2, 3, 4, 5}
+                  \draw (0.1,\y) -- (-0.1,\y) node [left] {$\y$};
+                  \draw [-latex,thick](0,-4) -- (0,6) node[above] {$y$} coordinate(y axis);
+                  \node at (-0.25,-0.3375) {0};
+                  \draw[color=black,dashed,domain=-4:2.7144] plot (\x,7/5*\x+11/5);
+                  \draw[color=black,domain=-4:6] plot (\x,1/4*\x-5/4);
+                  \draw[color=black,domain=1.4:6] plot (\x,-5/3*\x+25/3);
+                  \node at (-2.4,1.3) {$7x-5y+11 = 0$};
+                  \node at (4.4,3) {$5x+3y = 25$};
+                  \node at (3,-1.2) {$x-4y = 5$};
+                  \node[circle,draw,fill=white,inner sep=1.5pt](b)at(2,5){};
+                  \node[circle,draw,fill=white,inner sep=1.5pt](b)at(-3,-2){};
+              \end{tikzpicture}
+              \sol{}
+              \begin{flalign*}
+                  \begin{cases}
+                      7x - 5y + 11 > 0 \\
+                      5x + 3y \leq 25  \\
+                      x - 4y \leq 5    \\
+                  \end{cases}
+              \end{flalign*}
+
+    \end{enumerate}
+
 \end{multicols}
 \end{document}
