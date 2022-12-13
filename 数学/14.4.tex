@@ -16,6 +16,7 @@
 \usepackage{tikz}
 \usepackage{enumitem}
 \usepackage{pgfplots}
+\usepackage{etoolbox}
 \usetikzlibrary{calc,matrix,arrows}
 \usetikzlibrary{decorations.pathmorphing,patterns}
 
@@ -49,6 +50,12 @@
         }{%
     \end{array}\right)
 }
+\newenvironment{cequation}{
+    \makeatletter
+    \setbool{@fleqn}{false}
+    \makeatother
+    \begin{equation*}
+        }{\end{equation*}}
 \begin{titlepage}
     \raggedleft{}
     \rule{1pt}{\textheight}
