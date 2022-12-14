@@ -20,7 +20,7 @@
 \usepackage{tikz-3dplot}
 \usepackage{svg}
 \usetikzlibrary{calc,matrix,arrows}
-\usetikzlibrary{decorations.pathmorphing,patterns, calligraphy}
+\usetikzlibrary{decorations.pathmorphing,patterns, calligraphy, perspective}
 
 \tikzset{
     right angle quadrant/.code={
@@ -251,7 +251,8 @@
 
     A regular polyhedron is a polyhedron with all faces being regular polygons, and
     all polyhedral angles being equal. The regular polyhedron can be classified
-    into 5 types: tetrahedron, octahedron, cube, icosahedron and dodecahedron.
+    into 5 types: regular tetrahedron, regular octahedron, regular hexahedron,
+    regular dodecahedron and regular icosahedron.
 
     \begin{center}
         \tdplotsetmaincoords{70}{100}
@@ -272,7 +273,7 @@
             \draw (2,2,2)--(2,0,2);
             \draw[dashed](2,0,0)--(0,0,0)--(0,2,0);
             \draw[dashed](0,0,0)--(0,0,2);
-            \node at (1,1,1) [below=56pt] {Regular Octahedron};
+            \node at (1,1,1) [below=56pt] {Regular Hexahedron};
         \end{tikzpicture}
     \end{center}
 
@@ -295,7 +296,7 @@
             \draw (A3) -- (A4) -- (B1);
             \draw (A3) -- (A4) -- (B2);
             \draw (B1) -- (A1) -- (B2) -- (A3) --cycle;
-            \node at (0.5,-0.5) [below=10pt] {Regular Cube};
+            \node at (0.5,-0.5) [below=10pt] {Regular Octahedron};
         \end{tikzpicture}
         \hspace*{1cm}
         \begin{tikzpicture}[scale=1]
@@ -402,6 +403,119 @@
             \draw[background] (3) -- (1);
 
             \node at (6,3.8,0) {Regular Icosahedron};
+        \end{tikzpicture}
+    \end{center}
+
+    \subsection*{Prism}
+
+    If two faces of a polyhedron are parallel, while the other faces intersect in
+    sequence to form parallel lines, then the polyhedron is called a prism. The two
+    faces which are parallel to each other are called the bases of the prism, and
+    the other faces are called the lateral faces of the prism. The common sides
+    that two adjacent lateral faces share is called the lateral edges of the prism.
+    The distance between two bases is called the height of the prism.
+
+    Prism with lateral edges that aren't parallel to each other are called oblique
+    prism; prism with lateral edges that are parallel to each other are called
+    regular prism; regular prism with regular bases are called regular prism.
+
+    \begin{center}
+        \begin{tikzpicture}[scale=1.5]
+            \draw  [dashed] (-1,0) -- (-0.5,0.4) -- (0.5,0.5) edge (0.9,2.5) -- (1,0);
+            \draw [dashed] (-0.1, 2.4) -- (-0.5,0.4);
+            \draw (-1,0) -- (1, 0) -- (1.4, 2) -- (0.9,2.5) -- (-0.1, 2.4) -- (-0.6,2) -- (1.4, 2);
+            \draw (-0.6, 2) -- (-1, 0);
+            \node at (0,-0.45) {Oblique Prism};
+        \end{tikzpicture}
+        \hspace*{1cm}
+        \begin{tikzpicture}[scale=1.5]
+            \draw[dashed] (-1,0) -- (0,0.5) edge (0,2.5) -- (1,0) coordinate(BR);
+            \draw (-1,0) coordinate(BL)  rectangle (1,2) coordinate(TR)
+            -- (0,2.5) coordinate(T) -- (-1,2) coordinate(TL);
+            \node at (0,-0.45) {Regular Prism};
+        \end{tikzpicture}
+    \end{center}
+    \begin{center}
+        \begin{tikzpicture}[scale=1.5]
+            \draw[dashed] (-1,0) -- (-0.5,0.4) -- (0.5,0.5) edge (0.5,2.5) -- (1,0);
+            \draw [dashed] (-0.5, 2.4) -- (-0.5,0.4);
+            \draw (-1,0)  rectangle (1,2) -- (0.5,2.5) -- (-0.5, 2.4) -- (-1,2);
+            \node at (0,-0.45) {Right Prism};
+        \end{tikzpicture}
+    \end{center}
+
+    Prism with bases of parallelogram are called parallelepiped. Parallelepiped
+    with lateral edges that are parallel to each other are called right
+    parallelepiped. Right parallelepiped with regular bases are called cuboid, and
+    a cuboid with equal width, height, and depth is called a cube.
+
+    \begin{center}
+        \begin{tikzpicture}
+            \draw (0,0)--(3,0);
+            \draw (3,0)--(3.5,1);
+            \draw[dashed] (3.5,1)--(1,1)--(0,0);
+            \draw (0,0)--(0,2)--(3,2)--(3,0);
+            \draw (0,2)--(1,2.5)--(3.5,2.5);
+            \draw[] (3,2)--(3.5,2.5)--(3.5,1);
+            \draw[dashed] (1,2.5)--(1,1);
+            \node at (1.5,0) [below=10pt] {Cuboid};
+        \end{tikzpicture}
+        \hspace*{1cm}
+        \begin{tikzpicture}[scale=1.1]
+            \draw (2,2,0)--(0,2,0)--(0,2,2)--(2,2,2)--(2,2,0)--(2,0,0)--(2,0,2)--(0,0,2)--(0,2,2);
+            \draw (2,2,2)--(2,0,2);
+            \draw[dashed](2,0,0)--(0,0,0)--(0,2,0);
+            \draw[dashed](0,0,0)--(0,0,2);
+            \node at (1,1,1) [below=56pt] {Cube};
+        \end{tikzpicture}
+    \end{center}
+
+    \subsection*{Pyramid}
+
+    If a polyhedron has a base and all its lateral faces are triangles that shares
+    a common apex, then the polyhedron is called a pyramid.
+
+    If the foot point of a pyramid is the centre of its base, then the pyramid is
+    called a right pyramid. If the base of a right pyramid is a regular polygon,
+    then the pyramid is called a regular pyramid.
+
+    \begin{center}
+        \tdplotsetmaincoords{70}{120}
+        \begin{tikzpicture}[scale=0.7,tdplot_main_coords,line cap=butt,line join=round,c/.style={circle,fill,inner sep=1pt},
+                declare function={a=4;h=3;}]
+            \path
+            (0,0,0) coordinate (A)
+            (a,0,0) coordinate (B)
+            (a+2,a+2,0) coordinate (C)
+            (0,a,0) coordinate (D)
+            (a/2 + 1,a/2 + 1,0) coordinate (O)
+            (a/2 + 1,a/2 + 1,h)  coordinate (S);
+            \draw (S) -- (D) -- (C) -- (B) -- cycle (S) -- (C);
+            \draw[dashed] (S) -- (A) --(D) (A) -- (B) ;
+
+            \node at (a/2 + 1,a/2+0.5,0) [below=40pt] {Right Pyramid};
+        \end{tikzpicture}
+        \hspace*{1cm}
+        \begin{tikzpicture}[scale=0.8,3d view={55}{20},declare function={a=2;b=3;l=5;},
+                >=stealth,line cap=round,line join=round]
+            \draw  (tpp cs:x=0,y=0,z=0) coordinate (O) -- (O);
+            \path foreach \X in {1,...,6}
+            {(tpp cs:x={a*cos(\X*60-30)},y={a*sin(\X*60-30)},z=0) coordinate (p\X)}
+            (tpp cs:x=0,y=0,z=b) coordinate (tip);
+            \draw (p1) -- (p2);
+            \draw [dashed] (p2) -- (p3);
+            \draw [dashed] (p3) -- (p4);
+            \draw (p4) -- (p5);
+            \draw (p5) -- (p6);
+            \draw (p6) -- (p1);
+            \draw (p1) -- (tip);
+            \draw (p2) -- (tip);
+            \draw [dashed] (p3) -- (tip);
+            \draw (p4) -- (tip);
+            \draw (p5) -- (tip);
+            \draw (p6) -- (tip);
+
+            \node at (0,0,0) [below=30pt] {Regular Pyramid};
         \end{tikzpicture}
     \end{center}
 
