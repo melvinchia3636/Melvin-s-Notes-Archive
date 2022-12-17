@@ -19,6 +19,8 @@
 \usepackage{etoolbox}
 \usepackage{tikz-3dplot}
 \usepackage{tkz-euclide}
+\usepackage{graphicx}
+\graphicspath{ {./assets/} }
 \usetikzlibrary{calc,matrix,arrows}
 \usetikzlibrary{decorations.pathmorphing,patterns, calligraphy, perspective,backgrounds}
 
@@ -38,37 +40,6 @@
                     (\p1) -- (\p3) -- (\p2)
                 }
         }
-}
-
-\tikzset{
-    annotated cuboid/.pic={
-            \tikzset{%
-                every edge quotes/.append style={midway, auto},
-                /cuboid/.cd,
-                #1
-            }
-            \draw [every edge/.append style={pic actions, densely dashed, opacity=.5}, pic actions]
-            (0,0,0) coordinate (o) -- ++(-\cubescale*\cubex,0,0) coordinate (a) -- ++(0,-\cubescale*\cubey,0) coordinate (b) edge coordinate [pos=1] (g) ++(0,0,-\cubescale*\cubez)  -- ++(\cubescale*\cubex,0,0) coordinate (c) -- cycle
-            (o) -- ++(0,0,-\cubescale*\cubez) coordinate (d) -- ++(0,-\cubescale*\cubey,0) coordinate (e) edge (g) -- (c) -- cycle
-            (o) -- (a) -- ++(0,0,-\cubescale*\cubez) coordinate (f) edge (g) -- (d) -- cycle;
-            \path [every edge/.append style={pic actions, |-|}]
-            (b) +(0,-5pt) coordinate (b1) edge ["\cubex \cubeunits"'] (b1 -| c)
-            (b) +(-5pt,0) coordinate (b2) edge ["\cubey \cubeunits"] (b2 |- a)
-            (c) +(3.5pt,-3.5pt) coordinate (c2) edge ["\cubez \cubeunits"'] ([xshift=3.5pt,yshift=-3.5pt]e)
-            ;
-        },
-    /cuboid/.search also={/tikz},
-    /cuboid/.cd,
-    width/.store in=\cubex,
-    height/.store in=\cubey,
-    depth/.store in=\cubez,
-    units/.store in=\cubeunits,
-    scale/.store in=\cubescale,
-    width=10,
-    height=10,
-    depth=10,
-    units=cm,
-    scale=.1,
 }
 
 \counterwithout{equation}{chapter}
@@ -249,10 +220,11 @@
 
     \subsection*{Regular Polyhedron}
 
-    A regular polyhedron is a polyhedron with all faces being regular polygons, and
-    all polyhedral angles being equal. The regular polyhedron can be classified
-    into 5 types: regular tetrahedron, regular octahedron, regular hexahedron,
-    regular dodecahedron and regular icosahedron.
+    A \emph{regular polyhedron} is a polyhedron with all faces being regular
+    polygons, and all polyhedral angles being equal. The regular polyhedron can be
+    classified into 5 types: \emph{regular tetrahedron}, \emph{regular octahedron},
+    \emph{regular hexahedron}, \emph{regular dodecahedron} and \emph{regular
+        icosahedron}.
 
     \begin{center}
         \tdplotsetmaincoords{70}{100}
@@ -409,15 +381,17 @@
     \subsection*{Prism}
 
     If two faces of a polyhedron are parallel, while the other faces intersect in
-    sequence to form parallel lines, then the polyhedron is called a prism. The two
-    faces which are parallel to each other are called the bases of the prism, and
-    the other faces are called the lateral faces of the prism. The common sides
-    that two adjacent lateral faces share is called the lateral edges of the prism.
-    The distance between two bases is called the height of the prism.
+    sequence to form parallel lines, then the polyhedron is called a \emph{prism}.
+    The two faces which are parallel to each other are called the \emph{bases of
+        the prism}, and the other faces are called the \emph{lateral faces of the
+        prism}. The common sides that two adjacent lateral faces share is called the
+    \emph{lateral edges of the prism}. The distance between two bases is called the
+    \emph{height of the prism}.
 
-    Prism with lateral edges that aren't parallel to each other are called oblique
-    prism; prism with lateral edges that are parallel to each other are called
-    regular prism; regular prism with regular bases are called regular prism.
+    Prism with lateral edges that aren't parallel to each other are called
+    \emph{oblique prism}; prism with lateral edges that are parallel to each other
+    are called \emph{right prism}; regular prism with regular bases are called
+    \emph{regular prism}.
 
     \begin{center}
         \begin{tikzpicture}[scale=1.5]
@@ -429,25 +403,27 @@
         \end{tikzpicture}
         \hspace*{1cm}
         \begin{tikzpicture}[scale=1.5]
+            \draw[dashed] (-1,0) -- (-0.5,0.4) -- (0.5,0.5) edge (0.5,2.5) -- (1,0);
+            \draw [dashed] (-0.5, 2.4) -- (-0.5,0.4);
+            \draw (-1,0)  rectangle (1,2) -- (0.5,2.5) -- (-0.5, 2.4) -- (-1,2);
+            \node at (0,-0.45) {Right Prism};
+        \end{tikzpicture}
+
+    \end{center}
+    \begin{center}
+        \begin{tikzpicture}[scale=1.5]
             \draw[dashed] (-1,0) -- (0,0.5) edge (0,2.5) -- (1,0) coordinate(BR);
             \draw (-1,0) coordinate(BL)  rectangle (1,2) coordinate(TR)
             -- (0,2.5) coordinate(T) -- (-1,2) coordinate(TL);
             \node at (0,-0.45) {Regular Prism};
         \end{tikzpicture}
     \end{center}
-    \begin{center}
-        \begin{tikzpicture}[scale=1.5]
-            \draw[dashed] (-1,0) -- (-0.5,0.4) -- (0.5,0.5) edge (0.5,2.5) -- (1,0);
-            \draw [dashed] (-0.5, 2.4) -- (-0.5,0.4);
-            \draw (-1,0)  rectangle (1,2) -- (0.5,2.5) -- (-0.5, 2.4) -- (-1,2);
-            \node at (0,-0.45) {Right Prism};
-        \end{tikzpicture}
-    \end{center}
 
-    Prism with bases of parallelogram are called parallelepiped. Parallelepiped
-    with lateral edges that are parallel to each other are called right
-    parallelepiped. Right parallelepiped with regular bases are called cuboid, and
-    a cuboid with equal width, height, and depth is called a cube.
+    Prism with bases of parallelogram are called \emph{parallelepiped}.
+    Parallelepiped with lateral edges that are parallel to each other are called
+    \emph{right parallelepiped}. Right parallelepiped with regular bases are called
+    \emph{cuboid}, and a cuboid with equal width, height, and depth is called a
+    \emph{cube}.
 
     \begin{center}
         \begin{tikzpicture}
@@ -472,12 +448,12 @@
 
     \subsection*{Pyramid}
 
-    If a polyhedron has a base and all its lateral faces are triangles that shares
-    a common apex, then the polyhedron is called a pyramid.
+    If a polyhedron has a polygonal base and all its lateral faces are triangles
+    that shares a common apex, then the polyhedron is called a \emph{pyramid}.
 
     If the foot point of a pyramid is the centre of its base, then the pyramid is
-    called a right pyramid. If the base of a right pyramid is a regular polygon,
-    then the pyramid is called a regular pyramid.
+    called a \emph{right pyramid}. If the base of a right pyramid is a regular
+    polygon, then the pyramid is called a \emph{regular pyramid}.
 
     \begin{center}
         \tdplotsetmaincoords{70}{120}
@@ -521,8 +497,8 @@
 
     \subsection*{Right Circular Cylinder}
 
-    A right circular cylinder is the solid of revolution generated by rotating a
-    rectangle about one of its sides.
+    A \emph{right circular cylinder} is the solid of revolution generated by
+    rotating a rectangle about one of its sides.
 
     \begin{center}
         \def\myr{2}
@@ -553,7 +529,7 @@
 
     \subsection*{Right Circular Cone}
 
-    A right circular cone is the solid of revolution generated by rotating a
+    A \emph{right circular cone} is the solid of revolution generated by rotating a
     right-angled triangle about one of its sides.
 
     \begin{center}
@@ -567,7 +543,8 @@
     \subsection*{Sphere}
 
     The surface of revolution generated by rotating a semicircle about its diameter
-    is called a spherical surface, and the solid covered by it is called a sphere.
+    is called a \emph{spherical surface}, and the solid covered by it is called a
+    \emph{sphere}.
 
     \begin{center}
         \begin{tikzpicture}
@@ -628,12 +605,13 @@
     \end{center}
 
     The circle cut by a plane passing through the centre of the sphere is called a
-    great circle; the circle cut by a plane that does not pass through the centre
-    of the sphere is called a small circle.
+    \emph{great circle}; the circle cut by a plane that does not pass through the
+    centre of the sphere is called a \emph{small circle}.
 
     \section{Angles Formed by Planes and Straight Lines}
 
-    There are three types of angles formed by planes and straight lines:
+    There are three types of positional relationship between a plane and a straight
+    line:
 
     \begin{enumerate}
         \item The line is on the plane
@@ -668,21 +646,47 @@
     \end{enumerate}
 
     The angle formed by a line and the orthoprojection of the line on the plane is
-    called the angle formed by the line and the plane. This angle represents the
-    inclination of the line with respect to the plane, thus it is called the tilt
-    angle of the line with respect to the plane.
+    called \emph{the angle formed by the line and the plane}. This angle represents
+    the inclination of the line with respect to the plane, thus it is called
+    \emph{the tilt angle of the line with respect to the plane}.
 
     \subsection{Practice 1}
 
     \begin{enumerate}
         \item In the diagram below, $AB = 9cm$, $BC = 7cm$, $CG = 5cm$. Find:
               \begin{enumerate}
-                  \item The angle formed by the line $CF$ and the plane $GHDC$.
-                  \item The angle formed by the line $DF$ and the plane $EFGH$.
+                  \item The angle formed by line $CF$ and plane $GHDC$.
+                  \item The angle formed by line $DF$ and plane $EFGH$.
               \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw (0,0) node [below] {$A$} --(3,0) node [below] {$B$} node[midway, below] {$9cm$};
+                      \draw (3,0)--(3.5,1) node [right] {$C$} node [midway, right] {$7cm$};
+                      \draw[dashed] (3.5,1)--(1,1) node [above=2pt, left] {$D$} --(0,0);
+                      \draw (0,0)--(0,2) node[left] {$E$}--(3,2) node[above] {$F$} --(3,0);
+                      \draw (0,2)--(1,2.5)--(3.5,2.5) node[above=2pt, right] {$G$};
+                      \draw (3,2)--(3.5,2.5)--(3.5,1) node [midway, right] {$5cm$};
+                      \draw[dashed] (1,2.5) node [above] {$H$} --(1,1);
+                      \draw[dash pattern=on 1pt off 1pt] (3,2) -- (1,1);
+                      \draw[dash pattern=on 1pt off 1pt] (3,2) -- (3.5,1);
+                  \end{tikzpicture}
+              \end{center}
         \item The diagram below shows a right prism, its base $KQL$ is a right-angled
               triangle, $JKLM$ is a square. Given that $JK = 12cm$, $LQ = 5cm$, find the
-              angle formed by the line $JQ$ and the plane $PQLM$.
+              angle formed by line $JQ$ and plane $PQLM$.
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw (0,0) node [left] {$J$} --(3,0) node [below] {$K$} node [midway, below] {$12cm$};
+                      \draw (3,0)--(4,1) node [below] {$L$};
+                      \draw [dashed] (4,1)--(1,1) node [above=2pt, left] {$M$}--(0,0);
+                      \draw [dashed] (1,1) -- (1,2) node [above] {$P$};
+                      \draw (1,2)--(4,2) node [above] {$Q$} --(3,0);
+                      \draw (4,2) -- (4,1) node [midway, right] {$5cm$};
+                      \draw (1,2) -- (0,0);
+                      \draw[dash pattern=on 1pt off 1pt] (4,2) -- (0,0);
+                      \draw (4, 1.2) -- (3.9, 1.1) -- (3.9, 0.9);
+                  \end{tikzpicture}
+              \end{center}
     \end{enumerate}
 
     \subsection{Exercise 17.2}
@@ -690,93 +694,454 @@
     \begin{enumerate}
         \item The diagram below shows a cube with side length of $8.5cm$. Find:
               \begin{enumerate}
-                  \item The angle formed by the line $QS$ and the plane $MNRQ$.
-                  \item The angle formed by the line $KQ$ and the plane $PQML$.
+                  \item The angle formed by line $QS$ and plane $MNRQ$.
+                  \item The angle formed by line $KQ$ and plane $PQML$.
               \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.1]
+                      \draw (2,2,0) node [above] {$N$} --(0,2,0) node [above] {$K$} --(0,2,2) node [left] {$L$} --(2,2,2) node [above=6pt, left=-6pt] {$M$} --(2,2,0)--(2,0,0) node [right] {$R$}--(2,0,2)node [below] {$Q$} node [midway, right=16pt, below=-4pt] {$8.5cm$}--(0,0,2) node [below] {$P$}--(0,2,2);
+                      \draw (2,2,2)--(2,0,2);
+                      \draw[dashed](2,0,0)--(0,0,0)node [above=2pt, left] {$S$}--(0,2,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \draw[dash pattern=on 1pt off 1pt] (0, 0, 0) -- (2,0,2);
+                      \draw[dash pattern=on 1pt off 1pt] (0, 2, 0) -- (2,0,2);
+                  \end{tikzpicture}
+              \end{center}
 
         \item THe diagram below shows a cuboid, $AB = 8cm$, $BC = 6cm$, $AP = 10cm$. Find:
               \begin{enumerate}
                   \item The length of PR.
-                  \item The angle formed by the line $SB$ and the plane $AQQB$.
+                  \item The angle formed by line $SB$ and plane $AQQB$.
               \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.1]
+                      \draw (2,3,0) node [above] {$R$} --(0,3,0) node [above] {$S$} --(0,3,2) node [left] {$P$} --(2,3,2) node [above=6pt, left=-6pt] {$Q$} --(2,3,0)--(2,0,0) node [right] {$C$}--(2,0,2)node [below] {$B$} node [midway, right=12pt, below=-4pt] {$6cm$}--(0,0,2) node [below] {$A$} node [midway, below] {$8cm$} --(0,3,2) node [midway, left] {$10cm$};
+                      \draw (2,3,2)--(2,0,2);
+                      \draw[dashed](2,0,0)--(0,0,0)node [above=2pt, left] {$D$}--(0,3,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \draw[dash pattern=on 1pt off 1pt] (0, 3, 2) -- (2,3,0);
+                      \draw[dash pattern=on 1pt off 1pt] (0, 3, 0) -- (2,0,2);
+                  \end{tikzpicture}
+              \end{center}
         \item The diagram below shows a pyramid. Given that its base $PQRS$ is a square, $TR$
               is perpendicular to the base, $TS = 15cm$, $TR = 9cm$. Find:
               \begin{enumerate}
                   \item The length of $RS$.
-                  \item The angle formed by the line $PT$ and the plane $PQRS$.
+                  \item The angle formed by line $PT$ and plane $PQRS$.
               \end{enumerate}
+              \begin{center}
+                  \tdplotsetmaincoords{70}{-20}
+                  \begin{tikzpicture}[scale=0.7,tdplot_main_coords,line cap=butt,line join=bevel]
+                      \draw (-2, 2, 0) node [left] {$S$} -- (-1,-3,0) node [below] {$P$} -- (3,-3,0) node [right] {$Q$};
+                      \draw [dashed] (3, -3, 0) -- (2,2,0) node [below=8pt, left=-6pt] {$R$} -- (-2,2,0);
+                      \draw [dashed] (2,2,0) -- (2,2,2.5) node [above] {$T$}  node [midway, right=12pt, below=4pt] {$9cm$};
+                      \draw (-1,-3,0) -- (2,2,2.5) -- (3,-3,0);
+                      \draw (2,2,2.5) -- (-2,2,0) node [midway, above left] {$15cm$};
+                      \draw (1.71, 2, 0) -- (2, 2.8, 0) -- (2, 2, 0.32);
+                  \end{tikzpicture}
+              \end{center}
         \item The diagram below shows a right pyramid with height of $8cm$, its base is a
               rectangle, $E$ is the foot point from $V$ to the base. Given that $CD = 5cm$,
               $BC = 6cm$. Find:
               \begin{enumerate}
-                  \item The angle formed by the line $VA$ and $VE$.
-                  \item The angle formed by the line $VC$ and the planew $ABCD$.
+                  \item The angle formed by line $VA$ and line $VE$.
+                  \item The angle formed by line $VC$ and plane $ABCD$.
               \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
+                      \node (a) at (0,0) {};
+                      \node (b) at (2.5,0) {};
+                      \node (c) at (3.5,1) {};
+                      \node (d) at (1,1) {};
+                      \node (e) at (1.75,3) {};
+                      \draw (a.center) node [below left] {$B$} -- (b.center) node [below] {$C$} node [midway, below] {$6cm$} -- (c.center) node [ right] {$D$} node [midway, right=12pt, below=-4pt] {$5cm$} -- (e.center) node [above] {$V$} -- (b.center);
+                      \draw (a.center) -- (e.center);
+                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
+                      \draw[dashed] (d.center) node [below] {$A$} -- (e.center);
+                      \node (f) at (1.75, 0.5) {};
+                      \draw (f.center) circle (1pt);
+                      \draw[dash pattern=on 1pt off 1pt] (e.center) -- (f.center) node [below] {$E$};
+                  \end{tikzpicture}
+              \end{center}
         \item The diagram below shows a right pyramid, its base $PQRS$ is a regtangle. Given
               that $SR = 6cm$, $QR = 8cm$, $VS = 13cm$. Find:
               \begin{enumerate}
                   \item The length of $PR$.
                   \item The height of the pyramid.
-                  \item The angle of the line $VP$ and the plane $PQRS$.
+                  \item The angle of the line $VP$ and plane $PQRS$.
               \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
+                      \node (a) at (0,0) {};
+                      \node (b) at (2.5,0) {};
+                      \node (c) at (3.5,1) {};
+                      \node (d) at (1,1) {};
+                      \node (e) at (1.75,3) {};
+                      \draw (a.center) node [below left] {$S$} -- (b.center) node [below] {$R$} node [midway, below] {$6cm$} -- (c.center) node [ right] {$Q$} node [midway, right=12pt, below=-4pt] {$8cm$} -- (e.center) node [above] {$V$} -- (b.center);
+                      \draw (a.center) -- (e.center) node [midway, left=4pt] {$13cm$};
+                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
+                      \draw[dashed] (d.center) node [below] {$P$} -- (e.center);
+                      \draw[dash pattern=on 1pt off 1pt] (d.center) -- (b.center);
+                  \end{tikzpicture}
+              \end{center}
         \item The diagram below shows a regular pyramid, the length of its lateral edge is
               $12cm$, its base $ABCD$ is a square with side length of $8cm$, $M$ is the
               midpoint of $BC$. Find:
               \begin{enumerate}
                   \item The angle formed by the lateral edge and the base of the pyramid.
-                  \item The angle formed by the line $VM$ and the base of the pyramid.
+                  \item The angle formed by line $VM$ and the base of the pyramid.
               \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
+                      \node (a) at (0,0) {};
+                      \node (b) at (2.5,0) {};
+                      \node (c) at (3.5,1) {};
+                      \node (d) at (1,1) {};
+                      \node (e) at (1.75,3) {};
+                      \draw (a.center) node [below left] {$C$} -- (b.center) node [below] {$B$} -- (c.center) node [right] {$D$} node [midway, right=12pt, below=-4pt] {$8cm$} -- (e.center) node [above] {$V$} node [midway, right=2pt] {$13cm$} -- (b.center);
+                      \draw (a.center) -- (e.center);
+                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
+                      \draw[dashed] (d.center) node [below] {$A$} -- (e.center);
+                      \coordinate (m) at ($(a.center)!0.5!(b.center)$);
+                      \filldraw (m) circle (1pt);
+                      \node [below] at (m) {$M$};
+                      \tkzMarkSegment[pos=.5,mark=||](a.center,m);
+                      \tkzMarkSegment[pos=.5,mark=||](b.center,m);
+                  \end{tikzpicture}
+              \end{center}
         \item In the pyramid shown below, $\Delta ABC$ is a right-angled triangle, $CD$ is
               perpendicular to plane $ABC$, $CE$ is perpendicular to $AB$. Given that $AC =
                   15cm$, $BC = 20cm$ and $CD = 9cm$. Find:
               \begin{enumerate}
                   \item The length of $CE$.
                   \item $\angle CDE$.
-                  \item The angle formed by the line $AD$ and the plane $ABC$.
+                  \item The angle formed by line $AD$ and plane $ABC$.
               \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw (0.2, 0) node [left] {$A$} -- (1.5,2) node [above] {$D$} -- (5, 0.5) node [right] {$B$} -- cycle;
+                      \draw [dashed] (0.2, 0) -- (1.5, 1) node [above=4pt, left=-2pt] {$C$} node [midway] {$15cm$};
+                      \draw [dashed] (1.5, 2) -- (1.5, 1) node [midway, right] {$9cm$};
+                      \draw [dashed] (5, 0.5) -- (1.5, 1)  node [midway, above] {$20cm$};
+                      \draw[dash pattern=on 1pt off 1pt] (1.5, 1) -- (1.8, 0.2) node [below] {$E$};
+                      \draw (1.5, 1.15) -- (1.63, 1.13) -- (1.63, 0.98) -- (1.55, 0.9) -- (1.41, 0.93);
+                      \draw (1.76, 0.3) -- (1.9, 0.32) -- (1.955, 0.19);
+                  \end{tikzpicture}
+              \end{center}
         \item The diagram below shows a right prism, its base $CDF$ is a right-angled
               triangle. Given that $BC = 16.5cm$ and $AB = 12cm$. Assume that $CF = 2DF$,
               find:
               \begin{enumerate}
-                  \item The angle formed by the line $AB$ and the plane $BCFE$.
-                  \item The angle formed by the line $AC$ and the plan $BCFE$.
+                  \item The angle formed by line $AB$ and plane $BCFE$.
+                  \item The angle formed by line $AC$ and plan $BCFE$.
               \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.1]
+                      \draw (3,1,0) node [above] {$D$} --(0,1,0) node [above] {$A$};
+                      \draw (3, 1, 0)--(3,0,0) node [right] {$F$} --(3,0,2)node [below] {$C$}--(0,0,2) node [below] {$B$} node [midway, below] {$16.5cm$};
+                      \draw (0,1,0) -- (0,0,2) node [midway, left] {$12cm$};
+                      \draw (3,1,0) -- (3,0,2);
+                      \draw (3, 0.2, 0) -- (3, 0.2, 0.3) -- (3, 0.0, 0.3);
+                      \draw[dashed](3,0,0)--(0,0,0) node [below=6pt, right=-6pt] {$E$}--(0,1,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \draw[dash pattern=on 1pt off 1pt] (0, 1, 0) -- (3,0,2);
+                  \end{tikzpicture}
+              \end{center}
         \item The diagram below shows a cuboid with volume of $300cm^3$. Given that $AD =
-                  2DC$ and $DN = 9cm$. Find the angle formed by the line $AM$ and the plane
-              $KLMN$.
+                  2DC$ and $DN = 9cm$. Find the angle formed by line $AM$ and plane $KLMN$.
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.1]
+                      \draw (3,1,0) node [above] {$D$} --(0,1,0) node [above] {$A$} --(0,1,2) node [left] {$B$} --(3,1,2) node [above=6pt, left=-6pt] {$C$} --(3,1,0)--(3,0,0) node [right] {$N$} node [midway, right] {$9cm$}--(3,0,2)node [below] {$M$}--(0,0,2) node [below] {$L$} --(0,1,2);
+                      \draw (3,1,2)--(3,0,2);
+                      \draw[dashed](3,0,0)--(0,0,0) node [below=6pt, right=-6pt] {$K$}--(0,1,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \draw[dash pattern=on 1pt off 1pt] (0, 1, 0) -- (3,0,2);
+                  \end{tikzpicture}
+              \end{center}
         \item The diagram below shows a cuboid. Given that $AB = 13cm$, $BC = 6cm$, $CG =
                   4cm$. M is a point on $AB$, $AM = 9cm$. Find:
               \begin{enumerate}
-                  \item The angle formed by the line $HM$ and the plane $ABCG$.
-                  \item The angle formed by the line $HM$ and the plane $HDAE$.
-                  \item The angle formed by the line $AG$ and the plane $CDHG$.
+                  \item The angle formed by line $HM$ and plane $ABCG$.
+                  \item The angle formed by line $HM$ and plane $HDAE$.
+                  \item The angle formed by line $AG$ and plane $CDHG$.
               \end{enumerate}
-        \item The diagram below shows a regular prism, its base $ADS$ and $BCR$ is an
-              equiliteral triangle. Given that $AB = 16cm$, $BC = 7cm$, $SP = 5cm$. Find:
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.1]
+                      \draw (3,1,0) node [above] {$G$} --(0,1,0) node [above] {$H$} --(0,1,2) node [left] {$E$} --(3,1,2) node [above=6pt, left=-6pt] {$F$} --(3,1,0)--(3,0,0) node [right] {$C$} node [midway, right] {$4cm$}--(3,0,2)node [below right] {$B$} node [midway, right=16pt, below=-4pt] {$6cm$}--(0,0,2) node [below left] {$A$} --(0,1,2);
+                      \draw (3,1,2)--(3,0,2);
+                      \draw[dashed](3,0,0)--(0,0,0) node [below=6pt, right=-6pt] {$D$}--(0,1,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \draw[dash pattern=on 1pt off 1pt] (0, 1, 0) -- (2.4,0,2) node [below right] {$M$};
+                      \draw[dash pattern=on 1pt off 1pt] (3, 1, 0) -- (0, 0, 2);
+                      \path (0, -0.2, 2) -- node (success) {$9cm$} (2.4, -0.2, 2);
+                      \draw[->] (0, -0.2, 2) -- (success) -- (2.4, -0.2, 2);
+                      \draw[->] (2.4, -0.2, 2) -- (success) -- (0, -0.2, 2);
+                      \path (0, -0.5, 2) -- node (success) {$13cm$} (3, -0.5, 2);
+                      \draw[->] (0, -0.5, 2) -- (success) -- (3, -0.5, 2);
+                      \draw[->] (3, -0.5, 2) -- (success) -- (0, -0.5, 2);
+                  \end{tikzpicture}
+              \end{center}
+        \item The diagram below shows a regular prism, its bases $ADS$ and $BCR$ are
+              equiliteral triangles. Given that $AB = 16cm$, $BC = 7cm$, $SP = 5cm$. Find:
               \begin{enumerate}
                   \item The length of $BP$.
-                  \item The angle formed by the line $BP$ and the plane $ABCD$.
+                  \item The angle formed by line $BP$ and plane $ABCD$.
               \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.4]
+                      \draw (3,1,2) node [above] {$R$} --(0,1,2) node [above] {$S$};
+                      \draw (3, 1, 2)--(3,0,0) node [right] {$C$} --(3,0,2)node [below] {$B$} node [midway, below right] {$7cm$} --(0,0,2) node [below] {$A$} node [midway, below] {$16cm$};
+                      \draw (0,1,2) -- (0,0,2) node [midway, left] {$12cm$};
+                      \draw (3,1,2) -- (3,0,2);
+                      \draw[dashed](3,0,0)--(0,0,0) node [below=6pt, right=-6pt] {$D$}--(0,1,2);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \draw[dash pattern=on 1pt off 1pt] (1, 1, 2) node [above] {$P$} -- (3,0,2);
+                      \draw (0, 1, 2) -- (1, 1, 2) node [midway, above] {$5cm$};
+                      \draw[dash pattern=on 1pt off 1pt] (3, 1, 2) -- (3, 0, 1);
+                      \draw (3, 0.1, 1.1) -- (3, 0.1, 1) -- (3, 0, 0.9);
+                  \end{tikzpicture}
+              \end{center}
         \item The diagram below shows a roof, $HK$ is the ridge of the roof, its edges $HA$,
               $HD$, $KB$, $KC$ are euqal in length. Both of the planes $HAD$ and $KBC$ form a
-              $44^o$ angle with the plane $ABCD$. Given that $S$ and $T$ are the midpoints of
+              $44^o$ angle with plane $ABCD$. Given that $S$ and $T$ are the midpoints of
               $BC$ and $AD$ respectively. Find:
               \begin{enumerate}
-                  \item The distance from the line $HK$ to the plane $ABCD$.
+                  \item The distance from line $HK$ to plane $ABCD$.
                   \item The length of $HK$.
-                  \item The angle formed by the line $HA$ and the plane $ABCD$.
+                  \item The angle formed by line $HA$ and plane $ABCD$.
               \end{enumerate}
+              \begin{center}
+                  \includegraphics[scale=0.9]{roof}
+              \end{center}
         \item The length, width and height of a hall are $20m$, $15m$, and $4m$ respectively.
               Find:
-        \item \begin{enumerate}
+              \begin{enumerate}
                   \item The length of the diagonal of the hall.
                   \item The angle formed by the diagonal and the floor of the hall.
               \end{enumerate}
+              \begin{center}
+                  \includegraphics[scale=0.9]{hall}
+              \end{center}
         \item In the diagram below, $ABCD$ represents a rectangular plank with length and
               width of $60cm$ and $36cm$ respectively, its base $BC$ is on the ground and the
               top of it lies on the wall. Assume that the distance between $BC$ and the
               corner of the wall is $12cm$, find the angle formed by the diagonal $BD$ of the
               plank and the ground.
+              \begin{center}
+                  \includegraphics[scale=0.9]{wall}
+              \end{center}
+    \end{enumerate}
+
+    \section{Angle Formed by Two Planes}
+
+    There are three types positional relationship between two planes:
+
+    \begin{enumerate}
+        \item Two planes coincide with each other.
+        \item Two planes intersect with each other at a line.
+        \item Two planes are parallel to each other and do not intersect with each other.
+    \end{enumerate}
+
+    Two non-parallel planes intersect with each other at a line, the line is called
+    the \emph{common edge}. At any point on the common edge, draw a line
+    perpendicular to the common edge on each plane, the acute angles formed by
+    these two perpendicular lines are called \emph{the angle formed by the two
+        planes}.
+
+    \subsection{Practice 2}
+
+    \begin{enumerate}
+        \item The diagram below shows a cuboid with length of $12cm$, width of $10cm$ and
+              height of $6cm$.
+              \begin{enumerate}
+                  \item Find the angle formed by plane $EBCH$ and plane $ABCD$.
+                  \item Assume that $M$ is a point on $HG$, find the angle formed by plane $MAB$ and
+                        plane $ABCD$.
+              \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.4]
+                      \draw (2,1,0) node [above] {$G$} --(0,1,0) node [above] {$H$} --(0,1,2) node [left] {$E$} --(2,1,2)node [above] {$F$} --(2,1,0) --(2,0,0) node [right] {$C$} node [midway, right] {$6cm$} --(2,0,2) node [below] {$B$}  node [midway, below right] {$10cm$} --(0,0,2) node [below] {$A$}  node [midway, below] {$12cm$} --(0,1,2);
+                      \draw (2,1,2)--(2,0,2);
+                      \draw[dashed](2,0,0)--(0,0,0) node [below] {$D$}--(0,1,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \fill [color=gray, opacity=0.4] (0, 1, 0) -- (0, 1, 2) -- (2, 0, 2) -- (2, 0, 0) -- cycle;
+                      \draw (1,1,0) circle (1pt) node [above] {$M$};
+                  \end{tikzpicture}
+              \end{center}
+
+        \item The diagram below shows a regular prism, its bases $ABC$ and $DEF$ are
+              equilateral triangles with side length of $5cm$. Given that the height of the
+              prism is $10cm$, find:
+              \begin{enumerate}
+                  \item The length of $BF$.
+                  \item The angle formed by plane $ABF$ and plane $ABC$.
+              \end{enumerate}
+    \end{enumerate}
+
+    \subsection{Exercise 17.3}
+
+    \begin{enumerate}
+        \item The diagram below shows a cuboid with length of $8cm$, width of $6cm$ and
+              height of $4cm$. Find the angle formed by plane $ABMN$ and $KLMN$.
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.4]
+                      \draw (2,1,0) node [above] {$D$} --(0,1,0) node [above] {$A$} --(0,1,2) node [left] {$B$} --(2,1,2)node [above] {$C$} --(2,1,0) --(2,0,0) node [right] {$N$} node [midway, right] {$4cm$} --(2,0,2) node [below] {$M$}  node [midway, below right] {$6cm$} --(0,0,2) node [below] {$L$} node [midway, below] {$8cm$} --(0,1,2);
+                      \draw (2,1,2)--(2,0,2);
+                      \draw[dashed](2,0,0)--(0,0,0) node [below] {$K$}--(0,1,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \fill [color=gray, opacity=0.4] (0, 1, 0) -- (0, 1, 2) -- (2, 0, 2) -- (2, 0, 0) -- cycle;
+                  \end{tikzpicture}
+              \end{center}
+        \item In the right prism shown below, $ABCD$ is a rectangle with length of $20cm$ and
+              width of $12cm$, $BCRQ$ is a trapezoid, $\angle QBC$ and $\angle RCB$ are both
+              right angles, $BQ = 5cm$, $CR = 10cm$. Find the angle formed by plane $PQRS$
+              and plane $ABCD$.
+        \item The diagram below shows a cuboid, $AB = 8cm$, $BC = 6cm$, $CT = 5cm$, $X$ is
+              the midpoint of $TU$. Find:
+              \begin{enumerate}
+                  \item The angle formed by plane $XAB$ and plane $ABCD$.
+                  \item The angle formed by plane $BCUR$ and plane $ADUR$.
+                  \item The angle formed by plane $ABTU$ and plane $ABCD$.
+              \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.4]
+                      \draw (2,1,0) node [above] {$T$} --(0,1,0) node [above] {$U$} --(0,1,2) node [left] {$R$} --(2,1,2)node [above] {$S$} --(2,1,0) --(2,0,0) node [right] {$C$} node [midway, right] {$6cm$} --(2,0,2) node [below] {$B$}  node [midway, below right] {$10cm$} --(0,0,2) node [below] {$A$}  node [midway, below] {$12cm$} --(0,1,2);
+                      \draw (2,1,2)--(2,0,2);
+                      \draw[dashed](2,0,0)--(0,0,0) node [below] {$D$}--(0,1,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \fill [color=gray, opacity=0.4] (2, 0, 2) -- (0, 0, 2) -- (1,1,0) -- cycle;
+                      \draw (1,1,0) circle (1pt) node [above] {$X$};
+                  \end{tikzpicture}
+              \end{center}
+        \item The diagram below shows a right pyramid, its bases $ABE$ and $DCF$ are
+              right-angled triangles. Given that $AE = 4cm$, $BE = \frac{2}{3}EF$, $EF =
+                  4DF$, find the angle formed by plane $ABCD$ and plane $BCFE$.
+        \item In the pyramid shown below, $PQT$, $SPT$, and $SRT$ are all right-angled
+              triangles, $PQRS$ is a triangle. Given that $PQ = 5cm$, $RT = 13cm$, $PT =
+                  20cm$. Find:
+              \begin{enumerate}
+                  \item The height of the prism.
+                  \item The angle formed by line $TQ$ and plane $QST$.
+                  \item The angle formed by plane $RST$ and $PQT$.
+              \end{enumerate}
+        \item The diagram below shows a right prism, its base $BCGF$ is a trapezoid, $BC = BF
+                  = 12cm$, $FG = 16cm$. The lateral face $EFGH$ is a square, and is
+              perependicular to another lateral face $ABFE$. Find:
+              \begin{enumerate}
+                  \item The angle formed by plane $CDHG$ and plane $EFGH$.
+                  \item The angle formed by plane $ABH$ and plane $ABFE$.
+              \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.4]
+                      \draw (1.5,1.5,0) node [above] {$D$} --(0,1.5,0) node [above] {$A$} --(0,1.5,2) node [left] {$B$} --(1.5,1.5,2)node [above] {$C$} --(1.5,1.5,0) --(2,0,0) node [right] {$H$} --(2,0,2) node [below] {$G$} --(0,0,2) node [below] {$F$} node [midway, below] {$16cm$} --(0,1.5,2) node [midway, left=4pt] {$12cm$};
+                      \draw (1.5,1.5,2)--(2,0,2);
+                      \draw[dashed](2,0,0)--(0,0,0) node [below] {$E$}--(0,1.5,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \fill [color=gray, opacity=0.4] (0, 1.5, 0) -- (0, 1.5, 2) -- (2, 0, 0) -- cycle;
+                      \node (a) at (0,1.5,2) {};
+                      \node (b) at (1.5,1.5,2) {};
+                      \node (c) at (0,0,2) {};
+                      \tkzMarkSegment[pos=.45,mark=||](a,b);
+                      \tkzMarkSegment[pos=.5,mark=||](a,c);
+                  \end{tikzpicture}
+              \end{center}
+        \item In the rectangle shown below, $BC = 8cm$, $CD = 6cm$, $BQ = 10cm$. Given that
+              $M$ is the midpoint of $PQ$. Find:
+              \begin{enumerate}
+                  \item The angle formed by line $MD$ and plane $PQBA$.
+                  \item The angle formed by plane $AMD$ and plane $ABCD$.
+              \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.4]
+                      \draw (2,3,0) node [above] {$S$} --(0,3,0) node [above] {$P$} --(0,3,2) node [left] {$Q$} --(2,3,2)node [above] {$R$} --(2,3,0) --(2,0,0) node [right] {$D$} --(2,0,2) node [below] {$C$}  node [midway, below right] {$6cm$} --(0,0,2) node [below] {$B$}  node [midway, below] {$8cm$} --(0,3,2) node [midway, left] {$10cm$};
+                      \draw (2,3,2)--(2,0,2);
+                      \draw[dashed](2,0,0)--(0,0,0) node [above=2pt, left] {$A$}--(0,3,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \fill [color=gray, opacity=0.4] (0, 3, 1) -- (0,0,0) -- (2, 0, 0) -- cycle;
+                      \draw (0,3,1) circle (1pt) node [above] {$M$};
+                  \end{tikzpicture}
+              \end{center}
+        \item The diagram below shows a pyramid with an isoceles triangle base. Given that
+              $CD = CE = 5cm$, $ED = 6cm$, $ACD$ is a right-angled triangle, $B$ is a point
+              on $AC$, $AD = 2cm$, $BC = 4cm$. Find:
+              \begin{enumerate}
+                  \item The angle formed by plane $BDE$ and plane $CDE$.
+                  \item The angle formed by the plane $ADE$ and $CDE$.
+              \end{enumerate}
+        \item The diagram below shows a regular pyramid with a square base. Given that $PQ =
+                  15cm$, $PV = 20cm$. Find:
+              \begin{enumerate}
+                  \item The angle formed by linee $PV$ and plane $PQRS$.
+                  \item The angle formed by the lateral faces and the base of the pyramid.
+              \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
+                      \node (a) at (0,0) {};
+                      \node (b) at (2.5,0) {};
+                      \node (c) at (3.5,1) {};
+                      \node (d) at (1,1) {};
+                      \node (e) at (1.75,3) {};
+                      \draw (a.center) node [below left] {$P$} -- (b.center) node [below] {$Q$} node [midway, below] {$15cm$} -- (c.center) node [ right] {$R$} -- (e.center) node [above] {$V$} -- (b.center);
+                      \draw (a.center) -- (e.center) node [midway, left=4pt] {$20cm$};
+                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
+                      \draw[dashed] (d.center) node [below] {$S$} -- (e.center);
+                  \end{tikzpicture}
+              \end{center}
+        \item The diagram below shows a right pyramid with lateral edges of $13cm$. Its base
+              $ABCD$ is a rectangle with length of $12cm$ and width of $10cm$. Find:
+              \begin{enumerate}
+                  \item The angle formed by plane $VBC$ and plane $ABCD$.
+                  \item The angle formed by plane $VCD$ and plane $ABCD$.
+              \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
+                      \node (a) at (0,0) {};
+                      \node (b) at (2.5,0) {};
+                      \node (c) at (3.5,1) {};
+                      \node (d) at (1,1) {};
+                      \node (e) at (1.75,3) {};
+                      \draw (a.center) node [below left] {$A$} -- (b.center) node [below] {$B$} node [midway, below] {$12cm$} -- (c.center) node [ right] {$C$} node [midway, right=12pt, below=-4pt] {$10cm$} -- (e.center) node [above] {$V$} -- (b.center);
+                      \draw (a.center) -- (e.center) node [midway, left=4pt] {$13cm$};
+                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
+                      \draw[dashed] (d.center) node [below] {$D$} -- (e.center);
+                  \end{tikzpicture}
+              \end{center}
+        \item The diagram below shows a right pyramid with lateral edges of $18cm$, its base
+              $ABCD$ is a rectangle with length of $15cm$ and width of $10cm$. Find:
+              \begin{enumerate}
+                  \item The height of the pyramid.
+                  \item The angle formed by plane $VAB$ and plane $ABCD$.
+                  \item The angle formed by plane $VBC$ and plane $VAD$.
+              \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
+                      \node (a) at (0,0) {};
+                      \node (b) at (2.5,0) {};
+                      \node (c) at (3.5,1) {};
+                      \node (d) at (1,1) {};
+                      \node (e) at (1.75,3) {};
+                      \draw (a.center) node [below left] {$A$} -- (b.center) node [below] {$B$} node [midway, below] {$15cm$} -- (c.center) node [ right] {$C$} node [midway, right=12pt, below=-4pt] {$10cm$} -- (e.center) node [above] {$V$} -- (b.center);
+                      \draw (a.center) -- (e.center) node [midway, left=4pt] {$18cm$};
+                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
+                      \draw[dashed] (d.center) node [below] {$D$} -- (e.center);
+                  \end{tikzpicture}
+              \end{center}
+        \item The diagram below shows a right prism with isoceles triangle bases. The side
+              length and base length of the triangle base are $10cm$ and $16cm$ respectively,
+              the height of the prism is $20cm$. Given that $P$ is the midpoint of $AB$.
+              Find:
+              \begin{enumerate}
+                  \item The length of $PC$.
+                  \item The angle formed by line $EC$ and plane $ABCD$.
+                  \item The angle formed by plane $DCE$ and plane $ABCD$.
+              \end{enumerate}
+
     \end{enumerate}
 
 \end{multicols}
