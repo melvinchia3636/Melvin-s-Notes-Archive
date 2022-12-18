@@ -999,6 +999,16 @@
               width of $12cm$, $BCRQ$ is a trapezoid, $\angle QBC$ and $\angle RCB$ are both
               right angles, $BQ = 5cm$, $CR = 10cm$. Find the angle formed by plane $PQRS$
               and plane $ABCD$.
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.4]
+                      \draw (2,1,0) node [above] {$R$} --(0,1,0) node [above] {$S$} --(0,0.5,2) node [left] {$P$} --(2,0.5,2)node [above=6pt,left=-2pt] {$Q$} --(2,1,0) --(2,0,0) node [right] {$C$} node [midway, right] {$10cm$} --(2,0,2) node [below] {$B$}  node [midway, below right] {$12cm$} --(0,0,2) node [below] {$A$} node [midway, below] {$20cm$} --(0,0.5,2);
+                      \draw (2,0.5,2)--(2,0,2) node [midway, left] {$5cm$};
+                      \draw[dashed](2,0,0)--(0,0,0) node [above = 2pt, left] {$D$}--(0,1,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \draw (2, 0.2, 0) -- (2, 0.2, 0.3) -- (2, 0.0, 0.3);
+                      \draw (2, 0.2, 2) -- (2, 0.2, 1.7) -- (2, 0.0, 1.7);
+                  \end{tikzpicture}
+              \end{center}
         \item The diagram below shows a cuboid, $AB = 8cm$, $BC = 6cm$, $CT = 5cm$, $X$ is
               the midpoint of $TU$. Find:
               \begin{enumerate}
@@ -1019,6 +1029,18 @@
         \item The diagram below shows a right pyramid, its bases $ABE$ and $DCF$ are
               right-angled triangles. Given that $AE = 4cm$, $BE = \frac{2}{3}EF$, $EF =
                   4DF$, find the angle formed by plane $ABCD$ and plane $BCFE$.
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.1]
+                      \draw (3,1,0) node [above] {$D$} --(0,1,0) node [above] {$A$};
+                      \draw (3, 1, 0)--(3,0,0) node [right] {$F$} --(3,0,2)node [below] {$C$}--(0,0,2) node [below] {$B$};
+                      \draw (0,1,0) -- (0,0,2);
+                      \draw (3,1,0) -- (3,0,2);
+                      \draw (3, 0.2, 0) -- (3, 0.2, 0.3) -- (3, 0.0, 0.3);
+                      \draw[dashed](3,0,0)--(0,0,0) node [below=6pt, right=-6pt] {$E$}--(0,1,0)  node [midway,right] {$4cm$};
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \draw[dash pattern=on 1pt off 1pt] (0, 1, 0) -- (3,0,2);
+                  \end{tikzpicture}
+              \end{center}
         \item In the pyramid shown below, $PQT$, $SPT$, and $SRT$ are all right-angled
               triangles, $PQRS$ is a triangle. Given that $PQ = 5cm$, $RT = 13cm$, $PT =
                   20cm$. Find:
@@ -1027,6 +1049,18 @@
                   \item The angle formed by line $TQ$ and plane $QST$.
                   \item The angle formed by plane $RST$ and $PQT$.
               \end{enumerate}
+              \begin{center}
+                  \tdplotsetmaincoords{70}{-20}
+                  \begin{tikzpicture}[scale=0.7,tdplot_main_coords,line cap=butt,line join=bevel]
+                      \draw (-2, 2, 0) node [left] {$P$} -- (-1,-0.5,0) node [below] {$Q$} node [midway, left=8pt,below=-2pt] {$5cm$} -- (3,-0.5,0) node [right] {$R$};
+                      \draw [dashed] (3, -0.5, 0) -- (2,2,0) node [below=8pt, left=-6pt] {$S$} -- (-2,2,0);
+                      \draw [dashed] (2,2,0) -- (2,2,5) node [above] {$T$};
+                      \draw (-1,-0.5,0) -- (2,2,5) -- (3,-0.5,0) node [midway, right] {$13cm$};
+                      \draw (2,2,5) -- (-2,2,0) node [midway, above left] {$20cm$};
+                      \draw (1.71, 2, 0) -- (2, 2.8, 0) -- (2, 2, 0.32) -- (2, 1.2, 0.5) -- (2, 1.2, 0.15);
+                      \draw (-1.95, 1.6, 0.4) -- (-1.9, 0.9, 0.5) -- (-2.05, 1, 0.25);
+                  \end{tikzpicture}
+              \end{center}
         \item The diagram below shows a right prism, its base $BCGF$ is a trapezoid, $BC = BF
                   = 12cm$, $FG = 16cm$. The lateral face $EFGH$ is a square, and is
               perependicular to another lateral face $ABFE$. Find:
@@ -1046,6 +1080,8 @@
                       \node (c) at (0,0,2) {};
                       \tkzMarkSegment[pos=.45,mark=||](a,b);
                       \tkzMarkSegment[pos=.5,mark=||](a,c);
+                      \draw (0, 0.15, 0) -- (0.15, 0.15, 0) -- (0.15, 0, 0);
+                      \draw (0, 0.15, 2) -- (0.15, 0.15, 2) -- (0.15, 0, 2);
                   \end{tikzpicture}
               \end{center}
         \item In the rectangle shown below, $BC = 8cm$, $CD = 6cm$, $BQ = 10cm$. Given that
@@ -1141,6 +1177,30 @@
                   \item The angle formed by line $EC$ and plane $ABCD$.
                   \item The angle formed by plane $DCE$ and plane $ABCD$.
               \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.4]
+                      \draw (1,1.5,2) node [above] {$E$} --(2.5,1.5,0) --(3.5,0,0) node [right] {$C$} node [midway, right] {$6cm$} --(2,0,2) node [below right] {$B$}  node [midway, below right] {$20cm$} --(0,0,2) node [left] {$A$}  --(1,1.5,2) node [midway, left=4pt] {$10cm$};
+                      \draw (1,1.5,2)--(2,0,2);
+                      \draw[dashed](3.5,0,0)--(1.5,0,0) node [below] {$D$}--(2.5,1.5,0) node [above] {$F$};
+                      \draw[dashed](1.5,0,0)--(0,0,2);
+                      \fill[color=gray, opacity=0.4] (1, 1.5, 2) -- (3.5, 0, 0) -- (1.5, 0, 0);
+                      \draw (0, -1, -0.6) circle (1pt);
+                      \draw [dash pattern=on 1pt off 1pt] (0, -1, -0.6) -- (3.5, 0, 0);
+                      \path (0, -0.2, 2) -- node (success) {$16cm$} (2, -0.2, 2);
+                      \draw[->] (0, -0.2, 2) -- (success) -- (2, -0.2, 2);
+                      \draw[->] (2, -0.2, 2) -- (success) -- (0, -0.2, 2);
+                      \node (a) at (1,1.5,2) {};
+                      \node (b) at (2, 0, 2) {};
+                      \node (c) at (0,0,2) {};
+                      \node (d) at (1.5, 0, 0) {};
+                      \node (e) at (2.5, 1.5, 0) {};
+                      \node (f) at (3.5, 0, 0) {};
+                      \tkzMarkSegment[pos=.45,mark=||](a,b);
+                      \tkzMarkSegment[pos=.5,mark=||](a,c);
+                      \tkzMarkSegment[pos=0.5,mark=||](e,f);
+                      \tkzMarkSegment[pos=0.5,mark=||](e,d);
+                  \end{tikzpicture}
+              \end{center}
 
     \end{enumerate}
 
