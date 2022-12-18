@@ -941,8 +941,31 @@
 
     \begin{enumerate}
         \item Two planes coincide with each other.
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw (0,0)--(3,0);
+                      \draw (3,0)--(4,1);
+                      \draw (4,1)--(1,1)--(0,0);
+                      \draw (0.2, 0.2) -- (3.2, 0.2);
+                      \fill [color=gray,opacity=0.4] (0.2, 0.2) -- (3.2, 0.2) -- (4, 1) -- (1, 1) -- cycle;
+                  \end{tikzpicture}
+              \end{center}
         \item Two planes intersect with each other at a line.
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw (0,0)--(3,0);
+                      \draw (3,0)--(4,1);
+                      \draw (4,1)--(1,1)--(0,0);
+                      \filldraw [fill=gray!40] (0.9, 0) -- (2,1) -- (1, 1.5) -- (0, 0.5) -- (2, -0.6) -- (2.6, 0);
+                  \end{tikzpicture}
+              \end{center}
         \item Two planes are parallel to each other and do not intersect with each other.
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw (0,0)--(3,0)--(4,1)--(1,1)--(0,0);
+                      \filldraw [fill=gray!40] (-0.5,0.5)--(2.5,0.5)--(3.5,1.5)--(0.5,1.5)--(-0.5,0.5);
+                  \end{tikzpicture}
+              \end{center}
     \end{enumerate}
 
     Two non-parallel planes intersect with each other at a line, the line is called
@@ -950,6 +973,23 @@
     perpendicular to the common edge on each plane, the acute angles formed by
     these two perpendicular lines are called \emph{the angle formed by the two
         planes}.
+    \begin{center}
+        \begin{tikzpicture}
+            \draw (0,0)--(3,0)--(5,1.5)--(2,1.5)--(0,0);
+            \draw (1.5, 0) -- (3.5, 1.5);
+            \filldraw[fill=gray!40] (0, 0) -- (0.5, 1) -- (3.5, 1) -- (3, 0);
+            \draw (1.5, 0) -- (2, 1);
+            \draw [dashed] (1.5, 0) -- (2.85, 1);
+            \draw [dashed] (0, 0) -- (1.35, 1);
+            \draw (1.28, 0) -- (1.35, 0.15) -- (1.58, 0.15);
+            \draw (1.7, 0.15) -- (1.9, 0.15) -- (1.7, 0);
+            \node (O) at (1.5, 0) {};
+            \node (x) at (2, 1) {};
+            \node (z) at (2.9, 1) {};
+            \pic [draw,
+                angle radius=5mm, angle eccentricity=0.1] {angle = z--O--x};
+        \end{tikzpicture}
+    \end{center}
 
     \subsection{Practice 2}
 
