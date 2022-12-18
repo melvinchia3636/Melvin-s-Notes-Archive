@@ -979,6 +979,16 @@
                   \item The length of $BF$.
                   \item The angle formed by plane $ABF$ and plane $ABC$.
               \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.4]
+                      \draw (1,1.5,2) node [above] {$C$} --(2.5,1.5,0) --(3.5,0,0) node [right] {$E$} --(2,0,2) node [below right] {$B$}  node [midway, below right] {$10cm$} --(0,0,2) node [left] {$A$}  node [midway, below] {$5cm$} --(1,1.5,2);
+                      \draw (1,1.5,2)--(2,0,2);
+                      \draw[dashed](3.5,0,0)--(1.5,0,0) node [below] {$D$}--(2.5,1.5,0) node [above] {$F$};
+                      \draw[dashed](1.5,0,0)--(0,0,2);
+                      \fill[color=gray, opacity=0.4] (2.5, 1.5, 0) -- (0, 0, 2) -- (2, 0, 2);
+                      \draw [dash pattern=on 1pt off 1pt] (2, 0, 2) -- (2.5, 1.5, 0);
+                  \end{tikzpicture}
+              \end{center}
     \end{enumerate}
 
     \subsection{Exercise 17.3}
@@ -1107,6 +1117,30 @@
                   \item The angle formed by plane $BDE$ and plane $CDE$.
                   \item The angle formed by the plane $ADE$ and $CDE$.
               \end{enumerate}
+              \begin{center}
+                  \tdplotsetmaincoords{70}{70}
+                  \begin{tikzpicture}[scale=0.6,tdplot_main_coords,declare function={d=6;}]
+                      \path (0,0,0)       coordinate (A) node [left] {$E$}
+                      (d,0,0)        coordinate (C) node [below] {$D$}
+                      (d/2,{d*sqrt(3)/2},0)    coordinate (B) node [right] {$C$}
+                      (d/2,{d*sqrt(3)/2 - 0.15} ,d-1.5) coordinate (F) node [right] {$B$}
+                      (d/2,d/2 + 2,{d/sqrt(2) + 2}) coordinate (D) node [above] {$A$}
+                      ($ (A)!0.5!(C) $) coordinate (M);
+                      \foreach \p/\g in {A/-90,B/-90,C/-90,D/90}
+                      \path (\p)+(\g:3mm);
+                      \draw (F) circle (1.2pt);
+                      \draw (D) -- (A) (D) -- (B) (D) -- (C) (A) -- (C) -- (B);
+                      \draw [dashed] (A) -- (B);
+                      \path (D) -- (F) node [midway, right] {$2cm$};
+                      \path (B) -- (F) node [midway, right] {$4cm$};
+                      \path (C) -- (B) node [midway, right=12pt, below=4pt] {$5cm$};
+                      \path (A) -- (C) node [midway, left=14pt, below=-4pt] {$6cm$};
+                      \fill [color=gray, opacity=0.4] (A) -- (C) -- (F) -- cycle;
+                      \draw (d/2,{d*sqrt(3)/2},0.5) -- (d/2,{d*sqrt(3)/2 - 0.4} ,0.4) -- (d/2,{d*sqrt(3)/2 - 0.4} ,-0.1);
+                      \tkzMarkSegment[pos=.45,mark=||](A,B);
+                      \tkzMarkSegment[pos=.45,mark=||](B,C);
+                  \end{tikzpicture}
+              \end{center}
         \item The diagram below shows a regular pyramid with a square base. Given that $PQ =
                   15cm$, $PV = 20cm$. Find:
               \begin{enumerate}
