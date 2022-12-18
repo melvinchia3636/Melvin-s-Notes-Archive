@@ -20,6 +20,9 @@
 \usepackage{tikz-3dplot}
 \usepackage{tkz-euclide}
 \usepackage{graphicx}
+\usepackage{enumitem}
+
+\def\nswe#1#2#3{#1\,$#2^\circ\,#3'$}
 \graphicspath{ {./assets/} }
 \usetikzlibrary{calc,matrix,arrows}
 \usetikzlibrary{decorations.pathmorphing,patterns, calligraphy, perspective,backgrounds}
@@ -608,7 +611,7 @@
     \emph{great circle}; the circle cut by a plane that does not pass through the
     centre of the sphere is called a \emph{small circle}.
 
-    \section{Angles Formed by Planes and Straight Lines}
+    \section{Angle Formed by Planes and Straight Lines}
 
     There are three types of positional relationship between a plane and a straight
     line:
@@ -1285,6 +1288,11 @@
     poles. The earth rotating around its axis once is called a day, and the earth
     rotating around the sun once is called a year.
 
+    Any point on the earth's surface can be identified by two angles, the first is
+    the angle between the point and the equator, called the \emph{latitude} of the
+    point, and the second is the angle between the point and the prime meridian,
+    called the \emph{longitude} of the point.
+
     \subsection*{Longitude and Lines of Longitude}
 
     The two semicircles that are formed by the intersection of the earth's surface
@@ -1295,13 +1303,13 @@
         meridian}.
 
     \begin{center}
-        \includegraphics[scale=0.3]{primemeridian}
+        \includegraphics[scale=0.25]{primemeridian}
     \end{center}
 
     The angle between the Greenwich Meridian and the line of longitude that passes
     through the point $P$ is called the \emph{longitude of $P$}. There are 360
     degrees of longitude ($+180^\circ$ eastward and $-180^\circ$ westward.). The
-    Prime Meridian divides the world into the Eastern Hemisphere and the Western
+    prime meridian divides the world into the Eastern Hemisphere and the Western
     Hemisphere. $180^{\circ}E$ and $180^{\circ}W$ coincide with each other at the
     same line of longitude, called the \emph{$180^{th}$ Meridian} or
     \emph{Antimeridian}.
@@ -1310,5 +1318,148 @@
         \includegraphics[scale=1.4]{longitude.png}
     \end{center}
 
+    \subsection*{Latitude and Parallels of Latitude}
+
+    The lines of latitude are the circles that are perpendicular to the plane that
+    passes through the north and south poles. The \emph{equator} is the one and
+    only great circle among the parallels of latitude.
+
+    \begin{center}
+        \includegraphics[scale=1.3]{latitude}
+    \end{center}
+
+    The angle between the equator and the line of latitude that passes through the
+    point $P$ is called the \emph{latitude of $P$}. There are 180 degrees of
+    latitude ($+90^\circ$ northward and $-90^\circ$ southward). The equator divides
+    the world into the Northern Hemisphere and the Southern Hemisphere.
+
+    \begin{center}
+        \includegraphics[scale=1.3]{latitude 2.png}
+    \end{center}
+
+    \subsection{Practice 3}
+
+    \begin{enumerate}
+        \item In the diagram below, $NGS$ is the prime meridian, $O$ is the centre of the
+              earth. Find the longitude of locations $P$, $Q$, $R$ and $T$.
+              \begin{center}
+                  \includegraphics[scale=1.3]{p3q1.png}
+              \end{center}
+        \item In the diagram below, $O$ is the centre of the earth, location $A$ and $B$ are
+              on the equator. Find the location of $P$, $Q$, $R$ and $T$.
+              \begin{center}
+                  \includegraphics[scale=1.3]{p3q2.png}
+              \end{center}
+    \end{enumerate}
+
+    \subsection*{Radius of the Parallel of Latitude}
+
+    Let $R$ be the radius of the earth, $r$ be the radius of latitude $\theta$,
+    then $r = R \cos \theta$.
+    \begin{center}
+        \includegraphics[scale=1.3]{radius of latitude.png}
+    \end{center}
+
+    \subsection*{Nautical Miles}
+
+    The arc length corresponding to $1'$ ($=\frac{1}{60}^\circ$) of the great
+    circle on earth is called a \emph{nautical mile} ($1NM$), that is, $1NM =
+        \frac{1}{60 \times 360} \times 2\pi \times 6370km = 1.853km$.
+
+    \subsection*{Time Difference and Longitude}
+
+    The time is calculated by the rotation of the earth around its axis. The earth
+    rotates around its axis from west to east once in $24h$. That is, the earth
+    rotates $15^\circ$ in $1h$. Thus, the time difference between two locations on
+    the earth is equal to the difference of their longitudes. Thus, the time
+    difference is $1hr$ per $15^\circ$ of longitude difference.
+
+    \begin{enumerate}[listparindent=1.5em]
+        \item \textbf{Local Time}\\
+              The local time is the time at a location on the earth. The local time for any location on the same line of longitude is the same.
+        \item \textbf{Standard Time}\\
+              Back in the year $1844$, International Meridian Conference was held in Washington DC. The conference decided to divide the world into 24 time zones base on the Greenwich Meridian, called the \emph{Greenwich Meridian Time (GMT)}. There is zero time offset $7.5^\circ$ eastward and $7.5^\circ$ westward of the Greenwich Meridian. The time offset is $1hr$ per $15^\circ$ of longitude difference. All places in the same time zone share the same local time with the location located on the line of longitude that passes through the centre of the time zone, called the \emph{standard time} or \emph{zone time}.
+
+              \indent When entering a new time zone from the east, the local time is advanced by
+              $1hr$ per $15^\circ$ of longitude difference. When entering a new time zone
+              from the west, the local time is delayed by $1hr$ per $15^\circ$ of longitude
+              difference.
+    \end{enumerate}
 \end{multicols}
+\begin{center}
+    \makebox[\textwidth]{\includegraphics[scale=0.42]{timezone.png}}
+\end{center}
+\begin{multicols*}{2}
+    \section{Distance of Two Location on the Same Line of Longitude}
+
+    The distance of two location on the same line of longitude is the arc length
+    corresponding to the difference of their latitudes. Given two location $P$ and
+    $Q$ on the same line of longitude, according to the definition of nautical
+    mile, the distance between $P$ and $Q$ can be acquired by the arc length of
+    $PQ$. That is, $\overset{\frown}{PQ} = \theta \times 60NM$, where $\theta$ is
+    the difference of their latitudes.
+
+    \subsection{Practice 4}
+
+    \begin{enumerate}
+        \item Given that location $A$ and $B$ are on the same line of longitude. Base on the
+              following longitude, find the distance between $A$ and $B$ (Express your answer
+              in nautical miles):
+              \begin{enumerate}
+                  \item $A(50^\circ N)$, $B(75^\circ N)$
+                  \item $A(0^\circ)$, $B(42^\circ S)$
+                  \item $A(43^\circ N)$, $B(38^\circ S)$
+              \end{enumerate}
+        \item Given that location $P$ and $Q$ are on the same line of longitude. The distane
+              between two locations is $1000NM$, $P$ is located at $7^\circ 30'$ north of the
+              equator. Base on the following criteria, find the latitude of $Q$:
+              \begin{enumerate}
+                  \item $Q$ is located at the north of $P$
+                  \item $Q$ is located at the south of $P$
+              \end{enumerate}
+    \end{enumerate}
+
+    \subsection {Exercise 17.5}
+
+    \begin{enumerate}
+        \item Given that $A$ and $B$ are on the same line of longitude. Base on the following
+              difference of latitude of two locations, find the distance between $A$ and $B$
+              (Express your answer in nautical miles):
+              \begin{enumerate}
+                  \item $\theta = 39^\circ$
+                  \item $\theta = 80^\circ 30'$
+                  \item $\theta = 64^\circ 20'$
+              \end{enumerate}
+        \item Given that $A$ and $B$ are on the same line of longitude. Base on the following
+              distance between two locations, find the difference of latitude of $A$ and $B$
+              (Round your answer to the nearest minute):
+              \begin{enumerate}
+                  \item $700NM$
+                  \item $318NM$
+                  \item $3450NM$
+              \end{enumerate}
+        \item Find the distance between two locations along the same line of longitude:
+              \begin{enumerate}
+                  \item $A(21^\circ S, 110^\circ E)$, $B(33^\circ S, 110^\circ E)$
+                  \item $X(38^\circ N, 40^\circ W)$, $Y(19^\circ N, 40^\circ W)$
+                  \item $E(34^\circ 45' S, 80^\circ E)$, $F(0^\circ, 80^\circ E)$
+                  \item $P(18^\circ 15' N, 90^\circ W)$, $Q(43^\circ 30' N, 90^\circ W)$
+                  \item $T(15^\circ 30' N, 120^\circ E)$, $M(24^\circ 30' N, 120^\circ E)$
+              \end{enumerate}
+        \item Location $X$ and $Y$ are on the same line of longitude, the distane between
+              them is $400NM$. Find the difference of latitude of $X$ and $Y$.
+        \item Location $P$ and $Q$ are on the same line of longitude, and their distance
+              along the line of longitude is $600NM$, find the difference between their
+              latitude.
+        \item $X$ city and $Y$ city are on the same line of longitude, the latitude of $X$ city is $2^\circ 15'$ north of the equator, the latitude of $Y$ city is $6^\circ$ north of the equator. Find the distance between $X$ city and $Y$ city (Express your answer in kilometers).
+        \item A plane is flying $1000km$ due north from airport $A(15^\circ N, 115^\circ E)$
+              to airport $B$. Find the longitude and latitude of airport $B$.
+        \item A plane is flying $1500km$ due south from airport $A(5^\circ N, 100^\circ E)$
+              to airport $B$. Find the longitude and latitude of airport $B$.
+        \item Find the distance from $A(18^\circ 30' S)$ to the north pole along the same
+              line of longitude.
+        \item The distance between location $C$ and $D$ is $700NM$, $C$ is located at
+              $5^\circ 30'$ north of the equator. Find the latitude of $D$.
+    \end{enumerate}
+\end{multicols*}
 \end{document}
