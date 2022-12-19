@@ -48,7 +48,7 @@
 \counterwithout{equation}{chapter}
 \setlength{\columnseprule}{1pt}
 \setlength{\columnsep}{24pt}
-\setcounter{chapter}{14}
+\setcounter{chapter}{16}
 \hfuzz=100pt
 
 \newcommand{\pgfplotsdrawaxis}{\pgfplots@draw@axis}
@@ -347,7 +347,7 @@
         \end{tikzpicture}
     \end{center}
     \begin{center}
-        \def \phi {1.617}
+        \def \phi{1.617}
         \begin{tikzpicture}[
                 x={(-0.86in, -0.5in)}, y = {(0.86in, -0.5in)}, z = {(0, 1in)},
                 rotate = 22,
@@ -566,7 +566,7 @@
         \item The distance of the plane from the centre of the sphere $d$, the radius of the
               sphere $R$ and the radius of the plane $r$ has the following relation:
               \begin{cequation}
-                  r = \sqrt{R^2 - d^2}
+                  r = \sqrt{R^2-d^2}
               \end{cequation}
     \end{enumerate}
 
@@ -1137,8 +1137,8 @@
                       \draw (0, 0.15, 2) -- (0.15, 0.15, 2) -- (0.15, 0, 2);
                   \end{tikzpicture}
               \end{center}
-        \item In the rectangle shown below, $BC = 8cm$, $CD = 6cm$, $BQ = 10cm$. Given that
-              $M$ is the midpoint of $PQ$. Find:
+        \item In the cuboid shown below, $BC = 8cm$, $CD = 6cm$, $BQ = 10cm$. Given that $M$
+              is the midpoint of $PQ$. Find:
               \begin{enumerate}
                   \item The angle formed by line $MD$ and plane $PQBA$.
                   \item The angle formed by plane $AMD$ and plane $ABCD$.
@@ -1281,7 +1281,7 @@
 
     \end{enumerate}
 
-    \section {Longitude and Latitude}
+    \section{Longitude and Latitude}
 
     The earth is approximately spherical in shape, its radius is about $6,370km$,
     and its axis is a line that passes through the north ({$N$}) and south ($S$)
@@ -1363,8 +1363,9 @@
     \subsection*{Nautical Miles}
 
     The arc length corresponding to $1'$ ($=\frac{1}{60}^\circ$) of the great
-    circle on earth is called a \emph{nautical mile} ($1NM$), that is, $1NM =
-        \frac{1}{60 \times 360} \times 2\pi \times 6370km = 1.853km$.
+    circle on earth is called a \emph{nautical mile} ($1$\emph{NM}), that is,
+    $1\text{\emph{NM}} = \frac{1}{60 \times 360} \times 2\pi \times 6370km =
+        1.853km$.
 
     \subsection*{Time Difference and Longitude}
 
@@ -1378,7 +1379,7 @@
         \item \textbf{Local Time}\\
               The local time is the time at a location on the earth. The local time for any location on the same line of longitude is the same.
         \item \textbf{Standard Time}\\
-              Back in the year $1844$, International Meridian Conference was held in Washington DC. The conference decided to divide the world into 24 time zones base on the Greenwich Meridian, called the \emph{Greenwich Meridian Time (GMT)}. There is zero time offset $7.5^\circ$ eastward and $7.5^\circ$ westward of the Greenwich Meridian. The time offset is $1hr$ per $15^\circ$ of longitude difference. All places in the same time zone share the same local time with the location located on the line of longitude that passes through the centre of the time zone, called the \emph{standard time} or \emph{zone time}.
+              Back in the year $1844$, International Meridian Conference was held in Washington DC. The conference decided to divide the world into 24 time zones based on the Greenwich Meridian, called the \emph{Greenwich Meridian Time (GMT)}. There is zero time offset $7.5^\circ$ eastward and $7.5^\circ$ westward of the Greenwich Meridian. The time offset is $1hr$ per $15^\circ$ of longitude difference. All places in the same time zone share the same local time with the location located on the line of longitude that passes through the centre of the time zone, called the \emph{standard time} or \emph{zone time}.
 
               \indent When entering a new time zone from the east, the local time is advanced by
               $1hr$ per $15^\circ$ of longitude difference. When entering a new time zone
@@ -1389,20 +1390,24 @@
 \begin{center}
     \makebox[\textwidth]{\includegraphics[scale=0.42]{timezone.png}}
 \end{center}
-\begin{multicols*}{2}
-    \section{Distance of Two Location on the Same Line of Longitude}
+\begin{multicols}{2}
+    \section{Distance of Two Locations on the Same Line of Longitude}
 
     The distance of two location on the same line of longitude is the arc length
     corresponding to the difference of their latitudes. Given two location $P$ and
     $Q$ on the same line of longitude, according to the definition of nautical
     mile, the distance between $P$ and $Q$ can be acquired by the arc length of
-    $PQ$. That is, $\overset{\frown}{PQ} = \theta \times 60NM$, where $\theta$ is
-    the difference of their latitudes.
+    $PQ$. That is, $\overset{\frown}{PQ} = \theta \times 60$\emph{NM}, where
+    $\theta$ is the difference of their latitudes.
+
+    \begin{center}
+        \includegraphics[scale=1.4]{longitude difference.png}
+    \end{center}
 
     \subsection{Practice 4}
 
     \begin{enumerate}
-        \item Given that location $A$ and $B$ are on the same line of longitude. Base on the
+        \item Given that location $A$ and $B$ are on the same line of longitude. Based on the
               following longitude, find the distance between $A$ and $B$ (Express your answer
               in nautical miles):
               \begin{enumerate}
@@ -1411,32 +1416,32 @@
                   \item $A(43^\circ N)$, $B(38^\circ S)$
               \end{enumerate}
         \item Given that location $P$ and $Q$ are on the same line of longitude. The distane
-              between two locations is $1000NM$, $P$ is located at $7^\circ 30'$ north of the
-              equator. Base on the following criteria, find the latitude of $Q$:
+              between two locations is $1000$\emph{NM}, $P$ is located at $7^\circ 30'$ north
+              of the equator. Based on the following criteria, find the latitude of $Q$:
               \begin{enumerate}
                   \item $Q$ is located at the north of $P$
                   \item $Q$ is located at the south of $P$
               \end{enumerate}
     \end{enumerate}
 
-    \subsection {Exercise 17.5}
+    \subsection{Exercise 17.5}
 
     \begin{enumerate}
-        \item Given that $A$ and $B$ are on the same line of longitude. Base on the following
-              difference of latitude of two locations, find the distance between $A$ and $B$
-              (Express your answer in nautical miles):
+        \item Given that $A$ and $B$ are on the same line of longitude. Based on the
+              following difference of latitude of two locations, find the distance between
+              $A$ and $B$ (Express your answer in nautical miles):
               \begin{enumerate}
                   \item $\theta = 39^\circ$
                   \item $\theta = 80^\circ 30'$
                   \item $\theta = 64^\circ 20'$
               \end{enumerate}
-        \item Given that $A$ and $B$ are on the same line of longitude. Base on the following
-              distance between two locations, find the difference of latitude of $A$ and $B$
-              (Round your answer to the nearest minute):
+        \item Given that $A$ and $B$ are on the same line of longitude. Based on the
+              following distance between two locations, find the difference of latitude of
+              $A$ and $B$ (Round your answer to the nearest minute):
               \begin{enumerate}
-                  \item $700NM$
-                  \item $318NM$
-                  \item $3450NM$
+                  \item $700$\emph{NM}
+                  \item $318$\emph{NM}
+                  \item $3450$\emph{NM}
               \end{enumerate}
         \item Find the distance between two locations along the same line of longitude:
               \begin{enumerate}
@@ -1447,10 +1452,10 @@
                   \item $T(15^\circ 30' N, 120^\circ E)$, $M(24^\circ 30' N, 120^\circ E)$
               \end{enumerate}
         \item Location $X$ and $Y$ are on the same line of longitude, the distane between
-              them is $400NM$. Find the difference of latitude of $X$ and $Y$.
+              them is $400$\emph{NM}. Find the difference of latitude of $X$ and $Y$.
         \item Location $P$ and $Q$ are on the same line of longitude, and their distance
-              along the line of longitude is $600NM$, find the difference between their
-              latitude.
+              along the line of longitude is $600$\emph{NM}, find the difference between
+              their latitude.
         \item $X$ city and $Y$ city are on the same line of longitude, the latitude of $X$ city is $2^\circ 15'$ north of the equator, the latitude of $Y$ city is $6^\circ$ north of the equator. Find the distance between $X$ city and $Y$ city (Express your answer in kilometers).
         \item A plane is flying $1000km$ due north from airport $A(15^\circ N, 115^\circ E)$
               to airport $B$. Find the longitude and latitude of airport $B$.
@@ -1458,19 +1463,252 @@
               to airport $B$. Find the longitude and latitude of airport $B$.
         \item Find the distance from $A(18^\circ 30' S)$ to the north pole along the same
               line of longitude.
-        \item The distance between location $C$ and $D$ is $700NM$, $C$ is located at
+        \item The distance between location $C$ and $D$ is $700$\emph{NM}, $C$ is located at
               $5^\circ 30'$ north of the equator. Find the latitude of $D$.
         \item A plane takes off from $P(60^\circ N, 60^\circ E)$ and flies pass north pole
               along the great circle route to $Q(50^\circ N, 120^\circ W)$. Find the flying
               distance.
         \item A ship sails from $P(50^\circ S, 160^\circ E)$ due north to another port
               $Q(30^\circ N, 160^\circ E)$. The sailing time is 10 days. Find the average
-              speed of the ship. (Express your answer in $NM/hr$)
+              speed of the ship. (Express your answer in \emph{NM}$/hr$)
         \item Given that $PQ$ is the diameter of the parallel of latitude $35^\circ S$. A
               plane takes off from location $P$, flies pass the south pole along the line of
-              longitude, and lands at location $Q$ after $13hr 40mins$. Find the average
+              longitude, and lands at location $Q$ after $13hrs 40mins$. Find the average
               speed of the plane for the whole flight duration. (Express your answer in
-              $NM/hr$)
+              \emph{NM}$/hr$)
     \end{enumerate}
-\end{multicols*}
+
+    \section{Distance of Two Locations on the Same Parallel of Latitude}
+
+    The distance between two locations on the same parallel of latitude is the arc
+    length on the parallel of latitude corresponding to the difference of their
+    longitudes.
+
+    \begin{center}
+        \includegraphics[scale=1.4]{latitude difference.png}
+    \end{center}
+
+    In the diagram above, $P$ and $Q$ are on the same parallel of latitude
+    $\theta$, their difference of latitude is $\alpha$. $A$ and $B$ are locations
+    on the equator.
+
+    Given that $\angle PKQ = \angle AOB = \alpha$. Let $R$ be the radius of the
+    earth, $r$ be the radius of the parallel of latitude.
+
+    \begin{flalign*}
+        \frac{\overset{\frown}{PQ}}{\overset{\frown}{AB}} & = \frac{\frac{\alpha}{360^\circ} \times 2\pi r}{\frac{\alpha}{360^\circ} \times 2\pi R} \\
+                                                          & = \frac{r}{R}                                                                           \\
+    \end{flalign*}
+
+    From the radius of the the parallel of latitude $r = R \cos R$, we have
+    $\frac{r}{R} = \cos \theta$.
+    \begin{flalign*}
+        \therefore \frac{\overset{\frown}{PQ}}{\overset{\frown}{AB}} & = \cos \theta                                             \\
+        \overset{\frown}{PQ}                                         & = \overset{\frown}{AB} \times \cos \theta                 \\
+                                                                     & = \alpha \times 60 \times \cos \theta \text{\emph{NM} or} \\
+                                                                     & = \alpha \times 60 \times \cos \theta \times 1.853km
+    \end{flalign*}
+
+    \subsection{Practice 5}
+
+    \begin{enumerate}
+        \item Fidn the distance of the following pairs of location on the same parallel of
+              latitude (Express your answer in nautical miles):
+              \begin{enumerate}
+                  \item $P(80^\circ N, 105^\circ W), Q(80^\circ N, 48^\circ W)$
+                  \item $M(50^\circ S, 48^\circ E), N(50^\circ S, 100^\circ E)$
+                  \item $X(40^\circ N, 28^\circ 15' E), Y(40^\circ N, 42^\circ 45' W)$
+                  \item $K(20^\circ S, 160^\circ E), L(20^\circ S, 140^\circ W)$
+              \end{enumerate}
+        \item Given that $A$ is located at the west of $B(46^\circ N, 72^\circ W)$ with a
+              distance of $2350$\emph{NM}. Find the longitude and latitude of $A$.
+    \end{enumerate}
+    \subsection{Exercise 17.6}
+    \begin{enumerate}
+        \item Find the distance of the following pairs of location on the same parallel of
+              latitude (Express your answer in nautical miles):
+              \begin{enumerate}
+                  \item $P(45^\circ S, 20^\circ E), Q(45^\circ S, 100^\circ E)$
+                  \item $M(36^\circ N, 45^\circ W), N(36^\circ N, 105^\circ W)$
+                  \item $A(80^\circ S, 130^\circ E), B(80^\circ S, 165^\circ E)$
+                  \item $K(70^\circ N, 40^\circ E), L(70^\circ N, 20^\circ W)$
+                  \item $T(0^\circ, 128^\circ W), M(0^\circ, 120^\circ E)$
+              \end{enumerate}
+        \item Based on the following distances of location $P$ and $Q$ and the longitude and
+              latitude of $P$, find the longitude and latitude of $Q$:
+              \begin{enumerate}
+                  \item $PQ = 800$\emph{NM}, $Q$ is located at the west of $P(50^\circ S, 100^\circ W)$
+                  \item $PQ = 3400$\emph{NM}, $Q$ is located at the east of $P(35^\circ N, 68^\circ E)$
+                  \item $PQ = 1450$\emph{NM}, $Q$ is located at the east of $P(42^\circ N, 150^\circ W)$
+              \end{enumerate}
+        \item Given that two places are on the parallel of latitude $60^\circ$ north to the
+              equator, and their difference of longitude is $160^\circ$. Find the distance of
+              the two places. (Express your answer in kilometers)
+        \item City $A$ and $B$ are on the parallel of latitude $5^\circ 30'$ north to the
+              equator, their longitude are $100^\circ 15' E$ and $103^\circ E$ respectively.
+              Find the distance between two cities along the parallel of latitude.
+        \item Find the circumference of the parallel of latitude $35^\circ 30' S$.
+        \item Find the radius of the parallel of latitude $60' N$.
+        \item A ship set sail from $P(20^\circ E)$ and sail $600$\emph{NM} due east along
+              $42^\circ N$ parallel of latitude. Find the longitude and latitude of the
+              destination.
+        \item A ship sails from port $P(48^\circ N, 12^\circ W)$ $1000$\emph{NM} due west to
+              another port $Q$, find the longitude and latitude of $Q$.
+        \item Given that $A$ is located at the east of Paris$(49^\circ N, 2^\circ 30' E)$
+              with a distance of $2200km$. Find the longitude and latitude of $A$.
+        \item A plane flies from $X(40^\circ N, 2^\circ 30' E)$ $9265km$ due east to $Y$,
+              find the longitude and latitude of $Y$.
+        \item Given that the earth takes $24hrs$ to rotate once. Find the speed of Kuala
+              Lumpur$(3^\circ 15' N, 102^\circ E)$ to rotate once. (Express your answer in
+              \emph{NM}$/hr$)
+        \item Given that the longitude of $P$ and $Q$ are $50^\circ$ and $100c^\circ$
+              respectively. If $P$ and $Q$ both located at the west of $R(55^\circ S)$ and
+              $PR = PQ$, find:
+              \begin{enumerate}
+                  \item The longitude of $R$.
+                  \item Th distance between $Q$ and $R$ along the parallel of latitude.
+              \end{enumerate}
+        \item A plane flies from $F(50^\circ S, 50^\circ E)$ due west to $H(50^\circ S,
+                  45^\circ W)$, then flies from $H$ due north $4800$\emph{NM} to $K$. Given that
+              the average speed of the plane is $480\text{\emph{NM}}/hr$ throughout the
+              journey, find:
+              \begin{enumerate}
+                  \item The latitude of $K$.
+                  \item The distance between $F$ and $H$ along the parallel of latitude.
+                  \item The flight duration for the whole journey.
+              \end{enumerate}
+    \end{enumerate}
+
+    \section{Revision Exercise 17}
+
+    \begin{enumerate}
+        \item In the cuboid shown below, $FG = 10cm$, $GH = 7cm$, $DH = 8.4cm$, find:
+              \begin{enumerate}
+                  \item The angle formed by angle $AC$ and plane $BFGC$.
+                  \item The angle formed by angle $FD$ and plane $EFGH$.
+              \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw (0,0) node [below] {$F$} --(3,0) node [below] {$G$} node[midway, below] {$10cm$};
+                      \draw (3,0)--(3.5,1) node [right] {$H$} node [midway, right] {$7cm$};
+                      \draw[dashed] (3.5,1)--(1,1) node [above=2pt, left] {$E$} --(0,0);
+                      \draw (0,0)--(0,2) node[left] {$B$}--(3,2) node[below left] {$C$} --(3,0);
+                      \draw (0,2)--(1,2.5)--(3.5,2.5) node[above=2pt, right] {$D$};
+                      \draw (3,2)--(3.5,2.5)--(3.5,1) node [midway, right] {$8.4cm$};
+                      \draw[dashed] (1,2.5) node [above] {$A$} --(1,1);
+                      \draw[dash pattern=on 1pt off 1pt] (3.5,2.5) -- (0,0);
+                      \draw[dash pattern=on 1pt off 1pt] (3,2) -- (1, 2.5);
+                  \end{tikzpicture}
+              \end{center}
+        \item The diagram below shows a cuboid with volume of $400cm^3$, height of $10.5cm$,
+              $AD = 2DC$. Find the angle formed by angle $AG$ and plane $ADHE$.
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.4]
+                      \draw (2,1,0) node [above] {$D$} --(0,1,0) node [above] {$A$} --(0,1,2) node [left] {$B$} --(2,1,2)node [above] {$C$} --(2,1,0) --(2,0,0) node [right] {$H$} node [midway, right] {$10.5cm$} --(2,0,2) node [below] {$G$} --(0,0,2) node [below] {$F$} --(0,1,2);
+                      \draw (2,1,2)--(2,0,2);
+                      \draw[dashed](2,0,0)--(0,0,0) node [below] {$E$}--(0,1,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \draw[dash pattern=on 1pt off 1pt] (0, 1, 0) -- (2, 0, 2);
+                  \end{tikzpicture}
+              \end{center}
+        \item The diagram below shows a reception room with a square floor with side length
+              of $6m$. Given that the elevation angle of corner $C$ measured from corner $A$
+              is $30^\circ$, find the angle formed by the line connecting corner $A$ and $B$
+              with the floor.
+              \begin{center}
+                  \includegraphics{reception.png}
+              \end{center}
+        \item The diagram below shows a cuboid with length of $8cm$, width of $5cm$ and
+              height of $6cm$, $M$ is the midpoint of $BF$. Find the angle formed by plane
+              $HDM$ and plane $ADHE$.
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.4]
+                      \draw (2,1,0) node [above] {$G$} --(0,1,0) node [above] {$H$} --(0,1,2) node [left] {$E$} --(2,1,2)node [above] {$F$} --(2,1,0) --(2,0,0) node [right] {$C$} node [midway, right] {$6cm$} --(2,0,2) node [below] {$B$}  node [midway, below right] {$5cm$} --(0,0,2) node [below] {$A$}  node [midway, below] {$8cm$} --(0,1,2);
+                      \draw (2,1,2)--(2,0,2);
+                      \draw[dashed](2,0,0)--(0,0,0) node [below] {$D$}--(0,1,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \fill [color=gray, opacity=0.4] (0, 1, 0) -- (0, 0, 0) -- (2, 0.5, 2) -- cycle;
+                      \draw (2, 0.5, 2) circle (1pt) node [right] {$M$};
+                  \end{tikzpicture}
+              \end{center}
+        \item The diagram below shows a pyramid with a square base, its lateral edge $SD$ is
+              perpendicular to its base. Given that $BC = 2\sqrt{2}cm$, $SB = 5cm$. Find:
+              \begin{enumerate}
+                  \item The angle formed by plane $SAD$ and plane $SBD$.
+                  \item The angle formed by lateral edge $SA$ and base $ABCD$.
+              \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
+                      \node (a) at (0,0) {};
+                      \node (b) at (2.5,0) {};
+                      \node (c) at (3.5,1) {};
+                      \node (d) at (1,1) {};
+                      \node (e) at (1,4) {};
+                      \draw (a.center) node [below left] {$A$} -- (b.center) node [below] {$B$} -- (c.center) node [ right] {$C$} node [midway, right] {$2\sqrt{2}cm$} -- (e.center) node [above] {$S$} -- (b.center);
+                      \draw (a.center) -- (e.center);
+                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
+                      \draw[dashed] (d.center) node [below] {$D$} -- (e.center);
+                      \draw (1, 1.25) -- (0.85, 1.1) -- (0.85, 0.85);
+                      \draw[dash pattern=on 1pt off 1pt] (d.center) -- (b.center);
+                      \fill [fill=gray, opacity=0.4] (d.center) -- (b.center) -- (e.center) -- cycle;
+                  \end{tikzpicture}
+              \end{center}
+        \item The diagram below shows a right prism with a rectangular base $ABCD$ with
+              length of $28cm$ and width of $20cm$. Assume that plane $VBC$ and the base of
+              the pyramid forms a $60^\circ$ angle. Find the angle formed by plane $VAB$ and
+              the base.
+        \item The diagram below shows a regular cuboid with a square base. Given that $VE =
+                  \frac{5}{2}AD$. Find:
+              \begin{enumerate}
+                  \item The angle formed by the angle $VA$ and the base $ABCD$.
+                  \item The angle formed by plane $VAD$ and the base.
+              \end{enumerate}
+        \item Find the distance from the Panama City$(9^\circ N, 79^\circ 30' W)$ to Toronto
+              $(43^\circ 45' N, 79^\circ 30' W)$. (Express your answer in nautical miles)
+        \item Tokyo and Adelaide are located at the same longitude, their latitude are
+              $35^\circ 45' N$ and $35^\circ S$ respectively. Find the distance between two
+              cities along the parallel of latitude.
+        \item A plane flies $2000$\emph{NM} along the equator, Find the difference of
+              longitude between the point of departure and the destination.
+        \item Location $M$ and $N$ are both located at the parallel of latitude $45^\circ$
+              north to the equator with a difference in longitude of $20^\circ$. Find the
+              distance between $M$ and $N$ along the parallel of latitude. (Express your
+              answer in nautical miles)
+        \item Location $X$ and $Y$ are on the parallel of latitude $20^\circ$ north to the
+              equator, their longitude are $45^\circ E$ and $80^\circ E$ respectively. Find
+              the distance between location $X$ and $Y$ along the parallel of latitude.
+              (Express your answer in nautical miles)
+        \item A plane flies from $A(42^\circ E)$ to $B(20^\circ E)$ along the equator, then
+              it flies from $B$ due north to $C(30^\circ N)$. Find the distance the plane
+              flies in total.
+        \item Assume that $A$ is located $1000$\emph{NM} due north of the equator,
+              $600$\emph{NM} due east of the Greenwich Meridian, find the longitude and
+              latitude of $A$.
+        \item A plane flies from $P(15^\circ N, 30^\circ E)$ $2000$\emph{NM} due south to
+              $B$, find the longitude and latitude of $B$. Another plane flies from $P$
+              $3000$\emph{NM} due east to $C$, find the longitude and latitude of $C$.
+        \item A plane flies from $A(130^\circ E)$ along the equator to $B(120^\circ 30' E)$
+              along the equator, then flies from $B$ due north to $C(20^\circ 45')$. Assume
+              that the average speed of the plane is $300\text{\emph{NM}}/hr$ throughout the
+              journey, find the flight duration for the whole journey.
+        \item A plane flies from $A(50^\circ N, 10^\circ E)$ due east to $B(45^\circ E)$.
+              \begin{enumerate}
+                  \item Find the flight distance of the plane. (Express your answer in nautical miles)
+                  \item Assume that the speed of the plane is $420\text{\emph{NM}}/hr$ in average, find
+                        the flight duration of the plane.
+              \end{enumerate}
+        \item Given that three locations $P$, $Q$ and $R$ are located on the same parallel of
+              latitude $40^\circ$ north to the equator, The longitude of $P$ and $R$ are
+              $10^\circ 30' W$ and $4^\circ 30' E$, $Q$ is located at the middle of $P$ and
+              $R$.
+              \begin{enumerate}
+                  \item Find the difference of longitude between $P$ and $R$.
+                  \item Find the longitude of $Q$.
+                  \item Find the distance between $P$ and $R$ along the parallel of latitude.
+                  \item A ship sails from $P$ to $Q$ along the parallel of latitude with a speed of
+                        $18\text{\emph{NM}}/hr$, find the sailing duration of the ship.
+              \end{enumerate}
+    \end{enumerate}
+\end{multicols}
 \end{document}
