@@ -1645,7 +1645,7 @@
                       \node (c) at (3.5,1) {};
                       \node (d) at (1,1) {};
                       \node (e) at (1,4) {};
-                      \draw (a.center) node [below left] {$A$} -- (b.center) node [below] {$B$} -- (c.center) node [ right] {$C$} node [midway, right] {$2\sqrt{2}cm$} -- (e.center) node [above] {$S$} -- (b.center);
+                      \draw (a.center) node [below left] {$A$} -- (b.center) node [below] {$B$} -- (c.center) node [ right] {$C$} node [midway, right] {$2\sqrt{2}cm$} -- (e.center) node [above] {$S$} -- (b.center) node [midway, right] {$5cm$};
                       \draw (a.center) -- (e.center);
                       \draw[dashed] (a.center) -- (d.center) -- (c.center);
                       \draw[dashed] (d.center) node [below] {$D$} -- (e.center);
@@ -1658,12 +1658,44 @@
               length of $28cm$ and width of $20cm$. Assume that plane $VBC$ and the base of
               the pyramid forms a $60^\circ$ angle. Find the angle formed by plane $VAB$ and
               the base.
+              \begin{center}
+                  \begin{tikzpicture}
+                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
+                      \node (a) at (0,0) {};
+                      \node (b) at (2.5,0) {};
+                      \node (c) at (3.5,1) {};
+                      \node (d) at (1,1) {};
+                      \node (e) at (1.75,3) {};
+                      \draw (a.center) node [below left] {$A$} -- (b.center) node [below] {$B$} node [midway, below] {$28cm$} -- (c.center) node [ right] {$C$} node [midway, right=12pt, below=-4pt] {$20cm$} -- (e.center) node [above] {$V$} -- (b.center);
+                      \draw (a.center) -- (e.center);
+                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
+                      \draw[dashed] (d.center) node [below] {$D$} -- (e.center);
+                  \end{tikzpicture}
+              \end{center}
         \item The diagram below shows a regular cuboid with a square base. Given that $VE =
                   \frac{5}{2}AD$. Find:
               \begin{enumerate}
                   \item The angle formed by the angle $VA$ and the base $ABCD$.
                   \item The angle formed by plane $VAD$ and the base.
               \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
+                      \node (a) at (0,0) {};
+                      \node (b) at (2.5,0) {};
+                      \node (c) at (3.5,1) {};
+                      \node (d) at (1,1) {};
+                      \node (e) at (1.75,5) {};
+                      \draw (a.center) node [below left] {$A$} -- (b.center) node [below] {$B$} -- (c.center) node [ right] {$C$} -- (e.center) node [above] {$V$} -- (b.center);
+                      \draw (a.center) -- (e.center);
+                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
+                      \draw[dashed] (d.center) node [below] {$D$} -- (e.center);
+                      \node (f) at (1.75, 0.5) {};
+                      \draw[dash pattern=on 1pt off 1pt] (e.center) -- (f.center) node [below] {$E$};
+                      \draw[dash pattern=on 1pt off 1pt] (a.center) -- (c.center) node [below] {$E$};
+                      \draw[dash pattern=on 1pt off 1pt] (b.center) -- (d.center) node [below] {$E$};
+                  \end{tikzpicture}
+              \end{center}
         \item Find the distance from the Panama City$(9^\circ N, 79^\circ 30' W)$ to Toronto
               $(43^\circ 45' N, 79^\circ 30' W)$. (Express your answer in nautical miles)
         \item Tokyo and Adelaide are located at the same longitude, their latitude are
