@@ -197,7 +197,7 @@
 
                   \begin{flalign*}
                     \textbf{sol{}.} & \sum_{n=1}^{6}{\frac{1}{n(2n+1)}}                                                   & \\
-                                    & = \frac{1}{1(2\cdot1+1)}+ \frac{1}{2(2\cdot2+1)}                                      \\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 & + \frac{1}{3(2\cdot3+1)} +
+                                    & = \frac{1}{1(2\cdot1+1)}+ \frac{1}{2(2\cdot2+1)}                                      \\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          & + \frac{1}{3(2\cdot3+1)} +
                     \frac{1}{4(2\cdot4+1)}                                                                                  \\ &+ \frac{1}{5(2\cdot5+1)}+ \frac{1}{6(2\cdot6+1)}        &  \\
                                     & = \frac{1}{3}+ \frac{1}{10}+ \frac{1}{21}+ \frac{1}{36}+ \frac{1}{55}+ \frac{1}{78}
                   \end{flalign*}
@@ -1862,7 +1862,7 @@
 
   \end{enumerate}
 
-  \section{Revision Exerise 12}
+  \section{Revision Exercise 12}
 
   \begin{enumerate}
 
@@ -3804,7 +3804,7 @@
                   \sol{}
                   \begin{flalign*}
                        & 4A' - (C+B')
-                    \\                                                                                                                                                                                             & = 4\m{
+                    \\                                                                                                                                                                                                               & = 4\m{
                     2  & 1            \\
                     3  & 0
                     } - \left(\m{
@@ -9139,7 +9139,7 @@
           \end{flalign*}
   \end{enumerate}
 
-  \subsection{Practice 15.2a}
+  \subsection{Exercise 15.2a}
 
   Solve the following linear inequalities:
 
@@ -9606,7 +9606,6 @@
           \begin{center}
             \begin{tikzpicture}
               \fill[black!20](-7,0)rectangle(-2,1.5);
-              \fill[black!20](3,0)rectangle(5,2);
               \draw[latex-latex] (-8,0) -- (-1,0);
               \draw[shift={(-7,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {-7};
               \draw[shift={(-2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {-1};
@@ -10224,6 +10223,7 @@
             \end{tikzpicture}
           \end{center}
 
+          \setcounter{equation}{0}
     \item \begin{numcases}{}
             (x-1)(x+1) > 11 + 4x\\
             x^2 + 4 \leq 7x -2
@@ -10278,6 +10278,7 @@
             \end{tikzpicture}
           \end{center}
 
+          \setcounter{equation}{0}
     \item \begin{numcases}{}
             x^2 -3x + 2 > 0\\
             x^2 + 3x \geq 0
@@ -10335,6 +10336,7 @@
             \end{tikzpicture}
           \end{center}
 
+          \setcounter{equation}{0}
     \item \begin{numcases}{}
             (x-3)(x+3) \geq 16\\
             x^2 + 3 \geq 13(x-3)
@@ -10396,6 +10398,7 @@
             \end{tikzpicture}
           \end{center}
 
+          \setcounter{equation}{0}
     \item \begin{numcases}{}
             x^2 -x -1 \leq \frac{x-1}{6} \\
             (2x-1)(x-6) \geq 13
@@ -10684,13 +10687,18 @@
     \item $x^3{(x+2)}^2(x+3) > 0$
           \sol{}
           \begin{flalign*}
-            x^3{(x+2)}^2(x+3)                & > 0             \\
-            x^2{(x+2)}^2[x(x+3)]             & > 0             \\
-            \text{For all real numbers }     & x   \text{, }   \\
-            x^2 > 0 \text{ when } x          & \neq 0          \\
-            {(x+2)}^2 > 0 \text{ when } x    & \neq -2         \\
-            x(x+3)                           & > 0             \\
-            \therefore\ x < -3 \text{ or } x & > 0,\ x \neq -2
+            x^3{(x+2)}^2(x+3)                                       & > 0              & \\
+            x^2{(x+2)}^2[x(x+3)]                                    & > 0              & \\
+            \text{For all real numbers }                            & x   \text{, }    & \\
+            x^2 > 0 \text{ when } x                                 & \neq 0           & \\
+            {(x+2)}^2 > 0 \text{ when } x                           & \neq -2          & \\
+            x(x+3)                                                  & > 0              & \\
+            \therefore\ x < -3 \text{ or } x                        & > 0              & \\
+            \text{When } x = -2 \text{ or } x                       & = 0,             & \\
+            x^3{(x+2)}^2(x+3)                                       & = 0              & \\
+            \therefore\ x = 0 \text{ and } x = -2  \text{ are not } & \text{solution.} & \\
+            \\
+            \therefore\ x < -3 \text{ or } x                        & > 0,\ x \neq -2
           \end{flalign*}
           \begin{center}
             \begin{tikzpicture}
@@ -10710,12 +10718,17 @@
     \item ${(x-3)}^5{(x-1)}^3(x+2) < 0$
           \sol{}
           \begin{flalign*}
-            {(x-3)}^4{(x-1)}^2[(x-3)(x-1)(x+2)]  & < 0         \\
-            \text{For all real numbers }         & x \text{, } \\
-            {(x-3)}^4 > 0 \text{ when }          & x \neq 3    \\
-            {(x-1)}^2 > 0 \text{ when }          & x \neq 1    \\
-            (x-3)(x-1)(x+2)                      & < 0         \\
-            \therefore\ x < -2 \text{ or } 1 < x & < 3
+            {(x-3)}^4{(x-1)}^2[(x-3)(x-1)(x+2)]                   & < 0              &     \\
+            \text{For all real numbers }                          & x \text{, }      &     \\
+            {(x-3)}^4 > 0 \text{ when }                           & x \neq 3         &     \\
+            {(x-1)}^2 > 0 \text{ when }                           & x \neq 1         &     \\
+            (x-3)(x-1)(x+2)                                       & < 0              &     \\
+            \therefore\ x < -2 \text{ or } 1 < x                  & < 3              &     \\
+            \text{When } x = 3 \text{ or } x                      & = 1,             &     \\
+            {(x-3)}^4{(x-1)}^2(x+2)                               & = 0              &     \\
+            \therefore\ x = 1 \text{ and } x = 3 \text{ are not } & \text{solution.} &   & \\
+            \\
+            \therefore\ x < -2 \text{ or } 1 < x                  & < 3
           \end{flalign*}
           \begin{center}
             \begin{tikzpicture}
@@ -10741,11 +10754,11 @@
             x^3(x-2) - x(2x-1)(x-2)                                                             & \geq 0 & \\
             x(x-2)(x^2 - 2x + 1)                                                                & \geq 0 & \\
             x(x-2){(x-1)^2}                                                                     & \geq 0 & \\
-            \text{When } x \neq 1,\ {(x-1)^2}                                                   & > 0      \\
+            \text{When } x \neq 1,\ {(x-1)^2}                                                   & > 0    & \\
             x(x-2)                                                                              & \geq 0 & \\
-            \therefore\ x \leq 0 \text{ or } x                                                  & \geq 2   \\
-            \text{When } x = 1,\ x(x-2){(x-1)^2}                                                & = 0      \\
-            \therefore\ x                                           = 1 \text{ is the solution} &          \\
+            \therefore\ x \leq 0 \text{ or } x                                                  & \geq 2 & \\
+            \text{When } x = 1,\ x(x-2){(x-1)^2}                                                & = 0    & \\
+            \therefore\ x                                           = 1 \text{ is the solution} &        & \\
             \therefore\ x \leq 0 \text{ or } x \geq 2 \text{ or } x                             & = 1
           \end{flalign*}
           \begin{center}

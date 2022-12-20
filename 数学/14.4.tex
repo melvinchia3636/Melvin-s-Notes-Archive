@@ -174,76 +174,701 @@
     Compare the algebraic expressions in the following questions (Question 1 to 2):
     \begin{enumerate}
         \item $(x-3)(4-x)$ and $(6-x)(x-1)$
+              \sol{}
+              \begin{flalign*}
+                             & (x-3)(4-x) - (6-x)(x-1)            \\
+                             & = -x^2 + 7x - 12 - (-x^2 + 7x - 6) \\
+                             & = -x^2 + 7x - 12 + x^2 - 7x + 6    \\
+                             & = -6 < 0                           \\
+                  \therefore & \  (x-3)(4-x) < (6-x)(x-1)
+              \end{flalign*}
         \item $6 - x^2$ and $4x - 2x^2$
+              \sol{}
+              \begin{flalign*}
+                             & 6 - x^2 - (4x - 2x^2)  \\
+                             & = 6x - x^2 - 4x + 2x^2 \\
+                             & = x^2 - 2x             \\
+                             & = {(x - 1)}^2 + 1      \\
+                  \because   & \ {(x - 1)}^2 + 1 > 0  \\
+                  \therefore & \ {(x - 1)}^2 + 1 > 0  \\
+                  \therefore & \ 6 - x^2 > 4x - 2x^2
+              \end{flalign*}
     \end{enumerate}
 
     \noindent Solve the following inequalities (Question 3 to 16):
     \begin{enumerate}
         \setcounter{enumi}{2}
         \item $4(x-1) > x+6$
+              \sol{}
+              \begin{flalign*}
+                  4(x-1) & > x+6          \\
+                  4x - 4 & > x+6          \\
+                  3x     & > 10           \\
+                  x      & > \frac{10}{3}
+              \end{flalign*}
         \item $3(3-x) \geq 2(x+3)$
-        \item $3-\frac{x+1}{4} \geq 2+\frac{3(x+1)}{8}$
+              \sol{}
+              \begin{flalign*}
+                  3(3-x) & \geq 2(x+3)      \\
+                  9 - 3x & \geq 2x + 6      \\
+                  -5x    & \geq -3          \\
+                  5x     & \leq 3           \\
+                  x      & \leq \frac{3}{5}
+              \end{flalign*}
+        \item $3-\frac{x-1}{4} \geq 2+\frac{3(x+1)}{8}$
+              \sol{}
+              \begin{flalign*}
+                  3 - \frac{x-1}{4} & \geq 2 + \frac{3(x+1)}{8} \\
+                  24 - 2(x-1)       & \geq 16 + 3(x+1)          \\
+                  24 - 2x + 2       & \geq 16 + 3x + 3          \\
+                  26 - 2x           & \geq 19 + 3x              \\
+                  -5x               & \geq -7                   \\
+                  5x                & \leq 7                    \\
+                  x                 & \leq \frac{7}{5}
+              \end{flalign*}
         \item $x-\frac{x-1}{2} \leq \frac{2x-1}{3} + \frac{x+1}{2}$
+              \sol{}
+              \begin{flalign*}
+                  x - \frac{x-1}{2} & \leq \frac{2x-1}{3} + \frac{x+1}{2} \\
+                  6x - 3(x-1)       & \leq 2(2x-1) + 3(x+1)               \\
+                  6x - 3x + 3       & \leq 4x - 2 + 3x + 3                \\
+                  3x + 3            & \leq 7x + 1                         \\
+                  -4x               & \leq -2                             \\
+                  4x                & \geq 2                              \\
+                  x                 & \geq \frac{1}{2}
+              \end{flalign*}
         \item $-1 < \frac{1}{2}x + 3 < 7$
+              \sol{}
+              \begin{flalign*}
+                  -1 < \frac{1}{2}x & + 3 < 7  \\
+                  -2 < x            & + 6 < 14 \\
+                  -8 <              & \ x < 8
+              \end{flalign*}
         \item $-\frac{3}{2} < 1 - 3x \leq 8$
+              \sol{}
+              \begin{flalign*}
+                  -\frac{3}{2} & < 1 - 3x \leq 8      \\
+                  -3           & < 2 - 6x \leq 16     \\
+                  -5           & < -6x \leq 14        \\
+                  -14          & \leq 6x < 5          \\
+                  -\frac{7}{3} & \leq x < \frac{5}{6}
+              \end{flalign*}
         \item $x^2 < 7$
+              \sol{}
+              \begin{flalign*}
+                  x^2                      & < 7        \\
+                  x^2 - 7                  & < 0        \\
+                  (x+\sqrt{7})(x-\sqrt{7}) & < 0        \\
+                  -\sqrt{7} < x            & < \sqrt{7}
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw[latex-latex] (0,0) -- (6,0);
+                      \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-\sqrt{7}$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$\sqrt{7}$};
+                      \draw[shift={(1,0)},color=black] node[above] {$+$};
+                      \draw[shift={(3,0)},color=black] node[above] {$-$};
+                      \draw[shift={(5,0)},color=black] node[above] {$+$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](a)at(2,1){};
+                      \draw (a)--(4,1);
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(4,1){};
+                  \end{tikzpicture}
+              \end{center}
         \item $x^2 + 10x - 200 \geq 0$
+              \sol{}
+              \begin{flalign*}
+                  x^2 + 10x - 200               & \geq 0  \\
+                  (x+20)(x-10)                  & \geq 0  \\
+                  x \leq -20      \text{ or } x & \geq 10
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw[latex-latex] (0,0) -- (6,0);
+                      \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-20$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$10$};
+                      \draw[shift={(3,0)},color=black] node[above] {$-$};
+                      \draw[shift={(1,0)},color=black] node[above] {$+$};
+                      \draw[shift={(5,0)},color=black] node[above] {$+$};
+                      \node[circle,fill,inner sep=1.5pt](a)at(4,1){};
+                      \node[circle,fill,inner sep=1.5pt](b)at(2,1){};
+                      \draw[-latex,black](a)--(6,1);
+                      \draw[-latex,black](b)--(0,1);
+                  \end{tikzpicture}
+              \end{center}
         \item $4 < 3x^2 + 4x$
+              \sol{}
+              \begin{flalign*}
+                  4             & < 3x^2 + 4x                 \\
+                  3x^2 + 4x - 4 & > 0                         \\
+                  (3x-2)(x+2)   & > 0                         \\
+                  x < -2        & \text{ or } x > \frac{2}{3}
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw[latex-latex] (0,0) -- (6,0);
+                      \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-2$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$\frac{2}{3}$};
+                      \draw[shift={(1,0)},color=black] node[above] {$+$};
+                      \draw[shift={(3,0)},color=black] node[above] {$-$};
+                      \draw[shift={(5,0)},color=black] node[above] {$+$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](a)at(2,1){};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(4,1){};
+                      \draw[-latex,black](a)--(0,1);
+                      \draw[-latex,black](b)--(6,1);
+                  \end{tikzpicture}
+              \end{center}
         \item $5x - 3 \geq 2x^2$
+              \sol{}
+              \begin{flalign*}
+                  5x - 3        & \geq 2x^2        \\
+                  2x^2 - 5x + 3 & \leq 0           \\
+                  (2x-3)(x-1)   & \leq 0           \\
+                  1 \leq x      & \leq \frac{3}{2}
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw[latex-latex] (0,0) -- (6,0);
+                      \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$1$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$\frac{3}{2}$};
+                      \draw[shift={(1,0)},color=black] node[above] {$+$};
+                      \draw[shift={(3,0)},color=black] node[above] {$-$};
+                      \draw[shift={(5,0)},color=black] node[above] {$+$};
+                      \node[circle,fill,inner sep=1.5pt](a)at(2,1){};
+                      \draw (a)--(4,1);
+                      \node[circle,fill,inner sep=1.5pt](b)at(4,1){};
+                  \end{tikzpicture}
+              \end{center}
         \item $x^2 - x(x-6) > 5(x-1)$
+              \sol{}
+              \begin{flalign*}
+                  x^2 - x(x-6)   & > 5(x-1) \\
+                  x^2 - x^2 + 6x & > 5x - 5 \\
+                  6x             & > 5x - 5 \\
+                  x              & > -5
+              \end{flalign*}
         \item ${(2x+1)}^2 + 5 \leq 4{(x+2)}^2$
+              \sol{}
+              \begin{flalign*}
+                  {(2x+1)}^2 + 5    & \leq 4{(x+2)}^2      \\
+                  4x^2 + 4x + 1 + 5 & \leq 4(x^2 + 4x + 4) \\
+                  4x^2 + 4x + 6     & \leq 4x^2 + 16x + 16 \\
+                  -12x              & \leq 10              \\
+                  12x               & \geq -10             \\
+                  x                 & \geq -\frac{5}{6}
+              \end{flalign*}
         \item $9x^2 + 2 \leq 12x - 2$
+              \sol{}
+              \begin{flalign*}
+                  9x^2 + 2       & \leq 12x - 2  \\
+                  9x^2 - 12x + 4 & \leq 0        \\
+                  {(3x - 2)}^2   & \leq 0        \\
+                  x              & = \frac{2}{3}
+              \end{flalign*}
         \item $4(x^2 + 7) > 3 - 20x$
+              \sol{}
+              \begin{flalign*}
+                  4(x^2 + 7)         & > 3 - 20x             \\
+                  4x^2 + 28          & > 3 - 20x             \\
+                  4x^2 + 20x - 25    & > 0                   \\
+                  {(2x + 5)}^2       & > 0                   \\
+                  x \in \mathbb{R} , & \ x \neq -\frac{5}{2}
+              \end{flalign*}
     \end{enumerate}
 
     \noindent Solve the following system of inequalities (Question 17 to 28):
 
     \begin{enumerate}
         \setcounter{enumi}{16}
-        \item $\begin{cases}
-                      3x + 2 \leq 0 \\
-                      4-x < x
-                  \end{cases}$
-        \item $\begin{cases}
-                      x + 4 > -x \\
-                      \frac{3x - 1}{2} < 2(x+1)
-                  \end{cases}$
-        \item $\begin{cases}
-                      x - 3 \leq 5 - 3x \\
-                      4 + (2x - 1) \leq 4x + 7
-                  \end{cases}$
-        \item $\begin{cases}
-                      4x - 5 \geq 2x + 1 \\
-                      x + \frac{2}{3} \leq \frac{2x + 5}{3}
-                  \end{cases}$
+        \setcounter{equation}{0}
+        \item \begin{numcases}{}
+                  3x + 2 \leq{0} \\
+                  4-x < x
+              \end{numcases}
+              \sol{}
+              \begin{flalign*}
+                  (1):\        & 3x \leq -2          \\
+                               & x \leq -\frac{2}{3} \\
+                  (2):\        & -2x < -4            \\
+                               & x > 2               \\
+                  \\
+                  \therefore\  & \text{No solution.}
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw[latex-latex] (0,0) -- (6,0);
+                      \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-\frac{2}{3}$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {2};
+                      \node[circle,fill=black,inner sep=1.5pt](a)at(2,1){};
+                      \draw[-latex] (a)--(0,1);
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(4,1){};
+                      \draw[-latex] (b) -- (6, 1);
+                  \end{tikzpicture}
+              \end{center}
+
+              \setcounter{equation}{0}
+        \item \begin{numcases}{}
+                  x + 4 > -x \\
+                  \frac{3x -1}{2} < 2(x+1)
+              \end{numcases}
+              \sol{}
+              \begin{flalign*}
+                  (1):\        & 2x > -4         \\
+                               & x > -2          \\
+                  (2):\        & 3x - 1 < 4(x+1) \\
+                               & 3x - 1 < 4x + 4 \\
+                               & -x < 5          \\
+                               & x > -5          \\
+                  \\
+                  \therefore\  & x > -2
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \fill[gray!40] (4,0) rectangle (6,1.5);
+                      \draw[latex-latex] (0,0) -- (6,0);
+                      \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-5$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-2$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](a)at(2,1){};
+                      \draw[-latex] (a)--(6,1);
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(4,1.5){};
+                      \draw[-latex] (b) -- (6, 1.5);
+                  \end{tikzpicture}
+              \end{center}
+
+              \setcounter{equation}{0}
+        \item \begin{numcases}{}
+                  x -3 \leq{5 -3x} \\
+                  4 + (2x -1) \leq{4x + 7}
+              \end{numcases}
+              \sol{}
+              \begin{flalign*}
+                  (1):\        & 4x \leq 8          \\
+                               & x \leq 2           \\
+                  (2):\        & 3 + 2x \leq 4x + 7 \\
+                               & -2x \leq 4         \\
+                               & x \geq -2          \\
+                  \\
+                  \therefore\  & -2 \leq x \leq 2
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \fill[black!20](2,0)rectangle(4,1.5);
+                      \draw[latex-latex] (0,0) -- (6,0) ;
+                      \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-2$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$2$};
+                      \node[circle,fill,inner sep=1.5pt](a)at(4,1.5){};
+                      \node[circle,fill,inner sep=1.5pt](b)at(2,1){};
+                      \draw[-latex,black](a)--(0,1.5);
+                      \draw[-latex,black](b)--(6,1);
+                  \end{tikzpicture}
+              \end{center}
+
+              \setcounter{equation}{0}
+        \item \begin{numcases}{}
+                  4x -5 \geq{2x + 1} \\
+                  x + \frac{2}{3} \leq{\frac{2x + 5}{3}}
+              \end{numcases}
+              \sol{}
+              \begin{flalign*}
+                  (1): \       & 2x \geq 6          \\
+                               & x \geq 3           \\
+                  (2): \       & 3x + 2 \leq 2x + 5 \\
+                               & x \leq 3           \\
+                  \\
+                  \therefore\  & x = 3
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \fill[black!20](2.9,0)rectangle(3.1,1.5);
+                      \draw[latex-latex] (0,0) -- (6,0) ;
+                      \draw[shift={(3,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$3$};
+                      \node[circle,fill,inner sep=1.5pt](a)at(3,1.5){};
+                      \node[circle,fill,inner sep=1.5pt](b)at(3,1){};
+                      \draw[-latex,black](a)--(0,1.5);
+                      \draw[-latex,black](b)--(6,1);
+                  \end{tikzpicture}
+              \end{center}
+
+              \setcounter{equation}{0}
         \item $5 < 2x - 7 < x + 1$
+              \sol{}
+              \begin{numcases}{}
+                  5 < 2x -7\\
+                  2x -7 < x + 1
+              \end{numcases}
+              \begin{flalign*}
+                  (1): \       & 12 < 2x   \\
+                               & x > 6     \\
+                  (2): \       & x < 8     \\
+                  \\
+                  \therefore\  & 6 < x < 8
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \fill[black!20](2,0)rectangle(4,1.5);
+                      \draw[latex-latex] (0,0) -- (6,0) ;
+                      \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$6$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$8$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](a)at(4,1.5){};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(2,1){};
+                      \draw[-latex,black](a)--(0,1.5);
+                      \draw[-latex,black](b)--(6,1);
+                  \end{tikzpicture}
+              \end{center}
+
+              \setcounter{equation}{0}
         \item $4 < 6 + 2x \leq 4x$
-        \item $\begin{cases}
-                      x - \frac{1}{2} \geq 1 - \frac{x}{2} \\
-                      2 - \frac{x}{3} < \frac{2x}{3} - 3   \\
-                      \frac{x}{3} + \frac{1}{4} \geq \frac{x}{2} - \frac{3}{4}
-                  \end{cases}$
-        \item $\begin{cases}
-                      x + \frac{13}{2} > \frac{7 - x}{2}  \\
-                      2\left(x+\frac{1}{3}\right) < 2 - x \\
-                      x^2 \geq \frac{5x}{2}
-                  \end{cases}$
-        \item $\begin{cases}
-                      x^2 - 3x - 4 \geq 0 \\
-                      2x^2 - x - 6 > 0
-                  \end{cases}$
-        \item $\begin{cases}
-                      (2x - 1)(x-2) \leq 8x - 9 \\
-                      3(x^2 - 2) < 7x
-                  \end{cases}$
-        \item $\begin{cases}
-                      2(x^2 + 3) \geq 7 - x \\
-                      {(x+3)}^2 > 1
-                  \end{cases}$
-        \item $\begin{cases}
-                      x(x-1) \leq 2 \\
-                      x(x+1) \geq 6
-                  \end{cases}$
+              \sol{}
+              \begin{numcases}{}
+                  4 < 6 + 2x \\
+                  6 + 2x \leq{4x}
+              \end{numcases}
+              \begin{flalign*}
+                  (1): \       & -2 < 2x   \\
+                               & x > -1    \\
+                  (2): \       & 6 \leq 2x \\
+                               & x \geq 3  \\
+                  \\
+                  \therefore\  & x \geq 3
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \fill[gray!40] (4,0) rectangle (6,1.5);
+                      \draw[latex-latex] (0,0) -- (6,0);
+                      \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-1$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$3$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](a)at(2,1){};
+                      \draw[-latex] (a)--(6,1);
+                      \node[circle,fill,inner sep=1.5pt](b)at(4,1.5){};
+                      \draw[-latex] (b) -- (6, 1.5);
+                  \end{tikzpicture}
+              \end{center}
+
+              \setcounter{equation}{0}
+        \item \begin{numcases}{}
+                  x -\frac{1}{2} \geq{1 -\frac{x}{2}} \\
+                  2 -\frac{x}{3} < \frac{2x}{3} -3    \\
+                  \frac{x}{3} + \frac{1}{4} \geq{\frac{x}{2} -\frac{3}{4}}
+              \end{numcases}
+              \sol{}
+              \begin{flalign*}
+                  (1): \       & 2x - 1 \geq 2 - x  \\
+                               & 3x \geq 3          \\
+                               & x \geq 1           \\
+                  (2): \       & 6 - x < 2x - 9     \\
+                               & -3x < -15          \\
+                               & x > 5              \\
+                  (3): \       & 4x + 3 \geq 6x - 9 \\
+                               & -2x \geq -12       \\
+                               & x \leq 6           \\
+                  \\
+                  \therefore\  & 5 < x \leq 6
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \fill[gray!40] (3,0) rectangle (5,2);
+                      \draw[latex-latex] (0,0) -- (6,0);
+                      \draw[shift={(1,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$1$};
+                      \draw[shift={(3,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$5$};
+                      \draw[shift={(5,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$6$};
+                      \node[circle,fill,inner sep=1.5pt](a)at(1,1){};
+                      \draw[-latex] (a)--(6,1);
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(3 ,1.5){};
+                      \draw[-latex] (b) -- (6, 1.5);
+                      \node[circle,fill,inner sep=1.5pt](b)at(5 ,2){};
+                      \draw[-latex] (b) -- (0, 2);
+                  \end{tikzpicture}
+              \end{center}
+
+              \setcounter{equation}{0}
+        \item \begin{numcases}{}
+                  x + \frac{13}{2} > \frac{7 -x}{2}  \\
+                  2\left(x+\frac{1}{3}\right) < 2 -x \\
+                  x^2 \geq{\frac{5x}{2}}
+              \end{numcases}
+              \sol{}
+              \begin{flalign*}
+                  (1): \        & 2x + 13 > 7 - x                                                                                                    \\
+                                & 3x > -6                                                                                                            \\
+                                & x > -2                                                                                                             \\
+                  (2): \        & 2x + \frac{2}{3} < 2 - x                                                                                           \\
+                                & 6x + 2 < 6 - 3x                                                                                                    \\
+                                & 9x < 4                                                                                                             \\
+                                & x < \frac{4}{9}                                                                                                    \\
+                  (3): \        & 2x^2 \geq 5x                                                                                                       \\
+                                & 2x^2 - 5x \geq 0                                                                                                   \\
+                                & x(2x - 5) \geq 0                                                                                                   \\
+                                & x \leq 0 \text{ or } x \geq \frac{5}{2}
+                                & \begin{tikzpicture}[baseline={(current bounding box.center)},scale=0.5]
+                                      \draw[latex-latex] (0,0) -- (6,0);
+                                      \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$0$};
+                                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$\frac{5}{2}$};
+                                      \draw[shift={(1,0)},color=black] node[above] {$+$};
+                                      \draw[shift={(3,0)},color=black] node[above] {$-$};
+                                      \draw[shift={(5,0)},color=black] node[above] {$+$};
+                                      \node[circle,fill,inner sep=1.5pt](a)at(2,1){};
+                                      \draw[-latex](a)--(0,1);
+                                      \node[circle,fill,inner sep=1.5pt](b)at(4,1){};
+                                      \draw[-latex](b)--(6,1);
+                                  \end{tikzpicture} \\
+                  \therefore \  & -2 < x \leq 0
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \fill[gray!40] (3,0) rectangle (1,2);
+                      \draw[latex-latex] (0,0) -- (7,0);
+                      \draw[shift={(1,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-2$};
+                      \draw[shift={(3,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$0$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$\frac{4}{9}$};
+                      \draw[shift={(6,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$\frac{5}{2}$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](a)at(1,1){};
+                      \draw[-latex] (a)--(7,1);
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(4 ,1.5){};
+                      \draw[-latex] (b) -- (0, 1.5);
+                      \node[circle,fill,inner sep=1.5pt](b)at(3,2){};
+                      \draw[-latex] (b) -- (0, 2);
+                      \node[circle,fill,inner sep=1.5pt](b)at(6,2){};
+                      \draw[-latex] (b) -- (7, 2);
+                  \end{tikzpicture}
+              \end{center}
+
+              \setcounter{equation}{0}
+        \item \begin{numcases}{}
+                  x^2 -3x -4 \geq{0} \\
+                  2x^2 -x -6 > 0
+              \end{numcases}
+              \sol{}
+              \begin{flalign*}
+                  (1): \       & (x-4)(x+1) \geq 0                                                                                                   \\
+                               & x \leq -1 \text{ or } x \geq 4
+                               & \begin{tikzpicture}[baseline={(current bounding box.center)},scale=0.5]
+                                     \draw[latex-latex] (0,0) -- (6,0);
+                                     \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-1$};
+                                     \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$4$};
+                                     \draw[shift={(1,0)},color=black] node[above] {$+$};
+                                     \draw[shift={(3,0)},color=black] node[above] {$-$};
+                                     \draw[shift={(5,0)},color=black] node[above] {$+$};
+                                     \node[circle,fill,inner sep=1.5pt](a)at(2,1){};
+                                     \draw[-latex](a)--(0,1);
+                                     \node[circle,fill,inner sep=1.5pt](b)at(4,1){};
+                                     \draw[-latex](b)--(6,1);
+                                 \end{tikzpicture}                       \\
+                  (2): \       & (2x+3)(x-2) > 0                                                                                                     \\
+                               & x < -\frac{3}{2} \text{ and } x > 2
+                               & \begin{tikzpicture}[baseline={(current bounding box.center)},scale=0.5]
+                                     \draw[latex-latex] (0,0) -- (6,0);
+                                     \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-\frac{3}{2}$};
+                                     \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$2$};
+                                     \draw[shift={(1,0)},color=black] node[above] {$+$};
+                                     \draw[shift={(3,0)},color=black] node[above] {$-$};
+                                     \draw[shift={(5,0)},color=black] node[above] {$+$};
+                                     \node[circle,draw,fill=white,inner sep=1.5pt](a)at(2,1){};
+                                     \draw[-latex](a)--(0,1);
+                                     \node[circle,draw,fill=white,inner sep=1.5pt](b)at(4,1){};
+                                     \draw[-latex](b)--(6,1);
+                                 \end{tikzpicture}
+                  \\
+                  \\
+                  \therefore\  & x < -\frac{3}{2} \text{ or } x \geq 4
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \fill[gray!40] (1,0) rectangle (0,1.5);
+                      \fill[gray!40] (6,0) rectangle (7,1.5);
+                      \draw[latex-latex] (0,0) -- (7,0);
+                      \draw[shift={(1,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-\frac{3}{2}$};
+                      \draw[shift={(3,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-1$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$2$};
+                      \draw[shift={(6,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$4$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](a)at(1,1){};
+                      \draw[-latex] (a)--(0,1);
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(4 ,1){};
+                      \draw[-latex] (b) -- (7, 1);
+                      \node[circle,fill,inner sep=1.5pt](c)at(3, 1.5){};
+                      \draw[-latex] (c) -- (0, 1.5);
+                      \node[circle,fill,inner sep=1.5pt](d)at(6,1.5){};
+                      \draw[-latex] (d) -- (7, 1.5);
+                  \end{tikzpicture}
+              \end{center}
+
+              \setcounter{equation}{0}
+        \item \begin{numcases}{}
+                  (2x -1) (x-2) \leq{8x -9} \\
+                  3(x^2 -2) < 7x
+              \end{numcases}
+              \sol{}
+              \begin{flalign*}
+                  (1): \       & 2x^2 - 5x + 2 \leq 8x - 9                                                                                           \\
+                               & 2x^2 - 13x + 11 \leq 0                                                                                              \\
+                               & (2x - 11)(x - 1) \leq 0                                                                                             \\
+                               & 1 \leq x \leq \frac{11}{2}
+                               & \begin{tikzpicture}[baseline={(current bounding box.center)},scale=0.5]
+                                     \draw[latex-latex] (0,0) -- (6,0);
+                                     \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$1$};
+                                     \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$\frac{11}{2}$};
+                                     \draw[shift={(1,0)},color=black] node[above] {$+$};
+                                     \draw[shift={(3,0)},color=black] node[above] {$-$};
+                                     \draw[shift={(5,0)},color=black] node[above] {$+$};
+                                     \node[circle,fill,inner sep=1.5pt](a)at(2,1){};
+                                     \node[circle,fill,inner sep=1.5pt](b)at(4,1){};
+                                     \draw(b)--(a);
+                                 \end{tikzpicture}  \\
+                  (2): \       & 3x^2 - 6 < 7x                                                                                                       \\
+                               & 3x^2 - 7x - 6 < 0                                                                                                   \\
+                               & (3x + 2)(x - 3) < 0                                                                                                 \\
+                               & -\frac{2}{3} < x < 3
+                               & \begin{tikzpicture}[baseline={(current bounding box.center)},scale=0.5]
+                                     \draw[latex-latex] (0,0) -- (6,0);
+                                     \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-\frac{2}{3}$};
+                                     \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$3$};
+                                     \draw[shift={(1,0)},color=black] node[above] {$+$};
+                                     \draw[shift={(3,0)},color=black] node[above] {$-$};
+                                     \draw[shift={(5,0)},color=black] node[above] {$+$};
+                                     \node[circle,draw,fill=white,inner sep=1.5pt](a)at(2,1){};
+                                     \node[circle,draw,fill=white,inner sep=1.5pt](b)at(4,1){};
+                                     \draw(b)--(a);
+                                 \end{tikzpicture} \\
+                  \\
+                  \therefore\  & 1 \leq x < 3
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \fill[gray!40] (3,0) rectangle (4,1.5);
+                      \draw[latex-latex] (0,0) -- (7,0);
+                      \draw[shift={(1,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-\frac{2}{3}$};
+                      \draw[shift={(3,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$1$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$3$};
+                      \draw[shift={(6,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$\frac{11}{2}$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](a)at(1,1){};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(4 ,1){};
+                      \draw (b) -- (a);
+                      \node[circle,fill,inner sep=1.5pt](c)at(3, 1.5){};
+                      \node[circle,fill,inner sep=1.5pt](d)at(6,1.5){};
+                      \draw (d) -- (c);
+                  \end{tikzpicture}
+              \end{center}
+
+              \setcounter{equation}{0}
+        \item \begin{numcases}{}
+                  2(x^2 + 3) \geq{7 -x} \\
+                  {(x+3)}^2 > 1
+              \end{numcases}
+              \sol{}
+              \begin{flalign*}
+                  (1): \                                                                                                              & 2x^2 + 6 \geq 7 - x                                              & \\
+                                                                                                                                      & 2x^2 + x - 1 \geq 0                                              & \\
+                                                                                                                                      & (2x - 1)(x + 1) \geq 0                                           & \\
+                                                                                                                                      & x \leq -1 \text{ or } x \geq \frac{1}{2}\ \ \ \ \ \ \ \ \
+                  \begin{tikzpicture}[baseline={(current bounding box.center)},scale=0.5]
+                      \draw[latex-latex] (0,0) -- (6,0);
+                      \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-1$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$\frac{1}{2}$};
+                      \draw[shift={(1,0)},color=black] node[above] {$+$};
+                      \draw[shift={(3,0)},color=black] node[above] {$-$};
+                      \draw[shift={(5,0)},color=black] node[above] {$+$};
+                      \node[circle,fill,inner sep=1.5pt](a)at(2,1){};
+                      \draw[-latex](a)--(0,1);
+                      \node[circle,fill,inner sep=1.5pt](b)at(4,1){};
+                      \draw[-latex](b)--(6,1);
+                  \end{tikzpicture} &
+                  \\
+                  (2): \                                                                                                              & x^2 + 6x + 9 > 1                                                 & \\
+                                                                                                                                      & x^2 + 6x + 8 > 0                                                 & \\
+                                                                                                                                      & (x + 4)(x + 2) > 0                                               & \\
+                                                                                                                                      & x < -4 \text{ or } x > -2\ \ \ \ \ \ \ \ \
+                  \begin{tikzpicture}[baseline={(current bounding box.center)},scale=0.5]
+                      \draw[latex-latex] (0,0) -- (6,0);
+                      \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-4$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-2$};
+                      \draw[shift={(1,0)},color=black] node[above] {$+$};
+                      \draw[shift={(3,0)},color=black] node[above] {$-$};
+                      \draw[shift={(5,0)},color=black] node[above] {$+$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](a)at(2,1){};
+                      \draw[-latex](a)--(0,1);
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(4,1){};
+                      \draw[-latex](b)--(6,1);
+                  \end{tikzpicture}                      &
+                  \\
+                  \\
+                  \therefore\                                                                                                         & x < -4 \text{ or } -2 < x \leq -1 \text{ or } x \geq \frac{1}{2}
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \fill[gray!40] (1,0) rectangle (0,1.5);
+                      \fill[gray!40] (6,0) rectangle (7,1.5);
+                      \fill[gray!40] (3,0) rectangle (4,1.5);
+                      \draw[latex-latex] (0,0) -- (7,0);
+                      \draw[shift={(1,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-4$};
+                      \draw[shift={(3,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-2$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-1$};
+                      \draw[shift={(6,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$\frac{1}{2}$};
+                      \node[circle,fill,inner sep=1.5pt](a)at(4,1){};
+                      \draw[-latex] (a)--(0,1);
+                      \node[circle,fill,inner sep=1.5pt](b)at(6 ,1){};
+                      \draw[-latex] (b) -- (7, 1);
+                      \node[circle,draw,fill=white,inner sep=1.5pt](c)at(1, 1.5){};
+                      \draw[-latex] (c) -- (0, 1.5);
+                      \node[circle,draw,fill=white,inner sep=1.5pt](d)at(3,1.5){};
+                      \draw[-latex] (d) -- (7, 1.5);
+                  \end{tikzpicture}
+              \end{center}
+
+              \setcounter{equation}{0}
+        \item \begin{numcases}{}
+                  x (x-1) \leq{2} \\
+                  x (x+1) \geq{6}
+              \end{numcases}
+              \sol{}
+              \begin{flalign*}
+                  (1): \       & x^2 - x \leq 2                                                                                 \\
+                               & x^2 - x - 2 \leq 0                                                                             \\
+                               & (x - 2)(x + 1) \leq 0                                                                          \\
+                               & -1 \leq x \leq 2
+                               & \begin{tikzpicture}[baseline={(current bounding box.center)},scale=0.5]
+                                     \draw[latex-latex] (0,0) -- (6,0);
+                                     \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-1$};
+                                     \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$2$};
+                                     \draw[shift={(1,0)},color=black] node[above] {$+$};
+                                     \draw[shift={(3,0)},color=black] node[above] {$-$};
+                                     \draw[shift={(5,0)},color=black] node[above] {$+$};
+                                     \node[circle,fill,inner sep=1.5pt](a)at(2,1){};
+                                     \node[circle,fill,inner sep=1.5pt](b)at(4,1){};
+                                     \draw(b)--(a);
+                                 \end{tikzpicture}  \\
+                  (2): \       & x^2 + x \geq 6                                                                                 \\
+                               & x^2 + x - 6 \geq 0                                                                             \\
+                               & (x + 3)(x - 2) \geq 0                                                                          \\
+                               & x \leq -3 \text{ or } x \geq 2
+                               & \begin{tikzpicture}[baseline={(current bounding box.center)},scale=0.5]
+                                     \draw[latex-latex] (0,0) -- (6,0);
+                                     \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-3$};
+                                     \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$2$};
+                                     \draw[shift={(1,0)},color=black] node[above] {$+$};
+                                     \draw[shift={(3,0)},color=black] node[above] {$-$};
+                                     \draw[shift={(5,0)},color=black] node[above] {$+$};
+                                     \node[circle,fill,inner sep=1.5pt](a)at(2,1){};
+                                     \node[circle,fill,inner sep=1.5pt](b)at(4,1){};
+                                     \draw[-latex] (b)--(6,1);
+                                     \draw[-latex] (a)--(0,1);
+                                 \end{tikzpicture} \\
+                  \\
+                  \therefore\  & x = 2
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \fill[gray!40] (3.9,0) rectangle (4.1,1.5);
+                      \draw[latex-latex] (0,0) -- (7,0);
+                      \draw[shift={(1,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-3$};
+                      \draw[shift={(3,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-1$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-2$};
+                      \node[circle,fill,inner sep=1.5pt](a)at(3,1){};
+                      \node[circle,fill,inner sep=1.5pt](b)at(4 ,1){};
+                      \draw (b) -- (a);
+                      \node[circle,fill,inner sep=1.5pt](c)at(1, 1.5){};
+                      \draw[-latex] (c) -- (0, 1.5);
+                      \node[circle,fill,inner sep=1.5pt](d)at(4,1.5){};
+                      \draw[-latex] (d) -- (7, 1.5);
+                  \end{tikzpicture}
+              \end{center}
     \end{enumerate}
 
     \noindent Solve the following inequalities (Question 29 to 40):
@@ -251,9 +876,118 @@
     \begin{enumerate}
         \setcounter{enumi}{28}
         \item $x^4 - 5x^2 + 4 \leq 0$
+              \sol{}
+              \begin{flalign*}
+                  x^4 - 5x^2 + 4                         & \leq 0 \\
+                  (x-1)(x^3 + x^2 - 4x - 4)              & \leq 0 \\
+                  (x-1)(x+1)(x^2 - 4)                    & \leq 0 \\
+                  (x-1)(x+1)(x-2)(x+2)                   & \leq 0 \\
+                  -2 \leq x \leq -1 \text{ or } 1 \leq x & \leq 2
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw[latex-latex] (0,0) -- (7,0);
+                      \draw[shift={(1,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-2$};
+                      \draw[shift={(2.5,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-1$};
+                      \draw[shift={(4.5,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$1$};
+                      \draw[shift={(6,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$2$};
+                      \draw[shift={(0.5,0)},color=black] node[above] {$+$};
+                      \draw[shift={(1.75,0)},color=black] node[above] {$-$};
+                      \draw[shift={(3.5,0)},color=black] node[above] {$+$};
+                      \draw[shift={(5.25,0)},color=black] node[above] {$-$};
+                      \draw[shift={(6.5,0)},color=black] node[above] {$+$};
+                      \node[circle,fill,inner sep=1.5pt](a)at(4.5,1){};
+                      \node[circle,fill,inner sep=1.5pt](b)at(6,1){};
+                      \draw (a)--(b);
+                      \node[circle,fill,inner sep=1.5pt](c)at(1,1){};
+                      \node[circle,fill,inner sep=1.5pt](d)at(2.5,1){};
+                      \draw (c)--(d);
+                  \end{tikzpicture}
+              \end{center}
         \item $(x^2 + 2x - 8)(x^2 + 2x - 3) > 0$
+              \sol{}
+              \begin{flalign*}
+                  (x+4)(x-2)(x+3)(x-1)                         & > 0 \\
+                  x < -4 \text{ or } -3 < x < -1 \text{ or } x & > 2
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw[latex-latex] (0,0) -- (7,0);
+                      \draw[shift={(1,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-4$};
+                      \draw[shift={(2.5,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-3$};
+                      \draw[shift={(4.5,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$1$};
+                      \draw[shift={(6,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$2$};
+                      \draw[shift={(0.5,0)},color=black] node[above] {$+$};
+                      \draw[shift={(1.75,0)},color=black] node[above] {$-$};
+                      \draw[shift={(3.5,0)},color=black] node[above] {$+$};
+                      \draw[shift={(5.25,0)},color=black] node[above] {$-$};
+                      \draw[shift={(6.5,0)},color=black] node[above] {$+$};
+                      \node[circle,fill,inner sep=1.5pt](a)at(4.5,1){};
+                      \node[circle,fill,inner sep=1.5pt](b)at(6,1){};
+                      \node[circle,fill,inner sep=1.5pt](c)at(1,1){};
+                      \node[circle,fill,inner sep=1.5pt](d)at(2.5,1){};
+                      \draw [-latex] (b) -- (7, 1);
+                      \draw (a)--(d);
+                      \draw [-latex] (c) -- (0, 1);
+                  \end{tikzpicture}
+              \end{center}
+
         \item ${(2x + 1)}^2(x^2 + 3x - 10) < 0$
+              \sol{}
+              \begin{flalign*}
+                  \text{For all real numbers }x                          & ,                 \\
+                  {(2x+1)}^2                     > 0 \text{ when } x     & \neq -\frac{1}{2} \\
+                  x^2 + 3x - 10                                          & < 0               \\
+                  (x+5)(x-2)                                             & < 0               \\
+                  \therefore\ -5 < x                                     & < -2              \\
+                  \text{When } x = -\frac{1}{2}                          & ,                 \\
+                  {(2x + 1)}^2(x^2 + 3x - 10)                            & = 0               \\
+                  \therefore\ x = -\frac{1}{2} \text{ is not a }         & \text{solution.}  \\
+                  \\
+                  \therefore\ -5 < x < -2                           ,\ x & \neq -\frac{1}{2}
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw[latex-latex] (0,0) -- (6,0);
+                      \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-5$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-2$};
+                      \draw[shift={(1,0)},color=black] node[above] {$+$};
+                      \draw[shift={(3,0)},color=black] node[above] {$-$};
+                      \draw[shift={(5,0)},color=black] node[above] {$+$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](a)at(2,1){};
+                      \draw (a)--(4,1);
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(4,1){};
+                  \end{tikzpicture}
+              \end{center}
+
         \item ${(x-1)}^2(6x^2 + 13x + 6) \leq 0$
+              \sol{}
+              \begin{flalign*}
+                  \text{For all real numbers }x                                                         & ,                 \\
+                  {(x-1)}^2                     > 0 \text{ when } x                                     & \neq 1            \\
+                  6x^2 + 13x + 6                                                                        & \leq 0            \\
+                  (3x+2)(2x+3)                                                                          & \leq 0            \\
+                  \therefore\ -\frac{3}{2} \leq x                                                       & \leq -\frac{2}{3} \\
+                  \text{When } x = 1                                                                    & ,                 \\
+                  {(x-1)}^2(6x^2 + 13x + 6)                                                             & = 0               \\
+                  \therefore\ x = 1 \text{ is a }                                                       & \text{solution.}  \\
+                  \\
+                  \therefore\ -\frac{3}{2} \leq x                       \leq -\frac{2}{3} \text{ or } x & = 1
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw[latex-latex] (0,0) -- (6,0);
+                      \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-\frac{3}{2}$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-\frac{2}{3}$};
+                      \draw[shift={(1,0)},color=black] node[above] {$+$};
+                      \draw[shift={(3,0)},color=black] node[above] {$-$};
+                      \draw[shift={(5,0)},color=black] node[above] {$+$};
+                      \node[circle,fill,inner sep=1.5pt](a)at(2,1){};
+                      \draw (a)--(4,1);
+                      \node[circle,fill,inner sep=1.5pt](b)at(4,1){};
+                  \end{tikzpicture}
+              \end{center}
+
         \item $\frac{2x - 7}{x + 6} \geq 4$
         \item $\frac{x}{2x + 1} > \frac{6}{x + 7}$
         \item $\frac{(x+3){(x-2)}^2}{x^2 - 1} \leq 0$
@@ -268,17 +1002,17 @@
 
     \begin{enumerate}
         \setcounter{enumi}{40}
-        \item $\begin{cases}
-                      x + y - 3 > 0  \\
-                      x - 2y + 4 > 0 \\
-                      0 \leq y \leq 8
-                  \end{cases}$
-        \item $\begin{cases}
-                      3x + y \geq 20  \\
-                      2x + 3y \leq 48 \\
-                      x \geq 0        \\
-                      y \geq 0
-                  \end{cases}$
+        \item \begin{numcases}{}
+                  x + y - 3 > 0  \\
+                  x - 2y + 4 > 0 \\
+                  0 \leq y \leq 8
+              \end{numcases}
+        \item \begin{numcases}{}
+                  3x + y \geq 20  \\
+                  2x + 3y \leq 48 \\
+                  x \geq 0        \\
+                  y \geq 0
+              \end{numcases}
     \end{enumerate}
 
     \begin{enumerate}
