@@ -786,7 +786,8 @@
                       \draw[-latex](a)--(0,1);
                       \node[circle,draw,fill=white,inner sep=1.5pt](b)at(4,1){};
                       \draw[-latex](b)--(6,1);
-                  \end{tikzpicture}                      &
+                  \end{tikzpicture}
+                                                                                                                                      &
                   \\
                   \\
                   \therefore\                                                                                                         & x < -4 \text{ or } -2 < x \leq -1 \text{ or } x \geq \frac{1}{2}
@@ -833,7 +834,8 @@
                                      \node[circle,fill,inner sep=1.5pt](a)at(2,1){};
                                      \node[circle,fill,inner sep=1.5pt](b)at(4,1){};
                                      \draw(b)--(a);
-                                 \end{tikzpicture}  \\
+                                 \end{tikzpicture}
+                  \\
                   (2): \       & x^2 + x \geq 6                                                                                 \\
                                & x^2 + x - 6 \geq 0                                                                             \\
                                & (x + 3)(x - 2) \geq 0                                                                          \\
@@ -849,7 +851,8 @@
                                      \node[circle,fill,inner sep=1.5pt](b)at(4,1){};
                                      \draw[-latex] (b)--(6,1);
                                      \draw[-latex] (a)--(0,1);
-                                 \end{tikzpicture} \\
+                                 \end{tikzpicture}
+                  \\
                   \\
                   \therefore\  & x = 2
               \end{flalign*}
@@ -989,13 +992,217 @@
               \end{center}
 
         \item $\frac{2x - 7}{x + 6} \geq 4$
+              \sol{}
+              \begin{flalign*}
+                  \frac{2x - 7 - 4(x + 6)}{x + 6} & \geq 0  \\
+                  \frac{2x - 7 - 4x - 24}{x + 6}  & \geq 0  \\
+                  \frac{-2x - 31}{x + 6}          & \geq 0  \\
+                  -\frac{2x + 31}{x + 6}          & \geq 0  \\
+                  \frac{2x + 31}{x + 6}           & \leq 0  \\
+                  -\frac{31}{2} \leq x            & \leq -6
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw[latex-latex] (0,0) -- (6,0);
+                      \draw[shift={(2,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-\frac{31}{2}$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-6$};
+                      \draw[shift={(1,0)},color=black] node[above] {$+$};
+                      \draw[shift={(3,0)},color=black] node[above] {$-$};
+                      \draw[shift={(5,0)},color=black] node[above] {$+$};
+                      \node[circle,fill,inner sep=1.5pt](a)at(2,1){};
+                      \draw (a)--(4,1);
+                      \node[circle,fill,inner sep=1.5pt](b)at(4,1){};
+                  \end{tikzpicture}
+              \end{center}
         \item $\frac{x}{2x + 1} > \frac{6}{x + 7}$
+              \sol{}
+              \begin{flalign*}
+                  \frac{x}{2x + 1}                                                                 & > \frac{6}{x + 7} \\
+                  \frac{x}{2x + 1} - \frac{6}{x + 7}                                               & > 0               \\
+                  \frac{x(x+7) - 6(2x+1)}{(2x+1)(x+7)}                                             & > 0               \\
+                  \frac{x^2 + 7x - 12x - 6}{(2x+1)(x+7)}                                           & > 0               \\
+                  \frac{x^2 - 5x - 6}{(2x+1)(x+7)}                                                 & > 0               \\
+                  \frac{(x-6)(x+1)}{(2x+1)(x+7)}                                                   & > 0               \\
+                  x < -7                                 \text{ or }         -1 < x < -\frac{1}{2} & \text{ or } x > 6
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw[latex-latex] (0,0) -- (7,0);
+                      \draw[shift={(1,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-7$};
+                      \draw[shift={(2.5,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-1$};
+                      \draw[shift={(4.5,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-\frac{1}{2}$};
+                      \draw[shift={(6,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$6$};
+                      \draw[shift={(0.5,0)},color=black] node[above] {$+$};
+                      \draw[shift={(1.75,0)},color=black] node[above] {$-$};
+                      \draw[shift={(3.5,0)},color=black] node[above] {$+$};
+                      \draw[shift={(5.25,0)},color=black] node[above] {$-$};
+                      \draw[shift={(6.5,0)},color=black] node[above] {$+$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](a)at(4.5,1){};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(6,1){};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](c)at(1,1){};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](d)at(2.5,1){};
+                      \draw [-latex] (b) -- (7, 1);
+                      \draw (a)--(d);
+                      \draw [-latex] (c) -- (0, 1);
+                  \end{tikzpicture}
+              \end{center}
         \item $\frac{(x+3){(x-2)}^2}{x^2 - 1} \leq 0$
+              \sol{}
+              \begin{flalign*}
+                  \text{For all real number x,}                       &                  \\
+                  {(x-2)}^2 > 0 \text{ when } x                       & \neq 2           \\
+                  \frac{x+3}{x^2 - 1}                                 & \leq 0           \\
+                  \frac{x+3}{(x+1)(x-1)}                              & \leq 0           \\
+                  \therefore\ x \leq -3 \text{ or } -1 \leq x         & \leq 1           \\
+                  \text{When } x = 2,\ \frac{(x+3){(x-2)}^2}{x^2 - 1} & = 0              \\
+                  \therefore\ x= 2 \text{ is a }                      & \text{solution.} \\
+                  \\
+                  \therefore\ x \leq -3 \text{ or } -1 \leq x \leq 1  & \text{ or } x=2
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw[latex-latex] (0,0) -- (6,0);
+                      \draw[shift={(1,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-3$};
+                      \draw[shift={(3,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-1$};
+                      \draw[shift={(5,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$1$};
+                      \draw[shift={(0.5,0)},color=black] node[above] {$-$};
+                      \draw[shift={(2,0)},color=black] node[above] {$+$};
+                      \draw[shift={(4,0)},color=black] node[above] {$-$};
+                      \draw[shift={(5.5,0)},color=black] node[above] {$+$};
+                      \node[circle,fill,inner sep=1.5pt](a)at(3,1){};
+                      \draw (a)--(5,1);
+                      \node[circle,fill,inner sep=1.5pt](b)at(5,1){};
+                      \node[circle,fill,inner sep=1.5pt](c)at(1,1){};
+                      \draw[-latex,black] (c)--(0,1);
+                  \end{tikzpicture}
+              \end{center}
         \item $4 + \frac{7}{x+6} \leq \frac{15}{x+2}$
+              \sol{}
+              \begin{flalign*}
+                  4 + \frac{7}{x+6}                                        & \leq \frac{15}{x+2} & \\
+                  4 + \frac{7}{x+6} - \frac{15}{x+2}                       & \leq 0              & \\
+                  \frac{4(x+6)(x+2) + 7(x+2) - 15(x+6)}{(x+6)(x+2)}        & \leq 0              & \\
+                  \frac{4(x^2 + 8x + 12) + 7x + 14 - 15x - 90}{(x+6)(x+2)} & \leq 0              & \\
+                  \frac{4x^2 + 32x + 48 + 7x + 14 - 15x - 90}{(x+6)(x+2)}  & \leq 0              & \\
+                  \frac{4x^2 + 24x - 28}{(x+6)(x+2)}                       & \leq 0              & \\
+                  \frac{x^2 + 6x - 7}{(x+6)(x+2)}                          & \leq 0              & \\
+                  \frac{(x+7)(x-1)}{(x+6)(x+2)}                            & \leq 0              & \\
+                  -7 \leq x \leq -6 \text{ or } -2 \leq x                  & \leq 1              & \\
+                  \because\ x \neq -6 \text{ and } x                       & \neq 2,             & \\
+                  \therefore\ -7 \leq x < -6 \text{ or } -2 < x            & \leq 1
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw[latex-latex] (0,0) -- (7,0);
+                      \draw[shift={(1,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-7$};
+                      \draw[shift={(2.5,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-6$};
+                      \draw[shift={(4.5,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-2$};
+                      \draw[shift={(6,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$1$};
+                      \draw[shift={(0.5,0)},color=black] node[above] {$+$};
+                      \draw[shift={(1.75,0)},color=black] node[above] {$-$};
+                      \draw[shift={(3.5,0)},color=black] node[above] {$+$};
+                      \draw[shift={(5.25,0)},color=black] node[above] {$-$};
+                      \draw[shift={(6.5,0)},color=black] node[above] {$+$};
+                      \node[circle,fill,inner sep=1.5pt](a)at(4.5,1){};
+                      \node[circle,fill,inner sep=1.5pt](b)at(6,1){};
+                      \node[circle,fill,inner sep=1.5pt](c)at(1,1){};
+                      \node[circle,fill,inner sep=1.5pt](d)at(2.5,1){};
+                      \draw (a)--(b);
+                      \draw (c)--(d);
+                  \end{tikzpicture}
+              \end{center}
         \item $|3 - 5x| \geq 7$
+              \sol{}
+              \begin{flalign*}
+                  |3 - 5x|            & \geq 7                      \\
+                  3 - 5x    \geq 7    & \text{ or } 3 - 5x  \leq -7 \\
+                  - 5x    \geq 4      & \text{ or } - 5x  \leq -10  \\
+                  5x \leq -4          & \text{ or } 5x  \geq 10     \\
+                  x \leq -\frac{4}{5} & \text{ or } x \geq 2
+              \end{flalign*}
         \item $2 < |x-5| < 9$
-        \item $1 \geq \left|\frac{3x - 1}{4} - 2\right| < 4$
+              \sol{}
+              \setcounter{equation}{0}
+              \begin{numcases}{}
+                  |x-5| > 2 \\
+                  |x-5| < 9
+              \end{numcases}
+              \begin{flalign*}
+                  (1): x-5 < -2          & \text{ or } x-5 > 2    \\
+                  x < 3                  & \text{ or }  x > 7     \\
+                  \\
+                  (2): -9 < x            & -5  < 9                \\
+                  -4 <                   & \ x < 14               \\
+                  \\
+                  \therefore\ -4 < x < 3 & \text{ or } 7 < x < 14
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \fill[black!20](1,0)rectangle(3,1.5);
+                      \fill[black!20](4,0)rectangle(6,1.5);
+                      \draw[latex-latex] (0,0) -- (7,0);
+                      \draw[shift={(1,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-4$};
+                      \draw[shift={(3,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$3$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$7$};
+                      \draw[shift={(6,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$14$};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](a)at(3,1){};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](b)at(4,1){};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](c)at(1,1.5){};
+                      \draw (c)--(6,1.5);
+                      \node[circle,draw,fill=white,inner sep=1.5pt](d)at(6,1.5){};
+                      \draw[-latex,black](a)--(0,1);
+                      \draw[-latex,black](b)--(7,1);
+                  \end{tikzpicture}
+              \end{center}
+        \item $1 \leq \left|\frac{3x - 1}{4} - 2\right| < 4$
+              \setcounter{equation}{0}
+              \begin{numcases}{}
+                  \left|\frac{3x -1}{4} -2\right| \geq 1\\
+                  \left|\frac{3x -1}{4} -2\right| < 4
+              \end{numcases}
+              \begin{flalign*}
+                  (1): \frac{3x -1}{4} -2 \leq -1               & \text{ or } \frac{3x -1}{4} -2 \geq 1          \\
+                  \frac{3x -1}{4} \leq 1                        & \text{ or } \frac{3x -1}{4} \geq 3             \\
+                  3x -1 \leq 4                                  & \text{ or } 3x -1 \geq 12                      \\
+                  3x \leq 5                                     & \text{ or } 3x \geq 13                         \\
+                  x \leq \frac{5}{3}                            & \text{ or } x \geq \frac{13}{3}                \\
+                  \\
+                  (2): -4 < \frac{3x -1}{4}                     & -2 < 4                                         \\
+                  -2 <                                          & \ \frac{3x -1}{4} < 6                          \\
+                  -8 < 3x                                       & -1 < 24                                        \\
+                  -7 <                                          & \ 3x < 25                                      \\
+                  -\frac{7}{3} <                                & \ x < \frac{25}{3}                             \\
+                  \\
+                  \therefore\ -\frac{7}{3} < x \leq \frac{5}{3} & \text{ or } \frac{13}{3} \leq x < \frac{25}{3}
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \fill[black!20](1,0)rectangle(3,1.5);
+                      \fill[black!20](4,0)rectangle(6,1.5);
+                      \draw[latex-latex] (0,0) -- (7,0);
+                      \draw[shift={(1,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$-\frac{7}{3}$};
+                      \draw[shift={(3,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$\frac{5}{3}$};
+                      \draw[shift={(4,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$\frac{13}{3}$};
+                      \draw[shift={(6,0)},color=black] (0pt,3pt) -- (0pt,-3pt) node[below] {$\frac{25}{3}$};
+                      \node[circle,fill,inner sep=1.5pt](a)at(3,1){};
+                      \node[circle,fill,inner sep=1.5pt](b)at(4,1){};
+                      \node[circle,draw,fill=white,inner sep=1.5pt](c)at(1,1.5){};
+                      \draw (c)--(6,1.5);
+                      \node[circle,draw,fill=white,inner sep=1.5pt](d)at(6,1.5){};
+                      \draw[-latex,black](a)--(0,1);
+                      \draw[-latex,black](b)--(7,1);
+                  \end{tikzpicture}
+              \end{center}
         \item $\frac{4}{|x+3|} - 5 \leq 3$
+              \sol{}
+              \begin{flalign*}
+                  \frac{4}{|x+3|} - 5 \leq 3                                   \\
+                  \frac{4}{|x+3|} \leq 8                                       \\
+                  4 \leq 8|x+3|                                                \\
+                  |x+3| \geq \frac{1}{2}                                       \\
+                  x + 3 \leq -\frac{1}{2} & \text{ or } x + 3 \geq \frac{1}{2} \\
+                  x \leq -\frac{7}{2}     & \text{ or } x \geq -\frac{5}{2}    \\
+              \end{flalign*}
     \end{enumerate}
 
     \noindent Solve the following system of inequalities with graphs (Question 41 to 42):
