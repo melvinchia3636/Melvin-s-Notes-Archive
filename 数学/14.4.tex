@@ -209,6 +209,33 @@
                       x \geq 0        \\
                       y \geq 0
                   \end{cases}\]
+              \sol{}
+              \begin{flalign*}
+                  \text{Objective function: } z & = 10x + 12y                    \\
+                  12y                           & = -10x + z                     \\
+                  y                             & = -\frac{5}{6}x + \frac{z}{12}
+              \end{flalign*}
+              \begin{center}
+                  \includegraphics[scale=0.5]{g3}
+              \end{center}
+              The minimum value of the objective function is the value of $z$ in $l$. The point of intersection $B$ of $l$ and the feasible region makes the objective function to have its minimum value. Since $B$ is also the point of intersection of $3x+y=8$ and $2x+3y=15$,
+              \begin{flalign*}
+                   & \begin{cases}
+                         3x + y = 8 \\
+                         2x + 3y = 15
+                     \end{cases}
+              \end{flalign*}
+              \begin{flalign*}
+                  2x + 3(8-3x)         & = 15                                 \\
+                  2x + 24 - 9x         & = 15                                 \\
+                  -7x                  & = -9                                 \\
+                  x                    & = \frac{9}{7}                        \\
+                  \frac{27}{7} + y     & = 8                                  \\
+                  y = 8 - \frac{27}{7} & = \frac{29}{7}                       \\
+                  B                    & = (\frac{9}{7}, \frac{29}{7})        \\
+                  z_{\min}             & = 10(\frac{9}{7}) + 12(\frac{29}{7}) \\
+                                       & = 62\frac{4}{7}
+              \end{flalign*}
         \item A housing developer owns a tract of land that is $2,400 m^2$ in area and a
               construction capital of $\$4,600,000$. The developer wishes to build two types
               of houses: type A and type B. Given that each type A house requires $150 m^2$
@@ -216,7 +243,73 @@
               and each type B house requires $200 m^2$ of land and $\$400,000$ of
               construction fees, can earn $\$80,000$ in profit. Assume that all houses built
               can be sold, how many of each type of house should be built to maximize the
-              profit? Find the maximum profit.
+              profit? Find the maximum profit. \sol{}
+
+              Let $x$ be the number of type A houses and $y$ be the number of type B houses.
+              \begin{center}
+                  \begin{tabular}{|c|c|c|c|}
+                      \hline
+                                   & \textbf{A ($x$ units)} & \textbf{B ($y$ units)} & \textbf{Limit} \\
+                      \hline
+                      Area ($m^2$) & $150x$                 & $200x$                 & $2,400$        \\
+                      Cost(\$)     & $250,000x$             & $400,000y$             & $4,600,000$    \\
+                      Profit(\$)   & $55,000x$              & $80,000y$              &                \\
+                      \hline
+                  \end{tabular}
+              \end{center}
+              The total profit is $z = 55,000x + 80,000y$, this is the objective function. According to the descriptions above, we find the maximum value of it.
+
+              The constraints are:
+              \begin{flalign*}
+                  \begin{cases}
+                      150x + 200y         \leq 2,400     \\
+                      250,000x + 400,000y \leq 4,600,000 \\
+                      x                    \geq 0        \\
+                      y                   \geq 0
+                  \end{cases}
+              \end{flalign*}
+
+              After simplifying the constraints, we get:
+              \begin{flalign*}
+                  \begin{cases}
+                      3x + 4y         \leq 48     \\
+                      5x + 8y \leq 92             \\
+                      x                    \geq 0 \\
+                      y                   \geq 0
+                  \end{cases}
+              \end{flalign*}
+
+              The feasible region is as follows:
+
+              \begin{center}
+                  \includegraphics[scale=0.5]{g4}
+              \end{center}
+
+              Let $l: 55,000x + 80,000y = z$.
+
+              When the line is at $l$, the value of $z$ is at its maximum. The point of
+              intersection $P$ of $l$ and the feasible region makes the objective function to
+              have its maximum value. Since $P$ is also the point of intersection of
+              $3x+4y=48$ and $5x+8y=92$,
+
+              \setcounter{equation}{0}
+
+              \begin{numcases}{}
+                  3x + 4y = 48 \\
+                  5x + 8y = 92
+              \end{numcases}
+              \begin{flalign*}
+                  (1) \times 2                       & : 6x + 8y = 96                      \\
+                  (1) - (2)                          & : x = 4                             \\
+                  \text{Sub } x = 4 \text{ into (1)} & : 12 + 4y = 48                      \\
+                                                     & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ y = 9 \\
+                  P                                  & = (4, 9)                            \\
+                  z_{\max}                           & = 55,000(4) + 80,000(9)             \\
+                                                     & = 940,000
+              \end{flalign*}
+
+              Thus, the maximum profit of $\$940,000$ can be obtained by building 4 type A
+              houses and 9 type B houses.
 
         \item One has a building lot that is $180 m^2$ in area. He plans to pay $\$7,000$ to
               split the lot into two type of rooms and rent them out to students: each bigger
@@ -226,6 +319,72 @@
               each bigger room is $\$700$ and for each smaller room is $\$600$. Assume that
               the source of tenants is stable, how many of each type of room should be
               divided into to maximize the profit? Find the maximum profit.
+
+              \sol{}
+
+              Let $x$ be the number of bigger rooms and $y$ be the number of smaller rooms.
+
+              \begin{center}
+                  \begin{tabular}{|c|c|c|c|}
+                      \hline
+                                   & \textbf{Big ($x$ unit)} & \textbf{Small ($y$ unit)} & \textbf{Limit} \\
+                      \hline
+                      Area ($m^2$) & $20x$                   & $15y$                     & $180$          \\
+                      Cost(\$)     & $700x$                  & $600y$                    & $7,000$        \\
+                      Profit(\$)   & $1125x$                 & $750y$                    &                \\
+                      \hline
+                  \end{tabular}
+              \end{center}
+
+              The total profit is $z = 1125x + 750y$, this is the objective function.
+              According to the descriptions above, we find the maximum value of it.
+
+              The constraints are:
+
+              \begin{flalign*}
+                  \begin{cases}
+                      20x + 15y \leq 180     \\
+                      700x + 600y \leq 7,000 \\
+                      x \geq 0               \\
+                      y \geq 0
+                  \end{cases}
+              \end{flalign*}
+
+              After simplifying the constraints, we get:
+
+              \begin{flalign*}
+                  \begin{cases}
+                      4x + 3y \leq 36 \\
+                      7x + 6y \leq 70 \\
+                      x \geq 0        \\
+                      y \geq 0
+                  \end{cases}
+              \end{flalign*}
+
+              The feasible region is as follows:
+
+              \begin{center}
+                  \includegraphics[scale=0.5]{g5}
+              \end{center}
+
+              Let $l: 1125x + 750y = z$.
+
+              When the line is at $l$, the value of $z$ is at its maximum. The point of
+              intersection $P$ of $l$ and the feasible region makes the objective function to
+              have its maximum value. Since $P$ is also the point of intersection of
+              $4x+3y=36$ and $y=0$,
+
+              \begin{flalign*}
+                   & \begin{cases}
+                         4x + 3y = 36 \\
+                         y = 0
+                     \end{cases}                         \\
+                   & P = (9, 0)                           \\
+                   & z_{\max} = 1125(9) + 750(0) = 10,125 \\
+              \end{flalign*}
+
+              Thus, the maximum profit of $\$10,125$ can be obtained by spliting the building
+              lot into 9 bigger rooms.
 
         \item Ms. Tan is a tuition teacher who teaches Mathematic subject to junior 3 and
               senior 3 students. There are a total of 5 students in each junior 3 class, each
@@ -238,13 +397,158 @@
               senior 3 classes should she held per week to minimize the number hours she has
               to teach? What's the mimimum number of hours she has to teach?
 
-        \item A company can produce a product with two types of raw materials. The first type
-              of raw material cost $\$300$, freight cost $\$50$, and can produce $90kg$ of
-              the product; the second type of raw material cost $\$700$, freight cost $\$40$,
-              and can produce $100kg$ of the product. If the company has a total of $\$2,100$
-              to spend on raw materials and $\$200$ to spend on freight every day, what's the
-              maximum amount of product that can be produced every day? How many tons of each
-              type of raw material should be used?
+              \sol{}
+
+              Let $x$ be the number of junior 3 classes and $y$ be the number of senior 3
+              classes.
+
+              The number of hours she has to teach is $z = 4x + 6y$, this is the objective
+              function. According to the descriptions above, we find the minimum value of it.
+
+              The constraints are:
+
+              \begin{flalign*}
+                  \begin{cases}
+                      5\times 50\times x + 3\times 120\times y \geq 6,600 \\
+                      5x \leq 2\times 3y                                  \\
+                      x \geq 0                                            \\
+                      y \geq 0
+                  \end{cases}
+              \end{flalign*}
+
+              After simplifying the constraints, we get:
+
+              \begin{flalign*}
+                  \begin{cases}
+                      25x + 36y \geq 660 \\
+                      5x \leq 6y         \\
+                      x \geq 0           \\
+                      y \geq 0
+                  \end{cases}
+              \end{flalign*}
+
+              The feasible region is as follows:
+
+              \begin{center}
+                  \includegraphics[scale=0.5]{g6}
+              \end{center}
+
+              Let $l: 4x + 6y = z$.
+
+              When the line is at $l$, the value of $z$ is at its minimum. The point of
+              intersection $P$ of $l$ and the feasible region makes the objective function to
+              have its minimum value. Since $P$ is also the point of intersection of $25x +
+                  36y = 660$ and $5x = 6y$,
+
+              \setcounter{equation}{0}
+              \begin{numcases}{}
+                  25x + 36y = 660 \\
+                  5x = 6y
+              \end{numcases}
+
+              \begin{flalign*}
+                  \text{Sub } (2) \text{ into } (1):\     & 25x + 30x = 660                      \\
+                                                          & \ \ \ \ \ \ \ \ \ \ \ 55x = 660      \\
+                                                          & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x = 12 \\
+                  \text{Sub } x = 12 \text{ into } (2):\  & 60 = 6y                              \\
+                                                          & \ \ y = 10                           \\
+                  \\
+                  P                                       & = (12, 10)                           \\
+                  z_{\min}                                & = 4(12) + 6(10) = 108
+              \end{flalign*}
+
+              Thus, Ms. Tan should hold 12 junior 3 classes and 10 senior 3 classes per week,
+              and she has to teach for at lest 108 hours per week.
+
+        \item A company can produce a product with two types of raw materials. Each ton of
+              the first type of raw material cost $\$300$, freight cost $\$50$, and can
+              produce $90kg$ of the product; each ton of the second type of raw material cost
+              $\$700$, freight cost $\$40$, and can produce $100kg$ of the product. If the
+              company has a total of $\$2,100$ to spend on raw materials and $\$200$ to spend
+              on freight every day, what's the maximum amount of product that can be produced
+              every day? How many tons of each type of raw material should be used?
+
+              \sol{}
+
+              Let $x$ be the number of tons of the first type of raw material and $y$ be the
+              number of tons of the second type of raw material.
+
+              \begin{center}
+                  \begin{tabular}{|c|c|c|c|}
+                      \hline
+                                    & \textbf{M1 ($x$ t)} & \textbf{M2 ($y$ t)} & \textbf{Limit} \\
+                      \hline
+                      Cost (\$)     & $300x$              & $700y$              & $2,100$        \\
+                      Freight(\$)   & $50x$               & $40y$               & $200$          \\
+                      Product($kg$) & $90x$               & $100y$              &                \\
+                      \hline
+                  \end{tabular}
+              \end{center}
+
+              The objective function is $z = 90x + 100y$, which is the amount of product that
+              can be produced every day. According to the descriptions above, we find the
+              maximum value of it.
+
+              The constraints are:
+
+              \begin{flalign*}
+                  \begin{cases}
+                      300x + 700y \leq 2,100 \\
+                      50x + 40y \leq 200     \\
+                      x \geq 0               \\
+                      y \geq 0
+                  \end{cases}
+              \end{flalign*}
+
+              After simplifying the constraints, we get:
+
+              \begin{flalign*}
+                  \begin{cases}
+                      3x + 7y \leq 21 \\
+                      5x + 4y \leq 20 \\
+                      x \geq 0        \\
+                      y \geq 0
+                  \end{cases}
+              \end{flalign*}
+
+              The feasible region is as follows:
+
+              \begin{center}
+                  \includegraphics[scale=0.5]{g7}
+              \end{center}
+
+              Let $l: 90x + 100y = z$.
+
+              When the line is at $l$, the value of $z$ is at its maximum. The point of
+              intersection $P$ of $l$ and the feasible region makes the objective function to
+              have its maximum value. Since $P$ is also the point of intersection of $3x + 7y
+                  = 21$ and $5x + 4y = 20$,
+
+              \setcounter{equation}{0}
+              \begin{numcases}{}
+                  3x + 7y = 21 \\
+                  5x + 4y = 20
+              \end{numcases}
+
+              \begin{flalign*}
+                  (1) \times 5:                                    & \ 15x + 35y = 105                                              \\
+                  (2) \times 3:                                    & \ 15x + 12y = 60                                               \\
+                  (1) - (2):                                       & \ 23y = 45                                                     \\
+                                                                   & \ \ \ \ \  y = \frac{45}{23}                                   \\
+                                                                   & \ \ \ \ \ \ \  = 1.96                                          \\
+                  \text{Sub } y = \frac{45}{23} \text{ into } (2): & \ 5x + \frac{180}{23} = 20                                     \\
+                                                                   & \ \ \ \ \ \ \ \ \ \ \ \ \ 5x = \frac{280}{23}                  \\
+                                                                   & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x = \frac{56}{23}                \\
+                                                                   & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ = 2.43                       \\
+                  \\
+                  P                                                & = (2.43, 1.96)                                                 \\
+                  z_{\max}                                         & = 90\left(\frac{56}{23}\right) + 100\left(\frac{45}{23}\right) \\
+                                                                   & = 414.78
+              \end{flalign*}
+
+              Thus, the company should use $2.43$ tons of the first type of raw material and
+              $1.96$ tons of the second type of raw material, and the maximum amount of
+              product that can be produced every day is $414.78 kg$.
 
         \item A factory uses four types of raw materials: $a$, $b$, $c$, and $d$ to produce
               two types of products: $A$ and $B$, the stock of raw materials $a$, $b$, $c$,
