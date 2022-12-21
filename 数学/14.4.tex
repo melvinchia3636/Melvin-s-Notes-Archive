@@ -17,13 +17,38 @@
 \usepackage{enumitem}
 \usepackage{pgfplots}
 \usepackage{etoolbox}
+\usepackage{tikz-3dplot}
+\usepackage{tkz-euclide}
+\usepackage{graphicx}
+\usepackage{enumitem}
+
+\def\nswe#1#2#3{#1\,$#2^\circ\,#3'$}
+\graphicspath{ {./assets/} }
 \usetikzlibrary{calc,matrix,arrows}
-\usetikzlibrary{decorations.pathmorphing,patterns}
+\usetikzlibrary{decorations.pathmorphing,patterns, calligraphy, perspective,backgrounds}
+
+\tikzset{
+    right angle quadrant/.code={
+            \pgfmathsetmacro\quadranta{{1,1,-1,-1}[#1-1]}     % Arrays for selecting quadrant
+            \pgfmathsetmacro\quadrantb{{1,-1,-1,1}[#1-1]}},
+    right angle quadrant=1, % Make sure it is set, even if not called explicitly
+    right angle length/.code={\def\rightanglelength{#1}},   % Length of symbol
+    right angle length=2ex, % Make sure it is set...
+    right angle symbol/.style n args={3}{
+            insert path={
+                    let \p0 = ($(#1)!(#3)!(#2)$) in     % Intersection
+                    let \p1 = ($(\p0)!\quadranta*\rightanglelength!(#3)$), % Point on base line
+                    \p2 = ($(\p0)!\quadrantb*\rightanglelength!(#2)$) in % Point on perpendicular line
+                    let \p3 = ($(\p1)+(\p2)-(\p0)$) in  % Corner point of symbol
+                    (\p1) -- (\p3) -- (\p2)
+                }
+        }
+}
 
 \counterwithout{equation}{chapter}
 \setlength{\columnseprule}{1pt}
 \setlength{\columnsep}{24pt}
-\setcounter{chapter}{14}
+\setcounter{chapter}{16}
 \hfuzz=100pt
 
 \newcommand{\pgfplotsdrawaxis}{\pgfplots@draw@axis}
@@ -35,6 +60,62 @@
 \newtheorem{theorem}{Theorem}
 
 \begin{document}
+
+\newcommand{\planelineinter}[5]% a, b, c, p as {a_x,a_y,a_z}, coordinate name
+{   \foreach \a [count=\k] in {#1}
+        { \ifthenelse{\k=1}{\xdef\tempxa{\a}}
+            \ifthenelse{\k=2}{\xdef\tempya{\a}}
+            \ifthenelse{\k=3}{\xdef\tempza{\a}}
+        }
+    \foreach \b [count=\k] in {#2}
+        { \ifthenelse{\k=1}{\xdef\tempxb{\b}}
+            \ifthenelse{\k=2}{\xdef\tempyb{\b}}
+            \ifthenelse{\k=3}{\xdef\tempzb{\b}}
+        }
+    \foreach \c [count=\k] in {#3}
+        { \ifthenelse{\k=1}{\xdef\tempxc{\c}}
+            \ifthenelse{\k=2}{\xdef\tempyc{\c}}
+            \ifthenelse{\k=3}{\xdef\tempzc{\c}}
+        }
+    \foreach \p [count=\k] in {#4}
+        { \ifthenelse{\k=1}{\xdef\tempxp{\p}}
+            \ifthenelse{\k=2}{\xdef\tempyp{\p}}
+            \ifthenelse{\k=3}{\xdef\tempzp{\p}}
+        }
+    \pgfmathsetmacro{\abx}{\tempxb-\tempxa}
+    \pgfmathsetmacro{\aby}{\tempyb-\tempya}
+    \pgfmathsetmacro{\abz}{\tempzb-\tempza}
+    \pgfmathsetmacro{\acx}{\tempxc-\tempxa}
+    \pgfmathsetmacro{\acy}{\tempyc-\tempya}
+    \pgfmathsetmacro{\acz}{\tempzc-\tempza}
+    \pgfmathsetmacro{\nx}{\aby*\acz-\abz*\acy}
+    \pgfmathsetmacro{\ny}{\abz*\acx-\abx*\acz}
+    \pgfmathsetmacro{\nz}{\abx*\acy-\aby*\acx}
+    \pgfmathsetmacro{\d}{(\nx+\ny+\nz)/(\nx*\tempxp+\ny*\tempyp+\nz*\tempzp)}
+    \path (0,0,0) -- (#4) coordinate[pos=\d] (#5);
+}
+
+% golden ratio and inverse golden ratio
+\pgfmathsetmacro{\gr}{(1+sqrt(5))/2}
+\pgfmathsetmacro{\igr}{2/(1+sqrt(5))}
+
+%choose axis angles
+\newcommand{\xangle}{0}
+\newcommand{\yangle}{90}
+\newcommand{\zangle}{225}
+
+%choose axis lengths
+\newcommand{\xlength}{1}
+\newcommand{\ylength}{1}
+\newcommand{\zlength}{0.5}
+
+\pgfmathsetmacro{\xx}{\xlength*cos(\xangle)}
+\pgfmathsetmacro{\xy}{\xlength*sin(\xangle)}
+\pgfmathsetmacro{\yx}{\ylength*cos(\yangle)}
+\pgfmathsetmacro{\yy}{\ylength*sin(\yangle)}
+\pgfmathsetmacro{\zx}{\zlength*cos(\zangle)}
+\pgfmathsetmacro{\zy}{\zlength*sin(\zangle)}
+
 \newcommand{\sol}[1]{
 
     \noindent \textbf{Sol.}
@@ -56,6 +137,7 @@
     \makeatother
     \begin{equation*}
         }{\end{equation*}}
+
 \begin{titlepage}
     \raggedleft{}
     \rule{1pt}{\textheight}
@@ -89,6 +171,33 @@
             x \geq 0        \\
             y \geq 0
         \end{cases}\]
+    \sol{}
+    \begin{flalign*}
+        \text{Objective function: } z & = 8x - 10y                    \\
+        10y                           & = 8x - z                      \\
+        y                             & = \frac{4}{5}x - \frac{z}{10}
+    \end{flalign*}
+    \begin{center}
+        \includegraphics[scale=0.5]{g2}
+    \end{center}
+    When $y = \frac{4}{5}x - \frac{z}{10}$ translates towards bottom right of the feasible region, the value of $z$ increases. Therefore, the maximum value of the objective function is the value of $z$ in $l_2$. The point of intersection $C$ of $l_2$ and the feasible region makes the objective function to have its maximum value. Since $C$ is also the point of intersection of $3x + 2y = 90$ and $y = 0$,
+    \begin{flalign*}
+         & \begin{cases}
+               3x + 2y = 90 \\
+               y = 0
+           \end{cases}               \\
+         & D = (30, 0)                \\
+         & z_{\max} = 8(30) - 0 = 240
+    \end{flalign*}
+    When $y = x - z$ translates towards top left of the feasible region, the value of $z$ decreases. Therefore, the minimum value of the objective function is the value of $z$ in $l_1$. The point of intersection $A$ of $l_1$ and the feasible region makes the objective function to have its minimum value. Since $A$ is also the point of intersection of $x + 2y = 40$ and $x = 0$,
+    \begin{flalign*}
+         & \begin{cases}
+               x + 2y = 40 \\
+               x = 0
+           \end{cases}                 \\
+         & A = (0, 20)                  \\
+         & z_{\min} = 0 - 10(20) = -200
+    \end{flalign*}
 
     \subsection{Exercise 15.8}
     \begin{enumerate}
@@ -1209,17 +1318,55 @@
 
     \begin{enumerate}
         \setcounter{enumi}{40}
-        \item \begin{numcases}{}
-                  x + y - 3 > 0  \\
-                  x - 2y + 4 > 0 \\
-                  0 \leq y \leq 8
-              \end{numcases}
-        \item \begin{numcases}{}
-                  3x + y \geq 20  \\
-                  2x + 3y \leq 48 \\
-                  x \geq 0        \\
-                  y \geq 0
-              \end{numcases}
+        \setcounter{equation}{0}
+        \item $\begin{cases}
+                      x + y - 3 > 0  \\
+                      x - 2y + 4 > 0 \\
+                      0 \leq y \leq 8
+                  \end{cases}$
+              \sol{}
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.8]
+                      \draw[draw=none,fill, color=black!20](7,4) -- (6,4) --(0.3333333, 1.1666666666666)--(1.5, 0) -- (7,0) --cycle;
+                      \draw [-latex,thick](-1,0) -- (7,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {2, 4, 6, 8, 10, 12}
+                      \draw (\x/2,0.1) -- (\x/2,-0.1) node [below] {$\x$};
+                      \foreach \y in {2, 4, 6, 8}
+                      \draw (0.1,\y/2) -- (-0.1,\y/2) node [left] {$\y$};
+                      \draw [-latex,thick](0,-1) -- (0,5) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[dashed, color=black,domain=-2:5] plot (\x/2,{(-\x+3)/2});
+                      \draw[dashed, color=black,domain=-2:14] plot (\x/2,{(\x/2+2)/2});
+                      \draw[color=black,domain=-2:14] plot (\x/2,4);
+                      \draw[fill=white] (6,4) circle (2pt);
+                      \draw[fill=white] (0.3333333, 1.1666666666666) circle (2pt);
+                      \node at (2.5,3) {$x - 2y + 4 = 0$};
+                      \node at (3.6,-0.8) {$x+y-3 = 0$};
+                      \node at (3,4.4) {$y = 8$};
+                  \end{tikzpicture}
+              \end{center}
+        \item $\begin{cases}
+                      3x + y \geq 20  \\
+                      2x + 3y \leq 48 \\
+                      x \geq 0        \\
+                      y \geq 0
+                  \end{cases}$
+              \begin{center}
+                  \begin{tikzpicture}[transform shape,scale=0.9]
+                      \draw[draw=none,fill, color=black!20](1.714/5, 14.857/5) -- (6.6666667/5, 0) --(24/5, 0) --cycle;
+                      \draw [-latex,thick](-1,0) -- (6,0) node[right] {$x$} coordinate(x axis);
+                      \foreach \x in {5, 10, 15, 20, 25}
+                      \draw (\x/5,0.1) -- (\x/5,-0.1) node [below] {$\x$};
+                      \foreach \y in {5, 10, 15, 20}
+                      \draw (0.1,\y/5) -- (-0.1,\y/5) node [left] {$\y$};
+                      \draw [-latex,thick](0,-1) -- (0,5) node[above] {$y$} coordinate(y axis);
+                      \node at (-0.25,-0.3375) {0};
+                      \draw[color=black,domain=-1.6666:8.333333] plot (\x/5,{(-3*\x+20)/5});
+                      \draw[color=black,domain=-5:30] plot (\x/5,{(-2/3*\x+16)/5});
+                      \node at (2.5,2.5) {$2x + 3y = 48$};
+                      \node at (2.65,-0.8) {$3x + y = 20$};
+                  \end{tikzpicture}
+              \end{center}
     \end{enumerate}
 
     \begin{enumerate}
@@ -1232,6 +1379,31 @@
                       x \geq 0       \\
                       y \geq 0
                   \end{cases}\]
+              \sol{}
+              \begin{flalign*}
+                  \text{Objective function: } & z = x - y \\
+                                              & y = x - z \\
+              \end{flalign*}
+              \begin{center}
+                  \includegraphics[scale=0.5]{g1}
+              \end{center}
+              When $y = x - z$ translates towards bottom right of the feasible region, the value of $z$ increases. Therefore, the maximum value of the objective function is the value of $z$ in $l_1$. The point of intersection $D$ of $l_1$ and the feasible region makes the objective function to have its maximum value. Since $D$ is also the point of intersection of $3x - 2y = 1$ and $y = 0$,
+              \begin{flalign*}
+                   & \begin{cases}
+                         3x - 2y = 1 \\
+                         y = 0
+                     \end{cases}                             \\
+                   & D = \left(\frac{1}{3}, 0\right)          \\
+                   & z_{\max} = \frac{1}{3} - 0 = \frac{1}{3}\end{flalign*}
+              When $y = x - z$ translates towards top left of the feasible region, the value of $z$ decreases. Therefore, the minimum value of the objective function is the value of $z$ in $l_2$. The point of intersection $A$ of $l_2$ and the feasible region makes the objective function to have its minimum the point of intersection of $2x + 3y = 6$ and $x = 0$,
+              \begin{flalign*}
+                   & \begin{cases}
+                         2x + 3y = 6 \\
+                         x = 0
+                     \end{cases}          \\
+                   & A = (0, 2)            \\
+                   & z_{\min} = 0 - 2 = -2
+              \end{flalign*}
 
         \item A factory produces two types of products: $A$ and $B$. The ingredients used in
               each kilogram of these two products are as follows:
