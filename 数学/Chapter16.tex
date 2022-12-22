@@ -632,7 +632,7 @@
       plane,
 
       When $PC > r$, point $P$ is said to be outside the circle, the maximum distance
-      of $P$ from the circle is $M = PC - r$, and the minimum distance of $P$ from
+      of $P$ from the circle is $M = PC + r$, and the minimum distance of $P$ from
       the circle is $m = PC - r$.
       \begin{center}
             \begin{tikzpicture}
@@ -1078,22 +1078,133 @@
                   circles:
                   \begin{enumerate}
                         \item $(-2, 3)$, $x^2 + y^2 - 6x - 2y = 0$
+                              \sol{}
+                              \begin{flalign*}
+                                    d & = \sqrt{{(-2)}^2 + {(3)}^2 + 2(-3)(-2) + 2(-1)(3) + 0} & \\
+                                      & = \sqrt{4 + 9 + 12 - 6}                                & \\
+                                      & = \sqrt{19}                                            & \\
+                              \end{flalign*}
                         \item $(-6, 0)$, $x^2 + y^2 - 6x + 2y + 8 = 0$
+                              \sol{}
+                              \begin{flalign*}
+                                    d & = \sqrt{{(-6)}^2 + {(0)}^2 + 2(-6)(-3) + 2(0)(1) + 8} & \\
+                                      & = \sqrt{36 + 0 + 36 + 0 + 8}                          & \\
+                                      & = \sqrt{80}                                           & \\
+                                      & = 4\sqrt{5}                                           & \\
+                              \end{flalign*}
                         \item $(2, 2)$, $2x^2 + 2y^2 + 2x + 4y - 3 = 0$
+                              \sol{}
+                              \begin{flalign*}
+                                    2x^2 + 2y^2 + 2x + 4y - 3        & = 0 \\
+                                    x^2 + y^2 + x + 2y - \frac{3}{2} & = 0
+                              \end{flalign*}
+                              \begin{flalign*}
+                                    d & = \sqrt{{(2)}^2 + {(2)}^2 + 2(2)\left(\frac{1}{2}\right) + 2(2)(1) - \frac{3}{2}} & \\
+                                      & = \sqrt{4 + 4 + 2 + 4 - \frac{3}{2}}                                              & \\
+                                      & = \sqrt{\frac{25}{2}}                                                             & \\
+                                      & = \frac{5\sqrt{2}}{2}
+                              \end{flalign*}
                   \end{enumerate}
             \item If the following lines and circles are tengant to each other, find the value of
                   $k$:
                   \begin{enumerate}
                         \item $4x + 3y - k = 0$, $x^2 + y^2 - 6x + 4y - 12 = 0$
+                              \sol{}
+                              \begin{flalign*}
+                                    C & = (3, -2)                         \\
+                                    r & = \sqrt{{(-3)}^2 + 2^2 - (-12)} & \\
+                                      & = \sqrt{9 + 4 + 12}             & \\
+                                      & = \sqrt{25}                     & \\
+                                      & = 5
+                              \end{flalign*}
+                              \begin{flalign*}
+                                    \left|\frac{4(3) + 3(-2) - k}{\sqrt{4^2 + 3^2}}\right| & = 5                    \\
+                                    \frac{6-k}{5}                                          & = \pm 5                \\
+                                    6 - k                                                  & = \pm 25               \\
+                                    k = 6 \pm 25                                           & = \pm 19               \\
+                                    k = 6 + 25                                             & \text{ or } k = 6 - 25 \\
+                                    k =  31                                                & \text{ or } k = -19
+                              \end{flalign*}
                         \item $x + 3y + k = 0$, $2x^2 + 2y^2 + 12y + 13 = 0$
+                              \sol{}
+                              \begin{flalign*}
+                                    2x^2 + 2y^2 + 12y + 13        & = 0 \\
+                                    x^2 + y^2 + 6y + \frac{13}{2} & = 0
+                              \end{flalign*}
+                              \begin{flalign*}
+                                    C & = (0, -3)                         & \\
+                                    r & = \sqrt{0^2 + 3^2 - \frac{13}{2}} & \\
+                                      & = \sqrt{9 - \frac{13}{2}}         & \\
+                                      & = \sqrt{\frac{5}{2}}
+                              \end{flalign*}
+                              \begin{flalign*}
+                                    \left|\frac{1(0) + 3(-3) + k}{\sqrt{1^2 + 3^2}}\right| & = \sqrt{\frac{5}{2}}     & \\
+                                    \frac{k-9}{\sqrt{10}}                                  & = \pm \sqrt{\frac{5}{2}} & \\
+                                    \frac{{(k-9)}^2}{10}                                   & = \frac{5}{2}            & \\
+                                    {(k-9)}^2                                              & = 25                       \\
+                                    k-9                                                    & = \pm 5                    \\
+                                    k                                                      & = 9 \pm 5                  \\
+                                    k = 9 + 5                                              & \text{ or } k = 9 - 5      \\
+                                    k = 14                                                 & \text{ or } k = 4
+                              \end{flalign*}
                   \end{enumerate}
             \item Find the maximum and minimum distance of the point $P(-2, 5)$ from the circle
-                  $x^2 + y^2 - 2x - 2y + 1 = 0$.
+                  $x^2 + y^2 - 2x - 2y + 1 = 0$. \sol{}
+                  \begin{flalign*}
+                        C                        & = (1, 1)                         \\
+                        r                        & = \sqrt{{(-1)}^2 + {(-1)}^2 - 1} \\
+                                                 & = 1                              \\
+                        PC                       & = \sqrt{{(-2-1)}^2 + {(5-1)}^2}  \\
+                                                 & = \sqrt{9 + 16}                  \\
+                                                 & = \sqrt{25}                      \\
+                                                 & = 5                              \\
+                        \\
+                        \because\ PC             & > r                              \\
+                        \therefore\ P \text{ is} & \text{ outside the circle}       \\
+                        d_{\max}                 & = PC + r = 5 + 1 = 6             \\
+                        d_{\min}                 & = PC - r = 5 - 1 = 4
+                  \end{flalign*}
+
             \item Find the maximum and minimum distance of the point $Q(0, 1)$ from the circle
-                  $x^2 + y^2 - 6x - 10y - 2 = 0$.
+                  $x^2 + y^2 - 6x - 10y - 2 = 0$. \sol{}
+                  \begin{flalign*}
+                        C                        & = (3, 5)                            \\
+                        r                        & = \sqrt{{(-3)}^2 + {(-5)}^2 - (-2)} \\
+                                                 & = \sqrt{9 + 25 + 2}                 \\
+                                                 & = \sqrt{36}                         \\
+                                                 & = 6                                 \\
+                        QC                       & = \sqrt{{(0-3)}^2 + {(1-5)}^2}      \\
+                                                 & = \sqrt{9 + 16}                     \\
+                                                 & = \sqrt{25}                         \\
+                                                 & = 5                                 \\
+                        \\
+                        \because\ PC             & < r                                 \\
+                        \therefore\ P \text{ is} & \text{ inside the circle}           \\
+                        d_{\max}                 & = QC + r = 5 + 6 = 11               \\
+                        d_{\min}                 & = r - QC = 6 - 5 = 1
+                  \end{flalign*}
+
             \item Assume that the maximum and minimum distance of the point $R(5, 2)$ from the
                   circle $x^2 + y^2 - 4x + 4y - 1 = 0$ are $M$ and $N$ respectively, find the
-                  product of $M$ and $N$.
+                  product of $M$ and $N$. \sol{}
+                  \begin{flalign*}
+                        C                        & = (2, -2)                         \\
+                        r                        & = \sqrt{{(-2)}^2 + 2^2 - (-1)}    \\
+                                                 & = \sqrt{4 + 4 + 1}                \\
+                                                 & = \sqrt{9}                        \\
+                                                 & = 3                               \\
+                        RC                       & = \sqrt{{(5-2)}^2 + {[2-(-2)]}^2} \\
+                                                 & = \sqrt{9 + 16}                   \\
+                                                 & = \sqrt{25}                       \\
+                                                 & = 5                               \\
+                        \\
+                        \because\ RC             & > r                               \\
+                        \therefore\ R \text{ is} & \text{ outside the circle}        \\
+                        d_{\max}                 & = RC + r = 5 + 3 = 8              \\
+                        d_{\min}                 & = RC - r = 5 - 3 = 2              \\
+                        \\
+                        \therefore\ MN           & = 8 \times 2 = 16
+                  \end{flalign*}
       \end{enumerate}
 
       \section{Revision Exercise 16}
