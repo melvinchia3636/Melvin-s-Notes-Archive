@@ -1049,6 +1049,231 @@
                             \angle{VPE}       & \approx 67.38^\circ
                         \end{flalign*}
               \end{enumerate}
+
+        \item The diagram below shows a regular pyramid, the length of its lateral edge is
+              $12cm$, its base $ABCD$ is a square with side length of $8cm$, $M$ is the
+              midpoint of $BC$. Find:
+              \begin{center}
+                  \begin{tikzpicture}
+                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
+                      \node (a) at (0,0) {};
+                      \node (b) at (2.5,0) {};
+                      \node (c) at (3.5,1) {};
+                      \node (d) at (1,1) {};
+                      \node (e) at (1.75,3) {};
+                      \draw (a.center) node [below left] {$C$} -- (b.center) node [below] {$B$} -- (c.center) node [right] {$D$} node [midway, right=12pt, below=-4pt] {$8cm$} -- (e.center) node [above] {$V$} node [midway, right=2pt] {$12cm$} -- (b.center);
+                      \draw (a.center) -- (e.center);
+                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
+                      \draw[dashed] (d.center) node [below] {$A$} -- (e.center);
+                      \coordinate (m) at ($(a.center)!0.5!(b.center)$);
+                      \filldraw (m) circle (1pt);
+                      \node [below] at (m) {$M$};
+                      \tkzMarkSegment[pos=.5,mark=||](a.center,m);
+                      \tkzMarkSegment[pos=.5,mark=||](b.center,m);
+                  \end{tikzpicture}
+              \end{center}
+              \begin{enumerate}
+                  \item The angle formed by the lateral edge and the base of the pyramid. \sol{}
+
+                        Let the foot point of the pyramid be $E$.
+                        \begin{flalign*}
+                            \text{In } ABCD,\ AB & = \sqrt{AD^2 + BD^2} \\
+                                                 & = \sqrt{8^2 + 8^2}   \\
+                                                 & = \sqrt{128}cm       \\
+                                                 & = 8\sqrt{2}          \\
+                            AE                   & = \frac{AB}{2}       \\
+                                                 & = 4\sqrt{2}cm        \\
+                        \end{flalign*}
+                        The angle formed by the lateral edge and the base of the pyramid is $\angle VAE$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                                \coordinate [label=left:$A$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$E$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$V$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {$12cm$} (B) -- node[midway, right] {} (C) -- node[below] {$4\sqrt{2}cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \cos{\angle VAE} & = \frac{AE}{AV}        \\
+                                             & = \frac{4\sqrt{2}}{12} \\
+                                             & = \frac{\sqrt{2}}{3}   \\
+                            \angle VAE       & = 61.87^\circ
+                        \end{flalign*}
+
+                  \item The angle formed by line $VM$ and the base of the pyramid. \sol{}
+                        \begin{flalign*}
+                            EM & = \frac{BD}{2}                  \\
+                               & = \frac{8}{2}                   \\
+                               & = 4cm                           \\
+                            VE & = \sqrt{AV^2 + AE^2}            \\
+                               & = \sqrt{12^2 - {(4\sqrt{2})}^2} \\
+                               & = \sqrt{144 - 32}               \\
+                               & = \sqrt{112}                    \\
+                        \end{flalign*}
+                        The angle formed by line $VM$ and the base of the pyramid is $\angle VME$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                                \coordinate [label=left:$M$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$E$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$V$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$\sqrt{112}cm$} (C) -- node[below] {$4cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \cos{\angle VME} & = \frac{VE}{VM}        \\
+                                             & = \frac{\sqrt{112}}{4} \\
+                            \angle VME       & = 69.30^\circ
+                        \end{flalign*}
+              \end{enumerate}
+
+        \item In the pyramid shown below, $\Delta ABC$ is a right-angled triangle, $CD$ is
+              perpendicular to plane $ABC$, $CE$ is perpendicular to $AB$. Given that $AC =
+                  15cm$, $BC = 20cm$ and $CD = 9cm$. Find:
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw (0.2, 0) node [left] {$A$} -- (1.5,2) node [above] {$D$} -- (5, 0.5) node [right] {$B$} -- cycle;
+                      \draw [dashed] (0.2, 0) -- (1.5, 1) node [above=4pt, left=-2pt] {$C$} node [midway] {$15cm$};
+                      \draw [dashed] (1.5, 2) -- (1.5, 1) node [midway, right] {$9cm$};
+                      \draw [dashed] (5, 0.5) -- (1.5, 1)  node [midway, above] {$20cm$};
+                      \draw[dash pattern=on 1pt off 1pt] (1.5, 1) -- (1.8, 0.2) node [below] {$E$};
+                      \draw (1.5, 1.15) -- (1.63, 1.13) -- (1.63, 0.98) -- (1.55, 0.9) -- (1.41, 0.93);
+                      \draw (1.76, 0.3) -- (1.9, 0.32) -- (1.955, 0.19);
+                  \end{tikzpicture}
+              \end{center}
+              \begin{enumerate}
+                  \item The length of $CE$. \sol{}
+                        \begin{flalign*}
+                            \text{In } \Delta ABC,\ \tan{\angle{CBA}} & = \frac{AC}{AB}        \\
+                                                                      & = \frac{15}{20}        \\
+                                                                      & = \frac{3}{4}          \\
+                            \angle CBA                                & = 36.87^\circ          \\
+                            \text{In } \Delta CBE,\ \sin{\angle{CBE}} & = \frac{CE}{CB}        \\
+                            \sin{36.87^\circ}                         & = \frac{CE}{20}        \\
+                            CE                                        & = 20 \sin{36.87^\circ} \\
+                                                                      & = 12cm
+                        \end{flalign*}
+
+                  \item $\angle DEC$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                                \coordinate [label=left:$E$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$C$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$D$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$9cm$} (C) -- node[below] {$12cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \cos{\angle DEC} & = \frac{DC}{EC} \\
+                                             & = \frac{9}{12}  \\
+                                             & = \frac{3}{4}   \\
+                            \angle DEC       & = 36.87^\circ
+                        \end{flalign*}
+
+                  \item The angle formed by line $AD$ and plane $ABC$. \sol{}
+
+                        The angle formed by line $AD$ and plane $ABC$ is $\angle DAC$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                                \coordinate [label=left:$A$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$C$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$D$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$9cm$} (C) -- node[below] {$15cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \cos{\angle DAC} & = \frac{DC}{AC} \\
+                                             & = \frac{9}{15}  \\
+                                             & = \frac{3}{5}   \\
+                            \angle DAC       & = 30.96^\circ
+                        \end{flalign*}
+              \end{enumerate}
+
+        \item The diagram below shows a right prism, its base $CDF$ is a right-angled
+              triangle. Given that $BC = 16.5cm$ and $AB = 12cm$. Assume that $CF = 2DF$,
+              find:
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.1]
+                      \draw (3,1,0) node [above] {$D$} --(0,1,0) node [above] {$A$};
+                      \draw (3, 1, 0)--(3,0,0) node [right] {$F$} --(3,0,2)node [below] {$C$}--(0,0,2) node [below] {$B$} node [midway, below] {$16.5cm$};
+                      \draw (0,1,0) -- (0,0,2) node [midway, left] {$12cm$};
+                      \draw (3,1,0) -- (3,0,2);
+                      \draw (3, 0.2, 0) -- (3, 0.2, 0.3) -- (3, 0.0, 0.3);
+                      \draw[dashed](3,0,0)--(0,0,0) node [below=6pt, right=-6pt] {$E$}--(0,1,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \draw[dash pattern=on 1pt off 1pt] (0, 1, 0) -- (3,0,2);
+                  \end{tikzpicture}
+              \end{center}
+              \begin{enumerate}
+                  \item The angle formed by line $AB$ and plane $BCFE$. \sol{}
+                        \begin{flalign*}
+                            CF               & = 2DF                    \\
+                            DF^2 + {(2DF)}^2 & = 12^2                   \\
+                            DF^2 + 4DF^2     & = 144                    \\
+                            5DF^2            & = 144                    \\
+                            DF^2             & = \frac{144}{5}          \\
+                            DF               & = \frac{12}{\sqrt{5}}    \\
+                                             & = \frac{12\sqrt{5}}{5}cm
+                        \end{flalign*}
+                        The angle formed by line $AB$ and plane $BCFE$ is $\angle ABE$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                                \coordinate [label=left:$B$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$E$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$A$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {$12cm$} (B) -- node[midway, right] {$\frac{12\sqrt{5}}{5}cm$} (C) -- node[below] {} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \sin{\angle ABE} & = \frac{AE}{AB}                   \\
+                                             & = \frac{\frac{12\sqrt{5}}{5}}{12} \\
+                                             & =\frac{\sqrt{5}}{5}               \\
+                            \angle ABE       & = 26.57^\circ
+                        \end{flalign*}
+
+                  \item The angle formed by line $AC$ and plan $BCFE$. \sol{}
+                        \begin{flalign*}
+                            CF                   & = 2DF                            \\
+                                                 & = \frac{24}{\sqrt{5}}            \\
+                            \text{In } BCEF,\ EC & = \sqrt{BC^2 + BE^2}             \\
+                                                 & = \sqrt{16.5^2 + \frac{24^2}{5}} \\
+                                                 & = \sqrt{387.45}                  \\
+                        \end{flalign*}
+                        The angle formed by line $AC$ and plane $BCFE$ is $\angle ACE$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                                \coordinate [label=left:$C$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$E$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$A$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$\frac{12\sqrt{5}}{5}cm$} (C) -- node[below] {$\sqrt{387.45}cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \sin{\angle ACE} & = \frac{AE}{EC}                              \\
+                                             & = \frac{\frac{12\sqrt{5}}{5}}{\sqrt{387.45}} \\
+                            \angle ACE       & = 15.25^\circ
+                        \end{flalign*}
+              \end{enumerate}
               lmao right here
     \end{enumerate}
 
