@@ -42,6 +42,16 @@
 
 \begin{document}
 
+\makeatletter
+\newcommand{\newparallel}{\mathrel{\mathpalette\new@parallel\relax}}
+\newcommand{\new@parallel}[2]{%
+    \begingroup
+    \sbox\z@{$#1T$}% get the height of an uppercase letter
+    \resizebox{!}{\ht\z@}{\raisebox{\depth}{$\m@th#1/\mkern-5mu/$}}%
+    \endgroup
+}
+\makeatother
+
 \newcommand{\sol}[1]{
 
     \noindent \textbf{Sol.}
@@ -88,79 +98,115 @@
 
 \begin{multicols}{2}
     \begin{enumerate}
-        \item The diagram below shows a roof, $HK$ is the ridge of the roof, its edges $HA$,
-              $HD$, $KB$, $KC$ are euqal in length. Both of the planes $HAD$ and $KBC$ form a
-              $44^o$ angle with plane $ABCD$. Given that $S$ and $T$ are the midpoints of
-              $BC$ and $AD$ respectively. Find:
-              \begin{center}
-                  \includegraphics[scale=0.9]{roof}
-              \end{center}
+        \item The diagram below shows a right prism, its base $BCGF$ is a trapezoid, $BC = BF
+                  = 12cm$, $FG = 16cm$. The lateral face $EFGH$ is a square, and is
+              perependicular to another lateral face $ABFE$. Find:
               \begin{enumerate}
-                  \item The distance from line $HK$ to plane $ABCD$. \sol{}
-
-                        Let the foot point of $K$ on plane $ABCD$ be $P$.
-                        \begin{flalign*}
-                            \text{In } \Delta KPS, \sin{\angle{KSP}} & = \frac{KP}{KS}   \\
-                            \sin{44^\circ}                           & = \frac{KP}{2}    \\
-                            KP                                       & = 2\sin{44^\circ} \\
-                                                                     & \approx 1.39m
-                        \end{flalign*}
-
-                  \item The length of $HK$. \sol{}
-                        \begin{flalign*}
-                            \cos{\angle{KSP}} & = \frac{PS}{KS}   \\
-                            \cos{44^\circ}    & = \frac{PS}{2}    \\
-                            PS                & = 2\cos{44^\circ} \\
-                                              & \approx 1.44m     \\
-                            HK                & \approx 12 - 2PS  \\
-                                              & \approx 12 - 2.88 \\
-                                              & \approx 9.12m
-                        \end{flalign*}
-
-                  \item The angle formed by line $HA$ and plane $ABCD$. \sol{}
-
-                        Let the foot point of $H$ on plane $ABCD$ be $Q$.
-                        \begin{flalign*}
-                            HA & = \sqrt{HT^2 + AT^2} \\
-                               & = \sqrt{2^2 + 4.5^2} \\
-                               & = \sqrt{24.25}cm     \\
-                        \end{flalign*}
-                        The angle formed by line $HA$ and plane $ABCD$ is $\angle{HAQ}$.
-                        \begin{center}
-                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
-
-                                \coordinate [label=left:$A$] (A) at (-1.5cm,-1.cm);
-                                \coordinate [label=right:$Q$] (C) at (1.5cm,-1.0cm);
-                                \coordinate [label=above:$H$] (B) at (1.5cm,1.0cm);
-                                \draw (A) -- node[midway,above left] {$\sqrt{24.25}cm$} (B) -- node[midway, right] {$2\sin{44^\circ}cm$} (C) -- node[below] {} (A);
-
-                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
-                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
-                            \end{tikzpicture}
-                        \end{center}
-                        \begin{flalign*}
-                            \sin{\angle{HAQ}} & = \frac{HQ}{HA}                        \\
-                            \sin{\angle{HAQ}} & = \frac{2\sin{44^\circ}}{\sqrt{24.25}} \\
-                            \angle{HAQ}       & \approx 16.38^\circ
-                        \end{flalign*}
-              \end{enumerate}
-
-        \item The length, width and height of a hall are $20m$, $15m$, and $4m$ respectively.
-              Find:
-              \begin{enumerate}
-                  \item The length of the diagonal of the hall.
-                  \item The angle formed by the diagonal and the floor of the hall.
+                  \item The angle formed by plane $CDHG$ and plane $EFGH$.
+                  \item The angle formed by plane $ABH$ and plane $ABFE$.
               \end{enumerate}
               \begin{center}
-                  \includegraphics[scale=0.9]{hall}
+                  \begin{tikzpicture}[scale=1.4]
+                      \draw (1.5,1.5,0) node [above] {$D$} --(0,1.5,0) node [above] {$A$} --(0,1.5,2) node [left] {$B$} --(1.5,1.5,2)node [above] {$C$} --(1.5,1.5,0) --(2,0,0) node [right] {$H$} --(2,0,2) node [below] {$G$} --(0,0,2) node [below] {$F$} node [midway, below] {$16cm$} --(0,1.5,2) node [midway, left=4pt] {$12cm$};
+                      \draw (1.5,1.5,2)--(2,0,2);
+                      \draw[dashed](2,0,0)--(0,0,0) node [below] {$E$}--(0,1.5,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \fill [color=gray, opacity=0.4] (0, 1.5, 0) -- (0, 1.5, 2) -- (2, 0, 0) -- cycle;
+                      \node (a) at (0,1.5,2) {};
+                      \node (b) at (1.5,1.5,2) {};
+                      \node (c) at (0,0,2) {};
+                      \tkzMarkSegment[pos=.45,mark=||](a,b);
+                      \tkzMarkSegment[pos=.5,mark=||](a,c);
+                      \draw (0, 0.15, 0) -- (0.15, 0.15, 0) -- (0.15, 0, 0);
+                      \draw (0, 0.15, 2) -- (0.15, 0.15, 2) -- (0.15, 0, 2);
+                  \end{tikzpicture}
               \end{center}
-        \item In the diagram below, $ABCD$ represents a rectangular plank with length and
-              width of $60cm$ and $36cm$ respectively, its base $BC$ is on the ground and the
-              top of it lies on the wall. Assume that the distance between $BC$ and the
-              corner of the wall is $12cm$, find the angle formed by the diagonal $BD$ of the
-              plank and the ground.
+        \item In the cuboid shown below, $BC = 8cm$, $CD = 6cm$, $BQ = 10cm$. Given that $M$
+              is the midpoint of $PQ$. Find:
+              \begin{enumerate}
+                  \item The angle formed by line $MD$ and plane $PQBA$.
+                  \item The angle formed by plane $AMD$ and plane $ABCD$.
+              \end{enumerate}
               \begin{center}
-                  \includegraphics[scale=0.9]{wall}
+                  \begin{tikzpicture}[scale=1.4]
+                      \draw (2,3,0) node [above] {$S$} --(0,3,0) node [above] {$P$} --(0,3,2) node [left] {$Q$} --(2,3,2)node [above] {$R$} --(2,3,0) --(2,0,0) node [right] {$D$} --(2,0,2) node [below] {$C$}  node [midway, below right] {$6cm$} --(0,0,2) node [below] {$B$}  node [midway, below] {$8cm$} --(0,3,2) node [midway, left] {$10cm$};
+                      \draw (2,3,2)--(2,0,2);
+                      \draw[dashed](2,0,0)--(0,0,0) node [above=2pt, left] {$A$}--(0,3,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \fill [color=gray, opacity=0.4] (0, 3, 1) -- (0,0,0) -- (2, 0, 0) -- cycle;
+                      \draw (0,3,1) circle (1pt) node [above] {$M$};
+                  \end{tikzpicture}
+              \end{center}
+        \item The diagram below shows a pyramid with an isoceles triangle base. Given that
+              $CD = CE = 5cm$, $ED = 6cm$, $ACD$ is a right-angled triangle, $B$ is a point
+              on $AC$, $AD = 2cm$, $BC = 4cm$. Find:
+              \begin{enumerate}
+                  \item The angle formed by plane $BDE$ and plane $CDE$.
+                  \item The angle formed by the plane $ADE$ and $CDE$.
+              \end{enumerate}
+              \begin{center}
+                  \tdplotsetmaincoords{70}{70}
+                  \begin{tikzpicture}[scale=0.6,tdplot_main_coords,declare function={d=6;}]
+                      \path (0,0,0)       coordinate (A) node [left] {$E$}
+                      (d,0,0)        coordinate (C) node [below] {$D$}
+                      (d/2,{d*sqrt(3)/2},0)    coordinate (B) node [right] {$C$}
+                      (d/2,{d*sqrt(3)/2 - 0.15} ,d-1.5) coordinate (F) node [right] {$B$}
+                      (d/2,d/2 + 2,{d/sqrt(2) + 2}) coordinate (D) node [above] {$A$}
+                      ($ (A)!0.5!(C) $) coordinate (M);
+                      \foreach \p/\g in {A/-90,B/-90,C/-90,D/90}
+                      \path (\p)+(\g:3mm);
+                      \draw (F) circle (1.2pt);
+                      \draw (D) -- (A) (D) -- (B) (D) -- (C) (A) -- (C) -- (B);
+                      \draw [dashed] (A) -- (B);
+                      \path (D) -- (F) node [midway, right] {$2cm$};
+                      \path (B) -- (F) node [midway, right] {$4cm$};
+                      \path (C) -- (B) node [midway, right=12pt, below=4pt] {$5cm$};
+                      \path (A) -- (C) node [midway, left=14pt, below=-4pt] {$6cm$};
+                      \fill [color=gray, opacity=0.4] (A) -- (C) -- (F) -- cycle;
+                      \draw (d/2,{d*sqrt(3)/2},0.5) -- (d/2,{d*sqrt(3)/2 - 0.4} ,0.4) -- (d/2,{d*sqrt(3)/2 - 0.4} ,-0.1);
+                      \tkzMarkSegment[pos=.45,mark=||](A,B);
+                      \tkzMarkSegment[pos=.45,mark=||](B,C);
+                  \end{tikzpicture}
+              \end{center}
+        \item The diagram below shows a regular pyramid with a square base. Given that $PQ =
+                  15cm$, $PV = 20cm$. Find:
+              \begin{enumerate}
+                  \item The angle formed by linee $PV$ and plane $PQRS$.
+                  \item The angle formed by the lateral faces and the base of the pyramid.
+              \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
+                      \node (a) at (0,0) {};
+                      \node (b) at (2.5,0) {};
+                      \node (c) at (3.5,1) {};
+                      \node (d) at (1,1) {};
+                      \node (e) at (1.75,3) {};
+                      \draw (a.center) node [below left] {$P$} -- (b.center) node [below] {$Q$} node [midway, below] {$15cm$} -- (c.center) node [ right] {$R$} -- (e.center) node [above] {$V$} -- (b.center);
+                      \draw (a.center) -- (e.center) node [midway, left=4pt] {$20cm$};
+                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
+                      \draw[dashed] (d.center) node [below] {$S$} -- (e.center);
+                  \end{tikzpicture}
+              \end{center}
+        \item The diagram below shows a right pyramid with lateral edges of $13cm$. Its base
+              $ABCD$ is a rectangle with length of $12cm$ and width of $10cm$. Find:
+              \begin{enumerate}
+                  \item The angle formed by plane $VBC$ and plane $ABCD$.
+                  \item The angle formed by plane $VCD$ and plane $ABCD$.
+              \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}
+                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
+                      \node (a) at (0,0) {};
+                      \node (b) at (2.5,0) {};
+                      \node (c) at (3.5,1) {};
+                      \node (d) at (1,1) {};
+                      \node (e) at (1.75,3) {};
+                      \draw (a.center) node [below left] {$A$} -- (b.center) node [below] {$B$} node [midway, below] {$12cm$} -- (c.center) node [ right] {$C$} node [midway, right=12pt, below=-4pt] {$10cm$} -- (e.center) node [above] {$V$} -- (b.center);
+                      \draw (a.center) -- (e.center) node [midway, left=4pt] {$13cm$};
+                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
+                      \draw[dashed] (d.center) node [below] {$D$} -- (e.center);
+                  \end{tikzpicture}
               \end{center}
     \end{enumerate}
 \end{multicols}

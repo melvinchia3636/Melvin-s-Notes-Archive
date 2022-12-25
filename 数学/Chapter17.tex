@@ -59,7 +59,15 @@
 
 \newtheorem{theorem}{Theorem}
 
-\begin{document}
+\begin{document}\makeatletter
+\newcommand{\newparallel}{\mathrel{\mathpalette\new@parallel\relax}}
+\newcommand{\new@parallel}[2]{%
+    \begingroup
+    \sbox\z@{$#1T$}% get the height of an uppercase letter
+    \resizebox{!}{\ht\z@}{\raisebox{\depth}{$\m@th#1/\mkern-5mu/$}}%
+    \endgroup
+}
+\makeatother
 
 \newcommand{\planelineinter}[5]% a, b, c, p as {a_x,a_y,a_z}, coordinate name
 {   \foreach \a [count=\k] in {#1}
@@ -1473,7 +1481,147 @@
                             \angle{PBE}       & \approx 27.71^\circ
                         \end{flalign*}
               \end{enumerate}
-              lmao right here
+
+        \item The diagram below shows a roof, $HK$ is the ridge of the roof, its edges $HA$,
+              $HD$, $KB$, $KC$ are euqal in length. Both of the planes $HAD$ and $KBC$ form a
+              $44^o$ angle with plane $ABCD$. Given that $S$ and $T$ are the midpoints of
+              $BC$ and $AD$ respectively. Find:
+              \begin{center}
+                  \includegraphics[scale=0.9]{roof}
+              \end{center}
+              \begin{enumerate}
+                  \item The distance from line $HK$ to plane $ABCD$. \sol{}
+
+                        Let the foot point of $K$ on plane $ABCD$ be $P$.
+                        \begin{flalign*}
+                            \text{In } \Delta KPS, \sin{\angle{KSP}} & = \frac{KP}{KS}   \\
+                            \sin{44^\circ}                           & = \frac{KP}{2}    \\
+                            KP                                       & = 2\sin{44^\circ} \\
+                                                                     & \approx 1.39m
+                        \end{flalign*}
+
+                  \item The length of $HK$. \sol{}
+                        \begin{flalign*}
+                            \cos{\angle{KSP}} & = \frac{PS}{KS}   \\
+                            \cos{44^\circ}    & = \frac{PS}{2}    \\
+                            PS                & = 2\cos{44^\circ} \\
+                                              & \approx 1.44m     \\
+                            HK                & \approx 12 - 2PS  \\
+                                              & \approx 12 - 2.88 \\
+                                              & \approx 9.12m
+                        \end{flalign*}
+
+                  \item The angle formed by line $HA$ and plane $ABCD$. \sol{}
+
+                        Let the foot point of $H$ on plane $ABCD$ be $Q$.
+                        \begin{flalign*}
+                            HA & = \sqrt{HT^2 + AT^2} \\
+                               & = \sqrt{2^2 + 4.5^2} \\
+                               & = \sqrt{24.25}cm     \\
+                        \end{flalign*}
+                        The angle formed by line $HA$ and plane $ABCD$ is $\angle{HAQ}$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                                \coordinate [label=left:$A$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$Q$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$H$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {$\sqrt{24.25}cm$} (B) -- node[midway, right] {$2\sin{44^\circ}cm$} (C) -- node[below] {} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \sin{\angle{HAQ}} & = \frac{HQ}{HA}                        \\
+                            \sin{\angle{HAQ}} & = \frac{2\sin{44^\circ}}{\sqrt{24.25}} \\
+                            \angle{HAQ}       & \approx 16.38^\circ
+                        \end{flalign*}
+              \end{enumerate}
+
+        \item The length, width and height of a hall are $20m$, $15m$, and $4m$ respectively.
+              Find:
+              \begin{center}
+                  \includegraphics[scale=0.9]{hall}
+              \end{center}
+              \begin{enumerate}
+                  \item The length of the diagonal of the hall. \sol{}
+                        \begin{flalign*}
+                            \text{Diagonal of floor} & = \sqrt{20^2 + 15^2} \\
+                                                     & = \sqrt{625}m        \\
+                                                     & = 25m                \\
+                            \text{Diagonal of hall}  & = \sqrt{4^2 + 25^2}  \\
+                                                     & = \sqrt{641}m        \\
+                                                     & = 25.32m
+                        \end{flalign*}
+
+                  \item The angle formed by the diagonal and the floor of the hall. \sol{}
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                                \coordinate [label=left:$A$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$C$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$B$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {Diagonal of hall} (B) -- node[midway, right] {Wall height} (C) -- node[below] {Diagonal of floor} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                                \coordinate [label=left:$A$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$C$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$B$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {$\sqrt{641}m$} (B) -- node[midway, right] {$4m$} (C) -- node[below] {$25m$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle{BAC}} & = \frac{4}{25}     \\
+                            \angle{BAC}       & \approx 9.09^\circ
+                        \end{flalign*}
+              \end{enumerate}
+
+        \item In the diagram below, $ABCD$ represents a rectangular plank with length and
+              width of $60cm$ and $36cm$ respectively, its base $BC$ is on the ground and the
+              top of it lies on the wall. Assume that the distance between $BC$ and the
+              corner of the wall is $12cm$, find the angle formed by the diagonal $BD$ of the
+              plank and the ground.
+              \begin{center}
+                  \includegraphics[scale=0.9]{wall}
+              \end{center}
+              \sol{}
+
+              Let the footpoint of $D$ on the ground be $E$.
+              \begin{flalign*}
+                  BD & = \sqrt{BC^2 + CD^2} \\
+                     & = \sqrt{60^2 + 36^2} \\
+                     & = \sqrt{4896}cm      \\
+                  DE & = \sqrt{DC^2 - CE^2} \\
+                     & = \sqrt{36^2 - 12^2} \\
+                     & = \sqrt{1152}cm      \\
+              \end{flalign*}
+              The angle formed by the diagonal $BD$ and the ground is $\angle{DBE}$.
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                      \coordinate [label=left:$B$] (A) at (-1.5cm,-1.cm);
+                      \coordinate [label=right:$E$] (C) at (1.5cm,-1.0cm);
+                      \coordinate [label=above:$D$] (B) at (1.5cm,1.0cm);
+                      \draw (A) -- node[midway,above left] {$\sqrt{4896}cm$} (B) -- node[midway, right] {$\sqrt{1152}cm$} (C) -- node[below] {} (A);
+
+                      \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                      \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                  \end{tikzpicture}
+              \end{center}
+              \begin{flalign*}
+                  \sin{\angle{DBE}} & = \frac{\sqrt{1152}}{\sqrt{4896}} \\
+                  \angle{DBE}       & \approx 29.02^\circ
+              \end{flalign*}
     \end{enumerate}
 
     \section{Angle Formed by Two Planes}
@@ -1537,11 +1685,6 @@
     \begin{enumerate}
         \item The diagram below shows a cuboid with length of $12cm$, width of $10cm$ and
               height of $6cm$.
-              \begin{enumerate}
-                  \item Find the angle formed by plane $EBCH$ and plane $ABCD$.
-                  \item Assume that $M$ is a point on $HG$, find the angle formed by plane $MAB$ and
-                        plane $ABCD$.
-              \end{enumerate}
               \begin{center}
                   \begin{tikzpicture}[scale=1.4]
                       \draw (2,1,0) node [above] {$G$} --(0,1,0) node [above] {$H$} --(0,1,2) node [left] {$E$} --(2,1,2)node [above] {$F$} --(2,1,0) --(2,0,0) node [right] {$C$} node [midway, right] {$6cm$} --(2,0,2) node [below] {$B$}  node [midway, below right] {$10cm$} --(0,0,2) node [below] {$A$}  node [midway, below] {$12cm$} --(0,1,2);
@@ -1552,14 +1695,60 @@
                       \draw (1,1,0) circle (1pt) node [above] {$M$};
                   \end{tikzpicture}
               \end{center}
+              \begin{enumerate}
+                  \item Find the angle formed by plane $EBCH$ and plane $ABCD$. \sol{}
+
+                        $\because$ $BC$ is the common edge of plane $EBCH$ and plane $ABCD$, $AB \perp BC$ and $EB \perp BC$.
+
+                        $\therefore$ The angle formed by plane $EBCH$ and plane $ABCD$ is $\angle EBA$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                                \coordinate [label=left:$B$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$A$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$E$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$6cm$} (C) -- node[below] {$12cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle EAB} & = \frac{6}{12}      \\
+                                             & = \frac{1}{2}       \\
+                            \angle EAB       & \approx 26.57^\circ
+                        \end{flalign*}
+
+                  \item Assume that $M$ is a point on $HG$, find the angle formed by plane $MAB$ and
+                        plane $ABCD$. \sol{}
+
+                        $\because$ $AB$ is the common edge of plane $MAB$ and plane $ABCD$, $M$ is on $HG$, $HG \perp AB$, $BC \perp AB$.
+
+                        $\therefore$ The angle formed by plane $MAB$ and plane $ABCD$ is $\angle GBC$.
+
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                                \coordinate [label=left:$B$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$C$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$G$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$6cm$} (C) -- node[below] {$10cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle GBC} & = \frac{6}{10}      \\
+                                             & = \frac{3}{5}       \\
+                            \angle GBC       & \approx 30.96^\circ
+                        \end{flalign*}
+
+              \end{enumerate}
 
         \item The diagram below shows a regular prism, its bases $ABC$ and $DEF$ are
               equilateral triangles with side length of $5cm$. Given that the height of the
               prism is $10cm$, find:
-              \begin{enumerate}
-                  \item The length of $BF$.
-                  \item The angle formed by plane $ABF$ and plane $ABC$.
-              \end{enumerate}
               \begin{center}
                   \begin{tikzpicture}[scale=1.4]
                       \draw (1,1.5,2) node [above] {$C$} --(2.5,1.5,0) --(3.5,0,0) node [right] {$E$} --(2,0,2) node [below right] {$B$}  node [midway, below right] {$10cm$} --(0,0,2) node [left] {$A$}  node [midway, below] {$5cm$} --(1,1.5,2);
@@ -1570,6 +1759,45 @@
                       \draw [dash pattern=on 1pt off 1pt] (2, 0, 2) -- (2.5, 1.5, 0);
                   \end{tikzpicture}
               \end{center}
+              \begin{enumerate}
+                  \item The length of $BF$. \sol{}
+                        \begin{flalign*}
+                            BF & = \sqrt{EF^2 + BE^2} \\
+                               & = \sqrt{10^2 + 5^2}  \\
+                               & = \sqrt{125}         \\
+                               & \approx 11.18cm
+                        \end{flalign*}
+
+                  \item The angle formed by plane $ABF$ and plane $ABC$. \sol{}
+
+                        Let the midpoint of $AB$ be $M$.
+                        \begin{flalign*}
+                            MF & = \sqrt{FB^2 - BM^2} \\
+                               & = \sqrt{125 - 2.5^2} \\
+                               & = \sqrt{118.75}cm
+                        \end{flalign*}
+
+                        $\because$ $AB$ is the common edge of plane $ABF$ and plane $ABC$, $MF \perp AB$, $CF \perp AB$.
+
+                        $\therefore$ The angle formed by plane $ABF$ and plane $ABC$ is $\angle FMC$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                                \coordinate [label=left:$M$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$C$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$F$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {$\sqrt{118.75}cm$} (B) -- node[midway, right] {$10cm$} (C) -- node[below] {} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \sin\angle{FMC} & = \frac{FC}{MF}            \\
+                                            & = \frac{10}{\sqrt{118.75}} \\
+                            \angle{FMC}     & \approx 66.59^\circ
+                        \end{flalign*}
+              \end{enumerate}
     \end{enumerate}
 
     \subsection{Exercise 17.3}
@@ -1586,6 +1814,31 @@
                       \fill [color=gray, opacity=0.4] (0, 1, 0) -- (0, 1, 2) -- (2, 0, 2) -- (2, 0, 0) -- cycle;
                   \end{tikzpicture}
               \end{center}
+              \sol{}
+
+              $\because$ $MN$ is the common edge of $ABMN$ and $KLMN$, $LM \perp MN$ and $BM \perp MN$.
+
+              $\therefore$ The angle formed by plane $ABMN$ and $KLMN$ is $\angle BML$.
+
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                      \coordinate [label=left:$M$] (A) at (-1.5cm,-1.cm);
+                      \coordinate [label=right:$L$] (C) at (1.5cm,-1.0cm);
+                      \coordinate [label=above:$B$] (B) at (1.5cm,1.0cm);
+                      \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$4cm$} (C) -- node[below] {$8cm$} (A);
+
+                      \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                      \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                  \end{tikzpicture}
+              \end{center}
+              \begin{flalign*}
+                  \tan{\angle{BML}} & = \frac{BL}{LM}     \\
+                                    & = \frac{4}{8}       \\
+                                    & = \frac{1}{2}       \\
+                  \angle{BML}       & \approx 26.57^\circ
+              \end{flalign*}
+
         \item In the right prism shown below, $ABCD$ is a rectangle with length of $20cm$ and
               width of $12cm$, $BCRQ$ is a trapezoid, $\angle QBC$ and $\angle RCB$ are both
               right angles, $BQ = 5cm$, $CR = 10cm$. Find the angle formed by plane $PQRS$
@@ -1600,16 +1853,36 @@
                       \draw (2, 0.2, 2) -- (2, 0.2, 1.7) -- (2, 0.0, 1.7);
                   \end{tikzpicture}
               \end{center}
+              \sol{}
+
+              Let the midpoint of $RC$ and $SD$ be $E$ and $F$ respectively.
+
+              $\because$ $PQEF \newparallel ABCD$, $PQ$ is the common edge of $PQRS$ and $PQER$, $PQ \perp QE$, and $PQ \perp QR$.
+
+              $\therefore$ The angle formed by plane $PQRS$ and $ABCD$ is $\angle RQE$.
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                      \coordinate [label=left:$Q$] (A) at (-1.5cm,-1.cm);
+                      \coordinate [label=right:$E$] (C) at (1.5cm,-1.0cm);
+                      \coordinate [label=above:$R$] (B) at (1.5cm,1.0cm);
+                      \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$5cm$} (C) -- node[below] {$12cm$} (A);
+
+                      \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                      \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                  \end{tikzpicture}
+              \end{center}
+              \begin{flalign*}
+                  \tan{\angle RQE} & = \frac{RE}{QE}     \\
+                                   & = \frac{5}{12}      \\
+                  \angle RQE       & \approx 22.62^\circ
+              \end{flalign*}
+
         \item The diagram below shows a cuboid, $AB = 8cm$, $BC = 6cm$, $CT = 5cm$, $X$ is
               the midpoint of $TU$. Find:
-              \begin{enumerate}
-                  \item The angle formed by plane $XAB$ and plane $ABCD$.
-                  \item The angle formed by plane $BCUR$ and plane $ADUR$.
-                  \item The angle formed by plane $ABTU$ and plane $ABCD$.
-              \end{enumerate}
               \begin{center}
                   \begin{tikzpicture}[scale=1.4]
-                      \draw (2,1,0) node [above] {$T$} --(0,1,0) node [above] {$U$} --(0,1,2) node [left] {$R$} --(2,1,2)node [above] {$S$} --(2,1,0) --(2,0,0) node [right] {$C$} node [midway, right] {$6cm$} --(2,0,2) node [below] {$B$}  node [midway, below right] {$10cm$} --(0,0,2) node [below] {$A$}  node [midway, below] {$12cm$} --(0,1,2);
+                      \draw (2,1,0) node [above] {$T$} --(0,1,0) node [above] {$U$} --(0,1,2) node [left] {$R$} --(2,1,2)node [above] {$S$} --(2,1,0) --(2,0,0) node [right] {$C$} node [midway, right] {$5cm$} --(2,0,2) node [below] {$B$}  node [midway, below right] {$6cm$} --(0,0,2) node [below] {$A$}  node [midway, below] {$8cm$} --(0,1,2);
                       \draw (2,1,2)--(2,0,2);
                       \draw[dashed](2,0,0)--(0,0,0) node [below] {$D$}--(0,1,0);
                       \draw[dashed](0,0,0)--(0,0,2);
@@ -1617,6 +1890,79 @@
                       \draw (1,1,0) circle (1pt) node [above] {$X$};
                   \end{tikzpicture}
               \end{center}
+              \begin{enumerate}
+                  \item The angle formed by plane $XAB$ and plane $ABCD$. \sol{}
+
+                        Let the midpoint of $AB$ and $CD$ be $E$ and $F$ respectively.
+
+                        $\because$ $AB$ is the common edge of $ABCD$ and $XAB$, $AB \perp XE$, and $AB \perp EF$.
+
+                        $\therefore$ The angle formed by plane $ABCD$ and $XAB$ is $\angle XEF$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                                \coordinate [label=left:$E$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$F$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$X$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$5cm$} (C) -- node[below] {$6cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle XEF} & = \frac{XF}{EF}     \\
+                                             & = \frac{5}{6}       \\
+                            \angle XEF       & \approx 39.81^\circ
+                        \end{flalign*}
+
+                  \item The angle formed by plane $BCUR$ and plane $ADUR$. \sol{}
+
+                        $\because$ $UR$ is the common edge of $BCUR$ and $ADUR$, $UR \perp RB$, and $UR \perp AR$.
+
+                        $\therefore$ The angle formed by plane $BCUR$ and $ADUR$ is $\angle BRA$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                                \coordinate [label=left:$R$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$A$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$B$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$8cm$} (C) -- node[below] {$5cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle BRA} & = \frac{BA}{RA}     \\
+                                             & = \frac{8}{5}       \\
+                            \angle BRA       & \approx 57.99^\circ
+                        \end{flalign*}
+
+                  \item The angle formed by plane $ABTU$ and plane $ABCD$. \sol{}
+
+                        $\because$ $AB$ is the common edge of $ABTU$ and $ABCD$, $AB \perp TB$, and $AB \perp BC$.
+
+                        $\therefore$ The angle formed by plane $ABTU$ and $ABCD$ is $\angle TBC$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                                \coordinate [label=left:$B$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$C$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$T$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$5cm$} (C) -- node[below] {$6cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle TBC} & = \frac{TC}{BC}     \\
+                                             & = \frac{5}{6}       \\
+                            \angle TBC       & \approx 39.81^\circ
+                        \end{flalign*}
+              \end{enumerate}
+
         \item The diagram below shows a right pyramid, its bases $ABE$ and $DCF$ are
               right-angled triangles. Given that $AE = 4cm$, $BE = \frac{2}{3}EF$, $EF =
                   4DF$, find the angle formed by plane $ABCD$ and plane $BCFE$.
@@ -1632,14 +1978,39 @@
                       \draw[dash pattern=on 1pt off 1pt] (0, 1, 0) -- (3,0,2);
                   \end{tikzpicture}
               \end{center}
+              \sol{}
+              \begin{flalign*}
+                  EF & = 4DF            \\
+                     & = 4 \times 4     \\
+                     & = 16cm           \\
+                  BE & = \frac{2}{3}EF  \\
+                     & = \frac{32}{3}cm \\
+              \end{flalign*}
+
+              $\because$ $BC$ is the common edge of $ABCD$ and $BCFE$, $BC \perp CD$, and $BC \perp CF$.
+
+              $\therefore$ The angle formed by plane $ABCD$ and $BCFE$ is $\angle DCF$.
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                      \coordinate [label=left:$C$] (A) at (-1.5cm,-1.cm);
+                      \coordinate [label=right:$F$] (C) at (1.5cm,-1.0cm);
+                      \coordinate [label=above:$D$] (B) at (1.5cm,1.0cm);
+                      \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$4cm$} (C) -- node[below] {$\frac{32}{3}cm$} (A);
+
+                      \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                      \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                  \end{tikzpicture}
+              \end{center}
+              \begin{flalign*}
+                  \tan{\angle DCF} & = \frac{DF}{CF}          \\
+                                   & = \frac{4}{\frac{32}{3}} \\
+                  \angle DCF       & \approx 20.56^\circ
+              \end{flalign*}
+
         \item In the pyramid shown below, $PQT$, $SPT$, and $SRT$ are all right-angled
               triangles, $PQRS$ is a triangle. Given that $PQ = 5cm$, $RT = 13cm$, $PT =
                   20cm$. Find:
-              \begin{enumerate}
-                  \item The height of the prism.
-                  \item The angle formed by line $TQ$ and plane $QST$.
-                  \item The angle formed by plane $RST$ and $PQT$.
-              \end{enumerate}
               \begin{center}
                   \tdplotsetmaincoords{70}{-20}
                   \begin{tikzpicture}[scale=0.7,tdplot_main_coords,line cap=butt,line join=bevel]
@@ -1652,116 +2023,66 @@
                       \draw (-1.95, 1.6, 0.4) -- (-1.9, 0.9, 0.5) -- (-2.05, 1, 0.25);
                   \end{tikzpicture}
               \end{center}
-        \item The diagram below shows a right prism, its base $BCGF$ is a trapezoid, $BC = BF
-                  = 12cm$, $FG = 16cm$. The lateral face $EFGH$ is a square, and is
-              perependicular to another lateral face $ABFE$. Find:
               \begin{enumerate}
-                  \item The angle formed by plane $CDHG$ and plane $EFGH$.
-                  \item The angle formed by plane $ABH$ and plane $ABFE$.
+                  \item The height of the prism. \sol{}
+                        \begin{flalign*}
+                            \text{Height of the prism} & = TS                 \\
+                                                       & = \sqrt{TR^2 - RS^2} \\
+                                                       & = \sqrt{13^2 - 5^2}  \\
+                                                       & = 12cm
+                        \end{flalign*}
+                  \item The angle formed by line $TQ$ and plane $PST$. \sol{}
+
+                        The angle formed by line $TQ$ and plane $PST$ is $\angle QTP$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                                \coordinate [label=left:$T$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$P$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$Q$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$20cm$} (C) -- node[below] {$5cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle QTP} & = \frac{PQ}{PT}     \\
+                                             & = \frac{5}{20}      \\
+                                             & = \frac{1}{4}       \\
+                            \angle QTP       & \approx 14.04^\circ
+                        \end{flalign*}
+
+                  \item The angle formed by plane $RST$ and $PQT$. \sol{}
+
+                        The angle formed by plane $RST$ and $PQT$ is $\angle STP$.
+                        \begin{flalign*}
+                            \text{In } \Delta{TRS},\ TS & = \sqrt{TR^2 - SR^2} \\
+                                                        & = \sqrt{13^2 - 5^2}  \\
+                                                        & = 12cm               \\
+                        \end{flalign*}
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                                \coordinate [label=left:$T$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$P$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$S$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {$20cm$} (B) -- node[midway, right] {$12cm$} (C) -- node[below] {} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                            \begin{flalign*}
+                                \cos{\angle{STP}} & = \frac{TS}{TP}     \\
+                                                  & = \frac{12}{20}     \\
+                                                  & = \frac{3}{5}       \\
+                                \angle{STP}       & \approx 53.13^\circ
+                            \end{flalign*}
+                        \end{center}
               \end{enumerate}
-              \begin{center}
-                  \begin{tikzpicture}[scale=1.4]
-                      \draw (1.5,1.5,0) node [above] {$D$} --(0,1.5,0) node [above] {$A$} --(0,1.5,2) node [left] {$B$} --(1.5,1.5,2)node [above] {$C$} --(1.5,1.5,0) --(2,0,0) node [right] {$H$} --(2,0,2) node [below] {$G$} --(0,0,2) node [below] {$F$} node [midway, below] {$16cm$} --(0,1.5,2) node [midway, left=4pt] {$12cm$};
-                      \draw (1.5,1.5,2)--(2,0,2);
-                      \draw[dashed](2,0,0)--(0,0,0) node [below] {$E$}--(0,1.5,0);
-                      \draw[dashed](0,0,0)--(0,0,2);
-                      \fill [color=gray, opacity=0.4] (0, 1.5, 0) -- (0, 1.5, 2) -- (2, 0, 0) -- cycle;
-                      \node (a) at (0,1.5,2) {};
-                      \node (b) at (1.5,1.5,2) {};
-                      \node (c) at (0,0,2) {};
-                      \tkzMarkSegment[pos=.45,mark=||](a,b);
-                      \tkzMarkSegment[pos=.5,mark=||](a,c);
-                      \draw (0, 0.15, 0) -- (0.15, 0.15, 0) -- (0.15, 0, 0);
-                      \draw (0, 0.15, 2) -- (0.15, 0.15, 2) -- (0.15, 0, 2);
-                  \end{tikzpicture}
-              \end{center}
-        \item In the cuboid shown below, $BC = 8cm$, $CD = 6cm$, $BQ = 10cm$. Given that $M$
-              is the midpoint of $PQ$. Find:
-              \begin{enumerate}
-                  \item The angle formed by line $MD$ and plane $PQBA$.
-                  \item The angle formed by plane $AMD$ and plane $ABCD$.
-              \end{enumerate}
-              \begin{center}
-                  \begin{tikzpicture}[scale=1.4]
-                      \draw (2,3,0) node [above] {$S$} --(0,3,0) node [above] {$P$} --(0,3,2) node [left] {$Q$} --(2,3,2)node [above] {$R$} --(2,3,0) --(2,0,0) node [right] {$D$} --(2,0,2) node [below] {$C$}  node [midway, below right] {$6cm$} --(0,0,2) node [below] {$B$}  node [midway, below] {$8cm$} --(0,3,2) node [midway, left] {$10cm$};
-                      \draw (2,3,2)--(2,0,2);
-                      \draw[dashed](2,0,0)--(0,0,0) node [above=2pt, left] {$A$}--(0,3,0);
-                      \draw[dashed](0,0,0)--(0,0,2);
-                      \fill [color=gray, opacity=0.4] (0, 3, 1) -- (0,0,0) -- (2, 0, 0) -- cycle;
-                      \draw (0,3,1) circle (1pt) node [above] {$M$};
-                  \end{tikzpicture}
-              \end{center}
-        \item The diagram below shows a pyramid with an isoceles triangle base. Given that
-              $CD = CE = 5cm$, $ED = 6cm$, $ACD$ is a right-angled triangle, $B$ is a point
-              on $AC$, $AD = 2cm$, $BC = 4cm$. Find:
-              \begin{enumerate}
-                  \item The angle formed by plane $BDE$ and plane $CDE$.
-                  \item The angle formed by the plane $ADE$ and $CDE$.
-              \end{enumerate}
-              \begin{center}
-                  \tdplotsetmaincoords{70}{70}
-                  \begin{tikzpicture}[scale=0.6,tdplot_main_coords,declare function={d=6;}]
-                      \path (0,0,0)       coordinate (A) node [left] {$E$}
-                      (d,0,0)        coordinate (C) node [below] {$D$}
-                      (d/2,{d*sqrt(3)/2},0)    coordinate (B) node [right] {$C$}
-                      (d/2,{d*sqrt(3)/2 - 0.15} ,d-1.5) coordinate (F) node [right] {$B$}
-                      (d/2,d/2 + 2,{d/sqrt(2) + 2}) coordinate (D) node [above] {$A$}
-                      ($ (A)!0.5!(C) $) coordinate (M);
-                      \foreach \p/\g in {A/-90,B/-90,C/-90,D/90}
-                      \path (\p)+(\g:3mm);
-                      \draw (F) circle (1.2pt);
-                      \draw (D) -- (A) (D) -- (B) (D) -- (C) (A) -- (C) -- (B);
-                      \draw [dashed] (A) -- (B);
-                      \path (D) -- (F) node [midway, right] {$2cm$};
-                      \path (B) -- (F) node [midway, right] {$4cm$};
-                      \path (C) -- (B) node [midway, right=12pt, below=4pt] {$5cm$};
-                      \path (A) -- (C) node [midway, left=14pt, below=-4pt] {$6cm$};
-                      \fill [color=gray, opacity=0.4] (A) -- (C) -- (F) -- cycle;
-                      \draw (d/2,{d*sqrt(3)/2},0.5) -- (d/2,{d*sqrt(3)/2 - 0.4} ,0.4) -- (d/2,{d*sqrt(3)/2 - 0.4} ,-0.1);
-                      \tkzMarkSegment[pos=.45,mark=||](A,B);
-                      \tkzMarkSegment[pos=.45,mark=||](B,C);
-                  \end{tikzpicture}
-              \end{center}
-        \item The diagram below shows a regular pyramid with a square base. Given that $PQ =
-                  15cm$, $PV = 20cm$. Find:
-              \begin{enumerate}
-                  \item The angle formed by linee $PV$ and plane $PQRS$.
-                  \item The angle formed by the lateral faces and the base of the pyramid.
-              \end{enumerate}
-              \begin{center}
-                  \begin{tikzpicture}
-                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
-                      \node (a) at (0,0) {};
-                      \node (b) at (2.5,0) {};
-                      \node (c) at (3.5,1) {};
-                      \node (d) at (1,1) {};
-                      \node (e) at (1.75,3) {};
-                      \draw (a.center) node [below left] {$P$} -- (b.center) node [below] {$Q$} node [midway, below] {$15cm$} -- (c.center) node [ right] {$R$} -- (e.center) node [above] {$V$} -- (b.center);
-                      \draw (a.center) -- (e.center) node [midway, left=4pt] {$20cm$};
-                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
-                      \draw[dashed] (d.center) node [below] {$S$} -- (e.center);
-                  \end{tikzpicture}
-              \end{center}
-        \item The diagram below shows a right pyramid with lateral edges of $13cm$. Its base
-              $ABCD$ is a rectangle with length of $12cm$ and width of $10cm$. Find:
-              \begin{enumerate}
-                  \item The angle formed by plane $VBC$ and plane $ABCD$.
-                  \item The angle formed by plane $VCD$ and plane $ABCD$.
-              \end{enumerate}
-              \begin{center}
-                  \begin{tikzpicture}
-                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
-                      \node (a) at (0,0) {};
-                      \node (b) at (2.5,0) {};
-                      \node (c) at (3.5,1) {};
-                      \node (d) at (1,1) {};
-                      \node (e) at (1.75,3) {};
-                      \draw (a.center) node [below left] {$A$} -- (b.center) node [below] {$B$} node [midway, below] {$12cm$} -- (c.center) node [ right] {$C$} node [midway, right=12pt, below=-4pt] {$10cm$} -- (e.center) node [above] {$V$} -- (b.center);
-                      \draw (a.center) -- (e.center) node [midway, left=4pt] {$13cm$};
-                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
-                      \draw[dashed] (d.center) node [below] {$D$} -- (e.center);
-                  \end{tikzpicture}
-              \end{center}
+
+              RIGHT HERE LMAO
+
         \item The diagram below shows a right pyramid with lateral edges of $18cm$, its base
               $ABCD$ is a rectangle with length of $15cm$ and width of $10cm$. Find:
               \begin{enumerate}
