@@ -98,81 +98,12 @@
 
 \begin{multicols}{2}
     \begin{enumerate}
-        \item The diagram below shows a right prism, its base $BCGF$ is a trapezoid, $BC = BF
-                  = 12cm$, $FG = 16cm$. The lateral face $EFGH$ is a square, and is
-              perependicular to another lateral face $ABFE$. Find:
+        \item The diagram below shows a right pyramid with lateral edges of $18cm$, its base
+              $ABCD$ is a rectangle with length of $15cm$ and width of $10cm$. Find:
               \begin{enumerate}
-                  \item The angle formed by plane $CDHG$ and plane $EFGH$.
-                  \item The angle formed by plane $ABH$ and plane $ABFE$.
-              \end{enumerate}
-              \begin{center}
-                  \begin{tikzpicture}[scale=1.4]
-                      \draw (1.5,1.5,0) node [above] {$D$} --(0,1.5,0) node [above] {$A$} --(0,1.5,2) node [left] {$B$} --(1.5,1.5,2)node [above] {$C$} --(1.5,1.5,0) --(2,0,0) node [right] {$H$} --(2,0,2) node [below] {$G$} --(0,0,2) node [below] {$F$} node [midway, below] {$16cm$} --(0,1.5,2) node [midway, left=4pt] {$12cm$};
-                      \draw (1.5,1.5,2)--(2,0,2);
-                      \draw[dashed](2,0,0)--(0,0,0) node [below] {$E$}--(0,1.5,0);
-                      \draw[dashed](0,0,0)--(0,0,2);
-                      \fill [color=gray, opacity=0.4] (0, 1.5, 0) -- (0, 1.5, 2) -- (2, 0, 0) -- cycle;
-                      \node (a) at (0,1.5,2) {};
-                      \node (b) at (1.5,1.5,2) {};
-                      \node (c) at (0,0,2) {};
-                      \tkzMarkSegment[pos=.45,mark=||](a,b);
-                      \tkzMarkSegment[pos=.5,mark=||](a,c);
-                      \draw (0, 0.15, 0) -- (0.15, 0.15, 0) -- (0.15, 0, 0);
-                      \draw (0, 0.15, 2) -- (0.15, 0.15, 2) -- (0.15, 0, 2);
-                  \end{tikzpicture}
-              \end{center}
-        \item In the cuboid shown below, $BC = 8cm$, $CD = 6cm$, $BQ = 10cm$. Given that $M$
-              is the midpoint of $PQ$. Find:
-              \begin{enumerate}
-                  \item The angle formed by line $MD$ and plane $PQBA$.
-                  \item The angle formed by plane $AMD$ and plane $ABCD$.
-              \end{enumerate}
-              \begin{center}
-                  \begin{tikzpicture}[scale=1.4]
-                      \draw (2,3,0) node [above] {$S$} --(0,3,0) node [above] {$P$} --(0,3,2) node [left] {$Q$} --(2,3,2)node [above] {$R$} --(2,3,0) --(2,0,0) node [right] {$D$} --(2,0,2) node [below] {$C$}  node [midway, below right] {$6cm$} --(0,0,2) node [below] {$B$}  node [midway, below] {$8cm$} --(0,3,2) node [midway, left] {$10cm$};
-                      \draw (2,3,2)--(2,0,2);
-                      \draw[dashed](2,0,0)--(0,0,0) node [above=2pt, left] {$A$}--(0,3,0);
-                      \draw[dashed](0,0,0)--(0,0,2);
-                      \fill [color=gray, opacity=0.4] (0, 3, 1) -- (0,0,0) -- (2, 0, 0) -- cycle;
-                      \draw (0,3,1) circle (1pt) node [above] {$M$};
-                  \end{tikzpicture}
-              \end{center}
-        \item The diagram below shows a pyramid with an isoceles triangle base. Given that
-              $CD = CE = 5cm$, $ED = 6cm$, $ACD$ is a right-angled triangle, $B$ is a point
-              on $AC$, $AD = 2cm$, $BC = 4cm$. Find:
-              \begin{enumerate}
-                  \item The angle formed by plane $BDE$ and plane $CDE$.
-                  \item The angle formed by the plane $ADE$ and $CDE$.
-              \end{enumerate}
-              \begin{center}
-                  \tdplotsetmaincoords{70}{70}
-                  \begin{tikzpicture}[scale=0.6,tdplot_main_coords,declare function={d=6;}]
-                      \path (0,0,0)       coordinate (A) node [left] {$E$}
-                      (d,0,0)        coordinate (C) node [below] {$D$}
-                      (d/2,{d*sqrt(3)/2},0)    coordinate (B) node [right] {$C$}
-                      (d/2,{d*sqrt(3)/2 - 0.15} ,d-1.5) coordinate (F) node [right] {$B$}
-                      (d/2,d/2 + 2,{d/sqrt(2) + 2}) coordinate (D) node [above] {$A$}
-                      ($ (A)!0.5!(C) $) coordinate (M);
-                      \foreach \p/\g in {A/-90,B/-90,C/-90,D/90}
-                      \path (\p)+(\g:3mm);
-                      \draw (F) circle (1.2pt);
-                      \draw (D) -- (A) (D) -- (B) (D) -- (C) (A) -- (C) -- (B);
-                      \draw [dashed] (A) -- (B);
-                      \path (D) -- (F) node [midway, right] {$2cm$};
-                      \path (B) -- (F) node [midway, right] {$4cm$};
-                      \path (C) -- (B) node [midway, right=12pt, below=4pt] {$5cm$};
-                      \path (A) -- (C) node [midway, left=14pt, below=-4pt] {$6cm$};
-                      \fill [color=gray, opacity=0.4] (A) -- (C) -- (F) -- cycle;
-                      \draw (d/2,{d*sqrt(3)/2},0.5) -- (d/2,{d*sqrt(3)/2 - 0.4} ,0.4) -- (d/2,{d*sqrt(3)/2 - 0.4} ,-0.1);
-                      \tkzMarkSegment[pos=.45,mark=||](A,B);
-                      \tkzMarkSegment[pos=.45,mark=||](B,C);
-                  \end{tikzpicture}
-              \end{center}
-        \item The diagram below shows a regular pyramid with a square base. Given that $PQ =
-                  15cm$, $PV = 20cm$. Find:
-              \begin{enumerate}
-                  \item The angle formed by linee $PV$ and plane $PQRS$.
-                  \item The angle formed by the lateral faces and the base of the pyramid.
+                  \item The height of the pyramid.
+                  \item The angle formed by plane $VAB$ and plane $ABCD$.
+                  \item The angle formed by plane $VBC$ and plane $VAD$.
               \end{enumerate}
               \begin{center}
                   \begin{tikzpicture}
@@ -182,30 +113,43 @@
                       \node (c) at (3.5,1) {};
                       \node (d) at (1,1) {};
                       \node (e) at (1.75,3) {};
-                      \draw (a.center) node [below left] {$P$} -- (b.center) node [below] {$Q$} node [midway, below] {$15cm$} -- (c.center) node [ right] {$R$} -- (e.center) node [above] {$V$} -- (b.center);
-                      \draw (a.center) -- (e.center) node [midway, left=4pt] {$20cm$};
-                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
-                      \draw[dashed] (d.center) node [below] {$S$} -- (e.center);
-                  \end{tikzpicture}
-              \end{center}
-        \item The diagram below shows a right pyramid with lateral edges of $13cm$. Its base
-              $ABCD$ is a rectangle with length of $12cm$ and width of $10cm$. Find:
-              \begin{enumerate}
-                  \item The angle formed by plane $VBC$ and plane $ABCD$.
-                  \item The angle formed by plane $VCD$ and plane $ABCD$.
-              \end{enumerate}
-              \begin{center}
-                  \begin{tikzpicture}
-                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
-                      \node (a) at (0,0) {};
-                      \node (b) at (2.5,0) {};
-                      \node (c) at (3.5,1) {};
-                      \node (d) at (1,1) {};
-                      \node (e) at (1.75,3) {};
-                      \draw (a.center) node [below left] {$A$} -- (b.center) node [below] {$B$} node [midway, below] {$12cm$} -- (c.center) node [ right] {$C$} node [midway, right=12pt, below=-4pt] {$10cm$} -- (e.center) node [above] {$V$} -- (b.center);
-                      \draw (a.center) -- (e.center) node [midway, left=4pt] {$13cm$};
+                      \draw (a.center) node [below left] {$A$} -- (b.center) node [below] {$B$} node [midway, below] {$15cm$} -- (c.center) node [ right] {$C$} node [midway, right=12pt, below=-4pt] {$10cm$} -- (e.center) node [above] {$V$} -- (b.center);
+                      \draw (a.center) -- (e.center) node [midway, left=4pt] {$18cm$};
                       \draw[dashed] (a.center) -- (d.center) -- (c.center);
                       \draw[dashed] (d.center) node [below] {$D$} -- (e.center);
+                  \end{tikzpicture}
+              \end{center}
+        \item The diagram below shows a right prism with isoceles triangle bases. The side
+              length and base length of the triangle base are $10cm$ and $16cm$ respectively,
+              the height of the prism is $20cm$. Given that $P$ is the midpoint of $AB$.
+              Find:
+              \begin{enumerate}
+                  \item The length of $PC$.
+                  \item The angle formed by line $EC$ and plane $ABCD$.
+                  \item The angle formed by plane $DCE$ and plane $ABCD$.
+              \end{enumerate}
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.4]
+                      \draw (1,1.5,2) node [above] {$E$} --(2.5,1.5,0) --(3.5,0,0) node [right] {$C$} node [midway, right] {$6cm$} --(2,0,2) node [below right] {$B$}  node [midway, below right] {$20cm$} --(0,0,2) node [left] {$A$}  --(1,1.5,2) node [midway, left=4pt] {$10cm$};
+                      \draw (1,1.5,2)--(2,0,2);
+                      \draw[dashed](3.5,0,0)--(1.5,0,0) node [below] {$D$}--(2.5,1.5,0) node [above] {$F$};
+                      \draw[dashed](1.5,0,0)--(0,0,2);
+                      \fill[color=gray, opacity=0.4] (1, 1.5, 2) -- (3.5, 0, 0) -- (1.5, 0, 0);
+                      \draw (0, -1, -0.6) circle (1pt);
+                      \draw [dash pattern=on 1pt off 1pt] (0, -1, -0.6) -- (3.5, 0, 0);
+                      \path (0, -0.2, 2) -- node (success) {$16cm$} (2, -0.2, 2);
+                      \draw[->] (0, -0.2, 2) -- (success) -- (2, -0.2, 2);
+                      \draw[->] (2, -0.2, 2) -- (success) -- (0, -0.2, 2);
+                      \node (a) at (1,1.5,2) {};
+                      \node (b) at (2, 0, 2) {};
+                      \node (c) at (0,0,2) {};
+                      \node (d) at (1.5, 0, 0) {};
+                      \node (e) at (2.5, 1.5, 0) {};
+                      \node (f) at (3.5, 0, 0) {};
+                      \tkzMarkSegment[pos=.45,mark=||](a,b);
+                      \tkzMarkSegment[pos=.5,mark=||](a,c);
+                      \tkzMarkSegment[pos=0.5,mark=||](e,f);
+                      \tkzMarkSegment[pos=0.5,mark=||](e,d);
                   \end{tikzpicture}
               \end{center}
     \end{enumerate}
