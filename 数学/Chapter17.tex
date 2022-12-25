@@ -2454,6 +2454,182 @@
 
               RIGHT HERE LMAO
 
+        \item The diagram below shows a right pyramid with lateral edges of $18cm$, its base
+              $ABCD$ is a rectangle with length of $15cm$ and width of $10cm$. Find:
+              \begin{center}
+                  \begin{tikzpicture}
+                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
+                      \node (a) at (0,0) {};
+                      \node (b) at (2.5,0) {};
+                      \node (c) at (3.5,1) {};
+                      \node (d) at (1,1) {};
+                      \node (e) at (1.75,3) {};
+                      \draw (a.center) node [below left] {$A$} -- (b.center) node [below] {$B$} node [midway, below] {$15cm$} -- (c.center) node [ right] {$C$} node [midway, right=12pt, below=-4pt] {$10cm$} -- (e.center) node [above] {$V$} -- (b.center);
+                      \draw (a.center) -- (e.center) node [midway, left=4pt] {$18cm$};
+                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
+                      \draw[dashed] (d.center) node [below] {$D$} -- (e.center);
+                  \end{tikzpicture}
+              \end{center}
+              \begin{enumerate}
+                  \item The height of the pyramid. \sol{}
+
+                        Let the footpoint of $V$ on $ABCD$ be $M$.
+                        \begin{flalign*}
+                            AC                           & = \sqrt{AB^2 + BC^2}                                  & \\
+                                                         & = \sqrt{15^2 + 10^2}                                    \\
+                                                         & = 5\sqrt{13}cm                                          \\
+                            AM                           & = \frac{AC}{2}                                          \\
+                                                         & = \frac{5\sqrt{13}}{2}                                  \\
+                            \text{Height of the pyramid} & = VM                                                    \\
+                                                         & = \sqrt{AV^2 - AM^2}                                    \\
+                                                         & = \sqrt{18^2 - {\left(\frac{5\sqrt{13}}{2}\right)}^2}   \\
+                                                         & = \sqrt{242.75}                                         \\
+                                                         & \approx 15.58cm
+                        \end{flalign*}
+
+                  \item The angle formed by plane $VAB$ and plane $ABCD$. \sol{}
+
+                        Let the midpoint of $AB$ be $E$.
+
+                        $\because$ $AB$ is the common edge of plane $VAB$ and plane $ABCD$, $ME \perp AB$, and $VE \perp AB$.
+
+                        $\therefore$ The angle formed by plane $VAB$ and plane $ABCD$ is $\angle VEM$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                                \coordinate [label=left:$E$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$M$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$V$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$\sqrt{242.75}cm$} (C) -- node[below] {$5cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle VEM} & = \frac{VM}{ME}           \\
+                                             & = \frac{\sqrt{242.75}}{5} \\
+                            \angle VEM       & \approx 72.21^{\circ}
+                        \end{flalign*}
+
+                  \item The angle formed by plane $VBC$ and plane $VAD$. \sol{}
+
+                        Let the midpoint of $AD$ and $BC$ be $F$ and $G$ respectively.
+
+                        The angle formed by plane $VBC$ and plane $VAD$ is $\angle FVG$.
+                        \begin{flalign*}
+                            \angle FVG & = \angle FVM + \angle MVG \\
+                                       & = 2\angle FVM
+                        \end{flalign*}
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                                \coordinate [label=left:$V$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$M$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$F$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$7.5cm$} (C) -- node[below] {$\sqrt{242.75}cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle{FVM}} & = \frac{FM}{VM}                \\
+                                              & = \frac{7.5}{\sqrt{242.75}}    \\
+                            \angle FVM        & \approx 25.705^{\circ}         \\
+                            \\
+                            FVG               & = 2\angle FVM                  \\
+                                              & \approx 2\times 25.705^{\circ} \\
+                                              & \approx 51.41^{\circ}
+                        \end{flalign*}
+              \end{enumerate}
+
+        \item The diagram below shows a right prism with isoceles triangle bases. The side
+              length and base length of the triangle base are $10cm$ and $16cm$ respectively,
+              the height of the prism is $20cm$. Given that $P$ is the midpoint of $AB$.
+              Find:
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.2]
+                      \draw (1,1.5,2) node [above] {$E$} --(2.5,1.5,0) --(3.5,0,0) node [right] {$C$} node [midway, right] {$6cm$} --(2,0,2) node [below right] {$B$}  node [midway, below right] {$20cm$} --(0,0,2) node [left] {$A$}  --(1,1.5,2) node [midway, left=4pt] {$10cm$};
+                      \draw (1,1.5,2)--(2,0,2);
+                      \draw[dashed](3.5,0,0)--(1.5,0,0) node [below] {$D$}--(2.5,1.5,0) node [above] {$F$};
+                      \draw[dashed](1.5,0,0)--(0,0,2);
+                      \fill[color=gray, opacity=0.4] (1, 1.5, 2) -- (3.5, 0, 0) -- (1.5, 0, 0);
+                      \draw (0, -1, -0.6) circle (1pt);
+                      \node [above] at (0, -1, -0.6) {$P$};
+                      \draw [dash pattern=on 1pt off 1pt] (0, -1, -0.6) -- (3.5, 0, 0);
+                      \path (0, -0.2, 2) -- node (success) {$16cm$} (2, -0.2, 2);
+                      \draw[->] (0, -0.2, 2) -- (success) -- (2, -0.2, 2);
+                      \draw[->] (2, -0.2, 2) -- (success) -- (0, -0.2, 2);
+                      \node (a) at (1,1.5,2) {};
+                      \node (b) at (2, 0, 2) {};
+                      \node (c) at (0,0,2) {};
+                      \node (d) at (1.5, 0, 0) {};
+                      \node (e) at (2.5, 1.5, 0) {};
+                      \node (f) at (3.5, 0, 0) {};
+                      \tkzMarkSegment[pos=.45,mark=||](a,b);
+                      \tkzMarkSegment[pos=.5,mark=||](a,c);
+                      \tkzMarkSegment[pos=0.5,mark=||](e,f);
+                      \tkzMarkSegment[pos=0.5,mark=||](e,d);
+                  \end{tikzpicture}
+              \end{center}
+              \begin{enumerate}
+                  \item The length of $PC$. \sol{}
+                        \begin{flalign*}
+                            PC & = \sqrt{BC^2 - PB^2} \\
+                               & = \sqrt{20^2 + 8^2}  \\
+                               & = \sqrt{464}         \\
+                               & \approx 21.54cm
+                        \end{flalign*}
+
+                  \item The angle formed by line $EC$ and plane $ABCD$. \sol{}
+
+                        The angle formed by line $EC$ and plane $ABCD$ is $\angle ECP$.
+                        \begin{flalign*}
+                            EP & = \sqrt{AE^2 - AP^2} \\
+                               & = \sqrt{10^2 - 8^2}  \\
+                               & = 6cm
+                        \end{flalign*}
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                                \coordinate [label=left:$C$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$P$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$E$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$6cm$} (C) -- node[below] {$\sqrt{464}cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle{ECP}} & = \frac{EP}{CP}        \\
+                                              & = \frac{6}{\sqrt{464}} \\
+                            \angle ECP        & \approx 15.56^{\circ}
+                        \end{flalign*}
+
+                  \item The angle formed by plane $DCE$ and plane $ABCD$. \sol{}
+
+                        Let the midpoint of $CD$ be $G$.\\
+
+                        $\because$ $CD$ is the common edge of plane $DCE$ and plane $ABCD$, $PG \perp CD$, and $EG \perp CD$.
+
+                        $\therefore$ The angle formed by plane $DCE$ and plane $ABCD$ is $\angle EGP$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                                \coordinate [label=left:$G$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$P$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$E$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$6cm$} (C) -- node[below] {$20cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle{EGP}} & = \frac{EP}{GP} \\
+                                              & = \frac{6}{20}  \\
+                            \angle EGP        & = 16.70^{\circ}
+                        \end{flalign*}
+              \end{enumerate}
+
     \end{enumerate}
 
     \section{Longitude and Latitude}
