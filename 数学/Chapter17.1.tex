@@ -88,74 +88,63 @@
 
 \begin{multicols}{2}
     \begin{enumerate}
-
-        \item The diagram below shows a cuboid with volume of $300cm^3$. Given that $AD =
-                  2DC$ and $DN = 9cm$. Find the angle formed by line $AM$ and plane $KLMN$.
-              \begin{center}
-                  \begin{tikzpicture}[scale=1.1]
-                      \draw (3,1,0) node [above] {$D$} --(0,1,0) node [above] {$A$} --(0,1,2) node [left] {$B$} --(3,1,2) node [above=6pt, left=-6pt] {$C$} --(3,1,0)--(3,0,0) node [right] {$N$} node [midway, right] {$9cm$}--(3,0,2)node [below] {$M$}--(0,0,2) node [below] {$L$} --(0,1,2);
-                      \draw (3,1,2)--(3,0,2);
-                      \draw[dashed](3,0,0)--(0,0,0) node [below=6pt, right=-6pt] {$K$}--(0,1,0);
-                      \draw[dashed](0,0,0)--(0,0,2);
-                      \draw[dash pattern=on 1pt off 1pt] (0, 1, 0) -- (3,0,2);
-                  \end{tikzpicture}
-              \end{center}
-
-        \item The diagram below shows a cuboid. Given that $AB = 13cm$, $BC = 6cm$, $CG =
-                  4cm$. M is a point on $AB$, $AM = 9cm$. Find:
-              \begin{enumerate}
-                  \item The angle formed by line $HM$ and plane $ABCG$.
-                  \item The angle formed by line $HM$ and plane $HDAE$.
-                  \item The angle formed by line $AG$ and plane $CDHG$.
-              \end{enumerate}
-              \begin{center}
-                  \begin{tikzpicture}[scale=1.1]
-                      \draw (3,1,0) node [above] {$G$} --(0,1,0) node [above] {$H$} --(0,1,2) node [left] {$E$} --(3,1,2) node [above=6pt, left=-6pt] {$F$} --(3,1,0)--(3,0,0) node [right] {$C$} node [midway, right] {$4cm$}--(3,0,2)node [below right] {$B$} node [midway, right=16pt, below=-4pt] {$6cm$}--(0,0,2) node [below left] {$A$} --(0,1,2);
-                      \draw (3,1,2)--(3,0,2);
-                      \draw[dashed](3,0,0)--(0,0,0) node [below=6pt, right=-6pt] {$D$}--(0,1,0);
-                      \draw[dashed](0,0,0)--(0,0,2);
-                      \draw[dash pattern=on 1pt off 1pt] (0, 1, 0) -- (2.4,0,2) node [below right] {$M$};
-                      \draw[dash pattern=on 1pt off 1pt] (3, 1, 0) -- (0, 0, 2);
-                      \path (0, -0.2, 2) -- node (success) {$9cm$} (2.4, -0.2, 2);
-                      \draw[->] (0, -0.2, 2) -- (success) -- (2.4, -0.2, 2);
-                      \draw[->] (2.4, -0.2, 2) -- (success) -- (0, -0.2, 2);
-                      \path (0, -0.5, 2) -- node (success) {$13cm$} (3, -0.5, 2);
-                      \draw[->] (0, -0.5, 2) -- (success) -- (3, -0.5, 2);
-                      \draw[->] (3, -0.5, 2) -- (success) -- (0, -0.5, 2);
-                  \end{tikzpicture}
-              \end{center}
-        \item The diagram below shows a regular prism, its bases $ADS$ and $BCR$ are
-              equiliteral triangles. Given that $AB = 16cm$, $BC = 7cm$, $SP = 5cm$. Find:
-              \begin{enumerate}
-                  \item The length of $BP$.
-                  \item The angle formed by line $BP$ and plane $ABCD$.
-              \end{enumerate}
-              \begin{center}
-                  \begin{tikzpicture}[scale=1.4]
-                      \draw (3,1,2) node [above] {$R$} --(0,1,2) node [above] {$S$};
-                      \draw (3, 1, 2)--(3,0,0) node [right] {$C$} --(3,0,2)node [below] {$B$} node [midway, below right] {$7cm$} --(0,0,2) node [below] {$A$} node [midway, below] {$16cm$};
-                      \draw (0,1,2) -- (0,0,2) node [midway, left] {$12cm$};
-                      \draw (3,1,2) -- (3,0,2);
-                      \draw[dashed](3,0,0)--(0,0,0) node [below=6pt, right=-6pt] {$D$}--(0,1,2);
-                      \draw[dashed](0,0,0)--(0,0,2);
-                      \draw[dash pattern=on 1pt off 1pt] (1, 1, 2) node [above] {$P$} -- (3,0,2);
-                      \draw (0, 1, 2) -- (1, 1, 2) node [midway, above] {$5cm$};
-                      \draw[dash pattern=on 1pt off 1pt] (3, 1, 2) -- (3, 0, 1);
-                      \draw (3, 0.1, 1.1) -- (3, 0.1, 1) -- (3, 0, 0.9);
-                  \end{tikzpicture}
-              \end{center}
         \item The diagram below shows a roof, $HK$ is the ridge of the roof, its edges $HA$,
               $HD$, $KB$, $KC$ are euqal in length. Both of the planes $HAD$ and $KBC$ form a
               $44^o$ angle with plane $ABCD$. Given that $S$ and $T$ are the midpoints of
               $BC$ and $AD$ respectively. Find:
-              \begin{enumerate}
-                  \item The distance from line $HK$ to plane $ABCD$.
-                  \item The length of $HK$.
-                  \item The angle formed by line $HA$ and plane $ABCD$.
-              \end{enumerate}
               \begin{center}
                   \includegraphics[scale=0.9]{roof}
               \end{center}
+              \begin{enumerate}
+                  \item The distance from line $HK$ to plane $ABCD$. \sol{}
+
+                        Let the foot point of $K$ on plane $ABCD$ be $P$.
+                        \begin{flalign*}
+                            \text{In } \Delta KPS, \sin{\angle{KSP}} & = \frac{KP}{KS}   \\
+                            \sin{44^\circ}                           & = \frac{KP}{2}    \\
+                            KP                                       & = 2\sin{44^\circ} \\
+                                                                     & \approx 1.39m
+                        \end{flalign*}
+
+                  \item The length of $HK$. \sol{}
+                        \begin{flalign*}
+                            \cos{\angle{KSP}} & = \frac{PS}{KS}   \\
+                            \cos{44^\circ}    & = \frac{PS}{2}    \\
+                            PS                & = 2\cos{44^\circ} \\
+                                              & \approx 1.44m     \\
+                            HK                & \approx 12 - 2PS  \\
+                                              & \approx 12 - 2.88 \\
+                                              & \approx 9.12m
+                        \end{flalign*}
+
+                  \item The angle formed by line $HA$ and plane $ABCD$. \sol{}
+
+                        Let the foot point of $H$ on plane $ABCD$ be $Q$.
+                        \begin{flalign*}
+                            HA & = \sqrt{HT^2 + AT^2} \\
+                               & = \sqrt{2^2 + 4.5^2} \\
+                               & = \sqrt{24.25}cm     \\
+                        \end{flalign*}
+                        The angle formed by line $HA$ and plane $ABCD$ is $\angle{HAQ}$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+
+                                \coordinate [label=left:$A$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$Q$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$H$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {$\sqrt{24.25}cm$} (B) -- node[midway, right] {$2\sin{44^\circ}cm$} (C) -- node[below] {} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \sin{\angle{HAQ}} & = \frac{HQ}{HA}                        \\
+                            \sin{\angle{HAQ}} & = \frac{2\sin{44^\circ}}{\sqrt{24.25}} \\
+                            \angle{HAQ}       & \approx 16.38^\circ
+                        \end{flalign*}
+              \end{enumerate}
+
         \item The length, width and height of a hall are $20m$, $15m$, and $4m$ respectively.
               Find:
               \begin{enumerate}
