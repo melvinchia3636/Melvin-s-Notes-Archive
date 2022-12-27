@@ -18624,5 +18624,563 @@
               \end{enumerate}
     \end{enumerate}
 
+    \section{Revision Exercise 17}
+
+    \begin{enumerate}
+        \item In the cuboid shown below, $FG = 10cm$, $GH = 7cm$, $DH = 8.4cm$, find:
+              \begin{center}
+                  \begin{tikzpicture}
+                      \draw (0,0) node [below] {$F$} --(3,0) node [below] {$G$} node[midway, below] {$10cm$};
+                      \draw (3,0)--(3.5,1) node [right] {$H$} node [midway, right] {$7cm$};
+                      \draw[dashed] (3.5,1)--(1,1) node [above=2pt, left] {$E$} --(0,0);
+                      \draw (0,0)--(0,2) node[left] {$B$}--(3,2) node[below left] {$C$} --(3,0);
+                      \draw (0,2)--(1,2.5)--(3.5,2.5) node[above=2pt, right] {$D$};
+                      \draw (3,2)--(3.5,2.5)--(3.5,1) node [midway, right] {$8.4cm$};
+                      \draw[dashed] (1,2.5) node [above] {$A$} --(1,1);
+                      \draw[dash pattern=on 1pt off 1pt] (3.5,2.5) -- (0,0);
+                      \draw[dash pattern=on 1pt off 1pt] (3,2) -- (1, 2.5);
+                  \end{tikzpicture}
+              \end{center}
+              \begin{enumerate}
+                  \item The angle formed by line $AC$ and plane $BFGC$. \sol{}
+
+                        The angle formed by $AC$ and plane $BFGC$ is $\angle ACB$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                                \coordinate [label=left:$C$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$B$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$A$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$7cm$} (C) -- node[below] {$10cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle ACB} & = \frac{AB}{CB}     \\
+                                             & = \frac{7}{10}      \\
+                            \angle ACB       & \approx 34.99^\circ
+                        \end{flalign*}
+
+                  \item The angle formed by line $FD$ and plane $EFGH$. \sol{}
+
+                        The angle formed by $FD$ and plane $EFGH$ is $\angle DFH$.
+                        \begin{flalign*}
+                            \text{In } EFGH,\ FH & = \sqrt{FG^2 + GH^2} \\
+                                                 & = \sqrt{10^2 + 7^2}  \\
+                                                 & = \sqrt{149}cm
+                        \end{flalign*}
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                                \coordinate [label=left:$F$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$H$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$D$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$8.4cm$} (C) -- node[below] {$\sqrt{149}cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle DFH} & = \frac{DF}{FH}          \\
+                                             & = \frac{8.4}{\sqrt{149}} \\
+                            \angle DFH       & \approx 34.53^\circ
+                        \end{flalign*}
+              \end{enumerate}
+
+        \item The diagram below shows a cuboid with volume of $400cm^3$, height of $10.5cm$,
+              $AD = 2DC$. Find the angle formed by line $AG$ and plane $ADHE$.
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.4]
+                      \draw (2,1,0) node [above] {$D$} --(0,1,0) node [above] {$A$} --(0,1,2) node [left] {$B$} --(2,1,2)node [above] {$C$} --(2,1,0) --(2,0,0) node [right] {$H$} node [midway, right] {$10.5cm$} --(2,0,2) node [below] {$G$} --(0,0,2) node [below] {$F$} --(0,1,2);
+                      \draw (2,1,2)--(2,0,2);
+                      \draw[dashed](2,0,0)--(0,0,0) node [below] {$E$}--(0,1,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \draw[dash pattern=on 1pt off 1pt] (0, 1, 0) -- (2, 0, 2);
+                  \end{tikzpicture}
+              \end{center}
+              \sol{}
+
+              The angle formed by line $AG$ and plane $ADHE$ is $\angle GAH$.
+              \begin{flalign*}
+                  AD                       & = 2DC                                                   \\
+                  AD \times DC \times 10.5 & = 400                                                   \\
+                  2DC \times DC = \frac{400}{10.5}                                                   \\
+                  DC^2                     & = \frac{400}{21}                                        \\
+                  DC                       & = \frac{20}{\sqrt{21}}cm                                \\
+                  AD                       & = 2 \times \frac{20}{\sqrt{21}}cm                       \\
+                                           & = \frac{40}{\sqrt{21}}cm                                \\
+                  \text{In } ADHE,\ AH     & = \sqrt{AD^2 + DH^2}                                    \\
+                                           & = \sqrt{{\left(\frac{40}{\sqrt{21}}\right)}^2 + 10.5^2} \\
+                                           & = \sqrt{\frac{15661}{84}}cm
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                      \coordinate [label=left:$A$] (A) at (-1.5cm,-1.cm);
+                      \coordinate [label=right:$H$] (C) at (1.5cm,-1.0cm);
+                      \coordinate [label=above:$G$] (B) at (1.5cm,1.0cm);
+                      \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$\frac{40}{\sqrt{21}}cm$} (C) -- node[below] {$\sqrt{\frac{15661}{84}}cm$} (A);
+
+                      \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                      \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                  \end{tikzpicture}
+              \end{center}
+              \begin{flalign*}
+                  \tan{\angle GAH} & = \frac{GH}{AH}                                        \\
+                                   & = \frac{\frac{40}{\sqrt{21}}}{\sqrt{\frac{15661}{84}}} \\
+                  \angle GAH       & \approx 17.73^\circ
+              \end{flalign*}
+
+        \item The diagram below shows a reception room with a square floor with side length
+              of $6m$. Given that the elevation angle of corner $C$ measured from corner $A$
+              is $30^\circ$, find the angle formed by the line connecting corner $A$ and $B$
+              with the floor.
+              \begin{center}
+                  \includegraphics{reception.png}
+              \end{center}
+              \sol{}
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.4]
+                      \draw (2,1,0) node [above] {$B$} --(0,1,0) node [above] {$C$} --(0,1,2) node [left] {$E$} --(2,1,2)node [above] {$F$} --(2,1,0) --(2,0,0) node [right] {$G$} --(2,0,2) node [below] {$H$}  node [midway, below right] {$6m$} --(0,0,2) node [below] {$A$}  node [midway, below] {$6m$} --(0,1,2);
+                      \draw (2,1,2)--(2,0,2);
+                      \draw[dashed](2,0,0)--(0,0,0) node [below] {$D$}--(0,1,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                  \end{tikzpicture}
+              \end{center}
+              \begin{flalign*}
+                  \tan{\angle{CAD}} & = \frac{CD}{AD}   \\
+                  \tan{30^\circ}    & = \frac{CD}{6}    \\
+                  CD                & = 6\tan{30^\circ} \\
+                                    & = 2\sqrt{3}m
+              \end{flalign*}
+              The line connecting $A$ and $B$ with the floor is $\angle BAG$.
+              \begin{flalign*}
+                  \text{In } ADHG,\ AG & = \sqrt{AH^2 + HG^2} \\
+                                       & = \sqrt{6^2 + 6^2}   \\
+                                       & = 6\sqrt{2}m
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                      \coordinate [label=left:$A$] (A) at (-1.5cm,-1.cm);
+                      \coordinate [label=right:$G$] (C) at (1.5cm,-1.0cm);
+                      \coordinate [label=above:$B$] (B) at (1.5cm,1.0cm);
+                      \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$2\sqrt{3}m$} (C) -- node[below] {$6\sqrt{2}m$} (A);
+
+                      \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                      \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                  \end{tikzpicture}
+              \end{center}
+              \begin{flalign*}
+                  \tan{\angle BAG} & = \frac{BG}{AG}               \\
+                                   & = \frac{2\sqrt{3}}{6\sqrt{2}} \\
+                  \angle{BAG}      & \approx 22.21^\circ
+              \end{flalign*}
+
+        \item The diagram below shows a cuboid with length of $8cm$, width of $5cm$ and
+              height of $6cm$, $M$ is the midpoint of $BF$. Find the angle formed by plane
+              $HDM$ and plane $ADHE$.
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.4]
+                      \draw (2,1,0) node [above] {$G$} --(0,1,0) node [above] {$H$} --(0,1,2) node [left] {$E$} --(2,1,2)node [above] {$F$} --(2,1,0) --(2,0,0) node [right] {$C$} node [midway, right] {$6cm$} --(2,0,2) node [below] {$B$}  node [midway, below right] {$5cm$} --(0,0,2) node [below] {$A$}  node [midway, below] {$8cm$} --(0,1,2);
+                      \draw (2,1,2)--(2,0,2);
+                      \draw[dashed](2,0,0)--(0,0,0) node [below] {$D$}--(0,1,0);
+                      \draw[dashed](0,0,0)--(0,0,2);
+                      \fill [color=gray, opacity=0.4] (0, 1, 0) -- (0, 0, 0) -- (2, 0.5, 2) -- cycle;
+                      \draw (2, 0.5, 2) circle (1pt) node [right] {$M$};
+                  \end{tikzpicture}
+              \end{center}
+              \sol{}
+
+              Let the midpoint of $EA$ and $HD$ be $K$ and $L$ respectively.
+
+              $\because$ $HD$ is the common edge of $HDM$ and $ADHE$, $ML \perp HD$, and $KL \perp HD$.
+
+              $\therefore$ The angle formed by plane $HDM$ and plane $ADHE$ is $\angle{MKL}$.
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                      \coordinate [label=left:$K$] (A) at (-1.5cm,-1.cm);
+                      \coordinate [label=right:$L$] (C) at (1.5cm,-1.0cm);
+                      \coordinate [label=above:$M$] (B) at (1.5cm,1.0cm);
+                      \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$8m$} (C) -- node[below] {$5m$} (A);
+
+                      \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                      \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                  \end{tikzpicture}
+              \end{center}
+              \begin{flalign*}
+                  \tan{\angle MKL} & = \frac{ML}{KL}     \\
+                                   & = \frac{8}{5}       \\
+                  \angle{MKL}      & \approx 57.99^\circ
+              \end{flalign*}
+
+        \item The diagram below shows a pyramid with a square base, its lateral edge $SD$ is
+              perpendicular to its base. Given that $BC = 2\sqrt{2}cm$, $SB = 5cm$. Find:
+              \begin{center}
+                  \begin{tikzpicture}
+                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
+                      \node (a) at (0,0) {};
+                      \node (b) at (2.5,0) {};
+                      \node (c) at (3.5,1) {};
+                      \node (d) at (1,1) {};
+                      \node (e) at (1,4) {};
+                      \draw (a.center) node [below left] {$A$} -- (b.center) node [below] {$B$} -- (c.center) node [ right] {$C$} node [midway, right] {$2\sqrt{2}cm$} -- (e.center) node [above] {$S$} -- (b.center) node [midway, right] {$5cm$};
+                      \draw (a.center) -- (e.center);
+                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
+                      \draw[dashed] (d.center) node [below] {$D$} -- (e.center);
+                      \draw (1, 1.25) -- (0.85, 1.1) -- (0.85, 0.85);
+                      \draw[dash pattern=on 1pt off 1pt] (d.center) -- (b.center);
+                      \fill [fill=gray, opacity=0.4] (d.center) -- (b.center) -- (e.center) -- cycle;
+                  \end{tikzpicture}
+              \end{center}
+              \begin{enumerate}
+                  \item The angle formed by plane $SAD$ and plane $SBD$. \sol{}
+
+                        $\because$ $SD$ is the common edge of $SAD$ and $SBD$, $AD \perp SD$, and $BD \perp SD$.
+
+                        $\therefore$ The angle formed by plane $SAD$ and plane $SBD$ is $\angle{ADB}$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                                \coordinate [label=left:$D$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$B$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$A$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$2\sqrt{2}cm$} (C) -- node[below] {$2\sqrt{2}cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle ADB} & = \frac{AB}{BD}               \\
+                                             & = \frac{2\sqrt{2}}{2\sqrt{2}} \\
+                                             & = 1                           \\
+                            \angle{ADB}      & = 45^\circ
+                        \end{flalign*}
+
+                  \item The angle formed by lateral edge $SA$ and base $ABCD$. \sol{}
+
+                        The angle formed by lateral edge $SA$ and base $ABCD$ is $\angle{SAD}$.
+                        \begin{flalign*}
+                            \text{In } ABCD,\ DB       & = \sqrt{BC^2 + DC^2}                       \\
+                                                       & = \sqrt{{(2\sqrt{2})}^2 + {(2\sqrt{2})}^2} \\
+                                                       & = 4cm                                      \\
+                            \text{In } \Delta SBD,\ SD & = \sqrt{SB^2 - DB^2}                       \\
+                                                       & = \sqrt{5^2 - 4^2}                         \\
+                                                       & = 3cm
+                        \end{flalign*}
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                                \coordinate [label=left:$A$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$D$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$S$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$3cm$} (C) -- node[below] {$2\sqrt{2}cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle SAD} & = \frac{SD}{AD}       \\
+                                             & = \frac{3}{2\sqrt{2}} \\
+                            \angle{SAD}      & \approx 46.69^\circ
+                        \end{flalign*}
+              \end{enumerate}
+
+        \item The diagram below shows a right prism with a rectangular base $ABCD$ with
+              length of $28cm$ and width of $20cm$. Assume that plane $VBC$ and the base of
+              the pyramid forms a $60^\circ$ angle. Find the angle formed by plane $VAB$ and
+              the base.
+              \begin{center}
+                  \begin{tikzpicture}
+                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
+                      \node (a) at (0,0) {};
+                      \node (b) at (2.5,0) {};
+                      \node (c) at (3.5,1) {};
+                      \node (d) at (1,1) {};
+                      \node (e) at (1.75,3) {};
+                      \draw (a.center) node [below left] {$A$} -- (b.center) node [below] {$B$} node [midway, below] {$28cm$} -- (c.center) node [ right] {$C$} node [midway, right=12pt, below=-4pt] {$20cm$} -- (e.center) node [above] {$V$} -- (b.center);
+                      \draw (a.center) -- (e.center);
+                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
+                      \draw[dashed] (d.center) node [below] {$D$} -- (e.center);
+                  \end{tikzpicture}
+              \end{center}
+              \sol{}
+
+              Let the footpoint of $V$ be $M$, and the midpoint of $AB$ and $BC$ be $E$ and
+              $F$ respectively.
+
+              $\because$ $BC$ is the common edge of $VBC$ and $ABCD$, $VF \perp BC$, and $MF \perp BC$.
+
+              $\therefore$ The angle formed by plane $VBC$ and the base is $\angle{VFM}$.
+
+              Given that $VFM = 60^\circ$,
+              \begin{flalign*}
+                  \tan{\angle VFM} & = \frac{VM}{MF}           \\
+                  \tan{60^\circ}   & = \frac{VM}{\frac{AB}{2}} \\
+                                   & = \frac{VM}{14}           \\
+                  VM               & = 14\sqrt{3}cm
+              \end{flalign*}
+
+              $\because$ $VE$ is the common edge of $VAB$ and $ABCD$, $VE \perp AB$, and $ME \perp AB$.
+
+              $\therefore$ The angle formed by plane $VAB$ and the base is $\angle{VEM}$.
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                      \coordinate [label=left:$E$] (A) at (-1.5cm,-1.cm);
+                      \coordinate [label=right:$M$] (C) at (1.5cm,-1.0cm);
+                      \coordinate [label=above:$V$] (B) at (1.5cm,1.0cm);
+                      \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$14\sqrt{3}cm$} (C) -- node[below] {$10cm$} (A);
+
+                      \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                      \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                  \end{tikzpicture}
+                  \begin{flalign*}
+                      \tan{\angle VEM} & = \frac{VM}{ME}         \\
+                                       & = \frac{14\sqrt{3}}{10} \\
+                      \angle{VEM}      & \approx 67.59^\circ
+                  \end{flalign*}
+              \end{center}
+
+        \item The diagram below shows a regular cuboid with a square base. Given that $VE =
+                  \frac{5}{2}AD$. Find:
+              \begin{center}
+                  \begin{tikzpicture}
+                      \tikzstyle{point}=[circle,thick,draw=black,fill=black,inner sep=0pt,minimum width=4pt,minimum height=4pt]
+                      \node (a) at (0,0) {};
+                      \node (b) at (2.5,0) {};
+                      \node (c) at (3.5,1) {};
+                      \node (d) at (1,1) {};
+                      \node (e) at (1.75,5) {};
+                      \draw (a.center) node [below left] {$A$} -- (b.center) node [below] {$B$} -- (c.center) node [ right] {$C$} -- (e.center) node [above] {$V$} -- (b.center);
+                      \draw (a.center) -- (e.center);
+                      \draw[dashed] (a.center) -- (d.center) -- (c.center);
+                      \draw[dashed] (d.center) node [below] {$D$} -- (e.center);
+                      \node (f) at (1.75, 0.5) {};
+                      \draw[dash pattern=on 1pt off 1pt] (e.center) -- (f.center);
+                      \draw[dash pattern=on 1pt off 1pt] (a.center) -- (c.center);
+                      \draw[dash pattern=on 1pt off 1pt] (b.center) -- (d.center) node [midway, below] {$E$};
+                  \end{tikzpicture}
+              \end{center}
+              \begin{enumerate}
+                  \item The angle formed by the angle $VA$ and the base $ABCD$. \sol{}
+
+                        Let $AD$ be $2\ units$, then $VE = \frac{5}{2}AD = 5\ units$.
+
+                        The angle formed by the angle $VA$ and the base $ABCD$ is $VAE$.
+                        \begin{flalign*}
+                            \text{In } ABCD, AC & = \sqrt{AD^2 + DC^2} \\
+                                                & = \sqrt{2^2 + 2^2}   \\
+                                                & = 2\sqrt{2}\ units   \\
+                            AE                  & = \frac{1}{2}AC      \\
+                                                & = \sqrt{2}\ units
+                        \end{flalign*}
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                                \coordinate [label=left:$A$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$E$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$V$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$5\ units$} (C) -- node[below] {$\sqrt{2}\ units$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle VAE} & = \frac{VE}{AE}      \\
+                                             & = \frac{5}{\sqrt{2}} \\
+                            \angle VAE       & \approx 74.21^\circ
+                        \end{flalign*}
+
+                  \item The angle formed by plane $VAD$ and the base. \sol{}
+
+                        Let $M$ be the midpoint of $AD$.
+
+                        $\because$ $AD$ is the common edge of $ABCD$ and $VAD$, $ME \perp AD$, and $VE \perp AD$.
+
+                        $\therefore$ The angle formed by plane $VAD$ and the base is $VME$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                                \coordinate [label=left:$M$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$E$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$V$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$5\ units$} (C) -- node[below] {$1\ units$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle VME} & = \frac{VE}{ME}     \\
+                                             & = \frac{5}{1}       \\
+                                             & = 5                 \\
+                            \angle VME       & \approx 78.69^\circ
+                        \end{flalign*}
+              \end{enumerate}
+
+        \item Find the distance from the Panama City$(9^\circ N, 79^\circ 30' W)$ to Toronto
+              $(43^\circ 45' N, 79^\circ 30' W)$. (Express your answer in nautical miles)
+              \sol{}
+              \begin{flalign*}
+                  \overset{\frown}{PT} & = (43^\circ 45' - 9^\circ) \times 60 \\
+                                       & = 34^\circ 45' \times 60             \\
+                                       & = 2085\text{\emph{NM}}
+              \end{flalign*}
+
+        \item Tokyo and Adelaide are located at the same longitude, their latitude are
+              $35^\circ 45' N$ and $35^\circ S$ respectively. Find the distance between two
+              cities along the parallel of latitude. \sol{}
+              \begin{flalign*}
+                  \overset{\frown}{TA} & = (35^\circ 45' + 35^\circ) \times 60 \\
+                                       & = 70^\circ 45' \times 60              \\
+                                       & = 4245\text{\emph{NM}}                \\
+                                       & = 4245 \times 1.853km                 \\
+                                       & = 7,865.99km
+              \end{flalign*}
+
+        \item A plane flies $2000$\emph{NM} along the equator, Find the difference of
+              longitude between the point of departure and the destination. \sol{}
+              \begin{flalign*}
+                  d      & = \alpha \times 60 \times \cos{0} \\
+                  2000   & = \alpha \times 60 \times 1       \\
+                  \alpha & = \frac{2000}{60}                 \\
+                         & = 33.33^\circ
+              \end{flalign*}
+
+        \item Location $M$ and $N$ are both located at the parallel of latitude $45^\circ$
+              north to the equator with a difference in longitude of $20^\circ$. Find the
+              distance between $M$ and $N$ along the parallel of latitude. (Express your
+              answer in nautical miles) \sol{}
+              \begin{flalign*}
+                  \overset{\frown}{MN} & = 20^\circ \times 60 \times \cos{45^\circ} \\
+                                       & = 848.53\text{\emph{NM}}
+              \end{flalign*}
+
+        \item Location $X$ and $Y$ are on the parallel of latitude $20^\circ$ north to the
+              equator, their longitude are $45^\circ E$ and $80^\circ E$ respectively. Find
+              the distance between location $X$ and $Y$ along the parallel of latitude.
+              (Express your answer in nautical miles) \sol{}
+              \begin{flalign*}
+                  \overset{\frown}{XY} & = (80^\circ - 45^\circ) \times 60 \times \cos{20^\circ} \\
+                                       & = 35^\circ \times 60 \times \cos{20^\circ}              \\
+                                       & = 1973.35\text{\emph{NM}}
+              \end{flalign*}
+
+        \item A plane flies from $A(42^\circ E)$ to $B(20^\circ E)$ along the equator, then
+              it flies from $B$ due north to $C(30^\circ N)$. Find the distance the plane
+              flies in total. \sol{}
+              \begin{flalign*}
+                  \overset{\frown}{AB} & = (42^\circ - 20^\circ) \times 60 \times \cos{0} \\
+                                       & = 22^\circ \times 60 \times 1                    \\
+                                       & = 1320\text{\emph{NM}}                           \\
+                  \overset{\frown}{BC} & = (30^\circ - 0^\circ) \times 60                 \\
+                                       & = 1800\text{\emph{NM}}                           \\
+                  d                    & = \overset{\frown}{AB} + \overset{\frown}{BC}    \\
+                                       & = 1320\text{\emph{NM}} + 1800\text{\emph{NM}}    \\
+                                       & = 3120\text{\emph{NM}}
+              \end{flalign*}
+        \item Assume that $A$ is located $1000$\emph{NM} due north of the equator,
+              $600$\emph{NM} due east of the Greenwich Meridian, find the longitude and
+              latitude of $A$.
+              \begin{flalign*}
+                  \overset{\frown}{AE} & = \frac{1000}{60}                            \\
+                                       & = 16^\circ 40'                               \\
+                  \text{Lat.} A        & = 16^\circ 40' N                             \\
+                  \overset{\frown}{AG} & = \alpha \times 60 \times \cos{16^\circ 40'} \\
+                  600                  & = \alpha \times 60 \times \cos{16^\circ 40'} \\
+                  \alpha               & = \frac{600}{60 \times \cos{16^\circ 40' N}} \\
+                                       & = 10^\circ 26'                               \\
+                  \text{Lon.} A        & = 10^\circ 26' E
+                  \\
+                  \therefore\ A        & (16^\circ 40' N, 10^\circ 26' E)
+              \end{flalign*}
+
+        \item A plane flies from $P(15^\circ N, 30^\circ E)$ $2000$\emph{NM} due south to
+              $B$, find the longitude and latitude of $B$. Another plane flies from $P$
+              $3000$\emph{NM} due east to $C$, find the longitude and latitude of $C$.
+              \begin{flalign*}
+                  \overset{\frown}{PB} & = \frac{2000}{60}                        \\
+                                       & = 33^\circ 20'                           \\
+                  \text{Lat.} B        & = |15^\circ N - 33^\circ 20'|S           \\
+                                       & = 18^\circ 20' S                         \\
+                  \\
+                  \therefore\ B        & (18^\circ 20' S, 30^\circ E)             \\
+                  \\
+                  \overset{\frown}{PC} & = \alpha \times 60 \times \cos{15^\circ} \\
+                  3000                 & = \alpha \times 60 \times \cos{15^\circ} \\
+                  \alpha               & = \frac{3000}{60 \times \cos{15^\circ}}  \\
+                                       & = 51^\circ 46'                           \\
+                  \text{Lon.} C        & = (30^\circ + 51^\circ 46')E             \\
+                                       & = 81^\circ 46' E                         \\
+                  \\
+                  \therefore\ C        & (15^\circ N, 81^\circ 46' E)
+              \end{flalign*}
+
+        \item A plane flies from $A(130^\circ E)$ along the equator to $B(120^\circ 30' E)$
+              along the equator, then flies from $B$ due north to $C(20^\circ 45')$. Assume
+              that the average speed of the plane is $300\text{\emph{NM}}/hr$ throughout the
+              journey, find the flight duration for the whole journey. \sol{}
+              \begin{flalign*}
+                  \overset{\frown}{AB} & = (130^\circ - 120^\circ 30') \times 60 \times \cos{0} \\
+                                       & = 9^\circ 30' \times 60 \times 1                       \\
+                                       & = 570\text{\emph{NM}}                                  \\
+                  \overset{\frown}{BC} & = (20^\circ 45' - 0^\circ) \times 60                   \\
+                                       & = 1245\text{\emph{NM}}                                 \\
+                  d                    & = \overset{\frown}{AB} + \overset{\frown}{BC}          \\
+                                       & = 570\text{\emph{NM}} + 1245\text{\emph{NM}}           \\
+                                       & = 1815\text{\emph{NM}}                                 \\
+                  t                    & = \frac{1815\text{\emph{NM}}}{300\text{\emph{NM}}/hr}  \\
+                                       & = 6.05\text{\emph{hrs}}                                \\
+                                       & = 6\text{\emph{hrs}}\ 3\text{\emph{mins}}
+              \end{flalign*}
+        \item A plane flies from $A(50^\circ N, 10^\circ E)$ due east to $B(45^\circ E)$.
+              \begin{enumerate}
+                  \item Find the flight distance of the plane. (Express your answer in nautical miles)
+                        \sol{}
+                        \begin{flalign*}
+                            \overset{\frown}{AB} & = (45^\circ - 10^\circ) \times 60 \times \cos{50^\circ} \\
+                                                 & = 35^\circ \times 60 \times \cos{50^\circ}              \\
+                                                 & = 1349.85\text{\emph{NM}}                               \\
+                        \end{flalign*}
+
+                  \item Assume that the speed of the plane is $420\text{\emph{NM}}/hr$ in average, find
+                        the flight duration of the plane. \sol{}
+                        \begin{flalign*}
+                            t & = \frac{1349.85\text{\emph{NM}}}{420\text{\emph{NM}}/hr} \\
+                              & = 3\text{\emph{hrs}}\ 13\text{\emph{mins}}
+                        \end{flalign*}
+              \end{enumerate}
+        \item Given that three locations $P$, $Q$ and $R$ are located on the same parallel of
+              latitude $40^\circ$ north to the equator, The longitude of $P$ and $R$ are
+              $10^\circ 30' W$ and $4^\circ 30' E$, $Q$ is located at the middle of $P$ and
+              $R$.
+              \begin{enumerate}
+                  \item Find the difference of longitude between $P$ and $R$. \sol{}
+                        \begin{flalign*}
+                            \overset{\frown}{PR} & = 10^\circ 30' + 4^\circ 30' \\
+                                                 & = 15^\circ
+                        \end{flalign*}
+
+                  \item Find the longitude of $Q$. \sol{}
+                        \begin{flalign*}
+                            \overset{\frown}{PQ} & = \frac{\overset{\frown}{PR}}{2}                         \\
+                                                 & = 344.72\text{\emph{NM}}                                 \\
+                            \text{Lon.} Q        & = 10^\circ 30' + \frac{344.72}{60 \times \cos{40^\circ}} \\
+                                                 & = 10^\circ 30' - 7^\circ 30'                             \\
+                                                 & = 3^\circ W
+                        \end{flalign*}
+
+                  \item Find the distance between $P$ and $R$ along the parallel of latitude.
+                        \begin{flalign*}
+                            \overset{\frown}{PR} & = 15^\circ \times 60 \times \cos{40^\circ} \\
+                                                 & = 689.44\text{\emph{NM}}
+                        \end{flalign*}
+                  \item A ship sails from $P$ to $Q$ along the parallel of latitude with a speed of
+                        $18\text{\emph{NM}}/hr$, find the sailing duration of the ship.
+                        \begin{flalign*}
+                            t & = \frac{344.72\text{\emph{NM}}}{18\text{\emph{NM}}/hr} \\
+                              & = 19hrs\ 9mins
+                        \end{flalign*}
+              \end{enumerate}
+    \end{enumerate}
+
 \end{multicols}
 \end{document}
