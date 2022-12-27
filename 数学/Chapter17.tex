@@ -174,11 +174,7 @@
 
     \begin{enumerate}
         \item In the cuboid shown below, $FG = 10cm$, $GH = 7cm$, $DH = 8.4cm$, find:
-              \begin{enumerate}
-                  \item The angle formed by angle $AC$ and plane $BFGC$.
-                  \item The angle formed by angle $FD$ and plane $EFGH$.
-              \end{enumerate}
-              \begin{center}
+        \item  \begin{center}
                   \begin{tikzpicture}
                       \draw (0,0) node [below] {$F$} --(3,0) node [below] {$G$} node[midway, below] {$10cm$};
                       \draw (3,0)--(3.5,1) node [right] {$H$} node [midway, right] {$7cm$};
@@ -191,8 +187,55 @@
                       \draw[dash pattern=on 1pt off 1pt] (3,2) -- (1, 2.5);
                   \end{tikzpicture}
               \end{center}
+              \begin{enumerate}
+                  \item The angle formed by line $AC$ and plane $BFGC$. \sol{}
+
+                        The angle formed by $AC$ and plane $BFGC$ is $\angle ACB$.
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                                \coordinate [label=left:$C$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$B$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$A$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$7cm$} (C) -- node[below] {$10cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle ACB} & = \frac{AB}{CB}     \\
+                                             & = \frac{7}{10}      \\
+                            \angle ACB       & \approx 34.99^\circ
+                        \end{flalign*}
+
+                  \item The angle formed by line $FD$ and plane $EFGH$. \sol{}
+
+                        The angle formed by $FD$ and plane $EFGH$ is $\angle DFH$.
+                        \begin{flalign*}
+                            \text{In } EFGH,\ FH & = \sqrt{FG^2 + GH^2} \\
+                                                 & = \sqrt{10^2 + 7^2}  \\
+                                                 & = \sqrt{149}cm
+                        \end{flalign*}
+                        \begin{center}
+                            \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                                \coordinate [label=left:$F$] (A) at (-1.5cm,-1.cm);
+                                \coordinate [label=right:$H$] (C) at (1.5cm,-1.0cm);
+                                \coordinate [label=above:$D$] (B) at (1.5cm,1.0cm);
+                                \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$8.4cm$} (C) -- node[below] {$\sqrt{149}cm$} (A);
+
+                                \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                                \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                            \end{tikzpicture}
+                        \end{center}
+                        \begin{flalign*}
+                            \tan{\angle DFH} & = \frac{DF}{FH}          \\
+                                             & = \frac{8.4}{\sqrt{149}} \\
+                            \angle DFH       & \approx 34.53^\circ
+                        \end{flalign*}
+              \end{enumerate}
+
         \item The diagram below shows a cuboid with volume of $400cm^3$, height of $10.5cm$,
-              $AD = 2DC$. Find the angle formed by angle $AG$ and plane $ADHE$.
+              $AD = 2DC$. Find the angle formed by line $AG$ and plane $ADHE$.
               \begin{center}
                   \begin{tikzpicture}[scale=1.4]
                       \draw (2,1,0) node [above] {$D$} --(0,1,0) node [above] {$A$} --(0,1,2) node [left] {$B$} --(2,1,2)node [above] {$C$} --(2,1,0) --(2,0,0) node [right] {$H$} node [midway, right] {$10.5cm$} --(2,0,2) node [below] {$G$} --(0,0,2) node [below] {$F$} --(0,1,2);
@@ -202,6 +245,38 @@
                       \draw[dash pattern=on 1pt off 1pt] (0, 1, 0) -- (2, 0, 2);
                   \end{tikzpicture}
               \end{center}
+              \sol{}
+
+              The angle formed by line $AG$ and plane $ADHE$ is $\angle GAH$.
+              \begin{flalign*}
+                  AD                       & = 2DC                                                   \\
+                  AD \times DC \times 10.5 & = 400                                                   \\
+                  2DC \times DC = \frac{400}{10.5}                                                   \\
+                  DC^2                     & = \frac{400}{21}                                        \\
+                  DC                       & = \frac{20}{\sqrt{21}}cm                                \\
+                  AD                       & = 2 \times \frac{20}{\sqrt{21}}cm                       \\
+                                           & = \frac{40}{\sqrt{21}}cm                                \\
+                  \text{In } ADHE,\ AH     & = \sqrt{AD^2 + DH^2}                                    \\
+                                           & = \sqrt{{\left(\frac{40}{\sqrt{21}}\right)}^2 + 10.5^2} \\
+                                           & = \sqrt{\frac{15661}{84}}cm
+              \end{flalign*}
+              \begin{center}
+                  \begin{tikzpicture}[scale=1.2]%,cap=round,>=latex]
+                      \coordinate [label=left:$A$] (A) at (-1.5cm,-1.cm);
+                      \coordinate [label=right:$H$] (C) at (1.5cm,-1.0cm);
+                      \coordinate [label=above:$G$] (B) at (1.5cm,1.0cm);
+                      \draw (A) -- node[midway,above left] {} (B) -- node[midway, right] {$\frac{40}{\sqrt{21}}cm$} (C) -- node[below] {$\sqrt{\frac{15661}{84}}cm$} (A);
+
+                      \draw (1.25cm,-1.0cm) rectangle (1.5cm,-0.75cm);
+                      \tkzMarkAngle[size=0.5cm,color=black,mark=](C,A,B)
+                  \end{tikzpicture}
+              \end{center}
+              \begin{flalign*}
+                  \tan{\angle GAH} & = \frac{GH}{AH}                                        \\
+                                   & = \frac{\frac{40}{\sqrt{21}}}{\sqrt{\frac{15661}{84}}} \\
+                  \angle GAH       & \approx 17.73^\circ
+              \end{flalign*}
+
         \item The diagram below shows a reception room with a square floor with side length
               of $6m$. Given that the elevation angle of corner $C$ measured from corner $A$
               is $30^\circ$, find the angle formed by the line connecting corner $A$ and $B$
