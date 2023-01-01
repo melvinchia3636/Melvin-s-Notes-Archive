@@ -233,7 +233,6 @@
 
   Take 100 sample from a population of some kind of component, their weight (in
   $g$), are as below:
-
   \begin{flalign*}
     1.36 & \qquad 1.49 \qquad 1.43 \qquad 1.41 \qquad 1.37 \qquad 1.40 \\
     1.32 & \qquad 1.42 \qquad 1.47 \qquad 1.39 \qquad 1.41 \qquad 1.36 \\
@@ -320,6 +319,21 @@
   proportional to the frequency of the corresponding class. When the class
   interval of each class is the same, we can use the frequency of each class as
   the height of the bar.
+  \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+      \begin{axis}[
+          title=\Large{Histogram},
+          ymin=0, ymax=16,
+          ytick={0, 2, ..., 16},
+          xlabel=Data, ylabel=Frequency,
+          ybar interval,
+          grid=none,
+          xtick style={draw=none},
+        ]
+        \addplot+[draw=black, style={fill=gray!40},mark=no] plot coordinates { (0, 2) (1, 3) (2, 11) (3, 14) (4, 11) (5, 8) (6, 3) (7, 0) };
+      \end{axis}
+    \end{tikzpicture}
+  \end{center}
 
   The frequency polygon is a continuous line graph, the x-axis is the midpoint of
   each class, and the y-axis is the frequency of each class. To draw a frequency
@@ -327,7 +341,467 @@
   point after the last class that uses $0$ as their frequency, and then connect
   the points with a continuous line.
 
-  \subsection*{Accumulative Frequency Distribution}
+  \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+      \begin{axis}[
+          title=\Large{Frequency Polygon},
+          ymin=0, ymax=16,
+          ytick={0, 2, ..., 16},
+          xtick={0,1,...,6},
+          xlabel=Data, ylabel=Frequency,
+        ]
+        \addplot[sharp plot, mark=*, mark size=1.5pt, mark options={solid, fill=black, draw=black}, draw=black]
+        coordinates
+          {(-1, 0) (0, 2) (1, 3) (2, 11) (3, 14) (4, 11) (5, 8) (6, 3) (7, 0)};
+      \end{axis}
+    \end{tikzpicture}
+  \end{center}
+
+  \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+      \begin{axis}[
+          title=\large{Histogram and Frequency Polygon},
+          ymin=0, ymax=16,
+          ytick={0, 2, ..., 16},
+          xtick={0,1,...,6},
+          ybar interval,
+          grid=none,
+          xtick style={draw=none},
+          xlabel=Data, ylabel=Frequency,
+        ]
+        \addplot[draw=black, style={fill=gray!40},mark=no] plot coordinates { (0, 2) (1, 3) (2, 11) (3, 14) (4, 11) (5, 8) (6, 3) (7, 0) };
+        \addplot[forget plot, sharp plot, mark=*, mark size=1.5pt, mark options={solid, fill=black, draw=black}, draw=black]
+        coordinates
+          {(-0.5, 0) (0.5, 2) (1.5, 3) (2.5, 11) (3.5, 14) (4.5, 11) (5.5, 8) (6.5, 3) (7.5, 0)};
+      \end{axis}
+    \end{tikzpicture}
+  \end{center}
+
+  \subsection*{Practice 1}
+
+  There are 105 students in a senior 3 art and commerce class. In a mock exam of
+  UEC, their scores for Mathematics subject are as follows:
+  \begin{flalign*}
+    35 & \qquad 88 \qquad 67 \qquad 32 \qquad 38 \qquad 34 \qquad 45 \\
+    78 & \qquad 54 \qquad 58 \qquad 69 \qquad 21 \qquad 90 \qquad 78 \\
+    74 & \qquad 43 \qquad 42 \qquad 35 \qquad 57 \qquad 34 \qquad 77 \\
+    89 & \qquad 66 \qquad 74 \qquad 71 \qquad 44 \qquad 56 \qquad 48 \\
+    33 & \qquad 24 \qquad 73 \qquad 63 \qquad 51 \qquad 59 \qquad 49 \\
+    34 & \qquad 55 \qquad 52 \qquad 75 \qquad 72 \qquad 62 \qquad 62 \\
+    44 & \qquad 48 \qquad 73 \qquad 49 \qquad 57 \qquad 67 \qquad 80 \\
+    70 & \qquad 66 \qquad 54 \qquad 32 \qquad 29 \qquad 35 \qquad 37 \\
+    47 & \qquad 41 \qquad 51 \qquad 36 \qquad 46 \qquad 55 \qquad 53 \\
+    60 & \qquad 53 \qquad 62 \qquad 39 \qquad 35 \qquad 48 \qquad 42 \\
+    71 & \qquad 63 \qquad 70 \qquad 33 \qquad 45 \qquad 42 \qquad 44 \\
+    61 & \qquad 59 \qquad 67 \qquad 30 \qquad 42 \qquad 43 \qquad 89 \\
+    96 & \qquad 82 \qquad 47 \qquad 63 \qquad 54 \qquad 34 \qquad 45 \\
+    45 & \qquad 87 \qquad 28 \qquad 34 \qquad 29 \qquad 77 \qquad 64 \\
+    64 & \qquad 50 \qquad 48 \qquad 75 \qquad 33 \qquad 56 \qquad 84
+  \end{flalign*}
+
+  \begin{enumerate}[label=(\alph*)]
+    \item Find the range of the data. \sol{}
+          \begin{flalign*}
+            \text{Max value}         & = 96      \\
+            \text{Min value}         & = 21      \\
+            \therefore\ \text{Range} & = 96 - 21 \\
+                                     & = 75
+          \end{flalign*}
+
+    \item Group the data into 10 classes, draw a frequency distribution table, and find
+          the upper and lower boundary and midpoint of each class. \sol{}
+          \begin{flalign*}
+            \text{Range}             & = 75            \\
+            \text{Number of classes} & = 10            \\
+            \text{Class width}       & = \frac{75}{10} \\
+                                     & = 7.5           \\
+                                     & \approx 8
+          \end{flalign*}
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|c|}
+              \hline
+              \text{Score} & \text{Lower} & \text{Upper} & \text{Mid} & \text{Freq.} \\
+              \hline
+              21 - 28      & 20.5         & 28.5         & 24.5       & 3            \\
+              29 - 36      & 28.5         & 36.5         & 32.5       & 18           \\
+              37 - 44      & 36.5         & 44.5         & 40.5       & 13           \\
+              45 - 52      & 44.5         & 52.5         & 48.5       & 17           \\
+              53 - 60      & 52.5         & 60.5         & 56.5       & 15           \\
+              61 - 68      & 60.5         & 68.5         & 64.5       & 14           \\
+              69 - 76      & 68.5         & 76.5         & 72.5       & 12           \\
+              77 - 84      & 76.5         & 84.5         & 80.5       & 7            \\
+              85 - 92      & 84.5         & 92.5         & 88.5       & 5            \\
+              93 - 100     & 92.5         & 100.5        & 96.5       & 1            \\
+              \hline
+            \end{tabular}
+          \end{center}
+    \item Draw a histogram and frequency polygon. \sol{}
+          \begin{center}
+            \begin{tikzpicture}[scale=0.9]
+              \begin{axis}[
+                  title style = {align = center},
+                  title={\large{Histogram and Frequency Polygon of} \\ \large{Distribution of Mathematics Score}},
+                  ymin=0, ymax=20,
+                  ytick={0, 2, ..., 20},
+                  xtick={20.5, 28.5, ..., 100.5},
+                  grid=none,
+                  xtick style={draw=none, fill=none, font=\footnotesize},
+                  x tick label style = {rotate=90,anchor=east},
+                  xlabel=Score, ylabel=Frequency,
+                  xlabel style={at={(axis description cs:0.5, -0.1)}, anchor=north},
+                  ylabel style={at={(axis description cs:0.05, 0.5)}, anchor=center},
+                ]
+                \addplot[ybar interval, draw=black, style={fill=gray!40},mark=no] plot coordinates { (20.5, 3) (28.5, 18) (36.5, 13) (44.5, 17) (52.5, 15) (60.5, 14) (68.5, 12) (76.5, 7) (84.5, 5) (92.5, 1) (100.5, 0) };
+                \addplot[forget plot, sharp plot, mark=*, mark size=1.5pt, mark options={solid, fill=black, draw=black}, draw=black]
+                coordinates
+                  { (16.5, 0) (24.5, 3) (32.5, 18) (40.5, 13) (48.5, 17) (56.5, 15) (64.5, 14) (72.5, 12) (80.5, 7) (88.5, 5) (96.5, 1) (104.5, 0) };
+              \end{axis}
+            \end{tikzpicture}
+          \end{center}
+  \end{enumerate}
+
+  \subsection*{Cumulative Frequency Distribution}
+
+  Summing up the frequency of each class, we obtain the cumulative frequency
+  distribution. Use the upper boundary of each class as the x-axis, and the
+  cumulative frequency as the y-axis, we can draw the cumulative frequency
+  distribution by plotting each point including the point before the first class
+  that uses 0 as its frequency and connect them together. If we split the x-axis
+  and the higest point of the curve into 100 equal parts, we get the percentage
+  of the cumulative frequency distribution.
+
+  \subsection*{Practice 2}
+
+  There are 155 students in a senior 3 art and commerce class, and the frequency
+  distribution table of their average marks is shown below:
+
+  \begin{center}
+    \begin{tabular}{|c|c|}
+      \hline
+      \text{Average Mark} & \text{Frequency} \\
+      \hline
+      50 - 55             & 3                \\
+      55 - 60             & 8                \\
+      60 - 65             & 25               \\
+      65 - 70             & 38               \\
+      70 - 75             & 46               \\
+      75 - 80             & 19               \\
+      80 - 85             & 12               \\
+      85 - 90             & 4                \\
+      \hline
+    \end{tabular}
+  \end{center}
+
+  \begin{enumerate}[label=(\alph*)]
+    \item Make a cumulative frequency distribution table and draw a cumulative frequency
+          polygon.
+
+          \sol{}
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|}
+              \hline
+              \text{Avg} & \text{Freq.} & \text{Lower Than} & \text{Cumm. Freq.} \\
+              \hline
+              50 - 55    & 3            & 55                & 3                  \\
+              55 - 60    & 8            & 60                & 11                 \\
+              60 - 65    & 25           & 65                & 36                 \\
+              65 - 70    & 38           & 70                & 74                 \\
+              70 - 75    & 46           & 75                & 120                \\
+              75 - 80    & 19           & 80                & 139                \\
+              80 - 85    & 12           & 85                & 151                \\
+              85 - 90    & 4            & 90                & 155                \\
+              \hline
+            \end{tabular}
+          \end{center}
+
+          \begin{center}
+            \begin{tikzpicture}[scale=0.9]
+              \begin{axis}[
+                  title style = {align = center},
+                  title={\large{Cumulative Frequency Polygon of} \\ \large{Distribution of Average Mark}},
+                  ymin=0, ymax=160,
+                  ytick={0, 20, ..., 160},
+                  xtick={50, 55, 60, ..., 90},
+                  xtick style={draw=none, fill=none, font=\footnotesize},
+                  xlabel=Average Mark, ylabel=Cumulative Frequency,
+                  ylabel style={at={(axis description cs:0.02, 0.5)}, anchor=center},
+                ]
+                \addplot[forget plot, sharp plot, mark=*, mark size=1.5pt, mark options={solid, fill=black, draw=black}, draw=black]
+                coordinates
+                  { (50, 0) (55, 3) (60, 11) (65, 36) (70, 74) (75, 120) (80, 139) (85, 151) (90, 155) };
+                \draw[dashed] (axis cs:72, 0) -- (axis cs:72, 92) -- (axis cs:0, 92);
+                \draw (axis cs:0, 125) -- (axis cs:76.4, 125) -- (axis cs:76.4, 0);
+              \end{axis}
+            \end{tikzpicture}
+          \end{center}
+
+    \item If the average mark of a student is 72, find his rank in the class. \sol{}
+
+          In the graph above, we can see that there are approximately 92 students who
+          have an average mark lower than 72. Therefore, the rank of the student is $155
+            - 92 = 63$.
+
+    \item If the top $20\%$ of the class are to be awarded a certificate, find the
+          minimum average mark required for the certificate. \sol{}
+          \begin{flalign*}
+            \text{Top $20\%$} & = 20\% \times 155 \\
+                              & = 31
+          \end{flalign*}
+          Therefore, students with an average mark corresponding to cumulative frequency higher than 124 will be awarded a certificate.
+
+          In the graph above, The minimum average mark required for the certificate is
+          76.
+  \end{enumerate}
+
+  \subsection*{Exercise 18.2}
+
+  \begin{enumerate}
+    \item A company performed an ability test on 100 job seekers and the results are
+          shown in the following table:
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|c|c|c|}
+              \hline
+              \text{Score}     & 8 & 7  & 6  & 5  & 4  & 3 \\
+              \hline
+              \text{Frequency} & 5 & 12 & 24 & 33 & 19 & 7 \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Draw a hustogram and a frequency polygon for the data above.
+          \sol{}
+          \begin{center}
+            \begin{tikzpicture}[scale=0.8]
+              \begin{axis}[
+                  title style = {align = center},
+                  title={\large{Histogram and Frequency Polygon of} \\ \large{Ability Test Score}},
+                  ymin=0, ymax=35,
+                  ytick={0, 5, ..., 35},
+                  x dir=reverse,
+                  ybar interval,
+                  grid=none,
+                  xtick style={draw=none},
+                  xlabel=Score, ylabel=Frequency,
+                  xlabel style={at={(axis description cs:0.5, -0.05)}, anchor=north},
+                  ylabel style={at={(axis description cs:0.05, 0.5)}, anchor=center},
+                ]
+                \addplot[draw=black, style={fill=gray!40},mark=no] plot coordinates { (8, 5) (7, 12) (6, 24) (5, 33) (4, 19) (3, 7) (2, 0) };
+                \addplot[forget plot, sharp plot, mark=*, mark size=1.5pt, mark options={solid, fill=black, draw=black}, draw=black]
+                coordinates
+                  {(8.5, 0) (7.5, 5) (6.5, 12) (5.5, 24) (4.5, 33) (3.5, 19) (2.5, 7) (1.5, 0)};
+              \end{axis}
+            \end{tikzpicture}
+          \end{center}
+
+    \item Take 120 ears of rice from a rice field, the length of each ear is measured (in
+          $cm$) and the results are as following:
+          \begin{flalign*}
+            6.5 & \qquad 6.4 \qquad 6.7 \qquad 5.8 \qquad 5.9 \qquad 5.9 \\
+            5.2 & \qquad 4.0 \qquad 5.4 \qquad 4.6 \qquad 5.8 \qquad 5.5 \\
+            6.0 & \qquad 6.5 \qquad 5.1 \qquad 6.2 \qquad 5.4 \qquad 5.0 \\
+            5.0 & \qquad 6.8 \qquad 6.0 \qquad 5.0 \qquad 5.7 \qquad 6.0 \\
+            5.5 & \qquad 6.8 \qquad 6.0 \qquad 6.3 \qquad 5.5 \qquad 5.0 \\
+            6.4 & \qquad 5.8 \qquad 5.9 \qquad 5.7 \qquad 6.8 \qquad 6.6 \\
+            6.0 & \qquad 6.4 \qquad 5.7 \qquad 7.4 \qquad 6.0 \qquad 5.4 \\
+            6.5 & \qquad 6.0 \qquad 6.8 \qquad 5.3 \qquad 6.4 \qquad 5.7 \\
+            6.7 & \qquad 6.2 \qquad 5.6 \qquad 6.0 \qquad 6.7 \qquad 6.7 \\
+            6.0 & \qquad 5.5 \qquad 6.2 \qquad 6.1 \qquad 5.3 \qquad 6.2 \\
+            5.8 & \qquad 5.3 \qquad 7.0 \qquad 6.0 \qquad 6.0 \qquad 5.9 \\
+            5.4 & \qquad 6.0 \qquad 5.2 \qquad 6.0 \qquad 6.3 \qquad 5.7 \\
+            6.8 & \qquad 6.1 \qquad 4.5 \qquad 5.4 \qquad 6.3 \qquad 6.9 \\
+            4.9 & \qquad 5.1 \qquad 5.6 \qquad 5.9 \qquad 6.1 \qquad 6.5 \\
+            6.6 & \qquad 5.7 \qquad 5.8 \qquad 5.8 \qquad 6.2 \qquad 6.3 \\
+            6.5 & \qquad 5.3 \qquad 5.9 \qquad 5.5 \qquad 5.8 \qquad 6.3 \\
+            5.2 & \qquad 6.0 \qquad 7.0 \qquad 6.4 \qquad 5.8 \qquad 6.3 \\
+            6.0 & \qquad 6.3 \qquad 5.6 \qquad 6.8 \qquad 6.6 \qquad 4.7 \\
+            5.7 & \qquad 5.7 \qquad 5.6 \qquad 6.3 \qquad 6.0 \qquad 5.8 \\
+            6.3 & \qquad 7.5 \qquad 6.2 \qquad 6.4 \qquad 7.0 \qquad 6.5
+          \end{flalign*}
+
+          \begin{enumerate}
+            \item Find the range of the dataset. \sol{}
+                  \begin{flalign*}
+                    \text{Min value}         & = 4.0       \\
+                    \text{Max value}         & = 7.5       \\
+                    \therefore\ \text{Range} & = 7.5 - 4.0 \\
+                                             & = 3.5
+                  \end{flalign*}
+            \item Group the data into 12 classes, make a frequency distribution table, find the
+                  upper and lower boundaries and midpoint of each class, and calculate the
+                  cumulative frequency. \sol{}
+                  \begin{flalign*}
+                    \text{Range}                   & = 3.5            \\
+                    \text{Number of classes}       & = 12             \\
+                    \therefore\ \text{Class width} & = \frac{3.5}{12} \\
+                                                   & = \frac{3.5}{12} \\
+                                                   & \approx 0.3
+                  \end{flalign*}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|c|}
+                      \hline
+                      Weight    & Lower & Upper & Mid  & Freq. \\
+                      \hline
+                      4.0 - 4.2 & 3.95  & 4.25  & 4.10 & 1     \\
+                      4.3 - 4.5 & 4.25  & 4.55  & 4.40 & 1     \\
+                      4.6 - 4.8 & 4.55  & 4.85  & 4.70 & 2     \\
+                      4.9 - 5.1 & 4.85  & 5.15  & 5.00 & 7     \\
+                      5.2 - 5.4 & 5.15  & 5.45  & 5.30 & 12    \\
+                      5.5 - 5.7 & 5.45  & 5.75  & 5.60 & 17    \\
+                      5.8 - 6.0 & 5.75  & 6.05  & 5.90 & 31    \\
+                      6.1 - 6.3 & 6.05  & 6.35  & 6.20 & 18    \\
+                      6.4 - 6.6 & 6.35  & 6.65  & 6.50 & 15    \\
+                      6.7 - 6.9 & 6.65  & 6.95  & 6.80 & 11    \\
+                      7.0 - 7.2 & 6.95  & 7.25  & 7.10 & 3     \\
+                      7.3 - 7.5 & 7.25  & 7.55  & 7.40 & 2     \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                      \hline
+                      Weight    & Freq. & Lower Than & Cumm. Freq. \\
+                      \hline
+                      4.0 - 4.3 & 1     & 4.3        & 1           \\
+                      4.3 - 4.6 & 1     & 4.6        & 2           \\
+                      4.6 - 4.9 & 2     & 4.9        & 4           \\
+                      4.9 - 5.2 & 7     & 5.2        & 11          \\
+                      5.2 - 5.5 & 12    & 5.5        & 23          \\
+                      5.5 - 5.8 & 17    & 5.8        & 40          \\
+                      5.8 - 6.1 & 31    & 6.1        & 71          \\
+                      6.1 - 6.4 & 18    & 6.4        & 89          \\
+                      6.4 - 6.7 & 15    & 6.7        & 104         \\
+                      6.7 - 7.0 & 11    & 7.0        & 115         \\
+                      7.0 - 7.3 & 3     & 7.3        & 118         \\
+                      7.3 - 7.6 & 2     & 7.6        & 120         \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+
+            \item Draw a frequency polygon. \sol{}
+                  \begin{center}
+                    \begin{tikzpicture}[scale=0.9]
+                      \begin{axis}[
+                          title style = {align = center},
+                          title={\large{Frequency Polygon of} \\ \large{Distribution of Weight}},
+                          ymin=0, ymax=35,
+                          ytick={0, 5, ..., 35},
+                          ybar interval,
+                          grid=none,
+                          xtick style={draw=none, fill=none, font=\footnotesize},
+                          x tick label style = {rotate=90,anchor=east},
+                          xlabel=Weight ($g$), ylabel=Frequency,
+                          xlabel style={at={(axis description cs:0.5, -0.1)}, anchor=north},
+                          ylabel style={at={(axis description cs:0.05, 0.5)}, anchor=center},
+                        ]
+                        \addplot[forget plot, sharp plot, mark=*, mark size=1.5pt, mark options={solid, fill=black, draw=black}, draw=black]
+                        coordinates
+                          { (3.8, 0) (4.1, 1) (4.4, 2) (4.7, 7) (5.0, 12) (5.3, 17) (5.6, 31) (5.9, 18) (6.2, 15) (6.5, 11) (6.8, 3) (7.1, 2) (7.4, 0) };
+                      \end{axis}
+                    \end{tikzpicture}
+                  \end{center}
+
+            \item Draw a cumulative frequency polygon. \sol{}
+                  \begin{center}
+                    \begin{tikzpicture}[scale=0.8]
+                      \begin{axis}[
+                          title style = {align = center},
+                          title={\large{Cumulative Frequency Polygon of} \\ \large{Distribution of Weight}},
+                          ymin=0, ymax=125,
+                          ytick={0, 20, ..., 120},
+                          ybar interval,
+                          grid=none,
+                          xtick style={draw=none, fill=none, font=\footnotesize},
+                          x tick label style = {rotate=90,anchor=east},
+                          xlabel=Weight ($g$), ylabel=Frequency,
+                          xlabel style={at={(axis description cs:0.5, -0.1)}, anchor=north},
+                          ylabel style={at={(axis description cs:0.05, 0.5)}, anchor=center},
+                        ]
+                        \addplot[forget plot, sharp plot, mark=*, mark size=1.5pt, mark options={solid, fill=black, draw=black}, draw=black]
+                        coordinates
+                          { (4.0, 0) (4.3, 1) (4.6, 2) (4.9, 4) (5.2, 11) (5.5, 23) (5.8, 40) (6.1, 71) (6.4, 89) (6.7, 104) (7.0, 115) (7.3, 118) (7.6, 120) };
+                        \draw (axis cs: 6, 0) -- (axis cs: 6, 60);
+                      \end{axis}
+                    \end{tikzpicture}
+                  \end{center}
+            \item Find the percentage of the ears of rice whose length is greater than $6cm$.
+          \end{enumerate}
+
+    \item The table below shows the weight distribution of 90 babies (in $kg$):
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Weight    & Frequency \\
+              \hline
+              1.5 - 2.0 & 2         \\
+              2.0 - 2.5 & 4         \\
+              2.5 - 3.0 & 13        \\
+              3.0 - 3.5 & 32        \\
+              3.5 - 4.0 & 28        \\
+              4.0 - 4.5 & 10        \\
+              4.5 - 5.0 & 1         \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{enumerate}
+            \item Make a cumulative frequency table.
+            \item Draw a cumulative frequency polygon.
+            \item Find the percentage of babies whose weight is greater than $3.8kg$.
+          \end{enumerate}
+
+    \item The table below shows the average score distribution of 50 students in a class:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Average Score & Frequency \\
+              \hline
+              50.0 - 59.9   & 4         \\
+              60.0 - 69.9   & 9         \\
+              70.0 - 79.9   & 23        \\
+              80.0 - 89.9   & 12        \\
+              90.0 - 99.9   & 2         \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{enumerate}
+            \item Make a cumulative frequency table and draw a cumulative frequency polygon.
+            \item A student get an average score of $74$, find his rank in the class.
+            \item Find the average score of the student who is ranked $20$.
+            \item Find the percentage of students whose average score is greater than $85$.
+          \end{enumerate}
+
+    \item The table below shows the score distribution of 1200 students in UEC accounting
+          exam:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Score   & Number of Students \\
+              \hline
+              10 - 19 & 20                 \\
+              20 - 29 & 60                 \\
+              30 - 39 & 95                 \\
+              40 - 49 & 130                \\
+              50 - 59 & 340                \\
+              60 - 69 & 310                \\
+              70 - 79 & 135                \\
+              80 - 89 & 80                 \\
+              90 - 99 & 30                 \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Examinees are categorised into 4 groups based on their score: \textit{Excellent}, \textit{Good}, \textit{Pass}, and \textit{Fail}.
+          \begin{enumerate}
+            \item Make a cumulative frequency table and draw a cumulative frequency polygon.
+            \item If the passing score is $38$, find the percentage of students who pass the
+                  exam.
+            \item Assume that the minimum score to be categorised as \textit{Excellent} and
+                  \textit{Good} is $75$ and $55$ respectively, find the percentage of students
+                  who are categorised as \textit{Excellent} and \textit{Good} respectively.
+            \item Find the passing mark if the percentage of students who pass the exam is
+                  $90\%$.
+            \item Find the minimum mark of a student who is categorised as \textit{Excellent} if
+                  the percentage of students who are categorised as \textit{Excellent} is $15\%$.
+          \end{enumerate}
+
+  \end{enumerate}
 
   \section{Central Tendency}
 
