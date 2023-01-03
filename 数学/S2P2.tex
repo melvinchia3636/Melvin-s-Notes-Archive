@@ -658,20 +658,20 @@
                   \begin{center}
                     \begin{tabular}{|c|c|c|c|}
                       \hline
-                      Weight    & Freq. & Lower Than & Cumm. Freq. \\
+                      Weight    & Freq. & Lower Than & Cum. Freq. \\
                       \hline
-                      4.0 - 4.3 & 1     & 4.3        & 1           \\
-                      4.3 - 4.6 & 1     & 4.6        & 2           \\
-                      4.6 - 4.9 & 2     & 4.9        & 4           \\
-                      4.9 - 5.2 & 7     & 5.2        & 11          \\
-                      5.2 - 5.5 & 12    & 5.5        & 23          \\
-                      5.5 - 5.8 & 17    & 5.8        & 40          \\
-                      5.8 - 6.1 & 31    & 6.1        & 71          \\
-                      6.1 - 6.4 & 18    & 6.4        & 89          \\
-                      6.4 - 6.7 & 15    & 6.7        & 104         \\
-                      6.7 - 7.0 & 11    & 7.0        & 115         \\
-                      7.0 - 7.3 & 3     & 7.3        & 118         \\
-                      7.3 - 7.6 & 2     & 7.6        & 120         \\
+                      4.0 - 4.3 & 1     & 4.3        & 1          \\
+                      4.3 - 4.6 & 1     & 4.6        & 2          \\
+                      4.6 - 4.9 & 2     & 4.9        & 4          \\
+                      4.9 - 5.2 & 7     & 5.2        & 11         \\
+                      5.2 - 5.5 & 12    & 5.5        & 23         \\
+                      5.5 - 5.8 & 17    & 5.8        & 40         \\
+                      5.8 - 6.1 & 31    & 6.1        & 71         \\
+                      6.1 - 6.4 & 18    & 6.4        & 89         \\
+                      6.4 - 6.7 & 15    & 6.7        & 104        \\
+                      6.7 - 7.0 & 11    & 7.0        & 115        \\
+                      7.0 - 7.3 & 3     & 7.3        & 118        \\
+                      7.3 - 7.6 & 2     & 7.6        & 120        \\
                       \hline
                     \end{tabular}
                   \end{center}
@@ -703,26 +703,31 @@
                   \begin{center}
                     \begin{tikzpicture}[scale=0.8]
                       \begin{axis}[
-                          title style = {align = center},
-                          title={\large{Cumulative Frequency Polygon of} \\ \large{Distribution of Weight}},
-                          ymin=0, ymax=125,
-                          ytick={0, 20, ..., 120},
-                          ybar interval,
-                          grid=none,
-                          xtick style={draw=none, fill=none, font=\footnotesize},
-                          x tick label style = {rotate=90,anchor=east},
-                          xlabel=Weight ($g$), ylabel=Frequency,
-                          xlabel style={at={(axis description cs:0.5, -0.1)}, anchor=north},
-                          ylabel style={at={(axis description cs:0.05, 0.5)}, anchor=center},
-                        ]
-                        \addplot[forget plot, sharp plot, mark=*, mark size=1.5pt, mark options={solid, fill=black, draw=black}, draw=black]
-                        coordinates
-                          { (4.0, 0) (4.3, 1) (4.6, 2) (4.9, 4) (5.2, 11) (5.5, 23) (5.8, 40) (6.1, 71) (6.4, 89) (6.7, 104) (7.0, 115) (7.3, 118) (7.6, 120) };
-                        \draw (axis cs: 6, 0) -- (axis cs: 6, 60);
+                        title style = {align = center},
+                        title={\large{Cumulative Frequency Polygon of} \\ \large{Distribution of Weight}},
+                        ymin=0, ymax=125,
+                        ytick={0, 20, ..., 120},
+                        xtick={4.0, 4.3, 4.6, ..., 7.4},
+                        xtick style={draw=none, fill=none, font=\footnotesize}, x tick label style =
+                          {rotate=90,anchor=east}, xlabel=Weight ($g$), ylabel=Frequency, xlabel
+                        style={at={(axis description cs:0.5, -0.1)}, anchor=north}, ylabel
+                        style={at={(axis description cs:0.05, 0.5)}, anchor=center}, ] \addplot[forget
+                          plot, sharp plot, mark=*, mark size=1.5pt, mark options={solid, fill=black,
+                              draw=black}, draw=black] coordinates { (4.0, 0) (4.3, 1) (4.6, 2) (4.9, 4)
+                            (5.2, 11) (5.5, 23) (5.8, 40) (6.1, 71) (6.4, 89) (6.7, 104) (7.0, 115) (7.3,
+                            118) (7.6, 120) };
+                        \draw [dashed] (axis cs: 6.05, 0) -- (axis cs: 6.05, 66) -- (axis cs: 0, 66);
                       \end{axis}
                     \end{tikzpicture}
                   \end{center}
+
             \item Find the percentage of the ears of rice whose length is greater than $6cm$.
+                  \sol{}
+
+                  In the diagram above, there are approximately $120 - 66 = 54$ ears of rice
+                  whose length is greater than $6cm$, which is about $\frac{54}{120} \times 100\%
+                    = 45\%$ of the total number of ears of rice.
+
           \end{enumerate}
 
     \item The table below shows the weight distribution of 90 babies (in $kg$):
@@ -742,9 +747,49 @@
             \end{tabular}
           \end{center}
           \begin{enumerate}
-            \item Make a cumulative frequency table.
-            \item Draw a cumulative frequency polygon.
-            \item Find the percentage of babies whose weight is greater than $3.8kg$.
+            \item Make a cumulative frequency table. \sol{}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                      \hline
+                      Weight    & Freq. & Less than & Cum. Freq. \\
+                      \hline
+                      1.5 - 2.0 & 2     & 2.0       & 2          \\
+                      2.0 - 2.5 & 4     & 2.5       & 6          \\
+                      2.5 - 3.0 & 13    & 3.0       & 19         \\
+                      3.0 - 3.5 & 32    & 3.5       & 51         \\
+                      3.5 - 4.0 & 28    & 4.0       & 79         \\
+                      4.0 - 4.5 & 10    & 4.5       & 89         \\
+                      4.5 - 5.0 & 1     & 5.0       & 90         \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+
+            \item Draw a cumulative frequency polygon. \sol{}
+                  \begin{center}
+                    \begin{tikzpicture}[scale=0.8]
+                      \begin{axis}[
+                        title style = {align = center},
+                        title={\large{Cumulative Frequency Polygon of} \\ \large{Distribution of Weight}},
+                        ymin=0, ymax=95,
+                        ytick={0, 10, ..., 90},
+                        xtick={1.5, 2.0, 2.5, ..., 5.0},
+                        xtick style={draw=none, fill=none, font=\footnotesize}, x tick label style =
+                          {rotate=90,anchor=east}, xlabel=Weight ($kg$), ylabel=Frequency, xlabel
+                        style={at={(axis description cs:0.5, -0.05)}, anchor=north}, ylabel
+                        style={at={(axis description cs:0.05, 0.5)}, anchor=center}, ] \addplot[forget
+                          plot, sharp plot, mark=*, mark size=1.5pt, mark options={solid, fill=black,
+                              draw=black}, draw=black] coordinates { (1.5, 0) (2.0, 2) (2.5, 6) (3.0, 19)
+                            (3.5, 51) (4.0, 79) (4.5, 89) (5.0, 90) };
+                        \draw [dashed] (axis cs: 3.8, 0) -- (axis cs: 3.8, 68) -- (axis cs: 0, 68);
+                      \end{axis}
+                    \end{tikzpicture}
+                  \end{center}
+
+            \item Find the percentage of babies whose weight is greater than $3.8kg$. \sol{}
+
+                  In the diagram above, there are approximately $90 - 68 = 22$ babies whose
+                  weight is greater than $3.8kg$, which is about $\frac{22}{90} \times 100\% =
+                    24.44\%$ of the total number of babies.
           \end{enumerate}
 
     \item The table below shows the average score distribution of 50 students in a class:
@@ -763,9 +808,58 @@
           \end{center}
           \begin{enumerate}
             \item Make a cumulative frequency table and draw a cumulative frequency polygon.
-            \item A student get an average score of $74$, find his rank in the class.
-            \item Find the average score of the student who is ranked $20$.
+                  \sol{}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                      \hline
+                      Average Score & Freq. & Less than & Cum. Freq. \\
+                      \hline
+                      50.0 - 59.9   & 4     & 60        & 4          \\
+                      60.0 - 69.9   & 9     & 70        & 13         \\
+                      70.0 - 79.9   & 23    & 80        & 36         \\
+                      80.0 - 89.9   & 12    & 90        & 48         \\
+                      90.0 - 99.9   & 2     & 100       & 50         \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  \begin{center}
+                    \begin{tikzpicture}[scale=0.8]
+                      \begin{axis}[
+                        title style = {align = center},
+                        title={\large{Cumulative Frequency Polygon of} \\ \large{Distribution of Average Score}},
+                        ymin=0, ymax=55,
+                        ytick={0, 5, ..., 50},
+                        xtick={50, 60, 70, 80, 90, 100},
+                        xtick style={draw=none, fill=none, font=\footnotesize}, x tick label style =
+                          {rotate=90,anchor=east}, xlabel=Average Score ($\%$), ylabel=Frequency, xlabel
+                        style={at={(axis description cs:0.5, -0.05)}, anchor=north}, ylabel
+                        style={at={(axis description cs:0.05, 0.5)}, anchor=center}, ] \addplot[forget
+                          plot, sharp plot, mark=*, mark size=1.5pt, mark options={solid, fill=black,
+                              draw=black}, draw=black] coordinates { (50, 0) (60, 4) (70, 13) (80, 36)
+                            (90, 48) (100, 50) };
+                        \draw [dashed] (axis cs: 74, 0) -- (axis cs: 74, 22) -- (axis cs: 0, 22);
+                        \draw [dashed] (axis cs: 0, 30) -- (axis cs: 77, 30) -- (axis cs: 77, 0);
+                        \draw [dashed] (axis cs: 85, 0) -- (axis cs: 85, 42) -- (axis cs: 0, 42);
+                      \end{axis}
+                    \end{tikzpicture}
+                  \end{center}
+
+            \item A student get an average score of $74$, find his rank in the class. \sol{}
+
+                  In the diagram above, there are approximately $22$ students whose average score
+                  is less than $74$, which means that the student is ranked $50 - 22 = 28$.
+
+            \item Find the average score of the student who is ranked $20$. \sol{}
+
+                  In the diagram above, the student who is ranked $20$ has an average score of
+                  about $77$.
+
             \item Find the percentage of students whose average score is greater than $85$.
+                  \sol{}
+
+                  In the diagram above, there are approximately $50 - 42 = 8$ students whose
+                  average score is greater than $85$, which is about $\frac{8}{50} \times 100\% =
+                    16\%$ of the total number of students.
           \end{enumerate}
 
     \item The table below shows the score distribution of 1200 students in UEC accounting
@@ -790,20 +884,366 @@
           Examinees are categorised into 4 groups based on their score: \textit{Excellent}, \textit{Good}, \textit{Pass}, and \textit{Fail}.
           \begin{enumerate}
             \item Make a cumulative frequency table and draw a cumulative frequency polygon.
+                  \sol{}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                      \hline
+                      Score   & Freq. & Less than & Cum. Freq. \\
+                      \hline
+                      10 - 19 & 20    & 20        & 20         \\
+                      20 - 29 & 60    & 80        & 80         \\
+                      30 - 39 & 95    & 175       & 175        \\
+                      40 - 49 & 130   & 305       & 305        \\
+                      50 - 59 & 340   & 645       & 645        \\
+                      60 - 69 & 310   & 955       & 955        \\
+                      70 - 79 & 135   & 1090      & 1090       \\
+                      80 - 89 & 80    & 1170      & 1170       \\
+                      90 - 99 & 30    & 1200      & 1200       \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  \begin{center}
+                    \begin{tikzpicture}[scale=0.8]
+                      \begin{axis}[
+                          title style = {align = center},
+                          title={\large{Cumulative Frequency Polygon of} \\ \large{Distribution of Score}},
+                          ymin=0, ymax=1250,
+                          ytick={0, 100, ..., 1200},
+                          xtick={10, 20, 30, 40, 50, 60, 70, 80, 90, 100},
+                          xtick style={draw=none, fill=none, font=\footnotesize}, x tick label style =
+                            {rotate=90,anchor=east}, xlabel=Score, ylabel=Frequency, xlabel style={at={(axis
+                                  description cs:0.5, -0.05)}, anchor=north}, ylabel style={at={(axis
+                                  description cs:0.05, 0.5)}, anchor=center}, ] \addplot[forget plot, sharp
+                          plot, mark=*, mark size=1.5pt, mark options={solid, fill=black, draw=black},
+                          draw=black] coordinates { (10, 0) (20, 20) (30, 80) (40, 175) (50, 305) (60,
+                            645) (70, 955) (80, 1090) (90, 1170) (100, 1200) };
+                        \draw [dashed] (axis cs: 38, 0) -- (axis cs: 38, 155) -- (axis cs: 0, 155);
+                        \draw [dashed] (axis cs: 75, 0) -- (axis cs: 75, 1024) -- (axis cs: 0, 1024);
+                        \draw [dashed] (axis cs: 55, 0) -- (axis cs: 55, 475) -- (axis cs: 0, 475);
+                        \draw [dashed] (axis cs: 0, 120) -- (axis cs: 34, 120) -- (axis cs: 34, 0);
+                        \draw [dashed] (axis cs: 0, 1020) -- (axis cs: 75, 1020) -- (axis cs: 75, 0);
+                      \end{axis}
+                    \end{tikzpicture}
+                  \end{center}
+
             \item If the passing score is $38$, find the percentage of students who pass the
-                  exam.
+                  exam. \sol{}
+
+                  In the diagram above, there are approximately $1200 - 155 = 1045$ students
+                  whose score is greater or equal to $38$, which is about $\frac{1045}{1200}
+                    \times 100\% = 86.67\%$ of the total number of students.
+
             \item Assume that the minimum score to be categorised as \textit{Excellent} and
                   \textit{Good} is $75$ and $55$ respectively, find the percentage of students
                   who are categorised as \textit{Excellent} and \textit{Good} respectively.
+                  \sol{}
+
+                  In the diagram above, there are approximately $1200 - 1024 = 176$ students
+                  whose score is greater or equal to $75$, which is about $\frac{176}{1200}
+                    \times 100\% = 14.67\%$ of the total number of students who are categorised as
+                  \textit{Excellent}.
+
+                  Also, there are approximately $1024 - 475 = 549$ students whose score is
+                  greater or equal to $55$, which is about $\frac{549}{1200} \times 100\% =
+                    45.75\%$ of the total number of students who are categorised as \textit{Good}.
+
             \item Find the passing mark if the percentage of students who pass the exam is
-                  $90\%$.
+                  $90\%$. \sol{}
+
+                  If the percentage of students who pass the exam is $90\%$, then the number of
+                  students who pass the exam is $90\%$ of $1200$ students, which is $1080$
+                  students. That means, there are $1200 - 1080 = 120$ students who fail the exam.
+
+                  In the diagram above, the passing mark is about $34$ given that there are $120$
+                  students who fail the exam.
+
             \item Find the minimum mark of a student who is categorised as \textit{Excellent} if
                   the percentage of students who are categorised as \textit{Excellent} is $15\%$.
+                  \sol{}
+
+                  If the percentage of students who are categorised as \textit{Excellent} is
+                  $15\%$, then the number of students who are categorised as \textit{Excellent}
+                  is $15\%$ of $1200$ students, which is $180$ students. That means, there are
+                  $1200 - 180 = 1020$ students who are not categorised as \textit{Excellent}.
+
+                  In the diagram above, the minimum mark of a student who is categorised as
+                  \textit{Excellent} is about $75$ given that there are $1020$ students who are
+                  not categorised as \textit{Excellent}.
           \end{enumerate}
 
   \end{enumerate}
 
   \section{Central Tendency}
+
+  Central tendency is a measure of the central position of a distribution, or a
+  single value that attempts to describe a set of data. The most common measures
+  of central tendency are the mean, median, and mode.
+
+  \subsection*{Mean}
+
+  Mean is also known as arithmetic mean. For $n$ values $x_1, x_2, \ldots, x_n$,
+  the mean is defined as \makeatletter \setbool{@fleqn}{false} \makeatother
+  \begin{flalign*}
+    \bar{x} & = \frac{x_1 + x_2 + \cdots + x_n}{n} \\
+            & = \frac{\sum x_i}{n}
+  \end{flalign*}
+  \makeatletter
+  \setbool{@fleqn}{true}
+  \makeatother
+
+  For data whose possible values are $x_1, x_2, \ldots, x_n$, and their
+  respective frequencies are $f_1, f_2, \ldots, f_n$, the mean is defined as
+  \makeatletter \setbool{@fleqn}{false} \makeatother
+  \begin{flalign*}
+    \bar{x} & = \frac{x_1f_1 + x_2f_2 + \cdots + x_nf_n}{f_1 + f_2 + \cdots + f_n} \\
+            & = \frac{\sum f_i x_i}{\sum f_i}
+  \end{flalign*}
+  \makeatletter
+  \setbool{@fleqn}{true}
+  \makeatother
+
+  For grouped data, we take the mean of each class as the representative value
+  $x_i$ of the class.
+
+  \subsubsection*{Weighted Mean}
+
+  In some scenario, weighted mean is better than the mean to describe the data.
+
+  When calculating the arithmetic mean, each value is given equal weight.
+  However, in some cases, each value in a dataset may not be equally important.
+  For example, the importance of the mark of a student for each subject is
+  weighted according to the number of classes of the subject in a week. Hence,
+  when calculating the average mark of the student, each mark must be multiplied
+  by a value that represents the importance of the subject, and that value is
+  called the weight. The weighted mean is defined as \makeatletter
+  \setbool{@fleqn}{false} \makeatother
+  \begin{flalign*}
+    \bar{x} & = \frac{w_1x_1 + w_2x_2 + \cdots + w_n x_n}{w_1 + w_2 + \cdots + w_n} \\
+            & = \frac{\sum w_i x_i}{\sum w_i}
+  \end{flalign*}
+  \makeatletter
+  \setbool{@fleqn}{true}
+  \makeatother
+  where $x_i$ are the values and $w_i$ are the weights of $x_i$.
+
+  \subsection*{Practice 3}
+
+  \begin{enumerate}
+    \item Find the mean of 30, 50, 24, 32, 53, 30, 62, 27.
+    \item There are three workshop $A$, $B$, and $C$ in a factory. Workshop $A$ has 10
+          workers, their wages are $\$35$ per day, workshop $B$ has 30 workers, their
+          wages are $\$45$ per day, and workshop $C$ has 15 workers, their wages are
+          $\$55$ per day. Find the mean of the wages of the workers in the factory.
+    \item A school appoints students to participate in a Math competition. During the
+          competition, candidates must answer 25 questions within an hour. The table
+          below shows the distribution of frequency of the number of questions that those
+          candidates answer correctly:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Answered Correctly & Frequency \\
+              \hline
+              1 - 5              & 3         \\
+              6 - 10             & 12        \\
+              11 - 15            & 7         \\
+              16 - 20            & 8         \\
+              21 - 25            & 5         \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Complete the following table, and find the mean of the number of questions that those candidates answer correctly.
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|}
+              \hline
+              Ans. Correctly & Freq. $f_i$ & Midpoint $x_i$ & $f_ix_i$ \\
+              \hline
+              1 - 5          &             &                &          \\
+              6 - 10         &             &                &          \\
+              11 - 15        &             &                &          \\
+              16 - 20        &             &                &          \\
+              21 - 25        &             &                &          \\
+              \hline
+            \end{tabular}
+          \end{center}
+  \end{enumerate}
+
+  \subsection{Exercise 18.3a}
+
+  \begin{enumerate}
+    \item Take a sample of 20 from a batch of machine parts, their weight (in $g$) are as
+          follows:
+          \begin{flalign*}
+            210 & \qquad 208 \qquad 200 \qquad 205 \qquad 202 \qquad 218 & \\
+            206 & \qquad 214 \qquad 215 \qquad 207 \qquad 195 \qquad 207   \\
+            218 & \qquad 192 \qquad 202 \qquad 216 \qquad 185 \qquad 227   \\
+            187 & \qquad 215
+          \end{flalign*}
+          Find the mean weight of these machine parts.
+
+    \item Given that the mean of a dataset 4, -3, 2, $k$, 5 is 10, find the value of $k$.
+    \item Given that the mean of $x_1$, $x_2$, $x_3$, $x_4$, $x_5$ is 40, and the mean of
+          $y_1$, $y_2$, $y_3$ is 15. Find the mean after combining these two datasets.
+    \item A school have 2 senior 3 classes: $A$ and $B$. In a Chinese language test, the
+          average mark of 49 students in $A$ class in 72, while the average mark for 45
+          students in class $B$ is 68. Find the average mark of all students in these two
+          class combined.
+    \item Given that the mean for 8 values are 5. The mean increased by 1.4 after adding
+          two values: $x$ and $3x$. Find the value of $x$.
+    \item Throwing 6 coin at the same time and record the number of heads. After throwing
+          100 times, we get the following frequency distribution table:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Number of Heads & Frequency \\
+              \hline
+              0               & 2         \\
+              1               & 10        \\
+              2               & 24        \\
+              3               & 35        \\
+              4               & 22        \\
+              5               & 6         \\
+              6               & 1         \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Find the mean of the number of heads for each throw.
+    \item The table below shows the score distribution of 66 students in a Chinese
+          language test:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Score    & Frequency \\
+              \hline
+              31 - 40  & 6         \\
+              41 - 50  & 12        \\
+              51 - 60  & 15        \\
+              61 - 70  & 15        \\
+              71 - 80  & 8         \\
+              81 - 90  & 6         \\
+              91 - 100 & 4         \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Find their mark in average.
+
+    \item Below are the number of classes and marks for each subject of a junior student:
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              Subject     & Number of Classes & Average Mark \\
+              \hline
+              Chinese     & 7                 & 75           \\
+              Malay       & 7                 & 73           \\
+              English     & 7                 & 65           \\
+              Mathematics & 7                 & 82           \\
+              Science     & 5                 & 86           \\
+              History     & 3                 & 73           \\
+              Geography   & 3                 & 87           \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{enumerate}
+            \item Find his mark in average.
+            \item Use the number of classes as the weight to find his average mark.
+          \end{enumerate}
+    \item The weight of 60 junior 2 students in a school are as follows:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Weight (kg) & Frequency \\
+              \hline
+              54 - 56     & 10        \\
+              57 - 59     & 20        \\
+              60 - 62     & x         \\
+              63 - 65     & 8         \\
+              66 - 68     & 4         \\
+              69 - 71     & y         \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Given that tme mean weight of these students is 60.1 kg, find the value of $x$ and $y$.
+  \end{enumerate}
+
+  \subsection*{Median}
+
+  The median is the middle value of a sorted dataset. The number of values must
+  be equal for both side of the median.
+
+  If the number of values is $n$, when $n$ is odd, the median is the number in
+  $\frac{n+1}{2}$ position.\\ When $n$ is even, the median is the mean of the
+  number in $\frac{n}{2}$ and $\frac{n}{2}+1$ position.
+
+  For grouped data, we can make a cumulative frequency polygon, and the median is
+  the value corresponding to $50\%$ of the percentage of the cumulative
+  frequency.
+
+  \begin{flalign*}
+    \text{Let } & n \text{ be the number of values in the dataset, aka }\sum f_1, & \\
+                & L_m \text{ be the lower boundaries of the group of the median,}   \\
+                & C_m \text{ be the range of the group of the median,}              \\
+                & f_m \text{ be the frequency of the group of the median,}          \\
+                & F_m \text{ be the cum. frequency of the group of the median,}
+  \end{flalign*}
+
+  Diagram above shows a part of a cumulative frequency polygon, where $R$ is the
+  point corresponding to the group containing the median, $P$ is the point
+  corresponding to the group before the group containing the median, and $M$ is
+  the median. Since $\Delta PQR \sim \Delta PST$,
+  \begin{flalign*}
+    \therefore \frac{PS}{PQ}             & = \frac{ST}{QR}                 \\
+    \text{That is, } \frac{M - L_m}{C_m} & = \frac{\frac{n}{2} - F_m}{f_m}
+  \end{flalign*}
+  We get the following after simplifying the equation:
+  \begin{cequation}
+    M = L_m + \left(\frac{\frac{n}{2} - F_m}{f_m}\right)C_m
+  \end{cequation}
+
+  \subsection{Practice 4}
+
+  \begin{enumerate}
+    \item 10 workers in a factory made the same type of product in a day, the number of products made are as follows:
+          \begin{flalign*}
+            15 & \qquad 17 \qquad 14 \qquad 10 \qquad 15 \\
+            19 & \qquad 17 \qquad 16 \qquad 14 \qquad 12
+          \end{flalign*}
+          Find the median of the number of products made by these 10 workers.
+    \item The table below shows the result of a right eye vision test for 49 students in
+          a class:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Vision & Number of Students \\
+              \hline
+              0.2    & 2                  \\
+              0.3    & 3                  \\
+              0.4    & 4                  \\
+              0.5    & 3                  \\
+              0.6    & 4                  \\
+              0.8    & 9                  \\
+              1.0    & 9                  \\
+              1.2    & 10                 \\
+              1.5    & 5                  \\
+            \end{tabular}
+          \end{center}
+          Find the median of the right eye vision of these students.
+    \item The table below shows time distribution of 21 students browsing the Internet:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Time (hours) & Number of Students \\
+              \hline
+              1.1 - 1.3    & 4                  \\
+              1.4 - 1.6    & 3                  \\
+              1.7 - 1.9    & 5                  \\
+              2.0 - 2.2    & 4                  \\
+              2.3 - 2.5    & 5                  \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Find the median of the time distribution of these students.
+  \end{enumerate}
+
+  \subsection*{Mode}
 
   \section{Measures of Dispersion}
 
