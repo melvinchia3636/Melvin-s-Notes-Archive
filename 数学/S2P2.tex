@@ -1029,11 +1029,35 @@
   \subsection*{Practice 3}
 
   \begin{enumerate}
-    \item Find the mean of 30, 50, 24, 32, 53, 30, 62, 27.
+    \item Find the mean of 34, 50, 24, 32, 53, 30, 62, 27. \sol{}
+          \begin{flalign*}
+            \bar{x} & = \frac{30 + 50 + 24 + 32 + 53 + 30 + 62 + 27}{8} \\
+                    & = \frac{312}{8}                                   \\
+                    & = 39
+          \end{flalign*}
+
     \item There are three workshop $A$, $B$, and $C$ in a factory. Workshop $A$ has 10
           workers, their wages are $\$35$ per day, workshop $B$ has 30 workers, their
           wages are $\$45$ per day, and workshop $C$ has 15 workers, their wages are
           $\$55$ per day. Find the mean of the wages of the workers in the factory.
+          \sol{}
+
+          Let the wages of workers be $x_1$, and the amount of workers be $f_1$.
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              $x_1$ & $f_1$           & $x_1f_1$              \\
+              \hline
+              35    & 10              & 350                   \\
+              45    & 30              & 1350                  \\
+              55    & 15              & 825                   \\
+              \hline
+                    & $\sum f_i = 55$ & $\sum f_i x_i = 2525$ \\
+              \hline
+            \end{tabular}
+          \end{center}
+          $\therefore $ Average wages of workers in the factory is $\frac{2525}{55} = \$45.91$.
+
     \item A school appoints students to participate in a Math competition. During the
           competition, candidates must answer 25 questions within an hour. The table
           below shows the distribution of frequency of the number of questions that those
@@ -1065,6 +1089,23 @@
               \hline
             \end{tabular}
           \end{center}
+          \sol{}
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|}
+              \hline
+              Ans. Correctly & Freq. $f_i$     & Midpoint $x_i$       & $f_ix_i$ \\
+              \hline
+              1 - 5          & 3               & 3                    & 9        \\
+              6 - 10         & 12              & 8                    & 96       \\
+              11 - 15        & 7               & 13                   & 91       \\
+              16 - 20        & 8               & 18                   & 144      \\
+              21 - 25        & 5               & 23                   & 115      \\
+              \hline
+                             & $\sum f_i = 35$ & $\sum f_i x_i = 455$ &          \\
+              \hline
+            \end{tabular}
+          \end{center}
+          $\therefore $ The mean of the number of questions that those candidates answer correctly is $\frac{455}{35} = 13$.
   \end{enumerate}
 
   \subsection*{Exercise 18.3a}
@@ -1079,16 +1120,56 @@
             187 & \qquad 215
           \end{flalign*}
           Find the mean weight of these machine parts.
+          \sol{}
+          \begin{flalign*}
+            \bar{x} & = \frac{210 + 208 + 200 + \cdots + 215}{20} \\
+                    & = \frac{4129}{20}                           \\
+                    & = 206.45
+          \end{flalign*}
 
-    \item Given that the mean of a dataset 4, -3, 2, $k$, 5 is 10, find the value of $k$.
+    \item Given that the mean of a dataset 4, -3, 2, $k$, 5, 8 is 10, find the value of
+          $k$. \sol{}
+          \begin{flalign*}
+            \frac{4 + (-3) + 2 + k + 5 + 8}{6} & = 10 \\
+            16 + k                             & = 60 \\
+            k                                  & = 44
+          \end{flalign*}
+
     \item Given that the mean of $x_1$, $x_2$, $x_3$, $x_4$, $x_5$ is 40, and the mean of
           $y_1$, $y_2$, $y_3$ is 15. Find the mean after combining these two datasets.
+          \sol{}
+          \begin{flalign*}
+            \frac{x_1 + \cdots + x_5}{5} & = 40                                 \\
+            x_1 + \cdots + x_5           & = 200                                \\
+            \\
+            \frac{y_1 + y_2 + y_3}{3}    & = 15                                 \\
+            y_1 + y_2 + y_3              & = 45                                 \\
+            \\
+            \bar{xy}                     & = \frac{x_1 + x_2 + \cdots + y_3}{8} \\
+                                         & = \frac{245}{8}                      \\
+                                         & = 30.63
+          \end{flalign*}
+
     \item A school have 2 senior 3 classes: $A$ and $B$. In a Chinese language test, the
           average mark of 49 students in $A$ class in 72, while the average mark for 45
           students in class $B$ is 68. Find the average mark of all students in these two
-          class combined.
+          class combined. \sol{}
+          \begin{flalign*}
+            \bar{x} & = \frac{72 \times 49 + 68 \times 45}{49 + 45} \\
+                    & = \frac{3528 + 3060}{94}                      \\
+                    & = \frac{6588}{94}                             \\
+                    & = 70.09
+          \end{flalign*}
+
     \item Given that the mean for 8 values are 5. The mean increased by 1.4 after adding
-          two values: $x$ and $3x$. Find the value of $x$.
+          two values: $x$ and $3x$. Find the value of $x$. \sol{}
+          \begin{flalign*}
+            \frac{8 \times 5 + x + 3x}{8 + 2} & = 5 + 1.4 \\
+            \frac{40 + 4x}{10}                & = 6.4     \\
+            40 + 4x                           & = 64      \\
+            4x                                & = 24      \\
+            x                                 & = 6
+          \end{flalign*}
     \item Throwing 6 coin at the same time and record the number of heads. After throwing
           100 times, we get the following frequency distribution table:
           \begin{center}
@@ -1107,6 +1188,28 @@
             \end{tabular}
           \end{center}
           Find the mean of the number of heads for each throw.
+          \sol{}
+
+          Let the number of heads be $x_i$ and the frequency be $f_i$.
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              $x_i$ & $f_i$            & $x_i f_i$           \\
+              \hline
+              0     & 2                & 0                   \\
+              1     & 10               & 10                  \\
+              2     & 24               & 48                  \\
+              3     & 35               & 105                 \\
+              4     & 22               & 88                  \\
+              5     & 6                & 30                  \\
+              6     & 1                & 6                   \\
+              \hline
+                    & $\sum f_i = 100$ & $\sum x_i f_i= 287$ \\
+              \hline
+            \end{tabular}
+          \end{center}
+          $\therefore$ The mean of the number of heads for each throw is $\frac{287}{100} = 2.87$.
+
     \item The table below shows the score distribution of 66 students in a Chinese
           language test:
           \begin{center}
@@ -1125,6 +1228,23 @@
             \end{tabular}
           \end{center}
           Find their mark in average.
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|}
+              \hline
+              Score    & Mid $x_1$ & Freq. $f_1$     & $x_1f_1$             \\
+              \hline
+              31 - 40  & 35.5      & 6               & 213                  \\
+              41 - 50  & 45.5      & 12              & 546                  \\
+              51 - 60  & 55.5      & 15              & 832.5                \\
+              61 - 70  & 65.5      & 15              & 982.5                \\
+              71 - 80  & 75.5      & 8               & 604                  \\
+              81 - 90  & 85.5      & 6               & 513                  \\
+              91 - 100 & 95.5      & 4               & 382                  \\
+              \hline
+                       &           & $\sum f_1 = 66$ & $\sum x_1f_1 = 4073$ \\
+            \end{tabular}
+          \end{center}
+          $\therefore$ The mark in average is $\frac{4073}{66} = 61.71$.
 
     \item Below are the number of classes and marks for each subject of a junior student:
           \begin{center}
@@ -1143,8 +1263,20 @@
             \end{tabular}
           \end{center}
           \begin{enumerate}
-            \item Find his mark in average.
-            \item Use the number of classes as the weight to find his average mark.
+            \item Find his mark in average. \sol{}
+                  \begin{flalign*}
+                    \bar{x} & = \frac{75 + 73 + 65 + 82 + 86 + 73 + 87}{7} \\
+                            & = \frac{541}{7}                              \\
+                            & = 77.29
+                  \end{flalign*}
+
+            \item Use the number of classes as the weight to find his average mark. \sol{}
+                  \begin{flalign*}
+                    \bar{x} & = \frac{75 \times 7 + 73 \times 7 + \cdots + 87 \times 3}{7 + 7 + 7 + 7 + 5 + 3 + 3} & \\
+                            & = \frac{525 + 511 + 455 + 574 + 430 + 219 + 261}{39}                                   \\
+                            & = \frac{2975}{39}                                                                      \\
+                            & = 76.28
+                  \end{flalign*}
           \end{enumerate}
     \item The weight of 60 junior 2 students in a school are as follows:
           \begin{center}
@@ -1865,6 +1997,129 @@
                     \hline
                   \end{tabular}
           \end{enumerate}
+
+  \end{enumerate}
+
+  \subsection*{Exercise 18.4c}
+
+  \begin{enumerate}
+    \item Find the variance and standard deviation of the following dataset:
+          \begin{enumerate}
+            \item 3 \quad 6 \quad 3 \quad 8
+            \item 3 \quad 3 \quad 4 \quad 5 \quad 10
+            \item 2 \quad 9 \quad 10 \quad 10 \quad 12 \quad 2 \quad 10 \quad 9
+          \end{enumerate}
+    \item Find the variance and standard deviation of the data:
+          \begin{enumerate}
+            \item \begin{tabular}{|c|c|}
+                    \hline
+                    Values & Frequency \\
+                    \hline
+                    6      & 35        \\
+                    5      & 36        \\
+                    4      & 30        \\
+                    \hline
+                  \end{tabular}
+            \item \begin{tabular}{|c|c|}
+                    \hline
+                    Values & Frequency \\
+                    \hline
+                    60     & 4         \\
+                    70     & 6         \\
+                    80     & 2         \\
+                    90     & 5         \\
+                    100    & 1         \\
+                    \hline
+                  \end{tabular}
+          \end{enumerate}
+    \item Given two sets of data:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              A    & B    \\
+              \hline
+              9.9  & 10.3 \\
+              10.3 & 10   \\
+              9.8  & 9.5  \\
+              10.1 & 10.4 \\
+              10.4 & 10.5 \\
+              10   & 9.4  \\
+              9.8  & 9.8  \\
+              9.7  & 10.1 \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Find the mean and variance of these two sets of data respectively, and state which set of data is more spread out.
+    \item Given the Chinese language test scores of two groups of students are as
+          follows:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Group A & Group B \\
+              \hline
+              76      & 82      \\
+              90      & 84      \\
+              84      & 85      \\
+              86      & 89      \\
+              81      & 79      \\
+              87      & 80      \\
+              86      & 91      \\
+              82      & 89      \\
+              85      & 79      \\
+              83      & 74      \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Find the mean and standard deviation of these two sets of data respectively, and state which set of data is more centered.
+    \item The table below shows the height distribution of all students of the same
+          grade:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Height ($cm$) & Frequency \\
+              \hline
+              145 - 149     & 10        \\
+              150 - 154     & 36        \\
+              155 - 159     & 193       \\
+              160 - 164     & 205       \\
+              165 - 169     & 240       \\
+              170 - 174     & 83        \\
+              175 - 179     & 33        \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Find the mean and standard deviation of the height of all students of the same grade.
+    \item Following are teh weight distribution of 100 students in a school:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Weight ($kg$) & Number of Students \\
+              \hline
+              45 - 47       & 3                  \\
+              48 - 50       & 16                 \\
+              51 - 53       & 20                 \\
+              54 - 56       & 32                 \\
+              57 - 59       & 15                 \\
+              60 - 62       & 10                 \\
+              63 - 65       & 4                  \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Find the variance and standard deviation.
+    \item Given the sum of 10 values is 400, and the sum of their square is 16400. Find
+          the mean and standard deviation of these 10 values.
+    \item Given 30 values $x_1$, $x_2$, $\cdots$, $x_{30}$, the mean of these values is
+          5, and the standard deviation is 2. Find $\sum_{i=1}^{30} x_i$ and
+          $\sum_{i=1}^{30} x_i^2$.
+    \item The mean of 5 values is 10, and it remains the same after adding $p$ to
+          dataset.
+          \begin{enumerate}
+            \item Find the value of $p$.
+            \item If the sum of square of 5 original values is 558, find the variance of the 6
+                  values after adding $p$.
+          \end{enumerate}
+    \item Given that the mean of 3, 6, 7, 8, 9, 12, 14, 15, $x$, $y$ is 13, standard
+          deviation is $\sqrt{102}$, find the value of $x$ and $y$.
   \end{enumerate}
 
   \section{Coefficient of Variation}
