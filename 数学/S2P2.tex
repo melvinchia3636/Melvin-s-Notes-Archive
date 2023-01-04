@@ -1067,7 +1067,7 @@
           \end{center}
   \end{enumerate}
 
-  \subsection{Exercise 18.3a}
+  \subsection*{Exercise 18.3a}
 
   \begin{enumerate}
     \item Take a sample of 20 from a batch of machine parts, their weight (in $g$) are as
@@ -1198,7 +1198,7 @@
     M = L_m + \left(\frac{\frac{n}{2} - F_m}{f_m}\right)C_m
   \end{cequation}
 
-  \subsection{Practice 4}
+  \subsection*{Practice 4}
 
   \begin{enumerate}
     \item 10 workers in a factory made the same type of product in a day, the number of products made are as follows:
@@ -1244,7 +1244,7 @@
           Find the median of the time distribution of these students.
   \end{enumerate}
 
-  \subsection{Exercise 18.3b}
+  \subsection*{Exercise 18.3b}
 
   \begin{enumerate}
     \item During a gymnastic competition, there are four judges scoring the performance
@@ -1521,13 +1521,13 @@
           \begin{center}
             \begin{tabular}{|c|c|}
               \hline
-              Scores $x$        & Number of Students \\ \hline
-              $40 < x \leq 50$  & 12                 \\
-              $50 < x \leq 60$  & 30                 \\
-              $60 < x \leq 70$  & 35                 \\
-              $70 < x \leq 80$  & 25                 \\
-              $80 < x \leq 90$  & 10                 \\
-              $90 < x \leq 100$ & 3                  \\
+              Scores $x$       & Number of Students \\ \hline
+              $40 < x \leq 50$ & 12                 \\
+              $50 < x \leq 60$ & 30                 \\
+              $60 < x \leq 70$ & 35                 \\
+              $70 < x \leq 80$ & 25                 \\
+              $80 < x \leq 90$ & 10                 \\
+              $9 < x \leq 100$ & 3                  \\
               \hline
             \end{tabular}
           \end{center}
@@ -1540,6 +1540,332 @@
   \end{enumerate}
 
   \section{Measures of Dispersion}
+
+  The measures of dispersion can be used to describe the spread of the data.
+
+  When we're describing a set of data, if we only use the mean, the information
+  provided by the dataset is not enough. For example, given the mean, median, and
+  mode of the average marks of four students in a Mathematics test are all 70
+  marks, we can't tell the difference between the four students. Thier marks
+  might be similar (e.g. 68, 72, 70, 70) or they might be very different (e.g.
+  100, 40, 70, 70). The latter case is obviously more spread out than the former
+  case.
+
+  The most common measures of dispersion are range, interquartile range, quartile
+  deviation, standard deviation, mean deviation, variance, and standard
+  deviation.
+
+  \subsubsection*{Range}
+
+  The range of a set of data is the difference between the largest and the
+  smallest value in the dataset.
+
+  For grouped data, the range is the difference between the upper limit of the
+  highest class and the lower limit of the lowest class.
+
+  \subsection*{Quartile, Interquartile Range, and Quartile Deviation}
+
+  Quartiles are three value $Q_1$, $Q_2$, and $Q_3$ that divide a dataset into
+  four equal parts. $Q_2$ is the median of the dataset. $Q_1$ and $Q_3$ are the
+  medians of the two halves of the dataset, called the lower quartile and the
+  upper quartile respectively.
+
+  Assume that the number of data in a sorted dataset is $n$. If $n$ is odd, then
+
+  When $n$ is even, split the dataset into two halves, with $n/2$ data in each
+  half.
+
+  When $n$ is odd, split the data into two halves after removing the median, with
+  $(n-1)/2$ data in each half.
+
+  The median of the lower half is $Q_1$ and the median of the upper half is
+  $Q_3$.
+
+  For grouped data, we can make a cumulative frequency polygon. In the percentage
+  of the polygon,
+
+  $25\%$ of the data is below $Q_1$.
+
+  $50\%$ of the data is below $Q_2$.
+
+  $75\%$ of the data is below $Q_3$.
+
+  Using the same method of deriving the formula for median, we can derive the
+  formula for upper and lower quartiles. Let
+  \begin{flalign*}
+    n   & \text{ be the number of data in the dataset, aka } \sum f_i \\
+    L_k & \text{ be the lower boundaries of the class of } Q_k        \\
+    C_k & \text{ be the class range of the class of } Q_k             \\
+    f_k & \text{ be the frequency of the class of } Q_k               \\
+    F_k & \text{ be the cumulative frequency of the class of } Q_k    \\
+  \end{flalign*}
+  then
+  \begin{cequation}
+    Q_1 = L_1 + \left(\frac{\frac{n}{4} - F_1}{f_1}\right)C_1
+  \end{cequation}
+  \begin{cequation}
+    Q_2 = L_2 + \left(\frac{\frac{3n}{4} - F_2}{f_2}\right)C_2
+  \end{cequation}
+
+  The difference between the upper and lower quartiles is called the
+  interquartile range. That is,
+  \begin{cequation}
+    \textit{Interquartile range} = Q_3 - Q_1
+  \end{cequation}
+
+  The quartile deviation is the interquartile range divided by 2, written as
+  $Q.D.$, that is,
+  \begin{cequation}
+    \textit{Q.D.} = \frac{Q_3 - Q_1}{2}
+  \end{cequation}
+
+  Since the interquartile range and the quartile deviation are not affected by
+  the outliers, they are more robust than the range, and are more suitable for
+  representing the spread of the data.
+
+  \subsection*{Practice 6}
+
+  \begin{enumerate}
+    \item Find the range, quartiles and interquartile range of the following data:
+          \begin{enumerate}
+            \item 4 \quad 8 \quad 7 \quad 3 \quad 3 \quad 9 \quad 6 \quad 5 \quad 1 \quad 1 \quad 2
+            \item 7 \quad 6 \quad 8 \quad 8 \quad 5 \quad 6 \quad 1 \quad 9 \quad 8
+            \item 1.0 \quad 1.1 \quad 1.5 \quad 0.7 \quad 0.8 \quad 1.2 \quad 1.4\ \quad 0.9 \quad 1.6 \quad 1.3
+            \item 3 \quad 4 \quad 7 \quad 2 \quad 4 \quad 6 \quad 5 \quad 8
+          \end{enumerate}
+    \item The table below shows the cumulative frequency distribution table of the
+          heights of 60 students:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Height ($cm$) & Cumulative Frequency \\
+              \hline
+              150-155       & 3                    \\
+              155-160       & 10                   \\
+              160-165       & 22                   \\
+              165-170       & 37                   \\
+              170-175       & 51                   \\
+              175-180       & 58                   \\
+              180-185       & 60                   \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{enumerate}
+            \item Find the interquartile range of the heights of the students from the cumulative
+                  frequency polygon.
+            \item Find the interquartile range of the heights of the students using formula.
+          \end{enumerate}
+  \end{enumerate}
+
+  \subsection*{Exercise 18.4a}
+
+  \begin{enumerate}
+    \item Following are the sales of televisions of a shop in 11 days:
+          \begin{flalign*}
+            4 \quad 9 \quad 0 \quad 1 \quad 3 \quad 4 \quad 2 \quad 5 \quad 7 \quad 2 \quad 3
+          \end{flalign*}
+          Find:
+          \begin{enumerate}
+            \item The range.
+            \item The quartiles and interquartile range.
+          \end{enumerate}
+    \item Given a set of data: 1.2, 1.0, 1.1, 1.3, 1.5, 1.7, 1.2, 1.0. Find:
+          \begin{enumerate}
+            \item The range.
+            \item The quartiles and interquartile deviation.
+          \end{enumerate}
+    \item The distribution of scores of Mathematics test of 100 senior 1 students from a
+          high school are as follows:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Scores   & Number of Students \\
+              \hline
+              30 - 40  & 3                  \\
+              40 - 50  & 4                  \\
+              50 - 60  & 13                 \\
+              60 - 70  & 22                 \\
+              70 - 80  & 30                 \\
+              80 - 90  & 23                 \\
+              90 - 100 & 5                  \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Find the interquartile deviation of the scores.
+  \end{enumerate}
+
+  \subsubsection*{Mean Deviation}
+
+  Let the mean of a set of data $x_1$, $x_2$, $\ldots$, $x_n$ be $\bar{x}$, $|x_i
+    - \bar{x}|$ is the difference between the $i$th data and the mean, the mean of
+  these $n$ differences are called the mean deviation, and can be used to
+  calculate the measure of dispersion of the data. That is,
+  \begin{cequation}
+    \textit{Mean Deviation} = \frac{\sum |x_i - \bar{x}|}{n}
+  \end{cequation}
+
+  If the possible value given data are $x_1$, $x_2$, $\ldots$, $x_n$, their
+  frequencies are $f_1$, $f_2$, $\ldots$, $f_n$, respectively, then the mean
+  deviation can be calculated as follows:
+  \begin{cequation}
+    \textit{Mean Deviation} = \frac{\sum |x_i - \bar{x}|f_i}{\sum f_i}
+  \end{cequation}
+
+  For grouped data, we take the midpoints of the classes as the representative
+  value $x_i$.
+
+  \subsection*{Practice 7}
+
+  Complete the following table, and find the mean and mean deviation of the data.
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|}
+      \hline
+      Lim.    & Freq. $f_i$ & Mid. $x_i$ & $f_ix_i$ & $|x_i - \bar{x}|$ & $|x_i - \bar{x}|f_i$ \\
+      \hline
+      50 - 54 & 2           &            &          &                   &                      \\
+      55 - 59 & 3           &            &          &                   &                      \\
+      60 - 64 & 6           &            &          &                   &                      \\
+      65 - 69 & 9           &            &          &                   &                      \\
+      \hline
+    \end{tabular}
+  \end{center}
+
+  \subsection*{Exercise 18.4b}
+
+  \begin{enumerate}
+    \item Find the mean deviation of the following dataset:
+          \begin{enumerate}
+            \item 7 \quad 10 \quad 9 \quad 12 \quad 4 \quad 11 \quad 3
+            \item 58 \quad 65 \quad 38 \quad 76 \quad 43
+            \item 45.0 \quad 46.5 \quad 47.0 \quad 48.0 \quad 48.7 \quad 48.9 \quad 49.5 \quad 50.4
+          \end{enumerate}
+    \item The table below shows the frequency of the number of questions answered
+          correctly by 26 students in a Mathematics minor test:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Num. of Corr. Ans. Ques. & Num. of Stud. \\
+              \hline
+              1                        & 0             \\
+              2                        & 1             \\
+              3                        & 1             \\
+              4                        & 1             \\
+              5                        & 6             \\
+              6                        & 8             \\
+              7                        & 6             \\
+              8                        & 1             \\
+              9                        & 1             \\
+              10                       & 1             \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Find the mean deviation fo the number of questions answered correctly.
+    \item Following are the test scores of 36 students:
+          \begin{flalign*}
+            77 & \quad 60 \quad 52 \quad 73 \quad 60 \quad 50 \quad 70 \quad 60 \quad 52 & \\
+            68 & \quad 59 \quad 50 \quad 72 \quad 59 \quad 48 \quad 66 \quad 58 \quad 46   \\
+            60 & \quad 48 \quad 34 \quad 61 \quad 55 \quad 40 \quad 62 \quad 55 \quad 42   \\
+            63 & \quad 55 \quad 43 \quad 65 \quad 56 \quad 45 \quad 65 \quad 57 \quad 46
+          \end{flalign*}
+          \begin{enumerate}
+            \item Group the dataset above according to the pattern $(34 - 38)$, $(38 - 42)$, $(42
+                    - 46)$, \ldots, then make a frequency distribution table.
+            \item Find the mean from the frequency distribution table.
+            \item Find the mean deviation from the frequency distribution table.
+          \end{enumerate}
+  \end{enumerate}
+
+  \subsubsection*{Variance}
+
+  Let the mean of a set of data $x_1$, $x_2$, $\ldots$, $x_n$ be $\bar{x}$,
+  ${(x_1 - \bar{x})}^2$ be the square of the difference between the $i^{th}$ data
+  and the mean, the square of the mean of these $n$ differences are called the
+  variance, written as $\sigma^2$, that is,
+  \begin{cequation}
+    \sigma^2 = \frac{\sum (x_i - \bar{x})^2}{n}
+  \end{cequation}
+
+  The square root of the variance is called the standard deviation, written as
+  $\sigma$, that is,
+  \begin{cequation}
+    \sigma = \sqrt{\frac{\sum (x_i - \bar{x})^2}{n}}
+  \end{cequation}
+
+  If the possible values of given data are $x_1$, $x_2$, $\ldots$, $x_n$, their
+  frequencies are $f_1$, $f_2$, $\ldots$, $f_n$, respectively, then
+  \begin{cequation}
+    \sigma^2 = \frac{\sum (x_i - \bar{x})^2f_i}{\sum f_i}
+  \end{cequation}
+  \begin{cequation}
+    \sigma = \sqrt{\frac{\sum (x_i - \bar{x})^2f_i}{\sum f_i}}
+  \end{cequation}
+
+  For grouped data, we take the midpoints of the classes as the representative
+  value $x_i$.
+
+  The above formula are a bit complicated, so we can simplify the formula:
+  \begin{flalign*}
+    \sigma^2 & = \frac{\sum (x_i - \bar{x})^2f_i}{\sum f_i}                                  \\
+             & = \frac{\sum x_i^2 f_i - 2\bar{x}\sum x_i f_i + \sum \bar{x}^2 f_i}{\sum f_i} \\
+             & = \frac{\sum x_i^2 f_i}{\sum f_i} - 2\bar{x}^2 + \bar{x}^2                    \\
+             & = \frac{\sum x_i^2 f_i}{\sum f_i} - \bar{x}^2
+  \end{flalign*}
+
+  Hence, when the frequency of value $x_i$ is $f_i$, Then
+  \begin{cequation}
+    \sigma^2 = \frac{\sum x_i^2 f_i}{\sum f_i} - \bar{x}^2
+  \end{cequation}
+  \begin{cequation}
+    \sigma = \sqrt{\frac{\sum x_i^2 f_i}{\sum f_i} - \bar{x}^2}
+  \end{cequation}
+
+  When all the frequencies $f_i$ are equal to $1$, then
+  \begin{cequation}
+    \sigma^2 = \frac{\sum x_i^2}{n} - \bar{x}^2
+  \end{cequation}
+  \begin{cequation}
+    \sigma = \sqrt{\frac{\sum x_i^2}{n} - \bar{x}^2}
+  \end{cequation}
+
+  Compared to mean deviation, the variance and standard deviation do not contain
+  absolute value, so it is more convenient to use them. Furthermore, the variance
+  and standard deviation are more sensitive to the difference between the data
+  and the mean, so they are more commonly used in daily life.
+
+  \subsection{Practice 8}
+
+  \begin{enumerate}
+    \item Measuring the height of 10 plant seedlings (in $cm$) in a lab, we get the
+          following data:
+          \begin{flalign*}
+            12 \quad 6 \quad 15 \quad 3 \quad 12 \quad 6 \quad 21 \quad 15 \quad 15 \quad 18 \quad 12
+          \end{flalign*}
+          Find the standard deviation of the height of the plant seedlings.
+    \item Complete the following table, then find the standard deviation.
+          \begin{enumerate}
+            \item \begin{tabular}{|c|c|c|c|}
+                    \hline
+                    $x_i$ & $f_i$ & $x_i f_i$ & $x_i^2 f_i$ \\
+                    \hline
+                    3     & 30    &           &             \\
+                    5     & 35    &           &             \\
+                    7     & 28    &           &             \\
+                    \hline
+                  \end{tabular}
+            \item \begin{tabular}{|c|c|c|c|c|}
+                    \hline
+                    Limit     & $f_i$ & $Mid. x_i$ & $x_i f_i$ & $x_i^2 f_i$ \\
+                    \hline
+                    150 - 154 & 5     &            &           &             \\
+                    155 - 159 & 8     &            &           &             \\
+                    160 - 164 & 10    &            &           &             \\
+                    165 - 169 & 7     &            &           &             \\
+                    170 - 174 & 6     &            &           &             \\
+                    175 - 179 & 4     &            &           &             \\
+                    \hline
+                  \end{tabular}
+          \end{enumerate}
+  \end{enumerate}
 
   \section{Coefficient of Variation}
 
