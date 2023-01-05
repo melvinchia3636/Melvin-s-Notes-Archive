@@ -1242,6 +1242,7 @@
               91 - 100 & 95.5      & 4               & 382                  \\
               \hline
                        &           & $\sum f_1 = 66$ & $\sum x_1f_1 = 4073$ \\
+              \hline
             \end{tabular}
           \end{center}
           $\therefore$ The mark in average is $\frac{4073}{66} = 61.71$.
@@ -1293,7 +1294,40 @@
               \hline
             \end{tabular}
           \end{center}
-          Given that tme mean weight of these students is 60.1 kg, find the value of $x$ and $y$.
+          Given that the mean weight of these students is 60.1 kg, find the value of $x$ and $y$.
+          \sol{}
+          \begin{flalign*}
+            \text{Total weight} & = 60.1 \times 60 = 3606
+          \end{flalign*}
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|}
+              \hline
+              Wght (kg) & M. $x_1$ & Freq. $f_1$     & $x_1f_1$             \\
+              \hline
+              54 - 56   & 55       & 10              & 550                  \\
+              57 - 59   & 58       & 20              & 1160                 \\
+              60 - 62   & 61       & $x$             & $61x$                \\
+              63 - 65   & 64       & 8               & 512                  \\
+              66 - 68   & 67       & 4               & 268                  \\
+              69 - 71   & 70       & $y$             & $70y$                \\
+              \hline
+                        &          & $\sum f_1 = 60$ & $\sum x_1f_1 = 3606$ \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{numcases}{}
+            10 + 20 + x + 8 + 4 + y = 60 \\
+            550 + 1160 + 61x + 512 + 268 + 70y = 3606
+          \end{numcases}
+          \begin{flalign*}
+            (1):             & \ 42 + x + y = 60  \\
+                             & x + y = 18         \\
+            (2):             & \ 61x + 70y = 1116 \\
+            (1) \times 61:   & \ 61x + 61y = 1098 \\
+            (2) - (1):       & \ 9y = 18          \\
+                             & \ y = 2            \\
+            \text{From }(1): & \ x = 16
+          \end{flalign*}
   \end{enumerate}
 
   \subsection*{Median}
@@ -1308,7 +1342,6 @@
   For grouped data, we can make a cumulative frequency polygon, and the median is
   the value corresponding to $50\%$ of the percentage of the cumulative
   frequency.
-
   \begin{flalign*}
     \text{Let } & n \text{ be the number of values in the dataset, aka }\sum f_1, & \\
                 & L_m \text{ be the lower boundaries of the group of the median,}   \\
@@ -1316,6 +1349,33 @@
                 & f_m \text{ be the frequency of the group of the median,}          \\
                 & F_m \text{ be the cum. frequency of the group of the median,}
   \end{flalign*}
+  \begin{center}
+    \begin{tikzpicture}
+      \draw (0,0) -- (5,0);
+      \draw (0,0) -- (0,4);
+      \draw (0,0) -- (1.5, 1) -- (3, 3) -- (5, 4);
+      \filldraw (0, 0) circle (0.04);
+      \filldraw (1.5, 1) circle (0.04);
+      \filldraw (3, 3) circle (0.04);
+      \filldraw (5, 4) circle (0.04);
+      \draw (0, 3) -- (3, 3);
+      \draw (0, 2) -- (2.25, 2) -- (2.25, 0);
+      \draw (1.5, 0) -- (1.5, 1) -- (0, 1);
+      \draw (1.5, 1) -- (3, 1);
+      \draw (3, 0) -- (3, 1.2);
+      \draw (3, 1) node [right] {\footnotesize{${Q}$}};
+      \draw (2.25, 1) node [below right] {\footnotesize{${S}$}};
+      \draw (1.5, 1) node [above] {\footnotesize{${P}$}};
+      \draw (2.25, 2) node [above] {\footnotesize{${T}$}};
+      \draw (3, 3) node [below right] {\footnotesize{${R}$}};
+      \draw (0, 3) node [left] {\footnotesize{$F_m + f_m$}};
+      \draw (0, 2) node [left] {\small{$\frac{n}{2}$}};
+      \draw (0, 1) node [left] {\small{$F_m$}};
+      \draw (1.5, 0) node [below] {\small{$L_m$}};
+      \draw (2.25, 0) node [below] {\small{$M$}};
+      \draw (3, 0) node [below=8pt, right=-6pt] {\small{$L_m + C_m$}};
+    \end{tikzpicture}
+  \end{center}
 
   Diagram above shows a part of a cumulative frequency polygon, where $R$ is the
   point corresponding to the group containing the median, $P$ is the point
