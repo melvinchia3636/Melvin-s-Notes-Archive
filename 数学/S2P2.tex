@@ -1399,6 +1399,16 @@
             19 & \qquad 17 \qquad 16 \qquad 14 \qquad 12
           \end{flalign*}
           Find the median of the number of products made by these 10 workers.
+          \sol{}
+
+          Sort the dataset:
+          \begin{cequation}
+            10 \quad 12 \quad 14 \quad 14 \quad 15 \quad 15 \quad 16 \quad 17 \quad 17 \quad 19
+          \end{cequation}
+
+          The median is the mean of the number in $\frac{10}{2} = 5$ and $\frac{10}{2}+1
+            = 6$ position, which is $\frac{15 + 15}{2} = 15$.
+
     \item The table below shows the result of a right eye vision test for 49 students in
           a class:
           \begin{center}
@@ -1419,6 +1429,27 @@
             \end{tabular}
           \end{center}
           Find the median of the right eye vision of these students.
+          \sol{}
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              Vision & Number of Students & Cum. Frequency \\
+              \hline
+              0.2    & 2                  & 2              \\
+              0.3    & 3                  & 5              \\
+              0.4    & 4                  & 9              \\
+              0.5    & 3                  & 12             \\
+              0.6    & 4                  & 16             \\
+              0.8    & 9                  & 25             \\\
+
+              1.0    & 9                  & 34             \\
+              1.2    & 10                 & 44             \\
+              1.5    & 5                  & 49             \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Since $n = 49$ is odd, the median is the number in the $\frac{49 + 1}{2} = 25$ position, which is $0.8$.
+
     \item The table below shows time distribution of 21 students browsing the Internet:
           \begin{center}
             \begin{tabular}{|c|c|}
@@ -1434,6 +1465,25 @@
             \end{tabular}
           \end{center}
           Find the median of the time distribution of these students.
+          \sol{}
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              Time      & Freq. & Cum. Freq. \\
+              \hline
+              1.1 - 1.3 & 4     & 4          \\
+              1.4 - 1.6 & 3     & 7          \\
+              1.7 - 1.9 & 5     & 12         \\
+              2.0 - 2.2 & 4     & 16         \\
+              2.3 - 2.5 & 5     & 21         \\
+              \hline
+            \end{tabular}
+          \end{center}
+          The median is the number in the $\frac{21}{2} = 10.5$ position, which is $1.7 - 1.9$.
+          $C_m = 0.3$, $L_m = 1.65$, and $f_m = 5$, $F_m = 7$.
+          \begin{flalign*}
+            \therefore\ \textit{Mean} = 1.65 + \frac{10.5 - 7}{5} \times 0.3 = 1.86
+          \end{flalign*}
   \end{enumerate}
 
   \subsection*{Exercise 18.3b}
@@ -1443,6 +1493,14 @@
           of each contestant, and the median of these four scores are taken as the final
           score of the contestant. Given that the scores given by four judges are $9.5$,
           $9.4$, $9.8$, and $9.4$ respectively, find the final score of the contestant.
+          \sol{}
+
+          Sort the scores:
+          \begin{cequation}
+            9.4 \quad 9.4 \quad 9.5 \quad 9.8
+          \end{cequation}
+          The median is the mean of the number in $\frac{4}{2} = 2$ and $\frac{4}{2}+1 = 3$ position, which is $\frac{9.4 + 9.5}{2} = 9.45$.
+
     \item Following are the weight of 15 boys with same age:
           \begin{flalign*}
             36 & \qquad 35 \qquad 33 \qquad 37 \qquad 35 \\
@@ -1450,9 +1508,36 @@
             40 & \qquad 41 \qquad 36 \qquad 38 \qquad 37
           \end{flalign*}
           \begin{enumerate}
-            \item Find the median of these 15 boys
+            \item Find the median of these 15 boys. \sol{}
+
+                  Sort the data:
+                  \begin{flalign*}
+                    33 & \quad 35 \quad 35 \quad 36 \quad 36 \quad 37 \quad 37 \quad 38 \quad 38 \quad 38 & \\
+                    39 & \quad 40 \quad 41 \quad 42 \quad 43
+                  \end{flalign*}
+                  The median is the mean of the number in $\frac{15+1}{2} = 8$ position, which is $38$.
+
             \item Group the data using pattern $33 - 35$, $35 - 37$, $\ldots$, $41 - 43$. Then,
-                  find the median.
+                  find the median. \sol{}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|}
+                      \hline
+                      Weight ($kg$) & Frequency & Cum. Frequency \\
+                      \hline
+                      33 - 35       & 1         & 1              \\
+                      35 - 37       & 4         & 5              \\
+                      37 - 39       & 5         & 10             \\
+                      39 - 41       & 2         & 12             \\
+                      41 - 43       & 2         & 14             \\
+                      43 - 45       & 1         & 15             \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  The median is the number in the $\frac{15}{2} = 7.5$ position.
+                  $C_m = 2$, $L_m = 37$, $f_m = 5$, and $F_m = 5$.
+                  \begin{flalign*}
+                    \therefore\ \textit{Median} = 37 + \frac{7.5 - 5}{5} \times 2 = 38
+                  \end{flalign*}
           \end{enumerate}
     \item The table below shows the score distribution of a group of pupils in a minor
           test:
@@ -1470,6 +1555,28 @@
             \end{tabular}
           \end{center}
           Assume that the median is 15, find the possibility value of $x$.
+          \sol{}
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              Score & Freq. & Cum. Freq. \\
+              \hline
+              5     & 4     & 4          \\
+              10    & 2     & 6          \\
+              15    & 3     & 9          \\
+              20    & $x$   & 9 + x      \\
+              25    & 4     & 13 + x     \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{flalign*}
+            \frac{13 + x + 1}{2} & \leq 9     \\
+            14 + x               & \leq 18    \\
+            x                    & \leq 4     \\
+            \therefore\ 0 \leq   & \ x \leq 4
+          \end{flalign*}
+          Therefore, the possibility values of $x$ are 0, 1, 2, 3, and 4.
+
     \item The following table shows the income of employees in a company:
           \begin{center}
             \begin{tabular}{|c|c|}
@@ -1485,9 +1592,51 @@
             \end{tabular}
           \end{center}
           \begin{enumerate}
-            \item Find the median of their income using cumulative frequency polygon.
+            \item Find the median of their income using cumulative frequency polygon. \sol{}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|}
+                      \hline
+                      Income ($\$$) & Freq. & Cum. Freq. \\
+                      \hline
+                      1000 - 2000   & 11    & 11         \\
+                      2000 - 3000   & 17    & 28         \\
+                      3000 - 4000   & 20    & 48         \\
+                      4000 - 5000   & 10    & 58         \\
+                      5000 - 6000   & 2     & 60         \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  The median is the number in $\frac{60}{2} = 30$ position.
+                  \begin{center}
+                    \begin{tikzpicture}[scale=0.8]
+                      \begin{axis}[
+                        title style = {align = center},
+                        title={\large{Cumulative Frequency Polygon of} \\ \large{Distribution of Income}},
+                        ymin=0, ymax=65,
+                        ytick={0, 5, ..., 65},
+                        xtick style={draw=none, fill=none, font=\footnotesize}, x tick label style =
+                          {rotate=90,anchor=east}, xlabel=Income ($\$$), ylabel=Frequency, xlabel
+                        style={at={(axis description cs:0.5, -0.08)}, anchor=north}, ylabel
+                        style={at={(axis description cs:0.05, 0.5)}, anchor=center}, ] \addplot[forget
+                          plot, sharp plot, mark=*, mark size=1.5pt, mark options={solid, fill=black,
+                              draw=black}, draw=black] coordinates { (1000, 0) (2000, 11) (3000, 28) (4000, 48) (5000, 58) (6000, 60) };
+                        \draw [dashed] (axis cs:0, 30) -- (axis cs:3100, 30) -- (axis cs:3100, 0);
+                      \end{axis}
+                    \end{tikzpicture}
+                  \end{center}
+                  Therefore, the median of their income is $\$3100$.
+
             \item Find the median of their income using formula and compare the result with (a).
+                  \sol{}
+
+                  The median is the number in the $\frac{60}{2} = 30$ position, which is $3000 -
+                    4000$. $C_m = 1000$, $L_m = 3000$, and $f_m = 20$, $F_m = 28$.
+                  \begin{cequation}
+                    \therefore\ \textit{Median} = 3000 + \frac{30 - 28}{20} \times 1000 = 3100
+                  \end{cequation}
+                  Therefore, the median of their income is $\$3100$, which is the same as (a).
           \end{enumerate}
+
     \item The table below shows the distribution of height of 20 students:
           \begin{center}
             \begin{tabular}{|c|c|}
@@ -1504,9 +1653,35 @@
           \end{center}
           Find:
           \begin{enumerate}
-            \item The value of $x$.
-            \item The median of their height.
+            \item The value of $x$. \sol{}
+                  \begin{flalign*}
+                    x + 3 + 4 + 5 + 6 & = 20      \\
+                    x                 & = 20 - 18 \\
+                                      & = 2
+                  \end{flalign*}
+
+            \item The median of their height. \sol{}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|}
+                      \hline
+                      Height $(cm)$ & Freq. & Cum. Freq. \\
+                      \hline
+                      120 - 130     & 3     & 3          \\
+                      130 - 140     & 4     & 7          \\
+                      140 - 150     & 2     & 9          \\
+                      150 - 160     & 5     & 14         \\
+                      160 - 170     & 6     & 20         \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  The median is the number in $\frac{20}{2} = 10$ position, which is $150 - 160$.
+                  $C_m = 10$, $L_m = 150$, $f_m = 5$, and $F_m = 9$.
+                  \begin{cequation}
+                    \therefore\ \textit{Median} = 150 + \frac{10 - 9}{5} \times 10 = 152
+                  \end{cequation}
+                  Therefore, the median of their height is $152cm$.
           \end{enumerate}
+
     \item The table below shows the distribution of wages of workers in a factory:
           \begin{center}
             \begin{tabular}{|c|c|}
@@ -1522,6 +1697,31 @@
             \end{tabular}
           \end{center}
           Given that the median is $63.5$, find the value of $x$.
+          \sol{}
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              Wages $\$$ & Freq. & Cum. Freq. \\
+              \hline
+              40 - 49    & 4     & 4          \\
+              50 - 59    & 14    & 18         \\
+              60 - 69    & 5     & 23         \\
+              70 - 79    & x     & 23 + x     \\
+              80 - 89    & 2     & 25 + x     \\
+              \hline
+            \end{tabular}
+          \end{center}
+
+          $63.5$ is in between $60 - 69$, which is in the $\frac{25 + x}{2}$ position. $C_m = 10$, $L_m = 59.5$, $f_m = 5$, $F_m = 18$.
+          \begin{flalign*}
+            59.5 + \frac{\frac{25 + x}{2} - 18}{5} \times 10 & = 63.5 \\
+            \frac{\frac{25 + x}{2} - 18}{5} \times 10        & = 4    \\
+            \frac{\frac{25 + x}{2} - 18}{5}                  & = 0.4  \\
+            \frac{25 + x}{2} - 18                            & = 2    \\
+            \frac{25 + x}{2}                                 & = 20   \\
+            25 + x                                           & = 40   \\
+            x                                                & = 15
+          \end{flalign*}
   \end{enumerate}
 
   \subsection*{Mode}
@@ -1533,6 +1733,34 @@
   For grouped data, the mode is the class that has the highest frequency, and
   there can be more than one mode. Besides that, the mode can also be estimated
   using histogram. The method is as follows:
+
+  \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+      \begin{axis}[
+          ymin=0, ymax=16,
+          ticks=none,
+          ybar interval,
+          grid=none,
+          xtick style={draw=none},
+          axis x line*=bottom,
+          axis y line*=left,
+        ]
+        \addplot[draw=black, style={fill=gray!40},mark=no] plot coordinates { (0, 2) (1, 3) (2, 9) (3, 14) (4, 11) (5, 8) (6, 3) (7, 0) };
+        \draw (axis cs:3, 9) -- (axis cs:4, 14);
+        \draw (axis cs:3, 14) -- (axis cs:4, 11);
+        \draw [dashed] (axis cs:3.63, 0) -- (axis cs: 3.63, 12);
+        \node at (axis cs:3, 9) [above left] {$S$};
+        \node at (axis cs:4, 14) [above right] {$Q$};
+        \node at (axis cs:3, 14) [above left] {$P$};
+        \node at (axis cs:4, 11) [above right] {$R$};
+        \draw [|<->|] (axis cs:1.8, 9) -- (axis cs: 1.8, 14) node [midway, fill=white] {$d_1$};
+        \draw [|<->|] (axis cs:5.2, 11) -- (axis cs: 5.2, 14) node [midway, fill=white] {$d_2$};
+      \end{axis}
+      \node at (3.55, -0.4) {$\textit{mode}$};
+      \node at (7, 0) [right] {\footnotesize{\textit{Data}}};
+      \node at (0, 5.8) [above] {\footnotesize{\textit{Frequency}}};
+    \end{tikzpicture}
+  \end{center}
 
   The diagram above shows a histogram of a set of data. The class corresponding
   to the highest rectangle is the mode of the data, and the mode is the x-value
@@ -1551,7 +1779,7 @@
   \end{flalign*}
   then
   \begin{cequation}
-    \text{mode} = L + \left(\frac{d_1}{d_1 + d_2}\right)C
+    \textit{mode} = L + \left(\frac{d_1}{d_1 + d_2}\right)C
   \end{cequation}
 
   \subsection*{Practice 5}
@@ -1574,9 +1802,42 @@
     \end{tabular}
   \end{center}
   \begin{enumerate}[label=(\alph*)]
-    \item Find the modal class.
-    \item Find the mode of score of the students using histogram.
-    \item Find the mode of score of the students using formula.
+    \item Find the modal class. \sol{}
+
+          The modal class is $50 - 59$, which has the highest frequency of 12.
+
+    \item Find the mode of score of the students using histogram. \sol{}
+          \begin{center}
+            \begin{tikzpicture}[scale=0.9]
+              \begin{axis}[
+                  title style = {align = center},
+                  title={\large{Histogram of} \\ \large{Distribution of Mathematics Score}},
+                  ymin=0, ymax=16,
+                  ytick={0, 2, ..., 16},
+                  grid=none,
+                  xtick style={draw=none, fill=none, font=\footnotesize},
+                  x tick label style = {rotate=90,anchor=east},
+                  xlabel=Score, ylabel=Frequency,
+                  xlabel style={at={(axis description cs:0.5, -0.1)}, anchor=north},
+                  ylabel style={at={(axis description cs:0.05, 0.5)}, anchor=center},
+                ]
+                \addplot[ybar interval, draw=black, style={fill=gray!40},mark=no] plot coordinates { (19.5, 2) (29.5, 6) (39.5, 10) (49.5, 12) (59.5, 3) (69.5, 2) (79.5, 1) };
+                \draw (axis cs:50, 10) -- (axis cs:60, 12);
+                \draw (axis cs:50, 12) -- (axis cs:60, 3);
+                \draw [dashed] (axis cs:51.7, 0) -- (axis cs: 51.7, 10.5);
+              \end{axis}
+            \end{tikzpicture}
+          \end{center}
+
+          The mode of score of the students is approximately $51.5$.
+
+    \item Find the mode of score of the students using formula. \sol{}
+
+          $L = 49.5$, $C = 10$, $d_1 = 12 - 10 = 2$, $d_2 = 12 - 3 = 9$.
+          \begin{flalign*}
+            \therefore\ \textit{Mode} = 49.5 + \left(\frac{2}{2 + 9}\right)10 = 51.32
+          \end{flalign*}
+
   \end{enumerate}
 
   \subsection*{Comparing mean, median and mode}
@@ -1590,9 +1851,20 @@
     \item Find the mode of the following data:
           \begin{enumerate}
             \item $3 \quad 4 \quad 3 \quad 2 \quad 4 \quad 5 \quad 5 \quad 5 \quad 4 \quad 4$
+                  \sol{}
+
+                  The mode is $4$, which has the highest frequency of 4.
+
             \item $7 \quad 6 \quad 8 \quad 8 \quad 5 \quad 6 \quad 6 \quad 9 \quad 8 \quad 5$
+                  \sol{}
+
+                  The mode is $6$ and $8$, which has the highest frequency of 3.
+
             \item $1.0 \quad 1.1 \quad 1.0 \quad 0.9 \quad 0.8 \quad 1.2 \quad 1.0 \quad 0.9 \quad 1.1 \quad$\\
                   $1.0$
+                  \sol{}
+
+                  The mode is $1.0$, which has the highest frequency of 4.
           \end{enumerate}
     \item In the sport competition of a high school, the scores of 17 athletes
           participating in men's high jump are as follows:
@@ -1612,6 +1884,32 @@
             \end{tabular}
           \end{center}
           Find the mean, median and mode of their scores.
+          \sol{}
+          \begin{flalign*}
+            \textit{Mean} & = \frac{1.50 \times 2 + 1.60 \times 3 + \cdots + 1.90 \times 1}{17} & \\
+                          & = \frac{3 + 4.8 + 3.3 + 5.1 + 7 + 1.8 + 1.85 + 1.9}{17}               \\
+                          & = \frac{28.75}{17}                                                    \\
+                          & = 1.69m
+          \end{flalign*}
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              Scores ($m$) & No. of Athletes & Cum. Frequency \\ \hline
+              1.50         & 2               & 2              \\
+              1.60         & 3               & 5              \\
+              1.65         & 2               & 7              \\
+              1.70         & 3               & 10             \\
+              1.75         & 4               & 14             \\
+              1.80         & 1               & 15             \\
+              1.85         & 1               & 16             \\
+              1.90         & 1               & 17             \\
+              \hline
+            \end{tabular}
+          \end{center}
+          The median is the number at $\frac{17 + 1}{2} = 9$th position, which is $1.70m$.
+
+          The mode is $1.75m$, which has the highest frequency of 4.
+
     \item In a Mathematics competition, the scores and the number of students who
           obtained the scores are as follows:
           \begin{center}
@@ -1627,10 +1925,23 @@
             \end{tabular}
           \end{center}
           Find the modal class and the mode.
-    \item Given that the mean of a dataset containing positive integers is 3, 5, 8, 6, 8,
-          10, 5, 3, $x$, $y$,
+          \sol{}
+
+          The modal clsas is $30 - 39$, which has the highest frequency of 80.
+
+          $L = 29.5$, $C = 10$, $d_1 = 80 - 60 = 20$, $d_2 = 80 - 40 = 40$.
+          \begin{flalign*}
+            \therefore\ \textit{Mode} = 29.5 + \left(\frac{20}{20 + 40}\right)10 = 32.83
+          \end{flalign*}
+
+    \item Given that the mean of a dataset 3, 5, 8, 6, 8, 10, 5, 3, $x$, $y$ is 6,
           \begin{enumerate}
-            \item Prove that $x+y = 12$
+            \item Prove that $x+y = 12$ \prooff{}
+                  \begin{flalign*}
+                    \frac{3 + 5 + 8 + 6 + 8 + 10 + 5 + 3 + x + y}{10} & = 6  \\
+                    48 + x + y                                        & = 60 \\
+                    x + y                                             & = 12
+                  \end{flalign*}
             \item With that, if
                   \begin{enumerate}
                     \item $x = y$
