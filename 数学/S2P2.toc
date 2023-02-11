@@ -1,0 +1,26 @@
+\contentsline {chapter}{\numberline {18}Statistics}{2}{}%
+\contentsline {section}{\numberline {18.1}Basic Concepts}{2}{}%
+\contentsline {section}{\numberline {18.2}Data Processing}{2}{}%
+\contentsline {section}{\numberline {18.3}Central Tendency}{9}{}%
+\contentsline {section}{\numberline {18.4}Measures of Dispersion}{18}{}%
+\contentsline {subsection}{\numberline {18.4.1}Practice 8}{21}{}%
+\contentsline {section}{\numberline {18.5}Coefficient of Variation}{22}{}%
+\contentsline {section}{\numberline {18.6}Correlation and Correlation Coefficient}{23}{}%
+\contentsline {section}{\numberline {18.7}Statistical Index}{24}{}%
+\contentsline {chapter}{\numberline {19}Permutations and Combinations}{25}{}%
+\contentsline {section}{\numberline {19.1}Addition and Multiplication Principles}{25}{}%
+\contentsline {section}{\numberline {19.2}Permutations and Permutation Formula}{25}{}%
+\contentsline {section}{\numberline {19.3}Circular Permutations}{25}{}%
+\contentsline {section}{\numberline {19.4}Full Permutations of Inexactly Distinct Elements}{25}{}%
+\contentsline {section}{\numberline {19.5}Permutations with Repetition}{25}{}%
+\contentsline {section}{\numberline {19.6}Combinations and Combination Formula}{25}{}%
+\contentsline {chapter}{\numberline {20}Bionomial Theorem}{26}{}%
+\contentsline {section}{\numberline {20.1}Bionomial Theorem when $n$ is a Natural Number}{26}{}%
+\contentsline {section}{\numberline {20.2}General Form of Bionomial Expansion}{26}{}%
+\contentsline {chapter}{\numberline {21}Probability}{27}{}%
+\contentsline {section}{\numberline {21.1}Sample Space and Events}{27}{}%
+\contentsline {section}{\numberline {21.2}Definition of Probability}{27}{}%
+\contentsline {section}{\numberline {21.3}Addition Rule}{27}{}%
+\contentsline {section}{\numberline {21.4}Multiplication Rule}{27}{}%
+\contentsline {section}{\numberline {21.5}Mathematical Expectation}{27}{}%
+\contentsline {section}{\numberline {21.6}Normal Distribution}{27}{}%

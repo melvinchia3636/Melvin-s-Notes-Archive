@@ -2495,7 +2495,216 @@
 
   \section{Coefficient of Variation}
 
+  Generally speaking, when we want to compare the variability of two or more sets
+  of data, only comparing the standard deviation of each group is not enough. If
+  the properties or the units of the data are different, the standard deviation
+  of each group must not be comparable. For example, if we want to know whether
+  the deviation of the height of students in a class is larger than that of the
+  weight of students in the same class, we need a relative metric as the standard
+  of comparison, and the coefficient of variation is such a metric. For a
+  non-negative set of value, the definition of coefficient of variation is as
+  follows:
+  \begin{cequation}
+    \text{CV} = \frac{\sigma}{\bar{x}} \times 100\%
+  \end{cequation}
+
+  From the definition, we can see that the coefficient of variation the standard
+  deviation when the mean is 1. Thus, when the coefficient of variation is large,
+  it means that the variability of the data is large, and vice versa.
+
+  \subsection*{Practice 9}
+
+  In a minor test, the full mark of Chinese language test for senior 2 students
+  is 100, its average mark is 70, and the standard deviation is 10, while the
+  full mark of Mathematics test is 70, its average mark is 40, and the standard
+  deviation is 8. Compare the variability of the two tests.
+
+  \subsection*{Exercise 18.5}
+
+  \begin{enumerate}
+    \item The statistics of the height and width if grade 1 students in a primary school
+          are as follows:
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+                            & Mean   & Standard Deviation \\
+              \hline
+              Height ($cm$) & 115.87 & 4.86               \\
+              Width ($cm$)  & 19.39  & 2.16               \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Compare the variability of the height and width of the students.
+
+    \item The table below shows the first semester Mathematics exam average mark and
+          standard deviation of five junior 1 classes in a school:
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              Class & Average Mark & Standard Deviation \\
+              \hline
+              A     & 62           & 11                 \\
+              B     & 74           & 9                  \\
+              C     & 65           & 10                 \\
+              D     & 70           & 7                  \\
+              E     & 53           & 8                  \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Which class has the smallest coefficient of variation?
+
+    \item The table below shows the Mathematics exam results of two groups of students
+          $A$ and $B$:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Group & Marks                                  \\
+              \hline
+              A     & 60 \quad 98 \quad 76 \quad 84 \quad 52 \\
+              B     & 88 \quad 58 \quad 90 \quad 69 \quad 78 \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{enumerate}
+            \item Find the average mark of each group.
+            \item Find the standard deviation of each group.
+            \item Find the coefficient of variation of each group.
+          \end{enumerate}
+
+    \item The table below shows the price of of papayas and grapes per kilogram in the
+          first half of the year (in $\$$):
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              Month    & Papaya & Grapes \\
+              \hline
+              January  & 3.50   & 20.00  \\
+              February & 3.00   & 22.00  \\
+              March    & 2.50   & 24.00  \\
+              April    & 3.20   & 23.00  \\
+              May      & 3.60   & 18.00  \\
+              June     & 2.80   & 21.00  \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{enumerate}
+            \item Find the average price and standard deviation of papayas and grapes
+                  respectively in the first half of the year.
+            \item Which fruit has greater variability in price?
+          \end{enumerate}
+
+    \item The table below shows the distribution of annual average marks of two classes
+          of students $A$ and $B$:
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              Marks Range & Class A & Class B \\
+              \hline
+              40 - 49     & 3       & 4       \\
+              50 - 59     & 4       & 10      \\
+              60 - 69     & 10      & 17      \\
+              70 - 79     & 16      & 14      \\
+              80 - 89     & 12      & 1       \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Find the coefficient of variation of annual average marks of each class respectively.
+  \end{enumerate}
+
   \section{Correlation and Correlation Coefficient}
+
+  \subsection*{Correlation}
+
+  In statistics, correlation is a statistical measure of the degree to which two
+  or more variables move in relation to each other. For example, the correlation
+  between the height and weight of a person, the correlation between the price of
+  a stock and the volume of the stock traded.
+
+  \subsection*{Scatter Plot}
+
+  A scatter plot is a type of mathematical diagram to show the relationship
+  between two variables. Let two groups of data be $x_1, x_2, \cdots, x_n$ and
+  $y_1, y_2, \cdots, y_n$, respectively. The scatter plot of the two groups of
+  data is a graph of the points $(x_1, y_1), (x_2, y_2), \cdots, (x_n, y_n)$.
+
+  \subsection*{Linear Correlation}
+
+  If the scatter plot of two groups of data can be approximated by a straight
+  line, then the two groups of data are said to be linearly correlated. According
+  to the trend of the two groups of data, the correlation can be positive,
+  negative, or zero. For example, the weight of a higher person is usually
+  larger, so the correlation between the weight and height of a person is
+  positive. The sales of a product are usually lower when the price of the
+  product is higher, so the correlation between the price of a product and the
+  volume of the product sold is negative. If there is no relationship between the
+  two groups of data, then it is considered zero correlation.
+
+  Below are the possible cases of linear correlation:
+
+  \begin{center}
+    \begin{tikzpicture}[scale=0.5]
+      \draw[->] (0, 0) -- (5, 0);
+      \draw[->] (0, 0) -- (0, 5);
+      \draw (0.5, 0.5) -- (4.5, 4.5);
+      \fill (0.8, 0.8) circle (0.06);
+      \fill (1.1, 1.1) circle (0.06);
+      \fill (1.1, 1.1) circle (0.06);
+      \fill (1.3, 1.3) circle (0.06);
+      \fill (1.6, 1.6) circle (0.06);
+      \fill (2.0, 2.0) circle (0.06);
+      \fill (2.5, 2.5) circle (0.06);
+      \fill (2.6, 2.6) circle (0.06);
+      \fill (2.8, 2.8) circle (0.06);
+      \fill (3.1, 3.1) circle (0.06);
+      \fill (3.3, 3.3) circle (0.06);
+      \fill (3.8, 3.8) circle (0.06);
+      \fill (4.2, 4.2) circle (0.06);
+      \node at (2.5, -1) {\footnotesize{Perfectly Positive Correlation}};
+    \end{tikzpicture}
+    \hspace{1cm}
+    \begin{tikzpicture}[scale=0.5]
+      \draw[->] (0, 0) -- (5, 0);
+      \draw[->] (0, 0) -- (0, 5);
+      \draw (0.5, 4.5) -- (4.5, 0.5);
+      \fill (1.1, 3.9) circle (0.06);
+      \fill (1.3, 3.7) circle (0.06);
+      \fill (1.6, 3.4) circle (0.06);
+      \fill (2.0, 3.0) circle (0.06);
+      \fill (2.5, 2.5) circle (0.06);
+      \fill (2.6, 2.4) circle (0.06);
+      \fill (2.8, 2.2) circle (0.06);
+      \fill (3.1, 1.9) circle (0.06);
+      \fill (3.3, 1.7) circle (0.06);
+      \fill (3.8, 1.2) circle (0.06);
+      \node at (2.5, -1) {\footnotesize{Perfectly Negative Correlation}};
+    \end{tikzpicture}
+  \end{center}
+  \begin{center}
+    \begin{tikzpicture}[scale=0.5]
+      \draw[->] (0, 0) -- (5, 0);
+      \draw[->] (0, 0) -- (0, 5);
+      \node at (2.5, -1) {\footnotesize{Strong Positive Correlation}};
+    \end{tikzpicture}
+    \hspace{1cm}
+    \begin{tikzpicture}[scale=0.5]
+      \draw[->] (0, 0) -- (5, 0);
+      \draw[->] (0, 0) -- (0, 5);
+      \node at (2.5, -1) {\footnotesize{Strong Negative Correlation}};
+    \end{tikzpicture}
+  \end{center}
+  \begin{center}
+    \begin{tikzpicture}[scale=0.5]
+      \draw[->] (0, 0) -- (5, 0);
+      \draw[->] (0, 0) -- (0, 5);
+      \node at (2.5, -1) {\footnotesize{Weak Positive Correlation}};
+    \end{tikzpicture}
+    \hspace{1cm}
+    \begin{tikzpicture}[scale=0.5]
+      \draw[->] (0, 0) -- (5, 0);
+      \draw[->] (0, 0) -- (0, 5);
+      \node at (2.5, -1) {\footnotesize{Zero Correlation}};
+    \end{tikzpicture}
+  \end{center}
 
   \section{Statistical Index}
 
