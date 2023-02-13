@@ -21,6 +21,8 @@
 \usepackage{tkz-euclide}
 \usepackage{graphicx}
 \usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{mathtools}
 
 \def\nswe#1#2#3{#1\,$#2^\circ\,#3'$}
 \graphicspath{ {./assets/} }
@@ -52,6 +54,8 @@
 \hfuzz=100pt
 
 \newcommand{\pgfplotsdrawaxis}{\pgfplots@draw@axis}
+\newcommand\perm[2][^n]{\prescript{#1\mkern-2.5mu}{}P_{#2}}
+\newcommand\permtwo[2][^n]{{}_{#1}P_{#2}}
 \makeatother
 \pgfplotsset{only axis on top/.style={axis on top=false, after end axis/.code={
           \pgfplotsset{axis line style=opaque, ticklabel style=opaque, tick style={thick,opaque},
@@ -435,7 +439,7 @@
               \hline
             \end{tabular}
           \end{center}
-    \item Draw a histogram and frequency polygon. \sol{}
+    \item Construct a histogram and frequency polygon. \sol{}
           \begin{center}
             \begin{tikzpicture}[scale=0.9]
               \begin{axis}[
@@ -567,7 +571,7 @@
               \hline
             \end{tabular}
           \end{center}
-          Draw a hustogram and a frequency polygon for the data above.
+          Construct a hustogram and a frequency polygon for the data above.
           \sol{}
           \begin{center}
             \begin{tikzpicture}[scale=0.8]
@@ -676,7 +680,7 @@
                     \end{tabular}
                   \end{center}
 
-            \item Draw a frequency polygon. \sol{}
+            \item Construct a frequency polygon. \sol{}
                   \begin{center}
                     \begin{tikzpicture}[scale=0.9]
                       \begin{axis}[
@@ -699,7 +703,7 @@
                     \end{tikzpicture}
                   \end{center}
 
-            \item Draw a cumulative frequency polygon. \sol{}
+            \item Construct a cumulative frequency polygon. \sol{}
                   \begin{center}
                     \begin{tikzpicture}[scale=0.8]
                       \begin{axis}[
@@ -764,7 +768,7 @@
                     \end{tabular}
                   \end{center}
 
-            \item Draw a cumulative frequency polygon. \sol{}
+            \item Construct a cumulative frequency polygon. \sol{}
                   \begin{center}
                     \begin{tikzpicture}[scale=0.8]
                       \begin{axis}[
@@ -2049,7 +2053,7 @@
   When we're describing a set of data, if we only use the mean, the information
   provided by the dataset is not enough. For example, given the mean, median, and
   mode of the average marks of four students in a Mathematics test are all 70
-  marks, we can't tell the difference between the four students. Thier marks
+  marks, we can't tell the difference between the four students. Their marks
   might be similar (e.g. 68, 72, 70, 70) or they might be very different (e.g.
   100, 40, 70, 70). The latter case is obviously more spread out than the former
   case.
@@ -2919,13 +2923,1047 @@
 
   \subsection{Exercise 18.6}
 
+  \begin{enumerate}
+    \item The table below shows the value of fixed assets and total assets (in 10
+          thousand dollar) of 10 enterprises of the same industry:
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              No. of Enterprise & Fixed Assets & Total Assets \\
+              \hline
+              1                 & 200          & 638          \\
+              2                 & 314          & 605          \\
+              3                 & 318          & 524          \\
+              4                 & 409          & 815          \\
+              5                 & 415          & 913          \\
+              6                 & 502          & 928          \\
+              7                 & 910          & 1019         \\
+              8                 & 1022         & 1219         \\
+              9                 & 1210         & 1516         \\
+              10                & 1225         & 1624         \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{enumerate}
+            \item Construct a scatter diagram of the data.
+            \item Calculate the mean value of fixed assets and total assets respectively.
+            \item Find the correlation coefficient of the fixed assets and the total assets, and
+                  determine on the strength of the correlation.
+          \end{enumerate}
+
+    \item The table shows the marks of Mathematics and Ecomoics of 15 students:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Mathematics & Economics \\
+              \hline
+              83          & 79        \\
+              50          & 61        \\
+              62          & 70        \\
+              90          & 86        \\
+              68          & 69        \\
+              61          & 68        \\
+              58          & 62        \\
+              62          & 80        \\
+              71          & 70        \\
+              63          & 74        \\
+              72          & 77        \\
+              54          & 54        \\
+              64          & 77        \\
+              48          & 50        \\
+              81          & 92        \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{enumerate}
+            \item Construct a scatter diagram of the data.
+            \item Find the correlation coefficient of the marks of Mathematics and the Economics,
+                  and determine on the strength of the correlation.
+          \end{enumerate}
+
+    \item The table below shows the marks of 16 students in the Chinese language minor
+          test. The paper was split into two sections: Vernacular and Classical Chinese
+          and their full marks were 60 and 40 respectively.
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Vernacular Chinese & Classical Chinese \\
+              \hline
+              43                 & 30                \\
+              50                 & 21                \\
+              38                 & 20                \\
+              45                 & 19                \\
+              58                 & 15                \\
+              47                 & 18                \\
+              32                 & 30                \\
+              36                 & 28                \\
+              38                 & 26                \\
+              51                 & 30                \\
+              44                 & 29                \\
+              28                 & 29                \\
+              49                 & 22                \\
+              42                 & 32                \\
+              46                 & 33                \\
+              35                 & 25                \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{enumerate}
+            \item Construct a scatter diagram of the data.
+            \item Find the correlation coefficient of the marks of Vernacular Chinese and the
+                  Classical Chinese, and determine on the strength of the correlation.
+          \end{enumerate}
+
+    \item Below shows the the service costs and values of properties sold by a property
+          broker in 5 trades:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Service Costs (in \$100) & Value of Prop. (in \$10k) \\
+              \hline
+              16.5                     & 3.9                       \\
+              17.4                     & 4.2                       \\
+              16.8                     & 4.1                       \\
+              17.9                     & 4.5                       \\
+              18.4                     & 4.8                       \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Find the correlation coefficient of the service costs and the values of properties in these 5 trades, and determine on the strength of the correlation.
+
+    \item The table below shows the degree of labor mechanization and labor productivity:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Mechanization Degree (\%) & Productivity (\$/pax) \\
+              \hline
+              40                        & 800                   \\
+              45                        & 880                   \\
+              50                        & 1010                  \\
+              55                        & 1034                  \\
+              60                        & 980                   \\
+              65                        & 1030                  \\
+              70                        & 1077                  \\
+              75                        & 1344                  \\
+              80                        & 1460                  \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{enumerate}
+            \item Construct a scatter diagram of the data.
+            \item Find the correlation coefficient of the degree of labor mechanization and the
+                  labor productivity, and determine on the strength of the correlation.
+          \end{enumerate}
+
+    \item Below are the sales (in million) and the net profit rate (\%) of 10 department
+          store:
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              Company & Sales & Net Profit Rate \\
+              \hline
+              A       & 18.4  & 15.3            \\
+              B       & 16.5  & 14.8            \\
+              C       & 14.6  & 13.6            \\
+              D       & 23.3  & 14.3            \\
+              E       & 35.6  & 12.9            \\
+              F       & 24.2  & 14.6            \\
+              G       & 33.6  & 13.8            \\
+              H       & 44.5  & 13.7            \\
+              I       & 26.8  & 13.5            \\
+              J       & 31.9  & 14.2            \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{enumerate}
+            \item Construct a scatter diagram of the data.
+            \item Find the correlation coefficient of the sales and the net profit rate, and
+                  determine on the strength of the correlation.
+          \end{enumerate}
+
+  \end{enumerate}
+
   \section{Statistical Index}
+
+  \subsection*{Index}
+
+  In statistics, an index is a number that measures the changes in a figure from
+  one point in time to another. There is a wide range of applications of an
+  index, such as the price index which represents the changes in prices, the
+  production index which represents the changes in production, and the wage index
+  which represents the changes in salaries and wages. There are also other
+  indices such as the living index, foreign exchange index, population index,
+  stock market index, etc.
+
+  The index is a kind of relative number. The standard period that is used for
+  comparison when calculating the index is called the base period. As the case
+  may be, the base period can be a year or a month. The index of the base period
+  is usually a number that is easier to be remembered and compared, such as 100,
+  500, or 1000, and the chosen number must be able to represent the changes in
+  the figure. We will use 100 as our base period index. The period that is used
+  for comparison to the base period is called the current period. Let $Q_0$ be
+  the base period index and $Q_1$ be the current period index. The index of the
+  current period is calculated by the following formula:
+
+  \begin{cequation}
+    I = \frac{Q_1}{Q_0} \times 100
+  \end{cequation}
+
+  \noindent where 100 is the base period index.
+
+  \subsection*{Price Relative}
+
+  The price relative is a simple index that compares the prices of products in
+  different periods. Let $P_0$ be the price of a product in the base period and
+  $P_1$ be the price of the same product in the current period. The price
+  relative of the current period is calculated by the following formula:
+
+  \begin{cequation}
+    I = \frac{P_1}{P_0} \times 100
+  \end{cequation}
+
+  \subsection{Practice 11}
+
+  The table below shows the net profits (in million) of a company from 2010 to
+  2014. Use the year 2010 as the base period and calculate the index of the net
+  profit of the company in each year.
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|}
+      \hline
+      Year       & 2010 & 2011 & 2012  & 2013  & 2014 \\
+      \hline
+      Net Profit & 700  & 621  & 584.1 & 720.5 & 800  \\
+      \hline
+    \end{tabular}
+  \end{center}
+
+  \subsection*{Exercise 18.7a}
+
+  \begin{enumerate}
+    \item The prices of white sugar in 2011, 2012, and 2013 are \$2.10, \$2.30, and
+          \$2.50 respectively. Use the year 2011 and 2012 as the base period and
+          calculate the price relative of the year 2013.
+
+    \item The prices of a food product in 2011, 2013, and 2015 are \$3.40, \$3.75, and
+          \$3.90 respectively. Use the year 2011 as the base period and calculate the
+          price relative of the year 2013 and 2015.
+
+    \item The number of new students of a school from 2011 to 2015 are as follows:
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|c|c|}
+              \hline
+              Year      & 2011 & 2012 & 2013 & 2014 & 2015 \\
+              \hline
+              New Stud. & 182  & 150  & 120  & 104  & 94   \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Use the year 2011 as the base period and calculate the index of the number of new students in each year.
+
+    \item The table below shows the price of terraced houses (in \$10k) of a place in
+          from 2019 to 2014:
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|c|c|}
+              \hline
+              Year  & 2010 & 2011 & 2012 & 2013 & 2014 \\
+              \hline
+              Price & 32.0 & 35.5 & 43.4 & 51.0 & 60.0 \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Use the year 2010 as the base period and calculate the index of the price of terraced houses in each year.
+
+    \item The table below shows the price relative of three products $A$, $B$, and $C$
+          when using different years as the base period and the current period:
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|c|}
+              \hline
+              Current Period & Base Period & $A$ & $B$ & $C$ \\
+              \hline
+              2010           & 2005        & 160 & $x$ & 170 \\
+              2015           & 2005        & 140 & 190 & $y$ \\
+              2015           & 2010        & $z$ & 210 & 150 \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Find the value of $x$, $y$, and $z$.
+
+  \end{enumerate}
+
+  \subsection*{Composite Index}
+
+  The composite index is the mean value of indices of different figures. Since
+  the importance of each figure might be different, the weight of each index is
+  used to represent the importance of each figure, and the acquired weighted mean
+  is called the composite index.
+
+  Let the simple index of $n$ figures of the same base period and the same
+  current period be $x_1, x_2, \ldots, x_n$, and their respective weights be
+  $w_1, w_2, \ldots, w_n$. The composite index is calculated by the following
+  formula:
+
+  \makeatletter
+  \setbool{@fleqn}{false}
+  \makeatother
+  \begin{flalign*}
+    \bar{I} & = \frac{w_1x_1 + w_2x_2 + \cdots + w_nx_n}{w_1 + w_2 + \cdots + w_n} \\
+            & = \frac{\sum{w_ix_i}}{\sum{w_i}}
+  \end{flalign*}
+  \makeatletter
+  \setbool{@fleqn}{true}
+  \makeatother
+
+  If the study object is some product, where $x_i$ is the price relative to the
+  $i^{th}$ product, then its weighted mean is called the price index. If the
+  study object is the daily living expenses, then its weighted mean is called the
+  living consumption index.
+
+  \subsection*{Practice 12}
+
+  The table below shows the prices and weights of sneakers of three brands in
+  2012 and 2015:
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multirow{2}{*}{Sneakers} & \multicolumn{2}{c|}{Unit Price} & \multirow{2}{*}{Weight}     \\
+      \cline{2-3}
+                                & 2012                            & 2015                    &   \\
+      \hline
+      A                         & 230                             & 233                     & 5 \\
+      B                         & 225                             & 228                     & 3 \\
+      C                         & 215                             & 221                     & 2 \\
+      \hline
+    \end{tabular}
+  \end{center}
+  \begin{enumerate}
+    \item Use the year 2012 as the base period and calculate the price relative of each
+          brand in 2015.
+    \item Use the year 2012 as the base period and calculate the price index of sneakers
+          in 2015.
+  \end{enumerate}
+
+  \subsection*{Exercise 18.7b}
+
+  \begin{enumerate}
+    \item Using 2012 as the base period, the price relatives of foods, gases and clothes
+          in 2014 are 111, 105, and 106 respectively, and their weights are 5, 1, and 2
+          respectively. Calculate the composite index of the three comsumer items in
+          2014.
+
+    \item The table below shows the price of each primary food in 2015 (with 2005 as the
+          base period). Find the price index in 2015.
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              Food        & Price Relative & Weight \\
+              \hline
+              Meat        & 130            & 15     \\
+              Fish        & 150            & 14     \\
+              Vegetable   & 200            & 10     \\
+              Rice        & 110            & 20     \\
+              Cooking Oil & 120            & 8      \\
+              Beverage    & 150            & 7      \\
+              Fruit       & 160            & 6      \\
+              \hline
+            \end{tabular}
+          \end{center}
+
+    \item The weight and unit price of 3 kind of materials bought by a factory are as
+          follows:
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|}
+              \hline
+              \multirow{2}{*}{Material} & \multirow{2}{*}{Weight (ton)} & \multicolumn{2}{c|}{Unit Price (\$)}        \\
+              \cline{3-4}
+                                        &                               & 2010                                 & 2014 \\
+              \hline
+              A                         & 20                            & 0.62                                 & 0.71 \\
+              B                         & 50                            & 2.05                                 & 2.09 \\
+              C                         & 60                            & 0.80                                 & 0.85 \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Using 2010 as the base period, 2014 as the current period,
+          \begin{enumerate}
+            \item Find the composite index of the unit prices of the three materials without
+                  considering the weights (i.e. the weights are all 1).
+            \item Using the weight of each material as the weight, find the composite index of
+                  the unit prices of the three materials.
+          \end{enumerate}
+
+    \item The table below shows three indices and their weights. If their composite index
+          is 103, find the value of $x$.
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|}
+              \hline
+              Index  & 90  & 11$x$ & 120 \\
+              \hline
+              Weight & $x$ & 4     & 6   \\
+              \hline
+            \end{tabular}
+          \end{center}
+
+    \item The table below shows the price relative and weight of three products with 2013
+          as the base period and 2015 as the current period. Given that the price of item
+          $A$ in 2013 and 2015 are $\$20$ and $\$25$ respectively, the price of item $B$
+          is twice the price of item $A$.
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              Item & Price Relative & Weight \\
+              \hline
+              A    & $r$            & 2      \\
+              B    & $t$            & 1      \\
+              C    & 120            & 3      \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{enumerate}
+            \item Find the value of $r$ adn $t$.
+            \item Using 2013 as the base period, find the price index in 2015.
+          \end{enumerate}
+
+    \item The table below shows the price relative and weight of 5 products with 2012 as
+          the base period and 2014 as the current period:
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              Item & Price Relative & Weight \\
+              \hline
+              A    & 125            & 2      \\
+              B    & 120            & 3$x$   \\
+              C    & 110            & 2      \\
+              D    & 130            & $x$    \\
+              E    & 115            & 2      \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Given that the price index in 2014 is 120,
+          \begin{enumerate}
+            \item Find the value of $x$.
+            \item Assume that the price of item $A$ in 2014 is RM30, find the price of the item
+                  in 2012.
+          \end{enumerate}
+
+    \item The table below shows the price, price relative and weight of 4 products in
+          2012 and 2014:
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|c|}
+              \hline
+              \multirow{2}{*}{Item} & \multicolumn{2}{c|}{Price (\$)} & \multirow{2}{*}{Price Relative} & \multirow{2}{*}{Weight}     \\
+              \cline{2-3}
+                                    & 2012                            & 2014                            &                         &   \\
+              \hline
+              A                     & 12                              & $y$                             & 150                     & 1 \\
+              B                     & $x$                             & 24                              & 120                     & 2 \\
+              C                     & 14                              & 28                              & $z$                     & 3 \\
+              D                     & 10                              & 13                              & 130                     & 4 \\
+              \hline
+            \end{tabular}
+          \end{center}
+          where the base period of the price relative is 2012, and the current period is 2014.
+          \begin{enumerate}
+            \item Find the value of $x$, $y$ and $z$.
+            \item Using 2012 as the base period, find the price index in 2014.
+          \end{enumerate}
+
+    \item The table below shows the price of two products in 2005 and 2015:
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|}
+              \hline
+              \multirow{2}{*}{Item} & \multicolumn{2}{c|}{Price (\$)} & \multirow{2}{*}{Price Relative}     \\
+              \cline{2-3}
+                                    & 2005                            & 2015                            &   \\
+              \hline
+              A                     & 30                              & $x$                             & 2 \\
+              B                     & 50                              & $x+10$                          & 3 \\
+              \hline
+            \end{tabular}
+          \end{center}
+
+  \end{enumerate}
+
+  \section{Revision Exercise 18}
+
+  \begin{enumerate}
+    \item The length of 60 cotten fibers (in $mm$) in a laboratory are as follows:
+          \begin{flalign*}
+            82  & \quad 202 \quad 352 \quad 321 \quad 25 \quad 293 \quad 293 \quad 86   & \\
+            28  & \quad 206 \quad 323 \quad 355 \quad 357 \quad 33 \quad 325 \quad 113  & \\
+            233 & \quad 294 \quad 50 \quad 296 \quad 115 \quad 236 \quad 357 \quad 326  & \\
+            52  & \quad 301 \quad 140 \quad 328 \quad 238 \quad 358 \quad 58 \quad 255  & \\
+            143 & \quad 360 \quad 340 \quad 302 \quad 370 \quad 343 \quad 260 \quad 303 & \\
+            59  & \quad 146 \quad 60 \quad 263 \quad 170 \quad 175 \quad 348 \quad 305  & \\
+            380 & \quad 346 \quad 61 \quad 305 \quad 264 \quad 383 \quad 62 \quad 306   & \\
+            195 & \quad 350 \quad 265 \quad 385
+          \end{flalign*}
+          \begin{enumerate}
+            \item Use $21mm$ as the lower limit and $40mm$ as the class range, construct a
+                  frequency distribution table.
+            \item Construct a histogram and a frequency polygon.
+            \item Construct a cumulative frequency table and a cumulative frequency polygon.
+            \item Using the cumulative frequency polygon, find the percentage of fibers whose
+                  length is greater than $150mm$.
+            \item Find the interquartile range.
+          \end{enumerate}
+
+    \item Find the mean, median, range, quartile deviation, and mean deviation of the
+          data $8, 10, 9, 12, 4, 4, 2$.
+
+    \item The weight (in $kg$) if 16 babies are as follows:
+          \begin{flalign*}
+            8 & \quad 9 \quad 10 \quad 9 \quad 8 \quad 7 \quad 9 \quad 10 \\
+            9 & \quad 8 \quad 8 \quad 9 \quad 10 \quad 9 \quad 8 \quad 7
+          \end{flalign*}
+          Find the mean, meidan, mode, range, quartile deviation, mean deviation, and standard deviation of their weights.
+
+    \item The table below shows the score distribution of business study minor test of
+          senior 3 students in a high school:
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              Marks & No. of Students \\
+              \hline
+              0-9   & 7               \\
+              10-19 & 21              \\
+              20-29 & 32              \\
+              30-39 & 27              \\
+              40-49 & 13              \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{enumerate}
+            \item Construct a cumulative frequency distribution table.
+            \item Construct a cumulative frequency polygon.
+            \item Find the median and the interquartile range from the cumulative frequency
+                  polygon.
+            \item Find the percentage of students who scored higher or equal to 45 marks.
+            \item Assume that the passing score is 15 marks. Find the percentage of students who
+                  failed the test.
+          \end{enumerate}
+
+    \item The burning time (in $s$) of 10 rocket boosters are as follows: \makeatletter
+          \setbool{@fleqn}{false} \makeatother
+          \begin{flalign*}
+            50.7 & \quad 54.9 \quad 54.3 \quad 44.8 \quad 42.2 \\
+            69.0 & \quad 55.4 \quad 66.1 \quad 48.1 \quad 34.5
+          \end{flalign*}
+          \makeatletter
+          \setbool{@fleqn}{true}
+          \makeatother
+
+          Find the range, variance and standard deviation of the burning time.
+
+    \item The table below shows the scores of 30 rounds of game scored by someone:
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|c|c|}
+              \hline
+              Score & 0 & 1 & 2 & 3     & 4 \\
+              \hline
+              Times & 5 & 3 & 4 & $x+1$ & 7 \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Find:
+          \begin{enumerate}
+            \item The value of $x$.
+            \item The mean and standard deviation of the scores.
+          \end{enumerate}
+
+    \item The table below shows the distribution of scores of a minor test of students in
+          a class:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Score            & No. of Students \\
+              \hline
+              $0 < x \leq 5$   & 8               \\
+              $5 < x \leq 10$  & 1               \\
+              $10 < x \leq 15$ & 9               \\
+              $15 < x \leq 20$ & 7               \\
+              $20 < x \leq 25$ & 11              \\
+              $25 < x \leq 30$ & 4               \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Find:
+          \begin{enumerate}
+            \item Range
+            \item Median
+            \item Mode
+          \end{enumerate}
+
+    \item Below are the distribution of scores of business study exam of 40 students in a
+          class:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Score   & No. of Students \\
+              \hline
+              46 - 54 & 4               \\
+              54 - 62 & 9               \\
+              62 - 70 & 10              \\
+              70 - 78 & 8               \\
+              78 - 86 & 6               \\
+              86 - 94 & 3               \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Find:
+          \begin{enumerate}
+            \item Mean
+            \item Median
+            \item Mode
+            \item Variance
+          \end{enumerate}
+
+    \item The table below shows the frequency distribution of the life of 500 light
+          bulbs:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Life (in $hr$) & No. of Bulbs \\
+              \hline
+              800 - 850      & 35           \\
+              850 - 900      & 127          \\
+              900 - 950      & 185          \\
+              950 - 1000     & 103          \\
+              1000 - 1050    & 42           \\
+              1050 - 1100    & 8            \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Find:
+          \begin{enumerate}
+            \item The mean and standard deviation of the life of the light bulbs.
+            \item Mean deviation.
+            \item Median.
+            \item Quartile deviation.
+          \end{enumerate}
+
+    \item Assume that the mean value of data $2, x+1, 5, 2x+1, 8, 2x-3$ is 4,
+          \begin{enumerate}
+            \item Find the value of $x$.
+            \item With that, find the standard deviation of the data.
+          \end{enumerate}
+
+    \item The mean and mode of a set of data $2, 5, 3, 11, 9, 2, 11, p, q$ are 6 and 3
+          respectively, $p > q$. Find
+          \begin{enumerate}
+            \item The value of $p$ and $q$
+            \item Median
+            \item Standard deviation
+          \end{enumerate}
+
+    \item Given that the mean value of $x, x+1, 2x-3, 5, y, 8$ is 6. After eliminating
+          $y$, the mean value of the remaining data is $3.8$.
+          \begin{enumerate}
+            \item Find the value of $x$ and $y$.
+            \item With that, find the variance of the original 6 data.
+          \end{enumerate}
+
+    \item Given the sum of the square of 10 numbers is 400, and their mean value is 5. If
+          a number 8 is eliminated from the data set, find the mean value and variance of
+          the remaining data.
+
+    \item There are two female chorus groups $A$ and $B$, each of which has 5 members.
+          Their heights (in $cm$) are as follows:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Group A & 170 \quad 162 \quad 159 \quad 160 \quad 155 \\
+              \hline
+              Group B & 180 \quad 165 \quad 150 \quad 154 \quad 160 \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{enumerate}
+            \item Find the mean and standard deviation of the heights of the members of the two
+                  groups.
+            \item Which group has a lower height variance?
+          \end{enumerate}
+
+    \item The table below shows scores of maths exam of three classes:
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|}
+              \hline
+              Class & Avg. Marks & Std. Deviation & No. of Stud. \\
+              \hline
+              A     & 36.8       & 5.2            & 32           \\
+              B     & 30.3       & 12.4           & 36           \\
+              C     & 38.8       & 10.3           & 32           \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{enumerate}
+            \item In between class $A$, $B$ and $C$, which class has the most consistent
+                  performance? Why?
+            \item Find the average marks and standard deviation of these three classes combined.
+          \end{enumerate}
+
+    \item The score given by six judges to a gymnast are as follows: \makeatletter
+          \setbool{@fleqn}{false} \makeatother
+          \begin{flalign*}
+            7 \quad 5 \quad 9 \quad 7 \quad 8 \quad 6
+          \end{flalign*}
+          \makeatletter
+          \setbool{@fleqn}{true}
+          \makeatother
+          Find the following of the gymnast:
+          \begin{enumerate}
+            \item Mean
+            \item Standard deviation
+            \item Correlation Coefficient
+          \end{enumerate}
+
+    \item In an IQ test, the average score of 10 students is 114, and the scores of 9 of
+          them are as follows: \makeatletter \setbool{@fleqn}{false} \makeatother
+          \begin{flalign*}
+            101 & \quad 125 \quad 118 \quad 118 \quad 128 \quad 106 \\
+            115 & \quad 99 \quad 118 \quad 109
+          \end{flalign*}
+          \makeatletter
+          \setbool{@fleqn}{true}
+          \makeatother
+          Find:
+          \begin{enumerate}
+            \item The IQ of the 10th student.
+            \item The correlation coefficient of the IQ of the 10 students.
+          \end{enumerate}
+
+    \item Given that the data of the weight of two groups of girls (in $kg$) are as
+          follows:
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+                          & Mean  & Std. Dev. \\
+              \hline
+              1 years old & 10.90 & 1.24      \\
+              5 years old & 19.00 & 2.11      \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Compare the strength of correlation of the weight of these girls.
+
+    \item The prodution output and production cost of a factory in the first half of this
+          year are as follows:
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|c|c|c|}
+              \hline
+              Month                  & 1 & 2  & 3 & 4  & 5  & 6  \\
+              \hline
+              Output (in $1k\ tons$) & 2 & 3  & 1 & 4  & 3  & 5  \\
+              Cost (in $\$1k$)       & 9 & 11 & 7 & 13 & 11 & 15 \\
+              \hline
+            \end{tabular}
+          \end{center}
+
+    \item The marks of Chinese exam and Maths exam of 16 senior students in a school are
+          as follows:
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Chinese & Maths \\
+              \hline
+              82      & 59    \\
+              79      & 63    \\
+              76      & 99    \\
+              63      & 67    \\
+              56      & 61    \\
+              67      & 82    \\
+              69      & 82    \\
+              81      & 77    \\
+              77      & 75    \\
+              73      & 74    \\
+              58      & 67    \\
+              64      & 79    \\
+              68      & 75    \\
+              72      & 65    \\
+              75      & 64    \\
+              80      & 66    \\
+              83      & 68    \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{enumerate}
+            \item Construct a scatter diagram of the data.
+            \item Find the correlation coefficient of the two exams, and determine the strength
+                  of correlation.
+          \end{enumerate}
+
+    \item The table below shows the prices of a product (in \$) in 2005, 2010, and 2015:
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|}
+              \hline
+              Year  & 2005 & 2010 & 2015 \\
+              \hline
+              Price & 4    & 6    & $x$  \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{enumerate}
+            \item Assume that the percentage of price increase from 2005 to 2010 is the same as
+                  that from 2010 to 2015, find the value of $x$.
+            \item Find the price relative in 2015 with respect to 2005.
+          \end{enumerate}
+
+    \item The price data of primary food of a city with 2013 as base period and 2014 as
+          current period are as follows:
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              Food                   & Price Relative & Weight \\
+              \hline
+              Meat                   & 105            & 8      \\
+              Fish                   & 111            & 7      \\
+              Vegetables             & 98             & 5      \\
+              Rice        \& Noodles & 103            & 10     \\
+              Cooking Oil            & 100            & 3      \\
+              Beverage               & 107            & 2      \\
+              Fruits                 & 99             & 2      \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Find the price index in 2014.
+
+    \item The price relative of daily expenses of people in a place with repsect to last
+          year and their relative consumption are as follows:
+          \begin{center}
+            \begin{tabular}{|c|c|c|}
+              \hline
+              Daily Expenses & Price Relative & Consumption Relative \\
+              \hline
+              Clothing       & 120            & 23                   \\
+              Food           & 117            & 40                   \\
+              Housing        & 132            & 19                   \\
+              Transportation & 130            & 18                   \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Using the relative consumption as weight, find the composite price index of daily expenses.
+
+    \item The table below shows the spending of a company in 4 different projects in 3
+          consecutive years:
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|c|c|}
+              \hline
+              \multirow{2}{*}{Project} & \multicolumn{3}{c|}{Year} & \multirow{2}{*}{A} & \multirow{2}{*}{B}             \\
+              \cline{2-4}
+                                       & 2012                      & 2013               & 2014               &     &     \\
+              \hline
+              Salaries                 & $x$                       & 20,000             & 30,000             & 150 & $P$ \\
+              Stationery               & 5,000                     & $y$                & 7,000              & 120 & 140 \\
+              Repair                   & 4,000                     & 5000               & $z$                & 125 & 150 \\
+              Miscellaneous            & 8,000                     & $Q$                & 15,000             & $R$ & $R$ \\
+              \hline
+            \end{tabular}
+          \end{center}
+          Given that $A$ is the index where 2012 is the base period and 2013 is the current period; $B$ is the index where 2012 is the base period and 2014 is the current period. Find the value of $x$, $y$, $z$, $P$, $Q$, and $R$.
+
+  \end{enumerate}
 
   \chapter{Permutations and Combinations}
 
+  Permutations and combinations are the foundation of probability and statistics.
+  In our daily life, we often need to calculate the number of ways of completing
+  a task. These calculations are based on two basic principles: addition
+  principle and multiplication principle.
+
   \section{Addition and Multiplication Principles}
 
+  \begin{theorem}{Addition Principle}
+
+    If there are $n$ methods of doing a task, the first method can be done in $m_1$
+    ways, the second method can be done in $m_2$ ways, $\cdots$, the $n$th methods
+    can be done in $m_n$ ways, and they are mutually exclusive, which means he task
+    can be done in whatever way using whatever method, then the total number of
+    ways of doing the task is
+    \begin{cequation}
+      m_1 + m_2 + \cdots + m_n
+    \end{cequation}
+  \end{theorem}
+
+  \begin{theorem}{Multiplication Principle}
+
+    If there are $n$ steps in doing a task, the first step can be done in $m_1$
+    ways, the second step can be done in $m_2$ ways, $\cdots$, the $n$th steps can
+    be done in $m_n$ ways, then the total number of ways of doing the task is
+    \begin{cequation}
+      m_1 \times m_2 \times \cdots \times m_n
+    \end{cequation}
+  \end{theorem}
+
+  \subsection{Practice 1}
+  \begin{enumerate}
+    \item There are 2 Math reference books, 3 novels, and 4 storybooks of idioms. Xiao
+          Hua wants to choose one book from each category. How many ways can he choose?
+    \item Travelling from $A$ to $B$ can be done by bus or train. There are 4 buses and 3
+          trains. How many ways are there to travel from $A$ to $B$?
+  \end{enumerate}
+
+  \subsection{Practice 19.1}
+  \begin{enumerate}
+    \item During the eve of a festival, there are 3 trains, 4 buses, and 4 trains from
+          Johor Bahru to Pinang. How many ways are there to travel from Johor Bahru to
+          Pinang during the day?
+
+    \item One has 5 shirts and 6 pants, how many ways can he dress up?
+
+    \item There are 4 airlines $A$, $B$, $C$, and $D$ that provide flights from Kuala
+          Lumpur to Bangkok: $A$ provdies 3 flights per day, $B$ provides 2 flights per
+          day, $C$ and $D$ provides 1 flight per day. How many choices are there to
+          travel from Kuala Lumpur to Bangkok?
+
+    \item How many set meal combinations are there if there are 6 type of main dishes, 5
+          type of drinks, and 2 type of desserts?
+
+    \item There are 4 doors in a classroom, student $A$ and student $B$ can enter the
+          classroom through any door. How many ways are there for student $A$ and student
+          $B$ to enter the classroom?
+
+    \item A friendly match is held between 2 ping pong teams, each team has to send 3
+          players, and each player has to play games with all the other players on the
+          other team. How many games have to be played?
+
+    \item Matching 8 clothes of different colors with 5 different skirts, how many ways
+          are there to dress up? If the above dresses are paired with 4 pairs of shoes of
+          different colors, how many ways are there to dress up?
+
+  \end{enumerate}
+
   \section{Permutations and Permutation Formula}
+
+  \subsection*{Practice 2}
+
+  How many ways are there to arrange the numbers 1, 2, 3, 4 into a two digit
+  number with no repeated digits? \sol{}
+
+  First step: choose one of the 4 numbers as the first digit, there are 4 ways to
+  do so.
+
+  Second step: choose one of the remaining 3 numbers as the second digit, there
+  are 3 ways to do so.
+
+  According to the multiplication principle, the total number of ways to arrange
+  the numbers 1, 2, 3, 4 into a two digit number with no repeated digits is $4
+    \times 3 = 12$. \\\\ If there are $n$ elements, we want to pick $r$ elements
+  from them and arrange them in a sequence, how many ways are there to do so?
+  This question can be treated as there are $r$ empty boxes, which means this
+  requires $r$ steps to complete.
+
+  \begin{center}
+    \begin{tikzpicture}
+      \draw (0,0) -- (0,0.5) -- (5,0.5) -- (5,0) -- (0,0);
+      \draw (1, 0) -- (1, 0.5);
+      \draw (2, 0) -- (2, 0.5);
+      \draw (3, 0) -- (3, 0.5);
+      \draw (4, 0) -- (4, 0.5);
+      \node at (0.5, 0.25) {$1^{st}$};
+      \node at (1.5, 0.25) {$2^{nd}$};
+      \node at (2.5, 0.25) {$3^{rd}$};
+      \node at (3.5, 0.25) {$...$};
+      \node at (4.5, 0.25) {$r^{th}$};
+      \draw [->] (0.5, -0.5) -- (0.5, -0.1);
+      \draw [->] (1.5, -1.0) -- (1.5, -0.1);
+      \draw [->] (2.5, -0.5) -- (2.5, -0.1);
+      \draw [->] (4.5, -0.5) -- (4.5, -0.1);
+      \node at (0.5, -0.8) {\footnotesize{$n$ ways}};
+      \node at (1.5, -1.3) {\footnotesize{$n-1$ ways}};
+      \node at (2.5, -0.8) {\footnotesize{$n-2$ ways}};
+      \node at (4.5, -0.8) {\footnotesize{$n-(r-1)$ ways}};
+    \end{tikzpicture}
+  \end{center}
+
+  First step: CHhoose one element from $n$ elements and put it in the first box,
+  then there are $n$ ways to do so.
+
+  Second step: Choose one element from $n-1$ elements and put it in the second
+  box, then there are $n-1$ ways to do so.
+
+  Third step: Choose one element from $n-2$ elements and put it in the third box,
+  then there are $n-2$ ways to do so.
+
+  So on and so forth, when $r-1$ boxes are filled, the last box $r$ can only be
+  filled with one of the remaining $n-(r-1)$ elements, so there are $n-(r-1)$
+  ways to do so. According to the multiplication principle, the total number of
+  ways to fill in $r$ boxes is
+  \begin{cequation}
+    n(n-1)(n-2) \cdots (n-r+1)
+  \end{cequation}
+  Threrefore, there are $n(n-1)(n-2) \cdots (n-r+1)$ ways to arrange $r$ elements, and this denoted as $\perm[n]{r}$, $\permtwo[n]{r}$, or $P^n_r$.
+  \begin{cequation}
+    \permtwo[n]{r} = n(n-1)(n-2) \cdots (n-r+1)
+  \end{cequation}
+  Where $r \leq n$, $n \in N$, $r = 0, 1, 2, \cdots, n$. This formula is called
+  the permutation formula.
+
+  When $r = n$, aka a full permutation, the formula becomes
+  \begin{cequation}
+    \permtwo[n]{n} = n(n-1)(n-2) \cdots 3 \cdot 2 \cdot 1
+  \end{cequation}
+  Therefore, the permutation of all $n$ elements is equal to the products of natural numbers from 1 to $n$. This is called the factorial of $n$, denoted as $n!$.
+  \makeatletter
+  \setbool{@fleqn}{false}
+  \makeatother
+  \begin{flalign*}
+    n! & = \permtwo[n]{n}                       \\
+       & = n(n-1)(n-2) \cdots 3 \cdot 2 \cdot 1
+  \end{flalign*}
+  \makeatletter
+  \setbool{@fleqn}{true}
+  \makeatother
+
+  Using factorial, the permutation formula can be transform into the following:
+  \begin{flalign*}
+    \permtwo[n]{r} & = n(n-1)(n-2) \cdots (n-r+1)                                                                      \\
+                   & = \frac{n(n-1)(n-2) \cdots (n-r+1)(n-r) \cdots 3 \cdot 2 \cdot 1}{(n-r) \cdots 3 \cdot 2 \cdot 1} \\
+                   & = \frac{n!}{(n-r)!}
+  \end{flalign*}
+
+  Hence, the permutation formula can be written as
+  \begin{cequation}
+    \permtwo[n]{r} = \frac{n!}{(n-r)!}
+  \end{cequation}
+
+  Note: $0!$ is defined as 1 to make the formula work when $n = r$.
+
+  \subsection{Practice 3}
+
+  \begin{enumerate}
+    \item Find the value of $\permtwo[7]{3}$ and $5!$.
+    \item Calculate $\permtwo[10]{3} + \permtwo[8]{4}$.
+    \item If $100(\permtwo[n]{2}) = \permtwo[2n]{3}$, find the value of $n$.
+  \end{enumerate}
+
+  \subsection{Exercise 19.2a}
+
+  \begin{enumerate}
+    \item Write down all the permutations of 3 elements in 4 elements $A$, $B$, $C$, $D$.
+
+    \item Calculate:
+          \begin{enumerate}
+            \item $\permtwo[15]{4}$
+            \item $\permtwo[100]{3}$
+            \item $7!$
+            \item $\frac{8!}{5!}$
+          \end{enumerate}
+
+    \item Calculate the following:
+          \begin{enumerate}
+            \item $\frac{11! - 10!}{10! - 9!}$
+            \item $\frac{7! - 6! - 5!}{5!}$
+            \item $\frac{13! - 12!}{{(12)}^2 10!}$
+            \item $\frac{5(\permtwo[8]{3})}{2(\permtwo[6]{2})}$
+            \item $\frac{\permtwo[9]{5} + \permtwo[9]{4}}{\permtwo[9]{3}}$
+            \item $\frac{\permtwo{12}{12} - \permtwo{12}{11}}{\permtwo{10}{10}}$
+          \end{enumerate}
+
+    \item Simplify the following:
+          \begin{enumerate}
+            \item $\frac{(n+1)!}{(n-1)!}$
+            \item $\frac{(20 - r)!}{(18 - r)!}$
+          \end{enumerate}
+  \end{enumerate}
 
   \section{Circular Permutations}
 
