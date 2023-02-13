@@ -3963,13 +3963,342 @@
             \item $\frac{(n+1)!}{(n-1)!}$
             \item $\frac{(20 - r)!}{(18 - r)!}$
           \end{enumerate}
+
+    \item Find the value of $n$ or $r$ of the following expressions:
+          \begin{enumerate}
+            \item $\frac{(n+1)!}{n!} = 42$
+            \item $127(\permtwo[2n]{3}) = \permtwo[2n]{4}$
+            \item $18(\permtwo[n-1]{2}) = \permtwo[n]{4}$
+            \item $\permtwo[2n+1]{4} = 132(\permtwo{n}{3})$
+            \item $4(\permtwo[10]{r-1}) = \permtwo[10]{r}$
+            \item $6(\permtwo[9]{r-2}) = \permtwo[9]{r}$
+          \end{enumerate}
+  \end{enumerate}
+
+  \subsection*{Practice 4}
+  \begin{enumerate}
+    \item How many 3 digit numbers with no repeated digits can be formed using the digits
+          1, 2, 3, 4, 5?
+
+    \item How many 3 digit numbers with no repeated digits can be formed using the digits
+          0, 1, 2, 3, 4?
+  \end{enumerate}
+
+  \subsection*{Practice 5}
+  \begin{enumerate}
+    \item There are 50 seats and 50 students in a class. How many ways can the students
+          be seated in the class?
+
+    \item Person $A$ and $B$ has two choose two adjacent seats in a row of 5 chairs. How
+          many ways can they be seated?
+
+    \item 4 boys and 2 girls are standing in a row to take a photo. Assume that the two girls has to stand next to each other, how many ways can they be arranged?
+  \end{enumerate}
+
+  \subsection*{Exercise 19.2b}
+
+  \begin{enumerate}
+    \item Assume that there is no repeated digits, how many 5 digit numbers can be formed
+          using the digits 1, 2, 3, 4, 5?
+
+    \item How many ways are there to arrange the flags of 10 ASEAN members in a row?
+
+    \item 7 novel stories are to be compiled into a book. The sortest story must be placed
+          at the beginning of the book, while the longest story must be placed at the end. How many ways can the stories be arranged?
+
+    \item Ten students are to be arranged in a row. Two of the tallest students must be
+          placed at the beginning of the row. How many ways can the students be arranged?
+
+    \item There are nine programmes in a literature festival. If one of the programmes is
+          to be placed at the middle or at the end, how many ways can the programmes be
+          arranged?
+
+    \item How many permutations of the letters in the word \textit{EQUATION} are there?
+          if the letter \textit{E} and \textit{N} are to be placed at the beginning and
+          at the end respectively, how many ways can the letters be arranged?
+
+    \item There are 4 mobile phones that are to be registered a mobile phone number.
+          Chosen 7 phone numbers for pairing, how many ways can the mobile phones be
+          paired with the phone numbers?
+
+    \item There are 4 passengers sitting inside a 6 seats SUV. How many ways can the
+          passengers be seated in the SUV?
+
+    \item A ping pong coach wants to choose 3 players from a total of 5 players to be the
+          first single, second single and third single respectively. If an elite player
+          has to be chosen as the first or the second single, how many ways can the
+          players be chosen?
+
+    \item 8 chairs are to be arranged in two rows of 4 chairs each, in order to provide a place for 8 people to sit. If 3 out of the 8 people are to be seated in the first row, how many ways can the chairs be arranged?
+
+    \item How many permutations of the 5 different letters in the word \textit{TRIANGLE}
+          are there? If the beginning and the end of the word are consonants, how many
+          ways can the letters be arranged?
+
+    \item All the letters in the word \textit{FANCIES} are to be arranged. If the vowels
+          are to be arranged at even positions, how many ways can the letters be
+          arranged?
+
+    \item Rearranging all the letters in the word \textit{NUMERIACAL}, how many ways can
+          the letters be arranged? if all vowels are to be put together, how many ways
+          can the letters be arranged?
+
+    \item Examinations of 7 subjects are to be arranged in a row of 7 days, with one
+          subject at a day. If two of which cannot be arranged to be held on two
+          consecutive days, how many ways can the examinations of these 7 subjects be
+          arranged?
+
+    \item From 5 numbers 1, 2, 3, 4, 5, how many ways can the following numbers with no
+          repeated digits be formed:
+          \begin{enumerate}
+            \item 5 digits odd numbers
+            \item 5 digits even numbers
+          \end{enumerate}
+
+    \item If the digits are not repeated, from the numbers 0 to 5, how many ways can the
+          6 digits odd numbers be formed?
+
+    \item From the 8 numbers 0, 1, 2, 3, 4, 5, 6, 7, how many 5 digits numbers can be
+          formed such that their digits are not repeated and can be divided by 25?
+
+    \item From the 6 numbers 0, 1, 2, 3, 4, 5, how many 4 digits numbers can be formed
+          such that their digits are not repeated and can be divided by 4?
   \end{enumerate}
 
   \section{Circular Permutations}
 
+  In the permutation we have discussed in the previous section, all the elements
+  are arranged in a row. This kind of permutation is called \textit{linear
+    permutation}. Its identity is that it has a beginning and an end. The
+  permutations we are going to discuss in this section are arranged on a closed
+  curve line. This kind of permutation is called \textit{circular permutation}.
+  The identity of circular permutation is that it has no beginning and no end.
+
+  For this, we will use an example to explain the concept of circular
+  permutation.
+
+  Four people are to be seated in a circle. How many ways can they be seated?
+  \sol{}
+
+  Let these four people be $A$, $B$, $C$ and $D$ respectively.
+
+  If these people are arranged in a row, there are $4!$ ways to arrange them.
+
+  Let's take a look at the arrangements below:
+  \begin{center}
+    $A \quad B \quad C \quad D$
+
+    $B \quad C \quad D \quad A$
+
+    $C \quad D \quad A \quad B$
+
+    $D \quad A \quad B \quad C$
+  \end{center}
+  You'll notice that the arrangements above are all the same if being arranged on
+  a circle, and the only difference is the position of the first person.
+  \begin{center}
+    \begin{tikzpicture}
+      \draw (0, 0) circle (1cm);
+      \node at (1, 0) [fill=white] {$C$};
+      \node at (0, 1) [fill=white] {$B$};
+      \node at (-1, 0) [fill=white] {$A$};
+      \node at (0, -1) [fill=white] {$D$};
+    \end{tikzpicture}
+    \hspace{1cm}
+    \begin{tikzpicture}
+      \draw (0, 0) circle (1cm);
+      \node at (1, 0) [fill=white] {$D$};
+      \node at (0, 1) [fill=white] {$C$};
+      \node at (-1, 0) [fill=white] {$B$};
+      \node at (0, -1) [fill=white] {$A$};
+    \end{tikzpicture}
+  \end{center}
+  \begin{center}
+    \begin{tikzpicture}
+      \draw (0, 0) circle (1cm);
+      \node at (1, 0) [fill=white] {$A$};
+      \node at (0, 1) [fill=white] {$D$};
+      \node at (-1, 0) [fill=white] {$C$};
+      \node at (0, -1) [fill=white] {$B$};
+    \end{tikzpicture}
+    \hspace{1cm}
+    \begin{tikzpicture}
+      \draw (0, 0) circle (1cm);
+      \node at (1, 0) [fill=white] {$B$};
+      \node at (0, 1) [fill=white] {$A$};
+      \node at (-1, 0) [fill=white] {$D$};
+      \node at (0, -1) [fill=white] {$C$};
+    \end{tikzpicture}
+  \end{center}
+
+  From the above example, each circular permutation is correspended to 4 linear
+  permutations. Given that the permutation of 4 people arranging in a row has
+  $4!$ ways, so there are $\frac{4!}{4} = 3! = 6$ ways to arrange these four
+  people in a circle.
+
+  If we generalize the above example, we can get the following formula:
+
+  \begin{enumerate}
+    \item The formula of circular permutation of $n$ elements:
+          \begin{cequation}
+            \frac{\permtwo[n]{n}}{n} = \frac{n!}{n} = (n - 1)!
+          \end{cequation}
+    \item The formula of circular permutation of $r$ elements from $n$ elements ($r \leq
+            n$):
+          \begin{cequation}
+            \frac{\permtwo[n]{r}}{r} = \frac{n!}{r(n - r)!}
+          \end{cequation}
+  \end{enumerate}
+
+  \subsection{Practice 6}
+
+  \begin{enumerate}
+    \item Choose 5 people from 6 males and 5 females to be seated in a circle. How many
+          ways can they be seated?
+
+    \item 6 males and 4 females are to be seated around a circular table. If females can't seat beside each other, how many ways can they be seated?
+  \end{enumerate}
+
+  \subsection{Exercise 19.3}
+
+  \begin{enumerate}
+    \item 8 people are to be seated in a circle. How many ways can they be seated?
+
+    \item 10 children are to be arranged in a circle. How many ways can they be
+          arraged? If a child must be seated in the primary position, how many ways can they be arranged?
+
+    \item 6 people are to be formed into a circle. If two people must seat together, how many ways can they be arranged?
+
+    \item 4 males and 3 females are to be seated around a circular table. If none of the females can seat together, how many ways can they be seated?
+
+    \item 4 pairs of couples and one child are to be seated around a circular table. If the couples must sit together, how many ways can they be seated?
+
+    \item A family of 7 people are sitting together around a circular table for a dinner.
+          If the grandfather, grandmother, father and mother must sit together, of which
+          the grandfather and the grandmother, the father and the mother must sit
+          together, how many ways can they be seated?
+
+    \item If a linear permutation of $n$ people is 6 times of a circular permutation of
+          $n$ people, find these two permutations.
+  \end{enumerate}
+
   \section{Full Permutations of Inexactly Distinct Elements}
 
+  In all the previous questions of permutations, the given elements are all
+  distinct. However, in some cases, there are some elements that are the same,
+  this kind of permutation are considered as \emph{permutations with repetition}.
+  Let's discusse the folowing example:
+
+  For a full permutation of three elements $a$, $a$, and $b$, how many ways can
+  they be arranged?
+
+  Let's treat the identical elemnents $a$ as two different elements $a_1$ and
+  $a_2$, there will be 3! ways to arrange these three different element $a_1$,
+  $a_2$, and $b$, as listed below:
+
+  \begin{center}
+    $a_1 \quad a_2 \quad b \qquad a_2 \quad a_1 \quad b$
+
+    $a_1 \quad b \quad a_2 \qquad a_2 \quad b \quad a_1$
+
+    $b \quad a_1 \quad a_2 \qquad b \quad a_2 \quad a_1$
+  \end{center}
+
+  In the three rows above, for each row, the position of $b$ is fixed, $a_1$ and
+  $a_2$ has $2! = 2$ ways to be arranged.
+
+  If we change $a_1$ and $a_2$ above back to $a$, then the two different
+  arrangements of $a_1$ and $a_2$ will be counted as one arrangement of $a$.
+  Hence, there are only $\frac{3!}{2!} = 3$ ways for full permutation of three
+  elements $a$, $a$, and $b$.
+
+  Generalize the above example, given $n$ elements, where there are $n_1$
+  elements $a_1$, $n_2$ elements $a_2$, $\cdots$, $n_k$ elements $a_k$, where
+  $n_1 + n_2 + \cdots + n_k = n$, then the number of full permutations of these
+  $n$ elements is:
+  \begin{cequation}
+    \frac{n!}{n_1!n_2!\cdots n_k!}
+  \end{cequation}
+
+  \subsection{Practice 7}
+
+  \begin{enumerate}
+    \item Giving 9 children 2 pens, 3 ball-point pens, 4 pencils, how many ways can they
+          be given if each child must be given one pen?
+
+    \item Find the full permutation of the letters in the word \textit{EXPESSION}.
+  \end{enumerate}
+
+  \subsection{Exercise 19.4}
+
+  \begin{enumerate}
+    \item How many 8 digit numbers can be formed using 8 digits 1, 1, 2, 2, 3, 3, 4, 5?
+
+    \item Arranging all the letters in the word \textit{MALAYSIA}, how many ways can they
+          be arranged such that the three "A"s are not totally together?
+
+    \item Arranging all the letters in the word \textit{MATHEMATICAL}, how many ways can
+          they be arranged such that the three "A"s are not totally together?
+
+    \item The diagram below shows a city with 5 north-west roads and 5 south-east roads,
+          where each road shares the same length.
+          \begin{center}
+            \begin{tikzpicture}
+              \draw (0, 0) -- (0, 4);
+              \draw (1, 0) -- (1, 4);
+              \draw (2, 0) -- (2, 4);
+              \draw (3, 0) -- (3, 4);
+              \draw (4, 0) -- (4, 4);
+              \draw (0, 0) -- (4, 0);
+              \draw (0, 1) -- (4, 1);
+              \draw (0, 2) -- (4, 2);
+              \draw (0, 3) -- (4, 3);
+              \draw (0, 4) -- (4, 4);
+              \fill (0, 0) circle (0.05);
+              \fill (2, 3) circle (0.05);
+              \fill (4, 4) circle (0.05);
+              \node at (0, 0) [left] {A};
+              \node at (2, 3) [above left] {C};
+              \node at (4, 4) [right] {B};
+            \end{tikzpicture}
+          \end{center}
+          \begin{enumerate}
+            \item How many shortest paths are there from A through C to B?
+            \item How many shortest paths are there from A to B without passing through C?
+          \end{enumerate}
+
+    \item Arranging all the letters in the word \textit{GEOMETRIC}, find the number of
+          permutations such that the following conditions are satisfied:
+          \begin{enumerate}
+            \item No limitaion on the arrangement of the letters.
+            \item All the vowels must be together.
+            \item None of the vowels are adjacent to each other.
+          \end{enumerate}
+
+  \end{enumerate}
+
   \section{Permutations with Repetition}
+
+  If the elements can be chosen more than once, arranging $r$ elements from $n$
+  elements is called \emph{permutation with repetition} of $r$ elements from $n$
+  elements.
+
+  Given $n$ distinct elements, each element can be chosen more than once, then
+  there are $n$ ways to choose the first element, $n$ ways to choose the second
+  element, $\cdots$, $n$ ways to choose the $r$th element. According to the
+  multiplication rule, its permutations are:
+  \begin{cequation}
+    n \times n \times \cdots \times n = n^r
+  \end{cequation}
+
+  \subsection{Practice 8}
+
+  \begin{enumerate}
+    \item How many ways are there to shoot 3 balls into 6 baskets?
+
+    \item If the all the digits can be used more than once, how many 3 digit numbers can
+          be formed using the digits 0, 1, 2, 3, 4?
+  \end{enumerate}
 
   \section{Combinations and Combination Formula}
 
