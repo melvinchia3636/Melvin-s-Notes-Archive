@@ -4516,22 +4516,524 @@
     \item If $\frac{(n+6)!}{(n+4)!} = 18(n+1)$, find the value of $n$.
 
     \item Assume that $\comb[2n]{3}:\comb[n]{2} = 44:3$, find the value of $n$.
+
     \item All the letters from the word \textit{TRIANGLE} are to be arranged. How many
           ways of arrangements are there such that the vowels are all seperated from each
           other?
+
+    \item One vowel and one consonant are to be chosen from the word \textit{TRIANGLE} to
+          form a word. How many ways are there to do so?
+
+    \item A basketball coach wants to choose two vanguards from four shooters, one center
+          from two tall players, and two defender from four ball handlers. How many ways
+          are there to form a team?
+
+    \item A committee must be formed by one lawyer, two engineers and two doctors chosen
+          from 3 lawyers, 6 engineers and 7 doctors. How many ways are there to form the
+          committee?
+
+    \item  There is one of each note of the following value: \$1, \$2, \$5, \$10, \$20,
+          \$50, \$100. How many distinct values of currency can be made from these notes?
+
+    \item There are 4 different history books, 5 different geography books and 3
+          different literature books on the shelf. If they are to be arranged in a row,
+          how many ways are there to arrange them such that books of the same subject are
+          arranged together?
+
+    \item 6 characters from 10 different characters $A$, $B$, $C$, $D$, $E$, and 0, 1, 2, 3, 4 are to be chosen to form a password. How many password can be formed such that there are no repeated characters and the password does not start with 0?
+
+    \item How many 7 digit even numbers can be formed from full permutations of the
+          digits 0, 1, 2, 3, 4, 5, 6? How many multiple of 10 are there in these numbers?
+
+    \item How many permutations of all the characters in the word "fei li wu shi, fei li
+          wu ting" are there?
+
+    \item How many ways are there to arrange all the letters in the word
+          \textit{ARRANGEMENT}?
+
+    \item Arranging 5 cups with different color and 5 canned juices with different
+          flavour into a circle, how many ways are there to do so such that all the
+          canned juices are not next to each other?
+
+    \item In a box of Chinese chess, there are 1 general, 2 advisors, 2 elephants, 2
+          horses, 2 chariots, 2 cannons and 5 soldiers of red color. Now we arrange these
+          16 pieces into a circle:
+          \begin{enumerate}
+            \item All the pieces of the same type are arranged together.
+            \item All the pieces of the same type are symmetrically arranged on one diameter.
+          \end{enumerate}
+
+    \item If there is no repeated digits, how many odd numbers in between 4000 and 9000
+          can be formed from the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9?
+
+    \item How many 4 digit numbers with 2 repeated digits are there if the digits are
+          chosen from 1, 2, 3, 4, 5 while the digits can be chosen more than once?
+
+    \item From the class committee of 10 members, at least 2 members, at most 8 members
+          are to be chosen as representatives to attend a forum. How many ways are there
+          to choose the representatives?
+
+    \item A team of at least 2 engineers and 1 technician is to be formed from 5
+          engineers and 4 technicians. How many ways are there to form the team?
+
+    \item 9 different books are to be distributed to 3 people $A$, $B$ and $C$. With the following conditions, how many ways are there to distribute the books?
+          \begin{enumerate}
+            \item Each people get 3 books.
+            \item $A$ gets 2 books, $B$ gets 3 books, $C$ gets 4 books.
+            \item One people get 2 books, one people get 3 books and one people get 4 books.
+            \item Seperated into 3 groups, each group has 3 books.
+          \end{enumerate}
   \end{enumerate}
 
   \chapter{Bionomial Theorem}
 
   \section{Bionomial Theorem when $n$ is a Natural Number}
 
+  Back in junior high school, we have learnt
+  \begin{flalign*}
+    (a+b)^1 & = a+b                 \\
+    (a+b)^2 & = a^2+2ab+b^2         \\
+    (a+b)^3 & = a^3+3a^2b+3ab^2+b^3
+  \end{flalign*}
+
+  Now, let's discuss the expansion of $(a+b)^4$.
+  \begin{flalign*}
+    (a+b)^4 = (a+b)(a+b)(a+b)(a+b)
+  \end{flalign*}
+
+  Each term in the expasion of $(a+b)^4$ is the product of one letter taken from
+  each of the four brackets, that is to say, the expansion of should contain the
+  following terms: $a^4$, $a^3b$, $a^2b^2$, $ab^3$, $b^4$.
+
+  Using the knowledge of permutation and combination, we can get the coefficient
+  of each term in the expansion:
+
+  In the 4 brackets, if no $b$ is chosen, then there are $\perm[4]{0}$ ways to do
+  so, therefore the coefficient of $a^4$ is $\perm[4]{0}$.
+
+  In the 4 brackets, if 1 $b$ is chosen, then there are $\perm[4]{1}$ ways to do
+  so, therefore the coefficient of $a^3b$ is $\perm[4]{1}$.
+
+  In the 4 brackets, if 2 $b$ is chosen, then there are $\perm[4]{2}$ ways to do
+  so, therefore the coefficient of $a^2b^2$ is $\perm[4]{2}$.
+
+  In the 4 brackets, if 3 $b$ is chosen, then there are $\perm[4]{3}$ ways to do
+  so, therefore the coefficient of $ab^3$ is $\perm[4]{3}$.
+
+  In the 4 brackets, if all 4 $b$ is chosen, then there are $\perm[4]{4}$ ways to
+  do so, therefore the coefficient of $b^4$ is $\perm[4]{4}$.
+
+  Therefore, $(a+b)^4 = \comb[4]{0}a^4 + \comb[4]{1}a^3b + \comb[4]{2}a^2b^2 +
+    \comb[4]{3}ab^3 + \comb[4]{4}b^4$.
+
+  Generalize the above expansion, we have the following formula:
+  \begin{cequation}
+    (a+b)^n = \comb[n]{0}a^n + \comb[n]{1}a^{n-1}b +
+    \cdots + \comb[n]{n-r}ab^{n-r} + \cdots + \comb[n]{n}b^n
+  \end{cequation}
+  where $n \in \mathbb{N}$.
+
+  This formula is called the \textit{Bionomial Theorem}, the polynomial in the
+  right hand side is called the \textit{Bionomial Expansion} of $(a+b)^n$, of
+  which $\comb[n]{0}$, $\comb[n]{1}$, $\cdots$, $\comb[n]{n}$ are called the
+  \textit{Bionomial Coefficients}.
+
+  By looking at the formula above, we can know that,
+  \begin{enumerate}
+    \item The sum of the indices of $a$ and $b$ in each term is equal to the binomial
+          expression, the index of $a$ decreases by 1 from $n$ to 0, while the index of
+          $b$ increases by 1 from 0 to $n$.
+
+    \item The bionomial expansion has $n+1$ terms, that is to say, it has one term more
+          than the exponent of the binomial expression.
+
+    \item Since $\comb[n]{r} = \comb[n]{n-r}$, therefore $\comb[n]{0} = \comb[n]{n}$,
+          $\comb[n]{1} = \comb[n]{n-1}$, $\cdots$, $\comb[n]{2} = \comb[n]{n-2}$,
+          $\cdots$.
+  \end{enumerate}
+
+  Bionomial expression can also be calculated by the following table:
+  \begin{center}
+    \begin{tabular}{cc}
+      $(a+b)^0$ & 1                                           \\
+      $(a+b)^1$ & 1 \quad 1                                   \\
+      $(a+b)^2$ & 1 \quad 2 \quad 1                           \\
+      $(a+b)^3$ & 1 \quad 3 \quad 3 \quad 1                   \\
+      $(a+b)^4$ & 1 \quad 4 \quad 6 \quad 4 \quad 1           \\
+      $(a+b)^5$ & 1 \quad 5 \quad 10 \quad 10 \quad 5 \quad 1 \\
+                & \vdots                                      \\
+    \end{tabular}
+  \end{center}
+
+  In the table above, for each row, except the beginning and the end being 1, all
+  numbers except 1 are the sum of the two numbers above it, aka $\comb{n+1}{r} =
+    \comb{n}{r-1} + \comb{n}{r}$.
+
+  In bionomial theorem, let $a = 1$, $b = x$, then we get the following formula:
+  \begin{cequation}
+    (1+x)^n = 1 + \comb{n}{1}x + \comb{n}{2}x^2 + \cdots + \comb{n}{r}x^r +
+    \cdots + x^n
+  \end{cequation}
+
+  \subsection{Practice 1}
+
+  Expand the following expression:
+  \begin{enumerate}
+    \item $(1+x)^7$
+
+    \item $(2+3x)^5$
+  \end{enumerate}
+
+  \subsection{Exercise 20.1}
+
+  Expand the following expression (1 to 9):
+  \begin{enumerate}
+    \item $(m+n)^7$
+    \item $(3+2x)^4$
+    \item $(x-3)^5$
+    \item $(x+y^2)^6$
+    \item $\left(2+\frac{1}{x}\right)^5$
+    \item $\left(\frac{x}{3} + \frac{2}{x}\right)^4$
+    \item $\left(x-\sqrt[3]{x^2}\right)^3$
+    \item $\left(\sqrt{x} - \frac{1}{\sqrt{x}}\right)^6$
+    \item $(1 + x + x^2)^3$
+    \item Calculate $\left(1+\sqrt{x}\right)^5 + \left(1-\sqrt{x}\right)^5$.
+  \end{enumerate}
+
   \section{General Form of Bionomial Expansion}
+
+  In the bionomial expansion,
+  \begin{cequation}
+    (a+b)^n = \comb[n]{0}a^n + \comb[n]{1}a^{n-1}b +
+    \cdots + \comb[n]{n-r}ab^{n-r} + \cdots + \comb[n]{n}b^n
+  \end{cequation}
+  The $(r+1)$th term is
+  \begin{cequation}
+    T_{r+1} = \comb[n]{r}a^{n-r}b^r
+  \end{cequation}
+  This is the general form of bionomial expansion.
+
+  \subsection{Practice 2}
+
+  Find the fourth term of $(x^3 + 2x)^7$ after expanding it in descending power
+  of $x$.
+
+  \subsection{Exercise 20.2}
+
+  \begin{enumerate}
+    \item Find the coefficient of the fourth term of $(x+1)^9$ after expanding it in
+          descending power of $x$.
+
+    \item Find the third term of $(3x+2)^5$ after expanding it in ascending power of $x$.
+
+    \item Find the middle term of $\left(1+\frac{x^2}{2}\right)^{10}$ after expanding it
+          in ascending order of $x$.
+
+    \item Find the coefficient of $x^2$ in $(2-3x)^7$.
+
+    \item Find the constant term of $\left(x+\frac{1}{x}\right)^{10}$.
+
+    \item Find the coefficient of $\frac{1}{x^5}$ in the expansion of $\left(x -
+            \frac{1}{x}\right)^9$.
+
+    \item Find the coefficient of $x^4$ in the expansion of $\left(2x +
+            \frac{1}{\sqrt[3]{x}}\right)^8$.
+  \end{enumerate}
+
+  \section{Revision Exercise 20}
+
+  \begin{enumerate}
+    \item Find the expansion of $(1 - 2x)^5$.
+
+    \item Expend $\left(2\sqrt{x} - \frac{1}{x}\right)^6$.
+
+    \item Find the eighth term of the bionomial expression $\left(\frac{3x^2}{2} -
+            \frac{1}{3x}\right)^{11}$.
+
+    \item Find the middle term of $\left(x+\frac{1}{2\sqrt{x}}\right)^8$ after expanding
+          it in descending power of $x$.
+
+    \item Find the coefficient of $x^{-12}$ in the expansion of the bionomial expression
+          $\left(x^3 - \frac{1}{x}\right)^{24}$.
+
+    \item If the coefficient of $x^4$ in the expansion of of the bionomial expression $(1
+            + ax)^5$ is 80, find the value of $a$.
+
+    \item Given that the coefficient of the second, third, and fourth term if the
+          expansion of $(1 + x)^n$ after expanding it in ascending power of $x$ form an
+          arithmetic progression, find the value of $n$.
+
+    \item Find the fourth term of $\left(px + \frac{q}{x}\right)^n$ after expanding it in
+          descending power of $x$. If this is a constant term, find the value of $n$.
+  \end{enumerate}
 
   \chapter{Probability}
 
+  In our daily life, a lot of stuff will yield certain results in certain
+  conditions or situations. For example, by throwing a stone into the sky, the
+  stone will fall down to the ground; the pure water will boil at 100$^\circ$C.
+  However, in some cases, there may be more than one possible result in a certain
+  situation. For example, when we throw a coin into the air, it may land on the
+  head or the tail, and the result is unpredictable. Nonetheless, if we do the
+  experiment many times under the same conditions, we'll find certain patterns in
+  the result after some analysis.
+
+  In order to find the pattern of a coin landing on the head, there are a lot of
+  people who've conducted thousands of coin-tossing experiments, and here are the
+  results:
+
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|}
+      \hline
+      Experimenter & Tosses ($n$) & Heads ($m$) & Freq. $\left(\frac{m}{n}\right)$ \\
+      \hline
+      De Morgan    & 2048         & 1061        & 0.5181                           \\
+      Buffon       & 4048         & 2048        & 0.5059                           \\
+      Feller       & 10000        & 4979        & 0.4979                           \\
+      Pearson      & 12000        & 6019        & 0.5016                           \\
+      Pearson      & 24000        & 12012       & 0.5005                           \\
+      \hline
+    \end{tabular}
+  \end{center}
+
+  From the results, we can see that when the number of tosses is large enough,
+  the frequency $\frac{m}{n}$ of the coin landing on the head ($m$) will always
+  be close to 0.5.
+
+  From that, we can see two obvious facts about this experiment:
+  \begin{enumerate}
+    \item Contingency: The result cannot be predicted in advance.
+    \item Inevitability: The results of the same experiment being conducted numerous
+          times show a statistical regularity.
+  \end{enumerate}
+
+  Probability theory is a branch of mathematics that studies statistical
+  regularity in a mathematical way. In this chapter, we'll study the basic
+  concepts of probability theory.
+
   \section{Sample Space and Events}
 
+  Every possible results of a trial is called a \emph{sample point} of the trial,
+  and the set of all possible results is called the \emph{sample space} of the
+  trial, typically denoted by $S$. Take coin-tossing as an example, there are two
+  possible resuls: head and tail. If we denote head by $H$ and tail by $T$, then
+  the sample space of the coin-tossing experiment is $S = \{H, T\}$.
+
+  Although there are only two sample points in the coin-tossing experiment, there
+  may be infinite sample points in some trials. For example, choose a number
+  between 0 and 1, there will be an infinite amount of sample points, e.g. 0.1,
+  0.12, 0.145, etc.
+
+  \subsection*{Practice 1}
+
+  \begin{enumerate}
+    \item Write down the sample space of throwing two coins once.
+
+    \item Write down the sample space of rolling a die once.
+
+    \item Select any number from 0, 1, $\cdots$, 9, and write down its sample space.
+
+    \item Write down the sample space of throwing a coin three times.
+  \end{enumerate}
+
+  Within a trial, the set of a few sample points, that is, a subset of the sample
+  space $S$, is called an \emph{event} of the trial, and is usually denoted by
+  capital letters $A$, $B$, $C$, etc. The sample space $S$ in itself is also an
+  event that will surely happen, and is called the \emph{sure event}. Empty set
+  $\emptyset$ is also an event that will never happen, and is called the
+  \emph{impossible event} or \emph{null event}. When an event only contains one
+  sample point, that is, there is only one element of $S$ in the event, it is
+  called a \emph{simple event}.
+
+  For example, in the trial of throwing a dice for the dice points, the sure
+  event $S = \{1, 2, 3, 4, 5, 6\}$, showing a dice points of 7 is an impossible
+  event, and its denoted as $\emptyset$. The event of showing any of the dice
+  points from 1 to 6 is a simple event.
+
+  Take another example, draw a card from a deck of 52 poker cards, there are 52
+  possible results. Hence, the sample space of this trial is a set of 52
+  elements, and any event is a subset of the sample space. Below are some example
+  of events in this sample space:
+
+  \begin{enumerate}
+    \item The card drawn is a number 11 (impossible event)
+    \item The card drawn is a red heart 3 (simple event)
+    \item The card drawn is a number 9 (event with 4 elements)
+    \item The card drawn is a black spade (event with 13 elements)
+    \item The card drawn is not a club 5 (event with 51 elements)
+  \end{enumerate}
+
+  Since the events are expressed as sets, listed below are some set operations
+  used to describe relationships between events:
+
+  Let $A$ and $B$ be two events, then:
+
+  \begin{enumerate}
+    \item $A \cup B$ means that at least one of the events $A$ and $B$ will happen.
+
+    \item $A \cap B$ means that both events $A$ and $B$ will happen.
+
+    \item $A'$ means that the event $A$ will not happen.
+  \end{enumerate}
+
+  \subsection{Practice 2}
+
+  Express the following events in set notation (1 to 4):
+  \begin{enumerate}
+    \item Throwing a dice, event $A = $ "showing a prime number dice points".
+
+    \item Throwing three dices, event $B = $ "total dice points less than 6".
+
+    \item Tossing two coins once, event $K = $ "showing exactly one head", event $L = $
+          "showing at least one head", event $M = $ "showing at most one head".
+
+    \item Tossing a coin three times:
+          \begin{enumerate}
+            \item $D = $ "get at least two heads".
+            \item $E = $ "the number of heads is lesser than the number of tails".
+          \end{enumerate}
+  \end{enumerate}
+
+  \subsection{Exercise 12.1}
+
+  \begin{enumerate}
+    \item Choose any two letters from the letters $K$, $O$, $T$, $A$, find:
+          \begin{enumerate}
+            \item The sample space $S$.
+            \item Event $A = $ "one letter is a vovel, the other is a consonant".
+            \item Event $B = $ "both letters are vovels".'
+            \item Event $C = $ "at least one letter is a vovel".
+          \end{enumerate}
+
+    \item Throwing two dies, find the event where the sum of the dice points is a
+          multiple of 3.
+
+    \item Throwing three dices, find the event where the sum of the dice points is 15.
+
+    \item Choose any two letters from the letters $A$, $B$, $C$, $D$, $E$ to form a row,
+          find:
+          \begin{enumerate}
+            \item The sample space $S$.
+            \item Event $M = $ "there are exactly one vowel".
+          \end{enumerate}
+
+    \item Throwing three coins, find:
+          \begin{enumerate}
+            \item The sample space $S$.
+            \item Event $A = $ "all coins show heads".
+            \item Event $B = $ "two coins show heads, one coin shows tail".
+            \item Event $C = $ "at least two coin shows heads".
+          \end{enumerate}
+
+    \item Throwing two dices, express the following events in set notation:
+          \begin{enumerate}
+            \item $A = $ "the dice points of two dices are equal".
+            \item $B = $ "The dice points of one dice is twice the dice points of another".
+            \item $C = $ "The sum of the dice points is a multiple of 5 or 6".
+          \end{enumerate}
+  \end{enumerate}
+
   \section{Definition of Probability}
+
+  In this section, we'll cover two definitions of probability, the classical and
+  the statistical definition.
+
+  \subsection*{Classical Definition of Probability}
+
+  Doing a trial numerous times in the same conditions, the frequency of an event
+  will show a certain regularity. Let's discuss the following example of
+  dice-tossing:
+
+  Tossing a dice multiple time and recording the numbers of time of getting 1
+  dice point and the total number of tosses, we get the following results:
+
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      Tosses ($n$) & No. of 1 dice points ($m$) & Frequency $\left(\frac{m}{n}\right)$ \\
+      \hline
+      1000         & 174                        & 0.1740                               \\
+      2000         & 350                        & 0.1750                               \\
+      3000         & 499                        & 0.1663                               \\
+      4000         & 673                        & 0.1683                               \\
+      5000         & 837                        & 0.1674                               \\
+      6000         & 9999                       & 0.1665                               \\
+      \hline
+    \end{tabular}
+  \end{center}
+
+  From the table, we can see that as the number of tosses increases, the
+  frequency of getting 1 dice point keep approaching a constant value of
+  $\frac{1}{6} = 0.1667$.
+
+  When performing a large amount of repeated trials, the frequency of an event
+  $A$ $\left(\frac{m}{n}\right)$ always approaches a constant value. This
+  constant value is called the \emph{probability} of event $A$, and denoted as
+  $P(A)$. This is the statistical definition of probability.
+
+  Since the occurrence of an event will never exceed the total number of trials,
+  its frequency will always be a number between 0 and 1, that is, $0 \leq
+    \frac{m}{n} \leq 1$. Hence, according to the statistical definition of
+  probability, for any event $A$, its probability $0 \leq P(A) \leq 1$.
+
+  A sure event $S$ will always happen in every trial, so $P(S) = 1$. For an
+  impossible event $\emptyset$, no matter how many trials we do, its occurrence
+  will always be 0, so $P(\emptyset) = 0$.
+
+  \subsection*{Classical Definition of Probability}
+
+  Assume that a trial satisfies the following conditions:
+
+  \begin{enumerate}
+    \item The outcome of the trial is finite.
+    \item The probability of each outcome is equal.
+  \end{enumerate}
+
+  This kind of trial model is called a \emph{classical probabilistic model}.
+
+  Let $S$ be the sample space of the trial that contains $n$ equally probable,
+  $A$ is an event that contains $m$ outcomes, then the probability of event $A$
+  is:
+  \begin{cequation}
+    P(A) = \frac{m}{n} = \frac{n(A)}{n(S)}
+  \end{cequation}
+  This is the classical definition of probability.
+
+  \subsection*{Practice 3}
+
+  \begin{enumerate}
+    \item Randomly draw two cards from a deck of 52 poker cards, find the probability of
+          two "$K$" cards.
+
+    \item Between all students in a class, there are 13 students with type A blood, 10
+          students with type B blood, 2 students with type AB blood, and 15 students with
+          type O blood. If we randomly choose 4 students, find the probability of the
+          following event:
+          \begin{enumerate}
+            \item 2 type A blood, 2 type B blood
+            \item 2 type A blood, 1 type AB bloog, 1 type O blood
+            \item 1 for each type of blood.
+          \end{enumerate}
+
+    \item Casually arranging all the letters in the word \textit{GERMANY}, find the
+          probability of the following event:
+          \begin{enumerate}
+            \item 5 adjacent consonants
+            \item 5 non-adjacent consonants
+          \end{enumerate}
+  \end{enumerate}
+
+  \subsection{Exerise 21.2}
+
+  \begin{enumerate}
+    \item A bag contains 9 balls, of which 2 are white, 3 are red, and 4 are yellow.
+          Randomly drawing one ball, find the probability of the following event:
+          \begin{enumerate}
+            \item The ball drawn is red
+            \item The ball drawn is not red
+            \item The ball drawn is yellow
+          \end{enumerate}
+  \end{enumerate}
 
   \section{Addition Rule}
 
