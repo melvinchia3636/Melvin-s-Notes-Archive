@@ -56,6 +56,8 @@
 \newcommand{\pgfplotsdrawaxis}{\pgfplots@draw@axis}
 \newcommand\perm[2][^n]{\prescript{#1\mkern-2.5mu}{}P_{#2}}
 \newcommand\permtwo[2][^n]{{}_{#1}P_{#2}}
+\newcommand\comb[2][^n]{{}_{#1}C_{#2}}
+\newcommand\combtwo[2][^n]{\prescript{#1\mkern-2.5mu}{}C_{#2}}
 \makeatother
 \pgfplotsset{only axis on top/.style={axis on top=false, after end axis/.code={
           \pgfplotsset{axis line style=opaque, ticklabel style=opaque, tick style={thick,opaque},
@@ -4300,7 +4302,224 @@
           be formed using the digits 0, 1, 2, 3, 4?
   \end{enumerate}
 
+  \subsection*{Exercise 19.5}
+
+  \begin{enumerate}
+    \item The office documents of a company are coded with a combination of two of the
+          first four letters of the alphabet $A, B, C, D$. If each letter can be used
+          more than once, how many different codes can be formed?
+
+    \item There are eight paths from A to B. How many ways are there to go from A to B
+          and then back to A?
+
+    \item A four digit number is to be formed with 4 numbers 3, 4, 5, 7, how many ways
+          can it be formed such that its thousand digit and hundred digit are the same?
+
+    \item A basketball match has two possible result, either team $A$ wins or team $B$
+          wins. How many possible results are there if there are 10 matches?
+
+    \item A restaurant has introduced 7 sets of special dishes for lunch. There are 3
+          people come for lunch, each person orders one dish. How many different
+          combinations of dishes can be ordered?
+
+    \item A building is assigned one security guard every night. If the security company
+          has three assignable guards, how many different ways of assignments are there
+          for a week?
+
+    \item A football match has three possible results, either team $A$ wins, team $B$
+          wins or the match is a draw. How many possible results are there if there are 8
+          matches?
+
+    \item A school is going to hold a trilingual speech competition. The rule stated that
+          each class can only send one representative for each language. If there are 40
+          students in a class, how many different combinations of students can be chosen
+          for the competition?
+
+    \item How many 6 digits odd number can be formed using the digitis 0, 1, 2, $\cdots$,
+          5 if each digit can be used more than once?
+
+    \item  When there are only 7 digits, there are 8 ways to choose the first digit (2 -
+          10), 10 ways to choose the rest of the digits (0 - 10). Hence, there are $8
+            \times 10^6$ phone numbers. When there are 8 digits, there are 8 ways to choose
+          the first digit, 10 ways to choose the rest of the digits. Hence, there are $8
+            \times 10^7$ phone numbers. Hence, there are:
+
+          When there are only 7 digits, there are 8 ways to choose the first digit (2 -
+          10), 10 ways to choose the rest of the digits (0 - 10). Hence, there are $8
+            \times 10^6$ phone numbers. When there are 8 digits, there are 8 ways
+
+    \item The phone number format of a country is going from 7 digits to 8 digits. but
+          the leading digit cannot be 0 or 1. How many new phone numbers will be formed
+          after the change? \sol{}
+
+          When there are only 7 digits, there are 8 ways to choose the first digit (2 -
+          10), 10 ways to choose the rest of the digits (0 - 10). Hence, there are $8
+            \times 10^6$ phone numbers. When there are 8 digits, there are 8 ways to choose
+          the first digit, 10 ways to choose the rest of the digits. Hence, there are $8
+            \times 10^7$ phone numbers. Hence, there are:
+          \begin{flalign*}
+            8 \times 10^7 - 8 \times 10^6 & = 80,000,000 - 8,000,000 \\
+                                          & = 72,000,000
+          \end{flalign*}
+          new phone numbers.
+  \end{enumerate}
+
   \section{Combinations and Combination Formula}
+
+  Grouping $r$ elements from $n$ elements ($r \leq n$) without considering the
+  order of the elements is called \emph{combination} of $r$ elements from $n$
+  elements. The number of combinations of $r$ elements from $n$ elements is
+  denoted by $\combtwo[n]{r}$, $\comb[n]{r}$, or $\binom{n}{r}$.
+
+  Take for example: taking two elements from three distinct element $a$, $b$, $c$
+  to form a group. Below are the combinations of any two elements from $a$, $b$,
+  $c$:
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+      \hline
+      Permutations & $ab$                      & $ba$                      & $ac$                      & $ca$ & $bc$ & $cb$ \\
+      \hline
+      Combinations & \multicolumn{2}{c|}{$ab$} & \multicolumn{2}{c|}{$ac$} & \multicolumn{2}{c|}{$bc$}                      \\
+      \hline
+    \end{tabular}
+  \end{center}
+
+  It can be considered as two steps:
+
+  First, combine any two elements from the three distinct elements to form a
+  group. There are $\comb[3]{2}$ possible combinations.
+
+  Second, make full permutations for each combination. There are $2!$ possible
+  permutations for each combination.
+
+  According to the multiplication rule,
+  \begin{flalign*}
+    \permtwo[3]{2}            & = \comb[3]{2} \times 2!     \\
+    \therefore\ \ \comb[3]{2} & = \frac{\permtwo[3]{2}}{2!} \\
+                              & = 3
+  \end{flalign*}
+
+  Generalizing the above example, there are two steps to find the combinations of
+  $r$ elements from $n$ elements:
+
+  First, combine any $r$ elements from the $n$ elements to form a group. There
+  are $\comb[n]{r}$ possible combinations.
+
+  Second, make full permutations for each combination. There are $r!$ possible
+  permutations for each combination.
+
+  According to the multiplication rule,
+  \begin{flalign*}
+    \permtwo[n]{r}            & = \comb[n]{r} \times r!             \\
+    \therefore\ \ \comb[n]{r} & = \frac{\permtwo[n]{r}}{r!}         \\
+                              & = \frac{n!}{(n - r)! r!},\ r \leq n
+  \end{flalign*}
+
+  According to the definition $\comb[n]{r} = \frac{n!}{(n - r)! r!}$,
+  \begin{flalign*}
+    \comb[n]{n-r} & = \frac{n!}{(n - (n - r))! (n - r)!} \\
+                  & = \frac{n!}{r! (n - r)!}             \\
+                  & = \comb[n]{r}
+  \end{flalign*}
+
+  That is,
+  \begin{cequation}
+    \comb[n]{r} = \comb[n]{n - r}
+  \end{cequation}
+
+  Note that:
+  \begin{enumerate}
+    \item If $r = n$, then $\comb[n]{n} = \frac{n!}{0! n!} = 1$.
+    \item If $r = 0$, then $\comb[n]{0} = \frac{n!}{n! 0!} = 1$.
+  \end{enumerate}
+
+  \subsection{Practice 9}
+
+  \begin{enumerate}
+    \item There are six main cities in a country, each city has roads connecting to the
+          other five cities. How many roads are there connecting the six cities?
+
+    \item There are 5 people in 4 cars, each car must have at least one person. How many
+          ways are there to distribute the 5 people into 4 cars?
+  \end{enumerate}
+
+  \subsection{Practice 10}
+
+  There are 4 different books. With the following criteria, how many ways are
+  there to distribute the books?
+  \begin{enumerate}
+    \item Distribute evenly to two people.
+    \item Seperate evenly into two piles.
+  \end{enumerate}
+
+  \subsection{Exercise 19.6}
+
+  \begin{enumerate}
+    \item Find the value of $n$ and $r$ of the following expessions:
+          \begin{enumerate}
+            \item $\comb[16]{r+3} = \comb[16]{7-r}$
+            \item $\comb[30]{r} = \comb[30]{r+2}$
+            \item $\comb[n]{8} = \comb[n]{7}$
+                  \sol{}
+                  \begin{flalign*}
+                    \comb[n]{8} & = \comb[n]{7}   \\
+                    \comb[n]{r} & = \comb[n]{n-r} \\
+                    r           & = 8             \\
+                    n-r         & = 7             \\
+                    n - 8       & = 7             \\
+                    n           & = 15
+                  \end{flalign*}
+          \end{enumerate}
+
+    \item Assume that $3(\comb[n]{4}) = 5(\comb[n-1]{5})$, find the value of
+          $\comb[n]{9}$.
+
+    \item There are 17 teams participating in a football competition. If each team plays
+          against every other team, how many matches are there?
+
+    \item How many diagonal lines can be drawn in a convex nonagon?
+
+    \item There are 6 students on duty in a class, 1 student is in charge of cleaning the
+          whiteboard, one is in charge of cleaning the rubbish bin, 2 students are in
+          charge of sweeping the floor and 2 students are in charge of arranging the
+          desks. How many ways are there to distribute the 6 students into the 4 jobs?
+
+    \item 4 people are to be choosen from 5 couples, where each couple cannot be chosen together. How many ways are there to choose the 4 people?
+
+    \item Three signal flags are to be chosen from 6 flags, one of which is red, two of
+          which are yellow and the rest are blue. How many ways are there to choose the 3
+          flags?
+
+    \item A delegation with 6 members is to be formed from 9 students who major in
+          Mathematics and 4 students who major in Education. With the following criteria,
+          how many ways are there to form the delegation?
+          \begin{enumerate}
+            \item There are exactly two students who major in Education.
+            \item There are at least two students who major in Education.
+          \end{enumerate}
+
+    \item Seperate 14 students evenly into 2 groups, how many ways are there to do so?
+          How many ways are there to seperate these 14 students evenly into two
+          classrooms?
+
+  \end{enumerate}
+
+  \section{Revision Exercise 19}
+
+  \begin{enumerate}
+    \item Evaluate the following:
+          \begin{enumerate}
+            \item $\frac{7!}{3!4!} + \frac{7!}{2!5!}$
+            \item $\frac{\perm[11]{5} + \perm[11]{4}}{\perm[12]{5} + \perm[12]{4}}$
+          \end{enumerate}
+
+    \item If $\frac{(n+6)!}{(n+4)!} = 18(n+1)$, find the value of $n$.
+
+    \item Assume that $\comb[2n]{3}:\comb[n]{2} = 44:3$, find the value of $n$.
+    \item All the letters from the word \textit{TRIANGLE} are to be arranged. How many
+          ways of arrangements are there such that the vowels are all seperated from each
+          other?
+  \end{enumerate}
 
   \chapter{Bionomial Theorem}
 
