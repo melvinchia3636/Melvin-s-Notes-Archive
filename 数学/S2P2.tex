@@ -2347,7 +2347,7 @@
     \item Measuring the height of 10 plant seedlings (in $cm$) in a lab, we get the
           following data:
           \begin{flalign*}
-            12 \quad 6 \quad 15 \quad 3 \quad 12 \quad 6 \quad 21 \quad 15 \quad 15 \quad 18 \quad 12
+            12 & \quad 6 \quad 15 \quad 3 \quad 12 \quad 6 \quad 21 \quad 15 \quad 15 \quad 18 \quad 12 &
           \end{flalign*}
           Find the standard deviation of the height of the plant seedlings.
     \item Complete the following table, then find the standard deviation.
@@ -3343,7 +3343,7 @@
           Given that the price index in 2014 is 120,
           \begin{enumerate}
             \item Find the value of $x$.
-            \item Assume that the price of item $A$ in 2014 is RM30, find the price of the item
+            \item Assume that the price of item $A$ in 2014 is \$30, find the price of the item
                   in 2012.
           \end{enumerate}
 
@@ -4290,7 +4290,7 @@
   element, $\cdots$, $n$ ways to choose the $r$th element. According to the
   multiplication rule, its permutations are:
   \begin{cequation}
-    n \times n \times \cdots \times n = n^r
+    \underbrace{n \times n \times \cdots \times n}_{r} = n^r
   \end{cequation}
 
   \subsection{Practice 8}
@@ -5423,7 +5423,429 @@
 
   \section{Mathematical Expectation}
 
+  Consider the following scenario: during a commercial activity, the probability
+  of a person getting a profit of \$300 is $0.6$, and the probability of a person
+  getting a loss of \$100 is $0.4$. He did the activity 10 times. According to
+  the probability, this guy was expected to get a profit of \$300 for 6 times,
+  and a loss of \$100 for 4 times. Therefore, the expected profit of these 10
+  times of commercial activities is $300 \times 6 + (-100) \times 4$.
+  \begin{flalign*}
+    \text{Average Profit} & = \frac{300 \times 6 + (-100) \times 4}{10} \\
+                          & = \frac{1800 - 400}{10}                     \\
+                          & = \frac{1400}{10}                           \\
+                          & = 140
+  \end{flalign*}
+  This average value is called the \textit{mathematical expectated value}, or \textit{expected value} for short, of this people doing the commercial activity.
+
+  The expect value does not mean that the actual profit of the person will be
+  \$140 for every activity he did. It is just the average value of the profit he
+  will get if he did the activity a large number of times.
+
+  Generalize the above example, let the probability of someone getting a profit
+  of $\$x_1$, $\$x_2$, $\cdots$, $\$x_k$ be $p_1$, $p_2$, $\cdots$, $p_k$
+  respectively, of which $p_1 + p_2 + \cdots + p_k = 1$. Then the expected value
+  of the profit is
+  \begin{cequation}
+    E = x_1p_1 + x_2p_2 + \cdots + x_kp_k
+  \end{cequation}
+
+  \subsection{Practice 8}
+
+  \begin{enumerate}
+    \item One person pays \$2 to play a a game. The chance of winning the game is $0.4$,
+          and he will get \$3 if he wins. Find the expected value of profit of this
+          person in this game. \sol{}
+
+          \noindent The chance of winning the game is $0.4$, and the profit of winning the game is
+          \$1;
+
+          \noindent The chance of losing the game is $0.6$, and the loss of losing the game is \$2.
+
+          Therefore, the expected value of profit of this person in this game is
+          \begin{flalign*}
+            E & = 0.4 \times 1 + 0.6 \times (-2) \\
+              & = 0.4 - 1.2                      \\
+              & = -\$0.80
+          \end{flalign*}
+
+    \item During an investment activity, the probability of a person getting a profit of
+          \$2,500 is $0.55$, and the probability of a person getting a loss of \$1,200 is
+          $0.45$. Find the expected value of profit of this person in this investment
+          activity. \sol{}
+
+          The expected value of profit of this person in this investment activity is
+          \begin{flalign*}
+            E & = 2500 \times 0.55 + (-1200) \times 0.45 \\
+              & = 1375 - 540                             \\
+              & = \$835
+          \end{flalign*}
+  \end{enumerate}
+
+  \subsection{Exercise 21.5}
+
+  \begin{enumerate}
+    \item During a commercial activity, the probability of a person getting a profit of
+          $\$10,000$ is $\frac{3}{5}$, and the probability of a person getting a loss of
+          $\$6,000$ is $\frac{2}{5}$. Find the expected value of profit of this person in
+          this commercial activity.
+
+    \item A company produces light bulbs. The profit of producing a quality light bulb is
+          $\$2$, and the loss of producing a defective light bulb is $\$0.50$. Assume
+          that the chance of producing a defective light bulb is $0.02$. Find the
+          expected value of profit of this company in producing each light bulb.
+
+    \item A company has insured accident insurance worth \$60 for its employees, and the
+          employees will get $\$1,200$ if they are involved in an accident. Given that
+          the probability of an an accident happening is $0.005$, find the expected value
+          of profit of the insurance company in this insurance.
+
+    \item An airline provides an $\$8$ aviation assurance plan to its passengers. If
+          flight is delayed for more than an hour, the passengers will get $\$250$
+          compensation. Given that the percentage of a flight being delayed for more than
+          an hours is $2\%$, find the expected value of profit of the airline.
+
+    \item The price of a lottery ticket is \$2. The probability of winning the lottery is
+          as follows: $\frac{1}{10000}$ for $\$5,000$, $\frac{1}{1000}$ for $\$500$. Find
+          the expected value of someone who buys a lottery ticket.
+
+    \item A person pays \$1 to play a game. The probability of him getting $\$3,000$,
+          $\$2,000$, and $\$1,000$ are all $\frac{1}{10000}$. Find the expected value of
+          this person in this game, and determine of this game is worth playing.
+
+    \item A high school has released 8000 \$1 lottery tickets, 5 of which has a prize of
+          \$500, 8 of which has a prize of \$300, 10 of which has a prize of \$100, and
+          50 of which has a prize of \$10. Find the expected value of someone who buys a
+          lottery ticket.
+  \end{enumerate}
+
   \section{Normal Distribution}
+
+  In the probability models that we have discussed in the previous sections, the
+  number of results of a trial is limited, that is, the limited sets in the
+  sample space. However, there are many situations in which the results are real
+  numbers within a certain range.
+
+  For example, measuring the height of senior 2 boy students, the results (in
+  $cm$) is a real number bigger than 0. As the number of students getting
+  measured become larger and larger, the frequency polygon of the height of the
+  students will become a bell curve as shown in the figure below. This bell curve
+  is called the \textit{normal curve}.
+
+  \begin{center}
+    \begin{tikzpicture}
+      \begin{axis}[
+          width=0.5\textwidth,
+          height=0.3\textwidth,
+          xlabel={Height (cm)},
+          ylabel={Frequency},
+          xmin=150, xmax=190,
+          ymin=0, ymax=0.05,
+          yticklabels=\empty,
+          xticklabels=\empty,
+          axis lines=middle,
+          scaled y ticks = false,
+        ]
+        \addplot[mark=none, domain=150:190] {0.05 * exp(-0.5 * ((x - 170) / 5) ^ 2)};
+      \end{axis}
+    \end{tikzpicture}
+  \end{center}
+
+  The normal distribution is the most common probability model in real life. A
+  normal distribution consists of two parameters, the mean value $\mu$ and the
+  standard deviation $\sigma$, thier corresponding functional expression of
+  normal curve is:
+  \begin{cequation}
+    f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}
+  \end{cequation}
+
+  Assume that the observation $X$ of a trial is normal distribution with mean
+  value $\mu$ and standard deviation $\sigma$, then its denoted as:
+  \begin{cequation}
+    X \sim N(\mu, \sigma^2)
+  \end{cequation}
+  The probability $P$ ($a < X < b$) of the observation $X$ being in the interval $(a, b)$ is the area formed by the x-axis, line $x = a$, line $x = b$, and the normal curve, as shown in the figure below.
+
+  \begin{center}
+
+    \begin{tikzpicture}
+      % define normal distribution function 'normaltwo'
+      \def\normaltwo{\x,{3*1/exp(((\x-3)^2)/2)}}
+
+      % input x and y parameters
+      \def\y{4.4}
+      \def\x{2.4}
+
+      % this line calculates f(y)
+      \def\fy{3*1/exp(((\y-3)^2)/2)}
+      \def\fx{3*1/exp(((\x-3)^2)/2)}
+
+      % Shade orange area underneath curve.
+      \fill [fill=gray!40] ({\x},0) -- plot[domain={\x}:{\y}] (\normaltwo) -- ({\y},0) -- cycle;
+
+      % Draw and label normal distribution function
+      \draw[domain=0:6] plot (\normaltwo) node[right] {};
+
+      % Add dashed line dropping down from normal.
+      \draw[dashed] ({\y},{\fy}) -- ({\y},0) node[below] {$b$};
+      \draw[dashed] ({\x},{\fx}) -- ({\x},0) node[below] {$a$};
+
+      % Optional: Add axis labels
+      \draw (6.2, 0) node[right] {$x$};
+      \draw (0, 4) node[above] {$y$};
+      \draw (0, 0) node [below left] {$O$};
+
+      % Optional: Add axes
+      \draw[->] (-0.5,0) -- (6.2,0) node[above] {};
+      \draw[->] (0,-0.5) -- (0,4) node[right] {};
+    \end{tikzpicture}
+  \end{center}
+
+  A normal distribution with mean value of 0 and standard deviation of 1 is
+  called the standard normal distribution, its normal curve
+  \begin{cequation}
+    f(x) = \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}
+  \end{cequation}
+  is symmetrical about y-axis, as shown in the figure below.
+
+  \begin{center}
+    \begin{tikzpicture}
+      % define normal distribution function 'normaltwo'
+      \def\normaltwo{\x,{3*1/exp(((\x)^2)/2)}}
+
+      % Draw and label normal distribution function
+      \draw[domain=-3:3] plot (\normaltwo) node[right] {};
+
+      % Optional: Add axis labels
+      \draw (3.2, 0) node[right] {$x$};
+      \draw (0, 4) node[above] {$y$};
+      \draw (0, 0) node [below left] {$O$};
+
+      % Optional: Add axes
+      \draw[->] (-3.2,0) -- (3.2,0) node[above] {};
+      \draw[->] (0,-0.5) -- (0,4) node[right] {};
+
+      \node at (2, 2.5) {$y=\frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}$};
+    \end{tikzpicture}
+  \end{center}
+
+  Assume that $X$ is a normal distribution with mean value $\mu$ and standard
+  deviation $\sigma$, then
+  \begin{cequation}
+    Z = \frac{X - \mu}{\sigma}
+  \end{cequation}
+  is a standard normal distribution. That is,
+  \begin{cequation}
+    \text{If } x \sim N(\mu, \sigma^2), \text{ then } Z = \frac{x - \mu}{\sigma}\text{, } Z \sim N(0, 1)
+  \end{cequation}
+
+  Hence, General problems of normal distribution can be solved by converting into
+  standard normal distribution problems.
+
+  In order to calculate the probability of events related to standard normal
+  distribution, we have attached a standard normal distribution table in appendix
+  A. Assume that $Z$ is a standard normal distribution, $z$ is a positive number
+  lesser than or equal to $3.49$, we can use the table to calculate the
+  probability of $Q(z) = P(Z \leq z)$.
+
+  For example, to find $P(Z \leq 1.23)$, first find the row of $z = 1.2$. The
+  value in the column of this row corresponding to 3 (2nd decimal place) is
+  $0.1093$, this is the probability of $P(Z \leq 1.23)$.
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|}
+      \hline
+      $z$ & 0      & 1                     & 2      & 3               & $\cdots$ \\
+      \hline
+          &        & \multicolumn{3}{c|}{} &                                     \\
+          &        & \multicolumn{3}{c|}{} &                                     \\
+      \hline
+      1.2 & 0.1151 & 0.1131                & 0.1112 & \textbf{0.1093} &          \\
+      \hline
+          &        & \multicolumn{3}{c|}{} &                                     \\
+      \hline
+    \end{tabular}
+  \end{center}
+
+  Any probability of events related to standard normal distribution can be solved
+  using symmetry and properties of probability.
+
+  Since the probability of sure event is 1, the area of the region under the
+  curve of standard normal distribution above the x-axis is 1.
+
+  Assume that $X$ is a normal distribution, $x$ is any real number, $P(X=x) = 0$.
+  Therefore, $P(X < x) = P(X \leq x)$, $P(X > x) = P(X \geq x)$.
+
+  \subsection{Practice 9}
+
+  There are 2500 students who have attended geography exam during the Senior UEC
+  exam. their marks can be assumed to be a normal distribution with mean value of
+  60 and standard deviation of 11.
+  \begin{enumerate}[label=(\alph*)]
+    \item Find the number of students who failed the exam.
+    \item If grade $A1$ is 78 marks or above, find the percentage of students who
+          obtained grade $A1$.
+    \item If the passing rate is $90\%$, find the minimum marks required to pass the
+          exam. (Round to the nearest integer)
+  \end{enumerate}
+
+  \subsection{Exercise 21.6}
+
+  \begin{enumerate}
+    \item If the observation of a trial $Z$ is a standard normal distribution, find the
+          probability of the following events:
+          \begin{enumerate}
+            \item $P(Z < 0.91)$
+            \item $P(Z \leq -2.01)$
+            \item $P(Z \geq -0.5)$
+            \item $P(0.24 < Z \leq 1.79)$
+            \item $P(-2.21 < Z < -0.97)$
+            \item $P(-2.39 < Z \leq 0.56)$
+          \end{enumerate}
+
+    \item If the observation of a trial $Z$ is a standard normal distribution, find the
+          value of $a$ of the following events:
+          \begin{enumerate}
+            \item $P(Z > a) = 0.0505$
+            \item $P(Z < a) = 0.8980$
+            \item $P(Z < a) = 0.3632$
+            \item $P(Z > a) = 0.8599$
+            \item $P(|Z| > a) = 0.0142$
+            \item $P(|Z| < a) = 0.7888$
+          \end{enumerate}
+
+    \item A factory produces canned coffee. The capacity of each can can be assumed to be
+          a normal distribution with mean value of $244.5ml$ and standard deviation of
+          $5.4ml$.
+          \begin{enumerate}
+            \item Randomly pick a can of coffee, find the probability that the capacity of the
+                  can is less than $235ml$.
+            \item Randomly pick a can of coffee, find the probability that the capacity of the
+                  can is in between $240ml$ and $250ml$.
+            \item The factory has sold $18,000$ can of coffee in a week. How many cans have a
+                  capacity greater than $260ml$?
+            \item Someone has bought 7 cans of coffee, find the probability that 4 cans of coffee
+                  have less than $2420ml$ of capacity each.
+          \end{enumerate}
+
+    \item A machine produces wrapped cookies, the weight of each cookie can be assumed to
+          be a normal distribution with mean value of $501.25g$ and standard deviation of
+          $5.32g$.
+          \begin{enumerate}
+            \item Find the percentage of cookies that have a weight less than $490g$.
+            \item Of the $10,000$ cookies produced by the machine, how many cookies have a weight
+                  greater than $510g$?
+            \item If there are $2.5\%$ of the cookies that have a weight less than $a$ grams,
+                  find the value of $a$.
+            \item If there are $99.02\%$ of the cookies that have a weight between $(501.25 - c)$
+                  grams and $(501.25 + c)$ grams, find the value of $c$.
+          \end{enumerate}
+
+    \item The life span of brand $A$ television can be assumed to be a normal
+          distribution with mean value of $7.28$ years and standard deviation of $2.23$
+          years. The warranty of the television is $3$ years. If the television is broken
+          within the warranty period, the company will replace it with a new one for
+          free. Find the percentage of television that will be replaced.
+  \end{enumerate}
+
+  \end{enumerate}
+
 \end{multicols}
+
+\appendix
+
+\chapter{Standard Normal Distribution Table}
+
+Listed in the table below are $Q(z) = P(Z \leq z)$, in which $Z$ is a standard
+normal distribution $N(0, 1)$.
+
+\begin{center}
+  \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} |c|c|ccc|ccc|ccc|}
+    \hline
+    $z$ & 0      & 1      & 2      & 3      & 4      & 5      & 6      & 7      & 8      & 9      \\
+    \hline
+    \\[-1em]
+    0.0 & 0.5000 & 0.4960 & 0.4920 & 0.4880 & 0.4840 & 0.4801 & 0.4761 & 0.4721 & 0.4681 & 0.4641 \\
+    \\[-1em]
+    0.1 & 0.4602 & 0.4562 & 0.4522 & 0.4483 & 0.4443 & 0.4404 & 0.4364 & 0.4325 & 0.4286 & 0.4247 \\
+    \\[-1em]
+    0.2 & 0.4207 & 0.4168 & 0.4129 & 0.4090 & 0.4052 & 0.4013 & 0.3974 & 0.3936 & 0.3897 & 0.3859 \\
+    \\[-1em]
+    0.3 & 0.3821 & 0.3783 & 0.3745 & 0.3707 & 0.3669 & 0.3632 & 0.3594 & 0.3557 & 0.3520 & 0.3483 \\
+    \\[-1em]
+    0.4 & 0.3446 & 0.3409 & 0.3372 & 0.3336 & 0.3300 & 0.3264 & 0.3228 & 0.3192 & 0.3156 & 0.3121 \\
+    \\[-1em]
+    \hline
+    \\[-1em]
+    0.5 & 0.3085 & 0.3050 & 0.3015 & 0.2981 & 0.2946 & 0.2912 & 0.2877 & 0.2843 & 0.2810 & 0.2776 \\
+    \\[-1em]
+    0.6 & 0.2743 & 0.2709 & 0.2676 & 0.2643 & 0.2611 & 0.2578 & 0.2546 & 0.2514 & 0.2483 & 0.2451 \\
+    \\[-1em]
+    0.7 & 0.2420 & 0.2389 & 0.2358 & 0.2327 & 0.2296 & 0.2266 & 0.2236 & 0.2206 & 0.2177 & 0.2148 \\
+    \\[-1em]
+    0.8 & 0.2119 & 0.2090 & 0.2061 & 0.2033 & 0.2005 & 0.1977 & 0.1949 & 0.1922 & 0.1894 & 0.1867 \\
+    \\[-1em]
+    0.9 & 0.1841 & 0.1814 & 0.1788 & 0.1762 & 0.1736 & 0.1711 & 0.1685 & 0.1660 & 0.1635 & 0.1611 \\
+    \\[-1em]
+    \hline
+    \\[-1em]
+    1.0 & 0.1587 & 0.1562 & 0.1539 & 0.1515 & 0.1492 & 0.1469 & 0.1446 & 0.1423 & 0.1401 & 0.1379 \\
+    \\[-1em]
+    1.1 & 0.1357 & 0.1335 & 0.1314 & 0.1292 & 0.1271 & 0.1251 & 0.1230 & 0.1210 & 0.1190 & 0.1170 \\
+    \\[-1em]
+    1.2 & 0.1151 & 0.1131 & 0.1112 & 0.1093 & 0.1075 & 0.1056 & 0.1038 & 0.1020 & 0.1003 & 0.0985 \\
+    \\[-1em]
+    1.3 & 0.0968 & 0.0951 & 0.0934 & 0.0918 & 0.0901 & 0.0885 & 0.0869 & 0.0853 & 0.0838 & 0.0823 \\
+    \\[-1em]
+    1.4 & 0.0808 & 0.0793 & 0.0778 & 0.0764 & 0.0749 & 0.0735 & 0.0721 & 0.0708 & 0.0694 & 0.0681 \\
+    \\[-1em]
+    \hline
+    \\[-1em]
+    1.5 & 0.0668 & 0.0655 & 0.0643 & 0.0630 & 0.0618 & 0.0606 & 0.0594 & 0.0582 & 0.0571 & 0.0559 \\
+    \\[-1em]
+    1.6 & 0.0548 & 0.0537 & 0.0526 & 0.0516 & 0.0505 & 0.0495 & 0.0485 & 0.0475 & 0.0465 & 0.0455 \\
+    \\[-1em]
+    1.7 & 0.0446 & 0.0436 & 0.0427 & 0.0418 & 0.0409 & 0.0401 & 0.0392 & 0.0384 & 0.0375 & 0.0367 \\
+    \\[-1em]
+    1.8 & 0.0359 & 0.0351 & 0.0344 & 0.0336 & 0.0329 & 0.0322 & 0.0314 & 0.0307 & 0.0301 & 0.0294 \\
+    \\[-1em]
+    1.9 & 0.0287 & 0.0281 & 0.0274 & 0.0268 & 0.0262 & 0.0256 & 0.0250 & 0.0244 & 0.0239 & 0.0233 \\
+    \\[-1em]
+    \hline
+    \\[-1em]
+    2.0 & 0.0228 & 0.0222 & 0.0217 & 0.0212 & 0.0207 & 0.0202 & 0.0197 & 0.0192 & 0.0188 & 0.0183 \\
+    \\[-1em]
+    2.1 & 0.0179 & 0.0174 & 0.0170 & 0.0166 & 0.0162 & 0.0158 & 0.0154 & 0.0150 & 0.0146 & 0.0143 \\
+    \\[-1em]
+    2.2 & 0.0139 & 0.0136 & 0.0132 & 0.0129 & 0.0125 & 0.0122 & 0.0119 & 0.0116 & 0.0113 & 0.0110 \\
+    \\[-1em]
+    2.3 & 0.0107 & 0.0104 & 0.0102 & 0.0099 & 0.0096 & 0.0094 & 0.0091 & 0.0089 & 0.0087 & 0.0084 \\
+    \\[-1em]
+    2.4 & 0.0082 & 0.0080 & 0.0078 & 0.0075 & 0.0073 & 0.0071 & 0.0069 & 0.0068 & 0.0066 & 0.0064 \\
+    \\[-1em]
+    \hline
+    \\[-1em]
+    2.5 & 0.0062 & 0.0060 & 0.0059 & 0.0057 & 0.0055 & 0.0054 & 0.0052 & 0.0051 & 0.0049 & 0.0048 \\
+    \\[-1em]
+    2.6 & 0.0047 & 0.0045 & 0.0044 & 0.0043 & 0.0041 & 0.0040 & 0.0039 & 0.0038 & 0.0037 & 0.0036 \\
+    \\[-1em]
+    2.7 & 0.0035 & 0.0034 & 0.0033 & 0.0032 & 0.0031 & 0.0030 & 0.0029 & 0.0028 & 0.0027 & 0.0026 \\
+    \\[-1em]
+    2.8 & 0.0026 & 0.0025 & 0.0024 & 0.0023 & 0.0023 & 0.0022 & 0.0021 & 0.0021 & 0.0020 & 0.0019 \\
+    \\[-1em]
+    2.9 & 0.0019 & 0.0018 & 0.0018 & 0.0017 & 0.0016 & 0.0016 & 0.0015 & 0.0015 & 0.0014 & 0.0014 \\
+    \\[-1em]
+    \hline
+    \\[-1em]
+    3.0 & 0.0013 & 0.0013 & 0.0013 & 0.0012 & 0.0012 & 0.0011 & 0.0011 & 0.0011 & 0.0010 & 0.0010 \\
+    \\[-1em]
+    3.1 & 0.0010 & 0.0009 & 0.0009 & 0.0009 & 0.0009 & 0.0008 & 0.0008 & 0.0008 & 0.0007 & 0.0007 \\
+    \\[-1em]
+    3.2 & 0.0007 & 0.0007 & 0.0006 & 0.0006 & 0.0006 & 0.0006 & 0.0006 & 0.0005 & 0.0005 & 0.0005 \\
+    \\[-1em]
+    3.3 & 0.0005 & 0.0005 & 0.0005 & 0.0004 & 0.0004 & 0.0004 & 0.0004 & 0.0004 & 0.0004 & 0.0003 \\
+    \\[-1em]
+    3.4 & 0.0003 & 0.0003 & 0.0003 & 0.0003 & 0.0003 & 0.0003 & 0.0003 & 0.0003 & 0.0003 & 0.0002 \\
+    \hline
+  \end{tabular*}
+\end{center}
 
 \end{document}
