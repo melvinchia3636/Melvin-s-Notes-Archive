@@ -47,6 +47,16 @@
     }
 }
 
+\newcommand\typel[2]{%
+  \mathbin{\mathop{#1\kern0pt}%
+    \limits_{\raisebox{3.6ex}{\hbox to0pt{\hss\strut$\uparrow$\hss}}\hbox to0pt{\hss#2\hss}}}
+}
+
+\newcommand\typem[2]{%
+  \mathbin{\mathop{#1\kern0pt}%
+    \limits^{\raisebox{3.6ex}{\hbox to0pt{\hss#2\hss}}\hbox to0pt{\hss\strut$\downarrow$\hss}}}
+}
+
 \counterwithout{equation}{chapter}
 \setlength{\columnseprule}{1pt}
 \setlength{\columnsep}{24pt}
@@ -2523,10 +2533,46 @@
     \item Find the range, quartiles and interquartile range of the following data:
           \begin{enumerate}
             \item 4 \quad 8 \quad 7 \quad 3 \quad 3 \quad 9 \quad 6 \quad 5 \quad 1 \quad 1 \quad 2
+                  \sol{}
+
+                  Sorting the data, we get
+                  \[1 \quad 1 \quad \typel{2}{$Q_1 = 2$} \quad 3 \quad 3 \quad \typel{4}{$Q_2 = 4$} \quad 5 \quad 6 \quad \typel{7}{$Q_3 = 7$} \quad 8 \quad 9\]
+
+                  The range is $9 - 1 = 8$.
+
+                  The interquartile range is $Q.D. = 7 - 2 = 5$.
+
             \item 7 \quad 6 \quad 8 \quad 8 \quad 5 \quad 6 \quad 1 \quad 9 \quad 8
+                  \sol{}
+
+                  Sorting the data, we get
+                  \[1 \typel{\quad 5 \quad 6 \quad}{$Q_1 = \frac{5 + 6}{2} = 5.5$} 6 \typem{\quad 7 \quad}{$Q_2 = 7$} 8 \typel{\quad 8 \quad 8 \quad}{$Q_3 = \frac{8 + 8}{2} = 8$} 9\]
+
+                  The range is $9 - 1 = 8$.
+
+                  The interquartile range is $8 - 5.5 = 2.5$.
+
             \item 1.0 \quad 1.1 \quad 1.5 \quad 0.7 \quad 0.8 \quad 1.2 \quad 1.4\ \quad 0.9 \quad 1.6 \quad 1.3
+                  \sol{}
+
+                  Sorting the data, we get
+                  \[0.7 \quad 0.8 \quad \typel{0.9}{$Q_1 = 0.9$} \quad 1.0 \typem{ \quad 1.1 \quad 1.2 \quad }{$Q_2 = \frac{1.1 + 1.2}{2} = 1.15$} 1.3 \quad \typel{1.4}{$Q_3 = 1.4$} \quad 1.5 \quad 1.6\]
+
+                  The range is $1.6 - 0.7 = 0.9$.
+
+                  The interquartile range is $1.4 - 0.9 = 0.5$.
+
             \item 3 \quad 4 \quad 7 \quad 2 \quad 4 \quad 6 \quad 5 \quad 8
+                  \sol{}
+
+                  Sorting the data, we get
+                  \[2 \qquad \typel{3 \qquad 4}{$Q_1 = \frac{3 + 4}{2} = 3.5$} \qquad \typem{ 4 \qquad 5}{$Q_2 = \frac{4 +5}{2} = 4.5$} \qquad \typel{6 \qquad 7}{$Q_2 = \frac{6 + 7}{2} = 6.5$} \qquad 8\]
+
+                  The range is $8 - 2 = 6$.
+
+                  The interquartile range is $6.5 - 3.5 = 3$.
           \end{enumerate}
+
     \item The table below shows the cumulative frequency distribution table of the
           heights of 60 students:
           \begin{center}
@@ -2546,8 +2592,49 @@
           \end{center}
           \begin{enumerate}
             \item Find the interquartile range of the heights of the students from the cumulative
-                  frequency polygon.
+                  frequency polygon. \sol{}
+                  \begin{center}
+                    \begin{tikzpicture}[scale=0.8]
+                      \begin{axis}[
+                          title style = {align = center},
+                          title={\large{Cumulative Frequency Polygon of} \\ \large{Distribution of Height}},
+                          ymin=0, ymax=60,
+                          ytick={0, 10, ..., 60},
+                          xtick={150, 155, ..., 185},
+                          xtick style={draw=none, fill=none, font=\footnotesize}, x tick label style =
+                            {rotate=90,anchor=east}, xlabel=Height, ylabel=Frequency, xlabel style={at={(axis
+                                  description cs:0.5, -0.05)}, anchor=north}, ylabel style={at={(axis
+                                  description cs:0.05, 0.5)}, anchor=center}, ] \addplot[forget plot, sharp
+                          plot, mark=*, mark size=1.5pt, mark options={solid, fill=black, draw=black},
+                          draw=black] coordinates { (150, 0) (155, 3) (160, 10) (165, 22) (170, 37) (175, 51)
+                            (180, 58) (185, 60) };
+                        \draw [dashed] (axis cs: 162, 0) -- (axis cs: 162, 15) -- (axis cs: 0, 15);
+                        \draw [dashed] (axis cs: 173, 0) -- (axis cs: 173, 45) -- (axis cs: 0, 45);
+                        \node at (axis cs: 175, 30) {$Q_3$};
+                        \node at (axis cs: 164, 8) {$Q_1$};
+                      \end{axis}
+                    \end{tikzpicture}
+                  \end{center}
+                  From the graph, $Q_1$ is approximately $162cm$ and $Q_3$ is approximately $173cm$. Hence,
+                  \begin{flalign*}
+                    Q.D. = \frac{173 - 162}{2} = 5.5
+                  \end{flalign*}
+
             \item Find the interquartile range of the heights of the students using formula.
+                  \sol{}
+
+                  $n = 60$, $\frac{n}{4} = 15$, the class that contains $Q_1$ is $160-165$, $C_1 = 5$, $L_1 = 160$, $f_1 = 11$, $F_1 = 10$,
+                  \begin{flalign*}
+                    Q_1 = 160 + \frac{15 - 10}{12} \times 5 = 162.083
+                  \end{flalign*}
+                  $n = 60$, $\frac{3n}{4} = 45$, the class that contains $Q_3$ is $170-175$, $C_3 = 5$, $L_3 = 170$, $f_3 = 14$, $F_3 = 37$,
+                  \begin{flalign*}
+                    Q_3 = 170 + \frac{45 - 37}{14} \times 5 = 172.857
+                  \end{flalign*}
+                  Hence,
+                  \begin{flalign*}
+                    Q.D. = \frac{172.857 - 162.083}{2} = 5.39
+                  \end{flalign*}
           \end{enumerate}
   \end{enumerate}
 
@@ -2560,14 +2647,43 @@
           \end{flalign*}
           Find:
           \begin{enumerate}
-            \item The range.
-            \item The quartiles and interquartile range.
+            \item The range. \sol{}
+
+                  Rearranging the data,
+
+                  \begin{flalign*}
+                     & 0 \quad 1 \quad 2 \quad 2 \quad 3 \quad 3 \quad 4 \quad 4 \quad 5 \quad 7 \quad 9 &
+                  \end{flalign*}
+                  Hence, the range is $9 - 0 = 9$.
+
+            \item The quartiles and interquartile range. \sol{}
+
+                  Rearranging the data,
+                  \begin{flalign*}
+                     & 0 \quad 1 \quad \typel{2}{$Q_1 = 2$} \quad 2 \quad 3 \quad \typel{3}{$Q_2 = 3$} \quad 4 \quad 4 \quad \typel{5}{$Q_3 = 5$} \quad 7 \quad 9 &
+                  \end{flalign*}
+                  Hence, the interquartile range is $5 - 2 = 3$.
           \end{enumerate}
+
     \item Given a set of data: 1.2, 1.0, 1.1, 1.3, 1.5, 1.7, 1.2, 1.0. Find:
           \begin{enumerate}
-            \item The range.
-            \item The quartiles and interquartile deviation.
+            \item The range. \sol{}
+
+                  Rearranging the data,
+                  \begin{flalign*}
+                     & 1.0 \quad 1.0 \quad 1.1 \quad 1.2 \quad 1.2 \quad 1.3 \quad 1.5 \quad 1.7 &
+                  \end{flalign*}
+                  Hence, the range is $1.7 - 1.0 = 0.7$.
+
+            \item The quartiles and interquartile deviation. \sol{}
+
+                  Rearranging the data,
+                  \begin{flalign*}
+                     & 1.0 \quad \typel{1.0 \quad 1.1}{$Q_1 = \frac{1.0}{1.1} = 1.05$} \quad \typem{1.2 \quad 1.2}{$Q_2 = \frac{1.2+1.2}{2} = 1.2$} \quad \typel{1.3 \quad 1.5}{$Q_3 = \frac{1.3 + 1.5}{2} = 1.4$} \quad 1.7 &
+                  \end{flalign*}
+                  Hence, the interquartile deviation is $\frac{1.4 - 1.05}{2} = 0.18$.
           \end{enumerate}
+
     \item The distribution of scores of Mathematics test of 100 senior 1 students from a
           high school are as follows:
           \begin{center}
@@ -2586,6 +2702,35 @@
             \end{tabular}
           \end{center}
           Find the interquartile deviation of the scores.
+          \sol{}
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|}
+              \hline
+              Scores   & Freq. & Lower Than & Cumulative Freq. \\
+              \hline
+              30 - 40  & 3     & 40.5       & 3                \\
+              40 - 50  & 4     & 50.5       & 7                \\
+              50 - 60  & 13    & 60.5       & 20               \\
+              60 - 70  & 22    & 70.5       & 42               \\
+              70 - 80  & 30    & 80.5       & 72               \\
+              80 - 90  & 23    & 90.5       & 95               \\
+              90 - 100 & 5     & 100.5      & 100              \\
+              \hline
+            \end{tabular}
+          \end{center}
+
+          $n = 100$, $\frac{n}{4} = 25$, The class that contains the lower quartile is $60 - 70$, $C_1 = 10$, $L_1 = 60.5$, $f_1 = 22$, $F_1 = 20$,
+          \begin{flalign*}
+            Q_1 = 60.5 + \frac{25 - 20}{22} \times 10 = 62.773
+          \end{flalign*}
+          $n = 100$, $\frac{3n}{4} = 75$, The class that contains the upper quartile is $80 - 90$, $C_2 = 10$, $L_2 = 80.5$, $f_2 = 23$, $F_2 = 72$,
+          \begin{flalign*}
+            Q_3 = 80.5 + \frac{75 - 72}{23} \times 10 = 81.804
+          \end{flalign*}
+          Hence,
+          \begin{flalign*}
+            Q.D. = \frac{81.804 - 62.773}{2} = 9.52
+          \end{flalign*}
   \end{enumerate}
 
   \subsubsection*{Mean Deviation}
@@ -2614,15 +2759,34 @@
   \begin{center}
     \begin{tabular}{|c|c|c|c|c|c|}
       \hline
-      Lim.    & Freq. $f_i$ & Mid. $x_i$ & $f_ix_i$ & $|x_i - \bar{x}|$ & $|x_i - \bar{x}|f_i$ \\
+      Lim.    & $f_i$ & Mid. $x_i$ & $f_ix_i$ & $|x_i - \bar{x}|$ & $|x_i - \bar{x}|f_i$ \\
       \hline
-      50 - 54 & 2           &            &          &                   &                      \\
-      55 - 59 & 3           &            &          &                   &                      \\
-      60 - 64 & 6           &            &          &                   &                      \\
-      65 - 69 & 9           &            &          &                   &                      \\
+      50 - 54 & 2     &            &          &                   &                      \\
+      55 - 59 & 3     &            &          &                   &                      \\
+      60 - 64 & 6     &            &          &                   &                      \\
+      65 - 69 & 9     &            &          &                   &                      \\
       \hline
     \end{tabular}
   \end{center}
+  \sol{}
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|}
+      \hline
+      Lim.    & $f_i$ & Mid. $x_i$ & $f_ix_i$ & $|x_i - \bar{x}|$ & $|x_i - \bar{x}|f_i$ \\
+      \hline
+      50 - 54 & 2     & 52         & 104      & 10.5              & 21                   \\
+      55 - 59 & 3     & 57         & 171      & 5.5               & 16.5                 \\
+      60 - 64 & 6     & 62         & 372      & 0.5               & 3                    \\
+      65 - 69 & 9     & 67         & 603      & 4.5               & 40.5                 \\
+      \hline
+              & 20    &            & 1250     &                   & 81                   \\
+      \hline
+    \end{tabular}
+  \end{center}
+  \begin{flalign*}
+    \bar{x}                 & = \frac{1250}{20} = 62.5 \\
+    \textit{Mean Deviation} & = \frac{81}{20} = 4.05
+  \end{flalign*}
 
   \subsection{Exercise 18.4b}
 
@@ -2630,9 +2794,30 @@
     \item Find the mean deviation of the following dataset:
           \begin{enumerate}
             \item 7 \quad 10 \quad 9 \quad 12 \quad 4 \quad 11 \quad 3
+                  \sol{}
+                  \begin{flalign*}
+                    \bar{x}            & = \frac{7 + 10 + 9 + 12 + 4 + 11 + 3}{7} = 8 & \\
+                    \textit{Mean Dev.} & = \frac{1}{7}(|7 - 8| + \cdots + |3 - 8|)      \\
+                                       & = 2.86
+                  \end{flalign*}
+
             \item 58 \quad 65 \quad 38 \quad 76 \quad 43
+                  \sol{}
+                  \begin{flalign*}
+                    \bar{x}            & = \frac{58 + 65 + 38 + 76 + 43}{5} = 56       & \\
+                    \textit{Mean Dev.} & = \frac{1}{5}(|58 - 56| + \cdots + |43 - 56|)   \\
+                                       & = 12.4
+                  \end{flalign*}
+
             \item 45.0 \quad 46.5 \quad 47.0 \quad 48.0 \quad 48.7 \quad 48.9 \quad 49.5 \quad 50.4
+                  \sol{}
+                  \begin{flalign*}
+                    \bar{x}         & = \frac{45.0 + 46.5 + \cdots + 50.4}{8} = 48          & \\
+                    \textit{M Dev.} & = \frac{1}{8}(|45.0 - 48.3| + \cdots + |50.4 - 48.3|)   \\
+                                    & = 1.38
+                  \end{flalign*}
           \end{enumerate}
+
     \item The table below shows the frequency of the number of questions answered
           correctly by 26 students in a Mathematics minor test:
           \begin{center}
@@ -2654,6 +2839,32 @@
             \end{tabular}
           \end{center}
           Find the mean deviation fo the number of questions answered correctly.
+          \sol{}
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|c|}
+              \hline
+              $x_i$ & $f_i$ & $f_ix_i$ & $|x_i - \bar{x}|$ & $|x_i - \bar{x}|f_i$ \\
+              \hline
+              1     & 0     & 0        & 5                 & 0                    \\
+              2     & 1     & 2        & 4                 & 4                    \\
+              3     & 1     & 3        & 3                 & 3                    \\
+              4     & 1     & 4        & 2                 & 2                    \\
+              5     & 6     & 30       & 1                 & 6                    \\
+              6     & 8     & 48       & 0                 & 0                    \\
+              7     & 6     & 42       & 1                 & 6                    \\
+              8     & 1     & 8        & 2                 & 2                    \\
+              9     & 1     & 9        & 3                 & 3                    \\
+              10    & 1     & 10       & 4                 & 4                    \\
+              \hline
+                    & 26    &          &                   & 30                   \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{flalign*}
+            \bar{x}                 & = \frac{156}{26} = 6   \\
+            \textit{Mean Deviation} & = \frac{30}{26} = 1.15
+          \end{flalign*}
+
     \item Following are the test scores of 36 students:
           \begin{flalign*}
             77 & \quad 60 \quad 52 \quad 73 \quad 60 \quad 50 \quad 70 \quad 60 \quad 52 & \\
@@ -2663,9 +2874,78 @@
           \end{flalign*}
           \begin{enumerate}
             \item Group the dataset above according to the pattern $[34 - 38)$, $[38 - 42)$, $[42
-                    - 46)$, \ldots, then make a frequency distribution table.
-            \item Find the mean from the frequency distribution table.
-            \item Find the mean deviation from the frequency distribution table.
+                    - 46)$, \ldots, then make a frequency distribution table. \sol{}
+                  \begin{center}
+                    \begin{tabular}{|c|c|}
+                      \hline
+                      Range            & Frequency \\
+                      \hline
+                      $34 \leq x < 38$ & 1         \\
+                      $38 \leq x < 42$ & 1         \\
+                      $42 \leq x < 46$ & 3         \\
+                      $46 \leq x < 50$ & 4         \\
+                      $50 \leq x < 54$ & 4         \\
+                      $54 \leq x < 58$ & 5         \\
+                      $58 \leq x < 62$ & 8         \\
+                      $62 \leq x < 66$ & 4         \\
+                      $66 \leq x < 70$ & 2         \\
+                      $70 \leq x < 74$ & 3         \\
+                      $74 \leq x < 78$ & 1         \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+
+            \item Find the mean from the frequency distribution table. \sol{}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                      \hline
+                      Range            & Mid $x_i$ & Freq. $f_i$ & $f_ix_i$ \\
+                      \hline
+                      $34 \leq x < 38$ & 36        & 1           & 36       \\
+                      $38 \leq x < 42$ & 40        & 1           & 40       \\
+                      $42 \leq x < 46$ & 44        & 3           & 132      \\
+                      $46 \leq x < 50$ & 48        & 4           & 192      \\
+                      $50 \leq x < 54$ & 52        & 4           & 208      \\
+                      $54 \leq x < 58$ & 56        & 5           & 280      \\
+                      $58 \leq x < 62$ & 60        & 8           & 480      \\
+                      $62 \leq x < 66$ & 64        & 4           & 256      \\
+                      $66 \leq x < 70$ & 68        & 2           & 136      \\
+                      $70 \leq x < 74$ & 72        & 3           & 216      \\
+                      $74 \leq x < 78$ & 76        & 1           & 76       \\
+                      \hline
+                                       &           & 36          & 2052     \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  \begin{flalign*}
+                    \bar{x} = \frac{2052}{36} = 57
+                  \end{flalign*}
+
+            \item Find the mean deviation from the frequency distribution table. \sol{}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                      \hline
+                      $x_i$ & $f_i$ & $|x_i - \bar{x}|$ & $f_i|x_i - \bar{x}|$ \\
+                      \hline
+                      36    & 1     & 21                & 21                   \\
+                      40    & 1     & 17                & 17                   \\
+                      44    & 3     & 13                & 39                   \\
+                      48    & 4     & 9                 & 36                   \\
+                      52    & 4     & 5                 & 20                   \\
+                      56    & 5     & 1                 & 5                    \\
+                      60    & 8     & 3                 & 24                   \\
+                      64    & 4     & 7                 & 28                   \\
+                      68    & 2     & 11                & 22                   \\
+                      72    & 3     & 15                & 45                   \\
+                      76    & 1     & 19                & 19                   \\
+                      \hline
+                            & 36    & 107               & 276                  \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  \begin{flalign*}
+                    \textit{Mean Deviation} = \frac{276}{36} = 7.67
+                  \end{flalign*}
           \end{enumerate}
   \end{enumerate}
 
