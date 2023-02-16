@@ -1944,27 +1944,90 @@
           \begin{enumerate}
             \item Prove that $x+y = 12$ \prooff{}
                   \begin{flalign*}
-                    \frac{3 + 5 + 8 + 6 + 8 + 10 + 5 + 3 + x + y}{10} & = 6  \\
-                    48 + x + y                                        & = 60 \\
+                    \frac{3 + 5 + 8 + 6 + 8 + 10 + 5 + 3 + x + y}{10} & = 6  & \\
+                    48 + x + y                                        & = 60   \\
                     x + y                                             & = 12
                   \end{flalign*}
-            \item With that, if
+            \item With that, if the following conditions are satisfied, find the mode of the
+                  dataset.
                   \begin{enumerate}
                     \item $x = y$
+                          \sol{}
+                          \begin{flalign*}
+                            x   & = y  \\
+                            x+y & = 12 \\
+                            2x  & = 12 \\
+                            x   & = 6  \\
+                            y   & = 6
+                          \end{flalign*}
+                          $\therefore$ The dataset becomes $3, 5, 8, 6, 8, 10, 5, 3, 6, 6$.
+                          $\therefore$ The mode is $6$, which has the highest frequency of 3.
                     \item $x < y$
+                          \sol{}
+                          \begin{flalign*}
+                            x   & < y  \\
+                            x+y & = 12 \\
+                            2x  & < 12 \\
+                            x   & < 6  \\
+                            y   & > 6
+                          \end{flalign*}
+                          When $x = 1$, $y = 11$, the dataset becomes $3, 5, 8, 6, 8, 10, 5, 3, 1, 11$.
+
+                          $\therefore$ The mode are 3, 5, 8, which has the highest frequency of 2.
+
+                          When $x = 2$, $y = 10$, the dataset becomes $3, 5, 8, 6, 8, 10, 5, 3, 2, 10$.
+
+                          $\therefore$ The mode are 3, 5, 8, 10, which has the highest frequency of 2.
+
+                          When $x = 3$, $y = 9$, the dataset becomes $3, 5, 8, 6, 8, 10, 5, 3, 3, 9$.
+
+                          $\therefore$ The mode is 3, which has the highest frequency of 3.
+
+                          When $x = 4$, $y = 8$, the dataset becomes $3, 5, 8, 6, 8, 10, 5, 3, 4, 8$.
+
+                          $\therefore$ The mode is 8, which has the highest frequency of 3.
+
+                          When $x = 5$, $y = 7$, the dataset becomes $3, 5, 8, 6, 8, 10, 5, 3, 5, 7$.
+
+                          $\therefore$ The mode is 5, which has the highest frequency of 3.
                   \end{enumerate}
-                  Find the mode of the dataset.
+
           \end{enumerate}
+
     \item The mean of a set of data 13, 5, 5, $n$, 5, 10, 10, 11, 9, $n^2$ is $7.4$,
           \begin{enumerate}
-            \item Find the possible values of $n$.
-            \item With that, If
+            \item Find the possible values of $n$. \sol{}
+                  \begin{flalign*}
+                    \frac{13 + 5 + 5 + n + \cdots + n^2}{10} & = 7.4 & \\
+                    68 + n + n^2                             & = 74    \\
+                    n^2 + n - 6                              & = 0     \\
+                    (n + 3)(n - 2)                           & = 0     \\
+                    n = -3 \text{ or } n                     & = 2
+                  \end{flalign*}
+
+            \item With that, if the following conditions are satisfied, find the median of the
+                  dataset.
                   \begin{enumerate}
                     \item $n > 0$
+                          \sol{}
+
+                          If $n > 0$, $n = 2$, the dataset becomes 13, 5, 5, 2, 5, 10, 10, 11, 9, 4.
+                          Rearranging the dataset, we get 2, 4, 5, 5, 5, 9, 10, 10, 11, 13. There are a
+                          total of 10 elements in the dataset, so the median is the average of the
+                          $\frac{10}{2} = 5$th and $\frac{10}{2} + 1 = 6$th elements, which is
+                          $\frac{5+9}{2} = 7$.
+
                     \item $n < 0$
+                          \sol{}
+
+                          If $n < 0$, $n = -3$, the dataset becomes 13, 5, 5, -3, 5, 10, 10, 11, 9, 9.
+                          Rearranging the dataset, we get -3, 5, 5, 5, 9, 9, 10, 10, 11, 13. There are a
+                          total of 10 elements in the dataset, so the median is the average of the
+                          $\frac{10}{2} = 5$th and $\frac{10}{2} + 1 = 6$th elements, which is
+                          $\frac{9+9}{2} = 9$.
                   \end{enumerate}
-                  Find the meadian of the dataset.
           \end{enumerate}
+
     \item The following table shows the distribution of scores of a group of students in
           a competition:
           \begin{center}
@@ -1980,12 +2043,95 @@
             \end{tabular}
           \end{center}
           \begin{enumerate}
-            \item Assume that the mode is 1, find the minimum value of $x$.
-            \item Assume that the median is 2, find the maximum value of $x$.
-            \item Assume that the mean is $1.95$, find the value of $x$.
+            \item Assume that the mode is 1, find the minimum value of $x$. \sol{}
+
+                  Given that the \textbf{only} mode is 1, $x > 6$. Therefore, the minimum value
+                  of $x$ is 7.
+
+            \item Assume that the median is 2, find the maximum value of $x$. \sol{}
+
+                  Construct a cumulative frequency table:
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|}
+                      \hline
+                      Scores & Number of Students & Cum. Freq. \\ \hline
+                      0      & 3                  & 3          \\
+                      1      & $x$                & $3 + x$    \\
+                      2      & 4                  & $7 + x$    \\
+                      3      & 6                  & $13 + x$   \\
+                      4      & 2                  & $15 + x$   \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  \begin{flalign*}
+                    \frac{15 + x}{2} & > 3 + x  \\
+                    15 + x           & > 6 + 2x \\
+                    x                & < 9      \\
+                    x                & = 8
+                  \end{flalign*}
+
+            \item Assume that the mean is $1.95$, find the value of $x$. \sol{}
+
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|}
+                      \hline
+                      $x_i$ & $f_i$               & $f_i x_i$              \\
+                      \hline
+                      0     & 3                   & 0                      \\
+                      1     & $x$                 & $x$                    \\
+                      2     & 4                   & 8                      \\
+                      3     & 6                   & 18                     \\
+                      4     & 2                   & 8                      \\
+                      \hline
+                            & $\sum f_i = 15 + x$ & $\sum = f_i x_i34 + x$ \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  \begin{flalign*}
+                    \frac{34 + x}{15 + x} & = 1.95          \\
+                    34 + x                & = 29.25 + 1.95x \\
+                    0.95x                 & = 4.75          \\
+                    x                     & = 5
+                  \end{flalign*}
+
           \end{enumerate}
     \item Given thet the mode, median and mean of 5 positive integers are 9, 8, and $7.6$
-          respectively, find these 5 numbers.
+          respectively, find these 5 numbers. \sol{}
+
+          Let the 5 numbers be $a, b, c, d, e$, arranged in ascending order.
+
+          Since the median is 8, and $c$ is the middle of these 5 numbers, $c = 8$.
+
+          Since the mode is 9, there must be more than 1 number that is 9. Since $9 > 8$,
+          $d = e = 9$.
+
+          Since the mean is $7.6$,
+          \begin{flalign*}
+            \frac{a + b + c + d + e}{5} & = 7.6 \\
+            \frac{a + b + 8 + 9 + 9}{5} & = 7.6 \\
+            a + b + 26                  & = 38  \\
+            a + b                       & = 12
+          \end{flalign*}
+          Since the numbers are arranged in ascending order, and there is only one mode, $a < b < c$, that is, $a < b < 8$.
+          \begin{flalign*}
+            a + b         & = 12             \\
+            a             & = 12 - b         \\
+            \\
+            a             & < b          < 8 \\
+            12 - b        & < b     < 8      \\
+            \\
+            12            & < 2b             \\
+            b             & < 8              \\
+            \\
+            b             & > 6              \\
+            b             & < 8              \\
+            6             & < b         < 8  \\
+            \\
+            \therefore\ b & = 7              \\
+            a             & = 12 - 7 = 5
+          \end{flalign*}
+          Therefore, the 5 numbers are 5, 7, 8, 9, 9.
+
     \item The following table shows the amount of sales of a brand of shoes in a month:
           \begin{center}
             \begin{tabular}{|c|c|}
@@ -2000,8 +2146,53 @@
             \end{tabular}
           \end{center}
           \begin{enumerate}
-            \item Find the mean, median, and mode.
-            \item Which of the following central tendency represents the data best? Why?
+            \item Find the mean, median, and mode. \sol{}
+
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|}
+                      \hline
+                      $x_i$ & $f_i$           & $f_i x_i$            \\ \hline
+                      5     & 4               & 20                   \\
+                      6     & 10              & 60                   \\
+                      7     & 11              & 77                   \\
+                      8     & 18              & 144                  \\
+                      9     & 2               & 18                   \\
+                      \hline
+                            & $\sum f_i = 45$ & $\sum f_i x_i = 319$ \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  \begin{flalign*}
+                    \text{Mean} & = \frac{319}{45} = 7.09
+                  \end{flalign*}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|}
+                      \hline
+                      Shoes Number & Sales & Cum. Freq. \\ \hline
+                      5            & 4     & 4          \\
+                      6            & 10    & 14         \\
+                      7            & 11    & 25         \\
+                      8            & 18    & 43         \\
+                      9            & 2     & 45         \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  Since $n = 45$, the median is the number at the $23^{rd}$ position.
+                  \begin{flalign*}
+                    \text{Median} & = 7
+                  \end{flalign*}
+                  Since the number with the highest frequency of 18 is 8,
+                  \begin{flalign*}
+                    \text{Mode} & = 8
+                  \end{flalign*}
+
+                  $\therefore$ mean $= 7.09$, median $= 7$, mode $= 8$.
+
+            \item Which of the following central tendency represents the data best? Why? \sol{}
+
+                  The \textbf{mode} is the best central tendency to represent the data because it
+                  is the number with the highest frequency, which is 18, and it is the shoes
+                  number that most of the shoes are sold.
           \end{enumerate}
     \item In between 54 examinees in an exam, 15 of them come from cities, 39 of them
           come from suburbs. Below are the frequency distribution table of their scores:
@@ -2022,9 +2213,160 @@
           \end{center}
           \begin{enumerate}
             \item Find the mean, median, and mode of the scores of the examinees from cities and
-                  suburbs respectively.
-            \item Find the mean, median, and mode of the scores of all the examinees.
+                  suburbs respectively. \sol{}
+
+                  For the scores of the examinees from cities:
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                      \hline
+                      Score    & Mid. $x_i$ & Freq. $f_i$     & $f_i x_i$ \\ \hline
+                      12 - 23  & 17.5       & 0               & 0         \\
+                      23 - 34  & 28.5       & 0               & 0         \\
+                      34 - 45  & 39.5       & 0               & 0         \\
+                      45 - 56  & 50.5       & 1               & 50.5      \\
+                      56 - 67  & 61.5       & 3               & 184.5     \\
+                      67 - 78  & 72.5       & 4               & 290       \\
+                      78 - 89  & 83.5       & 6               & 501       \\
+                      89 - 100 & 94.5       & 1               & 94.5      \\
+                      \hline
+                               &            & $\sum f_i = 15$ & $ 1120.5$ \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  \begin{flalign*}
+                    \text{Mean} & = \frac{1120.5}{15} = 74.7
+                  \end{flalign*}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                      \hline
+                      Score    & Feq. & Lower Than & Cum. Freq. \\ \hline
+                      12 - 23  & 0    & 23         & 0          \\
+                      23 - 34  & 0    & 34         & 0          \\
+                      34 - 45  & 0    & 45         & 0          \\
+                      45 - 56  & 1    & 56         & 1          \\
+                      56 - 67  & 3    & 67         & 4          \\
+                      67 - 78  & 4    & 78         & 8          \\
+                      78 - 89  & 6    & 89         & 14         \\
+                      89 - 100 & 1    & 100        & 15         \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  $n$ = 15, $\frac{n}{2} = 7.5$, the group of scores that contains the median is $67 - 78$, $C_m = 11$, $L_m = 67$, $f_m = 3$, $F_m = 4$,
+                  \begin{flalign*}
+                    \text{Median} & = 67 + \frac{7.5 - 4}{4} \times 11 = 76.63
+                  \end{flalign*}
+                  Since the modal class is $78 - 89$ with the highest frequency of 6, $C = 11$, $d_1 = 6 - 4 = 2$, $d_2 = 6 - 1 = 5$, $L_m = 78$,
+                  \begin{flalign*}
+                    \text{Mode} & = 78 + \frac{2}{2 + 5} \times 11 = 81.14
+                  \end{flalign*}
+
+                  $\therefore$ mean $= 74.7$, median $= 76.63$, mode $= 81.14$.
+
+                  For the scores of the examinees from suburbs:
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                      \hline
+                      Score    & Mid. $x_i$ & Freq. $f_i$     & $f_i x_i$ \\ \hline
+                      12 - 23  & 17.5       & 1               & 17.5      \\
+                      23 - 34  & 28.5       & 0               & 0         \\
+                      34 - 45  & 39.5       & 5               & 197.5     \\
+                      45 - 56  & 50.5       & 6               & 303       \\
+                      56 - 67  & 61.5       & 5               & 307.5     \\
+                      67 - 78  & 72.5       & 13              & 942.5     \\
+                      78 - 89  & 83.5       & 4               & 334       \\
+                      89 - 100 & 94.5       & 5               & 472.5     \\
+                      \hline
+                               &            & $\sum f_i = 39$ & $ 2574.5$ \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  \begin{flalign*}
+                    \text{Mean} & = \frac{2574.5}{39} = 66.01
+                  \end{flalign*}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                      \hline
+                      Score    & Feq. & Lower Than & Cum. Freq. \\ \hline
+                      12 - 23  & 1    & 23         & 1          \\
+                      23 - 34  & 0    & 34         & 1          \\
+                      34 - 45  & 5    & 45         & 6          \\
+                      45 - 56  & 6    & 56         & 12         \\
+                      56 - 67  & 5    & 67         & 17         \\
+                      67 - 78  & 13   & 78         & 30         \\
+                      78 - 89  & 4    & 89         & 34         \\
+                      89 - 100 & 5    & 100        & 39         \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  $n$ = 39, $\frac{n}{2} = 19.5$, the group of scores that contains the median is $67 - 78$, $C_m = 11$, $L_m = 67$, $f_m = 13$, $F_m = 17$,
+                  \begin{flalign*}
+                    \text{Median} & = 67 + \frac{19.5 - 17}{13} \times 11 = 69.12
+                  \end{flalign*}
+                  Since the modal class is $67 - 78$ with the highest frequency of 13, $C= 11$, $d_1 = 13 - 5 = 8$, $d_2 = 13 - 4 = 9$, $L = 67$,
+                  \begin{flalign*}
+                    \text{Mode} & = 67 + \frac{8}{8 + 9} \times 11 = 72.18
+                  \end{flalign*}
+                  $\therefore$ mean $= 66.01$, median $= 69.12$, mode $= 72.18$.
+
+                  Therefore, the mean, median and mode of the scores are:
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|}
+                      \hline
+                                    & City  & Suburbs \\ \hline
+                      \text{Mean}   & 74.7  & 66.01   \\
+                      \text{Median} & 76.63 & 69.12   \\
+                      \text{Mode}   & 81.14 & 72.18   \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+
+            \item Find the mean, median and mode of the scores of all the examinees. \sol{}
+
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                      \hline
+                      Score    & Mid. $x_i$ & Freq. $f_i$     & $f_i x_i$ \\ \hline
+                      12 - 23  & 17.5       & 1               & 17.5      \\
+                      23 - 34  & 28.5       & 0               & 0         \\
+                      34 - 45  & 39.5       & 5               & 197.5     \\
+                      45 - 56  & 50.5       & 7               & 353.5     \\
+                      56 - 67  & 61.5       & 8               & 492       \\
+                      67 - 78  & 72.5       & 17              & 1232.5    \\
+                      78 - 89  & 83.5       & 10              & 835       \\
+                      89 - 100 & 94.5       & 6               & 567       \\
+                      \hline
+                               &            & $\sum f_i = 54$ & $ 3695$   \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  \begin{flalign*}
+                    \text{Mean} & = \frac{3695}{54} = 68.43
+                  \end{flalign*}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                      \hline
+                      Score    & Feq. & Lower Than & Cum. Freq. \\ \hline
+                      12 - 23  & 1    & 23         & 1          \\
+                      23 - 34  & 0    & 34         & 1          \\
+                      34 - 45  & 5    & 45         & 6          \\
+                      45 - 56  & 7    & 56         & 13         \\
+                      56 - 67  & 8    & 67         & 21         \\
+                      67 - 78  & 17   & 78         & 38         \\
+                      78 - 89  & 10   & 89         & 48         \\
+                      89 - 100 & 6    & 100        & 54         \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  $n$ = 54, $\frac{n}{2} = 27$, the group of scores that contains the median is $67 - 78$, $C_m = 11$, $L_m = 67$, $f_m = 17$, $F_m = 21$,
+                  \begin{flalign*}
+                    \text{Median} & = 67 + \frac{27 - 21}{17} \times 11 = 70.88
+                  \end{flalign*}
+                  Since the modal class is $67 - 78$ with the highest frequency of 17, $C = 11$, $d_1 = 17 - 8 = 9$, $d_2 = 17 - 10 = 7$, $L = 67$,
+                  \begin{flalign*}
+                    \text{Mode} & = 67 + \frac{9}{9 + 7} \times 11 = 73.19
+                  \end{flalign*}
           \end{enumerate}
+
     \item The following table shows the distribution of scores of a group of students in
           a Chinese language test:
           \begin{center}
@@ -2042,9 +2384,52 @@
           \end{center}
           Find:
           \begin{enumerate}
-            \item Mean.
-            \item Modal class and mode.
-            \item Median.
+            \item Mean. \sol{}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                      \hline
+                      Scores $x$        & Mid. $x_i$ & Freq. $f_i$      & $f_i x_i$ \\ \hline
+                      $40 < x \leq 50$  & 45         & 12               & 540       \\
+                      $50 < x \leq 60$  & 55         & 30               & 1650      \\
+                      $60 < x \leq 70$  & 65         & 35               & 2275      \\
+                      $70 < x \leq 80$  & 75         & 25               & 1875      \\
+                      $80 < x \leq 90$  & 85         & 10               & 850       \\
+                      $90 < x \leq 100$ & 95         & 3                & 285       \\
+                      \hline
+                                        &            & $\sum f_i = 115$ & $ 7475$   \\
+                      \hline
+                    \end{tabular}
+                    \begin{flalign*}
+                      \text{Mean} & = \frac{7475}{115} = 65
+                    \end{flalign*}
+                  \end{center}
+
+            \item Modal class and mode. \sol{}
+
+                  The modal class is $60 < x \leq 70$ with the highest frequency of 35, $C = 10$,
+                  $d_1 = 35 - 30 = 5$, $d_2 = 35 - 25 = 10$, $L = 60$,
+                  \begin{flalign*}
+                    \text{Mode} & = 60 + \frac{5}{5 + 10} \times 10 = 63.33
+                  \end{flalign*}
+
+            \item Median. \sol{}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                      \hline
+                      Score             & Freq. & Lower Than & Cum. Freq. \\ \hline
+                      $40 < x \leq 50$  & 12    & 50         & 12         \\
+                      $50 < x \leq 60$  & 30    & 60         & 42         \\
+                      $60 < x \leq 70$  & 35    & 70         & 77         \\
+                      $70 < x \leq 80$  & 25    & 80         & 102        \\
+                      $80 < x \leq 90$  & 10    & 90         & 112        \\
+                      $90 < x \leq 100$ & 3     & 100        & 115        \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  $n$ = 115, $\frac{n}{2} = 57.5$, the group of scores that contains the median is $60 < x \leq 70$, $C_m = 10$, $L_m = 60$, $f_m = 35$, $F_m = 42$,
+                  \begin{flalign*}
+                    \text{Median} & = 60 + \frac{57.5 - 42}{35} \times 10 = 64.43
+                  \end{flalign*}
           \end{enumerate}
   \end{enumerate}
 
@@ -2064,7 +2449,7 @@
   deviation, standard deviation, mean deviation, variance, and standard
   deviation.
 
-  \subsubsection*{Range}
+  \subsection*{Range}
 
   The range of a set of data is the difference between the largest and the
   smallest value in the dataset.
@@ -5877,7 +6262,11 @@
                   weight lesser than $55kg$.
           \end{enumerate}
 
-          \item The duration of phone calls of customer service of a company can be assumed to be a normal distribution. Given that of all the phone calls, $1.02\%$ of them are more than $30$ minutes long, $25.14\%$ of them are less than $20$ minutes long. Find the mean value and standard deviation of the duration of phone calls.
+    \item The duration of phone calls of customer service of a company can be assumed to
+          be a normal distribution. Given that of all the phone calls, $1.02\%$ of them
+          are more than $30$ minutes long, $25.14\%$ of them are less than $20$ minutes
+          long. Find the mean value and standard deviation of the duration of phone
+          calls.
   \end{enumerate}
 
 \end{multicols}
