@@ -2949,7 +2949,7 @@
           \end{enumerate}
   \end{enumerate}
 
-  \subsubsection*{Variance}
+  \subsubsection*{Variance and Standard Deviation}
 
   Let the mean of a set of data $x_1$, $x_2$, $\ldots$, $x_n$ be $\bar{x}$,
   ${(x_1 - \bar{x})}^2$ be the square of the difference between the $i^{th}$ data
@@ -3012,9 +3012,18 @@
     \item Measuring the height of 10 plant seedlings (in $cm$) in a lab, we get the
           following data:
           \begin{flalign*}
-            12 & \quad 6 \quad 15 \quad 3 \quad 12 \quad 6 \quad 21 \quad 15 \quad 15 \quad 18 \quad 12 &
+            12 & \quad 6 \quad 15 \quad 3 \quad 12 \quad 6 \quad 21 \quad 15 \quad 18 \quad 12 &
           \end{flalign*}
           Find the standard deviation of the height of the plant seedlings.
+          \sol{}
+          \begin{flalign*}
+            \bar{x}  & = \frac{12 + 6 + \cdots + 12}{10} = 12         \\
+            \sigma^2 & = \frac{12^2 + 6^2 + \cdots + 12^2}{10} - 12^2 \\
+                     & = \frac{1728}{10} - 144                        \\
+                     & = 28.8                                         \\
+            \sigma   & = \sqrt{28.8} = 5.37
+          \end{flalign*}
+
     \item Complete the following table, then find the standard deviation.
           \begin{enumerate}
             \item \begin{tabular}{|c|c|c|c|}
@@ -3026,6 +3035,30 @@
                     7     & 28    &           &             \\
                     \hline
                   \end{tabular}
+                  \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth-5em}{!}{%
+                      \begin{tabular}{|c|c|c|c|}
+                        \hline
+                        $x_i$ & $f_i$           & $x_i f_i$            & $x_i^2 f_i$             \\
+                        \hline
+                        3     & 30              & 90                   & 270                     \\
+                        5     & 35              & 175                  & 875                     \\
+                        7     & 28              & 196                  & 1372                    \\
+                        \hline
+                              & $\sum f_i = 93$ & $\sum x_i f_i = 461$ & $\sum x_i^2 f_i = 2517$ \\
+                        \hline
+                      \end{tabular}
+                    }
+                  \end{center}
+                  \begin{flalign*}
+                    \bar{x}  & = \frac{461}{93} = 4.96    \\
+                    \sigma^2 & = \frac{2517}{93} - 4.96^2 \\
+                             & = 27.06 - 24.60            \\
+                             & = 2.46                     \\
+                    \sigma   & = \sqrt{2.46} = 1.57
+                  \end{flalign*}
+
             \item \begin{tabular}{|c|c|c|c|c|}
                     \hline
                     Limit     & $f_i$ & $Mid. x_i$ & $x_i f_i$ & $x_i^2 f_i$ \\
@@ -3038,8 +3071,33 @@
                     175 - 179 & 4     &            &           &             \\
                     \hline
                   \end{tabular}
+                  \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth-4.4em}{!}{%
+                      \begin{tabular}{|c|c|c|c|c|}
+                        \hline
+                        Limit     & $f_i$           & $Mid. x_i$ & $x_i f_i$             & $x_i^2 f_i$                \\
+                        \hline
+                        150 - 154 & 5               & 152        & 760                   & 115520                     \\
+                        155 - 159 & 8               & 157        & 1256                  & 197192                     \\
+                        160 - 164 & 10              & 162        & 1620                  & 262440                     \\
+                        165 - 169 & 7               & 167        & 1169                  & 195223                     \\
+                        170 - 174 & 6               & 172        & 1032                  & 177504                     \\
+                        175 - 179 & 4               & 177        & 708                   & 125316                     \\
+                        \hline
+                                  & $\sum f_i = 40$ &            & $\sum x_i f_i = 6545$ & $\sum x_i^2 f_i = 1073195$ \\
+                        \hline
+                      \end{tabular}
+                    }
+                  \end{center}
+                  \begin{flalign*}
+                    \bar{x}  & = \frac{6545}{40} = 163.625     \\
+                    \sigma^2 & = \frac{1073195}{40} - 163.88^2 \\
+                             & = 26829.88 - 26773.14           \\
+                             & = 56.74                         \\
+                    \sigma   & = \sqrt{55.74} = 7.53
+                  \end{flalign*}
           \end{enumerate}
-
   \end{enumerate}
 
   \subsection{Exercise 18.4c}
@@ -3048,9 +3106,36 @@
     \item Find the variance and standard deviation of the following dataset:
           \begin{enumerate}
             \item 3 \quad 6 \quad 3 \quad 8
+                  \sol{}
+                  \begin{flalign*}
+                    \bar{x}  & = \frac{3 + 6 + 3 + 8}{4} = 5           \\
+                    \sigma^2 & = \frac{3^2 + 6^2 + 3^2 + 8^2}{4} - 5^2 \\
+                             & = 29.5 - 25                             \\
+                             & = 4.5                                   \\
+                    \sigma   & = \sqrt{4.5} = 2.12
+                  \end{flalign*}
+
             \item 3 \quad 3 \quad 4 \quad 5 \quad 10
+                  \sol{}
+                  \begin{flalign*}
+                    \bar{x}  & = \frac{3 + 3 + 4 + 5 + 10}{5} = 5             \\
+                    \sigma^2 & = \frac{3^2 + 3^2 + 4^2 + 5^2 + 10^2}{5} - 5^2 \\
+                             & = 31.8 - 25                                    \\
+                             & = 6.8                                          \\
+                    \sigma   & = \sqrt{6.8} = 2.61
+                  \end{flalign*}
+
             \item 2 \quad 9 \quad 10 \quad 10 \quad 12 \quad 2 \quad 10 \quad 9
+                  \sol{}
+                  \begin{flalign*}
+                    \bar{x}  & = \frac{2 + 9 + \cdots + 10 + 9}{8} = 8   \\
+                    \sigma^2 & = \frac{2^2 + 9^2 + \dots + 9^2}{8} - 8^2 \\
+                             & = 76.75 - 64                              \\
+                             & = 12.75                                   \\
+                    \sigma   & = \sqrt{12.75} = 3.57
+                  \end{flalign*}
           \end{enumerate}
+
     \item Find the variance and standard deviation of the data:
           \begin{enumerate}
             \item \begin{tabular}{|c|c|}
@@ -3062,6 +3147,30 @@
                     4      & 30        \\
                     \hline
                   \end{tabular}
+                  \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth-5em}{!}{%
+                      \begin{tabular}{|c|c|c|c|}
+                        \hline
+                        $x_i$ & $f_i$            & $x_i f_i$            & $x_i^2 f_i$             \\
+                        \hline
+                        6     & 35               & 210                  & 1260                    \\
+                        5     & 36               & 180                  & 900                     \\
+                        4     & 30               & 120                  & 480                     \\
+                        \hline
+                              & $\sum f_i = 101$ & $\sum x_i f_i = 510$ & $\sum x_i^2 f_i = 2640$ \\
+                        \hline
+                      \end{tabular}
+                    }
+                  \end{center}
+                  \begin{flalign*}
+                    \bar{x}  & = \frac{510}{101} = 5.05    \\
+                    \sigma^2 & = \frac{2640}{101} - 5.05^2 \\
+                             & = 26.14 - 25.5              \\
+                             & = 0.64                      \\
+                    \sigma   & = \sqrt{0.64} = 0.80
+                  \end{flalign*}
+
             \item \begin{tabular}{|c|c|}
                     \hline
                     Values & Frequency \\
@@ -3073,7 +3182,33 @@
                     100    & 1         \\
                     \hline
                   \end{tabular}
+                  \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth-4.6em}{!}{%
+                      \begin{tabular}{|c|c|c|c|}
+                        \hline
+                        $x_i$ & $f_i$           & $x_i f_i$             & $x_i^2 f_i$              \\
+                        \hline
+                        60    & 4               & 240                   & 14400                    \\
+                        70    & 6               & 420                   & 29400                    \\
+                        80    & 2               & 160                   & 12800                    \\
+                        90    & 5               & 450                   & 40500                    \\
+                        100   & 1               & 100                   & 10000                    \\
+                        \hline
+                              & $\sum f_i = 18$ & $\sum x_i f_i = 1370$ & $\sum x_i^2f_i = 107100$ \\
+                        \hline
+                      \end{tabular}
+                    }
+                  \end{center}
+                  \begin{flalign*}
+                    \bar{x}  & = \frac{1370}{18} = 76.11     \\
+                    \sigma^2 & = \frac{107100}{18} - 76.11^2 \\
+                             & = 5950 - 5792.90              \\
+                             & = 157.10                      \\
+                    \sigma   & = \sqrt{157.10} = 12.53
+                  \end{flalign*}
           \end{enumerate}
+
     \item Given two sets of data:
           \begin{center}
             \begin{tabular}{|c|c|}
@@ -3092,6 +3227,24 @@
             \end{tabular}
           \end{center}
           Find the mean and variance of these two sets of data respectively, and state which set of data is more spread out.
+          \sol{}
+
+          For data $A$,
+          \begin{flalign*}
+            \bar{x}  & = \frac{9.9 + 10.3 + \cdots + 9.7}{8} = 10         \\
+            \sigma^2 & = \frac{9.9^2 + 10.3^2 + \cdots + 9.7^2}{8} - 10^2 \\
+                     & = 100.055 - 100                                    \\
+                     & = 0.06
+          \end{flalign*}
+          For data $B$,
+          \begin{flalign*}
+            \bar{x}  & = \frac{10.3 + 10 + \cdots + 10.1}{8} = 10.0          \\
+            \sigma^2 & = \frac{10.3^2 + 10^2 + \cdots + 10.1^2}{8} - 10.05^2 \\
+                     & = 100.145 - 100                                       \\
+                     & = 0.15
+          \end{flalign*}
+          Since $\sigma^2$ of data $B$ is larger than that of data $A$, data $B$ is more spread out.
+
     \item Given the Chinese language test scores of two groups of students are as
           follows:
           \begin{center}
@@ -3113,6 +3266,26 @@
             \end{tabular}
           \end{center}
           Find the mean and standard deviation of these two sets of data respectively, and state which set of data is more centered.
+          \sol{}
+
+          For Group $A$,
+          \begin{flalign*}
+            \bar{x}  & = \frac{76 + 90 + \cdots + 83}{10} = 84         \\
+            \sigma^2 & = \frac{76^2 + 90^2 + \cdots + 83^2}{10} - 84^2 \\
+                     & = 7069.2 - 7056                                 \\
+                     & = 13.2                                          \\
+            \sigma   & = \sqrt{13.2} = 3.63
+          \end{flalign*}
+          For Group $B$,
+          \begin{flalign*}
+            \bar{x}  & = \frac{82 + 84 + \cdots + 74}{10} = 83.2         \\
+            \sigma^2 & = \frac{82^2 + 84^2 + \cdots + 74^2}{10} - 83.2^2 \\
+                     & = 6948.6 - 6922.24                                \\
+                     & = 26.36                                           \\
+            \sigma   & = \sqrt{26.36} = 5.13
+          \end{flalign*}
+          Since $\sigma$ of Group $A$ is smaller than that of Group $B$, Group $A$ is more centered.
+
     \item The table below shows the height distribution of all students of the same
           grade:
           \begin{center}
@@ -3131,6 +3304,34 @@
             \end{tabular}
           \end{center}
           Find the mean and standard deviation of the height of all students of the same grade.
+          \sol{}
+          \begin{center}
+            \resizebox{\columnwidth-3em}{!}{%
+              \begin{tabular}{|c|c|c|c|c|}
+                \hline
+                Range     & $x_i$ & $f_i$            & $x_if_i$                & $x_i^2f_i$                  \\
+                \hline
+                145 - 149 & 147   & 10               & 1470                    & 216090                      \\
+                150 - 154 & 152   & 36               & 5472                    & 831744                      \\
+                155 - 159 & 157   & 193              & 30301                   & 4757257                     \\
+                160 - 164 & 162   & 205              & 33210                   & 5380020                     \\
+                165 - 169 & 167   & 240              & 40080                   & 6693360                     \\
+                170 - 174 & 172   & 83               & 14276                   & 2455472                     \\
+                175 - 179 & 177   & 33               & 5841                    & 1033857                     \\
+                \hline
+                          &       & $\sum f_i = 800$ & $\sum f_i x_i = 130650$ & $\sum f_i x_i^2 = 21367800$ \\
+                \hline
+              \end{tabular}
+            }
+          \end{center}
+          \begin{flalign*}
+            \bar{x}  & = \frac{130650}{800} = 163.31cm   \\
+            \sigma^2 & = \frac{21367800}{800} - 163.31^2 \\
+                     & = 26709.75 - 26670.16             \\
+                     & = 38.78cm                         \\
+            \sigma   & = \sqrt{38.78} = 6.23cm
+          \end{flalign*}
+
     \item Following are teh weight distribution of 100 students in a school:
           \begin{center}
             \begin{tabular}{|c|c|}
@@ -3148,20 +3349,125 @@
             \end{tabular}
           \end{center}
           Find the variance and standard deviation.
+          \sol{}
+          \begin{center}
+            \resizebox{\columnwidth-3em}{!}{%
+              \begin{tabular}{|c|c|c|c|c|}
+                \hline
+                Range   & $x_i$ & $f_i$            & $x_if_i$              & $x_i^2f_i$                \\
+                \hline
+                45 - 47 & 46    & 3                & 138                   & 6348                      \\
+                48 - 50 & 49    & 16               & 784                   & 38416                     \\
+                51 - 53 & 52    & 20               & 1040                  & 54080                     \\
+                54 - 56 & 55    & 32               & 1760                  & 96800                     \\
+                57 - 59 & 58    & 15               & 870                   & 50460                     \\
+                60 - 62 & 61    & 10               & 610                   & 37210                     \\
+                63 - 65 & 64    & 4                & 256                   & 16384                     \\
+                \hline
+                        &       & $\sum f_i = 100$ & $\sum f_i x_i = 5458$ & $\sum f_i x_i^2 = 299698$ \\
+                \hline
+              \end{tabular}
+            }
+          \end{center}
+          \begin{flalign*}
+            \bar{x}  & = \frac{5458}{100} = 54.58kg   \\
+            \sigma^2 & = \frac{299698}{100} - 54.58^2 \\
+                     & = 2996.98 - 2978.98            \\
+                     & = 18.00kg                      \\
+            \sigma   & = \sqrt{18.00} = 4.24kg
+          \end{flalign*}
+
     \item Given the sum of 10 values is 400, and the sum of their square is 16400. Find
-          the mean and standard deviation of these 10 values.
+          the mean and variance of these 10 values. \sol{}
+          \begin{flalign*}
+            \bar{x}  & = \frac{400}{10} = 40     \\
+            \sigma^2 & = \frac{16400}{10} - 40^2 \\
+                     & = 1640 - 1600             \\
+                     & = 40
+          \end{flalign*}
+
     \item Given 30 values $x_1$, $x_2$, $\cdots$, $x_{30}$, the mean of these values is
-          5, and the standard deviation is 2. Find $\sum_{i=1}^{30} x_i$ and
-          $\sum_{i=1}^{30} x_i^2$.
+          5, and the standard deviation is 2. Find $\sum\limits_{i=1}^{30} x_i$ and
+          $\sum\limits_{i=1}^{30} x_i^2$. \sol{}
+          \begin{flalign*}
+            \bar{x}                               & = 5   \\
+            \frac{\sum\limits_{i=1}^{30} x_i}{30} & = 5   \\
+            \sum\limits_{i=1}^{30} x_i            & = 150 \\
+          \end{flalign*}
+          \begin{flalign*}
+            \sigma                                        & = 2   \\
+            \sigma^2                                      & = 4   \\
+            \frac{\sum\limits_{i=1}^{30} x_i^2}{30} - 5^2 & = 4   \\
+            \frac{\sum\limits_{i=1}^{30} x_i^2}{30}       & = 29  \\
+            \sum\limits_{i=1}^{30} x_i^2                  & = 870
+          \end{flalign*}
+
     \item The mean of 5 values is 10, and it remains the same after adding $p$ to
           dataset.
           \begin{enumerate}
-            \item Find the value of $p$.
+            \item Find the value of $p$. \sol{}
+
+                  Let the dataset be $x$.
+                  \begin{flalign*}
+                    \bar{x} = 10                                 \\
+                    \frac{\sum\limits_{i=1}^{5} x_i}{5} = 10     \\
+                    \sum\limits_{i=1}^{5} x_i = 50               \\
+                    \frac{\sum\limits_{i=1}^{5} x_i + p}{6} = 10 \\
+                    50 + p & = 60                                \\
+                    p      & = 10
+                  \end{flalign*}
+
             \item If the sum of square of 5 original values is 558, find the variance of the 6
-                  values after adding $p$.
+                  values after adding $p$. \sol{}
+                  \begin{flalign*}
+                    \sigma^2 = \frac{\sum\limits_{i=1}^{5} x_i^2 + p^2}{6} - 10^2 \\
+                    = \frac{558 + 100}{6} - 100                                   \\
+                    = 109.67 - 100                                                \\
+                    = 9.67
+                  \end{flalign*}
           \end{enumerate}
+
     \item Given that the mean of 3, 6, 7, 8, 9, 12, 14, 15, $x$, $y$ is 13, standard
-          deviation is $\sqrt{102}$, find the value of $x$ and $y$.
+          deviation is $\sqrt{102}$, find the value of $x$ and $y$. \sol{}
+          \begin{flalign*}
+            \bar{x} = \frac{3+6+\cdots+15+x+y}{10} & = 13  \\
+            \frac{74 + x + y}{10}                  & = 13  \\
+            74 + x + y                             & = 130 \\
+            x + y                                  & = 56
+          \end{flalign*}
+          \begin{flalign*}
+            \sigma                                                  & = \sqrt{102} \\
+            \sigma^2                                                & = 102        \\
+            \frac{3^2 + 6^2 + \cdots + 15^2 + x^2 + y^2}{10} - 13^2 & = 102        \\
+            \frac{804 + x^2 + y^2}{10} - 169                        & = 102        \\
+            \frac{804 + x^2 + y^2}{10}                              & = 271        \\
+            804 + x^2 + y^2                                         & = 2710       \\
+            x^2 + y^2                                               & = 1906
+          \end{flalign*}
+          \setcounter{equation}{0}
+          \begin{numcases}{}
+            x + y = 56 \\
+            x^2 + y^2 = 1906
+          \end{numcases}
+          \begin{flalign*}
+            (1)                               \Rightarrow y                                   & = 56 - x & (1) \\
+            \text{Sub } (1) \text{ into } (2)  \Rightarrow x^2 + (56-x)^2                     & = 1906         \\
+            x^2 + x^2 - 112x + 3136                                                           & = 1906         \\
+            2x^2 - 112x + 1230                                                                & = 0            \\
+            x^2 - 56x + 615                                                                   & = 0            \\
+            (x - 15)(x - 41)                                                                  & = 0            \\
+            x                                                              = 15 \text{ or } x & = 41           \\
+            \text{When } x = 15, y = 56 - 15                                                  & = 41           \\
+            \text{When } x = 41, y = 56 - 41                                                  & = 15           \\
+            \\
+            \therefore\ \begin{cases}
+                          x = 15 \\
+                          y = 41
+                        \end{cases} \text{ or } \begin{cases}
+                                                  x = 41 \\
+                                                  y = 15
+                                                \end{cases}
+          \end{flalign*}
   \end{enumerate}
 
   \section{Coefficient of Variation}
@@ -3176,7 +3482,7 @@
   non-negative set of value, the definition of coefficient of variation is as
   follows:
   \begin{cequation}
-    \text{CV} = \frac{\sigma}{\bar{x}} \times 100\%
+    v = \frac{\sigma}{\bar{x}} \times 100\%
   \end{cequation}
 
   From the definition, we can see that the coefficient of variation the standard
@@ -3188,12 +3494,19 @@
   In a minor test, the full mark of Chinese language test for senior 2 students
   is 100, its average mark is 70, and the standard deviation is 10, while the
   full mark of Mathematics test is 70, its average mark is 40, and the standard
-  deviation is 8. Compare the variability of the two tests.
+  deviation is 8. Compare the variability of the two tests. \sol{}
+  \begin{flalign*}
+    v_{\text{Chinese}} & = \frac{10}{70} \times 100\% = 14.29\% \\
+    v_{\text{Math}}    & = \frac{8}{40} \times 100\% = 20\%
+  \end{flalign*}
+  $\because\ v_{\text{Math}} > v_{\text{Chinese}}$
+
+  \noindent $\therefore$ Mathematics test is more variable than Chinese language test.
 
   \subsection{Exercise 18.5}
 
   \begin{enumerate}
-    \item The statistics of the height and width if grade 1 students in a primary school
+    \item The statistics of the height and weight if grade 1 students in a primary school
           are as follows:
           \begin{center}
             \begin{tabular}{|c|c|c|}
@@ -3201,11 +3514,19 @@
                             & Mean   & Standard Deviation \\
               \hline
               Height ($cm$) & 115.87 & 4.86               \\
-              Width ($cm$)  & 19.39  & 2.16               \\
+              Weight ($cm$) & 19.39  & 2.16               \\
               \hline
             \end{tabular}
           \end{center}
-          Compare the variability of the height and width of the students.
+          Compare the variability of the height and weight of the students.
+          \sol{}
+          \begin{flalign*}
+            v_{\text{Height}} & = \frac{4.86}{115.87} \times 100\% = 4.19\% \\
+            v_{\text{Weight}} & = \frac{2.16}{19.39} \times 100\% = 11.14\%
+          \end{flalign*}
+          $\because\ v_{\text{Weight}} > v_{\text{Height}}$
+
+          \noindent $\therefore$ The weight of the students is more variable than their height.
 
     \item The table below shows the first semester Mathematics exam average mark and
           standard deviation of five junior 1 classes in a school:
@@ -3223,6 +3544,17 @@
             \end{tabular}
           \end{center}
           Which class has the smallest coefficient of variation?
+          \sol{}
+          \begin{flalign*}
+            v_{\text{A}} & = \frac{11}{62} \times 100\% = 17.74\% \\
+            v_{\text{B}} & = \frac{9}{74} \times 100\% = 12.16\%  \\
+            v_{\text{C}} & = \frac{10}{65} \times 100\% = 15.38\% \\
+            v_{\text{D}} & = \frac{7}{70} \times 100\% = 10\%     \\
+            v_{\text{E}} & = \frac{8}{53} \times 100\% = 15.09\%
+          \end{flalign*}
+          $\because\ v_{\text{D}} < v_{\text{B}} < v_{\text{A}} < v_{\text{C}} < v_{\text{E}}$
+
+          $\therefore\ \text{Class D}$ has the smallest coefficient of variation.
 
     \item The table below shows the Mathematics exam results of two groups of students
           $A$ and $B$:
@@ -3237,9 +3569,30 @@
             \end{tabular}
           \end{center}
           \begin{enumerate}
-            \item Find the average mark of each group.
-            \item Find the standard deviation of each group.
-            \item Find the coefficient of variation of each group.
+            \item Find the average mark of each group. \sol{}
+                  \begin{flalign*}
+                    \bar{x}_A & = \frac{60 + 98 + 76 + 84 + 52}{5} = 74   \\
+                    \bar{x}_B & = \frac{88 + 58 + 90 + 69 + 78}{5} = 76.6
+                  \end{flalign*}
+
+            \item Find the standard deviation of each group. \sol{}
+                  \begin{flalign*}
+                    \sigma^2_A & = \frac{60^2 + \cdots + 52^2}{5} - 74^2 \\
+                               & = 5748 - 5476                           \\
+                               & = 272                                   \\
+                    \sigma_A   & = \sqrt{272} = 16.49                    \\
+                  \end{flalign*}
+                  \begin{flalign*}
+                    \sigma^2_B & = \frac{88^2 + \cdots + 78^2}{5} - 76.6^2 \\
+                               & = 6010.6 - 5867.56                        \\
+                               & = 143.04                                  \\
+                    \sigma_B   & = \sqrt{143.04} = 11.96
+                  \end{flalign*}
+            \item Find the coefficient of variation of each group. \sol{}
+                  \begin{flalign*}
+                    v_A & = \frac{16.49}{74} \times 100\% = 22.28\%   \\
+                    v_B & = \frac{11.96}{76.6} \times 100\% = 15.61\%
+                  \end{flalign*}
           \end{enumerate}
 
     \item The table below shows the price of of papayas and grapes per kilogram in the
@@ -3260,8 +3613,27 @@
           \end{center}
           \begin{enumerate}
             \item Find the average price and standard deviation of papayas and grapes
-                  respectively in the first half of the year.
-            \item Which fruit has greater variability in price?
+                  respectively in the first half of the year. \sol{}
+                  \begin{flalign*}
+                    \bar{x}_{\text{Papaya}} & = \frac{3.50 + \cdots + 2.80}{6} = 3.10 \\
+                    \bar{x}_{\text{Grapes}} & = \frac{20 + \cdots + 21}{6} = 21.33
+                  \end{flalign*}
+                  \begin{flalign*}
+                    \sigma^2_{\text{Papaya}} & = \frac{3.50^2 + \cdots + 2.80^2}{6} - 3.10^2 \\
+                                             & = 9.77 - 9.61                                 \\
+                                             & = 0.15                                        \\
+                    \sigma_{\text{Papaya}}   & = \sqrt{0.15} = 0.38
+                  \end{flalign*}
+                  \begin{flalign*}
+                    \sigma^2_{\text{Grapes}} & = \frac{20^2 + \cdots + 21^2}{6} - 21.33^2 \\
+                                             & = 459 - 455.11                             \\
+                                             & = 3.89                                     \\
+                    \sigma_{\text{Grapes}}   & = \sqrt{3.89} = 1.97
+                  \end{flalign*}
+            \item Which fruit has greater variability in price? $\because \
+                    \sigma_{\text{Papaya}} > \sigma_{\text{Grapes}}$
+
+                  $\therefore\ \text{Papaya}$ has greater variability in price.
           \end{enumerate}
 
     \item The table below shows the distribution of annual average marks of two classes
@@ -3269,17 +3641,74 @@
           \begin{center}
             \begin{tabular}{|c|c|c|}
               \hline
-              Marks Range & Class A & Class B \\
+              Marks Range & Class $A$ & Class $B$ \\
               \hline
-              40 - 49     & 3       & 4       \\
-              50 - 59     & 4       & 10      \\
-              60 - 69     & 10      & 17      \\
-              70 - 79     & 16      & 14      \\
-              80 - 89     & 12      & 1       \\
+              40 - 49     & 3         & 4         \\
+              50 - 59     & 4         & 10        \\
+              60 - 69     & 10        & 17        \\
+              70 - 79     & 16        & 14        \\
+              80 - 89     & 12        & 1         \\
               \hline
             \end{tabular}
           \end{center}
           Find the coefficient of variation of annual average marks of each class respectively.
+          \sol{}
+
+          For class $A$,
+          \begin{center}
+            \resizebox{\columnwidth-3em}{!}{%
+              \begin{tabular}{|c|c|c|c|c|}
+                \hline
+                Range   & $x_i$ & $f_i$           & $f_i x_i$               & $f_i x_i^2$                  \\
+                \hline
+                40 - 49 & 44.5  & 3               & 133.5                   & 5940.75                      \\
+                50 - 59 & 54.5  & 4               & 218                     & 11881                        \\
+                60 - 69 & 64.5  & 10              & 645                     & 41602.5                      \\
+                70 - 79 & 74.5  & 16              & 1192                    & 88804                        \\
+                80 - 89 & 84.5  & 12              & 1014                    & 85683                        \\
+                \hline
+                        &       & $\sum f_i = 45$ & $\sum f_i x_i = 3202.5$ & $\sum f_i x_i^2 = 233911.25$ \\
+                \hline
+              \end{tabular}
+            }
+          \end{center}
+          \begin{flalign*}
+            \bar{x}_A  & = \frac{3202.5}{45} = 71.17                  \\
+            \sigma^2_A & = \frac{233911.25}{45} - 71.17^2             \\
+                       & = 5198.03 - 5064.69                          \\
+                       & = 133.34                                     \\
+            \sigma_A   & = \sqrt{133.34} = 11.55
+            \\
+            v_A        & = \frac{11.55}{71.17} \times 100\% = 16.23\%
+          \end{flalign*}
+
+          For class $B$,
+          \begin{center}
+            \resizebox{\columnwidth-3em}{!}{%
+              \begin{tabular}{|c|c|c|c|c|}
+                \hline
+                Range   & $x_i$ & $f_i$           & $f_i x_i$             & $f_i x_i^2$                  \\
+                \hline
+                40 - 49 & 44.5  & 4               & 178                   & 7921                         \\
+                50 - 59 & 54.5  & 10              & 545                   & 29702.5                      \\
+                60 - 69 & 64.5  & 17              & 1096.5                & 70724.25                     \\
+                70 - 79 & 74.5  & 14              & 1043                  & 77703.5                      \\
+                80 - 89 & 84.5  & 1               & 84.5                  & 7140.25                      \\
+                \hline
+                        &       & $\sum f_i = 46$ & $\sum f_i x_i = 2947$ & $\sum f_i x_i^2 = 4193191.5$ \\
+                \hline
+              \end{tabular}
+            }
+          \end{center}
+          \begin{flalign*}
+            \bar{x}_B  & = \frac{2947}{46} = 64.07                   \\
+            \sigma^2_B & = \frac{193191.5}{46} - 64.07^2             \\
+                       & = 4199.82 - 4104.96                         \\
+                       & = 95.46                                     \\
+            \sigma_B   & = \sqrt{95.46} = 9.77
+            \\
+            v_B        & = \frac{9.77}{64.07} \times 100\% = 15.25\%
+          \end{flalign*}
   \end{enumerate}
 
   \section{Correlation and Correlation Coefficient}
@@ -3528,9 +3957,17 @@
   standard deviation, there is an easier way to calculate the correlation
   coefficient:
 
-  \begin{cequation}
-    r = \frac{\frac{\sum{x_iy_i}}{n} - \bar{x}\bar{y}}{\sqrt{(\frac{\sum{x_i^2}}{n} - \bar{x}^2)(\frac{\sum{y_i^2}}{n} - \bar{y}^2)}}
-  \end{cequation}
+  \begin{flalign*}
+    r & = \frac{\sum{(x_i - \bar{x})(y_i - \bar{y})}}{\sqrt{\sum{(x_i - \bar{x})^2}\sum{(y_i - \bar{y})^2}}}                                                                                                                                                                                                                   & \\
+      & = \frac{\sum{(x_iy_i - x_i\bar{y} - \bar{x}y_i + \bar{x}\bar{y})}}{\sqrt{\sum{(x_i^2 - 2x_i\bar{x} + \bar{x}^2)\sum{(y_i^2 - 2y_i\bar{y} + \bar{y}^2)}}}}                                                                                                                                                                \\
+      & = \frac{\sum{x_iy_i} -\bar{y}\sum{x_i} - y_i\sum{\bar{x}} + \sum\bar{x}\bar{y}}{\sqrt{\sum{(x_i^2 - 2x_i\bar{x} + \bar{x}^2)\sum{(y_i^2 - 2y_i\bar{y} + \bar{y}^2)}}}}                                                                                                                                                   \\
+      & = \frac{\frac{\sum{x_iy_i} -\bar{y}\sum{x_i} - y_i\sum{\bar{x}} + \sum\bar{x}\bar{y}}{n}}{\frac{\sqrt{\sum{(x_i^2 - 2x_i\bar{x} + \bar{x}^2)\sum{(y_i^2 - 2y_i\bar{y} + \bar{y}^2)}}}}{n}}                                                                                                                               \\
+      & = \frac{\frac{\sum{x_iy_i}}{n} - \frac{\bar{y}\sum{x_i}}{n} - \frac{y_i\sum{\bar{x}}}{n} + \frac{\sum\bar{x}\bar{y}}{n}}{\sqrt{\frac{\sum{(x_i^2 - 2x_i\bar{x} + \bar{x}^2)\sum{(y_i^2 - 2y_i\bar{y} + \bar{y}^2)}}}{n \cdot n}}}                                                                                        \\
+      & = \frac{\frac{\sum{x_iy_i}}{n} - \frac{\bar{y}\sum{x_i}}{n} - \frac{\bar{x}\sum{y_i}}{n} + \frac{n\bar{x}\bar{y}}{n}}{\sqrt{\left(\frac{\sum{x_i^2}}{n} - \frac{2\bar{x}\sum{x_i}}{n} + \frac{\sum{\bar{x}^2}}{n}\right)\left(\frac{\sum{y_i^2}}{n} - \frac{2\bar{y}\sum{y_i}}{n} + \frac{\sum{\bar{y}^2}}{n}\right)}}   \\
+      & = \frac{\frac{\sum{x_iy_i}}{n} - \bar{x}\bar{y} - \bar{x}\bar{y} + \bar{x}\bar{y}}{\sqrt{\left(\frac{\sum{x_i^2}}{n} - 2\bar{x}^2 + \frac{n\bar{x}^2}{n}\right)\left(\frac{\sum{y_i^2}}{n} - 2\bar{y}^2 + \frac{n\bar{y}^2}{n}\right)}}                                                                                  \\
+      & = \frac{\frac{\sum{x_iy_i}}{n} - \bar{x}\bar{y}}{\sqrt{\left(\frac{\sum{x_i^2}}{n} - 2\bar{x}^2 + \bar{x}^2\right)\left(\frac{\sum{y_i^2}}{n} - 2\bar{y}^2 + \bar{y}^2\right)}}                                                                                                                                          \\
+      & = \frac{\frac{\sum{x_iy_i}}{n} - \bar{x}\bar{y}}{\sqrt{\left(\frac{\sum{x_i^2}}{n} - \bar{x}^2\right)\left(\frac{\sum{y_i^2}}{n} - \bar{y}^2\right)}}                                                                                                                                                                    \\
+  \end{flalign*}
 
   \subsection{Practice 10}
 
@@ -3561,6 +3998,44 @@
             \end{tabular}
           \end{center}
           Calculate the correlation coefficient of the height and the weight of the 15 children, and determine on the strength of the correlation.
+          \sol{}
+          \begin{center}
+            \resizebox{\columnwidth-4.6em}{!}{%
+              \begin{tabular}{|c|c|c|c|c|}
+                \hline
+                $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
+                \hline
+                126         & 41          & 15876         & 1681          & 5166           \\
+                130         & 42          & 16900         & 1764          & 5460           \\
+                110         & 38          & 12100         & 1444          & 4180           \\
+                123         & 36          & 15129         & 1296          & 4428           \\
+                118         & 33          & 13924         & 1089          & 3894           \\
+                130         & 45          & 16900         & 2025          & 5850           \\
+                127         & 34          & 16129         & 1156          & 4318           \\
+                124         & 35          & 15376         & 1225          & 4340           \\
+                116         & 30          & 13456         & 900           & 3480           \\
+                112         & 32          & 12544         & 1024          & 3584           \\
+                113         & 31          & 12769         & 961           & 3503           \\
+                121         & 40          & 14641         & 1600          & 4840           \\
+                115         & 34          & 13225         & 1156          & 3910           \\
+                120         & 35          & 14400         & 1225          & 4200           \\
+                118         & 33          & 13924         & 1089          & 3894           \\
+                \hline
+                \hline
+                $\sum{x_i}$ & $\sum{y_i}$ & $\sum{x_i^2}$ & $\sum{y_i^2}$ & $\sum{x_iy_i}$ \\
+                \hline
+                1803        & 539         & 217293        & 19635         & 65047          \\
+                \hline
+              \end{tabular}
+            }
+          \end{center}
+          \begin{flalign*}
+            \bar{x} & = \frac{1803}{15} = 120.2                                                                                                              \\
+            \bar{y} & = \frac{539}{15} = 35.93                                                                                                               \\
+            r       & = \frac{\frac{65047}{15} - 120.2 \times 35.93}{\sqrt{\left(\frac{217293}{15} - 120.2^2\right)\left(\frac{19635}{15} - 35.93^2\right)}} \\
+                    & = 0.6631
+          \end{flalign*}
+          According to the result of the calculation, the height and the weight of the 15 children are positively and moderetely correlated.
 
     \item In order to study the relationship between the systolic blood pressure (in
           $\mathit{mmHg}$) and the age (in $year$) of human, a medical school collected
@@ -3586,6 +4061,61 @@
               \hline
             \end{tabular}
           \end{center}
+          \begin{enumerate}
+            \item Construct a scatter diagram of the data. \sol{}
+                  \begin{center}
+                    \begin{tikzpicture}[scale=0.9]
+                      \begin{axis}[
+                          title style = {align = center},
+                          title={\large{Scattering Plot of} \\ \large{Systolic Blood Pressure and Age}},
+                          xlabel={Age},
+                          ylabel={Systolic Blood Pressure},
+                          xmin=20, xmax=60,
+                          ymin=110, ymax=150,
+                          xtick={20, 25, ..., 60},
+                          ytick={110, 120, 130, 140, 150},
+                          grid=both,
+                          grid style={line width=.2pt, draw=gray!60},
+                          major grid style={line width=.4pt,draw=gray!90},
+                          minor tick num=4,
+                        ]
+                        \addplot[mark=*, mark size=1.5, mark options={solid, fill=black}, only marks] coordinates {(51, 130) (22, 141) (23, 124) (31, 126) (33, 117) (49, 135) (58, 143) (53, 138) (44, 132) (55, 143) (42, 133) (45, 115) (25, 147)};
+                      \end{axis}
+                    \end{tikzpicture}
+                  \end{center}
+            \item Calculate the correlation coefficient of the age and the systolic blood
+                  pressure of the 13 patients, and determine on the strength of the correlation.
+                  \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth-4.6em}{!}{%
+                      \begin{tabular}{|c|c|c|c|c|}
+                        \hline
+                        $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
+                        \hline
+                        51          & 130         & 2601          & 16900         & 6630           \\
+                        22          & 141         & 484           & 19881         & 3102           \\
+                        23          & 124         & 529           & 15376         & 2852           \\
+                        31          & 126         & 961           & 15876         & 4526           \\
+                        33          & 117         & 1089          & 13689         & 3861           \\
+                        49          & 135         & 2401          & 18225         & 6615           \\
+                        58          & 143         & 3364          & 20529         & 8294           \\
+                        53          & 138         & 2809          & 19044         & 7314           \\
+                        44          & 132         & 1936          & 17424         & 5808           \\
+                        55          & 143         & 3025          & 20529         & 7865           \\
+                        42          & 133         & 1764          & 17689         & 5586           \\
+                        45          & 115         & 2025          & 13225         & 5175           \\
+                        25          & 147         & 625           & 21609         & 3675           \\
+                        \hline
+                        \hline
+                        $\sum{x_i}$ & $\sum{y_i}$ & $\sum{x_i^2}$ & $\sum{y_i^2}$ & $\sum{x_iy_i}$ \\
+                        \hline
+                        531         & 1764        & 26422         & 240636        & 72483          \\
+                        \hline
+
+                      \end{tabular}
+                    }
+                  \end{center}
+          \end{enumerate}
   \end{enumerate}
 
   \subsection{Exercise 18.6}
