@@ -4095,26 +4095,32 @@
                         51          & 130         & 2601          & 16900         & 6630           \\
                         22          & 141         & 484           & 19881         & 3102           \\
                         23          & 124         & 529           & 15376         & 2852           \\
-                        31          & 126         & 961           & 15876         & 4526           \\
+                        31          & 126         & 961           & 15876         & 3906           \\
                         33          & 117         & 1089          & 13689         & 3861           \\
                         49          & 135         & 2401          & 18225         & 6615           \\
-                        58          & 143         & 3364          & 20529         & 8294           \\
+                        58          & 143         & 3364          & 20449         & 8294           \\
                         53          & 138         & 2809          & 19044         & 7314           \\
                         44          & 132         & 1936          & 17424         & 5808           \\
-                        55          & 143         & 3025          & 20529         & 7865           \\
+                        55          & 143         & 3025          & 20449         & 7865           \\
                         42          & 133         & 1764          & 17689         & 5586           \\
-                        45          & 115         & 2025          & 13225         & 5175           \\
+                        45          & 155         & 2025          & 24025         & 6975           \\
                         25          & 147         & 625           & 21609         & 3675           \\
                         \hline
                         \hline
                         $\sum{x_i}$ & $\sum{y_i}$ & $\sum{x_i^2}$ & $\sum{y_i^2}$ & $\sum{x_iy_i}$ \\
                         \hline
-                        531         & 1764        & 26422         & 240636        & 72483          \\
+                        531         & 1764        & 23613         & 240636        & 72483          \\
                         \hline
-
                       \end{tabular}
                     }
                   \end{center}
+                  \begin{flalign*}
+                    \bar{x} & = \frac{531}{13} = 40.85                                                                                                                 & \\
+                    \bar{y} & = \frac{1764}{13} = 135.69                                                                                                                 \\
+                    r       & = \frac{\frac{72483}{13} - 40.85 \times 135.69}{\sqrt{\left(\frac{23613}{13} - 40.85^2\right)\left(\frac{240636}{13} - 135.69^2\right)}}   \\
+                            & = 0.2748
+                  \end{flalign*}
+                  According to the result of the calculation, the height and the weight of the 15 children are positively and weakly correlated.
           \end{enumerate}
   \end{enumerate}
 
@@ -4142,10 +4148,75 @@
             \end{tabular}
           \end{center}
           \begin{enumerate}
-            \item Construct a scatter diagram of the data.
-            \item Calculate the mean value of fixed assets and total assets respectively.
+            \item Construct a scatter diagram of the data. \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth-4.6em}{!}{%
+                      \begin{tikzpicture}
+                        \begin{axis}[
+                            xlabel={Fixed Assets},
+                            ylabel={Total Assets},
+                            xmin=200, xmax=1300,
+                            ymin=500, ymax=1700,
+                            xtick={200, 300, ..., 1300},
+                            ytick={500, 600, ..., 1700},
+                            grid=both,
+                            grid style={line width=.2pt, draw=gray!60},
+                            major grid style={line width=.4pt,draw=gray!90},
+                            minor tick num=4,
+                            xticklabel style={rotate=90},
+                            x label style={at={(axis description cs:0.5,-0.11)},anchor=north},
+                          ]
+                          \addplot[mark=*, mark size=1.5, mark options={solid, fill=black}, only marks] coordinates {(200, 638) (314, 605) (318, 524) (409, 815) (415, 913) (502, 928) (910, 1019) (1022, 1219) (1210, 1516) (1225, 1624)};
+                        \end{axis}
+                      \end{tikzpicture}
+                    }
+                  \end{center}
+
+            \item Calculate the mean value of fixed assets and total assets respectively. \sol{}
+                  \begin{flalign*}
+                    \text{Mean of fixed assets } \bar{x} & = \frac{200 + 314 + \cdots + 1225}{10} & \\
+                                                         & = \frac{6525}{10}                        \\
+                                                         & = 652.5                                  \\
+                                                         & = \$652,500,000                          \\
+                    \\
+                    \text{Mean of total assets } \bar{y} & = \frac{638 + 605 + \cdots + 1624}{10}   \\
+                                                         & = \frac{9801}{10}                        \\
+                                                         & = 980.1                                  \\
+                                                         & = \$980,100,000
+                  \end{flalign*}
+
             \item Find the correlation coefficient of the fixed assets and the total assets, and
-                  determine on the strength of the correlation.
+                  determine on the strength of the correlation. \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth-4.6em}{!}{%
+                      \begin{tabular}{|c|c|c|c|c|}
+                        \hline
+                        $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
+                        \hline
+                        200         & 638         & 40000         & 407044        & 127600         \\
+                        314         & 605         & 98596         & 366025        & 189970         \\
+                        318         & 524         & 101124        & 274576        & 166632         \\
+                        409         & 815         & 167281        & 664225        & 333335         \\
+                        415         & 913         & 172225        & 833569        & 378895         \\
+                        502         & 928         & 252004        & 861184        & 465856         \\
+                        910         & 1019        & 828100        & 1038361       & 927290         \\
+                        1022        & 1219        & 1044484       & 1485961       & 1245818        \\
+                        1210        & 1516        & 1464100       & 2298256       & 1834360        \\
+                        1225        & 1624        & 1500625       & 2637376       & 1989400        \\
+                        \hline
+                        \hline
+                        $\sum{x_i}$ & $\sum{y_i}$ & $\sum{x_i^2}$ & $\sum{y_i^2}$ & $\sum{x_iy_i}$ \\
+                        \hline
+                        6525        & 9801        & 5668539       & 10866577      & 7659156        \\
+                        \hline
+                      \end{tabular}
+                    }
+                  \end{center}
+                  \begin{flalign*}
+                    r & = \frac{\frac{7659156}{13} - 652.5 \times 980.1}{\sqrt{\left(\frac{5668539}{13} - 652.5^2\right)\left(\frac{10866577}{13} - 980.1^2\right)}} & \\
+                      & = 0.9478
+                  \end{flalign*}
+                  According to the result of the calculation, According to the result of the calculation, the value of fixed assets and total assets of theese 10 enterprises are positively and strongly correlated.
           \end{enumerate}
 
     \item The table shows the marks of Mathematics and Ecomoics of 15 students:
@@ -4173,9 +4244,68 @@
             \end{tabular}
           \end{center}
           \begin{enumerate}
-            \item Construct a scatter diagram of the data.
+            \item Construct a scatter diagram of the data. \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth-4.6em}{!}{%
+                      \begin{tikzpicture}
+                        \begin{axis}[
+                            xlabel={Mathematics},
+                            ylabel={Economics},
+                            xmin=40, xmax=100,
+                            ymin=40, ymax=100,
+                            xtick={40, 50, ..., 100},
+                            ytick={40, 50, ..., 100},
+                            grid=both,
+                            grid style={line width=.2pt, draw=gray!60},
+                            major grid style={line width=.4pt,draw=gray!90},
+                            minor tick num=4,
+                          ]
+                          \addplot[mark=*, mark size=1.5, mark options={solid, fill=black}, only marks] coordinates {(83, 79) (50, 61) (62, 70) (90, 86) (68, 69) (61, 68) (58, 62) (62, 80) (71, 70) (63, 74) (72, 77) (54, 54) (64, 77) (48, 50) (81, 92)};
+                        \end{axis}
+                      \end{tikzpicture}
+                    }
+                  \end{center}
+
             \item Find the correlation coefficient of the marks of Mathematics and the Economics,
-                  and determine on the strength of the correlation.
+                  and determine on the strength of the correlation. \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth-4.6em}{!}{%
+                      \begin{tabular}{|c|c|c|c|c|}
+                        \hline
+                        $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
+                        \hline
+                        83          & 79          & 6889          & 6241          & 6557           \\
+                        50          & 61          & 2500          & 3721          & 3050           \\
+                        62          & 70          & 3844          & 4900          & 4340           \\
+                        90          & 86          & 8100          & 7396          & 7740           \\
+                        68          & 69          & 4624          & 4761          & 4692           \\
+                        61          & 68          & 3721          & 4624          & 4148           \\
+                        58          & 62          & 3364          & 3844          & 3596           \\
+                        62          & 80          & 3844          & 6400          & 4960           \\
+                        71          & 70          & 5041          & 4900          & 4970           \\
+                        63          & 74          & 3969          & 5476          & 4662           \\
+                        72          & 77          & 5184          & 5929          & 5544           \\
+                        54          & 54          & 2916          & 2916          & 2916           \\
+                        64          & 77          & 4096          & 5929          & 4928           \\
+                        48          & 50          & 2304          & 2500          & 2400           \\
+                        81          & 92          & 6561          & 8464          & 7452           \\
+                        \hline
+                        \hline
+                        $\sum{x_i}$ & $\sum{y_i}$ & $\sum{x_i^2}$ & $\sum{y_i^2}$ & $\sum{x_iy_i}$ \\
+                        \hline
+                        987         & 1069        & 66957         & 78001         & 71955          \\
+                        \hline
+                      \end{tabular}
+                    }
+                  \end{center}
+                  \begin{flalign*}
+                    \bar{x} & = \frac{987}{15} = 65.8                                                                                                               \\
+                    \bar{y} & = \frac{1069}{15} = 71.27                                                                                                             \\
+                    r       & = \frac{\frac{71955}{15} - 65.8 \times 71.27}{\sqrt{\left(\frac{66957}{15} - 65.8^2\right)\left(\frac{78001}{15} - 71.27^2\right)}} & \\
+                            & = 0.8445
+                  \end{flalign*}
+                  According to the result of the calculation, the marks of Mathematics and the Economics are positively and strongly correlated.
+
           \end{enumerate}
 
     \item The table below shows the marks of 16 students in the Chinese language minor
@@ -4206,9 +4336,68 @@
             \end{tabular}
           \end{center}
           \begin{enumerate}
-            \item Construct a scatter diagram of the data.
+            \item Construct a scatter diagram of the data. \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth-4.6em}{!}{%
+                      \begin{tikzpicture}
+                        \begin{axis}[
+                            xlabel=Vernacular Chinese,
+                            ylabel=Classical Chinese,
+                            xmin=20, xmax=60,
+                            ymin=10, ymax=40,
+                            xtick={20, 30, ..., 60},
+                            ytick={10, 20, ..., 40},
+                            grid=both,
+                            grid style={line width=.2pt, draw=gray!60},
+                            major grid style={line width=.4pt,draw=gray!90},
+                            minor tick num=4,
+                          ]
+                          \addplot[mark=*, mark size=1.5, mark options={solid, fill=black}, only marks] coordinates {(43, 30) (50, 21) (38, 20) (45, 19) (58, 15) (47, 18) (32, 30) (36, 28) (38, 26) (51, 30) (44, 29) (28, 29) (49, 22) (42, 32) (46, 33) (35, 25)};
+                        \end{axis}
+                      \end{tikzpicture}
+                    }
+                  \end{center}
+
             \item Find the correlation coefficient of the marks of Vernacular Chinese and the
-                  Classical Chinese, and determine on the strength of the correlation.
+                  Classical Chinese, and determine on the strength of the correlation. \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth-4.6em}{!}{%
+                      \begin{tabular}{|c|c|c|c|c|}
+                        \hline
+                        $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
+                        \hline
+                        43          & 30          & 1849          & 900           & 1290           \\
+                        50          & 21          & 2500          & 441           & 1050           \\
+                        38          & 20          & 1444          & 400           & 760            \\
+                        45          & 19          & 2025          & 361           & 855            \\
+                        58          & 15          & 3364          & 225           & 870            \\
+                        47          & 18          & 2209          & 324           & 846            \\
+                        32          & 30          & 1024          & 900           & 960            \\
+                        36          & 28          & 1296          & 784           & 1008           \\
+                        38          & 26          & 1444          & 676           & 988            \\
+                        51          & 30          & 2601          & 900           & 1530           \\
+                        44          & 29          & 1936          & 841           & 1276           \\
+                        28          & 29          & 784           & 841           & 812            \\
+                        49          & 22          & 2401          & 484           & 1078           \\
+                        42          & 32          & 1764          & 1024          & 1344           \\
+                        46          & 33          & 2116          & 1089          & 1518           \\
+                        35          & 25          & 1225          & 625           & 875            \\
+                        \hline
+                        \hline
+                        $\sum{x_i}$ & $\sum{y_i}$ & $\sum{x_i^2}$ & $\sum{y_i^2}$ & $\sum{x_iy_i}$ \\
+                        \hline
+                        682         & 407         & 29982         & 10815         & 17060          \\
+                        \hline
+                      \end{tabular}
+                    }
+                  \end{center}
+                  \begin{flalign*}
+                    \bar{x} & = \frac{682}{16} = 42.62                                                                                                                \\
+                    \bar{y} & = \frac{407}{16} = 25.44                                                                                                                \\
+                    r       & = \frac{\frac{17060}{16} - 42.62 \times 25.44}{\sqrt{\left(\frac{29982}{16} - 42.62^2\right)\left(\frac{10815}{16} - 25.44^2\right)}} & \\
+                            & = -0.4444
+                  \end{flalign*}
+                  According to the result of the calculation, the marks of Vernacular Chinese and Classical Chinese are negatively and moderately correlated.
           \end{enumerate}
 
     \item Below shows the the service costs and values of properties sold by a property
@@ -4227,6 +4416,34 @@
             \end{tabular}
           \end{center}
           Find the correlation coefficient of the service costs and the values of properties in these 5 trades, and determine on the strength of the correlation.
+          \sol{}
+          \begin{center}
+            \resizebox{\columnwidth-4.6em}{!}{%
+              \begin{tabular}{|c|c|c|c|c|}
+                \hline
+                $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
+                \hline
+                16.5        & 3.9         & 272.25        & 15.21         & 64.35          \\
+                17.4        & 4.2         & 302.76        & 17.64         & 73.08          \\
+                16.8        & 4.1         & 282.24        & 16.81         & 68.88          \\
+                17.9        & 4.5         & 320.41        & 20.25         & 80.55          \\
+                18.4        & 4.8         & 338.56        & 23.04         & 88.32          \\
+                \hline
+                \hline
+                $\sum{x_i}$ & $\sum{y_i}$ & $\sum{x_i^2}$ & $\sum{y_i^2}$ & $\sum{x_iy_i}$ \\
+                \hline
+                87.0        & 21.5        & 1516.22       & 92.95         & 375.18         \\
+                \hline
+              \end{tabular}
+            }
+          \end{center}
+          \begin{flalign*}
+            \bar{x} & = \frac{87.0}{5} = 17.4                                                                                                           \\
+            \bar{y} & = \frac{21.5}{5} = 4.3                                                                                                            \\
+            r       & = \frac{\frac{375.18}{5} - 17.4 \times 4.3}{\sqrt{\left(\frac{1516.22}{5} - 17.4^2\right)\left(\frac{92.95}{5} - 4.3^2\right)}} & \\
+                    & = 0.9818
+          \end{flalign*}
+          According to the result of the calculation, the service costs and the values of properties are positively and strongly correlated.
 
     \item The table below shows the degree of labor mechanization and labor productivity:
           \begin{center}
@@ -4247,9 +4464,62 @@
             \end{tabular}
           \end{center}
           \begin{enumerate}
-            \item Construct a scatter diagram of the data.
+            \item Construct a scatter diagram of the data. \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth-4.6em}{!}{%
+                      \begin{tikzpicture}
+                        \begin{axis}[
+                            xlabel=Mechanization Degree,
+                            ylabel=Productivity,
+                            xmin=40, xmax=80,
+                            ymin=800, ymax=1500,
+                            xtick={40, 50, ..., 80},
+                            ytick={800, 900, ..., 1500},
+                            grid=both,
+                            grid style={line width=.2pt, draw=gray!60},
+                            major grid style={line width=.4pt,draw=gray!90},
+                            minor tick num=4,
+                          ]
+                          \addplot[mark=*, mark size=1.5, mark options={solid, fill=black}, only marks] coordinates {(40, 800) (45, 880) (50, 1010) (55, 1034) (60, 980) (65, 1030) (70, 1077) (75, 1344) (80, 1460)};
+                        \end{axis}
+                      \end{tikzpicture}
+                    }
+                  \end{center}
+
             \item Find the correlation coefficient of the degree of labor mechanization and the
-                  labor productivity, and determine on the strength of the correlation.
+                  labor productivity, and determine on the strength of the correlation. \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth-4.6em}{!}{%
+                      \begin{tabular}{|c|c|c|c|c|}
+                        \hline
+                        $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
+                        \hline
+                        40.0        & 800.0       & 1600.0        & 640000.0      & 32000.0        \\
+                        45.0        & 880.0       & 2025.0        & 774400.0      & 39600.0        \\
+                        50.0        & 1010.0      & 2500.0        & 1020100.0     & 50500.0        \\
+                        55.0        & 1034.0      & 3025.0        & 1069156.0     & 56870.0        \\
+                        60.0        & 980.0       & 3600.0        & 960400.0      & 58800.0        \\
+                        65.0        & 1030.0      & 4225.0        & 1060900.0     & 66950.0        \\
+                        70.0        & 1077.0      & 4900.0        & 1159929.0     & 75390.0        \\
+                        75.0        & 1344.0      & 5625.0        & 1806336.0     & 100800.0       \\
+                        80.0        & 1460.0      & 6400.0        & 2131600.0     & 116800.0       \\
+                        \hline
+                        \hline
+                        $\sum{x_i}$ & $\sum{y_i}$ & $\sum{x_i^2}$ & $\sum{y_i^2}$ & $\sum{x_iy_i}$ \\
+                        \hline
+                        540.0       & 9615.0      & 33900.0       & 10622821.0    & 597710.0       \\
+                        \hline
+                      \end{tabular}
+                    }
+                  \end{center}
+                  \begin{flalign*}
+                    \bar{x}                                                        & = \frac{540.0}{9} = 60.0                                                        \\
+                    \bar{y}                                                        & = \frac{9615.0}{9} = 1068.33                                                    \\
+                    r                                                              & = \frac{\frac{597710.0}{9} - 60.0 \times 1068.33}{\sqrt{\left(\frac{33900.0}{9}
+                    - 60.0^2\right)\left(\frac{10622821.0}{9} - 1068.33^2\right)}} &                                                                                 \\
+                                                                                   & = 0.9072
+                  \end{flalign*}
+                  According to the result of the calculation, the degree of labor mechanization and the labor productivity are positively and strongly correlated.
           \end{enumerate}
 
     \item Below are the sales (in million) and the net profit rate (\%) of 10 department
@@ -4273,9 +4543,64 @@
             \end{tabular}
           \end{center}
           \begin{enumerate}
-            \item Construct a scatter diagram of the data.
+            \item Construct a scatter diagram of the data. \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth-4.6em}{!}{%
+                      \begin{tikzpicture}
+                        \begin{axis}[
+                            xlabel=Sales,
+                            ylabel=Net Profit Rate,
+                            xmin=10, xmax=50,
+                            ymin=10, ymax=20,
+                            xtick={10, 15, ..., 50},
+                            ytick={10, 12.5, ..., 20},
+                            grid=both,
+                            grid style={line width=.2pt, draw=gray!60},
+                            major grid style={line width=.4pt,draw=gray!90},
+                            minor tick num=4,
+                          ]
+                          \addplot[mark=*, mark size=1.5, mark options={solid, fill=black}, only marks] coordinates {(18.4, 15.3) (16.5, 14.8) (14.6, 13.6) (23.3, 14.3) (35.6, 12.9) (24.2, 14.6) (33.6, 13.8) (44.5, 13.7) (26.8, 13.5) (31.9, 14.2)};
+                        \end{axis}
+                      \end{tikzpicture}
+                    }
+                  \end{center}
+
             \item Find the correlation coefficient of the sales and the net profit rate, and
-                  determine on the strength of the correlation.
+                  determine on the strength of the correlation. \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth-4.6em}{!}{%
+                      \begin{tabular}{|c|c|c|c|c|}
+                        \hline
+                        $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
+                        \hline
+                        18.4        & 15.3        & 338.56        & 234.09        & 281.52         \\
+                        16.5        & 14.8        & 272.25        & 219.04        & 244.2          \\
+                        14.6        & 13.6        & 213.16        & 184.96        & 198.56         \\
+                        23.3        & 14.3        & 542.89        & 204.49        & 333.19         \\
+                        35.6        & 12.9        & 1267.36       & 166.41        & 459.24         \\
+                        24.2        & 14.6        & 585.64        & 213.16        & 353.32         \\
+                        33.6        & 13.8        & 1128.96       & 190.44        & 463.68         \\
+                        44.5        & 13.7        & 1980.25       & 187.69        & 609.65         \\
+                        26.8        & 13.5        & 718.24        & 182.25        & 361.8          \\
+                        31.9        & 14.2        & 1017.61       & 201.64        & 452.98         \\
+                        \hline
+                        \hline
+                        $\sum{x_i}$ & $\sum{y_i}$ & $\sum{x_i^2}$ & $\sum{y_i^2}$ & $\sum{x_iy_i}$ \\
+                        \hline
+                        269.4       & 140.7       & 8064.92       & 1984.17       & 3758.14        \\
+                        \hline
+                      \end{tabular}
+                    }
+                  \end{center}
+                  \begin{flalign*}
+                    \bar{x}                                                     & = \frac{269.4}{10} = 26.94                                                      \\
+                    \bar{y}                                                     & = \frac{140.7}{10} = 14.07                                                      \\
+                    r                                                           & = \frac{\frac{3758.14}{10} - 26.94 \times 14.07}{\sqrt{\left(\frac{8064.92}{10}
+                    - 26.94^2\right)\left(\frac{1984.17}{10} - 14.07^2\right)}} &                                                                                 \\
+                                                                                & = -0.5350
+                  \end{flalign*}
+                  According to the result of the calculation, the sales and the net profit rate are negatively and moderately correlated.
+
           \end{enumerate}
 
   \end{enumerate}
