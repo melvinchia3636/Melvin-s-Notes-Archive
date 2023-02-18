@@ -5392,6 +5392,41 @@
             9 & \quad 8 \quad 8 \quad 9 \quad 10 \quad 9 \quad 8 \quad 7
           \end{flalign*}
           Find the mean, meidan, mode, range, quartile deviation, mean deviation, and standard deviation of their weights.
+          \sol{}
+          \begin{flalign*}
+            \text{Mean} & = \frac{8 + 9 + \cdots + 7}{16} \\
+                        & = \frac{138}{16}                \\
+                        & = 8.63
+          \end{flalign*}
+          Rearranging the data, we get
+          \begin{flalign*}
+            7 & \quad 7 \quad 8 \quad 8 \quad 8 \quad 8 \quad 8 \quad 9    \\
+            9 & \quad 9 \quad 9 \quad 9 \quad 9 \quad 10 \quad 10 \quad 10
+          \end{flalign*}
+          $n = 16$, median is the average of the value at the $\frac{16}{2} = 8$th position the $\frac{16}{2} + 1 = 9$th position, that is, $\frac{9 + 9}{2} = 18$.
+
+          The mode is $9$, which occurs at the highest frequency of $6$.
+
+          The range is $10 - 7 = 3$.
+
+          $Q_1$ is the average of the value at the $\frac{16}{4} = 4$th position and the $\frac{16}{4} + 1 = 5$th position, that is, $\frac{8 + 8}{2} = 8$.
+
+          $Q_3$ is the average of the value at the $\frac{3 \times 16}{4} = 12$th position and the $\frac{3 \times 16}{4} + 1 = 13$th position, that is, $\frac{9 + 9}{2} = 9$.
+
+          The quartile deviation is $\frac{9 - 8}{2} = \frac{1}{2} = 0.5$.
+
+          \begin{flalign*}
+            \text{Mean Dev.} & = \frac{|7 - 8.63| + \cdots + |10 - 8.63|}{16} \\
+                             & = \frac{1.63 + 1.63 + \cdots + 1.37}{16}       \\
+                             & = \frac{12.74}{16}                             \\
+                             & = 0.80
+          \end{flalign*}
+          \begin{flalign*}
+            \sigma^2 & = \frac{7^2 + 7^2 + \cdots + 10^2}{16} - \left(\frac{138}{16}\right)^2 \\
+                     & = 0.8594                                                               \\
+            \sigma   & = \sqrt{0.8594}                                                        \\
+                     & = 0.93
+          \end{flalign*}
 
     \item The table below shows the score distribution of business study minor test of
           senior 3 students in a high school:
@@ -5409,10 +5444,65 @@
             \end{tabular}
           \end{center}
           \begin{enumerate}
-            \item Construct a cumulative frequency distribution table.
-            \item Construct a cumulative frequency polygon.
+            \item Construct a cumulative frequency distribution table. \sol{}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                      \hline
+                      Range & Freq. & Lower Than & Cum. Freq. \\
+                      \hline
+                      0-9   & 7     & 9.5        & 7          \\
+                      10-19 & 21    & 19.5       & 28         \\
+                      20-29 & 32    & 29.5       & 60         \\
+                      30-39 & 27    & 39.5       & 87         \\
+                      40-49 & 13    & 49.5       & 100        \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+
+            \item Construct a cumulative frequency polygon. \sol{}
+                  \begin{center}
+                    \begin{tikzpicture}[scale=0.8]
+                      \begin{axis}[
+                          title style = {align = center},
+                          title={\large{Cumulative Frequency Polygon of} \\ \large{Distribution of Marks of}},
+                          ymin=0, ymax=100,
+                          xmin=0,
+                          ytick={0, 10, ..., 100},
+                          xtick={9.5, 19.5, ..., 49.5},
+                          xtick style={draw=none, fill=none, font=\footnotesize}, x tick label style =
+                            {rotate=90,anchor=east}, xlabel=Marks, ylabel=Frequency, xlabel style={at={(axis
+                                  description cs:0.5, -0.08)}, anchor=north}, ylabel style={at={(axis
+                                  description cs:0.05, 0.5)}, anchor=center}, ] \addplot[forget plot, sharp
+                          plot, mark=*, mark size=1.5pt, mark options={solid, fill=black, draw=black},
+                          draw=black] coordinates { (0.0, 0) (9.5, 7) (19.5, 28) (29.5, 60) (39.5, 87) (49.5, 100) (59.5, 120) };
+                      \end{axis}
+                    \end{tikzpicture}
+                  \end{center}
+
             \item Find the median and the interquartile range from the cumulative frequency
-                  polygon.
+                  polygon. \sol{}
+                  \begin{center}
+                    \begin{tikzpicture}[scale=0.8]
+                      \begin{axis}[
+                          title style = {align = center},
+                          title={\large{Cumulative Frequency Polygon of} \\ \large{Distribution of Marks}},
+                          ymin=0, ymax=100,
+                          xmin=0,
+                          ytick={0, 10, ..., 100},
+                          xtick={9.5, 19.5, ..., 49.5},
+                          xtick style={draw=none, fill=none, font=\footnotesize}, x tick label style =
+                            {rotate=90,anchor=east}, xlabel=Marks, ylabel=Frequency, xlabel style={at={(axis
+                                  description cs:0.5, -0.08)}, anchor=north}, ylabel style={at={(axis
+                                  description cs:0.05, 0.5)}, anchor=center}, ] \addplot[forget plot, sharp
+                          plot, mark=*, mark size=1.5pt, mark options={solid, fill=black, draw=black},
+                          draw=black] coordinates { (0.0, 0) (9.5, 7) (19.5, 28) (29.5, 60) (39.5, 87) (49.5, 100) (59.5, 120) };
+                        \draw [dashed] (axis cs: 26.5, 0) -- (axis cs: 26.5, 50) -- (axis cs: 0, 50);
+                        \draw [dashed] (axis cs: 35, 0) -- (axis cs: 35, 75) -- (axis cs: 0, 75);
+                        \draw [dashed] (axis cs: 18, 0) -- (axis cs: 18, 25) -- (axis cs: 0, 25);
+                      \end{axis}
+                    \end{tikzpicture}
+                  \end{center}
+
             \item Find the percentage of students who scored higher or equal to 45 marks.
             \item Assume that the passing score is 15 marks. Find the percentage of students who
                   failed the test.
