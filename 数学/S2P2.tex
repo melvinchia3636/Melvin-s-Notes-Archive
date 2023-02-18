@@ -5499,13 +5499,57 @@
                         \draw [dashed] (axis cs: 26.5, 0) -- (axis cs: 26.5, 50) -- (axis cs: 0, 50);
                         \draw [dashed] (axis cs: 35, 0) -- (axis cs: 35, 75) -- (axis cs: 0, 75);
                         \draw [dashed] (axis cs: 18, 0) -- (axis cs: 18, 25) -- (axis cs: 0, 25);
+                        \node at (axis cs: 9.0, 32) {$Q_1$};
+                        \node at (axis cs: 9.0, 57) {$Q_2$};
+                        \node at (axis cs: 9.0, 82) {$Q_3$};
                       \end{axis}
                     \end{tikzpicture}
                   \end{center}
 
-            \item Find the percentage of students who scored higher or equal to 45 marks.
+            \item Find the percentage of students who scored higher or equal to 45 marks. \sol{}
+                  \begin{center}
+                    \begin{tikzpicture}[scale=0.8]
+                      \begin{axis}[
+                          title style = {align = center},
+                          title={\large{Cumulative Frequency Polygon of} \\ \large{Distribution of Marks}},
+                          ymin=0, ymax=100,
+                          xmin=0,
+                          ytick={0, 10, ..., 100},
+                          xtick={9.5, 19.5, ..., 49.5},
+                          xtick style={draw=none, fill=none, font=\footnotesize}, x tick label style =
+                            {rotate=90,anchor=east}, xlabel=Marks, ylabel=Frequency, xlabel style={at={(axis
+                                  description cs:0.5, -0.08)}, anchor=north}, ylabel style={at={(axis
+                                  description cs:0.05, 0.5)}, anchor=center}, ] \addplot[forget plot, sharp
+                          plot, mark=*, mark size=1.5pt, mark options={solid, fill=black, draw=black},
+                          draw=black] coordinates { (0.0, 0) (9.5, 7) (19.5, 28) (29.5, 60) (39.5, 87) (49.5, 100) (59.5, 120) };
+                        \draw [dashed] (axis cs: 45, 0) -- (axis cs: 45, 94) -- (axis cs: 0, 94);
+                      \end{axis}
+                    \end{tikzpicture}
+                  \end{center}
+                  From the diagram, we can see that there are 6 students who scored 45 marks or above.
+
             \item Assume that the passing score is 15 marks. Find the percentage of students who
                   failed the test.
+                  \begin{center}
+                    \begin{tikzpicture}[scale=0.8]
+                      \begin{axis}[
+                          title style = {align = center},
+                          title={\large{Cumulative Frequency Polygon of} \\ \large{Distribution of Marks}},
+                          ymin=0, ymax=100,
+                          xmin=0,
+                          ytick={0, 10, ..., 100},
+                          xtick={9.5, 19.5, ..., 49.5},
+                          xtick style={draw=none, fill=none, font=\footnotesize}, x tick label style =
+                            {rotate=90,anchor=east}, xlabel=Marks, ylabel=Frequency, xlabel style={at={(axis
+                                  description cs:0.5, -0.08)}, anchor=north}, ylabel style={at={(axis
+                                  description cs:0.05, 0.5)}, anchor=center}, ] \addplot[forget plot, sharp
+                          plot, mark=*, mark size=1.5pt, mark options={solid, fill=black, draw=black},
+                          draw=black] coordinates { (0.0, 0) (9.5, 7) (19.5, 28) (29.5, 60) (39.5, 87) (49.5, 100) (59.5, 120) };
+                        \draw [dashed] (axis cs: 15, 0) -- (axis cs: 15, 18.5) -- (axis cs: 0, 18.5);
+                      \end{axis}
+                    \end{tikzpicture}
+                  \end{center}
+                  From the diagram above, there are about 18.5\% of students who failed the test.
           \end{enumerate}
 
     \item The burning time (in $s$) of 10 rocket boosters are as follows: \makeatletter
@@ -5518,7 +5562,18 @@
           \setbool{@fleqn}{true}
           \makeatother
 
-          Find the range, variance and standard deviation of the burning time.
+          Find the range, variance and standard deviation of the burning time. \sol{}
+          \begin{flalign*}
+            \text{Range} & = 69.0 - 34.5 = 34.5                                  \\
+            \bar{x}      & = \frac{50.7 + 54.9 + \cdots + 34.5}{10}              \\
+                         & = \frac{520}{10}                                      \\
+                         & = 52                                                  \\
+            \sigma^2     & = \frac{50.7^2 + 54.9^2 + \cdots + 34.5^2}{10} - 52^2 \\
+                         & = \frac{28024.1}{10} - 52^2                           \\
+                         & = 98.41                                               \\
+            \sigma       & = \sqrt{98.41}                                        \\
+                         & = 9.92
+          \end{flalign*}
 
     \item The table below shows the scores of 30 rounds of game scored by someone:
           \begin{center}
@@ -5532,8 +5587,25 @@
           \end{center}
           Find:
           \begin{enumerate}
-            \item The value of $x$.
-            \item The mean and standard deviation of the scores.
+            \item The value of $x$. \sol{}
+                  \begin{flalign*}
+                    5 + 3 + 4 + (x+1) + 7 & = 30 \\
+                    20 + x                & = 30 \\
+                    x                     & = 10
+                  \end{flalign*}
+
+            \item The mean and standard deviation of the scores. \sol{}
+                  \begin{flalign*}
+                    \bar{x}  & = \frac{0 \times 5 + 1 \times 3 + 2 \times 4 + 3 \times 10 + 4 \times 7}{30} & \\
+                             & = \frac{0 + 3 + 8 + 33 + 28}{30}                                               \\
+                             & = \frac{72}{30}                                                                \\
+                             & = 2.4                                                                          \\
+                    \sigma^2 & = \frac{3 + 16 + 99 + 112}{30} - 2.4^2                                       & \\
+                             & = \frac{230}{30} - 5.76                                                        \\
+                             & = 1.91                                                                         \\
+                    \sigma   & = \sqrt{1.91}                                                                & \\
+                             & = 1.38
+                  \end{flalign*}
           \end{enumerate}
 
     \item The table below shows the distribution of scores of a minor test of students in
@@ -5554,9 +5626,42 @@
           \end{center}
           Find:
           \begin{enumerate}
-            \item Range
-            \item Median
-            \item Mode
+            \item Range \sol{}
+                  \begin{flalign*}
+                    \text{Range} & = 30 - 0 = 30
+                  \end{flalign*}
+
+            \item Median \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth - 4.6em}{!}{%
+                      \begin{tabular}{|c|c|c|c|c|}
+                        \hline
+                        Range            & Freq & Mid & Lw. Th. & Cum. Freq. \\
+                        \hline
+                        $0 < x \leq 5$   & 8    & 3   & 5       & 8          \\
+                        $5 < x \leq 10$  & 1    & 8   & 10      & 9          \\
+                        $10 < x \leq 15$ & 9    & 13  & 15      & 18         \\
+                        $15 < x \leq 20$ & 7    & 18  & 20      & 25         \\
+                        $20 < x \leq 25$ & 11   & 23  & 25      & 36         \\
+                        $25 < x \leq 30$ & 4    & 28  & 30      & 40         \\
+                        \hline
+                      \end{tabular}
+                    }
+                  \end{center}
+                  $n = 40$, $\frac{n}{2} = 20$, the class containing the median is $15 < x \leq 20$, $C_m = 4$, $L_m = 15$, $F_m = 18$, $f_m = 7$.
+                  \begin{flalign*}
+                    \text{Median} & = 15 + \frac{20 - 18}{7} \times 5 \\
+                                  & = 16.43
+                  \end{flalign*}
+
+            \item Mode \sol{}
+
+                  The modal class is $20 < x \leq 25$ with the highest frequency of $11$, $C =
+                    5$, $L = 20$, $d_1 = 11 - 7 = 4$, $d_2 = 11 - 4 = 7$,
+                  \begin{flalign*}
+                    \text{Mode} & = 20 + \frac{4}{4 + 7} \times 5 \\
+                                & = 21.82
+                  \end{flalign*}
           \end{enumerate}
 
     \item Below are the distribution of scores of business study exam of 40 students in a
@@ -5609,8 +5714,24 @@
 
     \item Assume that the mean value of data $2, x+1, 5, 2x+1, 8, 2x-3$ is 4,
           \begin{enumerate}
-            \item Find the value of $x$.
-            \item With that, find the standard deviation of the data.
+            \item Find the value of $x$. \sol{}
+                  \begin{flalign*}
+                    \frac{2 + x + 1 + 5 + 2x + 1 + 8 + 2x - 3}{6} & = 4  & \\
+                    \frac{14 + 5x}{6}                             & = 4    \\
+                    14 + 5x                                       & = 24   \\
+                    5x                                            & = 10   \\
+                    x                                             & = 2
+                  \end{flalign*}
+
+            \item With that, find the standard deviation of the data. \sol{}
+
+                  The data become $2, 3, 5, 5, 8, 1$
+                  \begin{flalign*}
+                    \sigma^2 & = \frac{4 + 9 + 25 + 25 + 64 + 1}{6} - 4^2 \\
+                             & = 5.33                                     \\
+                    \sigma   & = \sqrt{5.33}                              \\
+                             & = 2.31
+                  \end{flalign*}
           \end{enumerate}
 
     \item The mean and mode of a set of data $2, 5, 3, 11, 9, 2, 11, p, q$ are 6 and 3
