@@ -47,12 +47,12 @@
     }
 }
 
-\newcommand\typel[2]{%
+\newcommand\typel[2]{
   \mathbin{\mathop{#1\kern0pt}%
     \limits_{\raisebox{3.6ex}{\hbox to0pt{\hss\strut$\uparrow$\hss}}\hbox to0pt{\hss#2\hss}}}
 }
 
-\newcommand\typem[2]{%
+\newcommand\typem[2]{
   \mathbin{\mathop{#1\kern0pt}%
     \limits^{\raisebox{3.6ex}{\hbox to0pt{\hss#2\hss}}\hbox to0pt{\hss\strut$\downarrow$\hss}}}
 }
@@ -78,7 +78,7 @@
 \begin{document}
 \makeatletter
 \newcommand{\newparallel}{\mathrel{\mathpalette\new@parallel\relax}}
-\newcommand{\new@parallel}[2]{%
+\newcommand{\new@parallel}[2]{
   \begingroup
   \sbox\z@{$#1T$}% get the height of an uppercase letter
   \resizebox{!}{\ht\z@}{\raisebox{\depth}{$\m@th#1/\mkern-5mu/$}}%
@@ -151,9 +151,9 @@
 }
 \newcommand\m[1]{\begin{pmatrix}#1\end{pmatrix}}
 \newcommand\vm[1]{\begin{vmatrix}#1\end{vmatrix}}
-\newenvironment{amatrix}[1]{%
+\newenvironment{amatrix}[1]{
   \left(\begin{array}{@{}*{#1}{c}|c@{}}
-    }{%
+    }{
   \end{array}\right)
 }
 \newenvironment{cequation}{
@@ -560,7 +560,7 @@
     \item If the top $20\%$ of the class are to be awarded a certificate, find the
           minimum average mark required for the certificate. \sol{}
           \begin{flalign*}
-            \text{Top $20\%$} & = 20\% \times 155 \\
+            \text{Top $20\%$} & = 20\% \cdot 155 \\
                               & = 31
           \end{flalign*}
           Therefore, students with an average mark corresponding to cumulative frequency higher than 124 will be awarded a certificate.
@@ -741,7 +741,7 @@
                   \sol{}
 
                   In the diagram above, there are approximately $120 - 66 = 54$ ears of rice
-                  whose length is greater than $6cm$, which is about $\frac{54}{120} \times 100\%
+                  whose length is greater than $6cm$, which is about $\frac{54}{120} \cdot 100\%
                     = 45\%$ of the total number of ears of rice.
 
           \end{enumerate}
@@ -804,7 +804,7 @@
             \item Find the percentage of babies whose weight is greater than $3.8kg$. \sol{}
 
                   In the diagram above, there are approximately $90 - 68 = 22$ babies whose
-                  weight is greater than $3.8kg$, which is about $\frac{22}{90} \times 100\% =
+                  weight is greater than $3.8kg$, which is about $\frac{22}{90} \cdot 100\% =
                     24.44\%$ of the total number of babies.
           \end{enumerate}
 
@@ -874,7 +874,7 @@
                   \sol{}
 
                   In the diagram above, there are approximately $50 - 42 = 8$ students whose
-                  average score is greater than $85$, which is about $\frac{8}{50} \times 100\% =
+                  average score is greater than $85$, which is about $\frac{8}{50} \cdot 100\% =
                     16\%$ of the total number of students.
           \end{enumerate}
 
@@ -947,7 +947,7 @@
 
                   In the diagram above, there are approximately $1200 - 155 = 1045$ students
                   whose score is greater or equal to $38$, which is about $\frac{1045}{1200}
-                    \times 100\% = 86.67\%$ of the total number of students.
+                    \cdot 100\% = 86.67\%$ of the total number of students.
 
             \item Assume that the minimum score to be categorised as \textit{Excellent} and
                   \textit{Good} is $75$ and $55$ respectively, find the percentage of students
@@ -955,12 +955,12 @@
                   \sol{}
 
                   In the diagram above, there are approximately $1200 - 1024 = 176$ students
-                  whose score is greater or equal to $75$, which is about $\frac{176}{1200}
-                    \times 100\% = 14.67\%$ of the total number of students who are categorised as
+                  whose score is greater or equal to $75$, which is about $\frac{176}{1200} \cdot
+                    100\% = 14.67\%$ of the total number of students who are categorised as
                   \textit{Excellent}.
 
                   Also, there are approximately $1024 - 475 = 549$ students whose score is
-                  greater or equal to $55$, which is about $\frac{549}{1200} \times 100\% =
+                  greater or equal to $55$, which is about $\frac{549}{1200} \cdot 100\% =
                     45.75\%$ of the total number of students who are categorised as \textit{Good}.
 
             \item Find the passing mark if the percentage of students who pass the exam is
@@ -1171,20 +1171,20 @@
           students in class $B$ is 68. Find the average mark of all students in these two
           class combined. \sol{}
           \begin{flalign*}
-            \bar{x} & = \frac{72 \times 49 + 68 \times 45}{49 + 45} \\
-                    & = \frac{3528 + 3060}{94}                      \\
-                    & = \frac{6588}{94}                             \\
+            \bar{x} & = \frac{72 \cdot 49 + 68 \cdot 45}{49 + 45} \\
+                    & = \frac{3528 + 3060}{94}                    \\
+                    & = \frac{6588}{94}                           \\
                     & = 70.09
           \end{flalign*}
 
     \item Given that the mean for 8 values are 5. The mean increased by 1.4 after adding
           two values: $x$ and $3x$. Find the value of $x$. \sol{}
           \begin{flalign*}
-            \frac{8 \times 5 + x + 3x}{8 + 2} & = 5 + 1.4 \\
-            \frac{40 + 4x}{10}                & = 6.4     \\
-            40 + 4x                           & = 64      \\
-            4x                                & = 24      \\
-            x                                 & = 6
+            \frac{8 \cdot 5 + x + 3x}{8 + 2} & = 5 + 1.4 \\
+            \frac{40 + 4x}{10}               & = 6.4     \\
+            40 + 4x                          & = 64      \\
+            4x                               & = 24      \\
+            x                                & = 6
           \end{flalign*}
     \item Throwing 6 coin at the same time and record the number of heads. After throwing
           100 times, we get the following frequency distribution table:
@@ -1289,9 +1289,9 @@
 
             \item Use the number of classes as the weight to find his average mark. \sol{}
                   \begin{flalign*}
-                    \bar{x} & = \frac{75 \times 7 + 73 \times 7 + \cdots + 87 \times 3}{7 + 7 + 7 + 7 + 5 + 3 + 3} & \\
-                            & = \frac{525 + 511 + 455 + 574 + 430 + 219 + 261}{39}                                   \\
-                            & = \frac{2975}{39}                                                                      \\
+                    \bar{x} & = \frac{75 \cdot 7 + 73 \cdot 7 + \cdots + 87 \cdot 3}{7 + 7 + 7 + 7 + 5 + 3 + 3} & \\
+                            & = \frac{525 + 511 + 455 + 574 + 430 + 219 + 261}{39}                                \\
+                            & = \frac{2975}{39}                                                                   \\
                             & = 76.28
                   \end{flalign*}
           \end{enumerate}
@@ -1313,7 +1313,7 @@
           Given that the mean weight of these students is 60.1 kg, find the value of $x$ and $y$.
           \sol{}
           \begin{flalign*}
-            \text{Total weight} & = 60.1 \times 60 = 3606
+            \text{Total weight} & = 60.1 \cdot 60 = 3606
           \end{flalign*}
           \begin{center}
             \begin{tabular}{|c|c|c|c|}
@@ -1339,7 +1339,7 @@
             (1):             & \ 42 + x + y = 60  \\
                              & x + y = 18         \\
             (2):             & \ 61x + 70y = 1116 \\
-            (1) \times 61:   & \ 61x + 61y = 1098 \\
+            (1) \cdot 61:    & \ 61x + 61y = 1098 \\
             (2) - (1):       & \ 9y = 18          \\
                              & \ y = 2            \\
             \text{From }(1): & \ x = 16
@@ -1498,7 +1498,7 @@
           The median is the number in the $\frac{21}{2} = 10.5$ position, which is $1.7 - 1.9$.
           $C_m = 0.3$, $L_m = 1.65$, and $f_m = 5$, $F_m = 7$.
           \begin{flalign*}
-            \therefore\ \textit{Mean} = 1.65 + \frac{10.5 - 7}{5} \times 0.3 = 1.86
+            \therefore\ \textit{Mean} = 1.65 + \frac{10.5 - 7}{5} \cdot 0.3 = 1.86
           \end{flalign*}
   \end{enumerate}
 
@@ -1552,7 +1552,7 @@
                   The median is the number in the $\frac{15}{2} = 7.5$ position.
                   $C_m = 2$, $L_m = 37$, $f_m = 5$, and $F_m = 5$.
                   \begin{flalign*}
-                    \therefore\ \textit{Median} = 37 + \frac{7.5 - 5}{5} \times 2 = 38
+                    \therefore\ \textit{Median} = 37 + \frac{7.5 - 5}{5} \cdot 2 = 38
                   \end{flalign*}
           \end{enumerate}
     \item The table below shows the score distribution of a group of pupils in a minor
@@ -1648,7 +1648,7 @@
                   The median is the number in the $\frac{60}{2} = 30$ position, which is $3000 -
                     4000$. $C_m = 1000$, $L_m = 3000$, and $f_m = 20$, $F_m = 28$.
                   \begin{cequation}
-                    \therefore\ \textit{Median} = 3000 + \frac{30 - 28}{20} \times 1000 = 3100
+                    \therefore\ \textit{Median} = 3000 + \frac{30 - 28}{20} \cdot 1000 = 3100
                   \end{cequation}
                   Therefore, the median of their income is $\$3100$, which is the same as (a).
           \end{enumerate}
@@ -1693,7 +1693,7 @@
                   The median is the number in $\frac{20}{2} = 10$ position, which is $150 - 160$.
                   $C_m = 10$, $L_m = 150$, $f_m = 5$, and $F_m = 9$.
                   \begin{cequation}
-                    \therefore\ \textit{Median} = 150 + \frac{10 - 9}{5} \times 10 = 152
+                    \therefore\ \textit{Median} = 150 + \frac{10 - 9}{5} \cdot 10 = 152
                   \end{cequation}
                   Therefore, the median of their height is $152cm$.
           \end{enumerate}
@@ -1730,13 +1730,13 @@
 
           $63.5$ is in between $60 - 69$, which is in the $\frac{25 + x}{2}$ position. $C_m = 10$, $L_m = 59.5$, $f_m = 5$, $F_m = 18$.
           \begin{flalign*}
-            59.5 + \frac{\frac{25 + x}{2} - 18}{5} \times 10 & = 63.5 \\
-            \frac{\frac{25 + x}{2} - 18}{5} \times 10        & = 4    \\
-            \frac{\frac{25 + x}{2} - 18}{5}                  & = 0.4  \\
-            \frac{25 + x}{2} - 18                            & = 2    \\
-            \frac{25 + x}{2}                                 & = 20   \\
-            25 + x                                           & = 40   \\
-            x                                                & = 15
+            59.5 + \frac{\frac{25 + x}{2} - 18}{5} \cdot 10 & = 63.5 \\
+            \frac{\frac{25 + x}{2} - 18}{5} \cdot 10        & = 4    \\
+            \frac{\frac{25 + x}{2} - 18}{5}                 & = 0.4  \\
+            \frac{25 + x}{2} - 18                           & = 2    \\
+            \frac{25 + x}{2}                                & = 20   \\
+            25 + x                                          & = 40   \\
+            x                                               & = 15
           \end{flalign*}
   \end{enumerate}
 
@@ -1902,9 +1902,9 @@
           Find the mean, median and mode of their scores.
           \sol{}
           \begin{flalign*}
-            \textit{Mean} & = \frac{1.50 \times 2 + 1.60 \times 3 + \cdots + 1.90 \times 1}{17} & \\
-                          & = \frac{3 + 4.8 + 3.3 + 5.1 + 7 + 1.8 + 1.85 + 1.9}{17}               \\
-                          & = \frac{28.75}{17}                                                    \\
+            \textit{Mean} & = \frac{1.50 \cdot 2 + 1.60 \cdot 3 + \cdots + 1.90 \cdot 1}{17} & \\
+                          & = \frac{3 + 4.8 + 3.3 + 5.1 + 7 + 1.8 + 1.85 + 1.9}{17}            \\
+                          & = \frac{28.75}{17}                                                 \\
                           & = 1.69m
           \end{flalign*}
           \begin{center}
@@ -2263,11 +2263,11 @@
                   \end{center}
                   $n$ = 15, $\frac{n}{2} = 7.5$, the group of scores that contains the median is $67 - 78$, $C_m = 11$, $L_m = 67$, $f_m = 3$, $F_m = 4$,
                   \begin{flalign*}
-                    \text{Median} & = 67 + \frac{7.5 - 4}{4} \times 11 = 76.63
+                    \text{Median} & = 67 + \frac{7.5 - 4}{4} \cdot 11 = 76.63
                   \end{flalign*}
                   Since the modal class is $78 - 89$ with the highest frequency of 6, $C = 11$, $d_1 = 6 - 4 = 2$, $d_2 = 6 - 1 = 5$, $L_m = 78$,
                   \begin{flalign*}
-                    \text{Mode} & = 78 + \frac{2}{2 + 5} \times 11 = 81.14
+                    \text{Mode} & = 78 + \frac{2}{2 + 5} \cdot 11 = 81.14
                   \end{flalign*}
 
                   $\therefore$ mean $= 74.7$, median $= 76.63$, mode $= 81.14$.
@@ -2310,11 +2310,11 @@
                   \end{center}
                   $n$ = 39, $\frac{n}{2} = 19.5$, the group of scores that contains the median is $67 - 78$, $C_m = 11$, $L_m = 67$, $f_m = 13$, $F_m = 17$,
                   \begin{flalign*}
-                    \text{Median} & = 67 + \frac{19.5 - 17}{13} \times 11 = 69.12
+                    \text{Median} & = 67 + \frac{19.5 - 17}{13} \cdot 11 = 69.12
                   \end{flalign*}
                   Since the modal class is $67 - 78$ with the highest frequency of 13, $C= 11$, $d_1 = 13 - 5 = 8$, $d_2 = 13 - 4 = 9$, $L = 67$,
                   \begin{flalign*}
-                    \text{Mode} & = 67 + \frac{8}{8 + 9} \times 11 = 72.18
+                    \text{Mode} & = 67 + \frac{8}{8 + 9} \cdot 11 = 72.18
                   \end{flalign*}
                   $\therefore$ mean $= 66.01$, median $= 69.12$, mode $= 72.18$.
 
@@ -2369,11 +2369,11 @@
                   \end{center}
                   $n$ = 54, $\frac{n}{2} = 27$, the group of scores that contains the median is $67 - 78$, $C_m = 11$, $L_m = 67$, $f_m = 17$, $F_m = 21$,
                   \begin{flalign*}
-                    \text{Median} & = 67 + \frac{27 - 21}{17} \times 11 = 70.88
+                    \text{Median} & = 67 + \frac{27 - 21}{17} \cdot 11 = 70.88
                   \end{flalign*}
                   Since the modal class is $67 - 78$ with the highest frequency of 17, $C = 11$, $d_1 = 17 - 8 = 9$, $d_2 = 17 - 10 = 7$, $L = 67$,
                   \begin{flalign*}
-                    \text{Mode} & = 67 + \frac{9}{9 + 7} \times 11 = 73.19
+                    \text{Mode} & = 67 + \frac{9}{9 + 7} \cdot 11 = 73.19
                   \end{flalign*}
           \end{enumerate}
 
@@ -2419,7 +2419,7 @@
                   The modal class is $60 < x \leq 70$ with the highest frequency of 35, $C = 10$,
                   $d_1 = 35 - 30 = 5$, $d_2 = 35 - 25 = 10$, $L = 60$,
                   \begin{flalign*}
-                    \text{Mode} & = 60 + \frac{5}{5 + 10} \times 10 = 63.33
+                    \text{Mode} & = 60 + \frac{5}{5 + 10} \cdot 10 = 63.33
                   \end{flalign*}
 
             \item Median. \sol{}
@@ -2438,7 +2438,7 @@
                   \end{center}
                   $n$ = 115, $\frac{n}{2} = 57.5$, the group of scores that contains the median is $60 < x \leq 70$, $C_m = 10$, $L_m = 60$, $f_m = 35$, $F_m = 42$,
                   \begin{flalign*}
-                    \text{Median} & = 60 + \frac{57.5 - 42}{35} \times 10 = 64.43
+                    \text{Median} & = 60 + \frac{57.5 - 42}{35} \cdot 10 = 64.43
                   \end{flalign*}
           \end{enumerate}
   \end{enumerate}
@@ -2625,11 +2625,11 @@
 
                   $n = 60$, $\frac{n}{4} = 15$, the class that contains $Q_1$ is $160-165$, $C_1 = 5$, $L_1 = 160$, $f_1 = 11$, $F_1 = 10$,
                   \begin{flalign*}
-                    Q_1 = 160 + \frac{15 - 10}{12} \times 5 = 162.083
+                    Q_1 = 160 + \frac{15 - 10}{12} \cdot 5 = 162.083
                   \end{flalign*}
                   $n = 60$, $\frac{3n}{4} = 45$, the class that contains $Q_3$ is $170-175$, $C_3 = 5$, $L_3 = 170$, $f_3 = 14$, $F_3 = 37$,
                   \begin{flalign*}
-                    Q_3 = 170 + \frac{45 - 37}{14} \times 5 = 172.857
+                    Q_3 = 170 + \frac{45 - 37}{14} \cdot 5 = 172.857
                   \end{flalign*}
                   Hence,
                   \begin{flalign*}
@@ -2721,11 +2721,11 @@
 
           $n = 100$, $\frac{n}{4} = 25$, The class that contains the lower quartile is $60 - 70$, $C_1 = 10$, $L_1 = 60.5$, $f_1 = 22$, $F_1 = 20$,
           \begin{flalign*}
-            Q_1 = 60.5 + \frac{25 - 20}{22} \times 10 = 62.773
+            Q_1 = 60.5 + \frac{25 - 20}{22} \cdot 10 = 62.773
           \end{flalign*}
           $n = 100$, $\frac{3n}{4} = 75$, The class that contains the upper quartile is $80 - 90$, $C_2 = 10$, $L_2 = 80.5$, $f_2 = 23$, $F_2 = 72$,
           \begin{flalign*}
-            Q_3 = 80.5 + \frac{75 - 72}{23} \times 10 = 81.804
+            Q_3 = 80.5 + \frac{75 - 72}{23} \cdot 10 = 81.804
           \end{flalign*}
           Hence,
           \begin{flalign*}
@@ -3037,7 +3037,7 @@
                   \end{tabular}
                   \sol{}
                   \begin{center}
-                    \resizebox{\columnwidth-5em}{!}{%
+                    \resizebox{\columnwidth-5em}{!}{
                       \begin{tabular}{|c|c|c|c|}
                         \hline
                         $x_i$ & $f_i$           & $x_i f_i$            & $x_i^2 f_i$             \\
@@ -3073,7 +3073,7 @@
                   \end{tabular}
                   \sol{}
                   \begin{center}
-                    \resizebox{\columnwidth-4.4em}{!}{%
+                    \resizebox{\columnwidth-4.4em}{!}{
                       \begin{tabular}{|c|c|c|c|c|}
                         \hline
                         Limit     & $f_i$           & $Mid. x_i$ & $x_i f_i$             & $x_i^2 f_i$                \\
@@ -3149,7 +3149,7 @@
                   \end{tabular}
                   \sol{}
                   \begin{center}
-                    \resizebox{\columnwidth-5em}{!}{%
+                    \resizebox{\columnwidth-5em}{!}{
                       \begin{tabular}{|c|c|c|c|}
                         \hline
                         $x_i$ & $f_i$            & $x_i f_i$            & $x_i^2 f_i$             \\
@@ -3184,7 +3184,7 @@
                   \end{tabular}
                   \sol{}
                   \begin{center}
-                    \resizebox{\columnwidth-4.6em}{!}{%
+                    \resizebox{\columnwidth-4.6em}{!}{
                       \begin{tabular}{|c|c|c|c|}
                         \hline
                         $x_i$ & $f_i$           & $x_i f_i$             & $x_i^2 f_i$              \\
@@ -3306,7 +3306,7 @@
           Find the mean and standard deviation of the height of all students of the same grade.
           \sol{}
           \begin{center}
-            \resizebox{\columnwidth-3em}{!}{%
+            \resizebox{\columnwidth-3em}{!}{
               \begin{tabular}{|c|c|c|c|c|}
                 \hline
                 Range     & $x_i$ & $f_i$            & $x_if_i$                & $x_i^2f_i$                  \\
@@ -3351,7 +3351,7 @@
           Find the variance and standard deviation.
           \sol{}
           \begin{center}
-            \resizebox{\columnwidth-3em}{!}{%
+            \resizebox{\columnwidth-3em}{!}{
               \begin{tabular}{|c|c|c|c|c|}
                 \hline
                 Range   & $x_i$ & $f_i$            & $x_if_i$              & $x_i^2f_i$                \\
@@ -3482,7 +3482,7 @@
   non-negative set of value, the definition of coefficient of variation is as
   follows:
   \begin{cequation}
-    v = \frac{\sigma}{\bar{x}} \times 100\%
+    v = \frac{\sigma}{\bar{x}} \cdot 100\%
   \end{cequation}
 
   From the definition, we can see that the coefficient of variation the standard
@@ -3496,8 +3496,8 @@
   full mark of Mathematics test is 70, its average mark is 40, and the standard
   deviation is 8. Compare the variability of the two tests. \sol{}
   \begin{flalign*}
-    v_{\text{Chinese}} & = \frac{10}{70} \times 100\% = 14.29\% \\
-    v_{\text{Math}}    & = \frac{8}{40} \times 100\% = 20\%
+    v_{\text{Chinese}} & = \frac{10}{70} \cdot 100\% = 14.29\% \\
+    v_{\text{Math}}    & = \frac{8}{40} \cdot 100\% = 20\%
   \end{flalign*}
   $\because\ v_{\text{Math}} > v_{\text{Chinese}}$
 
@@ -3521,8 +3521,8 @@
           Compare the variability of the height and weight of the students.
           \sol{}
           \begin{flalign*}
-            v_{\text{Height}} & = \frac{4.86}{115.87} \times 100\% = 4.19\% \\
-            v_{\text{Weight}} & = \frac{2.16}{19.39} \times 100\% = 11.14\%
+            v_{\text{Height}} & = \frac{4.86}{115.87} \cdot 100\% = 4.19\% \\
+            v_{\text{Weight}} & = \frac{2.16}{19.39} \cdot 100\% = 11.14\%
           \end{flalign*}
           $\because\ v_{\text{Weight}} > v_{\text{Height}}$
 
@@ -3546,11 +3546,11 @@
           Which class has the smallest coefficient of variation?
           \sol{}
           \begin{flalign*}
-            v_{\text{A}} & = \frac{11}{62} \times 100\% = 17.74\% \\
-            v_{\text{B}} & = \frac{9}{74} \times 100\% = 12.16\%  \\
-            v_{\text{C}} & = \frac{10}{65} \times 100\% = 15.38\% \\
-            v_{\text{D}} & = \frac{7}{70} \times 100\% = 10\%     \\
-            v_{\text{E}} & = \frac{8}{53} \times 100\% = 15.09\%
+            v_{\text{A}} & = \frac{11}{62} \cdot 100\% = 17.74\% \\
+            v_{\text{B}} & = \frac{9}{74} \cdot 100\% = 12.16\%  \\
+            v_{\text{C}} & = \frac{10}{65} \cdot 100\% = 15.38\% \\
+            v_{\text{D}} & = \frac{7}{70} \cdot 100\% = 10\%     \\
+            v_{\text{E}} & = \frac{8}{53} \cdot 100\% = 15.09\%
           \end{flalign*}
           $\because\ v_{\text{D}} < v_{\text{B}} < v_{\text{A}} < v_{\text{C}} < v_{\text{E}}$
 
@@ -3590,8 +3590,8 @@
                   \end{flalign*}
             \item Find the coefficient of variation of each group. \sol{}
                   \begin{flalign*}
-                    v_A & = \frac{16.49}{74} \times 100\% = 22.28\%   \\
-                    v_B & = \frac{11.96}{76.6} \times 100\% = 15.61\%
+                    v_A & = \frac{16.49}{74} \cdot 100\% = 22.28\%   \\
+                    v_B & = \frac{11.96}{76.6} \cdot 100\% = 15.61\%
                   \end{flalign*}
           \end{enumerate}
 
@@ -3656,7 +3656,7 @@
 
           For class $A$,
           \begin{center}
-            \resizebox{\columnwidth-3em}{!}{%
+            \resizebox{\columnwidth-3em}{!}{
               \begin{tabular}{|c|c|c|c|c|}
                 \hline
                 Range   & $x_i$ & $f_i$           & $f_i x_i$               & $f_i x_i^2$                  \\
@@ -3673,18 +3673,18 @@
             }
           \end{center}
           \begin{flalign*}
-            \bar{x}_A  & = \frac{3202.5}{45} = 71.17                  \\
-            \sigma^2_A & = \frac{233911.25}{45} - 71.17^2             \\
-                       & = 5198.03 - 5064.69                          \\
-                       & = 133.34                                     \\
+            \bar{x}_A  & = \frac{3202.5}{45} = 71.17                 \\
+            \sigma^2_A & = \frac{233911.25}{45} - 71.17^2            \\
+                       & = 5198.03 - 5064.69                         \\
+                       & = 133.34                                    \\
             \sigma_A   & = \sqrt{133.34} = 11.55
             \\
-            v_A        & = \frac{11.55}{71.17} \times 100\% = 16.23\%
+            v_A        & = \frac{11.55}{71.17} \cdot 100\% = 16.23\%
           \end{flalign*}
 
           For class $B$,
           \begin{center}
-            \resizebox{\columnwidth-3em}{!}{%
+            \resizebox{\columnwidth-3em}{!}{
               \begin{tabular}{|c|c|c|c|c|}
                 \hline
                 Range   & $x_i$ & $f_i$           & $f_i x_i$             & $f_i x_i^2$                  \\
@@ -3701,13 +3701,13 @@
             }
           \end{center}
           \begin{flalign*}
-            \bar{x}_B  & = \frac{2947}{46} = 64.07                   \\
-            \sigma^2_B & = \frac{193191.5}{46} - 64.07^2             \\
-                       & = 4199.82 - 4104.96                         \\
-                       & = 95.46                                     \\
+            \bar{x}_B  & = \frac{2947}{46} = 64.07                  \\
+            \sigma^2_B & = \frac{193191.5}{46} - 64.07^2            \\
+                       & = 4199.82 - 4104.96                        \\
+                       & = 95.46                                    \\
             \sigma_B   & = \sqrt{95.46} = 9.77
             \\
-            v_B        & = \frac{9.77}{64.07} \times 100\% = 15.25\%
+            v_B        & = \frac{9.77}{64.07} \cdot 100\% = 15.25\%
           \end{flalign*}
   \end{enumerate}
 
@@ -4000,7 +4000,7 @@
           Calculate the correlation coefficient of the height and the weight of the 15 children, and determine on the strength of the correlation.
           \sol{}
           \begin{center}
-            \resizebox{\columnwidth-4.6em}{!}{%
+            \resizebox{\columnwidth-4.6em}{!}{
               \begin{tabular}{|c|c|c|c|c|}
                 \hline
                 $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
@@ -4030,9 +4030,9 @@
             }
           \end{center}
           \begin{flalign*}
-            \bar{x} & = \frac{1803}{15} = 120.2                                                                                                              \\
-            \bar{y} & = \frac{539}{15} = 35.93                                                                                                               \\
-            r       & = \frac{\frac{65047}{15} - 120.2 \times 35.93}{\sqrt{\left(\frac{217293}{15} - 120.2^2\right)\left(\frac{19635}{15} - 35.93^2\right)}} \\
+            \bar{x} & = \frac{1803}{15} = 120.2                                                                                                             \\
+            \bar{y} & = \frac{539}{15} = 35.93                                                                                                              \\
+            r       & = \frac{\frac{65047}{15} - 120.2 \cdot 35.93}{\sqrt{\left(\frac{217293}{15} - 120.2^2\right)\left(\frac{19635}{15} - 35.93^2\right)}} \\
                     & = 0.6631
           \end{flalign*}
           According to the result of the calculation, the height and the weight of the 15 children are positively and moderetely correlated.
@@ -4087,7 +4087,7 @@
                   pressure of the 13 patients, and determine on the strength of the correlation.
                   \sol{}
                   \begin{center}
-                    \resizebox{\columnwidth-4.6em}{!}{%
+                    \resizebox{\columnwidth-4.6em}{!}{
                       \begin{tabular}{|c|c|c|c|c|}
                         \hline
                         $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
@@ -4115,9 +4115,9 @@
                     }
                   \end{center}
                   \begin{flalign*}
-                    \bar{x} & = \frac{531}{13} = 40.85                                                                                                                 & \\
-                    \bar{y} & = \frac{1764}{13} = 135.69                                                                                                                 \\
-                    r       & = \frac{\frac{72483}{13} - 40.85 \times 135.69}{\sqrt{\left(\frac{23613}{13} - 40.85^2\right)\left(\frac{240636}{13} - 135.69^2\right)}}   \\
+                    \bar{x} & = \frac{531}{13} = 40.85                                                                                                                & \\
+                    \bar{y} & = \frac{1764}{13} = 135.69                                                                                                                \\
+                    r       & = \frac{\frac{72483}{13} - 40.85 \cdot 135.69}{\sqrt{\left(\frac{23613}{13} - 40.85^2\right)\left(\frac{240636}{13} - 135.69^2\right)}}   \\
                             & = 0.2748
                   \end{flalign*}
                   According to the result of the calculation, the height and the weight of the 15 children are positively and weakly correlated.
@@ -4150,7 +4150,7 @@
           \begin{enumerate}
             \item Construct a scatter diagram of the data. \sol{}
                   \begin{center}
-                    \resizebox{\columnwidth-4.6em}{!}{%
+                    \resizebox{\columnwidth-4.6em}{!}{
                       \begin{tikzpicture}
                         \begin{axis}[
                             xlabel={Fixed Assets},
@@ -4188,7 +4188,7 @@
             \item Find the correlation coefficient of the fixed assets and the total assets, and
                   determine on the strength of the correlation. \sol{}
                   \begin{center}
-                    \resizebox{\columnwidth-4.6em}{!}{%
+                    \resizebox{\columnwidth-4.6em}{!}{
                       \begin{tabular}{|c|c|c|c|c|}
                         \hline
                         $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
@@ -4213,7 +4213,7 @@
                     }
                   \end{center}
                   \begin{flalign*}
-                    r & = \frac{\frac{7659156}{13} - 652.5 \times 980.1}{\sqrt{\left(\frac{5668539}{13} - 652.5^2\right)\left(\frac{10866577}{13} - 980.1^2\right)}} & \\
+                    r & = \frac{\frac{7659156}{13} - 652.5 \cdot 980.1}{\sqrt{\left(\frac{5668539}{13} - 652.5^2\right)\left(\frac{10866577}{13} - 980.1^2\right)}} & \\
                       & = 0.9478
                   \end{flalign*}
                   According to the result of the calculation, According to the result of the calculation, the value of fixed assets and total assets of theese 10 enterprises are positively and strongly correlated.
@@ -4246,7 +4246,7 @@
           \begin{enumerate}
             \item Construct a scatter diagram of the data. \sol{}
                   \begin{center}
-                    \resizebox{\columnwidth-4.6em}{!}{%
+                    \resizebox{\columnwidth-4.6em}{!}{
                       \begin{tikzpicture}
                         \begin{axis}[
                             xlabel={Mathematics},
@@ -4269,7 +4269,7 @@
             \item Find the correlation coefficient of the marks of Mathematics and the Economics,
                   and determine on the strength of the correlation. \sol{}
                   \begin{center}
-                    \resizebox{\columnwidth-4.6em}{!}{%
+                    \resizebox{\columnwidth-4.6em}{!}{
                       \begin{tabular}{|c|c|c|c|c|}
                         \hline
                         $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
@@ -4299,9 +4299,9 @@
                     }
                   \end{center}
                   \begin{flalign*}
-                    \bar{x} & = \frac{987}{15} = 65.8                                                                                                               \\
-                    \bar{y} & = \frac{1069}{15} = 71.27                                                                                                             \\
-                    r       & = \frac{\frac{71955}{15} - 65.8 \times 71.27}{\sqrt{\left(\frac{66957}{15} - 65.8^2\right)\left(\frac{78001}{15} - 71.27^2\right)}} & \\
+                    \bar{x} & = \frac{987}{15} = 65.8                                                                                                              \\
+                    \bar{y} & = \frac{1069}{15} = 71.27                                                                                                            \\
+                    r       & = \frac{\frac{71955}{15} - 65.8 \cdot 71.27}{\sqrt{\left(\frac{66957}{15} - 65.8^2\right)\left(\frac{78001}{15} - 71.27^2\right)}} & \\
                             & = 0.8445
                   \end{flalign*}
                   According to the result of the calculation, the marks of Mathematics and the Economics are positively and strongly correlated.
@@ -4338,7 +4338,7 @@
           \begin{enumerate}
             \item Construct a scatter diagram of the data. \sol{}
                   \begin{center}
-                    \resizebox{\columnwidth-4.6em}{!}{%
+                    \resizebox{\columnwidth-4.6em}{!}{
                       \begin{tikzpicture}
                         \begin{axis}[
                             xlabel=Vernacular Chinese,
@@ -4361,7 +4361,7 @@
             \item Find the correlation coefficient of the marks of Vernacular Chinese and the
                   Classical Chinese, and determine on the strength of the correlation. \sol{}
                   \begin{center}
-                    \resizebox{\columnwidth-4.6em}{!}{%
+                    \resizebox{\columnwidth-4.6em}{!}{
                       \begin{tabular}{|c|c|c|c|c|}
                         \hline
                         $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
@@ -4392,9 +4392,9 @@
                     }
                   \end{center}
                   \begin{flalign*}
-                    \bar{x} & = \frac{682}{16} = 42.62                                                                                                                \\
-                    \bar{y} & = \frac{407}{16} = 25.44                                                                                                                \\
-                    r       & = \frac{\frac{17060}{16} - 42.62 \times 25.44}{\sqrt{\left(\frac{29982}{16} - 42.62^2\right)\left(\frac{10815}{16} - 25.44^2\right)}} & \\
+                    \bar{x} & = \frac{682}{16} = 42.62                                                                                                               \\
+                    \bar{y} & = \frac{407}{16} = 25.44                                                                                                               \\
+                    r       & = \frac{\frac{17060}{16} - 42.62 \cdot 25.44}{\sqrt{\left(\frac{29982}{16} - 42.62^2\right)\left(\frac{10815}{16} - 25.44^2\right)}} & \\
                             & = -0.4444
                   \end{flalign*}
                   According to the result of the calculation, the marks of Vernacular Chinese and Classical Chinese are negatively and moderately correlated.
@@ -4418,7 +4418,7 @@
           Find the correlation coefficient of the service costs and the values of properties in these 5 trades, and determine on the strength of the correlation.
           \sol{}
           \begin{center}
-            \resizebox{\columnwidth-4.6em}{!}{%
+            \resizebox{\columnwidth-4.6em}{!}{
               \begin{tabular}{|c|c|c|c|c|}
                 \hline
                 $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
@@ -4438,9 +4438,9 @@
             }
           \end{center}
           \begin{flalign*}
-            \bar{x} & = \frac{87.0}{5} = 17.4                                                                                                           \\
-            \bar{y} & = \frac{21.5}{5} = 4.3                                                                                                            \\
-            r       & = \frac{\frac{375.18}{5} - 17.4 \times 4.3}{\sqrt{\left(\frac{1516.22}{5} - 17.4^2\right)\left(\frac{92.95}{5} - 4.3^2\right)}} & \\
+            \bar{x} & = \frac{87.0}{5} = 17.4                                                                                                          \\
+            \bar{y} & = \frac{21.5}{5} = 4.3                                                                                                           \\
+            r       & = \frac{\frac{375.18}{5} - 17.4 \cdot 4.3}{\sqrt{\left(\frac{1516.22}{5} - 17.4^2\right)\left(\frac{92.95}{5} - 4.3^2\right)}} & \\
                     & = 0.9818
           \end{flalign*}
           According to the result of the calculation, the service costs and the values of properties are positively and strongly correlated.
@@ -4466,7 +4466,7 @@
           \begin{enumerate}
             \item Construct a scatter diagram of the data. \sol{}
                   \begin{center}
-                    \resizebox{\columnwidth-4.6em}{!}{%
+                    \resizebox{\columnwidth-4.6em}{!}{
                       \begin{tikzpicture}
                         \begin{axis}[
                             xlabel=Mechanization Degree,
@@ -4489,7 +4489,7 @@
             \item Find the correlation coefficient of the degree of labor mechanization and the
                   labor productivity, and determine on the strength of the correlation. \sol{}
                   \begin{center}
-                    \resizebox{\columnwidth-4.6em}{!}{%
+                    \resizebox{\columnwidth-4.6em}{!}{
                       \begin{tabular}{|c|c|c|c|c|}
                         \hline
                         $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
@@ -4513,10 +4513,10 @@
                     }
                   \end{center}
                   \begin{flalign*}
-                    \bar{x}                                                        & = \frac{540.0}{9} = 60.0                                                        \\
-                    \bar{y}                                                        & = \frac{9615.0}{9} = 1068.33                                                    \\
-                    r                                                              & = \frac{\frac{597710.0}{9} - 60.0 \times 1068.33}{\sqrt{\left(\frac{33900.0}{9}
-                    - 60.0^2\right)\left(\frac{10622821.0}{9} - 1068.33^2\right)}} &                                                                                 \\
+                    \bar{x}                                                        & = \frac{540.0}{9} = 60.0                                                       \\
+                    \bar{y}                                                        & = \frac{9615.0}{9} = 1068.33                                                   \\
+                    r                                                              & = \frac{\frac{597710.0}{9} - 60.0 \cdot 1068.33}{\sqrt{\left(\frac{33900.0}{9}
+                    - 60.0^2\right)\left(\frac{10622821.0}{9} - 1068.33^2\right)}} &                                                                                \\
                                                                                    & = 0.9072
                   \end{flalign*}
                   According to the result of the calculation, the degree of labor mechanization and the labor productivity are positively and strongly correlated.
@@ -4545,7 +4545,7 @@
           \begin{enumerate}
             \item Construct a scatter diagram of the data. \sol{}
                   \begin{center}
-                    \resizebox{\columnwidth-4.6em}{!}{%
+                    \resizebox{\columnwidth-4.6em}{!}{
                       \begin{tikzpicture}
                         \begin{axis}[
                             xlabel=Sales,
@@ -4568,7 +4568,7 @@
             \item Find the correlation coefficient of the sales and the net profit rate, and
                   determine on the strength of the correlation. \sol{}
                   \begin{center}
-                    \resizebox{\columnwidth-4.6em}{!}{%
+                    \resizebox{\columnwidth-4.6em}{!}{
                       \begin{tabular}{|c|c|c|c|c|}
                         \hline
                         $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
@@ -4593,10 +4593,10 @@
                     }
                   \end{center}
                   \begin{flalign*}
-                    \bar{x}                                                     & = \frac{269.4}{10} = 26.94                                                      \\
-                    \bar{y}                                                     & = \frac{140.7}{10} = 14.07                                                      \\
-                    r                                                           & = \frac{\frac{3758.14}{10} - 26.94 \times 14.07}{\sqrt{\left(\frac{8064.92}{10}
-                    - 26.94^2\right)\left(\frac{1984.17}{10} - 14.07^2\right)}} &                                                                                 \\
+                    \bar{x}                                                     & = \frac{269.4}{10} = 26.94                                                     \\
+                    \bar{y}                                                     & = \frac{140.7}{10} = 14.07                                                     \\
+                    r                                                           & = \frac{\frac{3758.14}{10} - 26.94 \cdot 14.07}{\sqrt{\left(\frac{8064.92}{10}
+                    - 26.94^2\right)\left(\frac{1984.17}{10} - 14.07^2\right)}} &                                                                                \\
                                                                                 & = -0.5350
                   \end{flalign*}
                   According to the result of the calculation, the sales and the net profit rate are negatively and moderately correlated.
@@ -4628,7 +4628,7 @@
   current period is calculated by the following formula:
 
   \begin{cequation}
-    I = \frac{Q_1}{Q_0} \times 100
+    I = \frac{Q_1}{Q_0} \cdot 100
   \end{cequation}
 
   \noindent where 100 is the base period index.
@@ -4641,7 +4641,7 @@
   relative of the current period is calculated by the following formula:
 
   \begin{cequation}
-    I = \frac{P_1}{P_0} \times 100
+    I = \frac{P_1}{P_0} \cdot 100
   \end{cequation}
 
   \subsection{Practice 11}
@@ -4661,10 +4661,10 @@
 
   \sol{}
   \begin{flalign*}
-    I_{2011} & = \frac{621}{700} \times 100 = 88.71    \\
-    I_{2012} & = \frac{584.1}{700} \times 100 = 83.44  \\
-    I_{2013} & = \frac{720.5}{700} \times 100 = 102.93 \\
-    I_{2014} & = \frac{800}{700} \times 100 = 114.29
+    I_{2011} & = \frac{621}{700} \cdot 100 = 88.71    \\
+    I_{2012} & = \frac{584.1}{700} \cdot 100 = 83.44  \\
+    I_{2013} & = \frac{720.5}{700} \cdot 100 = 102.93 \\
+    I_{2014} & = \frac{800}{700} \cdot 100 = 114.29
   \end{flalign*}
 
   \subsection{Exercise 18.7a}
@@ -4674,16 +4674,16 @@
           \$2.50 respectively. Use the year 2011 and 2012 as the base period and
           calculate the relative price of the year 2013. \sol{}
           \begin{flalign*}
-            P.R.\text{ with respect to 2011} & = \frac{2.50}{2.10} \times 100 = 119.05 & \\
-            P.R.\text{ with respect to 2012} & = \frac{2.50}{2.30} \times 100 = 108.70
+            P.R.\text{ with respect to 2011} & = \frac{2.50}{2.10} \cdot 100 = 119.05 & \\
+            P.R.\text{ with respect to 2012} & = \frac{2.50}{2.30} \cdot 100 = 108.70
           \end{flalign*}
 
     \item The prices of a food product in 2011, 2013, and 2015 are \$3.40, \$3.75, and
           \$3.90 respectively. Use the year 2011 as the base period and calculate the
           relative price of the year 2013 and 2015. \sol{}
           \begin{flalign*}
-            P.R.\text{ of 2013} & = \frac{3.75}{3.40} \times 100 = 110.29 & \\
-            P.R.\text{ of 2015} & = \frac{3.90}{3.40} \times 100 = 114.71
+            P.R.\text{ of 2013} & = \frac{3.75}{3.40} \cdot 100 = 110.29 & \\
+            P.R.\text{ of 2015} & = \frac{3.90}{3.40} \cdot 100 = 114.71
           \end{flalign*}
 
     \item The number of new students of a school from 2011 to 2015 are as follows:
@@ -4699,10 +4699,10 @@
           Use the year 2011 as the base period and calculate the index of the number of new students in each year.
           \sol{}
           \begin{flalign*}
-            \text{New Stud. Index of 2012} & = \frac{150}{182} \times 100 = 82.42 & \\
-            \text{New Stud. Index of 2013} & = \frac{120}{182} \times 100 = 65.93 & \\
-            \text{New Stud. Index of 2014} & = \frac{104}{182} \times 100 = 57.14 & \\
-            \text{New Stud. Index of 2015} & = \frac{94}{182} \times 100 = 51.64
+            \text{New Stud. Index of 2012} & = \frac{150}{182} \cdot 100 = 82.42 & \\
+            \text{New Stud. Index of 2013} & = \frac{120}{182} \cdot 100 = 65.93 & \\
+            \text{New Stud. Index of 2014} & = \frac{104}{182} \cdot 100 = 57.14 & \\
+            \text{New Stud. Index of 2015} & = \frac{94}{182} \cdot 100 = 51.64
           \end{flalign*}
 
     \item The table below shows the price of terraced houses (in \$10k) of a place in
@@ -4719,10 +4719,10 @@
           Use the year 2010 as the base period and calculate the relative price of terraced houses in each year.
           \sol{}
           \begin{flalign*}
-            P.R.\text{ of 2011} & = \frac{35.5}{32.0} \times 100 = 110.94 & \\
-            P.R.\text{ of 2012} & = \frac{43.4}{32.0} \times 100 = 135.63 & \\
-            P.R.\text{ of 2013} & = \frac{51.0}{32.0} \times 100 = 159.38 & \\
-            P.R.\text{ of 2014} & = \frac{60.0}{32.0} \times 100 = 187.50
+            P.R.\text{ of 2011} & = \frac{35.5}{32.0} \cdot 100 = 110.94 & \\
+            P.R.\text{ of 2012} & = \frac{43.4}{32.0} \cdot 100 = 135.63 & \\
+            P.R.\text{ of 2013} & = \frac{51.0}{32.0} \cdot 100 = 159.38 & \\
+            P.R.\text{ of 2014} & = \frac{60.0}{32.0} \cdot 100 = 187.50
           \end{flalign*}
 
     \item The table below shows the relative price of three products $A$, $B$, and $C$
@@ -4744,44 +4744,44 @@
           Let the price of $A$ in 2005, 2010, and 2015 be $a = 100$, $b$, and $c$
           respectively. From the statement above, we have
           \begin{flalign*}
-            \frac{b}{a} \times 100 & = \frac{b}{100} \times 100   \\
-            b                      & = 160                        \\
-            \frac{c}{b} \times 100 & = \frac{c}{160} \times 100   \\
-            c                      & = 140                        \\
-            z                      & = \frac{c}{b} \times 100     \\
-                                   & = \frac{140}{160} \times 100 \\
-                                   & = 87.5
+            \frac{b}{a} \cdot 100 & = \frac{b}{100} \cdot 100   \\
+            b                     & = 160                       \\
+            \frac{c}{b} \cdot 100 & = \frac{c}{160} \cdot 100   \\
+            c                     & = 140                       \\
+            z                     & = \frac{c}{b} \cdot 100     \\
+                                  & = \frac{140}{160} \cdot 100 \\
+                                  & = 87.5
           \end{flalign*}
 
           Let the price of $B$ in 2005, 2010, and 2015 be $a$, $b$, and $c = 100$
           respectively. From the statement above, we have
           \begin{flalign*}
-            \frac{c}{a} \times 100   & = \frac{100}{a} \times 100                          \\
-            \frac{100}{a} \times 100 & = 190                                               \\
-            1.9a                     & = 100                                               \\
-            a                        & = \frac{100}{1.9}                                   \\
-            \frac{c}{b} \times 100   & = \frac{100}{b} \times 100                          \\
-            \frac{100}{b} \times 100 & = 210                                               \\
-            2.1b                     & = 100                                               \\
-            b                        & = \frac{100}{2.1}                                   \\
-            x                        & = \frac{b}{a} \times 100                            \\
-                                     & = \frac{100}{2.1} \times \frac{1.9}{100} \times 100 \\
-                                     & = \frac{1.9}{2.1} \times 100                        \\
-                                     & = 90.48
+            \frac{c}{a} \cdot 100   & = \frac{100}{a} \cdot 100                         \\
+            \frac{100}{a} \cdot 100 & = 190                                             \\
+            1.9a                    & = 100                                             \\
+            a                       & = \frac{100}{1.9}                                 \\
+            \frac{c}{b} \cdot 100   & = \frac{100}{b} \cdot 100                         \\
+            \frac{100}{b} \cdot 100 & = 210                                             \\
+            2.1b                    & = 100                                             \\
+            b                       & = \frac{100}{2.1}                                 \\
+            x                       & = \frac{b}{a} \cdot 100                           \\
+                                    & = \frac{100}{2.1} \cdot \frac{1.9}{100} \cdot 100 \\
+                                    & = \frac{1.9}{2.1} \cdot 100                       \\
+                                    & = 90.48
           \end{flalign*}
 
           Let the price of $C$ in 2005, 2010, and 2015 be $a$, $b = 100$, and $c$
           respectively. From the statement above, we have
           \begin{flalign*}
-            \frac{b}{a} \times 100    & = \frac{100}{a} \times 100              \\
-            \frac{100}{a} \times 100  & = 170                                   \\
-            1.7a                      & = 100                                   \\
-            a                         & = \frac{100}{1.7}                       \\
-            \frac{c}{b} \times 100    & = \frac{c}{100} \times 100              \\
-            c                         & = 150                                   \\
-            y                         & = \frac{c}{a} \times 100                \\
-                                      & = 150 \times \frac{1.7}{100} \times 100 \\
-                                      & = 255                                   \\
+            \frac{b}{a} \cdot 100     & = \frac{100}{a} \cdot 100             \\
+            \frac{100}{a} \cdot 100   & = 170                                 \\
+            1.7a                      & = 100                                 \\
+            a                         & = \frac{100}{1.7}                     \\
+            \frac{c}{b} \cdot 100     & = \frac{c}{100} \cdot 100             \\
+            c                         & = 150                                 \\
+            y                         & = \frac{c}{a} \cdot 100               \\
+                                      & = 150 \cdot \frac{1.7}{100} \cdot 100 \\
+                                      & = 255                                 \\
             \\
             \therefore\ x = 90.48,\ y & = 255,\ z = 87.5
           \end{flalign*}
@@ -4837,9 +4837,9 @@
     \item Use the year 2012 as the base period and calculate the relative price of each
           brand in 2015. \sol{}
           \begin{flalign*}
-            P.R. \text{ of } A & = \frac{233}{230} \times 100 = 101.30 \\
-            P.R. \text{ of } B & = \frac{228}{225} \times 100 = 101.33 \\
-            P.R. \text{ of } C & = \frac{221}{215} \times 100 = 102.79
+            P.R. \text{ of } A & = \frac{233}{230} \cdot 100 = 101.30 \\
+            P.R. \text{ of } B & = \frac{228}{225} \cdot 100 = 101.33 \\
+            P.R. \text{ of } C & = \frac{221}{215} \cdot 100 = 102.79
           \end{flalign*}
 
     \item Use the year 2012 as the base period and calculate the price index of sneakers
@@ -4956,11 +4956,11 @@
             \item Find the composite index of the unit prices of the three materials without
                   considering the weights (i.e. the weights are all 1). \sol{}
                   \begin{flalign*}
-                    P.R. \text{ of } A & = \frac{0.71}{0.62} \times 100 \\
-                                       & = 114.52                       \\
-                    P.R. \text{ of } B & = \frac{2.09}{2.05} \times 100 \\
-                                       & = 101.95                       \\
-                    P.R. \text{ of } C & = \frac{0.85}{0.80} \times 100 \\
+                    P.R. \text{ of } A & = \frac{0.71}{0.62} \cdot 100 \\
+                                       & = 114.52                      \\
+                    P.R. \text{ of } B & = \frac{2.09}{2.05} \cdot 100 \\
+                                       & = 101.95                      \\
+                    P.R. \text{ of } C & = \frac{0.85}{0.80} \cdot 100 \\
                                        & = 106.25
                   \end{flalign*}
                   \begin{center}
@@ -5046,9 +5046,9 @@
           \begin{enumerate}
             \item Find the value of $r$ adn $t$.
                   \begin{flalign*}
-                    r & = \frac{25}{20} \times 100 \\
-                      & = 125                      \\
-                    t & = 2 \times 125             \\
+                    r & = \frac{25}{20} \cdot 100 \\
+                      & = 125                     \\
+                    t & = 2 \cdot 125             \\
                       & = 250
                   \end{flalign*}
             \item Using 2013 as the base period, find the price index in 2015. \sol{}
@@ -5105,9 +5105,9 @@
 
                   Let the price of item $A$ in 2012 be $x$.
                   \begin{flalign*}
-                    \frac{30}{x} \times 100 & = 125  \\
-                    125x                    & = 3000 \\
-                    x                       & = 24
+                    \frac{30}{x} \cdot 100 & = 125  \\
+                    125x                   & = 3000 \\
+                    x                      & = 24
                   \end{flalign*}
                   Therefore, the price of item $A$ in 2012 is \$24.
           \end{enumerate}
@@ -5132,16 +5132,16 @@
           \begin{enumerate}
             \item Find the value of $x$, $y$ and $z$. \sol{}
                   \begin{flalign*}
-                    \frac{y}{12} \times 100  & = 150                       \\
-                    y                        & = \frac{150 \times 12}{100} \\
+                    \frac{y}{12} \cdot 100   & = 150                      \\
+                    y                        & = \frac{150 \cdot 12}{100} \\
                                              & = 18
                     \\
-                    \frac{24}{x} \times 100  & = 120                       \\
-                    120x                     & = 2400                      \\
+                    \frac{24}{x} \cdot 100   & = 120                      \\
+                    120x                     & = 2400                     \\
                     x                        & = 20
                     \\
-                    z                        & = \frac{28}{14} \times 100  \\
-                                             & = 200                       \\
+                    z                        & = \frac{28}{14} \cdot 100  \\
+                                             & = 200                      \\
                     \\
                     \therefore\ x  = 20, \ y & = 18, \ z  = 200
                   \end{flalign*}
@@ -5188,15 +5188,15 @@
             \item Assume that the price relative of these two items are the same in 2015, find
                   the value of $x$. \sol{}
                   \begin{flalign*}
-                    \frac{x}{30} \times 100 & = \frac{x+10}{50} \times 100 \\
-                    \frac{x}{30}            & = \frac{x+10}{50}            \\
-                    50x                     & = 30x + 300                  \\
-                    20x                     & = 300                        \\
-                    x                       & = 15
+                    \frac{x}{30} \cdot 100 & = \frac{x+10}{50} \cdot 100 \\
+                    \frac{x}{30}           & = \frac{x+10}{50}           \\
+                    50x                    & = 30x + 300                 \\
+                    20x                    & = 300                       \\
+                    x                      & = 15
                   \end{flalign*}
             \item Find the price index of these two items in 2015. \sol{}
                   \begin{flalign*}
-                    \text{Price index} & = \frac{15}{30} \times 100 \\
+                    \text{Price index} & = \frac{15}{30} \cdot 100 \\
                                        & = 50
                   \end{flalign*}
                   \begin{center}
@@ -5284,7 +5284,7 @@
             \item Construct a cumulative frequency table and a cumulative frequency polygon.
                   \sol{}
                   \begin{center}
-                    \resizebox{\columnwidth-4.6em}{!}{%
+                    \resizebox{\columnwidth-4.6em}{!}{
                       \begin{tabular}{|c|c|c|c|}
                         \hline
                         Range     & Freq. & Lower Than & Cum. Freq. \\
@@ -5349,18 +5349,18 @@
                   From the cumulative frequency polygon, there are 16 fibers whose length is less
                   than $150mm$, that is, there are $60 - 16 = 44$ fibers whose length is greater
                   than $150mm$. Therefore, the percentage of fibers whose length is greater than
-                  $150mm$ is $\frac{44}{60} \times 100 = 73.33\%$.
+                  $150mm$ is $\frac{44}{60} \cdot 100 = 73.33\%$.
 
             \item Find the interquartile range. \sol{}
 
                   $n = 60$, $\frac{n}{4} = 15$, the class that contains $Q_1$ is $141 - 180$, $C_1 = 40$, $L_1 = 140.5$, $F_1 = 15$, $f_1 = 4$,
                   \begin{flalign*}
-                    Q_1 & = 140.5 + \frac{15 - 12}{3} \times 40 = 140.5
+                    Q_1 & = 140.5 + \frac{15 - 12}{3} \cdot 40 = 140.5
                   \end{flalign*}
 
                   $n = 60$, $\frac{3n}{4} = 45$, the class that contains $Q_3$ is $301 - 340$, $C_3 = 40$, $L_3 = 300.5$, $F_3 = 34$, $f_3 = 12$,
                   \begin{flalign*}
-                    Q_3 & = 300.5 + \frac{45 - 34}{12} \times 40 = 337.17
+                    Q_3 & = 300.5 + \frac{45 - 34}{12} \cdot 40 = 337.17
                   \end{flalign*}
 
                   Therefore, the interquartile range is $Q_3 - Q_1 = 337.17 - 140.5 = 196.67$.
@@ -5411,7 +5411,7 @@
 
           $Q_1$ is the average of the value at the $\frac{16}{4} = 4$th position and the $\frac{16}{4} + 1 = 5$th position, that is, $\frac{8 + 8}{2} = 8$.
 
-          $Q_3$ is the average of the value at the $\frac{3 \times 16}{4} = 12$th position and the $\frac{3 \times 16}{4} + 1 = 13$th position, that is, $\frac{9 + 9}{2} = 9$.
+          $Q_3$ is the average of the value at the $\frac{3 \cdot 16}{4} = 12$th position and the $\frac{3 \cdot 16}{4} + 1 = 13$th position, that is, $\frac{9 + 9}{2} = 9$.
 
           The quartile deviation is $\frac{9 - 8}{2} = \frac{1}{2} = 0.5$.
 
@@ -5596,14 +5596,14 @@
 
             \item The mean and standard deviation of the scores. \sol{}
                   \begin{flalign*}
-                    \bar{x}  & = \frac{0 \times 5 + 1 \times 3 + 2 \times 4 + 3 \times 10 + 4 \times 7}{30} & \\
-                             & = \frac{0 + 3 + 8 + 33 + 28}{30}                                               \\
-                             & = \frac{72}{30}                                                                \\
-                             & = 2.4                                                                          \\
-                    \sigma^2 & = \frac{3 + 16 + 99 + 112}{30} - 2.4^2                                       & \\
-                             & = \frac{230}{30} - 5.76                                                        \\
-                             & = 1.91                                                                         \\
-                    \sigma   & = \sqrt{1.91}                                                                & \\
+                    \bar{x}  & = \frac{0 \cdot 5 + 1 \cdot 3 + 2 \cdot 4 + 3 \cdot 10 + 4 \cdot 7}{30} & \\
+                             & = \frac{0 + 3 + 8 + 33 + 28}{30}                                          \\
+                             & = \frac{72}{30}                                                           \\
+                             & = 2.4                                                                     \\
+                    \sigma^2 & = \frac{3 + 16 + 99 + 112}{30} - 2.4^2                                  & \\
+                             & = \frac{230}{30} - 5.76                                                   \\
+                             & = 1.91                                                                    \\
+                    \sigma   & = \sqrt{1.91}                                                           & \\
                              & = 1.38
                   \end{flalign*}
           \end{enumerate}
@@ -5633,7 +5633,7 @@
 
             \item Median \sol{}
                   \begin{center}
-                    \resizebox{\columnwidth - 4.6em}{!}{%
+                    \resizebox{\columnwidth - 4.6em}{!}{
                       \begin{tabular}{|c|c|c|c|c|}
                         \hline
                         Range            & Freq & Mid & Lw. Th. & Cum. Freq. \\
@@ -5650,7 +5650,7 @@
                   \end{center}
                   $n = 40$, $\frac{n}{2} = 20$, the class containing the median is $15 < x \leq 20$, $C_m = 4$, $L_m = 15$, $F_m = 18$, $f_m = 7$.
                   \begin{flalign*}
-                    \text{Median} & = 15 + \frac{20 - 18}{7} \times 5 \\
+                    \text{Median} & = 15 + \frac{20 - 18}{7} \cdot 5 \\
                                   & = 16.43
                   \end{flalign*}
 
@@ -5659,7 +5659,7 @@
                   The modal class is $20 < x \leq 25$ with the highest frequency of $11$, $C =
                     5$, $L = 20$, $d_1 = 11 - 7 = 4$, $d_2 = 11 - 4 = 7$,
                   \begin{flalign*}
-                    \text{Mode} & = 20 + \frac{4}{4 + 7} \times 5 \\
+                    \text{Mode} & = 20 + \frac{4}{4 + 7} \cdot 5 \\
                                 & = 21.82
                   \end{flalign*}
           \end{enumerate}
@@ -5682,10 +5682,69 @@
           \end{center}
           Find:
           \begin{enumerate}
-            \item Mean
-            \item Median
-            \item Mode
-            \item Variance
+            \item Mean \sol{}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                      \hline
+                      Score   & Med. $x_i$ & Freq $x_i$    & $x_if_i$      \\
+                      \hline
+                      46 - 54 & 50         & 4             & 200           \\
+                      54 - 62 & 58         & 9             & 522           \\
+                      62 - 70 & 66         & 10            & 660           \\
+                      70 - 78 & 74         & 8             & 592           \\
+                      78 - 86 & 82         & 6             & 492           \\
+                      86 - 94 & 90         & 3             & 270           \\
+                      \hline
+                      \hline
+                              &            & $\sum x_if_i$ & $\sum x_if_i$ \\
+                      \hline
+                              &            & 40            & 2736          \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  \begin{flalign*}
+                    \text{Mean} & = \frac{2736}{40} \\
+                                & = 68.4
+                  \end{flalign*}
+
+            \item Median \sol{} $\frac{n}{2} = 20$, the class containing the median is $62 - 70$,
+                  $C_m = 8$, $L_m = 62$, $F_m = 13$, $f_m = 10$.
+                  \begin{flalign*}
+                    \text{Median} & = 62 + \frac{20 - 13}{10} \cdot 8 \\
+                                  & = 67.6
+                  \end{flalign*}
+
+            \item Mode \sol{} The modal class is $62 - 70$ with the highest frequency of $10$, $C
+                    = 8$, $L = 62$, $d_1 = 10 - 9 = 1$, $d_2 = 10 - 8 = 2$,
+                  \begin{flalign*}
+                    \text{Mode} & = 62 + \frac{1}{1 + 2} \cdot 8 \\
+                                & = 64.67
+                  \end{flalign*}
+
+            \item Variance \sol{}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|}
+                      \hline
+                      Mid. $x_i$ & Freq. $f_i$ & $x_i^2f_i$      \\
+                      \hline
+                      50         & 4           & 10000           \\
+                      58         & 9           & 30276           \\
+                      66         & 10          & 43560           \\
+                      74         & 8           & 43808           \\
+                      82         & 6           & 40344           \\
+                      90         & 3           & 24300           \\
+                      \hline
+                      \hline
+                                 & $\sum f_i$  & $\sum x_i^2f_i$ \\
+                      \hline
+                                 & 40          & 192288          \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  \begin{flalign*}
+                    \sigma^2 & = \frac{192288}{40} - 68.4^2 \\
+                             & = 128.64
+                  \end{flalign*}
           \end{enumerate}
 
     \item The table below shows the frequency distribution of the life of 500 light
@@ -5706,10 +5765,106 @@
           \end{center}
           Find:
           \begin{enumerate}
-            \item The mean and standard deviation of the life of the light bulbs.
-            \item Mean deviation.
-            \item Median.
-            \item Quartile deviation.
+            \item The mean and standard deviation of the life of the light bulbs. \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth - 4.6em}{!}{
+                      \begin{tabular}{|c|c|c|c|c|}
+                        \hline
+                        Life (in $hr$) & Mid. $x_i$ & Freq. $f_i$ & $x_if_i$      & $x_i^2f_i$      \\
+                        \hline
+                        800 - 850      & 825        & 35          & 28875         & 23821875        \\
+                        850 - 900      & 875        & 127         & 111125        & 97234375        \\
+                        900 - 950      & 925        & 185         & 171125        & 158290625       \\
+                        950 - 1000     & 975        & 103         & 100425        & 97914375        \\
+                        1000 - 1050    & 1025       & 42          & 43050         & 44126250        \\
+                        1050 - 1100    & 1075       & 8           & 8600          & 9245000         \\
+                        \hline
+                        \hline
+                                       &            & $\sum f_i$  & $\sum x_if_i$ & $\sum x_i^2f_i$ \\
+                        \hline
+                                       &            & 500         & 463200        & 430632500       \\
+                        \hline
+                      \end{tabular}
+                    }
+                  \end{center}
+                  \begin{flalign*}
+                    \bar{x}  & = \frac{463200}{500}              \\
+                             & = 926.4                           \\
+                    \sigma^2 & = \frac{430632500}{500} - 926.4^2 \\
+                             & =  3048.04                        \\
+                    \sigma   & = \sqrt{3048.04}                  \\
+                             & = 55.21
+                  \end{flalign*}
+
+            \item Mean deviation. \sol{}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|}
+                      \hline
+                      Mid $x_i$ & Freq. $f_i$ & $|x_i - \bar{x}|$ & $|x_i - \bar{x}|f_i$      \\
+                      \hline
+                      825       & 35          & 101.4             & 3549                      \\
+                      875       & 127         & 51.4              & 6527.8                    \\
+                      925       & 185         & 1.4               & 259                       \\
+                      975       & 103         & 48.6              & 5005.8                    \\
+                      1025      & 42          & 98.6              & 4141.2                    \\
+                      1075      & 8           & 148.6             & 1188.8                    \\
+                      \hline
+                      \hline
+                                & $\sum f_i$  &                   & $\sum |x_i - \bar{x}|f_i$ \\
+                      \hline
+                                & 500         &                   & 20671.6                   \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  \begin{flalign*}
+                    \text{Mean Dev.} & = \frac{20671.6}{500} \\
+                                     & = 41.34
+                  \end{flalign*}
+
+            \item Median \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth - 4.6em}{!}{%
+                      \begin{tabular}{|c|c|c|c|}
+                        \hline
+                        Range       & Freq. & Lower Than & Cum. Freq. \\
+                        \hline
+                        800 - 850   & 35    & 850        & 35         \\
+                        850 - 900   & 127   & 900        & 162        \\
+                        900 - 950   & 185   & 950        & 347        \\
+                        950 - 1000  & 103   & 1000       & 450        \\
+                        1000 - 1050 & 42    & 1050       & 492        \\
+                        1050 - 1100 & 8     & 1100       & 500        \\
+                        \hline
+                      \end{tabular}
+                    }
+                  \end{center}
+                  $n = 500$, $\frac{n}{2} = 250$, the class containing the median is $900 - 950$, $C_m = 50$, $L_m = 900$, $F_m = 162$, $f_m = 185$,
+                  \begin{flalign*}
+                    \text{Median} & = 900 + \frac{250-162}{185} \cdot 50 \\
+                                  & = 900 + \frac{88}{185} \cdot 50      \\
+                                  & = 900 + 23.78                        \\
+                                  & = 923.78
+                  \end{flalign*}
+
+            \item Quartile deviation. \sol{} $n = 500$, $\frac{n}{4} = 125$, the class containing
+                  $Q_1$ is $850 - 900$, $C_1 = 50$, $L_1 = 850$, $F_1 = 35$, $f_1 = 127$,
+                  \begin{flalign*}
+                    Q_1 & = 850 + \frac{125-35}{127} \cdot 50 \\
+                        & = 850 + \frac{90}{127} \cdot 50     \\
+                        & = 850 + 35.43                       \\
+                        & = 885.43
+                  \end{flalign*}
+                  $n = 500$, $\frac{3n}{4} = 375$, the class containing $Q_3$ is $950 - 1000$, $C_3 = 50$, $L_3 = 950$, $F_3 = 347$, $f_3 = 103$,
+                  \begin{flalign*}
+                    Q_3 & = 950 + \frac{375-347}{103} \cdot 50 \\
+                        & = 950 + \frac{28}{103} \cdot 50      \\
+                        & = 950 + 13.59                        \\
+                        & = 963.59
+                  \end{flalign*}
+                  \begin{flalign*}
+                    \text{Quartile Dev.} & = \frac{963.59 - 885.43}{2} \\
+                                         & = 39.08
+                  \end{flalign*}
           \end{enumerate}
 
     \item Assume that the mean value of data $2, x+1, 5, 2x+1, 8, 2x-3$ is 4,
@@ -5734,24 +5889,88 @@
                   \end{flalign*}
           \end{enumerate}
 
-    \item The mean and mode of a set of data $2, 5, 3, 11, 9, 2, 11, p, q$ are 6 and 3
+    \item The mean and mode of a set of data $2, 5, 3, 11, 9, 3, 11, p, q$ are 6 and 3
           respectively, $p > q$. Find
           \begin{enumerate}
-            \item The value of $p$ and $q$
-            \item Median
-            \item Standard deviation
+            \item The value of $p$ and $q$ \sol{}
+                  \begin{flalign*}
+                    \frac{2 + 5 + 3 + 11 + 9 + 3 + 11 + p + q}{9} & = 6  \\
+                    \frac{44 + p + q}{9}                          & = 6  \\
+                    44 + p + q                                    & = 54 \\
+                    p + q                                         & = 10
+                  \end{flalign*}
+                  \begin{flalign*}
+                    \because\    & \text{mode} = 3,\ p > q, \\
+                    \therefore\  & p=3                      \\
+                                 & q=7
+                  \end{flalign*}
+
+            \item Median \sol{}
+
+                  Rearrange the data,
+                  \begin{cequation}
+                    2, 3, 3, 3, 5, 7, 9, 11, 11
+                  \end{cequation}
+                  $n = 9$, the median is the value at the $\frac{9+1}{2} = 5$th position, which is $5$.
+
+            \item Standard deviation \sol{}
+                  \begin{flalign*}
+                    \sigma^2 & = \frac{4 + 9 + \cdots + 121}{9} - 6^2 \\
+                             & = 11.56                                \\
+                    \sigma   & = \sqrt{11.56}                         \\
+                             & = 3.40
+                  \end{flalign*}
           \end{enumerate}
 
     \item Given that the mean value of $x, x+1, 2x-3, 5, y, 8$ is 6. After eliminating
           $y$, the mean value of the remaining data is $3.8$.
           \begin{enumerate}
-            \item Find the value of $x$ and $y$.
-            \item With that, find the variance of the original 6 data.
+            \item Find the value of $x$ and $y$. \sol{}
+                  \begin{flalign*}
+                    \frac{x + x + 1 + 2x - 3 + 5 + 8}{5}              & = 3.8 \\
+                    \frac{4x + 11}{5}                                 & = 3.8 \\
+                    4x + 11                                           & = 19  \\
+                    4x                                                & = 8   \\
+                    x                                                 & = 2   \\
+                    \frac{x + x + 1 + 2x - 3 + 5 + y + 8}{6}          & = 6   \\
+                    \frac{4x + y + 11}{6}                             & = 6   \\
+                    4x + y + 11                                       & = 36  \\
+                    4x + y                                            & = 25  \\
+                    8 + y                                             & = 25  \\
+                    y                                                 & = 17  \\
+                    \\
+                    \therefore\ x                             = 2,\ y & = 17
+                  \end{flalign*}
+
+            \item With that, find the variance of the original 6 data. \sol{} The data become $2,
+                    3, 1, 5, 17, 8$
+                  \begin{flalign*}
+                    \sigma^2 & = \frac{4 + 9 + 1 + 25 + 289 + 64}{6} - 6^2 \\
+                             & = 29.33                                     \\
+                  \end{flalign*}
           \end{enumerate}
 
     \item Given the sum of the square of 10 numbers is 400, and their mean value is 5. If
           a number 8 is eliminated from the data set, find the mean value and variance of
-          the remaining data.
+          the remaining data. \sol{}
+
+          Before eliminating 8,
+          \begin{flalign*}
+            \sum x   & = 10 \cdot 5 \\
+                     & = 50         \\
+            \sum x^2 & = 400
+          \end{flalign*}
+          After eliminating 8,
+          \begin{flalign*}
+            \sum x   & = 50 - 8                 \\
+                     & = 42                     \\
+            \bar{x}  & = \frac{42}{9}           \\
+                     & = 4.67                   \\
+            \sum x^2 & = 400 - 8^2              \\
+                     & = 3                      \\
+            \sigma^2 & = \frac{336}{9} - 4.67^2 \\
+                     & = 15.52
+          \end{flalign*}
 
     \item There are two female chorus groups $A$ and $B$, each of which has 5 members.
           Their heights (in $cm$) are as follows:
@@ -5766,26 +5985,64 @@
           \end{center}
           \begin{enumerate}
             \item Find the mean and standard deviation of the heights of the members of the two
-                  groups.
-            \item Which group has a lower height variance?
+                  groups. \sol{}
+                  \begin{flalign*}
+                    \bar{A}  & = \frac{170 + 162 + 159 + 160 + 155}{5}                     & \\
+                             & = 161.2                                                       \\
+                    \bar{B}  & = \frac{180 + 165 + 150 + 154 + 160}{5}                       \\
+                             & = 161.8                                                       \\
+                    \sigma_A & = \sqrt{\frac{170^2 + 162^2 + \cdots + 155^2}{5} - 161.2^2}   \\
+                             & = \sqrt{24.56}                                                \\
+                             & = 4.96                                                        \\
+                    \sigma_B & = \sqrt{\frac{180^2 + 165^2 + \cdots + 160^2}{5} - 161.8^2}   \\
+                             & = \sqrt{108.96}                                               \\
+                             & = 10.44
+                  \end{flalign*}
+            \item Which group has a smaller height variance? \sol{}
+
+                  $\because\ \sigma_A < \sigma_B$,
+
+                  $\therefore$ Group A has a smaller height variance.
           \end{enumerate}
 
     \item The table below shows scores of maths exam of three classes:
           \begin{center}
-            \begin{tabular}{|c|c|c|c|}
-              \hline
-              Class & Avg. Marks & Std. Deviation & No. of Stud. \\
-              \hline
-              A     & 36.8       & 5.2            & 32           \\
-              B     & 30.3       & 12.4           & 36           \\
-              C     & 38.8       & 10.3           & 32           \\
-              \hline
-            \end{tabular}
+            \resizebox{\columnwidth - 4.6em}{!}{%
+              \begin{tabular}{|c|c|c|c|}
+                \hline
+                Class & Avg. Marks & Std. Deviation & No. of Stud. \\
+                \hline
+                A     & 36.8       & 5.2            & 32           \\
+                B     & 30.3       & 12.4           & 36           \\
+                C     & 38.8       & 10.3           & 32           \\
+                \hline
+              \end{tabular}
+            }
           \end{center}
           \begin{enumerate}
             \item In between class $A$, $B$ and $C$, which class has the most consistent
-                  performance? Why?
+                  performance? Why? \sol{}
+
+                  Class A has the most consistent performance because its standard deviation is
+                  the lowest among the three classes.
+
             \item Find the average marks and standard deviation of these three classes combined.
+                  \sol{}
+                  \begin{flalign*}
+                    \overline{ABC} & = \frac{36.8 \cdot 32 + 30.3 \cdot 36 + 38.8 \cdot 32}{100} \\
+                                   & = 35.1
+                  \end{flalign*}
+                  \begin{flalign*}
+                    \sum a_i^2   & = (5.2^2 + 36.8^2) \cdot 32                                        \\
+                                 & = 44200.96                                                         \\
+                    \sum b_i^2   & = (12.4^2 + 30.3^2) \cdot 36                                       \\
+                                 & = 38586.6                                                          \\
+                    \sum c_i^2   & = (10.3^2 + 38.8^2) \cdot 32                                       \\
+                                 & = 51568.96                                                         \\
+                    \sigma_{ABC} & = \sqrt{\frac{\sum a_i^2 + \sum b_i^2 + \sum c_i^2}{100} - 35.1^2} \\
+                                 & = \sqrt{111.56}                                                    \\
+                                 & = 10.56
+                  \end{flalign*}
           \end{enumerate}
 
     \item The score given by six judges to a gymnast are as follows: \makeatletter
@@ -5798,15 +6055,32 @@
           \makeatother
           Find the following of the gymnast:
           \begin{enumerate}
-            \item Mean
-            \item Standard deviation
-            \item Correlation Coefficient
+            \item Mean \sol{}
+                  \begin{flalign*}
+                    \bar{x} & = \frac{7 + 5 + 9 + 7 + 8 + 6}{6} \\
+                            & = \frac{42}{6}                    \\
+                            & = 7
+                  \end{flalign*}
+
+            \item Standard deviation \sol{}
+                  \begin{flalign*}
+                    \sigma & = \sqrt{\frac{7^2 + 5^2 + \cdots + 6^2}{6} - 7^2} \\
+                           & = \sqrt{1.67}                                     \\
+                           & = 1.29
+                  \end{flalign*}
+
+            \item Coefficient of variation \sol{}
+                  \begin{flalign*}
+                    v & = \frac{\sigma}{\bar{x}} \cdot 100\% \\
+                      & = \frac{1.29}{7} \cdot 100\%         \\
+                      & = 18.44\%
+                  \end{flalign*}
           \end{enumerate}
 
     \item In an IQ test, the average score of 10 students is 114, and the scores of 9 of
           them are as follows: \makeatletter \setbool{@fleqn}{false} \makeatother
           \begin{flalign*}
-            101 & \quad 125 \quad 118 \quad 118 \quad 128 \quad 106 \\
+            101 & \quad 125 \quad 118 \quad 128 \quad 106 \\
             115 & \quad 99 \quad 118 \quad 109
           \end{flalign*}
           \makeatletter
@@ -5814,8 +6088,21 @@
           \makeatother
           Find:
           \begin{enumerate}
-            \item The IQ of the 10th student.
-            \item The correlation coefficient of the IQ of the 10 students.
+            \item The IQ of the 10th student. \sol{}
+                  \begin{flalign*}
+                    x_{10} & = 114 \cdot 10 - 101 - 125 - \cdots - 109 \\
+                           & = 1140 - 101 - 125 - \cdots - 109         \\
+                           & = 121
+                  \end{flalign*}
+
+            \item The correlation coefficient of the IQ of the 10 students. \sol{}
+                  \begin{flalign*}
+                    \sigma & = \sqrt{\frac{101^2 + 125^2 + \cdots + 109^2}{10} - 114^2} & \\
+                           & = \sqrt{88.2}                                                \\
+                           & = 9.39                                                       \\
+                    v      & = \frac{9.39}{114} \cdot 100\%                               \\
+                           & = 8.24\%
+                  \end{flalign*}
           \end{enumerate}
 
     \item Given that the data of the weight of two groups of girls (in $kg$) are as
@@ -5823,14 +6110,20 @@
           \begin{center}
             \begin{tabular}{|c|c|c|}
               \hline
-                          & Mean  & Std. Dev. \\
+                          & Mean  & Standard Deviation \\
               \hline
-              1 years old & 10.90 & 1.24      \\
-              5 years old & 19.00 & 2.11      \\
+              1 years old & 10.90 & 1.24               \\
+              5 years old & 19.00 & 2.11               \\
               \hline
             \end{tabular}
           \end{center}
-          Compare the strength of correlation of the weight of these girls.
+          Compare the variation of the weight of these girls.
+          \sol{}
+          \begin{flalign*}
+            \text{1 year old} v_1 & = \frac{1.24}{10.90} \cdot 100\% = 11.38\% \\
+            \text{5 year old} v_2 & = \frac{2.11}{19.00} \cdot 100\% = 11.11\%
+          \end{flalign*}
+          The 1 year old group has a bigger variation than the 5 year old group.
 
     \item The prodution output and production cost of a factory in the first half of this
           year are as follows:
@@ -5844,6 +6137,36 @@
               \hline
             \end{tabular}
           \end{center}
+          \sol{}
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|c|}
+              \hline
+              $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
+              \hline
+              2           & 9           & 4             & 81            & 18             \\
+              3           & 11          & 9             & 121           & 33             \\
+              1           & 7           & 1             & 49            & 7              \\
+              4           & 13          & 16            & 169           & 52             \\
+              3           & 11          & 9             & 121           & 33             \\
+              5           & 15          & 25            & 225           & 75             \\
+              \hline
+              \hline
+              $\sum{x_i}$ & $\sum{y_i}$ & $\sum{x_i^2}$ & $\sum{y_i^2}$ & $\sum{x_iy_i}$ \\
+              \hline
+              18          & 66          & 64            & 766           & 218            \\
+              \hline
+            \end{tabular}
+          \end{center}
+          \begin{flalign*}
+            \bar{x} & = \frac{18}{6} = 3                                           \\
+            \bar{y} & = \frac{66}{6} = 11                                          \\
+            r       & = \frac{\frac{218}{6} - 3 \cdot 11}{\sqrt{\left(\frac{64}{6}
+            - 3^2\right)\left(\frac{766}{6} - 11^2\right)}}                        \\
+                    & = 1
+          \end{flalign*}
+
+          According to the result of the calculation, the production output and
+          production cost of the factory are positively and prefectly correlated.
 
     \item The marks of Chinese exam and Maths exam of 16 senior students in a school are
           as follows:
@@ -5857,7 +6180,7 @@
               76      & 99    \\
               63      & 67    \\
               56      & 61    \\
-              67      & 82    \\
+              67      & 88    \\
               69      & 82    \\
               81      & 77    \\
               77      & 75    \\
@@ -5868,14 +6191,72 @@
               72      & 65    \\
               75      & 64    \\
               80      & 66    \\
-              83      & 68    \\
               \hline
             \end{tabular}
           \end{center}
           \begin{enumerate}
-            \item Construct a scatter diagram of the data.
+            \item Construct a scatter diagram of the data. \sol{}
+                  \begin{center}
+                    \resizebox{\columnwidth-4.6em}{!}{
+                      \begin{tikzpicture}
+                        \begin{axis}[
+                            xlabel=Chinese,
+                            ylabel=Maths,
+                            xmin=50, xmax=90,
+                            ymin=50, ymax=100,
+                            xtick={50, 55, ..., 90},
+                            ytick={50, 55, ..., 100},
+                            grid=both,
+                            grid style={line width=.2pt, draw=gray!60},
+                            major grid style={line width=.4pt,draw=gray!90},
+                            minor tick num=4,
+                          ]
+                          \addplot[mark=*, mark size=1.5, mark options={solid, fill=black}, only marks] coordinates {(82,59) (79,63) (76,99) (63,67) (56,61) (67,88) (69,82) (81,77) (77,75) (73,74) (58,67) (64,79) (68,75) (72,65) (75,64) (80,66)};
+                        \end{axis}
+                      \end{tikzpicture}
+                    }
+                  \end{center}
             \item Find the correlation coefficient of the two exams, and determine the strength
-                  of correlation.
+                  of correlation. \sol{}
+                  \begin{center}
+                    \begin{tabular}{|c|c|c|c|c|}
+                      \hline
+                      $x_i$       & $y_i$       & $x_i^2$       & $y_i^2$       & $x_iy_i$       \\
+                      \hline
+                      82          & 59          & 6724          & 3481          & 4838           \\
+                      79          & 63          & 6241          & 3969          & 4977           \\
+                      76          & 99          & 5776          & 9801          & 7524           \\
+                      63          & 67          & 3969          & 4489          & 4221           \\
+                      56          & 61          & 3136          & 3721          & 3416           \\
+                      67          & 88          & 4489          & 7744          & 5896           \\
+                      69          & 82          & 4761          & 6724          & 5658           \\
+                      81          & 77          & 6561          & 5929          & 6237           \\
+                      77          & 75          & 5929          & 5625          & 5775           \\
+                      73          & 74          & 5329          & 5476          & 5402           \\
+                      58          & 67          & 3364          & 4489          & 3886           \\
+                      64          & 79          & 4096          & 6241          & 5056           \\
+                      68          & 75          & 4624          & 5625          & 5100           \\
+                      72          & 65          & 5184          & 4225          & 4680           \\
+                      75          & 64          & 5625          & 4096          & 4800           \\
+                      80          & 66          & 6400          & 4356          & 5280           \\
+                      \hline
+                      \hline
+                      $\sum{x_i}$ & $\sum{y_i}$ & $\sum{x_i^2}$ & $\sum{y_i^2}$ & $\sum{x_iy_i}$ \\
+                      \hline
+                      1140        & 1161        & 82208         & 85991         & 82746          \\
+                      \hline
+                    \end{tabular}
+                  \end{center}
+                  \begin{flalign*}
+                    \bar{x}                                                   & = \frac{1140}{16} = 71.25                                                  \\
+                    \bar{y}                                                   & = \frac{1161}{16} = 72.56                                                  \\
+                    r                                                         & = \frac{\frac{82746}{16} - 71.25 \cdot 72.56}{\sqrt{\left(\frac{82208}{16}
+                    - 71.25^2\right)\left(\frac{85991}{16} - 72.56^2\right)}} &                                                                            \\
+                                                                              & = 0.0189
+                  \end{flalign*}
+
+                  According to the result of the calculation, the marks of Chinese exam and Maths
+                  exam of the 16 senior students are positively and weakly correlated.
           \end{enumerate}
 
     \item The table below shows the prices of a product (in \$) in 2005, 2010, and 2015:
@@ -5890,8 +6271,17 @@
           \end{center}
           \begin{enumerate}
             \item Assume that the percentage of price increase from 2005 to 2010 is the same as
-                  that from 2010 to 2015, find the value of $x$.
-            \item Find the relative price in 2015 with respect to 2005.
+                  that from 2010 to 2015, find the value of $x$. \sol{}
+                  \begin{flalign*}
+                    \frac{6}{4} \cdot 100\% & = \frac{x}{6} \cdot 100\% \\
+                    \frac{6}{4}             & = \frac{x}{6}             \\
+                    4x                      & = 36                      \\
+                    x                       & = 9
+                  \end{flalign*}
+            \item Find the relative price in 2015 with respect to 2005. \sol{}
+                  \begin{flalign*}
+                    P.R. & = \frac{9}{4} \cdot 100\% = 225\%
+                  \end{flalign*}
           \end{enumerate}
 
     \item The price data of primary food of a city with 2013 as base period and 2014 as
@@ -5912,41 +6302,87 @@
             \end{tabular}
           \end{center}
           Find the price index in 2014.
+          \sol{}
+          \begin{flalign*}
+            \text{Price Index} & = \frac{105 \cdot 8 + 111 \cdot 7 + \cdots + 99 \cdot 2}{37} \\
+                               & = \frac{3849}{37}                                            \\
+                               & = 104.03
+          \end{flalign*}
 
     \item The relative price of daily expenses of people in a place with repsect to last
           year and their relative consumption are as follows:
           \begin{center}
-            \begin{tabular}{|c|c|c|}
-              \hline
-              Daily Expenses & Relative price & Consumption Relative \\
-              \hline
-              Clothing       & 120            & 23                   \\
-              Food           & 117            & 40                   \\
-              Housing        & 132            & 19                   \\
-              Transportation & 130            & 18                   \\
-              \hline
-            \end{tabular}
+            \resizebox{\columnwidth - 4.6em}{!}{
+              \begin{tabular}{|c|c|c|}
+                \hline
+                Daily Expenses & Relative price & Relative Consumption \\
+                \hline
+                Clothing       & 120            & 23                   \\
+                Food           & 117            & 40                   \\
+                Housing        & 132            & 19                   \\
+                Transportation & 130            & 18                   \\
+                \hline
+              \end{tabular}
+            }
           \end{center}
-          Using the relative consumption as weight, find the composite price index of daily expenses.
+          Using the relative consumption as weight, find the composite index of daily expenses.
+          \sol{}
+          \begin{flalign*}
+            \text{Composite Index} & = \frac{120 \cdot 23 + \cdots + 130 \cdot 18}{100} \\
+                                   & = \frac{12288}{100}                                \\
+                                   & = 122.88
+          \end{flalign*}
 
     \item The table below shows the spending of a company in 4 different projects in 3
           consecutive years:
           \begin{center}
-            \begin{tabular}{|c|c|c|c|c|c|}
-              \hline
-              \multirow{2}{*}{Project} & \multicolumn{3}{c|}{Year} & \multirow{2}{*}{A} & \multirow{2}{*}{B}             \\
-              \cline{2-4}
-                                       & 2012                      & 2013               & 2014               &     &     \\
-              \hline
-              Salaries                 & $x$                       & 20,000             & 30,000             & 150 & $P$ \\
-              Stationery               & 5,000                     & $y$                & 7,000              & 120 & 140 \\
-              Repair                   & 4,000                     & 5000               & $z$                & 125 & 150 \\
-              Miscellaneous            & 8,000                     & $Q$                & 15,000             & $R$ & $R$ \\
-              \hline
-            \end{tabular}
+            \resizebox{\columnwidth - 4.6em}{!}{
+              \begin{tabular}{|c|c|c|c|c|c|}
+                \hline
+                \multirow{2}{*}{Project} & \multicolumn{3}{c|}{Year} & \multirow{2}{*}{A} & \multirow{2}{*}{B}             \\
+                \cline{2-4}
+                                         & 2012                      & 2013               & 2014               &     &     \\
+                \hline
+                Salaries                 & $x$                       & 20,000             & 30,000             & 150 & $P$ \\
+                Stationery               & 5,000                     & $y$                & 7,000              & 120 & 140 \\
+                Repair                   & 4,000                     & 5000               & $z$                & 125 & 150 \\
+                Miscellaneous            & 8,000                     & $Q$                & 15,000             & $R$ & $R$ \\
+                \hline
+              \end{tabular}
+            }
           \end{center}
           Given that $A$ is the index where 2012 is the base period and 2013 is the current period; $B$ is the index where 2012 is the base period and 2014 is the current period. Find the value of $x$, $y$, $z$, $P$, $Q$, and $R$.
-
+          \sol{}
+          \begin{flalign*}
+            \frac{20000}{x} \cdot 100 & = 150      \\
+            \frac{20000}{x}           & = 1.5      \\
+            1.5x                      & = 20000    \\
+            x                         & = 13333.33 \\
+          \end{flalign*}
+          \begin{flalign*}
+            P & = \frac{30000}{13333.33} \cdot 100 \\
+              & = 225
+          \end{flalign*}
+          \begin{flalign*}
+            \frac{y}{5000} \cdot 100 & = 120  \\
+            \frac{y}{5000}           & = 1.2  \\
+            y                        & = 6000
+          \end{flalign*}
+          \begin{flalign*}
+            \frac{z}{4000} \cdot 100 & = 150  \\
+            \frac{z}{4000}           & = 1.5  \\
+            z                        & = 6000
+          \end{flalign*}
+          \begin{flalign*}
+            \frac{Q}{8000} \cdot 100 & = \frac{15000}{8000} \cdot 100 = R \\
+            \frac{Q}{8000}           & = 1.875 = \frac{R}{100}            \\
+            Q                        & = 15000                            \\
+            R                        & = 187.5
+          \end{flalign*}
+          \begin{flalign*}
+            \therefore\ x & = 13333.33,\ y = 6000,\ z = 6000, \\
+            P             & = 225,\ Q = 15000,\ R = 187.5
+          \end{flalign*}
   \end{enumerate}
 
   \chapter{Permutations and Combinations}
@@ -5976,7 +6412,7 @@
     ways, the second step can be done in $m_2$ ways, $\cdots$, the $n$th steps can
     be done in $m_n$ ways, then the total number of ways of doing the task is
     \begin{cequation}
-      m_1 \times m_2 \times \cdots \times m_n
+      m_1 \cdot m_2 \cdot \cdots \cdot m_n
     \end{cequation}
   \end{theorem}
 
@@ -6033,7 +6469,7 @@
 
   According to the multiplication principle, the total number of ways to arrange
   the numbers 1, 2, 3, 4 into a two digit number with no repeated digits is $4
-    \times 3 = 12$. \\\\ If there are $n$ elements, we want to pick $r$ elements
+    \cdot 3 = 12$. \\\\ If there are $n$ elements, we want to pick $r$ elements
   from them and arrange them in a sequence, how many ways are there to do so?
   This question can be treated as there are $r$ empty boxes, which means this
   requires $r$ steps to complete.
@@ -6475,7 +6911,7 @@
   element, $\cdots$, $n$ ways to choose the $r$th element. According to the
   multiplication rule, its permutations are:
   \begin{cequation}
-    \underbrace{n \times n \times \cdots \times n}_{r} = n^r
+    \underbrace{n \cdot n \cdot \cdots \cdot n}_{r} = n^r
   \end{cequation}
 
   \subsection{Practice 8}
@@ -6525,13 +6961,13 @@
 
     \item  When there are only 7 digits, there are 8 ways to choose the first digit (2 -
           10), 10 ways to choose the rest of the digits (0 - 10). Hence, there are $8
-            \times 10^6$ phone numbers. When there are 8 digits, there are 8 ways to choose
+            \cdot 10^6$ phone numbers. When there are 8 digits, there are 8 ways to choose
           the first digit, 10 ways to choose the rest of the digits. Hence, there are $8
-            \times 10^7$ phone numbers. Hence, there are:
+            \cdot 10^7$ phone numbers. Hence, there are:
 
           When there are only 7 digits, there are 8 ways to choose the first digit (2 -
           10), 10 ways to choose the rest of the digits (0 - 10). Hence, there are $8
-            \times 10^6$ phone numbers. When there are 8 digits, there are 8 ways
+            \cdot 10^6$ phone numbers. When there are 8 digits, there are 8 ways
 
     \item The phone number format of a country is going from 7 digits to 8 digits. but
           the leading digit cannot be 0 or 1. How many new phone numbers will be formed
@@ -6539,12 +6975,12 @@
 
           When there are only 7 digits, there are 8 ways to choose the first digit (2 -
           10), 10 ways to choose the rest of the digits (0 - 10). Hence, there are $8
-            \times 10^6$ phone numbers. When there are 8 digits, there are 8 ways to choose
+            \cdot 10^6$ phone numbers. When there are 8 digits, there are 8 ways to choose
           the first digit, 10 ways to choose the rest of the digits. Hence, there are $8
-            \times 10^7$ phone numbers. Hence, there are:
+            \cdot 10^7$ phone numbers. Hence, there are:
           \begin{flalign*}
-            8 \times 10^7 - 8 \times 10^6 & = 80,000,000 - 8,000,000 \\
-                                          & = 72,000,000
+            8 \cdot 10^7 - 8 \cdot 10^6 & = 80,000,000 - 8,000,000 \\
+                                        & = 72,000,000
           \end{flalign*}
           new phone numbers.
   \end{enumerate}
@@ -6579,7 +7015,7 @@
 
   According to the multiplication rule,
   \begin{flalign*}
-    \permtwo[3]{2}            & = \comb[3]{2} \times 2!     \\
+    \permtwo[3]{2}            & = \comb[3]{2} \cdot 2!      \\
     \therefore\ \ \comb[3]{2} & = \frac{\permtwo[3]{2}}{2!} \\
                               & = 3
   \end{flalign*}
@@ -6595,7 +7031,7 @@
 
   According to the multiplication rule,
   \begin{flalign*}
-    \permtwo[n]{r}            & = \comb[n]{r} \times r!             \\
+    \permtwo[n]{r}            & = \comb[n]{r} \cdot r!              \\
     \therefore\ \ \comb[n]{r} & = \frac{\permtwo[n]{r}}{r!}         \\
                               & = \frac{n!}{(n - r)! r!},\ r \leq n
   \end{flalign*}
@@ -7451,7 +7887,7 @@
   independent events. The probability of the two events occurring is the product
   of their individual probabilities:
   \begin{cequation}
-    P(A \cap B) = P(A) \times P(B)
+    P(A \cap B) = P(A) \cdot P(B)
   \end{cequation}
 
   \subsection{Practice 6}
@@ -7465,7 +7901,7 @@
 
           The probability of getting a rotten apple is $\frac{4}{12} = \frac{1}{3}$.
 
-          Therefore, the probability of getting two rotten fruits is $\frac{1}{5} \times
+          Therefore, the probability of getting two rotten fruits is $\frac{1}{5} \cdot
             \frac{1}{3} = \frac{1}{15}$.
 
     \item Person $A$ and person $B$ are participating in a archery competition. Person
@@ -7476,7 +7912,7 @@
 
                   Let the event of person $A$ and person $B$ both hitting the bullseye be $A$.
                   \begin{flalign*}
-                    P(A) & = \frac{5}{8} \times \frac{7}{15} \\
+                    P(A) & = \frac{5}{8} \cdot \frac{7}{15} \\
                          & = \frac{7}{24}
                   \end{flalign*}
 
@@ -7488,10 +7924,10 @@
                   Let the event of person $B$ not hitting the bullseye be $C$, then $C'$ is the
                   event of person $B$ hitting the bullseye.
                   \begin{flalign*}
-                    P(B \cap C) & = P(B) \times P(C)                        \\
-                                & = 1 - P(B') \times 1 - P(C')              \\
-                                & = 1 - \frac{5}{8} \times 1 - \frac{7}{15} \\
-                                & = \frac{3}{8} \times \frac{8}{15}         \\
+                    P(B \cap C) & = P(B) \cdot P(C)                        \\
+                                & = 1 - P(B') \cdot 1 - P(C')              \\
+                                & = 1 - \frac{5}{8} \cdot 1 - \frac{7}{15} \\
+                                & = \frac{3}{8} \cdot \frac{8}{15}         \\
                                 & = \frac{1}{5}
                   \end{flalign*}
 
@@ -7613,11 +8049,11 @@
   getting a loss of \$100 is $0.4$. He did the activity 10 times. According to
   the probability, this guy was expected to get a profit of \$300 for 6 times,
   and a loss of \$100 for 4 times. Therefore, the expected profit of these 10
-  times of commercial activities is $300 \times 6 + (-100) \times 4$.
+  times of commercial activities is $300 \cdot 6 + (-100) \cdot 4$.
   \begin{flalign*}
-    \text{Average Profit} & = \frac{300 \times 6 + (-100) \times 4}{10} \\
-                          & = \frac{1800 - 400}{10}                     \\
-                          & = \frac{1400}{10}                           \\
+    \text{Average Profit} & = \frac{300 \cdot 6 + (-100) \cdot 4}{10} \\
+                          & = \frac{1800 - 400}{10}                   \\
+                          & = \frac{1400}{10}                         \\
                           & = 140
   \end{flalign*}
   This average value is called the \textit{mathematical expectated value}, or \textit{expected value} for short, of this people doing the commercial activity.
@@ -7648,8 +8084,8 @@
 
           Therefore, the expected value of profit of this person in this game is
           \begin{flalign*}
-            E & = 0.4 \times 1 + 0.6 \times (-2) \\
-              & = 0.4 - 1.2                      \\
+            E & = 0.4 \cdot 1 + 0.6 \cdot (-2) \\
+              & = 0.4 - 1.2                    \\
               & = -\$0.80
           \end{flalign*}
 
@@ -7660,8 +8096,8 @@
 
           The expected value of profit of this person in this investment activity is
           \begin{flalign*}
-            E & = 2500 \times 0.55 + (-1200) \times 0.45 \\
-              & = 1375 - 540                             \\
+            E & = 2500 \cdot 0.55 + (-1200) \cdot 0.45 \\
+              & = 1375 - 540                           \\
               & = \$835
           \end{flalign*}
   \end{enumerate}
