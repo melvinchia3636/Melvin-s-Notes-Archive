@@ -7053,15 +7053,15 @@
           Therefore, there are $3! \cdot 4! = 6 \cdot 24 = 144$ ways to arrange the
           letters.
 
-    \item Rearranging all the letters in the word \textit{NUMERIACAL}, how many ways can
+    \item Rearranging all the letters in the word \textit{NUMERICAL}, how many ways can
           the letters be arranged? if 4 vowels are to be put together, how many ways can
           the letters be arranged?
 
           \sol{}
 
-          There are $\permtwo[10]{10} = 10! = 3628800$ ways to arrange the 10 letters in
-          the word. If all vowels are to be put together, we can treat 4 of the vowels as
-          one letter, and there are $\permtwo[6]{6} = 6!$ ways to arrange the 7 letters.
+          There are $\permtwo[9]{9} = 10! = 362880$ ways to arrange the 10 letters in the
+          word. If all vowels are to be put together, we can treat the vowels as one
+          letter, and there are $\permtwo[6]{6} = 6!$ ways to arrange the 6 letters.
           There are $\permtwo[4]{4} = 4!$ ways to arrange the four vowels. Therefore,
           there are $6! \cdot 4! = 720 \cdot 24 = 17280$ ways to arrange the letters.
 
@@ -7228,32 +7228,85 @@
 
   \begin{enumerate}
     \item Choose 5 people from 6 males and 5 females to be seated in a circle. How many
-          ways can they be seated?
+          ways can they be seated? \sol{}
+
+          There are a total of $6+5 = 11$ people, so they are a total of
+          $\frac{\permtwo[11]{5}}{5} = 11088$ ways to be seated.
 
     \item 6 males and 4 females are to be seated around a circular table. If females can't seat beside each other, how many ways can they be seated?
+          \sol{}
+
+          First, arrange the 6 males into a circle, there are $(6-1)! = 5!$ ways to do
+          it. Next, arrange the the 4 females to sit in between the 6 males, there are
+          $\permtwo[6]{4}$ ways to do it. So there are a total of $5! \cdot
+            \permtwo[6]{4} = 120 \cdot 360 = 43200$ ways to arrange the seat.
   \end{enumerate}
 
   \subsection{Exercise 19.3}
 
   \begin{enumerate}
     \item 8 people are to be seated in a circle. How many ways can they be seated?
+          \sol{}
+
+          There are a total of $(8-1)! = 7! = 5040$ ways to arrange them.
 
     \item 10 children are to be arranged in a circle. How many ways can they be
           arraged? If a child must be seated in the primary position, how many ways can they be arranged?
+          \sol{}
+
+          There are a total of $(10-1)! = 9! = 362880$ ways to arrange them. If a child
+          must be seated in the primary position, there are a total of $9! = 362880$ ways
+          to arrange them.
 
     \item 6 people are to be formed into a circle. If two people must seat together, how many ways can they be arranged?
+          \sol{}
+
+          We can treat those two people as one person, so there are a total of $(5-1)! =
+            4!$ ways to arrange them. Since these two people can switch their position, so
+          there are a total of $2!$ ways to arrange them. Therefore, there are a total of
+          $4! \cdot 2! = 24 \cdot 2 = 48$ ways to arrange them.
 
     \item 4 males and 3 females are to be seated around a circular table. If none of the females can seat together, how many ways can they be seated?
+          \sol{}
+
+          First, arrange the 4 males into a circle, there are $(4-1)! = 3!$ ways to do
+          it. Next, put 3 females in between those 4 males, there are a total of
+          $\permtwo[4]{3}$ ways to do it. So there are a total of $3! \cdot
+            \permtwo[4]{3} = 6 \cdot 24 = 144$ ways to arrange the seat.
 
     \item 4 pairs of couples and one child are to be seated around a circular table. If the couples must sit together, how many ways can they be seated?
+          \sol{}
+
+          We can treat the couples as one person, so there are a total of $(3-1)! = 2!$
+          ways to arrange them. Next, in between those couples, there are $4!$ ways to
+          arrange them. Next, in between each couples, since they can switch their
+          position, so there are a total of $2!$ ways to arrange them. Therefore, there
+          are a total of $2! \cdot 4! \cdot 2! = 8 \cdot 24 \cdot 2 = 384$ ways to
+          arrange them.
 
     \item A family of 7 people are sitting together around a circular table for a dinner.
           If the grandfather, grandmother, father and mother must sit together, of which
           the grandfather and the grandmother, the father and the mother must sit
-          together, how many ways can they be seated?
+          together, how many ways can they be seated? \sol{}
+
+          Since grandfather, grandmother, father and mother must sit together, we can
+          treat them as one person, so there are a total of $(4-1)! = 3!$ ways to arrange
+          them. In between those 4 people who must be seated together, since the
+          grandfather and the grandmother, the father and the mother can switch their
+          position, so there are a total of $2!$ ways to arrange them. Next, in between
+          the grandfather and grandmother, father and mother, since they can switch their
+          position, so there are a total of $2 \cdot 2!$ ways to arrange them. Therefore,
+          there are a total of $3! \cdot 2! \cdot 2 \cdot 2! = 48$ ways to arrange them.
 
     \item If a linear permutation of $n$ people is 6 times of a circular permutation of
-          $n$ people, find these two permutations.
+          $n$ people, find these two permutations. \sol{}
+          \begin{flalign*}
+            n!                     & = 6(n-1)! \\
+            \frac{n!}{(n-1)!}      & = 6       \\
+            \frac{n(n-1)!}{(n-1)!} & = 6       \\
+            n                      & = 6
+          \end{flalign*}
+          So there are a total of $6! = 720$ linear permutations and $(6-1)! = 5! = 120$ circular permutations.
   \end{enumerate}
 
   \section{Full Permutations of Inexactly Distinct Elements}
@@ -7298,21 +7351,48 @@
 
   \begin{enumerate}
     \item Giving 9 children 2 pens, 3 ball-point pens, 4 pencils, how many ways can they
-          be given if each child must be given one pen?
+          be given if each child must be given one pen? \sol{}
 
-    \item Find the full permutation of the letters in the word \textit{EXPESSION}.
+          There are a total of $\frac{9!}{2!3!4!} = 1260$ ways to give the children the
+          pens.
+
+    \item Find the full permutation of the letters in the word \textit{EXPRESSION} with 9
+          letters. \sol{} There are 2 $E$s, 2 $S$s, 1 $P$, 1 $O$, 1 $N$, 1 $R$ and 1 $X$.
+          Hence, there are a total of $\frac{10!}{2!2!1!1!1!1!} = 907200$ ways to arrange
+          the letters in the word \textit{EXPRESSION}.
   \end{enumerate}
 
   \subsection{Exercise 19.4}
 
   \begin{enumerate}
     \item How many 8 digit numbers can be formed using 8 digits 1, 1, 2, 2, 3, 3, 4, 5?
+          \sol{}
+
+          There are 2 $1$s, 2 $2$s, 2 $3$s, 1 $4$ and 1 $5$ in these 8 digits. Hence,
+          there are a total of $\frac{8!}{2!2!2!1!1!} = 5040$ ways to arrange the 8
+          digits.
 
     \item Arranging all the letters in the word \textit{MALAYSIA}, how many ways can they
-          be arranged such that the three "A"s are not totally together?
+          be arranged such that the three "A"s are not totally together? \sol{}
+
+          There are 3 $A$s, 1 $L$, 1 $M$, 1 $S$, 1 $I$ and 1 $Y$ in the word
+          \textit{MALAYSIA}. Hence, there are a total of $\frac{8!}{3!1!1!1!1!1!} = 6720$
+          ways to arrange the letters in the word \textit{MALAYSIA}. If all the $A$s are
+          together, treat all the $A$ as one element, there are $6! = 720$ ways to
+          arrange them. Hence, there are a total of $6720 - 720 = 6000$ ways to arrange
+          the letters in the word \textit{MALAYSIA} such that the three "A"s are not
+          totally together.
 
     \item Arranging all the letters in the word \textit{MATHEMATICAL}, how many ways can
-          they be arranged such that the three "A"s are not totally together?
+          they be arranged such that the three "A"s are not totally together? \sol{}
+
+          There are 3 $A$s, 2 $M$s, 2 $T$s, 1 $C$, 1 $E$, 1 $H$, 1 $I$, 1 $L$, and 1 $U$
+          in the word \textit{MATHEMATICAL} with 12 letters. There are a total of
+          $\frac{12!}{3!2!2!1!1!1!1!1!1!} = 19958400$ ways to arrange the letters in the
+          word. If all the $A$s are together, treat all the $A$ as one element, there are
+          $\frac{10!}{2!2!1!1!1!1!1!} = 907200$ ways to arrange them. Hence, there are a
+          total of $19958400 - 907200 = 19051200$ ways to arrange the letters in the word
+          \textit{MATHEMATICAL} such that the three "A"s are not totally together.
 
     \item The diagram below shows a city with 5 north-west roads and 5 south-east roads,
           where each road shares the same length.
@@ -7337,16 +7417,51 @@
             \end{tikzpicture}
           \end{center}
           \begin{enumerate}
-            \item How many shortest paths are there from A through C to B?
-            \item How many shortest paths are there from A to B without passing through C?
+            \item How many shortest paths are there from $A$ through $C$ to $B$? \sol{}
+
+                  From $A$ to $C$, we must walk 3 steps to the north and 2 steps to the east.
+                  There are a total of $\frac{5!}{3!2!} = 10$ ways go from $A$ to $C$.
+
+                  From $C$ to $B$, we must walk 1 step to the north and 2 steps to the east.
+                  There are a total of $\frac{3!}{1!2!} = 3$ ways go from $C$ to $B$.
+
+                  Hence, there are a total of $10 \cdot 3 = 30$ shortest paths from $A$ through
+                  $C$ to $B$.
+
+            \item How many shortest paths are there from A to B without passing through C? \sol{}
+
+                  From $A$ to $B$, we must walk 4 steps to the north and 4 steps to the east.
+                  There are a total of $\frac{8!}{4!4!} = 70$ ways go from $A$ to $B$.
+
+                  Hence, there are a total of $70 - 30 = 40$ shortest paths from $A$ to $B$
+                  without passing through $C$.
           \end{enumerate}
 
     \item Arranging all the letters in the word \textit{GEOMETRIC}, find the number of
           permutations such that the following conditions are satisfied:
           \begin{enumerate}
-            \item No limitaion on the arrangement of the letters.
-            \item All the vowels must be together.
-            \item None of the vowels are adjacent to each other.
+            \item No limitaion on the arrangement of the letters. \sol{}
+
+                  There are 2 $E$s, 1 $G$, 1 $I$, 1 $M$, 1 $O$, 1 $R$, 1 $C$, and 1 $T$ in the
+                  word \textit{GEOMETRIC} with 9 letters. There are a total of
+                  $\frac{9!}{2!1!1!1!1!1!1!1!} = 181400$ ways to arrange the letters in the word.
+
+            \item All the vowels must be together. \sol{}
+
+                  Treat all vowels as one element, there are $6! = 720$ ways to arrange them.
+                  since all vowels can switch position with each other, there are
+                  $\frac{4!}{2!1!1!} = 12$ ways to arrange them. Hence, there are a total of $720
+                    \cdot 12 = 8640$ ways to arrange the letters in the word \textit{GEOMETRIC}
+                  such that all the vowels are together.
+
+            \item None of the vowels are adjacent to each other. \sol{}
+
+                  Arrange all the consonants together. There are $5! = 120$ ways to arrange them.
+                  Next, put 4 vowels at the beginning of the word, the end of the word, or in
+                  between consonants. There are a total of $\frac{\permtwo[6]{4}}{2!1!1!} = 180$
+                  ways to do so. Hence, there are a total of $120 \cdot 180 = 21600$ ways to
+                  arrange the letters in the word \textit{GEOMETRIC} such that none of the vowels
+                  are adjacent to each other.
           \end{enumerate}
 
   \end{enumerate}
@@ -7368,10 +7483,18 @@
   \subsection{Practice 8}
 
   \begin{enumerate}
-    \item How many ways are there to shoot 3 balls into 6 baskets?
+    \item How many ways are there to shoot 3 balls into 6 baskets? \sol{}
+
+          There are 6 baskets, each basket can be shoot more than once, so there are $6^3
+            = 216$ ways to shoot 3 balls into 6 baskets.
 
     \item If the all the digits can be used more than once, how many 3 digit numbers can
-          be formed using the digits 0, 1, 2, 3, 4?
+          be formed using the digits 0, 1, 2, 3, 4? \sol{}
+
+          Since the first digit cannot be 0, there are 4 ways to choose it. For the other
+          two digits, there are 5 ways to choose each of them. Hence, there are a total
+          of $4 \cdot 5 \cdot 5 = 100$ 3 digit numbers can be formed using the digits 0,
+          1, 2, 3, 4.
   \end{enumerate}
 
   \subsection{Exercise 19.5}
@@ -7379,46 +7502,75 @@
   \begin{enumerate}
     \item The office documents of a company are coded with a combination of two of the
           first four letters of the alphabet $A, B, C, D$. If each letter can be used
-          more than once, how many different codes can be formed?
+          more than once, how many different codes can be formed? \sol{}
+
+          There are two letters in each code, each letter can be chosen more than once,
+          so there are $4^2 = 16$ different codes can be formed.
 
     \item There are eight paths from A to B. How many ways are there to go from A to B
-          and then back to A?
+          and then back to A? \sol{}
+
+          There are 8 paths from A to B, and 8 paths from B to A. Hence, there are a
+          total of $8 \cdot 8 = 64$ ways to go from A to B and then back to A.
 
     \item A four digit number is to be formed with 4 numbers 3, 4, 5, 7, how many ways
           can it be formed such that its thousand digit and hundred digit are the same?
+          \sol{}
+
+          Since the thousand digit and hundred digit are the same, there are 4 ways to
+          choose the thousand and hundred digit combined. For the other two digits, there
+          are 4 ways to choose each of them. Hence, there are a total of $4 \cdot 4 \cdot
+            4 = 64$ ways to form a four digit number such that its thousand digit and
+          hundred digit are the same.
 
     \item A basketball match has two possible result, either team $A$ wins or team $B$
-          wins. How many possible results are there if there are 10 matches?
+          wins. How many possible results are there if there are 10 matches? \sol{}
+
+          There are 2 possible results, either team $A$ wins or team $B$ wins. Hence,
+          there are a total of $2^{10} = 1024$ possible results if there are 10 matches.
 
     \item A restaurant has introduced 7 sets of special dishes for lunch. There are 3
           people come for lunch, each person orders one dish. How many different
-          combinations of dishes can be ordered?
+          combinations of dishes can be ordered? \sol{}
+
+          There are 7 sets of special dishes, each person can order any of the 7 dishes.
+          Hence, there are a total of $7^3 = 343$ different combinations of dishes can be
+          ordered.
 
     \item A building is assigned one security guard every night. If the security company
           has three assignable guards, how many different ways of assignments are there
-          for a week?
+          for a week? \sol{}
+
+          There are 7 nights in a week, each night can be assigned to any of the 3
+          guards. Hence, there are a total of $3^7 = 2187$ different ways of assignments
+          are there for a week.
 
     \item A football match has three possible results, either team $A$ wins, team $B$
           wins or the match is a draw. How many possible results are there if there are 8
           matches?
 
+          There are 3 possible results, either team $A$ wins, team $B$ wins or the match
+          is a draw. Hence, there are a total of $3^{8} = 6561$ possible results if there
+          are 8 matches.
+
     \item A school is going to hold a trilingual speech competition. The rule stated that
           each class can only send one representative for each language. If there are 40
           students in a class, how many different combinations of students can be chosen
-          for the competition?
+          for the competition? \sol{}
+
+          There are 3 languages, each class can only send one representative for each of
+          the 3 languages. Hence, there are a total of $40^3 = 64000$ different
+          combinations of students can be chosen for the competition.
 
     \item How many 6 digits odd number can be formed using the digitis 0, 1, 2, $\cdots$,
-          5 if each digit can be used more than once?
+          5 if each digit can be used more than once? \sol{}
 
-    \item  When there are only 7 digits, there are 8 ways to choose the first digit (2 -
-          10), 10 ways to choose the rest of the digits (0 - 10). Hence, there are $8
-            \cdot 10^6$ phone numbers. When there are 8 digits, there are 8 ways to choose
-          the first digit, 10 ways to choose the rest of the digits. Hence, there are $8
-            \cdot 10^7$ phone numbers. Hence, there are:
-
-          When there are only 7 digits, there are 8 ways to choose the first digit (2 -
-          10), 10 ways to choose the rest of the digits (0 - 10). Hence, there are $8
-            \cdot 10^6$ phone numbers. When there are 8 digits, there are 8 ways
+          Since the number is odd, the last digit must be odd. Hence, there are 3 ways to
+          choose it. Since the first digit cannot be 0, there are 5 ways to choose it.
+          For the other four digits, there are 6 ways to choose each of them. Hence,
+          there are a total of $3 \cdot 5 \cdot 6^4 = 19440$ 6 digits odd number can be
+          formed using the digitis 0, 1, 2, $\cdots$, 5 if each digit can be used more
+          than once.
 
     \item The phone number format of a country is going from 7 digits to 8 digits. but
           the leading digit cannot be 0 or 1. How many new phone numbers will be formed
@@ -7509,19 +7661,40 @@
 
   \begin{enumerate}
     \item There are six main cities in a country, each city has roads connecting to the
-          other five cities. How many roads are there connecting the six cities?
+          other five cities. How many roads are there connecting the six cities? \sol{}
 
-    \item There are 5 people in 4 cars, each car must have at least one person. How many
-          ways are there to distribute the 5 people into 4 cars?
+          a road is formed between 2 cities, there are $\comb[6]{2} = 15$ roads
+          connecting the six cities.
+
+    \item 5 people are to be distributed in 4 cars, each car must have at least one person. How many
+          ways are there to distribute the 5 people into 4 cars? \sol{}
+
+          There are one car with two people, so there are $\comb[5]{2} = 10$ ways of
+          distribution. For these 3 people and one group of 2 people, there are
+          $\perm[4]{4} = 4! = 24$ ways of distribution. Hence, there are $10 \cdot 24 =
+            240$ ways of distributing the 5 people into 4 cars.
+
   \end{enumerate}
 
   \subsection{Practice 10}
 
   There are 4 different books. With the following criteria, how many ways are
   there to distribute the books?
-  \begin{enumerate}
-    \item Distribute evenly to two people.
-    \item Seperate evenly into two piles.
+  \begin{enumerate}[label=(\alph*)]
+    \item Distribute evenly to two people. \sol{}
+
+          First, distribute the book to one person. There are $\comb[4]{2} = 6$ ways of
+          distribution. Then, distribute the remaining books to the other person. There
+          are $\comb[2]{2} = 1$ way of distribution. Hence, there are $N_1 = 6 \cdot 1 =
+            6$ ways of distributing the books.
+
+    \item Seperate evenly into two piles. \sol{}
+
+          Destructing the solution of (a). First, distribute the book into two piles.
+          There are $N_2$ ways of distribution. Then, distribute each pile to the two
+          people. There are $2!$ ways of distribution. There are $N_1 = N_2 \cdot 2!$
+          ways of distributing the books. Hence, there are $N_2 = \frac{6}{2!} = 3$ ways
+          of distributing the books into two piles.
   \end{enumerate}
 
   \subsection{Exercise 19.6}
@@ -7530,7 +7703,23 @@
     \item Find the value of $n$ and $r$ of the following expessions:
           \begin{enumerate}
             \item $\comb[16]{r+3} = \comb[16]{7-r}$
+                  \sol{}
+                  \begin{flalign*}
+                    \comb[16]{r+3} & = \comb[16]{7-r} \\
+                    r+3            & = 7-r            \\
+                    2r             & = 4              \\
+                    r              & = 2
+                  \end{flalign*}
+
             \item $\comb[30]{r} = \comb[30]{r+2}$
+                  \sol{}
+                  \begin{flalign*}
+                    \comb[30]{r} & = \comb[30]{r+2} \\
+                    30 - r       & = r + 2          \\
+                    2r           & = 28             \\
+                    r            & = 14
+                  \end{flalign*}
+
             \item $\comb[n]{8} = \comb[n]{7}$
                   \sol{}
                   \begin{flalign*}
@@ -7544,7 +7733,11 @@
           \end{enumerate}
 
     \item Assume that $3(\comb[n]{4}) = 5(\comb[n-1]{5})$, find the value of
-          $\comb[n]{9}$.
+          $\comb[n]{9}$. \sol{}
+          \begin{flalign*}
+            3(\comb[n]{4})                    & = 5(\comb[n-1]{5}) \\
+            \frac{\comb[n]{4}}{\comb[n-1]{5}} & = \frac{5}{3}      \\
+          \end{flalign*}
 
     \item There are 17 teams participating in a football competition. If each team plays
           against every other team, how many matches are there?
