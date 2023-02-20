@@ -6952,70 +6952,191 @@
 
   \begin{enumerate}
     \item Assume that there is no repeated digits, how many 5 digit numbers can be formed
-          using the digits 1, 2, 3, 4, 5?
+          using the digits 1, 2, 3, 4, 5? \sol{}
+
+          There are $\permtwo[5]{5} = 5! = 120$ ways to form a 5 digit number with these
+          5 digits.
 
     \item How many ways are there to arrange the flags of 10 ASEAN members in a row?
+          \sol{}
+
+          There are $\permtwo[10]{10} = 10! = 3628800$ ways to arrange the flags of the
+          10 ASEAN members in a row.
 
     \item 7 novel stories are to be compiled into a book. The sortest story must be placed
           at the beginning of the book, while the longest story must be placed at the end. How many ways can the stories be arranged?
+          \sol{}
+
+          Since the first book and the last book are fixed, there are $\permtwo[5]{5} =
+            5! = 120$ ways to arrange the 5 books in the middle.
 
     \item Ten students are to be arranged in a row. Two of the tallest students must be
           placed at the beginning of the row. How many ways can the students be arranged?
+          \sol{}
+
+          Since the first two students are fixed, while these two students can switch
+          places, there are $2! \cdot 8! = 80640$ ways to arrange the 10 students.
 
     \item There are nine programmes in a literature festival. If one of the programmes is
           to be placed at the middle or at the end, how many ways can the programmes be
-          arranged?
+          arranged? \sol{}
+
+          There are $2!$ ways to arrange the one of the programme, either at the middle
+          or at the end. There are $\permtwo[8]{8} = 8! = 40320$ ways to arrange the
+          other 8 programmes at the rest of the positions. Therefore, there are $2! \cdot
+            8! = 80640$ ways to arrange the 9 programmes.
 
     \item How many permutations of the letters in the word \textit{EQUATION} are there?
           if the letter \textit{E} and \textit{N} are to be placed at the beginning and
-          at the end respectively, how many ways can the letters be arranged?
+          at the end respectively, how many ways can the letters be arranged? \sol{}
+
+          There are $\permtwo[8]{8} = 8! = 40320$ ways to arrange these 8 letters. If the
+          first letter and the last letter are fixed, there are $\permtwo[6]{6} = 6! =
+            720$ ways to arrange the other 6 letters.
 
     \item There are 4 mobile phones that are to be registered a mobile phone number.
           Chosen 7 phone numbers for pairing, how many ways can the mobile phones be
-          paired with the phone numbers?
+          paired with the phone numbers? \sol{}
+
+          Since each of these 4 phones can be paired with any of the 7 phone numbers,
+          here are $\permtwo[7]{4} = 840$ ways to pair the 4 mobile phones with the 7
+          phone numbers.
 
     \item There are 4 passengers sitting inside a 6 seats SUV. How many ways can the
-          passengers be seated in the SUV?
+          passengers be seated in the SUV? \sol{}
+
+          Since these 4 passengers can choose any of the 6 seats in the SUV, here are
+          $\permtwo[6]{4} = 360$ ways to seat the 4 passengers in the SUV.
 
     \item A ping pong coach wants to choose 3 players from a total of 5 players to be the
           first single, second single and third single respectively. If an elite player
           has to be chosen as the first or the second single, how many ways can the
           players be chosen?
 
-    \item 8 chairs are to be arranged in two rows of 4 chairs each, in order to provide a place for 8 people to sit. If 3 out of the 8 people are to be seated in the first row, how many ways can the chairs be arranged?
+          \sol{}
+
+          The elite player can choose either the first single or the second single. There
+          are $\permtwo[4]{2}$ ways to choose the other two positions among the 4 players
+          excluding the elite player. Therefore, there are $2! \cdot \permtwo[4]{2} = 24$
+          ways to choose the players.
+
+    \item 8 chairs are to be arranged in two rows of 4 chairs each, in order to provide a place for 8 people to sit. If 3 out of the 8 people are to be seated in the first row, how many ways can the people be arranged?
+          \sol{}
+
+          The 3 people who need to be seated at the first row can choose any of the 4
+          chairs in the first row. There are $\permtwo[4]{3}$ ways to arrange the 3
+          people in the first row. The other 5 people can choose any of the other 5
+          chairs. There are $\permtwo[5]{5}$ ways to arrange these 5 people. Therefore,
+          there are $\permtwo[4]{3} \cdot \permtwo[5]{5} = 24 \cdot 120 = 2880$ ways to
+          arrange the 8 people.
 
     \item How many permutations of the 5 different letters in the word \textit{TRIANGLE}
           are there? If the beginning and the end of the word are consonants, how many
-          ways can the letters be arranged?
+          ways can the letters be arranged? \sol{}
+
+          There are $\permtwo[8]{5} = 6720$ ways to arrange the 5 letters among the 8
+          letters in the word \textit{TRIANGLE}. If the beginning and the end of the word
+          are consonants, there are $\permtwo[3]{2}$ ways to arrange the 2 of the 3
+          consonants at the beginning and the end of the word. There are $\permtwo[6]{3}$
+          ways to arrange the 3 of the other 6 letters in the middle of the word.
+          Therefore, there are $\permtwo[3]{2} \cdot \permtwo[6]{3} = 6 \cdot 240 = 2400$
+          ways to arrange the letters.
 
     \item All the letters in the word \textit{FANCIES} are to be arranged. If the vowels
           are to be arranged at even positions, how many ways can the letters be
           arranged?
 
+          \sol{}
+
+          There are $\permtwo[3]{3} = 3!$ ways to arrange the 3 vowels in the word, and
+          there are $\permtwo[4]{4} = 4!$ ways to arrange the 4 consonants in the word.
+          Therefore, there are $3! \cdot 4! = 6 \cdot 24 = 144$ ways to arrange the
+          letters.
+
     \item Rearranging all the letters in the word \textit{NUMERIACAL}, how many ways can
-          the letters be arranged? if all vowels are to be put together, how many ways
-          can the letters be arranged?
+          the letters be arranged? if 4 vowels are to be put together, how many ways can
+          the letters be arranged?
+
+          \sol{}
+
+          There are $\permtwo[10]{10} = 10! = 3628800$ ways to arrange the 10 letters in
+          the word. If all vowels are to be put together, we can treat 4 of the vowels as
+          one letter, and there are $\permtwo[6]{6} = 6!$ ways to arrange the 7 letters.
+          There are $\permtwo[4]{4} = 4!$ ways to arrange the four vowels. Therefore,
+          there are $6! \cdot 4! = 720 \cdot 24 = 17280$ ways to arrange the letters.
 
     \item Examinations of 7 subjects are to be arranged in a row of 7 days, with one
           subject at a day. If two of which cannot be arranged to be held on two
           consecutive days, how many ways can the examinations of these 7 subjects be
-          arranged?
+          arranged? \sol{}
+
+          If two of the examinations are to be held on two consecutive days, we treat
+          these two examinations as one subject. There are $\permtwo[6]{6} = 6!$ ways to
+          arrange the 6 subjects. Since these two subjects can switch places, there are
+          $2!$ ways to arrange the two subjects. Therefore, there are $6! \cdot 2!$ ways
+          to arrange the 7 subjects such that two of which are arranged to be held on two
+          consecutive days.
+
+          With no criteria on the arrangement of the examinations, there are
+          $\permtwo[7]{7} = 7!$ ways to arrange the 7 subjects.
+
+          Therefore, there are $\perm[7]{7} - \permtwo[6]{6} \cdot 2! = 5040 - 1440 =
+            3600$ ways to arrange the 7 subjects such that two of which are not arranged to
+          be held on two consecutive days.
 
     \item From 5 numbers 1, 2, 3, 4, 5, how many ways can the following numbers with no
           repeated digits be formed:
           \begin{enumerate}
             \item 5 digits odd numbers
+                  \sol{}
+
+                  Since the number must be odd, the last digit must be 1, 3, or 5. There are 3
+                  ways to choose the last digit. There are $\permtwo[4]{4} = 4!$ ways to arrange
+                  the other 4 digits. Therefore, there are $3 \cdot 4! = 3 \cdot 24 = 72$ ways to
+                  form the 5 digits odd numbers
+
             \item 5 digits even numbers
+                  \sol{}
+
+                  Since the number must be even, the last digit must be 2 or 4. There are 2 ways
+                  to choose the last digit. There are $\permtwo[4]{4} = 4!$ ways to arrange the
+                  other 4 digits. Therefore, there are $2 \cdot 4! = 2 \cdot 24 = 48$ ways to
+                  form the 5 digits even numbers.
           \end{enumerate}
 
     \item If the digits are not repeated, from the numbers 0 to 5, how many ways can the
-          6 digits odd numbers be formed?
+          6 digits odd numbers be formed? \sol{}
+
+          Since the number must be odd, the last digit must be 1, 3, or 5. There are 3
+          ways to choose the last digit. Since the first digit must not be 0, there are 4
+          ways to choose the first digit. There are $\permtwo[4]{4} = 4!$ ways to arrange
+          the other 4 digits. Therefore, there are $3 \cdot 4! \cdot 4 = 3 \cdot 24 \cdot
+            4 = 288$ ways to form the 6 digits odd numbers.
 
     \item From the 8 numbers 0, 1, 2, 3, 4, 5, 6, 7, how many 5 digits numbers can be
-          formed such that their digits are not repeated and can be divided by 25?
+          formed such that their digits are not repeated and can be divided by 25? \sol{}
+
+          Since the number must be divisible by 25 and cannot have repeated digits, the
+          last two digits must be either $25$, $50$, or $75$. Since the first digit
+          cannot be 0, if the first two digits are $50$, there are 6 ways to choose the
+          last three digits. If the first two digits are $25$ or $75$, there are 5 ways
+          to choose the last three digits. Therefore, there are $6 + 5 \cdot 2 = 16$ ways
+          to choose the first digit and the last two digits. For the other two digits,
+          there are $\permtwo[5]{2}$ ways to choose them. Therefore, there are $16 \cdot
+            \permtwo[5]{2} = 16 \cdot 20 = 320$ ways to form the 5 digits numbers.
 
     \item From the 6 numbers 0, 1, 2, 3, 4, 5, how many 4 digits numbers can be formed
-          such that their digits are not repeated and can be divided by 4?
+          such that their digits are not repeated and can be divided by 4? \sol{}
+
+          Since the number must be divisible by 4, the last two digits divisible by 4.
+          Among the numbers from 0 to 5, 04, 12, 20, 24, 32, 40, 52 are the only numbers
+          with no repeated digits that are divisible by 4. Since the first digit cannot
+          be 0, if the last two digit are either 04, 20, or 40, there are 4 ways to
+          choose the first digit. If the last two digits are either 12, 24, 32 or 52,
+          there are 3 ways to choose the first digit. Therefore, there are $3 \cdot 4 + 4
+            \cdot 3 = 24$ ways to choose the first digit and the last two digits. For the
+          other digits, there are $3$ ways to choose them. Therefore, there are $24 \cdot
+            3 = 72$ ways to form the 4 digits numbers.
   \end{enumerate}
 
   \section{Circular Permutations}
