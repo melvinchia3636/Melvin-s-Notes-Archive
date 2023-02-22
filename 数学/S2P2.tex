@@ -7733,11 +7733,36 @@
           \end{enumerate}
 
     \item Assume that $3(\comb[n]{4}) = 5(\comb[n-1]{5})$, find the value of
-          $\comb[n]{9}$. \sol{}
+          $\comb[n]{9}$. \sol{} \setlength{\belowdisplayskip}{0pt}
+          \setlength{\belowdisplayshortskip}{0pt} \setlength{\abovedisplayskip}{0pt}
+          \setlength{\abovedisplayshortskip}{0pt}
           \begin{flalign*}
-            3(\comb[n]{4})                    & = 5(\comb[n-1]{5}) \\
-            \frac{\comb[n]{4}}{\comb[n-1]{5}} & = \frac{5}{3}      \\
+            3(\comb[n]{4})                                                                   & = 5(\comb[n-1]{5}) \\
+            \frac{\comb[n]{4}}{\comb[n-1]{5}}                                                & = \frac{5}{3}      \\
+            \frac{n!}{4!(n-4)!} \cdot \frac{5!(n-6)!}{(n-1)!}                                & = \frac{5}{3}      \\
+            \frac{n(n-1)!}{4!(n-4)!} \cdot \frac{5\cdot 4!(n-6)!}{(n-1)!}                    & = \frac{5}{3}      \\
+            \frac{5n(n-6)!}{(n-4)!}                                                          & = \frac{5}{3}      \\
+            \frac{5n(n-6)!}{(n-4)(n-5)(n-6)!}                                                & = \frac{5}{3}      \\
+            \frac{n}{(n-4)(n-5)}                                                             & = \frac{1}{3}      \\
+            3n                                                                               & = (n-4)(n-5)       \\
+            n^2 - 9n + 20 - 3n                                                               & = 0                \\
+            n^2 - 12n + 20                                                                   & = 0                \\
+            (n-10)(n-2)                                                                      & = 0                \\
+            n                                                             = 10 \text{ or } n & = 2
           \end{flalign*}
+          \begin{flalign*}
+            \because\    & n \in \mathbb{N},\ n > 6 \\
+            \therefore\  & n = 10
+          \end{flalign*}
+          \begin{flalign*}
+            \comb[n]{9} & = \comb[10]{9}           \\
+                        & = \frac{10!}{9!(10-9)!}  \\
+                        & = \frac{10!}{9!1!}       \\
+                        & = \frac{10 \cdot 9!}{9!} \\
+                        & = 10
+          \end{flalign*}
+          \setlength{\belowdisplayskip}{\baselineskip} \setlength{\belowdisplayshortskip}{\baselineskip}
+          \setlength{\abovedisplayskip}{\baselineskip} \setlength{\abovedisplayshortskip}{\baselineskip}
 
     \item There are 17 teams participating in a football competition. If each team plays
           against every other team, how many matches are there?
