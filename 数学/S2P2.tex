@@ -8000,46 +8000,183 @@
           If the first digit is odd, there are 4 ways to choose the last digit. Thus,
           there are $3 \times 3 + 3 \times 4 = 21$ ways to choose the first and the last
           digit. For the other 5 digits, there are $\permtwo[5]{5} = 5!$ ways to choose
-          them. Thus, there are $21 \cdot 5! = 21 \cdot 120 = 2520$ 7 digit even numbers that
-          can be formed.
+          them. Thus, there are $21 \cdot 5! = 21 \cdot 120 = 2520$ 7 digit even numbers
+          that can be formed.
 
     \item How many permutations of all the characters in the word "fei li wu shi, fei li
-          wu ting" are there?
+          wu ting" are there? \sol{}
+
+          There are 2 "fei"s, 2 "li"s, 2 "wu"s, 1 "shi", and 1 "ting". Therefore, there
+          are $\frac{8!}{2!2!2!1!1!} = 5040$ permutations of all the characters in the
+          word "fei li wu shi, fei li wu ting".
 
     \item How many ways are there to arrange all the letters in the word
-          \textit{ARRANGEMENT}?
+          \textit{ARRANGEMENT}? \sol{}
 
-    \item Arranging 5 cups with different color and 5 canned juices with different
+          There are 2 "A"s, 2 "R"s, 2 "N"s, 1 "G", 2 "E"s, 1 "M", and 1 "T". Therefore,
+          there are $\frac{11!}{2!2!2!2!1!1!1!} = 2494800$ ways to arrange all the
+          letters in the word \textit{ARRANGEMENT}.
+
+    \item Arranging 6 cups with different color and 4 canned juices with different
           flavour into a circle, how many ways are there to do so such that all the
-          canned juices are not next to each other?
+          canned juices are not next to each other? \sol{}
+
+          First, arrange the 6 cups into a circle. There are $(6-1)! = 5!$ ways of doing
+          so.
+
+          Then, arrange the 4 canned juices in between the cups. There are
+          $\permtwo[6]{4}$ ways of doing so.
+
+          Thus, there are $5! \cdot \permtwo[6]{4} = 120 \cdot 360 = 43200$ ways to
+          arrange the 6 cups and 4 canned juices into a circle such that all the canned
+          juices are not next to each other.
 
     \item In a box of Chinese chess, there are 1 general, 2 advisors, 2 elephants, 2
           horses, 2 chariots, 2 cannons and 5 soldiers of red color. Now we arrange these
           16 pieces into a circle:
           \begin{enumerate}
-            \item All the pieces of the same type are arranged together.
+            \item All the pieces of the same type are arranged together. \sol{}
+
+                  There are 7 types of pieces. Thus, there are $(7-1)! = 6! = 720$ ways to
+                  arrange the 7 types of pieces into a circle.
+
             \item All the pieces of the same type are symmetrically arranged on one diameter.
+                  \sol{}
+
+                  Since there are only one general, we arrange the general and one soldier to
+                  form a symmetrical pair. There are $\frac{2!}{2}$ ways of arranging them. Then,
+                  we arrange the other 4 soldiers to form two symmetrical pairs with 2 soldiers
+                  each. Next, we arrange the 2 advisors, 2 horses, 2 chariots, 2 cannons and 2
+                  elephants to form symmetrical pairs respectively. Then, insert these 7
+                  symmetrical pairs besides the general and soldiers. Since the two pairs of
+                  soldiers are the same, there are $\frac{7!}{2!}$ ways of arranging these 7
+                  pairs into the circle. Thus, there are $\frac{2!}{2} \cdot \frac{7!}{2!} =
+                    2520$ ways to arrange the pieces into a circle.
           \end{enumerate}
 
     \item If there is no repeated digits, how many odd numbers in between 4000 and 9000
-          can be formed from the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9?
+          can be formed from the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9? \sol{}
 
-    \item How many 4 digit numbers with 2 repeated digits are there if the digits are
-          chosen from 1, 2, 3, 4, 5 while the digits can be chosen more than once?
+          Since the numbers are in between 4000 and 9000, the first digit must be 4, 5,
+          6, 7, or 8. There are 5 ways to choose the first digit. Since the numbers must
+          be odd, the last digit must be 1, 3, 5, 7, or 9. If the first digit is 4, 6, or
+          8, there are 5 ways to choose the last digit. If the first digit is 5 or 7,
+          there are 4 ways to choose the last digit. Thus, there are $3 \times 5 + 2
+            \times 4 = 23$ ways to choose the first and the last digit. For the other 2
+          digits, there are $\permtwo[8]{2} = 56$ ways to choose them. Thus, there are
+          $23 \cdot 56 = 1288$ odd numbers in between 4000 and 9000 that can be formed
+          from the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+
+    \item How many 4 digit numbers with exactly 2 repeated digits are there if the digits
+          are chosen from 1, 2, 3, 4, 5 while the digits can be chosen more than once?
+          \sol{}
+
+          There are 3 distinct digits in the numbers. First, choose the digit that occurs
+          twice. There are 5 ways to choose the digits. Then, choose the other 2 digits.
+          There are $\perm[3]{2}$ ways to choose them. Since the digits can switch
+          places, there are $\frac{4!}{2!1!1!} = 12$ ways to arrange the 4 digits. Thus,
+          there are $5 \cdot \permtwo[3]{2} \cdot 12 = 360$ 4 digit numbers with exactly
+          2 repeated digits.
 
     \item From the class committee of 10 members, at least 2 members, at most 8 members
           are to be chosen as representatives to attend a forum. How many ways are there
-          to choose the representatives?
+          to choose the representatives? \sol{}
 
-    \item A team of at least 2 engineers and 1 technician is to be formed from 5
-          engineers and 4 technicians. How many ways are there to form the team?
+          If two members are chosen, there are $\comb[10]{2} = 45$ ways to choose the
+          representatives.
+
+          If three members are chosen, there are $\comb[10]{3} = 120$ ways to choose the
+          representatives.
+
+          \vdots
+
+          If eight members are chosen, there are $\comb[10]{8} = 45$ ways to choose the
+          representatives.
+
+          Thus, there are $\comb[10]{2} + \comb[10]{3} + \comb[10]{4} + \comb[10]{5} +
+            \comb[10]{6} + \comb[10]{7} + \comb[10]{8} = 45 + 120 + 210 + 252 + 210 + 120 +
+            45 = 1002$ representatives.
+
+    \item A 4 members team of at least 2 engineers and 1 technician is to be formed from
+          5 engineers and 4 technicians. How many ways are there to form the team? \sol{}
+
+          According to the question, team with no engineers or only one engineer is not a
+          valid team. Also, a team with no technicians is not a valid team as well.
+
+          With no criteria given, there are $\comb[9]{4} = 126$ ways to form the team.
+
+          If the team has no engineers, there are $\comb[4]{4}$ ways to form the team.
+
+          If the team has only one engineer, there are $\comb[5]{1} \cdot \comb[4]{3}$
+          ways to form the team.
+
+          If the team has no technicians, there are $\comb[5]{4}$ ways to form the team.
+
+          Therefore, there are $\comb[9]{4} - \comb[4]{4} - \comb[5]{1} \cdot \comb[4]{3}
+            - \comb[5]{4} = 126 - 1 - 20 - 5 = 100$ ways to form the team.
 
     \item 9 different books are to be distributed to 3 people $A$, $B$ and $C$. With the following conditions, how many ways are there to distribute the books?
           \begin{enumerate}
-            \item Each people get 3 books.
+            \item Each people get 3 books. \sol{}
+
+                  First, choose three books to give to $A$. There are $\comb[9]{3}$ ways to do
+                  so.
+
+                  Then, choose three books from the remaining 6 books to give to $B$. There are
+                  $\comb[6]{3}$ ways to do so.
+
+                  Finally, choose three books from the remaining 3 books to give to $C$. There
+                  are $\comb[3]{3}$ ways to do so.
+
+                  Thus, there are $\comb[9]{3} \cdot \comb[6]{3} \cdot \comb[3]{3} = 1680$ ways
+                  to distribute the books.
+
             \item $A$ gets 2 books, $B$ gets 3 books, $C$ gets 4 books.
+                  \sol{}
+
+                  First, choose two books to give to $A$. There are $\comb[9]{2}$ ways to do so.
+
+                  Then, choose three books from the remaining 7 books to give to $B$. There are
+                  $\comb[7]{3}$ ways to do so.
+
+                  Finally, choose four books from the remaining 4 books to give to $C$. There are
+                  $\comb[4]{4}$ ways to do so.
+
+                  Thus, there are $\comb[9]{2} \cdot \comb[7]{3} \cdot \comb[4]{4} = 1260$ ways
+                  to distribute the books.
+
             \item One people get 2 books, one people get 3 books and one people get 4 books.
-            \item Seperated into 3 groups, each group has 3 books.
+                  \sol{}
+
+                  First, make a pile of two books. There are $\comb[9]{2}$ ways to do so.
+
+                  Then, make a pile of three books from the remaining 7 books. There are
+                  $\comb[7]{3}$ ways to do so.
+
+                  Finally, make a pile of four books from the remaining 4 books. There are
+                  $\comb[4]{4}$ ways to do so.
+
+                  Since the piles can be distributed to any of the three people, there are $3!$
+                  ways to distribute the piles.
+
+                  Thus, there are $\comb[9]{2} \cdot \comb[7]{3} \cdot \comb[4]{4} \cdot 3! =
+                    7560$ ways to distribute the books.
+
+            \item Seperated into 3 groups, each group has 3 books. \sol{}
+
+                  First, choose three books to give to the first group. There are $\comb[9]{3}$
+                  ways to do so.
+
+                  Then, choose three books from the remaining 6 books to give to the second
+                  group. There are $\comb[6]{3}$ ways to do so.
+
+                  Finally, choose three books from the remaining 3 books to give to the third
+                  group. There are $\comb[3]{3}$ ways to do so.
+
+                  Since the groups can be seperated in any order, there are $3!$ ways to do so.
+
+                  Thus, there are $\frac{\comb[9]{3} \cdot \comb[6]{3} \cdot \comb[3]{3}}{3!} =
+                    \frac{1680}{3!} = 280$ ways to distribute the books.
           \end{enumerate}
   \end{enumerate}
 
