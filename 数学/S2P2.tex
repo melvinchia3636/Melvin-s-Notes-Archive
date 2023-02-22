@@ -6590,7 +6590,7 @@
   \begin{cequation}
     n(n-1)(n-2) \cdots (n-r+1)
   \end{cequation}
-  Threrefore, there are $n(n-1)(n-2) \cdots (n-r+1)$ ways to arrange $r$ elements, and this denoted as $\perm[n]{r}$, $\permtwo[n]{r}$, or $P^n_r$.
+  Threrefore, there are $n(n-1)(n-2) \cdots (n-r+1)$ ways to arrange $r$ elements, and this denoted as $\permtwo[n]{r}$, $\permtwo[n]{r}$, or $P^n_r$.
   \begin{cequation}
     \permtwo[n]{r} = n(n-1)(n-2) \cdots (n-r+1)
   \end{cequation}
@@ -7080,7 +7080,7 @@
           With no criteria on the arrangement of the examinations, there are
           $\permtwo[7]{7} = 7!$ ways to arrange the 7 subjects.
 
-          Therefore, there are $\perm[7]{7} - \permtwo[6]{6} \cdot 2! = 5040 - 1440 =
+          Therefore, there are $\permtwo[7]{7} - \permtwo[6]{6} \cdot 2! = 5040 - 1440 =
             3600$ ways to arrange the 7 subjects such that two of which are not arranged to
           be held on two consecutive days.
 
@@ -7671,8 +7671,8 @@
 
           There are one car with two people, so there are $\comb[5]{2} = 10$ ways of
           distribution. For these 3 people and one group of 2 people, there are
-          $\perm[4]{4} = 4! = 24$ ways of distribution. Hence, there are $10 \cdot 24 =
-            240$ ways of distributing the 5 people into 4 cars.
+          $\permtwo[4]{4} = 4! = 24$ ways of distribution. Hence, there are $10 \cdot 24
+            = 240$ ways of distributing the 5 people into 4 cars.
 
   \end{enumerate}
 
@@ -7765,32 +7765,90 @@
           \setlength{\abovedisplayskip}{\baselineskip} \setlength{\abovedisplayshortskip}{\baselineskip}
 
     \item There are 17 teams participating in a football competition. If each team plays
-          against every other team, how many matches are there?
+          against every other team, how many matches are there? \sol{}
 
-    \item How many diagonal lines can be drawn in a convex nonagon?
+          Choosing two teams from 17 teams. There are $\comb[17]{2} = 136$ ways of
+          matching.
+
+    \item How many diagonals can be drawn in a convex nonagon? \sol{}
+
+          There are 9 vertices in a nonagon. Since the diagonals do not include the 9
+          sides of the nonagon, there are $\comb[9]{2} - 9 = 36 - 9 = 27$ diagonals in a
+          nonagon.
 
     \item There are 6 students on duty in a class, 1 student is in charge of cleaning the
-          whiteboard, one is in charge of cleaning the rubbish bin, 2 students are in
+          whiteboard, 1 is in charge of cleaning the rubbish bin, 2 students are in
           charge of sweeping the floor and 2 students are in charge of arranging the
           desks. How many ways are there to distribute the 6 students into the 4 jobs?
+          \sol{}
+
+          To choose 1 from 6 students for cleaning the whiteboard, there are $\comb[6]{1}
+            = 6$ ways. To choose 1 from 5 students for cleaning the rubbish bin, there are
+          $\comb[5]{1} = 5$ ways. To choose 2 from 4 students for sweeping the floor,
+          there are $\comb[4]{2} = 6$ ways. The two students left will be in charge of
+          arranging the desks. Therefore, there are $\comb[6]{1} \cdot \comb[5]{1} \cdot
+            \comb[4]{2} = 6 \cdot 5 \cdot 6 = 180$ ways to distribute the 6 students into
+          the 4 jobs.
 
     \item 4 people are to be choosen from 5 couples, where each couple cannot be chosen together. How many ways are there to choose the 4 people?
+          \sol{}
+
+          Choosing 4 people from 10 people or 5 couples with no restriction, there are
+          $\comb[10]{4}$ ways. Choosing 4 people with at least one couple, there are
+          $\comb[5]{1} \cdot \comb[8]{2}$ ways. Choosing 4 people with two couples, there
+          are $\comb[5]{2}$ ways. Therefore, using inclusion-exclusion principle, there
+          are $\comb[10]{4} - \comb[5]{1} \cdot \comb[8]{2} + \comb[5]{2} = 210 - 140 +
+            10 = 80$ ways to choose 4 people from 5 couples where each couple cannot be
+          chosen together.
 
     \item Three signal flags are to be chosen from 6 flags, one of which is red, two of
           which are yellow and the rest are blue. How many ways are there to choose the 3
-          flags?
+          flags? \sol{}
+
+          Choosing 1 flag from each color, there are $\comb[1]{1} \cdot \comb[2]{1} \cdot
+            \comb[3]{1} = 6$ ways. Choosing 1 red and 2 yellow, there are $1 \cdot
+            \comb[2]{2} = 1$ ways. Choosing 1 red and 2 blue, there are $1 \cdot
+            \comb[3]{2} = 3$ ways. Choosing 2 yellow and 1 blue, there are $\comb[2]{2}
+            \cdot 1 = 2$ ways. Choosing 1 yellow and 2 blue, there are $\comb[2]{1} \cdot
+            \comb[3]{2} = 6$ ways. Choosing 3 blue, there are $\comb[3]{3} = 1$ way.
+          Therefore, there are $6 + 1 + 3 + 2 + 6 + 1 = 19$ ways to choose 3 flags from 6
+          flags.
 
     \item A delegation with 6 members is to be formed from 9 students who major in
           Mathematics and 4 students who major in Education. With the following criteria,
           how many ways are there to form the delegation?
           \begin{enumerate}
-            \item There are exactly two students who major in Education.
-            \item There are at least two students who major in Education.
+            \item There are exactly two students who major in Education. \sol{}
+
+                  Choose 2 from 4 students who major in Education, there are $\comb[4]{2}$ ways.
+                  Choose the other 4 students from 9 students who major in Mathematics, there are
+                  $\comb[9]{4}$ ways. Therefore, there are $\comb[4]{2} \cdot \comb[9]{4} = 6
+                    \cdot 126 = 756$ ways to form the delegation.
+
+            \item There are at least two students who major in Education. \sol{}
+
+                  According to the critera, the combination of less than two students who major
+                  in Education is not allowed. There are a total of $\comb[13]{6}$ ways to form
+                  the delegation with no restriction, and there are $\comb[9]{6}$ ways to form
+                  the delegation with no Education major, $\comb[4]{1} \cdot \comb[9]{5}$ ways to
+                  form the delegation with one Education major. Therefore, there are
+                  $\comb[13]{6} - \comb[9]{6} - \comb[4]{1} \cdot \comb[9]{5} = 1716 - 84 - 504 =
+                    1118$ ways to form the delegation with at least two Education majors.
+
           \end{enumerate}
 
-    \item Seperate 14 students evenly into 2 groups, how many ways are there to do so?
+    \item Separate 14 students evenly into 2 groups, how many ways are there to do so?
           How many ways are there to seperate these 14 students evenly into two
-          classrooms?
+          classrooms? \sol{}
+
+          Choose 7 students from 14 students to form a group, there are $\comb[14]{7}$
+          ways. Since the order of the groups does not matter, there are
+          $\frac{\comb[14]{7}}{2!} = \frac{3432}{2} = 1716$ ways of seperating 14
+          students evenly into 2 groups.
+
+          If the 14 students are to be seperated into two classrooms, since the these two
+          groups of stuents can switch classrooms, there are $1716 \cdot 2! = 3432$ ways
+          to do so.
 
   \end{enumerate}
 
@@ -7800,40 +7858,150 @@
     \item Evaluate the following:
           \begin{enumerate}
             \item $\frac{7!}{3!4!} + \frac{7!}{2!5!}$
-            \item $\frac{\perm[11]{5} + \perm[11]{4}}{\perm[12]{5} + \perm[12]{4}}$
+                  \sol{}
+                  \begin{flalign*}
+                    \frac{7!}{3!4!} + \frac{7!}{2!5!} & = \frac{7 \cdot 6 \cdot 5!}{6 \cdot 24} + \frac{7 \cdot 6 \cdot 5!}{2 \cdot 120} \\
+                                                      & = \frac{7 \cdot 5!}{24} + \frac{7 \cdot 5!}{40}                                  \\
+                                                      & = \frac{7 \cdot 120}{24} + \frac{7 \cdot 120}{40}                                \\
+                                                      & = 7 \cdot 5 + 7 \cdot 3                                                          \\
+                                                      & = 35 + 21                                                                        \\
+                                                      & = 56
+                  \end{flalign*}
+
+            \item $\frac{\permtwo[11]{5} + \permtwo[11]{4}}{\permtwo[12]{5} + \permtwo[12]{4}}$\\
+                  \sol{}
+                  \begin{flalign*}
+                    \frac{\permtwo[11]{5} + \permtwo[11]{4}}{\permtwo[12]{5} + \permtwo[12]{4}} & = \frac{\frac{11!}{(11-5)!} + \frac{11!}{(11-4)!}}{\frac{12!}{(12-5)!} + \frac{12!}{(12-4)!}} \\
+                                                                                                & = \frac{\frac{11!}{6!} + \frac{11!}{7!}}{\frac{12!}{7!} + \frac{12!}{8!}}                     \\
+                                                                                                & = \frac{\frac{11!(6!+7!)}{6!7!}}{\frac{12!(7!+8!)}{7!8!}}                                     \\
+                                                                                                & = \frac{11!(6!+7!)}{6!7!} \cdot \frac{7!8!}{12!(7!+8!)}                                       \\
+                                                                                                & = \frac{11!(6!+7!)}{6!} \cdot \frac{8 \cdot 7 \cdot 6!}{12!(7!+8!)}                           \\
+                                                                                                & = \frac{56 \cdot 11!(6!+7!)}{12 \cdot 11!(7!+8!)}                                             \\
+                                                                                                & = \frac{14(6!+7!)}{3(7!+8!)}                                                                  \\
+                                                                                                & = \frac{14(6!+7 \cdot 6!)}{3(7!+8 \cdot 7!)}                                                  \\
+                                                                                                & = \frac{14\cdot 6! \cdot 8}{3 \cdot 7! \cdot 9}                                               \\
+                                                                                                & = \frac{14\cdot 6! \cdot 8}{3 \cdot 7 \cdot 6! \cdot 9}                                       \\
+                                                                                                & = \frac{14 \cdot 8}{3 \cdot 7 \cdot 9}                                                        \\
+                                                                                                & = \frac{2 \cdot 8}{3 \cdot 9}                                                                 \\
+                                                                                                & = \frac{16}{27}                                                                               \\
+                  \end{flalign*}
           \end{enumerate}
 
-    \item If $\frac{(n+6)!}{(n+4)!} = 18(n+1)$, find the value of $n$.
+    \item If $\frac{(n+6)!}{(n+4)!} = 18(n+1)$, find the value of $n$. \sol{}
+          \begin{flalign*}
+            \frac{(n+6)!}{(n+4)!}                             & = 18(n+1)  \\
+            \frac{(n+6)(n+5)(n+4)!}{(n+4)!}                   & = 18(n+1)  \\
+            (n+6)(n+5)                                        & = 18(n+1)  \\
+            n^2 + 11n + 30                                    & = 18n + 18 \\
+            n^2 -7n + 12                                      & = 0        \\
+            (n-3)(n-4)                                        & = 0        \\
+            n                               = 3 \text{ or } n & = 4
+          \end{flalign*}
 
-    \item Assume that $\comb[2n]{3}:\comb[n]{2} = 44:3$, find the value of $n$.
+    \item Assume that $\comb[2n]{3}:\comb[n]{2} = 44:3$, find the value of $n$. \sol{}
+          \begin{flalign*}
+            \comb[2n]{3}:\comb[n]{2}                                     & = 44:3         & \\
+            \frac{\comb[2n]{3}}{\comb[n]{2}}                             & = \frac{44}{3}   \\
+            \frac{(2n!)}{3!(2n-3)!} \cdot \frac{2!(n-2)!}{n!}            & = \frac{44}{3}   \\
+            \frac{(2n!)}{6(2n-3)!} \cdot \frac{2(n-2)!}{n!}              & = \frac{44}{3}   \\
+            \frac{(2n!)}{3(2n-3)!} \cdot \frac{(n-2)!}{n!}               & = \frac{44}{3}   \\
+            \frac{(2n!)}{(2n-3)!} \cdot \frac{(n-2)!}{n!}                & = 44             \\
+            \frac{(2n!)}{(2n-3)!} \cdot \frac{(n-2)!}{n(n-1)(n-2)!}      & = 44             \\
+            \frac{2n(2n-1)(2n-2)(2n-3)!}{(2n-3)!} \cdot \frac{1}{n(n-1)} & = 44             \\
+            \frac{4n(2n-1)(n-1)}{n(n-1)}                                 & = 44             \\
+            4(2n-1)                                                      & = 44             \\
+            2n - 1                                                       & = 11             \\
+            2n                                                           & = 12             \\
+            n                                                            & = 6
+          \end{flalign*}
 
     \item All the letters from the word \textit{TRIANGLE} are to be arranged. How many
           ways of arrangements are there such that the vowels are all seperated from each
-          other?
+          other? \sol{}
 
-    \item One vowel and one consonant are to be chosen from the word \textit{TRIANGLE} to
-          form a word. How many ways are there to do so?
+          First, arrange the consonants. There are $\permtwo[5]{5} = 5!$ ways to do so.
+          Then, put the vowels in the beginning of the word, the end of the word, or in
+          between the consonants. There are $\permtwo[6]{3}$ ways to do so. Thus, there
+          are $\permtwo[6]{3} \cdot 5! = 120 \cdot 120 = 14400$ ways to arrange the
+          letters.
+
+    \item One vowel and one consonant are to be chosen from the word \textit{VOLUME} to
+          form a word. How many ways are there to do so? \sol{}
+
+          There are 3 consonants and 3 vowels. Pick one from each of them, there are 9
+          ways. Since the consonant and vowel can be chosen in any order, there are $9
+            \cdot 2 = 18$ ways.
 
     \item A basketball coach wants to choose two vanguards from four shooters, one center
-          from two tall players, and two defender from four ball handlers. How many ways
-          are there to form a team?
+          from two tall players, and two defenders from four ball handlers. How many ways
+          are there to form a team? \sol{}
+
+          There are $\comb{4}{2} = 6$ ways to choose two vanguards, $\comb{2}{1} = 2$
+          ways to choose one center, and $\comb{4}{2} = 6$ ways to choose two defenders.
+          Thus, there are $6 \cdot 2 \cdot 6 = 72$ ways to form a team.
 
     \item A committee must be formed by one lawyer, two engineers and two doctors chosen
           from 3 lawyers, 6 engineers and 7 doctors. How many ways are there to form the
-          committee?
+          committee? \sol{}
 
-    \item  There is one of each note of the following value: \$1, \$2, \$5, \$10, \$20,
-          \$50, \$100. How many distinct values of currency can be made from these notes?
+          There are $\comb{3}{1} = 3$ ways to choose one lawyer, $\comb{6}{2} = 15$ ways
+          to choose two engineers, and $\comb{7}{2} = 21$ ways to choose two doctors.
+          Thus, there are $3 \cdot 15 \cdot 21 = 945$ ways to form the committee.
+
+    \item  There is one of each note of the following value: \$1, \$5, \$10, \$20, \$50,
+          \$100. How many distinct values of currency can be made from these notes?
+
+          \sol{}
+
+          Pick one note, there are $\comb{6}{1} = 6$ ways to do so.
+
+          Pick two notes, there are $\comb{6}{2} = 15$ ways to do so.
+
+          \vdots
+
+          Pick six notes, there are $\comb{6}{6} = 1$ way to do so.
+
+          Thus, there are $6 + 15 + 20 + 15 + 6 + 1 = 63$ distinct values of currency
+          that can be made from these notes.
 
     \item There are 4 different history books, 5 different geography books and 3
           different literature books on the shelf. If they are to be arranged in a row,
           how many ways are there to arrange them such that books of the same subject are
           arranged together?
 
+          \sol{}
+
+          There are $\permtwo[4]{4} = 4!$ ways to arrange the history books.
+
+          There are $\permtwo[5]{5} = 5!$ ways to arrange the geography books.
+
+          There are $\permtwo[3]{3} = 3!$ ways to arrange the literature books.
+
+          Since the books of each subject can be arranged in any order, there are $3!
+            \cdot 4! \cdot 5! \cdot 3! = 6 \cdot 24 \cdot 120 \cdot 6 = 103680$ ways to
+          arrange the books.
+
     \item 6 characters from 10 different characters $A$, $B$, $C$, $D$, $E$, and 0, 1, 2, 3, 4 are to be chosen to form a password. How many password can be formed such that there are no repeated characters and the password does not start with 0?
+          \sol{}
+
+          Since the first character cannot be 0, there are 9 ways to choose the first
+          character. Since there are 2 categories of characters: alphabets and digits,
+          there are $\frac{\permtwo[10]{5}}{2}$ ways to choose the remaining 5
+          characters. Thus, there are $9 \cdot \frac{\permtwo[10]{5}}{2} = 9 \cdot 151020
+            = 136080$ passwords that can be formed.
 
     \item How many 7 digit even numbers can be formed from full permutations of the
           digits 0, 1, 2, 3, 4, 5, 6? How many multiple of 10 are there in these numbers?
+          \sol{}
+
+          Since the first digit cannot be 0, there are 6 ways to choose the first digit,
+          3 even and 3 odd. Since the number must be even, the last digit must be 2, 4,
+          6, or 0. If the first digit is even, there are 3 ways to choose the last digit.
+          If the first digit is odd, there are 4 ways to choose the last digit. Thus,
+          there are $3 \times 3 + 3 \times 4 = 21$ ways to choose the first and the last
+          digit. For the other 5 digits, there are $\permtwo[5]{5} = 5!$ ways to choose
+          them. Thus, there are $21 \cdot 5! = 21 \cdot 120 = 2520$ 7 digit even numbers that
+          can be formed.
 
     \item How many permutations of all the characters in the word "fei li wu shi, fei li
           wu ting" are there?
@@ -7898,20 +8066,20 @@
   Using the knowledge of permutation and combination, we can get the coefficient
   of each term in the expansion:
 
-  In the 4 brackets, if no $b$ is chosen, then there are $\perm[4]{0}$ ways to do
-  so, therefore the coefficient of $a^4$ is $\perm[4]{0}$.
+  In the 4 brackets, if no $b$ is chosen, then there are $\permtwo[4]{0}$ ways to
+  do so, therefore the coefficient of $a^4$ is $\permtwo[4]{0}$.
 
-  In the 4 brackets, if 1 $b$ is chosen, then there are $\perm[4]{1}$ ways to do
-  so, therefore the coefficient of $a^3b$ is $\perm[4]{1}$.
+  In the 4 brackets, if 1 $b$ is chosen, then there are $\permtwo[4]{1}$ ways to
+  do so, therefore the coefficient of $a^3b$ is $\permtwo[4]{1}$.
 
-  In the 4 brackets, if 2 $b$ is chosen, then there are $\perm[4]{2}$ ways to do
-  so, therefore the coefficient of $a^2b^2$ is $\perm[4]{2}$.
+  In the 4 brackets, if 2 $b$ is chosen, then there are $\permtwo[4]{2}$ ways to
+  do so, therefore the coefficient of $a^2b^2$ is $\permtwo[4]{2}$.
 
-  In the 4 brackets, if 3 $b$ is chosen, then there are $\perm[4]{3}$ ways to do
-  so, therefore the coefficient of $ab^3$ is $\perm[4]{3}$.
+  In the 4 brackets, if 3 $b$ is chosen, then there are $\permtwo[4]{3}$ ways to
+  do so, therefore the coefficient of $ab^3$ is $\permtwo[4]{3}$.
 
-  In the 4 brackets, if all 4 $b$ is chosen, then there are $\perm[4]{4}$ ways to
-  do so, therefore the coefficient of $b^4$ is $\perm[4]{4}$.
+  In the 4 brackets, if all 4 $b$ is chosen, then there are $\permtwo[4]{4}$ ways
+  to do so, therefore the coefficient of $b^4$ is $\permtwo[4]{4}$.
 
   Therefore, $(a+b)^4 = \comb[4]{0}a^4 + \comb[4]{1}a^3b + \comb[4]{2}a^2b^2 +
     \comb[4]{3}ab^3 + \comb[4]{4}b^4$.
