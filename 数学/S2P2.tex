@@ -8703,13 +8703,31 @@
   \subsection{Practice 1}
 
   \begin{enumerate}
-    \item Write down the sample space of throwing two coins once.
+    \item Write down the sample space of throwing two coins once. \sol{}
 
-    \item Write down the sample space of rolling a die once.
+          Let $H$ and $T$ denote head and tail, respectively.
+
+          \includegraphics[width=0.43\textwidth]{./assets/prac1_1}
+          \begin{flalign*}
+            S = \left\{(H, H), (H, T), (T, H), (T, T)\right\}
+          \end{flalign*}
+
+    \item Write down the sample space of rolling a die once. \sol{}
+          \begin{flalign*}
+            S = \left\{1, 2, 3, 4, 5, 6\right\}
+          \end{flalign*}
 
     \item Select any number from 0, 1, $\cdots$, 9, and write down its sample space.
+          \sol{}
+          \begin{flalign*}
+            S = \left\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\right\}
+          \end{flalign*}
 
-    \item Write down the sample space of throwing a coin three times.
+    \item Write down the sample space of throwing a coin three times. \sol{}
+          \begin{flalign*}
+            S = & \left\{(H, H, H), (H, H, T), (H, T, H), (H, T, T),\right. & \\
+                & \left.(T, H, H), (T, H, T), (T, T, H), (T, T, T)\right\}
+          \end{flalign*}
   \end{enumerate}
 
   Within a trial, the set of a few sample points, that is, a subset of the sample
@@ -8756,17 +8774,41 @@
 
   Express the following events in set notation (1 to 4):
   \begin{enumerate}
-    \item Throwing a dice, event $A = $ "showing a prime number dice points".
+    \item Throwing a dice, event $A = $ "showing a prime number dice points". \sol{}
+          \begin{flalign*}
+            A = \left\{2, 3, 5\right\}
+          \end{flalign*}
 
-    \item Throwing three dices, event $B = $ "total dice points less than 6".
+    \item Throwing three dices, event $B = $ "total dice points less than 6". \sol{}
+          \begin{flalign*}
+            B = & \left\{(1, 1, 1), (1, 1, 2), (1, 1, 3), (1, 2, 1),\right. \\
+                & \left.(1, 2, 2), (1, 3, 1), (2, 1, 1), (2, 1, 2),\right.  \\
+                & \left.(2, 2, 1), (3, 1, 1)\right\}
+          \end{flalign*}
 
     \item Tossing two coins once, event $K = $ "showing exactly one head", event $L = $
-          "showing at least one head", event $M = $ "showing at most one head".
+          "showing at least one head", event $M = $ "showing at most one head". \sol{}
+
+          Let $H$ and $T$ denote head and tail, respectively.
+          \begin{flalign*}
+            K & = \left\{(H, T), (T, H)\right\}         \\
+            L & = \left\{(H, T), (T, H), (H, H)\right\} \\
+            M & = \left\{(H, T), (T, H), (T, T)\right\}
+          \end{flalign*}
 
     \item Tossing a coin three times:
           \begin{enumerate}
             \item $D = $ "get at least two heads".
+                  \sol{}
+                  \begin{flalign*}
+                    D & = \left\{(T, H, H), (H, T, H), (H, H, T), (H, H, H)\right\} &
+                  \end{flalign*}
+
             \item $E = $ "the number of heads is lesser than the number of tails".
+                  \sol{}
+                  \begin{flalign*}
+                    E & = \left\{(H, T, T), (T, H, T), (T, T, H), (T, T, T)\right\} &
+                  \end{flalign*}
           \end{enumerate}
   \end{enumerate}
 
@@ -8775,37 +8817,104 @@
   \begin{enumerate}
     \item Choose any two letters from the letters $K$, $O$, $T$, $A$, find:
           \begin{enumerate}
-            \item The sample space $S$.
-            \item Event $A = $ "one letter is a vovel, the other is a consonant".
-            \item Event $B = $ "both letters are vovels".'
-            \item Event $C = $ "at least one letter is a vovel".
+            \item The sample space $S$. \sol{}
+                  \begin{flalign*}
+                    S & = \left\{(K, O), (K, T), (K, A), (O, T), (O, A), (T, A)\right\} &
+                  \end{flalign*}
+
+            \item Event $A = $ "one letter is a vovel, the other is a consonant". \sol{}
+                  \begin{flalign*}
+                    A & = \left\{(K, O), (K, A), (O, T), (T, A)\right\} &
+                  \end{flalign*}
+
+            \item Event $B = $ "both letters are vovels".' \sol{}
+                  \begin{flalign*}
+                    B & = \left\{(O, A)\right\} &
+                  \end{flalign*}
+
+            \item Event $C = $ "at least one letter is a vovel". \sol{}
+                  \begin{flalign*}
+                    C & = \left\{(K, O), (K, A), (O, T), (O, A), (T, A)\right\} &
+                  \end{flalign*}
           \end{enumerate}
 
-    \item Throwing two dies, find the event where the sum of the dice points is a
-          multiple of 3.
+    \item Throwing two dices, find the event where the sum of the dice points is a
+          multiple of 3. \sol{}
+          \begin{flalign*}
+            S = & \left\{(1, 2), (2, 1), (3, 3), (4, 2), (2, 4), (5, 1), (1, 5),\right.   \\
+                & \left. (6, 3), (3, 6), (4, 5), (5, 4), (6, 6)\right\}                 &
+          \end{flalign*}
 
     \item Throwing three dices, find the event where the sum of the dice points is 15.
+          \sol{}
+          \begin{flalign*}
+            S = & \left\{(6, 6, 3), (6, 3, 6), (3, 6, 6), (6, 5, 4), (6, 4, 5),\right.   \\
+                & \left.(5, 6, 4), (5, 4, 6), (4, 6, 5), (4, 5, 6), (5, 5, 5)\right\}  &
+          \end{flalign*}
 
     \item Choose any two letters from the letters $A$, $B$, $C$, $D$, $E$ to form a row,
           find:
           \begin{enumerate}
-            \item The sample space $S$.
-            \item Event $M = $ "there are exactly one vowel".
+            \item The sample space $S$. \sol{}
+                  \begin{flalign*}
+                    S = & \left\{(A, B), (A, C), (A, D), (A, E), (B, A), (B, C),\right.   \\
+                        & \left.(B, D), (B, E), (C, A), (C, B), (C, D), (C, E), \right.   \\
+                        & \left.(D, A), (D, B), (D, C), (D, E), (E, A), (E, B), \right.   \\
+                        & \left.(E, C), (E, D)\right\}                                  &
+                  \end{flalign*}
+
+            \item Event $M = $ "there are exactly one vowel". \sol{}
+                  \begin{flalign*}
+                    M = & \left\{(A, B), (A, C), (A, D), (B, A), (B, E), \right.   \\
+                        & \left.(C, A), (C, E), (D, A), (D, E), (E, B), \right.    \\
+                        & \left.(E, C), (E, D)\right\}                           &
+                  \end{flalign*}
           \end{enumerate}
 
     \item Throwing three coins, find:
           \begin{enumerate}
-            \item The sample space $S$.
-            \item Event $A = $ "all coins show heads".
-            \item Event $B = $ "two coins show heads, one coin shows tail".
-            \item Event $C = $ "at least two coin shows heads".
+            \item The sample space $S$. \sol{}
+                  \begin{flalign*}
+                    S = & \left\{(H, H, H), (H, H, T), (H, T, H), (H, T, T), \right.   \\
+                        & \left.(T, H, H), (T, H, T), (T, T, H), (T, T, T)\right\}   &
+                  \end{flalign*}
+
+            \item Event $A = $ "all coins show heads". \sol{}
+                  \begin{flalign*}
+                    A = & \left\{(H, H, H)\right\} &
+                  \end{flalign*}
+
+            \item Event $B = $ "two coins show heads, one coin shows tail". \sol{}
+                  \begin{flalign*}
+                    B = & \left\{(H, H, T), (H, T, H), (T, H, H)\right\} &
+                  \end{flalign*}
+
+            \item Event $C = $ "at least two coin shows heads". \sol{}
+                  \begin{flalign*}
+                    C = & \left\{(H, H, H), (H, H, T), (H, T, H), (T, H, H)\right\} &
+                  \end{flalign*}
           \end{enumerate}
 
     \item Throwing two dices, express the following events in set notation:
           \begin{enumerate}
             \item $A = $ "the dice points of two dices are equal".
+                  \sol{}
+                  \begin{flalign*}
+                    A = & \left\{(1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6)\right\} &
+                  \end{flalign*}
+
             \item $B = $ "The dice points of one dice is twice the dice points of another".
+                  \sol{}
+                  \begin{flalign*}
+                    B = & \left\{(1, 2), (2, 1), (3, 6), (6, 3)\right\} &
+                  \end{flalign*}
+
             \item $C = $ "The sum of the dice points is a multiple of 5 or 6".
+                  \sol{}
+                  \begin{flalign*}
+                    C = & \left\{(1, 4), (4, 1), (2, 3), (3, 2), (2, 4), (4, 2), (3, 3) \right. & \\
+                        & \left.(5, 1), (1, 5), (6, 6), (6, 4), (4, 6), (5, 5) \right\}
+                  \end{flalign*}
           \end{enumerate}
   \end{enumerate}
 
@@ -8814,7 +8923,7 @@
   In this section, we'll cover two definitions of probability, the classical and
   the statistical definition.
 
-  \subsection*{Classical Definition of Probability}
+  \subsection*{Statistical Definition of Probability}
 
   Doing a trial numerous times in the same conditions, the frequency of an event
   will show a certain regularity. Let's discuss the following example of
@@ -8887,7 +8996,7 @@
           following events:
           \begin{enumerate}
             \item 2 type A blood, 2 type B blood
-            \item 2 type A blood, 1 type AB bloog, 1 type O blood
+            \item 2 type A blood, 1 type AB blood, 1 type O blood
             \item 1 for each type of blood.
           \end{enumerate}
 
