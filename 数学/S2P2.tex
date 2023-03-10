@@ -8988,23 +8988,72 @@
 
   \begin{enumerate}
     \item Randomly draw two cards from a deck of 52 poker cards, find the probability of
-          two "$K$" cards.
+          two "$K$" cards. \sol{}
+
+          $S =$ "Randomly draw two cards from a deck of 52 poker
+          cards", $n(S) = \comb[52]{2} = 1326$.
+
+          Let event $A =$ "Two "$K$" cards", $n(A) = \comb[4]{2} = 6$.
+
+          $P(A) = \frac{n(A)}{n(S)} = \frac{6}{1326} = \frac{1}{221}$.
 
     \item Between all students in a class, there are 13 students with type A blood, 10
           students with type B blood, 2 students with type AB blood, and 15 students with
           type O blood. If we randomly choose 4 students, find the probability of the
-          following events:
+          following events: \sol{}
+
+          $S =$ "Randomly choose 4 students", $n(S) = \comb[40]{4} = 91390$.
           \begin{enumerate}
             \item 2 type A blood, 2 type B blood
+                  \sol{}
+
+                  Let event $A =$ "2 type A blood, 2 type B blood", $n(A) = \comb[13]{2} \cdot
+                    \comb[10]{2} = 3510$.
+
+                  $P(A) = \frac{n(A)}{n(S)} = \frac{3510}{91390} = \frac{27}{703}$.
+
             \item 2 type A blood, 1 type AB blood, 1 type O blood
+                  \sol{}
+
+                  Let event $B =$ "2 type A blood, 1 type AB blood, 1 type O blood", $n(A) =
+                    \comb[13]{2} \cdot \comb[2]{1} \cdot \comb[15]{1} = 2340$.
+
+                  $P(B) = \frac{n(B)}{n(S)} = \frac{2340}{91390} = \frac{18}{703}$.
+
             \item 1 for each type of blood.
+                  \sol{}
+
+                  Let event $C =$ "1 for each type of blood", $n(C) = \comb[13]{1} \cdot
+                    \comb[10]{1} \cdot \comb[2]{1} \cdot \comb[15]{1} = 3900$.
+
+                  $P(C) = \frac{n(C)}{n(S)} = \frac{3900}{91390} = \frac{39}{703}$.
           \end{enumerate}
 
-    \item Casually arranging all the letters in the word \textit{GERMANY}, find the
-          probability of the following events:
+    \item Arranging all the letters in the word \textit{GERMANY}, find the probability of
+          the following events: \sol{}
+
+          $S =$ "Arranging all the letters in the word \textit{GERMANY}", $n(S) = 7!$.
+
           \begin{enumerate}
             \item 5 adjacent consonants
-            \item 5 non-adjacent consonants
+                  \sol{}
+
+                  Let event $A =$ "5 adjacent consonants".
+
+                  5 consonants can be treated as one letter, there are $3!$ ways to arrange 3 letters. All the consonants can switch their positions, so there are $5!$ ways to arrange 5 consonants.
+
+                  $n(A) = 3! \cdot 5!$.
+
+                  $P(A) = \frac{n(A)}{n(S)} = \frac{3! \cdot 5!}{7!} = \frac{1}{7}$.
+
+            \item 5 non fully adjacent consonants
+                  \sol{}
+
+                  Let event $B =$ "5 non fully adjacent consonants".
+
+                  $n(B) = n(S) - n(A) = 7! - 3! \cdot 5!$.
+
+                  $P(B) = \frac{n(B)}{n(S)} = \frac{7! - 3! \cdot 5!}{7!} = \frac{6}{7}$.
           \end{enumerate}
   \end{enumerate}
 
@@ -9012,62 +9061,213 @@
 
   \begin{enumerate}
     \item A bag contains 9 balls, of which 2 are white, 3 are red, and 4 are yellow.
-          Randomly drawing one ball, find the probability of the following events:
+          Randomly drawing one ball, find the probability of the following events: \sol{}
+
+          $S =$ "Randomly drawing one ball", $n(S) = \comb[9]{1}$.
+
           \begin{enumerate}
-            \item The ball drawn is red
-            \item The ball drawn is not red
-            \item The ball drawn is yellow
+            \item The ball drawn is red \sol{}
+
+                  Let event $A =$ "The ball drawn is red", $n(A) = \comb[3]{1}$.
+
+                  $P(A) = \frac{n(A)}{n(S)} = \frac{\comb[3]{1}}{\comb[9]{1}} = \frac{1}{3}$.
+
+            \item The ball drawn is not red \sol{}
+
+                  Let event $B =$ "The ball drawn is not red", $n(B) = n(S) - n(A) = \comb[9]{1}
+                    - \comb[3]{1}$.
+
+                  $P(B) = \frac{n(B)}{n(S)} = \frac{\comb[9]{1} - \comb[3]{1}}{9} = \frac{2}{3}$.
+
+            \item The ball drawn is yellow \sol{}
+
+                  Let event $C =$ "The ball drawn is yellow", $n(C) = \comb[4]{1}$.
+
+                  $P(C) = \frac{n(C)}{n(S)} = \frac{\comb[4]{1}}{\comb[9]{1}} = \frac{4}{9}$.
           \end{enumerate}
 
     \item A box contains 3 throat lozenges and 5 bubble gums. Randomly drawing two of
-          them, find the probability of getting two bubble gums.
+          them, find the probability of getting two bubble gums. \sol{}
+
+          $S =$ "Randomly drawing two candies, $n(S) = \comb[8]{2}$.
+
+          Let event $A =$ "Getting two bubble gums", $n(A) = \comb[5]{2}$.
+
+          $P(A) = \frac{n(A)}{n(S)} = \frac{\comb[5]{2}}{\comb[8]{2}} = \frac{5}{14}$.
 
     \item Randomly drawing 3 cards from a deck of 52 poker cards, find the probability of
-          getting 3 cards of spades.
+          getting 3 cards of spades. \sol{}
+
+          $S =$ "Randomly drawing 3 cards from a deck of 52 poker cards", $n(S) = \comb[52]{3}$.
+
+          Let event $A =$ "Getting 3 cards of spades", $n(A) = \comb[13]{3}$.
+
+          $P(A) = \frac{n(A)}{n(S)} = \frac{\comb[13]{3}}{\comb[52]{3}} = \frac{11}{850}$.
 
     \item There are 4 novels and 8 essay collections in a box. Randomly drawing 3 books
-          from the box, find the probability of the following events:
+          from the box, find the probability of the following events: \sol{}
+
+          $S =$ "Randomly drawing 3 books from the box", $n(S) = \comb[12]{3}$.
 
           \begin{enumerate}
-            \item All three books are novels
-            \item Two books of novels, one book of essay collection
-            \item All three books are essay collections
+            \item All three books are novels \sol{}
+
+                  Let event $A =$ "All three books are novels", $n(A) = \comb[4]{3}$.
+
+                  $P(A) = \frac{n(A)}{n(S)} = \frac{\comb[4]{3}}{\comb[12]{3}} = \frac{1}{55}$.
+
+            \item Two books of novels, one book of essay collection \sol{}
+
+                  Let event $B =$ "Two books of novels, one book of essay collection", $n(B) =
+                    \comb[4]{2} \cdot \comb[8]{1}$.
+
+                  $P(B) = \frac{n(B)}{n(S)} = \frac{\comb[4]{2} \cdot \comb[8]{1}}{\comb[12]{3}} = \frac{12}{55}$.
+
+            \item All three books are essay collections \sol{}
+
+                  Let event $C =$ "All three books are essay collections", $n(C) = \comb[8]{3}$.
+
+                  $P(C) = \frac{n(C)}{n(S)} = \frac{\comb[8]{3}}{\comb[12]{3}} = \frac{14}{55}$.
           \end{enumerate}
 
     \item A committee is to be formed by selecting 4 people from 6 males and 5 females.
-          Find the probability of the following events:
+          Find the probability of the following events: \sol{}
+
+          Let event $S =$ "Selecting 4 people from 11 people", $n(S) = \comb[11]{4}$.
 
           \begin{enumerate}
-            \item All 4 people are male
-            \item All 4 people are female
-            \item 2 people for each gender
+            \item All 4 people are male \sol{}
+
+                  Let event $A =$ "All 4 people are male", $n(A) = \comb[6]{4}$.
+
+                  $P(A) = \frac{n(A)}{n(S)} = \frac{\comb[6]{4}}{\comb[11]{4}} = \frac{1}{22}$.
+
+            \item All 4 people are female \sol{}
+
+                  Let event $B = $ "All 4 people are female", $n(B) = \comb[5]{4}$.
+
+                  $P(B) = \frac{n(B)}{n(S)} = \frac{\comb[5]{4}}{\comb[11]{4}} = \frac{1}{66}$.
+
+            \item 2 people from each gender
+                  \sol{}
+
+                  Let event $C =$ "2 people from each gender", $n(C) = \comb[6]{2} \cdot
+                    \comb[5]{2}$.
+
+                  $P(C) = \frac{n(C)}{n(S)} = \frac{\comb[6]{2} \cdot \comb[5]{2}}{\comb[11]{4}} = \frac{5}{11}$.
           \end{enumerate}
 
     \item Of 100 products, 95 are quality products, and 5 are defective products.
           Randomly drawing 2 products, find the probability of the following events:
+          \sol{}
+
+          $S =$ "Randomly drawing 2 products", $n(S) = \comb[100]{2}$.
 
           \begin{enumerate}
-            \item All 2 products are quality products
-            \item All 2 products are defective products
+            \item All 2 products are quality products \sol{}
+
+                  Let event $A =$ "All 2 products are quality products", $n(A) = \comb[95]{2}$.
+
+                  $P(A) = \frac{n(A)}{n(S)} = \frac{\comb[95]{2}}{\comb[100]{2}} = \frac{893}{990}$.
+
+            \item All 2 products are defective products \sol{}
+
+                  Let event $B =$ "All 2 products are defective products", $n(B) = \comb[5]{2}$.
+
+                  $P(B) = \frac{n(B)}{n(S)} = \frac{\comb[5]{2}}{\comb[100]{2}} = \frac{1}{495}$.
+
             \item 1 quality products, 1 defective product
+                  \sol{}
+
+                  Let event $C =$ "1 quality products, 1 defective product", $n(C) = \comb[95]{1}
+                    \cdot \comb[5]{1}$.
+
+                  $P(C) = \frac{n(C)}{n(S)} = \frac{\comb[95]{1} \cdot \comb[5]{1}}{\comb[100]{2}} = \frac{19}{198}$.
           \end{enumerate}
 
     \item Randomly choose 3 letters from the word \textit{TRIANGLE}, find the probability
-          of the following events:
+          of the following events: \sol{}
+
+          $S =$ "Randomly choose 3 letters from the word \textit{TRIANGLE}", $n(S) = \comb[8]{3}$.
+
           \begin{enumerate}
-            \item More vowels than consonants
-            \item More consonants than vowels
+            \item More vowels than consonants \sol{}
+
+                  Let event $A =$ "More vowels than consonants".
+
+                  Choose three vowels from the word \textit{TRIANGLE}, there are $\comb[3]{3}$
+                  ways to do so.
+
+                  Choose two vowels and one consonant from the word \textit{TRIANGLE}, there are
+                  $\comb[3]{2} \cdot \comb[5]{1}$ ways to do so.
+
+                  $n(A) = \comb[3]{3} + \comb[3]{2} \cdot \comb[5]{1}$.
+
+                  $P(A) = \frac{n(A)}{n(S)} = \frac{\comb[3]{3} + \comb[3]{2} \cdot \comb[5]{1}}{\comb[8]{3}} = \frac{2}{7}$.
+
+            \item More consonants than vowels \sol{}
+
+                  Let event $B =$ "More consonants than vowels".
+
+                  Choose three consonants from the word \textit{TRIANGLE}, there are
+                  $\comb[5]{3}$ ways to do so.
+
+                  Choose two consonants and one vowel from the word \textit{TRIANGLE}, there are
+                  $\comb[5]{2} \cdot \comb[3]{1}$ ways to do so.
+
+                  $n(B) = \comb[5]{3} + \comb[5]{2} \cdot \comb[3]{1}$.
+
+                  $P(B) = \frac{n(B)}{n(S)} = \frac{\comb[5]{3} + \comb[5]{2} \cdot \comb[3]{1}}{\comb[8]{3}} = \frac{5}{7}$.
           \end{enumerate}
 
     \item Tossing three dices at the same time once, find the probability of the sum of
-          dice points larger than 15.
+          dice points larger than 15. \sol{}
+
+          $S =$ "Tossing three dices at the same time once", $n(S) = 6^3 = 216$.
+
+          Let event $A =$ "The sum of dice points larger than 15".
+
+          $A = \{ (6, 6, 6), (6, 6, 5), (6, 5, 6), (6, 6, 5), (6, 6, 4), (6, 4, 6), $
+          $(4, 6, 6), (6, 5, 5), (5, 6, 5), (5, 5, 6)\}$.
+
+          $n(A) = 10$.
+
+          $P(A) = \frac{n(A)}{n(S)} = \frac{10}{216} = \frac{5}{108}$.
 
     \item Randomly shuffling each digits in 2233344455, find the probability of two 2s
           being adjacent to each other.
 
+          \sol{}
+
+          $S =$ "Randomly shuffling each digits in 2233344455", $n(S) = \frac{10!}{2! \cdot 3! \cdot 3! \cdot 2!} = 25200$.
+
+          Let event $A =$ "Two 2s being adjacent to each other".
+
+          Treat two 2s as a single 2, there are $\frac{9!}{1! \cdot 3! \cdot 3! \cdot 2!}
+            = 5040$ ways to do so.
+
+          $n(A) = 5040$.
+
+          $P(A) = \frac{n(A)}{n(S)} = \frac{5040}{25200} = \frac{1}{5}$.
+
     \item Randomly shuffling 5 cards that are assigned to 1, 2, 3, 4, 5 respectively and
-          putting them into a 5 digit number, find the probability of the number being an
-          even number.
+          arranging them into a 5 digit number, find the probability of the number being
+          an even number.
+
+          \sol{}
+
+          $S =$ "Randomly shuffling 5 cards that are assigned to 1, 2, 3, 4, 5 respectively"
+
+          $n(S) = 5!$.
+
+          Let event $A =$ "The number being an even number".
+
+          Since the number is even, the last digit must be 2 or 4. There are $2$ ways to
+          arrange it. For the other 4 digits, there are $4!$ ways to do arrange them.
+
+          $n(A) = 2 \cdot 4!$.
+
+          $P(A) = \frac{n(A)}{n(S)} = \frac{2 \cdot 4!}{5!} = \frac{2}{5}$.
   \end{enumerate}
 
   \section{Addition Rule}
@@ -9133,14 +9333,57 @@
 
   \begin{enumerate}
     \item A bag contains 5 cards each for the color red, blue and green. Randomly drawing
-          one card, find the probability of getting a red card or a yellow card.
+          one card, find the probability of getting a red card or a yellow card. \sol{}
+
+          Let event $A =$ "getting a red card", $P(A) = \frac{5}{15}$.
+
+          Let event $B =$ "getting a yellow card", $P(B) = \frac{5}{15}$.
+
+          $A \cup B =$ "getting a red card or a yellow card".
+
+          Since $A$ and $B$ are mutually exclusive,
+          \begin{flalign*}
+            \therefore\ P(A \cup B) & = P(A) + P(B)                   \\
+                                    & = \frac{5}{15} + \frac{5}{15} & \\
+                                    & = \frac{10}{15}                 \\
+                                    & = \frac{2}{3}
+          \end{flalign*}
 
     \item Drawing a card from a deck of 52 poker cards, find the probability of getting a
-          heart or number that is a multiple of 5.
+          heart or number that is a multiple of 5. \sol{}
 
-    \item Of a class of 45 students, 30 of them has visited Bali or Jakarta, of which 14
+          Let event $A =$ "getting a heart", $P(A) = \frac{13}{52}$.
+
+          Let event $B =$ "getting a number that is a multiple of 5", $P(B) =
+            \frac{8}{52}$.
+
+          $A \cup B =$ "getting a heart or a number that is a multiple of 5".
+
+          $A \cap B =$ "getting a heart that is also a number that is a multiple of 5", $P(A \cap B) = \frac{2}{52}$.
+          \begin{flalign*}
+            \therefore\ P(A \cup B) & = P(A) + P(B) - P(A \cap B)                   & \\
+                                    & = \frac{13}{52} + \frac{8}{52} - \frac{2}{52}   \\
+                                    & = \frac{19}{52}
+          \end{flalign*}
+
+    \item Of a class of 45 students, 20 of them has visited Bali or Jakarta, of which 14
           of them has visited Bali and 10 of them has visited Jakarta. Randomly choosing
           one student, find the probability of the student has visited both cities.
+          \sol{}
+
+          Let event $A =$ "visited Bali", $P(A) = \frac{14}{45}$.
+
+          Let event $B =$ "visited Jakarta", $P(B) = \frac{10}{45}$.
+
+          $A \cup B =$ "visited Bali or Jakarta", $P(A \cup B) = \frac{20}{45}$.
+
+          $A \cap B =$ "visited Bali and Jakarta".
+          \begin{flalign*}
+            P(A \cup B)             & = P(A) + P(B) - P(A \cap B)                     & \\
+            \therefore\ P(A \cap B) & = P(A \cup B) - P(A) - P(B)                       \\
+                                    & = \frac{20}{45} - \frac{14}{45} - \frac{10}{45}   \\
+                                    & = \frac{4}{45}
+          \end{flalign*}
   \end{enumerate}
 
   \subsection*{Complementary Events}
@@ -9169,10 +9412,41 @@
 
   \begin{enumerate}
     \item There are 22 boys and 23 girls in a class. Randomly picking 2 students from
-          them, find the probability of having at least one boy in these 2 people.
+          them, find the probability of having at least one boy in these 2 people. \sol{}
+
+          $S =$ "picking 2 students from the class".
+
+          $n(S) = \comb[45]{2} = 990$.
+
+          Let event $A =$ "Having at least one boy in these 2 people",
+
+          then $A' = $ "All people are girls".
+
+          $n(A') = \comb[23]{2} = 253$. $P(A') = \frac{23}{90}$.
+          \begin{flalign*}
+            \therefore\ P(A) & = 1 - P(A')         & \\
+                             & = 1 - \frac{23}{90}   \\
+                             & = \frac{67}{90}
+          \end{flalign*}
 
     \item In a lucky draw, there are 60 boxes, of which 5 of them contain a prize.
           Randomly picking 2 boxes, find the probability of getting at least one prize.
+          \sol{}
+
+          $S =$ "picking 2 boxes from the lucky draw".
+
+          $n(S) = \comb[60]{2} = 1770$.
+
+          Let event $A =$ "Getting at least one prize",
+
+          then $A' = $ "Getting no prize".
+
+          $n(A') = \comb[55]{2} = 1485$. $P(A') = \frac{99}{118}$.
+          \begin{flalign*}
+            \therefore\ P(A) & = 1 - P(A')          & \\
+                             & = 1 - \frac{99}{118}   \\
+                             & = \frac{19}{118}
+          \end{flalign*}
   \end{enumerate}
 
   \subsection{Exercise 21.3}
@@ -9180,63 +9454,312 @@
   \begin{enumerate}
     \item There are 5 red balls, 6 yellow balls, and 8 black balls in a box. Randomly
           drawing one ball, find the probability of getting a red ball or a yellow ball.
+          \sol{}
+
+          Let event $A =$ "getting a red ball", $P(A) = \frac{5}{19}$.
+
+          Let event $B =$ "getting a yellow ball", $P(B) = \frac{6}{19}$.
+
+          $A \cup B =$ "getting a red ball or a yellow ball".
+
+          Since $A$ and $B$ are mutually exclusive events,
+          \begin{flalign*}
+            P(A \cup B) & = P(A) + P(B)                 & \\
+                        & = \frac{5}{19} + \frac{6}{19}   \\
+                        & = \frac{11}{19}
+          \end{flalign*}
 
     \item There are 18 different reference books on the shelf, of which 6 of them are
           Chinese and 5 of them are Maths, and the rest of them are Ecomoics. Randomly
           picking two books from the shelf, find the probability of getting at least one
-          Math book or one Chinese book.
+          Math book or one Chinese book. \sol{}
+
+          $S =$ "picking two books from the shelf".
+
+          $n(S) = \comb[18]{2} = 153$.
+
+          Let event $A =$ "getting one Math book or one Chinese book",
+
+          then $A' = $ "all two books are Economics books".
+
+          $n(A') = \comb[7]{2} = 21$. $P(A') = \frac{21}{153}$.
+          \begin{flalign*}
+            \therefore\ P(A) & = 1 - P(A')          & \\
+                             & = 1 - \frac{21}{153}   \\
+                             & = \frac{44}{153}
+          \end{flalign*}
 
     \item There are 15 shirts, 10 vests and 5 T-shirts on the rack. Randomly picking two
           clothes from the rack, find the probability of getting at least one T-shirt.
+          \sol{}
+
+          $S =$ "picking two clothes from the rack".
+
+          $n(S) = \comb[30]{2} = 435$.
+
+          Let event $A =$ "getting at least one T-shirt",
+
+          then $A' = $ "getting no T-shirt".
+
+          $n(A') = \comb[25]{2} = 300$. $P(A') = \frac{20}{29}$.
+          \begin{flalign*}
+            \therefore\ P(A) & = 1 - P(A')         & \\
+                             & = 1 - \frac{20}{29}   \\
+                             & = \frac{9}{29}
+          \end{flalign*}
 
     \item There are 50 prizes in a lucky draw, of which 1 of them is cash prize worth
           \$800, 2 of them are cash prize worth \$500, 5 of them are cash prize worth
           \$100, and the rest of them are bookshop vouchers worth \$10. One person make
-          two draws, find the probability of getting at least one cash prize.
+          two draws, find the probability of getting at least one cash prize. \sol{}
+
+          $S =$ "making two draws".
+
+          $n(S) = \comb[50]{2} = 1225$.
+
+          Let event $A =$ "getting at least one cash prize",
+
+          then $A' = $ "getting no cash prize".
+
+          $n(A') = \comb[42]{2} = 861$. $P(A') = \frac{123}{175}$.
+          \begin{flalign*}
+            \therefore\ P(A) & = 1 - P(A')           & \\
+                             & = 1 - \frac{123}{175}   \\
+                             & = \frac{52}{175}
+          \end{flalign*}
 
     \item There are 50 people doing a meeting in a classroom, of which 35 of them are
           students, 12 of them are parents, and 3 of them are teachers. Randomly picking
           one spokesperson, find the probability of the following events:
           \begin{enumerate}
-            \item The spokesperson is either a teacher or a student.
-            \item The spokesperson is either a teacher or a parent.
-            \item The spokesperson is either a student or a parent.
+            \item The spokesperson is either a teacher or a student. \sol{}
+
+                  Let event $A =$ "the spokesperson is a teacher", $P(A) = \frac{3}{50}$.
+
+                  Let event $B =$ "the spokesperson is a student", $P(B) = \frac{35}{50}$.
+
+                  $A \cup B =$ "the spokesperson is either a teacher or a student".
+
+                  Since $A$ and $B$ are mutually exclusive events,
+                  \begin{flalign*}
+                    P(A \cup B) & = P(A) + P(B)                  & \\
+                                & = \frac{3}{50} + \frac{35}{50}   \\
+                                & = \frac{19}{25}
+                  \end{flalign*}
+
+            \item The spokesperson is either a teacher or a parent. \sol{}
+
+                  Let event $A =$ "the spokesperson is a teacher", $P(A) = \frac{3}{50}$.
+
+                  Let event $B =$ "the spokesperson is a parent", $P(B) = \frac{12}{50}$.
+
+                  $A \cup B =$ "the spokesperson is either a teacher or a parent".
+
+                  Since $A$ and $B$ are mutually exclusive events,
+                  \begin{flalign*}
+                    P(A \cup B) & = P(A) + P(B)                  & \\
+                                & = \frac{3}{50} + \frac{12}{50}   \\
+                                & = \frac{3}{10}
+                  \end{flalign*}
+
+            \item The spokesperson is either a student or a parent. \sol{}
+
+                  Let event $A =$ "the spokesperson is a student", $P(A) = \frac{35}{50}$.
+
+                  Let event $B =$ "the spokesperson is a parent", $P(B) = \frac{12}{50}$.
+
+                  $A \cup B =$ "the spokesperson is either a student or a parent".
+
+                  Since $A$ and $B$ are mutually exclusive events,
+                  \begin{flalign*}
+                    P(A \cup B) & = P(A) + P(B)                   & \\
+                                & = \frac{35}{50} + \frac{12}{50}   \\
+                                & = \frac{47}{50}
+                  \end{flalign*}
           \end{enumerate}
 
     \item There are 100 lottery tickets, of which 3 of them are winning tickets. One
           person has bought 10 tickets, find the probability of the following events:
           \begin{enumerate}
-            \item All tickets are not winning tickets.
-            \item At least one ticket is a winning ticket.
+            \item All tickets are not winning tickets. \sol{}
+
+                  $S=$ "bought 10 tickets". $n(S) = \comb[100]{10}$.
+
+                  Let event $A =$ "all tickets are not winning tickets". $n(A) = \comb[97]{10}$.
+
+                  $P(A) = \frac{n(A)}{n(S)} = \frac{\comb[97]{10}}{\comb[100]{10}} = \frac{178}{245}$.
+
+            \item At least one ticket is a winning ticket. \sol{}
+
+                  Let event $B =$ "at least one ticket is a winning ticket",
+
+                  then $B' = $ "all tickets are not winning tickets".
+                  \begin{flalign*}
+                    P(B) & = 1 - P(B')           & \\
+                         & = 1 - \frac{178}{245}   \\
+                         & = \frac{67}{245}
+                  \end{flalign*}
           \end{enumerate}
 
     \item There are 11 out of 45 students in a class who have donated their blood before.
           Randomly picking three students, find the probability of the following events:
           \begin{enumerate}
-            \item All three students have donated their blood before.
-            \item All three students have never donated their blood before.
-            \item At least one student has donated his/her blood before.
+            \item All three students have donated their blood before. \sol{}
+
+                  $S =$ "picking three students". $n(S) = \comb[45]{3}$.
+
+                  Let event $A =$ "all three students have donated their blood before".
+
+                  $n(A) = \comb[11]{3}$.
+
+                  $P(A) = \frac{n(A)}{n(S)} = \frac{\comb[11]{3}}{\comb[45]{3}} = \frac{1}{86}$.
+
+            \item All three students have never donated their blood before. \sol{}
+
+                  Let $B =$ "all three students have never donated their blood before".
+
+                  $n(B) = \comb[34]{3}$.
+
+                  $P(B) = \frac{n(B)}{n(S)} = \frac{\comb[34]{3}}{\comb[45]{3}} = \frac{272}{645}$.
+
+            \item At least one student has donated his/her blood before. \sol{}
+
+                  Let $C =$ "at least one student has donated his/her blood before",
+
+                  then $C' =$ "all three students have never donated their blood before".
+                  \begin{flalign*}
+                    P(C) & = 1 - P(C')           & \\
+                         & = 1 - \frac{272}{645}   \\
+                         & = \frac{373}{645}
+                  \end{flalign*}
           \end{enumerate}
 
     \item Tossing two dices at the same time, find the probability of the sum of the dice
-          points being 9.
+          points being at least 9. \sol{}
+
+          $S =$ "tossing two dices". $n(S) = 6^2 = 36$.
+
+          Let event $A =$ "the sum of the dice points is at least 9".
+
+          $A = \{(3, 6), (4, 5), (5, 4), (6, 3), (5, 5), (6, 4), (4, 6), (6, 5), $
+          $(5, 6), (6, 6)\}$.
+
+          $n(A) = 10$.
+
+          $P(A) = \frac{n(A)}{n(S)} = \frac{10}{36} = \frac{5}{18}$.
 
     \item Continuously tossing a coin 5 times, find the probability of getting at least
-          one head.
+          one head.\sol{}
+
+          $S =$ "tossing a coin 5 times". $n(S) = 2^5 = 32$.
+
+          Let event $A =$ "getting at least one head",
+
+          then $A' =$ "getting no head".
+
+          $A' = \{(T, T, T, T, T)\}$.
+
+          $n(A') = 1$.
+
+          $P(A) = 1 - P(A') = 1 - \frac{1}{32} = \frac{31}{32}$.
 
     \item There are 7 red balls and 10 white balls in a box. Randomly drawing 3 balls,
-          find the probability of the following events:
+          find the probability of the following events: \sol{}
+
+          $S =$ "drawing 3 balls". $n(S) = \comb[17]{3}$.
 
           \begin{enumerate}
-            \item Getting at least one red ball.
-            \item Getting at least one white ball.
-            \item Getting at least two red balls.
+            \item Getting at least one red ball. \sol{}
+
+                  Let event $A =$ "getting at least one red ball",
+
+                  then $A' =$ "getting all white ball". $n(A') = \comb[10]{3}$. $P(A') =
+                    \frac{n(A')}{n(S)} = \frac{\comb[10]{3}}{\comb[17]{3}} = \frac{3}{17}$.
+                  \begin{flalign*}
+                    P(A) & = 1 - P(A')        & \\
+                         & = 1 - \frac{3}{17}   \\
+                         & = \frac{14}{17}
+                  \end{flalign*}
+
+            \item Getting at least one white ball. \sol{}
+
+                  Let event $B =$ "getting at least one white ball",
+
+                  then $B' =$ "getting all red ball". $n(B') = \comb[7]{3}$. $P(B') =
+                    \frac{n(B')}{n(S)} = \frac{\comb[7]{3}}{\comb[17]{3}} = \frac{7}{136}$.
+                  \begin{flalign*}
+                    P(B) & = 1 - P(B')         & \\
+                         & = 1 - \frac{7}{136}   \\
+                         & = \frac{129}{136}
+                  \end{flalign*}
+
+            \item Getting at least two red balls. \sol{}
+
+                  Let event $C =$ "getting at least two red balls",
+
+                  then $C' =$ "getting no red ball or only one red ball".
+
+                  Let event $D =$ "getting no red ball",
+
+                  then $D' =$ "getting at least one red ball" $=A$.
+                  \begin{flalign*}
+                    P(D) & = 1 - P(A)          & \\
+                         & = 1 - \frac{14}{17}   \\
+                         & = \frac{3}{17}
+                  \end{flalign*}
+
+                  Let event $E =$ "getting only one red ball", $n(E) = \comb[7]{1} \cdot
+                    \comb[10]{2}$.
+
+                  $P(E) = \frac{n(E)}{n(S)} = \frac{\comb[7]{1} \cdot \comb[10]{2}}{\comb[17]{3}} = \frac{63}{136}$.
+
+                  Since event $E$ and event $D$ are mutually exclusive,
+                  \begin{flalign*}
+                    P(C')            & = P(D) + P(E)                   & \\
+                                     & = \frac{3}{17} + \frac{63}{136}   \\
+                                     & = \frac{87}{136}                  \\
+                    \therefore\ P(C) & = 1 - P(C')                     & \\
+                                     & = 1 - \frac{87}{136}              \\
+                                     & = \frac{49}{136}
+                  \end{flalign*}
+
           \end{enumerate}
 
-    \item Tossing 3 dices once, find the probabily of hte following events:
+    \item Tossing 3 dices once, find the probabily of hte following events: \sol{}
+
+          $S =$ "tossing 3 dices". $n(S) = 6^3 = 216$.
+
           \begin{enumerate}
-            \item Exactly one dice shows 6.
-            \item Exactly one dice or all three dices show 1.
+            \item Exactly one dice shows 6. \sol{}
+
+                  Let event $A =$ "exactly one dice shows 6".
+
+                  There are $\comb[3]{1} = 3$ outcomes for one dice to shows 6. The other two
+                  dices show 1, 2, 3, 4, or 5, there are $5^2$ outcomes. The total number of
+                  outcomes is $3 5^2 \cdot = 75$.
+
+                  $P(A) = \frac{n(A)}{n(S)} = \frac{75}{216} = \frac{25}{72}$.
+
+            \item Exactly one dice or all three dices show 1. \sol{}
+
+                  Let event $B =$ "exactly one dice shows 1".
+
+                  There are $\comb[3]{1} = 3$ outcomes for one dice to shows 1. The other two
+                  dices show 2, 3, 4, 5, or 6, there are $5^2$ outcomes. The total number of
+                  outcomes is $3 5^2 = 75$.
+
+                  $P(B) = \frac{n(B)}{n(S)} = \frac{75}{216} = \frac{25}{72}$.
+
+                  Let event $C =$ "all three dices show 1". $n(C) = 1$.
+
+                  $P(C) = \frac{n(C)}{n(S)} = \frac{1}{216}$.
+
+                  Since event $B$ and event $C$ are mutually exclusive,
+                  \begin{flalign*}
+                    P(B \cup C) & = P(B) + P(C)                   & \\
+                                & = \frac{25}{72} + \frac{1}{216}   \\
+                                & = \frac{19}{54}
+                  \end{flalign*}
           \end{enumerate}
   \end{enumerate}
 
