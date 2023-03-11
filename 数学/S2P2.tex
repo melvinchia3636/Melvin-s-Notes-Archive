@@ -90,6 +90,38 @@
 
 \end{titlepage}
 
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction} \markboth{INTRODUCTION}{}
+
+\doublespacing{}
+\section*{Why this book?}
+
+Right after I finished my Senior 2 Part I, I kick started this book without any
+hesitation. Unlike the last book where I started the book without any knowledge
+about LaTex, this time I am able to finish the book in a month without having
+to spend too much time on the formatting. Since all the topics in this textbook
+are quite new to me, I decided to translate every single word on the textbook
+and include them in this book. In short, this is an English version of the
+textbook.
+
+\section*{Disclaimer}
+
+This book is just my own solution and notes to the textbook, all the solutions
+it is not guaranteed to be correct (trust me, there are a bunch of stupid
+mistakes), and there might be some missing stuff that I've forgotten to add
+into it. I am not responsible for any consequences caused by using this book.
+And please, don't copy my solutions, it's not going to help you in the long
+run.
+
+\section*{Acknowledgements}
+
+I would like to thank myself for wasting my entire month of holiday to complete
+this book. I would also like to thank my parents for sponsoring the printing of
+this book. Special thanks to Singapore National Library for providing me a cozy
+place to study.
+
+\singlespacing{}
+
 \doublespacing{}
 \tableofcontents
 \singlespacing{}
@@ -2418,7 +2450,7 @@
     Q_1 = L_1 + \left(\frac{\frac{n}{4} - F_1}{f_1}\right)C_1
   \end{cequation}
   \begin{cequation}
-    Q_2 = L_2 + \left(\frac{\frac{3n}{4} - F_2}{f_2}\right)C_2
+    Q_3 = L_3 + \left(\frac{\frac{3n}{4} - F_2}{f_2}\right)C_2
   \end{cequation}
 
   The difference between the upper and lower quartiles is called the
@@ -2905,7 +2937,7 @@
 
   When all the frequencies $f_i$ are equal to $1$, then
   \begin{cequation}
-    \sigma^2 = \frac{\sum x_i^2}{n} - \bar{x}^2
+    sigma^2 = \frac{\sum x_i^2}{n} - \bar{x}^2
   \end{cequation}
   \begin{cequation}
     \sigma = \sqrt{\frac{\sum x_i^2}{n} - \bar{x}^2}
@@ -4551,7 +4583,7 @@
   relative of the current period is calculated by the following formula:
 
   \begin{cequation}
-    I = \frac{P_1}{P_0} \cdot 100
+    \text{P.R.} = \frac{P_1}{P_0} \cdot 100
   \end{cequation}
 
   \subsection{Practice 11}
@@ -4571,10 +4603,10 @@
 
   \sol{}
   \begin{flalign*}
-    I_{2011} & = \frac{621}{700} \cdot 100 = 88.71    \\
-    I_{2012} & = \frac{584.1}{700} \cdot 100 = 83.44  \\
-    I_{2013} & = \frac{720.5}{700} \cdot 100 = 102.93 \\
-    I_{2014} & = \frac{800}{700} \cdot 100 = 114.29
+    \text{P.R.}_{2011} & = \frac{621}{700} \cdot 100 = 88.71    \\
+    \text{P.R.}_{2012} & = \frac{584.1}{700} \cdot 100 = 83.44  \\
+    \text{P.R.}_{2013} & = \frac{720.5}{700} \cdot 100 = 102.93 \\
+    \text{P.R.}_{2014} & = \frac{800}{700} \cdot 100 = 114.29
   \end{flalign*}
 
   \subsection{Exercise 18.7a}
@@ -6299,30 +6331,30 @@
 
   Permutations and combinations are the foundation of probability and statistics.
   In our daily life, we often need to calculate the number of ways of completing
-  a task. These calculations are based on two basic principles: addition
-  principle and multiplication principle.
+  a task. These calculations are based on two basic rules: addition rule and
+  multiplication rule.
 
-  \section{Addition and Multiplication Principles}
+  \section{Addition and Multiplication rules}
 
-  \begin{theorem}{Addition Principle}
+  \begin{theorem}{Addition rule}
 
     If there are $n$ methods of doing a task, the first method can be done in $m_1$
     ways, the second method can be done in $m_2$ ways, $\cdots$, the $n$th methods
-    can be done in $m_n$ ways, and they are mutually exclusive, which means he task
-    can be done in whatever way using whatever method, then the total number of
-    ways of doing the task is
+    can be done in $m_n$ ways, and they are mutually exclusive, which means the
+    task can be done in whatever way using whatever method, then the total number
+    of ways of doing the task is
     \begin{cequation}
       m_1 + m_2 + \cdots + m_n
     \end{cequation}
   \end{theorem}
 
-  \begin{theorem}{Multiplication Principle}
+  \begin{theorem}{Multiplication rule}
 
     If there are $n$ steps in doing a task, the first step can be done in $m_1$
     ways, the second step can be done in $m_2$ ways, $\cdots$, the $n$th steps can
     be done in $m_n$ ways, then the total number of ways of doing the task is
     \begin{cequation}
-      m_1 \cdot m_2 \cdot \cdots \cdot m_n
+      m_1 \times m_2 \times \cdots \times  m_n
     \end{cequation}
   \end{theorem}
 
@@ -6338,7 +6370,7 @@
             \item Second step, choose a novel, which can be done in 3 ways.
             \item Third step, choose a storybook of idioms, which can be done in 4 ways.
           \end{itemize}
-          All these steps must be done in order to complete the task. Therefore, applying the multiplication principle, there are $2 \cdot 3 \cdot 4 = 24$ ways to choose one book from each category.
+          All these steps must be done in order to complete the task. Therefore, applying the multiplication rule, there are $2 \cdot 3 \cdot 4 = 24$ ways to choose one book from each category.
 
     \item Travelling from $A$ to $B$ can be done by bus or train. There are 4 buses and 3
           trains. How many ways are there to travel from $A$ to $B$? \sol{}
@@ -6348,7 +6380,7 @@
             \item First method, travel by bus, which can be done in 4 ways.
             \item Second method, travel by train, which can be done in 3 ways.
           \end{itemize}
-          Any way in any method can be used to travel from $A$ to $B$. Therefore, applying the addition principle, there are $4 + 3 = 7$ ways to travel from $A$ to $B$.
+          Any way in any method can be used to travel from $A$ to $B$. Therefore, applying the addition rule, there are $4 + 3 = 7$ ways to travel from $A$ to $B$.
   \end{enumerate}
 
   \subsection{Practice 19.1}
@@ -6363,7 +6395,7 @@
             \item Second method, travel by bus, which can be done in 4 ways.
             \item Third method, travel by train, which can be done in 4 ways.
           \end{itemize}
-          Any way in any method can be used to travel from Johor Bahru to Pinang. Therefore, applying the addition principle, there are $3 + 4 + 4 = 11$ ways to travel from Johor Bahru to Pinang.
+          Any way in any method can be used to travel from Johor Bahru to Pinang. Therefore, applying the addition rule, there are $3 + 4 + 4 = 11$ ways to travel from Johor Bahru to Pinang.
 
     \item One has 13 shirts and 6 pants, how many ways can he dress up? \sol{}
 
@@ -6372,7 +6404,7 @@
             \item First step, choose a shirt, which can be done in 13 ways.
             \item Second step, choose a pants, which can be done in 6 ways.
           \end{itemize}
-          All these steps must be done in order to complete the task. Therefore, applying the multiplication principle, there are $13 \cdot 6 = 78$ ways to dress up.
+          All these steps must be done in order to complete the task. Therefore, applying the multiplication rule, there are $13 \cdot 6 = 78$ ways to dress up.
 
     \item There are 4 airlines $A$, $B$, $C$, and $D$ that provide flights from Kuala
           Lumpur to Bangkok: $A$ provdies 3 flights per day, $B$ provides 2 flights per
@@ -6386,7 +6418,7 @@
             \item Third method, travel by $C$, which can be done in 1 way.
             \item Fourth method, travel by $D$, which can be done in 1 way.
           \end{itemize}
-          Any way in any method can be used to travel from Kuala Lumpur to Bangkok. Therefore, applying the addition principle, there are $3 + 2 + 1 + 1 = 7$ ways to travel from Kuala Lumpur to Bangkok.
+          Any way in any method can be used to travel from Kuala Lumpur to Bangkok. Therefore, applying the addition rule, there are $3 + 2 + 1 + 1 = 7$ ways to travel from Kuala Lumpur to Bangkok.
 
     \item How many set meal combinations are there if there are 6 type of main dishes, 5
           type of drinks, and 2 type of desserts? \sol{}
@@ -6397,7 +6429,7 @@
             \item Second step, choose a drink, which can be done in 5 ways.
             \item Third step, choose a dessert, which can be done in 2 ways.
           \end{itemize}
-          All these steps must be done in order to complete the task. Therefore, applying the multiplication principle, there are $6 \cdot 5 \cdot 2 = 60$ ways to make a set meal.
+          All these steps must be done in order to complete the task. Therefore, applying the multiplication rule, there are $6 \cdot 5 \cdot 2 = 60$ ways to make a set meal.
 
     \item There are 4 doors in a classroom, student $A$ and student $B$ can enter the
           classroom through any door. How many ways are there for student $A$ and student
@@ -6408,7 +6440,7 @@
             \item First step, student $A$ choose a door, which can be done in 4 ways.
             \item Second step, student $B$ choose a door, which can be done in 4 ways.
           \end{itemize}
-          All these steps must be done in order to complete the task. Therefore, applying the multiplication principle, there are $4 \cdot 4 = 16$ ways for student $A$ and student $B$ to enter the classroom.
+          All these steps must be done in order to complete the task. Therefore, applying the multiplication rule, there are $4 \cdot 4 = 16$ ways for student $A$ and student $B$ to enter the classroom.
 
     \item A friendly match is held between 2 ping pong teams, each team has to send 3
           players, and each player has to play games with all the other players on the
@@ -6430,14 +6462,14 @@
             \item First step, choose a clothes, which can be done in 8 ways.
             \item Second step, choose a skirt, which can be done in 5 ways.
           \end{itemize}
-          All these steps must be done in order to complete the task. Therefore, applying the multiplication principle, there are $8 \cdot 5 = 40$ combinations of clothes and skirts.
+          All these steps must be done in order to complete the task. Therefore, applying the multiplication rule, there are $8 \cdot 5 = 40$ combinations of clothes and skirts.
 
           To pair the clothes and skirts with shoes, there are 2 steps:
           \begin{itemize}
             \item First step, choose a clothes and a skirt, which can be done in 40 ways.
             \item Second step, choose a shoes, which can be done in 4 ways.
           \end{itemize}
-          All these steps must be done in order to complete the task. Therefore, applying the multiplication principle, there are $40 \cdot 4 = 160$ combinations of clothes, skirts, and shoes.
+          All these steps must be done in order to complete the task. Therefore, applying the multiplication rule, there are $40 \cdot 4 = 160$ combinations of clothes, skirts, and shoes.
 
   \end{enumerate}
 
@@ -6454,12 +6486,12 @@
   Second step: choose one of the remaining 3 numbers as the second digit, there
   are 3 ways to do so.
 
-  According to the multiplication principle, the total number of ways to arrange
-  the numbers 1, 2, 3, 4 into a two digit number with no repeated digits is $4
-    \cdot 3 = 12$. \\\\ If there are $n$ elements, we want to pick $r$ elements
-  from them and arrange them in a sequence, how many ways are there to do so?
-  This question can be treated as there are $r$ empty boxes, which means this
-  requires $r$ steps to complete.
+  According to the multiplication rule, the total number of ways to arrange the
+  numbers 1, 2, 3, 4 into a two digit number with no repeated digits is $4 \cdot
+    3 = 12$. \\\\ If there are $n$ elements, we want to pick $r$ elements from them
+  and arrange them in a sequence, how many ways are there to do so? This question
+  can be treated as there are $r$ empty boxes, which means this requires $r$
+  steps to complete.
 
   \begin{center}
     \begin{tikzpicture}
@@ -6495,8 +6527,8 @@
 
   So on and so forth, when $r-1$ boxes are filled, the last box $r$ can only be
   filled with one of the remaining $n-(r-1)$ elements, so there are $n-(r-1)$
-  ways to do so. According to the multiplication principle, the total number of
-  ways to fill in $r$ boxes is
+  ways to do so. According to the multiplication rule, the total number of ways
+  to fill in $r$ boxes is
   \begin{cequation}
     n(n-1)(n-2) \cdots (n-r+1)
   \end{cequation}
@@ -7387,7 +7419,7 @@
   element, $\cdots$, $n$ ways to choose the $r$th element. According to the
   multiplication rule, its permutations are:
   \begin{cequation}
-    \underbrace{n \cdot n \cdot \cdots \cdot n}_{r} = n^r
+    \underbrace{n \times n \times \cdots \times n}_{r} = n^r
   \end{cequation}
 
   \subsection{Practice 8}
@@ -7706,10 +7738,10 @@
           Choosing 4 people from 10 people or 5 couples with no restriction, there are
           $\comb[10]{4}$ ways. Choosing 4 people with at least one couple, there are
           $\comb[5]{1} \cdot \comb[8]{2}$ ways. Choosing 4 people with two couples, there
-          are $\comb[5]{2}$ ways. Therefore, using inclusion-exclusion principle, there
-          are $\comb[10]{4} - \comb[5]{1} \cdot \comb[8]{2} + \comb[5]{2} = 210 - 140 +
-            10 = 80$ ways to choose 4 people from 5 couples where each couple cannot be
-          chosen together.
+          are $\comb[5]{2}$ ways. Therefore, using inclusion-exclusion rule, there are
+          $\comb[10]{4} - \comb[5]{1} \cdot \comb[8]{2} + \comb[5]{2} = 210 - 140 + 10 =
+            80$ ways to choose 4 people from 5 couples where each couple cannot be chosen
+          together.
 
     \item Three signal flags are to be chosen from 6 flags, one of which is red, two of
           which are yellow and the rest are blue. How many ways are there to choose the 3
@@ -8132,10 +8164,10 @@
     \comb[4]{3}ab^3 + \comb[4]{4}b^4$.
 
   Generalize the above expansion, we have the following formula:
-  \begin{cequation}
-    (a+b)^n = \comb[n]{0}a^n + \comb[n]{1}a^{n-1}b +
-    \cdots + \comb[n]{n-r}ab^{n-r} + \cdots + \comb[n]{n}b^n
-  \end{cequation}
+  \begin{flalign*}
+    (a+b)^n & = \comb[n]{0}a^n + \comb[n]{1}a^{n-1}b + \comb[n]{1}a^{n-2}b^2 \cdots + & \\
+            & \ \ \ \ \  \comb[n]{n-r}a^{n-r}b^{r} + \cdots + \comb[n]{n}b^n
+  \end{flalign*}
   where $n \in \mathbb{N}$.
 
   This formula is called the \textit{Bionomial Theorem}, the polynomial in the
@@ -8157,7 +8189,8 @@
           $\cdots$.
   \end{enumerate}
 
-  Bionomial expression can also be calculated by the following table:
+  Bionomial expression can also be calculated by the following table (Pascal
+  Triangle):
   \begin{center}
     \begin{tabular}{cc}
       $(a+b)^0$ & 1                                           \\
@@ -9224,10 +9257,10 @@
   \end{flalign*}
 
   When two events $A$ and $B$ cannot happen at the same time, that is, $A \cap B
-    = \emptyset$, $A$ and $B$ is said to be mutually exclusive. For example, there
-  are a red ball and a white ball in a bag. When randomly drawing one ball, the
-  ball will be either red or white, but not both. This is a mutually exclusive
-  event.
+    = \emptyset$, $A$ and $B$ is said to be \emph{mutually exclusive}. For example,
+  there are a red ball and a white ball in a bag. When randomly drawing one ball,
+  the ball will be either red or white, but not both. This is a mutually
+  exclusive event.
 
   Since $A$ and $B$ are mutually exclusive, $P(A \cap B) = 0$.
   \begin{cequation}
@@ -10442,7 +10475,7 @@
       \begin{axis}[
           width=0.5\textwidth,
           height=0.3\textwidth,
-          xlabel={Height (cm)},
+          xlabel={Data},
           ylabel={Frequency},
           xmin=150, xmax=190,
           ymin=0, ymax=0.05,
@@ -10461,7 +10494,7 @@
   standard deviation $\sigma$, thier corresponding functional expression of
   normal curve is:
   \begin{cequation}
-    f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}
+    y = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}
   \end{cequation}
 
   Assume that the observation $X$ of a trial is normal distribution with mean
@@ -10503,13 +10536,15 @@
       % Optional: Add axes
       \draw[->] (-0.5,0) -- (6.2,0) node[above] {};
       \draw[->] (0,-0.5) -- (0,4) node[right] {};
+
+      \node at (5, 2.5) {$y = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}$};
     \end{tikzpicture}
   \end{center}
 
   A normal distribution with mean value of 0 and standard deviation of 1 is
   called the standard normal distribution, its normal curve
   \begin{cequation}
-    f(x) = \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}
+    y = \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}
   \end{cequation}
   is symmetrical about y-axis, as shown in the figure below.
 
@@ -11629,6 +11664,515 @@ normal distribution $N(0, 1)$.
 \begin{multicols}{2}
   \setcounter{section}{17}
   \section{Statistics}
+
+  \begin{enumerate}
+    \item Frequency Distribution Table
+          \begin{center}
+            \begin{tabular}{|c|c|}
+              \hline
+              Range         & Frequency \\
+              \hline
+              $1.27 - 1.29$ & 1         \\
+              $1.30 - 1.32$ & 4         \\
+              $1.33 - 1.35$ & 7         \\
+              $1.36 - 1.38$ & 22        \\
+              $1.39 - 1.41$ & 24        \\
+              $1.42 - 1.44$ & 24        \\
+              $1.45 - 1.47$ & 10        \\
+              $1.48 - 1.50$ & 6         \\
+              $1.51 - 1.53$ & 1         \\
+              $1.54 - 1.56$ & 1         \\
+              \hline
+            \end{tabular}
+          \end{center}
+
+    \item Histogram and Frequency Polygon
+          \begin{center}
+            \begin{tikzpicture}[scale=0.8]
+              \begin{axis}[
+                  title=\large{Histogram and Frequency Polygon},
+                  ymin=0, ymax=16,
+                  ytick={0, 2, ..., 16},
+                  xtick={0,1,...,6},
+                  ybar interval,
+                  grid=none,
+                  xtick style={draw=none},
+                  xlabel=Data, ylabel=Frequency,
+                ]
+                \addplot[draw=black, style={fill=gray!40},mark=no] plot coordinates { (0, 2) (1, 3) (2, 11) (3, 14) (4, 11) (5, 8) (6, 3) (7, 0) };
+                \addplot[forget plot, sharp plot, mark=*, mark size=1.5pt, mark options={solid, fill=black, draw=black}, draw=black]
+                coordinates
+                  {(-0.5, 0) (0.5, 2) (1.5, 3) (2.5, 11) (3.5, 14) (4.5, 11) (5.5, 8) (6.5, 3) (7.5, 0)};
+              \end{axis}
+            \end{tikzpicture}
+          \end{center}
+
+    \item Cumulative Frequency Distribution Table
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|}
+              \hline
+              \text{Range} & \text{Freq.} & \text{Lower Than} & \text{Cumm. Freq.} \\
+              \hline
+              50 - 55      & 3            & 55                & 3                  \\
+              55 - 60      & 8            & 60                & 11                 \\
+              60 - 65      & 25           & 65                & 36                 \\
+              65 - 70      & 38           & 70                & 74                 \\
+              70 - 75      & 46           & 75                & 120                \\
+              75 - 80      & 19           & 80                & 139                \\
+              80 - 85      & 12           & 85                & 151                \\
+              85 - 90      & 4            & 90                & 155                \\
+              \hline
+            \end{tabular}
+          \end{center}
+
+    \item Cumulative Frequency Polygon
+          \begin{center}
+            \begin{tikzpicture}[scale=0.9]
+              \begin{axis}[
+                  title style = {align = center},
+                  title={\large{Cumulative Frequency Polygon}},
+                  ymin=0, ymax=160,
+                  ytick={0, 20, ..., 160},
+                  xtick={50, 55, 60, ..., 90},
+                  xtick style={draw=none, fill=none, font=\footnotesize},
+                  xlabel=Data, ylabel=Cumulative Frequency,
+                  ylabel style={at={(axis description cs:0.02, 0.5)}, anchor=center},
+                ]
+                \addplot[forget plot, sharp plot, mark=*, mark size=1.5pt, mark options={solid, fill=black, draw=black}, draw=black]
+                coordinates
+                  { (50, 0) (55, 3) (60, 11) (65, 36) (70, 74) (75, 120) (80, 139) (85, 151) (90, 155) };
+              \end{axis}
+            \end{tikzpicture}
+          \end{center}
+
+    \item Central Tendency
+          \begin{enumerate}
+            \item Mean
+                  \begin{enumerate}
+                    \item Arithmetic Mean \begin{cequation}\bar{x} = \frac{\sum x_i}{n}\end{cequation}
+                    \item Mean of Grouped Data \begin{cequation}\bar{x} = \frac{\sum x_i f_i}{\sum f_i}\end{cequation}
+                    \item Weighted Mean \begin{cequation}\bar{x} = \frac{\sum x_i w_i}{\sum w_i}\end{cequation}
+                  \end{enumerate}
+
+            \item Median
+                  \begin{enumerate}
+                    \item When $n$ is odd, the median is the number in $\frac{n+1}{2}$ position.
+                    \item When $n$ is even, the median is the mean of the number in $\frac{n}{2}$ and
+                          $\frac{n}{2}+1$ position.
+                    \item Median of Grouped Data \begin{cequation}
+                            M = L_m + \left(\frac{\frac{n}{2} - F_m}{f_m}\right)C_m
+                          \end{cequation}
+                  \end{enumerate}
+
+            \item Mode
+                  \begin{enumerate}
+                    \item The mode is the number that occurs most frequently.
+                    \item There can be more than one mode in a set of data.
+                    \item If all the values in a dataset occur with the same frequency, then there is no
+                          mode for the data.
+                    \item Mode of Grouped Data \begin{cequation}
+                            \textit{mode} = L + \left(\frac{d_1}{d_1 + d_2}\right)C
+                          \end{cequation}
+                  \end{enumerate}
+          \end{enumerate}
+    \item Measure of Dispersion
+          \begin{enumerate}
+            \item Range
+                  \begin{enumerate}
+                    \item Range
+
+                          The difference between the largest and the smallest value in the dataset
+
+                    \item Range for Grouped Data
+
+                          The difference between the upper limit of the highest class and the lower limit
+                          of the lowest class
+                  \end{enumerate}
+            \item Quartiles
+                  \begin{enumerate}
+                    \item First Quartile ($Q_1$)
+
+                          The median of the lower half of the data
+                    \item Second Quartile ($Q_2$)
+
+                          The median of the data
+                    \item Third Quartile ($Q_3$)
+
+                          The median of the upper half of the data
+                  \end{enumerate}
+            \item Quartiles for grouped data
+                  \begin{enumerate}
+                    \item First Quartile \begin{cequation}
+                            Q_1 = L_1 + \left(\frac{\frac{n}{4} - F_1}{f_1}\right)C_1
+                          \end{cequation}
+                    \item Third Quartile \begin{cequation}
+                            Q_3 = L_3 + \left(\frac{\frac{3n}{4} - F_2}{f_2}\right)C_2
+                          \end{cequation}
+                  \end{enumerate}
+            \item Interquartile Range ($IQR$) \begin{cequation}\textit{Interquartile range} = Q_3 - Q_1\end{cequation}
+            \item Quartile Deviation \begin{cequation}QD = \frac{Q_3 - Q_1}{2}\end{cequation}
+            \item Mean Deviation
+                  \begin{enumerate}
+                    \item Mean Deviation \begin{cequation}\textit{M.D.} = \frac{\sum |x_i - \bar{x}|}{n}\end{cequation}
+                    \item Mean Deviation for grouped data \begin{cequation}\textit{M.D.} = \frac{\sum |x_i - \bar{x}| f_i}{\sum f_i}\end{cequation}
+                    \item For ranged data, we take the midpoints of the classes as the representative
+                          value $x_i$.
+                  \end{enumerate}
+            \item Variance
+                  \begin{enumerate}
+                    \item Variance \begin{cequation}\sigma^2 = \frac{\sum x_i^2}{n} - \bar{x}^2\end{cequation}
+                    \item Variance for Grouped Data \begin{cequation}\sigma^2 = \frac{\sum x_i^2 f_i}{\sum f_i} - \bar{x}^2\end{cequation}
+                    \item For ranged data, we take the midpoints of the classes as the representative
+                          value $x_i$.
+                  \end{enumerate}
+
+            \item Standard Deviation
+                  \begin{enumerate}
+                    \item Standard Deviation \begin{cequation}\sigma = \sqrt{\frac{\sum x_i^2}{n} - \bar{x}^2}\end{cequation}
+                    \item Standard Deviation for Grouped Data \begin{cequation}\sigma = \sqrt{\frac{\sum x_i^2 f_i}{\sum f_i} - \bar{x}^2}\end{cequation}
+                    \item For ranged data, we take the midpoints of the classes as the representative
+                          value $x_i$.
+                  \end{enumerate}
+          \end{enumerate}
+    \item Coefficient of Variation
+          \begin{cequation}
+            v = \frac{\sigma}{\bar{x}} \cdot 100\%
+          \end{cequation}
+
+    \item Correlation and Correlation Coefficient
+          \begin{enumerate}
+            \item Scatter Plot
+                  \begin{center}
+                    \begin{tikzpicture}[scale=0.8]
+                      \begin{axis}[
+                          title style = {align = center},
+                          title={\large{Scattering Plot}},
+                          xlabel={Data 1},
+                          ylabel={Data 2},
+                          xmin=20, xmax=60,
+                          ymin=110, ymax=150,
+                          xtick={20, 25, ..., 60},
+                          ytick={110, 120, 130, 140, 150},
+                          grid=both,
+                          grid style={line width=.2pt, draw=gray!60},
+                          major grid style={line width=.4pt,draw=gray!90},
+                          minor tick num=4,
+                        ]
+                        \addplot[mark=*, mark size=1.5, mark options={solid, fill=black}, only marks] coordinates {(51, 130) (22, 141) (23, 124) (31, 126) (33, 117) (49, 135) (58, 143) (53, 138) (44, 132) (55, 143) (42, 133) (45, 115) (25, 147)};
+                      \end{axis}
+                    \end{tikzpicture}
+                  \end{center}
+            \item Linear Correlation
+                  \begin{enumerate}
+                    \item If every single point in the scatter plot is on the line of best fit, then it's
+                          a perfect positive correlation. If the slope of the line of best fit is
+                          positive, then it's a positive correlation. If the slope of the line of best
+                          fit is negative, then it's a negative correlation.
+
+                    \item If the points in the scatter plot are scattered around the line of best fit
+                          with non-zero slope, then the closer the points are to the line of best fit,
+                          the stronger the correlation is.
+
+                    \item If the points in the scatter plot are scattered evenly around the whole plot
+                          with no obvious pattern, then there is no correlation between the two
+                          variables, aka zero correlation.
+                  \end{enumerate}
+
+            \item Correlation Coefficient
+                  \begin{flalign*}
+                    r & = \frac{\frac{\sum{x_iy_i}}{n} - \bar{x}\bar{y}}{\sqrt{\left(\frac{\sum{x_i^2}}{n} - \bar{x}^2\right)\left(\frac{\sum{y_i^2}}{n} - \bar{y}^2\right)}}
+                  \end{flalign*}
+                  \begin{enumerate}
+                    \item $|r| = 1$: perfect correlation
+                    \item $0 < |r| < 0.3$: weak correlation
+                    \item $0.3 \leq |r| < 0.7$: moderate correlation
+                    \item $0.7 \leq |r| \leq 1$: strong correlation
+                  \end{enumerate}
+          \end{enumerate}
+
+    \item Statistical Index
+          \begin{enumerate}
+            \item Statistical Index
+                  \begin{cequation}
+                    I = \frac{Q_1}{Q_0} \cdot 100
+                  \end{cequation}
+            \item Price Index
+                  \begin{cequation}
+                    \text{P.R.} = \frac{P_1}{P_0} \cdot 100
+                  \end{cequation}
+            \item Composite Index
+                  \begin{cequation}
+                    \text{Composite Index} = \frac{\sum{w_ix_i}}{\sum{w_i}}
+                  \end{cequation}
+          \end{enumerate}
+  \end{enumerate}
+
+  \section{Permutation and Combination}
+  \begin{enumerate}
+    \item Addition Rule
+
+          The task can be done in whatever way using whatever method
+          \begin{cequation}
+            m_1 + m_2 + \cdots + m_n
+          \end{cequation}
+    \item Multiplication Rule
+
+          The task must be done in multiple steps, and each step can be done in whatever
+          way
+          \begin{cequation}
+            m_1 \times m_2 \times \cdots \times m_n
+          \end{cequation}
+
+    \item Permutation
+          \begin{enumerate}
+            \item Factorial
+                  \begin{cequation}
+                    n! = n(n - 1)(n - 2) \cdots 3 \cdot 2 \cdot 1
+                  \end{cequation}
+            \item Normal Permutation
+                  \begin{enumerate}
+                    \item Permutation of $n$ objects taken $r$ at a time
+                          \begin{cequation}
+                            \permtwo[n]{r} = \frac{n!}{(n - r)!}
+                          \end{cequation}
+                    \item Permutation of $n$ objects taken $n$ at a time
+                          \begin{cequation}
+                            \permtwo[n]{n} = n!
+                          \end{cequation}
+                  \end{enumerate}
+            \item Circular Permutation
+                  \begin{enumerate}
+                    \item Circular permutation of $n$ elements:
+                          \begin{cequation}
+                            \frac{\permtwo[n]{n}}{n} = (n - 1)!
+                          \end{cequation}
+                    \item Circular permutation of $r$ elements from $n$ elements ($r \leq n$):
+                          \begin{cequation}
+                            \frac{\permtwo[n]{r}}{r} = \frac{n!}{r(n - r)!}
+                          \end{cequation}
+                  \end{enumerate}
+            \item Full Permutation of Inexactly Distinct Elements
+                  \begin{cequation}
+                    \frac{n!}{n_1!n_2!\cdots n_k!}
+                  \end{cequation}
+            \item Permutation with Repetition
+                  \begin{cequation}
+                    \underbrace{n \times n \times \cdots \times n}_{r} = n^r
+                  \end{cequation}
+          \end{enumerate}
+    \item Combination
+          \begin{enumerate}
+            \item Combination Formula
+                  \begin{cequation}
+                    \comb[n]{r} = \frac{n!}{(n - r)! r!},\ r \leq n
+                  \end{cequation}
+            \item Properties of Combination
+                  \begin{enumerate}
+                    \item $\comb[n]{n-r} = \comb[n]{r}$
+                    \item If $r = n$, then $\comb[n]{n} = \frac{n!}{0! n!} = 1$.
+                    \item If $r = 0$, then $\comb[n]{0} = \frac{n!}{n! 0!} = 1$.
+                  \end{enumerate}
+          \end{enumerate}
+  \end{enumerate}
+
+  \section{Bionomial Theorem}
+  \begin{enumerate}
+    \item Formula
+          \begin{enumerate}
+            \item Formula
+                  \begin{flalign*}
+                    (a+b)^n & = \comb[n]{0}a^n + \comb[n]{1}a^{n-1}b + \comb[n]{1}a^{n-2}b^2 \cdots + & \\
+                            & \ \ \ \ \  \comb[n]{n-r}a^{n-r}b^{r} + \cdots + \comb[n]{n}b^n
+                  \end{flalign*}
+            \item Formula for $a = 1$, $b = x$
+                  \begin{cequation}
+                    (1+x)^n = 1 + \comb[n]{1}x + \comb[n]{2}x^2 + \cdots + \comb[n]{r}x^r +
+                    \cdots + x^n
+                  \end{cequation}
+          \end{enumerate}
+    \item Pascal Triangle
+          \begin{center}
+            \begin{tabular}{cc}
+              $(a+b)^0$ & 1                                           \\
+              $(a+b)^1$ & 1 \quad 1                                   \\
+              $(a+b)^2$ & 1 \quad 2 \quad 1                           \\
+              $(a+b)^3$ & 1 \quad 3 \quad 3 \quad 1                   \\
+              $(a+b)^4$ & 1 \quad 4 \quad 6 \quad 4 \quad 1           \\
+              $(a+b)^5$ & 1 \quad 5 \quad 10 \quad 10 \quad 5 \quad 1 \\
+                        & \vdots                                      \\
+            \end{tabular}
+          \end{center}
+    \item General Form of Bionomial Theorem
+          \begin{cequation}
+            T_{r+1} = \comb[n]{r}a^{n-r}b^r
+          \end{cequation}
+  \end{enumerate}
+
+  \section{Probability}
+  \begin{enumerate}
+    \item Sample Space
+
+          The set of all possible results of a trial
+    \item Event
+
+          A subset of the sample space
+          \begin{enumerate}
+            \item Simple Event: an event that contains only one outcome
+            \item Sure Event: the sample space itself
+            \item Impossible Event / Null Event: an empty set
+          \end{enumerate}
+    \item Notation
+          \begin{enumerate}
+            \item $A \cup B$: at least one of the events $A$ and $B$ will happen.
+
+            \item $A \cap B$: both events $A$ and $B$ will happen.
+
+            \item $A'$: the event $A$ will not happen.
+          \end{enumerate}
+    \item Definition of Probability
+          \begin{cequation}
+            P(A) = \frac{n(A)}{n(S)}
+          \end{cequation}
+    \item Addition Rule
+          \begin{enumerate}
+            \item Inclusive Event
+
+                  Two events $A$ and $B$ can happen at the same time
+                  \begin{cequation}
+                    P(A \cup B) = P(A) + P(B) - P(A \cap B)
+                  \end{cequation}
+            \item Exclusive Event
+
+                  Two events $A$ and $B$ cannot happen at the same time
+                  \begin{cequation}
+                    P(A \cup B) = P(A) + P(B)
+                  \end{cequation}
+            \item Complementary Event
+
+                  Two events $A$ and $A'$ are complement to each other if they are both mutually
+                  exclusive and one of them will happen
+                  \begin{cequation}
+                    P(A') = 1 - P(A)
+                  \end{cequation}
+          \end{enumerate}
+    \item Multiplication Rule
+          \begin{enumerate}
+            \item Independent Events
+
+                  Two events $A$ and $B$ are independent if the occurrence of one event does not
+                  affect the occurrence of the other event
+                  \begin{cequation}
+                    P(A \cap B) = P(A) \cdot P(B)
+                  \end{cequation}
+          \end{enumerate}
+    \item Mathematical Expectation
+          \begin{cequation}
+            E = x_1p_1 + x_2p_2 + \cdots + x_kp_k
+          \end{cequation}
+    \item Normal Distribution
+          \begin{enumerate}
+            \item Normal Curve
+                  \begin{enumerate}
+                    \item Function
+                          \begin{enumerate}
+                            \item Expression
+                                  \begin{cequation}
+                                    f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}
+                                  \end{cequation}
+                            \item Parameters
+                                  \begin{itemize}
+                                    \item $\mu$: mean
+                                    \item $\sigma$: standard deviation
+                                  \end{itemize}
+                            \item Notation
+                                  \begin{cequation}
+                                    X \sim N(\mu, \sigma^2)
+                                  \end{cequation}
+                          \end{enumerate}
+                    \item Diagram
+                          \begin{center}
+                            \begin{tikzpicture}[scale=0.9]
+                              % define normal distribution function 'normaltwo'
+                              \def\normaltwo{\x,{3*1/exp(((\x-3)^2)/2)}}
+
+                              % input x and y parameters
+                              \def\y{4.4}
+                              \def\x{2.4}
+
+                              % this line calculates f(y)
+                              \def\fy{3*1/exp(((\y-3)^2)/2)}
+                              \def\fx{3*1/exp(((\x-3)^2)/2)}
+
+                              % Shade orange area underneath curve.
+                              \fill [fill=gray!40] ({\x},0) -- plot[domain={\x}:{\y}] (\normaltwo) -- ({\y},0) -- cycle;
+
+                              % Draw and label normal distribution function
+                              \draw[domain=0:6] plot (\normaltwo) node[right] {};
+
+                              % Add dashed line dropping down from normal.
+                              \draw[dashed] ({\y},{\fy}) -- ({\y},0) node[below] {$b$};
+                              \draw[dashed] ({\x},{\fx}) -- ({\x},0) node[below] {$a$};
+
+                              % Optional: Add axis labels
+                              \draw (6.2, 0) node[right] {$x$};
+                              \draw (0, 4) node[above] {$y$};
+                              \draw (0, 0) node [below left] {$O$};
+
+                              % Optional: Add axes
+                              \draw[->] (-0.5,0) -- (6.2,0) node[above] {};
+                              \draw[->] (0,-0.5) -- (0,4) node[right] {};
+
+                              \node at (5, 2.5) {$\frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}$};
+                            \end{tikzpicture}
+                          \end{center}
+                  \end{enumerate}
+            \item Standard Normal Distribution
+                  \begin{enumerate}
+                    \item Definition
+
+                          A normal distribution with mean $\mu = 0$ and standard deviation $\sigma = 1$
+                    \item Function
+                          \begin{cequation}
+                            y = \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}
+                          \end{cequation}
+                    \item Graph
+                          \begin{center}
+                            \begin{tikzpicture}
+                              % define normal distribution function 'normaltwo'
+                              \def\normaltwo{\x,{3*1/exp(((\x)^2)/2)}}
+
+                              % Draw and label normal distribution function
+                              \draw[domain=-3:3] plot (\normaltwo) node[right] {};
+
+                              % Optional: Add axis labels
+                              \draw (3.2, 0) node[right] {$x$};
+                              \draw (0, 4) node[above] {$y$};
+                              \draw (0, 0) node [below left] {$O$};
+
+                              % Optional: Add axes
+                              \draw[->] (-3.2,0) -- (3.2,0) node[above] {};
+                              \draw[->] (0,-0.5) -- (0,4) node[right] {};
+
+                              \node at (2, 2.5) {$y=\frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}$};
+                            \end{tikzpicture}
+                          \end{center}
+                    \item Convert to Standard Normal Distribution
+                          \begin{cequation}
+                            \text{If } x \sim N(\mu, \sigma^2), \text{ then } Z = \frac{x - \mu}{\sigma}\text{, } Z \sim N(0, 1)
+                          \end{cequation}
+                  \end{enumerate}
+            \item Properties
+                  \begin{enumerate}
+                    \item $P(Z \leq z) = P(Z < z)$
+                    \item $P(Z \geq z) = P(Z > z)$
+                    \item $P(Z = z) = 0$
+                    \item $P(Z < z) = P(Z > -z) = 1 - P(Z \geq z)$
+                    \item $P(Z > z) = P(Z < -z) = 1 - P(Z \leq z)$
+                    \item $P(|Z| < z) = 2P(Z < z)$
+                    \item $P(|Z| > z) = 2P(Z > z)$
+                  \end{enumerate}
+          \end{enumerate}
+  \end{enumerate}
 \end{multicols}
 
 \end{document}
