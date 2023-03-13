@@ -1200,47 +1200,149 @@
                               \end{flalign*}
                               Hence, $A$ is a minimum when $x = 22.6\textit{cm}$. $\eos$
                   \end{enumerate}
-            \item Chan wants to build two separate pens by using a fenc of $100\textit{m}$. Both
+
+            \item Chan wants to build two separate pens by using a fence of $100\textit{m}$. Both
                   pens are square in shape.
                   \begin{center}
                         \includegraphics[width=0.4\textwidth]{./images/q30_2.jpeg}
                   \end{center}
                   If the edge of the larger pen is $x\textit{m}$,
                   \begin{enumerate}
-                        \item find the length of the side of the smaller pen in terms of $x$.
-                        \item find the value of $x$ such that the total area of both pens is minimum.
+                        \item find the length of the side of the smaller pen in terms of $x$. \sol{} Let the
+                              length of the side of the smaller pen be $y\textit{m}$.
+                              \begin{flalign*}
+                                    C_\textit{larger}  & = 4x                                     \\
+                                    C_\textit{smaller} & = 4y                                     \\
+                                    C_\textit{fence}   & = C_\textit{larger} + C_\textit{smaller} \\
+                                    100                & = 4x + 4y                                \\
+                                    25                 & = x + y                                  \\
+                                    y                  & = (25 - x)\textit{m} \eos
+                              \end{flalign*}
+                        \item find the value of $x$ such that the total area of both pens is minimum. \sol{}
+                              \begin{flalign*}
+                                    A_\textit{larger}  & = x^2                                    \\
+                                    A_\textit{smaller} & = y^2                                    \\
+                                                       & = {(25 - x)}^2                           \\
+                                    A                  & = A_\textit{larger} + A_\textit{smaller} \\
+                                                       & = x^2 + {(25 - x)}^2
+                              \end{flalign*}
+                              $A_\textit{total}$ is stationary when
+                              \begin{flalign*}
+                                    \frac{dA}{dx}  & = 0                   \\
+                                    2x - 2(25 - x) & = 0                   \\
+                                    2x - 50 + 2x   & = 0                   \\
+                                    4x             & = 50                  \\
+                                    x              & = 12.5\textit{m} \eos
+                              \end{flalign*}
+                              \begin{flalign*}
+                                    \frac{d^2A}{dx^2} & = 4 > 0
+                              \end{flalign*}
+                              Hence, $A$ is a minimum when $x = 12.5\textit{m}$. $\eos$
                   \end{enumerate}
+
             \item Solve the following problems related to the rates of change.
                   \begin{enumerate}
                         \item The total surface area, $A\textit{cm}^2$, of a metal solid which consists of a
                               cone and a cylinder with a common radius, $r\textit{cm}$ is given by $A =
                                     2\pi\left(\dfrac{18}{r} + \dfrac{r^2}{3}\right)$. When it is heated, its total
-                              surface area changes at the rate of $2.1\pi \textit{cm}^2s^{-1}$. Find the rate
-                              of change of the radius, in $\textit{cm} s^{-1}$, at the instant $r =
-                                    6\textit{cm}$.
+                              surface area changes at the rate of $2.1\pi \textit{cm}^2\textit{s}^{-1}$. Find
+                              the rate of change of the radius, in $\textit{cm} \textit{s}^{-1}$, at the
+                              instant $r = 6\textit{cm}$. \sol{}
+                              \begin{flalign*}
+                                    A             & = 2\pi\left(\dfrac{18}{r} + \dfrac{r^2}{3}\right)                       \\
+                                    \frac{dA}{dr} & = 2\pi\left(-\dfrac{18}{r^2} + \dfrac{2r}{3}\right)                     \\
+                                    \frac{dA}{dt} & = 2.1\pi                                                                \\
+                                    \frac{dr}{dt} & = \frac{dr}{dA} \cdot \frac{dA}{dt}                                     \\
+                                    \frac{dA}{dt} & = \frac{dA}{dr} \cdot \frac{dr}{dt}                                     \\
+                                    2.1\pi        & = 2\pi\left(-\dfrac{18}{r^2} + \dfrac{2r}{3}\right) \cdot \frac{dr}{dt} \\
+                                    \frac{dr}{dt} & = \frac{2.1}{2\left(-\dfrac{18}{r^2} + \dfrac{2r}{3}\right)}            \\
+                                                  & = \frac{2.1}{2\left(-\dfrac{18}{6^2} + \dfrac{2(6)}{3}\right)}          \\
+                                                  & = 0.3\textit{cm}\textit{s}^{-1}
+                              \end{flalign*}
+
                         \item A spherical balloon experiences a constant rate of increase of
-                              $6\textit{cm}^2s^{-1}$.
+                              $6\textit{cm}^2\textit{s}^{-1}$.
                               \begin{center}
                                     \includegraphics[width=0.3\textwidth]{./images/q31.jpeg}
                               \end{center}
-                              At the instant when the radius is 5cm, find
+                              At the instant when the radius is 5\textit{cm}, find
                               \begin{enumerate}
-                                    \item the rate of increase, in $cm s^{-1}$, of the radius.
-                                    \item the rate of increase if volume, in $cm^3 s^{-1}$, of the sphere.
+                                    \item the rate of increase, in $\textit{cm} \textit{s}^{-1}$, of the radius. \sol{}
+                                          \begin{flalign*}
+                                                S             & = 4\pi r^2                                   \\
+                                                \frac{dS}{dr} & = 8\pi r                                     \\
+                                                \frac{dS}{dt} & = 6                                          \\
+                                                \frac{dr}{dt} & = \frac{dr}{dS} \cdot \frac{dS}{dt}          \\
+                                                \frac{dS}{dt} & = \frac{dr}{dt} \cdot \frac{dS}{dr}          \\
+                                                6             & = \frac{dr}{dt} \cdot 8\pi r                 \\
+                                                \frac{dr}{dt} & = \frac{3}{4\pi r}                           \\
+                                                              & = \frac{3}{20\pi} \textit{cm}\textit{s}^{-1}
+                                          \end{flalign*}
+
+                                    \item the rate of increase if volume, in $\textit{cm}^3 \textit{s}^{-1}$, of the
+                                          sphere. \sol{}
+                                          \begin{flalign*}
+                                                V             & = \frac{4}{3}\pi r^3                \\
+                                                \frac{dV}{dr} & = 4\pi r^2                          \\
+                                                \frac{dV}{dt} & = \frac{dV}{dr} \cdot \frac{dr}{dt} \\
+                                                              & = 4\pi r^2 \cdot \frac{3}{4\pi r}   \\
+                                                              & = 3r                                \\
+                                                              & = 3(5)                              \\
+                                                              & = 15\textit{cm}^3\textit{s}^{-1}
+                                          \end{flalign*}
                               \end{enumerate}
+
                         \item The following diagram shows a container in the shape of a cone. Given its
                               height is equal to its base radius. Water is poured into the container at the
-                              rate of $80\textit{cm}^3s^{-1}$. The volume of the water in the container is
-                              $\dfrac{1}{3}\pi x^3\textit{cm}^3$, when the depth of the water is
+                              rate of $80\textit{cm}^3\textit{s}^{-1}$. The volume of the water in the
+                              container is $\dfrac{1}{3}\pi x^3\textit{cm}^3$, when the depth of the water is
                               $x\textit{cm}$.
                               \begin{center}
                                     \includegraphics[width=0.2\textwidth]{./images/q31_2.jpeg}
                               \end{center}
                               Calculate, at the instant when the depth of the water is $10\textit{cm}$,
                               \begin{enumerate}
-                                    \item the rate of increase of the depth, in $\textit{cm} s^{-1}$, of the water.
-                                    \item the rate of increase of the horizontal surface area, in $\textit{cm}^2 s^{-1}$,
-                                          of the water.
+                                    \item the rate of increase of the depth, in $\textit{cm} \textit{s}^{-1}$, of the
+                                          water. \sol{}
+
+                                          At time $t$, let $V = $ volume of water
+                                          \begin{flalign*}
+                                                \frac{dV}{dt} & = 80                                        \\
+                                                \frac{dV}{dx} & = \pi x^2                                   \\
+                                                \frac{dx}{dt} & = \frac{dx}{dV} \cdot \frac{dV}{dt}         \\
+                                                \frac{dV}{dt} & = \frac{dx}{dt} \cdot \frac{dV}{dx}         \\
+                                                80            & = \frac{dx}{dt} \cdot \pi x^2               \\
+                                                \frac{dx}{dt} & = \frac{80}{\pi x^2}                        \\
+                                                              & = \frac{80}{\pi{(10)}^2}                    \\
+                                                              & = \frac{4}{5\pi} \textit{cm}\textit{s}^{-1}
+                                          \end{flalign*}
+
+                                    \item the rate of increase of the horizontal surface area, in $\textit{cm}^2
+                                                \textit{s}^{-1}$, of the water.
+
+                                          At time $t$, let
+
+                                          $A = $ horizontal surface area of water
+
+                                          $r = $ radius of the water surface
+
+                                          $R = $ radius of the base of the container
+
+                                          $h = $ height of the container
+                                          \begin{flalign*}
+                                                R             & = h \quad (\text{given})            \\
+                                                \frac{r}{R}   & = \frac{x}{h}                       \\
+                                                \frac{r}{h}   & = \frac{x}{h}                       \\
+                                                r             & = x                                 \\
+                                                A             & = \pi rx                            \\
+                                                              & = \pi x^2                           \\
+                                                \frac{dA}{dx} & = 2\pi x                            \\
+                                                \frac{dA}{dt} & = \frac{dA}{dx} \cdot \frac{dx}{dt} \\
+                                                              & = 2\pi x \cdot \frac{80}{\pi x^2}   \\
+                                                              & = \frac{160}{x}                     \\
+                                                              & = \frac{160}{10}                    \\
+                                                              & = 16\textit{cm}^2\textit{s}^{-1}
+                                          \end{flalign*}
                               \end{enumerate}
                   \end{enumerate}
 
@@ -1261,6 +1363,7 @@
                                     \item $1.99^4$.
                               \end{enumerate}
                   \end{enumerate}
+
             \item A hemispherical bowl of radius $R\textit{cm}$ is filled with water to a depth
                   of $h\textit{cm}$.
                   \begin{center}
@@ -1270,9 +1373,10 @@
                   \begin{enumerate}
                         \item Show that the radius of the water surface, $r$, is given by $r = \sqrt{2Rh -
                                           h^2}$.
-                        \item Water is poured into the bown at a constand rate of $300cm^3s^{-1}$. Find, in
-                              terms of $R$, the rate of increase of the surface area, in $cm^2
-                                    \textit{min}^{-1}$, of the water when $2h = R$.
+                        \item Water is poured into the bown at a constand rate of
+                              $300\textit{cm}^3\textit{s}^{-1}$. Find, in terms of $R$, the rate of increase
+                              of the surface area, in $\textit{cm}^2 \textit{min}^{-1}$, of the water when
+                              $2h = R$.
                   \end{enumerate}
       \end{enumerate}
 \end{multicols*}
