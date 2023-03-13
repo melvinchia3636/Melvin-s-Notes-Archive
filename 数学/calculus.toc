@@ -1,2 +1,0 @@
-\contentsline {chapter}{\numberline {1}Limits}{2}{}%
-\contentsline {section}{\numberline {1.1}Arithmetic Properties of Limits}{2}{}%
