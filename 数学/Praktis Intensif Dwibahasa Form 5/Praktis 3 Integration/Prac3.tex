@@ -1034,6 +1034,9 @@
             \item The following diagram shows the cross section of a wedding ring ordered by
                   Azmin. The inner and outer curved surfaces are represented by the quadratic
                   equations of $x = 0.8 - 0.5y^2$ and $x = 1 - y^2$ respectively.
+                  \begin{center}
+                        \includegraphics[width=0.35\textwidth]{./images/25.png}
+                  \end{center}
                   \begin{enumerate}
                         \item By using the calculus method, find the volume of the wedding ring in terms of
                               $\pi \textit{cm}^3$. \sol{}
@@ -1071,7 +1074,17 @@
 
       \begin{enumerate}
             \item Given that $\displaystyle \int_m^2(2x+3)\,dx = -8$ where $m > 0$, find the
-                  value of $m$.
+                  value of $m$. \sol{}
+                  \begin{flalign*}
+                        \int_m^2(2x+3)\,dx & = \left[x^2 + 3x\right]_m^2 \\
+                                           & = 4 + 6 - m^2 - 3m          \\
+                                           & = 10 - 3m - m^2             \\
+                        10 - 3m - m^2      & = -8                        \\
+                        m^2 + 3m - 10      & = 8                         \\
+                        m^2 + 3m - 18      & = 0                         \\
+                        (m+6)(m-3)         & = 0                         \\
+                        m                  & = 3 \quad (m > 0) \eos
+                  \end{flalign*}
 
             \item Given that $\dfrac{dy}{dx} = 10{(5x + 3)}^2$ and $y = 4$ when $x = 0$. Express
                   $y$ in terms of $x$.
@@ -1079,50 +1092,183 @@
             \item Given $\displaystyle \int_5^m f(t)\,dx = \dfrac{7}{3}$, find
                   \begin{enumerate}
                         \item $\displaystyle \int_m^5 3f(t)\,dx  = \dfrac{7}{3}$.
+                              \sol{}
+                              \begin{flalign*}
+                                    \int_m^5 3f(t)\,dx & = -\int_5^m 3f(t)\,dx \\
+                                                       & = -3\int_5^m f(t)\,dx \\
+                                                       & = -3\dfrac{7}{3}      \\
+                                                       & = -7 \eos
+                              \end{flalign*}
 
-                        \item the value of $m$, where $\displaystyle \int_5^m [4-f(t)]\,dx = 7$.
+                        \item the value of $m$, where $\displaystyle \int_5^m [4-f(t)]\,dx = 7$. \sol{}
+                              \begin{flalign*}
+                                    \int_5^m [4-f(t)]\,dx               & = 7            \\
+                                    \int_5^m 4\,dx - \int_5^m f(t)\,dx  & = 7            \\
+                                    {\left[4x\right]}_5^m - \frac{7}{3} & = 7            \\
+                                    4m - 20                             & = \frac{28}{3} \\
+                                    12m - 60                            & = 28           \\
+                                    12m                                 & = 88           \\
+                                    m                                   & = 7\frac{1}{3}
+                              \end{flalign*}
                   \end{enumerate}
 
             \item Given that $\displaystyle \int \dfrac{3}{{(3x-2)}^n}\,dx = a{(3x-2)}^{1-n} +
                         C$,
                   \begin{enumerate}
-                        \item State the impossible value of $n$.
+                        \item State the impossible value of $n$. \sol{}
+                              \begin{flalign*}
+                                    \int \dfrac{3}{{(3x-2)}^n}\,dx & = 3\int {(3x-2)}^{-n}\,dx                          & \\
+                                                                   & = 3\left[\dfrac{{(3x-2)}^{1-n}}{3(1-n)}\right] + C   \\
+                                                                   & = \dfrac{{(3x-2)}^{1-n}}{1-n} + C                    \\
+                                    a{(3x-2)}^{1-n} + C            & = \dfrac{1}{1-n}{(3x-2)}^{1-n} + C
+                              \end{flalign*}
+                              Comparing both sides,
+                              \begin{flalign*}
+                                    a & = \frac{1}{1-n}
+                              \end{flalign*}
+                              $a$ is undefined when $1-n = 0$.
+                              \begin{flalign*}
+                                    1 - n & = 0 \\
+                                    n     & = 1
+                              \end{flalign*}
+                              Therefore, $n = 1$ is impossible. $\eos$
 
-                        \item Hence, express $n$ in terms of $a$.
+                        \item Hence, express $n$ in terms of $a$. \sol{}
+                              \begin{flalign*}
+                                    a      & = \frac{1}{1-n}      \\
+                                    a(1-n) & = 1                  \\
+                                    a - an & = 1                  \\
+                                    an     & = a - 1              \\
+                                    n      & = \frac{a-1}{a} \eos
+                              \end{flalign*}
                   \end{enumerate}
 
             \item Diagram below shows a curve $y = f(x)$.
-
+                  \begin{center}
+                        \includegraphics[width=0.35\textwidth]{images/26.png}
+                  \end{center}
                   Given area of region $B$ is three times the area of region $A$ and
                   $\displaystyle \int_0^b f(x)\,dx = 20$, find the area of region $B$.
+                  \sol{}
+                  \begin{flalign*}
+                        \int_0^b f(x)\,dx & = \int_0^a f(x)\,dx + \int_a^b f(x)\,dx             \\
+                        20                & = -\int_0^a f(x)\,dx + \int_a^b f(x)\,dx            \\
+                        20                & = -\frac{1}{3}\int_a^b f(x)\,dx + \int_a^b f(x)\,dx \\
+                        20                & = -\frac{1}{3}A_B + A_B                             \\
+                        20                & = \frac{2}{3}A_B                                    \\
+                        2A_B              & = 60                                                \\
+                        A_B               & = 30 \eos
+                  \end{flalign*}
       \end{enumerate}
 
       \section{Kertas 2}
       \begin{enumerate}
             \item Differentiate $2x^4\sqrt{4x-3}$ with respect to $x$. Hence, find $\displaystyle
-                        \int \dfrac{3x^4 - 2x^3}{\sqrt{4x-3}}\,dx$.
+                        \int \dfrac{3x^4 - 2x^3}{\sqrt{4x-3}}\,dx$. \sol{}
+                  \begin{flalign*}
+                        \frac{dy}{dx}(2x^4\sqrt{4x-3})            & = 8x^3\sqrt{4x-3} + 2x^4\left(\frac{4}{2\sqrt{4x-3}}\right) & \\
+                                                                  & = 8x^3\sqrt{4x-3} + \frac{4x^4}{\sqrt{4x-3}}                  \\
+                                                                  & = \frac{8x^3(4x-3) + 4x^4}{\sqrt{4x-3}}                       \\
+                                                                  & = \frac{4x^3(8x -6 +x)}{\sqrt{4x-3}}                          \\
+                                                                  & = \frac{12(3x^4 - 2x^3)}{\sqrt{4x-3}} \eos                    \\
+                        \\
+                        \int \dfrac{3x^4 - 2x^3}{\sqrt{4x-3}}\,dx & = \frac{1}{12}\int \frac{12(3x^4 - 2x^3)}{\sqrt{4x-3}}\,dx    \\
+                                                                  & = \frac{1}{12}\cdot 2x^4\sqrt{4x-3}                           \\
+                                                                  & = \frac{x^4\sqrt{4x-3}}{6} \eos
+                  \end{flalign*}
 
             \item The number of customers in a restaurant on a certain day changes at a rate of
                   $\dfrac{dB}{dt} = 70 - 10t$ people per hour. When $t = 2$, the number of
-                  customers in the restaurant is 120. Find,
+                  customers in the restaurant is 120. Find, \sol{}
+                  \begin{flalign*}
+                        \dfrac{dB}{dt}          & = 70 - 10t            \\
+                        \int \dfrac{dB}{dt}\,dt & = \int (70 - 10t)\,dt \\
+                        B                       & = 70t - 5t^2 + C      \\
+                        \because\ t             & = 2,\ B = 120,        \\
+                        120                     & = 70(2) - 5(2)^2 + C  \\
+                        C                       & = 120 - 140 + 20 = 0  \\
+                        \therefore\ B           & = 70t - 5t^2
+                  \end{flalign*}
                   \begin{enumerate}
-                        \item the number of customers when $t = 10$.
+                        \item the number of customers when $t = 10$. \sol{}
+                              \begin{flalign*}
+                                    B & = 70(10) - {5(10)}^2 \\
+                                      & = 700 - 500          \\
+                                      & = 200 \eos
+                              \end{flalign*}
 
                         \item the maximum number of customers at a certain time on that day. Hence, find the
                               income of the restaurant at that moment if each customer spends an average of
-                              RM25.
+                              RM25. \sol{}
+                              \begin{flalign*}
+                                    70 - 10t & = 0  \\
+                                    10t      & = 70 \\
+                                    t        & = 7
+                              \end{flalign*}
+                              When $t = 7$, the number of customers is
+                              \begin{flalign*}
+                                    B & = 70(7) - 5{(7)}^2 \\
+                                      & = 490 - 245        \\
+                                      & = 245 \eos
+                              \end{flalign*}
+                              Hence, the income of the restaurant at that moment is
+                              \begin{flalign*}
+                                    \text{Income} & = 245 \times 25 \\
+                                                  & = RM6,125 \eos
+                              \end{flalign*}
                   \end{enumerate}
 
             \item The gradient function of a curve is given by $\dfrac{dy}{dx} = kx - 6$, where
                   $k$ is a constant. The gradient of normal to the curve at point $(2, -5)$ is
-                  $\frac{1}{2}$. Find the equation of the curve.
+                  $\dfrac{1}{2}$. Find the equation of the curve. \sol{}
+
+                  The gradient of the tangent to the curve at point $(2, -5)$ is $-2$.
+                  \begin{flalign*}
+                        -2            & = k(2) - 6               \\
+                        2k            & = 4                      \\
+                        k             & = 2                      \\
+                        \\
+                        \frac{dy}{dx} & = 2x - 6                 \\
+                        y             & = \int \frac{dy}{dx}\,dx \\
+                                      & = \int (2x - 6)\,dx      \\
+                                      & = x^2 - 6x + C           \\
+                        \because\ x   & = 2,\ y = -5,            \\
+                        -5            & = 2^2 - 6(2) + C         \\
+                        C             & = -5 -4 + 12 = 3
+                  \end{flalign*}
+                  Hence, the eq. of the curve is $y = x^2 - 6x + 3$. \eos
 
             \item The curve with gradient function $f'(x) = 3x^2 + mx + n$ where $m$ and $n$ are
                   constants, has stationary points at $(1, -3)$ and $(-3, 29)$. Find
                   \begin{enumerate}
-                        \item the values of $m$ and $n$.
+                        \item the values of $m$ and $n$. \sol{}
+                              \begin{flalign*}
+                                    f'(1)   & = 3{(1)}^2 + m + n           \\
+                                    0       & = 3 + m + n                  \\
+                                    m + n   & = -3 \quad \cdots \quad (1)  \\
+                                    f'(-3)  & = 3{(-3)}^2 - 3m + n         \\
+                                            & = 27 - 3m + n                \\
+                                    -3m + n & = -27 \quad \cdots \quad (2)
+                              \end{flalign*}
+                              \begin{flalign*}
+                                    (2) - (1):\ 4m & = 24               \\
+                                    m              & = 6 \eos           \\
+                                    n              & = -3 - 6 = -9 \eos
+                              \end{flalign*}
 
-                        \item the equation of the curve.
+                        \item the equation of the curve. \sol{}
+                              \begin{flalign*}
+                                    f'(x)       & = 3x^2 + 6x - 9                              \\
+                                    f(x)        & = \int f'(x)\,dx                             \\
+                                                & = \int (3x^2 + 6x - 9)\,dx                   \\
+                                                & = 3\int (x^2 + 2x - 3)\,dx                   \\
+                                                & = 3\left[\frac{x^3}{3} + x^2 - 3x\right] + C \\
+                                                & = x^3 + 3x^2 - 9x + C                        \\
+                                    \because\ x & = 1,\ y = -3,                                \\
+                                    -3          & = 1^3 + 3{(1)}^2 - 9{(1)} + C                \\
+                                    C           & = -3 - 1 - 3 + 9 = 2
+                              \end{flalign*}
+                              Hence, the equation of the curve is $y = x^3 + 3x^2 - 9x + 2$. \eos
                   \end{enumerate}
 
             \item Diagram below shows two regions labelled as $A$ and $B$ respectively. Region
@@ -1130,38 +1276,157 @@
                   line $x = a$ and the x-axis whereas region $B$ is bounded by the curve $y =
                         {\left(\dfrac{a}{x}\right)}^3$, the straight lines $x = a$ and $x = b$, and the
                   x-axis.
+                  \begin{center}
+                        \includegraphics[width=0.36\textwidth]{images/27.png}
+                  \end{center}
                   \begin{enumerate}
-                        \item Find the area of the region $A$ in terms of $a$.
+                        \item Find the area of the region $A$ in terms of $a$. \sol{}
+                              \begin{flalign*}
+                                    A_A & = \int_{0}^{a} {\left(\frac{x}{a}\right)}^3\,dx \\
+                                        & =\int_{0}^{a} \frac{x^3}{a^3}\,dx               \\
+                                        & = {\left[\frac{x^4}{4a^3}\right]}_{0}^{a}       \\
+                                        & = \frac{a^4}{4a^3}                              \\
+                                        & = \frac{a}{4} \eos
+                              \end{flalign*}
 
-                        \item Find the area of the region $B$ in terms of $a$ and $b$.
+                        \item Find the area of the region $B$ in terms of $a$ and $b$. \sol{}
+                              \begin{flalign*}
+                                    A_B & = \int_{a}^{b} {\left(\frac{a}{x}\right)}^3\,dx    \\
+                                        & = a^3\int_{a}^{b} \frac{1}{x^3}\,dx                \\
+                                        & = a^3{\left[-\frac{1}{2x^2}\right]}_{a}^{b}        \\
+                                        & = a^3\left(-\frac{1}{2b^2} + \frac{1}{2a^2}\right) \\
+                                        & = a^3\left(\frac{-a^2 + b^2}{2a^2b^2}\right)       \\
+                                        & = \frac{ab^2 - a^3}{2b^2} \eos
+                              \end{flalign*}
 
-                        \item Show that the area of region $A > \dfrac{1}{2}$\textit{area of region $B$} for
-                              all values of $a$ and $b$ where $0 < a < b$.
+                        \item Show that \textit{the area of region} $A > \dfrac{1}{2}$ \textit{area of region
+                                    $B$} for all values of $a$ and $b$ where $0 < a < b$. \sol{}
+                              \begin{flalign*}
+                                    A_A            & = \frac{a}{4}                          \\
+                                    \frac{1}{2}A_B & = \frac{ab^2 - a^3}{4b^2}              \\
+                                                   & = \frac{ab^2}{4b^2} - \frac{a^3}{4b^2} \\
+                                                   & = \frac{a}{4} - \frac{a^3}{4b^2}
+                              \end{flalign*}
+                              \begin{flalign*}
+                                    \forall\     & a,b \in \mathbb{R},\ 0 < a < b               \\
+                                    \because\    & \frac{a}{4} > \frac{a}{4} - \frac{a^3}{4b^2} \\
+                                    \therefore\  & A_A > \frac{1}{2}A_B \quad (shown)\eos
+                              \end{flalign*}
                   \end{enumerate}
 
             \item Diagram below shows the cross-section of an anti-heat bowl which is made of
                   stainless steel. The bowl has two layers in which the space between the two
                   layers is a vacuum which functions as a heat insulator.
-
-                  THe inner and the outer layers of the bowl are parabolic in shape which are
+                  \begin{center}
+                        \includegraphics[width=0.36\textwidth]{images/28.png}
+                  \end{center}
+                  The inner and the outer layers of the bowl are parabolic in shape which are
                   represented by the equations $y = ax^2 + b$ and $y = \dfrac{32}{289}x^2$
                   respectively.
                   \begin{enumerate}
-                        \item Find the values of $a$ and $b$.
+                        \item Find the values of $a$ and $b$. \sol{}
+                              \begin{flalign*}
+                                    y & = ax^2 + b                          \\
+                                    b & = 1 \quad (\text{y-intercept}) \eos \\
+                                    y & = ax^2 + 1
+                              \end{flalign*}
+                              The bowl is split into two equal parts by the y-axis, while the height of the bowl is $8$\textit{cm} Hence, the top-right corner of the bowl is $(8, 8)$.
+                              \begin{flalign*}
+                                    8   & = a(64) + 1         \\
+                                    64a & = 7                 \\
+                                    a   & = \frac{7}{64} \eos
+                              \end{flalign*}
 
                         \item Anis wants to pour $1.5$ litres of milk into the bowl. Identify whether the
-                              bowl can hold $1.5$ litres of milk. Justify your answer.
+                              bowl can hold $1.5$ litres of milk. Justify your answer. \sol{}
+                              \begin{flalign*}
+                                    y         & = \frac{7}{64}x^2 + 1 \\
+                                    64y       & = 7x^2 + 64           \\
+                                    64y - 64  & = 7x^2                \\
+                                    64(y - 1) & = 7x^2                \\
+                                    x^2       & = \frac{64}{7}(y - 1)
+                              \end{flalign*}
+                              The volume of the bowl is
+                              \begin{flalign*}
+                                    V_x & = \int_1^7 \pi x^2\,dy                                                                     \\
+                                        & = \pi\int_1^7 \frac{64}{7}(y - 1)\,dy                                                      \\
+                                        & = \frac{64}{7}\pi\int_1^8 (y - 1)\,dy                                                      \\
+                                        & = \frac{64}{7}\pi{\left[\frac{y^2}{2} - y\right]}_{1}^{8}                                  \\
+                                        & = \frac{64}{7}\pi\left[\left(\frac{64}{2} - 8\right) - \left(\frac{1}{2} - 1\right)\right] \\
+                                        & = \frac{64}{7}\pi\left(24 + \frac{1}{2}\right)                                             \\
+                                        & = 224\pi                                                                                   \\
+                                        & \approx 703.7168\textit{cm}^3                                                              \\
+                                        & \approx 703.7168\textit{ml}
+                              \end{flalign*}
+                              Hence, the bowl is not capable of holding $1.5$ litres of milk due to insufficient volume. $\eos$
                   \end{enumerate}
 
             \item Diagram below shows parts of the curves $y = x^2 + 5x + 4$ and $y = 4 - x^2$.
-
+                  \begin{center}
+                        \includegraphics[width=0.36\textwidth]{images/29.png}
+                  \end{center}
                   Find
                   \begin{enumerate}
-                        \item the points of intersection $P$ and $S$.
+                        \item the points of intersection $P$ and $S$. \sol{}
+                              \begin{flalign*}
+                                    x^2 + 5x + 4 & = 4 - x^2                    \\
+                                    2x^2 + 5x    & = 0                          \\
+                                    x(2x + 5)    & = 0                          \\
+                                    x = 0        & \text{ or } x = -\frac{5}{2}
+                              \end{flalign*}
+                              \begin{flalign*}
+                                    x = 0,\ y            & = 4 - 0^2 = 4                     \\
+                                    x = -\frac{5}{2},\ y & = 4 - \left(-\frac{5}{2}\right)^2 \\
+                                                         & = 4 - \frac{25}{4}                \\
+                                                         & = -\frac{9}{4}
+                              \end{flalign*}
+                              Hence, the points of intersection are $S(0, 4)$ and $P(-\dfrac{5}{2}, -\dfrac{9}{4})$. $\eos$
 
-                        \item the coordinates of the points $Q$ and $R$.
+                        \item the coordinates of the points $Q$ and $R$. \sol{}
+                              \begin{flalign*}
+                                    4 - x^2    & = 0               \\
+                                    x^2 - 4    & = 0               \\
+                                    (x+2)(x-2) & = 0               \\
+                                    x = -2     & \text{ or } x = 2
+                              \end{flalign*}
+                              \begin{flalign*}
+                                    \because\    & x_Q < 0,\ x_Q = -2 \\
+                                    \therefore\  & Q(-2, 0) \eos
+                              \end{flalign*}
+                              \begin{flalign*}
+                                    x^2 + 5x + 4   & = 0                \\
+                                    (x + 1)(x + 4) & = 0                \\
+                                    x = -1         & \text{ or } x = -4
+                              \end{flalign*}
+                              \begin{flalign*}
+                                    \because\    & x_R > x_Q,\ x_R = -1 \\
+                                    \therefore\  & R(-1, 0) \eos
+                              \end{flalign*}
 
-                        \item the area of the shaded region.
+                        \item the area of the shaded region. \sol{}
+
+                              Let the area above the $x$-axis be $A_A$ and the area below the $x$-axis be
+                              $A_B$.
+                              \begin{flalign*}
+                                    A_A & = \int_{-2}^0 \left(4 - x^2\right)\,dx - \int_{-1}^0 \left(x^2 + 5x + 4\right)\,dx                                                       & \\
+                                        & = {\left[4x - \frac{1}{3}x^3\right]}_{-2}^{0} - {\left[\frac{1}{3}x^3 + \frac{5}{2}x^2 + 4x\right]}_{-1}^{0}                             & \\
+                                        & = \left[0 - \left(-8 + \frac{8}{3}\right)\right] - \left[0 - \left(-\frac{1}{3} + \frac{5}{2} - 4\right)\right]                          & \\
+                                        & = \frac{16}{3} - \frac{11}{6}                                                                                                              \\
+                                        & = 3\frac{1}{2} \textit{units}^2                                                                                                            \\
+                                    A_B & = \left|\int_{-2.5}^{-1} \left(x^2 + 5x + 4\right)\,dx\right| - \left|\int_{-2.5}^{-2} \left(4 - x^2\right)\,\right.                       \\
+                                        & \ \ \ \ \left.dx\right|                                                                                                                  & \\
+                                        & = \left|\left[\frac{1}{3}x^3 + \frac{5}{2}x^2 + 4x\right]_{-2.5}^{-1}\right| - \left|\left[4x - \frac{1}{3}x^3\right]_{-2.5}^{-2}\right| & \\
+                                        & = \left|\left[\left(-\frac{1}{3} + \frac{5}{2} - 4\right) - \left(-\frac{125}{24} + \frac{125}{8} - 10\right)\right]\right|                \\
+                                        & \ \ \ \ - \left|\left[\left(-8 + \frac{8}{3}\right) - \left(-10 + \frac{125}{24}\right)\right]\right|                                      \\
+                                        & = \left|\left(-\frac{11}{6} - \frac{5}{12}\right)\right| - \left|\left(-\frac{16}{3} + \frac{115}{24}\right)\right|                        \\
+                                        & = \frac{9}{4} - \frac{13}{24}                                                                                                              \\
+                                        & = 1\frac{17}{24} \textit{units}^2
+                              \end{flalign*}
+                              \begin{flalign*}
+                                    A & = A_A + A_B                           \\
+                                      & = 3\frac{1}{2} + 1\frac{17}{24}       \\
+                                      & = 5\frac{5}{24} \textit{units}^2 \eos
+                              \end{flalign*}
                   \end{enumerate}
       \end{enumerate}
 \end{multicols*}
