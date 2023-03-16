@@ -1,0 +1,444 @@
+\documentclass{report}
+\usepackage[a4paper, total={7.5in, 10in}]{geometry}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage[]{mdframed}
+\usepackage{multicol}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{tipa}
+\usepackage{array, makecell, cellspace}
+\usepackage{bigints}
+\usepackage[export]{adjustbox}
+\setlength{\cellspacetoplimit}{13.2ex}
+\setlength{\cellspacebottomlimit}{13.2ex}
+
+\usepackage{ifxetex}
+
+\ifxetex
+      \usepackage{substitutefont}
+      \substitutefont{T3}{\rmdefault}{cmr}
+\fi
+
+\usepackage{fontspec}
+\setmainfont[Mapping=tex-text]{Georgia}
+
+\title{Praktis 4\\Permutation and Combination}
+\author{Melvin Chia}
+
+\newcommand\perm[2][^n]{\prescript{#1\mkern-2.5mu}{}P_{#2}}
+\newcommand\permtwo[2][^n]{{}_{#1}P_{#2}}
+\newcommand\comb[2][^n]{{}_{#1}C_{#2}}
+\newcommand\combtwo[2][^n]{\prescript{#1\mkern-2.5mu}{}C_{#2}}
+
+\newcommand{\sol}[1]{
+
+      \noindent \textbf{Sol.}
+}
+\newcommand{\prooff}[1]{
+
+      \noindent \textbf{Proof.}
+}
+
+\newcommand{\arc}[1]{{%
+                  \setbox9=\hbox{#1}%
+                  \ooalign{\resizebox{\wd9}{\height}{\texttoptiebar{\phantom{A}}}\cr#1}}}
+
+\def\eos{\quad\hbox{\rlap{\hbox{\vrule depth 1.5pt height 2.6mm width 0.2mm \hskip 1mm \vrule height 2.6mm width 0.2mm}}{\vbox{\hrule height 0.2mm width 1.4mm \vskip 2.8mm \hrule depth 1.5pt height -0.35mm width 1.2mm}}}}
+
+\counterwithout{equation}{chapter}
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\hfuzz=100pt
+\setcounter{chapter}{4}
+
+\begin{document}
+\maketitle
+
+\begin{multicols*}{2}
+      \noindent\Large{\underline{\textbf{Praktis Formatif}}}
+      \normalsize
+      \section{Permutation}
+      \begin{enumerate}
+            \item There are 3 types of fruits and 5 types of cupcakes in the kitchen. Determine
+                  the number of selections made by Aiman if
+                  \begin{enumerate}
+                        \item he can only choose one of the item,
+                        \item he can choose one type of fruits and one type of cupcakes.
+                  \end{enumerate}
+
+            \item During the school mid-year holidays, Zoe wants to do revision for her 4 Science
+                  subjects, 2 Mathematics subjects, 4 language subjects and 2 other subjects.
+                  Find the number of ways the revision can be done if
+                  \begin{enumerate}
+                        \item Zoe revises one subject only,
+                        \item Zoe wants to revise one science subject, one mathematics subject and one core
+                              subject in a day.
+                  \end{enumerate}
+
+            \item Ali plans to visit Zaleha who stays in Sarawak. Ali can choose to ride in
+                  either 4 of his friends's car or purchase a ticket from any of the 3 bus
+                  companies to Kuala Lumpur International Airport. From there, Ali can choose
+                  from any 3 flight companies to Sarawak. In how many ways can Ali go to Sarawak?
+
+            \item During School's Entrepreneurship Carnival, Sandy is interested to participate
+                  in the Treasure Hunt game. The participants need to get two clues from Station
+                  A and Station B. There are 4 paths to Station B. ALl paths are of different
+                  distances. After obtaining two clues, every participant needs to return to the
+                  starting point to get his last clue. Determine the number of ways to travel to
+                  and from if Sandy
+                  \begin{enumerate}
+                        \item choose the same path,
+                        \item does not use the same path.
+                  \end{enumerate}
+
+            \item Chong wants to set a passcode to her safe deposit box. The passcode consists of
+                  a 4-digit number. Find the number of passcodes that can be formed by Chong.
+
+            \item Solve each of the following situations.
+                  \begin{enumerate}
+                        \item Find the number of ways to rearrange all the letters in the word CUTE.
+                        \item How many 4-digit numbers that are different that can be formed by using the
+                              digits 1, 2, 3, and 4 without repetition?
+                  \end{enumerate}
+
+            \item Find the number of arrangements in each of the following situations.
+                  \begin{enumerate}
+                        \item Determine the number of ways to arrange 10 VIP guests to sit at a round table.
+                        \item Find the number of ways fro 8 scouts to stand around a campfire.
+                        \item Find the number of ways to distribute 10 types of fruits to 10 students sitting
+                              at a round table.
+                  \end{enumerate}
+
+            \item Determine the number of arrangements for each of the following situations.
+                  \begin{enumerate}
+                        \item How many ways to form a bracelet with 12 different pearls?
+                        \item Find the number of ways to arrange 10 types of flowers to form a floral hoop.
+                  \end{enumerate}
+
+            \item Find the value of $n$ for each of the following.
+                  \begin{enumerate}
+                        \item $\permtwo[n]{2} = 6$
+                        \item $\permtwo[n+2]{3} = 42n$
+                        \item $7(\permtwo[n+1]{2}) = 5(\permtwo[n+2]{2})$
+                        \item $\permtwo[2n]{2} = 3(\permtwo[n+1]{2})$
+                  \end{enumerate}
+
+            \item Determine the number of arrangements of the following situations.
+                  \begin{enumerate}
+                        \item How many 4-digit numbers that are different that can be formed from digits 1,
+                              2, 3, 4, and 5 without repetition?
+                        \item Find the number of ways to arrange 7 students in 4 chairs.
+                        \item How many ways can 4 cars park in 8 empty parking lots along the street as shown
+                              in the following diagram?
+                        \item There are 12 participants in a 100-m run. Find the number of possible results
+                              obtained if presents are only given to the champion, $1^{st}$ runner-up and
+                              $2^{nd}$ runner-up only.
+                  \end{enumerate}
+
+            \item Determine the number of arrangements of $r$ out of $n$ different objects in a
+                  circle.
+                  \begin{enumerate}
+                        \item Find the number of ways to arrange 10 students to sit in 6 chairs at a round
+                              table.
+                        \item If each of the children is given only a new school ag, find the number of ways
+                              to distribute 9 school bags to 5 children sitting in a circle.
+                        \item Determine the number of ways 5 people can sit in 7 empty chairs at a round
+                              table.
+                  \end{enumerate}
+
+            \item Solve each of the following questions.
+                  \begin{enumerate}
+                        \item The following diagram shows a hula hoop that can be dismantled into 6 parts.The
+                              user can fix the hoop again by choosing the combination of colours desired.
+
+                              How many ways can the hula hoop be fixed if Siti has 8 parts of different
+                              colours?
+
+                        \item Find the number of ways to make a bracelet which contains a bracelet which
+                              contains 8 pearls chosen from 16 different pearls.
+                  \end{enumerate}
+
+            \item Solve the following permutation questions involving identical objects.
+                  \begin{enumerate}
+                        \item Find the number of ways to rearrange the letters from the word
+                              \begin{enumerate}
+                                    \item LOOKOUT
+                                    \item MATHEMATICS
+                                    \item MISSISSIPPI
+                              \end{enumerate}
+
+                        \item Find the number of ways to form a 5-digit number from cards that are labelled
+                              with 1, 2, 2, 2, 3, 4, 5, 6, 7, 8, and 8 if all the digit 2 must be used.
+                  \end{enumerate}
+
+            \item Find the number of ways to rearrange all the letters in the word ENGLISH if
+                  \begin{enumerate}
+                        \item vowels must be placed at both ends,
+                        \item it must start with a consonant,
+                        \item vowels must be side by side,
+                        \item only 5 letters are arranged with the vowels placed side by side.
+                  \end{enumerate}
+
+            \item Find the number of ways to arrange 7 family members at a round table if
+                  \begin{enumerate}
+                        \item there are 5 vacant chairs and both parents must sit next to each other,
+                        \item there are 7 vacant chairs and both parents must sit next to each other,
+                        \item there are 10 vacant chairs and both parents must sit next to each other.
+                  \end{enumerate}
+
+            \item How many ways can 4 male students and 3 female students be seated in a row if
+                  \begin{enumerate}
+                        \item they can sit anywhere,
+                        \item 2 female students must sit together,
+                        \item 2 female students must be separated.
+                  \end{enumerate}
+
+            \item Find the number of ways to arrange 7 different story books and 3 different
+                  magazines on a bookshelf if
+                  \begin{enumerate}
+                        \item no condition is imposed,
+                        \item the magazines must be put together,
+                        \item the magazines cannot be put together.
+                  \end{enumerate}
+
+            \item GIven cards that are labelled with the digits 0, 3, 4, 5, 6, and 7. Find the
+                  number of arrangements of those digits without repetition to form
+                  \begin{enumerate}
+                        \item 4-digit odd numbers,
+                        \item 4-digit numbers that begin with an even digit,
+                        \item 4-digit numbers with all the odd digits together,
+                        \item 4-digit numbers with odd digits together,
+                        \item 4-digit numbers with odd and even digits at the alternate positions,
+                        \item even numbers that are greater than $50\ 000$.
+                  \end{enumerate}
+
+            \item IN every football match, the result may be win, lose or draw. Determine the
+                  number of possible outcomes obtained in a round of match that involves 12 teams
+                  (6 matches).
+
+            \item The following diagram shows the seating arrangement in the meeting room of
+                  company $X$.
+
+                  Determine the number of ways 9 workers can be seated during the meeting if
+                  \begin{enumerate}
+                        \item no condition is imposed,
+                        \item 3 particular workers must sit in the same row.
+                  \end{enumerate}
+
+            \item 8 teachers travel in 2 cars to attend a course. Only 5 teachers have driving licenses. Calculate the number of seating arrangements of the teachers in the 3 cars if each car can accommodate only 4 people.
+
+            \item Find the numbers of different arrangements using all the letters in the word
+                  COMMITMENT. Hence, determine the number of arrangements which
+                  \begin{enumerate}
+                        \item begin and end with the letter T,
+                        \item contain MMM,
+                        \item do not contain TT.
+                  \end{enumerate}
+
+            \item Determine the number of ways 4 doctors and 4 nurses can be seated at a round
+                  table if
+                  \begin{enumerate}
+                        \item no condition is imposed,
+                        \item 2 nurses should not sit side by side,
+                        \item the doctors and nurses sit in alternate positions.
+                  \end{enumerate}
+
+      \end{enumerate}
+      \section{Combination}
+      \begin{enumerate}
+            \setcounter{enumi}{23}
+            \item \begin{enumerate}
+                        \item Find the number of ways to choose 2 out of 5 story books on the bookshelf.
+                        \item Determine the number of ways to select 4 representatives from 10 students to
+                              participate in the national debate competition.
+                  \end{enumerate}
+
+            \item Calculate the number of ways to form groups in which 9 students are divided
+                  into
+                  \begin{enumerate}
+                        \item 2 groups of 4 and 5 students respectively,
+                        \item 3 groups of 2, 3, and 4 students respectively,
+                        \item 2 groups in which the difference between the group members must be at least 3 people.
+                  \end{enumerate}
+
+            \item Four letters are selected from the word HITUNG. How many different selections
+                  that are possible? From the selections, determine the number of selections that
+                  \begin{enumerate}
+                        \item do not contain the vowel U,
+                        \item contains the vowel U.
+                  \end{enumerate}
+
+            \item The following diagram shows 8 cards of 1-digit number.
+
+                  Find the number of selections of one card if
+
+                  \begin{enumerate}
+                        \item the chosen number is a multiple of 2,
+                        \item a prime number is chosen,
+                        \item the number that is less than 6 is chosen.
+                  \end{enumerate}
+
+            \item A team of 4 members is selected from 4 men and 6 women. Find the number of ways
+                  the team can be formed if
+                  \begin{enumerate}
+                        \item no condition is imposed,
+                        \item the team consists of 1 man and 3 women,
+                        \item the number of men in the team is at least 2 people.
+                  \end{enumerate}
+
+            \item The following diagram shows points that can be connected to form a geometrical
+                  shape.
+
+                  Find the possible number of ways to form
+                  \begin{enumerate}
+                        \item a triangle,
+                        \item a quadrilateral,
+                        \item a triangle in which point A or point C but not both and point F must be used.
+                  \end{enumerate}
+
+            \item A tennis team of 4 men and 4 women is to be selected from 6 men and 7 women.
+                  \begin{enumerate}
+                        \item Find the number of selections to form the team.
+                        \item Determine the number of formations of the team if 2 out of 7 women must be
+                              selected together or not selected at all.
+                  \end{enumerate}
+
+            \item During a meeting, 3 executive officers, 3 managers and 5 workers are seated at
+                  a round table. Determine the number of ways they are seated if
+                  \begin{enumerate}
+                        \item no condition is imposed,
+                        \item a particular executive officer must sit between a manager and a worker,
+                        \item 3 executive officers sit separately.
+                  \end{enumerate}
+
+            \item A quiz team of 10 players is to be chosen from a class of 8 boys and 12 girls.
+                  Find
+                  \begin{enumerate}
+                        \item the number of different teams that can be formed if the number of boys is equal
+                              to the number of girls,
+                        \item the number of different teams that can be formed if the number of girls is more
+                              than the number of boys,
+                        \item the number of different teams that can be formed if Kamal and Ali as well as
+                              Fatimah and Mei Mei must be chosen.
+                  \end{enumerate}
+
+            \item During the National Mathematics Olympiad Competition 2021, all the 100
+                  participants gather in a hall for a briefing. After the briefing all
+                  participants are divided equally into 5 groups. ALl the participants in each
+                  group are instructed to take their seats in their respective classrooms. Before
+                  the competition begins, the participants in Group A shake hands with each
+                  other. Find
+                  \begin{enumerate}
+                        \item the number of handshakes made between the participants in Group A,
+                        \item the number of handshakes made if Afiq, Ben and Cathy do not shake hands.
+                  \end{enumerate}
+      \end{enumerate}
+\end{multicols*}
+\begin{multicols*}{2}
+      \noindent\Large{\underline{\textbf{Praktis Summatif}}}
+      \normalsize
+      \setcounter{section}{0}
+      \section{Kertas 1}
+      \begin{enumerate}
+            \item \begin{enumerate}
+                        \item State the values of r if $\comb[7]{r} = 1$.
+                        \item Express $s$ in terms of $t$ and $u$ if $\comb[s]{t} = \comb[s]{u}$
+                  \end{enumerate}
+            \item \begin{enumerate}
+                        \item Show that $\comb[n]{r} = \comb[n]{n-r}$ where $n$ and $r$ are positive integers
+                              and $n > r$.
+                        \item Find the value of $r$ if $\dfrac{\permtwo[n]{r}}{\comb[n]{r}} = 120$.
+                  \end{enumerate}
+            \item A committee of 7 students is selected from 7 male students and 10 female
+                  students find the number of ways the committee can be formed if
+                  \begin{enumerate}
+                        \item no condition is imposed,
+                        \item there are 3 male students and 4 female students.
+                        \item  The number of female students must be more than the number of male students.
+                  \end{enumerate}
+            \item During the school year end dinner, every round table must be seated with 10
+                  people. The VIP table has only 6 seats. 6 teachers are selected from 5
+                  mathematics teachers and five science teachers to fill in the vacant seats at
+                  the VIP table. Find a number of ways to seat the teachers if
+                  \begin{enumerate}
+                        \item no condition is imposed,
+                        \item the mathematics teachers cannot sit next to each other.
+                  \end{enumerate}
+            \item Diagram below shows 8 cards that are labelled with letters.
+                  \begin{enumerate}
+                        \item Find the number of arrangements if
+                              \begin{enumerate}
+                                    \item all the letters are used without repetition,
+                                    \item all the letters are used and the vowels must be side by side.
+                              \end{enumerate}
+                        \item Find the number of different ways to select 5 cards in which S and T needs to
+                              be chosen.
+                        \item Find the number of different 5-letter codes that begin with a vowel and end
+                              with a consonant could be formed.
+                  \end{enumerate}
+
+            \item Agnes decorates her hat with 18 artificial flowers. She uses the same number
+                  and the same type of artificial flowers, but of a smaller size to form a
+                  bracelet as shown in the diagram below.
+
+                  Given that the ratio of the number of roses to the number of morning glories to
+                  the number of sunflowers on the hat is $3:2:1$.
+                  \begin{enumerate}
+                        \item Find the number of roses used.
+                        \item If the morning glories have to be side by side on both the hat and bracelet
+                              find the total number of ways to arrange the artificial flowers.
+                  \end{enumerate}
+
+            \item Diagram below shows 8 cards where 3 cards are labelled with letters and 4 cards
+                  are labelled with digits.
+
+                  Find the number of different arrangements that can be done if
+                  \begin{enumerate}
+                        \item no condition is imposed,
+                        \item the arrangements begin with R and ends with an even digit.
+                  \end{enumerate}
+
+            \item 10 participants successfully enter the final round of a competition. The score is used to determine the champion, $1^{st}$ runner up, $2^{nd}$ runner up, and $3^{rd}$ runner up.
+                  \begin{enumerate}
+                        \item Find the number of different results that are possible to be obtained.
+                        \item If Ben Hong and Haikal are two of the 10 participants, find the number of
+                              different results obtained if
+                              \begin{enumerate}
+                                    \item neither Ben Hong nor Haikal wins the competition,
+                                    \item Ben Hong and Haikal win the competition.
+                              \end{enumerate}
+                  \end{enumerate}
+
+            \item Diagram below shows cards that are labelled with digits.
+
+                  Find the number of 4-digit numbers that can be formed if the digit are used
+                  without repetition. From the numbers formed, find the number of 4-digit numbers
+                  that are
+                  \begin{enumerate}
+                        \item greater than $6\,000$,
+                        \item odd numbers and greater than $6\,000$.
+                  \end{enumerate}
+
+            \item Diagram below shows the arrangement of tables in an exhibition room. A few
+                  panels of partition board are arranged in the middle of the room to create a
+                  one-way path.
+
+                  After the visiting hour to the exhibition, the worker uses pieces of cloth to
+                  cover the exhibition objects on each table. It is given that the worker brings
+                  three pieces of red cloth, three pieces of green cloth, two pieces of blue
+                  cloth and a piece of yellow cloth. Find the number of ways to cover the tables
+                  with cloth if
+                  \begin{enumerate}
+                        \item the worker chooses the cloth at random,
+                        \item the pieces of green cloth are used side by side,
+                        \item the yellow cloth must be used to cover table A and the blue cloth cannot be
+                              used to cover its adjacent table.
+                  \end{enumerate}
+      \end{enumerate}
+\end{multicols*}
+
+\end{document}
