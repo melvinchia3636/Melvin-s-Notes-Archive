@@ -780,16 +780,102 @@
                                         & = \pi\left[\left(144 + 144 + \frac{81}{2}\right) - \left(64 + \frac{128}{3} + 8\right)\right]   \\
                                         & = 213.83\pi\textit{ units}^3 \eos
                               \end{flalign*}
+
                         \item \includegraphics[width=0.3\textwidth,valign=t]{./images/17.png}
+                              \sol{}
+                              \begin{flalign*}
+                                    x^2 + 6x + 9        & = 3-x              \\
+                                    x^2 + 7x + 6        & = 0                \\
+                                    (x + 6)(x + 1)      & = 0                \\
+                                    x              = -6 & \text{ or } x = -1 \\
+                                    x^2 + 6x + 9        & = 0                \\
+                                    {(x + 3)}^2         & = 0                \\
+                                    x                   & = -3               \\
+                                    0                   & = 3-x              \\
+                                    x                   & = 3
+                              \end{flalign*}
+                              \begin{flalign*}
+                                    V_x & = \int_{-3}^{-1} \pi{(x+3)}^4\,dx + \int_{-1}^{3} \pi {(3-x)}^2\,dx                                             \\
+                                        & =  \pi\int_{-3}^{-1} {(x+3)}^4\,dx + \pi\int_{-1}^{3} {(3-x)}^2\,dx                                             \\
+                                        & = \pi\left\{{\left[\frac{{(x+3)}^5}{5}\right]}_{-3}^{-1} + {\left[-\frac{{(3-x)}^3}{3}\right]}_{-1}^{3}\right\} \\
+                                        & = \pi\left[\left(\frac{32}{5} - 0\right) + \left(0 + \frac{64}{3}\right)\right]                                 \\
+                                        & = 27\frac{11}{15}\pi \textit{ units}^3 \eos
+                              \end{flalign*}
+
                         \item \includegraphics[width=0.3\textwidth,valign=t]{./images/18.png}
+                              \sol{}
+
+                              Let the line be $l$. Since $l$ passes through $(-9, 0)$ and $(0, 9)$,
+                              \begin{flalign*}
+                                    m_l          & = \dfrac{9}{9} = 1 \\
+                                    y - 9        & = 1(x - 0)         \\
+                                    y            & = x + 9            \\
+                                    x + 9        & = {(x+3)}^2        \\
+                                                 & = x^2 + 6x + 9     \\
+                                    x^2 + 5x     & = 0                \\
+                                    x(x+5)       & = 0                \\
+                                    x        = 0 & \text{ or } x = -5
+                              \end{flalign*}
+                              \begin{flalign*}
+                                    V_x & = \int_{-5}^{0} \pi{(x+9)}^2\,dx - \int_{-5}^{0} \pi{(x+3)}^4\,dx                                             \\
+                                        & = \pi\int_{-5}^{0} {(x+9)}^2\,dx - \pi\int_{-5}^{0} {(x+3)}^4\,dx                                             \\
+                                        & = \pi\left\{{\left[\frac{{(x+9)}^3}{3}\right]}_{-5}^{0} - {\left[\frac{{(x+3)}^5}{5}\right]}_{-5}^{0}\right\} \\
+                                        & = \pi\left[\left(243 - \frac{64}{3}\right) - \left(\frac{243}{5} + \frac{32}{5}\right)\right]                 \\
+                                        & = 116\frac{2}{3}\pi \textit{ units}^3 \eos
+                              \end{flalign*}
                   \end{enumerate}
 
             \item Find the generated volume, in terms of $\pi$, when the shaded region is rotated
                   through $360^\circ$ about the y-axis.
                   \begin{enumerate}
                         \item \includegraphics[width=0.3\textwidth,valign=t]{./images/19.png}
+                              \sol{}
+                              \begin{flalign*}
+                                    y   & = x^2 + 1        \\
+                                    x^2 & = y - 1          \\
+                                    x   & - \sqrt{y-1} = 0
+                              \end{flalign*}
+                              \begin{flalign*}
+                                    V_y & = \int_{2}^{10} \pi{(\sqrt{y-1})}^2\,dy                     \\
+                                        & = \pi\int_{2}^{10} y-1\,dy                                  \\
+                                        & = \pi{\left[\frac{y^2}{2} - y\right]}_2^{10}                \\
+                                        & = \pi\left[\left(50 - 10\right) - \left(2 - 2\right)\right] \\
+                                        & = 40\pi \textit{ units}^3 \eos
+                              \end{flalign*}
+
                         \item \includegraphics[width=0.3\textwidth,valign=t]{./images/20.png}
+                              \sol{}
+                              \begin{flalign*}
+                                    y & = x^2      \\
+                                    x & = \sqrt{y}
+                              \end{flalign*}
+                              \begin{flalign*}
+                                    V_y & = \int_{0}^{4} \pi {\left(\sqrt{y}\right)}^2\,dy + \frac{1}{3} \pi \cdot 4 \cdot 6 \\
+                                        & = \pi\int_{0}^{4} y\,dy + 8\pi                                                     \\
+                                        & = \pi{\left[\frac{y^2}{2}\right]}_0^4 + 8\pi                                       \\
+                                        & = 8\pi + 8\pi                                                                      \\
+                                        & = 16\pi \textit{ units}^3 \eos
+                              \end{flalign*}
+
                         \item \includegraphics[width=0.3\textwidth,valign=t]{./images/21.png}
+                              \sol{}
+                              \begin{flalign*}
+                                    y         & = 3x           \\
+                                    x         & = \dfrac{y}{3} \\
+                                    y         & = 2 + x^2      \\
+                                    x^2       & = y - 2        \\
+                                    x         & = \sqrt{y - 2} \\
+                                    x = 1,\ y & = 3(1) = 3     \\
+                                    x = 2,\ y & = 3(2) = 6
+                              \end{flalign*}
+                              \begin{flalign*}
+                                    V_y & = \int_3^6 \pi {\left(\sqrt{y - 2}\right)}^2\,dy - \int_3^6 \pi {\left(\frac{y}{3}\right)}^2\,dy & \\
+                                        & = \pi\int_3^6  {(y - 2)}\,dy - \pi\int_3^6 {\frac{y^2}{9}}\,dy                                     \\
+                                        & = \pi{\left[\frac{y^2}{2} - 2y\right]}_3^6 - \pi{\left[\frac{y^3}{27}\right]}_3^6                  \\
+                                        & = \pi{\left\{\left[(18 - 12) - \left(\frac{9}{2} - 6\right)\right] - \left(8 - 1\right)\right\}}   \\
+                                        & = \pi\left(\frac{15}{2} - 7\right)                                                                 \\
+                                        & = \frac{1}{2} \pi\textit{ units}^3 \eos
+                              \end{flalign*}
                   \end{enumerate}
 
             \item The region bounded by the curve $y = \dfrac{8}{x}$, the x-axis, and the
@@ -799,13 +885,57 @@
                         \includegraphics[width=0.3\textwidth,valign=t]{./images/22.png}
                   \end{center}
                   Express the volume generated by the region in terms of $k$. If the value of $k$ becomes extremely large, deduce the nearest value of volume.
+                  \begin{flalign*}
+                        V_x & = \int_2^k \pi{\left(\frac{8}{x}\right)}^2\,dx \\
+                            & = \pi\int_2^k \frac{64}{x^2}\,dx               \\
+                            & = \pi{\left[-\frac{64}{x}\right]}_2^k          \\
+                            & = -\frac{64\pi}{k} + 32\pi \eos
+                  \end{flalign*}
+                  \begin{flalign*}
+                        k            & \to \infty \Rightarrow \frac{1}{k} \approx 0 \\
+                        \therefore\  & V_x \approx 32 \textit{ units}^3 \eos
+                  \end{flalign*}
 
             \item The following diagram shows a part of the curve $y =4 +3x - x^2$ and the
                   straight line $y = x+1$.
                   \begin{center}
-                        \includegraphics[width=0.3\textwidth,valign=t]{./images/23.png}
+                        \includegraphics[width=0.33 \textwidth,valign=t]{./images/23.png}
                   \end{center}
-                  Find the ration of the area of the shaded region $A$ to the area of the shaded region $B$.
+                  Find the ratio of the area of the shaded region $A$ to the area of the shaded region $B$.
+                  \sol{}
+                  \begin{flalign*}
+                        x + 1         & = 4 + 3x - x^2    \\
+                        -x^2 + 2x + 3 & = 0               \\
+                        x^2 - 2x - 3  & = 0               \\
+                        (x-3)(x+1)    & = 0               \\
+                        x = 3         & \text{ or }x = -1 \\
+                        x = 3,\ y     & = 3 + 1 = 4
+                  \end{flalign*}
+                  \begin{flalign*}
+                        A_A & = \int_{-1}^3 (4+3x-x^2)\,dx - \frac{1}{2} \cdot 4 \cdot 4                             \\
+                            & = {\left[4x + \frac{3}{2}x^2 - \frac{1}{3}x^3\right]}_{-1}^3 - 8                       \\
+                            & = \left(12 + \frac{27}{2} - 9\right) - \left(-4 + \frac{3}{2} + \frac{1}{3}\right) - 8 \\
+                            & = \frac{33}{2} + \frac{13}{6} - 8                                                      \\
+                            & = \frac{32}{3} \textit{ units}^2
+                  \end{flalign*}
+                  \begin{flalign*}
+                        4 + 3x - x^2 & = 0               \\
+                        x^2 - 3x - 4 & = 0               \\
+                        (x-4)(x+1)   & = 0               \\
+                        x = 4        & \text{ or }x = -1 \\
+                  \end{flalign*}
+                  \begin{flalign*}
+                        A_B & = \int_{3}^4 (4+3x-x^2)\,dx + \frac{1}{2} \cdot 4 \cdot 4                      \\
+                            & = {\left[4x + \frac{3}{2}x^2 - \frac{1}{3}x^3\right]}_{3}^4 + 8                \\
+                            & = \left(16 + 24 - \frac{64}{3}\right) - \left(12 + \frac{27}{2} - 9\right) + 8 \\
+                            & = \frac{56}{3} - \frac{33}{2} + 8                                              \\
+                            & = \frac{61}{6} \textit{ units}^2
+                  \end{flalign*}
+                  \begin{flalign*}
+                        \therefore\ A_A : A_B & = \frac{32}{3} : \frac{61}{6} \\
+                                              & = \frac{64}{61}               \\
+                                              & = 64 : 61 \eos
+                  \end{flalign*}
 
             \item The following diagram shows two curves $y = x^2 - 1$ and $y = 3+2x-x^2$.
                   \begin{center}
