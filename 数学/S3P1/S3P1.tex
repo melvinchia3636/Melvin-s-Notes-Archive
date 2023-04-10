@@ -1,0 +1,473 @@
+% chktex-file 2% chktex-file 29
+% chktex-file 13
+\documentclass{report}
+\usepackage{setspace}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage[fleqn]{amsmath}
+\usepackage{empheq}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{gensymb}
+\usepackage[fleqn]{cases}
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{stix}
+\usepackage{chngcntr}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{pgfplots}
+\usepackage{etoolbox}
+\usepackage{tikz-3dplot}
+\usepackage{tkz-euclide}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{mathtools}
+\usepackage{mdframed}
+\usepackage{adjustbox}
+
+\def\nswe#1#2#3{#1\,$#2^\circ\,#3'$}
+\graphicspath{ {./assets/} }
+\usetikzlibrary{calc,trees,positioning,arrows,fit,shapes,calc}
+
+\newcommand\typel[2]{
+  \mathbin{\mathop{#1\kern0pt}%
+    \limits_{\raisebox{3.6ex}{\hbox to0pt{\hss\strut$\uparrow$\hss}}\hbox to0pt{\hss#2\hss}}}
+}
+
+\newcommand\typem[2]{
+  \mathbin{\mathop{#1\kern0pt}%
+    \limits^{\raisebox{3.6ex}{\hbox to0pt{\hss#2\hss}}\hbox to0pt{\hss\strut$\downarrow$\hss}}}
+}
+
+\counterwithout{equation}{chapter}
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\setcounter{chapter}{21}
+\hfuzz=100pt
+
+\newcommand{\pgfplotsdrawaxis}{\pgfplots@draw@axis}
+\newcommand\perm[2][^n]{\prescript{#1\mkern-2.5mu}{}P_{#2}}
+\newcommand\permtwo[2][^n]{{}_{#1}P_{#2}}
+\newcommand\comb[2][^n]{{}_{#1}C_{#2}}
+\newcommand\combtwo[2][^n]{\prescript{#1\mkern-2.5mu}{}C_{#2}}
+\makeatother
+\pgfplotsset{only axis on top/.style={axis on top=false, after end axis/.code={
+          \pgfplotsset{axis line style=opaque, ticklabel style=opaque, tick style={thick,opaque},
+            grid=none}\pgfplotsdrawaxis}}}
+
+\newtheorem{theorem}{Theorem}
+
+\mdfdefinestyle{MyFrame}{%
+  linecolor=black,
+  linewidth=1pt,
+  roundcorner=20pt,
+  innertopmargin=12pt, innerbottommargin=12pt, innerrightmargin=12pt,
+  innerleftmargin=12pt, leftmargin = 4pt, rightmargin = 4pt, skipbelow=12pt,
+  %backgroundcolor=gray!50!white}
+}
+
+\begin{document}
+\newcommand{\sol}[1]{
+
+  \noindent \textbf{Sol.}
+}
+\newcommand{\prooff}[1]{
+
+  \noindent \textbf{Proof.}
+}
+
+\newenvironment{cequation}{
+  \makeatletter
+  \setbool{@fleqn}{false}
+  \makeatother
+  \begin{equation*}
+    }{\end{equation*}}
+
+\begin{titlepage}
+  \raggedleft{}
+  \rule{1pt}{\textheight}
+  \hspace{0.02\textwidth}
+  \parbox[b]{0.75\textwidth}{
+
+  {\fontsize{40}{60}\selectfont\bfseries Mathematics}\\[2\baselineskip]
+  {\huge\textit{Senior 3 Part I}}\\[4\baselineskip]
+  {\Large\textsc{Melvin Chia}}
+
+  \vspace{0.5\textheight}
+
+  {\noindent Started on 10 April 2023}\\[\baselineskip]
+  {\noindent Finished on XX XX 2023}\\[\baselineskip]
+  {\noindent Actual time spent: XX days}\\[\baselineskip]}
+
+\end{titlepage}
+
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction} \markboth{INTRODUCTION}{}
+
+\doublespacing{}
+\section*{Why this book?}
+
+\section*{Disclaimer}
+\section*{Acknowledgements}
+
+\singlespacing{}
+
+\doublespacing{}
+\tableofcontents
+\singlespacing{}
+\newpage
+
+\begin{multicols}{2}
+  \setstretch{1.25}
+
+  \chapter{Function}
+
+  \section{Definition of a Function}
+
+  \subsection*{Mapping, Preimage and Image}
+
+  For two non-empty sets $A$ and $B$, If an element $a$ inside set $A$ has a
+  corresponding element $b$ inside set $B$, denoted as $a \to b$, then we say
+  that $a$ is mapped to $b$ or $a$ and $b$ are paired. The mapping between two
+  sets is normally denoted as $f$, $g$, $h$, etc. The mapping shown in the
+  diagram below can be denoted as $f:1 \to x,\ 2 \to y,\ 4 \to z$.
+
+  \begin{center}
+    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+      \node[ele,label=left:$1$] (a1) at (0,4) {};
+      \node[ele,label=left:$2$] (a2) at (0,3) {};
+      \node[ele,label=left:$3$] (a3) at (0,2) {};
+      \node[ele,label=left:$4$] (a4) at (0,1) {};
+
+      \node[ele,,label=right:$z$] (b3) at (4,1.5) {};
+      \node[ele,,label=right:$y$] (b2) at (4,2.5) {};
+      \node[ele,,label=right:$x$] (b1) at (4,3.5) {};
+
+      \node[draw,fit= (a1) (a2) (a3) (a4),minimum width=2cm] {} ;
+      \node[draw,fit= (b1) (b2) (b3),minimum width=2cm] {} ;
+      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
+      \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b3);
+      \node at (2,4.5) {$f$};
+      \node at (0,5.5) {$A$};
+      \node at (4,4.8) {$B$};
+    \end{tikzpicture}
+  \end{center}
+
+  Let $f:A \to B$ is a mapping, $a$ is an element in $A$. If $a$ is mapped to $b$
+  under the mapping $f$, then $b$ is said to be the image of $a$ under the
+  mapping $f$, denoted as $b = f(a)$; $a$ is said to be the preimage of $b$ under
+  the mapping $f$. In the diagram above, under the mapping $f$, the image of $1$,
+  $2$, and $4$ are $x$, $y$, and $z$ respectively, while the preimage of $x$,
+  $y$, and $z$ are $1$, $2$, and $4$ respectively.
+
+  \begin{mdframed}[style=MyStyle]
+    Let $A$ and $B$ be two non-empty sets, $f$ is a mapping from $A$ to $B$ such that for all elements in $A$, there is a unique corresponding element in $B$, then $f$ is a function or a mapping from $A$ to $B$, denoted as $f:A \to B$.
+  \end{mdframed}
+
+  The mapping shown in the diagram below is a function.
+  \begin{center}
+    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+      \node[ele,label=left:$1$] (a1) at (0,4) {};
+      \node[ele,label=left:$2$] (a2) at (0,3) {};
+      \node[ele,label=left:$3$] (a3) at (0,2) {};
+
+      \node[ele,,label=right:$c$] (b3) at (4,2) {};
+      \node[ele,,label=right:$b$] (b2) at (4,3) {};
+      \node[ele,,label=right:$a$] (b1) at (4,4) {};
+
+      \node[draw,fit= (a1) (a2) (a3),minimum width=2cm] {} ;
+      \node[draw,fit= (b1) (b2) (b3),minimum width=2cm] {} ;
+      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
+      \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b3);
+      \node at (2,4.5) {$f$};
+      \node at (0,5.4) {$A$};
+      \node at (4,5.4) {$B$};
+    \end{tikzpicture}
+  \end{center}
+
+  \subsection{Practice 1}
+
+  \begin{enumerate}
+    \item For the following mappings, list the image of each element in $A$ and the
+          preimage of each element in $B$, and determine whether the mapping is a
+          function or not:
+          \begin{enumerate}[]
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.6, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:Confucius] (a1) at (0.5,4) {};
+                      \node[ele,label=left:Newton] (a2) at (0.5,3) {};
+                      \node[ele,label=left:Marie Curie] (a3) at (0.5,2) {};
+                      \node[ele,label=left:Darwin] (a4) at (0.5,1) {};
+                      \node[label=left:] (a999) at (-2,1) {};
+
+                      \node[ele,,label=right:Female] (b2) at (4,2) {};
+                      \node[ele,,label=right:Male] (b1) at (4,3) {};
+                      \node[] (b999) at (5.5,3) {};
+
+                      \node[draw,fit= (a1) (a2) (a3) (a4) (a999),minimum width=3cm] {} ;
+                      \node[draw,fit= (b1) (b2) (b999),minimum width=2cm, minimum height=2.4cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b1);
+                      \node at (2.5,4.3) {$f$};
+                      \node at (-1,5.7) {$A$};
+                      \node at (4.75,5.2) {$B$};
+                    \end{tikzpicture}
+                  }
+
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.6, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:Malaysia] (a1) at (0,4) {};
+                      \node[ele,label=left:Thailand] (a2) at (0,3) {};
+                      \node[ele,label=left:Japan] (a3) at (0,2) {};
+                      \node[ele,label=left:China] (a4) at (0,1) {};
+                      \node[label=left:] (a999) at (-2,1) {};
+
+                      \node[ele,,label=right:Kuala Lumpur] (b1) at (4,4) {};
+                      \node[ele,,label=right:Bangkok] (b2) at (4,3) {};
+                      \node[ele,,label=right:Japan] (b3) at (4,2) {};
+                      \node[ele,,label=right:Beijing] (b4) at (4,1) {};
+                      \node[] (b999) at (7,3) {};
+
+                      \node[draw,fit= (a1) (a2) (a3) (a4) (a999),minimum width=3cm] {} ;
+                      \node[draw,fit= (b1) (b2) (b3) (b4) (b999),minimum width=3.6cm, minimum height=4cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b3);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b4);
+                      \node at (1.8,4.5) {$g$};
+                      \node at (-1,5.7) {$A$};
+                      \node at (5.5,6.5) {$B$};
+                    \end{tikzpicture}
+                  }
+
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:$a$] (a1) at (0,3) {};
+                      \node[ele,label=left:$b$] (a2) at (0,2) {};
+
+                      \node[ele,,label=right:$1$] (b1) at (4,4) {};
+                      \node[ele,,label=right:$2$] (b2) at (4,3) {};
+                      \node[ele,,label=right:$3$] (b3) at (4,2) {};
+                      \node[ele,,label=right:$4$] (b4) at (4,1) {};
+
+                      \node[draw,fit= (a1) (a2),minimum width=1.5cm] {} ;
+                      \node[draw,fit= (b1) (b2) (b3) (b4),minimum width=1.5cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b3);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b4);
+                      \node at (1.8,4) {$h$};
+                      \node at (0,4) {$A$};
+                      \node at (4,5.5) {$B$};
+                    \end{tikzpicture}
+                  }
+
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:$a$] (a1) at (0,3) {};
+                      \node[ele,label=left:$b$] (a2) at (0,2) {};
+                      \node[ele,label=left:$c$] (a3) at (0,1) {};
+
+                      \node[ele,,label=right:$1$] (b1) at (4,2.5) {};
+                      \node[ele,,label=right:$2$] (b2) at (4,1.5) {};
+
+                      \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
+                      \node[draw,fit= (b1) (b2),minimum width=1.5cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
+                      \node at (2,3.3) {$k$};
+                      \node at (0,4.2) {$A$};
+                      \node at (4,3.5) {$B$};
+                    \end{tikzpicture}
+                  }
+          \end{enumerate}
+
+    \item Given a mapping $g:x \to x+3$, $x \in\big\{$-2, -1, 0, 1, 2, 3$\big\}$, find
+          the image of each $x$.
+
+    \item Determine whether the following mappings are functions.
+          \begin{enumerate}
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:$1$] (a1) at (0,3) {};
+                      \node[ele,label=left:$2$] (a2) at (0,2) {};
+                      \node[ele,label=left:$3$] (a3) at (0,1) {};
+
+                      \node[ele,,label=right:$a$] (b1) at (4,2.5) {};
+                      \node[ele,,label=right:$b$] (b2) at (4,1.5) {};
+
+                      \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
+                      \node[draw,fit= (b1) (b2),minimum width=1.5cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b1);
+                      \node at (0,4.2) {$A$};
+                      \node at (4,3.5) {$B$};
+                    \end{tikzpicture}
+                  }
+
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:$1$] (a1) at (0,3) {};
+                      \node[ele,label=left:$2$] (a2) at (0,2) {};
+                      \node[ele,label=left:$3$] (a3) at (0,1) {};
+
+                      \node[ele,,label=right:$a$] (b1) at (4,2.5) {};
+                      \node[ele,,label=right:$b$] (b2) at (4,1.5) {};
+
+                      \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
+                      \node[draw,fit= (b1) (b2),minimum width=1.5cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
+                      \node at (0,4.2) {$A$};
+                      \node at (4,3.5) {$B$};
+                    \end{tikzpicture}
+                  }
+
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:$1$] (a1) at (0,3) {};
+                      \node[ele,label=left:$2$] (a2) at (0,2) {};
+                      \node[ele,label=left:$3$] (a3) at (0,1) {};
+
+                      \node[ele,,label=right:$a$] (b1) at (4,2.5) {};
+                      \node[ele,,label=right:$b$] (b2) at (4,1.5) {};
+
+                      \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
+                      \node[draw,fit= (b1) (b2),minimum width=1.5cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
+                      \node at (0,4.2) {$A$};
+                      \node at (4,3.5) {$B$};
+                    \end{tikzpicture}
+                  }
+
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:$x$] (a1) at (0,3) {};
+                      \node[ele,label=left:$y$] (a2) at (0,2) {};
+                      \node[ele,label=left:$z$] (a3) at (0,1) {};
+
+                      \node[ele,,label=right:$4$] (b1) at (4,3) {};
+                      \node[ele,,label=right:$7$] (b2) at (4,2) {};
+                      \node[ele,,label=right:$9$] (b3) at (4,1) {};
+
+                      \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
+                      \node[draw,fit= (b1) (b2) (b3),minimum width=1.5cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b3);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
+                      \node at (0,4.2) {$A$};
+                      \node at (4,4.2) {$B$};
+                    \end{tikzpicture}
+                  }
+
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:$x$] (a1) at (0,3) {};
+                      \node[ele,label=left:$y$] (a2) at (0,2) {};
+                      \node[ele,label=left:$z$] (a3) at (0,1) {};
+
+                      \node[ele,,label=right:$4$] (b1) at (4,3) {};
+                      \node[ele,,label=right:$7$] (b2) at (4,2) {};
+                      \node[ele,,label=right:$9$] (b3) at (4,1) {};
+
+                      \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
+                      \node[draw,fit= (b1) (b2) (b3),minimum width=1.5cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b3);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b3);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
+                      \node at (0,4.2) {$A$};
+                      \node at (4,4.2) {$B$};
+                    \end{tikzpicture}
+                  }
+
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:$x$] (a1) at (0,3) {};
+                      \node[ele,label=left:$y$] (a2) at (0,2) {};
+                      \node[ele,label=left:$z$] (a3) at (0,1) {};
+
+                      \node[ele,,label=right:$4$] (b1) at (4,3) {};
+                      \node[ele,,label=right:$7$] (b2) at (4,2) {};
+                      \node[ele,,label=right:$9$] (b3) at (4,1) {};
+
+                      \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
+                      \node[draw,fit= (b1) (b2) (b3),minimum width=1.5cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b2);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b1);
+                      \node at (0,4.2) {$A$};
+                      \node at (4,4.2) {$B$};
+                    \end{tikzpicture}
+                  }
+          \end{enumerate}
+  \end{enumerate}
+
+  The function $f: A \to B$ can be written as $y = f(x)$, $x$ is the element of
+  $A$ and $y$ is the element of $B$. When $x$ changes, $y$ changes as well. $x$
+  is called independent variable, while $y$ is called dependent variable.
+
+  \section{Domain and Range}
+
+  \section{Graphs of Functions and Their Transformations}
+
+  \section{Composite Functions}
+
+  \section{One to One Function, Onto Function and One to One Onto Function}
+
+  \section{Inverse Functions}
+
+  \chapter{Exponents and Logarithms}
+
+  \section{Exponents}
+
+  \section{Logarithms}
+
+  \section{Arithmetic Properties of Logarithms and Base Changing Formula}
+
+  \section{Exponential Equations}
+
+  \section{Logarithmic Equations}
+
+  \section{Compound Interest and Annuity}
+
+  \chapter{Limits}
+
+  \section{Concept of Limits}
+
+  \section{Limits of Functions}
+
+  \section{Arithmetic Properties of Limits of Functions}
+
+  \chapter{Differentiation}
+
+  \section{Gradient of Tangent Line on a Curve}
+
+  \section{Gradient of Tangent Line and Derivative}
+
+  \section{Law of Differentiation}
+
+  \section{Chain Rule - Differentiation of Composite Functions}
+
+  \section{Higher Order Derivatives}
+
+  \section{Implicit Differentiation}
+
+  \section{Two Basic Limits}
+
+  \section{Derivatives of Trigonometric Functions}
+
+  \section{Derivatives of Exponential Functions}
+
+  \section{Derivatives of Logarithmic Functions}
+
+\end{multicols}
+
+\end{document}
