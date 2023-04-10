@@ -414,6 +414,81 @@
   $A$ and $y$ is the element of $B$. When $x$ changes, $y$ changes as well. $x$
   is called independent variable, while $y$ is called dependent variable.
 
+  Keep in mind that $f(x)$ is NOT the product of $f$ and $x$.
+
+  \subsection*{Representation of Functions}
+
+  Generally speaking, there are a few ways to represent a function:
+  \begin{enumerate}
+    \item \textbf{Narrative Form}: express the function of two sets in words. For example, Let $A = \big\{1, 2, 3\big\}$ and $B = \big\{1, 4, 9\big\}$, $f$ is a function from $A$ to $B$, its definition is that for any element $x$ in $A$, its corresponding element is $x^2$ in $B$.
+    \item \textbf{Arrow Method}: draw an arrow to connect the preimage and image of a function such that the preimage is corresponding to the image. To express the example above, we express it as $f: 1 \to 1,\ 2 \to 4,\ 3 \to 9$.
+    \item \textbf{Analytical Method}: express the function in the form of mathematical expression to represent the relationship between the independent variable and the dependent variable. For example, $f(x) = x^2, x \in \mathbb{A}$.
+    \item \textbf{Venn Diagram}: draw arrows between the venn diagram of two sets to represent the function, as shown below:
+          \begin{center}
+            \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+              \node[ele,label=left:$1$] (a1) at (0,3) {};
+              \node[ele,label=left:$2$] (a2) at (0,2) {};
+              \node[ele,label=left:$3$] (a3) at (0,1) {};
+
+              \node[ele,,label=right:$1$] (b1) at (4,3) {};
+              \node[ele,,label=right:$4$] (b2) at (4,2) {};
+              \node[ele,,label=right:$9$] (b3) at (4,1) {};
+
+              \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
+              \node[draw,fit= (b1) (b2) (b3),minimum width=1.5cm] {} ;
+              \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+              \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
+              \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b3);
+              \node at (0,4.2) {$A$};
+              \node at (4,4.2) {$B$};
+            \end{tikzpicture}
+          \end{center}
+    \item \textbf{Table Method}: express the function in the form of table, showing the relationship of the chosen value between independent variable $x$ and the value of its corresponding dependent variable $y$, as shown below:
+          \begin{center}
+            \begin{tabular}{|c|c|c|c|}
+              \hline
+              $x$ & $1$ & $2$ & $3$ \\
+              \hline
+              $y$ & $1$ & $4$ & $9$ \\
+              \hline
+            \end{tabular}
+          \end{center}
+
+    \item \textbf{Graphical Method}: draw a graph to represent the function of the two variables, as shown below:
+          \begin{center}
+            \begin{tikzpicture}[scale=0.47]
+              \draw[->,thick] (-1,0) -- (10,0) node[right] {$x$};
+              \draw[->,thick] (0,-1) -- (0,10) node[above] {$y$};
+              \draw[thick] (1,0.1) -- (1,-0.1);
+              \node[below] at (1,0) {1};
+              \draw[thick] (5,0.1) -- (5,-0.1);
+              \node[below] at (5,0) {2};
+              \draw[thick] (9,0.1) -- (9,-0.1);
+              \node[below] at (9,0) {3};
+              \foreach \y in {1,...,9}
+                {
+                  \draw[thick] (0.1,\y) -- (-0.1,\y);
+                  \node[left] at (0,\y) {\y};
+                }
+              \filldraw (1, 1) circle (2pt) node[above right]{$(1,1)$};
+              \filldraw (5, 4) circle (2pt) node[above right]{$(2,4)$};
+              \filldraw (9, 9) circle (2pt) node[above right]{$(3,9)$};
+              \draw[dashed] (0,1) -- (1,1) -- (1,0);
+              \draw[dashed] (0,4) -- (5,4) -- (5,0);
+              \draw[dashed] (0,9) -- (9,9) -- (9,0);
+            \end{tikzpicture}
+          \end{center}
+  \end{enumerate}
+
+  \subsection{Practice 2}
+
+  Express the following functions using analytical method, venn diagram, table
+  method and graphical method.
+  \begin{enumerate}[label=(\alph*)]
+    \item $f$ mapping each integers from $-3$ to $3$ to its squares plus $4$.
+    \item $g$ mapping each natural numbers from $1$ to $4$ to its cubes.
+  \end{enumerate}
+
   \section{Domain and Range}
 
   \section{Graphs of Functions and Their Transformations}
