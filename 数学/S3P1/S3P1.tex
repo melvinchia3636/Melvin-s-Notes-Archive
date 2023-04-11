@@ -602,6 +602,35 @@
   defined values $f(x)$. After the domain and the mapping rule are determined,
   the range of a function will then be determined.
 
+  \begin{center}
+    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+      \node[ele,label=left:$a$] (a1) at (0,4.5) {};
+      \node[ele,label=left:$b$] (a2) at (0,3.5) {};
+      \node[ele,label=left:$c$] (a3) at (0,2.5) {};
+
+      \node[ele,,label=right:$u$] (b1) at (4,6) {};
+      \node[ele,,label=right:$v$] (b2) at (4,5) {};
+      \node[ele,,label=right:$w$] (b3) at (4,4) {};
+      \node[ele,,label=right:$x$] (b4) at (4,3) {};
+      \node[ele,,label=right:$y$] (b5) at (4,2) {};
+      \node[ele,,label=right:$z$] (b6) at (4,1) {};
+      \node[] (b999) at (4.4,1) {};
+      \node[] (b998) at (4.4,3) {};
+
+      \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
+      \node[draw,fit= (b1) (b2) (b3) (b4) (b5) (b6) (b999),minimum width=1.5cm] {} ;
+      \node[draw,fit= (b3) (b4) (b5) (b998),minimum width=1cm] {} ;
+      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b3);
+      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b4);
+      \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b5);
+      \node at (0,5.8) {$A$};
+      \node at (4.2,8) {$B$};
+      \node at (2,5) {$f$};
+      \draw[thick, -latex](4.2,-1) -- (4.2,0);
+      \node at (4.2,-1.4) {Codomain};
+    \end{tikzpicture}
+  \end{center}
+
   \section{Graphs of Functions and Their Transformations}
 
   \section{Composite Functions}
