@@ -28,7 +28,8 @@
 
 \def\nswe#1#2#3{#1\,$#2^\circ\,#3'$}
 \graphicspath{ {./assets/} }
-\usetikzlibrary{calc,trees,positioning,arrows,fit,shapes,calc}
+\usetikzlibrary{calc,trees,positioning,arrows,fit,shapes,calc, decorations.markings}
+\newcommand{\midarrow}{\tikz \draw[-triangle 90] (0,0) -- +(.1,0);}
 
 \newcommand\typel[2]{
   \mathbin{\mathop{#1\kern0pt}%
@@ -162,7 +163,7 @@
   $2$, and $4$ are $x$, $y$, and $z$ respectively, while the preimage of $x$,
   $y$, and $z$ are $1$, $2$, and $4$ respectively.
 
-  \begin{mdframed}[style=MyStyle]
+  \begin{mdframed}[style=MyFrame]
     Let $A$ and $B$ be two non-empty sets, $f$ is a mapping from $A$ to $B$ such that for all elements in $A$, there is a unique corresponding element in $B$, then $f$ is a function or a mapping from $A$ to $B$, denoted as $f:A \to B$.
   \end{mdframed}
 
@@ -489,7 +490,117 @@
     \item $g$ mapping each natural numbers from $1$ to $4$ to its cubes.
   \end{enumerate}
 
+  \subsection{Exercise 22.1}
+
+  \begin{enumerate}
+    \item Express the mapping from set $A$ to set $B$, and determine which of the
+          following mappings are functions.
+
+          \resizebox{22em}{!}{
+            \begin{tabular}{|c|c|c|c|}
+              \hline
+                  & Set $A$                                & Set $B$                                                                   & Mapping       \\
+              \hline
+              (a) & \{0, 3, 9, 12\}                        & \{0, 1, 2, 3\}                                                            & Divide by $3$ \\
+              \hline
+              (b) & \{-2, -1, 0, 1, 2\}                    & \{0, 1, 4, 9, 16\}                                                        & Power of $4$  \\
+              \hline
+              (c) & \{-2, -1, 0, 1, 2\}                    & \{0, 1, 4\}                                                               & Square        \\
+              \hline
+              (d) & \{30$^\circ$, 45$^\circ$, 60$^\circ$\} & $\left\{\dfrac{1}{2},\ \dfrac{\sqrt{2}}{2},\ \dfrac{\sqrt{3}}{2}\right\}$ & Sine          \\
+              \hline
+              (e) & \{-1, 0, 1, 2\}                        & \{-1, 0, 1\}                                                              & Cube          \\
+              \hline
+            \end{tabular}
+          }
+
+    \item Let function $f(x) = 3x^2 + 1$.
+          \begin{enumerate}
+            \item Find the image of the following elements:
+                  \begin{enumerate}
+                    \item -3
+                    \item -2
+                    \item 0
+                    \item 2
+                    \item 5
+                  \end{enumerate}
+            \item Find the preimage of the following elements:
+                  \begin{enumerate}
+                    \item 13
+                    \item 28
+                    \item 1
+                    \item 0
+                    \item 4
+                  \end{enumerate}
+          \end{enumerate}
+
+    \item Let function $g(x) = 5x-2$. Find:
+          \begin{enumerate}
+            \item $g(-2)$
+            \item $g(-1)$
+            \item $g(0)$
+          \end{enumerate}
+
+    \item Let function $f(x) = \left\{\begin{array}{ll}
+              \ \ \ \ \ \ 2x, & x \leq -1     \\
+              \ \ x-1,        & -1 \leq x < 3 \\
+              4x + 2,         & x \geq 3
+            \end{array}\right.$, find
+
+          \begin{enumerate}
+            \item $f(-5)$
+            \item $f(-2)$
+            \item $f(0)$
+            \item $f(2)$
+            \item $f(10)$
+          \end{enumerate}
+
+    \item Let $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x^4$. Find the image of $-1$, 0, 1,
+          and 2 under $f$.
+
+    \item Let $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x^4$. Find the preimage of 0, 1,
+          and 4 under $f$.
+
+          In $\mathbb{R}$, which element does not have a preimage?
+
+    \item In the diagram below, given that function $g: A \to B$ is defined as $g: x \to
+            2x - 8$. Find the value of $a$ and $b$.
+          \begin{center}
+            \begin{tikzpicture}
+              \draw[thick] (0,0) -- (0,3) node[above]{$A$};
+              \draw[thick] (3,0) -- (3,3) node[above]{$B$};
+              \node at (1.5, 3) {$g$};
+              \filldraw (0, 2.5) circle (1.5pt) node[left]{$-1$};
+              \filldraw (0, 0.5) circle (1.5pt) node[left]{$b$};
+              \filldraw (3, 0.8) circle (1.5pt) node[right]{$-4$};
+              \filldraw (3, 2.2) circle (1.5pt) node[right]{$a$};
+              \begin{scope}[thick,decoration={
+                      markings,
+                      mark=at position 0.5 with {\arrow{Latex}}}
+                ]
+                \draw[postaction={decorate}] (0, 2.5) -- (3, 2.2);
+                \draw[postaction={decorate}] (0, 0.5) -- (3, 0.8);
+              \end{scope}
+            \end{tikzpicture}
+          \end{center}
+
+    \item Using narrative form, arrow method, venn diagram, table method and graphical
+          method, express the function $f(x) = 2x$, $x \in \{-2, -1, 0, 1, 2\}$.
+  \end{enumerate}
+
   \section{Domain and Range}
+
+  \begin{mdframed}[style=MyFrame]
+    Let $f$ is a function from set $A$ to set $B$, then set $A$ is called the domain of $f$, denoted by $D_f$; set $B$ is called the codomain of $f$; the set of the images of all elements of $A$ under $f$ is called the range of $f$, denoted by $R_f$.
+  \end{mdframed}
+
+  If the domain $A$ and range $B$ of function $f: A\to B$ are both subsets of
+  real number set $\mathbb{R}$, then this function is called real valued function
+  / real function. This book primarily discusses about real valued functions.
+  When the domain of a real function is not mentioned and only the mapping rule
+  is given, its domain is assumed to be the set of all real numbers that yield
+  defined values $f(x)$. After the domain and the mapping rule are determined,
+  the range of a function will then be determined.
 
   \section{Graphs of Functions and Their Transformations}
 
