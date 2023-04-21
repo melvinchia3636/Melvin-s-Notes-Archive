@@ -53,6 +53,34 @@
                   \therefore\ x          & = \frac{-1 + \sqrt{4\sqrt{3} - 3}}{2}
               \end{flalign*}
               $\therefore\ x = \dfrac{1 + \sqrt{1 + 4\sqrt{3}}}{2}$ or $x = \dfrac{-1 + \sqrt{4\sqrt{3} - 3}}{2}$
+
+        \item Given that $r$ is a rational number such that $0 < r < 1$ and \[\displaystyle\sum_{n=1}^{\infty} n^2r^n = 180,\] find the value of $180r$. \\\\\textbf{Sol.}
+              \begin{flalign*}
+                  \sum_{n=1}^{\infty} n^2r^n & = \sum_{n=1}^{\infty} n\cdot n \cdot r \cdot r^{n-1}                    \\
+                                             & = \sum_{n=1}^{\infty} nr\cdot nr^{n-1}                                  \\
+                                             & = \sum_{n=1}^{\infty} nr\cdot \dfrac{d}{dr}(r^n)                        \\
+                                             & = \sum_{n=1}^{\infty} nr\cdot \dfrac{d}{dr}\sum_{n=1}^{\infty}r^n       \\
+                                             & = \sum_{n=1}^{\infty} nr\cdot \dfrac{d}{dr}\left(\dfrac{r}{1-r}\right)k
+              \end{flalign*}
+        \item $\left(1+\dfrac{1}{x}\right)^{x+1} = \left(1 + \dfrac{1}{2022}\right)^{2022}$, $x = ?$
+              \\\\\textbf{Sol.}
+              \begin{flalign*}
+                  \left(1+\dfrac{1}{x}\right)^{x+1}          & = \left(1 + \dfrac{1}{2022}\right)^{2022} \\
+                  \left(\dfrac{x + 1}{x}\right)^{x+1}        & = \left(1 + \dfrac{1}{2022}\right)^{2022} \\
+                  \left(\dfrac{x}{x+1}\right)^{-(x-1)}       & = \left(1 + \dfrac{1}{2022}\right)^{2022} \\
+                  \left(\dfrac{(x+1)-1}{x+1}\right)^{-(x-1)} & = \left(1 + \dfrac{1}{2022}\right)^{2022} \\
+                  \left(1+\dfrac{-1}{x+1}\right)^{-(x-1)}    & = \left(1 + \dfrac{1}{2022}\right)^{2022} \\
+                  \left(1+\dfrac{1}{-(x+1)}\right)^{-(x-1)}  & = \left(1 + \dfrac{1}{2022}\right)^{2022} \\
+                  -(x+1)                                     & = 2022                                    \\
+                  x+1                                        & = -2022                                   \\
+                  x                                          & = -2023
+              \end{flalign*}
+        \item $(x^x)'$
+              \\\\\textbf{Sol.}
+              \begin{flalign*}
+                  (x^x)' & = (e^{\ln x^x})' \\
+                         & = (e^{x\ln x})'  \\
+              \end{flalign*}
     \end{enumerate}
 \end{multicols*}
 \end{document}

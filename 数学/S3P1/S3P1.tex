@@ -1,6 +1,6 @@
 % chktex-file 2% chktex-file 29
 % chktex-file 13
-\documentclass{report}
+\documentclass[12pt]{report}
 \usepackage{setspace}
 \usepackage[a4paper, total={7in, 10in}]{geometry}
 \usepackage[fleqn]{amsmath}
@@ -41,10 +41,6 @@
 }
 
 \counterwithout{equation}{chapter}
-\setlength{\columnseprule}{1pt}
-\setlength{\columnsep}{24pt}
-\setcounter{chapter}{21}
-\hfuzz=100pt
 
 \newcommand{\pgfplotsdrawaxis}{\pgfplots@draw@axis}
 \newcommand\perm[2][^n]{\prescript{#1\mkern-2.5mu}{}P_{#2}}
@@ -66,6 +62,11 @@
   innerleftmargin=12pt, skipbelow=12pt,
   %backgroundcolor=gray!50!white}
 }
+
+\newcommand{\newitem}[1]{%
+  \refstepcounter{subenum}%
+  \parbox{\dimexpr.5\linewidth-.5\columnsep}{
+    \makebox[\labelwidth][r]{(\thesubenum)\hspace*{\labelsep}} #1}\hfill }%%%
 
 \begin{document}
 \newcommand{\sol}[1]{
@@ -123,36 +124,37 @@
 \chapter{Function}
 
 \section{Definition of a Function}
-
 \subsection*{Mapping, Preimage and Image}
 
-For two non-empty sets $A$ and $B$, If an element $a$ inside set $A$ has a
-corresponding element $b$ inside set $B$, denoted as $a \to b$, then we say
-that $a$ is mapped to $b$ or $a$ and $b$ are paired. The mapping between two
-sets is normally denoted as $f$, $g$, $h$, etc. The mapping shown in the
-diagram below can be denoted as $f:1 \to x,\ 2 \to y,\ 4 \to z$.
+\begin{multicols}{2}
 
-\begin{center}
-  \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
-    \node[ele,label=left:$1$] (a1) at (0,4) {};
-    \node[ele,label=left:$2$] (a2) at (0,3) {};
-    \node[ele,label=left:$3$] (a3) at (0,2) {};
-    \node[ele,label=left:$4$] (a4) at (0,1) {};
+  For two non-empty sets $A$ and $B$, If an element $a$ inside set $A$ has a
+  corresponding element $b$ inside set $B$, denoted as $a \to b$, then we say
+  that $a$ is mapped to $b$ or $a$ and $b$ are paired. The mapping between two
+  sets is normally denoted as $f$, $g$, $h$, etc. The mapping shown in the
+  diagram below can be denoted as $f:1 \to x,\ 2 \to y,\ 4 \to z$.
+  \begin{center}
+    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+      \node[ele,label=left:$1$] (a1) at (0,4) {};
+      \node[ele,label=left:$2$] (a2) at (0,3) {};
+      \node[ele,label=left:$3$] (a3) at (0,2) {};
+      \node[ele,label=left:$4$] (a4) at (0,1) {};
 
-    \node[ele,,label=right:$z$] (b3) at (4,1.5) {};
-    \node[ele,,label=right:$y$] (b2) at (4,2.5) {};
-    \node[ele,,label=right:$x$] (b1) at (4,3.5) {};
+      \node[ele,,label=right:$z$] (b3) at (4,1.5) {};
+      \node[ele,,label=right:$y$] (b2) at (4,2.5) {};
+      \node[ele,,label=right:$x$] (b1) at (4,3.5) {};
 
-    \node[draw,fit= (a1) (a2) (a3) (a4),minimum width=2cm] {} ;
-    \node[draw,fit= (b1) (b2) (b3),minimum width=2cm] {} ;
-    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
-    \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
-    \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b3);
-    \node at (2,4.5) {$f$};
-    \node at (0,5.5) {$A$};
-    \node at (4,4.8) {$B$};
-  \end{tikzpicture}
-\end{center}
+      \node[draw,fit= (a1) (a2) (a3) (a4),minimum width=2cm] {} ;
+      \node[draw,fit= (b1) (b2) (b3),minimum width=2cm] {} ;
+      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
+      \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b3);
+      \node at (2,4.5) {$f$};
+      \node at (0,5.5) {$A$};
+      \node at (4,4.8) {$B$};
+    \end{tikzpicture}
+  \end{center}
+\end{multicols}
 
 Let $f:A \to B$ is a mapping, $a$ is an element in $A$. If $a$ is mapped to $b$
 under the mapping $f$, then $b$ is said to be the image of $a$ under the
@@ -187,7 +189,7 @@ The mapping shown in the diagram below is a function.
   \end{tikzpicture}
 \end{center}
 
-\subsection{Practice 1}
+\subsection*{Practice 1}
 
 \begin{enumerate}
   \item For the following mappings, list the image of each element in $A$ and the
@@ -479,7 +481,7 @@ Generally speaking, there are a few ways to represent a function:
         \end{center}
 \end{enumerate}
 
-\subsection{Practice 2}
+\subsection*{Practice 2}
 
 Express the following functions using analytical method, venn diagram, table
 method and graphical method.
@@ -488,7 +490,7 @@ method and graphical method.
   \item $g$ mapping each natural numbers from $1$ to $4$ to its cubes.
 \end{enumerate}
 
-\subsection{Exercise 22.1}
+\subsection*{Exercise 22.1}
 
 \begin{enumerate}
   \item Express the mapping from set $A$ to set $B$, and determine which of the
@@ -585,7 +587,7 @@ method and graphical method.
   \item Using narrative form, arrow method, venn diagram, table method and graphical
         method, express the function $f(x) = 2x$, $x \in \{-2, -1, 0, 1, 2\}$.
 \end{enumerate}
-
+\newpage
 \section{Domain and Range}
 
 \begin{mdframed}[style=MyFrame]
@@ -652,7 +654,7 @@ the range of a function will then be determined.
   \end{center}
 \end{mdframed}
 
-\subsection{Practice 3}
+\subsection*{Practice 3}
 
 \begin{enumerate}
   \item Let $A = \{2, 4, 5, 7\}$ and $B = \{3, 5, 7, 8, 9\}$, the definition of
@@ -724,7 +726,7 @@ the range of a function will then be determined.
         \end{enumerate}
 \end{enumerate}
 
-\subsection{Exercise 22.2}
+\subsection*{Exercise 22.2}
 
 \begin{enumerate}
   \item Let $X = \{a, b, c, d\}$ and $Y = \{-1, 2, 9, 11\}$, function $f: X \to Y$ is
@@ -805,8 +807,8 @@ the range of a function will then be determined.
         \end{enumerate}
 \end{enumerate}
 
+\newpage
 \section{Graphs of Functions and Their Transformations}
-
 \subsection*{Graphs of Simple Functions}
 
 On a Cartesian plane, the graphs formed by all the point $(x, y)$ that
@@ -815,264 +817,310 @@ some examples of graphs of simple functions.
 
 Note that any line that is parallel to the $y$-axis intersects the graph of a
 function at most once.
-\begin{enumerate}[label=(\alph*)]
-  \item $y = x$
-        \begin{center}
-          \begin{tikzpicture}
-            \begin{axis}[
-                axis lines=middle,
-                xmin=-5.5, xmax=5.5,
-                ymin=-5.5, ymax=5.5,
-                xlabel={$x$},
-                ylabel={$y$}
-                ticks=none,
-                xlabel style={anchor=east, xshift=0.5cm},
-                ylabel style={anchor=north, yshift=0.5cm},
-                line style={thick, color=black},
-              ]
-              \addplot[domain=-5:5, thick] {x};
-              \path (axis cs:0,0)
-              node [anchor=north east, xshift=0.05cm] {$O$};
-            \end{axis}
-          \end{tikzpicture}
-        \end{center}
+\begin{multicols}{2}
+  \begin{enumerate}[label=(\alph*)]
+    \item $y = x$
+          \begin{center}
+            \resizebox{0.33\textwidth}{!}{
+              \begin{tikzpicture}
+                \begin{axis}[
+                    axis lines=middle,
+                    xmin=-5.5, xmax=5.5,
+                    ymin=-5.5, ymax=5.5,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    ticks=none,
+                    xlabel style={anchor=east, xshift=0.5cm},
+                    ylabel style={anchor=north, yshift=0.5cm},
+                    line style={thick, color=black},
+                  ]
+                  \addplot[domain=-5:5, thick] {x};
+                  \path (axis cs:0,0)
+                  node [anchor=north east, xshift=0.05cm] {$O$};
+                \end{axis}
+              \end{tikzpicture}
+            }
+          \end{center}
 
-  \item $y = -x$
-        \begin{center}
-          \begin{tikzpicture}
-            \begin{axis}[
-                axis lines=middle,
-                xmin=-5.5, xmax=5.5,
-                ymin=-5.5, ymax=5.5,
-                xlabel={$x$},
-                ylabel={$y$},
-                ticks=none,
-                xlabel style={anchor=east, xshift=0.5cm},
-                ylabel style={anchor=north, yshift=0.5cm},
-                line style={thick, color=black},
-              ]
-              \addplot[domain=-5:5, thick] {-x};
-              \path (axis cs:0,0)
-              node [anchor=north east, xshift=0.05cm] {$O$};
-            \end{axis}
-          \end{tikzpicture}
-        \end{center}
+    \item $y = -x$
+          \begin{center}
+            \resizebox{0.33\textwidth}{!}{
+              \begin{tikzpicture}
+                \begin{axis}[
+                    axis lines=middle,
+                    xmin=-5.5, xmax=5.5,
+                    ymin=-5.5, ymax=5.5,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    ticks=none,
+                    xlabel style={anchor=east, xshift=0.5cm},
+                    ylabel style={anchor=north, yshift=0.5cm},
+                    line style={thick, color=black},
+                  ]
+                  \addplot[domain=-5:5, thick] {-x};
+                  \path (axis cs:0,0)
+                  node [anchor=north east, xshift=0.05cm] {$O$};
+                \end{axis}
+              \end{tikzpicture}
+            }
+          \end{center}
+  \end{enumerate}
+\end{multicols}
+\begin{multicols}{2}
+  \begin{enumerate}[label=(\alph*)]
+    \setcounter{enumi}{2}
+    \item $y = x^2$
+          \begin{center}
+            \resizebox{0.33\textwidth}{!}{
+              \begin{tikzpicture}
+                \begin{axis}[
+                    axis lines=middle,
+                    xmin=-2.5, xmax=2.5,
+                    ymin=-0.5, ymax=5.5,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    ticks=none,
+                    xlabel style={anchor=east, xshift=0.5cm},
+                    ylabel style={anchor=north, yshift=0.5cm},
+                    line style={thick, color=black},
+                  ]
+                  \addplot[domain=-5:5, thick] {x^2};
+                  \path (axis cs:0,0)
+                  node [anchor=north east, xshift=0.05cm] {$O$};
+                \end{axis}
+              \end{tikzpicture}
+            }
+          \end{center}
 
-  \item $y = x^2$
-        \begin{center}
-          \begin{tikzpicture}
-            \begin{axis}[
-                axis lines=middle,
-                xmin=-2.5, xmax=2.5,
-                ymin=-0.5, ymax=5.5,
-                xlabel={$x$},
-                ylabel={$y$},
-                ticks=none,
-                xlabel style={anchor=east, xshift=0.5cm},
-                ylabel style={anchor=north, yshift=0.5cm},
-                line style={thick, color=black},
-              ]
-              \addplot[domain=-5:5, thick] {x^2};
-              \path (axis cs:0,0)
-              node [anchor=north east, xshift=0.05cm] {$O$};
-            \end{axis}
-          \end{tikzpicture}
-        \end{center}
+    \item $y = x^2$
+          \begin{center}
+            \resizebox{0.33\textwidth}{!}{
+              \begin{tikzpicture}
+                \begin{axis}[
+                    axis lines=middle,
+                    xmin=-2.5, xmax=2.5,
+                    ymin=-5.5, ymax=0.5,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    ticks=none,
+                    xlabel style={anchor=east, xshift=0.5cm},
+                    ylabel style={anchor=north, yshift=0.5cm},
+                    line style={thick, color=black},
+                  ]
+                  \addplot[domain=-5:5, thick] {-x^2};
+                  \path (axis cs:0,0)
+                  node [anchor=north east, xshift=0.05cm] {$O$};
+                \end{axis}
+              \end{tikzpicture}
+            }
+          \end{center}
+  \end{enumerate}
+\end{multicols}
+\begin{multicols}{2}
+  \begin{enumerate}[label=(\alph*)]
+    \setcounter{enumi}{4}
+    \item $y = x^3$
+          \begin{center}
+            \resizebox{0.33\textwidth}{!}{
+              \begin{tikzpicture}
+                \begin{axis}[
+                    axis lines=middle,
+                    xmin=-2.5, xmax=2.5,
+                    ymin=-5.5, ymax=5.5,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    ticks=none,
+                    xlabel style={anchor=east, xshift=0.5cm},
+                    ylabel style={anchor=north, yshift=0.5cm},
+                    line style={thick, color=black},
+                  ]
+                  \addplot[domain=-5:5, thick] {x^3};
+                  \path (axis cs:0,0)
+                  node [anchor=north east, xshift=0.05cm] {$O$};
+                \end{axis}
+              \end{tikzpicture}
+            }
+          \end{center}
 
-  \item $y = x^2$
-        \begin{center}
-          \begin{tikzpicture}
-            \begin{axis}[
-                axis lines=middle,
-                xmin=-2.5, xmax=2.5,
-                ymin=-5.5, ymax=0.5,
-                xlabel={$x$},
-                ylabel={$y$},
-                ticks=none,
-                xlabel style={anchor=east, xshift=0.5cm},
-                ylabel style={anchor=north, yshift=0.5cm},
-                line style={thick, color=black},
-              ]
-              \addplot[domain=-5:5, thick] {-x^2};
-              \path (axis cs:0,0)
-              node [anchor=north east, xshift=0.05cm] {$O$};
-            \end{axis}
-          \end{tikzpicture}
-        \end{center}
+    \item $y = -x^3$
+          \begin{center}
+            \resizebox{0.33\textwidth}{!}{
+              \begin{tikzpicture}
+                \begin{axis}[
+                    axis lines=middle,
+                    xmin=-2.5, xmax=2.5,
+                    ymin=-5.5, ymax=5.5,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    ticks=none,
+                    xlabel style={anchor=east, xshift=0.5cm},
+                    ylabel style={anchor=north, yshift=0.5cm},
+                    line style={thick, color=black},
+                  ]
+                  \addplot[domain=-5:5, thick] {-x^3};
+                  \path (axis cs:0,0)
+                  node [anchor=north east, xshift=0.05cm] {$O$};
+                \end{axis}
+              \end{tikzpicture}
+            }
+          \end{center}
+  \end{enumerate}
+\end{multicols}
+\newpage
+\begin{multicols}{2}
+  \begin{enumerate}[label=(\alph*)]
+    \setcounter{enumi}{6}
+    \item $y = \dfrac{1}{x}$
+          \begin{center}
+            \resizebox{0.33\textwidth}{!}{
+              \begin{tikzpicture}
+                \begin{axis}[
+                    axis lines=middle,
+                    xmin=-5.5, xmax=5.5,
+                    ymin=-5.5, ymax=5.5,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    ticks=none,
+                    xlabel style={anchor=east, xshift=0.5cm},
+                    ylabel style={anchor=north, yshift=0.5cm},
+                    line style={thick, color=black},
+                  ]
+                  \addplot[domain=-5:-0.01, thick] {1/x};
+                  \addplot[domain=0.01:5, thick] {1/x};
+                  \path (axis cs:0,0)
+                  node [anchor=north east, xshift=0.05cm] {$O$};
+                \end{axis}
+              \end{tikzpicture}
+            }
+          \end{center}
 
-  \item $y = x^3$
-        \begin{center}
-          \begin{tikzpicture}
-            \begin{axis}[
-                axis lines=middle,
-                xmin=-2.5, xmax=2.5,
-                ymin=-5.5, ymax=5.5,
-                xlabel={$x$},
-                ylabel={$y$},
-                ticks=none,
-                xlabel style={anchor=east, xshift=0.5cm},
-                ylabel style={anchor=north, yshift=0.5cm},
-                line style={thick, color=black},
-              ]
-              \addplot[domain=-5:5, thick] {x^3};
-              \path (axis cs:0,0)
-              node [anchor=north east, xshift=0.05cm] {$O$};
-            \end{axis}
-          \end{tikzpicture}
-        \end{center}
+    \item $y = -\dfrac{1}{x}$
+          \begin{center}
+            \resizebox{0.33\textwidth}{!}{
+              \begin{tikzpicture}
+                \begin{axis}[
+                    axis lines=middle,
+                    xmin=-5.5, xmax=5.5,
+                    ymin=-5.5, ymax=5.5,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    ticks=none,
+                    xlabel style={anchor=east, xshift=0.5cm},
+                    ylabel style={anchor=north, yshift=0.5cm},
+                    line style={thick, color=black},
+                  ]
+                  \addplot[domain=-5:-0.01, thick] {-1/x};
+                  \addplot[domain=0.01:5, thick] {-1/x};
+                  \path (axis cs:0,0)
+                  node [anchor=north east, xshift=0.05cm] {$O$};
+                \end{axis}
+              \end{tikzpicture}
+            }
+          \end{center}
+  \end{enumerate}
+\end{multicols}
+\begin{multicols}{2}
+  \begin{enumerate}[label=(\alph*)]
+    \setcounter{enumi}{8}
+    \item $y = \dfrac{1}{x^2}$
+          \begin{center}
+            \resizebox{0.33\textwidth}{!}{
+              \begin{tikzpicture}
+                \begin{axis}[
+                    axis lines=middle,
+                    xmin=-5.5, xmax=5.5,
+                    ymin=-0.5, ymax=5.5,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    ticks=none,
+                    xlabel style={anchor=east, xshift=0.5cm},
+                    ylabel style={anchor=north, yshift=0.5cm},
+                    line style={thick, color=black},
+                  ]
+                  \addplot[domain=-5:-0.05, thick] {1/x^2};
+                  \addplot[domain=0.05:5, thick] {1/x^2};
+                  \path (axis cs:0,0)
+                  node [anchor=north east, xshift=0.05cm] {$O$};
+                \end{axis}
+              \end{tikzpicture}
+            }
+          \end{center}
 
-  \item $y = -x^3$
-        \begin{center}
-          \begin{tikzpicture}
-            \begin{axis}[
-                axis lines=middle,
-                xmin=-2.5, xmax=2.5,
-                ymin=-5.5, ymax=5.5,
-                xlabel={$x$},
-                ylabel={$y$},
-                ticks=none,
-                xlabel style={anchor=east, xshift=0.5cm},
-                ylabel style={anchor=north, yshift=0.5cm},
-                line style={thick, color=black},
-              ]
-              \addplot[domain=-5:5, thick] {-x^3};
-              \path (axis cs:0,0)
-              node [anchor=north east, xshift=0.05cm] {$O$};
-            \end{axis}
-          \end{tikzpicture}
-        \end{center}
+    \item $y = -\dfrac{1}{x^2}$
+          \begin{center}
+            \resizebox{0.33\textwidth}{!}{
+              \begin{tikzpicture}
+                \begin{axis}[
+                    axis lines=middle,
+                    xmin=-5.5, xmax=5.5,
+                    ymin=-5.5, ymax=0.5,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    ticks=none,
+                    xlabel style={anchor=east, xshift=0.5cm},
+                    ylabel style={anchor=north, yshift=0.5cm},
+                    line style={thick, color=black},
+                  ]
+                  \addplot[domain=-5:-0.05, thick] {-1/x^2};
+                  \addplot[domain=0.05:5, thick] {-1/x^2};
+                  \path (axis cs:0,0)
+                  node [anchor=north east, xshift=0.05cm] {$O$};
+                \end{axis}
+              \end{tikzpicture}
+            }
+          \end{center}
+  \end{enumerate}
+\end{multicols}
+\begin{multicols}{2}
+  \begin{enumerate}[label=(\alph*)]
+    \setcounter{enumi}{10}
+    \item $y = \sqrt{x}$
+          \begin{center}
+            \resizebox{0.33\textwidth}{!}{
+              \begin{tikzpicture}
+                \begin{axis}[
+                    axis lines=middle,
+                    xmin=-0.5, xmax=3.5,
+                    ymin=-0.5, ymax=3.5,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    ticks=none,
+                    xlabel style={anchor=east, xshift=0.5cm},
+                    ylabel style={anchor=north, yshift=0.5cm},
+                    line style={thick, color=black},
+                  ]
+                  \addplot[domain=0:5, thick] {x^0.5};
+                  \path (axis cs:0,0)
+                  node [anchor=north east, xshift=0.05cm] {$O$};
+                \end{axis}
+              \end{tikzpicture}
+            }
+          \end{center}
 
-  \item $y = \dfrac{1}{x}$
-        \begin{center}
-          \begin{tikzpicture}
-            \begin{axis}[
-                axis lines=middle,
-                xmin=-5.5, xmax=5.5,
-                ymin=-5.5, ymax=5.5,
-                xlabel={$x$},
-                ylabel={$y$},
-                ticks=none,
-                xlabel style={anchor=east, xshift=0.5cm},
-                ylabel style={anchor=north, yshift=0.5cm},
-                line style={thick, color=black},
-              ]
-              \addplot[domain=-5:-0.01, thick] {1/x};
-              \addplot[domain=0.01:5, thick] {1/x};
-              \path (axis cs:0,0)
-              node [anchor=north east, xshift=0.05cm] {$O$};
-            \end{axis}
-          \end{tikzpicture}
-        \end{center}
-
-  \item $y = -\dfrac{1}{x}$
-        \begin{center}
-          \begin{tikzpicture}
-            \begin{axis}[
-                axis lines=middle,
-                xmin=-5.5, xmax=5.5,
-                ymin=-5.5, ymax=5.5,
-                xlabel={$x$},
-                ylabel={$y$},
-                ticks=none,
-                xlabel style={anchor=east, xshift=0.5cm},
-                ylabel style={anchor=north, yshift=0.5cm},
-                line style={thick, color=black},
-              ]
-              \addplot[domain=-5:-0.01, thick] {-1/x};
-              \addplot[domain=0.01:5, thick] {-1/x};
-              \path (axis cs:0,0)
-              node [anchor=north east, xshift=0.05cm] {$O$};
-            \end{axis}
-          \end{tikzpicture}
-        \end{center}
-
-  \item $y = \dfrac{1}{x^2}$
-        \begin{center}
-          \begin{tikzpicture}
-            \begin{axis}[
-                axis lines=middle,
-                xmin=-5.5, xmax=5.5,
-                ymin=-0.5, ymax=5.5,
-                xlabel={$x$},
-                ylabel={$y$},
-                ticks=none,
-                xlabel style={anchor=east, xshift=0.5cm},
-                ylabel style={anchor=north, yshift=0.5cm},
-                line style={thick, color=black},
-              ]
-              \addplot[domain=-5:-0.05, thick] {1/x^2};
-              \addplot[domain=0.05:5, thick] {1/x^2};
-              \path (axis cs:0,0)
-              node [anchor=north east, xshift=0.05cm] {$O$};
-            \end{axis}
-          \end{tikzpicture}
-        \end{center}
-
-  \item $y = -\dfrac{1}{x^2}$
-        \begin{center}
-          \begin{tikzpicture}
-            \begin{axis}[
-                axis lines=middle,
-                xmin=-5.5, xmax=5.5,
-                ymin=-5.5, ymax=0.5,
-                xlabel={$x$},
-                ylabel={$y$},
-                ticks=none,
-                xlabel style={anchor=east, xshift=0.5cm},
-                ylabel style={anchor=north, yshift=0.5cm},
-                line style={thick, color=black},
-              ]
-              \addplot[domain=-5:-0.05, thick] {-1/x^2};
-              \addplot[domain=0.05:5, thick] {-1/x^2};
-              \path (axis cs:0,0)
-              node [anchor=north east, xshift=0.05cm] {$O$};
-            \end{axis}
-          \end{tikzpicture}
-        \end{center}
-
-  \item $y = \sqrt{x}$
-        \begin{center}
-          \begin{tikzpicture}
-            \begin{axis}[
-                axis lines=middle,
-                xmin=-0.5, xmax=3.5,
-                ymin=-0.5, ymax=3.5,
-                xlabel={$x$},
-                ylabel={$y$},
-                ticks=none,
-                xlabel style={anchor=east, xshift=0.5cm},
-                ylabel style={anchor=north, yshift=0.5cm},
-                line style={thick, color=black},
-              ]
-              \addplot[domain=0:5, thick] {x^0.5};
-              \path (axis cs:0,0)
-              node [anchor=north east, xshift=0.05cm] {$O$};
-            \end{axis}
-          \end{tikzpicture}
-        \end{center}
-
-  \item $y = -\sqrt{x}$
-        \begin{center}
-          \begin{tikzpicture}
-            \begin{axis}[
-                axis lines=middle,
-                xmin=-0.5, xmax=3.5,
-                ymin=-3.5, ymax=0.5,
-                xlabel={$x$},
-                ylabel={$y$},
-                ticks=none,
-                xlabel style={anchor=east, xshift=0.5cm},
-                ylabel style={anchor=north, yshift=0.5cm},
-                line style={thick, color=black},
-              ]
-              \addplot[domain=0:5, thick] {-x^0.5};
-              \path (axis cs:0,0)
-              node [anchor=north east, xshift=0.05cm] {$O$};
-            \end{axis}
-          \end{tikzpicture}
-        \end{center}
-\end{enumerate}
-
+    \item $y = -\sqrt{x}$
+          \begin{center}
+            \resizebox{0.33\textwidth}{!}{
+              \begin{tikzpicture}
+                \begin{axis}[
+                    axis lines=middle,
+                    xmin=-0.5, xmax=3.5,
+                    ymin=-3.5, ymax=0.5,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    ticks=none,
+                    xlabel style={anchor=east, xshift=0.5cm},
+                    ylabel style={anchor=north, yshift=0.5cm},
+                    line style={thick, color=black},
+                  ]
+                  \addplot[domain=0:5, thick] {-x^0.5};
+                  \path (axis cs:0,0)
+                  node [anchor=north east, xshift=0.05cm] {$O$};
+                \end{axis}
+              \end{tikzpicture}
+            }
+          \end{center}
+  \end{enumerate}
+\end{multicols}
 \subsection*{Transformations of Graphs}
 
 \begin{mdframed}[style=MyFrame]
