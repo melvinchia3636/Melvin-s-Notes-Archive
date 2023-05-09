@@ -78,6 +78,10 @@
   \noindent \textbf{Proof.}
 }
 
+\newcommand{\sxrightarrow}[2][]{%
+  \mathrel{\text{$\xrightarrow[#1]{#2}$}}%
+}
+
 \newenvironment{cequation}{
   \makeatletter
   \setbool{@fleqn}{false}
@@ -119,7 +123,7 @@
 \singlespacing{}
 \newpage
 
-\setstretch{1.25}
+\setstretch{1.5}
 
 \chapter{Function}
 
@@ -191,225 +195,232 @@ The mapping shown in the diagram below is a function.
 
 \subsection*{Practice 1}
 
-\begin{enumerate}
-  \item For the following mappings, list the image of each element in $A$ and the
-        preimage of each element in $B$, and determine whether the mapping is a
-        function or not:
-        \begin{enumerate}[]
-          \item \adjustbox{valign=t}{
-                  \begin{tikzpicture}[scale=0.6, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
-                    \node[ele,label=left:Confucius] (a1) at (0.5,4) {};
-                    \node[ele,label=left:Newton] (a2) at (0.5,3) {};
-                    \node[ele,label=left:Marie Curie] (a3) at (0.5,2) {};
-                    \node[ele,label=left:Darwin] (a4) at (0.5,1) {};
-                    \node[label=left:] (a999) at (-2,1) {};
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
 
-                    \node[ele,,label=right:Female] (b2) at (4,2) {};
-                    \node[ele,,label=right:Male] (b1) at (4,3) {};
-                    \node[] (b999) at (5.5,3) {};
+\begin{multicols}{2}
 
-                    \node[draw,fit= (a1) (a2) (a3) (a4) (a999),minimum width=3cm] {} ;
-                    \node[draw,fit= (b1) (b2) (b999),minimum width=2cm, minimum height=2.4cm] {} ;
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b1);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b1);
-                    \node at (2.5,4.3) {$f$};
-                    \node at (-1,5.7) {$A$};
-                    \node at (4.75,5.2) {$B$};
-                  \end{tikzpicture}
-                }
+  \begin{enumerate}
+    \item For the following mappings, list the image of each element in $A$ and the
+          preimage of each element in $B$, and determine whether the mapping is a
+          function or not:
+          \begin{enumerate}[]
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.6, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:Confucius] (a1) at (0.5,4) {};
+                      \node[ele,label=left:Newton] (a2) at (0.5,3) {};
+                      \node[ele,label=left:Marie Curie] (a3) at (0.5,2) {};
+                      \node[ele,label=left:Darwin] (a4) at (0.5,1) {};
+                      \node[label=left:] (a999) at (-2,1) {};
 
-          \item \adjustbox{valign=t}{
-                  \begin{tikzpicture}[scale=0.6, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
-                    \node[ele,label=left:Malaysia] (a1) at (0,4) {};
-                    \node[ele,label=left:Thailand] (a2) at (0,3) {};
-                    \node[ele,label=left:Japan] (a3) at (0,2) {};
-                    \node[ele,label=left:China] (a4) at (0,1) {};
-                    \node[label=left:] (a999) at (-2,1) {};
+                      \node[ele,,label=right:Female] (b2) at (4,2) {};
+                      \node[ele,,label=right:Male] (b1) at (4,3) {};
+                      \node[] (b999) at (5.5,3) {};
 
-                    \node[ele,,label=right:Kuala Lumpur] (b1) at (4,4) {};
-                    \node[ele,,label=right:Bangkok] (b2) at (4,3) {};
-                    \node[ele,,label=right:Japan] (b3) at (4,2) {};
-                    \node[ele,,label=right:Beijing] (b4) at (4,1) {};
-                    \node[] (b999) at (7,3) {};
+                      \node[draw,fit= (a1) (a2) (a3) (a4) (a999),minimum width=3cm] {} ;
+                      \node[draw,fit= (b1) (b2) (b999),minimum width=2cm, minimum height=2.4cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b1);
+                      \node at (2.5,4.3) {$f$};
+                      \node at (-1,5.7) {$A$};
+                      \node at (4.75,5.2) {$B$};
+                    \end{tikzpicture}
+                  }
 
-                    \node[draw,fit= (a1) (a2) (a3) (a4) (a999),minimum width=3cm] {} ;
-                    \node[draw,fit= (b1) (b2) (b3) (b4) (b999),minimum width=3.6cm, minimum height=4cm] {} ;
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b3);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b4);
-                    \node at (1.8,4.5) {$g$};
-                    \node at (-1,5.7) {$A$};
-                    \node at (5.5,6.5) {$B$};
-                  \end{tikzpicture}
-                }
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.6, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:Malaysia] (a1) at (0,4) {};
+                      \node[ele,label=left:Thailand] (a2) at (0,3) {};
+                      \node[ele,label=left:Japan] (a3) at (0,2) {};
+                      \node[ele,label=left:China] (a4) at (0,1) {};
+                      \node[label=left:] (a999) at (-2,1) {};
 
-          \item \adjustbox{valign=t}{
-                  \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
-                    \node[ele,label=left:$a$] (a1) at (0,3) {};
-                    \node[ele,label=left:$b$] (a2) at (0,2) {};
+                      \node[ele,,label=right:Kuala Lumpur] (b1) at (4,4) {};
+                      \node[ele,,label=right:Bangkok] (b2) at (4,3) {};
+                      \node[ele,,label=right:Japan] (b3) at (4,2) {};
+                      \node[ele,,label=right:Beijing] (b4) at (4,1) {};
+                      \node[] (b999) at (7,3) {};
 
-                    \node[ele,,label=right:$1$] (b1) at (4,4) {};
-                    \node[ele,,label=right:$2$] (b2) at (4,3) {};
-                    \node[ele,,label=right:$3$] (b3) at (4,2) {};
-                    \node[ele,,label=right:$4$] (b4) at (4,1) {};
+                      \node[draw,fit= (a1) (a2) (a3) (a4) (a999),minimum width=3cm] {} ;
+                      \node[draw,fit= (b1) (b2) (b3) (b4) (b999),minimum width=3.6cm, minimum height=4cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b3);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b4);
+                      \node at (1.8,4.5) {$g$};
+                      \node at (-1,5.7) {$A$};
+                      \node at (5.5,6.5) {$B$};
+                    \end{tikzpicture}
+                  }
 
-                    \node[draw,fit= (a1) (a2),minimum width=1.5cm] {} ;
-                    \node[draw,fit= (b1) (b2) (b3) (b4),minimum width=1.5cm] {} ;
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b3);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b4);
-                    \node at (1.8,4) {$h$};
-                    \node at (0,4) {$A$};
-                    \node at (4,5.5) {$B$};
-                  \end{tikzpicture}
-                }
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:$a$] (a1) at (0,3) {};
+                      \node[ele,label=left:$b$] (a2) at (0,2) {};
 
-          \item \adjustbox{valign=t}{
-                  \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
-                    \node[ele,label=left:$a$] (a1) at (0,3) {};
-                    \node[ele,label=left:$b$] (a2) at (0,2) {};
-                    \node[ele,label=left:$c$] (a3) at (0,1) {};
+                      \node[ele,,label=right:$1$] (b1) at (4,4) {};
+                      \node[ele,,label=right:$2$] (b2) at (4,3) {};
+                      \node[ele,,label=right:$3$] (b3) at (4,2) {};
+                      \node[ele,,label=right:$4$] (b4) at (4,1) {};
 
-                    \node[ele,,label=right:$1$] (b1) at (4,2.5) {};
-                    \node[ele,,label=right:$2$] (b2) at (4,1.5) {};
+                      \node[draw,fit= (a1) (a2),minimum width=1.5cm] {} ;
+                      \node[draw,fit= (b1) (b2) (b3) (b4),minimum width=1.5cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b3);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b4);
+                      \node at (1.8,4) {$h$};
+                      \node at (0,4) {$A$};
+                      \node at (4,5.5) {$B$};
+                    \end{tikzpicture}
+                  }
 
-                    \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
-                    \node[draw,fit= (b1) (b2),minimum width=1.5cm] {} ;
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
-                    \node at (2,3.3) {$k$};
-                    \node at (0,4.2) {$A$};
-                    \node at (4,3.5) {$B$};
-                  \end{tikzpicture}
-                }
-        \end{enumerate}
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:$a$] (a1) at (0,3) {};
+                      \node[ele,label=left:$b$] (a2) at (0,2) {};
+                      \node[ele,label=left:$c$] (a3) at (0,1) {};
 
-  \item Given a mapping $g:x \to x+3$, $x \in\big\{$-2, -1, 0, 1, 2, 3$\big\}$, find
-        the image of each $x$.
+                      \node[ele,,label=right:$1$] (b1) at (4,2.5) {};
+                      \node[ele,,label=right:$2$] (b2) at (4,1.5) {};
 
-  \item Determine whether the following mappings are functions.
-        \begin{enumerate}
-          \item \adjustbox{valign=t}{
-                  \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
-                    \node[ele,label=left:$1$] (a1) at (0,3) {};
-                    \node[ele,label=left:$2$] (a2) at (0,2) {};
-                    \node[ele,label=left:$3$] (a3) at (0,1) {};
+                      \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
+                      \node[draw,fit= (b1) (b2),minimum width=1.5cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
+                      \node at (2,3.3) {$k$};
+                      \node at (0,4.2) {$A$};
+                      \node at (4,3.5) {$B$};
+                    \end{tikzpicture}
+                  }
+          \end{enumerate}
 
-                    \node[ele,,label=right:$a$] (b1) at (4,2.5) {};
-                    \node[ele,,label=right:$b$] (b2) at (4,1.5) {};
+    \item Given a mapping $g:x \to x+3$, $x \in\big\{$-2, -1, 0, 1, 2, 3$\big\}$, find
+          the image of each $x$.
 
-                    \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
-                    \node[draw,fit= (b1) (b2),minimum width=1.5cm] {} ;
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b1);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b1);
-                    \node at (0,4.2) {$A$};
-                    \node at (4,3.5) {$B$};
-                  \end{tikzpicture}
-                }
+    \item Determine whether the following mappings are functions.
+          \begin{enumerate}
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:$1$] (a1) at (0,3) {};
+                      \node[ele,label=left:$2$] (a2) at (0,2) {};
+                      \node[ele,label=left:$3$] (a3) at (0,1) {};
 
-          \item \adjustbox{valign=t}{
-                  \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
-                    \node[ele,label=left:$1$] (a1) at (0,3) {};
-                    \node[ele,label=left:$2$] (a2) at (0,2) {};
-                    \node[ele,label=left:$3$] (a3) at (0,1) {};
+                      \node[ele,,label=right:$a$] (b1) at (4,2.5) {};
+                      \node[ele,,label=right:$b$] (b2) at (4,1.5) {};
 
-                    \node[ele,,label=right:$a$] (b1) at (4,2.5) {};
-                    \node[ele,,label=right:$b$] (b2) at (4,1.5) {};
+                      \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
+                      \node[draw,fit= (b1) (b2),minimum width=1.5cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b1);
+                      \node at (0,4.2) {$A$};
+                      \node at (4,3.5) {$B$};
+                    \end{tikzpicture}
+                  }
 
-                    \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
-                    \node[draw,fit= (b1) (b2),minimum width=1.5cm] {} ;
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
-                    \node at (0,4.2) {$A$};
-                    \node at (4,3.5) {$B$};
-                  \end{tikzpicture}
-                }
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:$1$] (a1) at (0,3) {};
+                      \node[ele,label=left:$2$] (a2) at (0,2) {};
+                      \node[ele,label=left:$3$] (a3) at (0,1) {};
 
-          \item \adjustbox{valign=t}{
-                  \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
-                    \node[ele,label=left:$1$] (a1) at (0,3) {};
-                    \node[ele,label=left:$2$] (a2) at (0,2) {};
-                    \node[ele,label=left:$3$] (a3) at (0,1) {};
+                      \node[ele,,label=right:$a$] (b1) at (4,2.5) {};
+                      \node[ele,,label=right:$b$] (b2) at (4,1.5) {};
 
-                    \node[ele,,label=right:$a$] (b1) at (4,2.5) {};
-                    \node[ele,,label=right:$b$] (b2) at (4,1.5) {};
+                      \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
+                      \node[draw,fit= (b1) (b2),minimum width=1.5cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
+                      \node at (0,4.2) {$A$};
+                      \node at (4,3.5) {$B$};
+                    \end{tikzpicture}
+                  }
 
-                    \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
-                    \node[draw,fit= (b1) (b2),minimum width=1.5cm] {} ;
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b1);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
-                    \node at (0,4.2) {$A$};
-                    \node at (4,3.5) {$B$};
-                  \end{tikzpicture}
-                }
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:$1$] (a1) at (0,3) {};
+                      \node[ele,label=left:$2$] (a2) at (0,2) {};
+                      \node[ele,label=left:$3$] (a3) at (0,1) {};
 
-          \item \adjustbox{valign=t}{
-                  \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
-                    \node[ele,label=left:$x$] (a1) at (0,3) {};
-                    \node[ele,label=left:$y$] (a2) at (0,2) {};
-                    \node[ele,label=left:$z$] (a3) at (0,1) {};
+                      \node[ele,,label=right:$a$] (b1) at (4,2.5) {};
+                      \node[ele,,label=right:$b$] (b2) at (4,1.5) {};
 
-                    \node[ele,,label=right:$4$] (b1) at (4,3) {};
-                    \node[ele,,label=right:$7$] (b2) at (4,2) {};
-                    \node[ele,,label=right:$9$] (b3) at (4,1) {};
+                      \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
+                      \node[draw,fit= (b1) (b2),minimum width=1.5cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
+                      \node at (0,4.2) {$A$};
+                      \node at (4,3.5) {$B$};
+                    \end{tikzpicture}
+                  }
 
-                    \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
-                    \node[draw,fit= (b1) (b2) (b3),minimum width=1.5cm] {} ;
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b3);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
-                    \node at (0,4.2) {$A$};
-                    \node at (4,4.2) {$B$};
-                  \end{tikzpicture}
-                }
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:$x$] (a1) at (0,3) {};
+                      \node[ele,label=left:$y$] (a2) at (0,2) {};
+                      \node[ele,label=left:$z$] (a3) at (0,1) {};
 
-          \item \adjustbox{valign=t}{
-                  \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
-                    \node[ele,label=left:$x$] (a1) at (0,3) {};
-                    \node[ele,label=left:$y$] (a2) at (0,2) {};
-                    \node[ele,label=left:$z$] (a3) at (0,1) {};
+                      \node[ele,,label=right:$4$] (b1) at (4,3) {};
+                      \node[ele,,label=right:$7$] (b2) at (4,2) {};
+                      \node[ele,,label=right:$9$] (b3) at (4,1) {};
 
-                    \node[ele,,label=right:$4$] (b1) at (4,3) {};
-                    \node[ele,,label=right:$7$] (b2) at (4,2) {};
-                    \node[ele,,label=right:$9$] (b3) at (4,1) {};
+                      \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
+                      \node[draw,fit= (b1) (b2) (b3),minimum width=1.5cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b3);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
+                      \node at (0,4.2) {$A$};
+                      \node at (4,4.2) {$B$};
+                    \end{tikzpicture}
+                  }
 
-                    \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
-                    \node[draw,fit= (b1) (b2) (b3),minimum width=1.5cm] {} ;
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b3);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b3);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
-                    \node at (0,4.2) {$A$};
-                    \node at (4,4.2) {$B$};
-                  \end{tikzpicture}
-                }
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:$x$] (a1) at (0,3) {};
+                      \node[ele,label=left:$y$] (a2) at (0,2) {};
+                      \node[ele,label=left:$z$] (a3) at (0,1) {};
 
-          \item \adjustbox{valign=t}{
-                  \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
-                    \node[ele,label=left:$x$] (a1) at (0,3) {};
-                    \node[ele,label=left:$y$] (a2) at (0,2) {};
-                    \node[ele,label=left:$z$] (a3) at (0,1) {};
+                      \node[ele,,label=right:$4$] (b1) at (4,3) {};
+                      \node[ele,,label=right:$7$] (b2) at (4,2) {};
+                      \node[ele,,label=right:$9$] (b3) at (4,1) {};
 
-                    \node[ele,,label=right:$4$] (b1) at (4,3) {};
-                    \node[ele,,label=right:$7$] (b2) at (4,2) {};
-                    \node[ele,,label=right:$9$] (b3) at (4,1) {};
+                      \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
+                      \node[draw,fit= (b1) (b2) (b3),minimum width=1.5cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b3);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b3);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
+                      \node at (0,4.2) {$A$};
+                      \node at (4,4.2) {$B$};
+                    \end{tikzpicture}
+                  }
 
-                    \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
-                    \node[draw,fit= (b1) (b2) (b3),minimum width=1.5cm] {} ;
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b2);
-                    \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b1);
-                    \node at (0,4.2) {$A$};
-                    \node at (4,4.2) {$B$};
-                  \end{tikzpicture}
-                }
-        \end{enumerate}
-\end{enumerate}
+            \item \adjustbox{valign=t}{
+                    \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+                      \node[ele,label=left:$x$] (a1) at (0,3) {};
+                      \node[ele,label=left:$y$] (a2) at (0,2) {};
+                      \node[ele,label=left:$z$] (a3) at (0,1) {};
+
+                      \node[ele,,label=right:$4$] (b1) at (4,3) {};
+                      \node[ele,,label=right:$7$] (b2) at (4,2) {};
+                      \node[ele,,label=right:$9$] (b3) at (4,1) {};
+
+                      \node[draw,fit= (a1) (a2) (a3),minimum width=1.5cm] {} ;
+                      \node[draw,fit= (b1) (b2) (b3),minimum width=1.5cm] {} ;
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b2);
+                      \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b1);
+                      \node at (0,4.2) {$A$};
+                      \node at (4,4.2) {$B$};
+                    \end{tikzpicture}
+                  }
+          \end{enumerate}
+  \end{enumerate}
+
+\end{multicols}
 
 The function $f: A \to B$ can be written as $y = f(x)$, $x$ is the element of
 $A$ and $y$ is the element of $B$. When $x$ changes, $y$ changes as well. $x$
@@ -483,110 +494,123 @@ Generally speaking, there are a few ways to represent a function:
 
 \subsection*{Practice 2}
 
-Express the following functions using analytical method, venn diagram, table
-method and graphical method.
-\begin{enumerate}[label=(\alph*)]
-  \item $f$ mapping each integers from $-3$ to $3$ to its squares plus $4$.
-  \item $g$ mapping each natural numbers from $1$ to $4$ to its cubes.
-\end{enumerate}
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+
+\begin{multicols}{2}
+
+  Express the following functions using analytical method, venn diagram, table
+  method and graphical method.
+  \begin{enumerate}[label=(\alph*)]
+    \item $f$ mapping each integers from $-3$ to $3$ to its squares plus $4$.
+    \item $g$ mapping each natural numbers from $1$ to $4$ to its cubes.
+  \end{enumerate}
+
+\end{multicols}
 
 \subsection*{Exercise 22.1}
 
-\begin{enumerate}
-  \item Express the mapping from set $A$ to set $B$, and determine which of the
-        following mappings are functions.
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
 
-        \resizebox{22em}{!}{
-          \begin{tabular}{|c|c|c|c|}
-            \hline
-                & Set $A$                                & Set $B$                                                                   & Mapping       \\
-            \hline
-            (a) & \{0, 3, 9, 12\}                        & \{0, 1, 2, 3\}                                                            & Divide by $3$ \\
-            \hline
-            (b) & \{-2, -1, 0, 1, 2\}                    & \{0, 1, 4, 9, 16\}                                                        & Power of $4$  \\
-            \hline
-            (c) & \{-2, -1, 0, 1, 2\}                    & \{0, 1, 4\}                                                               & Square        \\
-            \hline
-            (d) & \{30$^\circ$, 45$^\circ$, 60$^\circ$\} & $\left\{\dfrac{1}{2},\ \dfrac{\sqrt{2}}{2},\ \dfrac{\sqrt{3}}{2}\right\}$ & Sine          \\
-            \hline
-            (e) & \{-1, 0, 1, 2\}                        & \{-1, 0, 1\}                                                              & Cube          \\
-            \hline
-          \end{tabular}
-        }
+\begin{multicols}{2}
 
-  \item Let function $f(x) = 3x^2 + 1$.
-        \begin{enumerate}
-          \item Find the image of the following elements:
-                \begin{enumerate}
-                  \item -3
-                  \item -2
-                  \item 0
-                  \item 2
-                  \item 5
-                \end{enumerate}
-          \item Find the preimage of the following elements:
-                \begin{enumerate}
-                  \item 13
-                  \item 28
-                  \item 1
-                  \item 0
-                  \item 4
-                \end{enumerate}
-        \end{enumerate}
+  \begin{enumerate}
+    \item Express the mapping from set $A$ to set $B$, and determine which of the
+          following mappings are functions.
 
-  \item Let function $g(x) = 5x-2$. Find:
-        \begin{enumerate}
-          \item $g(-2)$
-          \item $g(-1)$
-          \item $g(0)$
-        \end{enumerate}
+          \resizebox{22em}{!}{
+            \begin{tabular}{|c|c|c|c|}
+              \hline
+                  & Set $A$                                & Set $B$                                                                   & Mapping       \\
+              \hline
+              (a) & \{0, 3, 9, 12\}                        & \{0, 1, 2, 3\}                                                            & Divide by $3$ \\
+              \hline
+              (b) & \{-2, -1, 0, 1, 2\}                    & \{0, 1, 4, 9, 16\}                                                        & Power of $4$  \\
+              \hline
+              (c) & \{-2, -1, 0, 1, 2\}                    & \{0, 1, 4\}                                                               & Square        \\
+              \hline
+              (d) & \{30$^\circ$, 45$^\circ$, 60$^\circ$\} & $\left\{\dfrac{1}{2},\ \dfrac{\sqrt{2}}{2},\ \dfrac{\sqrt{3}}{2}\right\}$ & Sine          \\
+              \hline
+              (e) & \{-1, 0, 1, 2\}                        & \{-1, 0, 1\}                                                              & Cube          \\
+              \hline
+            \end{tabular}
+          }
 
-  \item Let function $f(x) = \left\{\begin{array}{ll}
-            \ \ \ \ \ \ 2x, & x \leq -1     \\
-            \ \ x-1,        & -1 \leq x < 3 \\
-            4x + 2,         & x \geq 3
-          \end{array}\right.$, find
+    \item Let function $f(x) = 3x^2 + 1$.
+          \begin{enumerate}
+            \item Find the image of the following elements:
+                  \begin{enumerate}
+                    \item -3
+                    \item -2
+                    \item 0
+                    \item 2
+                    \item 5
+                  \end{enumerate}
+            \item Find the preimage of the following elements:
+                  \begin{enumerate}
+                    \item 13
+                    \item 28
+                    \item 1
+                    \item 0
+                    \item 4
+                  \end{enumerate}
+          \end{enumerate}
 
-        \begin{enumerate}
-          \item $f(-5)$
-          \item $f(-2)$
-          \item $f(0)$
-          \item $f(2)$
-          \item $f(10)$
-        \end{enumerate}
+    \item Let function $g(x) = 5x-2$. Find:
+          \begin{enumerate}
+            \item $g(-2)$
+            \item $g(-1)$
+            \item $g(0)$
+          \end{enumerate}
 
-  \item Let $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x^4$. Find the image of $-1$, 0, 1,
-        and 2 under $f$.
+    \item Let function $f(x) = \left\{\begin{array}{ll}
+              \ \ \ \ \ \ 2x, & x \leq -1     \\
+              \ \ x-1,        & -1 \leq x < 3 \\
+              4x + 2,         & x \geq 3
+            \end{array}\right.$, find
 
-  \item Let $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x^4$. Find the preimage of 0, 1,
-        and 4 under $f$.
+          \begin{enumerate}
+            \item $f(-5)$
+            \item $f(-2)$
+            \item $f(0)$
+            \item $f(2)$
+            \item $f(10)$
+          \end{enumerate}
 
-        In $\mathbb{R}$, which element does not have a preimage?
+    \item Let $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x^4$. Find the image of $-1$, 0, 1,
+          and 2 under $f$.
 
-  \item In the diagram below, given that function $g: A \to B$ is defined as $g: x \to
-          2x - 8$. Find the value of $a$ and $b$.
-        \begin{center}
-          \begin{tikzpicture}
-            \draw[thick] (0,0) -- (0,3) node[above]{$A$};
-            \draw[thick] (3,0) -- (3,3) node[above]{$B$};
-            \node at (1.5, 3) {$g$};
-            \filldraw (0, 2.5) circle (1.5pt) node[left]{$-1$};
-            \filldraw (0, 0.5) circle (1.5pt) node[left]{$b$};
-            \filldraw (3, 0.8) circle (1.5pt) node[right]{$-4$};
-            \filldraw (3, 2.2) circle (1.5pt) node[right]{$a$};
-            \begin{scope}[thick,decoration={
-                    markings,
-                    mark=at position 0.5 with {\arrow{Latex}}}
-              ]
-              \draw[postaction={decorate}] (0, 2.5) -- (3, 2.2);
-              \draw[postaction={decorate}] (0, 0.5) -- (3, 0.8);
-            \end{scope}
-          \end{tikzpicture}
-        \end{center}
+    \item Let $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x^4$. Find the preimage of 0, 1,
+          and 4 under $f$.
 
-  \item Using narrative form, arrow method, venn diagram, table method and graphical
-        method, express the function $f(x) = 2x$, $x \in \{-2, -1, 0, 1, 2\}$.
-\end{enumerate}
+          In $\mathbb{R}$, which element does not have a preimage?
+
+    \item In the diagram below, given that function $g: A \to B$ is defined as $g: x \to
+            2x - 8$. Find the value of $a$ and $b$.
+          \begin{center}
+            \begin{tikzpicture}
+              \draw[thick] (0,0) -- (0,3) node[above]{$A$};
+              \draw[thick] (3,0) -- (3,3) node[above]{$B$};
+              \node at (1.5, 3) {$g$};
+              \filldraw (0, 2.5) circle (1.5pt) node[left]{$-1$};
+              \filldraw (0, 0.5) circle (1.5pt) node[left]{$b$};
+              \filldraw (3, 0.8) circle (1.5pt) node[right]{$-4$};
+              \filldraw (3, 2.2) circle (1.5pt) node[right]{$a$};
+              \begin{scope}[thick,decoration={
+                      markings,
+                      mark=at position 0.5 with {\arrow{Latex}}}
+                ]
+                \draw[postaction={decorate}] (0, 2.5) -- (3, 2.2);
+                \draw[postaction={decorate}] (0, 0.5) -- (3, 0.8);
+              \end{scope}
+            \end{tikzpicture}
+          \end{center}
+
+    \item Using narrative form, arrow method, venn diagram, table method and graphical
+          method, express the function $f(x) = 2x$, $x \in \{-2, -1, 0, 1, 2\}$.
+  \end{enumerate}
+\end{multicols}
 \newpage
 \section{Domain and Range}
 
@@ -639,16 +663,16 @@ the range of a function will then be determined.
   \begin{center}
     \begin{tabular}{|c|c|}
       \hline
-      Intervals      & Set Notations                             \\
+      Intervals      & Set Notations                                          \\
       \hline
-      $(a, b)$       & ${x | x \in \mathbb{R}, a < x < b}$       \\
-      $[a, b)$       & ${x | x \in \mathbb{R}, a \leq x < b}$    \\
-      $(a, b]$       & ${x | x \in \mathbb{R}, a < x \leq b}$    \\
-      $[a, b]$       & ${x | x \in \mathbb{R}, a \leq x \leq b}$ \\
-      $(a, \infty)$  & ${x | x \in \mathbb{R}, x > a}$           \\
-      $[a, \infty)$  & ${x | x \in \mathbb{R}, x \leq a}$        \\
-      $(-\infty, a)$ & ${x | x \in \mathbb{R}, x < a}$           \\
-      $(-\infty, a]$ & ${x | x \in \mathbb{R}, x \leq a}$        \\
+      $(a, b)$       & $\left\{x | x \in \mathbb{R}, a < x < b\right\}$       \\
+      $[a, b)$       & $\left\{x | x \in \mathbb{R}, a \leq x < b\right\}$    \\
+      $(a, b]$       & $\left\{x | x \in \mathbb{R}, a < x \leq b\right\}$    \\
+      $[a, b]$       & $\left\{x | x \in \mathbb{R}, a \leq x \leq b\right\}$ \\
+      $(a, \infty)$  & $\left\{x | x \in \mathbb{R}, x > a\right\}$           \\
+      $[a, \infty)$  & $\left\{x | x \in \mathbb{R}, x \leq a\right\}$        \\
+      $(-\infty, a)$ & $\left\{x | x \in \mathbb{R}, x < a\right\}$           \\
+      $(-\infty, a]$ & $\left\{x | x \in \mathbb{R}, x \leq a\right\}$        \\
       \hline
     \end{tabular}
   \end{center}
@@ -656,156 +680,170 @@ the range of a function will then be determined.
 
 \subsection*{Practice 3}
 
-\begin{enumerate}
-  \item Let $A = \{2, 4, 5, 7\}$ and $B = \{3, 5, 7, 8, 9\}$, the definition of
-        function $g$ is given by the diagram below. Find the domain, codomain and range
-        of function $g$.
-        \begin{center}
-          \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
-            \node[ele,label=left:$2$] (a1) at (0,3.5) {};
-            \node[ele,label=left:$4$] (a2) at (0,2.5) {};
-            \node[ele,label=left:$5$] (a3) at (0,1.5) {};
-            \node[ele,label=left:$7$] (a4) at (0,0.5) {};
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
 
-            \node[ele,,label=right:$3$] (b1) at (4,4) {};
-            \node[ele,,label=right:$5$] (b2) at (4,3) {};
-            \node[ele,,label=right:$7$] (b3) at (4,2) {};
-            \node[ele,,label=right:$8$] (b4) at (4,1) {};
-            \node[ele,,label=right:$9$] (b5) at (4,0) {};
+\begin{multicols}{2}
 
-            \node[draw,fit= (a1) (a2) (a3) (a4),minimum width=1.5cm] {} ;
-            \node[draw,fit= (b1) (b2) (b3) (b4) (b5),minimum width=1.5cm] {} ;
-            \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b3);
-            \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b1);
-            \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b4);
-            \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b4);
-            \node at (0,5) {$A$};
-            \node at (4,5.7) {$B$};
-            \node at (2,4.8) {$g$};
-          \end{tikzpicture}
-        \end{center}
+  \begin{enumerate}
+    \item Let $A = \{2, 4, 5, 7\}$ and $B = \{3, 5, 7, 8, 9\}$, the definition of
+          function $g$ is given by the diagram below. Find the domain, codomain and range
+          of function $g$.
+          \begin{center}
+            \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+              \node[ele,label=left:$2$] (a1) at (0,3.5) {};
+              \node[ele,label=left:$4$] (a2) at (0,2.5) {};
+              \node[ele,label=left:$5$] (a3) at (0,1.5) {};
+              \node[ele,label=left:$7$] (a4) at (0,0.5) {};
 
-  \item Let $A = \{-2, -1, 0, 1, 2\}$, function $f: A \to \mathbb{R}$ is defined by
-        $f(x) = x^2 - 1$. Find the domain and range of $f$.
+              \node[ele,,label=right:$3$] (b1) at (4,4) {};
+              \node[ele,,label=right:$5$] (b2) at (4,3) {};
+              \node[ele,,label=right:$7$] (b3) at (4,2) {};
+              \node[ele,,label=right:$8$] (b4) at (4,1) {};
+              \node[ele,,label=right:$9$] (b5) at (4,0) {};
 
-  \item The curve in the diagram below represents the function $y = f(x)$, $-2 \leq x
-          \leq 3$. Find the domain and range of $f$.
-        \begin{center}
-          \begin{tikzpicture}
-            \begin{axis}[
-                axis lines=middle,
-                xmin=-2.5, xmax=3.5,
-                ymin=-3, ymax=8,
-                xtick={-2,-1,0,1,2,3},
-                ytick={-2, -1, ..., 7},
-                xlabel={$x$},
-                ylabel={$y$},
-                xlabel style={anchor=east, xshift=0.5cm},
-                ylabel style={anchor=north, yshift=0.5cm},
-                xtick style={thick, color=black},
-                ytick style={thick, color=black},
-                line style={thick, color=black},
-              ]
-              \addplot[domain=-2:3, thick] {x^2 - 2};
-              \path (axis cs:0,0)
-              node [anchor=north east, xshift=0.05cm] {0};
-              \draw[dashed] (axis cs:0,7) -- (axis cs:3,7);
-              \filldraw (axis cs:3,7) circle (1.6pt);
-              \draw[dashed] (axis cs:0,2) -- (axis cs:-2,2);
-              \filldraw (axis cs:-2,2) circle (1.6pt);
-            \end{axis}
-          \end{tikzpicture}
-        \end{center}
+              \node[draw,fit= (a1) (a2) (a3) (a4),minimum width=1.5cm] {} ;
+              \node[draw,fit= (b1) (b2) (b3) (b4) (b5),minimum width=1.5cm] {} ;
+              \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b3);
+              \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b1);
+              \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b4);
+              \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b4);
+              \node at (0,5) {$A$};
+              \node at (4,5.7) {$B$};
+              \node at (2,4.8) {$g$};
+            \end{tikzpicture}
+          \end{center}
 
-  \item Find the domain and range of the following functions:
-        \begin{enumerate}
-          \item $f(x) = -4x + 5$
-          \item $g(x) = x^2 - 1$
-          \item $h(x) = \dfrac{1}{4x + 7}$
-          \item $k(x) = \sqrt{6 - x}$
-        \end{enumerate}
-\end{enumerate}
+    \item Let $A = \{-2, -1, 0, 1, 2\}$, function $f: A \to \mathbb{R}$ is defined by
+          $f(x) = x^2 - 1$. Find the domain and range of $f$.
+
+    \item The curve in the diagram below represents the function $y = f(x)$, $-2 \leq x
+            \leq 3$. Find the domain and range of $f$.
+          \begin{center}
+            \begin{tikzpicture}
+              \begin{axis}[
+                  axis lines=middle,
+                  xmin=-2.5, xmax=3.5,
+                  ymin=-3, ymax=8,
+                  xtick={-2,-1,0,1,2,3},
+                  ytick={-2, -1, ..., 7},
+                  xlabel={$x$},
+                  ylabel={$y$},
+                  xlabel style={anchor=east, xshift=0.5cm},
+                  ylabel style={anchor=north, yshift=0.5cm},
+                  xtick style={thick, color=black},
+                  ytick style={thick, color=black},
+                  line style={thick, color=black},
+                ]
+                \addplot[domain=-2:3, thick] {x^2 - 2};
+                \path (axis cs:0,0)
+                node [anchor=north east, xshift=0.05cm] {0};
+                \draw[dashed] (axis cs:0,7) -- (axis cs:3,7);
+                \filldraw (axis cs:3,7) circle (1.6pt);
+                \draw[dashed] (axis cs:0,2) -- (axis cs:-2,2);
+                \filldraw (axis cs:-2,2) circle (1.6pt);
+              \end{axis}
+            \end{tikzpicture}
+          \end{center}
+
+    \item Find the domain and range of the following functions:
+          \begin{enumerate}
+            \item $f(x) = -4x + 5$
+            \item $g(x) = x^2 - 1$
+            \item $h(x) = \dfrac{1}{4x + 7}$
+            \item $k(x) = \sqrt{6 - x}$
+          \end{enumerate}
+  \end{enumerate}
+
+\end{multicols}
 
 \subsection*{Exercise 22.2}
 
-\begin{enumerate}
-  \item Let $X = \{a, b, c, d\}$ and $Y = \{-1, 2, 9, 11\}$, function $f: X \to Y$ is
-        defined by $f(a) = 2$, $f(b) = -1$, $f(c) = 2$, $f(d) = 9$. Find the domain and
-        range of the $f$.
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
 
-  \item The curve in the diagram below represents the function $y = f(x)$, $-1 < x \leq
-          4$. Find the domain and range of $f$.
-        \begin{center}
-          \begin{tikzpicture}
-            \begin{axis}[
-                axis lines=middle,
-                xmin=-2.5, xmax=4.5,
-                ymin=-4, ymax=8,
-                xtick={-2,-1,0,1,2,3,4},
-                ytick={-3, -2, -1, ..., 7},
-                xlabel={$x$},
-                ylabel={$y$},
-                xlabel style={anchor=east, xshift=0.5cm},
-                ylabel style={anchor=north, yshift=0.5cm},
-                xtick style={thick, color=black},
-                ytick style={thick, color=black},
-                line style={thick, color=black},
-              ]
-              \addplot[domain=-1:4, thick] {-(x - 1)^2 + 6};
-              \path (axis cs:0,0)
-              node [anchor=north east, xshift=0.05cm] {0};
-              \draw[dashed] (axis cs:0,-3) -- (axis cs:4,-3);
-              \filldraw (axis cs:4,-3) circle (1.6pt);
-              \draw[dashed] (axis cs:0,2) -- (axis cs:-1,2);
-              \filldraw[fill=white] (axis cs:-1,2) circle (1.6pt);
-            \end{axis}
-          \end{tikzpicture}
-        \end{center}
+\begin{multicols}{2}
 
-  \item Let $A = \{a, b, c, d, e\}$ and $B = \{4, 5, 8, 9, 12\}$, the definition of
-        function $g: A \to B$ is given by the digram below. Find the domain, codomain
-        and range of function $g$.
-        \begin{center}
-          \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
-            \node[ele,label=left:$a$] (a1) at (0,4) {};
-            \node[ele,label=left:$b$] (a2) at (0,3) {};
-            \node[ele,label=left:$c$] (a3) at (0,2) {};
-            \node[ele,label=left:$e$] (a4) at (0,1) {};
-            \node[ele,label=left:$e$] (a5) at (0,0) {};
+  \begin{enumerate}
+    \item Let $X = \{a, b, c, d\}$ and $Y = \{-1, 2, 9, 11\}$, function $f: X \to Y$ is
+          defined by $f(a) = 2$, $f(b) = -1$, $f(c) = 2$, $f(d) = 9$. Find the domain and
+          range of the $f$.
 
-            \node[ele,,label=right:$4$] (b1) at (4,4) {};
-            \node[ele,,label=right:$5$] (b2) at (4,3) {};
-            \node[ele,,label=right:$8$] (b3) at (4,2) {};
-            \node[ele,,label=right:$9$] (b4) at (4,1) {};
-            \node[ele,,label=right:$12$] (b5) at (4,0) {};
+    \item The curve in the diagram below represents the function $y = f(x)$, $-1 < x \leq
+            4$. Find the domain and range of $f$.
+          \begin{center}
+            \begin{tikzpicture}
+              \begin{axis}[
+                  axis lines=middle,
+                  xmin=-2.5, xmax=4.5,
+                  ymin=-4, ymax=8,
+                  xtick={-2,-1,0,1,2,3,4},
+                  ytick={-3, -2, -1, ..., 7},
+                  xlabel={$x$},
+                  ylabel={$y$},
+                  xlabel style={anchor=east, xshift=0.5cm},
+                  ylabel style={anchor=north, yshift=0.5cm},
+                  xtick style={thick, color=black},
+                  ytick style={thick, color=black},
+                  line style={thick, color=black},
+                ]
+                \addplot[domain=-1:4, thick] {-(x - 1)^2 + 6};
+                \path (axis cs:0,0)
+                node [anchor=north east, xshift=0.05cm] {0};
+                \draw[dashed] (axis cs:0,-3) -- (axis cs:4,-3);
+                \filldraw (axis cs:4,-3) circle (1.6pt);
+                \draw[dashed] (axis cs:0,2) -- (axis cs:-1,2);
+                \filldraw[fill=white] (axis cs:-1,2) circle (1.6pt);
+              \end{axis}
+            \end{tikzpicture}
+          \end{center}
 
-            \node[draw,fit= (a1) (a2) (a3) (a4) (a5),minimum width=1.5cm] {} ;
-            \node[draw,fit= (b1) (b2) (b3) (b4) (b5),minimum width=1.5cm] {} ;
-            \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
-            \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b3);
-            \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b1);
-            \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b5);
-            \draw[->,thick,shorten <=2pt,shorten >=2] (a5) -- (b5);
-            \node at (0,5.7) {$A$};
-            \node at (4,5.7) {$B$};
-            \node at (2,4.8) {$g$};
-          \end{tikzpicture}
-        \end{center}
+    \item Let $A = \{a, b, c, d, e\}$ and $B = \{4, 5, 8, 9, 12\}$, the definition of
+          function $g: A \to B$ is given by the digram below. Find the domain, codomain
+          and range of function $g$.
+          \begin{center}
+            \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+              \node[ele,label=left:$a$] (a1) at (0,4) {};
+              \node[ele,label=left:$b$] (a2) at (0,3) {};
+              \node[ele,label=left:$c$] (a3) at (0,2) {};
+              \node[ele,label=left:$e$] (a4) at (0,1) {};
+              \node[ele,label=left:$e$] (a5) at (0,0) {};
 
-  \item Let $A = \{-1, 0, 1, 2\}$, function $f: A \to \mathbb{R}$ is defined by $f(x) =
-          3x^2 - 2$, find the domain and range of $f$.
+              \node[ele,,label=right:$4$] (b1) at (4,4) {};
+              \node[ele,,label=right:$5$] (b2) at (4,3) {};
+              \node[ele,,label=right:$8$] (b3) at (4,2) {};
+              \node[ele,,label=right:$9$] (b4) at (4,1) {};
+              \node[ele,,label=right:$12$] (b5) at (4,0) {};
 
-  \item Let $A = \{-1, 0, 2, 5, 11\}$, function $f: A \to \mathbb{R}$ is defined by
-        $f(x) = x^2 - x - 2$, find the domain and range of $f$.
+              \node[draw,fit= (a1) (a2) (a3) (a4) (a5),minimum width=1.5cm] {} ;
+              \node[draw,fit= (b1) (b2) (b3) (b4) (b5),minimum width=1.5cm] {} ;
+              \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+              \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b3);
+              \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b1);
+              \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b5);
+              \draw[->,thick,shorten <=2pt,shorten >=2] (a5) -- (b5);
+              \node at (0,5.7) {$A$};
+              \node at (4,5.7) {$B$};
+              \node at (2,4.8) {$g$};
+            \end{tikzpicture}
+          \end{center}
 
-  \item Find the domain and range of the following functions:
-        \begin{enumerate}
-          \item $f(x) = x^3$
-          \item $g(x) = \sqrt{1 - x^2}$
-          \item $h(x) = \dfrac{1}{2x + 3}$
-          \item $k(x) = x^2 - 2x + 4$
-        \end{enumerate}
-\end{enumerate}
+    \item Let $A = \{-1, 0, 1, 2\}$, function $f: A \to \mathbb{R}$ is defined by $f(x) =
+            3x^2 - 2$, find the domain and range of $f$.
+
+    \item Let $A = \{-1, 0, 2, 5, 11\}$, function $f: A \to \mathbb{R}$ is defined by
+          $f(x) = x^2 - x - 2$, find the domain and range of $f$.
+
+    \item Find the domain and range of the following functions:
+          \begin{enumerate}
+            \item $f(x) = x^3$
+            \item $g(x) = \sqrt{1 - x^2}$
+            \item $h(x) = \dfrac{1}{2x + 3}$
+            \item $k(x) = x^2 - 2x + 4$
+          \end{enumerate}
+  \end{enumerate}
+
+\end{multicols}
 
 \newpage
 \section{Graphs of Functions and Their Transformations}
@@ -816,7 +854,9 @@ satisfied the equation $y = f(x)$ are called graphs of function $f$. Below are
 some examples of graphs of simple functions.
 
 Note that any line that is parallel to the $y$-axis intersects the graph of a
-function at most once.
+function at most once. \setlength{\columnseprule}{0pt}
+\setlength{\columnsep}{24pt}
+
 \begin{multicols}{2}
   \begin{enumerate}[label=(\alph*)]
     \item $y = x$
@@ -1212,11 +1252,295 @@ function at most once.
   If $a > 0$, shrinking (when $a > 1$) or zooming (when $0 < a < 1$) the graph of $y = f(x)$ by a factor of $\dfrac{1}{a}$ in the $x$-direction, the graph of $y = f(ax)$ is obtained.
 \end{mdframed}
 
+\subsection*{Practice 4}
+
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+
+\begin{multicols}{2}
+
+  Find the line of symmetry and vertex of the following parabola, and sketch its
+  graph. (Question 1 to 2):
+  \begin{enumerate}
+    \item $y = 2x^2 + 8x + 11$
+    \item $y = -3x^2 + 18x - 7$
+  \end{enumerate}
+
+  Sketch the graph of the following functions. (Question 3 to 4):
+  \begin{enumerate}
+    \setcounter{enumi}{2}
+    \item $y = \dfrac{4}{{(x+2)}^2}$
+    \item $y = \sqrt{x - 1} + 3$
+  \end{enumerate}
+
+\end{multicols}
+
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+
+\subsection*{Exercise 22.3}
+
+\begin{multicols}{2}
+
+  Find the line of symmetry and vertex of the following parabola, and sketch its
+  graph.
+  \begin{enumerate}
+    \item $y = 2x^2 + 4x + 5$
+    \item $y = -3x^2 + 12x - 4$
+    \item $y = 4x^2 - 20x + 19$
+    \item $y = -3x^2 - 6x - 4$
+  \end{enumerate}
+
+  Sketch the graph of the following functions.
+  \begin{enumerate}
+    \setcounter{enumi}{4}
+    \item $y = (x+2)^3 - 5$
+    \item $y = \sqrt{x-5}$
+    \item $y = \dfrac{1}{(x+2)^2}$
+    \item $y = -\dfrac{1}{2(x-1)^2}$
+    \item $y = 3\sqrt{x+1} - 4$
+    \item $y = \dfrac{4}{2x+3}$
+    \item $y = \left\{\begin{array}{ll}
+              4x+9,   & x \leq 0 \\
+              9 - 2x, & x > 0    \\
+            \end{array}\right.$
+    \item $y = \left\{\begin{array}{ll}
+              \ \ \ \ \ \ \ \ \ \ x, & x < -1    \\
+              \sqrt{x+1},            & x \geq -1 \\
+            \end{array}\right.$
+  \end{enumerate}
+
+  \begin{enumerate}
+    \setcounter{enumi}{12}
+    \item Sketch the graph for the function $f(x) = x^2 - 6x + 12$, $-2 \leq x \leq 8$,
+          and find its domain and range.
+    \item Sketch the graph for the function $g(x) = -x^2 - 4x - 7$, $-2 \leq x \leq 5$,
+          and find its domain and range.
+    \item Sketch the graph for the function $f(x) = -x^2 + 2x + 10$, and find its domain
+          and range.
+    \item Sketch the graph of the function $y = \sqrt{x}$, and transform it according the
+          following steps. Sketch the graph of each function after each step on the same
+          diagram, and write down the corresponding function.
+
+          Step 1: Translate 4 units to the left;
+
+          Step 2: Scale up by a factor of 2 in the $x$-direction;
+
+          Step 3: Reflect about the $y$-axis;
+
+          Step 4: Translate 3 units downwards.
+
+          Step 5: Scale down by half in the $y$-direction.
+  \end{enumerate}
+
+\end{multicols}
+
 \section{Composite Functions}
+
+Let $A$, $B$, and $C$ be three non-empty sets, $f: A \to B$ and $g: B \to C$ be
+two functions, an element $x$ in set $A$ is mapped to an element $f(x)$ in set
+$B$ by function $f$, and $f(x)$ is mapped to an element $g\big(f(x)\big)$ in
+set $C$ by function $g$. In other words, $x$ in set $A$ is mapped to an element
+$g\big(f(x)\big)$ in $C$ after two mappings. That is:
+\begin{cequation}
+  x\ \xrightarrow{\displaystyle \ \ f\ \ } f(x)\ \xrightarrow{\displaystyle \ \ g\ \ } g\big(f(x)\big)
+\end{cequation}
+
+The combination of these two mappings are a function from set $A$ to set $C$,
+this function is called the \emph{composite function} of $f$ and $g$, denoted
+by $g \circ f$. When defining the composite function $g \circ f$, the range of
+$f$ must be a subset of the domain of $g$, that is, $R_f \subseteq D_g$.
+
+Note that $D_{g \circ f} = D_f$, $R_{g \circ f} \subseteq R_g$.
+
+$\forall n \in \mathbb{N}$, $f^{n+1} = f \circ f^n$.
+
+Generally speaking, $g \circ f \neq f \circ g$.
+
+If $f \circ (g \circ h)$ is defined, then $(f \circ g) \circ h$ is also
+defined, and $f \circ (g \circ h) = (f \circ g) \circ h$. Therefore, we can
+write $f \circ g \circ h$ without ambiguity.
+
+\subsection*{Practice 5}
+
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+
+\begin{multicols}{2}
+
+  \begin{enumerate}[label=\arabic*., leftmargin=*]
+    \item Let $f: \mathbb{R} \to \mathbb{R}$, $f(x) = 2x + 3$ and $g: \mathbb{R} \to
+            \mathbb{R}$, $g(x) = 5 - x$. Find $(g \circ f)(x)$ and $(f \circ g)(x)$.
+
+    \item Let $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x^2 - 2x + 3$ and $g: \mathbb{R}
+            \to \mathbb{R}$, $g(x) = 3x - 4$. Find
+          \begin{enumerate}
+            \item $g \circ f$ and $f \circ g$;
+            \item $g\big(f(2)\big)$, $f\big(g(2)\big)$, $(g \circ f)(2)$, and $(f \circ g)(2)$.
+          \end{enumerate}
+
+    \item Let $f: \mathbb{R} \to \mathbb{R}$, $f(x) = 4 - x^2$ and $g: \left\{x | x \leq
+            4 \right\} \to \mathbb{R}$, $g(x) = \sqrt{4 - x}$. Prove the existence of $f
+            \circ g$ and $g \circ f$ respectively.
+  \end{enumerate}
+
+\end{multicols}
 
 \section{One to One Function, Onto Function and One to One Onto Function}
 
+\subsection*{One to One Function}
+
+Let $f: A \to B$ be a function, if there is at most one preimage in set $A$ for
+each element in set $B$, then $f$ is called a \emph{one to one function}.
+
+As shown in the diagram above, each element in the codomain $B$ of the function
+$f: A \to B$ has at most one preimage in the domain $A$ of the function, thus
+$f$ is a one to one function; while the element $b_2$ in the codomain $B$ of
+the function $g: A \to B$ has two preimages $a_2$ and $a_3$, thus $g$ is not a
+one to one function.
+
+A function $y = f(x)$ is a one to one function, if and only if any line
+parallel to the $x$-axis intersects the graph of the function at most once.
+
+\subsection*{Onto Function}
+
+If each element in the codomain $B$ of the function $f: A \to B$ has at least
+one preimage under the function $f$, then $f$ is said to be an \emph{onto
+  function}.
+
+As shown in the diagram above, each element in the codomain $B$ of the function
+$f: A \to B$ has at least one preimage under the function $f$, therefore $f$ is
+an onto function; while the element $b_3$ in the codomain $B$ of the function
+$g: A \to B$ has no preimage under the function $g$, therefore $g$ is not an
+onto function.
+
+\subsection*{One to One Onto Function}
+
+If a function is both a one to one function and an onto function, then it is a
+\emph{one to one onto function}, as shown in the diagram above.
+
+\subsection*{Practice 7}
+
+Determine whether the following functions are one to one functions or onto
+functions.
+
+\subsection*{Exercise 22.5}
+
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+
+\begin{multicols}{2}
+
+  \begin{enumerate}
+    \item Let $A = \left\{1, 2, 3\right\}$, $f: A \to A$ is defined by $f: 1 \to 1$, $2
+            \to 3$, $3 \to 2$. Determine if $f$ is a one to one function or an onto
+          function.
+
+    \item Let $A = \left\{a, b, c, d\right\}$ and $B = \left\{x, y, z\right\}$, $f: A \to
+            B$ is defined by $f: a \to y$, $b \to x$, $c \to z$, $d \to y$. Determine if
+          $f$ is a one to one function or an onto function.
+
+    \item Let the function $g: \mathbb{R} \to \mathbb{R}$ be defined by $g(x) = 2x + 1$.
+          Determine if $g$ is a one to one function or an onto function.
+
+    \item Let the function $f: \mathbb{R} \to \mathbb{R}$ be defined by $f(x) = 2x^3 -
+            3$. Determine if $f$ is a one to one function or an onto function.
+
+    \item Let the function $f: \mathbb{R}^+ \to \mathbb{R}^+$ be defined by $f(x) =
+            \dfrac{1}{x}$. Determine if $f$ is a one to one function or an onto function.
+
+    \item Let the function $f: \mathbb{R}^+ \to \mathbb{R}^+$ be defined by $f(x) =
+            \sqrt{x}$. Determine if $f$ is a one to one function or an onto function.
+
+    \item Determine whether the following functions are one to one, onto or one to one
+          onto functions.
+          \begin{enumerate}
+            \item $A = \left\{a, b, c\right\}$, $B = \left\{x, y, z\right\}$, $f: A \to
+                    B$, $f: a \to x$, $b \to x$, $c \to y$
+            \item $A = \left\{a, b, c\right\}$, $B = \left\{x, y, z\right\}$, $g: A \to
+                    B$, $g: a \to x$, $b \to y$, $c \to z$
+            \item $A = \left\{a, b, c\right\}$, $B = \left\{x, y\right\}$, $h: A \to
+                    B$, $h: a \to x$, $b \to y$, $c \to y$
+            \item $A = \left\{a, b, c\right\}$, $B = \left\{x, y\right\}$, $k: A \to
+                    B$, $k: a \to x$, $a \to y$, $c \to y$
+            \item $A = \left\{a, b, c\right\}$, $B = \left\{x, y\right\}$, $f: A \to B$, $f: a \to x$, $a \to y$, $b \to x$, $c \to y$
+            \item $A = \left\{a, b, c, d\right\}$, $B = \left\{u, v, x, y, z\right\}$, $g: A \to B$, $g: a \to u$, $b \to v$, $c \to x$, $d \to y$
+          \end{enumerate}
+
+    \item determine whether the following functions mapping $A$ to $B$ are one to one
+          functions or onto functions.
+  \end{enumerate}
+
+\end{multicols}
+
+\newpage
+
 \section{Inverse Functions}
+
+\begin{mdframed}[style=MyFrame]
+  If $f: A \to B$ is a one to one onto function, then there exist a function $g: B \to A$, such that if $y = f(x)$, then $g(y) = x$. The function $g$ is called the \emph{inverse function} of $f$, and is denoted by $f^{-1}$.
+\end{mdframed}
+
+from the diagram above, we can conclude the following:
+
+\begin{mdframed}[style=MyFrame]
+  \begin{cequation}
+    x\ \xrightarrow{\displaystyle \ \ f\ \ } y = f(x)\ \xrightarrow{\displaystyle \ \ f^{-1}\ \ } f^{-1}\big(f(x)\big) = f^{-1}(y)
+  \end{cequation}
+\end{mdframed}
+or
+\begin{mdframed}[style=MyFrame]
+  \begin{cequation}
+    y\ \xrightarrow{\displaystyle \ \ f^{-1}\ \ } x = f^{-1}(y)\ \xrightarrow{\displaystyle \ \ f\ \ } f\big(f^{-1}(y)\big) = f(x)
+  \end{cequation}
+\end{mdframed}
+
+If both $(g\circ f)^-1$ and $f^{-1} \circ g^{-1}$ exist, then $(g\circ f)^{-1}
+  = f^{-1} \circ g^{-1}$.
+
+\subsection*{Practice 8}
+
+\subsection*{Exercise 22.5}
+
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+
+\begin{multicols}{2}
+
+  \begin{enumerate}
+    \item Find the inverse function of the following functions:
+          \begin{enumerate}
+            \item $f:x \to 7x - 3$
+            \item $g:x \to \dfrac{1}{2}x + 9$
+            \item $h:x \to \dfrac{x+1}{x-8},\ x \neq 8$
+            \item $k:x \to \dfrac{x-1}{2x},\ x \neq 0$
+          \end{enumerate}
+
+    \item Given the function $f: x \to 2x+1$ and $g:x \to \dfrac{1}{x-4},\ x\neq 4$.
+          Find:
+          \begin{enumerate}
+            \item $f^{-1}$
+            \item $g^{-1}$
+            \item $f^{-1} \circ g^{-1}$
+            \item $g^{-1} \circ f^{-1}$
+            \item $(f \circ g)^{-1}$
+            \item $(g \circ f)^{-1}$
+          \end{enumerate}
+  \end{enumerate}
+
+\end{multicols}
+
+\subsection*{Graph of Inverse Functions}
+
+\begin{mdframed}[style=MyFrame]
+  If $f$ is a one to one function, then the graph of $f^{-1}$ is the reflection of the graph of $f$ about the line $y = x$.
+\end{mdframed}
+
+\subsection*{Practice 9}
+
+Given the function $g: \mathbb{R}^+ \cup {0} \to \mathbb{R}^+ \cup {0}$, $g: x
+  \to x^2$. On the same set of axes, draw the graph of the function $g$ and its
+inverse function $g^{-1}$.
 
 \chapter{Exponents and Logarithms}
 
