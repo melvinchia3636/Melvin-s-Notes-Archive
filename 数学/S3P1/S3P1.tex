@@ -24,6 +24,7 @@
 \usepackage{mathtools}
 \usepackage{mdframed}
 \usepackage{adjustbox}
+\usepackage{xpatch}
 
 \def\nswe#1#2#3{#1\,$#2^\circ\,#3'$}
 \graphicspath{ {./assets/} }
@@ -54,11 +55,18 @@
 
 \newtheorem{theorem}{Theorem}
 
+\makeatletter
+\xpatchcmd{\endmdframed}
+{\aftergroup\endmdf@trivlist\color@endgroup}
+{\endmdf@trivlist\color@endgroup\@doendpe}
+{}{}
+\makeatother
+
 \mdfdefinestyle{MyFrame}{%
   linecolor=black,
   linewidth=1pt,
-  roundcorner=20pt,innerbottommargin=18pt, innerrightmargin=12pt,
-  innerleftmargin=12pt, skipbelow=12pt,
+  roundcorner=20pt, innertopmargin=20pt,innerbottommargin=20pt, innerrightmargin=12pt,
+  innerleftmargin=12pt, skipbelow=20pt, skipabove=20pt
   %backgroundcolor=gray!50!white}
 }
 
@@ -1968,6 +1976,7 @@ called the base, $x$ is called the antilogarithm.
 On the other hand, if $\log_a x = n$, then $a_n = x$. This is the inversible
 relationship between exponents and logarithms. That is,
 \begin{mdframed}[style=MyFrame]
+  \vspace{-10pt}
   \begin{cequation}
     \log_a x = n \iff a^n = x\qquad
     a > 0,\ a \neq 1,\ x > 0
@@ -2104,11 +2113,408 @@ $y = \log_a x$, the following two cases are considered: \newpage
 
 \section{Arithmetic Properties of Logarithms and Base Changing Formula}
 
+\subsection*{Identties and Arithmetic Properties of Logarithms}
+
+Logarithms have the following identities:
+\begin{mdframed}[style=MyFrame]
+  \setlength{\abovedisplayshortskip}{0pt}
+  \setlength{\belowdisplayshortskip}{0pt}
+  \setlength{\abovedisplayskip}{0pt}
+  \setlength{\belowdisplayskip}{0pt}
+  \makeatletter
+  \setbool{@fleqn}{false}
+  \makeatother
+  \begin{flalign*}
+    \log_a 1 & = 0 \\
+    \log_a a & = 1
+  \end{flalign*}
+  \makeatletter
+  \setbool{@fleqn}{true}
+  \makeatother
+\end{mdframed}
+
+\noindent Logarithms have the following arithmetic properties:
+\begin{mdframed}[style=MyFrame]
+  \setlength{\abovedisplayshortskip}{0pt}
+  \setlength{\belowdisplayshortskip}{0pt}
+  \setlength{\abovedisplayskip}{0pt}
+  \setlength{\belowdisplayskip}{0pt}
+  \makeatletter
+  \setbool{@fleqn}{false}
+  \makeatother
+  \begin{flalign*}
+     & \log_a(xy) = \log_a x + \log_a y \quad (x > 0, y > 0)          \\
+     & \log_a \dfrac{x}{y} = \log_a x - \log_a y \quad (x > 0, y > 0) \\
+     & \log_a x^n = n \log_a x \quad (x > 0)                          \\
+     & a^{\log_a x} = x
+  \end{flalign*}
+  \makeatletter
+  \setbool{@fleqn}{true}
+  \makeatother
+\end{mdframed}
+
+\subsection*{Base Changing Formula}
+
+The base of a logarithm can be changed from one to another. Let $\log_a x = n$,
+then $a^n = x$. Change both sides of the equation to logarithm with base $b$,
+we have
+\begin{flalign*}
+  \log_b a^n                                & = \log_b x                   \\
+  n \log_b a                                & = \log_b x                   \\
+  \because\ a \neq 1,\ \therefore\ \log_b a & \neq 0                       \\
+  n                                         & = \dfrac{\log_b x}{\log_b a} \\
+  \therefore\ \log_a x                      & = \dfrac{\log_b x}{\log_b a}
+\end{flalign*}
+The expression above is called the \textit{base changing formula}.
+
+\noindent When $x = b$, we have $\log_a b = \dfrac{1}{\log_b a}$.
+
+\noindent In this book, the value of logarithms are rounded to 4 decimal places.
+
+\subsection*{Practice 5}
+
+\subsection*{Exercise 23.2}
+
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+  Without using the calculator, compare the value of the following expressions
+  (Question 1 to 4):
+
+  \begin{enumerate}
+    \item $5^{2\log_5 4}$
+    \item $4^{3\log_2 \sqrt{2}}$
+    \item $2\log 5 - \log \dfrac{1}{3} + \dfrac{1}{2} \log\dfrac{16}{9}$
+    \item $\dfrac{\log_4 27}{\log_2 3}$
+    \item Given that $\log_2 4 = a$ and $\log_2 5 = b$. Express the following expressions
+          in terms of $a$ and $b$:
+          \begin{enumerate}
+            \item $\log_2 90$
+            \item $\log_3 270$
+            \item $\log_9 1.8$
+          \end{enumerate}
+
+    \item Given that $\log_{16}y = \dfrac{1}{2} + \log_4 x$. Express $x$ in terms of $y$.
+  \end{enumerate}
+\end{multicols}
+
+\subsection*{Exercise 23.3}
+
+\subsection*{Exercise 23.2}
+
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+  Simplify the following expressions (Question 1 to 6):
+  \begin{enumerate}
+    \item $\log_2 4^x$
+    \item $\log_2 {a^{\log_a 2}}$
+    \item $3^{\log_3 x - \log_3 y}$
+    \item $\log_3 {(9^x \times 27^y)}$
+    \item $2^{-\log_8 x}$
+    \item $3\log_4 2^x$
+  \end{enumerate}
+  Without using the calculator, evaluate the following expressions (Question 7 to 22):
+  \begin{enumerate}
+    \setcounter{enumi}{6}
+    \item $\log_7{\sqrt[3]{49}}$
+    \item $49^{\log_7 3}$
+    \item $2^{2\log_2 7}+\left({\dfrac{1}{2}}\right)^{-\log_2 7}$
+    \item $\log_{3}5-\log_{3} 15$
+    \item $\dfrac{\log{\sqrt{3}}}{\log{\dfrac{1}{9}}}$
+    \item $\log_{5}{\dfrac{1}{5}}+\log_{5}{{\sqrt[3]{5}}-\log_{5}25}$
+    \item $\log_{3}{\sqrt[3]{27{\sqrt[4]{81}}}}$
+    \item $\log\left(0.1\right)^{4}-\log{\sqrt[3]{0.001}}$
+    \item $\dfrac{\log4+\log3}{1+\log0.4+{\dfrac{1}{2}}\log9}$
+    \item $\log_{36}6-\log_{6}36-\log_{6}{\dfrac{1}{6}}$
+    \item $\log_{2}{\dfrac{1}{25}}\log_{3}{\dfrac{1}{8}}\cdot\log_{5}{\dfrac{1}{9}}$
+    \item $\log_{4}5\cdot\log_{5}6\cdot\log_{6}7\cdot\log_{7}8$
+    \item $\log_{4}8-\log_{\frac{1}{9}}3-\log_{\sqrt{2}}4$
+    \item $\left(\log_{2}3+\log_{2}{\sqrt{3}}\right)\log_{\sqrt{3}}2$
+    \item $\dfrac{\log_{5}\sqrt{2}\cdot\log_{7}9}{\log_{7}\sqrt[3]{4}\cdot\log_{5}{\dfrac{1}{3}}}$
+    \item ${\dfrac{1}{2}}\log{\dfrac{81}{17}}+2\log{\dfrac{5}{3}}-\log{\dfrac{17}{4}}+{\dfrac{3}{2}}\log17$
+    \item Given that $\log_2 3 = a$ and $\log_2 5 = b$. Express $a$ and $b$ in terms of
+          $\log_4 15$.
+    \item Given that $\log_3 5 = m$ and $\log_5 6 = n$. Express $m$ and $n$ in terms of
+          $\log_25 54$.
+    \item Given that $\log_2 3 = a$ and $\log_3 7 = b$. Express $a$ and $b$ in terms of
+          $\log_42 14$.
+    \item Given that $\log_3 6 = x$. Epress $x$ in terms of $\log_9 12$.
+    \item Given that $\log_3 y - \log_9 \sqrt[3]{x} = 1 + \log_27 x$. Exress $x$ in terms
+          of $y$.
+    \item Given that $\log_25(2x - 1) = \log_5(x-3) + \log_25 5$, prove that $5x^2 - 32x
+            + 46 = 0$.
+    \item If $a > 0$, $b > 0$, and $a^2 + b^2 = 7ab$, prove that $2\log_3(a+b) = 2 +
+            \log_3 a + \log_3 b$.
+    \item If $x > 0$, $y > 0$, and $x^2 + 9y^2 = 10xy$, prove that $2\log(x+3y) - 4\log2
+            = \log x + \log y$.
+  \end{enumerate}
+\end{multicols}
+
 \section{Exponential Equations}
+
+All the equations with terms that contain the variable in the exponent are
+called exponential equations. For example, $9^x = 3^{x-1}$, $3^x = 5$, and
+$2^{x-1} + 2^x - 2 = 0$ are all exponential equations.
+
+\subsection*{Practice 6}
+
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+  Solve the following exponential equations:
+  \begin{enumerate}
+    \item $3^{2x} = -\dfrac{1}{9}$
+    \item $2^{x^2 + 4x} = \dfrac{1}{8}$
+    \item $6^x = 5^{x-1}$
+    \item $4^{x-1} + 2^{x-1} = 20$
+  \end{enumerate}
+\end{multicols}
+
+\subsection*{Exercise 23.4}
+
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+  Solve the following exponential equations:
+
+  \begin{enumerate}
+    \item $8^{x-3}=\dfrac{1}{256}$
+    \item $3^{2x+1}=243$
+    \item $10^{x^{2}-4}=1$
+    \item $3^{x^{2}+3}=27^{x+7}$
+    \item $4^{x^{2}}=2^{5x+7}$
+    \item $5^{2x^{2}+x}=25^{1+x-2x^{2}}$
+    \item $\left({\dfrac{9}{16}}\right)^{x}=\left({\dfrac{4}{3}}\right)^{x-6}$
+    \item $5^{2^x+1}=5^{4^x+1}$
+    \item $2^{2x+3}\cdot4^{x+6}=\left(8^{x}\right)^{x}$
+    \item ${\dfrac{5^{x^{2}}}{5}}=7^{(x+1)(x-1)}$
+    \item $3^{x+1}=4^{x-1}$
+    \item $7^{5-3x}=5^{x+2}$
+    \item $13^{2x+5}=14^{x+7}$
+    \item $2^{x^{2}-1}=3^{x+1}$
+    \item $\left({\dfrac{1}{3}}\right)^{x}-\left({\dfrac{1}{3}}\right)^{-x}={\dfrac{80}{9}}$
+    \item $3^{x+1}+9^{x}-18=0$
+    \item $25^{x}-23\cdot5^{x}-50=0$
+    \item $3^{x-1}+3^{3-x}-10=0$
+    \item $3^{2x}-3^{x+1}+2=0$
+    \item $2^{x+2}+3\left(2^{1-x}\right)-14=0$
+    \item $2^{2x-1}-3\cdot2^{x-1}+1=0$
+    \item $3^{x}-5^{x+2}=3^{x+1}-5^{x+3}$
+  \end{enumerate}
+\end{multicols}
 
 \section{Logarithmic Equations}
 
+All the equations with logarithmic terms which contains variable in the base or
+in the argument are called logarithmic equations. For example, $\log(x-1) = 3$,
+$\log_x 9 = 2$, and $2\log_3 x + \log_9 x = 1$ are all logarithmic equations.
+The results acquired when solving logarithmic equations need to be checked.
+
+\subsection*{Practice 7}
+
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+
+  Solve the following logarithmic equations:
+  \begin{enumerate}
+    \item $\log_3 x=5$
+    \item $\log_{5}(x-2)=0$
+    \item $\log(x^{2}+2x-3)-\log(x+3)=0$
+    \item $\log_{3}(3x+1)+1=\log_{3}(2x-1)+\log_{3}5$
+    \item $\log_{x}3+\log_{x}81=5$
+    \item $3\log_{2}^{2}x+5\log_{2}x-2=0$
+    \item $\log_{2}x-\log_{x}8=2$
+    \item $x^{\log x}=100x$
+  \end{enumerate}
+
+\end{multicols}
+
+\subsection{Exercise 23.5}
+
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+  Solve the following logarithmic equations:
+  \begin{enumerate}
+    \item $\log_{\sqrt{3}}x=-2$
+    \item $\log_{2}x^{4}=4$
+    \item $\log{\frac{x-2}{x+2}}=\log{\frac{1}{x-1}}$
+    \item $2\log x+\log7=\log14$
+    \item $\log x+\log\left(x-3\right)=1$
+    \item $\log\left(x+6\right)-\log\left(x-3\right)=1$
+    \item $\log_{6}x+\log_{6}(x^{2}-7)=1$
+    \item $\log_{1,2}(15x^{2}-2x-12)=0$
+    \item $\log_{8}(x^{2}-3x-2)={\frac{1}{3}}$
+    \item $\log_{2}(x^{2}-x-2)-\log_{2}(x+1)=0$
+    \item $\log_{3}(2x-3)+\log_{3}(3x+2)=\log_{3}(2x-1)$
+    \item $\frac{1}{2}(\log x-\log5)=\log2-\frac{1}{2}\log(9-x)$
+    \item $\log\left(x+6\right)-{\frac{1}{2}}\log\left(2x-3\right)=2-\log25$
+    \item $\log_{2}x=\log_{8}x+1$
+    \item $3^{\log x}=2^{\log3}$
+    \item $4x^{\log_{2}x}=x^{3}$
+    \item $2\bigl(\log_{3}x\bigr)^{2}+\log_{3}x-1=0$
+    \item $\log_{4}^{2}x-5\log_{4}x+6=0$
+    \item $6\log^{2}x+\log x^{3}-3=0$
+    \item $(\log x)^{2}=2\log x$
+    \item $\log_{x}25-\log_{25}x=0$
+    \item $2\log_{4}x-3\log_{x}4+5=0$
+    \item $2\log_{x}10-\log x+1=0$
+    \item $\log_{5}\left[\log_{2}\left(\log_{x}5\right)\right]=0$
+  \end{enumerate}
+\end{multicols}
+
 \section{Compound Interest and Annuity}
+
+Simple interest and compound interest are two different methods of calculating
+interest. Simple interest is calculated on the principal amount of a loan only.
+Compound interest is calculated on the principal amount and also on the
+accumulated interest of previous periods, and can thus be regarded as “interest
+on interest.”
+
+For example, a fund amounted to RM$p$ is deposited into a bank account with a
+yearly interest rate of $r\%$.
+\begin{flalign*}
+  \text{Principal amount} & = \text{RM} p
+\end{flalign*}
+When $t = 1$,
+\begin{flalign*}
+  \text{Interest earned}    & = p \times r\% = \frac{pr}{100}                        \\
+  \text{Accumulated amount} & = p + \frac{pr}{100} = p\left(1 + \frac{r}{100}\right)
+\end{flalign*}
+When $t = 2$,
+\begin{flalign*}
+  \text{Interest earned}    & = \left(p + \frac{pr}{100}\right) \times r\% = \frac{pr}{100}\left(1 + \frac{r}{100}\right) \\
+  \text{Accumulated amount} & = p\left(1 + \frac{r}{100}\right) + \frac{pr}{100}\left(1 + \frac{r}{100}\right)            \\
+                            & = p\left(1 + \frac{r}{100}\right)\left(1 + \frac{r}{100}\right)                             \\
+                            & = p\left(1 + \frac{r}{100}\right)^{2}
+\end{flalign*}
+When $t = 3$,
+\begin{flalign*}
+  \text{Interest earned}    & = \left(p\left(1 + \frac{r}{100}\right)^{2}\right) \times r\% = \frac{pr}{100}\left(1 + \frac{r}{100}\right)^{2} \\
+  \text{Accumulated amount} & = p\left(1 + \frac{r}{100}\right)^{2} + \frac{pr}{100}\left(1 + \frac{r}{100}\right)^{2}                         \\
+                            & = p\left(1 + \frac{r}{100}\right)^{2}\left(1 + \frac{r}{100}\right)                                              \\
+                            & = p\left(1 + \frac{r}{100}\right)^{3}
+\end{flalign*}
+
+In general, the accumulated amount after $t$ years is given by
+\begin{mdframed}[style=MyFrame]
+  \setlength{\abovedisplayshortskip}{0pt}
+  \setlength{\belowdisplayshortskip}{0pt}
+  \setlength{\abovedisplayskip}{0pt}
+  \setlength{\belowdisplayskip}{0pt}
+  \makeatletter
+  \setbool{@fleqn}{false}
+  \makeatother
+  \begin{flalign*}
+    A & = p\left(1 + \frac{r}{100}\right)^{t}
+  \end{flalign*}
+  \makeatletter
+  \setbool{@fleqn}{true}
+  \makeatother
+\end{mdframed}
+where $p$ is called the \textit{present value} of $A$.
+
+If the interest is compounded $m$ times per year, then the accumulated amount
+is given by
+\begin{mdframed}[style=MyFrame]
+  \setlength{\abovedisplayshortskip}{0pt}
+  \setlength{\belowdisplayshortskip}{0pt}
+  \setlength{\abovedisplayskip}{0pt}
+  \setlength{\belowdisplayskip}{0pt}
+  \makeatletter
+  \setbool{@fleqn}{false}
+  \makeatother
+  \begin{flalign*}
+    A & = p\left(1 + \frac{r}{100m}\right)^{mt}
+  \end{flalign*}
+  \makeatletter
+  \setbool{@fleqn}{true}
+  \makeatother
+\end{mdframed}
+
+\subsection*{Annuity and Present Value of Annuity}
+
+An annuity is a series of equal payments made at equal intervals of time
+according to some kind of contract, standing order or the amount received. For
+example, all sorts of insurance premiums, house rent, car loan, etc. are
+annuities. In this book, we will only consider annuities with equal payments
+made or received at equal intervals of time.
+
+Note that the annuity is not limited to once a year.
+
+We can compare which payment plan is better by comparing the present values of
+the annuities. From the formula $A = p\left(1 + r\%\right)^{t}$, we can know
+that the present value $p = \dfrac{A}{\left(1 + r\%\right)^{t}}$. If the yearly
+interest rate is $r\%$, the annuity is RM$A$, the payment is made once per
+year, then the present value of the amount paid after a year is $A(1 +
+  r\%)^{-1}$, the present value of the amount paid after two years is $A(1 +
+  r\%)^{-2}$, and so on. The present value of the amount paid after $n$ years is
+$A(1 + r\%)^{-n}$. Hence, the sum of the present values of the amount paid
+after $n$ years is
+\begin{flalign*}
+   & \dfrac{A}{1+r\%} + \dfrac{A}{(1+r\%)^2} + \cdots + \dfrac{A}{(1+r\%)^n}                 \\
+   & = A\left[\dfrac{1}{1+r\%} + \dfrac{1}{(1+r\%)^2} + \cdots + \dfrac{1}{(1+r\%)^n}\right] \\
+   & = A\left[\dfrac{1-\dfrac{1}{(1+r\%)^n}}{1-\dfrac{1}{1+r\%}}\right]                      \\
+   & = \dfrac{A}{r\%}\left(1 - \dfrac{1}{(1+r\%)^n}\right)
+\end{flalign*}
+
+Annuity that is paid indefinitely is called \textit{perpetuity}, $n \to
+  \infty$, $\dfrac{1}{(1+r\%)^n} \to 0$. From that, we can know that the present
+value of perpetuity is $\dfrac{A}{r\%}$.
+
+\subsection*{Practice 8}
+
+\begin{enumerate}
+  \item Given that the principal amount is RM75,000, interest rate is 4.5\%. Using
+        composite interest method, find the accumulated amount after 10 years.
+  \item A person has deposited RM40,000 into a bank account. The bank pays 8\% interest
+        per annum compounded half yearly. Using the compound interest method, find the
+        amount in the account after 3 years.
+  \item Given that the interest rate is 6\%, the interest is compounded half yearly.
+        Using the compound interest method, the accumulated amount after 5 years is
+        RM4031.75, find the principal amount.
+  \item Given that the interest rate is 4\%, the annuity is RM3,500, the payment is
+        made once per year. The payment has since been made for 15 years continuously.
+        Find the present value. Hence, find the present value of the perpetuity.
+\end{enumerate}
+
+\subsection*{Exercise 23.6}
+\begin{enumerate}
+  \item Given that the principal amount is RM90,000, the interest rate is 5\%.
+        Compounding the interest once per year, find the accumulated amount after 10
+        years.
+  \item A person has deposited a fund into a bank account. The bank pays 8\% interest
+        per annum compounded yearly. The amount in the account after 3 years has
+        increased by RM779.14. Find the amount of the fund deposited.
+
+  \item RM80,000 was deposited into a financial institution. The interest rate is 8\%
+        per annum compounded once per three months. Find the amount in the account
+        after 5 years.
+  \item Prove that the accumulated amount after being compounded with an interest of
+        $5$ for 15 years will exceed twice the principal amount.
+  \item Given that the principal amount is RM15,000, the interest rate is 6\% being
+        compouned once per year. How long does it take for the accumulated amount to be
+        more than RM30,000?
+  \item Given that the principal amount is RM120,000, the interest rate is 5.5\% being
+        compounded half yearly. How long does it take for the accumulated amount to be
+        more than RM200,000?
+  \item A person deposited RM2,500 into his bank account at the beginning of the yaar,
+        the interest rate is 4.5\% compounded once per year. Find the amount in the
+        account after 15 years.
+  \item If the present value is RM15,443.46, the interest rate is 5\%, find the annuity
+        if the payment is made for 10 years.
+  \item Given that the annuity is RM5,000, the interest rate is 5\%, the payment is
+        made once per year for 25 years. Find the present value. Hence, find the
+        present value of the perpetuity.
+  \item Given that the annuity is RM2,500, the interest rate is 4.5\%, the payment is
+        made once per year. How many years does it take for the present value to exceed
+        RM30,000?
+  \item If a bank has introduced an annuity scheme, the investors can receive RM1,000
+        per year for life after paying RM20,000. If the annuity plan is considered
+        approximately to be a perpetuity, find the interest rate.
+\end{enumerate}
 
 \chapter{Limits}
 
