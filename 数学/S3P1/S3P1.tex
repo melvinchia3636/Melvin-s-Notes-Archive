@@ -25,6 +25,7 @@
 \usepackage{mdframed}
 \usepackage{adjustbox}
 \usepackage{xpatch}
+\usepackage{nicematrix}
 
 \def\nswe#1#2#3{#1\,$#2^\circ\,#3'$}
 \graphicspath{ {./assets/} }
@@ -2695,9 +2696,416 @@ value of perpetuity is $\dfrac{A}{r\%}$.
 
 \section{Concept of Limits}
 
+Limit is a fundamental concept of calculus. It is the theoretical basis for
+studies on the changes and trends of functions. We will first introduce an
+example related to the idea of limits.
+
+\subsection*{Cyclotomic Method by Liu Wei}
+
+The circle is not a shape with straight edges, so where does its area formula
+$A = \pi r^2$ come from?
+
+Let the side length of a regular $n$ -gon inscribed in a circle be $a_n$,
+length from the center to the side be $r_n$, as shown in the diagram below, the
+area of the regular $n$-gon is $A_n = n \cdot \dfrac{1}{2}a_n\cdot r_n$, while
+its circumference is $P_n = na_n$, then $A_n = \dfrac{1}{2} P_n \cdot r_n$.
+
+When the value of $n$ becomes larger and larger, the area $A_n$ of the $n$-gon
+is indefinitely close to the area $A$ of the circle, denoted as $A =
+  \lim\limits_{n\to \infty} A_n$, the limit of $A_n$ is said to be $A$ when $n$
+approaches infinity.
+
+When $n \to \infty$, the circumference $P_n$ and the length between center and
+side $r_n$ of the inscribed regular $n$-gon, approaches the circumference $P$
+and the radius $r$ of the circle respectively. That is to say, $\lim\limits_{n
+    \to \infty} P_n = P$, $\lim\limits_{n \to \infty} r_n = r$.
+\begin{flalign*}
+  \therefore\ A & = \lim\limits_{n \to \infty}A_n                        & \\
+                & = \lim\limits_{n \to \infty}\dfrac{1}{2} P_n \cdot r_n & \\
+                & = \dfrac{1}{2}Pr
+\end{flalign*}
+from $P = 2\pi r$. we get $A = \pi r^2$.
+
+The concept above uses the idea of "replacing curves with straight lines",
+which treats the area of a circle as the limit of the area of a regular $n$-gon
+when $n$ approaches infinity. This way of calculating the area of a circle
+using the limit is invented by Liu Hui, a mathematician back in the 3rd
+century, and is called the "Cyclotomic Method". Quoted from his own words, "The
+smaller the circle is divided, the lesser the error is; divide and divide,
+until the circle is unable to be divided, then the error will be negligible and
+it will be the same as the circle."
+
 \section{Limits of Functions}
 
-\section{Arithmetic Properties of Limits of Functions}
+If the value of a variable $x$ approaches a certain constant $a$, we say that
+$x$ tends to $a$.
+
+When $x$ approaches $x_0$ (but not equal to $x_0$), if the value of $f(x)$
+approaches a certain constant $A$, we say that as $x$ approaches $x_0$, the
+limit of $f(x)$ is $A$, denoted as $\lim\limits_{x \to x_0} f(x) = A$.
+
+In the definition of the limit $\lim\limits_{x \to x_0} f(x) = A$, when
+approaches $x_0$ from the left ($x < x_0$) and right ($x > x_0$), the limit of
+$f(x)$ approaches the same constant $A$.
+
+When $x$ approaches $x_0$ from the left ($x < x_0$), denoted as $x \to x_0^-$,
+if the value of $f(x)$ approaches a certain constant $A$, then $A$ is the left
+limit of $f(x)$ when $x$ approaches $x_0$, denoted as $\lim\limits_{x \to
+    x_0^-} f(x) = A$.
+
+Similarly, when $x$ approaches $x_0$ from the right ($x > x_0$), denoted as $x
+  \to x_0^+$, if the value of $f(x)$ approaches a certain constant $A$, then $A$
+is the right limit of $f(x)$ when $x$ approaches $x_0$, denoted as
+$\lim\limits_{x \to x_0^+} f(x) = A$.
+
+If $x$ approaches $x_0$ from the left (or right), but the value of $f(x)$ does
+not approach a certain constant, then the left (or right) limit does not exist.
+
+From the definition of the limit, left limit and right limit, we can conclude
+the following theorem:
+\begin{mdframed}[style=MyFrame]
+  When $x \to x_0$, if the left and right limit of the function $f(x)$ exist and are equal, then the limit of $f(x)$ exists, and $\lim\limits_{x \to x_0} f(x) = \lim\limits_{x \to x_0^-} f(x) = \lim\limits_{x \to x_0^+} f(x)$.
+
+  Contrarily, if the left limit or right limit of the function $f(x)$ does not
+  exist, or the left and right limit are not equal, then the limit of $f(x)$ does
+  not exist.
+\end{mdframed}
+
+Note that the limit $\lim\limits_{x \to x_0} f(x)$ and the function value
+$f(x_0)$ are two different concepts. When $\lim\limits_{x \to x_0} f(x)$
+exists, it does not mean that $f(x_0)$ exists. Even if $f(x_0)$ exists, it does
+not guarantee to be equal to $\lim\limits_{x \to x_0} f(x)$.
+
+\subsection*{Practice 1}
+
+Complete the following table, state the changes of the value of the function
+$f(x) = 2x + 1$ when $x \to 1$, and find $\lim\limits_{x \to 1} f(x)$.
+
+\begin{center}
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    $x$             & 0.9 & 0.99 & 0.999 & 0.9999 & 0.99999 \\
+    \hline
+    $f(x) = 2x + 1$ &     &      &       &        &         \\
+    \hline
+  \end{tabular}
+\end{center}
+\begin{center}
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    $x$             & 1.1 & 1.01 & 1.001 & 1.0001 & 1.00001 \\
+    \hline
+    $f(x) = 2x + 1$ &     &      &       &        &         \\
+    \hline
+  \end{tabular}
+\end{center}
+
+If $x$ approaches positive infinity, the value of function $f(x)$ approaches a
+certain constant $A$, then $A$ is the limit of $f(x)$ when $x \to \infty$,
+denoted as $\lim\limits_{x \to \infty} f(x) = A$.
+
+Similarly, if $x$ approaches negative infinity, the value of function $f(x)$
+approaches a certain constant $B$, then $B$ is the limit of $f(x)$ when $x \to
+  -\infty$, denoted as $\lim\limits_{x \to -\infty} f(x) = B$.
+
+If $x$ approaches positive infinity (or negative infinity), but the value of
+$f(x)$ does not approach a certain constant, then the limit of $f(x)$ does not
+exist when $x \to \infty$ (or $x \to -\infty$).
+
+\subsection*{Practice 2}
+
+Complete the following table, state the changes of the value of the function
+$f(x) = \dfrac{1}{x}$ when $x \to \infty$, and find $\lim\limits_{x \to \infty}
+  f(x)$.
+
+\begin{center}
+  \begin{NiceTabular}{|c|c|c|c|c|c|c|}[hvlines,cell-space-limits=5pt]
+    $x$                   & -1 & -10 & -100 & -1000 & -10000 & $\cdots$ \\
+    $f(x) = \dfrac{1}{x}$ &    &     &      &       &        &          \\
+  \end{NiceTabular}
+\end{center}
+
+\subsection*{Exercise 24.2}
+
+\begin{enumerate}
+  \item Complete the following table. Hence, find the left limit, right limit, and
+        limit of the function $f(x) = 3x - 1$ and $x = 1$.
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+            $x$             & 0.9 & 0.99 & 0.999 & 0.9999 & 0.99999 \\
+            \hline
+            $f(x) = 3x - 1$ &     &      &       &        &         \\
+            \hline
+          \end{tabular}
+          \vskip 0.2cm
+          \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+            $x$             & 1.1 & 1.01 & 1.001 & 1.0001 & 1.00001 \\
+            \hline
+            $f(x) = 3x - 1$ &     &      &       &        &         \\
+            \hline
+          \end{tabular}
+        \end{center}
+
+  \item Complete the following tables, state the changes of the value of the function
+        $f(x)$ when $x \to x_0$, and find $\lim\limits_{x \to x_0} f(x)$.
+        \begin{enumerate}
+          \item $f(x) = x^3 + 1$, $x_0 = 0$
+                \begin{center}
+                  \begin{tabular}{|c|c|c|c|c|c|}
+                    \hline
+                    $x$              & 0.1 & 0.01 & 0.001 & 0.0001 & 0.00001 \\
+                    \hline
+                    $f(x) = x^3 + 1$ &     &      &       &        &         \\
+                    \hline
+                  \end{tabular}
+                  \vskip 0.2cm
+                  \begin{tabular}{|c|c|c|c|c|c|}
+                    \hline
+                    $x$              & -0.1 & -0.01 & -0.001 & -0.0001 & -0.00001 \\
+                    \hline
+                    $f(x) = x^3 + 1$ &      &       &        &         &          \\
+                    \hline
+                  \end{tabular}
+                \end{center}
+
+          \item $f(x) = \dfrac{x^2 - 4}{x + 2}$, $x_0 = -2$
+                \begin{center}
+                  \begin{tabular}{|c|c|c|c|c|c|}
+                    \hline
+                    $x$                             & -2.1 & -2.01 & -2.001 & -2.0001 & -2.00001 \\
+                    \hline
+                    $f(x) = \dfrac{x^2 - 4}{x + 2}$ &      &       &        &         &          \\
+                    \hline
+                  \end{tabular}
+                  \vskip 0.2cm
+                  \begin{tabular}{|c|c|c|c|c|c|}
+                    \hline
+                    $x$    & -1.9 & -1.99 & -1.999 & -1.9999 & -1.99999 \\
+                    \hline
+                    $f(x)$ &      &       &        &         &          \\
+                    \hline
+                  \end{tabular}
+                \end{center}
+
+          \item $f(x) = \left\{\begin{array}{rl}
+                    4 - x,   & x < 1    \\
+                    x^2 + 2, & x \geq 1
+                  \end{array}\right.$, $x_0 = 1$
+                \begin{center}
+                  \begin{tabular}{|c|c|c|c|c|c|}
+                    \hline
+                    $x$    & 0.9 & 0.99 & 0.999 & 0.9999 & 0.99999 \\
+                    \hline
+                    $f(x)$ &     &      &       &        &         \\
+                    \hline
+                  \end{tabular}
+                  \vskip 0.2cm
+                  \begin{tabular}{|c|c|c|c|c|c|}
+                    \hline
+                    $x$    & 1.1 & 1.01 & 1.001 & 1.0001 & 1.00001 \\
+                    \hline
+                    $f(x)$ &     &      &       &        &         \\
+                    \hline
+                  \end{tabular}
+                \end{center}
+        \end{enumerate}
+
+  \item Complete the following table, state the changes of the function $f(x) =
+          \dfrac{2x + 1}{x + 2}$ when $x \to x_0$, and find $\lim\limits_{x \to \infty}
+          f(x)$.
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|}
+            \hline
+            $x$    & 1 & 10 & 100 & 1000 & 10000 & 100000 \\
+            \hline
+            $f(x)$ &   &    &     &      &       &        \\
+            \hline
+          \end{tabular}
+        \end{center}
+
+  \item Complete the following table, state the changes of the function $f(x) = 2^x$
+        when $x \to -\infty$, and find $\lim\limits_{x \to -\infty} f(x)$.
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|}
+            \hline
+            $x$    & -1 & -2 & -3 & -4 & -5 & -10 \\
+            \hline
+            $f(x)$ &    &    &    &    &    &     \\
+            \hline
+          \end{tabular}
+        \end{center}
+\end{enumerate}
+
+\section{Arithmetic Rules of Limits of Functions}
+
+If $\lim\limits_{x \to x_0} f(x)$ and $\lim\limits_{x \to x_0} g(x)$ exist,
+then
+\begin{enumerate}
+  \item $\lim\limits_{x \to x_0} [f(x) \pm g(x)] = \lim\limits_{x \to x_0} f(x) \pm
+          \lim\limits_{x \to x_0} g(x)$
+  \item $\lim\limits_{x \to x_0} [f(x) \cdot g(x)] = \lim\limits_{x \to x_0} f(x) \cdot \lim\limits_{x \to x_0} g(x)$
+  \item $\lim\limits_{x \to x_0} \dfrac{f(x)}{g(x)} = \dfrac{\lim\limits_{x \to x_0} f(x)}{\lim\limits_{x \to x_0} g(x)}$,
+        provided that $\lim\limits_{x \to x_0} g(x) \neq 0$
+  \item $\lim\limits_{x \to x_0} k \cdot f(x) = k \cdot \lim\limits_{x \to x_0} f(x)$, where $k$ is a constant
+  \item $\lim\limits_{x \to x_0} [f(x)]^n = \left[\lim\limits_{x \to x_0} f(x)\right]^n$, where $n$ is a positive integer
+  \item $\lim\limits_{x \to x_0} k = k$, where $k$ is a constant
+\end{enumerate}
+
+\noindent The rules above also applied to $x \to \infty$ and $x \to -\infty$. Obviously,
+$\lim\limits_{x \to x_0} x = x$, where $k$ is a constant.
+
+Using the arithmetic rules above, we can calculate the limit of relatively
+complicated functions using given limit of simpler functions. For example, from
+the rules above, we can get
+\begin{flalign*}
+   & \lim_{x \to x_0}\left(a_nx^n + a_{n - 1}x^{n - 1} + \cdots + a_1x + a_0\right) \\
+   & = a_nx_0^n + a_{n - 1}x_0^{n - 1} + \cdots + a_1x_0 + a_0
+\end{flalign*}
+
+\subsection*{Practice 3}
+
+Find the limit of the followings:
+\begin{enumerate}
+  \item $\lim\limits_{x\to-1}{\dfrac{\sqrt{x+2}-3}{x+4}}$
+  \item $\lim\limits_{x\to1}{\dfrac{x^{2}+2x-3}{x^{2}-3x+2}}$
+  \item $\lim\limits_{x\to \infty}{\dfrac{x^{2}+1}{2x^{2}+x+1}}$
+\end{enumerate}
+
+\subsection*{Practice 4}
+
+State whether the left limit, right limit, and limit of the function $f(x) =
+  \dfrac{1}{x}$ exist when $x \to 0$.
+
+\subsection*{Exercise 24.3}
+
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+  Find the limit of the followings (Question 1 to 31):
+
+  \begin{enumerate}
+    \item $\lim\limits_{x\to-2}\left(x^{2}+x-3\right)$
+    \item $\lim\limits_{x\to4}x^{2}(x-1)$
+    \item $\lim\limits_{x\to-2}x\left(9-x^{2}\right)$
+    \item $\lim\limits_{x\to-1}(x+3)\left(x-1\right)$
+    \item $\lim\limits_{x\to{\frac{1}{2}}}\left(2x-1\right)\left(x^{2}+3x+4\right)$
+    \item $\lim\limits_{x\to-2}\left(4x^{3}+2x^{2}+3x+1\right)$
+    \item $\lim\limits_{x\to2}{\dfrac{x^{2}+2}{x-5}}$
+    \item $\lim\limits_{x\to-1}{\dfrac{(x+2)(x-3)}{x-1}}$
+    \item $\lim\limits_{x\to0}{\dfrac{2x^{2}+3x-4}{x-4}}$
+    \item $\lim\limits_{x\to-3}\dfrac{(x+5)(x+3)}{x+3}$
+    \item $\lim\limits_{x\to2}{\dfrac{x^{2}-5x+6}{x-2}}$
+    \item $\lim\limits_{x\to-2}{\dfrac{x^{3}+8}{x+2}}$
+    \item $\lim\limits_{x\to1}{\dfrac{x^{2}-2x+1}{x^{2}-1}}$
+    \item $\lim\limits_{x\to0}{\dfrac{2x^{5}+3x}{x^{2}+2x}}$
+    \item $\lim\limits_{x\to0}{\dfrac{4x^{3}+x^{2}}{x^{2}-3x}}$
+    \item $\lim\limits_{x\to1}{\dfrac{x^{3}+3x^{2}-2x-2}{2x^{2}+x-3}}$
+    \item $\lim\limits_{x\to2}{\sqrt{2x^{2}+1}}$
+    \item $\lim\limits_{x\to2}{\frac{{\sqrt{x+2}}-3}{x^{2}-9}}$
+    \item $\lim\limits_{x\to4}{\dfrac{{\sqrt{x}}-2}{x-4}}$
+    \item $\lim\limits_{x\to0}{\dfrac{\sqrt{3x+4}-2}{x}}$
+    \item $\lim\limits_{x\to1}{\dfrac{2-{\sqrt{x+3}}}{x^{2}-1}}$
+    \item $\lim\limits_{x\to2}{\dfrac{{\sqrt{3x-2}}-{\sqrt{x+2}}}{x-2}}$
+    \item $\lim\limits_{x\to1}\left({\dfrac{x+3}{x^{2}-1}}-{\dfrac{x+1}{x^{2}-x}}\right)$
+    \item $\lim\limits_{x\to\infty}{\dfrac{2x^{3}-1}{x^{3}-x+2}}$
+    \item $\lim\limits_{x\to\infty}{\dfrac{3x^{3}-2x+1}{2x^{3}+x^{2}-5}}$
+    \item $\lim\limits_{x\to\infty}{\dfrac{2x+7}{x^{3}+2x^{2}-4}}$
+    \item $\lim\limits_{x\to\infty}{\dfrac{x^{4}+2x^{3}-x^{2}+1}{x^{5}+x^{3}-2}}$
+    \item $\lim\limits_{x\to\infty}\left({\dfrac{x^{2}+3x}{2_x+1}}-{\dfrac{x}{2}}\right)$
+    \item $\lim\limits_{x\to\infty}2^{x}$
+    \item $\lim\limits_{x\to\infty}{\dfrac{x^{2}}{x+1}}$
+    \item $\lim\limits_{x\to\infty}{\frac{x^{3}-3x+1}{2x^{2}+x+1}}$
+    \item $f(x) = \left\{\begin{array}{rl}
+              -1, & x < 0    \\
+              2x, & x \geq 0
+            \end{array}\right.$, find $\lim\limits_{x\to0}f(x)$
+    \item $f(x) = \left\{\begin{array}{rl}
+              -x+1,   & x < 1 \\
+              3,      & x = 1 \\
+              2x - 2, & x > 1
+            \end{array}\right.$, find $\lim\limits_{x\to1}f(x)$
+  \end{enumerate}
+  Determine if the limit of the following functions exists at $x = x_0$. If it
+  exists, find their limit.
+  \begin{enumerate}
+    \setcounter{enumi}{33}
+    \item $f(x) = \left\{\begin{array}{rl}
+              x+1, & x < 0 \\
+              0,   & x = 0 \\
+              x-1, & x > 0
+            \end{array}\right.$, $x_0 = 0$
+
+    \item $f(x) = \left\{\begin{array}{rl}
+              -x + 1, & x \leq 2 \\
+              x - 3,  & x > 2
+            \end{array}\right.$, $x_0 = 0$, $x_0 = 2$
+
+    \item $f(x) = \dfrac{1}{x+3}$, $x_0 = -3$
+  \end{enumerate}
+\end{multicols}
+
+\subsection*{Revision Exercise 24}
+
+\begin{enumerate}
+  \item Complete the follwoing table, state the changes of the fucntion $f(x) = x^3 -
+          1$ at $x = 1$. Hence, find the left limit, right limit and limit of the
+        function at $x = 1$.
+        \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+            \hline
+            $x$    & $0.9$ & $0.99$ & $0.999$ & $0.9999$ & $1$ & $1.0001$ & $1.001$ & $1.01$ & $1.1$ \\
+            \hline
+            $f(x)$ &       &        &         &          &     &          &         &        &       \\
+            \hline
+          \end{tabular}
+        \end{center}
+\end{enumerate}
+\vskip 1em
+
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+  \noindent Find the limit of the followings (Question 2 to 13):
+  \begin{enumerate}
+    \setcounter{enumi}{1}
+    \item $\lim\limits_{x\to1}\left(x^{2}+x-2\right)$
+    \item $\lim\limits_{x\to2}\left(x^{2}-1\right){\sqrt{x+2}}$
+    \item $\lim\limits_{x\to-2}{\dfrac{2x^{2}+3x-2}{3x^{2}+4x-4}}$
+    \item $\lim\limits_{x\to2}{\dfrac{3-{\sqrt{x+7}}}{x^{2}-1}}$
+    \item $\lim\limits_{x\to0}{\dfrac{2-{\sqrt{3x+4}}}{x^{2}+x}}$
+    \item $\lim\limits_{x\to-1}{\dfrac{{\sqrt{2x+5}}-{\sqrt{3}}}{x+1}}$
+    \item $\lim\limits_{x\to3}{\dfrac{{\sqrt{x+1}}-2}{x^{2}-x-6}}$
+    \item $\lim\limits_{x\to\infty}{\dfrac{4x+3}{x^{2}+2x-1}}$
+    \item $\lim\limits_{x\to\infty}{\dfrac{2x^{4}-x^{3}+3x+1}{3x^{4}+4x^{2}-x-2}}$
+    \item $\lim\limits_{x\to\infty}{\dfrac{x^{3}-2x^{2}+3}{2x^{2}-1}}$
+    \item $\lim\limits_{x\to1}\left({\dfrac{1}{x-1}}-{\dfrac{2}{x^{2}-1}}\right)$
+    \item $\lim\limits_{x\to\infty}\left(\dfrac{x^{3}}{2x^{2}+1}-\dfrac{x^{2}}{2x+3}\right)$
+  \end{enumerate}
+
+  \noindent Determine if the limit of the following functions exists at $x = x_0$. If it exists, find their limit. (Question 14 to 17)
+  \begin{enumerate}
+    \setcounter{enumi}{13}
+    \item $f(x) = \left\{\begin{array}{rl}
+              1-3x, & x < 0    \\
+              2x+1, & x \geq 0 \\
+            \end{array}\right.$, $x_0 = 0$
+    \item $f(x) = \left\{\begin{array}{rl}
+              \sqrt{x+3}, & x < -2 \\
+              x+1,        & x > -2 \\
+            \end{array}\right.$, $x_0 = -2$
+    \item $f(x) = \left\{\begin{array}{rl}
+              \dfrac{x^2 - 1}{x-1}, & x \neq 1 \\
+              \dfrac{1}{2},         & x = 1    \\
+            \end{array}\right.$, $x_0 = 1$
+    \item $f(x) = \left\{\begin{array}{rl}
+              2x + 1,  & x \leq 1     \\
+              x^2 + 1, & 1 < x \leq 2 \\
+              3x - 1,  & x > 2        \\
+            \end{array}\right.$, $x_0 = 1$, $x_0 = 2$
+  \end{enumerate}
+\end{multicols}
 
 \chapter{Differentiation}
 
