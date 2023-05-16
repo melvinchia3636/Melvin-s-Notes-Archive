@@ -3003,7 +3003,7 @@ State whether the left limit, right limit, and limit of the function $f(x) =
     \item $\lim\limits_{x\to0}{\dfrac{4x^{3}+x^{2}}{x^{2}-3x}}$
     \item $\lim\limits_{x\to1}{\dfrac{x^{3}+3x^{2}-2x-2}{2x^{2}+x-3}}$
     \item $\lim\limits_{x\to2}{\sqrt{2x^{2}+1}}$
-    \item $\lim\limits_{x\to2}{\frac{{\sqrt{x+2}}-3}{x^{2}-9}}$
+    \item $\lim\limits_{x\to2}{\dfrac{{\sqrt{x+2}}-3}{x^{2}-9}}$
     \item $\lim\limits_{x\to4}{\dfrac{{\sqrt{x}}-2}{x-4}}$
     \item $\lim\limits_{x\to0}{\dfrac{\sqrt{3x+4}-2}{x}}$
     \item $\lim\limits_{x\to1}{\dfrac{2-{\sqrt{x+3}}}{x^{2}-1}}$
@@ -3016,7 +3016,7 @@ State whether the left limit, right limit, and limit of the function $f(x) =
     \item $\lim\limits_{x\to\infty}\left({\dfrac{x^{2}+3x}{2_x+1}}-{\dfrac{x}{2}}\right)$
     \item $\lim\limits_{x\to\infty}2^{x}$
     \item $\lim\limits_{x\to\infty}{\dfrac{x^{2}}{x+1}}$
-    \item $\lim\limits_{x\to\infty}{\frac{x^{3}-3x+1}{2x^{2}+x+1}}$
+    \item $\lim\limits_{x\to\infty}{\dfrac{x^{3}-3x+1}{2x^{2}+x+1}}$
     \item $f(x) = \left\{\begin{array}{rl}
               -1, & x < 0    \\
               2x, & x \geq 0
@@ -3111,7 +3111,147 @@ State whether the left limit, right limit, and limit of the function $f(x) =
 
 \section{Gradient of Tangent Line on a Curve}
 
+As shown in the diagram below, sketch the graph of curve $C$ on the Cartesian
+plane. and pick two points $P$ and $Q$ on the curve, the straight line that
+passes through $P$ and $Q$ is the secant line of the curve. When point $Q$
+moves closer to point $P$ along the curve, the secant line $PQ$ rotates along
+point $P$ and approaches a limit straight line $PT$. The line $PT$ is called
+the \textit{tangent line} of the curve $C$ at point $P$.
+
+We know the fact that a line can be determined by a point on the line and its
+gradient. Therefore, in order to find the gradient of the tangent line of the
+curve $C$ at point $P$, we have to first find the gradient of the tangent.
+
+To find the gradient of the tangent line of curve $y=f(x)$ at point
+$P\left(x_0, f(x_0)\right)$, we can pick a point $\left(x_0 + \Delta x, f(x_0 +
+  \Delta x)\right)$ near to point $P$ on the curve, as shown in the diagram
+above. Denote the variable $PR$ on the horizontal axis as $\Delta x$, and the
+corresponding variable $RQ$ on the vertical axis as $\Delta y$, we have $\Delta
+  y = f(x_0 + \Delta x) - f(x_0)$.
+
+Hence, the gradient of the secant line $PQ$ is $\dfrac{\Delta y}{\Delta x} =
+  \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$.
+
+When $\Delta x \to 0$, if the limit of the expression above exist, it is the
+gradient of the tangent line of the curve $y=f(x)$ at point $P$, denoted as
+$m$, that is
+\begin{mdframed}[style=MyFrame]
+  \begin{cequation}
+    m = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} = \lim\limits_{\Delta x \to 0}{\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}}
+  \end{cequation}
+\end{mdframed}
+
+\subsection*{Pratice 1}
+
+\begin{enumerate}
+  \item Find the gradient of the tangent line of the curve $y = 2 - x^2$ at $x = 1$.
+  \item Find the gradient of the tangent line of the curve $y = x^2 + 3x$ at $x = 2$.
+\end{enumerate}
+
+\subsection*{Exercise 25.1}
+
+\begin{enumerate}
+  \item Given the curve $y = x^2 + 1$. Assume that $P$ is the point on the curve at $x
+          = 2$, $Q$ is a nearby point,
+        \begin{enumerate}
+          \item Find the variable $\Delta x$ and the corresponding variable $\Delta y$ when the
+                $x$ coordinates of point $Q$ is $2.5$, $2.25$, $2.1$, $2.05$, $2.01$, and
+                $2.001$ respectively. Hence, complete the table below.
+                \begin{center}
+                  \begin{NiceTabular}{|c|c|c|c|c|}[hvlines,cell-space-limits=5pt]
+                    $x$-coords of point $Q$ & $y$-coords of point $Q$ & $\Delta x$ & $\Delta y$ & Gradient of secant $PQ$ $\dfrac{\Delta y}{\Delta x}$ \\
+                    $x = 2.5$                    &                              &            &            &                              \\
+                    $x = 2.25$                   &                              &            &            &                              \\
+                    $x = 2.1$                    &                              &            &            &                              \\
+                    $x = 2.05$                   &                              &            &            &                              \\
+                    $x = 2.01$                   &                              &            &            &                              \\
+                    $x = 2.001$                  &                              &            &            &                              \\
+                  \end{NiceTabular}
+                \end{center}
+
+          \item Inspect the gradient of secant $PQ$ as point $Q$ approaches point $P$. Hence,
+                find the gradient of the tangent line of the curve at point $P$.
+        \end{enumerate}
+
+  \item Find the gradient of the tangent line of the curve $y = \dfrac{1}{3}x^2$ at $x
+          = 2$.
+  \item Find the gradient of the tangent line of the curve $y = \dfrac{10}{x}$ at point
+        $Q(2, 5)$.
+  \item Find the gradient of the tangent line of the curve $y = \dfrac{4}{x} - 5$ at $x
+          = 1$.
+  \item Find the gradient of the tangent line of the curve $y = \dfrac{1}{2}x^3 + 1$ at
+        point $P(-2, -3)$.
+\end{enumerate}
+
 \section{Gradient of Tangent Line and Derivative}
+
+In the last section, we have learnt that, if $P\left(x_0, f(x_0)\right)$ and
+$Q\left(x_0 + \Delta x, f(x_0 + \Delta x)\right)$ are two points on the curve
+$y=f(x)$, then the gradient of the secant line $PQ$ is $\dfrac{\Delta y}{\Delta
+    x} = \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$. As point $Q$ approaches
+point $P$, that is, as $\Delta x \to 0$, the gradient of the secant line $PQ$
+approaches the tangent line $PT$.
+
+Hence, the gradient of the tangent line $PT$ is
+\begin{cequation}
+  m = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} = \lim\limits_{\Delta x \to 0}{\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}}
+\end{cequation}
+
+\subsection*{Definition of Derivative}
+
+Let the function $y = f(x)$ be defined at $x = x_0$ and its nearby points, when
+there exists a variable $\Delta x$ of $x$ at $x_0$, there exist a corresponding
+variable $\Delta y = f(x_0 + \Delta x) - f(x_0)$ of the function $y$. When
+$\Delta x \to 0$, the limit of $\dfrac{\Delta y}{\Delta x}$
+\begin{cequation}
+  \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} = \lim\limits_{\Delta x \to 0}{\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}}
+\end{cequation}
+exists, $y = f(x)$ is said to be \textbf{differentiable} at $x =
+  x_0$, and the limit is called the \textbf{derivative} of $y = f(x)$ at $x =
+  x_0$, denoted as $f'(x_0)$, that is
+\begin{mdframed}[style=MyFrame]
+  \begin{cequation}
+    f'(x_0) = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} = \lim\limits_{\Delta x \to 0}{\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}}
+  \end{cequation}
+\end{mdframed}
+If the limit above does not exist, $y = f(x)$ is said to be \textbf{non-differentiable} at $x = x_0$.
+
+If function $y = f(x)$ is differentiable at every point of an interval $(a,
+  b)$. Each defined value $x_0$ in the interval $(a, b)$ corresponds to a
+derivative value $f'(x_0)$, thus forming a new function in the interval $(a,
+  b)$. This new function is called the \textbf{derivative function} of $f(x)$,
+denoted as $f'(x)$ or $y'$.
+
+From the definition of derivative, we can get the derivative
+\begin{cequation}
+  y' = f'(x) = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} = \lim\limits_{\Delta x \to 0}{\dfrac{f(x + \Delta x) - f(x)}{\Delta x}}
+\end{cequation}
+
+$f'(x)$ is often being denoted as $\dfrac{dy}{dx}$ as well, and is called \textit{differentiation of $y = f(x)$ with respect to $x$}.
+
+From the definition of derivative, we can conclude the following steps to find
+the derivative of a function $y = f(x)$:
+
+\begin{enumerate}
+  \item Find the variable $\Delta y = f(x + \Delta x) - f(x)$ of the function.
+  \item Find the ratio of the variable $\Delta y$ to $\Delta x$, that is,
+        $\dfrac{\Delta y}{\Delta x} = \dfrac{f(x + \Delta x) - f(x)}{\Delta x}$.
+  \item Find the limit of the ratio above, that is, $\dfrac{dy}{dx} =
+          \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} = \lim\limits_{\Delta
+            x \to 0}{\dfrac{f(x + \Delta x) - f(x)}{\Delta x}}$.
+\end{enumerate}
+
+The method above to find the derivative using the definition of derivative is
+called the \textbf{first principle} of differentiation.
+
+Note that derivative function is also called the derivative. Unless otherwise
+stated, finding the derivative means finding the derivative function.
+
+Also note that the derivative function $f'(x)$ of the function $y = f(x)$ is
+different from the derivative $f'(x_0)$ of the function $y = f(x)$ at $x =
+  x_0$. $f'(x)$ is a function, while $f'(x_0)$ is a value, but they are related
+to each other. $f'(x_0)$ is the function value of the derivative function
+$f'(x)$ at $x = x_0$, and is called the \textbf{derivative value} at $x = x_0$.
 
 \section{Law of Differentiation}
 
