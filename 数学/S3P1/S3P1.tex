@@ -79,6 +79,7 @@
 \setcounter{chapter}{21}
 
 \begin{document}
+
 \newcommand{\sol}[1]{
 
   \noindent \textbf{Sol.}
@@ -3206,20 +3207,20 @@ $\Delta x \to 0$, the limit of $\dfrac{\Delta y}{\Delta x}$
 \begin{cequation}
   \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} = \lim\limits_{\Delta x \to 0}{\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}}
 \end{cequation}
-exists, $y = f(x)$ is said to be \textbf{differentiable} at $x =
-  x_0$, and the limit is called the \textbf{derivative} of $y = f(x)$ at $x =
+exists, $y = f(x)$ is said to be \textit{differentiable} at $x =
+  x_0$, and the limit is called the \textit{derivative} of $y = f(x)$ at $x =
   x_0$, denoted as $f'(x_0)$, that is
 \begin{mdframed}[style=MyFrame]
   \begin{cequation}
     f'(x_0) = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} = \lim\limits_{\Delta x \to 0}{\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}}
   \end{cequation}
 \end{mdframed}
-If the limit above does not exist, $y = f(x)$ is said to be \textbf{non-differentiable} at $x = x_0$.
+If the limit above does not exist, $y = f(x)$ is said to be \textit{non-differentiable} at $x = x_0$.
 
 If function $y = f(x)$ is differentiable at every point of an interval $(a,
   b)$. Each defined value $x_0$ in the interval $(a, b)$ corresponds to a
 derivative value $f'(x_0)$, thus forming a new function in the interval $(a,
-  b)$. This new function is called the \textbf{derivative function} of $f(x)$,
+  b)$. This new function is called the \textit{derivative function} of $f(x)$,
 denoted as $f'(x)$ or $y'$.
 
 From the definition of derivative, we can get the derivative
@@ -3251,11 +3252,278 @@ Also note that the derivative function $f'(x)$ of the function $y = f(x)$ is
 different from the derivative $f'(x_0)$ of the function $y = f(x)$ at $x =
   x_0$. $f'(x)$ is a function, while $f'(x_0)$ is a value, but they are related
 to each other. $f'(x_0)$ is the function value of the derivative function
-$f'(x)$ at $x = x_0$, and is called the \textbf{derivative value} at $x = x_0$.
+$f'(x)$ at $x = x_0$, and is called the \textit{derivative value} at $x = x_0$.
 
 \section{Law of Differentiation}
 
+Since the method of finding the derivative using the definition of derivative
+is very complicated, we need to derive some formulas from the definition of the
+derivative, then we can use these formulas to find the derivatives.
+
+\subsection*{Derivative of Power Function}
+
+Let $y = f(x) = c$, where $c$ is a constant.
+\begin{flalign*}
+  \dfrac{\Delta y}{\Delta x} & = \dfrac{f(x + \Delta x) - f(x)}{\Delta x}                 \\
+                             & = \dfrac{c - c}{\Delta x}                                  \\
+                             & = 0                                                        \\
+  \\
+  \dfrac{d}{dx}(c)           & = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} \\
+                             & = \lim\limits_{\Delta x \to 0}{0}                          \\
+                             & = 0
+\end{flalign*}
+
+\begin{mdframed}[style=MyFrame]
+  \begin{cequation}
+    \dfrac{d}{dx}(c) = 0
+  \end{cequation}
+\end{mdframed}
+
+Let $y = f(x) = x^n$, where $n$ is a positive integer.
+\begin{flalign*}
+  \Delta y = f(x + \Delta x) - f(x) & = f(x - \Delta x) - f(x)                                                                                                                  \\
+                                    & = (x + \Delta x)^n - x^n                                                                                                                  \\
+                                    & = \left[x^n + \comb[n]{1}x^{n - 1}\Delta x + \comb[n]{2}x^{n - 2}(\Delta x)^2 + \cdots + \comb[n]{n}(\Delta x)^n\right] - x^n             \\
+                                    & = \comb[n]{1}x^{n - 1}\Delta x + \comb[n]{2}x^{n - 2}(\Delta x)^2 + \cdots + \comb[n]{n}(\Delta x)^n                                      \\
+  \dfrac{\Delta y}{\Delta x}        & = \comb[n]{1}x^{n - 1} + \comb[n]{2}x^{n - 2}\Delta x + \cdots + \comb[n]{n}(\Delta x)^{n - 1}                                            \\
+  \\
+  \dfrac{d}{dx}(x^n)                & = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}}                                                                                \\
+                                    & = \lim\limits_{\Delta x \to 0}{\left[\comb[n]{1}x^{n - 1} + \comb[n]{2}x^{n - 2}\Delta x + \cdots + \comb[n]{n}(\Delta x)^{n - 1}\right]} \\
+                                    & = \comb[n]{1}x^{n - 1}
+\end{flalign*}
+
+\begin{mdframed}[style=MyFrame]
+  \begin{cequation}
+    \dfrac{d}{dx}(x^n) = nx^{n - 1}
+  \end{cequation}
+\end{mdframed}
+The derivation above only considered the case where $n$ is a positive integer. In fact, the formula above is also valid when $n$ is a negative integer or a rational number.
+
+\subsection*{Derivative of Product of Function and Constant}
+
+Let $y = cu$, where $c$ is a constant and $u$ is a differentiable function of
+$x$.
+\begin{flalign*}
+  y + \Delta y               & = c(u + \Delta u) = cu + c\Delta u                                       \\
+  \Delta y                   & = c\Delta u                                                              \\
+  \dfrac{\Delta y}{\Delta x} & = c\dfrac{\Delta u}{\Delta x}                                            \\
+  \\
+  \dfrac{d}{dx}(cu)          & = \lim\limits_{\Delta x \to 0}{\left(c\dfrac{\Delta u}{\Delta x}\right)} \\
+                             & = c\lim\limits_{\Delta x \to 0}{\dfrac{\Delta u}{\Delta x}}              \\
+                             & = c\dfrac{du}{dx}
+\end{flalign*}
+
+\begin{mdframed}[style=MyFrame]
+  \begin{cequation}
+    \dfrac{d}{dx}(cu) = c\dfrac{du}{dx} \quad \text{(where $c$ is a constant, $u$ is a differentiable function of $x$)}
+  \end{cequation}
+\end{mdframed}
+
+\subsection*{Derivative of Sum and Difference of Functions}
+
+Let $y = u \pm v$, where $u$ and $v$ are differentiable functions of $x$.
+\begin{flalign*}
+  y + \Delta y               & = (u + \Delta u) \pm (v + \Delta v)                                                                                     \\
+  \Delta y                   & = \Delta u \pm \Delta v                                                                                                 \\
+  \dfrac{\Delta y}{\Delta x} & = \dfrac{\Delta u}{\Delta x} \pm \dfrac{\Delta v}{\Delta x}                                                             \\
+  \\
+  \dfrac{d}{dx}(u \pm v)     & = \lim\limits_{\Delta x \to 0}{\left(\dfrac{\Delta u}{\Delta x} \pm \dfrac{\Delta v}{\Delta x}\right)}                  \\
+                             & = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta u}{\Delta x}} \pm \lim\limits_{\Delta x \to 0}{\dfrac{\Delta v}{\Delta x}} \\
+                             & = \dfrac{du}{dx} \pm \dfrac{dv}{dx}
+\end{flalign*}
+
+\begin{mdframed}[style=MyFrame]
+  \begin{cequation}
+    \def\arraystretch{1.5}
+    \begin{array}{l}
+      \dfrac{d}{dx}(u + v) = \dfrac{du}{dx} + \dfrac{dv}{dx} \\
+      \dfrac{d}{dx}(u - v) = \dfrac{du}{dx} - \dfrac{dv}{dx}
+    \end{array} \quad \text{(where $u$ and $v$ are differentiable functions of $x$)}
+  \end{cequation}
+\end{mdframed}
+
+The above formulae can be extended to the case where there are more than two
+functions being added or subtracted. That is,
+\begin{cequation}
+  \dfrac{d}{dx}(u_1 \pm u_2 \pm \cdots \pm u_n) = \dfrac{du_1}{dx} \pm \dfrac{du_2}{dx} \pm \cdots \pm \dfrac{du_n}{dx}
+\end{cequation}
+
+\subsection*{Product Rule}
+
+Let $y = uv$, where $u$ and $v$ are differentiable functions of $x$.
+\begin{flalign*}
+  y + \Delta y               & = (u + \Delta u)(v + \Delta v)                                                                    \\
+                             & = uv + u\Delta v + v\Delta u + \Delta u \Delta v                                                  \\
+  \Delta y                   & = u\Delta v + v\Delta u + \Delta u \Delta v                                                       \\
+  \dfrac{\Delta y}{\Delta x} & = u\dfrac{\Delta v}{\Delta x} + v\dfrac{\Delta u}{\Delta x} + \Delta u \dfrac{\Delta v}{\Delta x}
+\end{flalign*}
+\ \ \ \ \ \ \ \ \ \ Given that $\lim\limits_{\Delta x \to 0}{\dfrac{\Delta u}{\Delta x}} = \dfrac{du}{dx}$ and $\lim\limits_{\Delta x \to 0}{\dfrac{\Delta v}{\Delta x}} = \dfrac{dv}{dx}$,
+\begin{flalign*}
+  \text{Hence, }\lim\limits_{\Delta x \to 0}{\Delta v} & = \lim\limits_{\Delta x \to 0}{\left(\dfrac{\Delta v}{\Delta x} \cdot \Delta x\right)}                                                                                                                                               \\
+                                                       & = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta v}{\Delta x}} \cdot \lim\limits_{\Delta x \to 0}{\Delta x}                                                                                                                              \\
+                                                       & = v'(x) \cdot 0                                                                                                                                                                                                                      \\
+                                                       & = 0                                                                                                                                                                                                                                  \\
+  \\
+  \therefore\ \lim\limits_{\Delta x \to 0}{(uv)}       & = \lim\limits_{\Delta x \to 0}{\left(u\dfrac{\Delta v}{\Delta x} + v\dfrac{\Delta u}{\Delta x} + \Delta v \dfrac{\Delta v}{\Delta x}\right)}                                                                                         \\
+                                                       & = u\lim_{\Delta x \to 0}{\dfrac{\Delta v}{\Delta x}} + v\lim_{\Delta x \to 0}{\dfrac{\Delta u}{\Delta x}} + \left(\lim\limits_{\Delta x \to 0}{\dfrac{\Delta u}{\Delta x}}\right)\left(\lim\limits_{\Delta x \to 0}{\Delta v}\right) \\
+                                                       & = u\dfrac{dv}{dx} + v\dfrac{du}{dx} + 0                                                                                                                                                                                              \\
+                                                       & = u\dfrac{dv}{dx} + v\dfrac{du}{dx}
+\end{flalign*}
+
+\begin{mdframed}[style=MyFrame]
+  \begin{cequation}
+    \dfrac{d}{dx}(uv) = u\dfrac{dv}{dx} + v\dfrac{du}{dx} \quad \text{(where $u$ and $v$ are differentiable functions of $x$)}
+  \end{cequation}
+\end{mdframed}
+
+\noindent This has proven that if $\dfrac{dv}{dx}$ exists at $x = x_0$, then
+\begin{flalign*}
+   & \lim\limits_{\Delta x \to 0}{v(x_0 + \Delta x) - v(x_0)} \\
+   & = \lim_{\Delta x \to 0}{\Delta v}                        \\
+   & = 0
+\end{flalign*}
+From that, we can conclude that
+\[
+  \lim_{\Delta x \to 0}{v(x_0 + \Delta x)} = v(x_0)
+\]
+That is, $y = v(x)$ is continuous at $x = x_0$.
+
+\noindent Note that $\dfrac{d}{dx}(uv) \neq \dfrac{d}{dx}(u) \cdot \dfrac{d}{dx}(v)$.
+
+\subsection*{Practice 3}
+
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+  \noindent Find the derivative of the following functions:
+  \begin{enumerate}
+    \item $y = 5x$
+    \item $y={\sqrt{x}}$
+    \item $y=6x^{3}+3x^{2}-5$
+    \item $y=(2x-3)\left(x^{2}+2\right)$
+    \item $y={\frac{2}{x}}+{\frac{1}{x^{2}}}$
+    \item $y=2x^{3}-3x+{\frac{7}{\sqrt{x}}}$
+  \end{enumerate}
+\end{multicols}
+
+\subsection*{Exercise 25.3a}
+
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+  \noindent Find the derivative of the following functions (Question 1 to 18):
+  \begin{enumerate}
+    \item $y=2x^{3}+2$
+    \item $y={\dfrac{1}{2}}x^{2}-{\dfrac{1}{3}}x+2$
+    \item $y=x^{5}-{\dfrac{1}{4}}x^{4}+3x^{2}-4$
+    \item $y=2x^{2}+4x^{3}-7x^{4}$
+    \item $y=x^{2}-3x+{\dfrac{2}{x}}-{\dfrac{4}{x^{2}}}$
+    \item $y=2x^{3}-4x-{\dfrac{3}{x^{2}}}+{\dfrac{4}{x^{3}}}$
+    \item $y={\sqrt{x}}+{\dfrac{2}{\sqrt{x}}}+3$
+    \item $y=3{\sqrt{x}}-5{\sqrt[3]{x^{2}}}$
+    \item $y=(2x-5)^{2}$
+    \item $y=\left(x+{\dfrac{1}{x}}\right)^{2}$
+    \item $y=\dfrac{x^{3}+4x^{2}-x+2}{x}$
+    \item $y=\dfrac{2x^{4}+3x^{2}-6}{x^{2}}$
+    \item $y=\dfrac{\sqrt[3]{x}-2}{\sqrt{x}}$
+    \item $y=\left(x+2\right)\left(x^{2}+3x-8\right)$
+    \item $y=\left(2+3x\right)\left(1+x-x^{2}\right)$
+    \item $y=\left(x+2\right)\left(x-2\right)\left(x^{2}+4\right)$
+    \item $y=(x-1)^{2}(3x+5)$
+    \item $y=\left(x^{2}+1\right)\!\left(3x\!-\!1\right)\!\left(1-x^{2}\right)$
+    \item If the gradient of the curve $y = x^3 + 6x^2 + 45x + 12$ at point $A$ is $36$,
+          find the coordinates of $A$.
+    \item Given the functions $f(x) = f(x) = x^2 + 3x + 4$ and $g(x) = x^3 + x^2 + 7$. If
+          $f'(a) = g'(a)$, find the value of $a$.
+  \end{enumerate}
+\end{multicols}
+
+\subsection*{Quotient Rule}
+
+Let $y = \dfrac{u}{v}$, where $u$ and $v$ are differentiable functions of $x$.
+\begin{flalign*}
+  y + \Delta y               & = \dfrac{u + \Delta u}{v + \Delta v}                                                 \\
+  \Delta y                   & = \dfrac{u + \Delta u}{v + \Delta v} - \dfrac{u}{v}                                  \\
+                             & = \dfrac{v\Delta u - u\Delta v}{v(v + \Delta v)}                                     \\
+  \dfrac{\Delta y}{\Delta x} & = \dfrac{v\dfrac{\Delta u}{\Delta x} - u\dfrac{\Delta v}{\Delta x}}{v(v + \Delta v)}
+\end{flalign*}
+When $\dfrac{\Delta x}{\Delta x}$ exists, $\lim\limits_{\Delta x \to 0}{\Delta v} = 0$.
+\begin{flalign*}
+  \therefore\ \dfrac{d}{dx}\left(\dfrac{u}{v}\right) & = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}}                                                                                                                                                   \\
+                                                     & = \lim\limits_{\Delta x \to 0}{\dfrac{v\dfrac{\Delta u}{\Delta x} - u\dfrac{\Delta v}{\Delta x}}{v(v + \Delta v)}}                                                                                           \\
+                                                     & = \dfrac{v\lim\limits_{\Delta x \to 0}{\dfrac{\Delta u}{\Delta x}} - u\lim\limits_{\Delta x \to 0}{\dfrac{\Delta v}{\Delta x}}}{\lim\limits_{\Delta x \to 0}{v^2} + v\lim\limits_{\Delta x \to 0}{\Delta v}} \\
+                                                     & = \dfrac{v\dfrac{du}{dx} - u\dfrac{dv}{dx}}{v^2}
+\end{flalign*}
+
+\begin{mdframed}[style=MyFrame]
+  \begin{cequation}
+    \dfrac{d}{dx}\left(\dfrac{u}{v}\right) = \dfrac{v\dfrac{du}{dx} - u\dfrac{dv}{dx}}{v^2} \quad \text{($v \neq 0$, $u$ and $v$ are differentiable functions of $x$)}
+  \end{cequation}
+\end{mdframed}
+
+\subsection*{Practice 4}
+\noindent Find the derivative of the following functions:
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+  \begin{enumerate}
+    \item $y={\dfrac{2x}{x+2}}$
+    \item $y={\dfrac{3x-2}{x+2}}$
+    \item $y={\dfrac{x}{x^{2}-5}}$
+    \item $y={\dfrac{x^{2}-1}{3x-2}}$
+  \end{enumerate}
+\end{multicols}
+
+\subsection*{Exercise 25.3b}
+\noindent Find the derivative of the following functions:
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+  \begin{enumerate}
+    \item $y={\dfrac{x-2}{x+2}}$
+    \item $y={\dfrac{x-a}{2x+a}}$ where $a$ is a constant
+    \item $y={\dfrac{2x^{3}}{x+2}}$
+    \item $y={\dfrac{2x+3}{x^{2}+1}}$
+    \item $y={\dfrac{3x}{x^{2}-4x}}$
+    \item $y={\dfrac{3x^{2}+x-1}{2x-1}}$
+    \item $y={\dfrac{2x^{4}}{\left(x+3\right)^{2}}}$
+    \item $y={\dfrac{2}{1+x}}+{\dfrac{2}{1-x}}$
+    \item $y={\dfrac{4-x}{3-2x+x^{2}}}$
+    \item $y={\dfrac{1+x-x^{2}}{1-x+x^{2}}}$
+  \end{enumerate}
+\end{multicols}
+
 \section{Chain Rule - Differentiation of Composite Functions}
+
+If $y = f(u)$ and $u = g(x)$ are both differentiable functions of $x$, then $y
+  = f\bigl(g(x)\bigr)$ is also a differentiable function of $x$. In a composite
+function $y = f\bigl(g(x)\bigr)$, when $x$ changes by $\Delta x$, $u$ changes
+by $\Delta u$ and $y$ also changes by $\Delta y$, where $\dfrac{\Delta
+    y}{\Delta x} = \dfrac{\Delta y}{\Delta u} \cdot \dfrac{\Delta u}{\Delta x}$.
+
+If the derivative of the functions $y = f(u)$ and $u = g(x)$ are
+$\dfrac{dy}{du}$ and $\dfrac{du}{dx}$ respectively, then when $\Delta x \to 0$,
+$\Delta u \to 0$, and $\lim\limits{\Delta x \to 0}{\dfrac{\Delta u}{\Delta x}}
+  = \dfrac{du}{dx}$, $\lim\limits{\Delta u \to 0}{\dfrac{\Delta y}{\Delta u}} =
+  \dfrac{dy}{du}$.
+\begin{flalign*}
+  \text{Hence, } \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{\left(\dfrac{\Delta y}{\Delta u} \cdot \dfrac{\Delta u}{\Delta x}\right)}                  \\
+                                                                          & = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta u}} \cdot \lim\limits_{\Delta x \to 0}{\dfrac{\Delta u}{\Delta x}} \\
+                                                                          & = \dfrac{dy}{du} \cdot \dfrac{du}{dx}
+\end{flalign*}
+Therefore, the derivative of the composite function $y = f\bigl(g(x)\bigr)$ is
+\begin{mdframed}[style=MyFrame]
+  \begin{cequation}
+    \dfrac{dy}{dx} = \dfrac{dy}{du} \cdot \dfrac{du}{dx} = f'\bigl(g(x)\bigr) \cdot g'(x)
+  \end{cequation}
+\end{mdframed}
+Further extending the chain rule, if $y = f(v)$, $v = g(u)$, and $u = h(x)$, then
+\begin{mdframed}[style=MyFrame]
+  \begin{cequation}
+    \dfrac{dy}{dx} = \dfrac{dy}{dv} \cdot \dfrac{dv}{du} \cdot \dfrac{du}{dx}
+  \end{cequation}
+\end{mdframed}
+The rule above is called the \textit{chain rule}.
 
 \section{Higher Order Derivatives}
 
