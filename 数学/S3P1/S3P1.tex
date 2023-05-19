@@ -26,6 +26,7 @@
 \usepackage{adjustbox}
 \usepackage{xpatch}
 \usepackage{nicematrix}
+\usepackage{tipa}
 
 \def\nswe#1#2#3{#1\,$#2^\circ\,#3'$}
 \graphicspath{ {./assets/} }
@@ -70,6 +71,10 @@
   innerleftmargin=12pt, skipbelow=20pt, skipabove=20pt
   %backgroundcolor=gray!50!white}
 }
+
+\newcommand{\arc}[1]{{%
+      \setbox9=\hbox{#1}%
+      \ooalign{\resizebox{\wd9}{\height}{\texttoptiebar{\phantom{A}}}\cr#1}}}
 
 \newcommand{\newitem}[1]{%
   \refstepcounter{subenum}%
@@ -3430,7 +3435,7 @@ That is, $y = v(x)$ is continuous at $x = x_0$.
     \item $y=\left(2+3x\right)\left(1+x-x^{2}\right)$
     \item $y=\left(x+2\right)\left(x-2\right)\left(x^{2}+4\right)$
     \item $y=(x-1)^{2}(3x+5)$
-    \item $y=\left(x^{2}+1\right)\!\left(3x\!-\!1\right)\!\left(1-x^{2}\right)$
+    \item $y=\left(x^{2}+1\right)\left(3x-1\right)\left(1-x^{2}\right)$
     \item If the gradient of the curve $y = x^3 + 6x^2 + 45x + 12$ at point $A$ is $36$,
           find the coordinates of $A$.
     \item Given the functions $f(x) = f(x) = x^2 + 3x + 4$ and $g(x) = x^3 + x^2 + 7$. If
@@ -3525,11 +3530,230 @@ Further extending the chain rule, if $y = f(v)$, $v = g(u)$, and $u = h(x)$, the
 \end{mdframed}
 The rule above is called the \textit{chain rule}.
 
+\subsection*{Practice 5}
+\noindent Find the derivative of the following functions:
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+  \begin{enumerate}
+    \item $y=\left(2x^{3}-4\right)^{3}$
+    \item $y={\dfrac{6}{\sqrt{2x-3}}}$
+    \item $y=(x+1)(x-3)^{3}$
+    \item $y=\left(x^{2}-2\right){\sqrt{1+x}}$
+    \item $y={\dfrac{x}{(2x+3)^{3}}}$
+    \item $y={\dfrac{(3x+4)^{2}}{(x-5)^{3}}}$
+  \end{enumerate}
+\end{multicols}
+
+\subsection*{Exercise 25.4}
+\noindent Find the derivative of the following functions:
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+  \begin{enumerate}
+    \item $y=(2x-3)^{8}$
+    \item $y=\left(3x^{2}-6x+5\right)^{4}$
+    \item $y={\sqrt{2x^{4}-4x^{2}+5}}$
+    \item $y={\sqrt[3]{3x^{2}-3x+2}}$
+    \item $y={\dfrac{3}{6x^{2}-4}}$
+    \item $y={\dfrac{9}{\sqrt{6x^{3}-9x}}}$
+    \item $y={\dfrac{3x}{(x+5)^{2}}}$
+    \item $y={\dfrac{3x-1}{\sqrt{x-1}}}$
+    \item $y={\sqrt{x}}\left(x-3\right)^{5}$
+    \item $y=x^{2}(x-3)(x+2)^{2}$
+    \item $y=(2x+1)^{2}(x+1)^{3}$
+    \item $y=\left({\dfrac{1+x}{1-x}}\right)^{2}$
+    \item $y=x^{2}{\sqrt{1+x^{2}}}$
+    \item $y={\sqrt{\dfrac{1+x^{2}}{1-x^{2}}}}$
+  \end{enumerate}
+\end{multicols}
+
 \section{Higher Order Derivatives}
+
+If the derivative $f'(x)$ of a function $y = f(x)$ is differentiable at $x =
+  x_0$, then the derivative of $f'$ at $x = x_0$ is called the \textit{second
+  derivative} of $y = f(x)$ at $x = x_0$, and is denoted by $f''(x_0)$, that is,
+\begin{cequation}
+  \lim\limits_{\Delta x \to 0}{\dfrac{f'(x_0 + \Delta x) - f'(x_0)}{\Delta x}} = f''(x_0)
+\end{cequation}
+
+The derivative of the derivative $f'(x)$ of a function $y = f(x)$ is called the
+\textit{second derivative} of $y = f(x)$, and is denoted by $(f')'(x)$ or
+$\dfrac{d}{dx} \left(\dfrac{dy}{dx}\right) = \dfrac{d^2y}{dx^2} =
+  \dfrac{d^2\bigl(f(x)\bigr)}{dx^2}$; while $f'(x)$ is called the \textit{first
+  derivative} of $y = f(x)$. Using the same way, we can define the third
+derivative $f'''(x)$, the fourth derivative $f^{(4)}(x)$, up to the $n$th
+derivative $f^{(n)}(x)$.
+
+The way of finding higher order derivatives is similar to the way of finding
+the first derivative, as we just need differentiate the function again and
+again until we get the desired order of derivative.
+
+\subsection*{Practice 6}
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+  \begin{enumerate}[leftmargin=*]
+    \item Find the first to sixth derivatives of $y=3x^{5}+2x^{4}-5x^{2}-8x+9$
+  \end{enumerate}
+  \noindent Find the third derivative of the following functions (Question 2 to 5):
+  \begin{enumerate}
+    \setcounter{enumi}{1}
+    \item $y={\dfrac{3}{x^{4}}}$
+    \item $y=3x^{3}+6x^{2}-5x$
+    \item $y={\sqrt{2x-3}}$
+    \item $y={\dfrac{1}{(2x+5)^{3}}}$
+  \end{enumerate}
+\end{multicols}
+
+\subsection*{Exercise 25.5}
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+  \begin{enumerate}
+    \item Given the function $y=a x^{6}+2b x^{4}-3c x^{3}+4x^{2}-5$ where $a$, $b$ and
+          $c$ are constants, find the first to seventh derivatives of $y$.
+  \end{enumerate}
+  \noindent Find the second derivative of the following functions (Question 2 to 5):
+  \begin{enumerate}
+    \setcounter{enumi}{1}
+    \item $y=2x-{\dfrac{x^{3}}{2}}$
+    \item $y=\left(2+x^{2}\right)^{3}$
+    \item $y=x+{\dfrac{1}{x}}+{\dfrac{1}{x^{2}}}$
+    \item $y=x^{2}-{\dfrac{1}{x^{2}}}$
+    \item $y={\sqrt{a^{2}-x^{2}}}$ where $a$ is a constant
+    \item $y={\dfrac{2}{\sqrt{x-2}}}$
+    \item $y={\sqrt{3x^{2}+2}}$
+    \item $y={\dfrac{x}{\sqrt{1-x^{2}}}}$
+    \item Given the function $y = 2x^3 - 3x^2 - 6x + 10$, find the value of $y'$, $y''$
+          and $y'''$ at $x = 1$.
+    \item Given the function $f(x) = \dfrac{5}{(2x + 1)^2}$, find the value of $f''(2)$.
+    \item Find the second derivative $y''$, of the function $y = 2x^3 + 3x^2 - 72x + 15$,
+          and find the value of $x$ at $y'' = 0$.
+  \end{enumerate}
+\end{multicols}
 
 \section{Implicit Differentiation}
 
+Consider the function $x^2 + y^2 = x^3$ and $y^2 - 2xy - 3 = 0$. For these kind
+of functions, $y$ is not expressed in terms of $x$ explicitly, hence we say
+that $y$ is an \textit{implicit function} of $x$. In some cases, the equations
+above are hard if not impossible to be rewritten in the form of $y = f(x)$. To
+find the derivative of implicit functions, we can differnetiate both sides of
+the equation with respect to $x$ and use the chain rule at the same time to get
+an equation in terms of $x$, $y$ and $\dfrac{dy}{dx}$, then we can solve for
+$\dfrac{dy}{dx}$.
+
+\subsection*{Practice 7}
+
+\noindent Find $\dfrac{dy}{dx}$ for the following implicit functions:
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+  \begin{enumerate}
+    \item $x^{2}+y^{2}-6x+8y-9=0$
+    \item ${\dfrac{x^{2}}{a^{2}}}-{\dfrac{y^{2}}{b^{2}}}=5$ where $a$ and $b$ are constants
+    \item $2x^{2}-4x y+2y^{2}=5$
+    \item $x^{5}+2x^{2}y^{3}+y^{4}=1$
+  \end{enumerate}
+\end{multicols}
+
+\subsection*{Exercise 25.6}
+
+\noindent Find $\dfrac{dy}{dx}$ for the following implicit functions:
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{24pt}
+\begin{multicols}{2}
+  \begin{enumerate}
+    \item $x^{2}+y^{3}=3$
+    \item ${\sqrt{x}}+{\sqrt{y}}={\sqrt{a}}$ where $a$ is a constant
+    \item $x^{3}+y^{3}=2x y+3$
+    \item $y^{2}(x+1)=3x^{2}$
+    \item $3x^{2}-6x y+3y^{2}=25$
+    \item $x y^{3}=2x^{2}-2y^{2}$
+    \item ${\dfrac{1}{x}}+{\dfrac{1}{y}}=2x$
+    \item ${\dfrac{3x^{2}}{y}}+{\dfrac{3y^{2}}{x}}=1$
+    \item $xy-x+xy^{3}=10$
+    \item ${4x^{3}}+2x y^{2}-x y=0$
+  \end{enumerate}
+\end{multicols}
+
 \section{Two Basic Limits}
+
+\subsection*{$\lim\limits_{x \to 0} \dfrac{\sin x}{x}$}
+
+Consider the value of $\dfrac{\sin x}{x}$ when $x$ approaches $0$. When $x =
+  0$, the value of $\sin x$ and $x$ are both $0$, hence $\dfrac{\sin x}{x} =
+  \dfrac{0}{0}$, which is undefined. However, the value of $\lim\limits_{x \to 0}
+  \dfrac{\sin x}{x}$ is defined, as shown in the diagram below:
+\begin{center}
+  \begin{NiceTabular}{|c|c|c|}[hvlines,cell-space-limits=5pt]
+    x (in rad) & $\sin x$ & $\dfrac{\sin x}{x}$ \\
+    1 & 0.84147098 & 0.84147098 \\
+    0.500 & 0.479425539 & 0.958851077 \\
+    0.250 & 0.247403959 & 0.989615837 \\
+    0.100 & 0.099833417 & 0.99833417 \\
+    0.010 & 0.0099998333 & 0.99998333 \\
+    0.001 & 0.00099999983 & 0.99999983 \\
+    \vdots & \vdots & \vdots \\
+  \end{NiceTabular}
+\end{center}
+Note that the trigonometric independent variable $x$ is in radian.
+
+By looking at the table above, as $x$ approaches $0$, the value of $\dfrac{\sin
+    x}{x}$ approaches $1$. Hence, we can speculate that
+\begin{mdframed}[style=MyFrame]
+  \begin{cequation}
+    \lim\limits_{x \to 0} \dfrac{\sin x}{x} = 1
+  \end{cequation}
+\end{mdframed}
+
+We can also prove the speculation above.
+\begin{center}
+  \begin{tikzpicture}[scale=1.5]
+    \draw[->] (-2,0) -- (2,0);
+    \draw[->] (0,-2) -- (0,2);
+    \node at (2.1,0) {$\scriptstyle{x}$};
+    \node at (0,2.1) {$\scriptstyle{f(x)}$};
+    \draw [thick] (0,0) circle (1cm);
+    \draw [thick] (0,0) -- (1.5,1);
+    \draw [thick, densely dashed] (0.832,0) -- (0.832, 0.555);
+    \draw [thick] (1,0) -- (1, 0.666666);
+    \draw [thick] (0.832,0.555) -- (1, 0);
+    \draw (0.2cm,0cm) arc (0:33:0.2cm);
+    \node at (0.33, 0.33) {$\scriptstyle{1}$};
+    \node at (0.28, 0.08) {$\scriptstyle{x}$};
+    \node at (0, 0) [below right] {$\scriptstyle{O}$};
+    \node at (1, 0) [below right] {$\scriptstyle{E}$};
+    \node at (0.832, 0) [below] {$\scriptstyle{D}$};
+    \node at (0.832, 0.555) [above=0.8pt, left] {$\scriptstyle{B}$};
+    \node at (1, 0.666666) [above] {$\scriptstyle{C}$};
+  \end{tikzpicture}
+\end{center}
+From the diagram above, we can see that:
+\begin{flalign*}
+  BD       & = \sin{x} \\
+  \arc{BD} & = x       \\
+  EC       & = \tan{x}
+\end{flalign*}
+Also, the area of sector $EOB$ is greater than that of $\triangle EOB$, but less than that of $\triangle EOC$. That is,
+\begin{flalign*}
+  (\text{area of sector }EOB) & < (\text{area of }\triangle EOB) < (\text{area of }\triangle EOC)
+\end{flalign*}
+\begin{flalign*}
+  \text{Hence} \qquad & \frac{1}{2} \times 1 \times \sin{x} < \frac{1}{2} \times 1^2 < \frac{1}{2} \times 1 \times \tan{x} & \\
+  \therefore \qquad   & \sin{x} < x < \tan{x}
+\end{flalign*}
+Dividing by $\sin{x}\ (\sin{x} \neq 0$), we get
+\begin{flalign*}
+  \quad \quad            & 1 < \dfrac{x}{\sin{x}} < \dfrac{1}{\cos{x}}                                    & \\
+  \text{But} \quad \quad & \lim_{x\to0^+}{\frac{1}{\cos{x}}} = \frac{x}{\lim\limits_{x\to0^+}\sin{x}} = 1
+\end{flalign*}
+Hence, $\lim\limits_{x\to0^+}{\dfrac{x}{\sin{x}}}$ is in between $1$ and $\lim\limits_{x\to0^+}{\dfrac{1}{\cos{x}}}$, which is in between $1$ and $1$. Therefore, $\lim\limits_{x\to0^+}{\dfrac{x}{\sin{x}}}$ must be equal to $1$ (Squeeze Theorem).
+\begin{flalign*}
+  \text{That is} \qquad & \lim\limits_{x\to0^+}{\dfrac{x}{\sin{x}}} = 1,                                                                                                                      & \\
+  \therefore \qquad     & \lim\limits_{x\to0^+}{\dfrac{\sin{x}}{x}} = \lim_{x\to0^+}{\dfrac{1}{\dfrac{x}{\sin{x}}}} = \lim_{x\to0^+}{\frac{1}{\lim\limits_{x\to0^+}{\dfrac{x}{\sin{x}}}}} = 1
+\end{flalign*}
 
 \section{Derivatives of Trigonometric Functions}
 
