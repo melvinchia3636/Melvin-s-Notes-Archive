@@ -144,6 +144,8 @@
 \section{Definition of a Function}
 \subsection*{Mapping, Preimage and Image}
 
+\onehalfspacing
+
 \begin{multicols}{2}
 
   For two non-empty sets $A$ and $B$, If an element $a$ inside set $A$ has a
@@ -358,6 +360,8 @@ The mapping shown in the diagram below is a function.
           has two corresponding elements $3$ and $4$ in $B$, the mapping $h$ is not a
           function.
 
+          \vspace{5cm}
+
     \item \adjustbox{valign=t}{
             \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
               \node[ele,label=left:$a$] (a1) at (0,3) {};
@@ -387,15 +391,14 @@ The mapping shown in the diagram below is a function.
             \item $b \to \emptyset$
             \item $c \to \{2\}$
           \end{itemize}
-
           The preimage of each element in $B$:
           \begin{itemize}
             \item $1$ $\to$ $a$
             \item $2$ $\to$ $c$
           \end{itemize}
-
           Since $b \in A$ has no corresponding element in $B$, the mapping $k$ is not a
           function.
+
   \end{enumerate}
 
 \end{multicols}
@@ -987,128 +990,134 @@ method and graphical method.
 
   \item Let function $f(x) = 3x^2 + 1$.
 
-        \setlength{\columnseprule}{1pt}
-        \setlength{\columnsep}{24pt}
+        \setlength{\columnseprule}{0pt}
+        \setlength{\columnsep}{1cm}
 
-        \begin{multicols}{2}
-          \begin{enumerate}
-            \item Find the image of the following elements:
-                  \begin{enumerate}
+        \begin{enumerate}
+          \item Find the image of the following elements:
+
+                \begin{enumerate}
+                  \begin{multicols}{3}
+
                     \item -3
-                          \sol{}
-                          \begin{flalign*}
-                            f(-3) & = 3(-3)^2 + 1 \\
-                                  & = 28
-                          \end{flalign*}
+                    \sol{}
+                    \begin{flalign*}
+                      f(-3) & = 3(-3)^2 + 1 & \\
+                            & = 28
+                    \end{flalign*}
 
                     \item -2
-                          \sol{}
-                          \begin{flalign*}
-                            f(-2) & = 3(-2)^2 + 1 \\
-                                  & = 13
-                          \end{flalign*}
+                    \sol{}
+                    \begin{flalign*}
+                      f(-2) & = 3(-2)^2 + 1 & \\
+                            & = 13
+                    \end{flalign*}
 
                     \item 0
-                          \sol{}
-                          \begin{flalign*}
-                            f(0) & = 3(0)^2 + 1 \\
-                                 & = 1
-                          \end{flalign*}
+                    \sol{}
+                    \begin{flalign*}
+                      f(0) & = 3(0)^2 + 1 & \\
+                           & = 1
+                    \end{flalign*}
 
+                  \end{multicols}
+
+                  \begin{multicols}{3}
                     \item 2
-                          \sol{}
-                          \begin{flalign*}
-                            f(2) & = 3(2)^2 + 1 \\
-                                 & = 13
-                          \end{flalign*}
+                    \sol{}
+                    \begin{flalign*}
+                      f(2) & = 3(2)^2 + 1 & \\
+                           & = 13
+                    \end{flalign*}
 
                     \item 5
-                          \sol{}
-                          \begin{flalign*}
-                            f(5) & = 3(5)^2 + 1 \\
-                                 & = 76
-                          \end{flalign*}
-                  \end{enumerate}
-            \item Find the preimage of the following elements:
+                    \sol{}
+                    \begin{flalign*}
+                      f(5) & = 3(5)^2 + 1 & \\
+                           & = 76
+                    \end{flalign*}
+                    \vspace{10cm}
+                  \end{multicols}
+                \end{enumerate}
 
-                  \begin{enumerate}
+          \item Find the preimage of the following elements:
+
+                \begin{enumerate}
+                  \begin{multicols}{3}
                     \item 13
-                          \sol{}
-                          \begin{flalign*}
-                            13 & = 3x^2 + 1 \\
-                            12 & = 3x^2     \\
-                            4  & = x^2      \\
-                            x  & = \pm 2
-                          \end{flalign*}
+                    \sol{}
+                    \begin{flalign*}
+                      13 & = 3x^2 + 1 & \\
+                      12 & = 3x^2       \\
+                      x  & = \pm 2
+                    \end{flalign*}
 
                     \item 28
-                          \sol{}
-                          \begin{flalign*}
-                            28 & = 3x^2 + 1 \\
-                            27 & = 3x^2     \\
-                            9  & = x^2      \\
-                            x  & = \pm 3
-                          \end{flalign*}
+                    \sol{}
+                    \begin{flalign*}
+                      28 & = 3x^2 + 1 & \\
+                      27 & = 3x^2       \\
+                      x  & = \pm 3
+                    \end{flalign*}
                     \item 1
-                          \sol{}
-                          \begin{flalign*}
-                            1 & = 3x^2 + 1 \\
-                            0 & = 3x^2     \\
-                            0 & = x^2      \\
-                            x & = 0
-                          \end{flalign*}
+                    \sol{}
+                    \begin{flalign*}
+                      1 & = 3x^2 + 1 & \\
+                      0 & = 3x^2       \\
+                      x & = 0
+                    \end{flalign*}
+                  \end{multicols}
 
+                  \begin{multicols}{3}
                     \item 0
-                          \sol{}
-                          \begin{flalign*}
-                            0            & = 3x^2 + 1                \\
-                            -1           & = 3x^2                    \\
-                            -\frac{1}{3} & = x^2                     \\
-                            x            & \text{ is not a real no.}
-                          \end{flalign*}
+                    \sol{}
+                    \begin{flalign*}
+                      0            & = 3x^2 + 1                & \\
+                      -\frac{1}{3} & = x^2                       \\
+                      x            & \text{ is not a real no.}
+                    \end{flalign*}
 
                     \item 4
-                          \sol{}
-                          \begin{flalign*}
-                            4 & = 3x^2 + 1 \\
-                            3 & = 3x^2     \\
-                            1 & = x^2      \\
-                            x & = \pm 1
-                          \end{flalign*}
-                          \vspace{0.5cm}
-                  \end{enumerate}
-          \end{enumerate}
-        \end{multicols}
+                    \sol{}
+                    \begin{flalign*}
+                      4 & = 3x^2 + 1 & \\
+                      1 & = x^2        \\
+                      x & = \pm 1
+                    \end{flalign*}
+                    \vspace{5cm}
+                  \end{multicols}
+                \end{enumerate}
 
-  \item Let function $g(x) = 5x-2$. Find: \setlength{\columnseprule}{1pt}
-        \setlength{\columnsep}{24pt}
+        \end{enumerate}
 
-        \begin{multicols*}{2}
-          \begin{enumerate}
+        \newpage
+
+  \item Let function $g(x) = 5x-2$. Find: \setlength{\columnseprule}{0pt}
+
+        \begin{enumerate}
+          \begin{multicols}{2}
             \item $g(-2)$
-                  \sol{}
-                  \begin{flalign*}
-                    g(-2) & = 5(-2) - 2 \\
-                          & = -12
-                  \end{flalign*}
+            \sol{}
+            \begin{flalign*}
+              g(-2) & = 5(-2) - 2 & \\
+                    & = -12
+            \end{flalign*}
 
             \item $g(-1)$
-                  \sol{}
-                  \begin{flalign*}
-                    g(-1) & = 5(-1) - 2 \\
-                          & = -7
-                  \end{flalign*}
+            \sol{}
+            \begin{flalign*}
+              g(-1) & = 5(-1) - 2 & \\
+                    & = -7
+            \end{flalign*}
+          \end{multicols}
 
-                  \vfill
-
-            \item $g(0)$
-                  \sol{}
-                  \begin{flalign*}
-                    g(0) & = 5(0) - 2 \\
-                         & = -2
-                  \end{flalign*}
-          \end{enumerate}
-        \end{multicols*}
+          \item $g(0)$
+                \sol{}
+                \begin{flalign*}
+                  g(0) & = 5(0) - 2 & \\
+                       & = -2
+                \end{flalign*}
+        \end{enumerate}
 
   \item Let function $f(x) = \left\{\begin{array}{ll}
             \ \ \ \ \ \ 2x, & x \leq -1     \\
@@ -1116,49 +1125,54 @@ method and graphical method.
             4x + 2,         & x \geq 3
           \end{array}\right.$, find
 
-        \setlength{\columnseprule}{1pt}
+        \setlength{\columnseprule}{0pt}
         \setlength{\columnsep}{24pt}
 
-        \begin{multicols}{2}
+        \begin{enumerate}
+          \begin{multicols}{3}
 
-          \begin{enumerate}
             \item $f(-5)$
-                  \sol{}
-                  \begin{flalign*}
-                    f(-5) & = 2(-5) \\
-                          & = -10
-                  \end{flalign*}
+            \sol{}
+            \begin{flalign*}
+              f(-5) & = 2(-5) & \\
+                    & = -10
+            \end{flalign*}
 
             \item $f(-2)$
-                  \sol{}
-                  \begin{flalign*}
-                    f(-2) & = 2(-2) \\
-                          & = -4
-                  \end{flalign*}
+            \sol{}
+            \begin{flalign*}
+              f(-2) & = 2(-2) & \\
+                    & = -4
+            \end{flalign*}
 
             \item $f(0)$
-                  \sol{}
-                  \begin{flalign*}
-                    f(0) & = 0-1 \\
-                         & = -1
-                  \end{flalign*}
+            \sol{}
+            \begin{flalign*}
+              f(0) & = 0-1 & \\
+                   & = -1
+            \end{flalign*}
 
-                  \vskip 20cm
+          \end{multicols}
+
+          \begin{multicols}{3}
+
             \item $f(2)$
-                  \sol{}
-                  \begin{flalign*}
-                    f(2) & = 2-1 \\
-                         & = 1
-                  \end{flalign*}
+            \sol{}
+            \begin{flalign*}
+              f(2) & = 2-1 & \\
+                   & = 1
+            \end{flalign*}
 
             \item $f(10)$
-                  \sol{}
-                  \begin{flalign*}
-                    f(10) & = 4(10) + 2 \\
-                          & = 42
-                  \end{flalign*}
-          \end{enumerate}
-        \end{multicols}
+            \sol{}
+            \begin{flalign*}
+              f(10) & = 4(10) + 2 & \\
+                    & = 42
+            \end{flalign*}
+            \vspace{20cm}
+
+          \end{multicols}
+        \end{enumerate}
 
   \item Let $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x^4$. Find the image of $-1$, 0, 1,
         and 2 under $f$. \sol{}
@@ -1177,7 +1191,7 @@ method and graphical method.
         In $\mathbb{R}$, which element does not have a preimage?
 
         \sol{}
-        \vspace{-1.2cm}
+        \vspace{-1.5cm}
         \setlength{\columnseprule}{0pt}
         \begin{multicols}{3}
           \begin{flalign*}
@@ -1237,6 +1251,8 @@ method and graphical method.
           \end{flalign*}
         \end{multicols}
 
+        \newpage
+
   \item Using narrative form, arrow method, venn diagram, table method and graphical
         method, express the function $f(x) = 2x$, $x \in \{-2, -1, 0, 1, 2\}$.
 
@@ -1247,8 +1263,6 @@ method and graphical method.
         Let $A = \big\{-2, -1, 0, 1, 2\big\}$ and $B = \big\{-4, -2, 0, 2, 4\big\}$,
         $f$ is a function from $A$ to $B$, its definition is that for any element $x$
         in $A$, its corresponding element is $2x$ in $B$.
-
-        \newpage
 
         \textbf{Arrow method:}
 
@@ -1529,93 +1543,179 @@ method and graphical method.
         \end{multicols}
 \end{enumerate}
 
+\newpage
+
 \subsection*{Exercise 22.2}
 
-\setlength{\columnseprule}{1pt}
-\setlength{\columnsep}{24pt}
+\begin{enumerate}
+  \item Let $X = \{a, b, c, d\}$ and $Y = \{-1, 2, 9, 11\}$, function $f: X \to Y$ is
+        defined by $f(a) = 2$, $f(b) = -1$, $f(c) = 2$, $f(d) = 9$. Find the domain and
+        range of the $f$.
 
-\begin{multicols}{2}
+        \sol{}
 
-  \begin{enumerate}
-    \item Let $X = \{a, b, c, d\}$ and $Y = \{-1, 2, 9, 11\}$, function $f: X \to Y$ is
-          defined by $f(a) = 2$, $f(b) = -1$, $f(c) = 2$, $f(d) = 9$. Find the domain and
-          range of the $f$.
+        $D_f = \{a, b, c, d\}$, $R_f = \{-1, 2, 9\}$.
 
-    \item The curve in the diagram below represents the function $y = f(x)$, $-1 < x \leq
-            4$. Find the domain and range of $f$.
-          \begin{center}
-            \begin{tikzpicture}
-              \begin{axis}[
-                  axis lines=middle,
-                  xmin=-2.5, xmax=4.5,
-                  ymin=-4, ymax=8,
-                  xtick={-2,-1,0,1,2,3,4},
-                  ytick={-3, -2, -1, ..., 7},
-                  xlabel={$x$},
-                  ylabel={$y$},
-                  xlabel style={anchor=east, xshift=0.5cm},
-                  ylabel style={anchor=north, yshift=0.5cm},
-                  xtick style={thick, color=black},
-                  ytick style={thick, color=black},
-                  line style={thick, color=black},
-                ]
-                \addplot[domain=-1:4, thick] {-(x - 1)^2 + 6};
-                \path (axis cs:0,0)
-                node [anchor=north east, xshift=0.05cm] {0};
-                \draw[dashed] (axis cs:0,-3) -- (axis cs:4,-3);
-                \filldraw (axis cs:4,-3) circle (1.6pt);
-                \draw[dashed] (axis cs:0,2) -- (axis cs:-1,2);
-                \filldraw[fill=white] (axis cs:-1,2) circle (1.6pt);
-              \end{axis}
-            \end{tikzpicture}
-          \end{center}
+  \item The curve in the diagram below represents the function $y = f(x)$, $-1 < x \leq
+          4$. Find the domain and range of $f$.
+        \begin{center}
+          \begin{tikzpicture}
+            \begin{axis}[
+                axis lines=middle,
+                xmin=-2.5, xmax=4.5,
+                ymin=-4, ymax=8,
+                xtick={-2,-1,0,1,2,3,4},
+                ytick={-3, -2, -1, ..., 7},
+                xlabel={$x$},
+                ylabel={$y$},
+                xlabel style={anchor=east, xshift=0.5cm},
+                ylabel style={anchor=north, yshift=0.5cm},
+                xtick style={thick, color=black},
+                ytick style={thick, color=black},
+                line style={thick, color=black},
+              ]
+              \addplot[domain=-1:4, thick] {-(x - 1)^2 + 6};
+              \path (axis cs:0,0)
+              node [anchor=north east, xshift=0.05cm] {0};
+              \draw[dashed] (axis cs:0,-3) -- (axis cs:4,-3);
+              \filldraw (axis cs:4,-3) circle (1.6pt);
+              \draw[dashed] (axis cs:0,2) -- (axis cs:-1,2);
+              \filldraw[fill=white] (axis cs:-1,2) circle (1.6pt);
+            \end{axis}
+          \end{tikzpicture}
+        \end{center}
 
-    \item Let $A = \{a, b, c, d, e\}$ and $B = \{4, 5, 8, 9, 12\}$, the definition of
-          function $g: A \to B$ is given by the digram below. Find the domain, codomain
-          and range of function $g$.
-          \begin{center}
-            \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
-              \node[ele,label=left:$a$] (a1) at (0,4) {};
-              \node[ele,label=left:$b$] (a2) at (0,3) {};
-              \node[ele,label=left:$c$] (a3) at (0,2) {};
-              \node[ele,label=left:$e$] (a4) at (0,1) {};
-              \node[ele,label=left:$e$] (a5) at (0,0) {};
+        \sol{}
 
-              \node[ele,,label=right:$4$] (b1) at (4,4) {};
-              \node[ele,,label=right:$5$] (b2) at (4,3) {};
-              \node[ele,,label=right:$8$] (b3) at (4,2) {};
-              \node[ele,,label=right:$9$] (b4) at (4,1) {};
-              \node[ele,,label=right:$12$] (b5) at (4,0) {};
+        $D_f = (-1, 4]$, $R_f = [-3, 6]$.
 
-              \node[draw, thick, fit= (a1) (a2) (a3) (a4) (a5),minimum width=1.5cm] {} ;
-              \node[draw, thick, fit= (b1) (b2) (b3) (b4) (b5),minimum width=1.5cm] {} ;
-              \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
-              \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b3);
-              \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b1);
-              \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b5);
-              \draw[->,thick,shorten <=2pt,shorten >=2] (a5) -- (b5);
-              \node at (0,5.7) {$A$};
-              \node at (4,5.7) {$B$};
-              \node at (2,4.8) {$g$};
-            \end{tikzpicture}
-          \end{center}
+  \item Let $A = \{a, b, c, d, e\}$ and $B = \{4, 5, 8, 9, 12\}$, the definition of
+        function $g: A \to B$ is given by the digram below. Find the domain, codomain
+        and range of function $g$.
+        \begin{center}
+          \begin{tikzpicture}[scale=0.8, ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt}]
+            \node[ele,label=left:$a$] (a1) at (0,4) {};
+            \node[ele,label=left:$b$] (a2) at (0,3) {};
+            \node[ele,label=left:$c$] (a3) at (0,2) {};
+            \node[ele,label=left:$e$] (a4) at (0,1) {};
+            \node[ele,label=left:$e$] (a5) at (0,0) {};
+            \node (a999) at (-0.5,1) {};
 
-    \item Let $A = \{-1, 0, 1, 2\}$, function $f: A \to \mathbb{R}$ is defined by $f(x) =
-            3x^2 - 2$, find the domain and range of $f$.
+            \node[ele,,label=right:$4$] (b1) at (4,4) {};
+            \node[ele,,label=right:$5$] (b2) at (4,3) {};
+            \node[ele,,label=right:$8$] (b3) at (4,2) {};
+            \node[ele,,label=right:$9$] (b4) at (4,1) {};
+            \node[ele,,label=right:$12$] (b5) at (4,0) {};
+            \node (b999) at (4.5,1) {};
 
-    \item Let $A = \{-1, 0, 2, 5, 11\}$, function $f: A \to \mathbb{R}$ is defined by
-          $f(x) = x^2 - x - 2$, find the domain and range of $f$.
+            \node[draw, thick, fit= (a1) (a2) (a3) (a4) (a5) (a999),minimum width=1.5cm] {} ;
+            \node[draw, thick, fit= (b1) (b2) (b3) (b4) (b5) (b999),minimum width=1.5cm] {} ;
+            \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+            \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b3);
+            \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b1);
+            \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b5);
+            \draw[->,thick,shorten <=2pt,shorten >=2] (a5) -- (b5);
+            \node at (0,5.7) {$A$};
+            \node at (4,5.7) {$B$};
+            \node at (2,4.8) {$g$};
+          \end{tikzpicture}
+        \end{center}
 
-    \item Find the domain and range of the following functions:
-          \begin{enumerate}
+        \sol{}
+
+        $D_g = \{a, b, c, d, e\}$, $R_g = \{4, 8, 12\}$
+
+        Codomain $= \{4, 5, 8, 9, 12\}$
+
+        \newpage
+
+  \item Let $A = \{-1, 0, 1, 2\}$, function $f: A \to \mathbb{R}$ is defined by $f(x) =
+          3x^2 - 2$, find the domain and range of $f$.
+
+        \sol{}
+        \vspace{-1.5cm}
+        \begin{multicols}{2}
+          \begin{flalign*}
+            f(-1) & = 3(-1)^2 - 2 = 1 \\
+            f(0)  & = 3(0)^2 - 2 = -2
+          \end{flalign*}
+
+          \begin{flalign*}
+            f(1) & = 3(1)^2 - 2 = 1  \\
+            f(2) & = 3(2)^2 - 2 = 10
+          \end{flalign*}
+        \end{multicols}
+        \vspace{-0.5cm}
+        $D_f = \{-1, 0, 1, 2\}$, $R_f = \{-2, 1, 10\}$
+
+  \item Let $A = \{-1, 0, 2, 5, 11\}$, function $f: A \to \mathbb{R}$ is defined by
+        $f(x) = x^2 - x - 2$, find the domain and range of $f$.
+
+        \sol{}
+        \vspace{-1.5cm}
+        \begin{multicols}{2}
+          \begin{flalign*}
+            f(-1) & = (-1)^2 - (-1) - 2 = 0 \\
+            f(0)  & = 0^2 - 0 - 2 = -2      \\
+            f(2)  & = 2^2 - 2 - 2 = 0
+          \end{flalign*}
+
+          \begin{flalign*}
+            f(5)  & = 5^2 - 5 - 2 = 18    \\
+            f(11) & = 11^2 - 11 - 2 = 118
+          \end{flalign*}
+        \end{multicols}
+        \vspace{-0.5cm}
+        $D_f = \{-1, 0, 2, 5, 11\}$, $R_f = \{-2, 0, 18, 118\}$.
+
+  \item Find the domain and range of the following functions:
+        \setlength{\columnseprule}{0pt} \setlength{\columnsep}{1.5cm}
+
+        \begin{enumerate}
+          \begin{multicols}{2}
+
             \item $f(x) = x^3$
-            \item $g(x) = \sqrt{1 - x^2}$
-            \item $h(x) = \dfrac{1}{2x + 3}$
-            \item $k(x) = x^2 - 2x + 4$
-          \end{enumerate}
-  \end{enumerate}
+            \sol{}
 
-\end{multicols}
+            $D_f = \mathbb{R}$, $R_f = \mathbb{R}$.
+
+            \vfill
+
+            \item $g(x) = \sqrt{1 - x^2}$
+            \sol{}
+            \begin{flalign*}
+              \because\    & \sqrt{1 - x^2}\text{ is defined only when }            \\
+                           & 1 - x^2 \geq 0                                       & \\
+              \therefore\  & D_g = [-1, 1]                                          \\
+              \because\    & \sqrt{1 - x^2} \geq 0, \text{ the maximum value of }   \\
+                           & g(x) \text{ is } 1 \text{ when }x = 0                  \\
+              \therefore\  & R_g = [0, 1]
+            \end{flalign*}
+
+            \vspace{0.8cm}
+          \end{multicols}
+
+          \begin{multicols}{2}
+            \item $h(x) = \dfrac{1}{2x + 3}$
+            \sol{}
+            \begin{flalign*}
+              \because   & \ \dfrac{1}{2x + 3}\text{ is defined only when }2x + 3 \neq 0         & \\
+              \therefore & \ D_h = \left\{x \vert x \in \mathbb{R}, x \neq -\dfrac{3}{2}\right\}   \\
+              \because   & \ \dfrac{1}{2x + 3} \neq 0                                              \\
+              \therefore & \ R_h = \left\{y \vert y \in \mathbb{R}, y \neq 0\right\}
+            \end{flalign*}
+
+            \item $k(x) = x^2 - 2x + 4$
+            \sol{}
+            \begin{flalign*}
+              x^2 - 2x + 4 & = \left(x - 1\right)^2 + 3 &
+            \end{flalign*}
+            $\because\ \min_{k(x)} = 3$
+
+            $\therefore\ D_k = \mathbb{R},\ R_k = [3, \infty)$
+          \end{multicols}
+        \end{enumerate}
+\end{enumerate}
 
 \newpage
 \section{Graphs of Functions and Their Transformations}
@@ -1646,7 +1746,7 @@ function at most once. \setlength{\columnseprule}{0pt}
                     ylabel style={anchor=north, yshift=0.5cm},
                     line style={thick, color=black},
                   ]
-                  \addplot[domain=-5:5, thick] {x};
+                  \addplot[domain=-5:5, thick, samples=100] {x};
                   \path (axis cs:0,0)
                   node [anchor=north east, xshift=0.05cm] {$O$};
                 \end{axis}
@@ -1669,7 +1769,7 @@ function at most once. \setlength{\columnseprule}{0pt}
                     ylabel style={anchor=north, yshift=0.5cm},
                     line style={thick, color=black},
                   ]
-                  \addplot[domain=-5:5, thick] {-x};
+                  \addplot[domain=-5:5, thick, samples=100] {-x};
                   \path (axis cs:0,0)
                   node [anchor=north east, xshift=0.05cm] {$O$};
                 \end{axis}
@@ -1696,7 +1796,7 @@ function at most once. \setlength{\columnseprule}{0pt}
                     ylabel style={anchor=north, yshift=0.5cm},
                     line style={thick, color=black},
                   ]
-                  \addplot[domain=-5:5, thick] {x^2};
+                  \addplot[domain=-5:5, thick, samples=100] {x^2};
                   \path (axis cs:0,0)
                   node [anchor=north east, xshift=0.05cm] {$O$};
                 \end{axis}
@@ -1719,7 +1819,7 @@ function at most once. \setlength{\columnseprule}{0pt}
                     ylabel style={anchor=north, yshift=0.5cm},
                     line style={thick, color=black},
                   ]
-                  \addplot[domain=-5:5, thick] {-x^2};
+                  \addplot[domain=-5:5, thick, samples=100] {-x^2};
                   \path (axis cs:0,0)
                   node [anchor=north east, xshift=0.05cm] {$O$};
                 \end{axis}
@@ -1746,7 +1846,7 @@ function at most once. \setlength{\columnseprule}{0pt}
                     ylabel style={anchor=north, yshift=0.5cm},
                     line style={thick, color=black},
                   ]
-                  \addplot[domain=-5:5, thick] {x^3};
+                  \addplot[domain=-5:5, thick, samples=100] {x^3};
                   \path (axis cs:0,0)
                   node [anchor=north east, xshift=0.05cm] {$O$};
                 \end{axis}
@@ -1769,7 +1869,7 @@ function at most once. \setlength{\columnseprule}{0pt}
                     ylabel style={anchor=north, yshift=0.5cm},
                     line style={thick, color=black},
                   ]
-                  \addplot[domain=-5:5, thick] {-x^3};
+                  \addplot[domain=-5:5, thick, samples=100] {-x^3};
                   \path (axis cs:0,0)
                   node [anchor=north east, xshift=0.05cm] {$O$};
                 \end{axis}
@@ -1797,8 +1897,8 @@ function at most once. \setlength{\columnseprule}{0pt}
                     ylabel style={anchor=north, yshift=0.5cm},
                     line style={thick, color=black},
                   ]
-                  \addplot[domain=-5:-0.01, thick] {1/x};
-                  \addplot[domain=0.01:5, thick] {1/x};
+                  \addplot[domain=-5:-0.01, thick, samples=100] {1/x};
+                  \addplot[domain=0.01:5, thick, samples=100] {1/x};
                   \path (axis cs:0,0)
                   node [anchor=north east, xshift=0.05cm] {$O$};
                 \end{axis}
@@ -1821,8 +1921,8 @@ function at most once. \setlength{\columnseprule}{0pt}
                     ylabel style={anchor=north, yshift=0.5cm},
                     line style={thick, color=black},
                   ]
-                  \addplot[domain=-5:-0.01, thick] {-1/x};
-                  \addplot[domain=0.01:5, thick] {-1/x};
+                  \addplot[domain=-5:-0.01, thick, samples=100] {-1/x};
+                  \addplot[domain=0.01:5, thick, samples=100] {-1/x};
                   \path (axis cs:0,0)
                   node [anchor=north east, xshift=0.05cm] {$O$};
                 \end{axis}
@@ -1849,8 +1949,8 @@ function at most once. \setlength{\columnseprule}{0pt}
                     ylabel style={anchor=north, yshift=0.5cm},
                     line style={thick, color=black},
                   ]
-                  \addplot[domain=-5:-0.05, thick] {1/x^2};
-                  \addplot[domain=0.05:5, thick] {1/x^2};
+                  \addplot[domain=-5:-0.05, thick, samples=100] {1/x^2};
+                  \addplot[domain=0.05:5, thick, samples=100] {1/x^2};
                   \path (axis cs:0,0)
                   node [anchor=north east, xshift=0.05cm] {$O$};
                 \end{axis}
@@ -1873,8 +1973,8 @@ function at most once. \setlength{\columnseprule}{0pt}
                     ylabel style={anchor=north, yshift=0.5cm},
                     line style={thick, color=black},
                   ]
-                  \addplot[domain=-5:-0.05, thick] {-1/x^2};
-                  \addplot[domain=0.05:5, thick] {-1/x^2};
+                  \addplot[domain=-5:-0.05, thick, samples=100] {-1/x^2};
+                  \addplot[domain=0.05:5, thick, samples=100] {-1/x^2};
                   \path (axis cs:0,0)
                   node [anchor=north east, xshift=0.05cm] {$O$};
                 \end{axis}
@@ -1901,7 +2001,7 @@ function at most once. \setlength{\columnseprule}{0pt}
                     ylabel style={anchor=north, yshift=0.5cm},
                     line style={thick, color=black},
                   ]
-                  \addplot[domain=0:5, thick] {x^0.5};
+                  \addplot[domain=0:5, thick, samples=100] {x^0.5};
                   \path (axis cs:0,0)
                   node [anchor=north east, xshift=0.05cm] {$O$};
                 \end{axis}
@@ -1924,7 +2024,7 @@ function at most once. \setlength{\columnseprule}{0pt}
                     ylabel style={anchor=north, yshift=0.5cm},
                     line style={thick, color=black},
                   ]
-                  \addplot[domain=0:5, thick] {-x^0.5};
+                  \addplot[domain=0:5, thick, samples=100] {-x^0.5};
                   \path (axis cs:0,0)
                   node [anchor=north east, xshift=0.05cm] {$O$};
                 \end{axis}
@@ -1933,6 +2033,8 @@ function at most once. \setlength{\columnseprule}{0pt}
           \end{center}
   \end{enumerate}
 \end{multicols}
+
+\newpage
 \subsection*{Transformations of Graphs}
 
 \begin{mdframed}[style=MyFrame]
@@ -2024,88 +2126,879 @@ function at most once. \setlength{\columnseprule}{0pt}
   If $a > 0$, shrinking (when $a > 1$) or zooming (when $0 < a < 1$) the graph of $y = f(x)$ by a factor of $\dfrac{1}{a}$ in the $x$-direction, the graph of $y = f(ax)$ is obtained.
 \end{mdframed}
 
+\newpage
+
 \subsection*{Practice 4}
 
-\setlength{\columnseprule}{1pt}
+\setlength{\columnseprule}{0pt}
 \setlength{\columnsep}{24pt}
 
-\begin{multicols}{2}
+\noindent Find the line of symmetry and vertex of the following parabola, and sketch its
+graph. (Question 1 to 2):
+\begin{enumerate}
+  \item $y = 2x^2 + 8x + 11$
+        \sol{}
+        \begin{multicols}{2}
+          \begin{flalign*}
+            y & = 2x^2 + 8x + 11             \\
+              & = 2(x^2 + 4x) + 11           \\
+              & = 2[(x^2 + 4x + 4) - 4] + 11 \\
+              & = 2[(x + 2)^2 - 4] + 11      \\
+              & = 2(x + 2)^2 - 8 + 11        \\
+              & = 2(x + 2)^2 + 3
+          \end{flalign*}
+          Vertex: $(-2, 3)$\\
+          Line of symmetry: $x = -2$
+          \begin{center}
+            \begin{tikzpicture}
+              \begin{axis}[
+                  unit vector ratio*=1 1 1,
+                  axis lines = middle,
+                  xlabel = $x$,
+                  ylabel = $y$,
+                  ymin = -1,
+                  ymax = 15,
+                  xmin = -5,
+                  xmax = 2,
+                  xtick = {-6, -4,...,2},
+                  ytick = {-2,0,...,16},
+                  minor tick num = 1,
+                  grid = both,
+                  grid style = {line width=.1pt, draw=gray!50},
+                  major grid style = {line width=.2pt,draw=gray!50},
+                  width = 0.7\textwidth,
+                ]
+                \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+                \addplot [
+                  thick,
+                  domain=-10:6,
+                  samples=100,
+                ]
+                {2*x^2 + 8*x + 11};
+              \end{axis}
+            \end{tikzpicture}
+          \end{center}
+        \end{multicols}
 
-  Find the line of symmetry and vertex of the following parabola, and sketch its
-  graph. (Question 1 to 2):
-  \begin{enumerate}
-    \item $y = 2x^2 + 8x + 11$
-    \item $y = -3x^2 + 18x - 7$
-  \end{enumerate}
+  \item $y = -3x^2 + 18x - 7$
+        \sol{}
+        \begin{multicols}{2}
+          \begin{flalign*}
+            y & = -3x^2 + 18x - 7            \\
+              & = -3(x^2 - 6x) - 7           \\
+              & = -3[(x^2 - 6x + 9 - 9)] - 7 \\
+              & = -3[(x-3)^2 - 9] - 7        \\
+              & = -3(x-3)^2 + 27 - 7         \\
+              & = -3(x-3)^2 + 20
+          \end{flalign*}
+          Vertex: $(3, 20)$\\
+          Line of symmetry: $x = 3$
+          \begin{center}
+            \begin{tikzpicture}
+              \begin{axis}[
+                  unit vector ratio*=1 1 1,
+                  axis lines = middle,
+                  xlabel = $x$,
+                  ylabel = $y$,
+                  ymin = -1,
+                  ymax = 21,
+                  xmin = -1,
+                  xmax = 7,
+                  xtick = {0,2,...,8},
+                  ytick = {0,2,...,22},
+                  grid = both,
+                  minor tick num = 1,
+                  grid style = {line width=.1pt, draw=gray!50},
+                  major grid style = {line width=.2pt,draw=gray!50},
+                  width = 0.7\textwidth,
+                ]
+                \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+                \addplot [
+                  thick,
+                  domain=-10:6,
+                  samples=100,
+                ]
+                {-3*x^2 + 18*x - 7};
+              \end{axis}
+            \end{tikzpicture}
+          \end{center}
+        \end{multicols}
+\end{enumerate}
 
-  Sketch the graph of the following functions. (Question 3 to 4):
-  \begin{enumerate}
-    \setcounter{enumi}{2}
-    \item $y = \dfrac{4}{{(x+2)}^2}$
-    \item $y = \sqrt{x - 1} + 3$
-  \end{enumerate}
+\noindent Sketch the graph of the following functions. (Question 3 to 4):
+\begin{enumerate}
+  \setcounter{enumi}{2}
+  \item $y = \dfrac{4}{{(x+2)}^2}$
+        \sol{}
+        \begin{center}
+          \begin{tikzpicture}
+            \begin{axis}[
+                unit vector ratio*=1 1 1,
+                axis lines = middle,
+                xlabel = $x$,
+                ylabel = $y$,
+                ymin = -1,
+                ymax = 7,
+                xmin = -10,
+                xmax = 6,
+                xtick = {-10, -8,...,6},
+                ytick = {-2,0,...,6},
+                minor tick num = 1,
+                grid = both,
+                grid style = {line width=.1pt, draw=gray!50},
+                major grid style = {line width=.2pt,draw=gray!50},
+                width = 0.9\textwidth,
+              ]
+              \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+              \addplot [
+                thick,
+                domain=-10:-2.1,
+                samples=100,
+              ]
+              {4/(x^2 + 4*x + 4)};
+              \addplot [
+                thick,
+                domain=-1.9:6,
+                samples=100,
+              ]
+              {4/(x^2 + 4*x + 4)};
+            \end{axis}
+          \end{tikzpicture}
+        \end{center}
 
-\end{multicols}
+  \item $y = \sqrt{x - 1} + 3$
+        \sol{}
+        \begin{center}
+          \begin{tikzpicture}
+            \begin{axis}[
+                unit vector ratio*=1 1 1,
+                axis lines = middle,
+                xlabel = $x$,
+                ylabel = $y$,
+                ymin = -1,
+                ymax = 11,
+                xmin = -1,
+                xmax = 10,
+                xtick = {0, 2,...,10},
+                ytick = {-2,0,...,10},
+                minor tick num = 1,
+                grid = both,
+                grid style = {line width=.1pt, draw=gray!50},
+                major grid style = {line width=.2pt,draw=gray!50},
+                width = 0.8\textwidth,
+              ]
+              \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+              \addplot [
+                thick,
+                domain=0:10,
+                samples=100,
+              ]
+              {sqrt(x - 1) + 3};
+            \end{axis}
+          \end{tikzpicture}
+        \end{center}
+\end{enumerate}
 
-\setlength{\columnseprule}{1pt}
-\setlength{\columnsep}{24pt}
+\newpage
 
 \subsection*{Exercise 22.3}
 
-\begin{multicols}{2}
+\noindent Find the line of symmetry and vertex of the following parabola, and sketch its
+graph.
+\begin{enumerate}
+  \item $y = 2x^2 + 4x + 5$
+        \sol{}
+        \begin{multicols}{2}
+          \begin{flalign*}
+            y & = 2x^2 + 4x + 5             \\
+              & = 2(x^2 + 2x) + 5           \\
+              & = 2[(x^2 + 2x + 1) - 1] + 5 \\
+              & = 2(x+1)^2 - 2 + 5          \\
+              & = 2(x+1)^2 + 3
+          \end{flalign*}
+          Vertex: $(-1, 3)$\\
+          Line of symmetry: $x = -1$
+          \begin{center}
+            \begin{tikzpicture}
+              \begin{axis}[
+                  unit vector ratio*=1 1 1,
+                  axis lines = middle,
+                  xlabel = $x$,
+                  ylabel = $y$,
+                  ymin = -1,
+                  ymax = 11,
+                  xmin = -5,
+                  xmax = 3,
+                  xtick = {-4, -2,...,2},
+                  ytick = {-2,0,...,10},
+                  minor tick num = 1,
+                  grid = both,
+                  grid style = {line width=.1pt, draw=gray!50},
+                  major grid style = {line width=.2pt,draw=gray!50},
+                  width = 0.7\textwidth,
+                ]
+                \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+                \addplot [
+                  thick,
+                  domain=-10:6,
+                  samples=100,
+                ]
+                {2*x^2 + 4*x + 5};
+              \end{axis}
+            \end{tikzpicture}
+          \end{center}
+        \end{multicols}
 
-  Find the line of symmetry and vertex of the following parabola, and sketch its
-  graph.
-  \begin{enumerate}
-    \item $y = 2x^2 + 4x + 5$
-    \item $y = -3x^2 + 12x - 4$
-    \item $y = 4x^2 - 20x + 19$
-    \item $y = -3x^2 - 6x - 4$
-  \end{enumerate}
+  \item $y = -3x^2 + 12x - 4$
+        \sol{}
+        \begin{multicols}{2}
+          \begin{flalign*}
+            y & = -3x^2 + 12x - 4            \\
+              & = -3(x^2 - 4x) - 4           \\
+              & = -3[(x^2 - 4x + 4) - 4] - 4 \\
+              & = -3(x-2)^2 + 12 - 4         \\
+              & = -3(x-2)^2 + 8
+          \end{flalign*}
+          Vertex: $(2, 8)$\\
+          Line of symmetry: $x = 2$
+          \begin{center}
+            \begin{tikzpicture}
+              \begin{axis}[
+                  unit vector ratio*=1 1 1,
+                  axis lines = middle,
+                  xlabel = $x$,
+                  ylabel = $y$,
+                  ymin = -1,
+                  ymax = 9,
+                  xmin = -1,
+                  xmax = 5,
+                  xtick = {-2, 0,...,6},
+                  ytick = {-2,0,...,10},
+                  minor tick num = 1,
+                  grid = both,
+                  grid style = {line width=.1pt, draw=gray!50},
+                  major grid style = {line width=.2pt,draw=gray!50},
+                  width = 0.7\textwidth,
+                ]
+                \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+                \addplot [
+                  thick,
+                  domain=-10:6,
+                  samples=100,
+                ]
+                {-3*x^2 + 12*x - 4};
+              \end{axis}
+            \end{tikzpicture}
+          \end{center}
+        \end{multicols}
 
-  Sketch the graph of the following functions.
-  \begin{enumerate}
-    \setcounter{enumi}{4}
-    \item $y = (x+2)^3 - 5$
-    \item $y = \sqrt{x-5}$
-    \item $y = \dfrac{1}{(x+2)^2}$
-    \item $y = -\dfrac{1}{2(x-1)^2}$
-    \item $y = 3\sqrt{x+1} - 4$
-    \item $y = \dfrac{4}{2x+3}$
-    \item $y = \left\{\begin{array}{ll}
-              4x+9,   & x \leq 0 \\
-              9 - 2x, & x > 0    \\
-            \end{array}\right.$
-    \item $y = \left\{\begin{array}{ll}
-              \ \ \ \ \ \ \ \ \ \ x, & x < -1    \\
-              \sqrt{x+1},            & x \geq -1 \\
-            \end{array}\right.$
-  \end{enumerate}
+  \item $y = 4x^2 - 20x + 19$
+        \sol{}
+        \begin{multicols}{2}
+          \begin{flalign*}
+            y & = 4x^2 - 20x + 19                                                          \\
+              & = 4(x^2 - 5x) + 19                                                         \\
+              & = 4\left[\left(x^2 - 5x + \dfrac{25}{4}\right) - \dfrac{25}{4}\right] + 19 \\
+              & = 4\left(x-\dfrac{5}{2}\right)^2 - 25 + 19                                 \\
+              & = 4\left(x-\dfrac{5}{2}\right)^2 - 6
+          \end{flalign*}
+          Vertex: $(3, -5)$\\
+          Line of symmetry: $x = \dfrac{5}{2}$
+          \begin{center}
+            \begin{tikzpicture}
+              \begin{axis}[
+                  unit vector ratio*=1 1 1,
+                  axis lines = middle,
+                  xlabel = $x$,
+                  ylabel = $y$,
+                  ymin = -7,
+                  ymax = 7,
+                  xmin = -1,
+                  xmax = 5,
+                  xtick = {-2, 0,...,8},
+                  ytick = {-6,-4,...,6},
+                  minor tick num = 1,
+                  grid = both,
+                  grid style = {line width=.1pt, draw=gray!50},
+                  major grid style = {line width=.2pt,draw=gray!50},
+                  width = 0.7\textwidth,
+                ]
+                \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+                \addplot [
+                  thick,
+                  domain=-10:6,
+                  samples=100,
+                ]
+                {4*x^2 - 20*x + 19};
+              \end{axis}
+            \end{tikzpicture}
+          \end{center}
+        \end{multicols}
 
-  \begin{enumerate}
-    \setcounter{enumi}{12}
-    \item Sketch the graph for the function $f(x) = x^2 - 6x + 12$, $-2 \leq x \leq 8$,
-          and find its domain and range.
-    \item Sketch the graph for the function $g(x) = -x^2 - 4x - 7$, $-2 \leq x \leq 5$,
-          and find its domain and range.
-    \item Sketch the graph for the function $f(x) = -x^2 + 2x + 10$, and find its domain
-          and range.
-    \item Sketch the graph of the function $y = \sqrt{x}$, and transform it according the
-          following steps. Sketch the graph of each function after each step on the same
-          diagram, and write down the corresponding function.
+  \item $y = -3x^2 - 6x - 4$
+        \sol{}
+        \begin{multicols}{2}
+          \begin{flalign*}
+            y & = -3x^2 - 6x - 4             \\
+              & = -3(x^2 + 2x) - 4           \\
+              & = -3[(x^2 + 2x + 1) - 1] - 4 \\
+              & = -3(x+1)^2 + 3 - 4          \\
+              & = -3(x+1)^2 - 1
+          \end{flalign*}
+          Vertex: $(-1, -1)$\\
+          Line of symmetry: $x = -1$
+          \begin{center}
+            \begin{tikzpicture}
+              \begin{axis}[
+                  unit vector ratio*=1 1 1,
+                  axis lines = middle,
+                  xlabel = $x$,
+                  ylabel = $y$,
+                  ymin = -11,
+                  ymax = 1,
+                  xmin = -5,
+                  xmax = 3,
+                  xtick = {-6, -4,...,4},
+                  ytick = {-10,-8,...,2},
+                  minor tick num = 1,
+                  grid = both,
+                  grid style = {line width=.1pt, draw=gray!50},
+                  major grid style = {line width=.2pt,draw=gray!50},
+                  width = 0.7\textwidth,
+                ]
+                \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+                \addplot [
+                  thick,
+                  domain=-10:6,
+                  samples=100,
+                ]
+                {-3*x^2 - 6*x - 4};
+              \end{axis}
+            \end{tikzpicture}
+          \end{center}
+        \end{multicols}
+\end{enumerate}
 
-          Step 1: Translate 4 units to the left;
+\newpage
+\noindent Sketch the graph of the following functions.
+\begin{enumerate}
+  \setcounter{enumi}{4}
+  \item $y = (x+2)^3 - 5$
+        \sol{}
+        \begin{center}
+          \begin{tikzpicture}
+            \begin{axis}[
+                unit vector ratio*=1 1 1,
+                axis lines = middle,
+                xlabel = $x$,
+                ylabel = $y$,
+                ymin = -10,
+                ymax = 11,
+                xmin = -5,
+                xmax = 5,
+                xtick = {-6, -4,...,4},
+                ytick = {-10,-8,...,10},
+                minor tick num = 1,
+                grid = both,
+                grid style = {line width=.1pt, draw=gray!50},
+                major grid style = {line width=.2pt,draw=gray!50},
+                width = 1\textwidth,
+              ]
+              \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+              \addplot [
+                thick,
+                domain=-5:2,
+                samples=100,
+              ]
+              {(x+2)^3 - 5};
+            \end{axis}
+          \end{tikzpicture}
+        \end{center}
+  \item $y = \sqrt{x-5}$
+        \sol{}
+        \begin{center}
+          \begin{tikzpicture}
+            \begin{axis}[
+                unit vector ratio*=1 1 1,
+                axis lines = middle,
+                xlabel = $x$,
+                ylabel = $y$,
+                ymin = -1,
+                ymax = 5,
+                xmin = -1,
+                xmax = 19,
+                xtick = {-2, 0,...,18},
+                ytick = {-2,0,...,4},
+                minor tick num = 1,
+                grid = both,
+                grid style = {line width=.1pt, draw=gray!50},
+                major grid style = {line width=.2pt,draw=gray!50},
+                width = 1\textwidth,
+              ]
+              \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+              \addplot [
+                thick,
+                domain=5:20,
+                samples=100,
+              ]
+              {sqrt(x-5)};
+            \end{axis}
+          \end{tikzpicture}
+        \end{center}
+        \newpage
+  \item $y = \dfrac{1}{(x+2)^2}$
+        \sol{}
+        \begin{center}
+          \begin{tikzpicture}
+            \begin{axis}[
+                unit vector ratio*=1 1 1,
+                axis lines = middle,
+                xlabel = $x$,
+                ylabel = $y$,
+                ymin = -1,
+                ymax = 5,
+                xmin = -9,
+                xmax = 5,
+                xtick = {-8, -6,...,4},
+                ytick = {-2,0,...,4},
+                minor tick num = 1,
+                grid = both,
+                grid style = {line width=.1pt, draw=gray!50},
+                major grid style = {line width=.2pt,draw=gray!50},
+                width = 1\textwidth,
+              ]
+              \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+              \addplot [
+                thick,
+                domain=-10:6,
+                samples=100,
+              ]
+              {1/(x+2)^2};
+            \end{axis}
+          \end{tikzpicture}
+        \end{center}
 
-          Step 2: Scale up by a factor of 2 in the $x$-direction;
+  \item $y = -\dfrac{1}{2(x-1)^2}$
+        \sol{}
+        \begin{center}
+          \begin{tikzpicture}
+            \begin{axis}[
+                unit vector ratio*=1 1 1,
+                axis lines = middle,
+                xlabel = $x$,
+                ylabel = $y$,
+                ymin = -5,
+                ymax = 1,
+                xmin = -3,
+                xmax = 5,
+                xtick = {-2, 0,...,4},
+                ytick = {-4,-2,...,0},
+                minor tick num = 1,
+                grid = both,
+                grid style = {line width=.1pt, draw=gray!50},
+                major grid style = {line width=.2pt,draw=gray!50},
+                width = 0.8\textwidth,
+              ]
+              \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+              \addplot [
+                thick,
+                domain=-4:0.9,
+                samples=100,
+              ]
+              {-1/(2*(x-1)^2)};
+              \addplot [
+                thick,
+                domain=1.1:5,
+                samples=100,
+              ]
+              {-1/(2*(x-1)^2)};
+            \end{axis}
+          \end{tikzpicture}
+        \end{center}
 
-          Step 3: Reflect about the $y$-axis;
+        \newpage
+  \item $y = 3\sqrt{x+1} - 4$
+        \sol{}
+        \begin{center}
+          \begin{tikzpicture}
+            \begin{axis}[
+                unit vector ratio*=1 1 1,
+                axis lines = middle,
+                xlabel = $x$,
+                ylabel = $y$,
+                ymin = -5,
+                ymax = 5,
+                xmin = -2,
+                xmax = 10,
+                xtick = {-2, 0,...,9},
+                ytick = {-4,-2,...,4},
+                minor tick num = 1,
+                grid = both,
+                grid style = {line width=.1pt, draw=gray!50},
+                major grid style = {line width=.2pt,draw=gray!50},
+                width = 0.8\textwidth,
+              ]
+              \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+              \addplot [
+                thick,
+                domain=-1:9,
+                samples=100,
+              ]
+              {3*sqrt(x+1) - 4};
+            \end{axis}
+          \end{tikzpicture}
+        \end{center}
 
-          Step 4: Translate 3 units downwards.
+  \item $y = \dfrac{4}{2x+3}$
+        \sol{}
+        \begin{center}
+          \begin{tikzpicture}
+            \begin{axis}[
+                unit vector ratio*=1 1 1,
+                axis lines = middle,
+                xlabel = $x$,
+                ylabel = $y$,
+                ymin = -5,
+                ymax = 5,
+                xmin = -5,
+                xmax = 5,
+                xtick = {-4, -2,...,4},
+                ytick = {-4,-2,...,4},
+                minor tick num = 1,
+                grid = both,
+                grid style = {line width=.1pt, draw=gray!50},
+                major grid style = {line width=.2pt,draw=gray!50},
+                width = 0.8\textwidth,
+              ]
+              \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+              \addplot [
+                thick,
+                domain=-5:-1.6,
+                samples=100,
+              ]
+              {4/(2*x+3)};
+              \addplot [
+                thick,
+                domain=-1.4:5,
+                samples=100,
+              ]
+              {4/(2*x+3)};
+            \end{axis}
+          \end{tikzpicture}
+        \end{center}
 
-          Step 5: Scale down by half in the $y$-direction.
-  \end{enumerate}
+  \item $y = \left\{\begin{array}{ll}
+            4x+9,   & x \leq 0 \\
+            9 - 2x, & x > 0    \\
+          \end{array}\right.$
+        \sol{}
+        \begin{center}
+          \begin{tikzpicture}
+            \begin{axis}[
+                unit vector ratio*=1 1 1,
+                axis lines = middle,
+                xlabel = $x$,
+                ylabel = $y$,
+                ymin = -5,
+                ymax = 11,
+                xmin = -5,
+                xmax = 5,
+                xtick = {-4, -2,...,4},
+                ytick = {-4,-2,...,10},
+                minor tick num = 1,
+                grid = both,
+                grid style = {line width=.1pt, draw=gray!50},
+                major grid style = {line width=.2pt,draw=gray!50},
+                width = 0.8\textwidth,
+              ]
+              \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+              \addplot [
+                thick,
+                domain=-5:0,
+                samples=100,
+              ]
+              {4*x+9};
+              \addplot [
+                thick,
+                domain=0:5,
+                samples=100,
+              ]
+              {9-2*x};
+            \end{axis}
+          \end{tikzpicture}
+        \end{center}
 
-\end{multicols}
+  \item $y = \left\{\begin{array}{ll}
+            \ \ \ \ \ \ \ \ \ \ x, & x < -1    \\
+            \sqrt{x+1},            & x \geq -1 \\
+          \end{array}\right.$
+        \sol{}
+        \begin{center}
+          \begin{tikzpicture}
+            \begin{axis}[
+                unit vector ratio*=1 1 1,
+                axis lines = middle,
+                xlabel = $x$,
+                ylabel = $y$,
+                ymin = -5,
+                ymax = 5,
+                xmin = -5,
+                xmax = 5,
+                xtick = {-4, -2,...,4},
+                ytick = {-4,-2,...,4},
+                minor tick num = 1,
+                grid = both,
+                grid style = {line width=.1pt, draw=gray!50},
+                major grid style = {line width=.2pt,draw=gray!50},
+                width = 0.6\textwidth,
+              ]
+              \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+              \addplot [
+                thick,
+                domain=-5:-1,
+                samples=100,
+              ]
+              {x};
+              \addplot [
+                thick,
+                domain=-1:5,
+                samples=100,
+              ]
+              {sqrt(x+1)};
+              \filldraw (axis cs:-1,0) circle (2.5pt);
+              \filldraw [thick, fill=white] (axis cs:-1, -1) circle (2.5pt);
+            \end{axis}
+          \end{tikzpicture}
+        \end{center}
+\end{enumerate}
+
+\newpage
+
+\begin{enumerate}
+  \setcounter{enumi}{12}
+  \item Sketch the graph for the function $f(x) = x^2 - 6x + 12$, $-2 \leq x \leq 8$,
+        and find its domain and range. \sol{}
+        \begin{multicols}{2}
+          \begin{flalign*}
+            f(x) & = x^2 - 6x + 12         \\
+                 & = x^2 - 6x + 9 - 9 + 12 \\
+                 & = (x-3)^2 + 3
+          \end{flalign*}
+          $D_f = [-2, 8]$, $R_f = [3, 28]$
+          \begin{center}
+            \begin{tikzpicture}
+              \begin{axis}[
+                  unit vector ratio*=1 1 1,
+                  axis lines = middle,
+                  xlabel = $x$,
+                  ylabel = $y$,
+                  ymin = -3,
+                  ymax = 29,
+                  xmin = -5,
+                  xmax = 15,
+                  xtick = {-4, -2,...,14},
+                  ytick = {-2,0,...,30},
+                  minor tick num = 1,
+                  grid = both,
+                  grid style = {line width=.1pt, draw=gray!50},
+                  major grid style = {line width=.2pt,draw=gray!50},
+                  width = 0.9\textwidth,
+                ]
+                \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+                \addplot [
+                  thick,
+                  domain=-2:8,
+                  samples=100,
+                ]
+                {x^2 - 6*x + 12};
+                \filldraw (axis cs:-2,28) circle (2pt);
+                \filldraw (axis cs:8,28) circle (2pt);
+                \draw [dashed] (axis cs:-2,28) -- (axis cs:8,28);
+                \draw [dashed] (axis cs:3,3) -- (axis cs:0,3);
+              \end{axis}
+            \end{tikzpicture}
+          \end{center}
+        \end{multicols}
+
+  \item Sketch the graph for the function $g(x) = -x^2 - 4x - 7$, $-2 \leq x \leq 5$,
+        and find its domain and range.
+        \begin{multicols}{2}
+          \begin{flalign*}
+            f(x) & = -x^2 - 4x - 7            \\
+                 & = -[(x^2 + 4x + 4) -4] - 7 \\
+                 & = -[(x+2)^2 - 4] - 3       \\
+                 & = -(x+2)^2 + 4 - 3         \\
+                 & = -(x+2)^2 + 1
+          \end{flalign*}
+          $D_f = [-2, 5]$, $R_f = [-52, 3]$
+          \begin{center}
+            \begin{tikzpicture}
+              \begin{axis}[
+                  unit vector ratio*=1 1 1,
+                  axis lines = middle,
+                  xlabel = $x$,
+                  ylabel = $y$,
+                  ymin = -56,
+                  ymax = 5,
+                  xmin = -26,
+                  xmax = 26,
+                  xtick = {-30, -20,...,30},
+                  ytick = {-60,-50,...,10},
+                  minor tick num = 1,
+                  grid = both,
+                  grid style = {line width=.1pt, draw=gray!50},
+                  major grid style = {line width=.2pt,draw=gray!50},
+                  width = 0.7\textwidth,
+                ]
+                \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+                \addplot [
+                  thick,
+                  domain=-2:5,
+                  samples=100,
+                ]
+                {-x^2 - 4*x - 7};
+                \draw [densely dashed] (axis cs:-2,-3) -- (axis cs:0,-3);
+                \draw [densely dashed] (axis cs:5,-52) -- (axis cs:0,-52);
+                \filldraw (axis cs:-2,-3) circle (2pt);
+                \filldraw (axis cs:5,-52) circle (2pt);
+              \end{axis}
+            \end{tikzpicture}
+          \end{center}
+        \end{multicols}
+
+  \item Sketch the graph for the function $f(x) = -x^2 + 2x + 10$, and find its domain
+        and range.
+        \begin{multicols}{2}
+          \begin{flalign*}
+            f(x) & = -x^2 + 2x + 10             \\
+                 & = -[(x^2 - 2x + 1) - 1] + 10 \\
+                 & = -[(x-1)^2 - 1] + 10        \\
+                 & = -(x-1)^2 + 1 + 10          \\
+                 & = -(x-1)^2 + 11
+          \end{flalign*}
+          $D_f = \mathbb{R}$, $R_f = [11, \infty)$
+          \begin{center}
+            \begin{tikzpicture}
+              \begin{axis}[
+                  unit vector ratio*=1 1 1,
+                  axis lines = middle,
+                  xlabel = $x$,
+                  ylabel = $y$,
+                  ymin = -5,
+                  ymax = 13,
+                  xmin = -5,
+                  xmax = 7,
+                  xtick = {-4, -2,...,6},
+                  ytick = {-4,-2,...,12},
+                  minor tick num = 1,
+                  grid = both,
+                  grid style = {line width=.1pt, draw=gray!50},
+                  major grid style = {line width=.2pt,draw=gray!50},
+                  width = 0.8\textwidth,
+                ]
+                \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+                \addplot [
+                  thick,
+                  domain=-5:5,
+                  samples=100,
+                ]
+                {-x^2 + 2*x + 10};
+                \draw [densely dashed] (axis cs:0,11) -- (axis cs:1,11);
+              \end{axis}
+            \end{tikzpicture}
+          \end{center}
+        \end{multicols}
+  \item Sketch the graph of the function $y = \sqrt{x}$, and transform it according the
+        following steps. Sketch the graph of each function after each step on the same
+        diagram, and write down the corresponding function.
+
+        Step 1: Translate 4 units to the left;
+
+        Step 2: Scale up by a factor of 2 in the $x$-direction;
+
+        Step 3: Reflect about the $y$-axis;
+
+        Step 4: Translate 3 units downwards.
+
+        Step 5: Scale down by half in the $y$-direction.
+
+        \sol{}
+        \begin{multicols}{2}
+          Step 0: $y = \sqrt{x}$
+
+          Step 1: $y = \sqrt{x+4}$
+
+          Step 2: $y = \sqrt{\dfrac{x}{2} + 4}$
+
+          Step 3: $y = \sqrt{-\dfrac{x}{2} + 4}$
+
+          Step 4: $y = \sqrt{-\dfrac{x}{2} + 4} - 3$
+
+          Step 5: $y = \dfrac{1}{2}\left(\sqrt{-\dfrac{x}{2} + 4} - 3\right)$
+        \end{multicols}
+
+        \begin{center}
+          \begin{tikzpicture}
+            \begin{axis}[
+                unit vector ratio*=1 1 1,
+                axis lines = middle,
+                xlabel = $x$,
+                ylabel = $y$,
+                ymin = -5,
+                ymax = 5,
+                xmin = -11,
+                xmax = 11,
+                xtick = {-10, -8,...,10},
+                ytick = {-4,-2,...,10},
+                minor tick num = 1,
+                grid = both,
+                grid style = {line width=.1pt, draw=gray!50},
+                major grid style = {line width=.2pt,draw=gray!50},
+                width = 0.9\textwidth,
+              ]
+              \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+              \addplot [
+                thick,
+                domain=-11:11,
+                samples=100,
+              ]
+              {sqrt(x)};
+              \addplot [
+                thick,
+                domain=-11:11,
+                samples=100,
+              ]
+              {sqrt(x+4)};
+              \addplot [
+                thick,
+                domain=-11:11,
+                samples=100,
+              ]
+              {sqrt(0.5*x + 4)};
+              \addplot [
+                thick,
+                domain=-11:11,
+                samples=100,
+              ]
+              {sqrt(-0.5*x + 4)};
+              \addplot [
+                thick,
+                domain=-11:11,
+                samples=100,
+              ]
+              {sqrt(-0.5*x + 4) - 3};
+              \addplot [
+                thick,
+                domain=-11:11,
+                samples=100,
+              ]
+              {0.5*(sqrt(-0.5*x + 4) - 3)};
+            \end{axis}
+          \end{tikzpicture}
+        \end{center}
+\end{enumerate}
+
+\newpage
 
 \section{Composite Functions}
 
@@ -2135,28 +3028,540 @@ write $f \circ g \circ h$ without ambiguity.
 
 \subsection*{Practice 5}
 
-\setlength{\columnseprule}{1pt}
-\setlength{\columnsep}{24pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*]
+  \item Let $f: \mathbb{R} \to \mathbb{R}$, $f(x) = 2x + 3$ and $g: \mathbb{R} \to
+          \mathbb{R}$, $g(x) = 5 - x$. Find $(g \circ f)(x)$ and $(f \circ g)(x)$. \sol{}
+        \vspace{-1cm} \setlength{\columnsep}{-5cm}
+        \begin{multicols}{2}
+          \begin{flalign*}
+            (g \circ f)(x) & = g(f(x))      & \\
+                           & = g(2x + 3)    & \\
+                           & = 5 - (2x + 3) & \\
+                           & = -2x + 2      &
+          \end{flalign*}
 
-\begin{multicols}{2}
+          \begin{flalign*}
+            (f \circ g)(x) & = f(g(x))      & \\
+                           & = f(5 - x)     & \\
+                           & = 2(5 - x) + 3 & \\
+                           & = -2x + 13     &
+          \end{flalign*}
+        \end{multicols}
+        \setlength{\columnsep}{0cm}
 
-  \begin{enumerate}[label=\arabic*., leftmargin=*]
-    \item Let $f: \mathbb{R} \to \mathbb{R}$, $f(x) = 2x + 3$ and $g: \mathbb{R} \to
-            \mathbb{R}$, $g(x) = 5 - x$. Find $(g \circ f)(x)$ and $(f \circ g)(x)$.
+  \item Let $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x^2 - 2x + 3$ and $g: \mathbb{R}
+          \to \mathbb{R}$, $g(x) = 3x - 4$. Find
+        \begin{enumerate}
+          \item $g \circ f$ and $f \circ g$;
+                \sol{}
+                \vspace{-1cm}
+                \begin{multicols}{2}
+                  \begin{flalign*}
+                    (g \circ f)(x) & = g(f(x))             & \\
+                                   & = g(x^2 - 2x + 3)     & \\
+                                   & = 3(x^2 - 2x + 3) - 4 & \\
+                                   & = 3x^2 - 6x + 5       &
+                  \end{flalign*}
 
-    \item Let $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x^2 - 2x + 3$ and $g: \mathbb{R}
-            \to \mathbb{R}$, $g(x) = 3x - 4$. Find
+                  \begin{flalign*}
+                    (f \circ g)(x) & = f(g(x))                    & \\
+                                   & = f(3x - 4)                  & \\
+                                   & = (3x - 4)^2 - 2(3x - 4) + 3 & \\
+                                   & = 9x^2 - 30x + 27            &
+                  \end{flalign*}
+                \end{multicols}
+
+                \newpage
+          \item $g\big(f(2)\big)$, $f\big(g(2)\big)$, $(g \circ f)(2)$, and $(f \circ g)(2)$.
+                \sol{}
+                \vspace{-1cm}
+                \begin{multicols}{2}
+                  \begin{flalign*}
+                    g\big(f(2)\big) & = g(2^2 - 2(2) + 3) & \\
+                                    & = g(3)              & \\
+                                    & = 3(3) - 4          & \\
+                                    & = 5                 &
+                  \end{flalign*}
+
+                  \begin{flalign*}
+                    f\big(g(2)\big) & = f(3(2) - 4)    & \\
+                                    & = f(2)           & \\
+                                    & = 2^2 - 2(2) + 3 & \\
+                                    & = 3              &
+                  \end{flalign*}
+                \end{multicols}
+                \vspace{-1.5cm}
+                \begin{multicols}{2}
+                  \begin{flalign*}
+                    (g \circ f)(2) & = g(f(2))  & \\
+                                   & = g(3)     & \\
+                                   & = 3(3) - 4 & \\
+                                   & = 5        &
+                  \end{flalign*}
+
+                  \begin{flalign*}
+                    (f \circ g)(2) & = f(g(2))        & \\
+                                   & = f(3)           & \\
+                                   & = 3^2 - 2(3) + 3 & \\
+                                   & = 3              &
+                  \end{flalign*}
+                \end{multicols}
+        \end{enumerate}
+
+  \item Let $f: \mathbb{R} \to \mathbb{R}$, $f(x) = 4 - x^2$ and $g: \left\{x | x \leq
+          4 \right\} \to \mathbb{R}$, $g(x) = \sqrt{4 - x}$. Prove the existence of $f
+          \circ g$ and $g \circ f$ respectively. \sol{} \vspace{-1cm}
+        \setlength{\columnsep}{-5cm}
+        \begin{multicols}{2}
+          \begin{flalign*}
+             & R_g = \mathbb{R},\ D_f = \mathbb{R} & \\
+             & \because\ R_g \subset D_f           & \\
+             & \therefore\ \exists\ f \circ g      &
+          \end{flalign*}
+
+          \begin{flalign*}
+             & \because\ \forall\ x \in \mathbb{R},\ x^2 \geq 0,\ R_f = (\infty, 4] & \\
+             & R_f = (\infty, 4],\ D_g = (\infty, 4]                                & \\
+             & \because\ R_f \subset D_g                                            & \\
+             & \therefore\ \exists\ g \circ f                                       &
+          \end{flalign*}
+        \end{multicols}
+        \setlength{\columnsep}{0cm}
+\end{enumerate}
+\newpage
+
+\subsection*{Practice 6}
+
+\begin{enumerate}
+  \item Given that $f:x \to 2x + 1$ and $f \circ g: x \to 2x - 1$. Find the function
+        $g$. \sol{}
+        \begin{flalign*}
+          f \circ g & = f(g(x))   & \\
+          2x - 1    & = 2g(x) + 1 & \\
+          2g(x)     & = 2x - 2    & \\
+          g(x)      & = x - 1     &
+        \end{flalign*}
+
+  \item The function $f$ is defined as $f:x \to 5 - x$. Find another function $g$ such
+        that $g \circ f:x \to x^2 - 10x + 8$. \sol{}
+        \begin{flalign*}
+          (g \circ f)(x) & = x^2 - 10x + 8 & \\
+          g(5 - x)       & = x^2 - 10x + 8
+        \end{flalign*}
+        \vspace{-1.5cm}
+        \begin{flalign*}
+          \text{Let } y & = 5 - x & \\
+          x             & = 5 - y &
+        \end{flalign*}
+        \vspace{-1.5cm}
+        \begin{flalign*}
+          g(y)             & = (5 - y)^2 - 10(5 - y) + 8     & \\
+                           & = 25 - 10y + y^2 - 50 + 10y + 8 & \\
+                           & = y^2 - 17                      & \\
+          \\
+          \therefore\ g(x) & = x^2 - 17
+        \end{flalign*}
+
+  \item The function $f$ is defined as $f:x \to 2x - 3$. Find another function $g$ such
+        that $f \circ g:x \to 4x^2 - 14x + 9$. \sol{}
+        \begin{flalign*}
+          (f \circ g)(x) & = 4x^2 - 14x + 9  & \\
+          2(g(x)) - 3    & = 4x^2 - 14x + 9  & \\
+          2g(x)          & = 4x^2 - 14x + 12 & \\
+          g(x)           & = 2x^2 - 7x + 6   &
+        \end{flalign*}
+\end{enumerate}
+
+\newpage
+
+\subsection*{Exercise 22.4}
+
+\begin{enumerate}
+  \item Given the functions $f$ and $g$, find $f \circ g$ and $g \circ f$:
+        \begin{enumerate}
+          \item $f: x \to 3x$, $g: x \to x - 1$
+                \sol{}
+                \vspace{-1cm}
+                \setlength{\columnsep}{-3cm}
+                \begin{multicols}{2}
+                  \begin{flalign*}
+                    (f \circ g)(x) & = f(g(x))  & \\
+                                   & = f(x - 1) & \\
+                                   & = 3(x - 1) & \\
+                                   & = 3x - 3   &
+                  \end{flalign*}
+
+                  \begin{flalign*}
+                    (g \circ f)(x) & = g(f(x)) & \\
+                                   & = g(3x)   & \\
+                                   & = 3x - 1  &
+                  \end{flalign*}
+                \end{multicols}
+
+          \item $f: x \to 5x$, $g: x \to \dfrac{1}{5}x$
+                \sol{}
+                \vspace{-1cm}
+                \setlength{\columnsep}{-3cm}
+                \begin{multicols}{2}
+                  \begin{flalign*}
+                    (f \circ g)(x) & = f(g(x))                     & \\
+                                   & = f\left(\dfrac{1}{5}x\right) & \\
+                                   & = 5\left(\dfrac{1}{5}x\right) & \\
+                                   & = x                           &
+                  \end{flalign*}
+
+                  \begin{flalign*}
+                    (g \circ f)(x) & = g(f(x))          & \\
+                                   & = g(5x)            & \\
+                                   & = \dfrac{1}{5}(5x) & \\
+                                   & = x                &
+                  \end{flalign*}
+                \end{multicols}
+
+          \item $f: x \to x^2$, $g: x \to x + 2$
+                \sol{}
+                \vspace{-1cm}
+                \setlength{\columnsep}{-3cm}
+                \begin{multicols}{2}
+                  \begin{flalign*}
+                    (f \circ g)(x) & = f(g(x))      & \\
+                                   & = f(x + 2)     & \\
+                                   & = (x + 2)^2    & \\
+                                   & = x^2 + 4x + 4 &
+                  \end{flalign*}
+
+                  \begin{flalign*}
+                    (g \circ f)(x) & = g(f(x)) & \\
+                                   & = g(x^2)  & \\
+                                   & = x^2 + 2 &
+                  \end{flalign*}
+                \end{multicols}
+
+          \item $f: x \to 2x + 1$, $g: x \to x^2 - 2$
+                \sol{}
+                \vspace{-1cm}
+                \setlength{\columnsep}{-3cm}
+                \begin{multicols}{2}
+                  \begin{flalign*}
+                    (f \circ g)(x) & = f(g(x))        & \\
+                                   & = f(x^2 - 2)     & \\
+                                   & = 2(x^2 - 2) + 1 & \\
+                                   & = 2x^2 - 3       &
+                  \end{flalign*}
+
+                  \begin{flalign*}
+                    (g \circ f)(x) & = g(f(x))           & \\
+                                   & = g(2x + 1)         & \\
+                                   & = (2x + 1)^2 - 2    & \\
+                                   & = 4x^2 + 4x + 1 - 2 & \\
+                                   & = 4x^2 + 4x - 1     &
+                  \end{flalign*}
+                \end{multicols}
+
+                \newpage
+
+          \item $f: x \to 3x^2 - 5x + 2$, $g: x \to 4 - x$
+                \sol{}
+                \vspace{-1cm}
+                \setlength{\columnsep}{3cm}
+                \begin{multicols}{2}
+                  \begin{flalign*}
+                    (f \circ g)(x) & = f(g(x))                        & \\
+                                   & = f(4 - x)                       & \\
+                                   & = 3(4 - x)^2 - 5(4 - x) + 2      & \\
+                                   & = 3(16 - 8x + x^2) - 20 + 5x + 2 & \\
+                                   & = 48 - 24x + 3x^2 - 20 + 5x + 2  & \\
+                                   & = 3x^2 - 19x + 30                &
+                  \end{flalign*}
+
+                  \begin{flalign*}
+                    (g \circ f)(x) & = g(f(x))             & \\
+                                   & = g(3x^2 - 5x + 2)    & \\
+                                   & = 4 - (3x^2 - 5x + 2) & \\
+                                   & = -3x^2 + 5x + 2      &
+                  \end{flalign*}
+                \end{multicols}
+        \end{enumerate}
+
+  \item Let the function $f: \mathbb{R} \to \mathbb{R}$ and $g: \mathbb{R} \to
+          \mathbb{R}$ be defined by $f(x) = x^2 - 3$ and $g(x) = x + 5$ respectively.
+        Find the following:
+        \begin{enumerate}
+          \item $g \circ f$ and $f \circ g$
+                \sol{}
+                \vspace{-1cm}
+                \setlength{\columnsep}{-3cm}
+                \begin{multicols}{2}
+                  \begin{flalign*}
+                    (g \circ f)(x) & = g(f(x))     & \\
+                                   & = g(x^2 - 3)  & \\
+                                   & = x^2 - 3 + 5 & \\
+                                   & = x^2 + 2     &
+                  \end{flalign*}
+
+                  \begin{flalign*}
+                    (f \circ g)(x) & = f(g(x))            & \\
+                                   & = f(x + 5)           & \\
+                                   & = (x + 5)^2 - 3      & \\
+                                   & = x^2 + 10x + 25 - 3 & \\
+                                   & = x^2 + 10x + 22     &
+                  \end{flalign*}
+                \end{multicols}
+        \end{enumerate}
+
+  \item Let the function $f: \mathbb{R} \to \mathbb{R}$ and $g: \mathbb{R} \to
+          \mathbb{R}$ be defined by $f(x) = 3x - 2$ and $g(x) = x + 1$ respectively. Find
+        the following:
+        \begin{enumerate}
+          \item $f \circ g$
+                \sol{}
+                \begin{flalign*}
+                  (f \circ g)(x) & = f(g(x))      & \\
+                                 & = f(x + 1)     & \\
+                                 & = 3(x + 1) - 2 & \\
+                                 & = 3x + 3 - 2   & \\
+                                 & = 3x + 1       &
+                \end{flalign*}
+
+                \newpage
+
+          \item $(f \circ g)(3)$, $(f \circ g)(-1)$, and $(f \circ g)\left(\dfrac{1}{4}\right)$
+                \sol{}
+                \begin{multicols}{3}
+                  \begin{enumerate}
+                    \item $(f \circ g)(3)$
+                          \begin{flalign*}
+                            (f \circ g)(3) & = 3(3) + 1 & \\
+                                           & = 9 + 1    & \\
+                                           & = 10       &
+                          \end{flalign*}
+
+                    \item $(f \circ g)(-1)$
+                          \begin{flalign*}
+                            (f \circ g)(-1) & = 3(-1) + 1 & \\
+                                            & = -3 + 1    & \\
+                                            & = -2        &
+                          \end{flalign*}
+
+                    \item $(f \circ g)\left(\dfrac{1}{4}\right)$
+                          \begin{flalign*}
+                            (f \circ g)\left(\dfrac{1}{4}\right) & = 3\left(\dfrac{1}{4}\right) + 1 & \\
+                                                                 & = \dfrac{7}{4}                   &
+                          \end{flalign*}
+                  \end{enumerate}
+                \end{multicols}
+
+          \item $g \circ f$
+                \sol{}
+                \begin{flalign*}
+                  (g \circ f)(x) & = g(f(x))      & \\
+                                 & = g(3x - 2)    & \\
+                                 & = (3x - 2) + 1 & \\
+                                 & = 3x - 2 + 1   & \\
+                                 & = 3x - 1       &
+                \end{flalign*}
+
+          \item $(g \circ f)(2)$, $(g \circ f)(-2)$, and $(g \circ f)\left(0\right)$
+                \sol{}
+                \begin{multicols}{3}
+                  \begin{enumerate}
+                    \item $(g \circ f)(2)$
+                          \begin{flalign*}
+                            (g \circ f)(2) & = 3(2) - 1 & \\
+                                           & = 6 - 1    & \\
+                                           & = 5        &
+                          \end{flalign*}
+
+                    \item $(g \circ f)(-2)$
+                          \begin{flalign*}
+                            (g \circ f)(-2) & = 3(-2) - 1 & \\
+                                            & = -6 - 1    & \\
+                                            & = -7        &
+                          \end{flalign*}
+
+                    \item $(g \circ f)\left(0\right)$
+                          \begin{flalign*}
+                            (g \circ f)\left(0\right) & = 3(0) - 1 & \\
+                                                      & = 0 - 1    & \\
+                                                      & = -1       &
+                          \end{flalign*}
+                  \end{enumerate}
+                \end{multicols}
+
+                \begin{multicols}{2}
+                  \item $f^2$
+                  \sol{}
+                  \begin{flalign*}
+                    f^2(x) & = f(f(x))       & \\
+                           & = f(3x - 2)     & \\
+                           & = 3(3x - 2) - 2 & \\
+                           & = 9x - 8        &
+                  \end{flalign*}
+
+                  \item $g^2$
+                  \sol{}
+                  \begin{flalign*}
+                    g^2(x) & = g(g(x))     & \\
+                           & = g(x + 1)    & \\
+                           & = (x + 1) + 1 & \\
+                           & = x + 2       &
+                  \end{flalign*}
+                \end{multicols}
+        \end{enumerate}
+
+        \newpage
+  \item Let the function $g: \left\{x \vert x \in \mathbb{R}, x \neq 1\right\} \to
+          \mathbb{R}$ be defined as $g:x \to \dfrac{x + 1}{x - 1}$. Find $g^2(x)$ and
+        $g^4(x)$. Hence, find $g^{33}(x)$ and $g^{50}(x)$. \sol{} \vspace{-1cm}
+        \begin{multicols}{2}
+          \begin{flalign*}
+            g^2(x) & = g(g(x))                                                            & \\
+                   & = g\left(\dfrac{x + 1}{x - 1}\right)                                 & \\
+                   & = \dfrac{\dfrac{x + 1}{x - 1} + 1}{\dfrac{x + 1}{x - 1} - 1}         & \\
+                   & = \dfrac{\dfrac{x + 1 + x - 1}{x - 1}}{\dfrac{x + 1 - x + 1}{x - 1}} & \\
+                   & = \dfrac{\dfrac{2x}{x - 1}}{\dfrac{2}{x - 1}}                        & \\
+                   & = x
+          \end{flalign*}
+
+          \begin{flalign*}
+            g^4(x) & = g^2(g^2(x)) & \\
+                   & = g^2(x)      & \\
+                   & = x           &
+          \end{flalign*}
+          We can see that for $g^n(x)$, where $n$ is a multiple of $2$, $g^n(x) = x$.
+          \begin{flalign*}
+            g^{33}(x) & = g^{32}(g(x))                            & \\
+                      & = g^{32}\left(\dfrac{x + 1}{x - 1}\right) & \\
+                      & = \dfrac{x + 1}{x - 1}                    &
+          \end{flalign*}
+          \vspace{-1cm}
+          \begin{flalign*}
+            g^{50}(x) & = x &
+          \end{flalign*}
+        \end{multicols}
+
+  \item Let $f: x \to 3x - 2$ and $g: x \to kx + 2$ be functions from $\mathbb{R}$ to
+        $\mathbb{R}$. If $g \circ f = f \circ g$, find the value of $k$. \sol{}
+        \begin{flalign*}
+          (g \circ f)(x) & = (f \circ g)(x) & \\
+          g(3x - 2)      & = f(kx + 2)      & \\
+          k(3x - 2) + 2  & = 3(kx + 2) - 2  & \\
+          -2k            & = 2              & \\
+          k              & = -1
+        \end{flalign*}
+
+  \item Given the function $f: x \to x + 2$, find the function $g$ such that $f \circ g
+          : x \to \dfrac{3 - 2x}{x + 5}$. \sol{}
+        \begin{flalign*}
+          (f \circ g)(x)        & = f(g(x))                         & \\
+          \dfrac{3 - 2x}{x + 5} & = g(x) + 2                        & \\
+          g(x)                  & = \dfrac{3 - 2x}{x + 5} - 2       & \\
+                                & = \dfrac{3 - 2x - 2x - 10}{x + 5} & \\
+                                & = \dfrac{-4x - 7}{x + 5}          &
+        \end{flalign*}
+
+  \item Given the function $f:x \to 3x - 1$. Find the function $g$ such that $f \circ g
+          : x \to 6x^2 - 3x + 2$. \sol{}
+        \begin{flalign*}
+          f(g(x))   & = 6x^2 - 3x + 2 & \\
+          3g(x) - 1 & = 6x^2 - 3x + 2 & \\
+          3g(x)     & = 6x^2 - 3x + 3 & \\
+          g(x)      & = 2x^2 - x + 1  &
+        \end{flalign*}
+
+  \item Given the function $g(x) = x - 2$. Find the function $h$ such that $(h \circ
+          g)(x) = 2x^2 - 8x + 5$. \sol{}
+        \begin{flalign*}
+          (h \circ g)(x) & = 2x^2 - 8x + 5 & \\
+          h(x - 2)       & = 2x^2 - 8x + 5
+        \end{flalign*}
+        \vspace{-1.5cm}
+        \begin{flalign*}
+          \text{Let } y & = x - 2 & \\
+          x             & = y + 2
+        \end{flalign*}
+        \vspace{-1.5cm}
+        \begin{flalign*}
+          h(y)             & = 2(y + 2)^2 - 8(y + 2) + 5 & \\
+                           & = 2y^2 + 8y + 8 - 8y - 11   & \\
+                           & = 2y^2 - 3                  & \\
+          \\
+          \therefore\ h(x) & = 2x^2 - 3
+        \end{flalign*}
+
+  \item Given the functions $g$ and $f \circ g$. Find the function $f$:
+        \begin{multicols}{2}
           \begin{enumerate}
-            \item $g \circ f$ and $f \circ g$;
-            \item $g\big(f(2)\big)$, $f\big(g(2)\big)$, $(g \circ f)(2)$, and $(f \circ g)(2)$.
+            \item $g :x \to 2x - 4$ and $f \circ g: x \to 4x^2 - 16x + 1$
+                  \sol{}
+                  \begin{flalign*}
+                    f \circ g(x) & = 4x^2 - 16x + 1 & \\
+                    f(2x - 4)    & = 4x^2 - 16x + 1
+                  \end{flalign*}
+                  \vspace{-1.5cm}
+                  \begin{flalign*}
+                    \text{Let } y & = 2x - 4           & \\
+                    x             & = \dfrac{y + 4}{2}
+                  \end{flalign*}
+                  \vspace{-1.5cm}
+                  \begin{flalign*}
+                    f(y)             & = 4\left(\dfrac{y + 4}{2}\right)^2 - 16\left(\dfrac{y + 4}{2}\right) + 1 & \\
+                                     & = y^2 + 8y + 16 - 8y - 31                                                & \\
+                                     & = y^2 - 15                                                               & \\
+                    \\
+                    \therefore\ f(x) & = x^2 - 15
+                  \end{flalign*}
+            \item $g :x \to x - 3$ and $f \circ g: x \to x^2 - 5x + 3$
+                  \sol{}
+                  \begin{flalign*}
+                    f \circ g(x) & = x^2 - 5x + 3 & \\
+                    f(x - 3)     & = x^2 - 5x + 3
+                  \end{flalign*}
+                  \vspace{-1.5cm}
+                  \begin{flalign*}
+                    \text{Let } y & = x - 3 & \\
+                    x             & = y + 3
+                  \end{flalign*}
+                  \vspace{-1.5cm}
+                  \begin{flalign*}
+                    f(y)             & = (y + 3)^2 - 5(y + 3) + 3   & \\
+                                     & = y^2 + 6y + 9 - 5y - 15 + 3 & \\
+                                     & = y^2 + y - 3                & \\
+                    \\
+                    \therefore\ f(x) & = x^2 + x - 3
+                  \end{flalign*}
           \end{enumerate}
+        \end{multicols}
 
-    \item Let $f: \mathbb{R} \to \mathbb{R}$, $f(x) = 4 - x^2$ and $g: \left\{x | x \leq
-            4 \right\} \to \mathbb{R}$, $g(x) = \sqrt{4 - x}$. Prove the existence of $f
-            \circ g$ and $g \circ f$ respectively.
-  \end{enumerate}
+  \item Given the function $f:x \to x - 3$ and the function $g \circ f : x \to x^2 - 6x
+          + 7$. Find the function $f \circ g$. \sol{}
+        \begin{flalign*}
+          g \circ f & = x^2 - 6x + 7 & \\
+          g(f(x))   & = x^2 - 6x + 7   \\
+          g(x - 3)  & = x^2 - 6x + 7
+        \end{flalign*}
+        \vspace{-1.5cm}
+        \begin{flalign*}
+          \text{Let } y & = x - 3 & \\
+          x             & = y + 3
+        \end{flalign*}
+        \vspace{-1.5cm}
+        \begin{flalign*}
+          g(y)             & = (y + 3)^2 - 6(y + 3) + 7   & \\
+                           & = y^2 + 6y + 9 - 6y - 18 + 7 & \\
+                           & = y^2 - 2                    & \\
+          \\
+          \therefore\ g(x) & = x^2 - 2
+        \end{flalign*}
+        \vspace{-1.5cm}
+        \begin{flalign*}
+          f \circ g & = f(x^2 - 2)    & \\
+                    & = (x^2 - 2) - 3 & \\
+                    & = x^2 - 5
+        \end{flalign*}
+\end{enumerate}
 
-\end{multicols}
+\newpage
 
 \section{One to One Function, Onto Function and One to One Onto Function}
 
@@ -2164,6 +3569,52 @@ write $f \circ g \circ h$ without ambiguity.
 
 Let $f: A \to B$ be a function, if there is at most one preimage in set $A$ for
 each element in set $B$, then $f$ is called a \emph{one to one function}.
+
+\begin{center}
+  \begin{tikzpicture}[ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt},scale=0.8]
+    \node[ele,label=left:$a_1$] (a1) at (0,3.5) {};
+    \node[ele,,label=left:$a_2$] (a2) at (0,2.5) {};
+    \node[ele,,label=left:$a_3$] (a3) at (0,1.5) {};
+    \node (a999) at (-0.5,1.5) {};
+
+    \node[ele,,label=right:$b_1$] (b1) at (4.5,4) {};
+    \node[ele,,label=right:$b_2$] (b2) at (4.5,3) {};
+    \node[ele,,label=right:$b_3$] (b3) at (4.5,2) {};
+    \node[ele,,label=right:$b_4$] (b4) at (4.5,1) {};
+    \node (b999) at (5,1.5) {};
+
+    \node[draw, thick,fit= (a1) (a2) (a3) (a999),minimum width=2cm] {} ;
+    \node[draw, thick,fit= (b1) (b2) (b3) (b4) (b999),minimum width=2cm] {} ;
+    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+    \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
+    \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b3);
+    \node at (-0.4,4.8) {$A$};
+    \node at (4.8,5.5) {$B$};
+    \node at (2.4,4.8) {$f$};
+  \end{tikzpicture}
+  \hspace{1cm}
+  \begin{tikzpicture}[ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt},scale=0.8]
+    \node[ele,label=left:$a_1$] (a1) at (0,3.5) {};
+    \node[ele,,label=left:$a_2$] (a2) at (0,2.5) {};
+    \node[ele,,label=left:$a_3$] (a3) at (0,1.5) {};
+    \node (a999) at (-0.5,1.5) {};
+
+    \node[ele,,label=right:$b_1$] (b1) at (4.5,4) {};
+    \node[ele,,label=right:$b_2$] (b2) at (4.5,3) {};
+    \node[ele,,label=right:$b_3$] (b3) at (4.5,2) {};
+    \node[ele,,label=right:$b_4$] (b4) at (4.5,1) {};
+    \node (b999) at (5,1.5) {};
+
+    \node[draw, thick,fit= (a1) (a2) (a3) (a999),minimum width=2cm] {} ;
+    \node[draw, thick,fit= (b1) (b2) (b3) (b4) (b999),minimum width=2cm] {} ;
+    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+    \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
+    \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
+    \node at (-0.4,4.8) {$A$};
+    \node at (4.8,5.5) {$B$};
+    \node at (2.4,4.8) {$g$};
+  \end{tikzpicture}
+\end{center}
 
 As shown in the diagram above, each element in the codomain $B$ of the function
 $f: A \to B$ has at most one preimage in the domain $A$ of the function, thus
@@ -2180,6 +3631,54 @@ If each element in the codomain $B$ of the function $f: A \to B$ has at least
 one preimage under the function $f$, then $f$ is said to be an \emph{onto
   function}.
 
+\begin{center}
+  \begin{tikzpicture}[ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt},scale=0.8]
+    \node[ele,label=left:$a_1$] (a1) at (0,4) {};
+    \node[ele,label=left:$a_2$] (a2) at (0,3) {};
+    \node[ele,,label=left:$a_3$] (a3) at (0,2) {};
+    \node[ele,,label=left:$a_4$] (a4) at (0,1) {};
+    \node (a999) at (-0.5,1.5) {};
+
+    \node[ele,,label=right:$b_1$] (b1) at (4.5,3.5) {};
+    \node[ele,,label=right:$b_2$] (b2) at (4.5,2.5) {};
+    \node[ele,,label=right:$b_3$] (b3) at (4.5,1.5) {};
+    \node (b999) at (5,1.5) {};
+
+    \node[draw, thick,fit= (a1) (a2) (a3) (a4) (a999),minimum width=2cm] {} ;
+    \node[draw, thick,fit= (b1) (b2) (b3) (b999),minimum width=2cm] {} ;
+    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+    \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
+    \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
+    \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b3);
+    \node at (-0.4,5.5) {$A$};
+    \node at (4.8,4.8) {$B$};
+    \node at (2.4,4.8) {$f$};
+  \end{tikzpicture}
+  \hspace{1cm}
+  \begin{tikzpicture}[ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt},scale=0.8]
+    \node[ele,label=left:$a_1$] (a1) at (0,4) {};
+    \node[ele,label=left:$a_2$] (a2) at (0,3) {};
+    \node[ele,,label=left:$a_3$] (a3) at (0,2) {};
+    \node[ele,,label=left:$a_4$] (a4) at (0,1) {};
+    \node (a999) at (-0.5,1.5) {};
+
+    \node[ele,,label=right:$b_1$] (b1) at (4.5,3.5) {};
+    \node[ele,,label=right:$b_2$] (b2) at (4.5,2.5) {};
+    \node[ele,,label=right:$b_3$] (b3) at (4.5,1.5) {};
+    \node (b999) at (5,1.5) {};
+
+    \node[draw, thick,fit= (a1) (a2) (a3) (a4) (a999),minimum width=2cm] {} ;
+    \node[draw, thick,fit= (b1) (b2) (b3) (b999),minimum width=2cm] {} ;
+    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+    \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b1);
+    \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
+    \draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b2);
+    \node at (-0.4,5.5) {$A$};
+    \node at (4.8,4.8) {$B$};
+    \node at (2.4,4.8) {$g$};
+  \end{tikzpicture}
+\end{center}
+
 As shown in the diagram above, each element in the codomain $B$ of the function
 $f: A \to B$ has at least one preimage under the function $f$, therefore $f$ is
 an onto function; while the element $b_3$ in the codomain $B$ of the function
@@ -2188,6 +3687,29 @@ onto function.
 
 \subsection*{One to One Onto Function}
 
+\begin{center}
+  \begin{tikzpicture}[ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt},scale=0.8]
+    \node[ele,label=left:$a_1$] (a1) at (0,3) {};
+    \node[ele,,label=left:$a_2$] (a2) at (0,2) {};
+    \node[ele,,label=left:$a_3$] (a3) at (0,1) {};
+    \node (a999) at (-0.5,1) {};
+
+    \node[ele,,label=right:$b_1$] (b1) at (4.5,3) {};
+    \node[ele,,label=right:$b_2$] (b2) at (4.5,2) {};
+    \node[ele,,label=right:$b_3$] (b3) at (4.5,1) {};
+    \node (b999) at (5,1.5) {};
+
+    \node[draw, thick,fit= (a1) (a2) (a3) (a999),minimum width=2cm] {} ;
+    \node[draw, thick,fit= (b1) (b2) (b3) (b999),minimum width=2cm] {} ;
+    \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+    \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b3);
+    \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
+    \node at (-0.4,4.4) {$A$};
+    \node at (4.8,4.4) {$B$};
+    \node at (2,3.8) {$f$};
+  \end{tikzpicture}
+\end{center}
+
 If a function is both a one to one function and an onto function, then it is a
 \emph{one to one onto function}, as shown in the diagram above.
 
@@ -2195,55 +3717,294 @@ If a function is both a one to one function and an onto function, then it is a
 
 Determine whether the following functions are one to one functions or onto
 functions.
+\begin{enumerate}[label=(\alph*)]
+  \setlength{\columnsep}{2cm}
+  \begin{multicols}{2}
+    \item \adjustbox{valign=t}{
+      \begin{tikzpicture}[ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt},scale=0.8]
+        \node[ele,label=left:$a$] (a1) at (0,3) {};
+        \node[ele,,label=left:$b$] (a2) at (0,2) {};
+        \node[ele,,label=left:$c$] (a3) at (0,1) {};
+        \node (a999) at (-0.5,1) {};
+
+        \node[ele,,label=right:$x$] (b1) at (4.5,2.5) {};
+        \node[ele,,label=right:$y$] (b2) at (4.5,1.5) {};
+        \node (b999) at (5,1.5) {};
+
+        \node[draw, thick,fit= (a1) (a2) (a3) (a999),minimum width=2cm] {} ;
+        \node[draw, thick,fit= (b1) (b2) (b999),minimum width=2cm] {} ;
+        \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b2);
+        \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b1);
+        \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
+        \node at (-0.4,4.4) {$A$};
+        \node at (4.8,3.8) {$B$};
+        \node at (2.4,3.8) {$f$};
+      \end{tikzpicture}}
+    \vskip 0.5cm
+    \sol{}
+
+    Since $y \in B$ has two preimages $a$ and $c$, $f$ is not a one to one
+    function.
+
+    Since all elements in $B$ have preimages, $f$ is an onto function.
+
+    \item \adjustbox{valign=t}{
+      \begin{tikzpicture}[ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt},scale=0.8]
+        \node[ele,,label=left:$x$] (a1) at (0,2.5) {};
+        \node[ele,,label=left:$y$] (a2) at (0,1.5) {};
+        \node (a999) at (-0.5,1.5) {};
+
+        \node[ele,,label=right:$a$] (b1) at (4.5,3) {};
+        \node[ele,,label=right:$b$] (b2) at (4.5,2) {};
+        \node[ele,,label=right:$c$] (b3) at (4.5,1) {};
+        \node (b999) at (5,1.5) {};
+
+        \node[draw, thick,fit= (a1) (a2) (a999),minimum width=2cm] {} ;
+        \node[draw, thick,fit= (b1) (b2) (b3) (b999),minimum width=2cm] {} ;
+        \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b3);
+        \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b1);
+        \node at (-0.4,3.8) {$A$};
+        \node at (4.8,4.4) {$B$};
+        \node at (2,3.8) {$g$};
+      \end{tikzpicture}}
+    \vskip 0.5cm
+    \sol{}
+
+    Since each element in $B$ has at most one preimage, $g$ is a one to one
+    function.
+
+    Since $b \in B$ has no preimage, $g$ is not an onto function.
+  \end{multicols}
+
+  \begin{multicols}{2}
+    \item \adjustbox{valign=t}{
+      \begin{tikzpicture}[ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt},scale=0.8]
+        \node[ele,label=left:$x$] (a1) at (0,3) {};
+        \node[ele,,label=left:$y$] (a2) at (0,2) {};
+        \node[ele,,label=left:$z$] (a3) at (0,1) {};
+        \node (a999) at (-0.5,1) {};
+
+        \node[ele,,label=right:$a$] (b1) at (4.5,3) {};
+        \node[ele,,label=right:$b$] (b2) at (4.5,2) {};
+        \node[ele,,label=right:$c$] (b3) at (4.5,1) {};
+        \node (b999) at (5,1.5) {};
+
+        \node[draw, thick,fit= (a1) (a2) (a3) (a999),minimum width=2cm] {} ;
+        \node[draw, thick,fit= (b1) (b2) (b3) (b999),minimum width=2cm] {} ;
+        \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b2);
+        \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b3);
+        \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b1);
+        \node at (-0.4,4.4) {$A$};
+        \node at (4.8,4.4) {$B$};
+        \node at (2,3.8) {$h$};
+      \end{tikzpicture}}
+    \vskip 0.5cm
+    \sol{}
+
+    Since each element in $B$ has exactly one preimage, $h$ is a one to one
+    function. Since all elements in $B$ have preimages, $h$ is an onto function.
+
+    Hence, $h$ is a one to one onto function.
+
+    \item \adjustbox{valign=t}{
+      \begin{tikzpicture}[ele/.style={fill=black,circle,minimum width=.8pt,inner sep=1pt},every fit/.style={ellipse,draw,inner sep=4pt},scale=0.8]
+        \node[ele,label=left:$x$] (a1) at (0,3) {};
+        \node[ele,,label=left:$y$] (a2) at (0,2) {};
+        \node[ele,,label=left:$z$] (a3) at (0,1) {};
+        \node (a999) at (-0.5,1) {};
+
+        \node[ele,,label=right:$a$] (b1) at (4.5,3) {};
+        \node[ele,,label=right:$b$] (b2) at (4.5,2) {};
+        \node[ele,,label=right:$c$] (b3) at (4.5,1) {};
+        \node (b999) at (5,1.5) {};
+
+        \node[draw, thick,fit= (a1) (a2) (a3) (a999),minimum width=2cm] {} ;
+        \node[draw, thick,fit= (b1) (b2) (b3) (b999),minimum width=2cm] {} ;
+        \draw[->,thick,shorten <=2pt,shorten >=2] (a1) -- (b1);
+        \draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b3);
+        \draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b3);
+        \node at (-0.4,4.4) {$A$};
+        \node at (4.8,4.4) {$B$};
+        \node at (2.2,3.9) {$k$};
+      \end{tikzpicture}}
+    \vskip 0.5cm
+    \sol{}
+
+    Since $c \in B$ has two preimages $y$ and $z$, $k$ is not a one to one
+    function.
+
+    Since $b \in B$ has no preimage, $k$ is not an onto function.
+  \end{multicols}
+\end{enumerate}
 
 \subsection*{Exercise 22.5}
 
-\setlength{\columnseprule}{1pt}
+\setlength{\columnseprule}{0pt}
 \setlength{\columnsep}{24pt}
 
-\begin{multicols}{2}
+\begin{enumerate}
+  \item Let $A = \left\{1, 2, 3\right\}$, $f: A \to A$ is defined by $f: 1 \to 1$, $2
+          \to 3$, $3 \to 2$. Determine if $f$ is a one to one function or an onto
+        function. \sol{}
 
-  \begin{enumerate}
-    \item Let $A = \left\{1, 2, 3\right\}$, $f: A \to A$ is defined by $f: 1 \to 1$, $2
-            \to 3$, $3 \to 2$. Determine if $f$ is a one to one function or an onto
-          function.
+        Since each element in the codomain is mapped to exactly one element in the
+        domain, $f$ is a one to one function.
 
-    \item Let $A = \left\{a, b, c, d\right\}$ and $B = \left\{x, y, z\right\}$, $f: A \to
-            B$ is defined by $f: a \to y$, $b \to x$, $c \to z$, $d \to y$. Determine if
-          $f$ is a one to one function or an onto function.
+        Since each element in the codomain is mapped to at least one element in the
+        domain, $f$ is an onto function.
 
-    \item Let the function $g: \mathbb{R} \to \mathbb{R}$ be defined by $g(x) = 2x + 1$.
-          Determine if $g$ is a one to one function or an onto function.
+        Hence, $f$ is a one to one onto function.
 
-    \item Let the function $f: \mathbb{R} \to \mathbb{R}$ be defined by $f(x) = 2x^3 -
-            3$. Determine if $f$ is a one to one function or an onto function.
+  \item Let $A = \left\{a, b, c, d\right\}$ and $B = \left\{x, y, z\right\}$, $f: A \to
+          B$ is defined by $f: a \to y$, $b \to x$, $c \to z$, $d \to y$. Determine if
+        $f$ is a one to one function or an onto function. \sol{}
 
-    \item Let the function $f: \mathbb{R}^+ \to \mathbb{R}^+$ be defined by $f(x) =
-            \dfrac{1}{x}$. Determine if $f$ is a one to one function or an onto function.
+        Since $y \in B$ is mapped to two elements $a$ and $d$ in $A$, $f$ is not a one
+        to one function.
 
-    \item Let the function $f: \mathbb{R}^+ \to \mathbb{R}^+$ be defined by $f(x) =
-            \sqrt{x}$. Determine if $f$ is a one to one function or an onto function.
+        Since each element in the codomain is mapped to at least one element in the
+        domain, $f$ is an onto function.
 
-    \item Determine whether the following functions are one to one, onto or one to one
-          onto functions.
+  \item Let the function $g: \mathbb{R} \to \mathbb{R}$ be defined by $g(x) = 2x + 1$.
+        Determine if $g$ is a one to one function or an onto function. \sol{}
+
+        Since each element in the codomain is mapped to exactly one element in the
+        domain, $g$ is a one to one function.
+
+        Since each element in the codomain is mapped to at least one element in the
+        domain, $g$ is an onto function.
+
+        Hence, $g$ is a one to one onto function.
+
+  \item Let the function $f: \mathbb{R} \to \mathbb{R}$ be defined by $f(x) = 2x^3 -
+          3$. Determine if $f$ is a one to one function or an onto function. \sol{}
+
+        Since each element in the codomain is mapped to exactly one element in the
+        domain, $f$ is a one to one function.
+
+        Since each element in the codomain is mapped to at least one element in the
+        domain, $f$ is an onto function.
+
+        Hence, $f$ is a one to one onto function. \newpage
+
+  \item Let the function $f: \mathbb{R}^+ \to \mathbb{R}^+$ be defined by $f(x) =
+          \dfrac{1}{x}$. Determine if $f$ is a one to one function or an onto function.
+        \sol{}
+
+        Since each element in the codomain is mapped to exactly one element in the
+        domain, $f$ is a one to one function.
+
+        Since each element in the codomain is mapped to at least one element in the
+        domain, $f$ is an onto function.
+
+        Hence, $f$ is a one to one onto function.
+
+  \item Let the function $f: \mathbb{R}^+ \to \mathbb{R}^+$ be defined by $f(x) =
+          \sqrt{x}$. Determine if $f$ is a one to one function or an onto function.
+        \sol{}
+
+        Since each element in the codomain is mapped to exactly one element in the
+        domain, $f$ is a one to one function.
+
+        Since each element in the codomain is mapped to at least one element in the
+        domain, $f$ is an onto function.
+
+        Hence, $f$ is a one to one onto function.
+
+  \item Determine whether the following functions are one to one, onto or one to one
+        onto functions.
+        \begin{enumerate}
+          \item $A = \left\{a, b, c\right\}$, $B = \left\{x, y, z\right\}$, $f: A \to
+                  B$, $f: a \to x$, $b \to x$, $c \to y$
+                \sol{}
+
+                Since each element in the domain is mapped to exactly one element in the
+                codomain, $f$ is a function.
+
+                Since $x \in B$ is mapped to two elements $a$ and $b$ in $A$, $f$ is not a one
+                to one function.
+
+                Since $z \in B$ has no preimage in $A$, $f$ is not an onto function.
+
+          \item $A = \left\{a, b, c\right\}$, $B = \left\{x, y, z\right\}$, $g: A \to
+                  B$, $g: a \to x$, $b \to y$, $c \to z$
+                \sol{}
+
+                Since each element in the domain is mapped to exactly one element in the
+                codomain, $g$ is a function.
+
+                Since each element in the codomain is mapped to exactly one element in the
+                domain, $g$ is a one to one function.
+
+                Since each element in the codomain has preimage in $A$, $g$ is an onto
+                function.
+
+                Hence, $g$ is a one to one onto function.
+
+                \newpage
+
+          \item $A = \left\{a, b, c\right\}$, $B = \left\{x, y\right\}$, $h: A \to
+                  B$, $h: a \to x$, $b \to y$, $c \to y$
+                \sol{}
+
+                Since each element in the domain is mapped to exactly one element in the
+                codomain, $h$ is a function.
+
+                Since $y \in B$ is mapped to two elements $b$ and $c$ in $A$, $h$ is not a one
+                to one function.
+
+                Since each element in the codomain has preimage in $A$, $h$ is an onto
+                function.
+
+          \item $A = \left\{a, b, c\right\}$, $B = \left\{x, y\right\}$, $k: A \to
+                  B$, $k: a \to x$, $a \to y$, $c \to y$
+                \sol{}
+
+                Since $b \in A$ has no image in $B$, $k$ is not a function.
+
+          \item $A = \left\{a, b, c\right\}$, $B = \left\{x, y\right\}$, $f: A \to B$, $f: a \to x$, $a \to y$, $b \to x$, $c \to y$
+                \sol{}
+
+                Since $a \in A$ has two images $x$ and $y$ in $B$, $f$ is not a function.
+
+          \item $A = \left\{a, b, c, d\right\}$, $B = \left\{u, v, x, y, z\right\}$, $g: A \to B$, $g: a \to u$, $b \to v$, $c \to x$, $d \to y$
+                \sol{}
+
+                Since each element in the domain is mapped to exactly one element in the
+                codomain, $g$ is a function.
+
+                Since each element in the codomain is mapped to at most one element in the
+                domain, $g$ is a one to one function.
+
+                Since $z \in B$ has no preimage in $A$, $g$ is not an onto function.
+        \end{enumerate}
+
+        \newpage
+
+  \item Determine whether the following functions mapping $A$ to $B$ are one to one
+        functions or onto functions.
+        \begin{multicols}{2}
           \begin{enumerate}
-            \item $A = \left\{a, b, c\right\}$, $B = \left\{x, y, z\right\}$, $f: A \to
-                    B$, $f: a \to x$, $b \to x$, $c \to y$
-            \item $A = \left\{a, b, c\right\}$, $B = \left\{x, y, z\right\}$, $g: A \to
-                    B$, $g: a \to x$, $b \to y$, $c \to z$
-            \item $A = \left\{a, b, c\right\}$, $B = \left\{x, y\right\}$, $h: A \to
-                    B$, $h: a \to x$, $b \to y$, $c \to y$
-            \item $A = \left\{a, b, c\right\}$, $B = \left\{x, y\right\}$, $k: A \to
-                    B$, $k: a \to x$, $a \to y$, $c \to y$
-            \item $A = \left\{a, b, c\right\}$, $B = \left\{x, y\right\}$, $f: A \to B$, $f: a \to x$, $a \to y$, $b \to x$, $c \to y$
-            \item $A = \left\{a, b, c, d\right\}$, $B = \left\{u, v, x, y, z\right\}$, $g: A \to B$, $g: a \to u$, $b \to v$, $c \to x$, $d \to y$
+            \item \adjustbox{valign=t}{\includegraphics[scale=0.3]{assets/func1.jpeg}}
+                  \sol{}
+
+                  Since each element in the codomain $B$ is mapped to at most one element in the
+                  domain $A$, $f$ is a one to one function.
+
+                  Since not each element in the codomain $B$ has preimage in the domain $A$, $f$
+                  (no preimage at the white dot), $f$ is not an onto function.
+
+            \item \adjustbox{valign=t}{\includegraphics[scale=0.3]{assets/func2.jpeg}}
+                  \sol{}
+
+                  Since some elements in the codomain $B$ are mapped to more than one element in
+                  the domain $A$, $f$ is not a one to one function.
+
+                  Since each element in the codomain $B$ has preimage in the domain $A$, $f$ is
+                  an onto function.
           \end{enumerate}
-
-    \item Determine whether the following functions mapping $A$ to $B$ are one to one
-          functions or onto functions.
-  \end{enumerate}
-
-\end{multicols}
+        \end{multicols}
+\end{enumerate}
 
 \newpage
 
@@ -2272,35 +4033,166 @@ If both $(g\circ f)^-1$ and $f^{-1} \circ g^{-1}$ exist, then $(g\circ f)^{-1}
 
 \subsection*{Practice 8}
 
-\subsection*{Exercise 22.5}
+\setlength{\columnseprule}{0pt}
+\setlength{\columnsep}{0cm}
 
-\setlength{\columnseprule}{1pt}
-\setlength{\columnsep}{24pt}
-
-\begin{multicols}{2}
-
-  \begin{enumerate}
-    \item Find the inverse function of the following functions:
-          \begin{enumerate}
+\begin{enumerate}
+  \item Find the inverse function of the following functions:
+        \begin{enumerate}
+          \begin{multicols}{2}
             \item $f:x \to 7x - 3$
+            \sol{}
+            \begin{flalign*}
+              \text{Let } y         & = f^{-1}(x)      \\
+              f(y)                  & = x              \\
+              7y - 3                & = x              \\
+              7y                    & = x + 3          \\
+              y                     & = \dfrac{x+3}{7} \\
+              \\
+              \therefore\ f^{-1}(x) & = \dfrac{x+3}{7}
+            \end{flalign*}
             \item $g:x \to \dfrac{1}{2}x + 9$
+            \sol{}
+            \begin{flalign*}
+              \text{Let } y         & = g^{-1}(x) \\
+              g(y)                  & = x         \\
+              \dfrac{1}{2}y + 9     & = x         \\
+              \dfrac{1}{2}y         & = x - 9     \\
+              y                     & = 2x - 18   \\
+              \\
+              \therefore\ g^{-1}(x) & = 2x - 18
+            \end{flalign*}
+          \end{multicols}
+          \newpage
+          \begin{multicols}{2}
             \item $h:x \to \dfrac{x+1}{x-8},\ x \neq 8$
+            \sol{}
+            \begin{flalign*}
+              \text{Let } y         & = h^{-1}(x)                          \\
+              h(y)                  & = x                                  \\
+              \dfrac{y+1}{y-8}      & = x                                  \\
+              y + 1                 & = x(y-8)                             \\
+              y + 1                 & = xy - 8x                            \\
+              y - xy                & = -8x - 1                            \\
+              y(1-x)                & = -8x - 1                            \\
+              y                     & = \dfrac{-8x-1}{1-x}                 \\
+                                    & = \dfrac{8x+1}{x-1} \quad (x \neq 1) \\
+              \\
+              \therefore\ h^{-1}(x) & = \dfrac{8x+1}{x-1} \quad (x \neq 1)
+            \end{flalign*}
+
             \item $k:x \to \dfrac{x-1}{2x},\ x \neq 0$
-          \end{enumerate}
-
-    \item Given the function $f: x \to 2x+1$ and $g:x \to \dfrac{1}{x-4},\ x\neq 4$.
-          Find:
-          \begin{enumerate}
+            \sol{}
+            \begin{flalign*}
+              \text{Let } y         & = k^{-1}(x)                                              \\
+              k(y)                  & = x                                                      \\
+              \dfrac{y-1}{2y}       & = x                                                      \\
+              y - 1                 & = 2xy                                                    \\
+              y - 2xy               & = 1                                                      \\
+              y(1-2x)               & = 1                                                      \\
+              y                     & = \dfrac{1}{1-2x} \quad \left(x \neq \dfrac{1}{2}\right) \\
+              \\
+              \therefore\ k^{-1}(x) & = \dfrac{1}{1-2x} \quad \left(x \neq \dfrac{1}{2}\right)
+            \end{flalign*}
+          \end{multicols}
+        \end{enumerate}
+  \item Given the function $f: x \to 2x+1$ and $g:x \to \dfrac{1}{x-4},\ x\neq 4$.
+        Find:
+        \begin{enumerate}
+          \begin{multicols}{2}
             \item $f^{-1}$
+            \sol{}
+            \begin{flalign*}
+              \text{Let } y         & = f^{-1}(x)      \\
+              f(y)                  & = x              \\
+              2y + 1                & = x              \\
+              2y                    & = x - 1          \\
+              y                     & = \dfrac{x-1}{2} \\
+              \\
+              \therefore\ f^{-1}(x) & = \dfrac{x-1}{2}
+            \end{flalign*}
+            \vspace*{\fill}
             \item $g^{-1}$
+            \sol{}
+            \begin{flalign*}
+              \text{Let } y         & = g^{-1}(x)                        \\
+              g(y)                  & = x                                \\
+              \dfrac{1}{y-4}        & = x                                \\
+              1                     & = x(y-4)                           \\
+              1                     & = xy - 4x                          \\
+              xy                    & = 4x + 1                           \\
+              y                     & = \dfrac{4x+1}{x} \quad (x \neq 0) \\
+              \\
+              \therefore\ g^{-1}(x) & = \dfrac{4x+1}{x} \quad (x \neq 0)
+            \end{flalign*}
+          \end{multicols}
+          \newpage
+          \begin{multicols}{2}
             \item $f^{-1} \circ g^{-1}$
-            \item $g^{-1} \circ f^{-1}$
-            \item $(f \circ g)^{-1}$
-            \item $(g \circ f)^{-1}$
-          \end{enumerate}
-  \end{enumerate}
+            \sol{}
+            \begin{flalign*}
+              f^{-1} \circ g^{-1} & = f^{-1}(g^{-1}(x))                  \\
+                                  & = f^{-1}\left(\dfrac{4x+1}{x}\right) \\
+                                  & = \dfrac{\dfrac{4x+1}{x}-1}{2}       \\
+                                  & = \dfrac{\dfrac{4x+1-x}{x}}{2}       \\
+                                  & = \dfrac{\dfrac{3x+1}{x}}{2}         \\
+                                  & = \dfrac{3x+1}{2x} \quad (x \neq 0)
+            \end{flalign*}
 
-\end{multicols}
+            \item $g^{-1} \circ f^{-1}$
+            \sol{}
+            \begin{flalign*}
+              g^{-1} \circ f^{-1} & = g^{-1}(f^{-1}(x))                                      \\
+                                  & = g^{-1}\left(\dfrac{x-1}{2}\right)                      \\
+                                  & = \dfrac{4\left(\dfrac{x-1}{2}\right)+1}{\dfrac{x-1}{2}} \\
+                                  & = \dfrac{2x-2+1}{\dfrac{x-1}{2}}                         \\
+                                  & = \dfrac{2x-1}{\dfrac{x-1}{2}}                           \\
+                                  & = \dfrac{4x-2}{x-1} \quad (x \neq 1)
+            \end{flalign*}
+          \end{multicols}
+          \begin{multicols}{2}
+            \item $(f \circ g)^{-1}$
+            \sol{}
+            \begin{flalign*}
+              f \circ g                       & = f(g(x))                            & \\
+                                              & = f\left(\dfrac{1}{x-4}\right)         \\
+                                              & = 2\left(\dfrac{1}{x-4}\right) + 1     \\
+                                              & = \dfrac{2+x-4}{x-4}                   \\
+                                              & = \dfrac{x-2}{x-4}                     \\
+              \\
+              \text{Let } y                   & = (f \circ g)^{-1}(x)                  \\
+              (f \circ g)(y)                  & = x                                    \\
+              \dfrac{y-2}{y-4}                & = x                                    \\
+              y - 2                           & = x(y-4)                               \\
+              y - xy                          & = -4x + 2                              \\
+              y(1-x)                          & = -4x + 2                              \\
+              y                               & = \dfrac{-4x+2}{1-x}                   \\
+                                              & = \dfrac{4x-2}{x-1} \quad (x \neq 1)   \\
+              \\
+              \therefore\ (f \circ g)^{-1}(x) & = \dfrac{4x-2}{x-1} \quad (x \neq 1)
+            \end{flalign*}
+
+            \item $(g \circ f)^{-1}$
+            \sol{}
+            \begin{flalign*}
+              g \circ f                       & = g(f(x))                           \\
+                                              & = g(2x+1)                           \\
+                                              & = \dfrac{1}{(2x+1)-4}               \\
+                                              & = \dfrac{1}{2x-3}                   \\
+              \\
+              \text{Let } y                   & = (g \circ f)^{-1}(x)               \\
+              (g \circ f)(y)                  & = x                                 \\
+              \dfrac{1}{2y-3}                 & = x                                 \\
+              1                               & = x(2y-3)                           \\
+              1                               & = 2xy - 3x                          \\
+              2xy                             & = 3x + 1                            \\
+              y                               & = \dfrac{3x+1}{2x} \quad (x \neq 0) \\
+              \\
+              \therefore\ (g \circ f)^{-1}(x) & = \dfrac{3x+1}{2x} \quad (x \neq 0)
+            \end{flalign*}
+          \end{multicols}
+        \end{enumerate}
+\end{enumerate}
 
 \subsection*{Graph of Inverse Functions}
 
