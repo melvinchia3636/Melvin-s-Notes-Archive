@@ -4204,74 +4204,539 @@ If both $(g\circ f)^-1$ and $f^{-1} \circ g^{-1}$ exist, then $(g\circ f)^{-1}
 
 Given the function $g: \mathbb{R}^+ \cup {0} \to \mathbb{R}^+ \cup {0}$, $g: x
   \to x^2$. On the same set of axes, draw the graph of the function $g$ and its
-inverse function $g^{-1}$.
+inverse function $g^{-1}$. \sol{} \setlength{\columnsep}{-2cm}
+\begin{multicols}{2}
+  \vspace*{-5cm}
+  \begin{flalign*}
+    \text{Let } y         & = g^{-1}(x)             \\
+    g(y)                  & = x                     \\
+    y^2                   & = x                     \\
+    y                     & = \pm\sqrt{x}           \\
+    \\
+    \because\ R_g         & = \mathbb{R}^+ \cup {0} \\
+    \therefore\ g^{-1}(x) & = \sqrt{x}              \\
+  \end{flalign*}
+  \begin{tikzpicture}
+    \begin{axis}[
+        unit vector ratio*=1 1 1,
+        axis lines = middle,
+        xlabel = $x$,
+        ylabel = $y$,
+        xmin = -11,
+        xmax = 11,
+        ymin = -2,
+        ymax = 11,
+        xtick = {-10,-8,...,10},
+        ytick = {-2,-8,...,10},
+        minor tick num = 1,
+        grid = both,
+        grid style = {line width=.1pt, draw=gray!50},
+        major grid style = {line width=.2pt,draw=gray!50},
+        width = 0.6\textwidth,
+      ]
+      \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+      \addplot [
+        domain=-10:10,
+        samples=100,
+        line width=1pt,
+      ]
+      {x^2};
+      \addplot [
+        domain=-10:10,
+        samples=100,
+        line width=1pt,
+      ] {sqrt(x)};
+    \end{axis}
+  \end{tikzpicture}
+\end{multicols}
 
 \subsection*{Exercise 22.6}
 
-\setlength{\columnseprule}{1pt}
-\setlength{\columnsep}{24pt}
-
-\begin{multicols}{2}
-
-  \begin{enumerate}
-    \item Find the inverse function of the following functions:
-          \begin{enumerate}
+\begin{enumerate}
+  \item Find the inverse function of the following functions:
+        \begin{enumerate}
+          \begin{multicols}{2}
             \item $f:x \to 2x - 7$
+            \sol{}
+            \begin{flalign*}
+              \text{Let } y         & = f^{-1}(x)        \\
+              f(y)                  & = x                \\
+              2y - 7                & = x                \\
+              y                     & = \dfrac{x + 7}{2} \\
+              \\
+              \therefore\ f^{-1}(x) & = \dfrac{x + 7}{2}
+            \end{flalign*}
+            \vfill{\null}
+            \columnbreak{}
+
             \item $g:x \to \dfrac{1}{x-2},\ x \neq 2$
+            \sol{}
+            \begin{flalign*}
+              \text{Let } y         & = g^{-1}(x)                          \\
+              g(y)                  & = x                                  \\
+              \dfrac{1}{y-2}        & = x                                  \\
+              x(y-2)                & = 1                                  \\
+              xy - 2x               & = 1                                  \\
+              xy                    & = 2x + 1                             \\
+              y                     & = \dfrac{2x + 1}{x} \quad (x \neq 0) \\
+              \\
+              \therefore\ g^{-1}(x) & = \dfrac{2x + 1}{x} \quad (x \neq 0)
+            \end{flalign*}
+          \end{multicols}
+          \newpage
+          \begin{multicols}{2}
             \item $h:x \to \dfrac{2x - 5}{x-2},\ x \neq 2$
+            \sol{}
+            \begin{flalign*}
+              \text{Let } y         & = h^{-1}(x)                              \\
+              h(y)                  & = x                                      \\
+              \dfrac{2y - 5}{y-2}   & = x                                      \\
+              2y - 5                & = x(y-2)                                 \\
+              2y - 5                & = xy - 2x                                \\
+              2y - xy               & = -2x + 5                                \\
+              y(2 - x)              & = -2x + 5                                \\
+              y                     & = \dfrac{-2x + 5}{2 - x}                 \\
+                                    & = \dfrac{2x - 5}{x - 2} \quad (x \neq 2) \\
+              \\
+              \therefore\ h^{-1}(x) & = \dfrac{2x - 5}{x - 2} \quad (x \neq 2)
+            \end{flalign*}
+
             \item $k:x \to \dfrac{3x}{x-4},\ x \neq 4$
-          \end{enumerate}
+            \sol{}
+            \begin{flalign*}
+              \text{Let } y         & = k^{-1}(x)                          \\
+              k(y)                  & = x                                  \\
+              \dfrac{3y}{y-4}       & = x                                  \\
+              3y                    & = x(y-4)                             \\
+              3y                    & = xy - 4x                            \\
+              3y - xy               & = -4x                                \\
+              y(3 - x)              & = -4x                                \\
+              y                     & = \dfrac{-4x}{3 - x}                 \\
+                                    & = \dfrac{4x}{x - 3} \quad (x \neq 3) \\
+              \\
+              \therefore\ k^{-1}(x) & = \dfrac{4x}{x - 3} \quad (x \neq 3)
+            \end{flalign*}
+          \end{multicols}
+        \end{enumerate}
 
-    \item Given that $f:x \to \dfrac{160}{ax + b}$, $f(5) = 8$ and $f(9) = 10$. Find
-          \begin{enumerate}
-            \item the values of $a$ and $b$;
-            \item $f^{-1}(16)$.
-          \end{enumerate}
+  \item Given that $f:x \to \dfrac{160}{ax + b}$, $f(5) = 8$ and $f(9) = 10$. Find
+        \begin{enumerate}
+          \item the values of $a$ and $b$; \sol{}
+                \begin{multicols}{2}
+                  \begin{flalign*}
+                    f(5)       & = 8                     \\
+                    8          & = \dfrac{160}{5a + b}   \\
+                    8(5a + b)  & = 160                   \\
+                    40a + 8b   & = 160                   \\
+                    5a + b     & = 20  \quad \cdots\ (1) \\
+                    \\
+                    f(9)       & = 10                    \\
+                    10         & = \dfrac{160}{9a + b}   \\
+                    10(9a + b) & = 160                   \\
+                    90a + 10b  & = 160                   \\
+                    9a + b     & = 16 \quad \cdots\ (2)  \\
+                  \end{flalign*}
 
-    \item Given that $f:x \to \dfrac{a}{x+b}$,\ $f(3) = -1$, and $f(-9) = 3$. Find
-          \begin{enumerate}
-            \item the values of $a$ and $b$;
-            \item the value of $x$ such that $f(x) = f^{-1}(x)$.
-          \end{enumerate}
+                  \begin{flalign*}
+                    (1) - (2)     & \implies 4a = -4 \\
+                    a             & = -1             \\
+                    \\
+                    5(-1) + b     & = 20             \\
+                    -5 + b        & = 20             \\
+                    b             & = 25             \\
+                    \\
+                    \therefore\ a & = -1,\ b = 25
+                  \end{flalign*}
+                \end{multicols}
 
-    \item Given the function $g:x \to \dfrac{6}{x} - 3$,\ $x \neq 0$. Find
-          \begin{enumerate}
-            \item $g^{-1}$;
-            \item the value of $x$ such that $g^{-1}(x) = x - 2$.
-          \end{enumerate}
+          \item $f^{-1}(16)$.
+                \sol{}
+                \begin{flalign*}
+                  f(x)                  & = \dfrac{160}{-x + 25}                  \\
+                  \text{Let } y         & = f^{-1}(x)                             \\
+                  f(y)                  & = x                                     \\
+                  \dfrac{160}{-y + 25}  & = x                                     \\
+                  160                   & = x(-y + 25)                            \\
+                                        & = -xy + 25x                             \\
+                  xy                    & = 25x - 160                             \\
+                  y                     & = \dfrac{25x - 160}{x} \quad (x \neq 0) \\
+                  \\
+                  \therefore\ f^{-1}(x) & = \dfrac{25x - 160}{x} \quad (x \neq 0) \\
+                  \\
+                  f^{-1}(16)            & = \dfrac{25(16) - 160}{16}              \\
+                                        & = 15
+                \end{flalign*}
+        \end{enumerate}
 
-    \item Given the function $f:x \to ax + b$ and $f^2: x \to 4x + 12$. If $a > 0$, find
-          \begin{enumerate}
-            \item the values of $a$ and $b$;
-            \item $f^{-1}(3)$.
-          \end{enumerate}
+  \item Given that $f:x \to \dfrac{a}{x+b}$,\ $f(3) = -1$, and $f(-9) = 3$. Find
+        \begin{enumerate}
+          \item the values of $a$ and $b$; \sol{} \vspace{-2.5em}
+                \begin{multicols}{2}
+                  \begin{flalign*}
+                    f(3)      & = -1                                  \\
+                    -1        & = \dfrac{a}{3 + b}                    \\
+                    -1(3 + b) & = a                                   \\
+                    -3 - b    & = a                                   \\
+                    -b        & = a + 3                               \\
+                    b         & = -a - 3 \quad \cdots\ (1)            \\
+                    \\
+                    f(-9)     & = 3                                   \\
+                    3         & = \dfrac{a}{-9 + b}                   \\
+                    -27 + 3b  & = a                                   \\
+                    3b        & = a + 27                              \\
+                    b         & = \dfrac{a + 27}{3} \quad \cdots\ (2) \\
+                  \end{flalign*}
 
-    \item Given the function $f:x \to 3x - 2$ and $g:x \to \dfrac{x}{x+4}$, $x \neq -4$.
-          Find
-          \begin{enumerate}
+                  \begin{flalign*}
+                    (1) - (2)     & \implies -\dfrac{a + 27}{3} = -a - 3 \\
+                    -a - 27       & = -3a - 9                            \\
+                    2a            & = -18                                \\
+                    a             & = -9                                 \\
+                    \\
+                    b             & = -(-9) - 3                          \\
+                                  & = 6                                  \\
+                    \\
+                    \therefore\ a & = -9,\ b = 6
+                  \end{flalign*}
+                \end{multicols}
+          \item the value of $x$ such that $f(x) = f^{-1}(x)$. \sol{}
+                \begin{multicols}{2}
+                  \begin{flalign*}
+                    f(x)              & = \dfrac{-9}{x + 6}                   \\
+                    \text{Let } y     & = f^{-1}(x)                           \\
+                    f(y)              & = x                                   \\
+                    \dfrac{-9}{y + 6} & = x                                   \\
+                    -9                & = x(y + 6)                            \\
+                    xy                & = -6x - 9                             \\
+                    y                 & = \dfrac{-6x - 9}{x} \quad (x \neq 0) \\
+                    \\
+                    \therefore\ f(x)  & = \dfrac{-6x - 9}{x} \quad (x \neq 0) \\
+                  \end{flalign*}
+
+                  \begin{flalign*}
+                    f(x)              & = f^{-1}(x)          \\
+                    \dfrac{-9}{x + 6} & = \dfrac{-6x - 9}{x} \\
+                    (-6x - 9)(x + 6)  & = -9x                \\
+                    6x^2 + 45x + 54   & = 9x                 \\
+                    6x^2 + 36x + 54   & = 0                  \\
+                    x^2 + 6x + 9      & = 0                  \\
+                    (x + 3)^2         & = 0                  \\
+                    x                 & = -3
+                  \end{flalign*}
+                \end{multicols}
+        \end{enumerate}
+
+  \item Given the function $g:x \to \dfrac{6}{x} - 3$,\ $x \neq 0$. Find
+        \begin{enumerate}
+          \item $g^{-1}$;
+                \sol{}
+                \begin{flalign*}
+                  \text{Let } y         & = g^{-1}(x)                          \\
+                  g(y)                  & = x                                  \\
+                  \dfrac{6}{y} - 3      & = x                                  \\
+                  \dfrac{6}{y}          & = x + 3                              \\
+                  6                     & = y(x + 3)                           \\
+                  y                     & = \dfrac{6}{x + 3} \quad (x \neq -3) \\
+                  \\
+                  \therefore\ g^{-1}(x) & = \dfrac{6}{x + 3} \quad (x \neq -3)
+                \end{flalign*}
+                \newpage
+
+          \item the value of $x$ such that $g^{-1}(x) = x - 2$. \sol{}
+                \begin{flalign*}
+                  g^{-1}(x)             & = x - 2           \\
+                  \dfrac{6}{x + 3}      & = x - 2           \\
+                  6                     & = (x - 2)(x + 3)  \\
+                  6                     & = x^2 + x - 6     \\
+                  x^2 + x - 12          & = 0               \\
+                  (x + 4)(x - 3)        & = 0               \\
+                  x                = -4 & \text{ or } x = 3
+                \end{flalign*}
+        \end{enumerate}
+
+  \item Given the function $f:x \to ax + b$ and $f^2: x \to 4x + 12$. If $a > 0$, find
+        \begin{enumerate}
+          \item the values of $a$ and $b$; \sol{}
+                \begin{multicols}{2}
+                  \vspace*{-4.5em}
+                  \begin{flalign*}
+                    f(x)    & = ax + b        \\
+                    f^2(x)  & = f(f(x))       \\
+                    4x + 12 & = a(ax + b) + b \\
+                    4x + 12 & = a^2x + ab + b \\
+                  \end{flalign*}
+                  \vfill\null
+                  \columnbreak
+
+                  Comparing both sides,
+                  \begin{flalign*}
+                    a^2           & = 4          \\
+                    a             & = 2\ (a > 0) \\
+                    \\
+                    2b + b        & = 12         \\
+                    3b            & = 12         \\
+                    b             & = 4          \\
+                    \\
+                    \therefore\ a & = 2,\ b = 4
+                  \end{flalign*}
+                \end{multicols}
+
+          \item $f^{-1}(3)$.
+                \sol{}
+                \vspace*{-2em}
+                \begin{multicols}{2}
+                  \begin{flalign*}
+                    f(x)          & = 2x + 4           \\
+                    \text{Let } y & = f^{-1}(x)        \\
+                    f(y)          & = x                \\
+                    2y + 4        & = x                \\
+                    2y            & = x - 4            \\
+                    y             & = \dfrac{x - 4}{2} \\
+                  \end{flalign*}
+
+                  \begin{flalign*}
+                    \therefore\ f^{-1}(x) & = \dfrac{x - 4}{2} \\
+                    f^{-1}(3)             & = \dfrac{3 - 4}{2} \\
+                                          & = -\dfrac{1}{2}
+                  \end{flalign*}
+                \end{multicols}
+        \end{enumerate}
+
+  \item Given the function $f:x \to 3x - 2$ and $g:x \to \dfrac{x}{x+4}$, $x \neq -4$.
+        Find
+        \begin{enumerate}
+          \begin{multicols}{2}
             \item $f^{-1}$
+            \sol{}
+            \begin{flalign*}
+              \text{Let } y         & = f^{-1}(x)        \\
+              f(y)                  & = x                \\
+              3y - 2                & = x                \\
+              3y                    & = x + 2            \\
+              y                     & = \dfrac{x + 2}{3} \\
+              \\
+              \therefore\ f^{-1}(x) & = \dfrac{x + 2}{3}
+            \end{flalign*}
+            \vfill\null
+            \columnbreak
+
             \item $g^{-1}$
+            \sol{}
+            \begin{flalign*}
+              \text{Let } y         & = g^{-1}(x)                          \\
+              g(y)                  & = x                                  \\
+              \dfrac{y}{y+4}        & = x                                  \\
+              y                     & = x(y + 4)                           \\
+              y                     & = xy + 4x                            \\
+              y - xy                & = 4x                                 \\
+              y(1 - x)              & = 4x                                 \\
+              y                     & = \dfrac{4x}{1 - x} \quad (x \neq 1) \\
+              \\
+              \therefore\ g^{-1}(x) & = \dfrac{4x}{1 - x} \quad (x \neq 1)
+            \end{flalign*}
+          \end{multicols}
+
+          \begin{multicols}{2}
             \item $f^{-1} \circ g^{-1}$
+            \sol{}
+            \begin{flalign*}
+              f^{-1} \circ g^{-1} & = f^{-1}(g^{-1}(x))                       \\
+                                  & = f^{-1}\left(\dfrac{4x}{1 - x}\right)    \\
+                                  & = \dfrac{\dfrac{4x}{1 - x} + 2}{3}        \\
+                                  & = \dfrac{4x + 2 - 2x}{3(1 - x)}           \\
+                                  & = \dfrac{2x + 2}{3 - 3x} \quad (x \neq 1)
+            \end{flalign*}
+            \vfill\null
+            \columnbreak
+
             \item $g^{-1} \circ f^{-1}$
-            \item $(f \circ g)^{-1}$
-            \item $(g \circ f)^{-1}$
-          \end{enumerate}
+            \sol{}
+            \begin{flalign*}
+              g^{-1} \circ f^{-1} & = g^{-1}(f^{-1}(x))                                                         \\
+                                  & = g^{-1}\left(\dfrac{x + 2}{3}\right)                                       \\
+                                  & = \dfrac{4\left(\dfrac{x + 2}{3}\right)}{1 - \left(\dfrac{x + 2}{3}\right)} \\
+                                  & = \dfrac{\dfrac{4x + 8}{3}}{\dfrac{3 - x - 2}{3}}                           \\
+                                  & = \dfrac{4x + 8}{1 - x} \quad (x \neq 1)
+            \end{flalign*}
+          \end{multicols}
 
-    \item Given the function $f: \mathbb{R} \setminus \{2\} \to \mathbb{R} \setminus
-            \{0\}$, $f:x \to \dfrac{1}{x-2}$.
-          \begin{enumerate}
-            \item Find $f^{-1}$.
-            \item On the same set of axes, draw the graph of $f$ and $f^{-1}$.
-          \end{enumerate}
+          \newpage
+          \item $(f \circ g)^{-1}$
+                \sol{}
+                \vspace{-1cm}
+                \begin{multicols}{2}
+                  \begin{flalign*}
+                    f \circ g & = f(g(x))                                \\
+                              & = f\left(\dfrac{x}{x + 4}\right)         \\
+                              & = 3\left(\dfrac{x}{x + 4}\right) - 2     \\
+                              & = \dfrac{3x}{x + 4} - 2                  \\
+                              & = \dfrac{3x - 2x - 8}{x + 4}             \\
+                              & = \dfrac{x - 8}{x + 4} \quad (x \neq -4)
+                  \end{flalign*}
 
-    \item Given the function $f:x \to 2\sqrt{x+4}$, $x \geq -4$,
-          \begin{enumerate}
-            \item Find $f^{-1}$.
-            \item On the same set of axes, draw the graph of $f$ and $f^{-1}$.
-          \end{enumerate}
-  \end{enumerate}
+                  \begin{flalign*}
+                    \text{Let } y                   & = (f \circ g)^{-1}(x)                    \\
+                    f(g(y))                         & = x                                      \\
+                    \dfrac{y - 8}{y + 4}            & = x                                      \\
+                    y - 8                           & = x(y + 4)                               \\
+                    y                               & = xy + 4x + 8                            \\
+                    y - xy                          & = 4x + 8                                 \\
+                    y(1 - x)                        & = 4x + 8                                 \\
+                    y                               & = \dfrac{4x + 8}{1 - x} \quad (x \neq 1) \\
+                    \\
+                    \therefore\ (f \circ g)^{-1}(x) & = \dfrac{4x + 8}{1 - x} \quad (x \neq 1)
+                  \end{flalign*}
+                \end{multicols}
 
-\end{multicols}
+          \item $(g \circ f)^{-1}$
+                \sol{}
+                \vspace{-1cm}
+                \begin{multicols}{2}
+                  \begin{flalign*}
+                    g \circ f & = g(f(x))                                                       \\
+                              & = g(3x - 2)                                                     \\
+                              & = \dfrac{3x - 2}{(3x - 2) + 4}                                  \\
+                              & = \dfrac{3x - 2}{3x + 2} \quad \left(x \neq \dfrac{2}{3}\right)
+                  \end{flalign*}
+
+                  \begin{flalign*}
+                    \text{Let } y                   & = (g \circ f)^{-1}(x)                     \\
+                    g(f(y))                         & = x                                       \\
+                    \dfrac{3y - 2}{3y + 2}          & = x                                       \\
+                    3y - 2                          & = x(3y + 2)                               \\
+                    3y - 2                          & = 3xy + 2x                                \\
+                    3y - 3xy                        & = 2x + 2                                  \\
+                    y(3 - 3x)                       & = 2x + 2                                  \\
+                    y                               & = \dfrac{2x + 2}{3 - 3x} \quad (x \neq 1) \\
+                    \\
+                    \therefore\ (g \circ f)^{-1}(x) & = \dfrac{2x + 2}{3 - 3x} \quad (x \neq 1)
+                  \end{flalign*}
+                \end{multicols}
+        \end{enumerate}
+
+        \newpage
+  \item Given the function $f: \mathbb{R} \setminus \{2\} \to \mathbb{R} \setminus
+          \{0\}$, $f:x \to \dfrac{1}{x-2}$.
+        \begin{enumerate}
+          \item Find $f^{-1}$. \sol{}
+                \begin{flalign*}
+                  \text{Let } y         & = f^{-1}(x)                          \\
+                  f(y)                  & = x                                  \\
+                  \dfrac{1}{y-2}        & = x                                  \\
+                  1                     & = x(y-2)                             \\
+                  1                     & = xy - 2x                            \\
+                  xy                    & = 2x + 1                             \\
+                  y                     & = \dfrac{2x + 1}{x} \quad (x \neq 0) \\
+                  \\
+                  \therefore\ f^{-1}(x) & = \dfrac{2x + 1}{x} \quad (x \neq 0)
+                \end{flalign*}
+
+          \item On the same set of axes, draw the graph of $f$ and $f^{-1}$. \sol{}
+                \begin{center}
+                  \begin{tikzpicture}
+                    \begin{axis}[
+                        unit vector ratio*=1 1 1,
+                        axis lines = middle,
+                        xlabel = $x$,
+                        ylabel = $y$,
+                        ymin = -11,
+                        ymax = 11,
+                        xmin = -11,
+                        xmax = 11,
+                        xtick = {-10, -8,...,10},
+                        ytick = {-10,-8,...,10},
+                        minor tick num = 1,
+                        grid = both,
+                        grid style = {line width=.1pt, draw=gray!50},
+                        major grid style = {line width=.2pt,draw=gray!50},
+                        width = 0.8\textwidth,
+                      ]
+                      \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+                      \addplot [
+                        thick,
+                        domain=-11:1.99,
+                        samples=100,
+                      ]
+                      {1/(x-2)};
+                      \addplot [
+                        thick,
+                        domain=2.01:11,
+                        samples=100,
+                      ]
+                      {1/(x-2)};
+                      \addplot [
+                        thick,
+                        domain=-11:-0.01,
+                        samples=100,
+                      ]
+                      {(2*x+1)/x};
+                      \addplot [
+                        thick,
+                        domain=0.01:11,
+                        samples=100,
+                      ]
+                      {(2*x+1)/x};
+                    \end{axis}
+                  \end{tikzpicture}
+                \end{center}
+        \end{enumerate}
+
+        \newpage
+  \item Given the function $f:x \to 2\sqrt{x+4}$, $x \geq -4$,
+        \begin{enumerate}
+          \item Find $f^{-1}$. \sol{}
+                \begin{flalign*}
+                  \text{Let } y         & = f^{-1}(x)           \\
+                  f(y)                  & = x                   \\
+                  2\sqrt{y+4}           & = x                   \\
+                  \sqrt{y+4}            & = \dfrac{x}{2}        \\
+                  y + 4                 & = \dfrac{x^2}{4}      \\
+                  y                     & = \dfrac{x^2}{4} - 4  \\
+                  \\
+                  \therefore\ f^{-1}(x) & = \dfrac{x^2}{4} - 4  \\
+                                        & = \dfrac{x^2 - 16}{4}
+                \end{flalign*}
+
+          \item On the same set of axes, draw the graph of $f$ and $f^{-1}$. \sol{}
+                \begin{center}
+                  \begin{tikzpicture}
+                    \begin{axis}[
+                        unit vector ratio*=1 1 1,
+                        axis lines = middle,
+                        xlabel = $x$,
+                        ylabel = $y$,
+                        ymin = -11,
+                        ymax = 11,
+                        xmin = -11,
+                        xmax = 11,
+                        xtick = {-10, -8,...,10},
+                        ytick = {-10,-8,...,10},
+                        minor tick num = 1,
+                        grid = both,
+                        grid style = {line width=.1pt, draw=gray!50},
+                        major grid style = {line width=.2pt,draw=gray!50},
+                        width = 0.8\textwidth,
+                      ]
+                      \node at (axis cs: 0,0) [anchor=north east, xshift=0.05cm] {$O$};
+                      \addplot [
+                        thick,
+                        domain=-4:11,
+                        samples=100,
+                      ]
+                      {2*sqrt(x+4)};
+                      \addplot [
+                        thick,
+                        domain=-11:11,
+                        samples=100,
+                      ]
+                      {0.25*x^2 - 4};
+                    \end{axis}
+                  \end{tikzpicture}
+                \end{center}
+        \end{enumerate}
+\end{enumerate}
+
+\newpage
 
 \section*{Revision Exercise 22}
 
