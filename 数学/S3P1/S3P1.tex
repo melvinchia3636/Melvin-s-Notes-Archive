@@ -8488,62 +8488,63 @@ on interest.”
 For example, a fund amounted to RM$p$ is deposited into a bank account with a
 yearly interest rate of $r\%$.
 \begin{flalign*}
-  \text{Principal amount} & = \text{RM} p
+    \text{Principal amount} & = \text{RM} p
 \end{flalign*}
 When $t = 1$,
 \begin{flalign*}
-  \text{Interest earned}    & = p \times r\% = \frac{pr}{100}                        \\
-  \text{Accumulated amount} & = p + \frac{pr}{100} = p\left(1 + \frac{r}{100}\right)
+    \text{Interest earned}    & = p \times r\% = \frac{pr}{100}                        \\
+    \text{Accumulated amount} & = p + \frac{pr}{100} = p\left(1 + \frac{r}{100}\right)
 \end{flalign*}
 When $t = 2$,
 \begin{flalign*}
-  \text{Interest earned}    & = \left(p + \frac{pr}{100}\right) \times r\% = \frac{pr}{100}\left(1 + \frac{r}{100}\right) \\
-  \text{Accumulated amount} & = p\left(1 + \frac{r}{100}\right) + \frac{pr}{100}\left(1 + \frac{r}{100}\right)            \\
-                            & = p\left(1 + \frac{r}{100}\right)\left(1 + \frac{r}{100}\right)                             \\
-                            & = p{\left(1 + \frac{r}{100}\right)}^{2}
+    \text{Interest earned}    & = \left(p + \frac{pr}{100}\right) \times r\% = \frac{pr}{100}\left(1 + \frac{r}{100}\right) \\
+    \text{Accumulated amount} & = p\left(1 + \frac{r}{100}\right) + \frac{pr}{100}\left(1 + \frac{r}{100}\right)            \\
+                              & = p\left(1 + \frac{r}{100}\right)\left(1 + \frac{r}{100}\right)                             \\
+                              & = p{\left(1 + \frac{r}{100}\right)}^{2}
 \end{flalign*}
 When $t = 3$,
 \begin{flalign*}
-  \text{Interest earned}    & = \left(p{\left(1 + \frac{r}{100}\right)}^{2}\right) \times r\% = \frac{pr}{100}{\left(1 + \frac{r}{100}\right)}^{2} \\
-  \text{Accumulated amount} & = p{\left(1 + \frac{r}{100}\right)}^{2} + \frac{pr}{100}{\left(1 + \frac{r}{100}\right)}^{2}                         \\
-                            & = p{\left(1 + \frac{r}{100}\right)}^{2}\left(1 + \frac{r}{100}\right)                                                \\
-                            & = p{\left(1 + \frac{r}{100}\right)}^{3}
+    \text{Interest earned}    & = \left(p{\left(1 + \frac{r}{100}\right)}^{2}\right) \times r\% = \frac{pr}{100}{\left(1 + \frac{r}{100}\right)}^{2} \\
+    \text{Accumulated amount} & = p{\left(1 + \frac{r}{100}\right)}^{2} + \frac{pr}{100}{\left(1 + \frac{r}{100}\right)}^{2}                         \\
+                              & = p{\left(1 + \frac{r}{100}\right)}^{2}\left(1 + \frac{r}{100}\right)                                                \\
+                              & = p{\left(1 + \frac{r}{100}\right)}^{3}
 \end{flalign*}
 
 In general, the accumulated amount after $t$ years is given by
 \begin{mdframed}[style=MyFrame]
-  \setlength{\abovedisplayshortskip}{0pt}
-  \setlength{\belowdisplayshortskip}{0pt}
-  \setlength{\abovedisplayskip}{0pt}
-  \setlength{\belowdisplayskip}{0pt}
-  \makeatletter
-  \setbool{@fleqn}{false}
-  \makeatother
-  \begin{flalign*}
-    A & = p{\left(1 + \frac{r}{100}\right)}^{t}
-  \end{flalign*}
-  \makeatletter
-  \setbool{@fleqn}{true}
-  \makeatother
+    \setlength{\abovedisplayshortskip}{0pt}
+    \setlength{\belowdisplayshortskip}{0pt}
+    \setlength{\abovedisplayskip}{0pt}
+    \setlength{\belowdisplayskip}{0pt}
+    \makeatletter
+    \setbool{@fleqn}{false}
+    \makeatother
+    \begin{flalign*}
+        A & = p{\left(1 + \frac{r}{100}\right)}^{t}
+    \end{flalign*}
+    \makeatletter
+    \setbool{@fleqn}{true}
+    \makeatother
 \end{mdframed}
 where $p$ is called the \textit{present value} of $A$.
 
+\newpage
 If the interest is compounded $m$ times per year, then the accumulated amount
 is given by
 \begin{mdframed}[style=MyFrame]
-  \setlength{\abovedisplayshortskip}{0pt}
-  \setlength{\belowdisplayshortskip}{0pt}
-  \setlength{\abovedisplayskip}{0pt}
-  \setlength{\belowdisplayskip}{0pt}
-  \makeatletter
-  \setbool{@fleqn}{false}
-  \makeatother
-  \begin{flalign*}
-    A & = p{\left(1 + \frac{r}{100m}\right)}^{mt}
-  \end{flalign*}
-  \makeatletter
-  \setbool{@fleqn}{true}
-  \makeatother
+    \setlength{\abovedisplayshortskip}{0pt}
+    \setlength{\belowdisplayshortskip}{0pt}
+    \setlength{\abovedisplayskip}{0pt}
+    \setlength{\belowdisplayskip}{0pt}
+    \makeatletter
+    \setbool{@fleqn}{false}
+    \makeatother
+    \begin{flalign*}
+        A & = p{\left(1 + \frac{r}{100m}\right)}^{mt}
+    \end{flalign*}
+    \makeatletter
+    \setbool{@fleqn}{true}
+    \makeatother
 \end{mdframed}
 
 \subsection*{Annuity and Present Value of Annuity}
@@ -8561,247 +8562,1393 @@ the annuities. From the formula $A = p{\left(1 + r\%\right)}^{t}$, we can know
 that the present value $p = \dfrac{A}{{\left(1 + r\%\right)}^{t}}$. If the
 yearly interest rate is $r\%$, the annuity is RM$A$, the payment is made once
 per year, then the present value of the amount paid after a year is $A(1 +
-  r\%)^{-1}$, the present value of the amount paid after two years is $A(1 +
-  r\%)^{-2}$, and so on. The present value of the amount paid after $n$ years is
+    r\%)^{-1}$, the present value of the amount paid after two years is $A(1 +
+    r\%)^{-2}$, and so on. The present value of the amount paid after $n$ years is
 $A{(1 + r\%)}^{-n}$. Hence, the sum of the present values of the amount paid
 after $n$ years is
 \begin{flalign*}
-   & \dfrac{A}{1+r\%} + \dfrac{A}{{(1+r\%)}^2} + \cdots + \dfrac{A}{{(1+r\%)}^n}                 \\
-   & = A\left[\dfrac{1}{1+r\%} + \dfrac{1}{{(1+r\%)}^2} + \cdots + \dfrac{1}{{(1+r\%)}^n}\right] \\
-   & = A\left[\dfrac{1-\dfrac{1}{{(1+r\%)}^n}}{1-\dfrac{1}{1+r\%}}\right]                        \\
-   & = \dfrac{A}{r\%}\left(1 - \dfrac{1}{{(1+r\%)}^n}\right)
+     & \dfrac{A}{1+r\%} + \dfrac{A}{{(1+r\%)}^2} + \cdots + \dfrac{A}{{(1+r\%)}^n}                 \\
+     & = A\left[\dfrac{1}{1+r\%} + \dfrac{1}{{(1+r\%)}^2} + \cdots + \dfrac{1}{{(1+r\%)}^n}\right] \\
+     & = A\left[\dfrac{1-\dfrac{1}{{(1+r\%)}^n}}{1-\dfrac{1}{1+r\%}}\right]                        \\
+     & = \dfrac{A}{r\%}\left(1 - \dfrac{1}{{(1+r\%)}^n}\right)
 \end{flalign*}
 
 Annuity that is paid indefinitely is called \textit{perpetuity}, $n \to
-  \infty$, $\dfrac{1}{{(1+r\%)}^n} \to 0$. From that, we can know that the
+    \infty$, $\dfrac{1}{{(1+r\%)}^n} \to 0$. From that, we can know that the
 present value of perpetuity is $\dfrac{A}{r\%}$.
 
-\subsection{Practice 8}
+\newpage
+\subsection*{Practice 8}
 
-\setlength{\columnseprule}{1pt}
-\setlength{\columnsep}{24pt}
-\begin{multicols}{2}
-  \begin{enumerate}
+\begin{enumerate}
     \item Given that the principal amount is RM75,000, interest rate is 4.5\%. Using
-          composite interest method, find the accumulated amount after 10 years.
+          composite interest method, find the accumulated amount after 10 years. \sol{}
+          \begin{flalign*}
+              A & = p{\left(1 + \frac{r}{100}\right)}^{t}        \\
+                & = 75000{\left(1 + \frac{4.5}{100}\right)}^{10} \\
+                & = 75000{\left(\frac{104.5}{100}\right)}^{10}   \\
+                & = 75000(1.045)^{10}                            \\
+                & = \text{RM}116,472.71
+          \end{flalign*}
+
     \item A person has deposited RM40,000 into a bank account. The bank pays 8\% interest
           per annum compounded half yearly. Using the compound interest method, find the
-          amount in the account after 3 years.
+          amount in the account after 3 years. \sol{}
+          \begin{flalign*}
+              A & = p{\left(1 + \frac{r}{100m}\right)}^{mt}                 \\
+                & = 40000{\left(1 + \frac{8}{100\times2}\right)}^{2\times3} \\
+                & = 40000{\left(\frac{208}{200}\right)}^{6}                 \\
+                & = 40000(1.04)^{6}                                         \\
+                & = \text{RM}50,612.76
+          \end{flalign*}
+
     \item Given that the interest rate is 6\%, the interest is compounded half yearly.
           Using the compound interest method, the accumulated amount after 5 years is
-          RM4031.75, find the principal amount.
+          RM4031.75, find the principal amount. \sol{}
+          \begin{flalign*}
+              A & = p{\left(1 + \frac{r}{100m}\right)}^{mt}                             \\
+              p & = \frac{A}{{\left(1 + \dfrac{r}{100m}\right)}^{mt}}                   \\
+                & = \frac{4031.75}{{\left(1 + \dfrac{6}{100\times2}\right)}^{2\times5}} \\
+                & = \frac{4031.75}{1.03^{10}}                                           \\
+                & = \text{RM}3000
+          \end{flalign*}
+
     \item Given that the interest rate is 4\%, the annuity is RM3,500, the payment is
           made once per year. The payment has since been made for 15 years continuously.
-          Find the present value. Hence, find the present value of the perpetuity.
-  \end{enumerate}
-\end{multicols}
+          Find the present value. Hence, find the present value of the perpetuity. \sol{}
+          \begin{flalign*}
+              p & = \frac{A}{r\%}\left(1 - \frac{1}{{(1+r\%)}^n}\right)       \\
+                & = \frac{3500}{4\%}\left(1 - \frac{1}{{(1+4\%)}^{15}}\right) \\
+                & = \text{RM}38,914.36
+          \end{flalign*}
+          \vspace{-2em}
+          \begin{flalign*}
+              \text{Present value of perpetuity} & = \frac{3500}{4\%} \\
+                                                 & = \text{RM}87,500
+          \end{flalign*}
+\end{enumerate}
 
-\subsection{Exercise 23.6}
+\subsection*{Exercise 23.6}
 
-\setlength{\columnseprule}{1pt}
-\setlength{\columnsep}{24pt}
-\begin{multicols}{2}
-  \begin{enumerate}
+\begin{enumerate}
     \item Given that the principal amount is RM90,000, the interest rate is 5\%.
           Compounding the interest once per year, find the accumulated amount after 10
-          years.
+          years. \sol{}
+          \begin{flalign*}
+              A & = p{\left(1 + \frac{r}{100}\right)}^{t}    \\
+                & = 90000{\left(\frac{105}{100}\right)}^{10} \\
+                & = 90000(1.05)^{10}                         \\
+                & = \text{RM}146,600.52
+          \end{flalign*}
+
     \item A person has deposited a fund into a bank account. The bank pays 8\% interest
           per annum compounded yearly. The amount in the account after 3 years has
-          increased by RM779.14. Find the amount of the fund deposited.
+          increased by RM779.14. Find the amount of the fund deposited. \sol{}
+          \begin{flalign*}
+              A - p                                   & = 779.14                     \\
+              p\left(1 + \frac{8}{100}\right)^{3} - p & = 779.14                     \\
+              p{\left(1.08\right)}^{3} - p            & = 779.14                     \\
+              p(1.08^3 - 1)                           & = 779.14                     \\
+              p                                       & = \dfrac{779.14}{1.08^3 - 1} \\
+                                                      & = \text{RM}3,000.02
+          \end{flalign*}
 
     \item RM80,000 was deposited into a financial institution. The interest rate is 8\%
           per annum compounded once per three months. Find the amount in the account
-          after 5 years.
+          after 5 years. \sol{}
+          \begin{flalign*}
+              A & = p{\left(1 + \frac{r}{100m}\right)}^{mt}                 \\
+                & = 80000{\left(1 + \frac{8}{100\times4}\right)}^{4\times5} \\
+                & = 80000{\left(\frac{408}{400}\right)}^{20}                \\
+                & = 80000(1.02)^{20}                                        \\
+                & = \text{RM}118,875.79
+          \end{flalign*}
+
     \item Prove that the accumulated amount after being compounded with an interest of
-          $5$ for 15 years will exceed twice the principal amount.
+          $5$ for 15 years will exceed twice the principal amount. \prooff{}
+          \begin{flalign*}
+              A & = p{\left(1 + \frac{r}{100}\right)}^{t}  \\
+                & = p{\left(1 + \frac{5}{100}\right)}^{15} \\
+                & = p(1.05)^{15}                           \\
+                & \approx 2.078p > 2p \qed
+          \end{flalign*}
+
     \item Given that the principal amount is RM15,000, the interest rate is 6\% being
           compounded once per year. How long does it take for the accumulated amount to
-          be more than RM30,000?
+          be more than RM300,000? \sol{}
+          \begin{flalign*}
+              A           & = p{\left(1 + \frac{r}{100}\right)}^{t}     \\
+                          & = 15000{\left(1 + \frac{6}{100}\right)}^{t} \\
+                          & = 15000(1.06)^{t} > 300000                  \\
+              1.06^t      & > 2                                         \\
+              \log 1.06^t & > \log 20                                   \\
+              t\log 1.06  & > \log 20                                   \\
+              t           & > \frac{\log 20}{\log 1.06}                 \\
+              t           & > 51.41                                     \\
+              t           & = 52 \text{ years}
+          \end{flalign*}
+
+          \newpage
     \item Given that the principal amount is RM120,000, the interest rate is 5.5\% being
           compounded half yearly. How long does it take for the accumulated amount to be
-          more than RM200,000?
-    \item A person deposited RM2,500 into his bank account at the beginning of the year,
-          the interest rate is 4.5\% compounded once per year. Find the amount in the
-          account after 15 years.
+          more than RM200,000? \sol{}
+          \begin{flalign*}
+              A             & = p{\left(1 + \frac{r}{100m}\right)}^{mt}              \\
+                            & = 120000{\left(1 + \frac{5.5}{100\times2}\right)}^{2t} \\
+                            & = 120000{\left(\frac{205.5}{200}\right)}^{2t}          \\
+                            & = 120000(1.0275)^{2t} > 200000                         \\
+              1.0275^{2t}   & > \frac{5}{3}                                          \\
+              2t\log 1.0275 & > \log \frac{5}{3}                                     \\
+              t             & > \frac{\log \frac{5}{3}}{2\log 1.0275}                \\
+              t             & >  9.41                                                \\
+              t             & = 9.5 \text{ years}
+          \end{flalign*}
+
+    \item A person deposited RM2,500 into his bank account at the beginning of every
+          year, the interest rate is 4.5\% compounded once per year. Find the amount in
+          the account after 15 years. \sol{}
+          \begin{flalign*}
+              A & = 2500\left(1 + \frac{4.5}{100}\right) + 2500\left(1 + \frac{4.5}{100}\right)^2 + \cdots + 15\cdot2500\left(1 + \frac{4.5}{100}\right)^{15} \\
+                & = 2500(1.045 + 1.045^2 + \cdot + 1.045^{15})                                                                                                \\
+                & = 1000\times\dfrac{1.045(1.045^{15} - 1)}{1.045 - 1}                                                                                        \\
+                & = \text{RM}54,298.34
+          \end{flalign*}
+
     \item If the present value is RM15,443.46, the interest rate is 5\%, find the annuity
-          if the payment is made for 10 years.
+          if the payment is made for 10 years. \sol{}
+          \begin{flalign*}
+              \text{Present value} & = \dfrac{A}{r\%}\left(1 - \frac{1}{\left(1 + r\%\right)^t}\right) \\
+              15443.46             & = \dfrac{A}{5\%}\left(1 - \frac{1}{1.05^{10}}\right)              \\
+              A                    & = \dfrac{15443.46 \times 5\%}{1 - \dfrac{1}{1.05^{10}}}           \\
+                                   & = \text{RM}2,000
+          \end{flalign*}
+
     \item Given that the annuity is RM5,000, the interest rate is 5\%, the payment is
           made once per year for 25 years. Find the present value. Hence, find the
-          present value of the perpetuity.
+          present value of the perpetuity. \sol{}
+          \begin{flalign*}
+              \text{Present value} & = \dfrac{A}{r\%}\left(1 - \frac{1}{\left(1 + r\%\right)^t}\right) \\
+                                   & = \dfrac{5000}{5\%}\left(1 - \frac{1}{1.05^{25}}\right)           \\
+                                   & = \text{RM}70,469.72
+          \end{flalign*}
+          \vspace{-2em}
+          \begin{flalign*}
+              \text{Present value of perpetuity} & = \dfrac{A}{r\%} = \dfrac{5000}{5\%} = \text{RM}100,000
+          \end{flalign*}
+
     \item Given that the annuity is RM2,500, the interest rate is 4.5\%, the payment is
           made once per year. How many years does it take for the present value to exceed
-          RM30,000?
+          RM30,000? \sol{}
+          \begin{flalign*}
+              \text{Present value}                   & = \dfrac{A}{r\%}\left(1 - \frac{1}{\left(1 + r\%\right)^t}\right) \\
+                                                     & = \dfrac{2500}{4.5\%}\left(1 - \frac{1}{1.045^t}\right) > 30000   \\
+              2500\left(1 - \frac{1}{1.045^t}\right) & > 1350                                                            \\
+              1 - \frac{1}{1.045^t}                  & > \frac{27}{50}                                                   \\
+              1.045^t                                & > \frac{50}{23}                                                   \\
+              t\log 1.045                            & > \log \frac{50}{23}                                              \\
+              t                                      & > \frac{\log \dfrac{50}{23}}{\log 1.045} \approx  17.64           \\
+              t                                      & = 18 \text{ years}
+          \end{flalign*}
+
     \item If a bank has introduced an annuity scheme, the investors can receive RM1,000
           per year for life after paying RM20,000. If the annuity plan is considered
-          approximately to be a perpetuity, find the interest rate.
-  \end{enumerate}
-\end{multicols}
+          approximately to be a perpetuity, find the interest rate. \sol{}
+          \begin{flalign*}
+              \text{Present value of perpetuity} & = \dfrac{A}{r\%} = \dfrac{1000}{r\%} = 20000 \\
+              r\%                                & = \dfrac{1000}{20000} = 5\%
+          \end{flalign*}
+\end{enumerate}
 
-\section{Revision Exercise 23}
-\setlength{\columnseprule}{1pt}
-\setlength{\columnsep}{24pt}
-\begin{multicols}{2}
-  \begin{enumerate}
+\newpage
+\section*{Revision Exercise 23}
+\begin{enumerate}
     \item Without using a calculator, find the value of the following:
           \begin{enumerate}
-            \item ${\left({\frac{1}{2}}\right)}^{2}+{\left({\frac{1}{2}}\right)}^{6}+{\left(-{\frac{1}{2}}\right)}^{-2}$
-            \item $5^{\frac{1}{2}}+5^{-{\frac{1}{2}}}-{\left(\dfrac{1}{5}\right)}^{\frac{1}{2}}+{\left(\dfrac{1}{5}\right)}^{-{\frac{1}{2}}}$
-            \item ${\left({\frac{1}{3}}\right)}^{2}\times{\left(-{\frac{1}{3}}\right)}^{2}\times{\left({\frac{1}{2}}\right)}^{-2}$
-            \item ${\sqrt{2{\sqrt[3]{3}}}}\div{\sqrt[3]{\dfrac{\sqrt{8}}{3}}}$
+              \begin{multicols}{2}
+                  \item ${\left({\dfrac{1}{2}}\right)}^{2}+{\left({\dfrac{1}{2}}\right)}^{0}+{\left(-{\dfrac{1}{2}}\right)}^{-2}$
+                  \sol{}
+                  \begin{flalign*}
+                       & {\left({\dfrac{1}{2}}\right)}^{2}+{\left({\dfrac{1}{2}}\right)}^{0}+{\left(-{\dfrac{1}{2}}\right)}^{-2} \\
+                       & = \dfrac{1}{4} + 1 + 4                                                                                  \\
+                       & = \dfrac{17}{4}
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $5^{\frac{1}{2}}+5^{-{\frac{1}{2}}}-{\left(\dfrac{1}{5}\right)}^{\frac{1}{2}}+{\left(\dfrac{1}{5}\right)}^{-{\frac{1}{2}}}$
+                  \sol{}
+                  \begin{flalign*}
+                       & 5^{\frac{1}{2}}+5^{-{\frac{1}{2}}}-{\left(\dfrac{1}{5}\right)}^{\frac{1}{2}}+{\left(\dfrac{1}{5}\right)}^{-{\frac{1}{2}}} \\
+                       & = \sqrt{5} + \dfrac{1}{\sqrt{5}} - \sqrt{\dfrac{1}{5}} + \dfrac{1}{\sqrt{\dfrac{1}{5}}}                                   \\
+                       & = \sqrt{5} + \dfrac{1}{\sqrt{5}} - \dfrac{1}{\sqrt{5}} + \sqrt{5}                                                         \\
+                       & = 2\sqrt{5}
+                  \end{flalign*}
+              \end{multicols}
+
+              \begin{multicols}{2}
+                  \item ${\left({\dfrac{1}{3}}\right)}^{-2}\times{\left(-{\dfrac{1}{3}}\right)}^{2}\times{\left({\frac{1}{2}}\right)}^{-2}$
+                  \sol{}
+                  \begin{flalign*}
+                       & {\left({\dfrac{1}{3}}\right)}^{-2}\times{\left(-{\dfrac{1}{3}}\right)}^{2}\times{\left({\dfrac{1}{2}}\right)}^{-2} \\
+                       & = 9 \times \dfrac{1}{9} \times 4                                                                                   \\
+                       & = 4
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item ${\sqrt{2{\sqrt[3]{3}}}}\div{\sqrt[3]{\dfrac{\sqrt{8}}{3}}}$
+                  \sol{}
+                  \begin{flalign*}
+                      {\sqrt{2{\sqrt[3]{3}}}}\div{\sqrt[3]{\dfrac{\sqrt{8}}{3}}} & = {\sqrt{2{\sqrt[3]{3}}}}\times{\sqrt[3]{\dfrac{3}{\sqrt{8}}}}                \\
+                                                                                 & = \sqrt{2}\sqrt[6]{3}\times{\dfrac{\sqrt[3]{3}}{\sqrt[6]{8}}}                 \\
+                                                                                 & = 2^\frac{1}{2} \cdot 3^\frac{1}{6}\cdot 3^\frac{1}{3} \cdot 2^{-\frac{1}{2}} \\
+                                                                                 & = 3^{\left(\frac{1}{6}+\frac{1}{3}\right)}                                    \\
+                                                                                 & = 3^\frac{1}{2}                                                               \\
+                                                                                 & = \sqrt{3}
+                  \end{flalign*}
+              \end{multicols}
           \end{enumerate}
 
+          \newpage
     \item Simplify the following expressions:
           \begin{enumerate}
-            \item ${\left({\dfrac{b}{2a^{2}}}\right)}^{3}\div{\left({\dfrac{2b^{2}}{3a}}\right)}^{0}\times{\left(-{\dfrac{b}{a}}\right)}^{-3}$
-            \item $\dfrac{3^{n+2}-2\times3^{n}}{5(3^{n+1})}$
-            \item $\dfrac{\left(x^{-1}+y^{-1}\right)\left(x^{-1}-y^{-1}\right)}{x^{-2}y^{-2}}$
-            \item $\left({x^{\frac{1}{4}}}-y^{-{\frac{1}{4}}}\right)\left(x^{\frac{1}{2}}+y^{-{\frac{1}{2}}}\right)\left(x^{\frac{1}{4}}+y^{-{\frac{1}{4}}}\right)$
-            \item $\frac{{\left({\sqrt[4]{p^{3}}}\right)}^{\frac{1}{6}}{\sqrt[9]{p^{-3}}}}{{\left(\sqrt{p^{-7}}\right)}^{\frac{1}{6}}}$
-            \item $\dfrac{{\left(a^{2}+a^{-2}+2\right)}^{2}}{{\left(a^{2}+1\right)}^{4}}$
+              \begin{multicols}{2}
+                  \item ${\left({\dfrac{b}{2a^{2}}}\right)}^{3}\div{\left({\dfrac{2b^{2}}{3a}}\right)}^{0}\times{\left(-{\dfrac{b}{a}}\right)}^{-3}$
+                  \sol{}
+                  \begin{flalign*}
+                       & {\left({\dfrac{b}{2a^{2}}}\right)}^{3}\div{\left({\dfrac{2b^{2}}{3a}}\right)}^{0}\times{\left(-{\dfrac{b}{a}}\right)}^{-3}   \\
+                       & = \dfrac{b^3}{8a^{6}}\times\left({-\dfrac{a^3}{b^3}}\right)                                                                & \\
+                       & = -\dfrac{1}{8a^3}
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $\dfrac{3^{n+2}-2\times3^{n}}{5(3^{n+1})}$
+                  \sol{}
+                  \begin{flalign*}
+                      \dfrac{3^{n+2}-2\times3^{n}}{5(3^{n+1})} & = \dfrac{3^n \cdot 9 - 2 \cdot 3^n}{3^n \cdot 15} & \\
+                                                               & = \dfrac{7\cdot 3^n}{15 \cdot 3^n}                  \\
+                                                               & = \dfrac{7}{15}
+                  \end{flalign*}
+              \end{multicols}
+
+              \item $\dfrac{\left(x^{-1}+y^{-1}\right)\left(x^{-1}-y^{-1}\right)}{x^{-2}y^{-2}}$
+                    \sol{}
+                    \begin{flalign*}
+                        \dfrac{\left(x^{-1}+y^{-1}\right)\left(x^{-1}-y^{-1}\right)}{x^{-2}y^{-2}} & = \dfrac{x^{-2}-y^{-2}}{x^{-2}y^{-2}}              \\
+                                                                                                   & = x^2y^2\left(\dfrac{1}{x^2}-\dfrac{1}{y^2}\right) \\
+                                                                                                   & = y^2-x^2
+                    \end{flalign*}
+
+              \item $\left({x^{\frac{1}{4}}}-y^{-{\frac{1}{4}}}\right)\left(x^{\frac{1}{2}}+y^{-{\frac{1}{2}}}\right)\left(x^{\frac{1}{4}}+y^{-{\frac{1}{4}}}\right)$
+                    \sol{}
+                    \begin{flalign*}
+                        \left({x^{\frac{1}{4}}}-y^{-{\frac{1}{4}}}\right)\left(x^{\frac{1}{2}}+y^{-{\frac{1}{2}}}\right)\left(x^{\frac{1}{4}}+y^{-{\frac{1}{4}}}\right) & = \left(x^\frac{1}{4} - \dfrac{1}{y^\frac{1}{4}}\right)\left(x^{\frac{1}{2}}+\dfrac{1}{y^{\frac{1}{2}}}\right)\left(x^{\frac{1}{4}}+\dfrac{1}{y^\frac{1}{4}}\right)                                            \\
+                                                                                                                                                                        & = \left(\dfrac{x^\frac{1}{4}y^\frac{1}{4} - 1}{y^\frac{1}{4}}\right)\left(\dfrac{x^{\frac{1}{2}}y^{\frac{1}{2}} + 1}{y^{\frac{1}{2}}}\right)\left(\dfrac{x^{\frac{1}{4}}y^\frac{1}{4}+1}{y^\frac{1}{4}}\right) \\
+                                                                                                                                                                        & = \dfrac{(x^\frac{1}{4}y^\frac{1}{4} - 1)(x^{\frac{1}{2}}y^{\frac{1}{2}} + 1)(x^{\frac{1}{4}}y^{\frac{1}{4}} + 1)}{y^\frac{1}{4}y^{\frac{1}{2}}y^\frac{1}{4}}                                                  \\
+                                                                                                                                                                        & = \dfrac{(x^\frac{1}{2}y^\frac{1}{2} - 1)(x^{\frac{1}{2}}y^\frac{1}{2} + 1)}{y^\frac{1}{2}y^\frac{1}{2}}                                                                                                       \\
+                                                                                                                                                                        & = \dfrac{xy - 1}{y}                                                                                                                                                                                            \\
+                    \end{flalign*}
+
+                    \newpage
+                    \begin{multicols}{2}
+                        \item $\dfrac{{\left({\sqrt[4]{p^{3}}}\right)}^{\frac{1}{6}}{\sqrt[9]{p^{-3}}}}{{\left(\sqrt{p^{-7}}\right)}^{\frac{1}{6}}}$
+                        \sol{}
+                        \begin{flalign*}
+                            \dfrac{{\left({\sqrt[4]{p^{3}}}\right)}^{\frac{1}{6}}{\sqrt[9]{p^{-3}}}}{{\left(\sqrt{p^{-7}}\right)}^{\frac{1}{6}}} & = \dfrac{p^\frac{1}{8}p^{-\frac{1}{3}}}{p^{-\frac{7}{12}}} \\
+                                                                                                                                                 & = p^{\frac{1}{8} - \frac{1}{3} + \frac{7}{12}}             \\
+                                                                                                                                                 & = p^{\frac{3}{8}}
+                        \end{flalign*}
+                        \vfill\null{}
+                        \columnbreak{}
+                        \item $\dfrac{{\left(a^{2}+a^{-2}+2\right)}^{2}}{{\left(a^{2}+1\right)}^{4}}$
+                        \sol{}
+                        \begin{flalign*}
+                            \dfrac{{\left(a^{2}+a^{-2}+2\right)}^{2}}{{\left(a^{2}+1\right)}^{4}} & = \dfrac{{\left(a^2 + \dfrac{1}{a^2} + 2\right)}^2}{{(a^2 + 1)}^4}    \\
+                                                                                                  & = \dfrac{{\left(\dfrac{a^4 + 2a^2 + 1}{a^2}\right)}^2}{{(a^2 + 1)}^4} \\
+                                                                                                  & = \dfrac{\dfrac{(a^2 + 1)^4}{a^4}}{{(a^2 + 1)}^4}                     \\
+                                                                                                  & = \dfrac{1}{a^4}
+                        \end{flalign*}
+                    \end{multicols}
           \end{enumerate}
 
     \item Without using a calculator, compare the value of the following:
           \begin{enumerate}
-            \item $2.3^{-2}$ and $2.3^{-1}$
-            \item $0.15^{-{\frac{1}{2}}}$ and ${0.15}^{-{\frac{1}{3}}}$
-            \item ${\left({\dfrac{1}{3}}\right)}^{\frac{2}{5}}$ and $ 3^{-{\frac{5}{3}}}$
-            \item ${\left({\dfrac{3}{5}}\right)}^{2}$ and ${\left({\dfrac{5}{3}}\right)}^{3.1}$
+              \begin{multicols}{2}
+                  \item $2.3^{-2}$ and $2.3^{-1}$
+                  \sol{}
+                  \begin{flalign*}
+                      \because   & \ 2.3 > 1,\ y = 2.3^x\ \text{is an increasing}   & \\
+                                 & \ \text{function in interval } (-\infty, \infty)   \\
+                      \because   & \ -2 < -1,                                         \\
+                      \therefore & \ 2.3^{-2} < 2.3^{-1}
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $0.15^{-{\frac{1}{2}}}$ and ${0.15}^{-{\frac{1}{3}}}$
+                  \sol{}
+                  \begin{flalign*}
+                      \because   & \ 0.15 < 0,\ y = 0.15^x\ \text{is a decreasing}  & \\
+                                 & \ \text{function in interval } (-\infty, \infty)   \\
+                      \because   & \ -\dfrac{1}{2} < -\dfrac{1}{3},                   \\
+                      \therefore & \ 0.15^{-\frac{1}{2}} > 0.15^{-\frac{1}{3}}
+                  \end{flalign*}
+              \end{multicols}
+
+              \begin{multicols}{2}
+                  \item ${\left({\dfrac{1}{3}}\right)}^{\frac{2}{5}}$ and $ 3^{-{\frac{5}{3}}}$
+                  \sol{}
+                  \begin{flalign*}
+                                 & \left(\dfrac{1}{3}\right)^{\frac{2}{5}} = 3^{-\frac{2}{5}}   & \\
+                      \because   & \ 3 > 1,\ y = 3^x\ \text{is an increasing}                     \\
+                                 & \ \text{function in interval } (-\infty, \infty)               \\
+                      \because   & \ -\dfrac{2}{5} > -\dfrac{5}{3},                               \\
+                                 & \ 3^{-\frac{2}{5}} > 3^{-\frac{5}{3}}                          \\
+                      \therefore & \ \left(\dfrac{1}{3}\right)^{\frac{2}{5}} > 3^{-\frac{5}{3}}
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item ${\left({\dfrac{3}{5}}\right)}^{-2}$ and ${\left({\dfrac{5}{3}}\right)}^{3.1}$
+                  \sol{}
+                  \begin{flalign*}
+                                 & \left(\dfrac{3}{5}\right)^{-2} = \left(\dfrac{5}{3}\right)^{2}        \\
+                      \because   & \ 3 > 1,\ y = 3^x\ \text{is an increasing}                            \\
+                                 & \ \text{function in interval } (-\infty, \infty)                    & \\
+                      \because   & \ 2  < 3.1,                                                           \\
+                                 & \ \left(\dfrac{5}{3}\right)^{2} < \left(\dfrac{5}{3}\right)^{-3.1}    \\
+                      \therefore & \ \left(\dfrac{3}{5}\right)^{-2} < \left(\dfrac{5}{3}\right)^{-3.1}
+                  \end{flalign*}
+              \end{multicols}
           \end{enumerate}
 
     \item Without using a calculator, compare the value of the following:
           \begin{enumerate}
-            \item $\log_{3.2}3$ and $\log_{3.2}2$
-            \item $\log_{0.5}5.3$ and $\log_{0.5}3.5$
-            \item $\log_{3}2$ and $\log_{2}3$
-            \item $\log_{2}2.3$ and $\log_{4}4.8$
+              \begin{multicols}{2}
+                  \item $\log_{3.2}3$ and $\log_{3.2}2$
+                  \sol{}
+                  \begin{flalign*}
+                      \because   & \ 3.2 > 1,\ y = 3.2^x\ \text{is an increasing} & \\
+                                 & \ \text{function in interval } (0, +\infty)      \\
+                      \because   & \ 3 > 2,                                         \\
+                      \therefore & \ \log_{3.2}3 > \log_{3.2}2
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $\log_{0.5}5.3$ and $\log_{0.5}3.5$
+                  \sol{}
+                  \begin{flalign*}
+                      \because   & \ 0.5 < 1,\ y = 0.5^x\ \text{is a decreasing} & \\
+                                 & \ \text{function in interval } (-\infty, 0)     \\
+                      \because   & \ 5.3 > 3.5,                                    \\
+                      \therefore & \ \log_{0.5}5.3 < \log_{0.5}3.5
+                  \end{flalign*}
+              \end{multicols}
+
+              \begin{multicols}{2}
+                  \item $\log_{3}2$ and $\log_{2}3$
+                  \sol{}
+                  \begin{flalign*}
+                      \because   & \ \log_3 2 < 1,\ \log_2 3 > 1 & \\
+                      \therefore & \ \log_3 2 < \log_2 3
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $\log_{2}2.3$ and $\log_{4}4.8$
+                  \sol{}
+                  \begin{flalign*}
+                      \log_4 4.8 & = \dfrac{\log_2 4.8}{2}  & \\
+                                 & = \dfrac{1}{2}\log_2 4.8   \\
+                                 & = \log_2 \sqrt{4.8}
+                  \end{flalign*}
+                  \vspace{-1.5cm}
+                  \begin{flalign*}
+                      \because   & \ 2 > 1,\ y = 2^x\ \text{is an increasing} & \\
+                                 & \text{function in interval } (0, +\infty)    \\
+                      \because   & \ 2.3 > \sqrt{4.8},                          \\
+                      \therefore & \ \log_{2}2.3 > \log_{4}4.8
+                  \end{flalign*}
+              \end{multicols}
           \end{enumerate}
 
     \item Find the domain of the following functions:
           \begin{enumerate}
-            \item $y=\log_{0.5}\left(16-x^{2}\right)$
-            \item $y=\log_{2}\left(2x^{2}-5x-12\right)$
-            \item $y=\sqrt{3-3^{x}}$
-            \item $y=\log_{2}{(x-3)}^{2}$
-            \item $y=\log_{5}\left(x^{2}-2x\right)$
-            \item $y=\log_{3}{\dfrac{2}{3-x}}$
-            \item $y=\dfrac{1}{\log(x+1)-1}$
-            \item $y=\dfrac{\log_3\left(2-x\right)}{\log_3\left(2+x\right)}$
-            \item $y=\sqrt{\log_{3}(x-2)}$
-            \item $y={\dfrac{2}{\sqrt{1-\log x}}}$
+              \begin{multicols}{2}
+                  \item $y=\log_{0.5}\left(16-x^{2}\right)$
+                  \sol{}
+                  \begin{flalign*}
+                      16 - x^2 & > 0       \\
+                      x^2      & < 16      \\
+                      -4 <\    & x < 4     \\
+                      \\
+                      D_y      & = (-4, 4)
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $y=\log_{2}\left(2x^{2}-5x-12\right)$
+                  \sol{}
+                  \begin{flalign*}
+                      2x^2 - 5x - 12  & > 0                                          \\
+                      (2x + 3)(x - 4) & > 0                                          \\
+                      x               & < -\dfrac{3}{2} \text{ or } x > 4            \\
+                      \\
+                      D_y             & = (-\infty, -\dfrac{3}{2}) \cup (4, +\infty)
+                  \end{flalign*}
+              \end{multicols}
+
+              \newpage
+              \begin{multicols}{2}
+                  \item $y=\sqrt{3-3^{x}}$
+                  \sol{}
+                  \begin{flalign*}
+                      3 - 3^x & \geq 0         \\
+                      3^x     & \leq 3         \\
+                      x       & \leq 1         \\
+                      \\
+                      D_y     & = (-\infty, 1]
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $y=\log_{2}{(x-3)}^{2}$
+                  \sol{}
+                  \begin{flalign*}
+                      (x - 3)^2           & > 0                          \\
+                      x \in \mathbb{R},\  & \neq 3                       \\
+                      \\
+                      D_y                 & = \mathbb{R} \setminus \{3\}
+                  \end{flalign*}
+              \end{multicols}
+
+              \begin{multicols}{2}
+                  \item $y=\log_{5}\left(x^{2}-2x\right)$
+                  \sol{}
+                  \begin{flalign*}
+                      x^2 - 2x                   & > 0                              \\
+                      x(x - 2)                   & > 0                              \\
+                      x        < 0 \text{ or } x & > 2                              \\
+                      \\
+                      D_y                        & = (-\infty, 0) \cup (2, +\infty)
+                  \end{flalign*}
+                  \vfill\null{}
+                  \item $y=\log_{3}{\dfrac{2}{3-x}}$
+                  \sol{}
+                  \begin{flalign*}
+                      3 - x                                 & \geq 0                  \\
+                      x                                     & \leq 3 \quad \cdots (1) \\
+                      \dfrac{2}{3 - x}                      & > 0                     \\
+                      x                                     & < 3 \quad \cdots (2)    \\
+                      \text{From } (1) \text{ and } (2),\ x & < 3                     \\
+                      \\
+                      D_y                                   & = (-\infty, 3)
+                  \end{flalign*}
+              \end{multicols}
+
+              \begin{multicols}{2}
+                  \item $y=\dfrac{1}{\log(x+1)-1}$
+                  \sol{}
+                  \begin{flalign*}
+                      \log(x + 1) - 1                       & \neq 0                          & \\
+                      \log(x + 1)                           & \neq 1                            \\
+                      x + 1                                 & \neq 10                           \\
+                      x                                     & \neq 9 \quad \cdots (1)           \\
+                      x + 1                                 & > 0                               \\
+                      x                                     & > -1  \quad \cdots (2)            \\
+                      \text{From } (1) \text{ and } (2),\ x & > -1,\ x \neq 9                   \\
+                      \\
+                      D_y                                   & = (-1, +\infty) \setminus \{9\}
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $y=\dfrac{\log_3\left(2-x\right)}{\log_3\left(2+x\right)}$
+                  \sol{}
+                  \begin{flalign*}
+                      2 - x                 & > 0                        \\
+                      x                     & < 2 \quad \cdots (1)       \\
+                      2 + x                 & > 0                        \\
+                      x                     & > -2 \quad \cdots (2)      \\
+                      \log_3(2 + x)         & \neq 0                     \\
+                      2 + x                 & \neq 1                     \\
+                      x                     & \neq -1 \quad \cdots (3)   \\
+                      \text{From } (1), (2) & \text{ and } (3),          \\
+                      -2 < x                & < 2,\ x \neq -1            \\
+                      \\
+                      D_y                   & = (-2, 2) \setminus \{-1\}
+                  \end{flalign*}
+              \end{multicols}
+
+              \begin{multicols}{2}
+                  \item $y=\sqrt{\log_{3}(x-2)}$
+                  \sol{}
+                  \begin{flalign*}
+                      \log_3(x - 2)                         & \geq 0                  \\
+                      x - 2                                 & \geq 1                  \\
+                      x                                     & \geq 3 \quad \cdots (1) \\
+                      x-2                                   & > 0                     \\
+                      x                                     & > 2 \quad \cdots (2)    \\
+                      \text{From } (1) \text{ and } (2),\ x & \geq 3                  \\
+                      \\
+                      D_y                                   & = [3, +\infty)
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $y={\dfrac{2}{\sqrt{1-\log x}}}$
+                  \sol{}
+                  \begin{flalign*}
+                      1 - \log x                                & > 0                   \\
+                      \log x                                    & < 1                   \\
+                      x                                         & < 10 \quad \cdots (1) \\
+                      x > 0                                     & \quad \cdots (2)      \\
+                      \text{From } (1) \text{ and } (2),\ 0 < x & < 10                  \\
+                      \\
+                      D_y                                       & = (0, 10)
+                  \end{flalign*}
+              \end{multicols}
           \end{enumerate}
 
     \item Simplify the following expressions:
           \begin{enumerate}
-            \item $\log_{3}27^{x}$
-            \item $\log_{x}b^{a\log_{b}x}$
-            \item $\log_{5}\left(25^{x}\cdot5^{y}\right)$
-            \item $3^{2\log_{3}x - \log_{3}y}$
-            \item $5^{-2\log_{25}x}$
+              \begin{multicols}{2}
+                  \item $\log_{3}27^{x}$
+                  \sol{}
+                  \begin{flalign*}
+                      \log_{3}27^{x} & = x\log_{3}27 \\
+                                     & = 3x
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $\log_{x}b^{a\log_{b}x}$
+                  \sol{}
+                  \begin{flalign*}
+                      \log_{x}b^{a\log_{b}x} & = \log_{x}x^{a} \\
+                                             & = a
+                  \end{flalign*}
+              \end{multicols}
+              \vspace{-1cm}
+              \begin{multicols}{2}
+                  \item $\log_{5}\left(25^{x}\cdot5^{y}\right)$
+                  \sol{}
+                  \begin{flalign*}
+                      \log_{5}\left(25^{x}\cdot5^{y}\right) & = \log_{5}25^{x} + \log_{5}5^{y} \\
+                                                            & = x\log_{5}25 + y\log_{5}5       \\
+                                                            & = 2x + y
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $3^{2\log_{3}x - \log_{3}y}$
+                  \sol{}
+                  \begin{flalign*}
+                      3^{2\log_{3}x - \log_{3}y} & = 3^{\log_{3}x^{2} - \log_{3}y} \\
+                                                 & = 3^{\log_{3}\dfrac{x^{2}}{y}}  \\
+                                                 & = \dfrac{x^{2}}{y}
+                  \end{flalign*}
+              \end{multicols}
+              \vspace{-1cm}
+              \item $5^{-2\log_{25}x}$
+                    \sol{}
+                    \begin{flalign*}
+                        5^{-2\log_{25}x} & = 5^{\log_{25}x^{-2}} \\
+                                         & = 5^{\log_{5}x^{-1}}  \\
+                                         & = x^{-1}              \\
+                                         & = \dfrac{1}{x}
+                    \end{flalign*}
           \end{enumerate}
 
-    \item If $\log_2 5 = p$, express $\log_2 100$ in terms of $p$.
+          \newpage
+    \item If $\log_2 5 = p$, express $\log_2 100$ in terms of $p$. \sol{}
+          \begin{flalign*}
+              \log_2 100 & = \log_2 (5^2 \cdot 4)  \\
+                         & = \log_2 5^2 + \log_2 4 \\
+                         & = 2\log_2 5 + 2         \\
+                         & = 2p + 2
+          \end{flalign*}
+
     \item If $\log_3 12 = a$, express the following in terms of $a$:
           \begin{enumerate}
-            \item $\log_3 24$
-            \item $\log_9 36$
+              \begin{multicols}{2}
+                  \item $\log_3 24$
+                  \sol{}
+                  \begin{flalign*}
+                      \log_3 12             & = a                    \\
+                      \log_3 2^2 \cdot 3    & = a                    \\
+                      \log_3 2^2 + \log_3 3 & = a                    \\
+                      2\log_3 2 + 1         & = a                    \\
+                      \log_3 2              & = \dfrac{a-1}{2}       \\
+                      \\
+                      \log_3 24             & = \log_3 (12 \cdot 2)  \\
+                                            & = \log_3 12 + \log_3 2 \\
+                                            & = a + \log_3 2         \\
+                                            & = a + \dfrac{a-1}{2}   \\
+                                            & = \dfrac{3a-1}{2}
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $\log_9 36$
+                  \sol{}
+                  \begin{flalign*}
+                      \log_9 36 & = \dfrac{\log_3 (12 \cdot 3)}{\log_3 9} \\
+                                & = \dfrac{\log_3 12 + \log_3 3}{2}       \\
+                                & = \dfrac{a + 1}{2}
+                  \end{flalign*}
+              \end{multicols}
           \end{enumerate}
 
+          \vspace{-1cm}
     \item Without using a calculator, find the value of the following:
           \begin{enumerate}
-            \item $\log_{c}{\frac{1}{5}}+\log_{c}5$
-            \item $\log_{2}\left(2{\sqrt{2}}\right)-2\log_{2}{\sqrt{2}}$
-            \item $\log_8{\dfrac{2}{7}}-\log_{8}{(-2)}^{2}-\log_{8}{\dfrac{1}{7}}$
-            \item $\log{\dfrac{5}{32}}-2\log{\dfrac{5}{6}}+\log{\dfrac{40}{9}}$
-            \item ${\big(}\log_{2}3{\big)}{\big(}\log_{3}4{\big)}$
-            \item $\dfrac{\log_{16}5}{\log_{32}5}$
-            \item $\log_{3}5\cdot\log_{5}7\cdot\log_{7}27$
-            \item $\log_{2}{\dfrac{1}{9}}\cdot\log_{3}{\dfrac{1}{25}}\cdot\log_{5}\sqrt8$
-            \item $\dfrac{1}{3}\log_{2}8+\log_{3}27-\dfrac{1}{4}\log_{4}16$
-            \item $\log^{2}2+\log2\cdot\log5+\log5$
-            \item $2\log_{3}15+3\log_{3}12-\log_{3}25-6\log_{3}2$
-            \item ${\dfrac{\log{\sqrt{27}}+\log{\sqrt{8}}-\log{\sqrt{125}}}{\log6-\log5}}$
-            \item \resizebox{15.5em}{!}{$\log_{8}\left(\log_{2}{\sqrt{8+4{\sqrt{3}}}}+\log_{2}{\sqrt{8-4\sqrt{3}}}\right)$}
+              \begin{multicols}{2}
+                  \item $\log_{c}{\dfrac{1}{5}}+\log_{c}5$
+                  \sol{}
+                  \begin{flalign*}
+                      \log_{c}{\dfrac{1}{5}}+\log_{c}5 & =\log_{c}{\dfrac{1}{5}\times5} & \\
+                                                       & =\log_{c}1                     & \\
+                                                       & =0
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $\log_{2}\left(2{\sqrt{2}}\right)-2\log_{2}{\sqrt{2}}$
+                  \sol{}
+                  \begin{flalign*}
+                       & \log_{2}\left(2{\sqrt{2}}\right)-2\log_{2}{\sqrt{2}}   \\
+                       & =\log_{2}\left(2{\sqrt{2}}\right)-\log_{2}2          & \\
+                       & =\log_{2}\left(\dfrac{2{\sqrt{2}}}{2}\right)         & \\
+                       & =\frac{1}{2}
+                  \end{flalign*}
+              \end{multicols}
+
+              \begin{multicols}{2}
+                  \item $\log_8{\dfrac{2}{7}}-\log_{8}{(-2)}^{2}-\log_{8}{\dfrac{1}{7}}$
+                  \sol{}
+                  \begin{flalign*}
+                       & \log_8{\dfrac{2}{7}}-\log_{8}{(-2)}^{2}-\log_{8}{\dfrac{1}{7}}   \\
+                       & =\log_8{\dfrac{2}{7}}-\log_{8}4-\log_{8}{\dfrac{1}{7}}         & \\
+                       & =\log_8{\left(\dfrac{2}{7}\times\dfrac{1}{4}\times7\right)}    & \\
+                       & =\log_8\dfrac{1}{2}                                            & \\
+                       & =-\log_8{2}                                                    & \\
+                       & =-\dfrac{1}{3}
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $\log{\dfrac{5}{32}}-2\log{\dfrac{5}{6}}+\log{\dfrac{40}{9}}$
+                  \sol{}
+                  \begin{flalign*}
+                       & \log{\dfrac{5}{32}}-2\log{\dfrac{5}{6}}+\log{\dfrac{40}{9}}                      \\
+                       & =\log{\dfrac{5}{32}}-\log{{\left(\dfrac{5}{6}\right)}^{2}}+\log{\dfrac{40}{9}} & \\
+                       & =\log{\dfrac{5}{32}}-\log{\dfrac{25}{36}}+\log{\dfrac{40}{9}}                  & \\
+                       & =\log{\left(\dfrac{5}{32}\times\dfrac{36}{25}\times\dfrac{40}{9}\right)}       & \\
+                       & =\log1                                                                           \\
+                       & =0
+                  \end{flalign*}
+              \end{multicols}
+
+              \begin{multicols}{2}
+                  \item ${\big(}\log_{2}3{\big)}{\big(}\log_{3}4{\big)}$
+                  \sol{}
+                  \begin{flalign*}
+                      {\big(}\log_{2}3{\big)}{\big(}\log_{3}4{\big)} & =\log_2 3 \cdot \dfrac{\log_2 4}{\log_2 3}     & \\
+                                                                     & =\dfrac{1}{\log_3 2} \cdot \dfrac{2}{\log_2 3} & \\
+                                                                     & =2
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $\dfrac{\log_{16}5}{\log_{32}5}$
+                  \sol{}
+                  \begin{flalign*}
+                      \dfrac{\log_{5}32}{\log_{5}16} & = \dfrac{\log_{5}2^5}{\log_{5}2^4} & \\
+                                                     & = \dfrac{5\log_{5}2}{4\log_{5}2}     \\
+                                                     & = \dfrac{5}{4}
+                  \end{flalign*}
+              \end{multicols}
+
+              \begin{multicols}{2}
+                  \item $\log_{3}5\cdot\log_{5}7\cdot\log_{7}27$
+                  \sol{}
+                  \begin{flalign*}
+                       & \log_{3}5\cdot\dfrac{\log_{3}7}{\log_{3}5}\cdot\dfrac{\log_{3}27}{\log_{3}7}     \\
+                       & = \log_{3}5\cdot\dfrac{\log_{3}7}{\log_{3}5}\cdot\dfrac{3\log_{3}3}{\log_{3}7} & \\
+                       & = 3\log_{3}3                                                                     \\
+                       & = 3
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $\log_{2}{\dfrac{1}{9}}\cdot\log_{3}{\dfrac{1}{25}}\cdot\log_{5}\sqrt8$
+                  \sol{}
+                  \begin{flalign*}
+                       & \log_{2}{\dfrac{1}{9}}\cdot\log_{3}{\dfrac{1}{25}}\cdot\log_{5}\sqrt8                                                          \\
+                       & = \dfrac{\log_3 \dfrac{1}{9}}{\log_3 2} \cdot \dfrac{\log_3 \dfrac{1}{25}}{\log_3 3} \cdot \dfrac{\log_3 \sqrt{8}}{\log_3 5} & \\
+                       & = \dfrac{-2\log_3 3}{\log_3 2} \cdot \dfrac{-2\log_3 5}{1} \cdot \dfrac{\dfrac{3}{2}\log_3 2}{\log_3 5}                      & \\
+                       & = -2 \cdot (-2) \cdot \dfrac{3}{2}                                                                                           & \\
+                       & = 6
+                  \end{flalign*}
+              \end{multicols}
+
+              \newpage
+              \begin{multicols}{2}
+                  \item $\dfrac{1}{3}\log_{2}8+\log_{3}27-\dfrac{1}{4}\log_{4}16$
+                  \sol{}
+                  \begin{flalign*}
+                       & \dfrac{1}{3}\log_{2}8+\log_{3}27-\dfrac{1}{4}\log_{4}16   \\
+                       & = \dfrac{1}{3}\cdot 3 + 3 - \dfrac{1}{4}\cdot 2         & \\
+                       & = 1 + 3 - \dfrac{1}{2}                                  & \\
+                       & = \dfrac{7}{2}
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $\log^{2}2+\log2\cdot\log5+\log5$
+                  \sol{}
+                  \begin{flalign*}
+                       & \log^{2}2+\log2\cdot\log5+\log5    & \\
+                       & = \log2\log2+\log2\cdot\log5+\log5   \\
+                       & = \log2(\log2+\log5)+\log5           \\
+                       & = \log2\log10+\log5                  \\
+                       & = \log2+\log5                        \\
+                       & = \log10                             \\
+                       & = 1
+                  \end{flalign*}
+              \end{multicols}
+
+              \begin{multicols}{2}
+                  \item $2\log_{3}15+3\log_{3}12-\log_{3}25-6\log_{3}2$
+                  \sol{}
+                  \begin{flalign*}
+                       & 2\log_{3}15+3\log_{3}12-\log_{3}25-6\log_{3}2                                 \\
+                       & = \log_3 15^2 + \log_3 12^3 - \log_3 25 - \log_3 2^6                        & \\
+                       & = \log_3 \dfrac{15^2 \cdot 12^3}{5^2 \cdot 2^6}                             & \\
+                       & = \log_3 \dfrac{3^2 \cdot 5^2 \cdot 2^3 \cdot 3^3 \cdot 2^3}{5^2 \cdot 2^6} & \\
+                       & = \log_3 3^5                                                                  \\
+                       & = 5
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item ${\dfrac{\log{\sqrt{27}}+\log{\sqrt{8}}-\log{\sqrt{125}}}{\log6-\log5}}$
+                  \sol{}
+                  \begin{flalign*}
+                       & {\dfrac{\log{\sqrt{27}}+\log{\sqrt{8}}-\log{\sqrt{125}}}{\log6-\log5}}            \\
+                       & = {\dfrac{\dfrac{1}{2}\left(\log{27}+\log{8}-\log{125}\right)}{\log\dfrac{6}{5}}} \\
+                       & = {\dfrac{\dfrac{3}{2}\left(\log{3}+\log{2}-\log{5}\right)}{\log\dfrac{6}{5}}}    \\
+                       & = {\dfrac{\dfrac{3}{2}\left(\log\dfrac{6}{5}\right)}{\log\dfrac{6}{5}}}           \\
+                       & = \dfrac{3}{2}
+                  \end{flalign*}
+              \end{multicols}
+
+              \item $\log_{8}\left(\log_{2}{\sqrt{8+4{\sqrt{3}}}}+\log_{2}{\sqrt{8-4\sqrt{3}}}\right)$
+                    \sol{}
+                    \begin{flalign*}
+                        \log_{8}\left(\log_{2}{\sqrt{8+4{\sqrt{3}}}}+\log_{2}{\sqrt{8-4\sqrt{3}}}\right) & = \log_{8}\left(\log_{2}{\sqrt{8+2{\sqrt{12}}}}+\log_{2}{\sqrt{8-2\sqrt{12}}}\right)                         & \\
+                                                                                                         & = \log_{8}\left[\log_{2}{\left(\sqrt{6} + \sqrt{2}\right)}+\log_{2}{\left(\sqrt{6} - \sqrt{2}\right)}\right]   \\
+                                                                                                         & = \log_{8}\log_{2}\left[{\left(\sqrt{6} + \sqrt{2}\right)\left(\sqrt{6} - \sqrt{2}\right)}\right]              \\
+                                                                                                         & = \log_{8}\log_{2}(6-2)                                                                                        \\
+                                                                                                         & = \log_{8}2                                                                                                    \\
+                                                                                                         & = \dfrac{1}{3}
+                    \end{flalign*}
           \end{enumerate}
 
-    \item If $\log_3 2 = a$, $\log_2 5 = b$, prove that $\log_5 3 = \dfrac{1}{a(b+1)}$.
-    \item If $\log_2 3 = p$, $\log_3 7 = q$, prove that $\log_21 14 =
-            \dfrac{pq+1}{p(q+1)}$.
+    \item If $\log_3 2 = a$, $\log_2 5 = b$, prove that $\log 3 = \dfrac{1}{a(b+1)}$.
+          \prooff{}
+          \begin{flalign*}
+              \log 3 & = \dfrac{\log_2 3}{\log_2 10}                      & \\
+                     & = \dfrac{\dfrac{1}{\log_3 2}}{\log_2 5 + \log_2 2} & \\
+                     & = \dfrac{\dfrac{1}{a}}{b + 1}                      & \\
+                     & = \dfrac{1}{a} \cdot \dfrac{1}{b + 1}              & \\
+                     & = \dfrac{1}{a(b + 1)} \qed
+          \end{flalign*}
+
+    \item If $\log_2 3 = p$, $\log_3 7 = q$, prove that $\log_{21} 14 =
+              \dfrac{pq+1}{p(q+1)}$. \prooff{}
+          \begin{flalign*}
+              \log_{21} 14 & = \dfrac{\log_3 14}{\log_3 21}                     \\
+                           & = \dfrac{\log_3 2 + \log_3 7}{\log_3 3 + \log_3 7} \\
+                           & = \dfrac{\dfrac{1}{\log_2 3} + q}{1 + q}           \\
+                           & = \dfrac{\dfrac{1}{p} + q}{1 + q}                  \\
+                           & = \dfrac{1 + pq}{p} \cdot \dfrac{1}{1 + q}         \\
+                           & = \dfrac{pq + 1}{p(q + 1)} \qed
+          \end{flalign*}
+
     \item Given that $2\log_5(x+y) = 1 + \log_5 x + \log_5 y$. Prove that $x^2 + y^2 =
-            3xy$.
+              3xy$. \prooff{}
+          \begin{flalign*}
+              2\log_5(x+y)    & = 1 + \log_5 x + \log_5 y \\
+              \log_5(x+y)^2   & = \log_5 5xy              \\
+              (x+y)^2         & = 5xy                     \\
+              x^2 + y^2 + 2xy & = 5xy                     \\
+              x^2 + y^2       & = 3xy \qed
+          \end{flalign*}
+
     \item Given that $x = 5^k$ and $y = 5^n$. Express the following in terms of $k$ and
-          $n$:
+          $n$: \sol{}
+          \begin{flalign*}
+              x & = 5^k      \\
+              k & = \log_5 x \\
+              \\
+              y & = 5^n      \\
+              n & = \log_5 y \\
+          \end{flalign*}
           \begin{enumerate}
-            \item $\log_{5}{\dfrac{xy^3}{125}}$
-            \item $\log_{25}\left(5{\sqrt{xy}}\right)$
+              \item $\log_{5}{\dfrac{xy^3}{125}}$
+                    \sol{}
+                    \begin{flalign*}
+                        \log_{5}{\dfrac{xy^3}{125}} & = \log_{5}{\dfrac{5^k \cdot 5^{3n}}{125}} \\
+                                                    & = \log_{5}x + \log_{5}y^3 - \log_{5}125   \\
+                                                    & = k + 3n - 3
+                    \end{flalign*}
+
+              \item $\log_{25}\left(5{\sqrt{xy}}\right)$
+                    \sol{}
+                    \begin{flalign*}
+                        \log_{25}\left(5{\sqrt{xy}}\right) & = \log_{25}5 + \log_{25}\sqrt{xy}                           \\
+                                                           & = \log_{25}5 + \dfrac{1}{2}\log_{25}xy                      \\
+                                                           & = \dfrac{1}{2} + \dfrac{1}{2}\dfrac{\log_5 x + \log_5 y}{2} \\
+                                                           & = \dfrac{1}{2} + \dfrac{1}{4}(k + n)                        \\
+                                                           & = \dfrac{k + n + 2}{4}
+                    \end{flalign*}
           \end{enumerate}
 
-    \item Given that $2 + \log_4 y = 2\log_16 x$. Express $x$ in terms of $y$.
+    \item Given that $2 + \log_4 y = 2\log_{16} x$. Express $y$ in terms of $x$. \sol{}
+          \begin{flalign*}
+              2 + \log_4 y & = 2\log_{16} x                           \\
+              \log_4 y     & = 2\cdot \dfrac{\log_4 x}{\log_4 16} - 2 \\
+                           & = \log_4 x - 2                           \\
+                           & = \log_4 \dfrac{x}{16}                   \\
+              y            & = \dfrac{x}{16}
+          \end{flalign*}
 
     \item Solve the following exponential equations:
           \begin{enumerate}
-            \item $3^{3x-2}=243$
-            \item $4^{1-x}={\left({\dfrac{1}{8}}\right)}^{2}$
-            \item $2^{x^{2}}={\left(2^{x}\right)}^{2}$
-            \item $3^{5^x}=3$
-            \item $5^{8^x}=625$
-            \item $3^{x+1}=6^{x}$
-            \item $7^{x}-7^{x-1}=6$
-            \item $3^{x+1}=10\left(3^x\right)-3$
-            \item $2^{2x+1}=3\left(2^{x}\right)-1$
-            \item $5^{2x+1}=26\left(5^{x}\right)-5$
-            \item $2^{2x+3}-2^{x}=1-2^{x+3}$
-            \item $2^{2x+8}-32\left(2^{x}\right)+1=0$
+              \begin{multicols}{2}
+                  \item $3^{3x-2}=243$
+                  \sol{}
+                  \begin{flalign*}
+                      3^{3x-2}      & =243          \\
+                      \log 3^{3x-2} & =\log 3^5     \\
+                      (3x-2)\log 3  & = 5\log 3     \\
+                      3x-2          & =5            \\
+                      3x            & =7            \\
+                      x             & =\dfrac{7}{3}
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $4^{1-x}={\left({\dfrac{1}{8}}\right)}^{2x}$
+                  \sol{}
+                  \begin{flalign*}
+                      4^{1-x}       & ={\left({\dfrac{1}{8}}\right)}^{2x}      \\
+                      \log 4^{1-x}  & =\log {\left({\dfrac{1}{8}}\right)}^{2x} \\
+                      (1-x)\log 2^2 & =2x\log 2^{-3}                           \\
+                      2-2x          & =-6x                                     \\
+                      -4x           & =2                                       \\
+                      x             & =-\dfrac{1}{2}
+                  \end{flalign*}
+              \end{multicols}
+
+              \begin{multicols}{2}
+                  \item $2^{x^{2}}={\left(2^{x}\right)}^{2}$
+                  \sol{}
+                  \begin{flalign*}
+                      2^{x^{2}}     & ={\left(2^{x}\right)}^{2} \\
+                      x^{2}         & =2x                       \\
+                      x^{2}-2x      & =0                        \\
+                      x(x-2)        & =0                        \\
+                      x         = 0 & \text{ or } x = 2
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $3^{5^x}=3$
+                  \sol{}
+                  \begin{flalign*}
+                      3^{5^x}      & =3      \\
+                      \log 3^{5^x} & =\log 3 \\
+                      5^x\log 3    & =\log 3 \\
+                      5^x          & =1      \\
+                      \log 5^x     & =\log 1 \\
+                      x\log 5      & =0      \\
+                      x            & =0
+                  \end{flalign*}
+              \end{multicols}
+
+              \begin{multicols}{2}
+                  \item $5^{8^x}=625$
+                  \sol{}
+                  \begin{flalign*}
+                      5^{8^x}      & =625                        \\
+                      \log 5^{8^x} & =\log 625                   \\
+                      8^x\log 5    & =\log 5^4                   \\
+                      8^x          & =4                        & \\
+                      x\log 8      & =\log 4                     \\
+                      x            & =\dfrac{\log 4}{\log 8}     \\
+                                   & =\dfrac{2\log 2}{3\log 2}   \\
+                                   & =\dfrac{2}{3}
+                  \end{flalign*}
+                  \item $3^{x+1}=6^{x}$
+                  \sol{}
+                  \begin{flalign*}
+                      3^{x+1}            & =6^{x}                                \\
+                      \log 3^{x+1}       & =\log 6^{x}                         & \\
+                      (x+1)\log 3        & =x\log 6                              \\
+                      x\log 3+\log 3     & =x\log 6                              \\
+                      x(\log 3-\log 6)   & =-\log 3                              \\
+                      x\log \dfrac{1}{2} & =-\log 3                              \\
+                      x                  & =\dfrac{-\log 3}{\log \dfrac{1}{2}}   \\
+                                         & \approx 1.5850
+                  \end{flalign*}
+              \end{multicols}
+
+              \newpage
+              \begin{multicols}{2}
+                  \item $7^{x}-7^{x-1}=6$
+                  \sol{}
+                  \begin{flalign*}
+                      7^{x}-7^{x-1}        & = 6        \\
+                      7^x - \dfrac{7^x}{7} & = 6        \\
+                      \text{Let } y        & = 7^x      \\
+                      y - \dfrac{y}{7}     & = 6      & \\
+                      7y - y               & = 42       \\
+                      6y                   & = 42       \\
+                      y                    & = 7        \\
+                      7^x                  & = 7        \\
+                      \log 7^x             & = \log 7   \\
+                      x\log 7              & = \log 7   \\
+                      x                    & = 1
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $3^{x+1}=10\left(3^x\right)-3$
+                  \sol{}
+                  \begin{flalign*}
+                      3^{2x+1}           & = 10\left(3^x\right)-3   \\
+                      3^{2x} \cdot 3     & = 10\left(3^x\right)-3   \\
+                      \text{Let } y      & = 3^x                    \\
+                      3y^2               & = 10y - 3                \\
+                      3y^2               & - 10y + 3 = 0            \\
+                      (3y - 1)(y - 3)    & = 0                      \\
+                      y = \dfrac{1}{3}   & \text{ or } y = 3        \\
+                      \\
+                      \text{When } y     & = \dfrac{1}{3},          \\
+                      3^x                & = \dfrac{1}{3}           \\
+                      \log 3^x           & = \log 3^{-1}            \\
+                      x\log 3            & = -\log 3                \\
+                      x                  & = -1                   & \\
+                      \\
+                      \text{When } y     & = 3,                     \\
+                      3^x                & = 3                      \\
+                      \log 3^x           & = \log 3                 \\
+                      x\log 3            & = \log 3                 \\
+                      x                  & = 1                      \\
+                      \\
+                      \therefore\ x = -1 & \text{ or } x = 1
+                  \end{flalign*}
+              \end{multicols}
+
+              \newpage
+              \begin{multicols}{2}
+                  \item $2^{2x+1}=3\left(2^{x}\right)-1$
+                  \sol{}
+                  \begin{flalign*}
+                      2^{2x+1}           & = 3\left(2^x\right)-1   \\
+                      2^{2x} \cdot 2     & = 3\left(2^x\right)-1   \\
+                      \text{Let } y      & = 2^x                   \\
+                      2y^2               & = 3y - 1                \\
+                      2y^2               & - 3y + 1 = 0            \\
+                      (2y - 1)(y - 1)    & = 0                     \\
+                      y = \dfrac{1}{2}   & \text{ or } y = 1       \\
+                      \\
+                      \text{When } y     & = \dfrac{1}{2},       & \\
+                      2^x                & = \dfrac{1}{2}          \\
+                      \log 2^x           & = \log 2^{-1}           \\
+                      x\log 2            & = -\log 2               \\
+                      x                  & = -1                    \\
+                      \\
+                      \text{When } y     & = 1,                    \\
+                      2^x                & = 1                     \\
+                      \log 2^x           & = \log 1                \\
+                      x\log 2            & = 0                     \\
+                      x                  & = 0                     \\
+                      \\
+                      \therefore\ x = -1 & \text{ or } x = 0
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $5^{2x+1}=26\left(5^{x}\right)-5$
+                  \sol{}
+                  \begin{flalign*}
+                      5^{2x+1}           & = 26\left(5^x\right)-5   \\
+                      5^{2x} \cdot 5     & = 26\left(5^x\right)-5   \\
+                      \text{Let } y      & = 5^x                    \\
+                      5y^2               & = 26y - 5                \\
+                      5y^2               & - 26y + 5 = 0            \\
+                      (5y - 1)(y - 5)    & = 0                      \\
+                      y = \dfrac{1}{5}   & \text{ or } y = 5        \\
+                      \\
+                      \text{When } y     & = \dfrac{1}{5},        & \\
+                      5^x                & = \dfrac{1}{5}           \\
+                      \log 5^x           & = \log 5^{-1}            \\
+                      x\log 5            & = -\log 5                \\
+                      x                  & = -1                     \\
+                      \\
+                      \text{When } y     & = 5,                     \\
+                      5^x                & = 5                      \\
+                      \log 5^x           & = \log 5                 \\
+                      x\log 5            & = \log 5                 \\
+                      x                  & = 1                      \\
+                      \\
+                      \therefore\ x = -1 & \text{ or } x = 1
+                  \end{flalign*}
+              \end{multicols}
+
+              \newpage
+              \begin{multicols}{2}
+                  \item $2^{2x+3}-2^{x}=1-2^{x+3}$
+                  \sol{}
+                  \begin{flalign*}
+                      2^{2x+3}-2^{x}       & = 1-2^{x+3}                       \\
+                      2^{2x} \cdot 8 - 2^x & = 1 - 2^x \cdot 8                 \\
+                      \text{Let } y        & = 2^x                             \\
+                      8y^2 - y             & = 1 - 8y                          \\
+                      8y^2 + 7y - 1        & = 0                               \\
+                      (8y - 1)(y + 1)      & = 0                               \\
+                      y = \dfrac{1}{8}     & \text{ or } y = -1                \\
+                      \\
+                      \text{When } y       & = \dfrac{1}{8},                 & \\
+                      2^x                  & = \dfrac{1}{8}                    \\
+                      \log 2^x             & = \log 2^{-3}                     \\
+                      x                    & = -3                              \\
+                      \\
+                      \text{When } y       & = -1,                             \\
+                      2^x                  & = -1                              \\
+                      \because\ 2^x        & > 0, \text{ no solution for } x   \\
+                      \\
+                      \therefore\ x        & = -3
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $2^{2x+8}-32\left(2^{x}\right)+1=0$
+                  \sol{}
+                  \begin{flalign*}
+                      2^{2x+8}-32\left(2^{x}\right)+1     & = 0                \\
+                      2^{2x} \cdot 256 - 32 \cdot 2^x + 1 & = 0                \\
+                      \text{Let } y                       & = 2^x              \\
+                      256y^2 - 32y + 1                    & = 0              & \\
+                      {(16y - 1)}^2                       & = 0                \\
+                      y                                   & = \dfrac{1}{16}    \\
+                      \\
+                      \text{When } y                      & = \dfrac{1}{16},   \\
+                      2^x                                 & = \dfrac{1}{16}    \\
+                      \log 2^x                            & = \log 2^{-4}      \\
+                      x                                   & = -4
+                  \end{flalign*}
+              \end{multicols}
           \end{enumerate}
 
-    \item If $\log_2 x + \log_4 x = \dfrac{9}{2}$, find the value of $x$.
-    \item Solve the following logarithmic equations:
+    \item If $\log_2 x + \log_4 x = \dfrac{9}{2}$, find the value of $x$. \sol{}
+          \begin{flalign*}
+              \log_2 x + \log_4 x             & = \dfrac{9}{2} \\
+              \log_2 x + \dfrac{1}{2}\log_2 x & = \dfrac{9}{2} \\
+              \dfrac{3}{2}\log_2 x            & = \dfrac{9}{2} \\
+              \log_2 x                        & = 3            \\
+              x                               & = 2^3          \\
+                                              & = 8
+          \end{flalign*}
+
+          \newpage
+    \item Solve the following logarithmic equations: \setlength{\columnsep}{2em}
           \begin{enumerate}
-            \item $2\log x-3\log4=2$
-            \item $2\log x=\log32+\log2$
-            \item $\log x+\log\left(x+3\right)=\log\left(x+8\right)$
-            \item ${\left(\log_{2}x\right)}^{2}=\log_{2}x+6$
-            \item $\log_{3}x+6\log_{x}3=5$
-            \item $4^{\log x}=2^{\log x+1}$
-            \item $\log_{x+1}\left(x^{2}-5x-13\right)=2$
-            \item $\log_{r}{\sqrt{2x^{2}-5x+6}}=1$
-            \item $\log_{2}(x+1)+\log_{2}(x+3)=3+\log_{2}x$
-            \item $\log_{2}\left[\log_{3}\left(\log_{5}x\right)\right]=0$
-            \item $3\log_{s}x-2\log_{2}x+2=0$
-            \item $\log_{4}(x+4)+1=\log_{2}(x+1)$
-            \item $2\log_{2}x\cdot\log_{8}x=\log_{2}x+\log_{8}x$
+              \begin{multicols}{2}
+                  \item $2\log x-3\log4=2$
+                  \sol{}
+                  \begin{flalign*}
+                      2\log x - 3\log 4 & = 2                    \\
+                      \log x^2          & = \log 4^3 + \log 100  \\
+                      \log x^2          & = \log (4^3 \cdot 100) \\
+                      x^2               & = 6400                 \\
+                      x                 & = \pm 80
+                  \end{flalign*}
+                  After checking, $x = 80$ is the only solution, while $x = -80$ is an extraneous solution.
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $2\log x=\log32+\log2$
+                  \sol{}
+                  \begin{flalign*}
+                      2\log x  & = \log 32 + \log 2  \\
+                      \log x^2 & = \log (32 \cdot 2) \\
+                      x^2      & = 64                \\
+                      x        & = \pm 8
+                  \end{flalign*}
+                  After checking, $x = 8$ is the only solution, while $x = -8$ is an extraneous solution.
+              \end{multicols}
+
+              \begin{multicols}{2}
+                  \item $\log x+\log\left(x+3\right)=\log\left(x+8\right)$
+                  \sol{}
+                  \begin{flalign*}
+                      \log x + \log (x + 3)        & = \log (x + 8)    \\
+                      \log \dfrac{x(x + 3)}{x + 8} & = 0               \\
+                      \dfrac{x(x + 3)}{x + 8}      & = 1               \\
+                      x^2 + 3x                     & = x + 8           \\
+                      x^2 + 2x - 8                 & = 0               \\
+                      (x + 4)(x - 2)               & = 0               \\
+                      x = -4                       & \text{ or } x = 2
+                  \end{flalign*}
+                  After checking, $x = 2$ is the only solution, while $x = -4$ is an extraneous solution.
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item ${\left(\log_{2}x\right)}^{2}=\log_{2}x+6$
+                  \sol{}
+                  \begin{flalign*}
+                      \text{Let } y  & = \log_2 x           \\
+                      y^2            & = y + 6              \\
+                      y^2 - y - 6    & = 0                  \\
+                      (y - 3)(y + 2) & = 0                  \\
+                      y = 3          & \text{ or } y = -2   \\
+                      \\
+                      \text{When } y & = 3,                 \\
+                      \log_2 x       & = 3                  \\
+                      x              & = 2^3              & \\
+                                     & = 8                  \\
+                      \\
+                      \text{When } y & = -2,                \\
+                      \log_2 x       & = -2                 \\
+                      x              & = 2^{-2}             \\
+                                     & = \dfrac{1}{4}
+                  \end{flalign*}
+                  After checking, $x = 8$ and $x = \dfrac{1}{4}$ are both solutions.
+              \end{multicols}
+
+              \newpage
+              \begin{multicols}{2}
+                  \item $\log_{3}x+6\log_{x}3=5$
+                  \sol{}
+                  \begin{flalign*}
+                      \log_3 x + 6\dfrac{1}{\log_3 x} & = 5                 \\
+                      \text{Let } y                   & = \log_3 x          \\
+                      y + \dfrac{6}{y}                & = 5                 \\
+                      y^2 - 5y + 6                    & = 0               & \\
+                      (y - 2)(y - 3)                  & = 0                 \\
+                      y = 2                           & \text{ or } y = 3   \\
+                      \\
+                      \text{When } y                  & = 2,                \\
+                      \log_3 x                        & = 2                 \\
+                      x                               & = 3^2               \\
+                                                      & = 9                 \\
+                      \\
+                      \text{When } y                  & = 3,                \\
+                      \log_3 x                        & = 3                 \\
+                      x                               & = 3^3               \\
+                                                      & = 27
+                  \end{flalign*}
+                  After checking, $x = 9$ and $x = 27$ are both solutions.
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $4^{\log x}=2^{\log x+1}$
+                  \sol{}
+                  \begin{flalign*}
+                      4^{\log x}                    & = 2^{\log x + 1}         & \\
+                      \log 4^{\log x}               & = \log 2^{\log x + 1}      \\
+                      \log x \log 4                 & = (\log x + 1) \log 2      \\
+                      \log x \log 4                 & = \log x \log 2 + \log 2   \\
+                      \log x \log 4 - \log x \log 2 & = \log 2                   \\
+                      \log x (\log 4 - \log 2)      & = \log 2                   \\
+                      \log x \log 2                 & = \log 2                   \\
+                      \log x                        & = 1                        \\
+                      x                             & = 10
+                  \end{flalign*}
+              \end{multicols}
+
+              \begin{multicols}{2}
+                  \item $\log_{x+1}\left(x^{2}-5x-13\right)=2$
+                  \sol{}
+                  \begin{flalign*}
+                      \log_{x + 1} (x^2 - 5x - 13) & = 2            \\
+                      x^2 - 5x - 13                & = (x + 1)^2    \\
+                      x^2 - 5x - 13                & = x^2 + 2x + 1 \\
+                      -7x                          & = 14           \\
+                      x                            & = -2
+                  \end{flalign*}
+                  After checking, $x = -2$ not a solution. Hence, no solution.
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $\log_{x}{\sqrt{2x^{2}-5x+6}}=1$
+                  \sol{}
+                  \begin{flalign*}
+                      \log_x \sqrt{2x^2 - 5x + 6} & = 1               \\
+                      \sqrt{2x^2 - 5x + 6}        & = x               \\
+                      2x^2 - 5x + 6               & = x^2             \\
+                      x^2 - 5x + 6                & = 0               \\
+                      (x - 2)(x - 3)              & = 0               \\
+                      x = 2                       & \text{ or } x = 3
+                  \end{flalign*}
+                  After checking, $x = 2$ and $x = 3$ are both solutions.
+              \end{multicols}
+
+              \begin{multicols}{2}
+                  \item $\log_{2}(x+1)+\log_{2}(x+3)=3+\log_{2}x$
+                  \sol{}
+                  \begin{flalign*}
+                      \log_2 (x + 1) + \log_2 (x + 3) & = 3 + \log_2 x        \\
+                      \log_2 (x + 1)(x + 3)           & = \log_2 8 + \log_2 x \\
+                      \log_2 (x^2 + 4x + 3)           & = \log_2 8x           \\
+                      x^2 + 4x + 3                    & = 8x                  \\
+                      x^2 - 4x + 3                    & = 0                   \\
+                      (x - 1)(x - 3)                  & = 0                   \\
+                      x = 1                           & \text{ or } x = 3
+                  \end{flalign*}
+                  After checking, $x = 1$ and $x = 3$ are both solutions.
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $\log_{2}\left[\log_{3}\left(\log_{5}x\right)\right]=0$
+                  \sol{}
+                  \begin{flalign*}
+                      \log_2 \left[ \log_3 \left( \log_5 x \right) \right] & = 0   \\
+                      \log_3 \left( \log_5 x \right)                       & = 1   \\
+                      \log_5 x                                             & = 3   \\
+                      x                                                    & = 5^3 \\
+                                                                           & = 125
+                  \end{flalign*}
+              \end{multicols}
+
+              \begin{multicols}{2}
+                  \item $3\log_{8}x-2\log_{2}x+2=0$
+                  \sol{}
+                  \begin{flalign*}
+                      3\log_8 x - 2 \log_2 x + 2                    & = 0     \\
+                      \dfrac{3 \log_2 x}{\log_2 8} - 2 \log_2 x + 2 & = 0     \\
+                      \text{Let } u = \log_2 x                      &         \\
+                      \dfrac{3u}{3} - 2u + 2                        & = 0     \\
+                      u - 2u + 2                                    & = 0   & \\
+                      u                                             & = 2     \\
+                      \\
+                      \log_2 x                                      & = 2     \\
+                      x                                             & = 2^2   \\
+                                                                    & = 4
+                  \end{flalign*}
+                  \vfill\null{}
+                  \columnbreak{}
+                  \item $\log_{4}(x+4)+1=\log_{2}(x+1)$
+                  \sol{}
+                  \begin{flalign*}
+                      \log_4 (x + 4) + 1               & = \log_2 (x + 1)                  \\
+                      \dfrac{\log_2 (x + 4)}{\log_2 4} & = \log_2 (x + 1) + 1              \\
+                      \log_2 (x + 4)                   & = \log_2 {(x + 1)}^2 - \log_2 4 & \\
+                                                       & = \log_2 \dfrac{{(x + 1)}^2}{4}   \\
+                      x + 4                            & = \dfrac{{(x + 1)}^2}{4}          \\
+                      4x + 16                          & = {(x + 1)}^2                     \\
+                      4x + 16                          & = x^2 + 2x + 1                    \\
+                      x^2 - 2x - 15                    & = 0                               \\
+                      (x - 5)(x + 3)                   & = 0                               \\
+                      x                                & = 5 \text{ or } x = -3
+                  \end{flalign*}
+                  After checking, $x = 5$ is the only solution.
+              \end{multicols}
+
+              \newpage
+              \item $2\log_{2}x\cdot\log_{8}x=\log_{2}x+\log_{8}x$
+                    \sol{}
+                    \begin{flalign*}
+                        2 \log_2 x \cdot \log_8 x                       & = \log_2 x + \log_8 x                     \\
+                        2 \log_2 x \cdot \dfrac{\log_2 x}{\log_2 8}     & = \log_2 x + \dfrac{\log_2 x}{\log_2 8}   \\
+                        2 \log_2 x \cdot \dfrac{\log_2 x}{3}            & = \log_2 x + \dfrac{\log_2 x}{3}          \\
+                        \text{Let } u = \log_2 x                        &                                         & \\
+                        2u \cdot \dfrac{u}{3}                           & = u + \dfrac{u}{3}                        \\
+                        \dfrac{2u^2}{3}                                 & = \dfrac{4u}{3}                           \\
+                        2u^2                                            & = 4u                                      \\
+                        u^2 - 2u                                        & = 0                                       \\
+                        u(u - 2)                                        & = 0                                       \\
+                        u                                           = 0 & \text{ or } u = 2                         \\
+                        \\
+                        \text{When } u                                  & = 0,                                      \\
+                        \log_2 x                                        & = 0                                       \\
+                        x                                               & = 2^0                                     \\
+                                                                        & = 1                                       \\
+                        \\
+                        \text{When } u                                  & = 2,                                      \\
+                        \log_2 x                                        & = 2                                       \\
+                        x                                               & = 2^2                                     \\
+                                                                        & = 4
+                    \end{flalign*}
+                    After checking, $x = 1$ and $x = 4$ are both solutions.
           \end{enumerate}
+          \newpage
 
     \item A person has deposited a fund into a bank account that pays 5.5\% interest
           compounded annually. If the balance in the account has increased by RM1,432.95
-          after 4 years, how much was deposited initially?
+          after 4 years, how much was deposited initially? \sol{}
+          \begin{flalign*}
+              A                                              & = p {\left(1 + \dfrac{r}{100} \right)}^{t} \\
+              A - p                                          & = 1432.95                                  \\
+              p {\left(1 + \dfrac{5.5}{100} \right)}^{4} - p & = 1432.95                                  \\
+              p\left(1.055^4 - 1\right)                      & = 1432.95                                  \\
+              p                                              & = \dfrac{1432.95}{1.055^4 - 1}             \\
+                                                             & = \text{RM}6,000
+          \end{flalign*}
 
     \item Given that there is a principal of RM75,000 at an interest rate of 3.5\% per
           annum compounded once per three months. Find the accumulated value of the
-          principal after 8 years.
+          principal after 8 years. \sol{}
+          \begin{flalign*}
+              A & = p {\left(1 + \dfrac{r}{100m} \right)}^{mt}                       \\
+                & = 75000 {\left(1 + \dfrac{3.5}{100 \times 4} \right)}^{4 \times 8} \\
+                & = \text{RM}99,113.95
+          \end{flalign*}
 
     \item Given that there is a principal of RM150,000 at an interest rate of 5.25\% per
           annum compounded once per annum. How many years does it take to accumulate at
-          least RM300,000?
+          least RM300,000? \sol{}
+          \begin{flalign*}
+              A                               & = p {\left(1 + \dfrac{r}{100} \right)}^{t} \\
+              150000 {\left(1.0525 \right)}^t & > 300000                                   \\
+              {\left(1.0525 \right)}^t        & > 2                                        \\
+              t \log 1.0525                   & > \log 2                                   \\
+              t                               & > \dfrac{\log 2}{\log 1.0525}              \\
+                                              & > 13.54                                    \\
+              t                               & = 14 \text{ years}
+          \end{flalign*}
 
+          \newpage
     \item If the present value is RM24,924.44, the interest rate is 5\% per annum
           compounded once per annum, find the annuity payment if the payment is made for
-          20 years.
+          20 years. \sol{}
+          \begin{flalign*}
+              \text{Present value} & = \dfrac{A}{r\%}\left(1 - \dfrac{1}{{\left(1+ r\%\right)}^t}\right)                     \\
+              24924.44             & = \dfrac{A}{5\%}\left(1 - \dfrac{1}{{\left(1+ 5\%\right)}^{20}}\right)                  \\
+              A                    & = \dfrac{24924.44 \times 5\%}{{\left(1 - \dfrac{1}{{\left(1+ 5\%\right)}^{20}}\right)}} \\
+                                   & = \text{RM}2,000
+          \end{flalign*}
 
     \item Given that the annuity payment is RM8,000, the interest rate is 4.5\% per annum
           compounded once per annum, and the payment is made for 15 years. Find the
-          present value. Hence, find the present value of the perpetuity.
+          present value. Hence, find the present value of the perpetuity. \sol{}
+          \begin{flalign*}
+              \text{Present value}            & = \dfrac{A}{r\%}\left(1 - \dfrac{1}{{\left(1+ r\%\right)}^t}\right)           \\
+                                              & = \dfrac{8000}{4.5\%}\left(1 - \dfrac{1}{{\left(1+ 4.5\%\right)}^{15}}\right) \\
+                                              & = \text{RM}85,916.37                                                          \\
+              \text{Present value of annuity} & = \dfrac{A}{r\%}                                                              \\
+                                              & = \dfrac{8000}{4.5\%}                                                         \\
+                                              & = \text{RM}177,777.78
+          \end{flalign*}
 
-    \item Given that the annuity amount is RM4,500, the interest rate is 4.5\% per annum
+          \newpage
+    \item Given that the annuity amount is RM4,500, the interest rate is 4\% per annum
           compounded once per annum. How many years does it take for the present value to
-          exceed RM50,000?
+          exceed RM50,000? \sol{}
+          \begin{flalign*}
+              \text{Present value}                                               & = \dfrac{A}{r\%}\left(1 - \dfrac{1}{{\left(1+ r\%\right)}^t}\right) \\
+              \dfrac{4500}{4\%}\left(1 - \dfrac{1}{{\left(1.04\right)}^t}\right) & > 50000                                                             \\
+              4500\left(1 - \dfrac{1}{{\left(1.04\right)}^t}\right)              & > 2000                                                              \\
+              1 - \dfrac{1}{{\left(1.04\right)}^t}                               & > \dfrac{4}{9}                                                      \\
+              \dfrac{1}{{\left(1.04\right)}^t}                                   & < \dfrac{5}{9}                                                      \\
+              (1.04)^t                                                           & > \dfrac{9}{5}                                                      \\
+              t                                                                  & > \dfrac{\log \dfrac{9}{5}}{\log 1.04}                              \\
+                                                                                 & > 14.98                                                             \\
+              t                                                                  & = 15 \text{ years}
+          \end{flalign*}
 
     \item The price of a branded laptop is RM2,500, the payment can be paid in full or by
           instalment. If the payment is made by instalment, the monthly payment is RM110
           for 2 years. If the interest rate is 4\% per annum compounded once per month,
           which payment method is more economical considering the present value of the
-          payment?
-  \end{enumerate}
-\end{multicols}
+          payment? \sol{}
+
+          If the payment is made in full, the present value is RM2,500. If the payment is
+          made by instalment,
+          \begin{flalign*}
+              \text{Present value} & = 110\left(1 + \dfrac{4\%}{12}\right)^{24} + 110\left(1 + \dfrac{4\%}{12}\right)^{23} + \cdots + 110\left(1 + \dfrac{4\%}{12}\right)^{1}       \\
+                                   & = 110\cdot \dfrac{\left(1 + \dfrac{4}{1200}\right)\left(\left(1 + \dfrac{4}{1200}\right)^{24} -1\right)}{\left(1 + \dfrac{4}{1200}\right) - 1} \\
+                                   & = \text{RM}2,752.86
+          \end{flalign*}
+          Hence, it is more economical to pay in full.
+\end{enumerate}
 
 \chapter{Limits}
 
