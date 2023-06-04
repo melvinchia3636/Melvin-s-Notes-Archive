@@ -1,6 +1,3 @@
-% chktex-file 2
-% chktex-file 29
-% chktex-file 13
 \documentclass[12pt]{report}
 \usepackage{setspace}
 \usepackage[a4paper, total={7in, 10in}]{geometry}
@@ -146,7 +143,7 @@
 \section{Gradient of Tangent Line on a Curve}
 
 As shown in the diagram below, sketch the graph of curve $C$ on the Cartesian
-plane. and pick two points $P$ and $Q$ on the curve, the straight line that
+plane, and pick two points $P$ and $Q$ on the curve, the straight line that
 passes through $P$ and $Q$ is the secant line of the curve. When point $Q$
 moves closer to point $P$ along the curve, the secant line $PQ$ rotates along
 point $P$ and approaches a limit straight line $PT$. The line $PT$ is called
@@ -157,21 +154,21 @@ gradient. Therefore, in order to find the gradient of the tangent line of the
 curve $C$ at point $P$, we have to first find the gradient of the tangent.
 
 To find the gradient of the tangent line of curve $y=f (x)$ at point
-$P\left(x_0, f (x_0)\right)$, we can pick a point $\left(x_0 + \Delta x, f (x_0
-    + \Delta x)\right)$ near to point $P$ on the curve, as shown in the diagram
-above. Denote the variable $PR$ on the horizontal axis as $\Delta x$, and the
-corresponding variable $RQ$ on the vertical axis as $\Delta y$, we have $\Delta
-    y = f (x_0 + \Delta x) - f (x_0)$.
+$P\left(x_0, f (x_0)\right)$, we can pick a point $\left(x_0 + \Delta{x}, f
+    (x_0 + \Delta{x})\right)$ near to point $P$ on the curve, as shown in the
+diagram above. Denote the variable $PR$ on the horizontal axis as $\Delta{x}$,
+and the corresponding variable $RQ$ on the vertical axis as $\Delta y$, we have
+$\Delta y = f (x_0 + \Delta{x}) - f (x_0)$.
 
-Hence, the gradient of the secant line $PQ$ is $\dfrac{\Delta y}{\Delta x} =
-    \dfrac{f (x_0 + \Delta x) - f (x_0)}{\Delta x}$.
+Hence, the gradient of the secant line $PQ$ is $\dfrac{\Delta y}{\Delta{x}} =
+    \dfrac{f (x_0 + \Delta{x}) - f (x_0)}{\Delta{x}}$.
 
-When $\Delta x \to 0$, if the limit of the expression above exist, it is the
+When $\Delta{x}\to{0}$, if the limit of the expression above exist, it is the
 gradient of the tangent line of the curve $y=f (x)$ at point $P$, denoted as
 $m$, that is
 \begin{mdframed}[style=MyFrame]
     \begin{cequation}
-        m = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} = \lim\limits_{\Delta x \to 0}{\dfrac{f (x_0 + \Delta x) - f (x_0)}{\Delta x}}
+        m = \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} = \lim\limits_{\Delta{x}\to{0}}{\dfrac{f (x_0 + \Delta{x}) - f (x_0)}{\Delta{x}}}
     \end{cequation}
 \end{mdframed}
 
@@ -187,32 +184,32 @@ $m$, that is
 
           When $x = 1$, $f (1) = 2 - 1^2 = 1$.
 
-          Take nearby point $Q(1 + \Delta x, f (1 + \Delta x))$ of $x = 1$ on the curve,
-          we have
+          Take nearby point $Q(1 + \Delta{x}, f (1 + \Delta{x}))$ of $x = 1$ on the
+          curve, we have
           \begin{flalign*}
-              \dfrac{\Delta y}{\Delta x} & = \dfrac{f (1 + \Delta x) - f (1)}{\Delta x}             \\
-                                         & = \dfrac{2 - (1 + \Delta x)^2 - 1}{\Delta x}             \\
-                                         & = \dfrac{2 - 1 - 2\Delta x - (\Delta x)^2 - 1}{\Delta x} \\
-                                         & = \dfrac{-2\Delta x - (\Delta x)^2}{\Delta x}            \\
-                                         & = -2 - \Delta x
+              \dfrac{\Delta y}{\Delta{x}} & = \dfrac{f (1 + \Delta{x}) - f (1)}{\Delta{x}}                \\
+                                          & = \dfrac{2 - {(1 + \Delta{x})}^2 - 1}{\Delta{x}}              \\
+                                          & = \dfrac{2 - 1 - 2\Delta{x} - {(\Delta{x})}^2 - 1}{\Delta{x}} \\
+                                          & = \dfrac{-2\Delta{x} - {(\Delta{x})}^2}{\Delta{x}}            \\
+                                          & = -2 - \Delta{x}
           \end{flalign*}
-          $\therefore$ The gradient of the tangent line of the curve at $x = 1$ is $m = \lim\limits_{\Delta x \to 0}{(-2 - \Delta x)} = -2$.
+          $\therefore$ The gradient of the tangent line of the curve at $x = 1$ is $m = \lim\limits_{\Delta{x}\to{0}}{(-2 - \Delta{x})} = -2$.
 
     \item Find the gradient of the tangent line of the curve $y = x^2 + 3x$ at $x = 2$.
           \sol{}
 
           Let $f (x) = x^2 + 3x$. When $x = 2$, $f (2) = 2^2 + 3 \times 2 = 10$.
 
-          Take nearby point $Q(2 + \Delta x, f (2 + \Delta x))$ of $x = 2$ on the curve,
-          we have
+          Take nearby point $Q(2 + \Delta{x}, f (2 + \Delta{x}))$ of $x = 2$ on the
+          curve, we have
           \begin{flalign*}
-              \dfrac{\Delta y}{\Delta x} & = \dfrac{f (2 + \Delta x) - f (2)}{\Delta x}                          \\
-                                         & = \dfrac{(2 + \Delta x)^2 + 3(2 + \Delta x) - 10}{\Delta x}           \\
-                                         & = \dfrac{4 + 4\Delta x + (\Delta x)^2 + 6 + 3\Delta x - 10}{\Delta x} \\
-                                         & = \dfrac{(\Delta x)^2 + 7\Delta x}{\Delta x}                          \\
-                                         & = \Delta x + 7
+              \dfrac{\Delta y}{\Delta{x}} & = \dfrac{f (2 + \Delta{x}) - f (2)}{\Delta{x}}                              \\
+                                          & = \dfrac{{(2 + \Delta{x})}^2 + 3(2 + \Delta{x}) - 10}{\Delta{x}}            \\
+                                          & = \dfrac{4 + 4\Delta{x} + {(\Delta{x})}^2 + 6 + 3\Delta{x} - 10}{\Delta{x}} \\
+                                          & = \dfrac{{(\Delta{x})}^2 + 7\Delta{x}}{\Delta{x}}                           \\
+                                          & = \Delta{x} + 7
           \end{flalign*}
-          $\therefore$ The gradient of the tangent line of the curve at $x = 2$ is $m = \lim\limits_{\Delta x \to 0}{(\Delta x + 7)} = 7$.
+          $\therefore$ The gradient of the tangent line of the curve at $x = 2$ is $m = \lim\limits_{\Delta{x}\to{0}}{(\Delta{x} + 7)} = 7$.
 \end{enumerate}
 
 \newpage
@@ -222,18 +219,18 @@ $m$, that is
     \item Given the curve $y = x^2 + 1$. Assume that $P$ is the point on the curve at $x
               = 2$, $Q$ is a nearby point,
           \begin{enumerate}
-              \item Find the variable $\Delta x$ and the corresponding variable $\Delta y$ when the
-                    $x$ coordinates of point $Q$ is $2.5$, $2.25$, $2.1$, $2.05$, $2.01$, and
+              \item Find the variable $\Delta{x}$ and the corresponding variable $\Delta y$ when
+                    the $x$ coordinates of point $Q$ is $2.5$, $2.25$, $2.1$, $2.05$, $2.01$, and
                     $2.001$ respectively. Hence, complete the table below.
                     \begin{center}
                         \begin{NiceTabular}{|c|c|c|c|c|}[hvlines,cell-space-limits=5pt]
-                            $x$-coords of $Q$ & $y$-coords of $Q$ & $\Delta x$ & $\Delta y$ & Gradient of secant $PQ$ $\dfrac{\Delta y}{\Delta x}$ \\
-                            $x = 2.5$                    &                              &            &            &                              \\
-                            $x = 2.25$                   &                              &            &            &                              \\
-                            $x = 2.1$                    &                              &            &            &                              \\
-                            $x = 2.05$                   &                              &            &            &                              \\
-                            $x = 2.01$                   &                              &            &            &                              \\
-                            $x = 2.001$                  &                              &            &            &                              \\
+                            $x$-coords of $Q$ & $y$-coords of $Q$ & $\Delta{x}$ & $\Delta y$ & Gradient of secant $PQ$ $\dfrac{\Delta y}{\Delta{x}}$ \\
+                            $x = 2.5$         &                   &             &            &                                                       \\
+                            $x = 2.25$        &                   &             &            &                                                       \\
+                            $x = 2.1$         &                   &             &            &                                                       \\
+                            $x = 2.05$        &                   &             &            &                                                       \\
+                            $x = 2.01$        &                   &             &            &                                                       \\
+                            $x = 2.001$       &                   &             &            &                                                       \\
                         \end{NiceTabular}
                     \end{center}
                     \sol{}
@@ -241,18 +238,18 @@ $m$, that is
                     When $x = 2$, $y = 2^2 + 1 = 5$.
                     \begin{center}
                         \begin{NiceTabular}{|c|c|c|c|c|}[hvlines,cell-space-limits=5pt]
-                            $x$-coords of $Q$ & $y$-coords of $Q$ & $\Delta x$ & $\Delta y$ & \Block{}{Gradient of secant \\ $PQ$ $\dfrac{\Delta y}{\Delta x}$} \\
-                            $x = 2.5$                    & $y = 7.25$                   & $0.5$      & $2.25$     & $4.5$                        \\
-                            $x = 2.25$                   & $y = 6.0625$                 & $0.25$     & $1.0625$   & $4.25$                       \\
-                            $x = 2.1$                    & $y = 5.41$                   & $0.1$      & $0.41$     & $4.1$                        \\
-                            $x = 2.05$                   & $y = 5.2025$                 & $0.05$     & $0.2025$   & $4.05$                       \\
-                            $x = 2.01$                   & $y = 5.0401$                 & $0.01$     & $0.0401$   & $4.01$                       \\
-                            $x = 2.001$                  & $y = 5.004001$               & $0.001$    & $0.004001$ & $4.001$                      \\
+                            $x$-coords of $Q$ & $y$-coords of $Q$ & $\Delta{x}$ & $\Delta y$ & \Block{}{Gradient of secant \\ $PQ$ $\dfrac{\Delta y}{\Delta{x}}$} \\
+                            $x = 2.5$         & $y = 7.25$        & $0.5$       & $2.25$     & $4.5$                       \\
+                            $x = 2.25$        & $y = 6.0625$      & $0.25$      & $1.0625$   & $4.25$                      \\
+                            $x = 2.1$         & $y = 5.41$        & $0.1$       & $0.41$     & $4.1$                       \\
+                            $x = 2.05$        & $y = 5.2025$      & $0.05$      & $0.2025$   & $4.05$                      \\
+                            $x = 2.01$        & $y = 5.0401$      & $0.01$      & $0.0401$   & $4.01$                      \\
+                            $x = 2.001$       & $y = 5.004001$    & $0.001$     & $0.004001$ & $4.001$                     \\
                         \end{NiceTabular}
                     \end{center}
 
               \item Inspect the gradient of secant $PQ$ as point $Q$ approaches point $P$. Hence,
-                    find the gradient of the tangent line of the curve at point $P$. \sol{}
+                    find the gradient of the tangent line of the curve at point $P$.\sol{}
 
                     As point $Q$ approaches point $P$, the gradient of secant $PQ$ approaches $4$.
                     Hence, the gradient of the tangent line of the curve at point $P$ is $m = 4$.
@@ -260,108 +257,109 @@ $m$, that is
 
           \newpage
     \item Find the gradient of the tangent line of the curve $y = \dfrac{1}{3}x^2$ at $x
-              = 2$. \sol{}
+              = 2$.\sol{}
 
           Let $f (x) = \dfrac{1}{3}x^2$.
 
           When $x = 2$, $f (2) = \dfrac{1}{3} \times 2^2 = \dfrac{4}{3}$.
 
-          Take nearby point $Q(2 + \Delta x, f (2 + \Delta x))$ of $x = 2$ on the curve,
-          we have
+          Take nearby point $Q(2 + \Delta{x}, f (2 + \Delta{x}))$ of $x = 2$ on the
+          curve, we have
           \begin{flalign*}
-              \dfrac{\Delta y}{\Delta x} & = \dfrac{f (2 + \Delta x) - f (2)}{\Delta x}                                                      \\
-                                         & = \dfrac{\dfrac{1}{3}(2 + \Delta x)^2 - \dfrac{4}{3}}{\Delta x}                                   \\
-                                         & = \dfrac{\dfrac{4}{3} + \dfrac{4}{3}\Delta x + \dfrac{1}{3}(\Delta x)^2 - \dfrac{4}{3}}{\Delta x} \\
-                                         & = \dfrac{\dfrac{4}{3}\Delta x + \dfrac{1}{3}(\Delta x)^2}{\Delta x}                               \\
-                                         & = \dfrac{4}{3} + \dfrac{1}{3}\Delta x
+              \dfrac{\Delta y}{\Delta{x}} & = \dfrac{f (2 + \Delta{x}) - f (2)}{\Delta{x}}                                                         \\
+                                          & = \dfrac{\dfrac{1}{3}{(2 + \Delta{x})}^2 - \dfrac{4}{3}}{\Delta{x}}                                    \\
+                                          & = \dfrac{\dfrac{4}{3} + \dfrac{4}{3}\Delta{x} + \dfrac{1}{3}{(\Delta{x})}^2 - \dfrac{4}{3}}{\Delta{x}} \\
+                                          & = \dfrac{\dfrac{4}{3}\Delta{x} + \dfrac{1}{3}{(\Delta{x})}^2}{\Delta{x}}                               \\
+                                          & = \dfrac{4}{3} + \dfrac{1}{3}\Delta{x}
           \end{flalign*}
-          $\therefore$ The gradient of the tangent line of the curve at $x = 2$ is $m = \lim\limits_{\Delta x \to 0}{\left(\dfrac{4}{3} + \dfrac{1}{3}\Delta x\right)} = \dfrac{4}{3}$.
+          $\therefore$ The gradient of the tangent line of the curve at $x = 2$ is $m = \lim\limits_{\Delta{x}\to{0}}{\left(\dfrac{4}{3} + \dfrac{1}{3}\Delta{x}\right)} = \dfrac{4}{3}$.
 
     \item Find the gradient of the tangent line of the curve $y = \dfrac{10}{x}$ at point
-          $Q(2, 5)$. \sol{}
+          $Q(2, 5)$.\sol{}
 
           Let $f (x) = \dfrac{10}{x}$.
 
           When $x = 2$, $f (2) = 5$.
 
-          Take nearby point $P(2 + \Delta x, f (2 + \Delta x))$ of $x = 2$ on the curve,
-          we have
+          Take nearby point $P(2 + \Delta{x}, f (2 + \Delta{x}))$ of $x = 2$ on the
+          curve, we have
           \begin{flalign*}
-              \dfrac{\Delta y}{\Delta x} & = \dfrac{f (2 + \Delta x) - f (2)}{\Delta x}                     \\
-                                         & = \dfrac{\dfrac{10}{2 + \Delta x} - 5}{\Delta x}                 \\
-                                         & = \dfrac{\dfrac{10 - 5(2 + \Delta x)}{(2 + \Delta x)}}{\Delta x} \\
-                                         & = \dfrac{- 5\Delta x}{(2 + \Delta x)\Delta x}                    \\
-                                         & = \dfrac{- 5}{(2 + \Delta x)}
+              \dfrac{\Delta y}{\Delta{x}} & = \dfrac{f (2 + \Delta{x}) - f (2)}{\Delta{x}}                      \\
+                                          & = \dfrac{\dfrac{10}{2 + \Delta{x}} - 5}{\Delta{x}}                  \\
+                                          & = \dfrac{\dfrac{10 - 5(2 + \Delta{x})}{(2 + \Delta{x})}}{\Delta{x}} \\
+                                          & = \dfrac{- 5\Delta{x}}{(2 + \Delta{x})\Delta{x}}                    \\
+                                          & = \dfrac{- 5}{(2 + \Delta{x})}
           \end{flalign*}
-          $\therefore$ The gradient of the tangent line of the curve at $x = 2$ is $m = \lim\limits_{\Delta x \to 0}{\dfrac{- 5}{(2 + \Delta x)}} = -\dfrac{5}{2}$
+          $\therefore$ The gradient of the tangent line of the curve at $x = 2$ is $m = \lim\limits_{\Delta{x}\to{0}}{\dfrac{- 5}{(2 + \Delta{x})}} = -\dfrac{5}{2}$
 
           \newpage
     \item Find the gradient of the tangent line of the curve $y = \dfrac{4}{x} - 5$ at $x
-              = 1$. \sol{}
+              = 1$.\sol{}
 
           Let $f (x) = \dfrac{4}{x} - 5$.
 
           When $x = 1$, $f (1) = \dfrac{4}{1} - 5 = -1$.
 
-          Take nearby point $Q(1 + \Delta x, f (1 + \Delta x))$ of $x = 1$ on the curve,
-          we have
+          Take nearby point $Q(1 + \Delta{x}, f (1 + \Delta{x}))$ of $x = 1$ on the
+          curve, we have
           \begin{flalign*}
-              \dfrac{\Delta y}{\Delta x} & = \dfrac{f (1 + \Delta x) - f (1)}{\Delta x}                    \\
-                                         & = \dfrac{\dfrac{4}{1 + \Delta x} - 5 - (-1)}{\Delta x}          \\
-                                         & = \dfrac{\dfrac{4 - 4(1 + \Delta x)}{(1 + \Delta x)}}{\Delta x} \\
-                                         & = \dfrac{- 4\Delta x}{(1 + \Delta x)\Delta x}                   \\
-                                         & = \dfrac{- 4}{(1 + \Delta x)}
+              \dfrac{\Delta y}{\Delta{x}} & = \dfrac{f (1 + \Delta{x}) - f (1)}{\Delta{x}}                     \\
+                                          & = \dfrac{\dfrac{4}{1 + \Delta{x}} - 5 - (-1)}{\Delta{x}}           \\
+                                          & = \dfrac{\dfrac{4 - 4(1 + \Delta{x})}{(1 + \Delta{x})}}{\Delta{x}} \\
+                                          & = \dfrac{- 4\Delta{x}}{(1 + \Delta{x})\Delta{x}}                   \\
+                                          & = \dfrac{- 4}{(1 + \Delta{x})}
           \end{flalign*}
-          $\therefore$ The gradient of the tangent line of the curve at $x = 1$ is $m = \lim\limits_{\Delta x \to 0}{\dfrac{- 4}{(1 + \Delta x)}} = -4$
+          $\therefore$ The gradient of the tangent line of the curve at $x = 1$ is $m = \lim\limits_{\Delta{x}\to{0}}{\dfrac{- 4}{(1 + \Delta{x})}} = -4$
 
     \item Find the gradient of the tangent line of the curve $y = \dfrac{1}{2}x^3 + 1$ at
-          point $P(-2, -3)$. \sol{}
+          point $P(-2, -3)$.\sol{}
 
           Let $f (x) = \dfrac{1}{2}x^3 + 1$.
 
-          When $x = -2$, $f (-2) = \dfrac{1}{2}(-2)^3 + 1 = -3$.
+          When $x = -2$, $f (-2) = \dfrac{1}{2}{(-2)}^3 + 1 = -3$.
 
-          Take nearby point $Q(-2 + \Delta x, f (-2 + \Delta x))$ of $x = -2$ on the
+          Take nearby point $Q(-2 + \Delta{x}, f (-2 + \Delta{x}))$ of $x = -2$ on the
           curve, we have
           \begin{flalign*}
-              \dfrac{\Delta y}{\Delta x} & = \dfrac{f (-2 + \Delta x) - f (-2)}{\Delta x}                 \\
-                                         & = \dfrac{\dfrac{1}{2}(-2 + \Delta x)^3 + 1 -(-3)}{\Delta x}    \\
-                                         & = \dfrac{(-2 + \Delta x)^3 + 8}{2\Delta x}                     \\
-                                         & = \dfrac{(\Delta x)^3 - 6(\Delta x)^2 + 12\Delta x}{2\Delta x} \\
-                                         & = \dfrac{(\Delta x)^2 - 6\Delta x + 12}{2}
+              \dfrac{\Delta y}{\Delta{x}} & = \dfrac{f (-2 + \Delta{x}) - f (-2)}{\Delta{x}}                       \\
+                                          & = \dfrac{\dfrac{1}{2}{(-2 + \Delta{x})}^3 + 1 -(-3)}{\Delta{x}}        \\
+                                          & = \dfrac{{(-2 + \Delta{x})}^3 + 8}{2\Delta{x}}                         \\
+                                          & = \dfrac{{(\Delta{x})}^3 - 6{(\Delta{x})}^2 + 12\Delta{x}}{2\Delta{x}} \\
+                                          & = \dfrac{{(\Delta{x})}^2 - 6\Delta{x} + 12}{2}
           \end{flalign*}
-          $\therefore$ The gradient of the tangent line of the curve at $x = -2$ is $m = \lim\limits_{\Delta x \to 0}{\dfrac{(\Delta x)^2 - 6\Delta x + 12}{2}} = 6$
+          $\therefore$ The gradient of the tangent line of the curve at $x = -2$ is $m = \lim\limits_{\Delta{x}\to{0}}{\dfrac{{(\Delta{x})}^2 - 6\Delta{x} + 12}{2}} = 6$
 \end{enumerate}
 
 \section{Gradient of Tangent Line and Derivative}
 
 In the last section, we have learnt that, if $P\left(x_0, f (x_0)\right)$ and
-$Q\left(x_0 + \Delta x, f (x_0 + \Delta x)\right)$ are two points on the curve
-$y=f (x)$, then the gradient of the secant line $PQ$ is $\dfrac{\Delta
-        y}{\Delta x} = \dfrac{f (x_0 + \Delta x) - f (x_0)}{\Delta x}$. As point $Q$
-approaches point $P$, that is, as $\Delta x \to 0$, the gradient of the secant
+$Q\left(x_0 + \Delta{x}, f (x_0 + \Delta{x})\right)$ are two points on the
+curve $y=f (x)$, then the gradient of the secant line $PQ$ is $\dfrac{\Delta
+        y}{\Delta{x}} = \dfrac{f (x_0 + \Delta{x}) - f (x_0)}{\Delta{x}}$. As point $Q$
+approaches point $P$, that is, as $\Delta{x}\to{0}$, the gradient of the secant
 line $PQ$ approaches the tangent line $PT$.
 
 Hence, the gradient of the tangent line $PT$ is
 \begin{cequation}
-    m = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} = \lim\limits_{\Delta x \to 0}{\dfrac{f (x_0 + \Delta x) - f (x_0)}{\Delta x}}
+    m = \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} = \lim\limits_{\Delta{x}\to{0}}{\dfrac{f (x_0 + \Delta{x})-f (x_0)}{\Delta{x}}}
 \end{cequation}
 
 \subsection*{Definition of Derivative}
 
 Let the function $y = f (x)$ be defined at $x = x_0$ and its nearby points,
-when there exists a variable $\Delta x$ of $x$ at $x_0$, there exist a
-corresponding variable $\Delta y = f (x_0 + \Delta x) - f (x_0)$ of the
-function $y$. When $\Delta x \to 0$, the limit of $\dfrac{\Delta y}{\Delta x}$
+when there exists a variable $\Delta{x}$ of $x$ at $x_0$, there exist a
+corresponding variable $\Delta y = f (x_0 + \Delta{x}) - f (x_0)$ of the
+function $y$. When $\Delta{x}\to{0}$, the limit of $\dfrac{\Delta
+        y}{\Delta{x}}$
 \begin{cequation}
-    \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} = \lim\limits_{\Delta x \to 0}{\dfrac{f (x_0 + \Delta x) - f (x_0)}{\Delta x}}
+    \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} = \lim\limits_{\Delta{x}\to{0}}{\dfrac{f (x_0 + \Delta{x})-f (x_0)}{\Delta{x}}}
 \end{cequation}
 exists, $y = f (x)$ is said to be \textit{differentiable} at $x =
     x_0$, and the limit is called the \textit{derivative} of $y = f (x)$ at $x =
     x_0$, denoted as $f' (x_0)$, that is
 \begin{mdframed}[style=MyFrame]
     \begin{cequation}
-        f' (x_0) = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} = \lim\limits_{\Delta x \to 0}{\dfrac{f (x_0 + \Delta x) - f (x_0)}{\Delta x}}
+        f' (x_0) = \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} = \lim\limits_{\Delta{x}\to{0}}{\dfrac{f (x_0 + \Delta{x})-f (x_0)}{\Delta{x}}}
     \end{cequation}
 \end{mdframed}
 If the limit above does not exist, $y = f (x)$ is said to be \textit{non-differentiable} at $x = x_0$.
@@ -374,7 +372,7 @@ denoted as $f' (x)$ or $y'$.
 
 From the definition of derivative, we can get the derivative
 \begin{cequation}
-    y' = f' (x) = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} = \lim\limits_{\Delta x \to 0}{\dfrac{f (x + \Delta x) - f (x)}{\Delta x}}
+    y' = f' (x) = \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} = \lim\limits_{\Delta{x}\to{0}}{\dfrac{f (x + \Delta{x})-f (x)}{\Delta{x}}}
 \end{cequation}
 
 $f' (x)$ is often being denoted as $\dfrac{dy}{dx}$ as well, and is called \textit{differentiation of $y = f (x)$ with respect to $x$}.
@@ -383,12 +381,12 @@ From the definition of derivative, we can conclude the following steps to find
 the derivative of a function $y = f (x)$:
 
 \begin{enumerate}
-    \item Find the variable $\Delta y = f (x + \Delta x) - f (x)$ of the function.
-    \item Find the ratio of the variable $\Delta y$ to $\Delta x$, that is,
-          $\dfrac{\Delta y}{\Delta x} = \dfrac{f (x + \Delta x) - f (x)}{\Delta x}$.
+    \item Find the variable $\Delta y = f (x + \Delta{x}) - f (x)$ of the function.
+    \item Find the ratio of the variable $\Delta y$ to $\Delta{x}$, that is,
+          $\dfrac{\Delta y}{\Delta{x}} = \dfrac{f (x + \Delta{x}) - f (x)}{\Delta{x}}$.
     \item Find the limit of the ratio above, that is, $\dfrac{dy}{dx} =
-              \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} = \lim\limits_{\Delta
-                  x \to 0}{\dfrac{f (x + \Delta x) - f (x)}{\Delta x}}$.
+              \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} =
+              \lim\limits_{\Delta x \to 0}{\dfrac{f (x + \Delta{x}) - f (x)}{\Delta{x}}}$.
 \end{enumerate}
 
 The method above to find the derivative using the definition of derivative is
@@ -407,41 +405,41 @@ to each other. $f' (x_0)$ is the function value of the derivative function $f'
 
 \begin{enumerate}
     \item Find the derivative of the function $y = 2x^2$, and find the derivative value
-          at $x = 1$. \sol{}
+          at $x = 1$.\sol{}
           \begin{flalign*}
-              \Delta y                                                 & = 2 (x + \Delta x)^2 - 2x^2                     \\
-                                                                       & = 2x^2 + 4x \Delta x + 2\Delta x^2 - 2x^2       \\
-                                                                       & = 4x \Delta x + 2 \Delta x^2                    \\
+              \Delta y                                                   & = 2 {(x + \Delta{x})}^2 - 2x^2                    \\
+                                                                         & = 2x^2 + 4x \Delta{x} + 2\Delta{x}^2 - 2x^2       \\
+                                                                         & = 4x \Delta{x} + 2 \Delta{x}^2                    \\
               \\
-              \dfrac{\Delta y}{\Delta x}                               & = \dfrac{4x \Delta x + 2 \Delta x^2}{\Delta x}  \\
-                                                                       & = 4x + 2 \Delta x                               \\
+              \dfrac{\Delta y}{\Delta{x}}                                & = \dfrac{4x \Delta{x} + 2 \Delta{x}^2}{\Delta{x}} \\
+                                                                         & = 4x + 2 \Delta{x}                                \\
               \\
-              \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{4x + 2 \Delta x} \\
-              \dfrac{dy}{dx}                                           & = 4x
+              \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} & = \lim\limits_{\Delta{x}\to{0}}{4x + 2 \Delta{x}} \\
+              \dfrac{dy}{dx}                                             & = 4x
           \end{flalign*}
           $\therefore$ The derivative value at $x = 1$ is $4(1) = 4$.
 
     \item Let function $y = 4 - 3x + x^2$. Find:
           \begin{enumerate}
-              \item $\dfrac{\Delta y}{\Delta x}$
+              \item $\dfrac{\Delta y}{\Delta{x}}$
                     \sol{}
                     \begin{flalign*}
-                        \Delta y                   & = 4 - 3 (x + \Delta x) + (x + \Delta x)^2 - (4 - 3x + x^2)            \\
-                                                   & = 4 - 3x - 3 \Delta x + x^2 + 2x \Delta x + \Delta x^2 - 4 + 3x - x^2 \\
-                                                   & = -3 \Delta x + 2x \Delta x + \Delta x^2                              \\
+                        \Delta y                    & = 4 - 3 (x + \Delta{x}) + {(x + \Delta{x})}^2 - (4 - 3x + x^2)           \\
+                                                    & = 4 - 3x - 3 \Delta{x} + x^2 + 2x \Delta{x} + \Delta{x}^2 - 4 + 3x - x^2 \\
+                                                    & = -3 \Delta{x} + 2x \Delta{x} + \Delta{x}^2                              \\
                         \\
-                        \dfrac{\Delta y}{\Delta x} & = \dfrac{-3 \Delta x + 2x \Delta x + \Delta x^2}{\Delta x}            \\
-                                                   & = \Delta x + 2x - 3
+                        \dfrac{\Delta y}{\Delta{x}} & = \dfrac{-3 \Delta{x} + 2x \Delta{x} + \Delta{x}^2}{\Delta{x}}           \\
+                                                    & = \Delta{x} + 2x - 3
                     \end{flalign*}
 
               \item $\dfrac{dy}{dx}$
                     \sol{}
                     \begin{flalign*}
-                        \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{\Delta x + 2x - 3} \\
-                        \dfrac{dy}{dx}                                           & = 2x - 3
+                        \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} & = \lim\limits_{\Delta{x}\to{0}}{\Delta{x} + 2x - 3} \\
+                        \dfrac{dy}{dx}                                             & = 2x - 3
                     \end{flalign*}
 
-              \item The derivative value of the function at $x = 2$. \sol{}
+              \item The derivative value of the function at $x = 2$.\sol{}
                     \begin{flalign*}
                         \dfrac{dy}{dx} & = 2x - 3   \\
                                        & = 2(2) - 3 \\
@@ -459,30 +457,30 @@ derivative. Hence, find the derivative value at $x = 2$ (Question 1 to 12):
         \item $f(x) = 3x + 2$
         \sol{}
         \begin{flalign*}
-            \Delta y                                                 & = 3(x + \Delta x) + 2 - (3x + 2)  & \\
-                                                                     & = 3x + 3 \Delta x + 2 - 3x - 2      \\
-                                                                     & = 3 \Delta x                        \\
+            \Delta y                                                   & = 3(x + \Delta{x}) + 2 - (3x + 2)  & \\
+                                                                       & = 3x + 3 \Delta{x} + 2 - 3x - 2      \\
+                                                                       & = 3 \Delta{x}                        \\
             \\
-            \dfrac{\Delta y}{\Delta x}                               & = \dfrac{3 \Delta x}{\Delta x}      \\
-                                                                     & = 3                                 \\
+            \dfrac{\Delta y}{\Delta{x}}                                & = \dfrac{3 \Delta{x}}{\Delta{x}}     \\
+                                                                       & = 3                                  \\
             \\
-            \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{3}   \\
-            f'(x)                                                    & = 3
+            \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} & = \lim\limits_{\Delta{x}\to{0}}{3}   \\
+            f'(x)                                                      & = 3
         \end{flalign*}
         $\therefore$ The derivative value at $x = 2$ is $3$.
         \columnbreak
         \item $f(x) = x^2 + 1$
         \sol{}
         \begin{flalign*}
-            \Delta y                                                 & = (x + \Delta x)^2 + 1 - (x^2 + 1)                         & \\
-                                                                     & = x^2 + 2x \Delta x + \Delta x^2 - x^2 - 1                   \\
-                                                                     & = 2x \Delta x + \Delta x^2                                   \\
+            \Delta y                                                   & = {(x + \Delta{x})}^2 + 1 - (x^2 + 1)                        & \\
+                                                                       & = x^2 + 2x \Delta{x} + \Delta{x}^2 - x^2 - 1                   \\
+                                                                       & = 2x \Delta{x} + \Delta{x}^2                                   \\
             \\
-            \dfrac{\Delta y}{\Delta x}                               & = \dfrac{2x \Delta x + \Delta x^2}{\Delta x}                 \\
-                                                                     & = 2x + \Delta x                                              \\
+            \dfrac{\Delta y}{\Delta{x}}                                & = \dfrac{2x \Delta{x} + \Delta{x}^2}{\Delta{x}}                \\
+                                                                       & = 2x + \Delta{x}                                               \\
             \\
-            \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{\left(2x + \Delta x\right)}   \\
-            f'(x)                                                    & = 2x
+            \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} & = \lim\limits_{\Delta{x}\to{0}}{\left(2x + \Delta{x}\right)}   \\
+            f'(x)                                                      & = 2x
         \end{flalign*}
         $\therefore$ The derivative value at $x = 2$ is $2(2) = 4$.
     \end{multicols}
@@ -492,30 +490,30 @@ derivative. Hence, find the derivative value at $x = 2$ (Question 1 to 12):
         \item $f(x) = 4x^2 - 3$
         \sol{}
         \begin{flalign*}
-            \Delta y                                                 & = 4(x + \Delta x)^2 - 3 - (4x^2 - 3)                         & \\
-                                                                     & = 4x^2 + 8x \Delta x + 4 \Delta x^2 - 3 - 4x^2 + 3             \\
-                                                                     & = 8x \Delta x + 4 \Delta x^2                                   \\
+            \Delta y                                                   & = 4{(x + \Delta{x})}^2 - 3 - (4x^2 - 3)                        & \\
+                                                                       & = 4x^2 + 8x \Delta{x} + 4 \Delta{x}^2 - 3 - 4x^2 + 3             \\
+                                                                       & = 8x \Delta{x} + 4 \Delta{x}^2                                   \\
             \\
-            \dfrac{\Delta y}{\Delta x}                               & = \dfrac{8x \Delta x + 4 \Delta x^2}{\Delta x}                 \\
-                                                                     & = 8x + 4 \Delta x                                              \\
+            \dfrac{\Delta y}{\Delta{x}}                                & = \dfrac{8x \Delta{x} + 4 \Delta{x}^2}{\Delta{x}}                \\
+                                                                       & = 8x + 4 \Delta{x}                                               \\
             \\
-            \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{\left(8x + 4 \Delta x\right)}   \\
-            f'(x)                                                    & = 8x
+            \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} & = \lim\limits_{\Delta{x}\to{0}}{\left(8x + 4 \Delta{x}\right)}   \\
+            f'(x)                                                      & = 8x
         \end{flalign*}
         $\therefore$ The derivative value at $x = 2$ is $8(2) = 16$.
         \columnbreak{}
         \item $f(x) = 2 - x^2$
         \sol{}
         \begin{flalign*}
-            \Delta y                                                 & = 2 - (x + \Delta x)^2 - (2 - x^2)                          & \\
-                                                                     & = 2 - x^2 - 2x \Delta x - \Delta x^2 - 2 + x^2                \\
-                                                                     & = -2x \Delta x - \Delta x^2                                   \\
+            \Delta y                                                   & = 2 - {(x + \Delta{x})}^2 - (2 - x^2)                         & \\
+                                                                       & = 2 - x^2 - 2x \Delta{x} - \Delta{x}^2 - 2 + x^2                \\
+                                                                       & = -2x \Delta{x} - \Delta{x}^2                                   \\
             \\
-            \dfrac{\Delta y}{\Delta x}                               & = \dfrac{-2x \Delta x - \Delta x^2}{\Delta x}                 \\
-                                                                     & = -2x - \Delta x                                              \\
+            \dfrac{\Delta y}{\Delta{x}}                                & = \dfrac{-2x \Delta{x} - \Delta{x}^2}{\Delta{x}}                \\
+                                                                       & = -2x - \Delta{x}                                               \\
             \\
-            \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{\left(-2x - \Delta x\right)}   \\
-            f'(x)                                                    & = -2x
+            \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} & = \lim\limits_{\Delta{x}\to{0}}{\left(-2x - \Delta{x}\right)}   \\
+            f'(x)                                                      & = -2x
         \end{flalign*}
         $\therefore$ The derivative value at $x = 2$ is $-2(2) = -4$.
     \end{multicols}
@@ -524,18 +522,18 @@ derivative. Hence, find the derivative value at $x = 2$ (Question 1 to 12):
         \item $y = x^2 - 3x$
         \sol{}
         \begin{flalign*}
-            \Delta y                   & = (x + \Delta x)^2 - 3(x + \Delta x) - (x^2 - 3x)         & \\
-                                       & = x^2 + 2x \Delta x + \Delta x^2 - 3x - 3 \Delta x - x^2    \\
-                                       & \ \ \ \ + 3x                                                \\
-                                       & = 2x \Delta x + \Delta x^2 - 3 \Delta x                     \\
+            \Delta y                    & = {(x + \Delta{x})}^2 - 3(x + \Delta{x}) - (x^2 - 3x)         & \\
+                                        & = x^2 + 2x \Delta{x} + \Delta{x}^2 - 3x - 3 \Delta{x} - x^2     \\
+                                        & \ \ \ \ + 3x                                                    \\
+                                        & = 2x \Delta{x} + \Delta{x}^2 - 3 \Delta{x}                      \\
             \\
-            \dfrac{\Delta y}{\Delta x} & = \dfrac{2x \Delta x + \Delta x^2 - 3 \Delta x}{\Delta x}   \\
-                                       & = 2x + \Delta x - 3
+            \dfrac{\Delta y}{\Delta{x}} & = \dfrac{2x \Delta{x} + \Delta{x}^2 - 3 \Delta{x}}{\Delta{x}}   \\
+                                        & = 2x + \Delta{x} - 3
         \end{flalign*}
         \vspace{-1.5em}
         \begin{flalign*}
-            \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{\left(2x + \Delta x - 3\right)} & \\
-            \dfrac{dy}{dx}                                           & = 2x - 3
+            \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} & = \lim\limits_{\Delta{x}\to{0}}{\left(2x + \Delta{x} - 3\right)} & \\
+            \dfrac{dy}{dx}                                             & = 2x - 3
         \end{flalign*}
         $\therefore$ The derivative value at $x = 2$ is $2(2) - 3 = 1$.
         \vfill{}\null{}
@@ -543,18 +541,18 @@ derivative. Hence, find the derivative value at $x = 2$ (Question 1 to 12):
         \item $y = x^2 - x - 3$
         \sol{}
         \begin{flalign*}
-            \Delta y                   & = (x + \Delta x)^2 - (x + \Delta x) - 3 - (x^2 - x - 3)       & \\
-                                       & = x^2 + 2x \Delta x + \Delta x^2 - x - \Delta x - 3 - x^2 + x   \\
-                                       & \ \ \ \ + 3                                                     \\
-                                       & = 2x \Delta x + \Delta x^2 - \Delta x                           \\
+            \Delta y                    & = {(x + \Delta{x})}^2 - (x + \Delta{x}) - 3 - (x^2 - x - 3)      & \\
+                                        & = x^2 + 2x \Delta{x} + \Delta{x}^2 - x - \Delta{x} - 3 - x^2 + x   \\
+                                        & \ \ \ \ + 3                                                        \\
+                                        & = 2x \Delta{x} + \Delta{x}^2 - \Delta{x}                           \\
             \\
-            \dfrac{\Delta y}{\Delta x} & = \dfrac{2x \Delta x + \Delta x^2 - \Delta x}{\Delta x}       & \\
-                                       & = 2x + \Delta x - 1
+            \dfrac{\Delta y}{\Delta{x}} & = \dfrac{2x \Delta{x} + \Delta{x}^2 - \Delta{x}}{\Delta{x}}      & \\
+                                        & = 2x + \Delta{x} - 1
         \end{flalign*}
         \vspace{-0.8cm}
         \begin{flalign*}
-            \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{\left(2x + \Delta x - 1\right)} & \\
-            \dfrac{dy}{dx}                                           & = 2x - 1
+            \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} & = \lim\limits_{\Delta{x}\to{0}}{\left(2x + \Delta{x} - 1\right)} & \\
+            \dfrac{dy}{dx}                                             & = 2x - 1
         \end{flalign*}
         $\therefore$ The derivative value at $x = 2$ is $2(2) - 1 = 3$.
     \end{multicols}
@@ -564,20 +562,20 @@ derivative. Hence, find the derivative value at $x = 2$ (Question 1 to 12):
         \item $y = 2x^2 + 3x - 1$
         \sol{}
         \begin{flalign*}
-            \Delta y                   & = 2(x + \Delta x)^2 + 3(x + \Delta x) - 1                     \\
-                                       & \ \ \ \ - (2x^2 + 3x - 1)                                   & \\
-                                       & = 2(x^2 + 2x \Delta x + \Delta x^2) + 3x + 3 \Delta x         \\
-                                       & \ \ \ \ - 1 - 2x^2                                            \\
-                                       & \ \ \ \ - 3x + 1                                              \\
-                                       & = 4x \Delta x + 2 \Delta x^2 + 3 \Delta x                     \\
+            \Delta y                    & = 2{(x + \Delta{x})}^2 + 3(x + \Delta{x}) - 1                     \\
+                                        & \ \ \ \ - (2x^2 + 3x - 1)                                       & \\
+                                        & = 2(x^2 + 2x \Delta{x} + \Delta{x}^2) + 3x + 3 \Delta{x}          \\
+                                        & \ \ \ \ - 1 - 2x^2                                                \\
+                                        & \ \ \ \ - 3x + 1                                                  \\
+                                        & = 4x \Delta{x} + 2 \Delta{x}^2 + 3 \Delta{x}                      \\
             \\
-            \dfrac{\Delta y}{\Delta x} & = \dfrac{4x \Delta x + 2 \Delta x^2 + 3 \Delta x}{\Delta x} & \\
-                                       & = 4x + 2 \Delta x + 3
+            \dfrac{\Delta y}{\Delta{x}} & = \dfrac{4x \Delta{x} + 2 \Delta{x}^2 + 3 \Delta{x}}{\Delta{x}} & \\
+                                        & = 4x + 2 \Delta{x} + 3
         \end{flalign*}
         \vspace{-0.8cm}
         \begin{flalign*}
-            \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{\left(4x + 2 \Delta x + 3\right)} & \\
-            \dfrac{dy}{dx}                                           & = 4x + 3
+            \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} & = \lim\limits_{\Delta{x}\to{0}}{\left(4x + 2 \Delta{x} + 3\right)} & \\
+            \dfrac{dy}{dx}                                             & = 4x + 3
         \end{flalign*}
         $\therefore$ The derivative value at $x = 2$ is $4(2) + 3 = 11$.
         \vfill{}\null{}
@@ -585,55 +583,55 @@ derivative. Hence, find the derivative value at $x = 2$ (Question 1 to 12):
         \item $y = x^3 + 1$
         \sol{}
         \begin{flalign*}
-            \Delta y                   & = (x + \Delta x)^3 + 1 - (x^3 + 1)                             & \\
-                                       & = x^3 + 3x^2 \Delta x + 3x \Delta x^2 + \Delta x^3 + 1           \\
-                                       & \ \ \ \ - x^3 - 1                                                \\
-                                       & = 3x^2 \Delta x + 3x \Delta x^2 + \Delta x^3                     \\
+            \Delta y                    & = {(x + \Delta{x})}^3 + 1 - (x^3 + 1)                              & \\
+                                        & = x^3 + 3x^2 \Delta{x} + 3x \Delta{x}^2 + \Delta{x}^3 + 1            \\
+                                        & \ \ \ \ - x^3 - 1                                                    \\
+                                        & = 3x^2 \Delta{x} + 3x \Delta{x}^2 + \Delta{x}^3                      \\
             \\
-            \dfrac{\Delta y}{\Delta x} & = \dfrac{3x^2 \Delta x + 3x \Delta x^2 + \Delta x^3}{\Delta x} & \\
-                                       & = 3x^2 + 3x \Delta x + \Delta x^2
+            \dfrac{\Delta y}{\Delta{x}} & = \dfrac{3x^2 \Delta{x} + 3x \Delta{x}^2 + \Delta{x}^3}{\Delta{x}} & \\
+                                        & = 3x^2 + 3x \Delta{x} + \Delta{x}^2
         \end{flalign*}
         \vspace{-0.8cm}
         \begin{flalign*}
-            \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{\left(3x^2 + 3x \Delta x + \Delta x^2\right)} & \\
-            \dfrac{dy}{dx}                                           & = 3x^2
+            \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} & = \lim\limits_{\Delta{x}\to{0}}{\left(3x^2 + 3x \Delta{x} + \Delta{x}^2\right)} & \\
+            \dfrac{dy}{dx}                                             & = 3x^2
         \end{flalign*}
-        $\therefore$ The derivative value at $x = 2$ is $3(2)^2 = 12$.
+        $\therefore$ The derivative value at $x = 2$ is $3{(2)}^2 = 12$.
     \end{multicols}
 
     \item $y = x^3 - 2x$
           \sol{}
           \begin{flalign*}
-              \Delta y                   & = (x + \Delta x)^3 - 2(x + \Delta x) - (x^3 - 2x)                           & \\
-                                         & = x^3 + 3x^2 \Delta x + 3x \Delta x^2 + \Delta x^3                            \\
-                                         & \ \ \ \ - 2x - 2 \Delta x - x^3 + 2x                                          \\
-                                         & = 3x^2 \Delta x + 3x \Delta x^2 + \Delta x^3 - 2 \Delta x                     \\
+              \Delta y                    & = {(x + \Delta{x})}^3 - 2(x + \Delta{x}) - (x^3 - 2x)                            & \\
+                                          & = x^3 + 3x^2 \Delta{x} + 3x \Delta{x}^2 + \Delta{x}^3                              \\
+                                          & \ \ \ \ - 2x - 2 \Delta{x} - x^3 + 2x                                              \\
+                                          & = 3x^2 \Delta{x} + 3x \Delta{x}^2 + \Delta{x}^3 - 2 \Delta{x}                      \\
               \\
-              \dfrac{\Delta y}{\Delta x} & = \dfrac{3x^2 \Delta x + 3x \Delta x^2 + \Delta x^3 - 2 \Delta x}{\Delta x} & \\
-                                         & = 3x^2 + 3x \Delta x + \Delta x^2 - 2
+              \dfrac{\Delta y}{\Delta{x}} & = \dfrac{3x^2 \Delta{x} + 3x \Delta{x}^2 + \Delta{x}^3 - 2 \Delta{x}}{\Delta{x}} & \\
+                                          & = 3x^2 + 3x \Delta{x} + \Delta{x}^2 - 2
           \end{flalign*}
           \vspace{-0.8cm}
           \begin{flalign*}
-              \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{\left(3x^2 + 3x \Delta x + \Delta x^2 - 2\right)} & \\
-              \dfrac{dy}{dx}                                           & = 3x^2 - 2
+              \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} & = \lim\limits_{\Delta{x}\to{0}}{\left(3x^2 + 3x \Delta{x} + \Delta{x}^2 - 2\right)} & \\
+              \dfrac{dy}{dx}                                             & = 3x^2 - 2
           \end{flalign*}
-          $\therefore$ The derivative value at $x = 2$ is $3(2)^2 - 2 = 10$.
+          $\therefore$ The derivative value at $x = 2$ is $3{(2)}^2 - 2 = 10$.
 
           \newpage
     \item $y = \sqrt{x + 2}$
           \sol{}
           \begin{flalign*}
-              \Delta y                                                 & = \sqrt{x + \Delta x + 2} - \sqrt{x + 2}                                                                                                                                              & \\
+              \Delta y                                                   & = \sqrt{x + \Delta{x} + 2} - \sqrt{x + 2}                                                                                                                                                  & \\
               \\
-              \dfrac{\Delta y}{\Delta x}                               & = \dfrac{\sqrt{x + \Delta x + 2} - \sqrt{x + 2}}{\Delta x}                                                                                                                            & \\
+              \dfrac{\Delta y}{\Delta{x}}                                & = \dfrac{\sqrt{x + \Delta{x} + 2} - \sqrt{x + 2}}{\Delta{x}}                                                                                                                               & \\
               \\
-              \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{\dfrac{\sqrt{x + \Delta x + 2} - \sqrt{x + 2}}{\Delta x}}                                                                                              & \\
-                                                                       & = \lim\limits_{\Delta x \to 0}{\dfrac{\sqrt{x + \Delta x + 2} - \sqrt{x + 2}}{\Delta x}} \cdot \dfrac{\sqrt{x + \Delta x + 2} + \sqrt{x + 2}}{\sqrt{x + \Delta x + 2} + \sqrt{x + 2}} & \\
-                                                                       & = \lim\limits_{\Delta x \to 0}{\dfrac{x + \Delta x + 2 - x +-2}{\Delta x \left(\sqrt{x + \Delta x + 2} + \sqrt{x + 2}\right)}}                                                        & \\
-                                                                       & = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta x}{\Delta x \left(\sqrt{x + \Delta x + 2} + \sqrt{x + 2}\right)}}                                                                        & \\
-                                                                       & = \lim\limits_{\Delta x \to 0}{\dfrac{1}{\sqrt{x + \Delta x + 2} + \sqrt{x + 2}}}                                                                                                     & \\
-                                                                       & = \dfrac{1}{\sqrt{x + 2} + \sqrt{x + 2}}                                                                                                                                              & \\
-              \dfrac{dy}{dx}                                           & = \dfrac{1}{2\sqrt{x + 2}}
+              \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{\sqrt{x + \Delta{x} + 2} - \sqrt{x + 2}}{\Delta{x}}}                                                                                                & \\
+                                                                         & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{\sqrt{x + \Delta{x} + 2} - \sqrt{x + 2}}{\Delta{x}}} \cdot \dfrac{\sqrt{x + \Delta{x} + 2} + \sqrt{x + 2}}{\sqrt{x + \Delta{x} + 2} + \sqrt{x + 2}} & \\
+                                                                         & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{x + \Delta{x} + 2 - x +-2}{\Delta{x} \left(\sqrt{x + \Delta{x} + 2} + \sqrt{x + 2}\right)}}                                                         & \\
+                                                                         & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta{x}}{\Delta{x} \left(\sqrt{x + \Delta{x} + 2} + \sqrt{x + 2}\right)}}                                                                         & \\
+                                                                         & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{1}{\sqrt{x + \Delta{x} + 2} + \sqrt{x + 2}}}                                                                                                        & \\
+                                                                         & = \dfrac{1}{\sqrt{x + 2} + \sqrt{x + 2}}                                                                                                                                                   & \\
+              \dfrac{dy}{dx}                                             & = \dfrac{1}{2\sqrt{x + 2}}
           \end{flalign*}
           $\therefore$ The derivative value at $x = 2$ is $\dfrac{1}{2\sqrt{2 + 2}} = \dfrac{1}{4}$.
 
@@ -642,108 +640,109 @@ derivative. Hence, find the derivative value at $x = 2$ (Question 1 to 12):
               \item $y = \dfrac{2}{x^2}$
               \sol{}
               \begin{flalign*}
-                  \Delta y                                                 & = \dfrac{2}{(x + \Delta x)^2} - \dfrac{2}{x^2}                                                        & \\
-                                                                           & = \dfrac{2}{x^2 + 2x \Delta x + \Delta x^2} - \dfrac{2}{x^2}                                          & \\
-                                                                           & = \dfrac{2x^2 - 2x^2 - 4x \Delta x - 2 \Delta x^2}{x^2 \left(x^2 + 2x \Delta x + \Delta x^2\right)}   & \\
-                                                                           & = \dfrac{-4x \Delta x - 2 \Delta x^2}{x^2 \left(x^2 + 2x \Delta x + \Delta x^2\right)}                & \\
-                                                                           & = \dfrac{-4x \Delta x - 2 \Delta x^2}{x^4 + 2x^3 \Delta x + x^2 \Delta x^2}                           & \\
+                  \Delta y                                                   & = \dfrac{2}{{(x + \Delta{x})}^2} - \dfrac{2}{x^2}                                                          & \\
+                                                                             & = \dfrac{2}{x^2 + 2x \Delta{x} + \Delta{x}^2} - \dfrac{2}{x^2}                                             & \\
+                                                                             & = \dfrac{2x^2 - 2x^2 - 4x \Delta{x} - 2 \Delta{x}^2}{x^2 \left(x^2 + 2x \Delta{x} + \Delta{x}^2\right)}    & \\
+                                                                             & = \dfrac{-4x \Delta{x} - 2 \Delta{x}^2}{x^2 \left(x^2 + 2x \Delta{x} + \Delta{x}^2\right)}                 & \\
+                                                                             & = \dfrac{-4x \Delta{x} - 2 \Delta{x}^2}{x^4 + 2x^3 \Delta{x} + x^2 \Delta{x}^2}                            & \\
                   \\
-                  \dfrac{\Delta y}{\Delta x}                               & = \dfrac{-4x \Delta x - 2 \Delta x^2}{x^4 + 2x^3 \Delta x + x^2 \Delta x^2} \cdot \dfrac{1}{\Delta x} & \\
-                                                                           & = \dfrac{-4x - 2 \Delta x}{x^4 + 2x^3 \Delta x + x^2 \Delta x^2}                                      & \\
+                  \dfrac{\Delta y}{\Delta{x}}                                & = \dfrac{-4x \Delta{x} - 2 \Delta{x}^2}{x^4 + 2x^3 \Delta{x} + x^2 \Delta{x}^2} \cdot \dfrac{1}{\Delta{x}} & \\
+                                                                             & = \dfrac{-4x - 2 \Delta{x}}{x^4 + 2x^3 \Delta{x} + x^2 \Delta{x}^2}                                        & \\
                   \\
-                  \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{\dfrac{-4x - 2 \Delta x}{x^4 + 2x^3 \Delta x + x^2 \Delta x^2}}        & \\
-                  \dfrac{dy}{dx}                                           & = \dfrac{-4x}{x^4}                                                                                    & \\
-                                                                           & = -\dfrac{4}{x^3}
+                  \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{-4x - 2 \Delta{x}}{x^4 + 2x^3 \Delta{x} + x^2 \Delta{x}^2}}         & \\
+                  \dfrac{dy}{dx}                                             & = \dfrac{-4x}{x^4}                                                                                         & \\
+                                                                             & = -\dfrac{4}{x^3}
               \end{flalign*}
               $\therefore$ The derivative value at $x = 2$ is $-\dfrac{4}{2^3} = -\dfrac{1}{2}$.
               \columnbreak{}
               \item $y = \dfrac{1}{1 - x}$
               \sol{}
               \begin{flalign*}
-                  \Delta y                                                 & = \dfrac{1}{1 - (x + \Delta x)} - \dfrac{1}{1 - x}                      & \\
-                                                                           & = \dfrac{1}{1 - x - \Delta x} - \dfrac{1}{1 - x}                        & \\
-                                                                           & = \dfrac{1 - x - 1 + x + \Delta x}{(1 - x - \Delta x)(1 - x)}           & \\
-                                                                           & = \dfrac{\Delta x}{(1 - x - \Delta x)(1 - x)}                           & \\
+                  \Delta y                                                   & = \dfrac{1}{1 - (x + \Delta{x})} - \dfrac{1}{1 - x}                        & \\
+                                                                             & = \dfrac{1}{1 - x - \Delta{x}} - \dfrac{1}{1 - x}                          & \\
+                                                                             & = \dfrac{1 - x - 1 + x + \Delta{x}}{(1 - x - \Delta{x})(1 - x)}            & \\
+                                                                             & = \dfrac{\Delta{x}}{(1 - x - \Delta{x})(1 - x)}                            & \\
                   \\
-                  \dfrac{\Delta y}{\Delta x}                               & = \dfrac{\Delta x}{(1 - x - \Delta x)(1 - x)} \cdot \dfrac{1}{\Delta x} & \\
-                                                                           & = \dfrac{1}{(1 - x - \Delta x)(1 - x)}                                  & \\
+                  \dfrac{\Delta y}{\Delta{x}}                                & = \dfrac{\Delta{x}}{(1 - x - \Delta{x})(1 - x)} \cdot \dfrac{1}{\Delta{x}} & \\
+                                                                             & = \dfrac{1}{(1 - x - \Delta{x})(1 - x)}                                    & \\
                   \\
-                  \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{\dfrac{1}{(1 - x - \Delta x)(1 - x)}}    & \\
-                  \dfrac{dy}{dx}                                           & = \dfrac{1}{(1 - x)(1 - x)}                                             & \\
-                                                                           & = \dfrac{1}{(1 - x)^2}
+                  \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{1}{(1 - x - \Delta{x})(1 - x)}}     & \\
+                  \dfrac{dy}{dx}                                             & = \dfrac{1}{(1 - x)(1 - x)}                                                & \\
+                                                                             & = \dfrac{1}{{(1 - x)}^2}
               \end{flalign*}
-              $\therefore$ The derivative value at $x = 2$ is $\dfrac{1}{(1 - 2)^2} = 1$.
+              $\therefore$ The derivative value at $x = 2$ is $\dfrac{1}{{(1 - 2)}^2} = 1$.
           \end{multicols}
 
           \newpage
     \item Given the function $y = \dfrac{3}{x - 2}$, $x \neq 2$, find the following:
           \begin{enumerate}
-              \item $\dfrac{\Delta y}{\Delta x}$
+              \item $\dfrac{\Delta y}{\Delta{x}}$
                     \sol{}
                     \begin{flalign*}
-                        \Delta y                   & = \dfrac{3}{(x + \Delta x) - 2} - \dfrac{3}{x - 2}                         & \\
-                                                   & = \dfrac{3}{x + \Delta x - 2} - \dfrac{3}{x - 2}                           & \\
-                                                   & = \dfrac{3(x - 2) - 3(x + \Delta x - 2)}{(x + \Delta x - 2)(x - 2)}        & \\
-                                                   & = \dfrac{3x - 6 - 3x - 3 \Delta x + 6}{(x + \Delta x - 2)(x - 2)}          & \\
-                                                   & = \dfrac{-3 \Delta x}{(x + \Delta x - 2)(x - 2)}                           & \\
+                        \Delta y                    & = \dfrac{3}{(x + \Delta{x}) - 2} - \dfrac{3}{x - 2}                           & \\
+                                                    & = \dfrac{3}{x + \Delta{x} - 2} - \dfrac{3}{x - 2}                             & \\
+                                                    & = \dfrac{3(x - 2) - 3(x + \Delta{x} - 2)}{(x + \Delta{x} - 2)(x - 2)}         & \\
+                                                    & = \dfrac{3x - 6 - 3x - 3 \Delta{x} + 6}{(x + \Delta{x} - 2)(x - 2)}           & \\
+                                                    & = \dfrac{-3 \Delta{x}}{(x + \Delta{x} - 2)(x - 2)}                            & \\
                         \\
-                        \dfrac{\Delta y}{\Delta x} & = \dfrac{-3 \Delta x}{(x + \Delta x - 2)(x - 2)} \cdot \dfrac{1}{\Delta x} & \\
-                                                   & = -\dfrac{3}{(x + \Delta x - 2)(x - 2)}                                    & \\
+                        \dfrac{\Delta y}{\Delta{x}} & = \dfrac{-3 \Delta{x}}{(x + \Delta{x} - 2)(x - 2)} \cdot \dfrac{1}{\Delta{x}} & \\
+                                                    & = -\dfrac{3}{(x + \Delta{x} - 2)(x - 2)}                                      & \\
                     \end{flalign*}
 
               \item $\dfrac{dy}{dx}$
                     \sol{}
                     \begin{flalign*}
-                        \dfrac{dy}{dx} & = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}}            & \\
-                                       & = \lim\limits_{\Delta x \to 0}{-\dfrac{3}{(x + \Delta x - 2)(x - 2)}} & \\
-                                       & = -\dfrac{3}{(x - 2)^2}
+                        \dfrac{dy}{dx} & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}}            & \\
+                                       & = \lim\limits_{\Delta{x}\to{0}}{-\dfrac{3}{(x + \Delta{x} - 2)(x - 2)}} & \\
+                                       & = -\dfrac{3}{{(x - 2)}^2}
                     \end{flalign*}
 
               \item the derivative value at $x = 3$ \sol{}
                     \begin{flalign*}
-                        \dfrac{dy}{dx} & = -\dfrac{3}{(x - 2)^2} & \\
-                                       & = -\dfrac{3}{(3 - 2)^2} & \\
+                        \dfrac{dy}{dx} & = -\dfrac{3}{{(x - 2)}^2} & \\
+                                       & = -\dfrac{3}{{(3 - 2)}^2} & \\
                                        & = -3
                     \end{flalign*}
           \end{enumerate}
 
+          \newpage
     \item Given the function $f(x) = \dfrac{2}{\sqrt{x}}$, $x \neq 0$. Find (a) $f'(x)$;
-          (b) $f'(1)$. \sol{}
+          (b) $f'(1)$.\sol{}
           \begin{flalign*}
-              \Delta y                                                 & = \dfrac{2}{\sqrt{x + \Delta x}} - \dfrac{2}{\sqrt{x}}                                                                                                                                            & \\
-                                                                       & = \dfrac{2\sqrt{x} - 2\sqrt{x + \Delta x}}{\sqrt{x(x + \Delta x)}}                                                                                                                                & \\
-                                                                       & = \dfrac{2\left(\sqrt{x} - \sqrt{x + \Delta x}\right)}{\sqrt{x^2 + x\Delta x}}                                                                                                                    & \\
+              \Delta y                                                   & = \dfrac{2}{\sqrt{x + \Delta{x}}} - \dfrac{2}{\sqrt{x}}                                                                                                                                                 & \\
+                                                                         & = \dfrac{2\sqrt{x} - 2\sqrt{x + \Delta{x}}}{\sqrt{x(x + \Delta{x})}}                                                                                                                                    & \\
+                                                                         & = \dfrac{2\left(\sqrt{x} - \sqrt{x + \Delta{x}}\right)}{\sqrt{x^2 + x\Delta{x}}}                                                                                                                        & \\
               \\
-              \dfrac{\Delta y}{\Delta x}                               & = \dfrac{2\left(\sqrt{x} - \sqrt{x + \Delta x}\right)}{\Delta x\sqrt{x^2 + x\Delta x}}                                                                                                              \\
-              \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{\dfrac{2\left(\sqrt{x} - \sqrt{x + \Delta x}\right)}{\Delta x\sqrt{x^2 + x\Delta x}}}                                                                              & \\
-                                                                       & = \lim\limits_{\Delta x \to 0}{\dfrac{2\left(\sqrt{x} - \sqrt{x + \Delta x}\right)}{\Delta x\sqrt{x^2 + x\Delta x}}} \cdot \dfrac{\sqrt{x} + \sqrt{x + \Delta x}}{\sqrt{x} + \sqrt{x + \Delta x}} & \\
-                                                                       & = \lim\limits_{\Delta x \to 0}{\dfrac{2\left(x - x - \Delta x\right)}{\Delta x\left(\sqrt{x^2 + x\Delta x}\right)\left(\sqrt{x} + \sqrt{x + \Delta x}\right)}}                                    & \\
-                                                                       & = \lim\limits_{\Delta x \to 0}{\dfrac{-2\Delta x}{\Delta x\left(\sqrt{x^2 + x\Delta x}\right)\left(\sqrt{x} + \sqrt{x + \Delta x}\right)}}                                                        & \\
-                                                                       & = \lim\limits_{\Delta x \to 0}{\dfrac{-2}{\left(\sqrt{x^2 + x\Delta x}\right)\left(\sqrt{x} + \sqrt{x + \Delta x}\right)}}                                                                        & \\
+              \dfrac{\Delta y}{\Delta{x}}                                & = \dfrac{2\left(\sqrt{x} - \sqrt{x + \Delta{x}}\right)}{\Delta{x}\sqrt{x^2 + x\Delta{x}}}                                                                                                                 \\
+              \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{2\left(\sqrt{x} - \sqrt{x + \Delta{x}}\right)}{\Delta{x}\sqrt{x^2 + x\Delta{x}}}}                                                                                & \\
+                                                                         & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{2\left(\sqrt{x} - \sqrt{x + \Delta{x}}\right)}{\Delta{x}\sqrt{x^2 + x\Delta{x}}}} \cdot \dfrac{\sqrt{x} + \sqrt{x + \Delta{x}}}{\sqrt{x} + \sqrt{x + \Delta{x}}} & \\
+                                                                         & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{2\left(x - x - \Delta{x}\right)}{\Delta{x}\left(\sqrt{x^2 + x\Delta{x}}\right)\left(\sqrt{x} + \sqrt{x + \Delta{x}}\right)}}                                     & \\
+                                                                         & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{-2\Delta{x}}{\Delta{x}\left(\sqrt{x^2 + x\Delta{x}}\right)\left(\sqrt{x} + \sqrt{x + \Delta{x}}\right)}}                                                         & \\
+                                                                         & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{-2}{\left(\sqrt{x^2 + x\Delta{x}}\right)\left(\sqrt{x} + \sqrt{x + \Delta{x}}\right)}}                                                                           & \\
               \\
-              f'(x)                                                    & = \lim\limits_{\Delta x \to 0}{\dfrac{-2}{\left(\sqrt{x^2 + x\Delta x}\right)\left(\sqrt{x} + \sqrt{x + \Delta x}\right)}}                                                                        & \\
-                                                                       & = \dfrac{-2}{x\left(\sqrt{x} + \sqrt{x}\right)}                                                                                                                                                   & \\
-                                                                       & = \dfrac{-2}{2x\sqrt{x}}                                                                                                                                                                          & \\
-                                                                       & = -\dfrac{1}{\sqrt{x^3}}                                                                                                                                                                          & \\
+              f'(x)                                                      & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{-2}{\left(\sqrt{x^2 + x\Delta{x}}\right)\left(\sqrt{x} + \sqrt{x + \Delta{x}}\right)}}                                                                           & \\
+                                                                         & = \dfrac{-2}{x\left(\sqrt{x} + \sqrt{x}\right)}                                                                                                                                                         & \\
+                                                                         & = -\dfrac{1}{\sqrt{x^3}}                                                                                                                                                                                & \\
               \\
-              f'(1)                                                    & = -\dfrac{1}{\sqrt{1^3}}                                                                                                                                                                          & \\
-                                                                       & = -1
+              f'(1)                                                      & = -\dfrac{1}{\sqrt{1^3}}                                                                                                                                                                                & \\
+                                                                         & = -1
           \end{flalign*}
 
+          \newpage
     \item Given the curve $y = 3 - 4x - 5x^2$.
           \begin{enumerate}
-              \item Find $\dfrac{dy}{dx}$ using the definition of derivative. \sol{}
+              \item Find $\dfrac{dy}{dx}$ using the definition of derivative.\sol{}
                     \begin{flalign*}
-                        \Delta y                   & = 3 - 4(x + \Delta x) - 5(x + \Delta x)^2 - (3 - 4x - 5x^2)             & \\
-                                                   & = 3 - 4x - 4\Delta x - 5x^2 - 10x\Delta x - 5\Delta x^2 - 3 + 4x + 5x^2 & \\
-                                                   & = -4\Delta x - 10x\Delta x - 5\Delta x^2                                & \\
+                        \Delta y                    & = 3 - 4(x + \Delta{x}) - 5{(x + \Delta{x})}^2 - (3 - 4x - 5x^2)            & \\
+                                                    & = 3 - 4x - 4\Delta{x} - 5x^2 - 10x\Delta{x} - 5\Delta{x}^2 - 3 + 4x + 5x^2 & \\
+                                                    & = -4\Delta{x} - 10x\Delta{x} - 5\Delta{x}^2                                & \\
                         \\
-                        \dfrac{\Delta y}{\Delta x} & = \dfrac{-4\Delta x - 10x\Delta x - 5\Delta x^2}{\Delta x}                \\
-                                                   & = -4 - 10x - 5\Delta x                                                    \\
+                        \dfrac{\Delta y}{\Delta{x}} & = \dfrac{-4\Delta{x} - 10x\Delta{x} - 5\Delta{x}^2}{\Delta{x}}               \\
+                                                    & = -4 - 10x - 5\Delta{x}                                                      \\
                         \\
-                        \dfrac{dy}{dx}             & = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}}              & \\
-                                                   & = \lim\limits_{\Delta x \to 0}{-4 - 10x - 5\Delta x}                    & \\
-                                                   & = -4 - 10x
+                        \dfrac{dy}{dx}              & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}}               & \\
+                                                    & = \lim\limits_{\Delta{x}\to{0}}{-4 - 10x - 5\Delta{x}}                     & \\
+                                                    & = -4 - 10x
                     \end{flalign*}
 
               \item Find the gradient of the tangent to the curve at the point where $x = -2$.
@@ -755,16 +754,16 @@ derivative. Hence, find the derivative value at $x = 2$ (Question 1 to 12):
                     \end{flalign*}
 
               \item If the gradient of the tangent to the curve at point $P$ is $6$, find the
-                    coordinates of point $P$. \sol{}
+                    coordinates of point $P$.\sol{}
                     \begin{flalign*}
-                        \dfrac{dy}{dx} & = 6                   & \\
-                        -4 - 10x       & = 6                   & \\
-                        -10x           & = 10                  & \\
-                        x              & = -1                  & \\
-                        y              & = 3 - 4x - 5x^2       & \\
-                                       & = 3 - 4(-1) - 5(-1)^2 & \\
-                                       & = 3 + 4 - 5           & \\
-                                       & = 2                     \\
+                        \dfrac{dy}{dx} & = 6                     & \\
+                        -4 - 10x       & = 6                     & \\
+                        -10x           & = 10                    & \\
+                        x              & = -1                    & \\
+                        y              & = 3 - 4x - 5x^2         & \\
+                                       & = 3 - 4(-1) - 5{(-1)}^2 & \\
+                                       & = 3 + 4 - 5             & \\
+                                       & = 2                       \\
                         \\
                         P              & = (-1, 2)
                     \end{flalign*}
@@ -781,13 +780,13 @@ derivative, then we can use these formulas to find the derivatives.
 
 Let $y = f (x) = c$, where $c$ is a constant.
 \begin{flalign*}
-    \dfrac{\Delta y}{\Delta x} & = \dfrac{f (x + \Delta x) - f (x)}{\Delta x}               \\
-                               & = \dfrac{c - c}{\Delta x}                                  \\
-                               & = 0                                                        \\
+    \dfrac{\Delta y}{\Delta{x}} & = \dfrac{f (x + \Delta{x}) - f (x)}{\Delta{x}}               \\
+                                & = \dfrac{c - c}{\Delta{x}}                                   \\
+                                & = 0                                                          \\
     \\
-    \dfrac{d}{dx} (c)          & = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} \\
-                               & = \lim\limits_{\Delta x \to 0}{0}                          \\
-                               & = 0
+    \dfrac{d}{dx} (c)           & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} \\
+                                & = \lim\limits_{\Delta{x}\to{0}}{0}                           \\
+                                & = 0
 \end{flalign*}
 
 \begin{mdframed}[style=MyFrame]
@@ -798,20 +797,20 @@ Let $y = f (x) = c$, where $c$ is a constant.
 
 Let $y = f (x) = x^n$, where $n$ is a positive integer.
 \begin{flalign*}
-    \Delta y = f (x + \Delta x) - f (x) & = f (x - \Delta x) - f (x)                                                                                                                  \\
-                                        & = {(x + \Delta x)}^n - x^n                                                                                                                  \\
-                                        & = \left[x^n + \comb[n]{1}x^{n - 1}\Delta x + \comb[n]{2}x^{n - 2}{(\Delta x)}^2 + \cdots + \comb[n]{n}{(\Delta x)}^n\right] - x^n           \\
-                                        & = \comb[n]{1}x^{n - 1}\Delta x + \comb[n]{2}x^{n - 2}{(\Delta x)}^2 + \cdots + \comb[n]{n}{(\Delta x)}^n                                    \\
-    \dfrac{\Delta y}{\Delta x}          & = \comb[n]{1}x^{n - 1} + \comb[n]{2}x^{n - 2}\Delta x + \cdots + \comb[n]{n}{(\Delta x)}^{n - 1}                                            \\
+    \Delta y = f (x + \Delta{x}) - f (x) & = f (x - \Delta{x}) - f (x)                                                                                                                    \\
+                                         & = {(x + \Delta{x})}^n - x^n                                                                                                                    \\
+                                         & = \left[x^n + \comb[n]{1}x^{n - 1}\Delta{x} + \comb[n]{2}x^{n - 2}{(\Delta{x})}^2 + \cdots + \comb[n]{n}{(\Delta{x})}^n\right] - x^n           \\
+                                         & = \comb[n]{1}x^{n - 1}\Delta{x} + \comb[n]{2}x^{n - 2}{(\Delta{x})}^2 + \cdots + \comb[n]{n}{(\Delta{x})}^n                                    \\
+    \dfrac{\Delta y}{\Delta{x}}          & = \comb[n]{1}x^{n - 1} + \comb[n]{2}x^{n - 2}\Delta{x} + \cdots + \comb[n]{n}{(\Delta{x})}^{n - 1}                                             \\
     \\
-    \dfrac{d}{dx} (x^n)                 & = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}}                                                                                  \\
-                                        & = \lim\limits_{\Delta x \to 0}{\left[\comb[n]{1}x^{n - 1} + \comb[n]{2}x^{n - 2}\Delta x + \cdots + \comb[n]{n}{(\Delta x)}^{n - 1}\right]} \\
-                                        & = \comb[n]{1}x^{n - 1}
+    \dfrac{d}{dx} (x^n)                  & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}}                                                                                   \\
+                                         & = \lim\limits_{\Delta{x}\to{0}}{\left[\comb[n]{1}x^{n - 1} + \comb[n]{2}x^{n - 2}\Delta{x} + \cdots + \comb[n]{n}{(\Delta{x})}^{n - 1}\right]} \\
+                                         & = \comb[n]{1}x^{n - 1}
 \end{flalign*}
 
 \begin{mdframed}[style=MyFrame]
     \begin{cequation}
-        \dfrac{d}{dx} (x^n) = nx^{n - 1}
+        \dfrac{d}{dx} (x^n) = nx^{n-1}
     \end{cequation}
 \end{mdframed}
 The derivation above only considered the case where $n$ is a positive integer. In fact, the formula above is also valid when $n$ is a negative integer or a rational number.
@@ -821,13 +820,13 @@ The derivation above only considered the case where $n$ is a positive integer. I
 Let $y = cu$, where $c$ is a constant and $u$ is a differentiable function of
 $x$.
 \begin{flalign*}
-    y + \Delta y               & = c(u + \Delta u) = cu + c\Delta u                                       \\
-    \Delta y                   & = c\Delta u                                                              \\
-    \dfrac{\Delta y}{\Delta x} & = c\dfrac{\Delta u}{\Delta x}                                            \\
+    y + \Delta y                & = c(u + \Delta u) = cu + c\Delta u                                         \\
+    \Delta y                    & = c\Delta u                                                                \\
+    \dfrac{\Delta y}{\Delta{x}} & = c\dfrac{\Delta u}{\Delta{x}}                                             \\
     \\
-    \dfrac{d}{dx} (cu)         & = \lim\limits_{\Delta x \to 0}{\left(c\dfrac{\Delta u}{\Delta x}\right)} \\
-                               & = c\lim\limits_{\Delta x \to 0}{\dfrac{\Delta u}{\Delta x}}              \\
-                               & = c\dfrac{du}{dx}
+    \dfrac{d}{dx} (cu)          & = \lim\limits_{\Delta{x}\to{0}}{\left(c\dfrac{\Delta u}{\Delta{x}}\right)} \\
+                                & = c\lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta u}{\Delta{x}}}              \\
+                                & = c\dfrac{du}{dx}
 \end{flalign*}
 
 \begin{mdframed}[style=MyFrame]
@@ -840,13 +839,13 @@ $x$.
 
 Let $y = u \pm v$, where $u$ and $v$ are differentiable functions of $x$.
 \begin{flalign*}
-    y + \Delta y               & = (u + \Delta u) \pm (v + \Delta v)                                                                                     \\
-    \Delta y                   & = \Delta u \pm \Delta v                                                                                                 \\
-    \dfrac{\Delta y}{\Delta x} & = \dfrac{\Delta u}{\Delta x} \pm \dfrac{\Delta v}{\Delta x}                                                             \\
+    y + \Delta y                & = (u + \Delta u) \pm (v + \Delta v)                                                                                         \\
+    \Delta y                    & = \Delta u \pm \Delta v                                                                                                     \\
+    \dfrac{\Delta y}{\Delta{x}} & = \dfrac{\Delta u}{\Delta{x}} \pm \dfrac{\Delta v}{\Delta{x}}                                                               \\
     \\
-    \dfrac{d}{dx} (u \pm v)    & = \lim\limits_{\Delta x \to 0}{\left(\dfrac{\Delta u}{\Delta x} \pm \dfrac{\Delta v}{\Delta x}\right)}                  \\
-                               & = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta u}{\Delta x}} \pm \lim\limits_{\Delta x \to 0}{\dfrac{\Delta v}{\Delta x}} \\
-                               & = \dfrac{du}{dx} \pm \dfrac{dv}{dx}
+    \dfrac{d}{dx} (u \pm v)     & = \lim\limits_{\Delta{x}\to{0}}{\left(\dfrac{\Delta u}{\Delta{x}} \pm \dfrac{\Delta v}{\Delta{x}}\right)}                   \\
+                                & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta u}{\Delta{x}}} \pm \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta v}{\Delta{x}}} \\
+                                & = \dfrac{du}{dx} \pm \dfrac{dv}{dx}
 \end{flalign*}
 
 \begin{mdframed}[style=MyFrame]
@@ -869,22 +868,22 @@ functions being added or subtracted. That is,
 
 Let $y = uv$, where $u$ and $v$ are differentiable functions of $x$.
 \begin{flalign*}
-    y + \Delta y               & = (u + \Delta u)(v + \Delta v)                                                                    \\
-                               & = uv + u\Delta v + v\Delta u + \Delta u \Delta v                                                  \\
-    \Delta y                   & = u\Delta v + v\Delta u + \Delta u \Delta v                                                       \\
-    \dfrac{\Delta y}{\Delta x} & = u\dfrac{\Delta v}{\Delta x} + v\dfrac{\Delta u}{\Delta x} + \Delta u \dfrac{\Delta v}{\Delta x}
+    y + \Delta y                & = (u + \Delta u)(v + \Delta v)                                                                       \\
+                                & = uv + u\Delta v + v\Delta u + \Delta u \Delta v                                                     \\
+    \Delta y                    & = u\Delta v + v\Delta u + \Delta u \Delta v                                                          \\
+    \dfrac{\Delta y}{\Delta{x}} & = u\dfrac{\Delta v}{\Delta{x}} + v\dfrac{\Delta u}{\Delta{x}} + \Delta u \dfrac{\Delta v}{\Delta{x}}
 \end{flalign*}
-\ \ \ \ \ \ \ \ \ \ Given that $\lim\limits_{\Delta x \to 0}{\dfrac{\Delta u}{\Delta x}} = \dfrac{du}{dx}$ and $\lim\limits_{\Delta x \to 0}{\dfrac{\Delta v}{\Delta x}} = \dfrac{dv}{dx}$,
+\ \ \ \ \ \ \ \ \ \ Given that $\lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta u}{\Delta{x}}} = \dfrac{du}{dx}$ and $\lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta v}{\Delta{x}}} = \dfrac{dv}{dx}$,
 \begin{flalign*}
-    \text{Hence, }\lim\limits_{\Delta x \to 0}{\Delta v} & = \lim\limits_{\Delta x \to 0}{\left(\dfrac{\Delta v}{\Delta x} \cdot \Delta x\right)}                                                                                                                                               \\
-                                                         & = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta v}{\Delta x}} \cdot \lim\limits_{\Delta x \to 0}{\Delta x}                                                                                                                              \\
-                                                         & = v' (x) \cdot 0                                                                                                                                                                                                                     \\
-                                                         & = 0                                                                                                                                                                                                                                  \\
+    \text{Hence, }\lim\limits_{\Delta{x}\to{0}}{\Delta v} & = \lim\limits_{\Delta{x}\to{0}}{\left(\dfrac{\Delta v}{\Delta{x}} \cdot \Delta{x}\right)}                                                                                                                                                   \\
+                                                          & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta v}{\Delta{x}}} \cdot \lim\limits_{\Delta{x}\to{0}}{\Delta{x}}                                                                                                                                 \\
+                                                          & = v' (x) \cdot 0                                                                                                                                                                                                                            \\
+                                                          & = 0                                                                                                                                                                                                                                         \\
     \\
-    \therefore\ \lim\limits_{\Delta x \to 0}{(uv)}       & = \lim\limits_{\Delta x \to 0}{\left(u\dfrac{\Delta v}{\Delta x} + v\dfrac{\Delta u}{\Delta x} + \Delta v \dfrac{\Delta v}{\Delta x}\right)}                                                                                         \\
-                                                         & = u\lim_{\Delta x \to 0}{\dfrac{\Delta v}{\Delta x}} + v\lim_{\Delta x \to 0}{\dfrac{\Delta u}{\Delta x}} + \left(\lim\limits_{\Delta x \to 0}{\dfrac{\Delta u}{\Delta x}}\right)\left(\lim\limits_{\Delta x \to 0}{\Delta v}\right) \\
-                                                         & = u\dfrac{dv}{dx} + v\dfrac{du}{dx} + 0                                                                                                                                                                                              \\
-                                                         & = u\dfrac{dv}{dx} + v\dfrac{du}{dx}
+    \therefore\ \lim\limits_{\Delta{x}\to{0}}{(uv)}       & = \lim\limits_{\Delta{x}\to{0}}{\left(u\dfrac{\Delta v}{\Delta{x}} + v\dfrac{\Delta u}{\Delta{x}} + \Delta v \dfrac{\Delta v}{\Delta{x}}\right)}                                                                                            \\
+                                                          & = u\lim_{\Delta{x}\to{0}}{\dfrac{\Delta v}{\Delta{x}}} + v\lim_{\Delta{x}\to{0}}{\dfrac{\Delta u}{\Delta{x}}} + \left(\lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta u}{\Delta{x}}}\right)\left(\lim\limits_{\Delta{x}\to{0}}{\Delta v}\right) \\
+                                                          & = u\dfrac{dv}{dx} + v\dfrac{du}{dx} + 0                                                                                                                                                                                                     \\
+                                                          & = u\dfrac{dv}{dx} + v\dfrac{du}{dx}
 \end{flalign*}
 
 \begin{mdframed}[style=MyFrame]
@@ -895,13 +894,13 @@ Let $y = uv$, where $u$ and $v$ are differentiable functions of $x$.
 
 \noindent This has proven that if $\dfrac{dv}{dx}$ exists at $x = x_0$, then
 \begin{flalign*}
-     & \lim\limits_{\Delta x \to 0}{v(x_0 + \Delta x) - v(x_0)} \\
-     & = \lim_{\Delta x \to 0}{\Delta v}                        \\
+     & \lim\limits_{\Delta{x}\to{0}}{v(x_0 + \Delta{x}) - v(x_0)} \\
+     & = \lim_{\Delta{x}\to{0}}{\Delta v}                         \\
      & = 0
 \end{flalign*}
 From that, we can conclude that
 \[
-    \lim_{\Delta x \to 0}{v(x_0 + \Delta x)} = v(x_0)
+    \lim_{\Delta{x}\to{0}}{v(x_0 + \Delta{x})} = v(x_0)
 \]
 That is, $y = v(x)$ is continuous at $x = x_0$.
 
@@ -1134,7 +1133,7 @@ That is, $y = v(x)$ is continuous at $x = x_0$.
     \newpage
     \begin{multicols}{2}
         \item If the gradient of the curve $y = x^3 + 6x^2 \\+ 45x + 12$ at point $A$ is
-        $36$, find the \\coordinates of $A$. \sol{}
+        $36$, find the \\coordinates of $A$.\sol{}
         \begin{flalign*}
             y'     & = \left(x^3 + 6x^2 + 45x + 12\right)' \\
             36     & = 3x^2 + 12x + 45                     \\
@@ -1153,7 +1152,7 @@ That is, $y = v(x)$ is continuous at $x = x_0$.
         Therefore, the coordinates of $A$ are $(-3, -96)$ and $(-1, -28)$.
         \columnbreak{}
         \item Given the functions $f (x) = f (x) = x^2 + 3x + 4$ and $g(x) = x^3 + x^2 + 7$.
-        If $f' (a) = g' (a)$, find the value of $a$. \sol{}
+        If $f' (a) = g' (a)$, find the value of $a$.\sol{}
         \begin{flalign*}
             f'(x)    & = 2x + 3    \\
             g'(x)    & = 3x^2 + 2x \\
@@ -1172,22 +1171,22 @@ That is, $y = v(x)$ is continuous at $x = x_0$.
 
 Let $y = \dfrac{u}{v}$, where $u$ and $v$ are differentiable functions of $x$.
 \begin{flalign*}
-    y + \Delta y               & = \dfrac{u + \Delta u}{v + \Delta v}                                                 \\
-    \Delta y                   & = \dfrac{u + \Delta u}{v + \Delta v} - \dfrac{u}{v}                                  \\
-                               & = \dfrac{v\Delta u - u\Delta v}{v(v + \Delta v)}                                     \\
-    \dfrac{\Delta y}{\Delta x} & = \dfrac{v\dfrac{\Delta u}{\Delta x} - u\dfrac{\Delta v}{\Delta x}}{v(v + \Delta v)}
+    y + \Delta y                & = \dfrac{u + \Delta u}{v + \Delta v}                                                   \\
+    \Delta y                    & = \dfrac{u + \Delta u}{v + \Delta v} - \dfrac{u}{v}                                    \\
+                                & = \dfrac{v\Delta u - u\Delta v}{v(v + \Delta v)}                                       \\
+    \dfrac{\Delta y}{\Delta{x}} & = \dfrac{v\dfrac{\Delta u}{\Delta{x}} - u\dfrac{\Delta v}{\Delta{x}}}{v(v + \Delta v)}
 \end{flalign*}
-When $\dfrac{\Delta x}{\Delta x}$ exists, $\lim\limits_{\Delta x \to 0}{\Delta v} = 0$.
+When $\dfrac{\Delta{x}}{\Delta{x}}$ exists, $\lim\limits_{\Delta{x}\to{0}}{\Delta v} = 0$.
 \begin{flalign*}
-    \therefore\ \dfrac{d}{dx}\left(\dfrac{u}{v}\right) & = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}}                                                                                                                                                   \\
-                                                       & = \lim\limits_{\Delta x \to 0}{\dfrac{v\dfrac{\Delta u}{\Delta x} - u\dfrac{\Delta v}{\Delta x}}{v(v + \Delta v)}}                                                                                           \\
-                                                       & = \dfrac{v\lim\limits_{\Delta x \to 0}{\dfrac{\Delta u}{\Delta x}} - u\lim\limits_{\Delta x \to 0}{\dfrac{\Delta v}{\Delta x}}}{\lim\limits_{\Delta x \to 0}{v^2} + v\lim\limits_{\Delta x \to 0}{\Delta v}} \\
+    \therefore\ \dfrac{d}{dx}\left(\dfrac{u}{v}\right) & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}}                                                                                                                                                       \\
+                                                       & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{v\dfrac{\Delta u}{\Delta{x}} - u\dfrac{\Delta v}{\Delta{x}}}{v(v + \Delta v)}}                                                                                              \\
+                                                       & = \dfrac{v\lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta u}{\Delta{x}}} - u\lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta v}{\Delta{x}}}}{\lim\limits_{\Delta{x}\to{0}}{v^2} + v\lim\limits_{\Delta{x}\to{0}}{\Delta v}} \\
                                                        & = \dfrac{v\dfrac{du}{dx} - u\dfrac{dv}{dx}}{v^2}
 \end{flalign*}
 
 \begin{mdframed}[style=MyFrame]
     \begin{cequation}
-        \dfrac{d}{dx}\left(\dfrac{u}{v}\right) = \dfrac{v\dfrac{du}{dx} - u\dfrac{dv}{dx}}{v^2} \quad \text{($v \neq 0$, $u$ and $v$ are differentiable functions of $x$)}
+        \dfrac{d}{dx}\left(\dfrac{u}{v}\right) = \dfrac{v\dfrac{du}{dx}-u\dfrac{dv}{dx}}{v^2} \quad \text{($v \neq 0$, $u$ and $v$ are differentiable functions of $x$)}
     \end{cequation}
 \end{mdframed}
 
@@ -1199,19 +1198,19 @@ When $\dfrac{\Delta x}{\Delta x}$ exists, $\lim\limits_{\Delta x \to 0}{\Delta v
         \item $y={\dfrac{2x}{x+2}}$
         \sol{}
         \begin{flalign*}
-            y' & = \dfrac{(x + 2)(2x)' - 2x(2x + 2)'}{(x + 2)^2} \\
-               & = \dfrac{(x + 2)(2) - 2x(2)}{(x + 2)^2}         \\
-               & = \dfrac{2x + 4 - 4x}{(x + 2)^2}                \\
-               & = \dfrac{-2x + 4}{(x + 2)^2}
+            y' & = \dfrac{(x + 2)(2x)' - 2x(2x + 2)'}{{(x + 2)}^2} \\
+               & = \dfrac{(x + 2)(2) - 2x(2)}{{(x + 2)}^2}         \\
+               & = \dfrac{2x + 4 - 4x}{{(x + 2)}^2}                \\
+               & = \dfrac{-2x + 4}{{(x + 2)}^2}
         \end{flalign*}
         \columnbreak{}
         \item $y={\dfrac{3x-2}{x+2}}$
         \sol{}
         \begin{flalign*}
-            y' & = \dfrac{(x + 2)(3x)' - (3x - 2)(x + 2)'}{(x + 2)^2} \\
-               & = \dfrac{(x + 2)(3) - (3x - 2)(1)}{(x + 2)^2}        \\
-               & = \dfrac{3x + 6 - 3x + 2}{(x + 2)^2}                 \\
-               & = \dfrac{8}{(x + 2)^2}
+            y' & = \dfrac{(x + 2)(3x)' - (3x - 2)(x + 2)'}{{(x + 2)}^2} \\
+               & = \dfrac{(x + 2)(3) - (3x - 2)(1)}{{(x + 2)}^2}        \\
+               & = \dfrac{3x + 6 - 3x + 2}{{(x + 2)}^2}                 \\
+               & = \dfrac{8}{{(x + 2)}^2}
         \end{flalign*}
     \end{multicols}
 
@@ -1219,44 +1218,43 @@ When $\dfrac{\Delta x}{\Delta x}$ exists, $\lim\limits_{\Delta x \to 0}{\Delta v
         \item $y={\dfrac{x}{x^{2}-5}}$
         \sol{}
         \begin{flalign*}
-            y' & = \dfrac{(x^2 - 5)(x)' - x(x^2 - 5)'}{(x^2 - 5)^2} \\
-               & = \dfrac{(x^2 - 5)(1) - x(2x)}{(x^2 - 5)^2}        \\
-               & = \dfrac{x^2 - 5 - 2x^2}{(x^2 - 5)^2}              \\
-               & = -\dfrac{x^2 + 5}{(x^2 - 5)^2}
+            y' & = \dfrac{(x^2 - 5)(x)' - x(x^2 - 5)'}{{(x^2 - 5)}^2} \\
+               & = \dfrac{(x^2 - 5)(1) - x(2x)}{{(x^2 - 5)}^2}        \\
+               & = \dfrac{x^2 - 5 - 2x^2}{{(x^2 - 5)}^2}              \\
+               & = -\dfrac{x^2 + 5}{{(x^2 - 5)}^2}
         \end{flalign*}
         \columnbreak{}
         \item $y={\dfrac{x^{2}-1}{3x-2}}$
         \sol{}
         \begin{flalign*}
-            y' & = \dfrac{(3x - 2)(x^2 - 1)' - (x^2 - 1)(3x - 2)'}{(3x - 2)^2} \\
-               & = \dfrac{(3x - 2)(2x) - (x^2 - 1)(3)}{(3x - 2)^2}             \\
-               & = \dfrac{6x^2 - 4x - 3x^2 + 3}{(3x - 2)^2}                    \\
-               & = \dfrac{3x^2 - 4x + 3}{(3x - 2)^2}
+            y' & = \dfrac{(3x - 2)(x^2 - 1)' - (x^2 - 1)(3x - 2)'}{{(3x - 2)}^2} \\
+               & = \dfrac{(3x - 2)(2x) - (x^2 - 1)(3)}{{(3x - 2)}^2}             \\
+               & = \dfrac{6x^2 - 4x - 3x^2 + 3}{{(3x - 2)}^2}                    \\
+               & = \dfrac{3x^2 - 4x + 3}{{(3x - 2)}^2}
         \end{flalign*}
     \end{multicols}
 \end{enumerate}
 
-\vspace{-1cm}
-\subsection{Exercise 25.3b}
+\newpage\subsection{Exercise 25.3b}
 \noindent Find the derivative of the following functions:
 \begin{enumerate}
     \begin{multicols}{2}
         \item $y={\dfrac{x-2}{x+2}}$
         \sol{}
         \begin{flalign*}
-            y' & = \dfrac{(x + 2)(x - 2)' - (x - 2)(x + 2)'}{(x + 2)^2} \\
-               & = \dfrac{(x + 2)(1) - (x - 2)(1)}{(x + 2)^2}           \\
-               & = \dfrac{x + 2 - x + 2}{(x + 2)^2}                     \\
-               & = \dfrac{4}{(x + 2)^2}
+            y' & = \dfrac{(x + 2)(x - 2)' - (x - 2)(x + 2)'}{{(x + 2)}^2} \\
+               & = \dfrac{(x + 2)(1) - (x - 2)(1)}{{(x + 2)}^2}           \\
+               & = \dfrac{x + 2 - x + 2}{{(x + 2)}^2}                     \\
+               & = \dfrac{4}{{(x + 2)}^2}
         \end{flalign*}
         \columnbreak{}
         \item $y={\dfrac{x-a}{2x+a}}$here $a$ is a constant
         \sol{}
         \begin{flalign*}
-            y' & = \dfrac{(2x + a)(x - a)' - (x - a)(2x + a)'}{(2x + a)^2} \\
-               & = \dfrac{(2x + a)(1) - (x - a)(2)}{(2x + a)^2}            \\
-               & = \dfrac{2x + a - 2x + 2a}{(2x + a)^2}                    \\
-               & = \dfrac{3a}{(2x + a)^2}
+            y' & = \dfrac{(2x + a)(x - a)' - (x - a)(2x + a)'}{{(2x + a)}^2} \\
+               & = \dfrac{(2x + a)(1) - (x - a)(2)}{{(2x + a)}^2}            \\
+               & = \dfrac{2x + a - 2x + 2a}{{(2x + a)}^2}                    \\
+               & = \dfrac{3a}{{(2x + a)}^2}
         \end{flalign*}
     \end{multicols}
 
@@ -1264,19 +1262,19 @@ When $\dfrac{\Delta x}{\Delta x}$ exists, $\lim\limits_{\Delta x \to 0}{\Delta v
         \item $y={\dfrac{2x^{3}}{x+2}}$
         \sol{}
         \begin{flalign*}
-            y' & = \dfrac{(x + 2)(2x^3)' - 2x^3(x + 2)'}{(x + 2)^2} \\
-               & = \dfrac{(x + 2)(6x^2) - 2x^3(1)}{(x + 2)^2}       \\
-               & = \dfrac{6x^3 + 12x^2 - 2x^3}{(x + 2)^2}           \\
-               & = \dfrac{4x^3 + 12x^2}{(x + 2)^2}
+            y' & = \dfrac{(x + 2)(2x^3)' - 2x^3(x + 2)'}{{(x + 2)}^2} \\
+               & = \dfrac{(x + 2)(6x^2) - 2x^3(1)}{{(x + 2)}^2}       \\
+               & = \dfrac{6x^3 + 12x^2 - 2x^3}{{(x + 2)}^2}           \\
+               & = \dfrac{4x^3 + 12x^2}{{(x + 2)}^2}
         \end{flalign*}
         \columnbreak{}
         \item $y={\dfrac{2x+3}{x^{2}+1}}$
         \sol{}
         \begin{flalign*}
-            y' & = \dfrac{(x^2 + 1)(2x + 3)' - (2x + 3)(x^2 + 1)'}{(x^2 + 1)^2} \\
-               & = \dfrac{(x^2 + 1)(2) - (2x + 3)(2x)}{(x^2 + 1)^2}             \\
-               & = \dfrac{2x^2 + 2 - 4x^2 - 6x}{(x^2 + 1)^2}                    \\
-               & = \dfrac{-2x^2 - 6x + 2}{(x^2 + 1)^2}
+            y' & = \dfrac{(x^2 + 1)(2x + 3)' - (2x + 3)(x^2 + 1)'}{{(x^2 + 1)}^2} \\
+               & = \dfrac{(x^2 + 1)(2) - (2x + 3)(2x)}{{(x^2 + 1)}^2}             \\
+               & = \dfrac{2x^2 + 2 - 4x^2 - 6x}{{(x^2 + 1)}^2}                    \\
+               & = \dfrac{-2x^2 - 6x + 2}{{(x^2 + 1)}^2}
         \end{flalign*}
     \end{multicols}
 
@@ -1284,19 +1282,18 @@ When $\dfrac{\Delta x}{\Delta x}$ exists, $\lim\limits_{\Delta x \to 0}{\Delta v
         \item $y={\dfrac{3x}{x^{2}-4x}}$
         \sol{}
         \begin{flalign*}
-            y' & = \dfrac{(x^2 - 4x)(3x)' - 3x(x^2 - 4x)'}{(x^2 - 4x)^2} \\
-               & = \dfrac{(x^2 - 4x)(3) - 3x(2x - 4)}{(x^2 - 4x)^2}      \\
-               & = \dfrac{3x^2 - 12x - 6x^2 + 12x}{(x^2 - 4x)^2}         \\
-               & = \dfrac{-3x^2}{(x^2 - 4x)^2}                           \\
-               & = -\dfrac{3}{(x - 4)^2}
+            y' & = \dfrac{(x^2 - 4x)(3x)' - 3x(x^2 - 4x)'}{{(x^2 - 4x)}^2} \\
+               & = \dfrac{(x^2 - 4x)(3) - 3x(2x - 4)}{{(x^2 - 4x)}^2}      \\
+               & = \dfrac{3x^2 - 12x - 6x^2 + 12x}{{(x^2 - 4x)}^2}         \\
+               & = \dfrac{-3x^2}{{(x^2 - 4x)}^2}                           \\
+               & = -\dfrac{3}{{(x - 4)}^2}
         \end{flalign*}
-        \columnbreak{}
         \item $y={\dfrac{3x^{2}+x-1}{2x-1}}$
         \sol{}
         \begin{flalign*}
-            y' & = \dfrac{(2x - 1)(6x + 1) - (3x^2 + x - 1)(2)}{(2x - 1)^2} \\
-               & = \dfrac{12x^2 - 4x - 1 - 6x^2 - 2x + 2}{(2x - 1)^2}       \\
-               & = \dfrac{6x^2 - 6x + 1}{(2x - 1)^2}
+            y' & = \dfrac{(2x - 1)(6x + 1) - (3x^2 + x - 1)(2)}{{(2x - 1)}^2} \\
+               & = \dfrac{12x^2 - 4x - 1 - 6x^2 - 2x + 2}{{(2x - 1)}^2}       \\
+               & = \dfrac{6x^2 - 6x + 1}{{(2x - 1)}^2}
         \end{flalign*}
     \end{multicols}
 
@@ -1304,42 +1301,42 @@ When $\dfrac{\Delta x}{\Delta x}$ exists, $\lim\limits_{\Delta x \to 0}{\Delta v
         \item $y={\dfrac{2x^{4}}{{\left(x+3\right)}^{2}}}$
         \sol{}
         \begin{flalign*}
-            y' & = \dfrac{(x + 3)^2(2x^4)' - 2x^4\bigl[(x + 3)^2\bigr]'}{(x + 3)^4} \\
-               & = \dfrac{(x + 3)^2(8x^3) - 2x^4(2)(x + 3)}{(x + 3)^4}              \\
-               & = \dfrac{(x + 3)\left[(x + 3)(8x^3) - 4x^4\right]}{(x + 3)^4}      \\
-               & = \dfrac{8x^4 + 24x^3 - 4x^4}{(x + 3)^3}                           \\
-               & = \dfrac{4x^4 + 24x^3}{(x + 3)^3}
+            y' & = \dfrac{{(x + 3)}^2(2x^4)' - 2x^4\bigl[{(x + 3)}^2\bigr]'}{{(x + 3)}^4} \\
+               & = \dfrac{{(x + 3)}^2(8x^3) - 2x^4(2)(x + 3)}{{(x + 3)}^4}                \\
+               & = \dfrac{(x + 3)\left[(x + 3)(8x^3) - 4x^4\right]}{{(x + 3)}^4}          \\
+               & = \dfrac{8x^4 + 24x^3 - 4x^4}{{(x + 3)}^3}                               \\
+               & = \dfrac{4x^4 + 24x^3}{{(x + 3)}^3}
         \end{flalign*}
         \columnbreak{}
         \item $y={\dfrac{2}{1+x}}+{\dfrac{2}{1-x}}$
         \sol{}
         \begin{flalign*}
-            y' & = \dfrac{2(1 - x + 1 + x)}{(1 - x)(1+x)}           \\
-               & = \dfrac{4}{1 - x^2}                               \\
-               & = \dfrac{(1 - x^2)(4)' - 4(1 - x^2)'}{(1 - x^2)^2} \\
-               & = \dfrac{- 4(-2x)}{(1 - x^2)^2}                    \\
-               & = \dfrac{8x}{(1 - x^2)^2}
+            y' & = \dfrac{2(1 - x + 1 + x)}{(1 - x)(1+x)}             \\
+               & = \dfrac{4}{1 - x^2}                                 \\
+               & = \dfrac{(1 - x^2)(4)' - 4(1 - x^2)'}{{(1 - x^2)}^2} \\
+               & = \dfrac{- 4(-2x)}{{(1 - x^2)}^2}                    \\
+               & = \dfrac{8x}{{(1 - x^2)}^2}
         \end{flalign*}
     \end{multicols}
 
-    \item $y={\dfrac{4-x}{3-2x+x^{2}}}$
-          \sol{}
-          \begin{flalign*}
-              y' & = \dfrac{(3 - 2x + x^2)(4 - x)' - (4 - x)(3 - 2x + x^2)'}{(3 - 2x + x^2)^2} & \\
-                 & = \dfrac{(3 - 2x + x^2)(-1) - (4 - x)(-2 + 2x)}{(3 - 2x + x^2)^2}             \\
-                 & = \dfrac{-3 + 2x - x^2 + 8 - 2x + 2x^2}{(3 - 10x + x^2)^2}                    \\
-                 & = \dfrac{x^2 - 8x + 5}{(3 - 2x + x^2)^2}
-          \end{flalign*}
-
-    \item $y={\dfrac{1+x-x^{2}}{1-x+x^{2}}}$
-          \sol{}
-          \begin{flalign*}
-              y' & = \dfrac{(1 - x + x^2)(1 + x - x^2)' - (1 + x - x^2)(1 - x + x^2)'}{(1 - x + x^2)^2} & \\
-                 & = \dfrac{(1 - x + x^2)(1 - 2x) - (1 + x - x^2)(-1 + 2x)}{(1 - x + x^2)^2}              \\
-                 & = \dfrac{(1 - 2x)(1 - x + x^2 + 1 + x - x^2)}{(1 - x + x^2)^2}                         \\
-                 & = \dfrac{(1 - 2x)(2)}{(1 - x + x^2)^2}                                                 \\
-                 & = \dfrac{-4x + 2}{(1 - x + x^2)^2}
-          \end{flalign*}
+    \begin{multicols}{2}
+        \item $y={\dfrac{4-x}{3-2x+x^{2}}}$
+        \sol{}
+        \begin{flalign*}
+            y' & = \dfrac{(3 - 2x + x^2)(-1) - (4 - x)(-2 + 2x)}{{(3 - 2x + x^2)}^2} & \\
+               & = \dfrac{-3 + 2x - x^2 + 8 - 2x + 2x^2}{{(3 - 10x + x^2)}^2}          \\
+               & = \dfrac{x^2 - 8x + 5}{{(3 - 2x + x^2)}^2}
+        \end{flalign*}
+        \columnbreak{}
+        \item $y={\dfrac{1+x-x^{2}}{1-x+x^{2}}}$
+        \sol{}
+        \begin{flalign*}
+            y' & = \dfrac{(1 - x + x^2)(1 - 2x) - (1 + x - x^2)(-1 + 2x)}{{(1 - x + x^2)}^2} & \\
+               & = \dfrac{(1 - 2x)(1 - x + x^2 + 1 + x - x^2)}{{(1 - x + x^2)}^2}              \\
+               & = \dfrac{(1 - 2x)(2)}{{(1 - x + x^2)}^2}                                      \\
+               & = \dfrac{-4x + 2}{{(1 - x + x^2)}^2}
+        \end{flalign*}
+    \end{multicols}
 \end{enumerate}
 
 \newpage
@@ -1347,24 +1344,24 @@ When $\dfrac{\Delta x}{\Delta x}$ exists, $\lim\limits_{\Delta x \to 0}{\Delta v
 
 If $y = f (u)$ and $u = g(x)$ are both differentiable functions of $x$, then $y
     = f\bigl(g(x)\bigr)$ is also a differentiable function of $x$. In a composite
-function $y = f\bigl(g(x)\bigr)$, when $x$ changes by $\Delta x$, $u$ changes
+function $y = f\bigl(g(x)\bigr)$, when $x$ changes by $\Delta{x}$, $u$ changes
 by $\Delta u$ and $y$ also changes by $\Delta y$, where $\dfrac{\Delta
-        y}{\Delta x} = \dfrac{\Delta y}{\Delta u} \cdot \dfrac{\Delta u}{\Delta x}$.
+        y}{\Delta{x}} = \dfrac{\Delta y}{\Delta u} \cdot \dfrac{\Delta u}{\Delta{x}}$.
 
 If the derivative of the functions $y = f (u)$ and $u = g(x)$ are
-$\dfrac{dy}{du}$ and $\dfrac{du}{dx}$ respectively, then when $\Delta x \to 0$,
-$\Delta u \to 0$, and $\lim\limits_{\Delta x \to 0}{\dfrac{\Delta u}{\Delta x}}
-    = \dfrac{du}{dx}$, $\lim\limits_{\Delta u \to 0}{\dfrac{\Delta y}{\Delta u}} =
-    \dfrac{dy}{du}$.
+$\dfrac{dy}{du}$ and $\dfrac{du}{dx}$ respectively, then when
+$\Delta{x}\to{0}$, $\Delta u \to 0$, and
+$\lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta u}{\Delta{x}}} = \dfrac{du}{dx}$,
+$\lim\limits_{\Delta u \to 0}{\dfrac{\Delta y}{\Delta u}} = \dfrac{dy}{du}$.
 \begin{flalign*}
-    \text{Hence, } \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{\left(\dfrac{\Delta y}{\Delta u} \cdot \dfrac{\Delta u}{\Delta x}\right)}                  \\
-                                                                            & = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta u}} \cdot \lim\limits_{\Delta x \to 0}{\dfrac{\Delta u}{\Delta x}} \\
-                                                                            & = \dfrac{dy}{du} \cdot \dfrac{du}{dx}
+    \text{Hence, } \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} & = \lim\limits_{\Delta{x}\to{0}}{\left(\dfrac{\Delta y}{\Delta u} \cdot \dfrac{\Delta u}{\Delta{x}}\right)}                   \\
+                                                                              & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta u}} \cdot \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta u}{\Delta{x}}} \\
+                                                                              & = \dfrac{dy}{du} \cdot \dfrac{du}{dx}
 \end{flalign*}
 Therefore, the derivative of the composite function $y = f\bigl(g(x)\bigr)$ is
 \begin{mdframed}[style=MyFrame]
     \begin{cequation}
-        \dfrac{dy}{dx} = \dfrac{dy}{du} \cdot \dfrac{du}{dx} = f'\bigl(g(x)\bigr) \cdot g' (x)
+        \dfrac{dy}{dx} = \dfrac{dy}{du} \cdot \dfrac{du}{dx} = f'\bigl(g (x)\bigr) \cdot g' (x)
     \end{cequation}
 \end{mdframed}
 Further extending the chain rule, if $y = f (v)$, $v = g(u)$, and $u = h(x)$, then
@@ -1392,9 +1389,9 @@ The rule above is called the \textit{chain rule}.
         \item $y={\dfrac{6}{\sqrt{2x-3}}}$
         \sol{}
         \begin{flalign*}
-            y' & = 6(2x - 3)^{-\frac{1}{2}}                                         \\
-               & = 6\cdot \left(-\dfrac{1}{2}\right)(2x - 3)^{-\frac{3}{2}} \cdot 2 \\
-               & = -6(2x - 3)^{-\frac{3}{2}}                                        \\
+            y' & = 6{(2x - 3)}^{-\frac{1}{2}}                                         \\
+               & = 6\cdot \left(-\dfrac{1}{2}\right){(2x - 3)}^{-\frac{3}{2}} \cdot 2 \\
+               & = -6{(2x - 3)}^{-\frac{3}{2}}                                        \\
                & = -\dfrac{6}{\sqrt{{(2x - 3)}^3}}
         \end{flalign*}
     \end{multicols}
@@ -1408,19 +1405,19 @@ The rule above is called the \textit{chain rule}.
                & = {(x-3)}^{3} + 3{(x-3)}^{2}(x + 1)                    \\
                & = {(x-3)}^{2}\left[{(x-3)} + 3(x + 1)\right]           \\
                & = {(x-3)}^{2}(x - 3 + 3x + 3)                          \\
-               & = 4x(x-3)^2
+               & = 4x{(x-3)}^2
         \end{flalign*}
         \vfill{}\null{}
         \columnbreak{}
         \item $y=\left(x^{2}-2\right){\sqrt{1+x}}$
         \sol{}
         \begin{flalign*}
-            y' & = \left[(x^2 - 2)(1 + x)^{\frac{1}{2}}\right]'                                     \\
-               & = (x^2 - 2)'(1 + x)^{\frac{1}{2}} + (x^2 - 2)\left[(1 + x)^{\frac{1}{2}}\right]' & \\
-               & = 2x(1 + x)^{\frac{1}{2}} + (x^2 - 2)\cdot \dfrac{1}{2}(1 + x)^{-\frac{1}{2}}      \\
-               & = 2x(1 + x)^{\frac{1}{2}} + \dfrac{x^2 - 2}{2(1 + x)^{\frac{1}{2}}}                \\
-               & = \dfrac{4x(1 + x) + (x^2 - 2)}{2(1 + x)^{\frac{1}{2}}}                            \\
-               & = \dfrac{4x^2 + 4x + x^2 - 2}{2\sqrt{1 + x}}                                       \\
+            y' & = \left[(x^2 - 2){(1 + x)}^{\frac{1}{2}}\right]'                                       \\
+               & = (x^2 - 2)'{(1 + x)}^{\frac{1}{2}} + (x^2 - 2)\left[{(1 + x)}^{\frac{1}{2}}\right]' & \\
+               & = 2x{(1 + x)}^{\frac{1}{2}} + (x^2 - 2)\cdot \dfrac{1}{2}{(1 + x)}^{-\frac{1}{2}}      \\
+               & = 2x{(1 + x)}^{\frac{1}{2}} + \dfrac{x^2 - 2}{2{(1 + x)}^{\frac{1}{2}}}                \\
+               & = \dfrac{4x(1 + x) + (x^2 - 2)}{2{(1 + x)}^{\frac{1}{2}}}                              \\
+               & = \dfrac{4x^2 + 4x + x^2 - 2}{2\sqrt{1 + x}}                                           \\
                & = \dfrac{5x^2 + 4x - 2}{2\sqrt{x+1}}
         \end{flalign*}
     \end{multicols}
@@ -1428,24 +1425,24 @@ The rule above is called the \textit{chain rule}.
     \item $y={\dfrac{x}{{(2x+3)}^{3}}}$
           \sol{}
           \begin{flalign*}
-              y' & = \dfrac{(2x + 3)^3 \cdot x' - x\left[(2x + 3)^3\right]'}{(2x + 3)^3}  \\
-                 & = \dfrac{(2x + 3)^3 - x \cdot 3(2x + 3)^2 \cdot (2x + 3)'}{(2x + 3)^6} \\
-                 & = \dfrac{(2x + 3)^3 - 6x(2x + 3)^2}{(2x + 3)^6}                        \\
-                 & = \dfrac{(2x + 3)^2(2x + 3 - 6x)}{(2x + 3)^6}                          \\
-                 & = \dfrac{-4x + 3}{(2x + 3)^4}                                          \\
+              y' & = \dfrac{{(2x + 3)}^3 \cdot x' - x\left[{(2x + 3)}^3\right]'}{{(2x + 3)}^3}  \\
+                 & = \dfrac{{(2x + 3)}^3 - x \cdot 3{(2x + 3)}^2 \cdot (2x + 3)'}{{(2x + 3)}^6} \\
+                 & = \dfrac{{(2x + 3)}^3 - 6x{(2x + 3)}^2}{{(2x + 3)}^6}                        \\
+                 & = \dfrac{{(2x + 3)}^2(2x + 3 - 6x)}{{(2x + 3)}^6}                            \\
+                 & = \dfrac{-4x + 3}{{(2x + 3)}^4}                                              \\
           \end{flalign*}
     \item $y={\dfrac{{(3x+4)}^{2}}{{(x-5)}^{3}}}$
           \sol{}
           \begin{flalign*}
-              y' & = \dfrac{(x - 5)^3\left[(3x + 4)^2\right]' - (3x + 4)^2\left[(x-5)^3\right]'}{(x-5)^6}                \\
-                 & = \dfrac{(x - 5)^3\cdot 2(3x + 4) \cdot (3x + 4)' - (3x + 4)^2\cdot 3(x - 5)^2 \cdot (x-5)'}{(x-5)^6} \\
-                 & = \dfrac{6(x - 5)^3(3x + 4) - 3(3x + 4)^2(x - 5)^2}{(x-5)^6}                                          \\
-                 & = \dfrac{(x - 5)^2\left[6(x - 5)(3x + 4) - 3(3x + 4)^2\right]}{(x-5)^6}                               \\
-                 & = \dfrac{6(3x^2 - 11x - 20) - 3(9x^2 - 24x + 16)}{(x-5)^4}                                            \\
-                 & = \dfrac{18x^2 - 66x - 120 - 27x^2 - 72x - 48}{(x-5)^4}                                               \\
-                 & = \dfrac{-9x^2 - 138x - 168}{(x-5)^4}                                                                 \\
-                 & = -\dfrac{3(3x^2 + 46x + 56)}{(x-5)^4}                                                                \\
-                 & = -\dfrac{3(3x + 4)(x + 14)}{(x-5)^4}
+              y' & = \dfrac{{(x - 5)}^3\left[{(3x + 4)}^2\right]' - {(3x + 4)}^2\left[{(x-5)}^3\right]'}{{(x-5)}^6}              \\
+                 & = \dfrac{{(x - 5)}^3\cdot 2(3x + 4) \cdot (3x + 4)' - {(3x + 4)}^2\cdot 3{(x - 5)}^2 \cdot (x-5)'}{{(x-5)}^6} \\
+                 & = \dfrac{6{(x - 5)}^3(3x + 4) - 3{(3x + 4)}^2{(x - 5)}^2}{{(x-5)}^6}                                          \\
+                 & = \dfrac{{(x - 5)}^2\left[6(x - 5)(3x + 4) - 3{(3x + 4)}^2\right]}{{(x-5)}^6}                                 \\
+                 & = \dfrac{6(3x^2 - 11x - 20) - 3(9x^2 - 24x + 16)}{{(x-5)}^4}                                                  \\
+                 & = \dfrac{18x^2 - 66x - 120 - 27x^2 - 72x - 48}{{(x-5)}^4}                                                     \\
+                 & = \dfrac{-9x^2 - 138x - 168}{{(x-5)}^4}                                                                       \\
+                 & = -\dfrac{3(3x^2 + 46x + 56)}{{(x-5)}^4}                                                                      \\
+                 & = -\dfrac{3(3x + 4)(x + 14)}{{(x-5)}^4}
           \end{flalign*}
 \end{enumerate}
 
@@ -1453,81 +1450,164 @@ The rule above is called the \textit{chain rule}.
 \subsection{Exercise 25.4}
 \noindent Find the derivative of the following functions:
 \begin{enumerate}
-    \item $y={(2x-3)}^{8}$
-          \sol{}
-          \begin{flalign*}
-              y' & = 8(2x - 3)^7 \cdot (2x - 3)' \\
-                 & = 16(2x - 3)^7
-          \end{flalign*}
+    \begin{multicols}{2}
+        \item $y={(2x-3)}^{8}$
+        \sol{}
+        \begin{flalign*}
+            y' & = 8{(2x - 3)}^7 \cdot (2x - 3)' \\
+               & = 16{(2x - 3)}^7
+        \end{flalign*}
+        \vfill{}\null{}
+        \item $y={\left(3x^{2}-6x+5\right)}^{4}$
+        \sol{}
+        \begin{flalign*}
+            y' & = 4{(3x^2 - 6x + 5)}^3 \cdot (3x^2 - 6x + 5)' \\
+               & =  4(6x - 6){(3x^2 - 6x + 5)}^3               \\
+               & = 24(x - 1){(3x^2 - 6x + 5)}^3
+        \end{flalign*}
+        \vfill{}\null{}
+    \end{multicols}
 
-    \item $y={\left(3x^{2}-6x+5\right)}^{4}$
-          \sol{}
-          \begin{flalign*}
-              y' & = 4(3x^2 - 6x + 5)^3 \cdot (3x^2 - 6x + 5)' \\
-                 & =  4(6x - 6)(3x^2 - 6x + 5)^3               \\
-                 & = 24(x - 1)(3x^2 - 6x + 5)^3
-          \end{flalign*}
+    \begin{multicols}{2}
+        \item $y={\sqrt{2x^{4}-4x^{2}+5}}$
+        \sol{}
+        \begin{flalign*}
+            y' & = {\left(2x^4 - 4x^2 + 5\right)}^{\frac{1}{2}}                                                 & \\
+               & = \frac{1}{2}{\left(2x^4 - 4x^2 + 5\right)}^{-\frac{1}{2}} \cdot \left(2x^4 - 4x^2 + 5\right)'   \\
+               & = \frac{1}{2}{\left(2x^4 - 4x^2 + 5\right)}^{-\frac{1}{2}} \cdot (8x^3 - 8x)                     \\
+               & = (4x^3 - x){\left(2x^4 - 4x^2 + 5\right)}^{-\frac{1}{2}}                                        \\
+               & = \dfrac{4x^3 - x}{\sqrt{2x^4 - 4x^2 + 5}}
+        \end{flalign*}
+        \vfill{}\null{}
+        \item $y={\sqrt[3]{3x^{2}-3x+2}}$
+        \sol{}
+        \begin{flalign*}
+            y' & = \left[{\left(3x^{2}-3x+2\right)}^{\frac{1}{3}}\right]'              \\
+               & = \dfrac{1}{3}{(3x^2 - 3x + 2)}^{-\frac{2}{3}} \cdot (3x^2 - 3x + 2)' \\
+               & = \dfrac{1}{3}{(3x^2 - 3x + 2)}^{-\frac{2}{3}} \cdot (6x - 3)         \\
+               & = {(3x^2 - 3x + 2)}^{-\frac{2}{3}}(2x - 1)                            \\
+               & = \dfrac{2x - 1}{\sqrt[3]{{(2x^4 - 4x^2 + 5)}^2}}
+        \end{flalign*}
+        \vfill{}\null{}
+    \end{multicols}
 
-    \item $y={\sqrt{2x^{4}-4x^{2}+5}}$
-          \sol{}
-          \begin{flalign*}
-              y' & = \left(2x^4 - 4x^2 + 5\right)^{\frac{1}{2}}                                                 \\
-                 & = \frac{1}{2}\left(2x^4 - 4x^2 + 5\right)^{-\frac{1}{2}} \cdot \left(2x^4 - 4x^2 + 5\right)' \\
-                 & = \frac{1}{2}\left(2x^4 - 4x^2 + 5\right)^{-\frac{1}{2}} \cdot (8x^3 - 8x)                   \\
-                 & = (4x^3 - x)\left(2x^4 - 4x^2 + 5\right)^{-\frac{1}{2}}                                      \\
-                 & = \dfrac{4x^3 - x}{\sqrt{2x^4 - 4x^2 + 5}}
-          \end{flalign*}
+    \begin{multicols}{2}
+        \item $y={\dfrac{3}{6x^{2}-4}}$
+        \sol{}
+        \begin{flalign*}
+            y' & = \dfrac{(6x^2 - 4)(3)' - 3(6x^2 - 4)'}{{(6x^2 - 4)}^2} \\
+               & = \dfrac{-3(12x)}{{(6x^2 - 4)}^2}                       \\
+               & = \dfrac{-36x}{{(6x^2 - 4)}^2}                          \\
+               & = -\dfrac{36x}{4{(3x^2 - 2)}^2}                         \\
+               & = \dfrac{9x}{{(3x^2 - 2)}^2}
+        \end{flalign*}
+        \vfill{}\null{}
+        \item $y={\dfrac{9}{\sqrt{6x^{3}-9x}}}$
+        \sol{}
+        \begin{flalign*}
+            y' & = \dfrac{(9')\left(\sqrt{6x^3 - 9x}\right) - 9\left(\sqrt{6x^3 - 9x}\right)'}{6x^3 - 9x}            \\
+               & = \dfrac{- 9\left[\dfrac{1}{2}{\left(6x^3 - 9x\right)}^{-\frac{1}{2}}(18x^2 - 9)\right]}{6x^3 - 9x} \\
+               & = \dfrac{-9(18x^2 - 9)}{2(6x^3 - 9x){\left(6x^3 - 9x\right)}^{\frac{1}{2}}}                         \\
+               & = -\dfrac{81(2x^2 - 1)}{2\sqrt{{\left(6x^3 - 9x\right)}^3}}                                         \\
+        \end{flalign*}
+        \vfill{}\null{}
+    \end{multicols}
 
-    \item $y={\sqrt[3]{3x^{2}-3x+2}}$
-          \sol{}
-          \begin{flalign*}
-              y' & = \left[\left(3x^{2}-3x+2\right)^{\frac{1}{3}}\right]'              \\
-                 & = \dfrac{1}{3}(3x^2 - 3x + 2)^{-\frac{2}{3}} \cdot (3x^2 - 3x + 2)' \\
-                 & = \dfrac{1}{3}(3x^2 - 3x + 2)^{-\frac{2}{3}} \cdot (6x - 3)         \\
-                 & = (3x^2 - 3x + 2)^{-\frac{2}{3}}(2x - 1)                            \\
-                 & = \dfrac{2x - 1}{\sqrt[3]{((2x^4 - 4x^2 + 5)^2}}
-          \end{flalign*}
+    \begin{multicols}{2}
+        \item $y={\dfrac{3x}{{(x+5)}^{2}}}$
+        \sol{}
+        \begin{flalign*}
+            y' & = \dfrac{{(3x)'(x+5)}^2 - 3x\left[{(x+5)}^2\right]'}{{(x+5)}^4} & \\
+               & = \dfrac{3{(x+5)}^2 - 3x\cdot2(x+5) \cdot (x+5)'}{{(x+5)}^4}      \\
+               & = \dfrac{3{(x+5)}^2 - 6x(x+5)}{{(x+5)}^4}                         \\
+               & = \dfrac{(x+5)\left[3(x+5) - 6x\right]}{{(x+5)}^4}                \\
+               & = \dfrac{3x+15 - 6x}{{(x+5)}^3}                                   \\
+               & = \dfrac{-3x+15}{{{(x+5)}}^3}                                     \\
+               & = -\dfrac{3(x-5)}{{(x+5)}^3}
+        \end{flalign*}
+        \item $y={\dfrac{3x-1}{\sqrt{x-1}}}$
+        \sol{}
+        \begin{flalign*}
+            y' & = \dfrac{(3x - 1)'\sqrt{x - 1} - (3x - 1)\left(\sqrt{x - 1}\right)'}{x - 1}        & \\
+               & = \dfrac{3\sqrt{x - 1} - (3x - 1)\cdot\dfrac{1}{2}{(x - 1)}^{-\frac{1}{2}}}{x - 1}   \\
+               & = \dfrac{3\sqrt{x - 1} - \dfrac{3x - 1}{2\sqrt{x - 1}}}{x - 1}                       \\
+               & = \dfrac{6(x - 1) - (3x - 1)}{2(x - 1){\sqrt{x - 1}}}                                \\
+               & = \dfrac{3x - 5}{2{\sqrt{{(x - 1)}^3}}}
+        \end{flalign*}
+        \vfill{}\null{}
+    \end{multicols}
 
-    \item $y={\dfrac{3}{6x^{2}-4}}$
-          \sol{}
-          \begin{flalign*}
-              y' & = \dfrac{(6x^2 - 4)(3)' - 3(6x^2 - 4)'}{(6x^2 - 4)^2} \\
-                 & = \dfrac{-3(12x)}{(6x^2 - 4)^2}                       \\
-                 & = \dfrac{-36x}{(6x^2 - 4)^2}                          \\
-                 & = -\dfrac{36x}{4(3x^2 - 2)^2}                         \\
-                 & = \dfrac{9x}{(3x^2 - 2)^2}
-          \end{flalign*}
+    \begin{multicols}{2}
+        \item $y={\sqrt{x}}{\left(x-3\right)}^{5}$
+        \sol{}
+        \begin{flalign*}
+            y' & = \left(\sqrt{x}\right)'{(x-3)}^5 + \sqrt{x}\left[{(x-3)}^5\right]' & \\
+               & = \dfrac{1}{2\sqrt{x}}{(x-3)}^5 + \sqrt{x}\cdot5{(x-3)}^4             \\
+               & = \dfrac{{(x-3)}^5 + 10x{(x-3)}^4}{2\sqrt{x}}                         \\
+               & = \dfrac{{(x-3)}^4\left(x - 3 + 10x\right)}{2\sqrt{x}}                \\
+               & = \dfrac{{(x-3)}^4(11x - 3)}{2\sqrt{x}}
+        \end{flalign*}
 
-    \item $y={\dfrac{9}{\sqrt{6x^{3}-9x}}}$
-          \sol{}
-          \begin{flalign*}
-              y' & = \dfrac{(9')\left(\sqrt{6x^3 - 9x}\right) - 9\left(\sqrt{6x^3 - 9x}\right)'}{6x^3 - 9x}           \\
-                 & = \dfrac{- 9\left[\dfrac{1}{2}\left(6x^3 - 9x\right)^{-\frac{1}{2}}(6x^3 - 9x)'\right]}{6x^3 - 9x} \\
-                 & = \dfrac{- 9\left[\dfrac{1}{2}\left(6x^3 - 9x\right)^{-\frac{1}{2}}(18x^2 - 9)\right]}{6x^3 - 9x}  \\
-                 & = \dfrac{-9(18x^2 - 9)}{2(6x^3 - 9x)\left(6x^3 - 9x\right)^{\frac{1}{2}}}                          \\
-                 & = \dfrac{-18(2x^2 - 1)}{2\left(6x^3 - 9x\right)^{\frac{3}{2}}}                                     \\
-                 & = -\dfrac{18(2x^2 - 1)}{2\sqrt{\left(6x^3 - 9x\right)^3}}                                          \\
-          \end{flalign*}
+        \item $y=x^{2}(x-3){(x+2)}^{2}$
+        \sol{}
+        \begin{flalign*}
+            y' & = \left[(x^3 - 3x^2){(x + 2)}^2\right]'                            & \\
+               & = (x^3 - 3x^2)'{(x + 2)}^2 + (x^3 - 3x^2)\left[{(x + 2)}^2\right]'   \\
+               & = (3x^2 - 6x){(x + 2)}^2 + (x^3 - 3x^2)\cdot2(x + 2)                 \\
+               & = (x+2)\left[(3x^2 - 6x)(x+2) + 2\left(x^3 - 3x^2\right)\right]      \\
+               & = (x+2)\left(3x^3 - 6x^2 + 6x^2 - 12x + 2x^3 - 6x^2\right)           \\
+               & = (x+2)\left(5x^3 - 6x^2 - 12x\right)                                \\
+               & = x(x+2)\left(5x^2 - 6x - 12\right)
+        \end{flalign*}
+    \end{multicols}
 
-    \item $y={\dfrac{3x}{{(x+5)}^{2}}}$
-          \sol{}
-          \begin{flalign*}
-              y' & = \dfrac{(3x)'(x+5)^2 - 3x\left[(x+5)^2\right]'}{(x+5)^4} \\
-                 & = \dfrac{3(x+5)^2 - 3x\cdot2(x+5) \cdot (x+5)'}{(x+5)^4}  \\
-                 & = \dfrac{3(x+5)^2 - 6x(x+5)}{(x+5)^4}                     \\
-                 & = \dfrac{(x+5)\left[3(x+5) - 6x\right]}{(x+5)^4}          \\
-                 & = \dfrac{3x+15 - 6x}{(x+5)^3}                             \\
-                 & = \dfrac{-3x+15}{(x+5)^3}                                 \\
-                 & = -\dfrac{3(x-5)}{(x+5)^3}
-          \end{flalign*}
-    \item $y={\dfrac{3x-1}{\sqrt{x-1}}}$
-    \item $y={\sqrt{x}}{\left(x-3\right)}^{5}$
-    \item $y=x^{2}(x-3){(x+2)}^{2}$
+    \newpage
     \item $y={(2x+1)}^{2}{(x+1)}^{3}$
+          \sol{}
+          \begin{flalign*}
+              y' & = {(2x+1)}^2\left[{(x+1)}^3\right]' + \left[{(2x+1)}^2\right]'{(x+1)}^3 \\
+                 & = {(2x+1)}^2\cdot3{(x+1)}^2 + (2)(2)(2x+1){(x+1)}^3                     \\
+                 & = 3{(2x+1)}^2{(x+1)}^2 + 4(2x+1){(x+1)}^3                               \\
+                 & = (2x+1){(x+1)}^2\left[3(2x+1) + 4(x+1)\right]                          \\
+                 & = (2x+1){(x+1)}^2(10x + 7)
+          \end{flalign*}
+
     \item $y={\left({\dfrac{1+x}{1-x}}\right)}^{2}$
+          \sol{}
+          \begin{flalign*}
+              y' & = 2{\left(\dfrac{1+x}{1-x}\right)}\cdot\dfrac{(1-x)(1+x)' - (1+x)(1-x)'}{{(1-x)}^2} \\
+                 & = \dfrac{2(1 + x)}{(1 - x)}\cdot\dfrac{(1-x) + (1+x)}{{(1-x)}^2}                    \\
+                 & = \dfrac{2(1 + x)}{(1 - x)}\cdot\dfrac{2}{(1-x)^2}                                  \\
+                 & = \dfrac{4 + 4x)}{{(1-x)}^3}
+          \end{flalign*}
+
     \item $y=x^{2}{\sqrt{1+x^{2}}}$
+          \sol{}
+          \begin{flalign*}
+              y' & = \left(x^2\right)'{\sqrt{1+x^2}} + x^2\left[\sqrt{1+x^2}\right]' \\
+                 & = 2x\sqrt{1+x^2} + x^2\cdot\dfrac{2x}{2\sqrt{1+x^2}}              \\
+                 & = 2x\sqrt{1+x^2} + \dfrac{x^3}{\sqrt{1+x^2}}                      \\
+                 & = \dfrac{2x(1+x^2) + x^3}{\sqrt{1+x^2}}                           \\
+                 & = \dfrac{2x + 2x^3 + x^3}{\sqrt{1+x^2}}                           \\
+                 & = \dfrac{3x^3 + 2x}{\sqrt{1+x^2}}
+          \end{flalign*}
+
+          \newpage
     \item $y={\sqrt{\dfrac{1+x^{2}}{1-x^{2}}}}$
+          \sol{}
+          \begin{flalign*}
+              y' & = \dfrac{1}{2}\left(\dfrac{1+x^2}{1-x^2}\right)^{-\frac{1}{2}}\cdot\dfrac{(1+x^2)'(1-x^2) - (1+x^2)(1-x^2)'}{{(1-x^2)}^2} \\
+                 & = \dfrac{1}{2}\left(\dfrac{1+x^2}{1-x^2}\right)^{-\frac{1}{2}}\cdot\dfrac{2x(1-x^2) + (1+x^2)(2x)}{{(1-x^2)}^2}           \\
+                 & = \dfrac{1}{2}\left(\dfrac{1+x^2}{1-x^2}\right)^{-\frac{1}{2}}\cdot\dfrac{2x - 2x^3 + 2x + 2x^3}{{(1-x^2)}^2}             \\
+                 & = \dfrac{1}{2}\left(\dfrac{1-x^2}{1+x^2}\right)^{\frac{1}{2}}\cdot\dfrac{4x}{{(1-x^2)}^2}                                 \\
+                 & = \dfrac{2x\sqrt{1-x^2}}{\sqrt{1+x^2}{(1-x^2)}^2}                                                                         \\
+                 & = \dfrac{2x\sqrt{1-x^4}}{(1+x^2){(1-x^2)}^2}                                                                              \\
+                 & = \dfrac{2x\sqrt{1-x^4}}{(1-x^4)(1-x^2)}                                                                                  \\
+                 & = \dfrac{2x}{(1-x^2)\sqrt{1-x^4}}
+          \end{flalign*}
 \end{enumerate}
+
+\newpage
 
 \section{Higher Order Derivatives}
 
@@ -1536,7 +1616,7 @@ If the derivative $f' (x)$ of a function $y = f (x)$ is differentiable at $x =
     derivative} of $y = f (x)$ at $x = x_0$, and is denoted by $f'' (x_0)$, that
 is,
 \begin{cequation}
-    \lim\limits_{\Delta x \to 0}{\dfrac{f' (x_0 + \Delta x) - f' (x_0)}{\Delta x}} = f'' (x_0)
+    \lim\limits_{\Delta{x} \to{0}}{\dfrac{f' (x_0 + \Delta{x})-f' (x_0)}{\Delta{x}}} = f'' (x_0)
 \end{cequation}
 
 The derivative of the derivative $f' (x)$ of a function $y = f (x)$ is called
@@ -1552,50 +1632,219 @@ the first derivative, as we just need differentiate the function again and
 again until we get the desired order of derivative.
 
 \subsection{Practice 6}
-\setlength{\columnseprule}{1pt}
-\setlength{\columnsep}{24pt}
-\begin{multicols}{2}
-    \begin{enumerate}[leftmargin=*]
-        \item Find the first to sixth derivatives of $y=3x^{5}+2x^{4}-5x^{2}-8x+9$
-    \end{enumerate}
-    \noindent Find the third derivative of the following functions (Question 2 to 5):
-    \begin{enumerate}
-        \setcounter{enumi}{1}
+\begin{enumerate}[leftmargin=*]
+    \item Find the first to sixth derivatives of $y=3x^{5}+2x^{4}-5x^{2}-8x+9$ \sol{}
+          \begin{flalign*}
+              y'      & = 15x^4 + 8x^3 - 10x - 8 \\
+              y''     & = 60x^3 + 24x^2 - 10     \\
+              y'''    & = 180x^2 + 48x           \\
+              y^{(4)} & = 360x + 48              \\
+              y^{(5)} & = 360                    \\
+              y^{(6)} & = 0
+          \end{flalign*}
+\end{enumerate}
+\noindent Find the third derivative of the following functions (Question 2 to 5):
+\begin{enumerate}
+    \setcounter{enumi}{1}
+    \begin{multicols}{2}
         \item $y={\dfrac{3}{x^{4}}}$
+        \sol{}
+        \begin{flalign*}
+            y'   & = (3x^{-4})'        \\
+                 & = -12x^{-5}         \\
+            y''  & = (-12x^{-5})'      \\
+                 & = 60x^{-6}          \\
+            y''' & = (60x^{-6})'       \\
+                 & = -360x^{-7}        \\
+                 & = -\dfrac{360}{x^7}
+        \end{flalign*}
+
         \item $y=3x^{3}+6x^{2}-5x$
+        \sol{}
+        \begin{flalign*}
+            y'   & = 9x^2 + 12x - 5 \\
+            y''  & = 18x + 12       \\
+            y''' & = 18
+        \end{flalign*}
+    \end{multicols}
+
+    \begin{multicols}{2}
         \item $y={\sqrt{2x-3}}$
+        \sol{}
+        \begin{flalign*}
+            y'   & = \left[\left(2x - 3\right)^{\frac{1}{2}}\right]'        \\
+                 & = \dfrac{1}{2}\left(2x - 3\right)^{-\frac{1}{2}}\cdot 2  \\
+                 & = \left(2x - 3\right)^{-\frac{1}{2}}                     \\
+            y''  & = -\dfrac{1}{2}\left(2x - 3\right)^{-\frac{3}{2}}\cdot 2 \\
+                 & = -\left(2x - 3\right)^{-\frac{3}{2}}                    \\
+            y''' & = \dfrac{3}{2}\left(2x - 3\right)^{-\frac{5}{2}}\cdot 2  \\
+                 & = 3\left(2x - 3\right)^{-\frac{5}{2}}                    \\
+                 & = \dfrac{3}{\sqrt{(2x - 3)^5}}
+        \end{flalign*}
+
         \item $y={\dfrac{1}{{(2x+5)}^{3}}}$
-    \end{enumerate}
-\end{multicols}
+        \sol{}
+        \begin{flalign*}
+            y'   & = \left[(2x + 5)^{-3}\right]' \\
+                 & = -3(2x + 5)^{-4}\cdot 2      \\
+                 & = -6(2x + 5)^{-4}             \\
+            y''  & = 24(2x + 5)^{-5}\cdot 2      \\
+                 & = 48(2x + 5)^{-5}             \\
+            y''' & = -240(2x + 5)^{-6}\cdot 2    \\
+                 & = -480(2x + 5)^{-6}           \\
+                 & = -\dfrac{480}{(2x + 5)^6}
+        \end{flalign*}
+    \end{multicols}
+\end{enumerate}
 
+\newpage
 \subsection{Exercise 25.5}
-\setlength{\columnseprule}{1pt}
-\setlength{\columnsep}{24pt}
-\begin{multicols}{2}
-    \begin{enumerate}
-        \item Given the function $y=a x^{6}+2b x^{4}-3c x^{3}+4x^{2}-5$ where $a$, $b$ and
-              $c$ are constants, find the first to seventh derivatives of $y$.
-    \end{enumerate}
-    \noindent Find the second derivative of the following functions (Question 2 to 5):
-    \begin{enumerate}
-        \setcounter{enumi}{1}
+\begin{enumerate}
+    \item Given the function $y=a x^{6}+2b x^{4}-3c x^{3}+4x^{2}-5$ where $a$, $b$ and
+          $c$ are constants, find the first to seventh derivatives of $y$. \sol{}
+          \begin{flalign*}
+              y'      & = 6ax^5 + 8bx^3 - 9cx^2 + 8x \\
+              y''     & = 30ax^4 + 24bx^2 - 18cx + 8 \\
+              y'''    & = 120ax^3 + 48bx - 18c       \\
+              y^{(4)} & = 360ax^2 + 48b              \\
+              y^{(5)} & = 720ax                      \\
+              y^{(6)} & = 720a                       \\
+              y^{(7)} & = 0
+          \end{flalign*}
+\end{enumerate}
+\noindent Find the second derivative of the following functions (Question 2 to 5):
+\begin{enumerate}
+    \setcounter{enumi}{1}
+    \begin{multicols}{2}
         \item $y=2x-{\dfrac{x^{3}}{2}}$
+        \sol{}
+        \begin{flalign*}
+            y'  & = 2 - \dfrac{3x^2}{2} \\
+            y'' & = -3x
+        \end{flalign*}
+        \vfill{}\null{}
         \item $y={\left(2+x^{2}\right)}^{3}$
-        \item $y=x+{\dfrac{1}{x}}+{\dfrac{1}{x^{2}}}$
-        \item $y=x^{2}-{\dfrac{1}{x^{2}}}$
-        \item $y={\sqrt{a^{2}-x^{2}}}$ where $a$ is a constant
-        \item $y={\dfrac{2}{\sqrt{x-2}}}$
-        \item $y={\sqrt{3x^{2}+2}}$
-        \item $y={\dfrac{x}{\sqrt{1-x^{2}}}}$
-        \item Given the function $y = 2x^3 - 3x^2 - 6x + 10$, find the value of $y'$, $y''$
-              and $y'''$ at $x = 1$.
-        \item Given the function $f (x) = \dfrac{5}{{(2x + 1)}^2}$, find the value of $f''
-                  (2)$.
-        \item Find the second derivative $y''$, of the function $y = 2x^3 + 3x^2 - 72x + 15$,
-              and find the value of $x$ at $y'' = 0$.
-    \end{enumerate}
-\end{multicols}
+        \sol{}
+        \begin{flalign*}
+            y'  & = 3\left(2 + x^2\right)^2\cdot 2x                     \\
+                & = 6x\left(2 + x^2\right)^2                            \\
+            y'' & = 6\left(2 + x^2\right)^2 + 24x^2\left(2 + x^2\right) \\
+                & = 6\left(4 + 4x^2 + x^4\right) + 48x^2 + 24x^4        \\
+                & = 24 + 24x^2 + 6x^4 + 48x^2 + 24x^4                   \\
+                & = 30x^4 + 72x^2 + 24
+        \end{flalign*}
+    \end{multicols}
 
+    \begin{multicols}{2}
+        \item $y=x+{\dfrac{1}{x}}+{\dfrac{1}{x^{2}}}$
+        \sol{}
+        \begin{flalign*}
+            y'  & = \left(1 + x^{-1} + x^{-2}\right)' \\
+                & = -x^{-2} - 2x^{-3}                 \\
+            y'' & = 2x^{-3} + 6x^{-4}                 \\
+                & = \dfrac{2}{x^3} + \dfrac{6}{x^4}
+        \end{flalign*}
+        \item $y=x^{2}-{\dfrac{1}{x^{2}}}$
+        \sol{}
+        \begin{flalign*}
+            y'  & = \left(x^2 - x^{-2}\right)' \\
+                & = 2x + 2x^{-3}               \\
+            y'' & = 2 - 6x^{-4}                \\
+                & = 2 - \dfrac{6}{x^4}
+        \end{flalign*}
+    \end{multicols}
+
+    \newpage
+    \begin{multicols}{2}
+        \item $y={\sqrt{a^{2}-x^{2}}}$ where $a$ is a constant
+        \sol{}
+        \begin{flalign*}
+            y'  & = \left[\left(a^2 - x^2\right)^{\frac{1}{2}}\right]'                                                  \\
+                & = -\dfrac{1}{2}\left(a^2 - x^2\right)^{-\frac{1}{2}}\cdot 2x                                          \\
+                & = -x\left(a^2 - x^2\right)^{-\frac{1}{2}}                                                             \\
+            y'' & = -\left(a^2 - x^2\right)^{-\frac{1}{2}} - \dfrac{1}{2}x\left(a^2 - x^2\right)^{-\frac{3}{2}}\cdot 2x \\
+                & = -\dfrac{1}{\sqrt{a^2 - x^2}} - \dfrac{x^2}{\sqrt{\left(a^2 - x^2\right)^{3}}}                       \\
+                & = \dfrac{-a^2 + x^2 - x^2}{\sqrt{\left(a^2 - x^2\right)^{3}}}                                         \\
+                & = -\dfrac{a^2}{\sqrt{\left(a^2 - x^2\right)^{3}}}
+        \end{flalign*}
+
+        \item $y={\dfrac{2}{\sqrt{x-2}}}$
+        \sol{}
+        \begin{flalign*}
+            y'  & = 2\left[\left(x - 2\right)^{-\frac{1}{2}}\right]'       \\
+                & = -2 \cdot \dfrac{1}{2}\left(x - 2\right)^{-\frac{3}{2}} \\
+                & = -\left(x - 2\right)^{-\frac{3}{2}}                     \\
+            y'' & = \dfrac{3}{2}\left(x - 2\right)^{-\frac{5}{2}}          \\
+                & = \dfrac{3}{2\sqrt{\left(x - 2\right)^5}}
+        \end{flalign*}
+    \end{multicols}
+
+    \begin{multicols}{2}
+        \item $y={\sqrt[3]{3x^{2}+2}}$
+        \sol{}
+        \begin{flalign*}
+            y'  & = \left[\left(3x^2 + 2\right)^{\frac{1}{3}}\right]'                                                   \\
+                & = \dfrac{1}{3}(3x^2 + 2)^{-\frac{2}{3}}\cdot 6x                                                       \\
+                & = 2x\left(3x^2 + 2\right)^{-\frac{2}{3}}                                                              \\
+            y'' & = 2\left(3x^2 + 2\right)^{-\frac{2}{3}} - \dfrac{4x}{3}\left(3x^2 + 2\right)^{-\frac{5}{3}}\cdot 6x & \\
+                & = 2\left(3x^2 + 2\right)^{-\frac{2}{3}} - 8x^2\left(3x^2 + 2\right)^{-\frac{5}{3}}                    \\
+                & = \dfrac{2}{\sqrt[3]{\left(3x^2 + 2\right)^2}} - \dfrac{8x^2}{\sqrt[3]{\left(3x^2 + 2\right)^5}}      \\
+                & = \dfrac{2(3x^2 + 2) - 8x^2}{\sqrt[3]{\left(3x^2 + 2\right)^5}}                                       \\
+                & = \dfrac{4-2x^2}{\sqrt[3]{\left(3x^2 + 2\right)^5}}
+        \end{flalign*}
+        \vfill{}\null{}
+        \item $y={\dfrac{x}{\sqrt{1-x^{2}}}}$
+        \sol{}
+        \begin{flalign*}
+            y'  & = \left[x\left(1 - x^2\right)^{-\frac{1}{2}}\right]'                                                  \\
+                & = \left(1 - x^2\right)^{-\frac{1}{2}} - \dfrac{1}{2}x\left(1 - x^2\right)^{-\frac{3}{2}}\cdot (-2x) & \\
+                & = \left(1 - x^2\right)^{-\frac{1}{2}} + x^2\left(1 - x^2\right)^{-\frac{3}{2}}                        \\
+                & = \dfrac{1}{\sqrt{1 - x^2}} + \dfrac{x^2}{\sqrt{\left(1 - x^2\right)^3}}                              \\
+                & = \dfrac{1 - x^2 + x^2}{\sqrt{\left(1 - x^2\right)^3}}                                                \\
+                & = \dfrac{1}{\sqrt{\left(1 - x^2\right)^3}}                                                            \\
+                & = \left(1 - x^2\right)^{-\frac{3}{2}}                                                                 \\
+            y'' & = -\dfrac{3}{2}\left(1 - x^2\right)^{-\frac{5}{2}}\cdot (-2x)                                         \\
+                & = \dfrac{3x}{\sqrt{\left(1 - x^2\right)^5}}
+        \end{flalign*}
+    \end{multicols}
+
+    \newpage
+    \item Given the function $y = 2x^3 - 3x^2 - 6x + 10$, find the value of $y'$, $y''$
+          and $y'''$ at $x = 1$. \sol{}
+          \begin{flalign*}
+              y'      & = 6x^2 - 6x - 6 \\
+              y'(1)   & = 6 - 6 - 6     \\
+                      & = -6            \\
+              y''     & = 12x - 6       \\
+              y''(1)  & = 12 - 6        \\
+                      & = 6             \\
+              y'''    & = 12            \\
+              y'''(1) & = 12
+          \end{flalign*}
+
+    \item Given the function $f (x) = \dfrac{5}{{(2x + 1)}^2}$, find the value of $f''
+              (2)$. \sol{}
+          \begin{flalign*}
+              f'(x)  & = \left[5\left(2x + 1\right)^{-2}\right]' \\
+                     & = -20\left(2x + 1\right)^{-3}             \\
+              f''(x) & = 120\left(2x + 1\right)^{-4}             \\
+              f''(2) & = 120\left(2\cdot 2 + 1\right)^{-4}       \\
+                     & = 120\left(5\right)^{-4}                  \\
+                     & = \dfrac{120}{625}                        \\
+                     & = \dfrac{24}{125}
+          \end{flalign*}
+
+    \item Find the second derivative $y''$, of the function $y = 2x^3 + 3x^2 - 72x + 15$,
+          and find the value of $x$ at $y'' = 0$. \sol{}
+          \begin{flalign*}
+              y'  & = 6x^2 + 6x - 72 \\
+              y'' & = 12x + 6        \\
+              0   & = 12x + 6        \\
+              x   & = -\dfrac{1}{2}
+          \end{flalign*}
+\end{enumerate}
+
+\newpage
 \section{Implicit Differentiation}
 
 Consider the function $x^2 + y^2 = x^3$ and $y^2 - 2xy - 3 = 0$. For these kind
@@ -1610,36 +1859,190 @@ $\dfrac{dy}{dx}$.
 \subsection{Practice 7}
 
 \noindent Find $\dfrac{dy}{dx}$ for the following implicit functions:
-\setlength{\columnseprule}{1pt}
-\setlength{\columnsep}{24pt}
-\begin{multicols}{2}
-    \begin{enumerate}
+\begin{enumerate}
+    \begin{multicols}{2}
         \item $x^{2}+y^{2}-6x+8y-9=0$
+        \sol{}
+        \begin{flalign*}
+            x^{2}+y^{2}-6x+8y-9                             & = 0                  \\
+            2x+2y\cdot\dfrac{dy}{dx}-6+8\cdot\dfrac{dy}{dx} & = 0                  \\
+            2y \cdot \dfrac{dy}{dx}+8 \cdot \dfrac{dy}{dx}  & = 6-2x               \\
+            \left(2y+8\right)\cdot\dfrac{dy}{dx}            & = 6-2x               \\
+            \dfrac{dy}{dx}                                  & = \dfrac{6-2x}{2y+8} \\
+                                                            & = \dfrac{3-x}{y+4}
+        \end{flalign*}
+
         \item ${\dfrac{x^{2}}{a^{2}}}-{\dfrac{y^{2}}{b^{2}}}=5$ where $a$ and $b$ are constants
-        \item $2x^{2}-4x y+2y^{2}=5$
-        \item $x^{5}+2x^{2}y^{3}+y^{4}=1$
-    \end{enumerate}
-\end{multicols}
+        \sol{}
+        \begin{flalign*}
+            {\dfrac{x^{2}}{a^{2}}}-{\dfrac{y^{2}}{b^{2}}}          & =5                      \\
+            \dfrac{2x}{a^{2}}-\dfrac{2y}{b^{2}}\cdot\dfrac{dy}{dx} & =0                      \\
+            \dfrac{2y}{b^{2}}\cdot\dfrac{dy}{dx}                   & =\dfrac{2x}{a^{2}}      \\
+            \dfrac{dy}{dx}                                         & =\dfrac{b^{2}x}{a^{2}y}
+        \end{flalign*}
+    \end{multicols}
+
+    \begin{multicols}{2}
+        \item $2x^{2}-4xy+2y^{2}=5$
+        \sol{}
+        \begin{flalign*}
+            2x^{2}-4xy+2y^{2}     & = 5                             \\
+            4x-4x'y - 4xy' + 4yy' & = 0                           & \\
+            4x - 4y - 4xy' + 4yy' & = 0                             \\
+            -4xy' + 4yy'          & = - 4x + 4y                     \\
+            y'(-4x + 4y)          & = - 4x + 4y                     \\
+            y'                    & = \dfrac{- 4x + 4y}{-4x + 4y}   \\
+                                  & = 1
+        \end{flalign*}
+        \vfill{}\null{}
+        \item $x^{3}+2x^{2}y^{3}+y^{4}=1$
+        \sol{}
+        \begin{flalign*}
+            x^{3}+2x^{2}y^{3}+y^{4}                             & = 1   \\
+            3x^{2}+2\left[(x^2)'y^3 + x^2(y^3)'\right] + 4y^3y' & = 0   \\
+            3x^{2}+2\left(2xy^3 + 3x^2y^2y'\right) + 4y^3y'     & = 0 & \\
+            3x^{2}+4xy^3 + 6x^2y^2y' + 4y^3y'                   & = 0
+        \end{flalign*}
+        \vspace{-1cm}
+        \begin{flalign*}
+            6x^2y^2y' + 4y^3y' & = -5x^4 - 4xy^3                          \\
+            y'(6x^2y^2 + 4y^3) & = -3x^2 - 4xy^3                          \\
+            y'                 & = -\dfrac{3x^2 + 4xy^3}{6x^2y^2 + 4y^3}  \\
+                               & = -\dfrac{x(3x + 4y^3)}{2y^2(3x^2 + 2y)}
+        \end{flalign*}
+    \end{multicols}
+\end{enumerate}
 
 \subsection{Exercise 25.6}
 
 \noindent Find $\dfrac{dy}{dx}$ for the following implicit functions:
-\setlength{\columnseprule}{1pt}
-\setlength{\columnsep}{24pt}
-\begin{multicols}{2}
-    \begin{enumerate}
+\begin{enumerate}
+    \begin{multicols}{2}
         \item $x^{2}+y^{3}=3$
+        \sol{}
+        \begin{flalign*}
+            x^{2}+y^{3} & = 3                 \\
+            2x + 3y^2y' & = 0                 \\
+            3y^2y'      & = -2x               \\
+            y'          & = -\dfrac{2x}{3y^2}
+        \end{flalign*}
+        \vfill{}\null{}
+        \columnbreak{}
         \item ${\sqrt{x}}+{\sqrt{y}}={\sqrt{a}}$ where $a$ is a constant
-        \item $x^{3}+y^{3}=2x y+3$
+        \sol{}
+        \begin{flalign*}
+            {\sqrt{x}}+{\sqrt{y}}                                          & = {\sqrt{a}}                    \\
+            \dfrac{1}{2\sqrt{x}} + \dfrac{1}{2\sqrt{y}}\cdot\dfrac{dy}{dx} & = 0                             \\
+            \dfrac{1}{2\sqrt{y}}\cdot\dfrac{dy}{dx}                        & = -\dfrac{1}{2\sqrt{x}}         \\
+            \dfrac{dy}{dx}                                                 & = -\dfrac{2\sqrt{y}}{2\sqrt{x}} \\
+                                                                           & = -\sqrt{\dfrac{y}{x}}
+        \end{flalign*}
+    \end{multicols}
+
+    \begin{multicols}{2}
+        \item $x^{3}+y^{3}=2xy+3$
+        \sol{}
+        \begin{flalign*}
+            x^{3}+y^{3}   & = 2xy+3                        \\
+            3x^2 + 3y^2y' & = 2(x'y + xy')                 \\
+            3x^2 + 3y^2y' & = 2y + 2xy'                    \\
+            2xy' - 3y^2y' & = 3x^2 - 2y                    \\
+            y'(2x - 3y^2) & = 3x^2 - 2y                    \\
+            y'            & = \dfrac{3x^2 - 2y}{2x - 3y^2}
+        \end{flalign*}
+        \vfill{}\null{}
+        \columnbreak{}
         \item $y^{2}(x+1)=3x^{2}$
+        \sol{}
+        \begin{flalign*}
+            y^{2}(x+1)             & = 3x^{2}                      \\
+            xy^2 + y^2             & = 3x^2                        \\
+            x'y^2 + x(y^2)' + 2yy' & = 6x                          \\
+            y^2 + 2xyy' + 2yy'     & = 6x                          \\
+            2xyy' + 2yy'           & = 6x - y^2                    \\
+            y'(2xy + 2y)           & = 6x - y^2                    \\
+            y'                     & = \dfrac{6x - y^2}{2y(x + 1)}
+        \end{flalign*}
+        \vfill{}\null{}
+    \end{multicols}
+
+    \vspace{-1cm}
+    \begin{multicols}{2}
         \item $3x^{2}-6x y+3y^{2}=25$
-        \item $x y^{3}=2x^{2}-2y^{2}$
+        \sol{}
+        \begin{flalign*}
+            3x^{2}-6x y+3y^{2}    & = 25    \\
+            6x - 6y - 6xy' + 6yy' & = 0     \\
+            x - y - xy' + yy'     & = 0     \\
+            xy' - yy'             & = x - y \\
+            y'(x - y)             & = x - y \\
+            y'                    & = 1
+        \end{flalign*}
+        \vfill{}\null{}
+        \columnbreak{}
+        \item $xy^{3}=2x^{2}-2y^{2}$
+        \sol{}
+        \begin{flalign*}
+            y^{3}+3xy^{2}y'        & = 4x - 4yy'                    \\
+            3xy^{2}y'       + 4yy' & = 4x - y^3                     \\
+            y'(3xy^2 + 4y)         & = 4x - y^3                     \\
+            y'                     & = \dfrac{4x - y^3}{3xy^2 + 4y}
+        \end{flalign*}
+    \end{multicols}
+    \begin{multicols}{2}
         \item ${\dfrac{1}{x}}+{\dfrac{1}{y}}=2x$
+        \sol{}
+        \begin{flalign*}
+            {\dfrac{1}{x}}+{\dfrac{1}{y}}      & = 2x                          \\
+            -\dfrac{1}{x^2} - \dfrac{1}{y^2}y' & = 2                           \\
+            \dfrac{1}{y^2}y'                   & = - 2 - \dfrac{1}{x^2}        \\
+            y'                                 & = -\dfrac{y^2(2x^2 + 1)}{x^2}
+        \end{flalign*}
+        \vfill{}\null{}
+        \columnbreak{}
         \item ${\dfrac{3x^{2}}{y}}+{\dfrac{3y^{2}}{x}}=1$
+        \sol{}
+        \begin{flalign*}
+            {\dfrac{3x^{2}}{y}}+{\dfrac{3y^{2}}{x}}           & = 1 & \\
+            3x^2y^{-1} + 3y^2x^{-1}                           & = 1   \\
+            6xy^{-1} - 3x^2y^{-2}y' + 6yx^{-1}y' - 3y^2x^{-2} & = 0
+        \end{flalign*}
+        \vspace{-1.5cm}
+        \begin{flalign*}
+            x^2y^{-2}y' - 2yx^{-1}y' & = 2xy^{-1} - y^2x^{-2}                                                       & \\
+            y'(x^2y^{-2} - 2yx^{-1}) & = 2xy^{-1} - y^2x^{-2}                                                         \\
+            y'                       & = \dfrac{2xy^{-1} - y^2x^{-2}}{x^2y^{-2} - 2yx^{-1}}                           \\
+                                     & = \dfrac{\dfrac{2x}{y} - \dfrac{y^2}{x^2}}{\dfrac{x^2}{y^2} - \dfrac{2y}{x}}   \\
+                                     & = \dfrac{\dfrac{2x^3 - y^3}{x^2y}}{\dfrac{x^3 - 2y^3}{xy^2}}                   \\
+                                     & = \dfrac{2x^3 - y^3}{x^2y} \cdot \dfrac{xy^2}{x^3 - 2y^3}                      \\
+                                     & = \dfrac{y(2x^3 - y^3)}{x(x^3 - 2y^3)}
+        \end{flalign*}
+    \end{multicols}
+
+    \begin{multicols}{2}
         \item $xy-x+xy^{3}=10$
+        \sol{}
+        \begin{flalign*}
+            xy-x+xy^{3}                 & = 10                              & \\
+            y + xy' - 1 + y^3 + 3xy^2y' & = 0                                 \\
+            xy' + 3xy^2y'               & = - y^3 - y + 1                     \\
+            y'(x + 3xy^2)               & = - (y^3 + y - 1)                   \\
+            y'                          & = -\dfrac{y^3 + y - 1}{3xy^2 + x}
+        \end{flalign*}
+        \vfill{}\null{}
+        \columnbreak{}
         \item ${4x^{3}}+2x y^{2}-x y=0$
-    \end{enumerate}
-\end{multicols}
+        \sol{}
+        \begin{flalign*}
+            4x^{3}+2x y^{2}-x y            & = 0                                 & \\
+            12x^2 + 2y^2 + 4xyy' - y - xy' & = 0                                   \\
+            4xyy' - xy'                    & = y - 12x^2 - 2y^2                    \\
+            y'(4xy - x)                    & = y - 12x^2 - 2y^2                    \\
+            y'                             & = \dfrac{y - 12x^2 - 2y^2}{4xy - x}   \\
+                                           & = \dfrac{12x^2 + 2y^2 - y}{x - 4xy}
+        \end{flalign*}
+    \end{multicols}
+\end{enumerate}
 
 \section{Two Basic Limits}
 
@@ -1651,14 +2054,14 @@ Consider the value of $\dfrac{\sin x}{x}$ when $x$ approaches $0$. When $x =
     \dfrac{\sin x}{x}$ is defined, as shown in the diagram below:
 \begin{center}
     \begin{NiceTabular}{|c|c|c|}[hvlines,cell-space-limits=5pt]
-        x (in rad) & $\sin x$ & $\dfrac{\sin x}{x}$ \\
-        1 & 0.84147098 & 0.84147098 \\
-        0.500 & 0.479425539 & 0.958851077 \\
-        0.250 & 0.247403959 & 0.989615837 \\
-        0.100 & 0.099833417 & 0.99833417 \\
-        0.010 & 0.0099998333 & 0.99998333 \\
-        0.001 & 0.00099999983 & 0.99999983 \\
-        \vdots & \vdots & \vdots \\
+        x (in rad) & $\sin x$      & $\dfrac{\sin x}{x}$ \\
+        1          & 0.84147098    & 0.84147098          \\
+        0.500      & 0.479425539   & 0.958851077         \\
+        0.250      & 0.247403959   & 0.989615837         \\
+        0.100      & 0.099833417   & 0.99833417          \\
+        0.010      & 0.0099998333  & 0.99998333          \\
+        0.001      & 0.00099999983 & 0.99999983          \\
+        \vdots     & \vdots        & \vdots              \\
     \end{NiceTabular}
 \end{center}
 Note that the trigonometric independent variable $x$ is in radian.
@@ -1667,13 +2070,13 @@ By looking at the table above, as $x$ approaches $0$, the value of $\dfrac{\sin
         x}{x}$ approaches $1$. Hence, we can speculate that
 \begin{mdframed}[style=MyFrame]
     \begin{cequation}
-        \lim\limits_{x \to 0} \dfrac{\sin x}{x} = 1
+        \lim\limits_{x \to{0}} \dfrac{\sin{x}}{x} = 1
     \end{cequation}
 \end{mdframed}
 
 We can also prove the speculation above.
 \begin{center}
-    \begin{tikzpicture}[scale=1.5]
+    \begin{tikzpicture}[scale=1.8]
         \draw[->] (-2,0) -- (2,0);
         \draw[->] (0,-2) -- (0,2);
         \node at (2.1,0) {$\scriptstyle{x}$};
@@ -1717,62 +2120,164 @@ When $x < 0$, $\dfrac{\sin x}{x} = \dfrac{\sin (-x)}{-x}$, $\cos(-x) = \cos x$.
 \end{flalign*}
 The statement above uses the Squeeze Theorem. From the proof above, we can also conclude that
 \begin{cequation}
-    \lim\limits_{x \to 0} \dfrac{\sin x}{x} =
-    \lim\limits_{x \to 0} \dfrac{1}{\dfrac{\sin x}{x}} = 1
+    \lim\limits_{x \to{0}} \dfrac{\sin{x}}{x} =
+    \lim\limits_{x \to{0}} \dfrac{1}{\dfrac{\sin{x}}{x}} = 1
 \end{cequation}
 
 \subsection{Practice 8}
 
-Find the limit of the following: \setlength{\columnseprule}{1pt}
-\setlength{\columnsep}{24pt}
-\begin{multicols}{2}
-    \begin{enumerate}
+Find the limit of the following:
+\begin{enumerate}
+    \begin{multicols}{2}
         \item $\lim\limits_{x\to0}{\dfrac{\sin4x}{5x}}$
+        \sol{}
+        \begin{flalign*}
+            \lim\limits_{x\to0}{\dfrac{\sin4x}{5x}} & = \dfrac{1}{5}\lim\limits_{x\to0}{\dfrac{\sin4x}{x}}   \\
+                                                    & = \dfrac{1}{5}\lim\limits_{x\to0}{\dfrac{4\sin4x}{4x}} \\
+                                                    & = \dfrac{4}{5}\lim\limits_{x\to0}{\dfrac{\sin4x}{4x}}  \\
+                                                    & = \dfrac{4}{5}
+        \end{flalign*}
+
         \item $\lim\limits_{x\to0}{\dfrac{7x}{\sin5x}}$
-        \item $\lim\limits_{1\to0}{\dfrac{\sin 5x}{\sin 4x}}$
+        \sol{}
+        \begin{flalign*}
+            \lim\limits_{x\to0}{\dfrac{7x}{\sin5x}} & = 7\lim\limits_{x\to0}{\dfrac{x}{\sin5x}}             \\
+                                                    & = \dfrac{7}{5}\lim\limits_{x\to0}{\dfrac{5x}{\sin5x}} \\
+                                                    & = \dfrac{7}{5}
+        \end{flalign*}
+    \end{multicols}
+
+    \begin{multicols}{2}
+        \item $\lim\limits_{x\to0}{\dfrac{\sin 5x}{\sin 4x}}$
+        \sol{}
+        \begin{flalign*}
+            \lim\limits_{x\to0}{\dfrac{\sin 5x}{\sin 4x}} & = \lim\limits_{x\to0}{\left(\dfrac{\sin 5x}{5x}\cdot\dfrac{4x}{\sin 4x} \cdot \dfrac{5}{4}\right)} \\
+                                                          & = 1\cdot1\cdot\dfrac{5}{4}                                                                         \\
+                                                          & = \dfrac{5}{4}
+        \end{flalign*}
+        \vfill{}\null{}
+        \columnbreak{}
         \item $\lim\limits_{x\to0}{\dfrac{1-\cos2x}{3x^{2}}}$
-        \item $\lim\limits_{s\to0}{\dfrac{\tan9x}{\sin 5x}}$
+        \sol{}
+        \begin{flalign*}
+            \lim\limits_{x\to0}{\dfrac{1-\cos2x}{3x^{2}}} & = \dfrac{1}{3}\lim\limits_{x\to0}{\dfrac{1-1 + 2\sin^2 x}{x^2}}     \\
+                                                          & = \dfrac{2}{3}\lim\limits_{x\to0}{\dfrac{\sin^2 x}{x^2}}            \\
+                                                          & = \dfrac{2}{3}\lim\limits_{x\to0}{\left(\dfrac{\sin x}{x}\right)^2} \\
+                                                          & = \dfrac{2}{3}
+        \end{flalign*}
+    \end{multicols}
+
+    \begin{multicols}{2}
+        \item $\lim\limits_{x\to0}{\dfrac{\tan9x}{\sin 5x}}$
+        \sol{}
+        \begin{flalign*}
+             & \lim\limits_{x\to0}{\dfrac{\tan9x}{\sin 5x}}                                                          \\
+             & = \lim\limits_{x\to0}{\dfrac{\sin9x}{\sin 5x\cos9x}}                                                  \\
+             & = \lim\limits_{x\to0}{\left(\dfrac{\sin9x}{9x}\cdot\dfrac{5x}{\sin 5x}\cdot\dfrac{9}{5\cos9x}\right)} \\
+             & = \dfrac{9}{5}\lim\limits_{x\to0}{\dfrac{1}{\cos9x}}                                                  \\
+             & = \dfrac{9}{5}
+        \end{flalign*}
+        \vfill{}\null{}
+        \columnbreak{}
         \item $\lim\limits_{x\to0}{\dfrac{\tan2x\sin3x}{x^{2}}}$
-    \end{enumerate}
-\end{multicols}
+        \sol{}
+        \begin{flalign*}
+             & \lim\limits_{x\to0}{\dfrac{\tan2x\sin3x}{x^{2}}}                                                                     \\
+             & = \lim\limits_{x\to0}{\dfrac{\sin2x\sin3x}{\cos2x \cdot x^{2}}}                                                      \\
+             & = \lim\limits_{x\to0}{\left(\dfrac{\sin2x}{2x} \cdot \dfrac{\sin3x}{3x} \cdot \dfrac{6x^2}{\cos2x \cdot x^2}\right)} \\
+             & = 6\lim\limits_{x\to0}{\dfrac{1}{\cos2x}}                                                                            \\
+             & = 6
+        \end{flalign*}
+    \end{multicols}
+\end{enumerate}
 
 \subsection{Exercise 25.7a}
 
-Find the limit of the following: \setlength{\columnseprule}{1pt}
-\setlength{\columnsep}{24pt}
-\begin{multicols}{2}
-    \begin{enumerate}
-        \item $\lim\limits_{x\to0}{\dfrac{x\cos x}{\sin2x}}$
-        \item $\lim\limits_{x\to0}(x\cot x)$
-        \item $\lim\limits_{x\to0}{\dfrac{2x}{\sin7x}}$
-        \item $\lim\limits_{x\to0}{\dfrac{\sin{\frac{5}{2}}x}{2x}}$
-        \item $\lim\limits_{x\to0}{\dfrac{\sin(2x^{2})}{x}}$
-        \item $\lim\limits_{x\to0}{\dfrac{\sin(2x^{2})}{x}}$
-        \item $\lim\limits_{x\to0}{\dfrac{x^{2}}{\sin^{2}b x}}$
-        \item $\lim\limits_{x\to0}{\frac{\sin^{2}3x}{2x^{2}}}$
-        \item $\lim\limits_{x\to0}{\frac{4x}{\tan8x}}$
-        \item $\lim\limits_{x\to0}{\frac{\sin5x}{\tan3x}}$
-        \item $\lim\limits_{x\to0}{\frac{1-\cos4x}{x\sin5x}}$
-        \item $\lim\limits_{x\to0}{\frac{5x^{2}}{2\tan^{2}2x}}$
-        \item $\lim\limits_{x\to0}{\frac{\cos3x-1}{3x^{2}}}$
-    \end{enumerate}
-\end{multicols}
+Find the limit of the following:
+\begin{enumerate}
+    \item $\lim\limits_{x\to0}{\dfrac{x\cos x}{\sin2x}}$
+          \sol{}
+          \begin{flalign*}
+              \lim\limits_{x\to0}{\dfrac{x\cos x}{\sin2x}} & = \dfrac{1}{2}\lim\limits_{x\to0}{\left(\dfrac{2x}{\sin2x}\cdot \cos x\right)} \\
+                                                           & = \dfrac{1}{2}
+          \end{flalign*}
+
+    \item $\lim\limits_{x\to0}(x\cot x)$
+          \sol{}
+          \begin{flalign*}
+              \lim\limits_{x\to0}(x\cot x) & = \lim\limits_{x\to0}{\dfrac{x\cdot \cos x}{\sin x}}               \\
+                                           & = \lim\limits_{x\to0}{\left(\dfrac{x}{\sin x} \cdot \cos x\right)} \\
+                                           & = 1
+          \end{flalign*}
+
+    \item $\lim\limits_{x\to0}{\dfrac{2x}{\sin7x}}$
+          \sol{}
+          \begin{flalign*}
+              \lim\limits_{x\to0}{\dfrac{2x}{\sin7x}} & = 2\lim\limits_{x\to0}{\dfrac{x}{\sin7x}}             \\
+                                                      & = \dfrac{2}{7}\lim\limits_{x\to0}{\dfrac{7x}{\sin7x}} \\
+                                                      & = \dfrac{2}{7}
+          \end{flalign*}
+
+    \item $\lim\limits_{x\to0}{\dfrac{\sin{\dfrac{5}{2}}x}{2x}}$
+          \sol{}
+          \begin{flalign*}
+              \lim\limits_{x\to0}{\dfrac{\sin{\dfrac{5}{2}}x}{2x}} & = \lim\limits_{x\to0}{\dfrac{\sin{\dfrac{5}{2}}x}{\dfrac{4}{5}\cdot\dfrac{5}{2}x}} \\
+                                                                   & = \dfrac{5}{4}\lim\limits_{x\to0}{\dfrac{\sin{\dfrac{5}{2}}x}{\dfrac{5}{2}x}}      \\
+                                                                   & = \dfrac{5}{4}
+          \end{flalign*}
+    \item $\lim\limits_{x\to0}{\dfrac{\sin(2x^{2})}{x}}$
+          \sol{}
+          \begin{flalign*}
+              \lim\limits_{x\to0}{\dfrac{\sin(2x^{2})}{x}} & = 2\lim\limits_{x\to0}{\dfrac{x^2\sin(2x^{2})}{2x^2}} \\
+                                                           & = 2\lim\limits_{x\to0}{x^2}                           \\
+                                                           & = 0
+          \end{flalign*}
+
+    \item $\lim\limits_{x\to0}{\dfrac{x^{2}}{\sin^{2}b x}}$
+          \sol{}
+          \begin{flalign*}
+              \lim\limits_{x\to0}{\dfrac{x^{2}}{\sin^{2}b x}} & = \lim\limits_{x\to0}{\left(\dfrac{x}{\sin bx}\right)^2}                \\
+                                                              & = \dfrac{1}{b^2}\lim\limits_{x\to0}{\left(\dfrac{bx}{\sin bx}\right)^2} \\
+                                                              & = \dfrac{1}{b^2}
+          \end{flalign*}
+
+    \item $\lim\limits_{x\to0}{\dfrac{\sin^{2}3x}{2x^{2}}}$
+          \sol{}
+          \begin{flalign*}
+              \lim\limits_{x\to0}{\dfrac{\sin^{2}3x}{2x^{2}}} & = \dfrac{1}{2}\lim\limits_{x\to0}{\dfrac{\sin^{2}3x}{x^{2}}}         \\
+                                                              & = \dfrac{1}{2}\lim\limits_{x\to0}{\left(\dfrac{\sin3x}{x}\right)^2}  \\
+                                                              & = \dfrac{9}{2}\lim\limits_{x\to0}{\left(\dfrac{\sin3x}{3x}\right)^2} \\
+                                                              & = \dfrac{9}{2}
+          \end{flalign*}
+
+    \item $\lim\limits_{x\to0}{\dfrac{4x}{\tan8x}}$
+          \sol{}
+          \begin{flalign*}
+              \lim\limits_{x\to0}{\dfrac{4x}{\tan8x}} & = 4\lim\limits_{x\to0}{\dfrac{x\cos8x}{\sin8x}}                                 \\
+                                                      & = \dfrac{1}{2}\lim\limits_{x\to0}{\left(\dfrac{8x}{\sin8x} \cdot \cos8x\right)} \\
+                                                      & = \dfrac{1}{2}
+          \end{flalign*}
+    \item $\lim\limits_{x\to0}{\dfrac{\sin5x}{\tan3x}}$
+    \item $\lim\limits_{x\to0}{\dfrac{1-\cos4x}{x\sin5x}}$
+    \item $\lim\limits_{x\to0}{\dfrac{5x^{2}}{2\tan^{2}2x}}$
+    \item $\lim\limits_{x\to0}{\dfrac{\cos3x-1}{3x^{2}}}$
+\end{enumerate}
 
 \subsection*{B. $\lim\limits_{x\to\infty}{{\left(1 + \dfrac{1}{x}\right)}^{x}}$}
 
 Consider the limit of ${\left(1 + \dfrac{1}{x}\right)}^{x}$ as $x$ approaches
-infinity. As $x \to \infty$, the changes of the function $f (x) = \left(1 +
-    \dfrac{1}{x}\right)^{x}$ is shown in the table below:
+infinity. As $x \to \infty$, the changes of the function $f (x) = {\left(1 +
+    \dfrac{1}{x}\right)}^{x}$ is shown in the table below:
 \begin{center}
     \begin{NiceTabular}{|c|c|}[hvlines,cell-space-limits=5pt]
-        $x$ & $f (x) = {\left(1 + \dfrac{1}{x}\right)}^{x}$ \\
-        1 & ${\left(1 + \dfrac{1}{1}\right)}^{1} = 2$     \\
-        10 & ${\left(1 + \dfrac{1}{10}\right)}^{10} = 2.59374$ \\
-        100 & ${\left(1 + \dfrac{1}{100}\right)}^{100} = 2.70481$ \\
-        1000 & ${\left(1 + \dfrac{1}{1000}\right)}^{1000} = 2.71692$ \\
-        10000 & ${\left(1 + \dfrac{1}{10000}\right)}^{10000} = 2.71815$ \\
-        100000 & ${\left(1 + \dfrac{1}{100000}\right)}^{100000} = 2.71827$ \\
-        $\vdots$ & $\vdots$ \\
+        $x$      & $f (x) = {\left(1 + \dfrac{1}{x}\right)}^{x}$             \\
+        1        & ${\left(1 + \dfrac{1}{1}\right)}^{1} = 2$                 \\
+        10       & ${\left(1 + \dfrac{1}{10}\right)}^{10} = 2.59374$         \\
+        100      & ${\left(1 + \dfrac{1}{100}\right)}^{100} = 2.70481$       \\
+        1000     & ${\left(1 + \dfrac{1}{1000}\right)}^{1000} = 2.71692$     \\
+        10000    & ${\left(1 + \dfrac{1}{10000}\right)}^{10000} = 2.71815$   \\
+        100000   & ${\left(1 + \dfrac{1}{100000}\right)}^{100000} = 2.71827$ \\
+        $\vdots$ & $\vdots$                                                  \\
     \end{NiceTabular}
 \end{center}
 
@@ -1831,27 +2336,27 @@ Here we will derive the derivatives of the sine, cosine, and tangent functions.
 
 Let $y = \sin x$.
 \begin{flalign*}
-    y + \Delta y               & = \sin(x + \Delta x)                                                                  \\
-    \Delta y                   & = \sin(x + \Delta x) - \sin x                                                         \\
-                               & = \sin x \cos \Delta x + \cos x \sin \Delta x - \sin x                                \\
-                               & = \sin x (\cos \Delta x - 1) + \cos x \sin \Delta x                                   \\
-    \dfrac{\Delta y}{\Delta x} & = \sin x \dfrac{\cos \Delta x - 1}{\Delta x} + \cos x \dfrac{\sin \Delta x}{\Delta x}
+    y + \Delta y                & = \sin(x + \Delta{x})                                                                     \\
+    \Delta y                    & = \sin(x + \Delta{x}) - \sin x                                                            \\
+                                & = \sin x \cos \Delta{x} + \cos x \sin \Delta{x} - \sin x                                  \\
+                                & = \sin x (\cos \Delta{x} - 1) + \cos x \sin \Delta{x}                                     \\
+    \dfrac{\Delta y}{\Delta{x}} & = \sin x \dfrac{\cos \Delta{x} - 1}{\Delta{x}} + \cos x \dfrac{\sin \Delta{x}}{\Delta{x}}
 \end{flalign*}
 \begin{flalign*}
-    \because\ \lim\limits_{\Delta x \to 0}{\dfrac{\cos \Delta x - 1}{\Delta x}} & = \lim\limits_{\Delta x \to 0}{\dfrac{-2 \sin^{2} \dfrac{\Delta x}{2}}{\Delta x}}                                              \\
-                                                                                & = -\dfrac{1}{2}\lim\limits_{\Delta x \to 0}{\left(\dfrac{\sin \dfrac{\Delta x}{2}}{\dfrac{\Delta x}{2}}\right) \cdot \Delta x} \\
-                                                                                & = 0                                                                                                                            \\
-    \lim\limits_{\Delta x \to 0}{\dfrac{\sin \Delta x}{\Delta x}}               & = 1
+    \because\ \lim\limits_{\Delta{x}\to{0}}{\dfrac{\cos \Delta{x} - 1}{\Delta{x}}} & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{-2 \sin^{2} \dfrac{\Delta{x}}{2}}{\Delta{x}}}                                               \\
+                                                                                   & = -\dfrac{1}{2}\lim\limits_{\Delta{x}\to{0}}{\left(\dfrac{\sin \dfrac{\Delta{x}}{2}}{\dfrac{\Delta{x}}{2}}\right) \cdot \Delta{x}} \\
+                                                                                   & = 0                                                                                                                                \\
+    \lim\limits_{\Delta{x}\to{0}}{\dfrac{\sin \Delta{x}}{\Delta{x}}}               & = 1
 \end{flalign*}
 \begin{flalign*}
-    \therefore\ \dfrac{d}{dx} (\sin x) & = \lim\limits_{\Delta x \to 0}{\dfrac{\Delta y}{\Delta x}} \\
-                                       & = \sin x \cdot 0 + \cos x \cdot 1                          \\
+    \therefore\ \dfrac{d}{dx} (\sin x) & = \lim\limits_{\Delta{x}\to{0}}{\dfrac{\Delta y}{\Delta{x}}} \\
+                                       & = \sin x \cdot 0 + \cos x \cdot 1                            \\
                                        & = \cos x
 \end{flalign*}
 
 \begin{mdframed}[style=MyFrame]
     \begin{cequation}
-        \dfrac{d}{dx} (\sin x) = \cos x
+        \dfrac{d}{dx} (\sin{x}) = \cos{x}
     \end{cequation}
 \end{mdframed}
 \newpage
@@ -1861,12 +2366,12 @@ Let $y = \sin x$.
 \begin{flalign*}
     \therefore\ \dfrac{d}{dx} (\cos x) & = \dfrac{d}{dx}\left(\sin\left(\dfrac{\pi}{2} - x\right)\right) \\
                                        & = \cos\left(\dfrac{\pi}{2} - x\right)(-1)                       \\
-                                       & = -sin x
+                                       & = -\sin{x}
 \end{flalign*}
 
 \begin{mdframed}[style=MyFrame]
     \begin{cequation}
-        \dfrac{d}{dx} (\cos x) = -\sin x
+        \dfrac{d}{dx} (\cos{x}) = -\sin{x}
     \end{cequation}
 \end{mdframed}
 
@@ -1884,7 +2389,7 @@ Let $y = \sin x$.
 
 \begin{mdframed}[style=MyFrame]
     \begin{cequation}
-        \dfrac{d}{dx} (\tan x) = \sec^{2} x
+        \dfrac{d}{dx} (\tan{x}) = \sec^{2}{x}
     \end{cequation}
 \end{mdframed}
 
@@ -1892,13 +2397,13 @@ Below are the derivatives of the remaining trigonometric functions.
 
 \begin{mdframed}[style=MyFrame]
     \begin{cequation}
-        \dfrac{d}{dx} (\csc x) = -\csc x \cot x
+        \dfrac{d}{dx} (\csc{x}) = -\csc{x} \cot{x}
     \end{cequation}
     \begin{cequation}
-        \dfrac{d}{dx} (\sec x) = \sec x \tan x
+        \dfrac{d}{dx} (\sec{x}) = \sec{x} \tan{x}
     \end{cequation}
     \begin{cequation}
-        \dfrac{d}{dx} (\cot x) = -\csc^{2} x
+        \dfrac{d}{dx} (\cot{x}) = -\csc^{2}{x}
     \end{cequation}
 \end{mdframed}
 
@@ -1960,23 +2465,23 @@ Find the derivatives of the following functions:
 
 Let $y = \ln x$ where $x > 0$.
 \begin{flalign*}
-    y + \Delta y               & = \ln (x + \Delta x)                                                                                            \\
-    \Delta y                   & = \ln (x + \Delta x) - \ln x                                                                                    \\
-                               & = \ln \left(\frac{x + \Delta x}{x}\right)                                                                       \\
-                               & = \ln \left(1 + \dfrac{\Delta x}{x}\right)                                                                      \\
-    \dfrac{\Delta y}{\Delta x} & = \dfrac{1}{\Delta x}\ln \left(1 + \dfrac{\Delta x}{x}\right)                                                   \\
-                               & = \dfrac{1}{\Delta x}\cdot \dfrac{x}{\Delta x} \cdot \ln \left(1 + \dfrac{\Delta x}{x}\right)                   \\
-                               & = \dfrac{1}{x}\ln {\left(1 + \dfrac{\Delta x}{x}\right)}^{\frac{x}{\Delta x}}                                   \\
-    \dfrac{dy}{dx}             & = \lim_{\Delta x \to 0} \dfrac{\Delta y}{\Delta x}                                                              \\
-                               & = \dfrac{1}{x}\lim_{\Delta x \to 0} \ln {\left(1 + \dfrac{\Delta x}{x}\right)}^{\frac{x}{\Delta x}}             \\
-                               & = \dfrac{1}{x}\ln\left(\lim_{\Delta x \to 0} {\left(1 + \dfrac{\Delta x}{x}\right)}^{\frac{x}{\Delta x}}\right) \\
-                               & = \dfrac{1}{x}\ln e                                                                                             \\
-                               & = \dfrac{1}{x}
+    y + \Delta y                & = \ln (x + \Delta{x})                                                                                              \\
+    \Delta y                    & = \ln (x + \Delta{x}) - \ln x                                                                                      \\
+                                & = \ln \left(\frac{x + \Delta{x}}{x}\right)                                                                         \\
+                                & = \ln \left(1 + \dfrac{\Delta{x}}{x}\right)                                                                        \\
+    \dfrac{\Delta y}{\Delta{x}} & = \dfrac{1}{\Delta{x}}\ln \left(1 + \dfrac{\Delta{x}}{x}\right)                                                    \\
+                                & = \dfrac{1}{\Delta{x}}\cdot \dfrac{x}{\Delta{x}} \cdot \ln \left(1 + \dfrac{\Delta{x}}{x}\right)                   \\
+                                & = \dfrac{1}{x}\ln {\left(1 + \dfrac{\Delta{x}}{x}\right)}^{\frac{x}{\Delta{x}}}                                    \\
+    \dfrac{dy}{dx}              & = \lim_{\Delta{x}\to{0}} \dfrac{\Delta y}{\Delta{x}}                                                               \\
+                                & = \dfrac{1}{x}\lim_{\Delta{x}\to{0}} \ln {\left(1 + \dfrac{\Delta{x}}{x}\right)}^{\frac{x}{\Delta{x}}}             \\
+                                & = \dfrac{1}{x}\ln\left(\lim_{\Delta{x}\to{0}} {\left(1 + \dfrac{\Delta{x}}{x}\right)}^{\frac{x}{\Delta{x}}}\right) \\
+                                & = \dfrac{1}{x}\ln e                                                                                                \\
+                                & = \dfrac{1}{x}
 \end{flalign*}
 
 \begin{mdframed}[style=MyFrame]
     \begin{cequation}
-        \dfrac{d}{dx} (\ln x) = \dfrac{1}{x}
+        \dfrac{d}{dx} (\ln{x}) = \dfrac{1}{x}
     \end{cequation}
 \end{mdframed}
 
@@ -1988,7 +2493,7 @@ If $x < 0$, then $-x > 0$.
 
 \begin{mdframed}[style=MyFrame]
     \begin{cequation}
-        \dfrac{d}{dx} (\ln\vert x\vert) = \dfrac{1}{x}
+        \dfrac{d}{dx} (\ln\vert{x}\vert) = \dfrac{1}{x}
     \end{cequation}
 \end{mdframed}
 
@@ -2005,7 +2510,7 @@ If $x < 0$, then $-x > 0$.
 
 \begin{mdframed}[style=MyFrame]
     \begin{cequation}
-        \dfrac{d}{dx} (\log_{a}x) = \dfrac{1}{x\ln a}
+        \dfrac{d}{dx} (\log_{a}x) = \dfrac{1}{x\ln{a}}
     \end{cequation}
 \end{mdframed}
 
