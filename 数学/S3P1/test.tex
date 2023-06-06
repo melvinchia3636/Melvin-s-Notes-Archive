@@ -576,14 +576,63 @@
                  & = -\dfrac{2}{-2}                  \\
                  & = 1
           \end{flalign*}
+
     \item Find the limit of the following:
           \begin{enumerate}
               \item $\lim\limits_{x\to0}{\dfrac{\sin{4x}}{x}}$
+                    \sol{}
+                    \begin{flalign*}
+                        \lim\limits_{x\to0}{\dfrac{\sin{4x}}{x}} & = \lim\limits_{x\to0}{\dfrac{4\sin{4x}}{4x}} \\
+                                                                 & = 4\lim\limits_{x\to0}{\dfrac{\sin{4x}}{4x}} \\
+                                                                 & = 4(1)                                       \\
+                                                                 & = 4
+                    \end{flalign*}
+
               \item $\lim\limits_{x\to0}{\dfrac{\tan2x}{\tan5x}}$
+                    \sol{}
+                    \begin{flalign*}
+                        \lim\limits_{x\to0}{\dfrac{\tan2x}{\tan5x}} & = \lim\limits_{x\to0}{\dfrac{2\tan2x}{2\tan5x}}                                                                                 \\
+                                                                    & = \lim\limits_{x\to0}{\left(\dfrac{\sin2x}{\cos2x} \cdot \dfrac{\cos5x}{\sin5x}\right)}                                         \\
+                                                                    & = \lim\limits_{x\to0}{\left(\dfrac{\sin2x}{2x} \cdot \dfrac{5x}{\sin5x} \cdot \dfrac{\cos5x}{\cos2x} \cdot \dfrac{2}{5}\right)} \\
+                                                                    & =  \dfrac{2}{5}\lim\limits_{x\to0}{\dfrac{\cos5x}{\cos2x}}                                                                      \\
+                                                                    & =  \dfrac{2}{5}
+                    \end{flalign*}
+
               \item $\lim\limits_{x\to0}\dfrac{x^{2}}{\tan^{2}3x}$
+                    \sol{}
+                    \begin{flalign*}
+                        \lim\limits_{x\to0}\dfrac{x^{2}}{\tan^{2}3x} & = \lim\limits_{x\to0}{\left(\dfrac{x}{\tan3x}\right)}^{2}                \\
+                                                                     & = \lim\limits_{x\to0}{\left(\dfrac{x\cos3x}{\sin3x}\right)}^{2}          \\
+                                                                     & = \lim\limits_{x\to0}{\left(\dfrac{3x}{3\sin3x} \cdot \cos3x\right)}^{2} \\
+                                                                     & = \dfrac{1}{9}\lim\limits_{x\to0}{\left(\dfrac{3x}{\sin3x}\right)}^{2}   \\
+                                                                     & = \dfrac{1}{9}
+                    \end{flalign*}
+
               \item $\lim\limits_{x\to\infty}{\left(1+{\dfrac{1}{x}}\right)}^{4x+1}$
+                    \sol{}
+                    \begin{flalign*}
+                        \lim\limits_{x\to\infty}{\left(1+{\dfrac{1}{x}}\right)}^{4x+1} & = \lim\limits_{x\to\infty}{\left[{\left(1+{\dfrac{1}{x}}\right)}^{4x} \cdot {\left(1+{\dfrac{1}{x}}\right)}\right]} \\
+                                                                                       & = \lim\limits_{x\to\infty}{\left[{\left(1+{\dfrac{1}{x}}\right)}^{x}\right]^4}                                      \\
+                                                                                       & = \left[\lim\limits_{x\to\infty}{{\left(1+{\dfrac{1}{x}}\right)}^{x}}\right]^{4}                                    \\
+                                                                                       & = e^{4}
+                    \end{flalign*}
+
               \item $\lim\limits_{x\to0}{\left(1-3x\right)}^{\frac{2}{x}}$
+                    \sol{}
+                    \begin{flalign*}
+                        \lim\limits_{x\to0}{\left(1-3x\right)}^{\frac{2}{x}} & = \lim\limits_{x\to0}{\left[{\left(1-3x\right)}^{\frac{1}{3x}}\right]}^{-6} \\
+                                                                             & = \left[\lim\limits_{x\to0}{\left(1-3x\right)}^{\frac{1}{3x}}\right]^{-6}   \\
+                                                                             & = e^{-6}
+                    \end{flalign*}
+
               \item $\lim\limits_{x\to\infty}{\left({\dfrac{x+3}{x+1}}\right)}^{x}$
+                    \sol{}
+                    \begin{flalign*}
+                        \lim\limits_{x\to\infty}{\left({\dfrac{x+3}{x+1}}\right)}^{x} & = \lim\limits_{x\to\infty}{\left(1 + \dfrac{2}{x+1}\right)}^{x}                                                                               \\
+                                                                                      & = \lim\limits_{x\to\infty}{\left\{\left[\left(1 + \dfrac{2}{x+1}\right)^{\frac{x + 1}{2}}\right]^2 - \left(1 + \dfrac{2}{x+1}\right)\right\}} \\
+                                                                                      & = \lim\limits_{x\to\infty}{\left[\left(1 + \dfrac{2}{x+1}\right)^{\frac{x + 1}{2}}\right]^2}                                                  \\
+                                                                                      & = e^{2}
+                    \end{flalign*}
           \end{enumerate}
     \item Find the derivative of the following functions:
           \begin{enumerate}
