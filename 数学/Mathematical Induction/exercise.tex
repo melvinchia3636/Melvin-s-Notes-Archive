@@ -1,0 +1,81 @@
+\documentclass{report}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{fontspec}
+\usepackage[total={6.6in,9.2in}]{geometry}
+
+\setmainfont{Times New Roman}
+
+\title{\Huge{\textbf{Mathematical Induction}}}
+\author{Melvin Chia}
+\date{10 June 2023}
+
+\begin{document}
+\onehalfspacing
+
+\subsection*{Exercise 1a}
+Use mathematical induction to prove the following statements (1 - 7).
+\begin{enumerate}
+    \item $1 + 2 + 3 + \cdots + n = \dfrac{n(n + 1)}{2}$
+          \vfill
+    \item $1 \cdot 2 + 2 \cdot 3 + 3 \cdot 4 + \cdots + n(n + 1) = \dfrac{1}{3}n(n + 1)(n + 2)$
+          \vfill
+          \newpage
+
+    \item $1^2 + 3^2 + 5^2 + \cdots + (2n - 1)^2 = \dfrac{n(4n^2 - 1)}{3}$
+          \vfill
+    \item $1 \cdot 4 + 2 \cdot 7 + 3 \cdot 10 + \cdots + n(3n + 1) = n(n + 1)^2$
+          \vfill
+          \newpage
+    \item $2 \cdot 2 + 3 \cdot 2^2 + 4 \cdot 2^3 + \cdots + (n + 1) \cdot 2^n = n \cdot 2^{n + 1}$
+          \vfill
+    \item $\dfrac{1}{1 \cdot 3} + \dfrac{1}{3 \cdot 5} + \dfrac{1}{5 \cdot 7} + \cdots + \dfrac{1}{(2n - 1)(2n + 1)} = \dfrac{n}{2n + 1}$
+          \vfill
+          \newpage
+\end{enumerate}
+
+\newpage
+\section*{Exercise 1b}
+Prove the following statements using the method of mathematical induction:
+\begin{enumerate}
+    \item $-1 + 3 - 5 + \cdots + (-1)^n(2n - 1) = (-1)^n \cdot n$
+          \vfill
+    \item $\sum (5n - 1) = \dfrac{n(5n + 3)}{2}$, $n \in \mathbb{N}$
+          \vfill
+          \newpage
+    \item $\sum 3^{n-1} = \dfrac{3^n - 1}{2}$, $n \in \mathbb{N}$
+          \vfill
+    \item $2^n > n^2$, $n > 4$ and $n \in \mathbb{N}$
+          \vfill
+          \newpage
+    \item $2^n + 2 > n^2$, $n \in \mathbb{N}$
+          \vfill
+    \item The sum of the interior angles of a polygon with $n$ sides is $(n-2)\pi$, $n
+              \geq 3$. \vfill \newpage
+    \item $(a^n - b^n)$ is divisible by $(a - b)$.
+          \vfill
+    \item $x^{n+2} + (x+1)^{2n + 1}$ is divisible by $x^2 + x + 1$, $n \geq 0$ and $n \in
+              \mathbb{Z}$.
+          \vfill
+          \newpage
+    \item $x^n + 5n$ ($n \in \mathbb{N}$) is divisible by $6$.
+          \vfill
+    \item The sum of the cube of three consecutive integers is divisible by $9$. \vfill
+          \newpage
+    \item For all natural number $n$, $9^n - 8n - 1$ is a multiple of $64$, $n \geq 2$.
+          \vfill
+    \item Determine the general formula for the following, and prove it using the method
+          of mathematical induction.
+          \begin{flalign*}
+              1\ \ \ \ \ \ \ \ \ \ \ \ \ \ \  & = 1   \\
+              3 + 5\ \ \ \ \ \ \ \ \ \ \ \    & = 8   \\
+              7 + 9 + 11\ \ \ \ \ \ \ \       & = 27  \\
+              13 + 15 + 17 + 19\ \ \ \        & = 64  \\
+              21 + 23 + 25 + 27 + 29          & = 125 \\
+          \end{flalign*}
+          \vfill
+\end{enumerate}
+\end{document}

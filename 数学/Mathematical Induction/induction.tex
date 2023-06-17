@@ -1,0 +1,418 @@
+\documentclass{report}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{fontspec}
+\usepackage[total={6.6in,9.2in}]{geometry}
+
+\setmainfont{Times New Roman}
+
+\title{\Huge{\textbf{Mathematical Induction}}}
+\author{Melvin Chia}
+\date{10 June 2023}
+
+\begin{document}
+\maketitle
+
+\onehalfspacing
+
+\chapter{Mathematical Induction}
+
+\section{Mathematical Induction}
+
+We inspect the following example:
+\begin{flalign*}
+    1^3 & = 1 = 1^2                                             \\
+    1^3 & + 2^3                   = 9 = (1 + 2)^2               \\
+    1^3 & + 2^3 + 3^3             = 36 = (1 + 2 + 3)^2          \\
+    1^3 & + 2^3 + 3^3 + 4^3       = 100 = (1 + 2 + 3 + 4)^2     \\
+    1^3 & + 2^3 + 3^3 + 4^3 + 5^3 = 225 = (1 + 2 + 3 + 4 + 5)^2 \\
+        & \ \vdots
+\end{flalign*}
+From the above example, we can conclude that
+\begin{flalign*}
+    1^3 + 2^3 + 3^3 + \cdots + n^3 & = (1 + 2 + 3 + \cdots + n)^2         \\
+                                   & = \left[\dfrac{n(n + 1)}{2}\right]^2
+\end{flalign*}
+Reasoning in the way of obtaining a general formula from a few examples is called \textbf{induction}. We can use induction to help us derive a general formula from a few examples. However, the general formula obtained from only a few examples may not be correct. For example:
+\begin{flalign*}
+    a^n = (n^2 - 5n + 5)^2
+\end{flalign*}
+can easily be proven
+\begin{flalign*}
+    a_1 & = (1^2 - 5 \times 1 + 5)^2 = 1 \\
+    a_2 & = (2^2 - 5 \times 2 + 5)^2 = 1 \\
+    a_3 & = (3^2 - 5 \times 3 + 5)^2 = 1 \\
+    a_4 & = (4^2 - 5 \times 4 + 5)^2 = 1
+\end{flalign*}
+If we make a conclusion based on the above examples: for all natural number $n$,
+\begin{flalign*}
+    a^n = (n^2 - 5n + 5)^2 = 1
+\end{flalign*}
+is true, then we are wrong. In fact,
+\begin{flalign*}
+    a_5 & = (5^2 - 5 \times 5 + 5)^2 = 25 \neq 1
+\end{flalign*}
+
+That is to say, the general formula of propositions related to natural numbers
+obtained from induction is not necessarily true. In order to prove its truth,
+we usually adopt the following method.
+
+First, we prove that the proposition is true for the first value $n_1$ (for
+example $n_1 = 1$). Next, we assume that the proposition is true for $n = k$
+($k \in \mathbb{N}, k \geq n_1$), and then prove that the proposition is true
+for $n = k + 1$. In this way, we can prove that the proposition is true for all
+natural numbers $n$ after $n_1$. This method is called \textbf{mathematical
+    induction}.
+
+For example, we use mathematical induction to prove that the following equation
+is true for all natural numbers:
+\begin{flalign*}
+    1^3 + 2^3 + 3^3 + \cdots + n^3 = \left[\dfrac{n(n + 1)}{2}\right]^2
+\end{flalign*}
+\begin{enumerate}[label = (\arabic*)]
+    \item When $n = 1$, LHS $= 1^3 = 1$, RHS $ = \left[\dfrac{1(1 + 1)}{2}\right]^2 = 1$,
+          so the equation is true for $n = 1$.
+    \item Assume that the equation is true for $n = k$, that is,
+          \begin{flalign*}
+              1^3 + 2^3 + 3^3 + \cdots + k^3 = \left[\dfrac{k(k + 1)}{2}\right]^2
+          \end{flalign*}
+          Hence, when $n = k + 1$,
+          \begin{flalign*}
+              1^3 + 2^3 + 3^3 + \cdots + k^3 + (k + 1)^3 & = \left[\dfrac{k(k + 1)}{2}\right]^2 + (k + 1)^3 \\
+                                                         & = \frac{k^2(k + 1)^2}{4} + \dfrac{4(k + 1)^3}{4} \\
+                                                         & = \frac{(k + 1)^2[k^2 + 4(k + 1)]}{4}            \\
+                                                         & = \frac{(k + 1)^2(k+2)^2}{4}                     \\
+                                                         & = \left[\dfrac{(k + 1)(k + 2)}{2}\right]^2
+          \end{flalign*}
+\end{enumerate}
+Therefore, the equation is true when $n = k + 1$.
+
+From (1), when $n = 1$, the equation is true. From (2), when $n = 1 + 1 = 2$,
+the equation is also true. Since the equation is true when $n = 2$, from (2),
+when $n = 2 + 1 = 3$, the equation is also true. Recursively, we can prove that
+the equation is true for $n = 4, 5, 6, \cdots$. Therefore, from (1) and (2), we
+can conclude that the equation is true for all $n \in \mathbb{N}$.
+
+From the example above, we can see that the process of mathematical induction
+is as follows:
+\begin{enumerate}[label = (\arabic*)]
+    \item Prove that the proposition is true for the first value $n_1$ (for example $n_1
+              = 1$ or $2$).
+    \item Assume that the proposition is true for $n = k$ ($k \in \mathbb{N}, k \geq
+              n_1$), and then prove that the proposition is true for $n = k + 1$.
+\end{enumerate}
+
+After the above two steps, we can conclude that the proposition is true for all
+natural numbers $n$ after $n_1$.
+
+It is worth noting that the two steps above are indispensable. From the
+calculation of the value of each term of
+\begin{flalign*}
+    a_n = (n^2 - 5n + 5)^2
+\end{flalign*}
+earlier, we can see that completing step (1) but not completing step (2) will result in a wrong conclusion. It's because we can't prove recursively that the proposition is true for $n = 2, 3, 4, 5, \cdots$. Similarly, if we complete step (2) but not step (1), we will also get a wrong conclusion.
+
+For example, assume that when $n = k$, the equation $2 + 6 + 10 + \cdots + 2(2n
+    - 1) = 2n^2 + 2$ is true, that is,
+\begin{flalign*}
+    2 + 6 + 10 + \cdots + 2(2k - 1) = 2k^2 + 2
+\end{flalign*}
+So, when $n = k + 1$,
+\begin{flalign*}
+    2 + 6 + 10 + \cdots + 2(2k - 1) + 2[2(k + 1) - 1] & = 2k^2 + 2 + 4(k + 1) - 2 \\
+                                                      & = 2k^2 + 2 + 4k + 2       \\
+                                                      & = 2(k + 1)^2 + 2
+\end{flalign*}
+That is, if the equation is true for $n = k$, then it is also true for $n = k +
+    1$. However, if we make a conclusion that the equation is true for all $n \in \mathbb{N}$ based on this, we will be wrong. In fact,
+
+When $n = 1$, LHS $= 2$, RHS $= 2 \times 1^2 + 2 = 4$,
+\begin{flalign*}
+    \text{LHS} \neq \text{RHS}.
+\end{flalign*}
+This indicates that step (2) is meaningless if step (1) is not completed.
+\vspace{0.8em}
+\begin{enumerate}[label = \textbf{Example \arabic*}, leftmargin=*]
+    \item Prove that $1 + 3 + 5 + \cdots + (2n - 1) = n^2$ using mathematical induction.
+\end{enumerate}
+\begin{enumerate}[label = \textbf{Solution}, leftmargin=*]
+    \item \begin{enumerate}[label = (\arabic*)]
+              \item When $n = 1$, LHS $= 1$, RHS $= 1^2 = 1$, so the equation is true for $n = 1$.
+              \item Assume that the equation is true for $n = k$, that is,
+                    \begin{flalign*}
+                        1 + 3 + 5 + \cdots + (2k - 1) = k^2
+                    \end{flalign*}
+                    Hence, when $n = k + 1$,
+                    \begin{flalign*}
+                         & 1 + 3 + 5 + \cdots + (2k - 1) + [2(k + 1) - 1] \\
+                         & = k^2 + [2(k + 1) - 1]                         \\
+                         & = k^2 + 2k + 1                                 \\
+                         & = (k + 1)^2
+                    \end{flalign*}
+                    Therefore, the equation is true when $n = k + 1$.
+
+          \end{enumerate}
+
+          From (1) and (2), we can conclude that the equation is true for all $n \in
+              \mathbb{N}$.
+\end{enumerate}
+\vspace{0.8em}
+\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*]
+    \setcounter{enumi}{2}
+    \item Prove that $1^2 + 2^2 + 3^2 + \cdots + n^2 = \dfrac{n(n + 1)(2n + 1)}{6}$ using
+          mathematical induction.
+\end{enumerate}
+\begin{enumerate}[label = \textbf{Solution}, leftmargin=*]
+    \item \begin{enumerate}[label = (\arabic*)]
+              \item When $n = 1$, LHS $= 1^2 = 1$, RHS $= \dfrac{1(1 + 1)(2 \times 1 + 1)}{6} = 1$,
+                    so the equation is true for $n = 1$.
+              \item Assume that the equation is true for $n = k$, that is,
+                    \begin{flalign*}
+                        1^2 + 2^2 + 3^2 + \cdots + k^2 = \dfrac{k(k + 1)(2k + 1)}{6}
+                    \end{flalign*}
+                    Hence, when $n = k + 1$,
+                    \begin{flalign*}
+                         & 1^2 + 2^2 + 3^2 + \cdots + k^2 + (k + 1)^2      \\
+                         & = \dfrac{k(k + 1)(2k + 1)}{6} + (k + 1)^2       \\
+                         & = \dfrac{k(k + 1)(2k + 1) + 6(k + 1)^2}{6}      \\
+                         & = \dfrac{(k + 1)(2k^2 + 7k + 6)}{6}             \\
+                         & = \dfrac{(k + 1)(k + 2)(2k + 3)}{6}             \\
+                         & = \dfrac{(k + 1)[(k + 1) + 1][2(k + 1) + 1]}{6}
+                    \end{flalign*}
+                    Therefore, the equation is true when $n = k + 1$.
+          \end{enumerate}
+
+          From (1) and (2), we can conclude that the equation is true for all $n \in
+              \mathbb{N}$.
+\end{enumerate}
+
+\subsection*{Exercise 1a}
+Use mathematical induction to prove the following statements (1 - 7).
+\begin{enumerate}
+    \item $1 + 2 + 3 + \cdots + n = \dfrac{n(n + 1)}{2}$
+    \item $1 \cdot 2 + 2 \cdot 3 + 3 \cdot 4 + \cdots + n(n + 1) = \dfrac{1}{3}n(n + 1)(n + 2)$
+    \item $1^2 + 3^2 + 5^2 + \cdots + (2n - 1)^2 = \dfrac{n(4n^2 - 1)}{3}$
+    \item $1 \cdot 4 + 2 \cdot 7 + 3 \cdot 10 + \cdots + n(3n + 1) = n(n + 1)^2$
+    \item $2 \cdot 2 + 3 \cdot 2^2 + 4 \cdot 2^3 + \cdots + (n + 1) \cdot 2^n = n \cdot 2^{n + 1}$
+    \item $\dfrac{1}{1 \cdot 3} + \dfrac{1}{3 \cdot 5} + \dfrac{1}{5 \cdot 7} + \cdots + \dfrac{1}{(2n - 1)(2n + 1)} = \dfrac{n}{2n + 1}$
+\end{enumerate}
+
+\newpage
+\section{Application of Mathematical Induction}
+
+Mathematical induction can be used to prove proposition that contains any
+natural number. In the previous section, by the introduction of mathematical
+induction, we have shown the application of it in proving equations through
+\textbf{Example 1} and \textbf{Example 2}. \vspace{0.8em}
+\begin{enumerate}[label = \textbf{Example \arabic*}, leftmargin=*]
+    \setcounter{enumi}{2}
+    \item By using mathematical induction, prove that
+          \begin{flalign*}
+              \left(1 - \dfrac{1}{4}\right)\left(1 - \dfrac{1}{9}\right)\left(1 - \dfrac{1}{16}\right) \cdots \left(1 - \dfrac{1}{n^2}\right) = \dfrac{n + 1}{2n} \quad (n > 1,\ n \in \mathbb{N})
+          \end{flalign*}
+\end{enumerate}
+\begin{enumerate}[label = \textbf{Solution}, leftmargin=*]
+    \item \begin{enumerate}[label = (\arabic*)]
+              \item \makebox[2cm]{When $n = 2$, }LHS $= \left(1 - \dfrac{1}{4}\right) = \dfrac{3}{4}$
+
+                    \makebox[2cm]{}RHS $= \dfrac{2 + 1}{2 \times 2} = \dfrac{3}{4}$
+
+                    \makebox[2cm]{}so the equation is true for $n = 2$.
+
+              \item Assume that the equation is true for $n = k$, that is,
+                    \begin{flalign*}
+                        \left(1 - \dfrac{1}{4}\right)\left(1 - \dfrac{1}{9}\right)\left(1 - \dfrac{1}{16}\right) \cdots \left(1 - \dfrac{1}{k^2}\right) = \dfrac{k + 1}{2k}
+                    \end{flalign*}
+                    Hence, when $n = k + 1$,
+                    \begin{flalign*}
+                         & \left(1-{\frac{1}{4}}\right)\left(1-{\frac{1}{9}}\right)\left(1-{\frac{1}{16}}\right)\cdots\left(1-{\frac{1}{k^{2}}}\right)\left[1-{\frac{1}{(k+1)^{\frac{1}{2}}}}\right] \\
+                         & = {\frac{k+1}{2k}}{\left[1-{\frac{1}{(k+1)^{2}}}\right]}                                                                                                                  \\
+                         & = {\frac{k+1}{2k}} \cdot{\frac{k^{2}+2k}{(k+1)^{2}}}                                                                                                                      \\
+                         & = \frac{k + 2}{2(k + 1)}                                                                                                                                                  \\
+                         & ={\frac{(k+1)+1}{2(k+1)}}
+                    \end{flalign*}
+                    Therefore, the equation is true when $n = k + 1$.
+          \end{enumerate}
+          From (1) and (2), we can conclude that the equation is true for all $n \in
+              \mathbb{N}$.
+\end{enumerate}
+\newpage
+\begin{enumerate}[label = \textbf{Example \arabic*}, leftmargin=*]
+    \setcounter{enumi}{3}
+    \item Prove that $x^{2n} - y^{2n}$ ($n \in \mathbb{N}$) is divisible by $x + y$
+\end{enumerate}
+\begin{enumerate}[label = \textbf{Solution}, leftmargin=*]
+    \item \begin{enumerate}[label = (\arabic*)]
+              \item When $n = 1$, $x^2 - y^2 = (x + y)(x - y)$ can be divided by $x + y$, so the
+                    statement is true for $n = 1$.
+              \item Assume that the statement is true for $n = k$, that is, $x^{2k} - y^{2k}$ is
+                    divisible by $x + y$.
+
+                    Hence, when $n = k + 1$,
+                    \begin{flalign*}
+                        x^{2(k+1)} - y^{2(k+1)} & = x^2 \cdot x^{2k} - y^2 \cdot y^{2k}                                       \\
+                                                & = x^2 \cdot x^{2k} - x^2 \cdot y^{2k} + x^2 \cdot y^{2k} - y^2 \cdot y^{2k} \\
+                                                & = x^2(x^{2k} - y^{2k}) + y^{2k}(x^2 - y^2)
+                    \end{flalign*}
+                    Since $x^{2k} - y^{2k}$ and $x^2 - y^2$ are both divisible by $x + y$,
+
+                    The above sum $x^2(x^{2k} - y^{2k}) + y^{2k}(x^2 - y^2)$ is also divisible by
+                    $x + y$.
+
+                    Therefore, when $n = k + 1$, $x^{2(k+1)} - y^{2(k+1)}$ is divisible by $x + y$.
+          \end{enumerate}
+
+          From (1) and (2), we can conclude that the statement is true for all $n \in
+              \mathbb{N}$.
+\end{enumerate}
+\vspace{0.8em}
+\begin{enumerate}[label = \textbf{Example \arabic*}, leftmargin=*]
+    \setcounter{enumi}{4}
+    \item $p > -1 \implies \forall\ n \in \mathbb{N}, (1 + p)^n \geq 1 + np$
+\end{enumerate}
+\begin{enumerate}[label = \textbf{Solution}, leftmargin=*]
+    \item \begin{enumerate}[label = (\arabic*)]
+              \item \makebox[2cm]{When $n = 1$, }LHS $= (1 + p)^1 = 1 + p$
+
+                    \makebox[2cm]{}RHS $= 1 + 1 \times p = 1 + p$
+
+                    \makebox[2cm]{}so the inequality is true for $n = 1$.
+
+              \item Assume that the inequality is true for $n = k$, that is,
+                    \begin{flalign*}
+                        (1 + p)^k \geq 1 + kp
+                    \end{flalign*}
+                    Hence, when $n = k + 1$,
+                    \begin{flalign*}
+                        (1 + p)^{k+1} & = (1 + p)^k (1 + p)   \\
+                                      & \geq (1 + kp)(1 + p)  \\
+                                      & = 1 + p + kp + kp^2   \\
+                                      & = 1 + (k + 1)p + kp^2 \\
+                                      & \geq 1 + (k + 1)p
+                    \end{flalign*}
+                    Therefore, when $n = k + 1$, the inequality is true.
+          \end{enumerate}
+
+          From (1) and (2), we can conclude that the inequality is true for all $n \in
+              \mathbb{N}$.
+\end{enumerate}
+\newpage
+\begin{enumerate}[label = \textbf{Example \arabic*}, leftmargin=*]
+    \setcounter{enumi}{5}
+    \item A plane has $n$ lines such that no two of them are parallel and no three of
+          them are concurrent. Prove that the amount of point of intersection is $V_n =
+              \dfrac{1}{2}n(n - 1)$, $n \geq 2$.
+\end{enumerate}
+\begin{enumerate}[label = \textbf{Solution}, leftmargin=*]
+    \item \begin{enumerate}[label = (\arabic*)]
+              \item When $n = 2$, there is only one point of intersection, that is, $V_2 = 1$.
+
+                    Also, when $n = 2$, $\dfrac{1}{2} \times 2 \times (2-1) = 1$.
+
+                    Therefore, the statement is true for $n = 2$.
+
+              \item Assume that the statement is true for $n = k (k \geq 2)$, that is, the amount
+                    of point of intersection that satisfies the given $k$ lines on the plane is
+                    $V_k = \dfrac{1}{2}k(k - 1)$.
+
+                    Now consider the case when adding one more line to the plane, that is, the case
+                    when there are $k + 1$ lines. The new line will intersect with the other $k$
+                    lines, that is, there will be $k$ new points of intersection. Therefore, the
+                    amount of point of intersection on the plane is
+                    \begin{flalign*}
+                        V_{k+1} = V_k + k & = \dfrac{1}{2}k(k-1) + k              \\
+                                          & = \dfrac{1}{2}k\left[(k-1) + 2\right] \\
+                                          & = \dfrac{1}{2}(k+1)[(k+1)-1]
+                    \end{flalign*}
+                    Therefore, when $n = k + 1$, the statement is true.
+          \end{enumerate}
+
+          From (1) and (2), we can conclude that the statement is true for all $n \geq 2$
+          and $n \in \mathbb{N}$.
+\end{enumerate}
+\vspace{0.8em}
+\begin{enumerate}[label = \textbf{Example \arabic*}, leftmargin=*]
+    \setcounter{enumi}{6}
+    \item Prove that $3^{4n + 2} + 5^{2n + 1}$ is divisible by $14$ for all $n \geq 0$,
+          $n \in \mathbb{Z}$.
+\end{enumerate}
+\begin{enumerate}[label = \textbf{Solution}, leftmargin=*]
+    \item \begin{enumerate}[label = (\arabic*)]
+              \item When $n = 0$, $3^2 + 5^1 = 14$ can be divided by $14$,
+
+                    that is, the statement is true for $n = 0$.
+
+              \item Assume that the statement is true for $n = k$, that is, $3^{4k + 2} + 5^{2k +
+                                1}$ is divisible by $14$.
+
+                    Hence, when $n = k + 1$,
+                    \begin{flalign*}
+                        3^{4(k+1)+2} + 5^{2(k+1)+1} & = 3^{4k+2+4} + 5^{2k+1+2}                     \\
+                                                    & = 81 \cdot 3^{4k+2} + 25 \cdot 5^{2k+1}       \\
+                                                    & = 81(3^{4k+2} + 5^{2k+1}) - 56 \cdot 5^{2k+1}
+                    \end{flalign*}
+                    Since $3^{4k+2} + 5^{2k+1}$ and $56 \cdot 5^{2k+1}$ are both divisible by $14$,
+
+                    $3^{4(k+1)+2} + 5^{2(k+1)+1}$ is divisible by $14$,
+
+                    that is to say, when $n = k + 1$, the statement is true.
+          \end{enumerate}
+          From (1) and (2), we can conclude that the statement is true for all $n \geq 0$, $n \in
+              \mathbb{Z}$.
+\end{enumerate}
+\newpage
+\begin{enumerate}[label = \textbf{Example \arabic*}, leftmargin=*]
+    \setcounter{enumi}{7}
+    \item Prove that $\sum 2^{n-1} = 2^n - 1$ for all $n \in \mathbb{N}$ using the method
+          of mathematical induction.
+\end{enumerate}
+\begin{enumerate}[label = \textbf{Solution}, leftmargin=*]
+    \item \begin{enumerate}[label = (\arabic*)]
+              \item \makebox[2cm]{When $n = 1$,} LHS $= 2^{1-1} = 1$
+
+                    \makebox[2cm]{} RHS $= 2^1 - 1 = 1$
+
+                    \makebox[2cm]{} $\therefore\ $ the formula is true for $n = 1$.
+
+              \item Assume that the formula is true for $n = k$, that is, $2_0 + 2_1 + \cdots +
+                        2_{k-1} = 2^k - 1$.
+                    \begin{flalign*}
+                        \text{Hence, when $n = k + 1$, } 2^0 + 2^1 + \cdots + 2^{k-1} + 2^k & = 2^k - 1 + 2^k   & \\
+                                                                                            & = 2 \cdot 2^k - 1   \\
+                                                                                            & = 2^{k+1} - 1
+                    \end{flalign*}
+                    Therefore, when $n = k + 1$, the formula is true.
+          \end{enumerate}
+          From (1) and (2), we can conclude that the formula is true for all $n \in \mathbb{N}$.
+\end{enumerate}
+
+\section*{Exercise 1b}
+Prove the following statements using the method of mathematical induction:
+\begin{enumerate}
+    \item $-1 + 3 - 5 + \cdots + (-1)^n(2n - 1) = (-1)^n \cdot n$
+    \item $\sum (5n - 1) = \dfrac{n(5n + 3)}{2}$, $n \in \mathbb{N}$
+    \item $\sum 3^{n-1} = \dfrac{3^n - 1}{2}$, $n \in \mathbb{N}$
+    \item $2^n > n^2$, $n > 4$ and $n \in \mathbb{N}$
+    \item $2^n + 2 > n^2$, $n \in \mathbb{N}$
+    \item The sum of the interior angles of a polygon with $n$ sides is $(n-2)\pi$, $n
+              \geq 3$.
+    \item $(a^n - b^n)$ is divisible by $(a - b)$.
+    \item $x^{n+2} + (x+1)^{2n + 1}$ is divisible by $x^2 + x + 1$, $n \geq 0$ and $n \in
+              \mathbb{Z}$.
+    \item $x^n + 5n$ ($n \in \mathbb{N}$) is divisible by $6$.
+    \item The sum of the cube of three consecutive integers is divisible by $9$.
+    \item For all natural number $n$, $9^n - 8n - 1$ is a multiple of $64$, $n \geq 2$.
+    \item Determine the general formula for the following, and prove it using the method
+          of mathematical induction.
+          \begin{flalign*}
+              1\ \ \ \ \ \ \ \ \ \ \ \ \ \ \  & = 1   \\
+              3 + 5\ \ \ \ \ \ \ \ \ \ \ \    & = 8   \\
+              7 + 9 + 11\ \ \ \ \ \ \ \       & = 27  \\
+              13 + 15 + 17 + 19\ \ \ \        & = 64  \\
+              21 + 23 + 25 + 27 + 29          & = 125 \\
+          \end{flalign*}
+\end{enumerate}
+\end{document}

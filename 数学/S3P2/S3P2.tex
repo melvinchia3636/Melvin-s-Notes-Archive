@@ -1,0 +1,1053 @@
+\documentclass{report}
+\usepackage{setspace}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage[fleqn]{amsmath}
+\usepackage{empheq}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{gensymb}
+\usepackage[fleqn]{cases}
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{stix}
+\usepackage{chngcntr}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{pgfplots}
+\usepackage{etoolbox}
+\usepackage{tkz-euclide}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{mathtools}
+\usepackage{mdframed}
+\usepackage{adjustbox}
+\usepackage{xpatch}
+\usepackage{nicematrix}
+\usepackage{ifthen}
+\usepackage{tocloft}
+\usepackage{titlesec}
+
+\def\nswe#1#2#3{#1\,$#2^\circ\,#3'$}
+\graphicspath{ {./assets/} }
+\usetikzlibrary{calc,trees,positioning,arrows,fit,shapes,calc, decorations.markings}
+\newcommand{\midarrow}{\tikz \draw[-triangle 90] (0,0) -- +(.1,0);}
+
+\newcommand\typel[2]{
+    \mathbin{\mathop{#1\kern0pt}%
+        \limits_{\raisebox{3.6ex}{\hbox to0pt{\hss\strut$\uparrow$\hss}}\hbox to0pt{\hss#2\hss}}}
+}
+
+\newcommand\typem[2]{
+    \mathbin{\mathop{#1\kern0pt}%
+        \limits^{\raisebox{3.6ex}{\hbox to0pt{\hss#2\hss}}\hbox to0pt{\hss\strut$\downarrow$\hss}}}
+}
+
+\counterwithout{equation}{chapter}
+
+\newcommand{\pgfplotsdrawaxis}{\pgfplots@draw@axis}
+\newcommand\perm[2][^n]{\prescript{#1\mkern-2.5mu}{}P_{#2}}
+\newcommand\permtwo[2][^n]{{}_{#1}P_{#2}}
+\newcommand\comb[2][^n]{{}_{#1}C_{#2}}
+\newcommand\combtwo[2][^n]{\prescript{#1\mkern-2.5mu}{}C_{#2}}
+\makeatother
+\pgfplotsset{only axis on top/.style={axis on top=false, after end axis/.code={
+                    \pgfplotsset{axis line style=opaque, ticklabel style=opaque, tick style={thick,opaque},
+                        grid=none}\pgfplotsdrawaxis}}}
+
+\newtheorem{theorem}{Theorem}
+
+\makeatletter
+\xpatchcmd{\endmdframed}
+{\aftergroup\endmdf@trivlist\color@endgroup}
+{\endmdf@trivlist\color@endgroup\@doendpe}
+{}{}
+\makeatother
+
+\mdfdefinestyle{MyFrame}{%
+    linecolor=black,
+    linewidth=1pt,
+    roundcorner=20pt, innertopmargin=20pt,innerbottommargin=20pt, innerrightmargin=12pt,
+    innerleftmargin=12pt, skipbelow=20pt, skipabove=20pt
+    %backgroundcolor=gray!50!white}
+}
+
+\newcommand{\newitem}[1]{%
+    \refstepcounter{subenum}%
+    \parbox{\dimexpr.5\linewidth-.5\columnsep}{
+        \makebox[\labelwidth][r]{(\thesubenum)\hspace*{\labelsep}} #1}\hfill }%%%
+
+\setcounter{chapter}{25}
+
+\setlength{\arrayrulewidth}{1pt}
+\setlength{\tabcolsep}{12pt}
+\cftsetindents{section}{1em}{2.8em}
+
+\begin{document}
+
+\newcommand{\sol}[1]{
+
+    \noindent \textbf{Sol.}
+}
+\newcommand{\prooff}[1]{
+
+    \noindent \textbf{Proof.}
+}
+
+\newcommand{\sxrightarrow}[2][]{%
+    \mathrel{\text{$\xrightarrow[#1]{#2}$}}%
+}
+
+\newenvironment{cequation}{
+    \makeatletter
+    \setbool{@fleqn}{false}
+    \makeatother
+    \begin{equation*}
+        }{\end{equation*}}
+
+\begin{titlepage}
+    \raggedleft{}
+    \rule{1pt}{\textheight}
+    \hspace{0.02\textwidth}
+    \parbox[b]{0.75\textwidth}{
+
+    {\fontsize{40}{60}\selectfont\bfseries Mathematics}\\[2\baselineskip]
+    {\huge\textit{Senior 3 Part II}}\\[4\baselineskip]
+    {\Large\textsc{Melvin Chia}}
+
+    \vspace{0.5\textheight}
+
+    {\noindent Started on 12 June 2023}\\[\baselineskip]
+    {\noindent Finished on XX XX 2023}\\[\baselineskip]
+    {\noindent Actual time spent: XX days}\\[\baselineskip]}
+
+\end{titlepage}
+
+\onehalfspacing{}
+
+\vspace{-10cm}
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+\chapter*{Preface}
+\section*{Why this book?}
+
+\section*{Disclaimer}
+
+\section*{Acknowledgements}
+
+\singlespacing{}
+
+\doublespacing{}
+\tableofcontents
+\singlespacing{}
+\newpage
+
+\onehalfspacing
+
+\titlespacing*{\chapter}{0pt}{40pt}{40pt}
+
+\chapter{Applications of Differentiation}
+
+\newpage
+\section{Revision Exercise 26}
+
+\begin{enumerate}
+    \item Find the equation of the tangent of the curve $y = x^3 - 3x$ at the point where
+          $x = 3$. \sol{}
+          \begin{flalign*}
+              y             & = x^3 - 3x \\
+              \frac{dy}{dx} & = 3x^2 - 3
+          \end{flalign*}
+          At $x = 3$, $y = (3)^3 - 3(3) = 18$.
+          \begin{flalign*}
+              \text{Gradient of tangent }\frac{dy}{dx}         & = 3(3)^2 - 3 \\
+                                                               & = 27 - 3     \\
+                                                               & = 24         \\
+              \therefore\ \text{Equation of tangent is }y - 18 & = 24(x - 3)  \\
+              y - 18                                           & = 24x - 72   \\
+              y                                                & = 24x - 54
+          \end{flalign*}
+    \item Find the equation of the normal of the curve $y = x(x-4)(x+1)$ at the points of
+          intersection of the curve and the $x$-axis. \sol{} \vspace{-2em}
+          \begin{multicols}{2}
+              \begin{flalign*}
+                  y             & = x(x-4)(x+1)     \\
+                                & = x(x^2 - 3x - 4) \\
+                                & = x^3 - 3x^2 - 4x \\
+                  \frac{dy}{dx} & = 3x^2 - 6x - 4
+              \end{flalign*}
+              \vspace{-2em}
+              \begin{flalign*}
+                  \text{When } x = 0, y & = 0                    \\
+                  x(x-4)(x+1)           & = 0                    \\
+                  x = 0 \text{ or } x   & = 4 \text{ or } x = -1
+              \end{flalign*}
+              When $x = 0$,
+              \begin{flalign*}
+                  \because\ \text{Gradient of tangent }\frac{dy}{dx} & = 3(0)^2 - 6(0) - 4 = -4   \\
+                  \therefore\ \text{Gradient of normal }             & = \frac{1}{4}              \\
+                  \therefore\ \text{Equation of normal is }y - 0     & = \frac{1}{4}(x - 0)     & \\
+                  y                                                  & = \frac{1}{4}x             \\
+                  x - 4y                                             & = 0
+              \end{flalign*}
+              \vfill{}\null{}
+              When $x = 4$,
+              \begin{flalign*}
+                  \because\ \text{Gradient of tangent }\frac{dy}{dx} & = 3(4)^2 - 6(4) - 4 = 20 & \\
+                  \therefore\ \text{Gradient of normal }             & = -\frac{1}{20}            \\
+                  \therefore\ \text{Equation of normal is }y - 0     & = -\frac{1}{20}(x - 4)     \\
+                  x + 20y -4                                         & = 0
+              \end{flalign*}
+              When $x = -1$,
+              \begin{flalign*}
+                  \because\ \text{Gradient of tangent }\frac{dy}{dx} & = 3(-1)^2 - 6(-1) - 4 = 5 & \\
+                  \therefore\ \text{Gradient of normal }             & = -\frac{1}{5}              \\
+                  \therefore\ \text{Equation of normal is }y - 0     & = -\frac{1}{5}(x + 1)       \\
+                  x + 5y + 1                                         & = 0
+              \end{flalign*}
+              \vfill{}\null{}
+          \end{multicols}
+          Hence, the equations of the normals are $x - 4y = 0$, $x + 20y - 4 = 0$ and $x + 5y + 1 = 0$.
+          \newpage
+          \setlength{\columnsep}{1cm}
+          \begin{multicols}{2}
+              \item Given that the curve $y = ax^2 + bx - 10$ passes through the point $(2, 0)$,
+              and that the gradient of the curve at the point is $3$. Find the values of $a$
+              and $b$. \sol{}
+              \begin{flalign*}
+                  y             & = ax^2 + bx - 10 \\
+                  \frac{dy}{dx} & = 2ax + b
+              \end{flalign*}
+              Since the curve passes through $(2, 0)$,
+              \begin{flalign*}
+                  0  & = a(2)^2 + b(2) - 10                \\
+                  0  & = 4a + 2b - 10                      \\
+                  4a & = 10 - 2b                           \\
+                  a  & = \frac{10 - 2b}{4}                 \\
+                     & = \frac{5 - b}{2} \quad \cdots\ (1)
+              \end{flalign*}
+              Since the gradient of the curve at the point is $3$,
+              \begin{flalign*}
+                  3 & = 2a(2) + b                \\
+                  3 & = 4a + b \quad \cdots\ (2)
+              \end{flalign*}
+              Substituting $(1)$ into $(2)$,
+              \begin{flalign*}
+                  3 & = 4\left(\frac{5 - b}{2}\right) + b \\
+                  3 & = 2(5 - b) + b                      \\
+                  3 & = 10 - 2b + b                       \\
+                  b & = 7
+              \end{flalign*}
+              Substituting $b = 7$ into $(1)$,
+              \begin{flalign*}
+                  a & = \frac{5 - 7}{2} \\
+                    & = -1
+              \end{flalign*}
+              Hence, $a = -1$ and $b = 7$.
+              \vfill{}\null{}
+              \item Find the equation of the normal of the curve $y = x + \dfrac{2}{x}$ at the
+              point $(2, 3)$. If the normal line intersects with the $x$-axis and $y$-axis at
+              $A$ and $B$ respectively, find the length of $AB$. \sol{}
+              \begin{flalign*}
+                  y             & = x + \frac{2}{x}   \\
+                  \frac{dy}{dx} & = 1 - \frac{2}{x^2}
+              \end{flalign*}
+              At $x = 2$,
+              \begin{flalign*}
+                  \dfrac{dy}{dx} & = 1 - \frac{2}{2^2} \\
+                                 & = \frac{1}{2}
+              \end{flalign*}
+              Hence, the gradient of the normal at the point $(2, 3)$ is $-2$.
+
+              Therefore, the equation of the normal is
+              \begin{flalign*}
+                  y - 3 & = -2(x - 2) \\
+                  y     & = -2x + 7
+              \end{flalign*}
+              When $y = 0$,
+              \begin{flalign*}
+                  0             & = -2x + 7                     \\
+                  x             & = \frac{7}{2}                 \\
+                  \therefore\ A & = \left(\frac{7}{2}, 0\right)
+              \end{flalign*}
+              When $x = 0$,
+              \begin{flalign*}
+                  y             & = -2(0) + 7         \\
+                  y             & = 7                 \\
+                  \therefore\ B & = \left(0, 7\right)
+              \end{flalign*}
+              \begin{flalign*}
+                  AB & = \sqrt{\left(\frac{7}{2} - 0\right)^2 + \left(0 - 7\right)^2} \\
+                     & = \sqrt{\frac{49}{4} + 49}                                     \\
+                     & = \sqrt{\frac{245}{4}}                                         \\
+                     & = \frac{\sqrt{245}}{2}                                         \\
+                     & = \dfrac{7\sqrt{5}}{2}
+              \end{flalign*}
+              \vfill{}\null{}
+          \end{multicols}
+\end{enumerate}
+\newpage
+\noindent \hspace{1.2em}\textit{Of the following functions, which intervals are the function increasing or decreasing? (Question 5 to 6)}
+\begin{enumerate}
+    \setcounter{enumi}{4}
+    \item $f(x) = 2x^2(6-x)$
+          \sol{}
+          \begin{flalign*}
+              f(x)       & = 2x^2(6-x)       \\
+                         & = 12x^2 - 2x^3    \\
+              f'(x)      & = 24x - 6x^2      \\
+              f'(x)      & = 0               \\
+              24x - 6x^2 & = 0               \\
+              x(x - 4)   & = 0               \\
+              x = 0      & \text{ or } x = 4
+          \end{flalign*}
+          At the interval $(-\infty, 0)$, $f'(x) < 0$, hence $f(x)$ is decreasing at the interval $(-\infty, 0]$.
+
+          At the interval $(0, 4)$, $f'(x) > 0$, hence $f(x)$ is increasing at the
+          interval $[0, 4]$.
+
+          At the interval $(4, \infty)$, $f'(x) < 0$, hence $f(x)$ is decreasing at the
+          interval $[4, \infty)$.
+
+    \item $f(x) = 4x^3 - 3x^2 - 6x + 1$
+          \sol{}
+          \begin{flalign*}
+              f(x)             & = 4x^3 - 3x^2 - 6x + 1 \\
+              f'(x)            & = 12x^2 - 6x - 6       \\
+              f'(x)            & = 0                    \\
+              12x^2 - 6x - 6   & = 0                    \\
+              2x^2 - x - 1     & = 0                    \\
+              (2x + 1)(x - 1)  & = 0                    \\
+              x = -\frac{1}{2} & \text{ or } x = 1
+          \end{flalign*}
+          At the interval $\left(-\infty, -\frac{1}{2}\right)$, $f'(x) > 0$, hence $f(x)$ is increasing at the interval $\left.\left(-\infty, -\frac{1}{2}\right]\right.$.
+
+          At the interval $\left(-\frac{1}{2}, 1\right)$, $f'(x) < 0$, hence $f(x)$ is
+          decreasing at the interval $\left.\left[-\frac{1}{2}, 1\right]\right.$.
+
+          At the interval $\left(1, \infty\right)$, $f'(x) > 0$, hence $f(x)$ is
+          increasing at the interval $\left.\left[1, \infty\right)\right.$.
+
+          \newpage
+          \begin{multicols}{2}
+              \item If $x - y = 3$, find the relative minimum value of $x^2y$. \sol{}
+              \begin{flalign*}
+                  x - y & = 3     \\
+                  y     & = x - 3
+              \end{flalign*}
+              Let $f(x) = x^2y$,
+              \begin{flalign*}
+                  f(x)      & = x^2y            \\
+                            & = x^2(x - 3)      \\
+                            & = x^3 - 3x^2      \\
+                  f'(x)     & = 3x^2 - 6x       \\
+                  f'(x)     & = 0               \\
+                  3x^2 - 6x & = 0               \\
+                  x(x - 2)  & = 0               \\
+                  x = 0     & \text{ or } x = 2
+              \end{flalign*}
+              \vspace{-3em}
+              \begin{flalign*}
+                   & f''(x)            = 6x - 6                                 \\
+                   & \because\ f''(0)  = -6 < 0,\ f''(2) = 6 > 0                \\
+                   & \therefore\ f(2) = -4 \text{ is a relative minimum value.}
+              \end{flalign*}
+
+              \item If $2x^2 + y^2 = 6x$, find the relative maximum value of $x^2 + y^2 + 2x$.
+              \sol{}
+              \begin{flalign*}
+                  2x^2 + y^2 & = 6x        \\
+                  y^2        & = 6x - 2x^2
+              \end{flalign*}
+              Let $f(x) = x^2 + y^2 + 2x$,
+              \begin{flalign*}
+                  f(x)    & = x^2 + y^2 + 2x       \\
+                          & = x^2 + 6x - 2x^2 + 2x \\
+                          & = -x^2 + 8x            \\
+                  f'(x)   & = -2x + 8              \\
+                  f'(x)   & = 0                    \\
+                  -2x + 8 & = 0                    \\
+                  x - 4   & = 0                    \\
+                  x = 4
+              \end{flalign*}
+              \vspace{-3em}
+              \begin{flalign*}
+                   & f''(x)            = -2                                     \\
+                   & \because\ f''(4)  = -2 < 0                                 \\
+                   & \therefore\ f(4) = 16 \text{ is a relative maximum value.}
+              \end{flalign*}
+          \end{multicols}
+    \item Given that $y = 18x^2 + 12x + 7$ has a relative minimum value $q$ and the point
+          where $x = p$. Find the value of $p$ and $q$. \sol{}
+          \begin{flalign*}
+              y        & = 18x^2 + 12x + 7 \\
+              y'       & = 36x + 12        \\
+              y'       & = 0               \\
+              36x + 12 & = 0               \\
+              3x + 1   & = 0               \\
+              p =  x   & = -\frac{1}{3}
+          \end{flalign*}
+          \vspace{-3em}
+          \begin{flalign*}
+               & \text{When }x = -\frac{1}{3},\ y = 5                    \\
+               & y''            = 36 > 0                                 \\
+               & \therefore\ \text{The relative minimum value is }q = 5.
+          \end{flalign*}
+
+          \newpage
+    \item There's a rectangular field where one side of it is a wall and the other three
+          sides are fenced. If the total length of the fence is $40m$, find the width and
+          height of the field such that the area of the field is the maximum. \sol{} Let
+          $x$ be the length of the field and $y$ be the width of the field.
+          \begin{flalign*}
+              2x + y         & = 40         \\
+              y              & = 40 - 2x    \\
+              A              & = xy         \\
+                             & = x(40 - 2x) \\
+                             & = 40x - 2x^2 \\
+              \dfrac{dA}{dx} & = 40 - 4x    \\
+              \dfrac{dA}{dx} & = 0          \\
+              40 - 4x        & = 0          \\
+              x              & = 10
+          \end{flalign*}
+          \vspace{-3em}
+          \begin{flalign*}
+               & \because\ \dfrac{d^2A}{dx^2} = -4 < 0                                                                            \\
+               & \therefore\ \text{The area of the field is the maximum when }x = 10. \text{When } x = 10,\ y = 20.               \\
+               & \therefore\ \text{The field has a width of }20m\text{ and a height of }10m \text{ when the area is the maximum.}
+          \end{flalign*}
+
+    \item One side of a rectangle with a perimeter of $18cm$ is revolved about one side
+          to form a cylinder. If the volume of the cylinder is the maximum, find the
+          dimensions of the rectangle and the maximum volume of the cylinder. \sol{}
+
+          Let the length of the rectangle be $x$ and the width of the rectangle be $y$.
+          \begin{flalign*}
+              2x + 2y & = 18    \\
+              x + y   & = 9     \\
+              y       & = 9 - x
+          \end{flalign*}
+          \vspace{-3em}
+          \begin{flalign*}
+              V               & = \pi r^2 h                                   \\
+                              & = \pi x^2y                                    \\
+                              & = \pi(9x^2 - x^3)                             \\
+              \dfrac{dV}{dx}  & = \pi(18x - 3x^2)                             \\
+              \dfrac{dV}{dx}  & = 0                                           \\
+              \pi(18x - 3x^2) & = 0                                           \\
+              x^2 - 6x        & = 0                                           \\
+              x(x - 6)        & = 0                                           \\
+              x = 6           & ,\ x        = 0   \text{ (rejected, $x > 0$)}
+          \end{flalign*}
+          \vspace{-3em}
+          \begin{flalign*}
+               & \because\ \dfrac{d^2V}{dx^2} = \pi(18 - 6x) = -18\pi < 0                                                                         \\
+               & \therefore\ \text{The volume of the cylinder is the maximum when }x = 6. \text{When } x = 6,\ y = 3.                             \\
+               & \therefore\ \text{The rectangle has a length of }6cm\text{ and a width of }3cm \text{ when the volume is the maximum.}           \\
+               & \text{Also, the maximum volume of the cylinder is }V = \pi(6)^2(3) = 108\pi \text{ cm}^3 \text{ when the volume is the maximum.}
+          \end{flalign*}
+
+          \newpage
+    \item The cross section of a tunnel is a rectangle with a semicircle on top of it. If
+          the area of the cross section is fixed, find the ratio of the radius of the
+          semicircle to the height of the rectangle such that the perimeter of the cross
+          section is the minimum. \sol{}
+
+          Let the radius of the semicircle be $r$ and the height of the rectangle be $h$.
+          \begin{flalign*}
+              A                                                                                & = \frac{1}{2}\pi r^2 + 2rh                    \\
+              2rh                                                                              & = A - \frac{1}{2}\pi r^2                      \\
+              h                                                                                & = \dfrac{A - \frac{1}{2}\pi r^2}{2r}          \\
+                                                                                               & = \frac{A}{2r} - \frac{1}{4}\pi r             \\
+              P                                                                                & = \pi r + 2h + 2r                             \\
+                                                                                               & = (\pi + 2)r + \frac{A}{r} - \frac{1}{2}\pi r \\
+              \dfrac{dP}{dr}                                                                   & = \pi + 2 - \frac{A}{r^2} - \dfrac{1}{2}\pi   \\
+                                                                                               & = \dfrac{1}{2}\pi + 2 - \dfrac{A}{r^2}        \\
+              \dfrac{dP}{dr}                                                                   & = 0                                           \\
+              \dfrac{1}{2}\pi + 2 - \dfrac{A}{r^2}                                             & = 0                                           \\
+              \dfrac{1}{2}\pi + 2 - \left(\frac{1}{2}\pi r^2 + 2rh\right) \cdot \dfrac{1}{r^2} & = 0                                           \\
+              \dfrac{1}{2}\pi + 2 - \frac{1}{2}\pi - \dfrac{2}{r}h                             & = 0                                           \\
+              2 - \dfrac{2}{r}h                                                                & = 0                                           \\
+              2                                                                                & = \dfrac{2}{r}h                               \\
+              2r                                                                               & = 2h                                          \\
+              r                                                                                & = h
+          \end{flalign*}
+          Hence, the ratio of the radius of the semicircle to the height of the rectangle is $1:1$.
+
+          \newpage
+    \item Split 28 into two parts such that the sum of the squares of the one part and
+          the cube of the other part is the minimum. \sol{}
+
+          Let the two parts be $x$ and $y$.
+          \begin{flalign*}
+              x + y                   & = 28                           \\
+              y                       & = 28 - x                       \\
+              S                       & = x^2 + y^3                    \\
+                                      & = x^2 + {(28 - x)}^3           \\
+              \dfrac{dS}{dx}          & = 2x - 3{(28 - x)}^2           \\
+              \dfrac{dS}{dx}          & = 0                            \\
+              2x - 3{(28 - x)}^2      & = 0                            \\
+              2x - 3(784 - 56x + x^2) & = 0                            \\
+              2x - 2352 + 168x - 3x^2 & = 0                            \\
+              3x^2 - 170x + 2352      & = 0                            \\
+              (3x - 98)(x - 24)       & = 0                            \\
+              x = 24                  & \text{ or }\ x = \dfrac{98}{3}
+          \end{flalign*}
+          \vspace{-3em}
+          \begin{flalign*}
+              \dfrac{d^2S}{dx^2} & = 2 + 6(28 - x) \\
+                                 & = 2 + 168 - 6x  \\
+                                 & = -6x + 170
+          \end{flalign*}
+          \vspace{-3em}
+          \begin{flalign*}
+              \text{When } x = 24,\ \dfrac{d^2S}{dx^2}            & = -6(24) + 170                       \\
+                                                                  & = 26 > 0                             \\
+              \text{When } x = \dfrac{98}{3},\ \dfrac{d^2S}{dx^2} & = -6\left(\dfrac{98}{3}\right) + 170 \\
+                                                                  & = -26 < 0
+          \end{flalign*}
+          \vspace{-3em}
+          \begin{flalign*}
+               & \because\ \text{When } x = 24,\ \dfrac{d^2S}{dx^2} > 0,                                                              \\
+               & \therefore\ \text{The sum of the squares of the one part and the cube of the other part is the minimum when }x = 24. \\
+               & \because\ \text{When } x = 24,\ y = 4.                                                                               \\
+               & \therefore\ \text{The two parts are 24 and 4.}
+          \end{flalign*}
+          \newpage
+    \item The capacity of a cylindrical can is fixed. If the material used to make the
+          can is the minimum, what should be the ratio of the radius of the base to the
+          height of the can? \sol{}
+
+          Let the radius of the base be $r$ and the height of the can be $h$.
+          \begin{flalign*}
+              V                       & = \pi r^2h                \\
+              h                       & = \frac{V}{\pi r^2}       \\
+              A                       & = 2\pi r^2 + 2\pi rh      \\
+                                      & = 2\pi r^2 + \frac{2V}{r} \\
+              \dfrac{dA}{dr}          & = 4\pi r - \frac{2V}{r^2} \\
+              \dfrac{dA}{dr}          & = 0                       \\
+              4\pi r - \frac{2V}{r^2} & = 0                       \\
+              2\pi r^3 - \pi r^2h     & = 0                       \\
+              2r^3 - r^2h             & = 0                       \\
+              2r - h                  & = 0                       \\
+              2r                      & = h                       \\
+              \dfrac{r}{h}            & = \dfrac{1}{2}
+          \end{flalign*}
+          Hence, the ratio of the radius of the base to the height of the can is $1:2$.
+\end{enumerate}
+\hspace{0.5em} \textit{Find the coordinate of the point of inflection of the following functions. (Question 15 to 16)}
+\begin{enumerate}
+    \setcounter{enumi}{14}
+    \item $y = x^3 - 2$
+    \item $3x + {(2-x)}^3$
+    \item Given the function $y = \dfrac{x}{1-x^2}$. Find the extreme values of the
+          function, and determine the coordinates of the convex intervals and the point
+          of inflection.
+    \item Given the function $y = \dfrac{x}{x^2 + 1}$.
+          \begin{enumerate}
+              \item Find the coordinates of the stationary points.
+              \item Determine which intervals the function is increasing or decreasing.
+              \item Find the coordinates of the convex intervals and the point of inflection.
+          \end{enumerate}
+\end{enumerate}
+\hspace{0.5em} \textit{Construct the graph of the following functions. (Question 19 to 20)}
+\begin{enumerate}
+    \setcounter{enumi}{18}
+    \item $y = x^3 - 5x^2 + 3x - 2$
+    \item $y = x^3 - 3x^2 + 4$
+    \item In a container, the relationship between the volume of water $V$ (cm$^3$) and
+          the depth of water $x$ (cm) is given by the equation $V = 4x^2 +
+              \dfrac{1}{6}x^3$. If the water is poured into the container at a rate of $6$
+          cm$^3$ per second, find the rate of change of the depth of water when $x=2$ cm.
+    \item The water is poured into a conical pool with a width and a base radius of $20$m
+          and $10$m respectively at a rate of $5$m$^3$/min. When the height of the water
+          is $10$cm, find
+          \begin{enumerate}
+              \item the rate of increasing of the height of the water.
+              \item the rate of change of the radius of the water surface.
+          \end{enumerate}
+    \item The radius of a spherical container decreases from $4$cm to $3.95$cm. Find the
+          approximate amount of decrease in the volume and the surface area of the
+          container.
+    \item The capacity of water of a spherical container is given by $V =
+              \left[\dfrac{\pi h^2}{3}(15-h)\right]$cm$^3$, where $h$ is the depth of the
+          water. Find the approximate amount of increase in the capacity of the container
+          when the depth of the water increases from $4$cm to $4.01$cm.
+    \item In a bowl, when the height of the water is $h$cm, the volume of the water is
+          given by $V = \left(h^2 + 3h^2 + 11h\right)$cm$^3$. When the height of the
+          water is $7cm$, pour an additional $\Delta V$cm$^3$ of water into the bowl.
+          Find the approximate amount of increase in the height of the water.
+    \item If $y = \dfrac{1}{\sqrt[3][x]}$, find $\dfrac{dy}{dx}$. Hence, find the
+          approximate value of $\dfrac{1} {\sqrt[3][{130}}$. (Correct to 3 decimal
+          places)
+\end{enumerate}
+
+\chapter{Indefinite Integrals}
+
+\newpage
+\section{Revision Exercise 27}
+
+Find the following indefinite integral (Question 1 to 34):
+\begin{enumerate}
+    \begin{multicols}{2}
+        \item $\displaystyle\int 2x^{\frac{1}{5}}dx$
+        \sol{}
+        \begin{flalign*}
+            \int 2x^{\frac{1}{5}}dx & = 2 \cdot \dfrac{5}{6}x^{\frac{6}{5}} + C & \\
+                                    & = \dfrac{5}{3}x^{\frac{6}{5}} + C
+        \end{flalign*}
+        \vfill{}\null{}
+        \item $\displaystyle\int{(2x-1)}^3dx$
+        \sol{}
+        \begin{flalign*}
+            \int{(2x-1)}^3dx & = \dfrac{1}{2}\int{(2x-1)}^3d(2x-1)             & \\
+                             & = \dfrac{1}{2} \cdot \dfrac{1}{4}{(2x-1)}^4 + C & \\
+                             & = \dfrac{1}{8}{(2x-1)}^4 + C
+        \end{flalign*}
+        \vfill{}\null{}
+    \end{multicols}
+    \begin{multicols}{2}
+        \item $\displaystyle\int{(x+4)}^{100}dx$
+        \sol{}
+        \begin{flalign*}
+            \int{(x+4)}^{100}dx & = \int{(x+4)}^{100}d(x+4)         & \\
+                                & = \dfrac{1}{101}{(x+4)}^{101} + C
+        \end{flalign*}
+        \vfill{}\null{}
+        \item $\displaystyle\int{\left(\dfrac{5}{x^2}+2x^{\frac{1}{2}}+3\right)}dx$
+        \sol{}
+        \begin{flalign*}
+             & \int{\left(\dfrac{5}{x^2}+2x^{\frac{1}{2}}+3\right)}dx   \\
+             & =5\int{x^{-2}} + 2\int{x^{\frac{1}{2}}} + 3\int dx     & \\
+             & = -\dfrac{5}{x} + \dfrac{4}{3}x^{\frac{3}{2}} + 3x + C
+        \end{flalign*}
+        \vfill{}\null{}
+    \end{multicols}
+    \begin{multicols}{2}
+        \item $\displaystyle\int{\left(3x^2 + \dfrac{1}{x^2} - \sin x\right)}dx$
+        \sol{}
+        \begin{flalign*}
+             & \int{\left(3x^2 + \dfrac{1}{x^2} - \sin x\right)}dx   \\
+             & = 3\int x^2 + \int x^{-2} - \int \sin x dx          & \\
+             & = x^3 - x^{-1} + \cos x + C                           \\
+             & = x^3 + \dfrac{1}{x} + \cos x + C
+        \end{flalign*}
+        \vfill{}\null{}
+        \item $\displaystyle\int{\left(4\cos x + \dfrac{1}{x} + x^3\right)}dx$
+        \sol{}
+        \begin{flalign*}
+             & \int{\left(4\cos x + \dfrac{1}{x} + x^3\right)}dx   & \\
+             & = 4\int \cos x + \int x^{-1} + \int x^3 dx          & \\
+             & = 4\sin x + \ln \vert x \vert + \dfrac{1}{4}x^4 + C
+        \end{flalign*}
+        \vfill{}\null{}
+    \end{multicols}
+
+    \begin{multicols}{2}
+        \item $\displaystyle\int\dfrac{3x^3 - 2x^2 + x^{-1}}{x^2}dx$
+        \sol{}
+        \begin{flalign*}
+             & \int\dfrac{3x^3 - 2x^2 + x^{-1}}{x^2}dx         & \\
+             & = \int(3x - 2 + x^{-3})dx                       & \\
+             & = \dfrac{3}{2}x^2 - 2x - \dfrac{1}{2}x^{-2} + C
+        \end{flalign*}
+        \item $\displaystyle\int(2x-1)(x+2)dx$
+        \sol{}
+        \begin{flalign*}
+             & \int(2x-1)(x+2)dx                            & \\
+             & = \int(2x^2 + 3x - 2)dx                      & \\
+             & = \dfrac{2}{3}x^3 + \dfrac{3}{2}x^2 - 2x + C
+        \end{flalign*}
+    \end{multicols}
+    \begin{multicols}{2}
+        \item $\displaystyle\int{\left(x-\dfrac{1}{x^2}\right)}^2dx$
+        \sol{}
+        \begin{flalign*}
+             & \int{\left(x-\dfrac{1}{x^2}\right)}^2dx                         & \\
+             & = \int(x^2 - 2x^{-1} + x^{-4})dx                                & \\
+             & = \dfrac{1}{3}x^3 - 2\ln \vert x \vert - \dfrac{1}{3}x^{-3} + C
+        \end{flalign*}
+        \item $\displaystyle\int{\left(x + \dfrac{1}{x}\right)}^3dx$
+        \sol{}
+        \begin{flalign*}
+             & \int{\left(x + \dfrac{1}{x}\right)}^3dx                                           & \\
+             & = \int(x^3 + 3x + 3x^{-1} + x^{-3})dx                                             & \\
+             & = \dfrac{1}{4}x^4 + \dfrac{3}{2}x^2 + 3\ln \vert x \vert - \dfrac{1}{2}x^{-2} + C
+        \end{flalign*}
+    \end{multicols}
+    \begin{multicols}{2}
+        \item $\displaystyle\int10^{-x}dx$
+        \sol{}
+        \begin{flalign*}
+             & \int10^{-x}dx                  & \\
+             & = -\int10^{-x}d(-x)            & \\
+             & = -\dfrac{10^{-x}}{\ln 10} + C & \\
+             & = -\dfrac{1}{10^{x}\ln 10} + C
+        \end{flalign*}
+        \item $\displaystyle\int{\left(e^x - e^{-x}\right)}^2dx$
+        \sol{}
+        \begin{flalign*}
+             & \int{\left(e^x - e^{-x}\right)}^2dx                 & \\
+             & = \int(e^{2x} - 2 + e^{-2x})dx                      & \\
+             & = \dfrac{1}{2}e^{2x} - 2x - \dfrac{1}{2}e^{-2x} + C
+        \end{flalign*}
+    \end{multicols}
+    \begin{multicols}{2}
+        \item $\displaystyle\int2x{(x^2 - 1)}^4dx$
+        \sol{}
+        \begin{flalign*}
+             & \int2x{(x^2 - 1)}^4dx           & \\
+             & = \int{(x^2 - 1)}^4d(x^2 - 1)   & \\
+             & = \dfrac{1}{5}{(x^2 - 1)}^5 + C
+        \end{flalign*}
+        \item $\displaystyle\int3x^2{(x^3 + 1)}^4dx$
+        \sol{}
+        \begin{flalign*}
+             & \int3x^2{(x^3 + 1)}^4dx         & \\
+             & = \int{(x^3 + 1)}^4d(x^3 + 1)   & \\
+             & = \dfrac{1}{5}{(x^3 + 1)}^5 + C
+        \end{flalign*}
+    \end{multicols}
+    \begin{multicols}{2}
+        \item $\displaystyle\int\dfrac{x+1}{{(x^2 + 2x + 5)}^3}dx$
+        \sol{}
+        \begin{flalign*}
+             & \int\dfrac{x+1}{{(x^2 + 2x + 5)}^3}dx                        & \\
+             & = \dfrac{1}{2}\int\dfrac{1}{(x^2 + 2x + 5)^3}d(x^2 + 2x + 5) & \\
+             & = -\dfrac{1}{4(x^2 + 2x + 5)^2} + C
+        \end{flalign*}
+        \item $\displaystyle\int\dfrac{2x}{\sqrt{x^2-4}}dx$
+        \sol{}
+        \begin{flalign*}
+             & \int\dfrac{2x}{\sqrt{x^2-4}}dx        & \\
+             & = \int\dfrac{1}{\sqrt{x^2-4}}d(x^2-4) & \\
+             & = 2\sqrt{x^2-4} + C
+        \end{flalign*}
+    \end{multicols}
+    \newpage
+    \item $\displaystyle\int\dfrac{x-2}{\sqrt{(x-1)(x-3)}}dx$
+          \sol{}
+          \begin{flalign*}
+               & \int\dfrac{x-2}{\sqrt{(x-1)(x-3)}}dx                    & \\
+               & = \int\dfrac{x-2}{\sqrt{x^2-4x+3}}dx                    & \\
+               & = \dfrac{1}{2}\int\dfrac{1}{\sqrt{x^2-4x+3}}d(x^2-4x+3) & \\
+               & = \dfrac{1}{2}\cdot 2\sqrt{x^2-4x+3} + C                & \\
+               & = \sqrt{x^2-4x+3} + C
+          \end{flalign*}
+          \begin{multicols}{2}
+              \item $\displaystyle\int\dfrac{7}{2x^2 + 5x - 3}dx$
+              \sol{}
+              \begin{flalign*}
+                   & \int\dfrac{7}{2x^2 + 5x - 3}dx = \int\dfrac{7}{(2x - 1)(x + 3)}dx &
+              \end{flalign*}
+              \vspace{-2em}
+              \begin{flalign*}
+                  \text{Let } \dfrac{7}{(2x - 1)(x + 3)} & = \dfrac{A}{2x - 1} + \dfrac{B}{x + 3} & \\
+                  A(x + 3) + B(2x - 1)                   & = 7                                      \\
+                  (A + 2B)x + (3A - B)                   & = 7
+              \end{flalign*}
+              Comparing coefficients,
+              \begin{flalign*}
+                  A + 2B    & = 0  \\
+                  3A - B    & = 7  \\
+                  A = 2,\ B & = -1
+              \end{flalign*}
+              \vspace{-2em}
+              \begin{flalign*}
+                   & \therefore\ \int\dfrac{7}{2x^2 + 5x - 3}dx                \\
+                   & = \int\left(\dfrac{2}{2x-1} - \dfrac{1}{x + 3}\right)dx & \\
+                   & = \int\dfrac{2}{2x-1}dx - \int\dfrac{1}{x + 3}dx        & \\
+                   & = \ln|2x - 1| - \ln|x + 3| + C                          & \\
+                   & = \ln\left|\dfrac{2x - 1}{x + 3}\right| + C
+              \end{flalign*}
+              \vfill{}\null{}
+              \item $\displaystyle\int\dfrac{8 - 7x}{2 + x - 3x^2}dx$
+              \sol{}
+              \begin{flalign*}
+                  \int\dfrac{8 + 7x}{2 + x - 3x^2}dx & = \int\dfrac{-7x - 8}{3x^2 - x - 2}dx    & \\
+                                                     & = -\int\dfrac{7x + 8}{(3x + 2)(x - 1)}dx
+              \end{flalign*}
+              \vspace{-2em}
+              \begin{flalign*}
+                  \text{Let } \dfrac{7x + 8}{(3x + 2)(x - 1)} & = \dfrac{A}{3x + 2} + \dfrac{B}{x - 1} & \\
+                  A(x - 1) + B(3x + 2)                        & = 7x + 8                                 \\
+                  (A + 3B)x + (-A + 2B)                       & = 7x + 8
+              \end{flalign*}
+              Comparing coefficients,
+              \begin{flalign*}
+                  A + 3B     & = 7 \\
+                  -A + 2B    & = 8 \\
+                  A = -2,\ B & = 3
+              \end{flalign*}
+              \vspace{-2em}
+              \begin{flalign*}
+                   & \therefore\ \int\dfrac{8 - 7x}{2 + x - 3x^2}dx                \\
+                   & = -\int\left(-\dfrac{2}{3x + 2} + \dfrac{3}{x - 1}\right)dx & \\
+                   & = -\int-\dfrac{2}{3x + 2}dx - \int\dfrac{3}{x - 1}dx        & \\
+                   & = \dfrac{2}{3}\ln|3x + 2| - 3\ln|x - 1| + C                 & \\
+              \end{flalign*}
+          \end{multicols}
+          \newpage
+    \item $\displaystyle\int\dfrac{x+1}{(3x+2)(5x+3)}dx$
+          \sol{}
+          \vspace{-2em}
+          \begin{multicols}{2}
+              \begin{flalign*}
+                  \text{Let } \dfrac{x+1}{(3x+2)(5x+3)} & = \dfrac{A}{3x+2} + \dfrac{B}{5x+3} & \\
+                  A(5x + 3) + B(3x + 2)                 & = x + 1                               \\
+                  (5A + 3B)x + (3A + 2B)                & = x + 1
+              \end{flalign*}
+              Comparing coefficients,
+              \begin{flalign*}
+                  5A + 3B    & = 1 \\
+                  3A + 2B    & = 1 \\
+                  A = -1,\ B & = 2
+              \end{flalign*}
+              \vfill{}\null{}
+              \begin{flalign*}
+                   & \therefore\ \int\dfrac{x+1}{(3x+2)(5x+3)}dx                \\
+                   & = \int\left(\dfrac{-1}{3x+2} + \dfrac{2}{5x+3}\right)dx  & \\
+                   & = -\int\dfrac{1}{3x+2}dx + \int\dfrac{2}{5x+3}dx         & \\
+                   & = -\dfrac{1}{3}\ln|3x + 2| + \dfrac{2}{5}\ln|5x + 3| + C & \\
+              \end{flalign*}
+              \vfill{}\null{}
+          \end{multicols}
+          \begin{multicols}{2}
+              \item $\displaystyle\int\dfrac{2x^2 + 5x - 2}{2x^2 + x - 3}dx$
+              \sol{}
+              \begin{flalign*}
+                   & \int\dfrac{2x^2 + 5x - 2}{2x^2 + x - 3}dx                        \\
+                   & = \int\left(1 + \dfrac{4x + 1}{2x^2 + x - 3}\right)dx          & \\
+                   & = \int\left[1 + \dfrac{(2x^2 + x - 3)'}{2x^2 + x - 3}\right]dx   \\
+                   & = x + \ln\vert2x^2 + x - 3\vert + C
+              \end{flalign*}
+              \item $\displaystyle\int{\left(\dfrac{x+1}{x-1}\right)}^2dx$
+              \sol{}
+              \begin{flalign*}
+                   & \int{\left(\dfrac{x+1}{x-1}\right)}^2dx                        \\
+                   & = \int\left(1 + \dfrac{2}{x-1}\right)^2dx                    & \\
+                   & = \int\left[1 + \dfrac{4}{x-1} + \dfrac{4}{(x-1)^2}\right]dx & \\
+                   & = x + 4\ln\vert x - 1\vert - \dfrac{4}{x - 1} + C
+              \end{flalign*}
+          \end{multicols}
+    \item $\displaystyle\int\dfrac{{(x-1)}^3}{{(x-2)}^2}dx$
+          \sol{}
+          \vspace{-2.6em}
+          \begin{multicols}{2}
+              \begin{flalign*}
+                  \text{Let } u & = x - 2 & \\
+                  \therefore\ x & = u + 2   \\
+                  dx            & = du
+              \end{flalign*}
+              \vspace{-2em}
+              \begin{flalign*}
+                   & \int\dfrac{{(x-1)}^3}{{(x-2)}^2}dx                            \\
+                   & = \int\dfrac{{(u+1)}^3}{u^2}du                              & \\
+                   & = \int\left(\dfrac{u^3 + 3u^2 + 3u + 1}{u^2}\right)du       & \\
+                   & = \int\left(u + 3 + \dfrac{3}{u} + \dfrac{1}{u^2}\right)du  & \\
+                   & = \dfrac{u^2}{2} + 3u + 3\ln\vert u\vert - \dfrac{1}{u} + C & \\
+              \end{flalign*}
+
+              \begin{flalign*}
+                   & = \dfrac{{(x-2)}^2}{2} + 3(x-2) + 3\ln\vert x-2\vert - \dfrac{1}{x-2} + C     & \\
+                   & = \dfrac{x^2 - 4x + 4 + 6x - 12}{2} + 3\ln\vert x-2\vert - \dfrac{1}{x-2} + C & \\
+                   & = \dfrac{x^2 + 2x - 8}{2} + 3\ln\vert x-2\vert - \dfrac{1}{x-2} + C           & \\
+                   & = \dfrac{1}{2}x^2 + x + 3\ln\vert x-2\vert - \dfrac{1}{x-2} + C               & \\
+              \end{flalign*}
+          \end{multicols}
+          \newpage
+          \begin{multicols}{2}
+              \item $\displaystyle\int\dfrac{x^2}{{(x+2)}^3}dx$
+              \sol{}
+              \begin{flalign*}
+                  \text{Let } u & = x + 2 & \\
+                  \therefore\ x & = u - 2   \\
+                  dx            & = du
+              \end{flalign*}
+              \vspace{-2em}
+              \begin{flalign*}
+                   & \int\dfrac{x^2}{{(x+2)}^3}dx                                          \\
+                   & = \int\dfrac{{(u-2)}^2}{u^3}du                                      & \\
+                   & = \int\left(\dfrac{u^2 - 4u + 4}{u^3}\right)du                      & \\
+                   & = \int\left(\dfrac{1}{u} - \dfrac{4}{u^2} + \dfrac{4}{u^3}\right)du & \\
+                   & = \ln\vert u\vert + \dfrac{4}{u} - \dfrac{2}{u^2} + C               & \\
+                   & = \ln\vert x+2\vert + \dfrac{4}{x+2} - \dfrac{2}{(x+2)^2} + C       & \\
+              \end{flalign*}
+              \item $\displaystyle\int\left(3\sin2x-4e^{3x}\right)dx$
+              \sol{}
+              \begin{flalign*}
+                   & \int\left(3\sin2x-4e^{3x}\right)dx               \\
+                   & = \dfrac{3}{2}\int\sin2xd(2x) - \int4e^{3x}dx  & \\
+                   & = -\dfrac{3}{2}\cos2x - \dfrac{4}{3}e^{3x} + C & \\
+              \end{flalign*}
+          \end{multicols}
+          \begin{multicols}{2}
+              \item $\displaystyle\int\sin(5x-6)dx$
+              \sol{}
+              \begin{flalign*}
+                   & \int\sin(5x-6)dx                    & \\
+                   & = \dfrac{1}{5}\int\sin(5x-6)d(5x-6) & \\
+                   & = -\dfrac{1}{5}\cos(5x-6) + C
+              \end{flalign*}
+              \item $\displaystyle\int\left(\cos6x+\sec^2 4x\right)dx$
+              \sol{}
+              \begin{flalign*}
+                   & \int\left(\cos6x+\sec^2 4x\right)dx                            & \\
+                   & = \dfrac{1}{6}\int\cos6xd(6x) + \dfrac{1}{4}\int\sec^2 4xd(4x) & \\
+                   & = \dfrac{1}{6}\sin6x + \dfrac{1}{4}\tan4x + C
+              \end{flalign*}
+          \end{multicols}
+          \begin{multicols}{2}
+              \item $\displaystyle\int\left(\sin\dfrac{x}{2}+\cos2x-\cos\dfrac{x}{7}\right)dx$
+              \sol{}
+              \begin{flalign*}
+                   & \int\left(\sin\dfrac{x}{2}+\cos2x-\cos\dfrac{x}{7}\right)dx         & \\
+                   & = 2\int\sin\dfrac{x}{2}d\left(\dfrac{x}{2}\right) + \int\cos2xd(2x)   \\
+                   & \ \ \ \ - 7\int\cos\dfrac{x}{7}d\left(\dfrac{x}{7}\right)           & \\
+                   & = -2\cos\dfrac{x}{2} + \dfrac{1}{2}\sin2x - 7\sin\dfrac{x}{7} + C
+              \end{flalign*}
+              \item $\displaystyle\int\tan^2 3xdx$
+              \sol{}
+              \begin{flalign*}
+                   & \int\tan^2 3xdx                            & \\
+                   & = \int\left(\sec^2 3x - 1\right)dx           \\
+                   & = \dfrac{1}{3}\int\sec^2 3xd(3x) - \int dx   \\
+                   & = \dfrac{1}{3}\tan3x - x + C
+              \end{flalign*}
+          \end{multicols}
+          \newpage
+          \begin{multicols}{2}
+              \item $\displaystyle\int\tan x\sec^2 xdx$
+              \sol{}
+              \begin{flalign*}
+                   & \int\tan x\sec^2 xdx       & \\
+                   & = \int\tan xd(\tan x)      & \\
+                   & = \dfrac{1}{2}\tan^2 x + C
+              \end{flalign*}
+              \vfill\null
+              \columnbreak{}
+              \item $\displaystyle\int\dfrac{3\sin x}{\cos2x + 1}dx$
+              \sol{}
+              \begin{flalign*}
+                   & \int\dfrac{3\sin x}{\cos2x + 1}dx            & \\
+                   & = \int\dfrac{3\sin x}{2\cos^2 x}dx             \\
+                   & = \dfrac{3}{2}\int\dfrac{\sin x}{\cos^2 x}dx   \\
+                   & = \dfrac{3}{2}\int\sec x\tan xdx               \\
+                   & = \dfrac{3}{2}\sec x + C
+              \end{flalign*}
+          \end{multicols}
+          \begin{multicols}{2}
+              \item $\displaystyle\int\dfrac{\sec^2 x}{\tan x + 2}dx$
+              \sol{}
+              \begin{flalign*}
+                   & \int\dfrac{\sec^2 x}{\tan x + 2}dx   & \\
+                   & = \int\dfrac{1}{\tan x + 2}d(\tan x)   \\
+                   & = \ln\vert\tan x + 2\vert + C
+              \end{flalign*}
+              \vfill\null
+              \item $\displaystyle\int\cot2x\csc^3 2xdx$
+              \sol{}
+              \begin{flalign*}
+                   & \int\cot2x\csc^3 2xdx                 & \\
+                   & = \int\csc 2x \cot 2x \csc^2 2xdx       \\
+                   & = \dfrac{1}{2}\int\csc^2 2xd(\csc 2x)   \\
+                   & = -\dfrac{1}{6}\csc^3 2x + C
+              \end{flalign*}
+          \end{multicols}
+    \item $\displaystyle\int\tan^3 x\sec^3 xdx$
+          \sol{}
+          \begin{flalign*}
+               & \int\tan^3 x\sec^3 xdx                                & \\
+               & = \int\tan^2 x\sec^2 x\sec x\tan xdx                    \\
+               & = \int\left(\sec^2 x - 1\right)\sec^2 x\sec x\tan xdx   \\
+               & = \int\left(\sec^4 x - \sec^2 x\right)d(\sec x)         \\
+               & = \dfrac{1}{5}\sec^5 x - \dfrac{1}{3}\sec^3 x + C
+          \end{flalign*}
+
+    \item If the function $y = \ln x - \dfrac{3}{x}$, find $\dfrac{dy}{dx}$. Hence, find
+          $\displaystyle\int\dfrac{3+x}{3x^2}dx$. \sol{}
+          \begin{flalign*}
+              y                       & = \ln x - \dfrac{3}{x}                   \\
+              \dfrac{dy}{dx}          & = \dfrac{1}{x} + \dfrac{3}{x^2}          \\
+                                      & = \dfrac{x+3}{x^2}                       \\
+              \\
+              \int\dfrac{3+x}{3x^2}dx & = \dfrac{1}{3}\int\dfrac{x+3}{x^2}d(x^3) \\
+                                      & = \dfrac{1}{3}\ln x - \dfrac{1}{x} + C
+          \end{flalign*}
+
+    \item If the function $y = \dfrac{1}{\sqrt{4x^2 - 1}}$, find $\dfrac{dy}{dx}$. Hence,
+          find $\displaystyle\int\dfrac{x}{\sqrt{{\left(4x^2-1\right)}^3}}$. \sol{}
+          \begin{flalign*}
+              y                                               & = \left[\left(4x^2 - 1\right)^{-\frac{1}{2}}\right]'                  \\
+                                                              & = -\dfrac{1}{2}\left(4x^2 - 1\right)^{-\frac{3}{2}}\cdot 8x           \\
+                                                              & = -\dfrac{4x}{\sqrt{{\left(4x^2-1\right)}^3}}                         \\
+              \\
+              \int\dfrac{x}{\sqrt{{\left(4x^2-1\right)}^3}}dx & = -\dfrac{1}{4}\int-\dfrac{4x}{\sqrt{{\left(4x^2-1\right)}^3}}d(4x^2) \\
+                                                              & = -\dfrac{1}{4\sqrt{4x^2-1}} + C
+          \end{flalign*}
+
+    \item Given the function $y = \dfrac{x^2 + 3}{1-x}$, and $\dfrac{dy}{dx} =
+              \dfrac{1}{2}f(x)$, find $\displaystyle\int\left[3 - x^2 - f(x)\right]dx$.
+          \sol{}
+          \begin{flalign*}
+              \dfrac{d}{dx}\left(\dfrac{x^2 + 3}{1-x}\right) & = \dfrac{1}{2}f(x)                                                                           \\
+              f(x)                                           & = 2\left[\dfrac{d}{dx}\left(\dfrac{x^2 + 3}{1-x}\right)\right]                               \\
+              \\
+              \int\left[3 - x^2 - f(x)\right]dx              & = \int3dx - \int x^2dx - f(x)dx                                                              \\
+                                                             & = \int3dx - \int x^2dx - \int 2\left[\dfrac{d}{dx}\left(\dfrac{x^2 + 3}{1-x}\right)\right]dx \\
+                                                             & = 3x - \dfrac{x^3}{3} - \dfrac{2(x^2 + 3)}{1-x} + C
+          \end{flalign*}
+
+    \item Given the function $\dfrac{d}{dx}(x\ln x) = g(x)$, find
+          $\displaystyle\int\left[g(x) - 2x\right]dx$. \sol{}
+          \begin{flalign*}
+              \int\left[g(x) - 2x\right]dx & = \int g(x)dx - \int 2xdx                  \\
+                                           & = \int \dfrac{d}{dx}(x\ln x)dx - \int 2xdx \\
+                                           & = x\ln x - x^2 + C
+          \end{flalign*}
+
+          \newpage
+    \item The gradient of the tangent at any point on a curve is 3 times the
+          $x$-coordinate of the point, and the curve passes through $(-2, 5)$. Find the
+          equation of the curve. \sol{}
+          \begin{flalign*}
+              \dfrac{dy}{dx} & = 3x                  \\
+              dy             & = 3xdx                \\
+              y              & = \int 3xdx           \\
+                             & = \dfrac{3}{2}x^2 + C
+          \end{flalign*}
+          Given that the curve passes through $(-2, 5)$,
+          \begin{flalign*}
+              5 & = \dfrac{3(-2)^2}{2} + C \\
+              C & = 1
+          \end{flalign*}
+          Therefore, the equation of the curve is $y = \dfrac{3}{2}x^2 + 1$.
+
+    \item The gradient of the tangent at any point on a curve is $\dfrac{dy}{dx} = 3x^2 -
+              8x + 1$, and the curve intersect with $x$-axis at point $(2, 0)$, find the
+          other point of intersection of the curve and the $x$-axis. \sol{}
+          \begin{flalign*}
+              \dfrac{dy}{dx} & = 3x^2 - 8x + 1          \\
+              y              & = \int (3x^2 - 8x + 1)dx \\
+                             & = x^3 - 4x^2 + x + C
+          \end{flalign*}
+          Given that the curve passes through $(2, 0)$,
+          \begin{flalign*}
+              0 & = 2^3 - 4(2)^2 + 2 + C \\
+              C & = -6
+          \end{flalign*}
+          Therefore, the equation of the curve is $y = x^3 - 4x^2 + x -6$.
+
+          When the curve intersects with the $x$-axis, $y = 0$,
+          \begin{flalign*}
+              x^3 - 4x^2 + x + 6 & = 0 \\
+              (x-2)(x^2-2x-3)    & = 0 \\
+              (x-2)(x-3)(x+1)    & = 0
+          \end{flalign*}
+          Therefore, the curve also intersects with the $x$-axis at $(-1, 0)$ and $(3, 0)$.
+\end{enumerate}
+
+\chapter{Definite Integrals}
+
+\end{document}

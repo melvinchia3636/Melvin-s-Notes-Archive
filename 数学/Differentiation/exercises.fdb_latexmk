@@ -1,0 +1,18 @@
+# Fdb version 4
+["xdvipdfmx"] 0 "exercises.xdv" "exercises.pdf" "exercises" 0 -1
+  "exercises.xdv" 0 -1 0 "xelatex"
+  (generated)
+  "exercises.pdf"
+  (rewritten before read)
+["xelatex"] 1686472425 "/Users/melvinchia/Documents/involution/数学/Differentiation/exercises.tex" "exercises.xdv" "exercises" 1686472426 2
+  "/Users/melvinchia/Documents/involution/数学/Differentiation/exercises.tex" 1686472425 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "/usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf" 1677365944 40745 87bb86a62d462f93a1efc6b0c65c872e ""
+  "/usr/local/texlive/2023/texmf-var/web2c/xetex/xelatex.fmt" 1685458780 10502839 b14d95dbea05ddfdac2555cf378e04f5 ""
+  "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
+  "exercises.aux" 1686472425 32 3985256e7290058c681f74d7a3565a19 "xelatex"
+  "exercises.tex" 1686472425 0 d41d8cd98f00b204e9800998ecf8427e ""
+  (generated)
+  "exercises.aux"
+  "exercises.log"
+  "exercises.xdv"
+  (rewritten before read)
