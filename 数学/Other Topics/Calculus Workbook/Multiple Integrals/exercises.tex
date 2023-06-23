@@ -1,0 +1,82 @@
+\documentclass{report}
+\usepackage[total={7in,9in}]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+
+\usepackage{ccfonts}
+\usepackage[T1]{fontenc}
+
+\thispagestyle{empty}
+
+\begin{document}
+\begin{enumerate}
+     \begin{multicols}{2}
+          \item $\displaystyle\int_0^3\int_0^{\sqrt{x}}xy\,dx\,dy$
+          \begin{flalign*}
+                & = \int_0^3x\left(\int_0^{\sqrt{x}}y\,dy\right)\,dx       & \\
+                & = \dfrac{1}{2}\int_0^3x\left[y^2\right]_0^{\sqrt{x}}\,dx & \\
+                & = \dfrac{1}{2}\int_0^3x^2\,dx                            & \\
+                & = \dfrac{1}{6}\left[x^3\right]_0^3                       & \\
+                & = \dfrac{1}{6}(27)                                       & \\
+                & = 4.5
+          \end{flalign*}
+          \item $\displaystyle\int_0^{y^2}\int_1^2\dfrac{y^2}{\sqrt{x}}\,dx\,dy$
+          \begin{flalign*}
+                & = \int_2^1y^2\left(\int_0^{y^2}x^{-\frac{1}{2}}\,dx\right)\,dy & \\
+                & = 2\int_1^2y^2\left[x^{\frac{1}{2}}\right]_0^{y^2}\,dy           \\
+                & = 2\int_1^2y^3\,dy                                               \\
+                & = \dfrac{1}{2}\left[y^4\right]_1^2                               \\
+                & = \dfrac{1}{2}(16 - 1)                                           \\
+                & = 7.5
+          \end{flalign*}
+     \end{multicols}
+     \begin{multicols}{2}
+          \item $\displaystyle\int_1^4\int_4^9\dfrac{dx\,dy}{\sqrt{xy}}$
+          \begin{flalign*}
+                & = \int_1^4y^{-\frac{1}{2}}\left(\int_4^9x^{-\frac{1}{2}}\,dx\right)\,dy & \\
+                & = 2\int_1^4y^{-\frac{1}{2}}\left[x^{\frac{1}{2}}\right]_4^9\,dy           \\
+                & = 2\int_1^4y^{-\frac{1}{2}}\,dy                                           \\
+                & = 4\left[y^{\frac{1}{2}}\right]_1^4                                       \\
+                & = 4(2 - 1)                                                                \\
+                & = 4
+          \end{flalign*}
+          \item $\displaystyle\int_0^5\int_x^{2x}x^2y\,dx\,dy$
+          \begin{flalign*}
+                & = \int_0^5x^2\left(\int_x^{2x}y\,dy\right)\,dx       & \\
+                & = \dfrac{1}{2}\int_0^5x^2\left[y^2\right]_x^{2x}\,dx   \\
+                & = \dfrac{3}{2}\int_0^5x^4\,dx                          \\
+                & = \dfrac{3}{10}\left[x^5\right]_0^5                    \\
+                & = \dfrac{3}{10} \cdot 3125                             \\
+                & = 937.5
+          \end{flalign*}
+     \end{multicols}
+     \begin{multicols}{2}
+          \item $\displaystyle\int_0^y\int_0^2\int_0^{x}xy^2z^3\,dx\,dy\,dz$
+          \vspace{0.8em}
+          \begin{flalign*}
+                & = \int_0^2y^2\int_0^{y}x\left(\int_0^{x}z^3\,dz\right)\,dx\,dy     & \\
+                & = \dfrac{1}{4}\int_0^2y^2\int_0^{y}x\left[z^4\right]_0^{x}\,dx\,dy   \\
+                & = \dfrac{1}{4}\int_0^2y^2\left(\int_0^{y}x^5\,dx\right)\,dy          \\
+                & = \dfrac{1}{24}\int_0^2y^2\left[x^6\right]_0^{y}\,dy                 \\
+                & = \dfrac{1}{24}\int_0^2y^8\,dx                                       \\
+                & = \dfrac{1}{216}\left[y^9\right]_0^2                                 \\
+                & = \dfrac{64}{27}                                                     \\
+                & \approx 2.37
+          \end{flalign*}
+          \vfill{}\null{}
+          \item $\displaystyle\int_0^{\sqrt{y}}\int_0^{\sqrt{z}}\int_0^4x^3y\,dx\,dy\,dz$
+          \begin{flalign*}
+                & = \int_0^{\sqrt{z}}\int_0^4y\left(\int_0^{\sqrt{y}}x^3\,dx\right)\,dy\,dz                  & \\
+                & = \dfrac{1}{4}\int_0^4\left(\int_0^{\sqrt{z}}y\left[x^4\right]_0^{\sqrt{y}}\,dy\right)\,dz & \\
+                & = \dfrac{1}{4}\int_0^4\left(\int_0^{\sqrt{z}}y^3\,dy\right)\,dz                            & \\
+                & = \dfrac{1}{16}\int_0^4\left[y^4\right]_0^{\sqrt{z}}\,dz                                   & \\
+                & = \dfrac{1}{16}\int_0^4z^2\,dz                                                             & \\
+                & = \dfrac{1}{48}\left[z^3\right]_0^4                                                        & \\
+                & = \dfrac{4}{3}                                                                             & \\
+                & \approx 1.33
+          \end{flalign*}
+     \end{multicols}
+\end{enumerate}
+\end{document}
