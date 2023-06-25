@@ -1,0 +1,280 @@
+\documentclass{report}
+\usepackage[a4paper,total={7in,10in}]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\allowdisplaybreaks
+
+\setcounter{chapter}{10}
+\setcounter{section}{2}
+
+\newcommand{\sol}{\vspace{1em}\\\textbf{Sol.}}
+\newcommand{\eos}{ \qquad \square}
+\DeclareMathOperator{\cosec}{cosec}
+
+\begin{document}
+\section*{Exercise 11g}
+
+Find the following indefinite integrals:
+\begin{enumerate}
+      \item $\displaystyle\int\dfrac{1}{2\sin x - \cos x + 5}\,dx$
+            \sol{}
+
+            Let $t = \tan\dfrac{x}{2}$, $dx = \dfrac{2}{1+t^2}\,dt$.
+            \begin{flalign*}
+                  \int\dfrac{1}{2\sin x - \cos x + 5}\,dx & = \int\dfrac{1}{2\left(\dfrac{2t}{1+t^2}\right) - \dfrac{1-t^2}{1+t^2} + 5}\cdot\dfrac{2}{1+t^2}\,dt                              & \\
+                                                          & = \int\dfrac{2}{\dfrac{4t-1+t^2+5(1+t^2)}{1+t^2} \cdot (1+t^2)}\,dt                                                               & \\
+                                                          & = \int\dfrac{2}{6t^2+4t+4}\,dt                                                                                                    & \\
+                                                          & = \int\dfrac{1}{3t^2+2t+2}\,dt                                                                                                    & \\
+                                                          & = \dfrac{1}{3}\int\dfrac{1}{t^2+\dfrac{2}{3}t+\dfrac{2}{3}}\,dt                                                                   & \\
+                                                          & = \dfrac{1}{3}\int\dfrac{1}{\left(t+\dfrac{1}{3}\right)^2 - \dfrac{1}{9} + \dfrac{2}{3}}\,dt                                      & \\
+                                                          & = \dfrac{1}{3}\int\dfrac{1}{\left(t+\dfrac{1}{3}\right)^2 + \dfrac{5}{9}}\,dt \qquad \text{(Let $u = t+\dfrac{1}{3}$, $du = dt$)} & \\
+                                                          & = \dfrac{1}{3}\int\dfrac{1}{u^2 + \left(\dfrac{\sqrt{5}}{3}\right)^2}\,du                                                         & \\
+                                                          & = \dfrac{1}{3}\cdot\dfrac{1}{\dfrac{\sqrt{5}}{3}}\cdot\tan^{-1}\dfrac{u}{\dfrac{\sqrt{5}}{3}} + C                                 & \\
+                                                          & = \dfrac{1}{\sqrt{5}}\tan^{-1}\dfrac{3t+1}{\sqrt{5}} + C                                                                          & \\
+                                                          & = \dfrac{1}{\sqrt{5}}\tan^{-1}\dfrac{3\tan\dfrac{x}{2}+1}{\sqrt{5}} + C \eos                                                      & \\
+            \end{flalign*}
+      \item $\displaystyle\int\dfrac{1}{4 + 5\cos x}\,dx$
+            \sol{}
+
+            Let $t = \tan\dfrac{x}{2}$, $dx = \dfrac{2}{1+t^2}\,dt$.
+            \begin{flalign*}
+                  \int\dfrac{1}{4 + 5\cos x}\,dx & = \int\dfrac{1}{4 + 5\left(\dfrac{1-t^2}{1+t^2}\right)}\cdot\dfrac{2}{1+t^2}\,dt & \\
+                                                 & = \int\dfrac{2}{4 + 4t^2 + 5 - 5t^2}\,dt                                         & \\
+                                                 & = \int\dfrac{2}{9-t^2}\,dt                                                       & \\
+                                                 & = \int\dfrac{2}{(3+t)(3-t)}\,dt \eos                                             &
+            \end{flalign*}
+            Let $\dfrac{2}{(3+t)(3-t)} = \dfrac{A}{3+t} + \dfrac{B}{3-t}$
+            \begin{flalign*}
+                  2 & = A(3-t) + B(3+t)  & \\
+                    & = (-A+B)t + 3(A+B) &
+            \end{flalign*}
+            Comparing coefficients,
+            \begin{flalign*}
+                  -A + B    & = 0\ \cdots\cdots\ (1)            & \\
+                  3(A + B)  & = 2                               & \\
+                  A + B     & = \dfrac{2}{3}\ \cdots\cdots\ (2) & \\
+                  (1) + (2) & \implies 2B = \dfrac{2}{3}        & \\
+                  B         & = \dfrac{1}{3}                    & \\
+                  A         & = \dfrac{1}{3}                    &
+            \end{flalign*}
+            \begin{flalign*}
+                  \therefore\ \int\dfrac{1}{4 + 5\cos x}\,dx & = \dfrac{1}{3}\int\dfrac{1}{3+t} + \dfrac{1}{3}\int\dfrac{1}{3-t}\,dt            &      \\
+                                                             & = \dfrac{1}{3}\left(\ln\left|3+t\right| - \ln\left|3-t\right|\right) + C         &      \\
+                                                             & = \dfrac{1}{3}\ln\left|\dfrac{3+t}{3-t}\right| + C                               &      \\
+                                                             & = \dfrac{1}{3}\ln\left|\dfrac{3+\tan\dfrac{x}{2}}{3-\tan\dfrac{x}{2}}\right| + C & \eos
+            \end{flalign*}
+      \item $\displaystyle\int\dfrac{1}{5 + 4\sin x}\,dx$
+            \sol{}
+
+            Let $t = \tan\dfrac{x}{2}$, $dx = \dfrac{2}{1+t^2}\,dt$.
+            \begin{flalign*}
+                  \int\dfrac{1}{5 + 4\sin x}\,dx & = \int\dfrac{1}{5 + 4\left(\dfrac{2t}{1+t^2}\right)}\cdot\dfrac{2}{1+t^2}\,dt                & \\
+                                                 & = \int\dfrac{2}{5 + 5t^2 + 8t}\,dt                                                           & \\
+                                                 & = \dfrac{2}{5}\int\dfrac{1}{t^2 + \dfrac{8}{5}t + 1}\,dt                                     & \\
+                                                 & = \dfrac{2}{5}\int\dfrac{1}{\left(t+\dfrac{4}{5}\right)^2 - \dfrac{16}{25} + 1}\,dt          & \\
+                                                 & = \dfrac{2}{5}\int\dfrac{1}{\left(t+\dfrac{4}{5}\right)^2 + \dfrac{9}{25}}\,dt               & \\
+                                                 & = \dfrac{2}{5}\int\dfrac{1}{\left(\dfrac{3}{5}\right)^2 + \left(t+\dfrac{4}{5}\right)^2}\,dt & \\
+                                                 & = \dfrac{2}{5}\cdot\dfrac{5}{3}\cdot\tan^{-1}\dfrac{t+\dfrac{4}{5}}{\dfrac{3}{5}} + C        & \\
+                                                 & = \dfrac{2}{3}\tan^{-1}\dfrac{5t+4}{3} + C                                                   & \\
+                                                 & = \dfrac{2}{3}\tan^{-1}\dfrac{5\tan\dfrac{x}{2}+4}{3} + C \eos
+            \end{flalign*}
+      \item $\displaystyle\int\dfrac{1 + \sin x}{\sin x(1 + \cos x)}\,dx$
+            \sol{}
+
+            Let $t = \tan\dfrac{x}{2}$, $dx = \dfrac{2}{1+t^2}\,dt$.
+            \begin{flalign*}
+                  \int\dfrac{1 + \sin x}{\sin x(1 + \cos x)}\,dx & = \int\dfrac{1 + \dfrac{2t}{1+t^2}}{\dfrac{2t}{1+t^2}(1 + \dfrac{1-t^2}{1+t^2})}\cdot\dfrac{2}{1+t^2}\,dt   & \\
+                                                                 & = \int\dfrac{1 + t^2 + 2t}{t(1 + t^2 + 1 - t^2)}\,dt                                                        & \\
+                                                                 & = \int\dfrac{1 + t^2 + 2t}{2t}\,dt                                                                          & \\
+                                                                 & = \dfrac{1}{2}\int\left(t + 2 + \dfrac{1}{t}\right)\,dt                                                     & \\
+                                                                 & = \dfrac{1}{4}t^2 + t + \dfrac{1}{2}\ln\left|t\right| + C                                                   & \\
+                                                                 & = \dfrac{1}{4}\tan^2\dfrac{x}{2} + \tan\dfrac{x}{2} + \dfrac{1}{2}\ln\left|\tan\dfrac{x}{2}\right| + C \eos &
+            \end{flalign*}
+      \item $\displaystyle\int\dfrac{\cot x}{\sin x + \cos x - 1}\,dx$
+            \sol{}
+
+            Let $t = \tan\dfrac{x}{2}$, $dx = \dfrac{2}{1+t^2}\,dt$.
+            \begin{flalign*}
+                  \int\dfrac{\cot x}{\sin x + \cos x - 1}\,dx & = \int\dfrac{\cos x}{\sin x(\sin x + \cos x - 1)}\,dx                                                                                       & \\
+                                                              & = \int\dfrac{\dfrac{1 - t^2}{1 + t^2}}{\dfrac{2t}{1+t^2}\left(\dfrac{2t}{1+t^2} + \dfrac{1-t^2}{1+t^2} - 1\right)}\cdot\dfrac{2}{1+t^2}\,dt & \\
+                                                              & = \int\dfrac{2(1-t^2)}{2t\left(\dfrac{2t}{1+t^2} + \dfrac{1-t^2}{1+t^2} - 1\right)}\cdot\dfrac{1}{1+t^2}\,dt                                & \\
+                                                              & = \int\dfrac{1 -t^2}{t\left(2t + 1-t^2 - 1 - t^2\right)}\,dt                                                                                & \\
+                                                              & = \int\dfrac{1 -t^2}{t\left(2t-2t^2 \right)}\,dt                                                                                            & \\
+                                                              & = \int\dfrac{(1 + t)(1 - t)}{2t^2\left(1-t \right)}\,dt                                                                                     & \\
+                                                              & = \int\dfrac{1 + t}{2t^2}\,dt                                                                                                               & \\
+                                                              & = \dfrac{1}{2}\int\dfrac{1}{t^2}\,dt + \dfrac{1}{2}\int\dfrac{1}{t}\,dt                                                                     & \\
+                                                              & = -\dfrac{1}{2t} + \dfrac{1}{2}\ln\left|t\right| + C                                                                                        & \\
+                                                              & = -\dfrac{1}{2}\cot\dfrac{x}{2} + \dfrac{1}{2}\ln\left|\tan\dfrac{x}{2}\right| + C \eos                                                     & \\
+            \end{flalign*}
+      \item $\displaystyle\int\dfrac{1}{5\sec x - 3}\,dx$
+            \sol{}
+
+            Let $t = \tan\dfrac{x}{2}$, $dx = \dfrac{2}{1+t^2}\,dt$.
+            \begin{flalign*}
+                  \int\dfrac{1}{5\sec x - 3}\,dx & = \int\dfrac{1}{5\left(\dfrac{1+t^2}{1-t^2}\right) - 3}\cdot\dfrac{2}{1+t^2}\,dt & \\
+                                                 & = \int\dfrac{2}{\dfrac{(5 + 5t^2 - 3 + 3t^2)(1+t^2)}{1-t^2}}\,dt                 & \\
+                                                 & = \int\dfrac{2(1-t^2)}{(8t^2 + 2)(1+t^2)}\,dt                                    & \\
+                                                 & = \int\dfrac{2(1-t^2)}{2(4t^2 + 1)(1+t^2)}\,dt                                   & \\
+                                                 & = \int\dfrac{1-t^2}{(4t^2 + 1)(1+t^2)}\,dt
+            \end{flalign*}
+            Let $\dfrac{1-t^2}{(4t^2 + 1)(1+t^2)} = \dfrac{A}{4t^2 + 1} + \dfrac{B}{1+t^2}$.
+            \begin{flalign*}
+                  1 - t^2 & = A(1+t^2) + B(4t^2 + 1) & \\
+                          & = A + At^2 + 4Bt^2 + B   & \\
+                          & = (A + 4B)t^2 + (A + B)
+            \end{flalign*}
+            Comparing coefficients,
+            \begin{flalign*}
+                  A + 4B    & = -1\ \cdots\cdots\ (1) & \\
+                  A + B     & = 1\ \cdots\cdots\ (2)  & \\
+                  (1) - (2) & \implies 3B = -2        & \\
+                  B         & = -\dfrac{2}{3}         & \\
+                  A         & = 1 - B                 & \\
+                            & = 1 + \dfrac{2}{3}      & \\
+                            & = \dfrac{5}{3}
+            \end{flalign*}
+            \begin{flalign*}
+                  \therefore\ \int\dfrac{1}{5\sec x - 3}\,dx & = \dfrac{5}{3}\int\dfrac{1}{1 + 4t^2}\,dt - \dfrac{2}{3}\int\dfrac{1}{1+t^2}\,dt                               & \\
+                                                             & = \dfrac{5}{6}\tan^{-1}(2t) - \dfrac{2}{3}\tan^{-1}t + C                                                       & \\
+                                                             & = \dfrac{5}{6}\tan^{-1}\left(2\tan\dfrac{x}{2}\right) - \dfrac{2}{3}\tan^{-1}\left(\tan\dfrac{x}{2}\right) + C & \\
+                                                             & = \dfrac{5}{6}\tan^{-1}\left(2\tan\dfrac{x}{2}\right) - \dfrac{2}{3}\cdot\dfrac{x}{2} + C                      & \\
+                                                             & = \dfrac{5}{6}\tan^{-1}\left(2\tan\dfrac{x}{2}\right) - \dfrac{1}{3}x + C \eos                                 & \\
+            \end{flalign*}
+            \newpage
+      \item $\displaystyle\int\dfrac{\cos x}{1 - \cos x}\,dx$
+            \sol{}
+
+            Let $t = \tan\dfrac{x}{2}$, $dx = \dfrac{2}{1+t^2}\,dt$.
+            \begin{flalign*}
+                  \int\dfrac{\cos x}{1 - \cos x}\,dx & = \int\dfrac{\dfrac{1-t^2}{1+t^2}}{1 - \dfrac{1-t^2}{1+t^2}}\cdot\dfrac{2}{1+t^2}\,dt & \\
+                                                     & = \int\dfrac{2(1-t^2)}{1+t^2 - 1 + t^2}\cdot\dfrac{1}{1+t^2}\,dt                      & \\
+                                                     & = \int\dfrac{2(1-t^2)}{2t^2(1+t^2)}\,dt                                               & \\
+                                                     & = \int\dfrac{1-t^2}{t^2(1+t^2)}\,dt
+            \end{flalign*}
+            Let $\dfrac{1-t^2}{t^2(1+t^2)} = \dfrac{A}{t^2} + \dfrac{B}{1+t^2}$.
+            \begin{flalign*}
+                  1 - t^2 & = A(1+t^2) + Bt^2 & \\
+                          & = A + At^2 + Bt^2 & \\
+                          & = (A + B)t^2 + A
+            \end{flalign*}
+            Comparing coefficients,
+            \begin{flalign*}
+                  A + B     & = -1\ \cdots\cdots\ (1) & \\
+                  A         & = 1\ \cdots\cdots\ (2)  & \\
+                  (1) - (2) & \implies B = -2
+            \end{flalign*}
+            \begin{flalign*}
+                  \therefore\ \int\dfrac{\cos x}{1 - \cos x}\,dx & = \int\dfrac{1}{t^2}\,dt - 2\int\dfrac{1}{1+t^2}\,dt                         & \\
+                                                                 & = -\dfrac{1}{t} - 2\tan^{-1}t + C                                            & \\
+                                                                 & = -\dfrac{1}{\tan\dfrac{x}{2}} - 2\tan^{-1}\left(\tan\dfrac{x}{2}\right) + C   \\
+                                                                 & = -\dfrac{2}{\tan x} - 2\cdot\dfrac{x}{2} + C                                  \\
+                                                                 & = -\dfrac{2}{\tan x} - x + C \eos
+            \end{flalign*}
+      \item $\displaystyle\int\dfrac{1}{\sin x + \tan x}\,dx$
+            \sol{}
+
+            Let $t = \tan\dfrac{x}{2}$, $dx = \dfrac{2}{1+t^2}\,dt$.
+            \begin{flalign*}
+                  \int\dfrac{1}{\sin x + \tan x}\,dx & = \int\dfrac{1}{\sin x + \dfrac{\sin x}{\cos x}}\,dx                                                                        & \\
+                                                     & = \int\dfrac{\cos x}{\sin x(\cos x + 1)}\,dx                                                                                & \\
+                                                     & = \int\dfrac{\dfrac{1 - t^2}{1 + t^2}}{\dfrac{2t}{1+t^2}\left(\dfrac{1 - t^2}{1+t^2} + 1\right)} \cdot \dfrac{2}{1+t^2}\,dt & \\
+                                                     & = \int\dfrac{1 - t^2}{t\left(\dfrac{1 - t^2}{1+t^2} + 1\right)} \cdot \dfrac{1}{1+t^2}\,dt                                  & \\
+                                                     & = \int\dfrac{1 - t^2}{t\left(1 - t^2 + 1 + t^2\right)}\,dt                                                                  & \\
+                                                     & = \int\dfrac{1 - t^2}{2t}\,dt                                                                                               & \\
+                                                     & = \dfrac{1}{2}\int\dfrac{1}{t}\,dt - \dfrac{1}{2}\int t\,dt                                                                 & \\
+                                                     & = \dfrac{1}{2}\ln\vert t\vert - \dfrac{1}{4}t^2 + C                                                                         & \\
+                                                     & = \dfrac{1}{2}\ln\left\vert\tan\dfrac{x}{2}\right\vert - \dfrac{1}{4}\tan^2\dfrac{x}{2} + C \eos
+            \end{flalign*}
+      \item $\displaystyle\int\dfrac{1}{1 - \sin x}\,dx$
+            \sol{}
+
+            Let $t = \tan\dfrac{x}{2}$, $dx = \dfrac{2}{1+t^2}\,dt$.
+            \begin{flalign*}
+                  \int\dfrac{1}{1 - \sin x}\,dx & = \int\dfrac{1}{1 - \dfrac{2t}{1+t^2}}\cdot\dfrac{2}{1+t^2}\,dt & \\
+                                                & = \int\dfrac{2}{1+t^2 - 2t}\,dt                                 & \\
+                                                & = \int\dfrac{2}{(t-1)^2}\,dt                                    & \\
+                                                & = -\dfrac{2}{t-1} + C                                           & \\
+                                                & = -\dfrac{2}{\tan\dfrac{x}{2} - 1} + C
+            \end{flalign*}
+      \item $\displaystyle\int\dfrac{\sec x}{2\tan x + \sec x - 1}\,dx$
+            \sol{}
+
+            Let $t = \tan\dfrac{x}{2}$, $dx = \dfrac{2}{1+t^2}\,dt$.
+            \begin{flalign*}
+                  \int\dfrac{\sec x}{2\tan x + \sec x - 1}\,dx & = \int\dfrac{\sec x}{2\cdot\dfrac{\sin x}{\cos x} + \dfrac{1}{\cos x} - 1}\,dx               & \\
+                                                               & = \int\dfrac{\sec x}{\dfrac{2\sin x + 1 - \cos x}{\cos x}}\,dx                               & \\
+                                                               & = \int\dfrac{\sec x}{\sec x(2\sin x + 1 - \cos x)}\,dx                                       & \\
+                                                               & = \int\dfrac{1}{2\sin x + 1 - \cos x}\,dx                                                    & \\
+                                                               & = \int\dfrac{1}{2\cdot\dfrac{2t}{1+t^2} + 1 - \dfrac{1-t^2}{1+t^2}}\cdot\dfrac{2}{1+t^2}\,dt & \\
+                                                               & = \int\dfrac{2}{4t + 1 + t^2 - 1 + t^2}\,dt                                                  & \\
+                                                               & = \int\dfrac{2}{2t^2 + 4t}\,dt                                                               & \\
+                                                               & = \int\dfrac{1}{t(t + 2)}\,dt
+            \end{flalign*}
+            Let $\dfrac{1}{t(t+2)} = \dfrac{A}{t} + \dfrac{B}{t+2}$.
+            \begin{flalign*}
+                  1 & = A(t+2) + Bt & \\
+                  1 & = (A+B)t + 2A
+            \end{flalign*}
+            Comparing coefficients,
+            \begin{flalign*}
+                  A+B & = 0             & \\
+                  2A  & = 1               \\
+                  A   & = \dfrac{1}{2}  & \\
+                  B   & = -\dfrac{1}{2}
+            \end{flalign*}
+            \begin{flalign*}
+                  \int\dfrac{1}{t(t+2)}\,dt & = \dfrac{1}{2}\int\dfrac{1}{t}\,dt - \dfrac{1}{2}\int\dfrac{1}{t+2}\,dt                     & \\
+                                            & = \dfrac{1}{2}\ln\vert t\vert - \dfrac{1}{2}\ln\left\vert t+2\right\vert + C                & \\
+                                            & = \dfrac{1}{2}\ln\left\vert\dfrac{t}{t+2}\right\vert + C                                    & \\
+                                            & = \dfrac{1}{2}\ln\left\vert\dfrac{\tan\dfrac{x}{2}}{\tan\dfrac{x}{2}+2}\right\vert + C \eos
+            \end{flalign*}
+      \item Let $\tan\theta = t$, find $\displaystyle\int\dfrac{1}{2\cos^2\theta - 1}\,dx$
+            \sol{}
+
+            Let $t = \tan\theta$, $dx = \dfrac{1}{1+t^2}\,dt$.
+            \begin{flalign*}
+                  \int\dfrac{1}{2\cos^2\theta - 1}\,dx & = \int\dfrac{1}{2\left(\dfrac{1}{\sec^2\theta}\right) - 1}\,dx               & \\
+                                                       & = \int\dfrac{1}{2\left(\dfrac{1}{1+t^2}\right) - 1}\cdot\dfrac{1}{1+t^2}\,dt & \\
+                                                       & = \int\dfrac{1}{2 - 1 - t^2}\,dt                                             & \\
+                                                       & = \int\dfrac{1}{1-t^2}\,dt                                                   & \\
+                                                       & = \int\dfrac{1}{(1+t)(1-t)}\,dt
+            \end{flalign*}
+            Let $\dfrac{1}{(1+t)(1-t)} = \dfrac{A}{1+t} + \dfrac{B}{1-t}$.
+            \begin{flalign*}
+                  1 & = A(1-t) + B(1+t) & \\
+                  1 & = A + At - B + Bt & \\
+                  1 & = A - B + t(A+B)
+            \end{flalign*}
+            Comparing coefficients,
+            \begin{flalign*}
+                  A+B & = 0             & \\
+                  A-B & = 1               \\
+                  A   & = \dfrac{1}{2}  & \\
+                  B   & = -\dfrac{1}{2}
+            \end{flalign*}
+            \begin{flalign*}
+                  \int\dfrac{1}{(1+t)(1-t)}\,dt & = \dfrac{1}{2}\int\dfrac{1}{1+t}\,dt + \dfrac{1}{2}\int\dfrac{1}{1-t}\,dt      & \\
+                                                & = \dfrac{1}{2}\ln\vert 1+t\vert + \dfrac{1}{2}\ln\left\vert 1-t\right\vert + C & \\
+                                                & = \dfrac{1}{2}\ln\left\vert(1+t)(1-t)\right\vert + C                           & \\
+                                                & = \ln\sqrt{1-t^2} + C                                                            \\
+                                                & = \ln\sqrt{1-\tan^2\theta} + C \eos
+            \end{flalign*}
+      \item Let $\tan x = t$, find $\displaystyle\int\dfrac{\tan x}{3 - 4\sin^2 x}\,dx$
+            \sol{}
+
+            Let $t = \tan x$, $x = \tan^{-1}t$, $dx = \dfrac{1}{1+t^2}\,dt$. \sol{}
+            \begin{flalign*}
+                  \int\dfrac{\tan x}{3 - 4\sin^2 x}\,dx & = \int\dfrac{\tan x}{3 - 4\cdot\dfrac{1}{\cosec^2 x}}\,dx                      & \\
+                                                        & = \int\dfrac{\tan x}{3 - \dfrac{4}{\cot^2 x + 1}}\,dx                          & \\
+                                                        & = \int\dfrac{t}{3 - \dfrac{4}{\dfrac{1}{t^2} + 1}}\cdot\dfrac{1}{1+t^2}\,dt    & \\
+                                                        & = \int\dfrac{t}{3 - \dfrac{4t^2}{1 + t^2}}\cdot\dfrac{1}{1+t^2}\,dt            & \\
+                                                        & = \int\dfrac{t}{3 + 3t^2 - 4t^2}\,dt                                           & \\
+                                                        & = \int\dfrac{t}{3 - t^2}\,dt \qquad \text{(Let $u = 3 - t^2$, $du = -2t\,dt$)} & \\
+                                                        & = -\dfrac{1}{2}\int\dfrac{1}{u}\,du                                            & \\
+                                                        & = -\dfrac{1}{2}\ln\vert u\vert + C                                             & \\
+                                                        & = -\dfrac{1}{2}\ln\vert 3 - t^2\vert + C                                       & \\
+                                                        & = -\dfrac{1}{2}\ln\vert 3 - \tan^2 x\vert + C \eos
+            \end{flalign*}
+\end{enumerate}
+\end{document}

@@ -1,0 +1,207 @@
+\documentclass{report}
+\usepackage[a4paper,total={7in,10in}]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\allowdisplaybreaks
+
+\setcounter{chapter}{10}
+\setcounter{section}{2}
+
+\newcommand{\sol}{\vspace{1em}\\\textbf{Sol.}}
+\newcommand{\eos}{ \qquad \square}
+\DeclareMathOperator{\cosec}{cosec}
+
+\begin{document}
+\section*{Exercise 11h}
+
+Find the following indefinite integrals:
+\begin{enumerate}
+      \item $\displaystyle\int\sqrt{1-4x^{2}}\,dx$
+            \sol{}
+
+            Let $x = \dfrac{1}{2}\sin\theta$, then $\theta = \sin^{-1}2x$ and $dx =
+                  \dfrac{1}{2}\cos\theta\,d\theta$.
+            \begin{flalign*}
+                  \int\sqrt{1-4x^{2}}\,dx & = \int\sqrt{1-\sin^{2}\theta}\cdot\dfrac{1}{2}\cos\theta\,d\theta            & \\
+                                          & = \dfrac{1}{2}\int\cos^{2}\theta\,d\theta                                    & \\
+                                          & = \dfrac{1}{2}\int\dfrac{1+\cos2\theta}{2}\,d\theta                          & \\
+                                          & = \dfrac{1}{4}\int(1+\cos2\theta)\,d\theta                                   & \\
+                                          & = \dfrac{1}{4}\theta + \dfrac{1}{8}\sin2\theta + C                           & \\
+                                          & = \dfrac{1}{4}\sin^{-1}2x + \dfrac{1}{8}(2\sin\theta\cos\theta) + C          & \\
+                                          & = \dfrac{1}{4}\sin^{-1}2x + \dfrac{1}{2}\sin\theta\dfrac{1}{2}\cos\theta + C & \\
+                                          & = \dfrac{1}{4}\sin^{-1}2x + \dfrac{1}{2}x\sqrt{1-4x^{2}} + C \eos
+            \end{flalign*}
+      \item $\displaystyle\int\dfrac{1}{\sqrt{x^{2}+a^{2}}}\,dx$
+            \sol{}
+
+            Let $x = a\tan\theta$, then $dx = a\sec^{2}\theta\,d\theta$.
+            \begin{flalign*}
+                  \int\dfrac{1}{\sqrt{x^{2}+a^{2}}}\,dx & = \int\dfrac{1}{\sqrt{a^{2}\tan^{2}\theta+a^{2}}}\cdot a\sec^{2}\theta\,d\theta        & \\
+                                                        & = \int\dfrac{1}{\sqrt{a^{2}\sec^{2}\theta}}\cdot a\sec^{2}\theta\,d\theta              & \\
+                                                        & = \int\sec\theta\,d\theta                                                              & \\
+                                                        & = \ln\left|\sec\theta + \tan\theta\right| + C'                                         & \\
+                                                        & = \ln\left|\sqrt{1 + \dfrac{x^{2}}{a^{2}}} + \dfrac{x}{a}\right| + C'                  & \\
+                                                        & = \ln\left|\dfrac{\sqrt{x^{2}+a^{2}}+x}{a}\right| + C'                                 & \\
+                                                        & = \ln\left|\sqrt{x^{2}+a^{2}}+x\right| - \ln|a| + C'                                   & \\
+                                                        & = \ln\left|\sqrt{x^{2}+a^{2}}+x\right| + C \qquad \text{(where $C = -\ln|a|+C'$)} \eos
+            \end{flalign*}
+
+      \item $\displaystyle\int\dfrac{1}{\sqrt{49-5x^{2}}}\,dx$
+            \sol{}
+
+            Let $x = \dfrac{7}{\sqrt{5}}\sin\theta$, then $\theta =
+                  \sin^{-1}\dfrac{\sqrt{5}}{7}x$ and $dx =
+                  \dfrac{7}{\sqrt{5}}\cos\theta\,d\theta$.
+            \begin{flalign*}
+                  \int\dfrac{1}{\sqrt{49-5x^{2}}}\,dx & = \int\dfrac{1}{\sqrt{49-49\sin^{2}\theta}}\cdot\dfrac{7}{\sqrt{5}}\cos\theta\,d\theta & \\
+                                                      & = \int\dfrac{1}{\sqrt{49\cos^{2}\theta}}\cdot\dfrac{7}{\sqrt{5}}\cos\theta\,d\theta    & \\
+                                                      & = \int\dfrac{1}{7\cos\theta}\cdot\dfrac{7}{\sqrt{5}}\cos\theta\,d\theta                & \\
+                                                      & = \int\dfrac{1}{\sqrt{5}}\,d\theta                                                     & \\
+                                                      & = \dfrac{1}{\sqrt{5}}\theta + C'                                                       & \\
+                                                      & = \dfrac{1}{\sqrt{5}}\sin^{-1}\dfrac{\sqrt{5}}{7}x + C \eos
+            \end{flalign*}
+
+      \item $\displaystyle\int\dfrac{x^{2}}{\sqrt{9-x^{2}}}\,dx$
+            \sol{}
+
+            Let $x = 3\sin\theta$, then $dx = 3\cos\theta\,d\theta$.
+            \begin{flalign*}
+                  \int\dfrac{x^{2}}{\sqrt{9-x^{2}}}\,dx & = \int\dfrac{9\sin^{2}\theta}{\sqrt{9-9\sin^{2}\theta}}\cdot 3\cos\theta\,d\theta                         & \\
+                                                        & = \int\dfrac{9\sin^{2}\theta}{\sqrt{9\cos^{2}\theta}}\cdot 3\cos\theta\,d\theta                           & \\
+                                                        & = \int\dfrac{9\sin^{2}\theta}{3\cos\theta}\cdot 3\cos\theta\,d\theta                                      & \\
+                                                        & = \int 9\sin^{2}\theta\,d\theta                                                                           & \\
+                                                        & = \int\dfrac{9}{2}(1-\cos2\theta)\,d\theta                                                                & \\
+                                                        & = \dfrac{9}{2}\theta - \dfrac{9}{4}\sin2\theta + C                                                        & \\
+                                                        & = \dfrac{9}{2}\sin^{-1}\dfrac{x}{3} - \dfrac{9}{2}\sin\theta\cos\theta + C                                & \\
+                                                        & = \dfrac{9}{2}\sin^{-1}\dfrac{x}{3} - \dfrac{9}{2} \cdot \dfrac{x}{3} \cdot \sqrt{1 - \dfrac{x^2}{9}} + C & \\
+                                                        & = \dfrac{9}{2}\sin^{-1}\dfrac{x}{3} - \dfrac{3}{2}x \cdot \dfrac{1}{3}{\sqrt{9-x^2}} + C                  & \\
+                                                        & = \dfrac{9}{2}\sin^{-1}\dfrac{x}{3} - \dfrac{1}{2}x{\sqrt{9-x^2}} + C \eos
+            \end{flalign*}
+
+      \item $\displaystyle\int\dfrac{1}{\sqrt{(x^{2}+1)^{3}}}\,dx$
+            \sol{}
+
+            Let $x = \tan\theta$, then $dx = \sec^{2}\theta\,d\theta$.
+            \begin{flalign*}
+                  \int\dfrac{1}{\sqrt{(x^{2}+1)^{3}}}\,dx & = \int\dfrac{1}{(x^{2}+1)\sqrt{x^{2}+1}}\,dx                                      & \\
+                                                          & = \int\dfrac{1}{(\tan^2\theta+1)\sqrt{\tan^2\theta+1}}\cdot \sec^2\theta\,d\theta & \\
+                                                          & = \int\dfrac{1}{\sec^2\theta\sqrt{\sec^2\theta}}\cdot \sec^2\theta\,d\theta       & \\
+                                                          & = \int\dfrac{1}{\sec\theta}\,d\theta                                              & \\
+                                                          & = \int\cos\theta\,d\theta                                                         & \\
+                                                          & = \sin\theta +C                                                                   & \\
+                                                          & = \dfrac{x}{\sqrt{x^2+1}} + C \eos
+            \end{flalign*}
+
+      \item $\displaystyle\int\dfrac{1}{\sqrt{9+4x^2}}\,dx$
+            \sol{}
+
+            Let $x = \dfrac{3}{2}\tan\theta$, then $dx =
+                  \dfrac{3}{2}\sec^2\theta\,d\theta$.
+            \begin{flalign*}
+                  \int\dfrac{1}{\sqrt{9+4x^2}}\,dx & = \int\dfrac{1}{\sqrt{9+9\tan^2\theta}}\cdot\dfrac{3}{2}\sec^2\theta\,d\theta                                          & \\
+                                                   & = \int\dfrac{1}{\sqrt{9\sec^2\theta}}\cdot\dfrac{3}{2}\sec^2\theta\,d\theta                                            & \\
+                                                   & = \int\dfrac{1}{3\sec\theta}\cdot\dfrac{3}{2}\sec^2\theta\,d\theta                                                     & \\
+                                                   & = \int\dfrac{1}{2}\sec\theta\,d\theta                                                                                  & \\
+                                                   & = \dfrac{1}{2}\ln\vert{\sec\theta+\tan\theta}\vert+C'                                                                  & \\
+                                                   & = \dfrac{1}{2}\ln\left\vert{\sqrt{\dfrac{4x^2}{9} + 1}+\dfrac{2}{3}x}\right\vert+C'                                    & \\
+                                                   & = \dfrac{1}{2}\ln\left\vert{\dfrac{\sqrt{4x^2 + 9} + 2x}{3}}\right\vert+C'                                             & \\
+                                                   & = \dfrac{1}{2}\ln\left\vert\sqrt{4x^2 + 9} + 2x\right\vert - \dfrac{1}{2}\ln 3 + C'                                    & \\
+                                                   & = \dfrac{1}{2}\ln\left\vert\sqrt{4x^2 + 9} + 2x\right\vert + C \qquad \text{(where $C = C' - \dfrac{1}{2}\ln 3$)} \eos
+            \end{flalign*}
+
+      \item $\displaystyle\int\dfrac{x}{a^{2}+x^{2}}\,dx$
+            \sol{}
+
+            Let $x = a\tan\theta$, then $dx = a\sec^{2}\theta\,d\theta$.
+            \begin{flalign*}
+                  \int\dfrac{x}{a^{2}+x^{2}}\,dx & = \int\dfrac{a\tan\theta}{a^{2}+a^{2}\tan^{2}\theta}\cdot a\sec^{2}\theta\,d\theta                           & \\
+                                                 & = \int\dfrac{a\tan\theta}{a^{2}\sec^{2}\theta}\cdot a\sec^{2}\theta\,d\theta                                 & \\
+                                                 & = \int\tan\theta\,d\theta                                                                                    & \\
+                                                 & = \ln\vert\sec\theta\vert + C'                                                                               & \\
+                                                 & = \ln\left\vert\dfrac{\sqrt{a^{2}+x^{2}}}{a}\right\vert + C'                                                 & \\
+                                                 & = \ln\left\vert\sqrt{a^{2}+x^{2}}\right\vert - \ln\vert a\vert + C'                                          & \\
+                                                 & = \dfrac{1}{2}\ln\left\vert a^{2}+x^{2}\right\vert + C \qquad \text{(where $C = C' - \ln\vert a\vert$)} \eos
+            \end{flalign*}
+
+      \item $\displaystyle\int\dfrac{1}{(1-x^{2})^{\frac{3}{2}}}\,dx$
+            \sol{}
+
+            Let $x = \sin\theta$, then $dx = \cos\theta\,d\theta$.
+            \begin{flalign*}
+                  \int\dfrac{1}{(1-x^{2})^{\frac{3}{2}}}\,dx & = \int\dfrac{1}{(1-\sin^{2}\theta)^{\frac{3}{2}}}\cdot\cos\theta\,d\theta & \\
+                                                             & = \int\dfrac{1}{\cos^{3}\theta}\cdot\cos\theta\,d\theta                   & \\
+                                                             & = \int\sec^{2}\theta\,d\theta                                             & \\
+                                                             & = \tan\theta + C                                                            \\
+                                                             & = \dfrac{x}{\sqrt{1-x^{2}}} + C \eos
+            \end{flalign*}
+
+      \item $\displaystyle\int\dfrac{x}{\sqrt{x^{2}-4}}\,dx$
+            \sol{}
+
+            Let $x = 2\sec\theta$, then $dx = 2\sec\theta\tan\theta\,d\theta$.
+            \begin{flalign*}
+                  \int\dfrac{x}{\sqrt{x^{2}-4}}\,dx & = \int\dfrac{2\sec\theta}{\sqrt{4\sec^{2}\theta-4}}\cdot 2\sec\theta\tan\theta\,d\theta & \\
+                                                    & = \int\dfrac{2\sec\theta}{\sqrt{4\tan^{2}\theta}}\cdot 2\sec\theta\tan\theta\,d\theta   & \\
+                                                    & = \int\dfrac{2\sec\theta}{2\tan\theta}\cdot 2\sec\theta\tan\theta\,d\theta              & \\
+                                                    & = \int 2\sec^{2}\theta\,d\theta                                                         & \\
+                                                    & = 2\tan\theta + C                                                                       & \\
+                                                    & = 2\cdot\dfrac{\sqrt{x^{2}-4}}{2} + C                                                   & \\
+                                                    & = \sqrt{x^{2}-4} + C \eos
+            \end{flalign*}
+
+      \item $\displaystyle\int x\sqrt{4-x^{2}}\,dx$
+            \sol{}
+
+            Let $x = 2\sin\theta$, then $dx = 2\cos\theta\,d\theta$.
+            \begin{flalign*}
+                  \int x\sqrt{4-x^{2}}\,dx & = \int 2\sin\theta\sqrt{4-4\sin^{2}\theta}\cdot 2\cos\theta\,d\theta                                        & \\
+                                           & = \int 2\sin\theta\sqrt{4\cos^{2}\theta}\cdot 2\cos\theta\,d\theta                                          & \\
+                                           & = \int 2\sin\theta\cdot 2\cos\theta\cdot 2\cos\theta\,d\theta                                               & \\
+                                           & = 8\int \sin\theta\cos^{2}\theta\,d\theta \qquad \text{(Let $u = \cos\theta$, $du = -\sin\theta\,d\theta$)} & \\
+                                           & = -8\int u^{2}\,du                                                                                          & \\
+                                           & = -\dfrac{8}{3}u^{3} + C                                                                                    & \\
+                                           & = -\dfrac{8}{3}\cos^{3}\theta + C                                                                           & \\
+                                           & = -\dfrac{8}{3}\left(\dfrac{\sqrt{4 - x^2}}{2}\right)^3 + C                                                 & \\
+                                           & = -\dfrac{1}{3}\left(4 - x^2\right)^{\frac{3}{2}} + C \eos
+            \end{flalign*}
+
+      \item $\displaystyle\int\dfrac{1}{x\sqrt{81 + x^2}}\,dx$
+            \sol{}
+
+            Let $x = 9\tan\theta$, then $dx = 9\sec^{2}\theta\,d\theta$.
+            \begin{flalign*}
+                  \int\dfrac{1}{x\sqrt{81 + x^2}}\,dx & = \int\dfrac{1}{9\tan\theta\sqrt{81 + 81\tan^{2}\theta}}\cdot 9\sec^{2}\theta\,d\theta                       & \\
+                                                      & = \int\dfrac{1}{9\tan\theta\sqrt{81\sec^{2}\theta}}\cdot 9\sec^{2}\theta\,d\theta                            & \\
+                                                      & = \dfrac{1}{9}\int\dfrac{\sec x}{\tan x}\,dx                                                                 & \\
+                                                      & = \dfrac{1}{9}\int\dfrac{\dfrac{1}{\cos x}}{\dfrac{\sin x}{\cos x}}\,dx                                      & \\
+                                                      & = \dfrac{1}{9}\int\dfrac{1}{\sin x}\,dx                                                                      & \\
+                                                      & = \dfrac{1}{9}\int\dfrac{\sin x}{\sin^{2}x}\,dx                                                              & \\
+                                                      & = \dfrac{1}{9}\int\dfrac{\sin x}{1 - \cos^{2}x}\,dx \qquad \text{(Let $u = \cos x$, $du = -\sin x\,dx$)}     & \\
+                                                      & = \dfrac{1}{9}\int\dfrac{1}{1 - u^{2}}\,du                                                                   & \\
+                                                      & = \dfrac{1}{18}\ln\left\vert\dfrac{u + 1}{u - 1}\right\vert + C                                              & \\
+                                                      & = \dfrac{1}{18}\ln\left\vert\dfrac{\cos x + 1}{\cos x - 1}\right\vert + C                                    & \\
+                                                      & = \dfrac{1}{9}\ln\left\vert\tan\dfrac{x}{2}\right\vert + C                                                   & \\
+                                                      & = \dfrac{1}{9}\ln\left\vert\dfrac{1 - \cos x}{\sin x}\right\vert + C                                         & \\
+                                                      & = \dfrac{1}{9}\ln\left\vert\dfrac{1 - \dfrac{9}{\sqrt{81 + x^2}}}{\dfrac{x}{\sqrt{81 + x^2}}}\right\vert + C & \\
+                                                      & = \dfrac{1}{9}\ln\left\vert\dfrac{\sqrt{81 + x^2} - 9}{x}\right\vert + C \eos
+            \end{flalign*}
+
+      \item $\displaystyle\int\frac{1}{x^3{\sqrt{x^{2}-1}}}\,dx$
+            \sol{}
+
+            Let $x = \sec\theta$, then $\theta = \cos^{-1}\dfrac{1}{x}$, $dx =
+                  \sec\theta\tan\theta\,d\theta$.
+            \begin{flalign*}
+                  \int\frac{1}{x^3{\sqrt{x^{2}-1}}}\,dx & = \int\frac{1}{\sec^{3}\theta{\sqrt{\sec^{2}\theta-1}}}\cdot\sec\theta\tan\theta\,d\theta              & \\
+                                                        & = \int\frac{1}{\sec^{3}\theta{\sqrt{\tan^{2}\theta}}}\cdot\sec\theta\tan\theta\,d\theta                & \\
+                                                        & = \int\frac{1}{\sec^{2}\theta}\,d\theta                                                                & \\
+                                                        & = \int\cos^{2}\theta\,d\theta                                                                          & \\
+                                                        & = \dfrac{1}{2}\int(1 + \cos 2\theta)\,d\theta                                                          & \\
+                                                        & = \dfrac{1}{2}\theta + \dfrac{1}{4}\sin 2\theta + C                                                    & \\
+                                                        & = \dfrac{1}{2}\cos^{-1}\dfrac{1}{x} + \dfrac{1}{2}\sin\theta\cos\theta + C                             & \\
+                                                        & = \dfrac{1}{2}\cos^{-1}\dfrac{1}{x} + \dfrac{1}{2}\cdot \dfrac{\sqrt{x^2 - 1}}{x}\cdot\dfrac{1}{x} + C & \\
+                                                        & = \dfrac{1}{2}\cos^{-1}\dfrac{1}{x} + \dfrac{\sqrt{x^2 - 1}}{2x^2} + C \eos
+            \end{flalign*}
+\end{enumerate}
+\end{document}
