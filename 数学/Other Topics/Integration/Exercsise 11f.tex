@@ -1,0 +1,84 @@
+\documentclass{report}
+\usepackage[a4paper,total={7in,10in}]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\setcounter{chapter}{10}
+\setcounter{section}{2}
+
+\newcommand{\sol}{\vspace{1em}\\\textbf{Sol.}}
+\DeclareMathOperator{\cosec}{cosec}
+
+\begin{document}
+\section*{Exercise 11f}
+
+Find the following indefinite integrals:
+\begin{enumerate}
+      \item $\displaystyle\int\sin2x\cos x\,dx$
+            \sol{}
+            \begin{flalign*}a
+                  \int\sin2x\cos x\,dx & = \dfrac{1}{2}\int(\sin3x+\sin x)\,dx      & \\
+                                       & = -\dfrac{1}{6}\cos3x-\dfrac{1}{2}\cos x+C &
+            \end{flalign*}
+      \item $\displaystyle\int2\sin3x\cos x\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int2\sin3x\cos x\,dx & = \int(\sin4x+\sin2x)\,dx                  & \\
+                                        & = -\dfrac{1}{4}\cos4x-\dfrac{1}{2}\cos2x+C &
+            \end{flalign*}
+      \item $\displaystyle\int2\cos3x\cos x\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int2\cos3x\cos x\,dx & = \int(\cos4x+\cos2x)\,dx                 & \\
+                                        & = \dfrac{1}{4}\sin4x+\dfrac{1}{2}\sin2x+C &
+            \end{flalign*}
+      \item $\displaystyle\int2\sin5x\sin3x\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int2\sin5x\sin3x\,dx & = \int(\cos2x-\cos8x)\,dx                 & \\
+                                        & = \dfrac{1}{2}\sin2x-\dfrac{1}{8}\sin8x+C &
+            \end{flalign*}
+      \item $\displaystyle\int\dfrac{\sin x}{\sec 3x}\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\dfrac{\sin x}{\sec 3x}\,dx & = \int\sin x\cos 3x\,dx                    & \\
+                                                  & = \dfrac{1}{2}\int(\sin4x-\sin2x)\,dx      & \\
+                                                  & = -\dfrac{1}{8}\cos4x+\dfrac{1}{4}\cos2x+C &
+            \end{flalign*}
+      \item $\displaystyle\int\dfrac{\cos 5x}{\cosec 2x}\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\dfrac{\cos 5x}{\cosec 2x}\,dx & = \int\sin2x\cos5x\,dx                      & \\
+                                                     & = \dfrac{1}{2}\int(\sin7x-\sin3x)\,dx       & \\
+                                                     & = -\dfrac{1}{14}\cos7x+\dfrac{1}{6}\cos3x+C &
+            \end{flalign*}
+            \newpage
+      \item $\displaystyle\int4\cos\dfrac{x}{2}\cos\dfrac{x}{3}\sin\dfrac{x}{2}\sin\dfrac{x}{3}\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int4\cos\dfrac{x}{2}\cos\dfrac{x}{3}\sin\dfrac{x}{2}\sin\dfrac{x}{3}\,dx & = \int(\sin x + \sin 0)(\sin\dfrac{2x}{3} + \sin 0)\,dx         & \\
+                                                                                            & = \int\sin x\sin\dfrac{2x}{3}\,dx                               & \\
+                                                                                            & = \dfrac{1}{2}\int(\cos\dfrac{x}{3}-\cos\dfrac{5x}{3})\,dx      & \\
+                                                                                            & = \dfrac{3}{2}\sin\dfrac{x}{3}-\dfrac{3}{10}\sin\dfrac{5x}{3}+C &
+            \end{flalign*}
+      \item $\displaystyle\int\sin(2x - 1)\cos x\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\sin(2x - 1)\cos x\,dx & = \dfrac{1}{2}\int\left[\sin(3x-1)-\sin(x - 1)\right]\,dx & \\
+                                             & = -\dfrac{1}{6}\cos(3x-1) - \dfrac{1}{2}\cos(x - 1)+C     &
+            \end{flalign*}
+      \item $\displaystyle\int\cos mx\cos nx\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\cos mx\cos nx\,dx & = \dfrac{1}{2}\int\left[\cos(m+n)x+\cos(m-n)x\right]\,dx    & \\
+                                         & = \dfrac{1}{2(m+n)}\sin(m+n)x+\dfrac{1}{2(m-n)}\sin(m-n)x+C &
+            \end{flalign*}
+      \item $\displaystyle\int\sin mx\cos nx\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\sin mx\cos nx\,dx & = \dfrac{1}{2}\int\left[\sin(m+n)x+\sin(m-n)x\right]\,dx     & \\
+                                         & = -\dfrac{1}{2(m+n)}\cos(m+n)x-\dfrac{1}{2(m-n)}\cos(m-n)x+C &
+            \end{flalign*}
+\end{enumerate}
+\end{document}

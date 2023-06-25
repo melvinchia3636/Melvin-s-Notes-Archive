@@ -1,0 +1,139 @@
+\documentclass{report}
+\usepackage[a4paper,total={7in,10in}]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\setcounter{chapter}{10}
+\setcounter{section}{2}
+
+\newcommand{\sol}{\vspace{1em}\\\textbf{Sol.}}
+
+\begin{document}
+\section*{Exercise 11d}
+
+Find the following indefinite integrals:
+\begin{enumerate}
+      \item $\displaystyle\int\sin^2x\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\sin^2x\,dx & = \int\frac{1-\cos2x}{2}\,dx                       & \\
+                                  & = \frac{1}{2}\int \,dx - \frac{1}{2}\int\cos2x\,dx & \\
+                                  & = \frac{1}{2}x - \frac{1}{4}\sin2x + C             &
+            \end{flalign*}
+      \item $\dfrac{1}{\sec^2 4x}\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\frac{1}{\sec^2 4x}\,dx & = \int\cos^2 4x\,dx                                & \\
+                                              & = \int\frac{1+\cos8x}{2}\,dx                       & \\
+                                              & = \frac{1}{2}\int \,dx + \frac{1}{2}\int\cos8x\,dx & \\
+                                              & = \frac{1}{2}x + \frac{1}{16}\sin8x + C            &
+            \end{flalign*}
+      \item $\displaystyle\int \cos^4x\sin^3x\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int \cos^4x\sin^3x\,dx & = \int \cos^4x\sin^2x\sin x\,dx                                                      & \\
+                                          & = \int \cos^4x(1-\cos^2x)\sin x\,dx \qquad \text{(Let $u=\cos x$, $du=-\sin x\,dx$)} & \\
+                                          & = -\int u^4(1-u^2)du                                                                 & \\
+                                          & = -\int (u^4-u^6)du                                                                  & \\
+                                          & = -\frac{1}{5}u^5 + \frac{1}{7}u^7 + C                                               & \\
+                                          & = -\frac{1}{5}\cos^5x + \frac{1}{7}\cos^7x + C                                       &
+            \end{flalign*}
+      \item $\displaystyle\int \cos^2(3x - 1)\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int \cos^2(3x - 1)\,dx & = \int \frac{1+\cos(6x-2)}{2}\,dx                      & \\
+                                          & = \frac{1}{2}\int \,dx + \frac{1}{2}\int\cos(6x-2)\,dx & \\
+                                          & = \frac{1}{2}x + \frac{1}{12}\sin(6x-2) + C            &
+            \end{flalign*}
+            \newpage
+      \item $\displaystyle\int\sin^3\cos^2x\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\sin^3\cos^2x\,dx & = \int\sin^2\cos^2x\sin x\,dx                                                       & \\
+                                        & = \int(1-\cos^2x)\cos^2x\sin x\,dx \qquad \text{(Let $u=\cos x$, $du=-\sin x\,dx$)} & \\
+                                        & = -\int(1-u^2)u^2du                                                                 & \\
+                                        & = -\int(u^2-u^4)du                                                                  & \\
+                                        & = -\frac{1}{3}u^3 + \frac{1}{5}u^5 + C                                              & \\
+                                        & = -\frac{1}{3}\cos^3x + \frac{1}{5}\cos^5x + C                                      &
+            \end{flalign*}
+      \item $\displaystyle\int\sin^{2}4x\cos4x\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\sin^{2}4x\cos4x\,dx & = \int(1-\cos^2 4x)\cos4x\,dx                                                                             & \\
+                                           & = \int(\cos4x-\cos^3 4x)\,dx                                                                              & \\
+                                           & = \int\cos4x\,dx - \int\cos^3 4x\,dx                                                                      & \\
+                                           & = \frac{1}{4}\sin4x - \int\cos^2 4x\cos4x\,dx + C'                                                        & \\
+                                           & = \frac{1}{4}\sin4x - \int(1-\sin^2 4x)\cos4x\,dx + C' \qquad \text{(Let $u=\sin 4x$, $du=4\cos 4x\,dx$)} & \\
+                                           & = \frac{1}{4}\sin4x - \dfrac{1}{4}\int(1-u^2)du + C'                                                      & \\
+                                           & = \frac{1}{4}\sin4x - \dfrac{1}{4}\left(u-\frac{1}{3}u^3\right) + C'                                      & \\
+                                           & = \frac{1}{4}\sin4x - \dfrac{1}{4}\sin4x + \frac{1}{12}\sin^{3}4x + C'                                    & \\
+                                           & = \frac{1}{12}\sin^{3}4x + C                                                                              &
+            \end{flalign*}
+      \item $\displaystyle\int\sin^3\dfrac{x}{2}\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\sin^3\dfrac{x}{2}\,dx & = \int\sin^2\dfrac{x}{2}\sin\dfrac{x}{2}\,dx                                                                                      & \\
+                                             & = \int(1-\cos^2\dfrac{x}{2})\sin\dfrac{x}{2}\,dx \qquad \text{(Let $u=\cos\dfrac{x}{2}$, $du=-\dfrac{1}{2}\sin\dfrac{x}{2}\,dx$)} & \\
+                                             & = -2\int(1-u^2)du                                                                                                                 & \\
+                                             & = 2\int(u^2-1)du                                                                                                                  & \\
+                                             & = 2\left(\frac{1}{3}u^3 - u\right) + C                                                                                            & \\
+                                             & = \frac{2}{3}\cos^3\dfrac{x}{2} - 2\cos\dfrac{x}{2} + C                                                                           &
+            \end{flalign*}
+            \newpage
+      \item $\displaystyle\int\cos^3x\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\cos^3x\,dx & = \int\cos^2x\cos x\,dx                                                     & \\
+                                  & = \int(1-\sin^2x)\cos x\,dx \qquad \text{(Let $u=\sin x$, $du=\cos x\,dx$)} & \\
+                                  & = \int(1-u^2)du                                                             & \\
+                                  & = u-\frac{1}{3}u^3 + C                                                      & \\
+                                  & = \sin x - \frac{1}{3}\sin^3x + C                                           &
+            \end{flalign*}
+      \item $\displaystyle\int2x\sin^3x^2\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int2x\sin^3x^2\,dx & = \int2x\sin^2x^2\sin x^2\,dx                                                            & \\
+                                      & = \int2x(1-\cos^2x^2)\sin x^2\,dx \qquad \text{(Let $u=\cos x^2$, $du=-2x\sin x^2\,dx$)} & \\
+                                      & = -\int(1-u^2)du                                                                         & \\
+                                      & = \int(u^2-1)du                                                                          & \\
+                                      & = \frac{1}{3}u^3 - u + C                                                                 & \\
+                                      & = \frac{1}{3}\cos^3x^2 - \cos x^2 + C                                                    &
+            \end{flalign*}
+      \item $\displaystyle\int\cos^4x\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\cos^4x\,dx & = \int\left(\dfrac{1+\cos2x}{2}\right)^2\,dx                                          & \\
+                                  & = \frac{1}{4}\int(1+2\cos2x+\cos^{2}2x)\,dx                                             \\
+                                  & = \dfrac{1}{4}\int \,dx + \dfrac{1}{2}\int\cos2x\,dx + \dfrac{1}{4}\int\cos^{2}2x\,dx & \\
+                                  & = \dfrac{1}{4}x + \dfrac{1}{4}\sin2x + \dfrac{1}{8}\int(1+\cos4x)\,dx                 & \\
+                                  & = \dfrac{3}{8}x + \dfrac{1}{4}\sin2x + \dfrac{1}{32}\sin4x + C                        &
+            \end{flalign*}
+      \item $\displaystyle\int(2-\sin x)^2\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int(2-\sin x)^2\,dx & = \int(4-4\sin x+\sin^2x)\,dx                      & \\
+                                       & = \int4\,dx - \int4\sin x\,dx + \int\sin^2x\,dx    & \\
+                                       & = 4x + 4\cos x + \dfrac{1}{2}\int(1-\cos2x)\,dx    & \\
+                                       & = \dfrac{9}{2}x + 4\cos x - \dfrac{1}{4}\sin2x + C &
+            \end{flalign*}
+            \newpage
+      \item $\displaystyle\int\sin^2\dfrac{x}{2}\cos^2\dfrac{x}{2}\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\sin^2\dfrac{x}{2}\cos^2\dfrac{x}{2}\,dx & = \int\left(\sin\dfrac{x}{2}\cos\dfrac{x}{2}\right)^2\,dx & \\
+                                                               & = \dfrac{1}{4}\int\sin^2x\,dx                             & \\
+                                                               & = \dfrac{1}{8}\int(1-\cos2x)\,dx                          & \\
+                                                               & = \dfrac{1}{8}x - \dfrac{1}{16}\sin2x + C                 &
+            \end{flalign*}
+      \item $\displaystyle\int\sin^4 ax\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\sin^4 ax \,dx & = \int\left(\dfrac{1-\cos2ax}{2}\right)^2\,dx                                           & \\
+                                     & = \dfrac{1}{4}\int(1-2\cos2ax+\cos^{2}2ax)\,dx                                          & \\
+                                     & = \dfrac{1}{4}\int \,dx - \dfrac{1}{2}\int\cos2ax\,dx + \dfrac{1}{4}\int\cos^{2}2ax\,dx & \\
+                                     & = \dfrac{1}{4}x - \dfrac{1}{4a}\sin2ax + \dfrac{1}{8}\int(1+\cos4ax)\,dx                & \\
+                                     & = \dfrac{3}{8}x - \dfrac{1}{4a}\sin2ax + \dfrac{1}{32a}\sin4ax + C                      &
+            \end{flalign*}
+\end{enumerate}
+\end{document}

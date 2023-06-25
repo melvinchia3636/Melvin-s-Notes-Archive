@@ -1,0 +1,116 @@
+\documentclass{report}
+\usepackage[a4paper,total={7in,10in}]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\setcounter{chapter}{10}
+\setcounter{section}{2}
+
+\newcommand{\sol}{\vspace{1em}\\\textbf{Sol.}}
+\DeclareMathOperator{\cosec}{cosec}
+
+\begin{document}
+\section*{Exercise 11e}
+
+Find the following indefinite integrals:
+\begin{enumerate}
+      \item $\displaystyle\int\tan^4x\sec^2x\,dx$
+            \sol{}
+
+            Let $u = \tan x$, $du = \sec^2x\,dx$.
+            \begin{flalign*}
+                  \int\tan^4x\sec^2x\,dx & =\int u^4du           & \\
+                                         & =\frac{1}{5}u^5+C     & \\
+                                         & =\frac{1}{5}\tan^5x+C &
+            \end{flalign*}
+      \item $\displaystyle\int3\cot^3 3x\cosec^2 3x\,dx$
+            \sol{}
+
+            Let $u = \cot 3x$, $du = -3\cosec^2 3x\,dx$.
+            \begin{flalign*}
+                  \int3\cot^3 3x\cosec^2 3x\,dx & =-\int u^3du             & \\
+                                                & =-\frac{u^4}{4}+C        & \\
+                                                & =-\frac{1}{4}\cot^4 3x+C &
+            \end{flalign*}
+      \item $\displaystyle\int(\sec x + \tan x)^2\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int(\sec x + \tan x)^2\,dx & =\int(\sec^2x+2\sec x\tan x+\tan^2x)\,dx                & \\
+                                              & = \int\sec^2x\,dx+2\int\sec x\tan x\,dx+\int\tan^2x\,dx & \\
+                                              & = \tan x+2\sec x+\int(\sec^2x-1)\,dx + C'               & \\
+                                              & = \tan x+2\sec x+\tan x - x + C'                        & \\
+                                              & = 2\tan x+2\sec x-x+C                                   &
+            \end{flalign*}
+      \item $\displaystyle\int\tan^3 3x\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\tan^3 3x\,dx & = \int\tan^2 3x\tan 3x\,dx                                                                                                  & \\
+                                    & = \int(\sec^2 3x-1)\tan 3x\,dx                                                                                              & \\
+                                    & = \int\sec^2 3x\tan 3x\,dx-\int\tan 3x\,dx                                                                                  & \\
+                                    & = \dfrac{1}{3}\int udu-\dfrac{1}{3}\vert\sec 3x\vert+C' \qquad \text{(Let $u = \sec 3x$, $du = 3\sec 3x\tan 3x\,dx$)}       & \\
+                                    & = \dfrac{1}{6}\sec^2 3x-\dfrac{1}{3}\vert\sec 3x\vert+C \text{ or } \dfrac{1}{6}\sec^2 3x + \dfrac{1}{3}\vert\cos 3x\vert+C &
+            \end{flalign*}
+            \newpage
+      \item $\displaystyle\int\tan^4x\sec^6x\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\tan^4x\sec^6x\,dx & = \int\tan^4x\sec^4x\sec^2x\,dx                                                            & \\
+                                         & = \int\tan^4x(\tan^2x+1)^2\sec^2x\,dx \qquad \text{(Let $u = \tan x$, $du = \sec^2x\,dx$)} & \\
+                                         & = \int u^4(u^2+1)^2du                                                                      & \\
+                                         & = \int u^4(u^4+2u^2+1)du                                                                   & \\
+                                         & = \int(u^8+2u^6+u^4)du                                                                     & \\
+                                         & = \frac{1}{9}u^9+\frac{2}{7}u^7+\frac{1}{5}u^5+C                                           & \\
+                                         & = \frac{1}{9}\tan^9x+\frac{2}{7}\tan^7x+\frac{1}{5}\tan^5x+C                               &
+            \end{flalign*}
+      \item $\displaystyle\int\tan^4\dfrac{x}{2}\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\tan^4\dfrac{x}{2}\,dx & = \int\tan^2\dfrac{x}{2}\tan^2\dfrac{x}{2}\,dx                                                                                                                  & \\
+                                             & = \int(\sec^2\dfrac{x}{2}-1)\tan^2\dfrac{x}{2}\,dx                                                                                                              & \\
+                                             & = \int\sec^2\dfrac{x}{2}\tan^2\dfrac{x}{2}\,dx-\int\tan^2\dfrac{x}{2}\,dx \qquad \text{(Let $u = \tan\dfrac{x}{2}$, $du = \dfrac{1}{2}\sec^2\dfrac{x}{2}\,dx$)} & \\
+                                             & = 2\int u^2du - \int\left(\sec^2\dfrac{x}{2}-1\right)\,dx                                                                                                       & \\
+                                             & = \frac{2}{3}u^3-\int\sec^2\dfrac{x}{2}\,dx+\int \,dx + C'                                                                                                      & \\
+                                             & = \frac{2}{3}\tan^3\dfrac{x}{2}-2\tan\dfrac{x}{2}+x+C                                                                                                           &
+            \end{flalign*}
+      \item $\displaystyle\int\cosec^4x\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\cosec^4x\,dx & = \int\cosec^2x\cosec^2x\,dx                                                           & \\
+                                    & = \int\cosec^2x(1+\cot^2x)\,dx \qquad \text{(Let $u = \cot x$, $du = -\cosec^2x\,dx$)} & \\
+                                    & = -\int(1+u^2)du                                                                       & \\
+                                    & = -u-\frac{1}{3}u^3+C                                                                  & \\
+                                    & = -\cot x-\frac{1}{3}\cot^3x+C                                                         &
+            \end{flalign*}
+            \newpage
+      \item $\displaystyle\int(1 + \tan^2x)(1 - \tan^2x)\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int(1 + \tan^2x)(1 - \tan^2x)\,dx & = \int(1 - \tan^4x)\,dx                                                                                  & \\
+                                                     & = \int \,dx - \int\tan^2x\tan^2x\,dx                                                                     & \\
+                                                     & = x - \int(\sec^2x-1)\tan^2x\,dx + C'                                                                    & \\
+                                                     & = x - \int\sec^2x\tan^2x\,dx + \int\tan^2x\,dx + C' \qquad \text{(Let $u = \tan x$, $du = \sec^2x\,dx$)} & \\
+                                                     & = x - \int u^2du + \int(\sec^2x-1)\,dx + C'                                                              & \\
+                                                     & = x - \frac{1}{3}u^3 + \tan x - x + C                                                                    & \\
+                                                     & = \tan x - \frac{1}{3}\tan^3x + C                                                                        &
+            \end{flalign*}
+      \item $\displaystyle\int\tan x\sec^5x\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\tan x\sec^5x\,dx & = \int\tan x\sec^4x\sec x\,dx \qquad \text{(Let $u = \sec x$, $du = \sec x\tan x\,dx$)} & \\
+                                        & = \int u^4du                                                                            & \\
+                                        & = \frac{1}{5}u^5+C                                                                      & \\
+                                        & = \frac{1}{5}\sec^5x+C                                                                  &
+            \end{flalign*}
+      \item $\displaystyle\int\sec^4\dfrac{x}{3}\,dx$
+            \sol{}
+            \begin{flalign*}
+                  \int\sec^4\dfrac{x}{3}\,dx & = \int\sec^2\dfrac{x}{3}\sec^2\dfrac{x}{3}\,dx                                                                                                                  & \\
+                                             & = \int(1+\tan^2\dfrac{x}{3})\sec^2\dfrac{x}{3}\,dx                                                                                                              & \\
+                                             & = \int\sec^2\dfrac{x}{3}\,dx+\int\tan^2\dfrac{x}{3}\sec^2\dfrac{x}{3}\,dx \qquad \text{(Let $u = \tan\dfrac{x}{3}$, $du = \dfrac{1}{3}\sec^2\dfrac{x}{3}\,dx$)} & \\
+                                             & = 3\tan\dfrac{x}{3}+3\int u^2du                                                                                                                                 & \\
+                                             & = 3\tan\dfrac{x}{3}+u^3+C                                                                                                                                       & \\
+                                             & = \tan^3\dfrac{x}{3}+3\tan\dfrac{x}{3}+C                                                                                                                        &
+            \end{flalign*}
+\end{enumerate}
+\end{document}
