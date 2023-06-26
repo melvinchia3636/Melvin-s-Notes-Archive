@@ -1,0 +1,240 @@
+\documentclass{report}
+\usepackage[a4paper,total={7in,10in}]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\allowdisplaybreaks
+
+\setcounter{chapter}{10}
+\setcounter{section}{2}
+
+\newcommand{\sol}{\vspace{1em}\\\textbf{Sol.}}
+\newcommand{\eos}{ \qquad \square}
+\DeclareMathOperator{\cosec}{cosec}
+
+\begin{document}
+\section*{Exercise 11i}
+
+Find the following indefinite integrals:
+\begin{enumerate}
+    \item $\displaystyle\int x\cos x\,dx$
+          \sol{}
+
+          Let $u = x$, $du = dx$
+
+          Let $dv = \cos x\,dx$, $v = \sin x$.
+          \begin{flalign*}
+              \int x\cos x\,dx & = x\sin x - \int\sin x\,dx      & \\
+                               & = x\sin x + \cos x + C     \eos
+          \end{flalign*}
+
+    \item $\displaystyle\int (x + 1)\sin x\,dx$
+          \sol{}
+
+          Let $u = x + 1$, $du = dx$
+
+          Let $dv = \sin x\,dx$, $v = -\cos x$.
+          \begin{flalign*}
+              \int (x + 1)\sin x\,dx & = -(x + 1)\cos x - \int -\cos x\,dx      & \\
+                                     & = -(x + 1)\cos x + \sin x + C       \eos
+          \end{flalign*}
+
+    \item $\displaystyle\int x\sin(x+1)\,dx$
+          \sol{}
+
+          Let $u = x$, $du = dx$
+
+          Let $dv = \sin(x+1)\,dx$, $v = -\cos(x+1)$.
+          \begin{flalign*}
+              \int x\sin(x+1)\,dx & = -x\cos(x+1) - \int -\cos(x+1)\,dx      & \\
+                                  & = -x\cos(x+1) + \sin(x+1) + C       \eos
+          \end{flalign*}
+
+    \item $\displaystyle\int x\cos3x\,dx$
+          \sol{}
+
+          Let $u = x$, $du = dx$
+
+          Let $dv = \cos3x\,dx$, $v = \dfrac{1}{3}\sin3x$.
+          \begin{flalign*}
+              \int x\cos3x\,dx & = \dfrac{1}{3}x\sin3x - \int \dfrac{1}{3}\sin3x\,dx      & \\
+                               & = \dfrac{1}{3}x\sin3x - \dfrac{1}{9}\cos3x + C      \eos
+          \end{flalign*}
+
+    \item $\displaystyle\int x\ln x\,dx$
+          \sol{}
+
+          Let $u = \ln x$, $du = \dfrac{1}{x}\,dx$
+
+          Let $dv = x\,dx$, $v = \dfrac{1}{2}x^2$.
+          \begin{flalign*}
+              \int x\ln x\,dx & = \dfrac{1}{2}x^2\ln x - \int \dfrac{1}{2}x^2\cdot\dfrac{1}{x}\,dx      & \\
+                              & = \dfrac{1}{2}x^2\ln x - \dfrac{1}{4}x^2 + C                       \eos
+          \end{flalign*}
+
+    \item $\displaystyle\int xe^{-x}\,dx$
+          \sol{}
+
+          Let $u = x$, $du = dx$
+
+          Let $dv = e^{-x}\,dx$, $v = -e^{-x}$.
+          \begin{flalign*}
+              \int xe^{-x}\,dx & = -xe^{-x} - \int -e^{-x}\,dx      & \\
+                               & = -xe^{-x} + e^{-x} + C       \eos
+          \end{flalign*}
+
+    \item $\displaystyle\int x\sin x\cos x\,dx$
+          \sol{}
+
+          Let $u = x$, $du = dx$ \vspace{-1em}
+          \begin{flalign*}
+              \text{Let }dv = \sin x\cos x\,dx,\ v & = \int\sin x\cos x\,dx       & \\
+                                                   & = \dfrac{1}{2}\int\sin2x\,dx & \\
+                                                   & = -\dfrac{1}{4}\cos2x        &
+          \end{flalign*}
+          \begin{flalign*}
+              \int x\sin x\cos x\,dx & = -\dfrac{1}{4}x\cos2x + \dfrac{1}{4}\int\cos2x\,dx        & \\
+                                     & = -\dfrac{1}{4}x\cos2x + \dfrac{1}{8}\sin2x + C       \eos
+          \end{flalign*}
+
+    \item $\displaystyle\int\dfrac{\ln x}{\sqrt{x}}\,dx$
+          \sol{}
+
+          Let $u = \ln x$, $du = \dfrac{1}{x}\,dx$
+
+          Let $dv = \dfrac{1}{\sqrt{x}}\,dx$, $v = 2\sqrt{x}$.
+          \begin{flalign*}
+              \int\dfrac{\ln x}{\sqrt{x}}\,dx & = 2\sqrt{x}\ln x - \int 2\sqrt{x}\cdot\dfrac{1}{x}\,dx      & \\
+                                              & = 2\sqrt{x}\ln x - 2\int \dfrac{1}{\sqrt{x}}\,dx            & \\
+                                              & = 2\sqrt{x}\ln x - 4\sqrt{x} + C                       \eos
+          \end{flalign*}
+
+    \item $\displaystyle\int\ln(1 + x^2)\,dx$
+          \sol{}
+
+          Let $u = \ln(1 + x^2)$, $du = \dfrac{2x}{1 + x^2}\,dx$
+
+          Let $dv = dx$, $v = x$.
+          \begin{flalign*}
+              \int\ln(1 + x^2)\,dx & = x\ln(1 + x^2) - \int\dfrac{2x^2}{1 + x^2}\,dx &
+          \end{flalign*}
+          Let $x = \tan\theta$, $dx = \sec^2\theta\,d\theta$
+          \begin{flalign*}
+              \int\dfrac{2x^2}{1 + x^2}\,dx & = \int\dfrac{2\tan^2\theta}{1 + \tan^2\theta}\cdot\sec^2\theta\,d\theta & \\
+                                            & = \int \dfrac{2\tan^2\theta}{\sec^2\theta}\cdot\sec^2\theta\,d\theta    & \\
+                                            & = 2\int \tan^2\theta\,d\theta                                           & \\
+                                            & = 2\int (\sec^2\theta - 1)\,d\theta                                     & \\
+                                            & = 2\tan\theta - 2\theta + C                                             & \\
+                                            & = 2x - 2\arctan x + C
+          \end{flalign*}
+          \begin{flalign*}
+              \therefore\ \int\ln(1 + x^2)\,dx & = x\ln(1 + x^2) - 2x + 2\arctan x + C \eos &
+          \end{flalign*}
+
+    \item $\displaystyle\int x^2\tan^{-1}x\,dx$
+          \sol{}
+
+          Let $u = \tan^{-1}x$, $du = \dfrac{1}{1 + x^2}\,dx$
+
+          Let $dv = x^2\,dx$, $v = \dfrac{1}{3}x^3$.
+          \begin{flalign*}
+              \int x^2\tan^{-1}x\,dx & = \dfrac{1}{3}x^3\tan^{-1}x - \int\dfrac{1}{3}x^3\cdot\dfrac{1}{1 + x^2}\,dx & \\
+                                     & = \dfrac{1}{3}x^3\tan^{-1}x - \dfrac{1}{3}\int\dfrac{x^3}{1 + x^2}\,dx       &
+          \end{flalign*}
+          Let $x = \tan\theta$, $dx = \sec^2\theta\,d\theta$
+          \begin{flalign*}
+              \int\dfrac{x^3}{1 + x^2}\,dx & = \int\dfrac{\tan^3\theta}{1 + \tan^2\theta}\cdot\sec^2\theta\,d\theta                                                             & \\
+                                           & = \int\dfrac{\tan^3\theta}{\sec^2\theta}\cdot\sec^2\theta\,d\theta                                                                 & \\
+                                           & = \int\tan^3\theta\,d\theta                                                                                                        & \\
+                                           & = \int(\sec^2\theta - 1)\tan\theta\,d\theta                                                                                        & \\
+                                           & = \int\sec^2\theta\tan\theta\,d\theta - \int\tan\theta\,d\theta \qquad \text{(Let $u = \tan\theta$, $du = \sec^2\theta\,d\theta$)} & \\
+                                           & = \dfrac{1}{2}\tan^2\theta - \ln|\sec\theta| + C                                                                                   & \\
+                                           & = \dfrac{1}{2}x^2 - \ln\left|\sqrt{1 + x^2}\right| + C                                                                             &
+          \end{flalign*}
+          \begin{flalign*}
+              \therefore\ \int x^2\tan^{-1}x\,dx & = \dfrac{1}{3}x^3\tan^{-1}x - \dfrac{1}{6}x^2 + \dfrac{1}{3}\ln\left|\sqrt{1 + x^2}\right| + C & \\
+                                                 & = \dfrac{1}{3}x^3\tan^{-1}x - \dfrac{1}{6}x^2 + \dfrac{1}{6}\ln\left|1 + x^2\right| + C \eos   &
+          \end{flalign*}
+
+    \item $\displaystyle\int\cos^{-1}x\,dx$
+          \sol{}
+
+          Let $u = \cos^{-1}x$, $du = -\dfrac{1}{\sqrt{1 - x^2}}\,dx$
+
+          Let $dv = dx$, $v = x$.
+          \begin{flalign*}
+              \int\cos^{-1}x\,dx & = x\cos^{-1}x - \int x\cdot\left(-\dfrac{1}{\sqrt{1 - x^2}}\right)\,dx & \\
+                                 & = x\cos^{-1}x + \int\dfrac{x}{\sqrt{1 - x^2}}\,dx                      &
+          \end{flalign*}
+          Let $x = \sin\theta$, $dx = \cos\theta\,d\theta$
+          \begin{flalign*}
+              \int\dfrac{x}{\sqrt{1 - x^2}}\,dx & = \int\dfrac{\sin\theta}{\sqrt{1 - \sin^2\theta}}\cdot\cos\theta\,d\theta & \\
+                                                & = \int\dfrac{\sin\theta}{\sqrt{\cos^2\theta}}\cdot\cos\theta\,d\theta     & \\
+                                                & = \int\sin\theta\,d\theta                                                 & \\
+                                                & = -\cos\theta + C                                                         & \\
+                                                & = -\sqrt{1 - x^2} + C
+          \end{flalign*}
+          \begin{flalign*}
+              \therefore\ \int\cos^{-1}x\,dx & = x\cos^{-1}x - \sqrt{1 - x^2} + C \eos &
+          \end{flalign*}
+
+    \item $\displaystyle\int\ln x^2\,dx$
+          \sol{}
+
+          Let $u = \ln x^2$, $du = \dfrac{2}{x}\,dx$
+
+          Let $dv = dx$, $v = x$.
+          \begin{flalign*}
+              \int\ln x^2\,dx & = x\ln x^2 - \int x\cdot\dfrac{2}{x}\,dx & \\
+                              & = x\ln x^2 - 2\int dx                    & \\
+                              & = x\ln x^2 - 2x + C                      &
+          \end{flalign*}
+
+    \item $\displaystyle\int xa^{2x}\,dx\quad(a > 0)$
+          \sol{}
+
+          Let $u = x$, $du = dx$
+
+          Let $dv = a^{2x}\,dx$, $v = \dfrac{a^{2x}}{2\ln a}$
+          \begin{flalign*}
+              \int xa^{2x}\,dx & = \dfrac{xa^{2x}}{2\ln a} - \int\dfrac{a^{2x}}{2\ln a}\,dx          & \\
+                               & = \dfrac{xa^{2x}}{2\ln a} - \dfrac{1}{2\ln a}\int a^{2x}\,dx        & \\
+                               & = \dfrac{xa^{2x}}{2\ln a} - \dfrac{a^{2x}}{4\ln^2a} + C             & \\
+                               & = \dfrac{a^{2x}}{2\ln a}\left(x - \dfrac{1}{2\ln a}\right) + C \eos &
+          \end{flalign*}
+
+    \item $\displaystyle\int x\tan^2x\,dx$
+          \sol{}
+
+          Let $u = x$, $du = dx$ \vspace{-1em}
+          \begin{flalign*}
+              \text{Let } dv = \tan^2 xdx,\ v & = \int\tan^2 x\,dx       & \\
+                                              & = \int(\sec^2 x - 1)\,dx & \\
+                                              & = \tan x - x
+          \end{flalign*}
+          \newpage
+          \begin{flalign*}
+              \int x\tan^2 x\,dx & = x(\tan x - x) - \int (\tan x - x)\,dx             & \\
+                                 & = x\tan x - x^2 + \ln|\cos x| + \dfrac{1}{2}x^2 + C & \\
+                                 & = x\tan x + \ln|\cos x| - \dfrac{1}{2}x^2 + C \eos  &
+          \end{flalign*}
+
+    \item $\displaystyle\int e^{\sqrt{x}}\,dx\quad$(Let $t = \sqrt{x}$)
+          \sol{}
+
+          Let $t = \sqrt{x}$, $dt = \dfrac{1}{2\sqrt{x}}\,dx$
+          \begin{flalign*}
+              \int e^{\sqrt{x}}\,dx & = \int e^t\cdot 2t\,dt & \\
+                                    & = 2\int te^t\,dt       &
+          \end{flalign*}
+          Let $u = t$, $du = dt$
+
+          Let $dv = e^t\,dt$, $v = e^t$
+          \begin{flalign*}
+              \int e^{\sqrt{x}}\,dx & = 2\left(te^t - \int e^t\,dt\right)    & \\
+                                    & = 2\left(te^t - e^t\right)             & \\
+                                    & = 2e^t(t - 1)                          & \\
+                                    & = 2e^{\sqrt{x}}(\sqrt{x} - 1) + C \eos &
+          \end{flalign*}
+\end{enumerate}
+\end{document}
