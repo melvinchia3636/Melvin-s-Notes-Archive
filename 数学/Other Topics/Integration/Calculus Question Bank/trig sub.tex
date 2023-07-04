@@ -1,0 +1,173 @@
+\documentclass{report}
+\usepackage[a4paper,total={7in,10in}]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\allowdisplaybreaks
+
+\setcounter{chapter}{10}
+\setcounter{section}{2}
+
+\newcommand{\sol}{\vspace{1em}\\\textbf{Sol.}}
+\newcommand{\eos}{ \qquad \square}
+\DeclareMathOperator{\cosec}{cosec}
+
+\begin{document}
+\section*{Calculus Question Bank}
+\subsection*{Trigonometric Substitution}
+
+Find the following indefinite integrals:
+\begin{enumerate}
+    \item $\displaystyle\int\dfrac{dx}{x^2\sqrt{4-x^2}}$
+    \item $\displaystyle\int\dfrac{du}{\sqrt{u^2 - a^2}}$
+    \item $\displaystyle\int\dfrac{\sqrt{x^2 - 1}}{x}\,dx$
+    \item $\displaystyle\int\sqrt{a^2 - x^2}\,dx$
+    \item $\displaystyle\int\dfrac{dx}{x^2\sqrt{x^2 + 4}}$
+    \item $\displaystyle\int\dfrac{x^2\,dx}{\sqrt{a^2 - x^2}}$
+    \item $\displaystyle\int\dfrac{x^3\,dx}{\sqrt{x^2 - a^2}}$
+    \item $\displaystyle\int\dfrac{x\,dx}{\sqrt{4x - x^2}}$
+    \item $\displaystyle\int\dfrac{x\,dx}{\sqrt{ax - x^2}}$, $a > 0$
+    \item $\displaystyle\int\dfrac{x^3\,dx}{(a^2 + x^2)^{\frac{3}{2}}}$
+    \item $\displaystyle\int\dfrac{dx}{2 - \sqrt{3x}}$
+    \item $\displaystyle\int\dfrac{dx}{(x^2+4)^2}$
+    \item $\displaystyle\int y\sqrt{2y - y^2}\,dy$
+          \sol{}
+
+          Let $y = 2\sin^2\theta$, then $dy = 4\sin\theta\cos\theta\,d\theta$.
+          \begin{flalign*}
+              y          & = 2\sin^2\theta                & \\
+              \sin\theta & = \sqrt{\dfrac{y}{2}}          & \\
+              \theta     & = \sin^{-1}\sqrt{\dfrac{y}{2}} & \\
+              \cos\theta & = \sqrt{1 - \dfrac{y}{2}}
+          \end{flalign*}
+          \vspace{-2em}
+          \begin{flalign*}
+              \int y\sqrt{2y - y^2}\,dy & = \int 2\sin^2\theta\sqrt{4\sin^2\theta - 4\sin^4\theta} \cdot 4\sin\theta\cos\theta\,d\theta        & \\
+                                        & = \int 2\sin^2\theta\sqrt{4\sin^2\theta(1 - \sin^2\theta)} \cdot 4\sin\theta\cos\theta\,d\theta      & \\
+                                        & = \int 2\sin^2\theta\sqrt{4\sin^2\theta\cos^2\theta} \cdot 4\sin\theta\cos\theta\,d\theta            & \\
+                                        & = \int 2\sin^2\theta\cdot2\sin\theta\cos\theta \cdot 4\sin\theta\cos\theta\,d\theta                  & \\
+                                        & = \int 2\sin^2\theta\cdot\sin2\theta \cdot 2\sin2\theta\,d\theta                                     & \\
+                                        & = 4\int \sin^2\theta\cdot\sin^2 2\theta\,d\theta                                                     & \\
+                                        & = 4\int \dfrac{1 - \cos2\theta}{2}\cdot\dfrac{1 - \cos4\theta}{2}\,d\theta                           & \\
+                                        & = \int (1 - \cos2\theta - \cos4\theta + \cos2\theta\cos4\theta)\,d\theta                             & \\
+                                        & = \int \left[1 - \cos2\theta - \cos4\theta + \dfrac{1}{2}(\cos6\theta + \cos2\theta)\right]\,d\theta & \\
+                                        & = \int \left[1 - \dfrac{1}{2}\cos2\theta - \cos4\theta + \dfrac{1}{2}\cos6\theta\right]\,d\theta     & \\
+                                        & = \theta - \dfrac{1}{4}\sin2\theta - \dfrac{1}{4}\sin4\theta + \dfrac{1}{12}\sin6\theta + C          & \\
+          \end{flalign*}
+
+    \item $\displaystyle\int y^2\sqrt{a^2 - y^2}\,dy$
+          \sol{}
+
+          Let $y = a\sin\theta$, then $dy = a\cos\theta\,d\theta$.
+          \begin{flalign*}
+              y          & = a\sin\theta                 & \\
+              \sin\theta & = \dfrac{y}{a}                & \\
+              \theta     & = \sin^{-1}\dfrac{y}{a}       & \\
+              \cos\theta & = \dfrac{\sqrt{a^2 - y^2}}{a}
+          \end{flalign*}
+          \vspace{-2em}
+          \begin{flalign*}
+              \int y^2\sqrt{a^2 - y^2}\,dy & = \int a^2\sin^2\theta\sqrt{a^2 - a^2\sin^2\theta}\cdot a\cos\theta\,d\theta                                                                                                                    & \\
+                                           & = \int a^2\sin^2\theta\sqrt{a^2\cos^2\theta}\cdot a\cos\theta\,d\theta                                                                                                                          & \\
+                                           & = \int a^2\sin^2\theta\cdot a\cos\theta\cdot a\cos\theta\,d\theta                                                                                                                               & \\
+                                           & = a^4\int\sin^2\theta\cos^2\theta\,d\theta                                                                                                                                                      & \\
+                                           & = a^4\int\dfrac{1 - \cos2\theta}{2}\cdot\dfrac{1 + \cos2\theta}{2}\,d\theta                                                                                                                     & \\
+                                           & = \dfrac{1}{4}a^4\int(1 - \cos^2 2\theta)\,d\theta                                                                                                                                              & \\
+                                           & = \dfrac{1}{4}a^4\theta - \dfrac{1}{4}a^4\int\dfrac{1 + \cos4\theta}{2}\,d\theta                                                                                                                & \\
+                                           & = \dfrac{1}{4}a^4\theta - \dfrac{1}{8}a^4\int(1 + \cos4\theta)\,d\theta                                                                                                                         & \\
+                                           & = \dfrac{1}{4}a^4\theta - \dfrac{1}{8}a^4\theta \dfrac{1}{8}a^4\int\cos4\theta\,d\theta                                                                                                         & \\
+                                           & = \dfrac{1}{8}a^4\theta - \dfrac{1}{8}a^4\int\cos4\theta\,d\theta                                                                                                                               & \\
+                                           & = \dfrac{1}{8}a^4\theta - \dfrac{1}{32}a^4\sin4\theta + C                                                                                                                                       & \\
+                                           & = \dfrac{1}{8}a^4\theta - \dfrac{1}{16}a^4\sin2\theta\cos2\theta + C                                                                                                                            & \\
+                                           & = \dfrac{1}{8}a^4\theta - \dfrac{1}{8}a^4\sin\theta\cos\theta(\cos^2 - \sin^2\theta) + C                                                                                                        & \\
+                                           & = \dfrac{1}{8}a^4\theta - \dfrac{1}{8}a^4\sin\theta\cos^3\theta - \dfrac{1}{8}a^4\sin^3\theta\cos\theta + C                                                                                     & \\
+                                           & = \dfrac{1}{8}a^4\sin^{-1}\dfrac{y}{a} - \dfrac{1}{8}a^4\cdot\dfrac{y}{a}\cdot\dfrac{(a^2 - y^2)^{\frac{3}{2}}}{a^3} + \dfrac{1}{8}a^4\cdot\dfrac{y^3}{a^3}\cdot\dfrac{\sqrt{a^2 - y^2}}{a} + C & \\
+                                           & = \dfrac{1}{8}a^4\sin^{-1}\dfrac{y}{a} - \dfrac{1}{8}y(a^2 - y^2)^{\frac{3}{2}} + \dfrac{1}{8}y^3\sqrt{a^2 - y^2} + C \eos
+          \end{flalign*}
+
+    \item $\displaystyle\int\sqrt{\dfrac{x}{1 - x}}\,dx$
+          \sol{}
+
+          Let $x = \sin^2\theta$, then $dx = 2\sin\theta\cos\theta\,d\theta$.
+          \begin{flalign*}
+              x            & = \sin^2\theta     & \\
+              \sqrt{x}     & = \sin\theta         \\
+              \theta       & = \arcsin\sqrt{x}    \\
+              \\
+              \cos^2\theta & = 1 - \sin^2\theta & \\
+                           & = 1 - x            & \\
+              \cos\theta   & = \sqrt{1 - x}
+          \end{flalign*}
+          \vspace{-2em}
+          \begin{flalign*}
+              \int\sqrt{\dfrac{x}{1 - x}}\,dx & = \int\sqrt{\dfrac{\sin^2\theta}{1 - \sin^2\theta}} \cdot 2\sin\theta\cos\theta\,d\theta & \\
+                                              & = \int\sqrt{\dfrac{\sin^2\theta}{\cos^2\theta}} \cdot 2\sin\theta\cos\theta\,d\theta     & \\
+                                              & = \int\dfrac{\sin\theta}{\cos\theta} \cdot 2\sin\theta\cos\theta\,d\theta                & \\
+                                              & = \int2\sin^2\theta\,d\theta                                                             & \\
+                                              & = \int2\cdot\dfrac{1 - \cos2\theta}{2}\,d\theta                                          & \\
+                                              & = \int(1 - \cos2\theta)\,d\theta                                                         & \\
+                                              & = \int\,d\theta - \int\cos2\theta\,d\theta                                               & \\
+                                              & = \theta - \dfrac{1}{2}\sin2\theta + C                                                   & \\
+                                              & = \theta - \sin\theta\cos\theta + C                                                      & \\
+                                              & = \arcsin\sqrt{x} - \sqrt{x}\sqrt{1 - x} + C                                             & \\
+                                              & = \arcsin\sqrt{x} - \sqrt{x(1 - x)} + C \eos
+          \end{flalign*}
+
+    \item $\displaystyle\int\dfrac{x^2\,dx}{\sqrt{x^2 + 1}}$
+          \sol{}
+
+          Let $x = \tan\theta$, then $dx = \sec^2\theta\,d\theta$.
+          \begin{flalign*}
+              \int\dfrac{x^2\,dx}{\sqrt{x^2 + 1}} & = \int\dfrac{\tan^2\theta\sec^2\theta\,d\theta}{\sqrt{\tan^2\theta + 1}} & \\
+                                                  & = \int\dfrac{\tan^2\theta\sec^2\theta\,d\theta}{\sec\theta}              & \\
+                                                  & = \int\tan^2\theta\sec\theta\,d\theta                                    & \\
+                                                  & = \int(\sec^2\theta - 1)\sec\theta\,d\theta                              & \\
+                                                  & = \int\sec^3\theta\,d\theta - \int\sec\theta\,d\theta
+          \end{flalign*}
+          Let $u = \sec\theta$, then $du = \sec\theta\tan\theta\,d\theta$.
+
+          Let $dv = \sec^2\theta\,d\theta$, then $v = \tan\theta$.
+          \begin{flalign*}
+              \int\sec^3\theta\,d\theta  & = \int\sec^2\theta\sec\theta\,d\theta                                                        & \\
+                                         & = \sec\theta\tan\theta - \int\sec\theta\tan^2\theta\,d\theta                                 & \\
+                                         & = \sec\theta\tan\theta - \int\sec\theta(\sec^2\theta - 1)\,d\theta                           & \\
+              \int\sec^3\theta\,d\theta  & = \sec\theta\tan\theta - \int\sec^3\theta\,d\theta + \int\sec\theta\,d\theta                 & \\
+              2\int\sec^3\theta\,d\theta & = \sec\theta\tan\theta + \int\sec\theta\,d\theta                                             & \\
+              \int\sec^3\theta\,d\theta  & = \dfrac{1}{2}\sec\theta\tan\theta + \dfrac{1}{2}\int\sec\theta\,d\theta                     & \\
+                                         & = \dfrac{1}{2}\sec\theta\tan\theta + \dfrac{1}{2}\ln\left|\sec\theta + \tan\theta\right| + C
+          \end{flalign*}
+          \begin{flalign*}
+              \therefore\ \int\dfrac{x^2\,dx}{\sqrt{x^2 + 1}} & = \dfrac{1}{2}\sec\theta\tan\theta + \dfrac{1}{2}\ln\left|\sec\theta + \tan\theta\right| - \ln\lvert\sec\theta + \tan\theta\rvert + C & \\
+                                                              & = \dfrac{1}{2}\sec\theta\tan\theta - \dfrac{1}{2}\ln\lvert\sec\theta + \tan\theta\rvert + C                                           & \\
+                                                              & = \dfrac{1}{2}x\sqrt{x^2 + 1} - \dfrac{1}{2}\ln\lvert x + \sqrt{x^2 + 1}\rvert + C \eos                                               & \\
+          \end{flalign*}
+
+    \item $\displaystyle\int\dfrac{t\,dt}{1 - \sqrt{t}}$
+          \sol{}
+
+          Let $\sqrt{t} = \sin^2\theta$, then $t = \sin^4\theta$, $dt =
+              4\sin^3\theta\cos\theta\,d\theta$.
+          \begin{flalign*}
+              \int\dfrac{t\,dt}{1 - \sqrt{t}} & = \int\dfrac{\sin^4\theta\cdot 4\sin^3\theta\cos\theta\,d\theta}{1 - \sin^2\theta}                                                                                   & \\
+                                              & = \int\dfrac{\sin^4\theta\cdot 4\sin^3\theta\cos\theta\,d\theta}{\cos^2\theta}                                                                                       & \\
+                                              & = \int \dfrac{4\sin^7\theta}{\cos\theta}\,d\theta                                                                                                                    & \\
+                                              & = 4\int \dfrac{(1 - \cos^2\theta)\sin^5\theta}{\cos\theta}\,d\theta                                                                                                  & \\
+                                              & = 4\int \dfrac{\sin^5\theta}{\cos\theta}\,d\theta - 4\int \dfrac{\cos^2\theta\sin^5\theta}{\cos\theta}\,d\theta                                                      & \\
+                                              & = 4\int \dfrac{\sin^3\theta(1 - \cos^2\theta)}{\cos\theta}\,d\theta - 4\int \cos\theta\sin^5\theta\,d\theta                                                          & \\
+                                              & = 4\int \dfrac{\sin^3\theta}{\cos\theta}\,d\theta - 4\int \sin^3\theta\cos\theta\,d\theta - 4\int \cos\theta\sin^5\theta\,d\theta                                    & \\
+                                              & = 4\int \dfrac{\sin\theta(1 - \cos^2\theta)}{\cos\theta}\,d\theta - 4\int \sin^3\theta\cos\theta\,d\theta - 4\int \cos\theta\sin^5\theta\,d\theta                    & \\
+                                              & = 4\int \dfrac{\sin\theta}{\cos\theta}\,d\theta - 4\int\sin\theta\cos\theta\,d\theta - 4\int \sin^3\theta\cos\theta\,d\theta - 4\int \cos\theta\sin^5\theta\,d\theta & \\
+                                              & = -4\ln\vert\cos\theta\vert - 2\sin^2\theta - \sin^4\theta + \dfrac{2}{3}\sin^6\theta + C
+          \end{flalign*}
+          \begin{flalign*}
+              \sqrt{t}     & = \sin^2\theta        & \\
+                           & = 1 - \cos^2\theta    & \\
+              \cos^2\theta & = 1 - \sqrt{t}        & \\
+              \cos\theta   & = \sqrt{1 - \sqrt{t}}
+          \end{flalign*}
+          \begin{flalign*}
+              \int\dfrac{t\,dt}{1 - \sqrt{t}} & = -4\ln\left\vert\sqrt{1 - \sqrt{t}}\right\vert - 2\sqrt{t} - t + \dfrac{2}{3}t\sqrt{t} + C           & \\
+                                              & = -\dfrac{1}{2}\ln\left\vert 1 - \sqrt{t}\right\vert - 2\sqrt{t} - t + \dfrac{2}{3}t\sqrt{t} + C \eos
+          \end{flalign*}
+\end{enumerate}
+\end{document}
