@@ -1541,6 +1541,68 @@ the curve $y = f(x)$, the $x$-axis, and the lines $x = a$ and $x = b$, i.e. $A
 
 \newpage
 
+\subsection*{The Relationship between Definite Integrals and Indefinite Integrals}
+
+The definite integrals and the indefinite integrals has inseparable
+relationship between them. Consider the case of finding the area of curved
+trapezoid. Let $x_0 > a$ and $f(x) \geq 0$. The area of the curved trapezoid
+bounded by the curve $y = f(x)$, the $x$-axis, and the lines $x = a$, $x = x_0$
+and $y = 0$ is $A(x_0) = \displaystyle\int_a^{x_0} f(x) dx$.
+
+When $x_0$ changes, the area $A(x_0)$ also changes. From the diagram above, we
+know that
+\begin{cequation}
+    m\Delta x \leq A(x_0 + \Delta x) - A(x_0) \leq M\Delta x,
+\end{cequation}
+where $m$ and $M$ are the minimum and maximum values of $f(x)$ in the interval $[x_0, x_0 + \Delta x]$. Hence,
+\begin{cequation}
+    m \leq \dfrac{A(x_0 + \Delta x) - A(x_0)}{\Delta x} \leq M.
+\end{cequation}
+Apparently, as $\Delta x$ approaches 0, both $m$ and $M$ approach $f(x_0)$. Besides, from the definition of derivative, $\lim_{\Delta x \to 0} \dfrac{A(x_0 + \Delta x) - A(x_0)}{\Delta x} = A'(x_0)$. Hence, we get $A'(x_0) = f(x_0)$. This relational expression is true for any $x_0 > a$. In other words, $A'(x) = f(x)$, i.e. the derivative of the area function $A(x)$ is the integrand $f(x)$.
+
+Let $\displaystyle\int f(x)d x = F(x) + C$, i.e. $F(x)$ is the primitive of
+$f(x)$. Then, from $A'(x) = f(x) = F'(x)$, we get $A(x) = F(x) + C$, where $C$
+is a constant. When $A(a) = 0$, $x = a$, we get $C = -F(a)$. Hence, $C =
+    -F(a)$, i.e. for any $x_0 > a$, we get $A(x_0) = F(x_0) - F(a)$.
+
+Let $x_0 = b$, we get $A(b) = \displaystyle\int_a^b f(x) dx = F(b) - F(a)$.
+This relational expression is true for any continuous function $f(x)$. In order
+to make the relational expression true for any $a$ and $b$, when $a > b$, the
+following definition is made.
+\begin{cequation}
+    \int_a^b f(x) dx = -\int_b^a f(x) dx.
+\end{cequation}
+
+Above all are the relationship between definite integrals and indefinite
+integrals, i.e. \vspace{-0.9em}
+\begin{center}
+    \framebox{
+
+        \parbox[t][1.3cm]{9cm}{ \addvspace{0.2cm} \centering If $\displaystyle\int f(x) dx
+                = F(x) + C$, then $\displaystyle\int_a^b f(x) dx = F(b) - F(a)$. }}
+\end{center}
+This relationship is called the fundamental theorem of calculus. Generally, we
+express the expression as follows:
+\begin{cequation}
+    \int_a^b f(x) dx = \big[F(x)\big]_a^b = F(b) - F(a).
+\end{cequation}
+where $F(x)$ is any primitive of $f(x)$.
+
+When finding the definite integral $\displaystyle\int_a^b f(x) dx$, we only
+have to find any primitive $F(x)$ of $f(x)$. The other primitive of $f(x)$ can
+be expressed as $F(x) + C$, where $C$ is a constant. Hence, the definite
+integral $\displaystyle\int_a^b f(x) dx$ is independent of the choice of
+primitive of $f(x)$. But,
+\begin{flalign*}
+     & \big[F(x) + C\big]_a^b    \\
+     & = [F(b) + C] - [F(a) + C] \\
+     & = F(b) - F(a)
+\end{flalign*}
+Hence, the value of the definite integral has nothing to do with the constant $C$. The value of the definite integral remains the same no matter which primitive of $f(x)$ is chosen.
+\\\\
+Note that $\big[F(x)\big]_a^b$ can also be written as $F(x)\big|_a^b$.
+
+\newpage
 \subsection{Practice 2}
 
 \begin{enumerate}
