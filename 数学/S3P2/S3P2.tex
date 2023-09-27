@@ -151,6 +151,69 @@
 
 \chapter{Applications of Differentiation}
 
+\section{Tangent and Normal Lines}
+
+In the previous chapter, we have learnt that the gradient of the tangent to the
+curve $y=f(x)$ at point $P\big(x_0, f(x_0)\big)$ is
+\begin{flalign*}
+    m & = \lim_{\Delta x \to 0}\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} \\
+      & = f'(x_0)
+\end{flalign*}
+Hence, in order to find the tangent to the curve $y = f(x)$ at $x = x_0$, we just have to find the derivative value $f'(x_0)$ of the curve $y = f(x)$ at $x = x_0$, then the equation of the tangent line can be acquired through the point gradient formula of linear equations.
+
+As shown in the figure above, the line that passes through point $P$ and
+perpendicular to the tangent line $PT$ is known as the normal line to the curve
+$y = f(x)$. If two straight lines are perpendicular, the product of their
+gradients is $-1$. Since the gradient of the curve $y = f(x)$ at point $x =
+    x_0$ is $f'(x_0)$, therefore when $f'(x_0) \neq 0$, the gradient of normal at
+point $x = x_0$ is $-\dfrac{1}{f'(x_0)}$.
+
+\subsection{Practice 1}
+\begin{enumerate}
+    \item Find the equations of tangent and normal to the curve $y = x^3$ where $x = 2$.
+    \item Given that the gradient of tangent to the curve $y = x^2 - 2x + 3$ at point $Q$
+          is $4$, find the coordinates of the point $Q$.
+    \item Find the equations of the tangent and normal to the curve $x^3 - 2xy + y^2 = 1$
+          at point $(1, 2)$.
+\end{enumerate}
+
+\subsection{Exercise 26.1}
+\begin{enumerate}
+    \item Find the equations of the tangent and normal to the curve $y = x^2 + 2$ at
+          point $(2, 6)$.
+    \item Find the equation of the tangent to the curve $y = 2x^3 - 3x^2 - 12x + 8$ where
+          $x = 0$.
+    \item Find the equation of the normal to the curve $y = 3x^3 - 4x + 7$ at point $(1,
+              6)$.
+    \item Find the equation of the tangent to the curve $y = \dfrac{1}{1-x}$ where $x =
+              -1$.
+    \item Find the equations of the tangent and normal to the curve $y = 1 - 2x^2$ where
+          $x = -2$.
+    \item Find the equation of the tangent to the curve $y = (x+1)(x-1)(x-3)$ where the
+          curve intersects with the $x$-axis.
+    \item Find the equation of the tangent to the curve $y = 4x^3 - 27x + 7$ that is
+          parallel to the $x$-axis.
+    \item Find the equation of the tangent to the curve $y = 11x - 3x^2$ that is parallel
+          to the line $x + y - 2 = 0$.
+    \item Find the equations of the tangent and normal to the curve $y = \ln{2x - 1}$
+          where $x=1$.
+    \item If the straight line $y = 8x + k$ is the tangent to the curve $y = x^2 + 4x -
+              3$, find the value of $k$.
+    \item Given that the gradient of tangent to the curve $y = ax + bx^2$ at point $(1,
+              0)$ is $\dfrac{1}{2}$, find the value of $a$ and $b$.
+    \item If $x + y + 2 = 0$ is the equation of tangent to the curve $y = ax^2 + bx$
+          where $x = 1$, find the value of $a$ and $b$.
+    \item Given that the gradient of tangent to the curve $y = x^3 - 6x^2 + 10x - 5$ at
+          point $P$ is $-2$, find the coordinates of $P$.
+    \item Prove that the tangent lines to the curve $y = x^2 - 3x + 1$ and the curve
+          $x(y+3) = 4$ at point $(2, -1)$ are perpendicular to each other.
+    \item Find the equations of the tangent and normal to the curve $x^2 - x6 + y^2 = 7$
+          at point $(-2, 3)$.
+    \item Find the equation of tangent to the curve $y^2 + y = 2\sin x$ at point $(0,
+              -1)$.
+
+\end{enumerate}
+
 \newpage
 \section{Revision Exercise 26}
 
@@ -158,12 +221,12 @@
     \item Find the equation of the tangent of the curve $y = x^3 - 3x$ at the point where
           $x = 3$. \sol{}
           \begin{flalign*}
-              y             & = x^3 - 3x \\
-              \frac{dy}{dx} & = 3x^2 - 3
+              y              & = x^3 - 3x \\
+              \dfrac{dy}{dx} & = 3x^2 - 3
           \end{flalign*}
           At $x = 3$, $y = (3)^3 - 3(3) = 18$.
           \begin{flalign*}
-              \text{Gradient of tangent }\frac{dy}{dx}         & = 3(3)^2 - 3 \\
+              \text{Gradient of tangent }\dfrac{dy}{dx}        & = 3(3)^2 - 3 \\
                                                                & = 27 - 3     \\
                                                                & = 24         \\
               \therefore\ \text{Equation of tangent is }y - 18 & = 24(x - 3)  \\
@@ -174,10 +237,10 @@
           intersection of the curve and the $x$-axis. \sol{} \vspace{-2em}
           \begin{multicols}{2}
               \begin{flalign*}
-                  y             & = x(x-4)(x+1)     \\
-                                & = x(x^2 - 3x - 4) \\
-                                & = x^3 - 3x^2 - 4x \\
-                  \frac{dy}{dx} & = 3x^2 - 6x - 4
+                  y              & = x(x-4)(x+1)     \\
+                                 & = x(x^2 - 3x - 4) \\
+                                 & = x^3 - 3x^2 - 4x \\
+                  \dfrac{dy}{dx} & = 3x^2 - 6x - 4
               \end{flalign*}
               \vspace{-2em}
               \begin{flalign*}
@@ -187,26 +250,26 @@
               \end{flalign*}
               When $x = 0$,
               \begin{flalign*}
-                  \because\ \text{Gradient of tangent }\frac{dy}{dx} & = 3(0)^2 - 6(0) - 4 = -4   \\
-                  \therefore\ \text{Gradient of normal }             & = \frac{1}{4}              \\
-                  \therefore\ \text{Equation of normal is }y - 0     & = \frac{1}{4}(x - 0)     & \\
-                  y                                                  & = \frac{1}{4}x             \\
-                  x - 4y                                             & = 0
+                  \because\ \text{Gradient of tangent }\dfrac{dy}{dx} & = 3(0)^2 - 6(0) - 4 = -4   \\
+                  \therefore\ \text{Gradient of normal }              & = \dfrac{1}{4}             \\
+                  \therefore\ \text{Equation of normal is }y - 0      & = \dfrac{1}{4}(x - 0)    & \\
+                  y                                                   & = \dfrac{1}{4}x            \\
+                  x - 4y                                              & = 0
               \end{flalign*}
               \vfill{}\null{}
               When $x = 4$,
               \begin{flalign*}
-                  \because\ \text{Gradient of tangent }\frac{dy}{dx} & = 3(4)^2 - 6(4) - 4 = 20 & \\
-                  \therefore\ \text{Gradient of normal }             & = -\frac{1}{20}            \\
-                  \therefore\ \text{Equation of normal is }y - 0     & = -\frac{1}{20}(x - 4)     \\
-                  x + 20y -4                                         & = 0
+                  \because\ \text{Gradient of tangent }\dfrac{dy}{dx} & = 3(4)^2 - 6(4) - 4 = 20 & \\
+                  \therefore\ \text{Gradient of normal }              & = -\dfrac{1}{20}           \\
+                  \therefore\ \text{Equation of normal is }y - 0      & = -\dfrac{1}{20}(x - 4)    \\
+                  x + 20y -4                                          & = 0
               \end{flalign*}
               When $x = -1$,
               \begin{flalign*}
-                  \because\ \text{Gradient of tangent }\frac{dy}{dx} & = 3(-1)^2 - 6(-1) - 4 = 5 & \\
-                  \therefore\ \text{Gradient of normal }             & = -\frac{1}{5}              \\
-                  \therefore\ \text{Equation of normal is }y - 0     & = -\frac{1}{5}(x + 1)       \\
-                  x + 5y + 1                                         & = 0
+                  \because\ \text{Gradient of tangent }\dfrac{dy}{dx} & = 3(-1)^2 - 6(-1) - 4 = 5 & \\
+                  \therefore\ \text{Gradient of normal }              & = -\dfrac{1}{5}             \\
+                  \therefore\ \text{Equation of normal is }y - 0      & = -\dfrac{1}{5}(x + 1)      \\
+                  x + 5y + 1                                          & = 0
               \end{flalign*}
               \vfill{}\null{}
           \end{multicols}
@@ -218,16 +281,16 @@
               and that the gradient of the curve at the point is $3$. Find the values of $a$
               and $b$. \sol{}
               \begin{flalign*}
-                  y             & = ax^2 + bx - 10 \\
-                  \frac{dy}{dx} & = 2ax + b
+                  y              & = ax^2 + bx - 10 \\
+                  \dfrac{dy}{dx} & = 2ax + b
               \end{flalign*}
               Since the curve passes through $(2, 0)$,
               \begin{flalign*}
-                  0  & = a(2)^2 + b(2) - 10                \\
-                  0  & = 4a + 2b - 10                      \\
-                  4a & = 10 - 2b                           \\
-                  a  & = \frac{10 - 2b}{4}                 \\
-                     & = \frac{5 - b}{2} \quad \cdots\ (1)
+                  0  & = a(2)^2 + b(2) - 10                 \\
+                  0  & = 4a + 2b - 10                       \\
+                  4a & = 10 - 2b                            \\
+                  a  & = \dfrac{10 - 2b}{4}                 \\
+                     & = \dfrac{5 - b}{2} \quad \cdots\ (1)
               \end{flalign*}
               Since the gradient of the curve at the point is $3$,
               \begin{flalign*}
@@ -236,14 +299,14 @@
               \end{flalign*}
               Substituting $(1)$ into $(2)$,
               \begin{flalign*}
-                  3 & = 4\left(\frac{5 - b}{2}\right) + b \\
-                  3 & = 2(5 - b) + b                      \\
-                  3 & = 10 - 2b + b                       \\
+                  3 & = 4\left(\dfrac{5 - b}{2}\right) + b \\
+                  3 & = 2(5 - b) + b                       \\
+                  3 & = 10 - 2b + b                        \\
                   b & = 7
               \end{flalign*}
               Substituting $b = 7$ into $(1)$,
               \begin{flalign*}
-                  a & = \frac{5 - 7}{2} \\
+                  a & = \dfrac{5 - 7}{2} \\
                     & = -1
               \end{flalign*}
               Hence, $a = -1$ and $b = 7$.
@@ -252,13 +315,13 @@
               point $(2, 3)$. If the normal line intersects with the $x$-axis and $y$-axis at
               $A$ and $B$ respectively, find the length of $AB$. \sol{}
               \begin{flalign*}
-                  y             & = x + \frac{2}{x}   \\
-                  \frac{dy}{dx} & = 1 - \frac{2}{x^2}
+                  y              & = x + \dfrac{2}{x}   \\
+                  \dfrac{dy}{dx} & = 1 - \dfrac{2}{x^2}
               \end{flalign*}
               At $x = 2$,
               \begin{flalign*}
-                  \dfrac{dy}{dx} & = 1 - \frac{2}{2^2} \\
-                                 & = \frac{1}{2}
+                  \dfrac{dy}{dx} & = 1 - \dfrac{2}{2^2} \\
+                                 & = \dfrac{1}{2}
               \end{flalign*}
               Hence, the gradient of the normal at the point $(2, 3)$ is $-2$.
 
@@ -269,9 +332,9 @@
               \end{flalign*}
               When $y = 0$,
               \begin{flalign*}
-                  0             & = -2x + 7                     \\
-                  x             & = \frac{7}{2}                 \\
-                  \therefore\ A & = \left(\frac{7}{2}, 0\right)
+                  0             & = -2x + 7                      \\
+                  x             & = \dfrac{7}{2}                 \\
+                  \therefore\ A & = \left(\dfrac{7}{2}, 0\right)
               \end{flalign*}
               When $x = 0$,
               \begin{flalign*}
@@ -280,10 +343,10 @@
                   \therefore\ B & = \left(0, 7\right)
               \end{flalign*}
               \begin{flalign*}
-                  AB & = \sqrt{\left(\frac{7}{2} - 0\right)^2 + \left(0 - 7\right)^2} \\
-                     & = \sqrt{\frac{49}{4} + 49}                                     \\
-                     & = \sqrt{\frac{245}{4}}                                         \\
-                     & = \frac{\sqrt{245}}{2}                                         \\
+                  AB & = \sqrt{\left(\dfrac{7}{2} - 0\right)^2 + \left(0 - 7\right)^2} \\
+                     & = \sqrt{\dfrac{49}{4} + 49}                                     \\
+                     & = \sqrt{\dfrac{245}{4}}                                         \\
+                     & = \dfrac{\sqrt{245}}{2}                                         \\
                      & = \dfrac{7\sqrt{5}}{2}
               \end{flalign*}
               \vfill{}\null{}
@@ -315,18 +378,18 @@
     \item $f(x) = 4x^3 - 3x^2 - 6x + 1$
           \sol{}
           \begin{flalign*}
-              f(x)             & = 4x^3 - 3x^2 - 6x + 1 \\
-              f'(x)            & = 12x^2 - 6x - 6       \\
-              f'(x)            & = 0                    \\
-              12x^2 - 6x - 6   & = 0                    \\
-              2x^2 - x - 1     & = 0                    \\
-              (2x + 1)(x - 1)  & = 0                    \\
-              x = -\frac{1}{2} & \text{ or } x = 1
+              f(x)              & = 4x^3 - 3x^2 - 6x + 1 \\
+              f'(x)             & = 12x^2 - 6x - 6       \\
+              f'(x)             & = 0                    \\
+              12x^2 - 6x - 6    & = 0                    \\
+              2x^2 - x - 1      & = 0                    \\
+              (2x + 1)(x - 1)   & = 0                    \\
+              x = -\dfrac{1}{2} & \text{ or } x = 1
           \end{flalign*}
-          At the interval $\left(-\infty, -\frac{1}{2}\right)$, $f'(x) > 0$, hence $f(x)$ is increasing at the interval $\left.\left(-\infty, -\frac{1}{2}\right]\right.$.
+          At the interval $\left(-\infty, -\dfrac{1}{2}\right)$, $f'(x) > 0$, hence $f(x)$ is increasing at the interval $\left.\left(-\infty, -\dfrac{1}{2}\right]\right.$.
 
-          At the interval $\left(-\frac{1}{2}, 1\right)$, $f'(x) < 0$, hence $f(x)$ is
-          decreasing at the interval $\left.\left[-\frac{1}{2}, 1\right]\right.$.
+          At the interval $\left(-\dfrac{1}{2}, 1\right)$, $f'(x) < 0$, hence $f(x)$ is
+          decreasing at the interval $\left.\left[-\dfrac{1}{2}, 1\right]\right.$.
 
           At the interval $\left(1, \infty\right)$, $f'(x) > 0$, hence $f(x)$ is
           increasing at the interval $\left.\left[1, \infty\right)\right.$.
@@ -388,11 +451,11 @@
               y'       & = 0               \\
               36x + 12 & = 0               \\
               3x + 1   & = 0               \\
-              p =  x   & = -\frac{1}{3}
+              p =  x   & = -\dfrac{1}{3}
           \end{flalign*}
           \vspace{-3em}
           \begin{flalign*}
-               & \text{When }x = -\frac{1}{3},\ y = 5                    \\
+               & \text{When }x = -\dfrac{1}{3},\ y = 5                   \\
                & y''            = 36 > 0                                 \\
                & \therefore\ \text{The relative minimum value is }q = 5.
           \end{flalign*}
@@ -458,22 +521,22 @@
 
           Let the radius of the semicircle be $r$ and the height of the rectangle be $h$.
           \begin{flalign*}
-              A                                                                                & = \frac{1}{2}\pi r^2 + 2rh                    \\
-              2rh                                                                              & = A - \frac{1}{2}\pi r^2                      \\
-              h                                                                                & = \dfrac{A - \frac{1}{2}\pi r^2}{2r}          \\
-                                                                                               & = \frac{A}{2r} - \frac{1}{4}\pi r             \\
-              P                                                                                & = \pi r + 2h + 2r                             \\
-                                                                                               & = (\pi + 2)r + \frac{A}{r} - \frac{1}{2}\pi r \\
-              \dfrac{dP}{dr}                                                                   & = \pi + 2 - \frac{A}{r^2} - \dfrac{1}{2}\pi   \\
-                                                                                               & = \dfrac{1}{2}\pi + 2 - \dfrac{A}{r^2}        \\
-              \dfrac{dP}{dr}                                                                   & = 0                                           \\
-              \dfrac{1}{2}\pi + 2 - \dfrac{A}{r^2}                                             & = 0                                           \\
-              \dfrac{1}{2}\pi + 2 - \left(\frac{1}{2}\pi r^2 + 2rh\right) \cdot \dfrac{1}{r^2} & = 0                                           \\
-              \dfrac{1}{2}\pi + 2 - \frac{1}{2}\pi - \dfrac{2}{r}h                             & = 0                                           \\
-              2 - \dfrac{2}{r}h                                                                & = 0                                           \\
-              2                                                                                & = \dfrac{2}{r}h                               \\
-              2r                                                                               & = 2h                                          \\
-              r                                                                                & = h
+              A                                                                                 & = \dfrac{1}{2}\pi r^2 + 2rh                     \\
+              2rh                                                                               & = A - \dfrac{1}{2}\pi r^2                       \\
+              h                                                                                 & = \dfrac{A - \dfrac{1}{2}\pi r^2}{2r}           \\
+                                                                                                & = \dfrac{A}{2r} - \dfrac{1}{4}\pi r             \\
+              P                                                                                 & = \pi r + 2h + 2r                               \\
+                                                                                                & = (\pi + 2)r + \dfrac{A}{r} - \dfrac{1}{2}\pi r \\
+              \dfrac{dP}{dr}                                                                    & = \pi + 2 - \dfrac{A}{r^2} - \dfrac{1}{2}\pi    \\
+                                                                                                & = \dfrac{1}{2}\pi + 2 - \dfrac{A}{r^2}          \\
+              \dfrac{dP}{dr}                                                                    & = 0                                             \\
+              \dfrac{1}{2}\pi + 2 - \dfrac{A}{r^2}                                              & = 0                                             \\
+              \dfrac{1}{2}\pi + 2 - \left(\dfrac{1}{2}\pi r^2 + 2rh\right) \cdot \dfrac{1}{r^2} & = 0                                             \\
+              \dfrac{1}{2}\pi + 2 - \dfrac{1}{2}\pi - \dfrac{2}{r}h                             & = 0                                             \\
+              2 - \dfrac{2}{r}h                                                                 & = 0                                             \\
+              2                                                                                 & = \dfrac{2}{r}h                                 \\
+              2r                                                                                & = 2h                                            \\
+              r                                                                                 & = h
           \end{flalign*}
           Hence, the ratio of the radius of the semicircle to the height of the rectangle is $1:1$.
 
@@ -523,18 +586,18 @@
 
           Let the radius of the base be $r$ and the height of the can be $h$.
           \begin{flalign*}
-              V                       & = \pi r^2h                \\
-              h                       & = \frac{V}{\pi r^2}       \\
-              A                       & = 2\pi r^2 + 2\pi rh      \\
-                                      & = 2\pi r^2 + \frac{2V}{r} \\
-              \dfrac{dA}{dr}          & = 4\pi r - \frac{2V}{r^2} \\
-              \dfrac{dA}{dr}          & = 0                       \\
-              4\pi r - \frac{2V}{r^2} & = 0                       \\
-              2\pi r^3 - \pi r^2h     & = 0                       \\
-              2r^3 - r^2h             & = 0                       \\
-              2r - h                  & = 0                       \\
-              2r                      & = h                       \\
-              \dfrac{r}{h}            & = \dfrac{1}{2}
+              V                        & = \pi r^2h                 \\
+              h                        & = \dfrac{V}{\pi r^2}       \\
+              A                        & = 2\pi r^2 + 2\pi rh       \\
+                                       & = 2\pi r^2 + \dfrac{2V}{r} \\
+              \dfrac{dA}{dr}           & = 4\pi r - \dfrac{2V}{r^2} \\
+              \dfrac{dA}{dr}           & = 0                        \\
+              4\pi r - \dfrac{2V}{r^2} & = 0                        \\
+              2\pi r^3 - \pi r^2h      & = 0                        \\
+              2r^3 - r^2h              & = 0                        \\
+              2r - h                   & = 0                        \\
+              2r                       & = h                        \\
+              \dfrac{r}{h}             & = \dfrac{1}{2}
           \end{flalign*}
           Hence, the ratio of the radius of the base to the height of the can is $1:2$.
 \end{enumerate}
@@ -620,15 +683,15 @@ $F'(x) = f(x)$, $G'(x) = f(x)$.
 \vspace{-3em}
 \begin{flalign*}
     \therefore\ G(x) - F(x) & = C        \\
-    \text{that is,}\ G(x)   & = F(x) + C
+    \text{i.e.}\ G(x)       & = F(x) + C
 \end{flalign*}
 This shows that for any two preimages of $f(x)$, the difference between them is a constant. If $F(x)$ is a preimage of $f(x)$, then all the preimages of $f(x)$ can be expressed as $F(x) + C$, where $C$ is a constant.
 \subsection*{The Concept of Indefinite Integral}
 Let function $F(x)$ be a preimage of $f(x)$. All the preimages $F(x) + C$ ($C$
 is a constant) of a function $f(x)$ is called the indefinite integral of
-$f(x)$, denoted by $\displaystyle\int f(x)dx$. That is, $\displaystyle\int
-    f(x)dx = F(x) + C$. $\displaystyle\int$ is called the integral sign, $f(x)$ is
-called the integrand, $C$ is called the constant of integration.
+$f(x)$, denoted by $\displaystyle\int f(x)dx$, i.e. $\displaystyle\int f(x)dx =
+    F(x) + C$. $\displaystyle\int$ is called the integral sign, $f(x)$ is called
+the integrand, $C$ is called the constant of integration.
 
 Finding the indefinite integral of a function $f(x)$ is equivalent to finding
 all the preimages of $f(x)$. From the explanation above, we just need to find
@@ -675,8 +738,8 @@ Find the following indefinite integrals:
 \begin{enumerate}
     \item $\displaystyle\int x^{3}dx$
     \item $\displaystyle\int{\sqrt[3]{x}}dx$
-    \item $\displaystyle\int{\frac{1}{x^{3}}}dx$
-    \item $\displaystyle\int{\frac{1}{\sqrt[3]{x}}}dx$
+    \item $\displaystyle\int{\dfrac{1}{x^{3}}}dx$
+    \item $\displaystyle\int{\dfrac{1}{\sqrt[3]{x}}}dx$
 \end{enumerate}
 
 \subsection{Exercise 27.2a}
@@ -686,10 +749,10 @@ Find the following indefinite integrals:
     \item $\displaystyle\int5x^{4}dx$
     \item $\displaystyle\int5dx$
     \item $\displaystyle\int x^{-9}dx$
-    \item $\displaystyle\int x^{\frac{1}{2}}dx$
-    \item $\displaystyle\int{2x^{-{\frac{1}{2}}}dx}$
-    \item $\displaystyle\int{\frac{1}{x^5}}dx$
-    \item $\displaystyle\int{\left(\frac{1}{x}\right)}^{4}dx$
+    \item $\displaystyle\int x^{\dfrac{1}{2}}dx$
+    \item $\displaystyle\int{2x^{-{\dfrac{1}{2}}}dx}$
+    \item $\displaystyle\int{\dfrac{1}{x^5}}dx$
+    \item $\displaystyle\int{\left(\dfrac{1}{x}\right)}^{4}dx$
     \item $\displaystyle\int{\sqrt{3x}}dx$
     \item $\displaystyle\int{x^3\sqrt[3]{x^2}}dx$
     \item $\displaystyle\int{\cos(-x)}dx$
@@ -722,7 +785,7 @@ integration to the final result.
 \subsection{Practice 2}
 Find the following indefinite integrals:
 \begin{enumerate}
-    \item $\displaystyle\int{\frac{1}{4}}x^{3}dx$
+    \item $\displaystyle\int{\dfrac{1}{4}}x^{3}dx$
     \item $\displaystyle\int{\left(\dfrac{2}{\sqrt{x}} - \sqrt[3]{x^2}\right)dx}$
     \item $\displaystyle\int{\dfrac{x^2 + 3x - 1}{x^3}}dx$
     \item $\displaystyle\int{\left(\sin x - 3\cos x + 2^x\right)dx}$
@@ -785,8 +848,7 @@ arithmetic properties of indefinite integrals. Hence, we need to learn some
 other methods to find the indefinite integral of these functions. Here we will
 introduce a method called integration by substitution.
 
-Consider a function $F(u)$, where $u$ is a function of $x$, that is, $u =
-    g(x)$.
+Consider a function $F(u)$, where $u$ is a function of $x$, i.e. $u = g(x)$.
 
 Using the chain rule, we have $\dfrac{d}{dx}F\left(g(x)\right) =
     F'\left(g(x)\right) \cdot g'(x)$. Hence,
@@ -809,7 +871,7 @@ For the functions that we cannot find their indefinite integrals straight away u
 Find the following indefinite integral:
 \begin{enumerate}
     \item $\displaystyle\int{\sqrt[3]{3x+1}}dx$
-    \item $\displaystyle\int\frac{1}{1-4x}dx$
+    \item $\displaystyle\int\dfrac{1}{1-4x}dx$
     \item $\displaystyle\int2^{4x+3}dx$
     \item $\displaystyle\int\sin x\cos xdx$
 \end{enumerate}
@@ -823,8 +885,8 @@ Find the following indefinite integral:
     \item $\displaystyle\int(2x-1)^{-3} dx$
     \item $\displaystyle\int4{\sqrt{2x-1}} dx$
     \item $\displaystyle\int2(3x+1)^{2} dx$
-    \item $\displaystyle\int\frac{dx}{(2x+5)^{8}}$
-    \item $\displaystyle\int\frac{2}{(3-2x)^{2}} dx$
+    \item $\displaystyle\int\dfrac{dx}{(2x+5)^{8}}$
+    \item $\displaystyle\int\dfrac{2}{(3-2x)^{2}} dx$
     \item $\displaystyle\int x{\sqrt{x^{2}+1}} dx$
     \item $\displaystyle\int 3x^{2}\left(x^{3}+4\right)^{3} dx$
     \item $\displaystyle\int15x^{2}\left(x^{3}-1\right)^{4} dx$
@@ -860,7 +922,7 @@ Find the following indefinite integral:
     \item $\displaystyle\int\sec5x\tan5x dx$
     \item $\displaystyle\int-\csc3x\cot3x dx$
     \item $\displaystyle\int\left(\sin\dfrac{x}{8} - \sec^2 2x\right) dx$
-    \item $\displaystyle\int\left(\sin{\frac{x}{2}}+\cos{\frac{x}{2}}\right)^{2} dx$
+    \item $\displaystyle\int\left(\sin{\dfrac{x}{2}}+\cos{\dfrac{x}{2}}\right)^{2} dx$
     \item $\displaystyle\int(\sec x+\tan x)^{2} dx$
     \item $\displaystyle\int(2-\sin x)^{2} dx$
     \item $\displaystyle\int\cos^4 x dx$
@@ -890,14 +952,14 @@ Find the following indefinite integral:
 
 Find the following indefinite integral:
 \begin{enumerate}
-    \item $\displaystyle\int\frac{1}{x(x+1)} dx$
-    \item $\displaystyle\int\frac{x}{(x+1)(x-3)} dx$
-    \item $\displaystyle\int\frac{4x-13}{2x^2+x-6} dx$
-    \item $\displaystyle\int\frac{5x-1}{1-x^{2}} dx$
-    \item $\displaystyle\int\frac{x^{2}+5}{(x+1)(x-1)} dx$
-    \item $\displaystyle\int\frac{x^{3}+2}{x^{2}-1} dx$
-    \item $\displaystyle\int\frac{2x-1}{x^{2}+2x+1} dx$
-    \item $\displaystyle\int\frac{4x-3}{(2x+1)^{2}} dx$
+    \item $\displaystyle\int\dfrac{1}{x(x+1)} dx$
+    \item $\displaystyle\int\dfrac{x}{(x+1)(x-3)} dx$
+    \item $\displaystyle\int\dfrac{4x-13}{2x^2+x-6} dx$
+    \item $\displaystyle\int\dfrac{5x-1}{1-x^{2}} dx$
+    \item $\displaystyle\int\dfrac{x^{2}+5}{(x+1)(x-1)} dx$
+    \item $\displaystyle\int\dfrac{x^{3}+2}{x^{2}-1} dx$
+    \item $\displaystyle\int\dfrac{2x-1}{x^{2}+2x+1} dx$
+    \item $\displaystyle\int\dfrac{4x-3}{(2x+1)^{2}} dx$
 \end{enumerate}
 
 \newpage
@@ -935,11 +997,11 @@ curve is $\dfrac{dy}{dx} = 3 - \dfrac{1}{x^2}$, find the equation of the curve.
 Find the following indefinite integral (Question 1 to 34):
 \begin{enumerate}
     \begin{multicols}{2}
-        \item $\displaystyle\int 2x^{\frac{1}{5}}dx$
+        \item $\displaystyle\int 2x^{\dfrac{1}{5}}dx$
         \sol{}
         \begin{flalign*}
-            \int 2x^{\frac{1}{5}}dx & = 2 \cdot \dfrac{5}{6}x^{\frac{6}{5}} + C & \\
-                                    & = \dfrac{5}{3}x^{\frac{6}{5}} + C
+            \int 2x^{\dfrac{1}{5}}dx & = 2 \cdot \dfrac{5}{6}x^{\dfrac{6}{5}} + C & \\
+                                     & = \dfrac{5}{3}x^{\dfrac{6}{5}} + C
         \end{flalign*}
         \vfill{}\null{}
         \item $\displaystyle\int{(2x-1)}^3dx$
@@ -959,12 +1021,12 @@ Find the following indefinite integral (Question 1 to 34):
                                 & = \dfrac{1}{101}{(x+4)}^{101} + C
         \end{flalign*}
         \vfill{}\null{}
-        \item $\displaystyle\int{\left(\dfrac{5}{x^2}+2x^{\frac{1}{2}}+3\right)}dx$
+        \item $\displaystyle\int{\left(\dfrac{5}{x^2}+2x^{\dfrac{1}{2}}+3\right)}dx$
         \sol{}
         \begin{flalign*}
-             & \int{\left(\dfrac{5}{x^2}+2x^{\frac{1}{2}}+3\right)}dx   \\
-             & =5\int{x^{-2}} + 2\int{x^{\frac{1}{2}}} + 3\int dx     & \\
-             & = -\dfrac{5}{x} + \dfrac{4}{3}x^{\frac{3}{2}} + 3x + C
+             & \int{\left(\dfrac{5}{x^2}+2x^{\dfrac{1}{2}}+3\right)}dx   \\
+             & =5\int{x^{-2}} + 2\int{x^{\dfrac{1}{2}}} + 3\int dx     & \\
+             & = -\dfrac{5}{x} + \dfrac{4}{3}x^{\dfrac{3}{2}} + 3x + C
         \end{flalign*}
         \vfill{}\null{}
     \end{multicols}
@@ -1323,8 +1385,8 @@ Find the following indefinite integral (Question 1 to 34):
     \item If the function $y = \dfrac{1}{\sqrt{4x^2 - 1}}$, find $\dfrac{dy}{dx}$. Hence,
           find $\displaystyle\int\dfrac{x}{\sqrt{{\left(4x^2-1\right)}^3}}$. \sol{}
           \begin{flalign*}
-              y                                               & = \left[\left(4x^2 - 1\right)^{-\frac{1}{2}}\right]'                  \\
-                                                              & = -\dfrac{1}{2}\left(4x^2 - 1\right)^{-\frac{3}{2}}\cdot 8x           \\
+              y                                               & = \left[\left(4x^2 - 1\right)^{-\dfrac{1}{2}}\right]'                 \\
+                                                              & = -\dfrac{1}{2}\left(4x^2 - 1\right)^{-\dfrac{3}{2}}\cdot 8x          \\
                                                               & = -\dfrac{4x}{\sqrt{{\left(4x^2-1\right)}^3}}                         \\
               \\
               \int\dfrac{x}{\sqrt{{\left(4x^2-1\right)}^3}}dx & = -\dfrac{1}{4}\int-\dfrac{4x}{\sqrt{{\left(4x^2-1\right)}^3}}d(4x^2) \\
@@ -1393,5 +1455,595 @@ Find the following indefinite integral (Question 1 to 34):
 \end{enumerate}
 
 \chapter{Definite Integrals}
+
+\section{Concept of Definite Integrals and their Relationship with Indefinite Integrals}
+
+\subsection*{Concept of Definite Integrals}
+
+A lot of practical problems, for example finding area and volumes, can be
+reduced to finding the limit of a certain type of sum. Let's take finding area
+as an example to explain the method of solving this kind of problem, and hence
+introduce the concept of definite integrals.
+
+\begin{center}
+    \includegraphics[scale=0.3]{assets/28-3.jpg}
+\end{center}
+
+Shown in the diagram above (shaded area) is the area bounded by the line $x =
+    a$, $x = b$, $y = 0$, and the curve $y = f(x)$ where $f(x) \geq 0$. This kind
+of graph is called the curved trapezoid.
+
+\begin{center}
+    \includegraphics[scale=0.3]{assets/28-1.jpg}
+    \includegraphics[scale=0.3]{assets/28-2.jpg}
+    \includegraphics[scale=0.3]{assets/28-4.jpg}
+\end{center}
+
+As shown in the diagram above, in order to find the area of this curved
+trapezoid, we can split it into multiple small curved trapezoid, each of them
+being substituted by their respective rectangular shape. As such, an
+approximate value of the area of the curved trapezoid can be acquired by
+summing up of the area of each rectangle. As the curved trapezoid is being
+split into smaller and smaller pieces, the approximate value we get will get
+closer and closer to its actual area.
+
+With this concept in mind, we can split the interval $[a, b]$ into $n$ smaller
+interval $[x_0, x_1]$, $[x_1, x_2]$, $\cdots$, $[x_{n-1}, x_n]$ where $x_0 =
+    a$, $x_n = b$. From drawing lines that are perpendicular to the $x$-axis
+through the points $x_1$, $x_2$, $\cdots$, $x_{n-1}$, we can split the curved
+trapezoid into $n$ smaller curved trapezoid.
+
+\begin{center}
+    \includegraphics[scale=0.3]{assets/28-5.jpg}
+\end{center}
+
+Choose any point $\xi_i$ in the $i$-th interval $[x_{i-1}, x_i]$, then the area
+$\Delta A$ of the $i$-th curved trapezoid can be approximated by the area of
+the rectangle with width $\Delta x_i = x_i - x_{i-1}$ and height $f(\xi_i)$, as
+shown in the diagram above, i.e.
+\begin{cequation}
+    \Delta A_i \approx f(\xi_i)\Delta x
+\end{cequation}
+And the approximated value of the area of the original curved trapezoid is the sum of the area of all the smaller rectangle, i.e.
+\begin{cequation}
+    A = \sum_{i=1}^n \Delta A_i \approx \sum_{i=1}^n f(\xi_i)\Delta x
+\end{cequation}
+
+As the number of smaller interval $n$ increases and the width of each interval
+decreases, the approximated value of the area of the original curved trapezoid
+gets closer and closer to its actual area. To find the value of $A$, we split
+the interval $[a, b]$ into indefinitely many smaller interval such that $\Delta
+    x \to 0$ (i.e. $n \to \infty$), hence the area of the original curved trapezoid
+can be defined as the limit of the sum of the area of all the smaller
+rectangle, i.e.
+\begin{cequation}
+    A = \lim_{n \to \infty} \sum_{i=1}^n f(\xi_i)\Delta x
+\end{cequation}
+
+This limit is called the definite integral of $f(x)$ from $a$ to $b$, and is
+denoted by the symbol $\displaystyle\int_a^b f(x) dx$, i.e.
+\begin{cequation}
+    \int_a^b f(x) dx = \lim_{n \to \infty} \sum_{i=1}^n f(\xi_i)\Delta x
+\end{cequation}
+where $f(x)$ is called the integrand, $[a, b]$ is called the interval of integration, $a$ and $b$ are called the lower and upper limits of integration respectively.
+
+If $f(x) \geq 0$ in the interval $[a, b]$, we know from the above discussion
+that the value of the definite integral $\displaystyle\int_a^b f(x) dx$ is the
+area of the curved trapezoid bounded by the curve $y = f(x)$, the $x$-axis, and
+the lines $x = a$ and $x = b$, i.e. $A = \displaystyle\int_a^b f(x) dx$.
+
+If $f(x) \leq 0$ in the interval $[a, b]$, as shown in the diagram above,
+$f(\xi_i)\Delta x$ is the negative value of the area of the $i$-th smaller
+rectangle. Hence, the definite integral $\displaystyle\int_a^b f(x) dx$ is
+negative, and its absolute value is the area of the curved trapezoid bounded by
+the curve $y = f(x)$, the $x$-axis, and the lines $x = a$ and $x = b$, i.e. $A
+    = -\displaystyle\int_a^b f(x) dx$.
+
+\newpage
+
+\subsection{Practice 2}
+
+\begin{enumerate}
+    \begin{multicols}{2}
+        \item $\displaystyle\int_2^8 x d x$
+        \sol{}
+        \begin{flalign*}
+            \int_2^8 x d x & = \left[\dfrac{1}{2}x^2\right]_2^8 \\
+                           & = \dfrac{1}{2}(64 - 4)             \\
+                           & = 30
+        \end{flalign*}
+
+        \item $\displaystyle\int_{-2}^4 x^3 d x$
+        \sol{}
+        \begin{flalign*}
+            \int_{-2}^4 x^3 d x & = \left[\dfrac{1}{4}x^4\right]_{-2}^4 \\
+                                & = \dfrac{1}{4}(256 - 16)              \\
+                                & = 60
+        \end{flalign*}
+    \end{multicols}
+    \begin{multicols}{2}
+        \item $\displaystyle\int_{-\pi}^\pi \cos x d x$
+        \sol{}
+        \begin{flalign*}
+            \int_{-\pi}^\pi \cos x d x & = \bigg[\sin x\bigg]_{-\pi}^\pi \\
+                                       & = \sin\pi - \sin(-\pi)          \\
+                                       & = 0 - 0                         \\
+                                       & = 0
+        \end{flalign*}
+
+        \item $\displaystyle\int_0^{\dfrac{\pi}{4}} \sec ^2 x d x$
+        \sol{}
+        \begin{flalign*}
+            \int_0^{\dfrac{\pi}{4}} \sec ^2 x d x & = \bigg[\tan x\bigg]_0^{\frac{\pi}{4}} \\
+                                                  & = \tan\dfrac{\pi}{4} - \tan 0          \\
+                                                  & = 1 - 0                                \\
+                                                  & = 1
+        \end{flalign*}
+    \end{multicols}
+\end{enumerate}
+
+\subsection{Exercise 28.1}
+
+\begin{enumerate}
+    \begin{multicols}{2}
+        \item $\displaystyle\int_{-2}^4 x^2 d x$
+        \sol{}
+        \begin{flalign*}
+            \int_{-2}^4 x^2 d x & = \left[\dfrac{1}{3}x^3\right]_{-2}^4 \\
+                                & = \dfrac{1}{3}(64 + 8)                \\
+                                & = 24
+        \end{flalign*}
+        \item $\displaystyle\int_1^4 \dfrac{1}{x^2} d x$
+        \sol{}
+        \begin{flalign*}
+            \int_1^4 \dfrac{1}{x^2} d x & = \left[-\dfrac{1}{x}\right]_1^4 \\
+                                        & = -\dfrac{1}{4} + 1              \\
+                                        & = \dfrac{3}{4}
+        \end{flalign*}
+    \end{multicols}
+
+    \begin{multicols}{2}
+        \item $\displaystyle\int_4^9 \sqrt{x} d x$
+        \sol{}
+        \begin{flalign*}
+            \int_4^9 \sqrt{x} d x & = \left[\dfrac{2}{3}x^{\frac{3}{2}}\right]_4^9 \\
+                                  & = \dfrac{2}{3}(27 - 8)                         \\
+                                  & = \dfrac{38}{3}
+        \end{flalign*}
+
+        \item $\displaystyle\int_1^{27} \dfrac{1}{\sqrt[3]{x^5}} d x$
+        \sol{}
+        \begin{flalign*}
+            \int_1^{27} \dfrac{1}{\sqrt[3]{x^5}} d x & = \left[-\dfrac{3}{2}x^{-\frac{2}{3}}\right]_1^{27} \\
+                                                     & = -\dfrac{3}{2}\left(\dfrac{1}{9} - 1\right)        \\
+                                                     & = \dfrac{4}{3}
+        \end{flalign*}
+    \end{multicols}
+    \newpage
+    \begin{multicols}{2}
+        \item $\displaystyle\int_0^{\frac{\pi}{3}} \cos x d x$
+        \sol{}
+        \begin{flalign*}
+            \int_0^{\frac{\pi}{3}} \cos x d x & = \bigg[\sin x\bigg]_0^{\frac{\pi}{3}} \\
+                                              & = \sin\dfrac{\pi}{3} - \sin 0          \\
+                                              & = \dfrac{\sqrt{3}}{2} - 0              \\
+                                              & = \dfrac{\sqrt{3}}{2}
+        \end{flalign*}
+
+        \item $\displaystyle\int_{-\frac{\pi}{4}}^{\frac{\pi}{2}} \sin x d x$
+        \sol{}
+        \begin{flalign*}
+            \int_{-\frac{\pi}{4}}^{\frac{\pi}{2}} \sin x d x & = \bigg[-\cos x\bigg]_{-\frac{\pi}{4}}^{\frac{\pi}{2}} \\
+                                                             & = -\cos\dfrac{\pi}{2} - (-\cos(-\frac{\pi}{4}))        \\
+                                                             & = 0 + \dfrac{\sqrt{2}}{2}                              \\
+                                                             & = \dfrac{\sqrt{2}}{2}
+        \end{flalign*}
+    \end{multicols}
+
+    \begin{multicols}{2}
+        \item $\displaystyle\int_0^2 e^x d x$
+        \sol{}
+        \begin{flalign*}
+            \int_0^2 e^x d x & = e^2 - e^0 \\
+                             & = e^2 - 1
+        \end{flalign*}
+        \columnbreak{}
+        \item $\displaystyle\int_{\frac{\pi}{4}}^{\frac{\pi}{2}} \operatorname{cosec}^2 x d x$
+        \sol{}
+        \begin{flalign*}
+            \int_{\frac{\pi}{4}}^{\frac{\pi}{2}} \operatorname{cosec}^2 x d x & = \bigg[-\cot x\bigg]_{\frac{\pi}{4}}^{\frac{\pi}{2}} \\
+                                                                              & = -\cot\frac{\pi}{2} + \cot\frac{\pi}{4}              \\
+                                                                              & = 0 + 1                                               \\
+                                                                              & = 1
+        \end{flalign*}
+    \end{multicols}
+
+    \begin{multicols}{2}
+        \item $\displaystyle\int_1^2 \dfrac{1}{x} d x$
+        \sol{}
+        \begin{flalign*}
+            \int_1^2 \dfrac{1}{x} d x & = = \bigg[\ln|x|\bigg]_1^2 \\
+                                      & = \ln 2 - \ln 1            \\
+                                      & = \ln 2
+        \end{flalign*}
+
+        \item $\displaystyle\int_0^2 \dfrac{1}{x+1} d x$
+        \sol{}
+        \begin{flalign*}
+            \int_0^2 \dfrac{1}{x+1} d x & = \bigg[\ln|x+1|\bigg]_0^2 \\
+                                        & = \ln 3 - \ln 1            \\
+                                        & = \ln 3                    \\
+        \end{flalign*}
+    \end{multicols}
+\end{enumerate}
+
+\newpage
+
+\section{Properties and Calculations of Definite Integrals}
+
+\subsection*{Properties of Definite Integrals}
+
+The definite integrals have the following basic properties:
+\begin{mdframed}[style=MyFrame]
+    \textbf{Property 1} \hspace{10pt} $\displaystyle\int_a^b kf(x) dx = k\int_a^b f(x) dx$
+\end{mdframed}
+\vspace{-2.5em}
+\begin{mdframed}[style=MyFrame]
+    \textbf{Property 2} \hspace{10pt} $\displaystyle\int_a^b [f(x) \pm g(x)] dx = \int_a^b f(x) dx \pm \int_a^b g(x) dx$
+\end{mdframed}
+\vspace{-2.5em}
+\begin{mdframed}[style=MyFrame]
+    \textbf{Property 3} \hspace{10pt} $\displaystyle\int_c^a f(x) dx + \int_b^c f(x) dx = \int_b^a f(x) dx$
+\end{mdframed}
+
+\subsection{Practice 3}
+
+\begin{enumerate}
+    \item Find the following definite integrals (Question 1 to 4):
+          \begin{enumerate}
+              \item $\displaystyle\int_1^4 \dfrac{2 x^2+3 x+2}{x} d x$
+              \item $\displaystyle\int_{-1}^1\left(3 e^{2 x}-5 x\right) d x$
+              \item $\displaystyle\int_{-\dfrac{\pi}{3}}^{\dfrac{\pi}{3}}\left(2 \cos x-3 \sec ^2 x\right) d x$
+              \item $\displaystyle\int_{-2}^4 f(x) d x, f(x)=\left\{\begin{array}{cc}x^2-2, & -2 \leq x<2 \\ 4-x, & 2 \leq x \leq 4\end{array}\right.$
+          \end{enumerate}
+    \item Given that $\displaystyle\int_{-2}^5 f(x) d x=2, \displaystyle\int_{-2}^3 f(x)
+              d x=-1, \displaystyle\int_3^4 g(x) d x=3 \text { and } \displaystyle\int_4^5
+              g(x) d x=2$, find:
+          \begin{enumerate}
+              \item $\displaystyle\int_3^5 f(x) d x$;
+              \item $\displaystyle\int_3^5\left(\dfrac{1}{3} g(x)+\dfrac{1}{2} f(x)\right) d x$ 。
+          \end{enumerate}
+    \item Given that $f(x)=\sqrt{x^2+1}$, find $f^{\prime}(x)$. Hence, find
+          $\displaystyle\int_0^1 \dfrac{x}{\sqrt{x^2+1}} d x$.
+\end{enumerate}
+
+\subsection*{Integration by Substitution}
+
+In the last chapter, we have learned how to solve indefinite integrals using
+the method of integration by substitution: $\displaystyle\int f(g(x))g'(x)dx =
+    \int f(u)du$ where $u = g(x)$. From the basic theorem of calculus, the method
+of integration by substitution of definite integrals can be derived:
+\begin{mdframed}[style=MyFrame]
+    \begin{cequation}
+        \int_a^b f(g(x))g'(x)dx = \int_{g(a)}^{g(b)} f(u)du
+    \end{cequation}
+\end{mdframed}
+The method of integration by substitution of definite integrals is similar to that of indefinite integrals. The only difference is that the limits of integration are changed accordingly.
+
+\subsection{Practice 4}
+
+\begin{enumerate}
+    \item $\displaystyle\int_0^3 4 e^{2 x} d x$
+    \item $\displaystyle\int_1^3 \dfrac{x}{3 x^2+5} d x$
+    \item $\displaystyle\int_0^4 \dfrac{x}{25-x^2} d x$
+    \item $\displaystyle\int_0^\pi 2 \sin x \cos ^2 x d x$
+\end{enumerate}
+
+\subsection{Exercise 28.2}
+
+\begin{enumerate}
+    \item $\displaystyle\int_0^4\left(x^2-2 x\right) d x$
+    \item $\displaystyle\int_1^4 \dfrac{2 x^2-3 \sqrt{x}+1}{x} d x$
+    \item $\displaystyle\int_{-3}^3(x+3)^2 d x$
+    \item $\displaystyle\int_{-1}^1(2+x)\left(2-x^2\right) d x$
+    \item $\displaystyle\int_0^{\dfrac{\pi}{2}}(2 \sin 3 \theta-3 \cos 2 \theta) d \theta$
+    \item $\displaystyle\int_0^{\dfrac{\pi}{3}} \tan \theta d \theta$
+    \item $\displaystyle\int_0^1\left(e^x-1\right)^2 d x$
+    \item $\displaystyle\int_1^4 \dfrac{2}{4 x-1} d x$
+    \item $\displaystyle\int_{-1}^3 \sqrt{2 x+3} d x$
+    \item $\displaystyle\int_1^2 \dfrac{1}{(2 x-1)^3} d x$
+    \item $\displaystyle\int_{-1}^1 x^2\left(x^3-1\right)^4 d x$
+    \item $\displaystyle\int_1^6 x \sqrt{3 x-2} d x$
+    \item $\displaystyle\int_{-\dfrac{\pi}{4}}^{\dfrac{\pi}{4}} \sin ^2 \theta d \theta$
+    \item $\displaystyle\int_3^5 \dfrac{1}{x^2-x-2} d x$
+    \item $\displaystyle\int_2^5 \dfrac{x}{x^3-x^2-x+1} d x$
+    \item $\displaystyle\int_0^1 \dfrac{x^2}{x^2+2 x+1} d x$
+    \item $\displaystyle\int_0^3 \dfrac{x}{\sqrt{25-x^2}} d x$
+    \item $\displaystyle\int_0^{\dfrac{\pi}{6}} \sin ^2 \theta \cos \theta d \theta$
+    \item Given that $f(x)=\left\{\begin{array}{cc}2 x^2-1, & -2 \leq x \leq 2 \\ 3 x+1, & 2<x \leq 4\end{array}\right.$, find $\displaystyle\int_{-2}^4 f(x) d x$.
+    \item Given that $\displaystyle\int_3^5 f(x) d x=6, \int_5^9 f(x) d x=18, \int_1^4
+              g(x) d x=4$ and $\displaystyle\int_3^4 g(x) d x=-4$. Find:
+          \begin{enumerate}
+              \item $\displaystyle\int_1^3 g(x) d x$;
+              \item $\displaystyle\int_1^3 f(3 x) d x$;
+              \item $\displaystyle\int_1^3[f(3 x)-3 g(x)] d x$ 。
+          \end{enumerate}
+    \item Given the function $y=x \sqrt{x+1}$, find $\dfrac{d y}{d x}$. Hence, find
+          $\displaystyle\int_3^8 \dfrac{3 x+2}{\sqrt{x+1}} d x$.
+    \item Given the function $y=\dfrac{x^2-1}{2 x+1}$, find $\dfrac{d y}{d x}$. Hence,
+          find $\displaystyle\int_0^2 \dfrac{x^2+x+1}{4 x^2+4 x+1} d x$.
+    \item Given the function $y=x e^x-e^x$, find $\dfrac{d y}{d x}$. Hence, find
+          $\displaystyle\int_1^4 2 x e^x d x$.
+\end{enumerate}
+
+\section{Area}
+
+When we first introduced the concept of definite integrals, we have studied
+that, if $f(x) \geq 0$ in the interval $a \leq x \leq b$, then the area of the
+curved trapezoid bounded by the curve $y = f(x)$, the lines $x = a$ and $x =
+    b$, the $x$-axis, and the $y$-axis is given by
+\begin{cequation}
+    A = \int_a^b f(x)dx
+\end{cequation}
+
+The applications of definite integrals are not limited to finding area of
+curved trapezoid. In fact, it is widely used in different fields of
+technologies. To solve real-life problems, the basic mindset is the steps
+described in the definition: splitting, approximating, finding sum, and taking
+limit. After understanding the concept, part of the steps can be skipped, and
+the related definite integrals can be written out straight away.
+
+Let's take finding the area of the curved trapezoid bounded by the line $x =
+    a$, $x = b$, the $x$-axis, and the curve $y = f(x)$ as an example and do some
+further elaboration. Since both sides of the curved trapezoid are the straight
+lines $x = a$ and $x = b$, we can split the interval $a \leq x \leq b$ into
+multiple smaller intervals, hence the original curved trapezoid is split into
+multiple smaller curved trapezoid. As shown in the diagram below, take any one
+of the smaller intervals, and express it as $[x, x + \Delta x]$, its
+corresponding smaller curved trapezoid can be approximated by a rectangle with
+width of $\Delta x$ and height of the function value $f(x)$ at the point $x$.
+As such, the area of the smaller curved trapezoid is $\Delta A \approx
+    f(x)\Delta x$.
+
+Summing up the approximated area of all the smaller curved trapezoid, then find
+the limit of the sum when $\Delta x \to 0$, we can get the area of the original
+curved trapezoid, i.e.
+\begin{cequation}
+    \sum\Delta A \approx \sum f(x)\Delta x\ \xrightarrow{\ \ \ \ \Delta x \to 0\ \ \ \ } \int_a^b f(x)dx
+\end{cequation}
+
+The same can be applied if $f(x) \leq 0$ in the interval $a \leq x \leq b$, as
+shown in the diagram below. The area of the curved trapezoid bounded by the
+curve $y = f(x)$, the lines $x = a$ and $x = b$, the $x$-axis, and the $y$-axis
+is given by
+\begin{cequation}
+    A = -\int_a^b f(x)dx
+\end{cequation}
+
+If the target area $A$ is bounded by the lines $y = c$, $y = d$, the $y$-axis,
+and the curve $x = f(y)$, where $f(y) \geq 0$ in the interval $c \leq y \leq
+    d$, as shown in the diagram below, using the same concept, we can get the area
+of the region
+\begin{cequation}
+    A = \int_c^d f(y)dy
+\end{cequation}
+
+\subsection{Practice 5}
+
+\begin{enumerate}
+    \item Find the area of the region bounded by the curve $y = x^2 - 2x + 8$ and the
+          $x$-axis.
+    \item Find the area of the region bounded by the curve $x = \sqrt{y}$, the lines $y =
+              1$, $y = 4$, and the $y-axis$.
+    \item Find the area of the region bounded by the curve $x = y(y+2)(y-2)$ and the
+          $y$-axis.
+\end{enumerate}
+
+\subsection{Practice 6}
+
+\begin{enumerate}
+    \item Find the area of the region bounded by the curve $y = x^2 - 4x + 5$ and the
+          line $y = x + 1$.
+    \item Find the area of the region bounded by the curve $x = 4y - y^2$ and the line $x
+              - 2y + 3 = 0$.
+\end{enumerate}
+
+\subsection{Exercise 28.3}
+
+\hspace{10pt} Find the area of the region bounded by the following curves and lines:
+\begin{enumerate}
+    \item $y=3 x^2, x=2, x=5$, and $x$-axis
+    \item $y=(x-1)^2, x=4, x$-axis, and $y$-axis
+    \item $y=x^2+4 x-21$, and $x$-axis
+    \item $y=e^{2 x}, x=0, x=4$, and $x$-axis
+    \item $y=\sin \dfrac{x}{2}, 0 \leq x \leq 2 \pi$, and $x$-axis
+    \item $y=\cos x, x=2 \pi, x$-axis, and $y$-axis
+    \item $x=y^2, y=3$, and $y$-axis
+    \item $x=9 y-y^3$, and $y$-axis
+    \item $y=\dfrac{1}{x}, y=\dfrac{1}{2}, y=2$, and $y$-axis
+    \item $y^2=x, x=4$, and $x=16$
+    \item Find the area of the region bounded by the curve $y=x^2-4$ and the line $y=3
+              x$.
+    \item Find the area of the region bounded by the curve $y=x^2+2 x$ and the curve
+          $y=12+4 x-x^2$.
+    \item Find the area of the region bounded by the curve $y=\sin x$ and $y=-2 \sin x$
+          in the interval $0 \leq x \leq \pi$.
+    \item Find the area of the region bounded by the curve $y=e^x, y=e^{-2 x}$ and the
+          lines $x=-2$ and $x=4$.
+    \item Find the area of the region bounded by the curve $y=x^3-10 x^2+28 x$ and the
+          line $y=4 x$.
+    \item Find the area of the region bounded by the curve $x=8 y-y^2, x=16 y-y^2-48$,
+          and $y$-axis.
+    \item Find the area of the region bounded by the curve $x=2 y^2-8 y+10$ and
+          $x=y^2-y$.
+    \item Given that the curve $y=f(x)$ passes through point $(1,0)$, and the gradient of
+          any point on the curve $(x, y)$ is $3 x^2-3$. Find the area of the region
+          bounded by the curve, $x=2$ and $x$.
+\end{enumerate}
+
+\subsection{Practice 7}
+
+\begin{enumerate}
+    \item Find the volume of a cylinder with radius $r$ and height $h$ using definite
+          integrals.
+    \item Shown in the diagram below is the shaded region bounded by the ellipse
+          $\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1$, where $a > 0$ and $b > 0$. If the
+          volume of the solid of revolution formed by rotating this region about the
+          $x$-axis and the $y$-axis is $V_x$ and $V_y$ respectively,
+          \begin{enumerate}
+              \item find $V_x$ and $V_y$.
+              \item if $V_x = 3V_y$, find the value of $a:b$.
+          \end{enumerate}
+\end{enumerate}
+
+\subsection{Practice 8}
+
+\begin{enumerate}
+    \item Given that the line $x + y = a$ splits the circle $x^2 + y^2 = a^2$ into two
+          parts, find the volume of the solid of revolution formed by rotating the
+          smaller part of the circle about the $x$-axis.
+    \item Given that a region is bounded by the curve $y^2 = 8 - x$ and $y^2 = x - 4$.
+          Find the volume of the solid of revolution formed by rotating this region about
+          the $x$-axis and the $y$-axis respectively.
+\end{enumerate}
+
+\subsection{Exercise 28.4}
+
+\hspace*{10pt} Find the volume of the solid of revolution formed by rotating the regions bounded by the following curves and lines about
+
+\hspace{-4pt} the $x$-axis (Question 1 to 7):
+
+\begin{enumerate}
+    \item $y=\sqrt{x}, x=4, x=9$, and $x$-axis
+    \item $y=3 x, x=4$, and $x$-axis
+    \item $y=x(x-2)$, and $x$-axis
+    \item $x^2+y^2=4, x=0$, and $x=2$
+    \item $y=\sin x, x=0, x=\pi$, and $x$-axis
+    \item $y=e^x, x=-1, x=1$, and $x$-axis
+    \item $y=x^3+x^2-2 x$, and $x$-axis
+\end{enumerate}
+
+\hspace{-6pt} Find the volume of the solid of revolution formed by rotating the regions
+bounded by the following curves and lines about
+
+\hspace{-6pt} the $y$-axis (Question 8 to 14):
+
+\begin{enumerate}[resume]
+    \item $y=x^3, y=8$, and $y$-axis
+    \item $x=\sqrt{y-1}, y=4$, and $y$-axis
+    \item $y^2=x+3, y=2, x$-axis, and $y$-axis
+    \item $y^2=x+1$, and $y$-axis
+    \item $x^2-y^2=4, y=3$, and $x$-axis
+    \item $y=1-\sqrt{x}, x$-axis, and $y$-axis
+    \item $y=\dfrac{1}{x}-1, y=1, x$-axis, and $y$-axis
+    \item Given that a region is bounded by the curve $y=4-x^2$ and the $x$-axis. Find
+          the volume of the solid of revolution formed by rotating this region about the
+          $x$-axis and the $y$-axis respectively.
+    \item Given that a region is bounded by the curve $y=5-\sqrt{x}, x$-axis, and
+          $y$-axis. Find the volume of the solid of revolution formed by rotating this
+          region about the $x$-axis and the $y$-axis respectively.
+    \item Find the volume of the solid of revolution formed by rotating the region
+          bounded by the curve $y^2=9 x$, the line $y=6$, and the $y$-axis about the the
+          $y$-axis.
+    \item Given that a region is bounded by the curve $y=x^2+1$, the line $x=-2, x=2$,
+          and $x$-axis. Find the volume of the solid of revolution formed by rotating
+          this region about the $x$-axis and the $y$-axis respectively.
+    \item Find the volume of the solid of revolution formed by rotating the region
+          bounded by the curve $y=x(6-x)$ and the line $y=3 x$ about the $x$-axis.
+    \item Find the volume of the solid of revolution formed by rotating the region
+          bounded by the curve $y=x^2$, the lines $x=1$ and $y=9$ about the $y$-axis.
+    \item Given that a region is bounded by the curve $y^2=8 x$ and the line $y=2 x$.
+          Find the volume of the solid of revolution formed by rotating this region about
+          the $x$-axis and the $y$-axis respectively.
+    \item Given that a region is bounded by the curve $y^2=8 x$ and $y=8 x^2$. Find the
+          volume of the solid of revolution formed by rotating this region about the
+          $x$-axis and the $y$-axis respectively.
+    \item Given that a region is bounded by the curve $y^2=2 x$ and $y^2=12-4 x$. Find
+          the volume of the solid of revolution formed by rotating this region about the
+          $x$-axis and the $y$-axis respectively.
+    \item Shown in the diagram below is the shaded region bounded by the ellipse
+          $\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1$ and the line $\dfrac{x}{a} +
+              \dfrac{y}{b} = 1$, where $a > 0$ and $b > 0$. If the volume of the solid of
+          revolution formed by rotating this region about the $x$-axis and the $y$-axis
+          is $V_x$ and $V_y$ respectively,
+          \begin{enumerate}
+              \item find $V_x$ and $V_y$.
+              \item if $V_x = 2V_y$, find the value of $a:b$.
+          \end{enumerate}
+
+\end{enumerate}
+
+\section{Revision Exercise 28}
+
+\begin{enumerate}
+    \item $\displaystyle\int_0^a\left(2 x^2-3 x+2\right) d x$
+    \item $\displaystyle\int_1^3\left(x^2+\dfrac{1}{x^3}\right) d x$
+    \item $\displaystyle\int_{-\dfrac{\pi}{6}}^{\dfrac{\pi}{2}}(3 \sin \theta-2 \cos 2 \theta) d \theta$
+    \item $\displaystyle\int_{-\dfrac{\pi}{4}}^{\dfrac{\pi}{4}}\left(3 \sec ^2 \theta+\tan ^2 \theta\right) d \theta$
+    \item $\displaystyle\int_0^{\ln 2} e^{3 x} d x$
+    \item $\displaystyle\int_1^3 \dfrac{2}{3 x-1} d x$
+    \item $\displaystyle\int_1^{16} \dfrac{2 x+3}{\sqrt{x}} d x$
+    \item $\displaystyle\int_1^4 \dfrac{(\sqrt{x}-1)^2}{x} d x$
+    \item $\displaystyle\int_1^2\left(x+\dfrac{4}{x^2}\right)^2 d x$
+    \item $\displaystyle\int_0^1 \dfrac{x+1}{x^2+2 x+3} d x$
+    \item $\displaystyle\int_{-1}^2 \dfrac{5 x}{\left(1+x^2\right)^4} d x$
+    \item $\displaystyle\int_0^2 \dfrac{x}{\sqrt{25-4 x^2}} d x$
+    \item $\displaystyle\int_2^4 \dfrac{3 x-2}{(2 x-3)^2} d x$
+    \item $\displaystyle\int_2^4 \dfrac{2}{x^3-x} d x$
+    \item $\displaystyle\int_1^3 \dfrac{1}{x^3+2 x^2+x} d x$
+    \item $\displaystyle\int_0^\pi(\sin \theta+\cos \theta)^2 d \theta$
+    \item $\displaystyle\int_0^{\dfrac{\pi}{3}} \sec ^2 \theta \tan \theta d \theta$
+    \item $\displaystyle\int_{-\dfrac{\pi}{2}}^{\dfrac{\pi}{2}} \sin ^2 \theta \cos \theta d \theta$
+    \item $\displaystyle\int_0^1 \dfrac{e^x}{e^x+1} d x$
+    \item $\displaystyle\int_{\dfrac{\pi}{6}}^{\dfrac{\pi}{3}} \dfrac{\sec ^2 \theta}{\tan \theta} d \theta$
+    \item Given that $\displaystyle\int_0^4 f(x) d x=2, \displaystyle\int_0^3 g(x) d
+              x=4$, and $\displaystyle\int_3^8 g(x) d x=12$. Find the value of
+          $\displaystyle\int_0^8\left[f\left(\dfrac{x}{2}\right)-2 g(x)\right] d x$.
+    \item Given the function $y=(x+3) \sqrt{2 x-3}$, find $\dfrac{d y}{d x}$. Hence, find
+          $\int_2^6 \dfrac{x}{\sqrt{2 x-3}} d x$.
+    \item Given the function $y=x \ln x$, find $\dfrac{d y}{d x}$. Hence, find the
+          following definite integrals:
+          \begin{enumerate}
+              \item $\displaystyle\int_1^4 \ln x d x$
+              \item $\displaystyle\int_1^4 \ln (2 x) d x$
+          \end{enumerate}
+    \item Find the area of the region bounded by the curve $y=\dfrac{1}{x+1}$, the lines
+          $x=1, x=7$, and the $x$-axis.
+    \item Find the area of the region bounded by the curve $y=\dfrac{3}{x}$ and the line
+          $y=4-x$.
+    \item Find the area of the region bounded by the curve $x=y^2-5 y$ and the line $x+7
+              y=24$.
+    \item Find the area of the region bounded by the curves $y=x^2$ 及 $y^3=x$.
+    \item Shown in the diagram below is the shaded region bounded by the curves $y=\ln x,
+              y=\ln (2 x-1)$, and the line $y=3$. Find the area of this region.
+    \item Find the area of the region bounded by the curves $x=y^3-y$ 及 $x=y-y^2$.
+    \item Shown in the diagram below is the shaded region bounded by the curves $y=\sin
+              x$ 及 $y=\sin 2 x$ in the interval $0 \leq x \leq \pi$. Find the area of this
+          region.
+    \item Find the volume of the solid of revolution formed by rotating the region
+          bounded by the curve $y=\frac{1}{x+2}$, the line $x=2$, and two axes about the
+          $x$-axis.
+    \item Find the volume of the solid of revolution formed by rotating the region
+          bounded by the curve $y=e^x-3$ and the two axes about the $x$-axis.
+    \item Find the volume of the solid of revolution formed by rotating the region
+          bounded by the curve $x=y^2-3 y$ and the $y$-axis about the $y$-axis.
+    \item Find the volume of the solid of revolution formed by rotating the region
+          bounded by the curve $y=x^2$ and the line $y=x+2$ about the $x$-axis.
+    \item Find the volume of the solid of revolution formed by rotating the region
+          bounded by the curve $y^2=x+9$ and the line $y=x+3$ about the $y$-axis.
+    \item Given that a region is bounded by the curve $y^2=8 x$ and $y=x^2$. Find the
+          volume of the solid of revolution formed by rotating this region about the
+          $x$-axis and the $y$-axis respectively.
+    \item SHown in the diagram below is the shaded region bounded by the curve $y =
+              2\cos\pi x$, the line $y = 3x$, and the $y$-axis.
+          \begin{enumerate}
+              \item Prove that the $x$-coordinate of point $A$ is $\dfrac{1}{3}$.
+              \item Find the volume of the solid of revolution formed by rotating this region about
+                    the $x$-axis.
+          \end{enumerate}
+    \item Given that a region is bounded by the curve $xy = 12$, the line $x = 4$, and $y
+              = 6$. Find the volume of the solid of revolution formed by rotating this region
+          about the $x$-axis and the $y$-axis respectively.
+\end{enumerate}
 
 \end{document}
