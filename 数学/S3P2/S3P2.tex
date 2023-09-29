@@ -81,6 +81,7 @@
 
 \setlength{\arrayrulewidth}{1pt}
 \setlength{\tabcolsep}{12pt}
+\setlength{\fboxrule}{0.8pt}
 \cftsetindents{section}{1em}{2.8em}
 
 \begin{document}
@@ -159,14 +160,22 @@ curve $y=f(x)$ at point $P\big(x_0, f(x_0)\big)$ is
     m & = \lim_{\Delta x \to 0}\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} \\
       & = f'(x_0)
 \end{flalign*}
-Hence, in order to find the tangent to the curve $y = f(x)$ at $x = x_0$, we just have to find the derivative value $f'(x_0)$ of the curve $y = f(x)$ at $x = x_0$, then the equation of the tangent line can be acquired through the point gradient formula of linear equations.
 
-As shown in the figure above, the line that passes through point $P$ and
-perpendicular to the tangent line $PT$ is known as the normal line to the curve
-$y = f(x)$. If two straight lines are perpendicular, the product of their
-gradients is $-1$. Since the gradient of the curve $y = f(x)$ at point $x =
-    x_0$ is $f'(x_0)$, therefore when $f'(x_0) \neq 0$, the gradient of normal at
-point $x = x_0$ is $-\dfrac{1}{f'(x_0)}$.
+\begin{multicols}{2}
+    Hence, in order to find the tangent to the curve $y = f(x)$ at $x = x_0$, we just have to find the derivative value $f'(x_0)$ of the curve $y = f(x)$ at $x = x_0$, then the equation of the tangent line can be acquired through the point gradient formula of linear equations.
+
+    As shown in the right figure, the line that passes through point $P$ and
+    perpendicular to the tangent line $PT$ is known as the normal line to the curve
+    $y = f(x)$. If two straight lines are perpendicular, the product of their
+    gradients is $-1$. Since the gradient of the curve $y = f(x)$ at point $x =
+        x_0$ is $f'(x_0)$, therefore when $f'(x_0) \neq 0$, the gradient of normal at
+    point $x = x_0$ is $-\dfrac{1}{f'(x_0)}$.
+
+    \columnbreak
+    \begin{center}
+        \includegraphics[scale=0.25]{assets/26-1.png}
+    \end{center}
+\end{multicols}
 
 \subsection{Practice 1}
 \begin{enumerate}
@@ -212,6 +221,514 @@ point $x = x_0$ is $-\dfrac{1}{f'(x_0)}$.
     \item Find the equation of tangent to the curve $y^2 + y = 2\sin x$ at point $(0,
               -1)$.
 
+\end{enumerate}
+
+\newpage
+
+\section{Increasing and Decreasing Functions}
+
+\subsection*{Monotonic Functions}
+
+For a function $f(x)$ being defined in the interval $D$,
+\begin{enumerate}
+    \item For any two numbers $x_1$ and $x_2$ in $D$, when $x_1 < x_2$, $f(x)$ is an
+          increasing function in the interval $D$, as shown in the figure below.
+          \begin{center}
+              \includegraphics[scale=0.25]{assets/26-2.png}
+          \end{center}
+    \item For any two numbers $x_1$ and $x_2$ in $D$, when $x_1 > x_2$, $f(x)$ is a
+          decreasing function in the interval $D$, as shown in the figure below.
+          \begin{center}
+              \includegraphics[scale=0.25]{assets/26-3.png}
+          \end{center}
+\end{enumerate}
+If $f(x)$ is an increasing function or a decreasing function in the interval $D$, we call $f(x)$ a monotonic function in the interval $D$.
+\begin{center}
+    \includegraphics[scale=0.25]{assets/26-4.png}
+\end{center}
+The curve shown in the diagram above is the graph of the function $f(x)$ in the
+interval $[-5, 5]$. From the graph, we can see that the function $f(x)$ is a
+decreasing function in the intervals $[-5, 2]$ and $[1, 3]$, and an increasing
+function in the interval $[-2, 1]$ and $[3, 5]$.
+\newpage
+
+\subsection*{How to Judge the Increase or Decrease of Functions}
+
+As shown in the diagram below, when the function $f(x)$ is an increasing
+function in the interval $[a, b]$, the gradient of the tangent to the curve at
+any point in the interval $(a, b)$ is positive, i.e. $f'(x) > 0$; when the
+function $f(x)$ is a decreasing function in the interval $[b, c]$, the gradient
+of the tangent to the curve at any point in the interval $(b, c)$ is negative,
+i.e. $f'(x) < 0$.
+\begin{center}
+    \includegraphics[scale=0.25]{assets/26-5.png}
+\end{center}
+Therefore, we can judge whether a function is an increasing function or a decreasing function in an interval by the sign of the derivative value of the function in the interval:
+\begin{center}
+    \framebox{
+        \parbox[t][3.8cm]{14cm}{ \addvspace{0.6cm} \hspace{0.4cm}Let $f(x)$ be a continuous
+            function defined in the interval $[a, b]$, and can be differentiated in
+
+            \hspace{0.4cm}the interval $(a, b)$.
+
+            \begin{itemize}[leftmargin=0.76cm]
+                \item In the interval $(a, b)$, if $f'(x) > 0$, then $f(x)$ is an increasing function
+                      in the interval $[a, b]$.
+                \item In the interval $(a, b)$, if $f'(x) < 0$, then $f(x)$ is a decreasing function
+                      in the interval $[a, b]$.
+            \end{itemize} }}
+\end{center}
+\vspace{0.9em}
+
+\subsection{Practice 2}
+
+Determine which intervals the following functions is an increasing function or
+a decreasing function.
+\begin{enumerate}
+    \item $f(x)=x^2+2 x-3$
+    \item $f(x)=x^3-x^2-x+1$
+\end{enumerate}
+
+\subsection{Exercise 26.2}
+
+Determine which intervals the following functions is an increasing function or
+a decreasing function.
+\begin{enumerate}
+    \item $f(x)=x^2-2 x+4$
+    \item $f(x)=2 x^3-6 x^2+7$
+    \item $f(x)=x^3+x$
+    \item $f(x)=2+3 x-x^3$
+    \item $f(x)=x^2(x-3)$
+    \item $f(x)=3 x^4+2 x^3-3 x^2-2$
+    \item $f(x)=\dfrac{x}{x^2+1}$
+    \item $f(x)=\cos 2 x, 0 \leq x \leq \pi$
+\end{enumerate}
+
+\section{Relative Maximum and Minimum Values of Functions}
+
+As shown in the diagram below, the function value $f(a)$ at the point where
+$x=a$ is the maximum compared to its nearby points, we call $f(a)$ the relative
+maximum value; the function value $f(b)$ at the point where $x=b$ is the
+minimum compared to its nearby points, we call $f(b)$ the relative minimum
+value.
+\begin{center}
+    \includegraphics[scale=0.25]{assets/26-6.png}
+\end{center}
+
+\begin{center}
+    \framebox{
+        \parbox[t][5cm]{14cm}{ \addvspace{0.6cm} \hspace{0.4cm}Let $f(x)$ be a defined
+            function near point $x=a$,
+            \begin{itemize}
+                \item \parbox[t]{12.5cm}{If the function value $f(a)$ is the maximum compared to its
+                          nearby points, we say that $f(x)$ has a relative maximum value $f(a)$ at point
+                          $x=a$, and the point $(a, f(a))$ is the relative maximum point of the
+                          function;}
+                \item \parbox[t]{12.5cm}{If the function value $f(a)$ is the minimum compared to its
+                          nearby points, we say that $f(x)$ has a relative minimum value $f(a)$ at point
+                          $x=a$, and the point $(a, f(a))$ is the relative minimum point of the
+                          function.}
+            \end{itemize}
+        }}
+\end{center}
+\vspace{0.9em}
+
+Relative maximum and minimum values are collectively known as the extreme
+values, and the points where the extreme values occur are collectively known as
+the extreme points.
+
+From the diagram above, we can also see that the gradients of the tangent to
+the curve at the extreme points are zero. Hence, the following theorem can be
+obtained:
+\begin{center}
+    \framebox{
+        \parbox[t][1.6cm]{14cm}{ \addvspace{0.4cm} \centering \parbox{13cm}{If the function $f(x)$ is differentiable at point $x=a$, and $f(x)$
+                has a relative maximum or minimum value at point $x=a$, then $f'(a)=0$.} }}
+\end{center}
+
+\begin{multicols}{2}
+    The points that satisfy $f'(x)=0$ are called the stationary points of the
+    function.
+
+    If the function can be differentiated at point $x=a$, then the extreme point
+    must be a stationary point. However, the stationary point is not necessarily an
+    extreme point. For example, the derivative of the function $f(x)=x^3$ is
+    $f'(x)=3x^2$, and $f'(0)=0$, i.e. $O(0, 0)$ is a stationary point of the
+    function $f(x)=x^3$, but it is not an extreme point of the function, as shown
+    in the right diagram. \vfill{}\null{}
+
+    \columnbreak
+    \begin{center}
+        \includegraphics[scale=0.25]{assets/26-7.png}
+    \end{center}
+\end{multicols}
+
+\subsection*{How to Find the Extreme Values of Functions}
+
+\begin{enumerate}
+    \item \textbf{First Derivative Test}
+
+          The curve has a positive gradient of tangent to the left of the relative
+          maximum point, and a negative gradient of tangent to the right; the curve has a
+          negative gradient of tangent to the left of the relative minimum point, and a
+          positive gradient of tangent to the right. Hence, the following theorem is
+          obtained:
+          \begin{center}
+              \framebox{
+                  \parbox[t][3.3cm]{14cm}{ \addvspace{0.4cm} \centering \parbox{13cm}{Let $f(x)$ be a function that is differentiable near point $x=a$, and
+                          $f'(a) = 0$,
+                          \begin{itemize}[leftmargin=0.4cm]
+                              \item \parbox[t]{12.5cm}{If $f'(x) > 0$ to the left of $x=a$ and $f'(x) < 0$ to the right
+                                        of $x=a$, then $f(a)$ is a relative maximum value;}
+                              \item \parbox[t]{12.5cm}{If $f'(x) < 0$ to the left of $x=a$ and $f'(x) > 0$ to the right
+                                        of $x=a$, then $f(a)$ is a relative minimum value.}
+                          \end{itemize} }
+                  }}
+          \end{center}
+          \vspace{0.9em}
+
+    \item \textbf{Second Derivative Test}
+          \begin{center}
+              \framebox{
+                  \parbox[t][2.5cm]{14cm}{ \addvspace{0.4cm} \centering \parbox{13cm}{Let $f(x)$ be a function that is second derivable near point $x=a$,
+                          and $f'(a) = 0$,
+                          \begin{itemize}[leftmargin=0.4cm]
+                              \item \parbox[t]{12.5cm}{If $f''(a) < 0$, then $f(a)$ is a relative maximum value;}
+                              \item \parbox[t]{12.5cm}{If $f''(a) > 0$, then $f(a)$ is a relative minimum value.}
+                          \end{itemize} }
+                  }}
+          \end{center}
+
+          Note that the second derivative test is invalid when $f''(a) = 0$, and the
+          first derivative test should be used instead.
+\end{enumerate}
+
+\subsection{Practice 3}
+
+Find the extreme values of the following functions (Question 1 to 4):
+
+\begin{enumerate}
+    \item $f(x)=x^2+x-6$
+    \item $f(x)=2-x-x^2$
+    \item $f(x)=\dfrac{1}{3} x^3-\dfrac{1}{2} x^2-2x+2$
+    \item $f(x)=4 x-3 x^3$
+\end{enumerate}
+
+Find the coordinates of the extreme points of the following functions (Question
+5 to 6):
+\begin{enumerate}[resume]
+    \item $y=2 x^3-3 x^2-12 x-7$
+    \item $y=x+\dfrac{1}{x}$
+\end{enumerate}
+
+Find the extreme values of the following functions (Question 1 to 6):
+\begin{enumerate}
+    \item $f(x)=\dfrac{1}{2} x^2-3 x$
+    \item $f(x)=4+2 x-x^2$
+    \item $f(x)=-2 x^2+4 x+7$
+    \item $f(x)=3 x^2-2 x+1$
+    \item $f(x)=2 x^3-9 x^2-24 x-12$
+    \item $f(x)=15+9 x-3 x^2-x^3$
+\end{enumerate}
+
+Find the coordinates of the extreme points of the following functions (Question
+7 to 11):
+\begin{enumerate}[resume]
+    \item $f(x)=x\left(x^2-12\right)$
+    \item $f(x)=4 x^3-3 x^2-6 x+2$
+    \item $f(x)=x(x-8)(x-3)$
+    \item $f(x)=4 x^2+\dfrac{1}{x}$
+    \item $f(x)=x-2 \sin x, \quad-\pi<x<\pi$
+    \item Find the stationery points of the function $f(x)=x^2(3-x)$, and determine
+          whether the stationery points are relative maximum points or relative minimum
+          points.
+\end{enumerate}
+
+\subsection{Absolute Maximum and Minimum Values of Functions}
+
+Shown in the diagram below is the graph of the curve of the function $f(x)$ in
+the interval $[a, b]$. From the diagram, we know that $f(x_1)$ and $f(x_3)$ are
+the relative minimum value, while $f(x_2)$ is the relative maximum value. In
+solving practical problems, we are often concerned with the maximum and minimum
+values of the function in the entire domain. In the diagram below, the absolute
+maximum value of the function $f(x)$ is $f(b)$, and the absolute minimum value
+is $f(x_3)$.
+\begin{center}
+    \includegraphics[scale=0.25]{assets/26-8.png}
+\end{center}
+
+\begin{center}
+    \framebox{
+        \parbox[t][1.6cm]{14cm}{ \addvspace{0.4cm} \centering \parbox{13.5cm}{If the function $f(x)$ is continuous in the close interval $[a,
+                            b]$, then the function $f(x)$ must have the absolute maximum value and the
+                absolute minimum value in the interval $[a, b]$.} }}
+\end{center}
+
+The function $f(x)$ that is continuous in the open interval $(a, b)$ may not
+have the absolute maximum value and the absolute minimum value. For example,
+the function $y = \dfrac{1}{x}$ is continuous in the interval $(0, \infty)$,
+but it does not have the absolute maximum value and the absolute minimum value.
+Also in the diagram above, if the domain is defined as the open interval $(a,
+    b)$, then the function $f(x)$ only has the relative minimum value but not the
+absolute minimum value.
+
+From the diagram above, if the function is continuous in the interval $[a, b]$,
+we just have to make comparison between all the extreme points and vertices of
+the function to find the absolute maximum value and the absolute minimum value
+of the function.
+
+\subsection{Practice 4}
+
+Find the absolute maximum value and the absolute minimum value of the following
+functions (Question 1 to 2):
+\begin{enumerate}
+    \item $f(x) = 3x^3 - 9x + 5$, $[-2, 2]$
+    \item $f(x) = x^4 - 2x^2 + 5$, $[-2, 3]$
+    \item If $x + y = 8$, find the absolute minimum value of $x^2 + y^2$.
+    \item A metal wire with a length of $100$cm is bent into a rectangle. Find the width
+          and the length of the rectangle so that the area of the rectangle is the
+          largest.
+\end{enumerate}
+
+\subsection{Exercise 26.4}
+
+Find the absolute maximum value and the absolute minimum value of the following
+functions (Question 1 to 3):
+\begin{enumerate}
+    \item $f(x)=5-36 x+3 x^2+4 x^3$, $[-1,2]$
+    \item $f(x)=4 x^2\left(x^2-2\right)$, $[-1,3]$
+    \item $f(x)=x^5-5 x^4+5 x^3$, $[0,4]$
+    \item A metal wire with a length of $60$cm is bent into a rectangle. Find the width
+          and the length of the rectangle so that the area of the rectangle is the
+          largest.
+    \item A metal wire with a length of $100$cm is cut into two sections. Each section is
+          bent into a square. Find the length of these two sections of the wire so that
+          the sum of the areas of the two squares is the smallest.
+    \item As shown in the diagram below, a trapezium has three sides of length $10$cm.If
+          the area of the trapezium is the largest, find the length of the fourth side.
+          Hence, find the maximum area of the trapezium.
+          \begin{center}
+              \includegraphics[scale=0.25]{assets/26-9.png}
+          \end{center}
+    \item A right cone has a slant height of $9$cm. Find the height of the cylinder such
+          that the volume of the cylinder is the largest.
+    \item A cylinder shaped can with lid has a volume of $250\pi$cm$^3$. Find the bottom
+          radius and the height of the can so that the material used is the least.
+    \item Split the number 20 into two parts such that one part is 4 times the reciprocal
+          of another part, and the the sum of it with with 9 times the reciprocal of
+          another part is the smallest.
+    \item A metal wire with a length of $150$cm is split into two sections, and they are
+          bent into a square and a circle respectively. Find the length of these two
+          sections such that the sum of the area of the square and the circle is the
+          smallest.
+    \item As shown in the diagram below, a window is formed by a rectangle and a
+          semicircle. The perimeter of the entire window is 300cm. If the area of the
+          window is the largest, find the length of the rectangle. Hence, find the
+          maximum area of the window.
+          \begin{center}
+              \includegraphics[scale=0.25]{assets/26-10.png}
+          \end{center}
+    \item In the diagram below, $PQRS$ is a rectangle, the coordinates of $P$ and $Q$ are
+          $(-k, 0)$ and $(k, 0)$ respectively, where $k > 0$, and the two points $R$ and
+          $S$ are on the curve $y = 3- \dfrac{1}{2}x^2$. Find the value of $k$ such that
+          the area of the rectangle is the largest.
+          \begin{center}
+              \includegraphics[scale=0.25]{assets/26-11.png}
+          \end{center}
+\end{enumerate}
+
+\section{The Convexity and the Point of Inflection of Functions}
+
+For a curve $y = f(x)$
+\begin{enumerate}
+    \item In a given interval, if the tangent line of the curve is always above the
+          curve, then the curve convex up in the interval, as shown in the diagram below.
+          \begin{center}
+              \includegraphics[scale=0.25]{assets/26-12.png}
+          \end{center}
+    \item In a given interval, if the tangent line of the curve is always below the
+          curve, then the curve is convex down in the interval, as shown in the diagram
+          below.
+          \begin{center}
+              \includegraphics[scale=0.25]{assets/26-13.png}
+          \end{center}
+\end{enumerate}
+
+If two sides of a point on a curve of a function $y = f(x)$ changes their
+concavity, then the demarcation point is called the point of inflection of the
+curve.
+
+Now we discuss the way to determine the convexity and the point of inflection
+of a function. In the diagram below, the left side of the point $x = x_0$
+convex down, and the right side convex up.
+\begin{center}
+    \includegraphics[scale=0.25]{assets/26-14.png}
+\end{center}
+In the interval $(-\infty, x_0)$ that convex up, when the tangents to the curve cut the curve at $P_1$, $P_2$, and $P_3$ respectively from left to right, the gradients of the tangent lines $m_1$, $m_2$, and $m_3$ are decreasing, i.e. the gradient of the tangent $f'(x)$ is decreasing.
+
+In the interval $(x_0, \infty)$ that convex down, when the tangents to the
+curve cut the curve at $P_4$, $P_5$, and $P_6$ respectively from left to right,
+the gradients of the tangent lines $m_4$, $m_5$, and $m_6$ are increasing, i.e.
+the gradient of the tangent $f'(x)$ is increasing.
+
+We have the following theorem:
+\begin{center}
+    \framebox{
+        \parbox[t][2.7cm]{14cm}{ \addvspace{0.4cm} \hspace{0.4cm}Let function $f(x)$ has
+            second derivative $f''(x)$.
+            \begin{itemize}[leftmargin=0.8cm]
+                \item \parbox[t]{12.5cm}{If $f''(x) > 0$ in a given interval, then the curve is convex
+                          up;}
+                \item \parbox[t]{12.5cm}{If $f''(x) < 0$ in a given interval, then the curve is convex
+                          down.}
+            \end{itemize} }}
+\end{center}
+
+\subsection{Practice 5}
+
+Find the intervals where the following functions are convex up or convex down,
+and find the points of inflection of the functions:
+\begin{enumerate}
+    \item $f(x)=3 x^2-x^3$
+    \item $f(x)=\frac{1}{3} x^3-x^2-3 x+2$
+\end{enumerate}
+
+\subsection{Practice 26.5}
+Find the coordinates of the points of inflection of the following functions
+(Question 1 to 3):
+\begin{enumerate}
+    \item $f(x)=x^3-6 x+4$
+    \item $f(x)=x^3(4-x)$
+    \item $f(x)=x^{\dfrac{7}{3}}$
+\end{enumerate}
+
+Find the intervals where the following functions are convex up or convex down,
+and find the points of inflection of the functions (Question 4 to 6):
+\begin{enumerate}[resume]
+    \item $f(x)=-(x-2)^3$
+    \item $f(x)=2 x^3-3 x^2-36 x+25$
+    \item $f(x)=x^4-2 x^3+1$
+\end{enumerate}
+
+Find the extreme values, the coordinates of the points of inflection, and the
+intervals where the following functions are convex up or convex down (Question
+7 to 8):
+\begin{enumerate}[resume]
+    \item $f(x)=x(6-2 x)^2$
+    \item $f(x)=-\dfrac{2}{1+x^2}$
+\end{enumerate}
+
+\section{Curve Sketching}
+
+Having learnt the derivatives, we can use the concepts of the increasing and
+decreasing of a function, the convexity and the point of inflection of a
+function to sketch the curve of a function in a rather accurate way. Listed
+below are the steps to sketch the curve of a function:
+\begin{enumerate}
+    \item Find the point of intersections of the curve with the axes;
+    \item Solve the equation $f'(x) = 0$, and determine the intervals where the function
+          is increasing or decreasing and the extreme values;
+    \item Solve the equation $f''(x) = 0$, and determine the intervals where the curve is
+          convex up or convex down and the points of inflection;
+    \item Draw the curve according to the above information.
+\end{enumerate}
+The steps above are not necessarily to be followed in the order listed, and can be adjusted according to the actual situation.
+
+\subsection{Practice 6}
+
+Sketch the graph of the function $f(x) = x^3 - 3x^2 + 2$.
+
+\subsection{Exercise 26.6}
+
+Sketch the graph of the following functions (Question 1 to 3):
+
+\begin{enumerate}
+    \item $f(x)=\dfrac{1}{3} x^3-\dfrac{1}{2} x^2-2 x$
+    \item $f(x)=x^4-32 x+10$
+    \item $f(x)=(x-1)^3(x-2)$
+    \item Given the function $f(x) = x^3(4-x)$.
+          \begin{enumerate}
+              \item Find the extreme values and the intervals of increasing and decreasing of
+                    $f(x)$.
+              \item Find the points of inflection and the intervals of convexity and concavity of
+                    $f(x)$.
+              \item Hence, sketch the graph of $f(x)$.
+          \end{enumerate}
+\end{enumerate}
+
+\section{Rate of Change and Related Rate of Change}
+
+The derivative of the function $y = f(x)$ at the point $x = x_0$ is known as
+the rate of change of the dependent value $y$ with respect to the independent
+value $x$ at the point $x = x_0$. For example, $\dfrac{d y}{d x} = 3$ means
+that when $x$ increases by $1$ unit, $y$ increases by $3$ units, i.e. $y$ and
+$x$ are both changing, and they are changing in the ratio of $3:1$.
+
+The same can be said that the derivative of the area function $A = A(t)$ at the
+time $t = t_0$ is the rate of change of the area with respect to the time at
+the time $t = t_0$. When the rate of change of the area at $t = t_0$ is
+$\dfrac{d A}{d t} = 4$cm$^2$/s, it means that the area is increasing in the
+rate of 4 square centimetres per second; while $\dfrac{d A}{d t} = -4$cm$^2$/s
+means that the area is decreasing in the rate of 4 square centimetres per
+second.
+
+If multiple variables are correlated by a specific relationship, these
+variables are all changing with respect to time, then there must be some kind
+of bonds between their respective rate of changes. This relationship between
+the rate of changes is called the related rate of change. If $y = f(x)$ is the
+function of $x$, and $x$ changes with respect to $t$, then since $y$ is
+changing with respect to $x$, $y$ is also changing with respect to $t$. In
+other words, $y$ is also a function of the time $t$. HEnce, from the chain
+rule, we can obtain the following relationship:
+\begin{cequation}
+    \dfrac{dy}{dt} = \dfrac{dy}{dx} \cdot \dfrac{dx}{dt}
+\end{cequation}
+i.e. the rate of change of $y$ is correlated to the rate of change of $x$.
+
+\subsection{Practice 7}
+\begin{enumerate}
+    \item A drop of ink gradually spread after being dropped onto a piece of paper. At
+          $t$ seconds, its area is $A = \left(3t^2 + \dfrac{1}{5}t + 2\right)$mm$^2$.
+          Find the rate of change of the ink spread at $t = 2$ second.
+    \item The radius of a sphere increases at a rate of $3$cm/s. When the radius is
+          $5$cm, find the rate of change of the surface area of the sphere.
+\end{enumerate}
+
+\subsection{Exercise 26.7}
+\begin{enumerate}
+    \item Water is poured into a container, the relationship between the volume of the
+          water and the time is $V = (2t^2 + 3t)$cm$^3$. WHen $t = 3$s, find the rate of
+          change of the volume of the water.
+    \item One throws a piece of stone into the water. The radius of the ripple on the
+          water surface caused by the stone is increasing at a rate of $0.1$m/s. When the
+          radius is $1$m, find the rate of change of the area of the ripple.
+    \item The side length of a square is increasing at a rate of $3$cm per second. When
+          the side length is $15$cm, find the rate of change of its area.
+    \item A cube expanded after being heated, the rate of change of its side length is
+          $5$cm/s. When the side length is $4$cm, find the rate of change of its area.
+    \item The radius of a sphere increases by 1cm per second. When the radius is 3cm,
+          find the rate of change of its volume.
+    \item The area of a circle increases by 5cm$^2$ per minute. When the circumference of
+          the circle is 40cm find the rate of change of its radius.
+    \item The volume of a sphere decreases at a rate of $12\pi$cm$^3$ per minute. When
+          the radius of the sphere is 6cm, find the rate of change of its radius and
+          surface area.
+    \item The surface area of a sphere increase at a rate of $10$cm$^2$/s. When its
+          radius is 5cm, find the rate of change of its radius and volume.
+    \item Water is poured into the cone shaped container as shown in the diagram below,
+          the rate of rising of the water surface is $1$cm per second. When the depth of
+          the water is $2m$, find the rate of change of the water volume.
+          \begin{center}
+              \includegraphics[scale=0.25]{assets/26-15.png}
+          \end{center}
+    \item The radius $r$ of a solid cylinder decreases by $0.04$cm per second, its height
+          constantly equal to 20cm. When the radius is 2cm, find the rate of change of
+          the surface area of the cylinder.
+    \item Given the function $y = x^3 + 10$. When the rate of change of $y$ is 27 times
+          the rate of change of $x$, find the value of $x$.
+    \item Water is poured ito a cone shaped container facing downwards with a height of
+          18m and a base radius of 24m. WHen the height of the water is 6m, find the rate
+          of rising of the water surface.
 \end{enumerate}
 
 \newpage
@@ -715,23 +1232,24 @@ Hence, $\displaystyle\int x^{n}dx = \dfrac{x^{n+1}}{n+1} + C$.
 
 Similarly, we can also get the other basic formulas of indefinite integrals.
 The basic formulas of indefinite integrals are listed below:
-\begin{mdframed}[style=MyFrame]
-    \vspace{-0.5cm}
-    \begin{multicols}{2}
-        \begin{enumerate}[label = ]
-            \item $\displaystyle\int x^{n}dx = \dfrac{x^{n+1}}{n+1} + C$, $n \neq -1$
-            \item $\displaystyle\int e^{x}dx = e^{x} + C$
-            \item $\displaystyle\int \sin xdx = -\cos x + C$
-            \item $\displaystyle\int \sec^2xdx = \tan x + C$
-            \item $\displaystyle\int \csc x\cot xdx = -\csc x + C$
-            \item $\displaystyle\int \dfrac{1}{x}dx = \ln|x| + C$
-            \item $\displaystyle\int a^{x}dx = \dfrac{a^x}{\ln a} + C$,
-            \item $\displaystyle\int \cos xdx = \sin x + C$
-            \item $\displaystyle\int \csc^2xdx = -\cot x + C$
-            \item $\displaystyle\int \sec x\tan xdx = \sec x + C$
-        \end{enumerate}
-    \end{multicols}
-\end{mdframed}
+\begin{center}
+    \framebox{
+        \parbox[t][6cm]{12cm}{ \addvspace{0.2cm} \centering \begin{multicols}{2}
+                \begin{enumerate}[label = ]
+                    \item $\displaystyle\int x^{n}dx = \dfrac{x^{n+1}}{n+1} + C$, $n \neq -1$
+                    \item $\displaystyle\int e^{x}dx = e^{x} + C$
+                    \item $\displaystyle\int \sin xdx = -\cos x + C$
+                    \item $\displaystyle\int \sec^2xdx = \tan x + C$
+                    \item $\displaystyle\int \csc x\cot xdx = -\csc x + C$
+                    \item $\displaystyle\int \dfrac{1}{x}dx = \ln|x| + C$
+                    \item $\displaystyle\int a^{x}dx = \dfrac{a^x}{\ln a} + C$,
+                    \item $\displaystyle\int \cos xdx = \sin x + C$
+                    \item $\displaystyle\int \csc^2xdx = -\cot x + C$
+                    \item $\displaystyle\int \sec x\tan xdx = \sec x + C$
+                \end{enumerate}
+            \end{multicols} }}
+\end{center}
+\vspace{0.9em}
 
 \subsection{Practice 1}
 Find the following indefinite integrals:
@@ -767,14 +1285,16 @@ Find the following indefinite integrals:
 
 Using the arithmetic properties of derivatives, we can also get the following
 arithmetic properties of indefinite integrals:
-\begin{mdframed}[style=MyFrame]
-    \begin{enumerate}
-        \item Constant Multiple Rule: $\displaystyle\int kf(x)dx = k\int f(x)dx$, where $k$
-              is a constant.
-        \item Sum and Difference Rule: $\displaystyle\int \left[f(x) \pm g(x)\right]dx = \int
-                  f(x)dx \pm \int g(x)dx$
-    \end{enumerate}
-\end{mdframed}
+\begin{center}
+    \framebox{
+        \parbox[t][2.6cm]{12cm}{ \addvspace{0.2cm} \centering \begin{enumerate}
+                \item Constant Multiple Rule: $\displaystyle\int kf(x)dx = k\int f(x)dx$, where $k$
+                      is a constant.
+                \item Sum and Difference Rule: $\displaystyle\int \left[f(x) \pm g(x)\right]dx = \int
+                          f(x)dx \pm \int g(x)dx$
+            \end{enumerate} }}
+\end{center}
+\vspace{0.9em}
 
 Note that when integrating by parts, the result of each part of the integral
 contains a constant of integration. However, the sum (or difference) of
@@ -852,12 +1372,12 @@ Consider a function $F(u)$, where $u$ is a function of $x$, i.e. $u = g(x)$.
 
 Using the chain rule, we have $\dfrac{d}{dx}F\left(g(x)\right) =
     F'\left(g(x)\right) \cdot g'(x)$. Hence,
-\begin{mdframed}[style=MyFrame]
-    \begin{cequation}
-        \displaystyle\int F'\left(g(x)\right) \cdot g'(x)dx =
-        F\left(g(x)\right) + C
-    \end{cequation}
-\end{mdframed}
+\begin{center}
+    \framebox{
+        \parbox[t][1.2cm]{6cm}{ \addvspace{0.2cm} \centering $\displaystyle\int
+                F'\left(g(x)\right) \cdot g'(x)dx = F\left(g(x)\right) + C$ }}
+\end{center}
+\vspace{0.9em}
 Generally speaking, during the calculation process, we let $u = g(x)$.
 \begin{flalign*}
     \therefore\ \displaystyle\int F'\left(g(x)\right) \cdot g'(x)dx & = \int F'(u)\dfrac{du}{dx}dx & \\
@@ -940,6 +1460,10 @@ Generally speaking, in order to find the indefinite integral of a proper
 fraction, we first have to decompose the proper fraction into partial
 fractions, then perform integration on each term. This method of integration is
 called integration by partial fractions.
+
+To find the partial fractions of an improper fraction, we can first decompose
+the fraction into the sum of a polynomial and a proper fraction using
+polynomial division.
 
 \subsection{Practice 6}
 Find the following indefinite integral:
@@ -1746,17 +2270,27 @@ Note that $\big[F(x)\big]_a^b$ can also be written as $F(x)\big|_a^b$.
 \subsection*{Properties of Definite Integrals}
 
 The definite integrals have the following basic properties:
-\begin{mdframed}[style=MyFrame]
-    \textbf{Property 1} \hspace{10pt} $\displaystyle\int_a^b kf(x) dx = k\int_a^b f(x) dx$
-\end{mdframed}
-\vspace{-2.5em}
-\begin{mdframed}[style=MyFrame]
-    \textbf{Property 2} \hspace{10pt} $\displaystyle\int_a^b [f(x) \pm g(x)] dx = \int_a^b f(x) dx \pm \int_a^b g(x) dx$
-\end{mdframed}
-\vspace{-2.5em}
-\begin{mdframed}[style=MyFrame]
-    \textbf{Property 3} \hspace{10pt} $\displaystyle\int_c^a f(x) dx + \int_b^c f(x) dx = \int_b^a f(x) dx$
-\end{mdframed}
+
+\begin{center}
+    \framebox{
+
+        \parbox[t][1.3cm]{10cm}{ \addvspace{0.2cm}\hspace{10pt}\textbf{Property 1}
+            \hspace{10pt} $\displaystyle\int_a^b kf(x) dx = k\int_a^b f(x) dx$}}
+\end{center}
+\begin{center}
+    \framebox{
+
+    \parbox[t][1.3cm]{10cm}{ \addvspace{0.2cm}\hspace{10pt} \textbf{Property 2}
+    \hspace{10pt} $\displaystyle\int_a^b [f(x) \pm g(x)] dx = \int_a^b f(x) dx \pm
+        \int_a^b g(x) dx$}}
+\end{center}
+\begin{center}
+    \framebox{
+
+        \parbox[t][1.3cm]{10cm}{ \addvspace{0.25cm}\hspace{10pt}\textbf{Property 3}
+            \hspace{10pt} $\displaystyle\int_c^a f(x) dx + \int_b^c f(x) dx = \int_b^a f(x)
+                dx$}}
+\end{center}
 
 \subsection{Practice 3}
 
@@ -1785,12 +2319,16 @@ In the last chapter, we have learned how to solve indefinite integrals using
 the method of integration by substitution: $\displaystyle\int f(g(x))g'(x)dx =
     \int f(u)du$ where $u = g(x)$. From the basic theorem of calculus, the method
 of integration by substitution of definite integrals can be derived:
-\begin{mdframed}[style=MyFrame]
-    \begin{cequation}
-        \int_a^b f(g(x))g'(x)dx = \int_{g(a)}^{g(b)} f(u)du
-    \end{cequation}
-\end{mdframed}
-The method of integration by substitution of definite integrals is similar to that of indefinite integrals. The only difference is that the limits of integration are changed accordingly.
+\begin{center}
+    \framebox{
+
+        \parbox[t][1.3cm]{9cm}{ \addvspace{0.2cm} \centering $\displaystyle\int_a^b
+                f(g(x))g'(x)dx = \int_{g(a)}^{g(b)} f(u)du$ }}
+\end{center}
+\vspace{0.9em}
+The method of integration by substitution of definite integrals is similar to
+that of indefinite integrals. The only difference is that the limits of
+integration are changed accordingly.
 
 \subsection{Practice 4}
 
