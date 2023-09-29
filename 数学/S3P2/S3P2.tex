@@ -731,6 +731,73 @@ i.e. the rate of change of $y$ is correlated to the rate of change of $x$.
           of rising of the water surface.
 \end{enumerate}
 
+\section{Approximate Calculation}
+
+In the previous chapter, we have learnt that the derivative of the function $y
+    = f(x)$ is
+\begin{cequation}
+    \dfrac{dy}{dx} = \lim_{\Delta x \to 0}\dfrac{\Delta y}{\Delta x} = \lim_{\Delta x \to 0}\dfrac{f(x + \Delta x) - f(x)}{\Delta x}
+\end{cequation}
+From the definition of limit, we know that when $\Delta x$ is small enough,
+\begin{cequation}
+    \dfrac{\Delta y}{\Delta x} = \dfrac{\Delta y}{\Delta x} \approx \dfrac{f(x + \Delta x) - f(x)}{\Delta x}
+\end{cequation}
+Hence,
+\begin{center}
+    \framebox{
+        \parbox[t][1.2cm]{9cm}{ \addvspace{0.25cm} \centering $\Delta y \approx
+                \dfrac{dy}{dx}\Delta x$ }}
+\end{center}
+or $f(x + \Delta x) - f(x) \approx f'(x)\Delta x$, i.e.
+\begin{center}
+    \framebox{
+        \parbox[t][1.2cm]{9cm}{ \addvspace{0.45cm} \centering $f(x + \Delta x) \approx f(x)
+                + f'(x)\Delta x$ }}
+\end{center}
+
+The expression above is a simple formula for approximate calculation that can
+be used to find the approximate value of a function.
+\begin{center}
+    \includegraphics[scale=0.25]{assets/26-16.png}
+\end{center}
+
+\subsection{Practice 8}
+
+\begin{enumerate}
+    \item The side length of a cube increases from 1cm to $1.01$cm, how much does its
+          surface area increase approximately?
+    \item After a metal ball was heated, its radius had increased form 4cm to $4.01$cm.
+          Find the approximate increment of its volume and surface area.
+    \item Find the approximate value of $\sqrt{15}$.
+\end{enumerate}
+
+\subsection{Exercise 26.8}
+\begin{enumerate}
+    \item The side length of a cube increased from 4cm to $4.001$cm, how much does its
+          area increase approximately?
+    \item The radius of a circle increases from 3cm to $3.01$cm, find the approximate
+          increment of its area.
+    \item The radius of a sphere decrease from 3cm to $2.98$cm, find the approximate
+          decrement of its volume,
+    \item Let $y = 3x^5$. If $x$ is decreased by $0.2\%$, how many percent does $y$
+          decrease approximately?
+    \item If the side length of a cube increases ny $1\%$, how many percent does its
+          volume increase approximately?
+    \item Let the surface area of a solid right cylinder with a height of 16cm and a
+          radius of $r$cm be $A$.
+          \begin{enumerate}
+              \item Prove that $\dfrac{dA}{dr} = 4\pi(r+8)$.
+              \item If the height of the right cylinder remains the same, using the result obtained
+                    from (a), find, when the radius of the right cylinder increases from 4cm to
+                    $4.02$cm, the approximate increment of its surface area.
+          \end{enumerate}
+    \item If $y = \dfrac{1}{\sqrt{x}}$, find $\dfrac{dy}{dx}$. Hence, find the
+          approximate value of $\dfrac{1}{\sqrt{99.4}}$. (Correct your answer to 4
+          decimal paces)
+    \item If $y = x^{\frac{1}{4}}$, find $\dfrac{dy}{dx}$. Hence, find the approximate
+          value of $16.05^{\frac{1}{4}}$. (Correct your answer to 4 decimal places)
+\end{enumerate}
+
 \newpage
 \section{Revision Exercise 26}
 
