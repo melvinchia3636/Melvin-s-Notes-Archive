@@ -1,6 +1,6 @@
-# Table of Contents 
+# Table of Contents
 
- - [CPP Learning V2](<./CPP Learning V2>)
+- [CPP Learning V2](<./CPP Learning V2>)
   - [0.2 — Introduction to programming languages](<./CPP Learning V2/0.2 — Introduction to programming languages.md>)
   - [0.3 — Introduction to C&C++](<./CPP Learning V2/0.3 — Introduction to C&C++.md>)
   - [0.4 & 0.5 — Introduction to C++ development, compiler, linker, and libraries](<./CPP Learning V2/0.4 & 0.5 — Introduction to C++ development, compiler, linker, and libraries.md>)
