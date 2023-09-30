@@ -40,4 +40,4 @@ markdown=$(cd "$1" && tree -f --noreport -I "readme.md" -P "*.*" --charset ascii
     tail -n +2)
 
 # The output is then returned with a trailing newline character.
-echo "# Table of Contents\n\n$markdown" > readme.md
+echo -e "# Table of Contents" "\n\n" "$markdown" > readme.md
