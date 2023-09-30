@@ -35,7 +35,7 @@
 <details>
 <summary>SPM</summary>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Science</summary>
 
@@ -43,7 +43,7 @@
 - [第四章 促进环境可持续发展的绿色能源.md](<./SPM/Science/第四章 促进环境可持续发展的绿色能源.md>)
 
 </details>
-</dl>
+</dd></dl>
 
 
 </details>
@@ -134,7 +134,7 @@
 
 - [2023高二下半年统测范围.docx](<./商业学/2023高二下半年统测范围.docx>)
 - [Concept Chart.docx](<./商业学/Concept Chart.docx>)
-<dl>
+<dl><dd>
 <details>
 <summary>exam papers</summary>
 
@@ -144,9 +144,9 @@
 - [商业学-高一年中考-2019试卷.docx-1.pdf](<./商业学/exam papers/商业学-高一年中考-2019试卷.docx-1.pdf>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>markdown</summary>
 
@@ -157,9 +157,9 @@
 - [第四章 分销 - 零售业.md](<./商业学/markdown/第四章 分销 - 零售业.md>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>pdf</summary>
 
@@ -171,9 +171,9 @@
 - [高二 第一章 广告.pdf](<./商业学/pdf/高二 第一章 广告.pdf>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>word</summary>
 
@@ -185,9 +185,9 @@
 - [高二 第二章 保险.docx](<./商业学/word/高二 第二章 保险.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>xmind</summary>
 
@@ -215,7 +215,7 @@
 - [国内贸易文件.xmind](<./商业学/xmind/国内贸易文件.xmind>)
 
 </details>
-</dl>
+</dd></dl>
 
 - [高二商业学统测讲义.docx](<./商业学/高二商业学统测讲义.docx>)
 - [高二第一章商业学小测验范围.docx](<./商业学/高二第一章商业学小测验范围.docx>)
@@ -228,44 +228,44 @@
 <details>
 <summary>地理</summary>
 
-<dl>
+<dl><dd>
 <details>
 <summary>graphics</summary>
 
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>markdown</summary>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>地形作用.assets</summary>
 
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
 - [岩溶、火山、冰河地形.md](<./地理/markdown/岩溶、火山、冰河地形.md>)
 - [第一章 地球的宇宙环境.md](<./地理/markdown/第一章 地球的宇宙环境.md>)
 - [第三章 大气系统.md](<./地理/markdown/第三章 大气系统.md>)
 - [第二张 地球的自转与公转.md](<./地理/markdown/第二张 地球的自转与公转.md>)
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>第六章 地形.assets</summary>
 
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
 - [第六章 地形.md](<./地理/markdown/第六章 地形.md>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>spreadsheets</summary>
 
@@ -273,9 +273,9 @@
 - [地形列表.xlsx](<./地理/spreadsheets/地形列表.xlsx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>xmind</summary>
 
@@ -296,7 +296,7 @@
 - [6.3 岩溶、火山、冰河地形.xmind](<./地理/xmind/6.3 岩溶、火山、冰河地形.xmind>)
 
 </details>
-</dl>
+</dd></dl>
 
 
 </details>
@@ -315,7 +315,7 @@
 <details>
 <summary>数学</summary>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Certificates Collection</summary>
 
@@ -325,13 +325,13 @@
 - [performance.pdf](<./数学/Certificates Collection/performance.pdf>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Other Topics</summary>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>2023 Math Competition</summary>
 
@@ -340,13 +340,13 @@
 - [comp.tex](<./数学/Other Topics/2023 Math Competition/comp.tex>)
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>Calculus Workbook</summary>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Multiple Integrals</summary>
 
@@ -355,13 +355,13 @@
 - [exercises.tex](<./数学/Other Topics/Calculus Workbook/Multiple Integrals/exercises.tex>)
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>Conic Section</summary>
 
@@ -373,28 +373,28 @@
 - [Exercise 5b.tex](<./数学/Other Topics/Conic Section/Exercise 5b.tex>)
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>Coordinate Transformation</summary>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>assets</summary>
 
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
 - [coordiate_transformation.pdf](<./数学/Other Topics/Coordinate Transformation/coordiate_transformation.pdf>)
 - [coordiate_transformation.synctex.gz](<./数学/Other Topics/Coordinate Transformation/coordiate_transformation.synctex.gz>)
 - [coordiate_transformation.tex](<./数学/Other Topics/Coordinate Transformation/coordiate_transformation.tex>)
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>Differential Equation</summary>
 
@@ -403,9 +403,9 @@
 - [diffeq.tex](<./数学/Other Topics/Differential Equation/diffeq.tex>)
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>Differentiation</summary>
 
@@ -413,9 +413,9 @@
 - [exercises.tex](<./数学/Other Topics/Differentiation/exercises.tex>)
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>Fadell Calculus</summary>
 
@@ -427,22 +427,22 @@
 - [hmm.tex](<./数学/Other Topics/Fadell Calculus/hmm.tex>)
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>Implicit Differenciation</summary>
 
 - [Thomas Calculus Exercise 3.7.pdf](<./数学/Other Topics/Implicit Differenciation/Thomas Calculus Exercise 3.7.pdf>)
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>Integration</summary>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Calculus Question Bank</summary>
 
@@ -451,9 +451,9 @@
 - [trig sub.tex](<./数学/Other Topics/Integration/Calculus Question Bank/trig sub.tex>)
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Exercise 11d</summary>
 
@@ -462,9 +462,9 @@
 - [Exercsise 11d.tex](<./数学/Other Topics/Integration/Exercise 11d/Exercsise 11d.tex>)
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Exercise 11e</summary>
 
@@ -473,9 +473,9 @@
 - [Exercsise 11e.tex](<./数学/Other Topics/Integration/Exercise 11e/Exercsise 11e.tex>)
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Exercise 11f</summary>
 
@@ -484,9 +484,9 @@
 - [Exercsise 11f.tex](<./数学/Other Topics/Integration/Exercise 11f/Exercsise 11f.tex>)
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Exercise 11g</summary>
 
@@ -495,9 +495,9 @@
 - [Exercsise 11g.tex](<./数学/Other Topics/Integration/Exercise 11g/Exercsise 11g.tex>)
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Exercise 11h</summary>
 
@@ -506,9 +506,9 @@
 - [Exercsise 11h.tex](<./数学/Other Topics/Integration/Exercise 11h/Exercsise 11h.tex>)
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Exercise 11i</summary>
 
@@ -517,9 +517,9 @@
 - [Exercise 11i.tex](<./数学/Other Topics/Integration/Exercise 11i/Exercise 11i.tex>)
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Exercise 11j</summary>
 
@@ -528,40 +528,40 @@
 - [Exercise 11j.tex](<./数学/Other Topics/Integration/Exercise 11j/Exercise 11j.tex>)
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>Kangaroo Math Comp</summary>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>2022</summary>
 
 - [Junior.pdf](<./数学/Other Topics/Kangaroo Math Comp/2022/Junior.pdf>)
 - [Junior.synctex.gz](<./数学/Other Topics/Kangaroo Math Comp/2022/Junior.synctex.gz>)
 - [Junior.tex](<./数学/Other Topics/Kangaroo Math Comp/2022/Junior.tex>)
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>pictures</summary>
 
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>Logical Reasoning</summary>
 
@@ -570,9 +570,9 @@
 - [logical_reasoning.tex](<./数学/Other Topics/Logical Reasoning/logical_reasoning.tex>)
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>Mathematical Induction</summary>
 
@@ -584,9 +584,9 @@
 - [induction.tex](<./数学/Other Topics/Mathematical Induction/induction.tex>)
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>hmm</summary>
 
@@ -596,19 +596,19 @@
 - [calculus.tex](<./数学/Other Topics/hmm/calculus.tex>)
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>S2P1</summary>
 
 - [S2P1.pdf](<./数学/S2P1/S2P1.pdf>)
 - [S2P1.tex](<./数学/S2P1/S2P1.tex>)
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>assets</summary>
 
@@ -618,9 +618,9 @@
 - [T5 Bab 3 - Raja Berperlembagaan dan Demokrasi Berparlimen.pdf](<./数学/S2P1/assets/T5 Bab 3 - Raja Berperlembagaan dan Demokrasi Berparlimen.pdf>)
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>drawings</summary>
 
@@ -629,13 +629,13 @@
 - [figures.tex](<./数学/S2P1/drawings/figures.tex>)
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>S2P2</summary>
 
@@ -644,68 +644,68 @@
 - [corr. coeff..py](<./数学/S2P2/corr. coeff..py>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>S3P1</summary>
 
 - [S3P1.pdf](<./数学/S3P1/S3P1.pdf>)
 - [S3P1.synctex.gz](<./数学/S3P1/S3P1.synctex.gz>)
 - [S3P1.tex](<./数学/S3P1/S3P1.tex>)
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>assets</summary>
 
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
 - [multicols.regex](<./数学/S3P1/multicols.regex>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>S3P2</summary>
 
 - [S3P2.pdf](<./数学/S3P2/S3P2.pdf>)
 - [S3P2.synctex.gz](<./数学/S3P2/S3P2.synctex.gz>)
 - [S3P2.tex](<./数学/S3P2/S3P2.tex>)
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>assets</summary>
 
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
 - [vercool.pdf](<./数学/S3P2/vercool.pdf>)
 - [vercool.synctex.gz](<./数学/S3P2/vercool.synctex.gz>)
 - [vercool.tex](<./数学/S3P2/vercool.tex>)
 
 </details>
-</dl>
-
-<dl>
-<details>
-<summary>SPM</summary>
+</dd></dl>
 
 <dl><dd>
 <details>
+<summary>SPM</summary>
+
+<dl><dd><dl><dd>
+<details>
 <summary>Praktis Intensif Dwibahasa Form 4</summary>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Praktis 5 Progressions</summary>
 
 - [Prac5.tex](<./数学/SPM/Praktis Intensif Dwibahasa Form 4/Praktis 5 Progressions/Prac5.tex>)
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Praktis 8 Vectors</summary>
 
@@ -714,55 +714,55 @@
 - [Prac8.tex](<./数学/SPM/Praktis Intensif Dwibahasa Form 4/Praktis 8 Vectors/Prac8.tex>)
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>Praktis Intensif Dwibahasa Form 5</summary>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Praktis 2 Differentiation</summary>
 
 - [Prac2.pdf](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 2 Differentiation/Prac2.pdf>)
 - [Prac2.synctex.gz](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 2 Differentiation/Prac2.synctex.gz>)
 - [Prac2.tex](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 2 Differentiation/Prac2.tex>)
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>images</summary>
 
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Praktis 3 Integration</summary>
 
 - [Prac3.pdf](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 3 Integration/Prac3.pdf>)
 - [Prac3.synctex.gz](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 3 Integration/Prac3.synctex.gz>)
 - [Prac3.tex](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 3 Integration/Prac3.tex>)
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>images</summary>
 
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Praktis 4 Permutation and Combination</summary>
 
@@ -771,9 +771,9 @@
 - [Prac4.tex](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 4 Permutation and Combination/Prac4.tex>)
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Praktis 5 Probablity Distribution</summary>
 
@@ -782,76 +782,76 @@
 - [Prac5.tex](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 5 Probablity Distribution/Prac5.tex>)
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
 - [SPM 高级数学.docx](<./数学/SPM/SPM 高级数学.docx>)
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>Trial Exam</summary>
 
 - [Johor 2022.pdf](<./数学/SPM/Trial Exam/Johor 2022.pdf>)
 - [Johor 2022.synctex.gz](<./数学/SPM/Trial Exam/Johor 2022.synctex.gz>)
 - [Johor 2022.tex](<./数学/SPM/Trial Exam/Johor 2022.tex>)
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>assets</summary>
 
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
 
 </details>
-</dl>
-
-<dl>
-<details>
-<summary>STPM</summary>
+</dd></dl>
 
 <dl><dd>
 <details>
+<summary>STPM</summary>
+
+<dl><dd><dl><dd>
+<details>
 <summary>Paper 2</summary>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>2015</summary>
 
 - [2015.pdf](<./数学/STPM/Paper 2/2015/2015.pdf>)
 - [2015.synctex.gz](<./数学/STPM/Paper 2/2015/2015.synctex.gz>)
 - [2015.tex](<./数学/STPM/Paper 2/2015/2015.tex>)
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>assets</summary>
 
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Thomas Calculus</summary>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>Chapter 8 Technique of Integration</summary>
 
@@ -860,11 +860,11 @@
 - [Exercise 8.4.tex](<./数学/Thomas Calculus/Chapter 8 Technique of Integration/Exercise 8.4.tex>)
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
 
 </details>
-</dl>
+</dd></dl>
 
 
 </details>
@@ -894,7 +894,7 @@
 <details>
 <summary>簿记与会计</summary>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 10 Control Accounts</summary>
 
@@ -918,9 +918,9 @@
 - [UEB 2010 Q1(a).pdf](<./簿记与会计/Chapter 10 Control Accounts/UEB 2010 Q1(a).pdf>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 11 Non-current Assets and Depreciaiton</summary>
 
@@ -930,9 +930,9 @@
 - [BEB1 Chapter 11 Question 7.pdf](<./簿记与会计/Chapter 11 Non-current Assets and Depreciaiton/BEB1 Chapter 11 Question 7.pdf>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 12 End of Period Adjustments</summary>
 
@@ -971,9 +971,9 @@
 - [Year End Exam 2019.xlsx](<./簿记与会计/Chapter 12 End of Period Adjustments/Year End Exam 2019.xlsx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 13 Correction of Errors</summary>
 
@@ -981,9 +981,9 @@
 - [notebook chapter cover.docx](<./簿记与会计/Chapter 13 Correction of Errors/notebook chapter cover.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 14 Bank Reconciliation Statement</summary>
 
@@ -1006,9 +1006,9 @@
 - [~$s Sheet.docx](<./簿记与会计/Chapter 14 Bank Reconciliation Statement/~$s Sheet.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 15 Partnership Accounts (1) - Financial Statement</summary>
 
@@ -1058,9 +1058,9 @@
 - [~$ditional Exercises 2.docx](<./簿记与会计/Chapter 15 Partnership Accounts (1) - Financial Statement/~$ditional Exercises 2.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 16 Partnership Accounts (2) - Change In Profit And Loss Sharing Ratio, Withdrawal And Admission</summary>
 
@@ -1085,9 +1085,9 @@
 - [notebook chapter cover.docx](<./簿记与会计/Chapter 16 Partnership Accounts (2) - Change In Profit And Loss Sharing Ratio, Withdrawal And Admission/notebook chapter cover.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 17 Partnership Accounts (3) - Dissolution</summary>
 
@@ -1107,9 +1107,9 @@
 - [~$s Sheet.docx](<./簿记与会计/Chapter 17 Partnership Accounts (3) - Dissolution/~$s Sheet.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 18 Company Accounts (1) - Financial Statement</summary>
 
@@ -1127,9 +1127,9 @@
 - [logins.xlsx](<./簿记与会计/Chapter 18 Company Accounts (1) - Financial Statement/logins.xlsx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 19 Manufacturing Account</summary>
 
@@ -1163,9 +1163,9 @@
 - [notebook chapter cover.docx](<./簿记与会计/Chapter 19 Manufacturing Account/notebook chapter cover.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 2 Rules of Debit and Credit and General Ledger</summary>
 
@@ -1176,9 +1176,9 @@
 - [BRB1 Chapter 2 Practice 17.pdf](<./簿记与会计/Chapter 2 Rules of Debit and Credit and General Ledger/BRB1 Chapter 2 Practice 17.pdf>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 20 Single Entry and Incomplete Records</summary>
 
@@ -1214,9 +1214,9 @@
 - [~$actice 6 Ans Sheet.docx](<./簿记与会计/Chapter 20 Single Entry and Incomplete Records/~$actice 6 Ans Sheet.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 21 Non-profit-making Organisation Accounts</summary>
 
@@ -1250,9 +1250,9 @@
 - [notebook chapter cover.docx](<./簿记与会计/Chapter 21 Non-profit-making Organisation Accounts/notebook chapter cover.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 22 Departmental Accounts</summary>
 
@@ -1276,9 +1276,9 @@
 - [notebook chapter cover.docx](<./簿记与会计/Chapter 22 Departmental Accounts/notebook chapter cover.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 23 Bills of Exchange</summary>
 
@@ -1297,9 +1297,9 @@
 - [notebook chapter cover.docx](<./簿记与会计/Chapter 23 Bills of Exchange/notebook chapter cover.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 24 Consignment Accounts</summary>
 
@@ -1312,9 +1312,9 @@
 - [notebook chapter cover.docx](<./簿记与会计/Chapter 24 Consignment Accounts/notebook chapter cover.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 25 Joint Venture Accounts</summary>
 
@@ -1327,9 +1327,9 @@
 - [UEB 2008 Q6.docx](<./簿记与会计/Chapter 25 Joint Venture Accounts/UEB 2008 Q6.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 26 Hire Purchase Accounts</summary>
 
@@ -1355,9 +1355,9 @@
 - [notebook chapter cover.docx](<./簿记与会计/Chapter 26 Hire Purchase Accounts/notebook chapter cover.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 27 Branch Account (Centralized)</summary>
 
@@ -1375,9 +1375,9 @@
 - [notebook chapter cover.docx](<./簿记与会计/Chapter 27 Branch Account (Centralized)/notebook chapter cover.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 28 Branch Account (Decentralized)</summary>
 
@@ -1390,9 +1390,9 @@
 - [~$actice 3.docx](<./簿记与会计/Chapter 28 Branch Account (Decentralized)/~$actice 3.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 29 Issues of Shares and Loan Notes</summary>
 
@@ -1409,9 +1409,9 @@
 - [notebook chapter cover.docx](<./簿记与会计/Chapter 29 Issues of Shares and Loan Notes/notebook chapter cover.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 3 Income Statement</summary>
 
@@ -1428,9 +1428,9 @@
 - [Untitled.pdf](<./簿记与会计/Chapter 3 Income Statement/Untitled.pdf>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 30 Amalgamation and Business Purchase</summary>
 
@@ -1465,9 +1465,9 @@
 - [sofp ans sheet.docx](<./簿记与会计/Chapter 30 Amalgamation and Business Purchase/sofp ans sheet.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 4 Statement of FInancial Position</summary>
 
@@ -1479,9 +1479,9 @@
 - [Untitled 3.pdf](<./簿记与会计/Chapter 4 Statement of FInancial Position/Untitled 3.pdf>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 6 Journals</summary>
 
@@ -1489,9 +1489,9 @@
 - [BRB1 Chapter 6 Practice 4.pdf](<./簿记与会计/Chapter 6 Journals/BRB1 Chapter 6 Practice 4.pdf>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 7 Cash Book</summary>
 
@@ -1500,9 +1500,9 @@
 - [BEB1 Chapter 7 Question 7.pdf](<./簿记与会计/Chapter 7 Cash Book/BEB1 Chapter 7 Question 7.pdf>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 8 Petty Cash Book</summary>
 
@@ -1512,31 +1512,31 @@
 - [Unified Test 2021.pdf](<./簿记与会计/Chapter 8 Petty Cash Book/Unified Test 2021.pdf>)
 
 </details>
-</dl>
+</dd></dl>
 
-<dl>
+<dl><dd>
 <details>
 <summary>Chapter 9 Bad Debts and Allowance for Doubtful Debts</summary>
 
 - [BEB1 Chapter 9 Question 6.pdf](<./簿记与会计/Chapter 9 Bad Debts and Allowance for Doubtful Debts/BEB1 Chapter 9 Question 6.pdf>)
 
 </details>
-</dl>
+</dd></dl>
 
 - [Name Tag.docx](<./簿记与会计/Name Tag.docx>)
-<dl>
+<dl><dd>
 <details>
 <summary>Past Year Paper</summary>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>2021 Trial Exam</summary>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>by school</summary>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Chong Hwa</summary>
 
@@ -1548,9 +1548,9 @@
 - [Q6.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by school/Chong Hwa/Q6.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Chung Hua Klang</summary>
 
@@ -1563,9 +1563,9 @@
 - [Q6.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by school/Chung Hua Klang/Q6.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Chung Ling (Private) High School</summary>
 
@@ -1577,9 +1577,9 @@
 - [Q6.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by school/Chung Ling (Private) High School/Q6.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Confucian Private Secondary</summary>
 
@@ -1591,9 +1591,9 @@
 - [Q6.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by school/Confucian Private Secondary/Q6.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Foon Yew Kulai</summary>
 
@@ -1603,9 +1603,9 @@
 - [Q4.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by school/Foon Yew Kulai/Q4.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Tsun Jin High School</summary>
 
@@ -1618,17 +1618,17 @@
 - [Q6.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by school/Tsun Jin High School/Q6.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>by topic</summary>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Bank Reconciliation</summary>
 
@@ -1636,9 +1636,9 @@
 - [Confucian Private Secondary Q3.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Bank Reconciliation/Confucian Private Secondary Q3.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Bill of Exchange</summary>
 
@@ -1646,9 +1646,9 @@
 - [Confucian Private Secondary Q5.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Bill of Exchange/Confucian Private Secondary Q5.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Branch Accounts</summary>
 
@@ -1659,27 +1659,27 @@
 - [Tsun Jin High School Q6.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Branch Accounts/Tsun Jin High School Q6.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Business Purchase</summary>
 
 - [Chung Ling (Private) High School Q3.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Business Purchase/Chung Ling (Private) High School Q3.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Club Account</summary>
 
 - [Tsun Jin High School Q5.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Club Account/Tsun Jin High School Q5.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Company Account</summary>
 
@@ -1692,63 +1692,63 @@
 - [Tsun Jin High School Q1.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Company Account/Tsun Jin High School Q1.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Consignment Account</summary>
 
 - [Chung Hua Klang Q5.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Consignment Account/Chung Hua Klang Q5.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Departmental Account</summary>
 
 - [Chung Ling (Private) High School Q5.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Departmental Account/Chung Ling (Private) High School Q5.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Disposal of Non-current Assets</summary>
 
 - [Confucian Private Secondary Q1.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Disposal of Non-current Assets/Confucian Private Secondary Q1.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Hire Purchase Account</summary>
 
 - [Chung Hua Klang Q6.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Hire Purchase Account/Chung Hua Klang Q6.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Incomplete Records</summary>
 
 - [Tsun Jin High School Q3B.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Incomplete Records/Tsun Jin High School Q3B.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Inventory Losses</summary>
 
 - [Tsun Jin High School Q3A.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Inventory Losses/Tsun Jin High School Q3A.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Joint Venture</summary>
 
@@ -1758,18 +1758,18 @@
 - [Tsun Jin High School Q4.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Joint Venture/Tsun Jin High School Q4.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Manufacturing Accounts</summary>
 
 - [Chung Hua Klang Q4.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Manufacturing Accounts/Chung Hua Klang Q4.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Partnership Dissolution</summary>
 
@@ -1777,18 +1777,18 @@
 - [Tsun Jin High School Q2.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Partnership Dissolution/Tsun Jin High School Q2.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Partnership Income Statement</summary>
 
 - [Foon Yew Kulai Group A Q1.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Partnership Income Statement/Foon Yew Kulai Group A Q1.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Petty Cash Book</summary>
 
@@ -1797,34 +1797,34 @@
 - [Foon Yew Kulai Group A Q3.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Petty Cash Book/Foon Yew Kulai Group A Q3.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Uncategorised</summary>
 
 - [Chung Hua Klang Q1A.docx](<./簿记与会计/Past Year Paper/2021 Trial Exam/by topic/Uncategorised/Chung Hua Klang Q1A.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>2022 Trial Exam</summary>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>by school</summary>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Chong Hwa Independent High School</summary>
 
@@ -1837,9 +1837,9 @@
 - [Q6.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by school/Chong Hwa Independent High School/Q6.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Chung Ling (Private) High School</summary>
 
@@ -1851,9 +1851,9 @@
 - [Q6.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by school/Chung Ling (Private) High School/Q6.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Confucian Private Secondary</summary>
 
@@ -1865,9 +1865,9 @@
 - [Q6.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by school/Confucian Private Secondary/Q6.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Kuen Cheng High School</summary>
 
@@ -1880,9 +1880,9 @@
 - [Q6.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by school/Kuen Cheng High School/Q6.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Pay Fong Middle School</summary>
 
@@ -1895,9 +1895,9 @@
 - [Q6.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by school/Pay Fong Middle School/Q6.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Pin Hwa High School</summary>
 
@@ -1909,9 +1909,9 @@
 - [Q6.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by school/Pin Hwa High School/Q6.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Tsun Jin High School</summary>
 
@@ -1923,17 +1923,17 @@
 - [Q6.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by school/Tsun Jin High School/Q6.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>by topic</summary>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Bad Debts and Allowance for Doubtful Debts</summary>
 
@@ -1941,9 +1941,9 @@
 - [Kuen Cheng High School Q1(a).docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by topic/Bad Debts and Allowance for Doubtful Debts/Kuen Cheng High School Q1(a).docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Bank Reconciliation</summary>
 
@@ -1954,9 +1954,9 @@
 - [Tsun Jin High School Q3.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by topic/Bank Reconciliation/Tsun Jin High School Q3.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Branch Accounts</summary>
 
@@ -1965,9 +1965,9 @@
 - [Tsun Jin High School Q6.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by topic/Branch Accounts/Tsun Jin High School Q6.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Business Purchase</summary>
 
@@ -1975,9 +1975,9 @@
 - [Pay Fong Middle School Q2.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by topic/Business Purchase/Pay Fong Middle School Q2.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Club Accounts</summary>
 
@@ -1987,9 +1987,9 @@
 - [Pin Hwa High School Q6.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by topic/Club Accounts/Pin Hwa High School Q6.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Company Accounts</summary>
 
@@ -1999,9 +1999,9 @@
 - [Kuen Cheng High School Q3.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by topic/Company Accounts/Kuen Cheng High School Q3.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Consignments Accounts</summary>
 
@@ -2010,9 +2010,9 @@
 - [Kuen Cheng High School Q5.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by topic/Consignments Accounts/Kuen Cheng High School Q5.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Hire Purchase Accounts</summary>
 
@@ -2021,9 +2021,9 @@
 - [Tsun Jin High School Q4.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by topic/Hire Purchase Accounts/Tsun Jin High School Q4.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Joint Venture Accounts</summary>
 
@@ -2035,9 +2035,9 @@
 - [Tsun Jin High School Q5.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by topic/Joint Venture Accounts/Tsun Jin High School Q5.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Manufacturing Accounts</summary>
 
@@ -2045,9 +2045,9 @@
 - [Pay Fong Middle School Q4.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by topic/Manufacturing Accounts/Pay Fong Middle School Q4.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Non-current Assets and Disposal</summary>
 
@@ -2055,9 +2055,9 @@
 - [Pin Hwa High School Q1.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by topic/Non-current Assets and Disposal/Pin Hwa High School Q1.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Partnership Dissolution</summary>
 
@@ -2067,9 +2067,9 @@
 - [Tsun Jin High School Q2.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by topic/Partnership Dissolution/Tsun Jin High School Q2.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Partnership FInancial Statement</summary>
 
@@ -2078,9 +2078,9 @@
 - [Pin Hwa High School Q2.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by topic/Partnership FInancial Statement/Pin Hwa High School Q2.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl><dd>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Sole Trader Accounts</summary>
 
@@ -2088,21 +2088,21 @@
 - [Tsun Jin High School Q1.docx](<./簿记与会计/Past Year Paper/2022 Trial Exam/by topic/Sole Trader Accounts/Tsun Jin High School Q1.docx>)
 
 </details>
-</dl></dd></dl></dd>
+</dd></dl></dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
-<dl><dd>
+<dl><dd><dl><dd>
 <details>
 <summary>OneDrive-2023-05-02</summary>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>2021 Trial Exam</summary>
 
@@ -2118,9 +2118,9 @@
 - [2021 Tsun Jin Paper 2.pdf](<./簿记与会计/Past Year Paper/OneDrive-2023-05-02/2021 Trial Exam/2021 Tsun Jin Paper 2.pdf>)
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
-<dl><dd><dl>
+<dl><dd><dl><dd><dl><dd>
 <details>
 <summary>2022 UEC BK Trial Exam</summary>
 
@@ -2142,27 +2142,27 @@
 - [巴生滨华 bookkeeping 2.pdf](<./簿记与会计/Past Year Paper/OneDrive-2023-05-02/2022 UEC BK Trial Exam/巴生滨华 bookkeeping 2.pdf>)
 
 </details>
-</dl></dd></dl>
+</dd></dl></dd></dl></dd></dl>
 
 
 </details>
-</dl></dd>
+</dd></dl></dd></dl>
 
 
 </details>
-</dl>
+</dd></dl>
 
 - [THE UNIFIED EXAMINATION.docx](<./簿记与会计/THE UNIFIED EXAMINATION.docx>)
 - [Table of Contents.docx](<./簿记与会计/Table of Contents.docx>)
 - [Table of Contents.pdf](<./簿记与会计/Table of Contents.pdf>)
-<dl>
+<dl><dd>
 <details>
 <summary>会计</summary>
 
 - [第一章 基础会计概念与准则.docx](<./簿记与会计/会计/第一章 基础会计概念与准则.docx>)
 
 </details>
-</dl>
+</dd></dl>
 
 
 </details>
@@ -2175,13 +2175,13 @@
 - [第一课 绪论.docx](<./经济学/第一课 绪论.docx>)
 - [第一课 绪论.md](<./经济学/第一课 绪论.md>)
 - [第一课 绪论.pdf](<./经济学/第一课 绪论.pdf>)
-<dl>
+<dl><dd>
 <details>
 <summary>第二章 需求与供给.assets</summary>
 
 
 </details>
-</dl>
+</dd></dl>
 
 - [第二章 需求与供给.md](<./经济学/第二章 需求与供给.md>)
 - [第二课 需求与供给.pdf](<./经济学/第二课 需求与供给.pdf>)

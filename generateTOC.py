@@ -11,10 +11,10 @@ def listdir(stream, folder, indent=0):
         if item not in EXCLUDED:
             if os.path.isdir(os.path.join(folder, item)):
                 stream.write(
-                    '{}\n<details>\n<summary>{}</summary>\n\n'.format("".join([["<dl>", "<dd>"][i % 2] for i in range(indent)]), item))
+                    '{}\n<details>\n<summary>{}</summary>\n\n'.format("<dl><dd>"*indent, item))
                 listdir(stream, os.path.join(folder, item), indent + 1)
                 stream.write(
-                    "\n</details>\n{}\n\n".format("".join([["</dl>", "</dd>"][i % 2] for i in range(indent)])))
+                    "\n</details>\n{}\n\n".format("</dd></dl>"*indent))
             else:
                 if item.split(".")[-1] not in EXCLUDED_EXTENSIONS and not item.startswith("."):
                     stream.write("- [{}](<{}>)\n".format(item,
