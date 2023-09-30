@@ -58,7 +58,6 @@
 </details>
 </dl>
 
-- [file_directory.md](<./file_directory.md>)
 <dl>
 <details>
 <summary>mrga</summary>
