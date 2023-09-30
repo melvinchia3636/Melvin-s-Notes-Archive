@@ -30,7 +30,7 @@
 
 </details>
 
----
+<hr></hr>
 
 <details>
 <summary>SPM</summary>
@@ -44,11 +44,11 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 
 </details>
 
----
+<hr></hr>
 
 <details>
 <summary>Sejarah</summary>
@@ -57,7 +57,7 @@
 
 </details>
 
----
+<hr></hr>
 
 <details>
 <summary>mrga</summary>
@@ -66,7 +66,7 @@
 
 </details>
 
----
+<hr></hr>
 
 <details>
 <summary>其他</summary>
@@ -83,7 +83,7 @@
 
 </details>
 
----
+<hr></hr>
 
 <details>
 <summary>华文</summary>
@@ -108,7 +108,7 @@
 
 </details>
 
----
+<hr></hr>
 
 <details>
 <summary>历史</summary>
@@ -127,7 +127,7 @@
 
 </details>
 
----
+<hr></hr>
 
 <details>
 <summary>商业学</summary>
@@ -145,7 +145,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>markdown</summary>
@@ -158,7 +158,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>pdf</summary>
@@ -172,7 +172,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>word</summary>
@@ -186,7 +186,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>xmind</summary>
@@ -216,14 +216,14 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 - [高二商业学统测讲义.docx](<./商业学/高二商业学统测讲义.docx>)
 - [高二第一章商业学小测验范围.docx](<./商业学/高二第一章商业学小测验范围.docx>)
 - [高二第二章商业学测验范围.docx](<./商业学/高二第二章商业学测验范围.docx>)
 
 </details>
 
----
+<hr></hr>
 
 <details>
 <summary>地理</summary>
@@ -235,7 +235,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>markdown</summary>
@@ -247,7 +247,7 @@
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 - [岩溶、火山、冰河地形.md](<./地理/markdown/岩溶、火山、冰河地形.md>)
 - [第一章 地球的宇宙环境.md](<./地理/markdown/第一章 地球的宇宙环境.md>)
 - [第三章 大气系统.md](<./地理/markdown/第三章 大气系统.md>)
@@ -259,12 +259,12 @@
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 - [第六章 地形.md](<./地理/markdown/第六章 地形.md>)
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>spreadsheets</summary>
@@ -274,7 +274,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>xmind</summary>
@@ -297,11 +297,11 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 
 </details>
 
----
+<hr></hr>
 
 <details>
 <summary>成绩</summary>
@@ -310,7 +310,7 @@
 
 </details>
 
----
+<hr></hr>
 
 <details>
 <summary>数学</summary>
@@ -326,7 +326,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Other Topics</summary>
@@ -340,7 +340,7 @@
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd>
 <details>
 <summary>Calculus Workbook</summary>
@@ -354,11 +354,11 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd>
 <details>
 <summary>Conic Section</summary>
@@ -370,7 +370,7 @@
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd>
 <details>
 <summary>Coordinate Transformation</summary>
@@ -382,13 +382,13 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 - [coordiate_transformation.pdf](<./数学/Other Topics/Coordinate Transformation/coordiate_transformation.pdf>)
 - [coordiate_transformation.tex](<./数学/Other Topics/Coordinate Transformation/coordiate_transformation.tex>)
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd>
 <details>
 <summary>Differential Equation</summary>
@@ -398,7 +398,7 @@
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd>
 <details>
 <summary>Differentiation</summary>
@@ -408,7 +408,7 @@
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd>
 <details>
 <summary>Fadell Calculus</summary>
@@ -420,7 +420,7 @@
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd>
 <details>
 <summary>Implicit Differenciation</summary>
@@ -429,7 +429,7 @@
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd>
 <details>
 <summary>Integration</summary>
@@ -443,7 +443,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Exercise 11d</summary>
@@ -453,7 +453,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Exercise 11e</summary>
@@ -463,7 +463,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Exercise 11f</summary>
@@ -473,7 +473,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Exercise 11g</summary>
@@ -483,7 +483,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Exercise 11h</summary>
@@ -493,7 +493,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Exercise 11i</summary>
@@ -503,7 +503,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Exercise 11j</summary>
@@ -513,11 +513,11 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd>
 <details>
 <summary>Kangaroo Math Comp</summary>
@@ -535,15 +535,15 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd>
 <details>
 <summary>Logical Reasoning</summary>
@@ -553,7 +553,7 @@
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd>
 <details>
 <summary>Mathematical Induction</summary>
@@ -565,7 +565,7 @@
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd>
 <details>
 <summary>hmm</summary>
@@ -576,11 +576,11 @@
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>S2P1</summary>
@@ -598,7 +598,7 @@
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd>
 <details>
 <summary>drawings</summary>
@@ -608,11 +608,11 @@
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>S2P2</summary>
@@ -623,7 +623,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>S3P1</summary>
@@ -637,12 +637,12 @@
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 - [multicols.regex](<./数学/S3P1/multicols.regex>)
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>S3P2</summary>
@@ -656,13 +656,13 @@
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 - [vercool.pdf](<./数学/S3P2/vercool.pdf>)
 - [vercool.tex](<./数学/S3P2/vercool.tex>)
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>SPM</summary>
@@ -679,7 +679,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Praktis 8 Vectors</summary>
@@ -689,11 +689,11 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd>
 <details>
 <summary>Praktis Intensif Dwibahasa Form 5</summary>
@@ -711,11 +711,11 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Praktis 3 Integration</summary>
@@ -729,11 +729,11 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Praktis 4 Permutation and Combination</summary>
@@ -743,7 +743,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Praktis 5 Probablity Distribution</summary>
@@ -753,11 +753,11 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 - [SPM 高级数学.docx](<./数学/SPM/SPM 高级数学.docx>)
 <dl><dd><dl><dd>
 <details>
@@ -772,15 +772,15 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>STPM</summary>
@@ -802,19 +802,19 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Thomas Calculus</summary>
@@ -828,15 +828,15 @@
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl>
----
+<hr></hr>
 
 </details>
 
----
+<hr></hr>
 
 <details>
 <summary>物理</summary>
@@ -846,7 +846,7 @@
 
 </details>
 
----
+<hr></hr>
 
 <details>
 <summary>电脑与咨询工艺</summary>
@@ -856,7 +856,7 @@
 
 </details>
 
----
+<hr></hr>
 
 <details>
 <summary>簿记与会计</summary>
@@ -886,7 +886,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 11 Non-current Assets and Depreciaiton</summary>
@@ -898,7 +898,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 12 End of Period Adjustments</summary>
@@ -939,7 +939,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 13 Correction of Errors</summary>
@@ -949,7 +949,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 14 Bank Reconciliation Statement</summary>
@@ -974,7 +974,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 15 Partnership Accounts (1) - Financial Statement</summary>
@@ -1026,7 +1026,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 16 Partnership Accounts (2) - Change In Profit And Loss Sharing Ratio, Withdrawal And Admission</summary>
@@ -1053,7 +1053,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 17 Partnership Accounts (3) - Dissolution</summary>
@@ -1075,7 +1075,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 18 Company Accounts (1) - Financial Statement</summary>
@@ -1095,7 +1095,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 19 Manufacturing Account</summary>
@@ -1131,7 +1131,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 2 Rules of Debit and Credit and General Ledger</summary>
@@ -1144,7 +1144,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 20 Single Entry and Incomplete Records</summary>
@@ -1182,7 +1182,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 21 Non-profit-making Organisation Accounts</summary>
@@ -1218,7 +1218,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 22 Departmental Accounts</summary>
@@ -1244,7 +1244,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 23 Bills of Exchange</summary>
@@ -1265,7 +1265,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 24 Consignment Accounts</summary>
@@ -1280,7 +1280,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 25 Joint Venture Accounts</summary>
@@ -1295,7 +1295,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 26 Hire Purchase Accounts</summary>
@@ -1323,7 +1323,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 27 Branch Account (Centralized)</summary>
@@ -1343,7 +1343,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 28 Branch Account (Decentralized)</summary>
@@ -1358,7 +1358,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 29 Issues of Shares and Loan Notes</summary>
@@ -1377,7 +1377,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 3 Income Statement</summary>
@@ -1396,7 +1396,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 30 Amalgamation and Business Purchase</summary>
@@ -1433,7 +1433,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 4 Statement of FInancial Position</summary>
@@ -1447,7 +1447,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 6 Journals</summary>
@@ -1457,7 +1457,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 7 Cash Book</summary>
@@ -1468,7 +1468,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 8 Petty Cash Book</summary>
@@ -1480,7 +1480,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 <dl><dd>
 <details>
 <summary>Chapter 9 Bad Debts and Allowance for Doubtful Debts</summary>
@@ -1489,7 +1489,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 - [Name Tag.docx](<./簿记与会计/Name Tag.docx>)
 <dl><dd>
 <details>
@@ -1516,7 +1516,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Chung Hua Klang</summary>
@@ -1531,7 +1531,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Chung Ling (Private) High School</summary>
@@ -1545,7 +1545,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Confucian Private Secondary</summary>
@@ -1559,7 +1559,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Foon Yew Kulai</summary>
@@ -1571,7 +1571,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Tsun Jin High School</summary>
@@ -1586,11 +1586,11 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd>
 <details>
 <summary>by topic</summary>
@@ -1604,7 +1604,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Bill of Exchange</summary>
@@ -1614,7 +1614,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Branch Accounts</summary>
@@ -1627,7 +1627,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Business Purchase</summary>
@@ -1636,7 +1636,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Club Account</summary>
@@ -1645,7 +1645,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Company Account</summary>
@@ -1660,7 +1660,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Consignment Account</summary>
@@ -1669,7 +1669,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Departmental Account</summary>
@@ -1678,7 +1678,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Disposal of Non-current Assets</summary>
@@ -1687,7 +1687,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Hire Purchase Account</summary>
@@ -1696,7 +1696,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Incomplete Records</summary>
@@ -1705,7 +1705,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Inventory Losses</summary>
@@ -1714,7 +1714,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Joint Venture</summary>
@@ -1726,7 +1726,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Manufacturing Accounts</summary>
@@ -1735,7 +1735,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Partnership Dissolution</summary>
@@ -1745,7 +1745,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Partnership Income Statement</summary>
@@ -1754,7 +1754,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Petty Cash Book</summary>
@@ -1765,7 +1765,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Uncategorised</summary>
@@ -1774,15 +1774,15 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd>
 <details>
 <summary>2022 Trial Exam</summary>
@@ -1805,7 +1805,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Chung Ling (Private) High School</summary>
@@ -1819,7 +1819,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Confucian Private Secondary</summary>
@@ -1833,7 +1833,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Kuen Cheng High School</summary>
@@ -1848,7 +1848,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Pay Fong Middle School</summary>
@@ -1863,7 +1863,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Pin Hwa High School</summary>
@@ -1877,7 +1877,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Tsun Jin High School</summary>
@@ -1891,11 +1891,11 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd>
 <details>
 <summary>by topic</summary>
@@ -1909,7 +1909,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Bank Reconciliation</summary>
@@ -1922,7 +1922,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Branch Accounts</summary>
@@ -1933,7 +1933,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Business Purchase</summary>
@@ -1943,7 +1943,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Club Accounts</summary>
@@ -1955,7 +1955,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Company Accounts</summary>
@@ -1967,7 +1967,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Consignments Accounts</summary>
@@ -1978,7 +1978,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Hire Purchase Accounts</summary>
@@ -1989,7 +1989,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Joint Venture Accounts</summary>
@@ -2003,7 +2003,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Manufacturing Accounts</summary>
@@ -2013,7 +2013,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Non-current Assets and Disposal</summary>
@@ -2023,7 +2023,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Partnership Dissolution</summary>
@@ -2035,7 +2035,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Partnership FInancial Statement</summary>
@@ -2046,7 +2046,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
 <summary>Sole Trader Accounts</summary>
@@ -2056,15 +2056,15 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd>
 <details>
 <summary>OneDrive-2023-05-02</summary>
@@ -2086,7 +2086,7 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 <dl><dd><dl><dd><dl><dd>
 <details>
 <summary>2022 UEC BK Trial Exam</summary>
@@ -2110,15 +2110,15 @@
 
 </details>
 </dd></dl></dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl></dd></dl>
----
+<hr></hr>
 
 </details>
 </dd></dl>
----
+<hr></hr>
 - [THE UNIFIED EXAMINATION.docx](<./簿记与会计/THE UNIFIED EXAMINATION.docx>)
 - [Table of Contents.docx](<./簿记与会计/Table of Contents.docx>)
 - [Table of Contents.pdf](<./簿记与会计/Table of Contents.pdf>)
@@ -2130,11 +2130,11 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 
 </details>
 
----
+<hr></hr>
 
 <details>
 <summary>经济学</summary>
@@ -2149,7 +2149,7 @@
 
 </details>
 </dd></dl>
----
+<hr></hr>
 - [第二章 需求与供给.md](<./经济学/第二章 需求与供给.md>)
 - [第二课 需求与供给.pdf](<./经济学/第二课 需求与供给.pdf>)
 - [第五章 消费理论.docx](<./经济学/第五章 消费理论.docx>)
@@ -2158,7 +2158,7 @@
 
 </details>
 
----
+<hr></hr>
 
 <details>
 <summary>美术</summary>
@@ -2169,7 +2169,7 @@
 
 </details>
 
----
+<hr></hr>
 
 <details>
 <summary>英文</summary>
@@ -2198,7 +2198,7 @@
 
 </details>
 
----
+<hr></hr>
 
 <details>
 <summary>逻辑思维</summary>
@@ -2207,4 +2207,4 @@
 
 </details>
 
----
+<hr></hr>
