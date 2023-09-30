@@ -15,7 +15,7 @@ with open("readme.md", "w") as file:
     file.write("# Table of Contents\n")
     for folder in os.listdir("."):
         if os.path.isdir(folder):
-            file.write('<details>\n<summary>{}</summary>\n'.format(folder))
-            file.write('\n'.join(["{}- [{}]({})".format("  " * file[1], file[0], file[0])
+            file.write('<details>\n<summary>{}</summary>\n\n'.format(folder))
+            file.write('\n'.join(["{}- [{}](<{}>)".format("  " * file[1], file[0].split("/")[-1], file[0])
                        for file in listdir(folder)]))
             file.write("\n</details>\n")
