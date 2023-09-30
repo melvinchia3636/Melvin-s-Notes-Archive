@@ -336,7 +336,6 @@
 <summary>2023 Math Competition</summary>
 
 - [comp.pdf](<./数学/Other Topics/2023 Math Competition/comp.pdf>)
-- [comp.synctex.gz](<./数学/Other Topics/2023 Math Competition/comp.synctex.gz>)
 - [comp.tex](<./数学/Other Topics/2023 Math Competition/comp.tex>)
 
 </details>
@@ -351,7 +350,6 @@
 <summary>Multiple Integrals</summary>
 
 - [exercises.pdf](<./数学/Other Topics/Calculus Workbook/Multiple Integrals/exercises.pdf>)
-- [exercises.synctex.gz](<./数学/Other Topics/Calculus Workbook/Multiple Integrals/exercises.synctex.gz>)
 - [exercises.tex](<./数学/Other Topics/Calculus Workbook/Multiple Integrals/exercises.tex>)
 
 </details>
@@ -366,10 +364,8 @@
 <summary>Conic Section</summary>
 
 - [Exercise 5a.pdf](<./数学/Other Topics/Conic Section/Exercise 5a.pdf>)
-- [Exercise 5a.synctex.gz](<./数学/Other Topics/Conic Section/Exercise 5a.synctex.gz>)
 - [Exercise 5a.tex](<./数学/Other Topics/Conic Section/Exercise 5a.tex>)
 - [Exercise 5b.pdf](<./数学/Other Topics/Conic Section/Exercise 5b.pdf>)
-- [Exercise 5b.synctex.gz](<./数学/Other Topics/Conic Section/Exercise 5b.synctex.gz>)
 - [Exercise 5b.tex](<./数学/Other Topics/Conic Section/Exercise 5b.tex>)
 
 </details>
@@ -388,7 +384,6 @@
 </dd></dl></dd></dl></dd></dl>
 
 - [coordiate_transformation.pdf](<./数学/Other Topics/Coordinate Transformation/coordiate_transformation.pdf>)
-- [coordiate_transformation.synctex.gz](<./数学/Other Topics/Coordinate Transformation/coordiate_transformation.synctex.gz>)
 - [coordiate_transformation.tex](<./数学/Other Topics/Coordinate Transformation/coordiate_transformation.tex>)
 
 </details>
@@ -399,7 +394,6 @@
 <summary>Differential Equation</summary>
 
 - [diffeq.pdf](<./数学/Other Topics/Differential Equation/diffeq.pdf>)
-- [diffeq.synctex.gz](<./数学/Other Topics/Differential Equation/diffeq.synctex.gz>)
 - [diffeq.tex](<./数学/Other Topics/Differential Equation/diffeq.tex>)
 
 </details>
@@ -420,10 +414,8 @@
 <summary>Fadell Calculus</summary>
 
 - [fadell.pdf](<./数学/Other Topics/Fadell Calculus/fadell.pdf>)
-- [fadell.synctex.gz](<./数学/Other Topics/Fadell Calculus/fadell.synctex.gz>)
 - [fadell.tex](<./数学/Other Topics/Fadell Calculus/fadell.tex>)
 - [hmm.pdf](<./数学/Other Topics/Fadell Calculus/hmm.pdf>)
-- [hmm.synctex.gz](<./数学/Other Topics/Fadell Calculus/hmm.synctex.gz>)
 - [hmm.tex](<./数学/Other Topics/Fadell Calculus/hmm.tex>)
 
 </details>
@@ -447,7 +439,6 @@
 <summary>Calculus Question Bank</summary>
 
 - [trig sub.pdf](<./数学/Other Topics/Integration/Calculus Question Bank/trig sub.pdf>)
-- [trig sub.synctex.gz](<./数学/Other Topics/Integration/Calculus Question Bank/trig sub.synctex.gz>)
 - [trig sub.tex](<./数学/Other Topics/Integration/Calculus Question Bank/trig sub.tex>)
 
 </details>
@@ -458,7 +449,6 @@
 <summary>Exercise 11d</summary>
 
 - [Exercsise 11d.pdf](<./数学/Other Topics/Integration/Exercise 11d/Exercsise 11d.pdf>)
-- [Exercsise 11d.synctex.gz](<./数学/Other Topics/Integration/Exercise 11d/Exercsise 11d.synctex.gz>)
 - [Exercsise 11d.tex](<./数学/Other Topics/Integration/Exercise 11d/Exercsise 11d.tex>)
 
 </details>
@@ -469,7 +459,6 @@
 <summary>Exercise 11e</summary>
 
 - [Exercsise 11e.pdf](<./数学/Other Topics/Integration/Exercise 11e/Exercsise 11e.pdf>)
-- [Exercsise 11e.synctex.gz](<./数学/Other Topics/Integration/Exercise 11e/Exercsise 11e.synctex.gz>)
 - [Exercsise 11e.tex](<./数学/Other Topics/Integration/Exercise 11e/Exercsise 11e.tex>)
 
 </details>
@@ -480,7 +469,6 @@
 <summary>Exercise 11f</summary>
 
 - [Exercsise 11f.pdf](<./数学/Other Topics/Integration/Exercise 11f/Exercsise 11f.pdf>)
-- [Exercsise 11f.synctex.gz](<./数学/Other Topics/Integration/Exercise 11f/Exercsise 11f.synctex.gz>)
 - [Exercsise 11f.tex](<./数学/Other Topics/Integration/Exercise 11f/Exercsise 11f.tex>)
 
 </details>
@@ -491,7 +479,6 @@
 <summary>Exercise 11g</summary>
 
 - [Exercsise 11g.pdf](<./数学/Other Topics/Integration/Exercise 11g/Exercsise 11g.pdf>)
-- [Exercsise 11g.synctex.gz](<./数学/Other Topics/Integration/Exercise 11g/Exercsise 11g.synctex.gz>)
 - [Exercsise 11g.tex](<./数学/Other Topics/Integration/Exercise 11g/Exercsise 11g.tex>)
 
 </details>
@@ -502,7 +489,6 @@
 <summary>Exercise 11h</summary>
 
 - [Exercsise 11h.pdf](<./数学/Other Topics/Integration/Exercise 11h/Exercsise 11h.pdf>)
-- [Exercsise 11h.synctex.gz](<./数学/Other Topics/Integration/Exercise 11h/Exercsise 11h.synctex.gz>)
 - [Exercsise 11h.tex](<./数学/Other Topics/Integration/Exercise 11h/Exercsise 11h.tex>)
 
 </details>
@@ -513,7 +499,6 @@
 <summary>Exercise 11i</summary>
 
 - [Exercise 11i.pdf](<./数学/Other Topics/Integration/Exercise 11i/Exercise 11i.pdf>)
-- [Exercise 11i.synctex.gz](<./数学/Other Topics/Integration/Exercise 11i/Exercise 11i.synctex.gz>)
 - [Exercise 11i.tex](<./数学/Other Topics/Integration/Exercise 11i/Exercise 11i.tex>)
 
 </details>
@@ -524,7 +509,6 @@
 <summary>Exercise 11j</summary>
 
 - [Exercise 11j.pdf](<./数学/Other Topics/Integration/Exercise 11j/Exercise 11j.pdf>)
-- [Exercise 11j.synctex.gz](<./数学/Other Topics/Integration/Exercise 11j/Exercise 11j.synctex.gz>)
 - [Exercise 11j.tex](<./数学/Other Topics/Integration/Exercise 11j/Exercise 11j.tex>)
 
 </details>
@@ -543,7 +527,6 @@
 <summary>2022</summary>
 
 - [Junior.pdf](<./数学/Other Topics/Kangaroo Math Comp/2022/Junior.pdf>)
-- [Junior.synctex.gz](<./数学/Other Topics/Kangaroo Math Comp/2022/Junior.synctex.gz>)
 - [Junior.tex](<./数学/Other Topics/Kangaroo Math Comp/2022/Junior.tex>)
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
@@ -566,7 +549,6 @@
 <summary>Logical Reasoning</summary>
 
 - [logical_reasoning.pdf](<./数学/Other Topics/Logical Reasoning/logical_reasoning.pdf>)
-- [logical_reasoning.synctex.gz](<./数学/Other Topics/Logical Reasoning/logical_reasoning.synctex.gz>)
 - [logical_reasoning.tex](<./数学/Other Topics/Logical Reasoning/logical_reasoning.tex>)
 
 </details>
@@ -577,10 +559,8 @@
 <summary>Mathematical Induction</summary>
 
 - [exercise.pdf](<./数学/Other Topics/Mathematical Induction/exercise.pdf>)
-- [exercise.synctex.gz](<./数学/Other Topics/Mathematical Induction/exercise.synctex.gz>)
 - [exercise.tex](<./数学/Other Topics/Mathematical Induction/exercise.tex>)
 - [induction.pdf](<./数学/Other Topics/Mathematical Induction/induction.pdf>)
-- [induction.synctex.gz](<./数学/Other Topics/Mathematical Induction/induction.synctex.gz>)
 - [induction.tex](<./数学/Other Topics/Mathematical Induction/induction.tex>)
 
 </details>
@@ -592,7 +572,6 @@
 
 - [answers.tex](<./数学/Other Topics/hmm/answers.tex>)
 - [calculus.pdf](<./数学/Other Topics/hmm/calculus.pdf>)
-- [calculus.synctex.gz](<./数学/Other Topics/hmm/calculus.synctex.gz>)
 - [calculus.tex](<./数学/Other Topics/hmm/calculus.tex>)
 
 </details>
@@ -625,7 +604,6 @@
 <summary>drawings</summary>
 
 - [figures.pdf](<./数学/S2P1/drawings/figures.pdf>)
-- [figures.synctex.gz](<./数学/S2P1/drawings/figures.synctex.gz>)
 - [figures.tex](<./数学/S2P1/drawings/figures.tex>)
 
 </details>
@@ -651,7 +629,6 @@
 <summary>S3P1</summary>
 
 - [S3P1.pdf](<./数学/S3P1/S3P1.pdf>)
-- [S3P1.synctex.gz](<./数学/S3P1/S3P1.synctex.gz>)
 - [S3P1.tex](<./数学/S3P1/S3P1.tex>)
 <dl><dd><dl><dd>
 <details>
@@ -671,7 +648,6 @@
 <summary>S3P2</summary>
 
 - [S3P2.pdf](<./数学/S3P2/S3P2.pdf>)
-- [S3P2.synctex.gz](<./数学/S3P2/S3P2.synctex.gz>)
 - [S3P2.tex](<./数学/S3P2/S3P2.tex>)
 <dl><dd><dl><dd>
 <details>
@@ -682,7 +658,6 @@
 </dd></dl></dd></dl>
 
 - [vercool.pdf](<./数学/S3P2/vercool.pdf>)
-- [vercool.synctex.gz](<./数学/S3P2/vercool.synctex.gz>)
 - [vercool.tex](<./数学/S3P2/vercool.tex>)
 
 </details>
@@ -710,7 +685,6 @@
 <summary>Praktis 8 Vectors</summary>
 
 - [Prac8.pdf](<./数学/SPM/Praktis Intensif Dwibahasa Form 4/Praktis 8 Vectors/Prac8.pdf>)
-- [Prac8.synctex.gz](<./数学/SPM/Praktis Intensif Dwibahasa Form 4/Praktis 8 Vectors/Prac8.synctex.gz>)
 - [Prac8.tex](<./数学/SPM/Praktis Intensif Dwibahasa Form 4/Praktis 8 Vectors/Prac8.tex>)
 
 </details>
@@ -729,7 +703,6 @@
 <summary>Praktis 2 Differentiation</summary>
 
 - [Prac2.pdf](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 2 Differentiation/Prac2.pdf>)
-- [Prac2.synctex.gz](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 2 Differentiation/Prac2.synctex.gz>)
 - [Prac2.tex](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 2 Differentiation/Prac2.tex>)
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
@@ -748,7 +721,6 @@
 <summary>Praktis 3 Integration</summary>
 
 - [Prac3.pdf](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 3 Integration/Prac3.pdf>)
-- [Prac3.synctex.gz](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 3 Integration/Prac3.synctex.gz>)
 - [Prac3.tex](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 3 Integration/Prac3.tex>)
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
@@ -767,7 +739,6 @@
 <summary>Praktis 4 Permutation and Combination</summary>
 
 - [Prac4.pdf](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 4 Permutation and Combination/Prac4.pdf>)
-- [Prac4.synctex.gz](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 4 Permutation and Combination/Prac4.synctex.gz>)
 - [Prac4.tex](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 4 Permutation and Combination/Prac4.tex>)
 
 </details>
@@ -778,7 +749,6 @@
 <summary>Praktis 5 Probablity Distribution</summary>
 
 - [Prac5.pdf](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 5 Probablity Distribution/Prac5.pdf>)
-- [Prac5.synctex.gz](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 5 Probablity Distribution/Prac5.synctex.gz>)
 - [Prac5.tex](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 5 Probablity Distribution/Prac5.tex>)
 
 </details>
@@ -794,7 +764,6 @@
 <summary>Trial Exam</summary>
 
 - [Johor 2022.pdf](<./数学/SPM/Trial Exam/Johor 2022.pdf>)
-- [Johor 2022.synctex.gz](<./数学/SPM/Trial Exam/Johor 2022.synctex.gz>)
 - [Johor 2022.tex](<./数学/SPM/Trial Exam/Johor 2022.tex>)
 <dl><dd><dl><dd><dl><dd>
 <details>
@@ -825,7 +794,6 @@
 <summary>2015</summary>
 
 - [2015.pdf](<./数学/STPM/Paper 2/2015/2015.pdf>)
-- [2015.synctex.gz](<./数学/STPM/Paper 2/2015/2015.synctex.gz>)
 - [2015.tex](<./数学/STPM/Paper 2/2015/2015.tex>)
 <dl><dd><dl><dd><dl><dd><dl><dd>
 <details>
@@ -856,7 +824,6 @@
 <summary>Chapter 8 Technique of Integration</summary>
 
 - [Exercise 8.4.pdf](<./数学/Thomas Calculus/Chapter 8 Technique of Integration/Exercise 8.4.pdf>)
-- [Exercise 8.4.synctex.gz](<./数学/Thomas Calculus/Chapter 8 Technique of Integration/Exercise 8.4.synctex.gz>)
 - [Exercise 8.4.tex](<./数学/Thomas Calculus/Chapter 8 Technique of Integration/Exercise 8.4.tex>)
 
 </details>
