@@ -35,7 +35,7 @@ markdown=$(cd "$1" && tree -f --noreport -I "readme.md" -P "*.*" --charset ascii
       -e 's/    |/|   |/g' \
       -e 's/|   /  /g' \
       -e 's/|--/-/g' \
-      -e 's:- \(\(.*\)/\(.*\)\):- [\3](\1):g' \
+      -e 's:- \(\(.*\)/\(.*\)\):- [\3](<\1>):g' \
       -e 's/\.md]/]/g' |
     tail -n +2)
 
