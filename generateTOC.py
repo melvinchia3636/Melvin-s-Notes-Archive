@@ -16,6 +16,6 @@ with open("readme.md", "w") as file:
     for folder in os.listdir("."):
         if os.path.isdir(folder):
             file.write('<details>\n<summary>{}</summary>\n'.format(folder))
-            file.write('\n'.join(["{}* [{}]({})".format("  " * file[1], file[0], file[0])
+            file.write('\n'.join(["{}- [{}]({})".format("  " * file[1], file[0], file[0])
                        for file in listdir(folder)]))
             file.write("\n</details>\n")
