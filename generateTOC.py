@@ -1,4 +1,5 @@
 import os
+import re
 
 EXCLUDED = ["readme.md", "generateTOC.py", ".DS_Store",
             ".obsidian", ".git", ".gitignore", "LICENSE", "README.md", ".vscode"]
@@ -7,7 +8,7 @@ EXCLUDED_EXTENSIONS = ["jpg", "png", "jpeg",
 
 
 def listdir(stream, folder, indent=0):
-    for item in sorted(os.listdir(folder)):
+    for item in sorted(os.listdir(folder), key=lambda s: (os.path.isdir(os.path.join(folder, s)), int(re.findall(r"\d+", s)[0]) if re.findall(r"\d+", s) else 0, s.lower())):
         if item not in EXCLUDED:
             if os.path.isdir(os.path.join(folder, item)):
                 stream.write(
