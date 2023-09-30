@@ -353,7 +353,6 @@
 - [exercises.pdf](<./数学/Other Topics/Calculus Workbook/Multiple Integrals/exercises.pdf>)
 - [exercises.synctex.gz](<./数学/Other Topics/Calculus Workbook/Multiple Integrals/exercises.synctex.gz>)
 - [exercises.tex](<./数学/Other Topics/Calculus Workbook/Multiple Integrals/exercises.tex>)
-- [xelatex67660.fls](<./数学/Other Topics/Calculus Workbook/Multiple Integrals/xelatex67660.fls>)
 
 </details>
 </dd>
@@ -388,14 +387,9 @@
 </details>
 </dd>
 
-- [coordiate_transformation.aux](<./数学/Other Topics/Coordinate Transformation/coordiate_transformation.aux>)
-- [coordiate_transformation.fdb_latexmk](<./数学/Other Topics/Coordinate Transformation/coordiate_transformation.fdb_latexmk>)
-- [coordiate_transformation.fls](<./数学/Other Topics/Coordinate Transformation/coordiate_transformation.fls>)
-- [coordiate_transformation.log](<./数学/Other Topics/Coordinate Transformation/coordiate_transformation.log>)
 - [coordiate_transformation.pdf](<./数学/Other Topics/Coordinate Transformation/coordiate_transformation.pdf>)
 - [coordiate_transformation.synctex.gz](<./数学/Other Topics/Coordinate Transformation/coordiate_transformation.synctex.gz>)
 - [coordiate_transformation.tex](<./数学/Other Topics/Coordinate Transformation/coordiate_transformation.tex>)
-- [coordiate_transformation.xdv](<./数学/Other Topics/Coordinate Transformation/coordiate_transformation.xdv>)
 
 </details>
 </dl>
@@ -404,14 +398,9 @@
 <details>
 <summary>Differential Equation</summary>
 
-- [diffeq.aux](<./数学/Other Topics/Differential Equation/diffeq.aux>)
-- [diffeq.fdb_latexmk](<./数学/Other Topics/Differential Equation/diffeq.fdb_latexmk>)
-- [diffeq.fls](<./数学/Other Topics/Differential Equation/diffeq.fls>)
-- [diffeq.log](<./数学/Other Topics/Differential Equation/diffeq.log>)
 - [diffeq.pdf](<./数学/Other Topics/Differential Equation/diffeq.pdf>)
 - [diffeq.synctex.gz](<./数学/Other Topics/Differential Equation/diffeq.synctex.gz>)
 - [diffeq.tex](<./数学/Other Topics/Differential Equation/diffeq.tex>)
-- [diffeq.xdv](<./数学/Other Topics/Differential Equation/diffeq.xdv>)
 
 </details>
 </dl>
@@ -430,14 +419,9 @@
 <details>
 <summary>Fadell Calculus</summary>
 
-- [fadell.aux](<./数学/Other Topics/Fadell Calculus/fadell.aux>)
-- [fadell.fdb_latexmk](<./数学/Other Topics/Fadell Calculus/fadell.fdb_latexmk>)
-- [fadell.fls](<./数学/Other Topics/Fadell Calculus/fadell.fls>)
-- [fadell.log](<./数学/Other Topics/Fadell Calculus/fadell.log>)
 - [fadell.pdf](<./数学/Other Topics/Fadell Calculus/fadell.pdf>)
 - [fadell.synctex.gz](<./数学/Other Topics/Fadell Calculus/fadell.synctex.gz>)
 - [fadell.tex](<./数学/Other Topics/Fadell Calculus/fadell.tex>)
-- [fadell.xdv](<./数学/Other Topics/Fadell Calculus/fadell.xdv>)
 - [hmm.pdf](<./数学/Other Topics/Fadell Calculus/hmm.pdf>)
 - [hmm.synctex.gz](<./数学/Other Topics/Fadell Calculus/hmm.synctex.gz>)
 - [hmm.tex](<./数学/Other Topics/Fadell Calculus/hmm.tex>)
@@ -506,7 +490,6 @@
 <details>
 <summary>Exercise 11g</summary>
 
-- [Exercsise 11g.1.xdv](<./数学/Other Topics/Integration/Exercise 11g/Exercsise 11g.1.xdv>)
 - [Exercsise 11g.pdf](<./数学/Other Topics/Integration/Exercise 11g/Exercsise 11g.pdf>)
 - [Exercsise 11g.synctex.gz](<./数学/Other Topics/Integration/Exercise 11g/Exercsise 11g.synctex.gz>)
 - [Exercsise 11g.tex](<./数学/Other Topics/Integration/Exercise 11g/Exercsise 11g.tex>)
@@ -562,7 +545,6 @@
 - [Junior.pdf](<./数学/Other Topics/Kangaroo Math Comp/2022/Junior.pdf>)
 - [Junior.synctex.gz](<./数学/Other Topics/Kangaroo Math Comp/2022/Junior.synctex.gz>)
 - [Junior.tex](<./数学/Other Topics/Kangaroo Math Comp/2022/Junior.tex>)
-- [Junior.xdv](<./数学/Other Topics/Kangaroo Math Comp/2022/Junior.xdv>)
 <dl>
 <details>
 <summary>pictures</summary>
@@ -612,7 +594,6 @@
 - [calculus.pdf](<./数学/Other Topics/hmm/calculus.pdf>)
 - [calculus.synctex.gz](<./数学/Other Topics/hmm/calculus.synctex.gz>)
 - [calculus.tex](<./数学/Other Topics/hmm/calculus.tex>)
-- [calculus.xdv](<./数学/Other Topics/hmm/calculus.xdv>)
 
 </details>
 </dl>
@@ -689,15 +670,9 @@
 <details>
 <summary>S3P2</summary>
 
-- [S3P2.aux](<./数学/S3P2/S3P2.aux>)
-- [S3P2.fdb_latexmk](<./数学/S3P2/S3P2.fdb_latexmk>)
-- [S3P2.fls](<./数学/S3P2/S3P2.fls>)
-- [S3P2.log](<./数学/S3P2/S3P2.log>)
 - [S3P2.pdf](<./数学/S3P2/S3P2.pdf>)
 - [S3P2.synctex.gz](<./数学/S3P2/S3P2.synctex.gz>)
 - [S3P2.tex](<./数学/S3P2/S3P2.tex>)
-- [S3P2.toc](<./数学/S3P2/S3P2.toc>)
-- [S3P2.xdv](<./数学/S3P2/S3P2.xdv>)
 <dl>
 <details>
 <summary>assets</summary>
@@ -737,7 +712,6 @@
 - [Prac8.pdf](<./数学/SPM/Praktis Intensif Dwibahasa Form 4/Praktis 8 Vectors/Prac8.pdf>)
 - [Prac8.synctex.gz](<./数学/SPM/Praktis Intensif Dwibahasa Form 4/Praktis 8 Vectors/Prac8.synctex.gz>)
 - [Prac8.tex](<./数学/SPM/Praktis Intensif Dwibahasa Form 4/Praktis 8 Vectors/Prac8.tex>)
-- [Prac8.xdv](<./数学/SPM/Praktis Intensif Dwibahasa Form 4/Praktis 8 Vectors/Prac8.xdv>)
 
 </details>
 </dd>
@@ -776,7 +750,6 @@
 - [Prac3.pdf](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 3 Integration/Prac3.pdf>)
 - [Prac3.synctex.gz](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 3 Integration/Prac3.synctex.gz>)
 - [Prac3.tex](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 3 Integration/Prac3.tex>)
-- [Prac3.xdv](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 3 Integration/Prac3.xdv>)
 <dl>
 <details>
 <summary>images</summary>
@@ -796,7 +769,6 @@
 - [Prac4.pdf](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 4 Permutation and Combination/Prac4.pdf>)
 - [Prac4.synctex.gz](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 4 Permutation and Combination/Prac4.synctex.gz>)
 - [Prac4.tex](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 4 Permutation and Combination/Prac4.tex>)
-- [Prac4.xdv](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 4 Permutation and Combination/Prac4.xdv>)
 
 </details>
 </dd>
@@ -805,14 +777,9 @@
 <details>
 <summary>Praktis 5 Probablity Distribution</summary>
 
-- [Prac5.aux](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 5 Probablity Distribution/Prac5.aux>)
-- [Prac5.fdb_latexmk](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 5 Probablity Distribution/Prac5.fdb_latexmk>)
-- [Prac5.fls](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 5 Probablity Distribution/Prac5.fls>)
-- [Prac5.log](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 5 Probablity Distribution/Prac5.log>)
 - [Prac5.pdf](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 5 Probablity Distribution/Prac5.pdf>)
 - [Prac5.synctex.gz](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 5 Probablity Distribution/Prac5.synctex.gz>)
 - [Prac5.tex](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 5 Probablity Distribution/Prac5.tex>)
-- [Prac5.xdv](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 5 Probablity Distribution/Prac5.xdv>)
 
 </details>
 </dd>
@@ -826,14 +793,9 @@
 <details>
 <summary>Trial Exam</summary>
 
-- [Johor 2022.aux](<./数学/SPM/Trial Exam/Johor 2022.aux>)
-- [Johor 2022.fdb_latexmk](<./数学/SPM/Trial Exam/Johor 2022.fdb_latexmk>)
-- [Johor 2022.fls](<./数学/SPM/Trial Exam/Johor 2022.fls>)
-- [Johor 2022.log](<./数学/SPM/Trial Exam/Johor 2022.log>)
 - [Johor 2022.pdf](<./数学/SPM/Trial Exam/Johor 2022.pdf>)
 - [Johor 2022.synctex.gz](<./数学/SPM/Trial Exam/Johor 2022.synctex.gz>)
 - [Johor 2022.tex](<./数学/SPM/Trial Exam/Johor 2022.tex>)
-- [Johor 2022.xdv](<./数学/SPM/Trial Exam/Johor 2022.xdv>)
 <dd>
 <details>
 <summary>assets</summary>
@@ -873,7 +835,6 @@
 </details>
 </dl>
 
-- [xelatex98117.fls](<./数学/STPM/Paper 2/2015/xelatex98117.fls>)
 
 </details>
 </dd>

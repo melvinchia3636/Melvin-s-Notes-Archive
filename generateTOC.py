@@ -2,7 +2,8 @@ import os
 
 EXCLUDED = ["readme.md", "generateTOC.py", ".DS_Store",
             ".obsidian", ".git", ".gitignore", "LICENSE", "README.md", ".vscode"]
-EXCLUDED_EXTENSIONS = ["jpg", "png", "jpeg", "gif", "svg"]
+EXCLUDED_EXTENSIONS = ["jpg", "png", "jpeg",
+                       "gif", "svg", "aux", "fls", "log", "toc", "xdv", "synctex.gz", "synctex.gz(busy)", "fdb_latexmk"]
 
 
 def listdir(stream, folder, indent=0):
