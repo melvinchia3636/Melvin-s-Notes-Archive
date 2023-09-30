@@ -67,8 +67,6 @@
 </details>
 </dl>
 
-- [script.md](<./script.md>)
-- [yeah.md](<./yeah.md>)
 <dl>
 <details>
 <summary>其他</summary>
@@ -2284,7 +2282,9 @@
 - [Vocabularies Unit 7 Reading 2.md](<./英文/Vocabularies Unit 7 Reading 2.md>)
 - [Vocabularies Unit 7.docx](<./英文/Vocabularies Unit 7.docx>)
 - [Vocabularies Unit 7.pdf](<./英文/Vocabularies Unit 7.pdf>)
+- [script.md](<./英文/script.md>)
 - [word formation.md](<./英文/word formation.md>)
+- [yeah.md](<./英文/yeah.md>)
 
 </details>
 </dl>
