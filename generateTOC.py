@@ -1,7 +1,7 @@
 import os
 
 EXCLUDED = ["readme.md", "generateTOC.py", ".DS_Store",
-            ".obsidian", ".git", ".gitignore", "LICENSE", "README.md"]
+            ".obsidian", ".git", ".gitignore", "LICENSE", "README.md", ".vscode"]
 EXCLUDED_EXTENSIONS = ["jpg", "png", "jpeg", "gif", "svg"]
 
 

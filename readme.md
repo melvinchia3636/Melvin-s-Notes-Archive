@@ -317,15 +317,6 @@
 
 <dd>
 <details>
-<summary>.vscode</summary>
-
-- [settings.json](<./数学/.vscode/settings.json>)
-
-</details>
-</dd>
-
-<dd>
-<details>
 <summary>Certificates Collection</summary>
 
 - [SB081219 MELVIN CHIA PIN WEN CJR2023 AWARD.pdf](<./数学/Certificates Collection/SB081219 MELVIN CHIA PIN WEN CJR2023 AWARD.pdf>)
@@ -677,15 +668,6 @@
 <dd>
 <details>
 <summary>S3P1</summary>
-
-<dl>
-<details>
-<summary>.vscode</summary>
-
-- [settings.json](<./数学/S3P1/.vscode/settings.json>)
-
-</details>
-</dl>
 
 - [S3P1.pdf](<./数学/S3P1/S3P1.pdf>)
 - [S3P1.synctex.gz](<./数学/S3P1/S3P1.synctex.gz>)
