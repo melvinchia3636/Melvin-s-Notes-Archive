@@ -1,10 +1,8 @@
 # Table of Contents
-- [._商业学](<./._商业学>)
 <dl>
 <details>
 <summary>CPP Learning V2</summary>
 
-- [.md](<./CPP Learning V2/.md>)
 - [0.2 — Introduction to programming languages.md](<./CPP Learning V2/0.2 — Introduction to programming languages.md>)
 - [0.3 — Introduction to C&C++.md](<./CPP Learning V2/0.3 — Introduction to C&C++.md>)
 - [0.4 & 0.5 — Introduction to C++ development, compiler, linker, and libraries.md](<./CPP Learning V2/0.4 & 0.5 — Introduction to C++ development, compiler, linker, and libraries.md>)

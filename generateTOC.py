@@ -15,7 +15,7 @@ def listdir(stream, folder, indent=0):
                 stream.write(
                     "\n</details>\n</{}>\n\n".format(["dl", "dd"][indent % 2]))
             else:
-                if item.split(".")[-1] not in EXCLUDED_EXTENSIONS:
+                if item.split(".")[-1] not in EXCLUDED_EXTENSIONS and not item.startswith("."):
                     stream.write("- [{}](<{}>)\n".format(item,
                                                          os.path.join(folder, item)))
 
