@@ -1,23 +1,6 @@
 # Table of Contents
 
 <details>
-<summary>.github</summary>
-
-<dl><dd>
-<details>
-<summary>workflows</summary>
-
-- [refresh-toc.yml](<./.github/workflows/refresh-toc.yml>)
-
-</details>
-</dd></dl>
-
-
-</details>
-
-<hr></hr>
-
-<details>
 <summary>mrga</summary>
 
 - [expressJS.md](<./mrga/expressJS.md>)
