@@ -2,7 +2,7 @@ import os
 import re
 
 EXCLUDED = ["readme.md", "generateTOC.py", ".DS_Store",
-            ".obsidian", ".git", ".gitignore", "LICENSE", "README.md", ".vscode"]
+            ".obsidian", ".git", ".gitignore", "LICENSE", "README.md", ".vscode", ".github"]
 EXCLUDED_EXTENSIONS = ["jpg", "png", "jpeg",
                        "gif", "svg", "aux", "fls", "log", "toc", "xdv", "gz", "synctex.gz(busy)", "fdb_latexmk"]
 
