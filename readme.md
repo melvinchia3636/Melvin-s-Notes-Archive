@@ -1643,6 +1643,15 @@
 
 - [notebook chapter cover.docx](<./簿记与会计/Chapter 13 Correction of Errors/notebook chapter cover.docx>)
 - [Practice 1 Ans.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 1 Ans.docx>)
+- [Practice 1.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 1.docx>)
+- [Practice 2.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 2.docx>)
+- [Practice 3.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 3.docx>)
+- [Practice 4.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 4.docx>)
+- [Practice 5.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 5.docx>)
+- [Practice 6.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 6.docx>)
+- [Practice 7.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 7.docx>)
+- [Practice 8.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 8.docx>)
+- [Practice 9.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 9.docx>)
 
 </details>
 </dd></dl>
