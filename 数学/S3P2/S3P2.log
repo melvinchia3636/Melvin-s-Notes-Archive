@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.5.30)  30 SEP 2023 08:53
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.5.30)  1 OCT 2023 16:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1382,13 +1382,13 @@ Overfull \hbox (30.73508pt too wide) in paragraph at lines 3554--3558
 \T1/stix/m/n/10 In the last chap-ter, we have learned how to solve in-def-i-nite in-te-grals us-ing the method of in-te-gra-tion by sub-sti-tu-tion: $[] \LS1/stix/m/it/10 f\LS1/stix/m/n/10 .\LS1/stix/m/it/10 g\LS1/stix/m/n/10 .\LS1/stix/m/it/10 x\LS1/stix/m/n/10 //\LS1/stix/m/it/10 g[]\LS1/stix/m/n/10 .\LS1/stix/m/it/10 x\LS1/stix/m/n/10 /\LS1/stix/m/it/10 dx \LS1/stix/m/n/10 =
  []
 
-[58] [59] [60]
+[58] [59] [60] [61] [62]
 Missing character: There is no 。 ("3002) in font t1-stixgeneral!
-[61] [62] [63] [64] [65]
+[63] [64] [65] [66] [67]
 Missing character: There is no 及 ("53CA) in font t1-stixgeneral!
 Missing character: There is no 及 ("53CA) in font t1-stixgeneral!
 Missing character: There is no 及 ("53CA) in font t1-stixgeneral!
-[66] (./S3P2.aux) ) 
+[68] (./S3P2.aux) ) 
 Here is how much of TeX's memory you used:
  39529 strings out of 476683
  982100 string characters out of 5804047
@@ -1398,4 +1398,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  100i,15n,104p,1219b,480s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on S3P2.xdv (67 pages, 317344 bytes).
+Output written on S3P2.xdv (69 pages, 322096 bytes).

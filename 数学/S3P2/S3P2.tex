@@ -3687,13 +3687,98 @@ integration are changed accordingly.
                 & = \dfrac{2}{3} + \dfrac{3}{2} + \dfrac{2}{3}                                         & \\
                 & = \dfrac{13}{6}
           \end{flalign*}
+
     \item $\displaystyle\int_0^{\frac{\pi}{3}} \tan \theta d \theta$
+          \sol{}
+          \begin{flalign*}
+              I & = \int_0^{\frac{\pi}{3}} \dfrac{\sin \theta}{\cos \theta} d \theta
+          \end{flalign*}
+          Let $u = \cos \theta$, $du = -\sin \theta d \theta$.
+
+          When $\theta = 0$, $u = 1$.
+
+          When $\theta = \dfrac{\pi}{3}$, $u = \dfrac{1}{2}$.
+          \begin{flalign*}
+              I & = -\int_1^{\frac{1}{2}} \dfrac{1}{u} d u & \\
+                & = -\bigg[\ln|u|\bigg]_1^{\frac{1}{2}}    & \\
+                & = -\ln\dfrac{1}{2} + \ln 1               & \\
+                & = \ln 2
+          \end{flalign*}
+
     \item $\displaystyle\int_0^1\left(e^x-1\right)^2 d x$
+          \sol{}
+          \begin{flalign*}
+              I & = \int_0^1\left(e^{2x} - 2e^x + 1\right) d x    & \\
+                & = \bigg[\dfrac{1}{2}e^{2x} - 2e^x + x\bigg]_0^1 & \\
+                & = \dfrac{1}{2}e^2 - 2e + 1 - \dfrac{1}{2} + 2   & \\
+                & = \dfrac{1}{2}e^2 - 2e + \dfrac{5}{2}           & \\
+                & = \dfrac{e^2 - 4e + 5}{2}
+          \end{flalign*}
+
     \item $\displaystyle\int_1^4 \dfrac{2}{4 x-1} d x$
+          \sol{}
+
+          Let $u = 4x - 1$, $du = 4dx$.
+
+          When $x = 1$, $u = 3$.
+
+          When $x = 4$, $u = 15$.
+          \begin{flalign*}
+              I & = \dfrac{1}{2}\int_3^{15} \dfrac{1}{u} d u & \\
+                & = \dfrac{1}{2}\bigg[\ln|u|\bigg]_3^{15}    & \\
+                & = \dfrac{1}{2}(\ln 15 - \ln 3)             & \\
+                & = \dfrac{1}{2}\ln 5
+          \end{flalign*}
+
     \item $\displaystyle\int_{-1}^3 \sqrt{2 x+3} d x$
+          \sol{}
+
+          Let $u = 2x + 3$, $du = 2dx$.
+
+          When $x = -1$, $u = 1$.
+
+          When $x = 3$, $u = 9$.
+          \begin{flalign*}
+              I & = \dfrac{1}{2}\int_1^9 \sqrt{u} d u           & \\
+                & = \dfrac{1}{3}\bigg[u^{\frac{3}{2}}\bigg]_1^9 & \\
+                & = \dfrac{1}{3}(27 - 1)                        & \\
+                & = \dfrac{26}{3}
+          \end{flalign*}
+
     \item $\displaystyle\int_1^2 \dfrac{1}{(2 x-1)^3} d x$
+          \sol{}
+
+          Let $u = 2x - 1$, $du = 2dx$.
+
+          When $x = 1$, $u = 1$.
+
+          When $x = 2$, $u = 3$.
+          \begin{flalign*}
+              I & = \dfrac{1}{2}\int_1^3 u^{-3} d u                & \\
+                & = -\dfrac{1}{4}\bigg[u^{-2}\bigg]_1^3            & \\
+                & = -\dfrac{1}{4}\left(\dfrac{1}{9} - 1\right)     & \\
+                & = -\dfrac{1}{4} \cdot \left(-\dfrac{8}{9}\right) & \\
+                & = \dfrac{2}{9}
+          \end{flalign*}
+
     \item $\displaystyle\int_{-1}^1 x^2\left(x^3-1\right)^4 d x$
+          \sol{}
+
+          Let $u = x^3 - 1$, $du = 3x^2dx$.
+
+          When $x = -1$, $u = -2$.
+
+          When $x = 1$, $u = 0$.
+          \begin{flalign*}
+              I & = \dfrac{1}{3}\int_{-2}^0 u^4 d u     & \\
+                & = \dfrac{1}{15}\bigg[u^5\bigg]_{-2}^0 & \\
+                & = \dfrac{32}{15}
+          \end{flalign*}
+
     \item $\displaystyle\int_1^6 x \sqrt{3 x-2} d x$
+          \sol{}
+
+          Let $u = 3x - 2$, $du = 3dx$.
     \item $\displaystyle\int_{-\dfrac{\pi}{4}}^{\frac{\pi}{4}} \sin ^2 \theta d \theta$
     \item $\displaystyle\int_3^5 \dfrac{1}{x^2-x-2} d x$
     \item $\displaystyle\int_2^5 \dfrac{x}{x^3-x^2-x+1} d x$

@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1696035187 "S3P2.xdv" "S3P2.pdf" "S3P2" 1696035191 0
-  "S3P2.xdv" 1696035187 317344 e322902b3360a4405a05db38094b8743 "xelatex"
+["xdvipdfmx"] 1696147667 "S3P2.xdv" "S3P2.pdf" "S3P2" 1696147670 0
+  "S3P2.xdv" 1696147666 322096 a867251b7578e7d4d878e7e579818f16 "xelatex"
   (generated)
   "S3P2.pdf"
   (rewritten before read)
-["xelatex"] 1696035186 "/Users/melvinchia/Documents/involution/数学/S3P2/S3P2.tex" "S3P2.xdv" "S3P2" 1696035191 0
-  "/Users/melvinchia/Documents/involution/数学/S3P2/S3P2.tex" 1696035184 175991 cc06a625fdcd9bf2582ceee1791ac293 ""
+["xelatex"] 1696147665 "/Users/melvinchia/Documents/involution/数学/S3P2/S3P2.tex" "S3P2.xdv" "S3P2" 1696147670 0
+  "/Users/melvinchia/Documents/involution/数学/S3P2/S3P2.tex" 1696147665 178717 2ce62b677e52c7e8555849b4e82235dd ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -294,9 +294,9 @@
   "/usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf" 1677365944 40745 87bb86a62d462f93a1efc6b0c65c872e ""
   "/usr/local/texlive/2023/texmf-var/web2c/xetex/xelatex.fmt" 1685458780 10502839 b14d95dbea05ddfdac2555cf378e04f5 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "S3P2.aux" 1696035187 7317 70e64c5d6a27a093a3716414175e3721 "xelatex"
-  "S3P2.tex" 1696035184 175991 cc06a625fdcd9bf2582ceee1791ac293 ""
-  "S3P2.toc" 1696035187 4483 5bb3be1281be61bba63aa53ea1fa1f04 "xelatex"
+  "S3P2.aux" 1696147666 7317 35215122e987b8590615b4fe59a16b06 "xelatex"
+  "S3P2.tex" 1696147665 178717 2ce62b677e52c7e8555849b4e82235dd ""
+  "S3P2.toc" 1696147666 4483 43da74117cbe546d5124ef1b7b1a9568 "xelatex"
   "assets/26-1.png" 1695937086 97591 cdee5f8936955f0f82a224480293afb3 ""
   "assets/26-10.png" 1695946843 235662 65dc8aa6ea702a898cf638ecb1b07b63 ""
   "assets/26-11.png" 1695946843 52628 966fcf488d81fc44cf207d8531ae5ca0 ""
