@@ -3656,131 +3656,201 @@ integration are changed accordingly.
         \end{flalign*}
     \end{multicols}
 
-    \item $\displaystyle\int_{-3}^3(x+3)^2 d x$
-          \sol{}
+    \begin{multicols}{2}
+        \item $\displaystyle\int_{-3}^3(x+3)^2 d x$
+        \sol{}
 
-          Let $u = x + 3$, $du = dx$.
+        Let $u = x + 3$, $du = dx$.
 
-          When $x = -3$, $u = 0$.
+        When $x = -3$, $u = 0$.
 
-          When $x = 3$, $u = 6$.
-          \begin{flalign*}
-              I & = \int_0^6 u^2 d u                & \\
-                & = \bigg[\dfrac{1}{3}u^3\bigg]_0^6 & \\
-                & = 72 - 0                          & \\
-                & = 72
-          \end{flalign*}
+        When $x = 3$, $u = 6$.
+        \begin{flalign*}
+            I & = \int_0^6 u^2 d u                & \\
+              & = \bigg[\dfrac{1}{3}u^3\bigg]_0^6 & \\
+              & = 72
+        \end{flalign*}
 
-    \item $\displaystyle\int_{-1}^1(2+x)\left(2-x^2\right) d x$
-          \sol{}
-          \begin{flalign*}
-              I & = \int_{-1}^1\left(4 - 2x^2 + 2x - x^3\right)dx                             & \\
-                & = \bigg[4x - \dfrac{2}{3}x^3 + x^2 - \dfrac{1}{4}x^4\bigg]_{-1}^1           & \\
-                & = 4 - \dfrac{2}{3} + 1 - \dfrac{1}{4} + 4 - \dfrac{2}{3} - 1 + \dfrac{1}{4} & \\
-                & = \dfrac{20}{3}
-          \end{flalign*}
+        \item $\displaystyle\int_{-1}^1(2+x)\left(2-x^2\right) d x$
+        \sol{}
+        \begin{flalign*}
+            I & = \int_{-1}^1\left(4 - 2x^2 + 2x - x^3\right)dx                             & \\
+              & = \bigg[4x - \dfrac{2}{3}x^3 + x^2 - \dfrac{1}{4}x^4\bigg]_{-1}^1           & \\
+              & = 4 - \dfrac{2}{3} + 1 - \dfrac{1}{4} + 4 - \dfrac{2}{3} - 1 + \dfrac{1}{4} & \\
+              & = \dfrac{20}{3}
+        \end{flalign*}
+    \end{multicols}
 
-    \item $\displaystyle\int_0^{\frac{\pi}{2}}(2 \sin 3 \theta-3 \cos 2 \theta) d \theta$
-          \sol{}
-          \begin{flalign*}
-              I & = \bigg[-\dfrac{2}{3}\cos 3\theta - \dfrac{3}{2}\sin 2\theta\bigg]_0^{\frac{\pi}{2}} & \\
-                & = \dfrac{2}{3} + \dfrac{3}{2} + \dfrac{2}{3}                                         & \\
-                & = \dfrac{13}{6}
-          \end{flalign*}
+    \begin{multicols}{2}
+        \item $\displaystyle\int_0^{\frac{\pi}{2}}(2 \sin 3 \theta-3 \cos 2 \theta) d \theta$
+        \sol{}
+        \begin{flalign*}
+            I & = \bigg[-\dfrac{2}{3}\cos 3\theta - \dfrac{3}{2}\sin 2\theta\bigg]_0^{\frac{\pi}{2}} & \\
+              & = \dfrac{2}{3} + \dfrac{3}{2} + \dfrac{2}{3}                                         & \\
+              & = \dfrac{13}{6}
+        \end{flalign*}
+        \vfill{}\null{}
+        \columnbreak{}
 
-    \item $\displaystyle\int_0^{\frac{\pi}{3}} \tan \theta d \theta$
-          \sol{}
-          \begin{flalign*}
-              I & = \int_0^{\frac{\pi}{3}} \dfrac{\sin \theta}{\cos \theta} d \theta
-          \end{flalign*}
-          Let $u = \cos \theta$, $du = -\sin \theta d \theta$.
+        \item $\displaystyle\int_0^{\frac{\pi}{3}} \tan \theta d \theta$
+        \sol{}
+        \begin{flalign*}
+            I & = \int_0^{\frac{\pi}{3}} \dfrac{\sin \theta}{\cos \theta} d \theta &
+        \end{flalign*}
+        Let $u = \cos \theta$, $du = -\sin \theta d \theta$.
 
-          When $\theta = 0$, $u = 1$.
+        When $\theta = 0$, $u = 1$.
 
-          When $\theta = \dfrac{\pi}{3}$, $u = \dfrac{1}{2}$.
-          \begin{flalign*}
-              I & = -\int_1^{\frac{1}{2}} \dfrac{1}{u} d u & \\
-                & = -\bigg[\ln|u|\bigg]_1^{\frac{1}{2}}    & \\
-                & = -\ln\dfrac{1}{2} + \ln 1               & \\
-                & = \ln 2
-          \end{flalign*}
+        When $\theta = \dfrac{\pi}{3}$, $u = \dfrac{1}{2}$.
+        \begin{flalign*}
+            I & = -\int_1^{\frac{1}{2}} \dfrac{1}{u} d u & \\
+              & = -\bigg[\ln|u|\bigg]_1^{\frac{1}{2}}    & \\
+              & = -\ln\dfrac{1}{2} + \ln 1               & \\
+              & = \ln 2
+        \end{flalign*}
+    \end{multicols}
 
-    \item $\displaystyle\int_0^1\left(e^x-1\right)^2 d x$
-          \sol{}
-          \begin{flalign*}
-              I & = \int_0^1\left(e^{2x} - 2e^x + 1\right) d x    & \\
-                & = \bigg[\dfrac{1}{2}e^{2x} - 2e^x + x\bigg]_0^1 & \\
-                & = \dfrac{1}{2}e^2 - 2e + 1 - \dfrac{1}{2} + 2   & \\
-                & = \dfrac{1}{2}e^2 - 2e + \dfrac{5}{2}           & \\
-                & = \dfrac{e^2 - 4e + 5}{2}
-          \end{flalign*}
+    \begin{multicols}{2}
+        \item $\displaystyle\int_0^1\left(e^x-1\right)^2 d x$
+        \sol{}
+        \begin{flalign*}
+            I & = \int_0^1\left(e^{2x} - 2e^x + 1\right) d x    & \\
+              & = \bigg[\dfrac{1}{2}e^{2x} - 2e^x + x\bigg]_0^1 & \\
+              & = \dfrac{1}{2}e^2 - 2e + 1 - \dfrac{1}{2} + 2   & \\
+              & = \dfrac{1}{2}e^2 - 2e + \dfrac{5}{2}           & \\
+              & = \dfrac{e^2 - 4e + 5}{2}
+        \end{flalign*}
+        \vfill{}\null{}
 
-    \item $\displaystyle\int_1^4 \dfrac{2}{4 x-1} d x$
-          \sol{}
+        \item $\displaystyle\int_1^4 \dfrac{2}{4 x-1} d x$
+        \sol{}
 
-          Let $u = 4x - 1$, $du = 4dx$.
+        Let $u = 4x - 1$, $du = 4dx$.
 
-          When $x = 1$, $u = 3$.
+        When $x = 1$, $u = 3$.
 
-          When $x = 4$, $u = 15$.
-          \begin{flalign*}
-              I & = \dfrac{1}{2}\int_3^{15} \dfrac{1}{u} d u & \\
-                & = \dfrac{1}{2}\bigg[\ln|u|\bigg]_3^{15}    & \\
-                & = \dfrac{1}{2}(\ln 15 - \ln 3)             & \\
-                & = \dfrac{1}{2}\ln 5
-          \end{flalign*}
+        When $x = 4$, $u = 15$.
+        \begin{flalign*}
+            I & = \dfrac{1}{2}\int_3^{15} \dfrac{1}{u} d u & \\
+              & = \dfrac{1}{2}\bigg[\ln|u|\bigg]_3^{15}    & \\
+              & = \dfrac{1}{2}(\ln 15 - \ln 3)             & \\
+              & = \dfrac{1}{2}\ln 5
+        \end{flalign*}
+    \end{multicols}
 
-    \item $\displaystyle\int_{-1}^3 \sqrt{2 x+3} d x$
-          \sol{}
+    \begin{multicols}{2}
+        \item $\displaystyle\int_{-1}^3 \sqrt{2 x+3} d x$
+        \sol{}
 
-          Let $u = 2x + 3$, $du = 2dx$.
+        Let $u = 2x + 3$, $du = 2dx$.
 
-          When $x = -1$, $u = 1$.
+        When $x = -1$, $u = 1$.
 
-          When $x = 3$, $u = 9$.
-          \begin{flalign*}
-              I & = \dfrac{1}{2}\int_1^9 \sqrt{u} d u           & \\
-                & = \dfrac{1}{3}\bigg[u^{\frac{3}{2}}\bigg]_1^9 & \\
-                & = \dfrac{1}{3}(27 - 1)                        & \\
-                & = \dfrac{26}{3}
-          \end{flalign*}
+        When $x = 3$, $u = 9$.
+        \begin{flalign*}
+            I & = \dfrac{1}{2}\int_1^9 \sqrt{u} d u           & \\
+              & = \dfrac{1}{3}\bigg[u^{\frac{3}{2}}\bigg]_1^9 & \\
+              & = \dfrac{1}{3}(27 - 1)                        & \\
+              & = \dfrac{26}{3}
+        \end{flalign*}
 
-    \item $\displaystyle\int_1^2 \dfrac{1}{(2 x-1)^3} d x$
-          \sol{}
+        \item $\displaystyle\int_1^2 \dfrac{1}{(2 x-1)^3} d x$
+        \sol{}
 
-          Let $u = 2x - 1$, $du = 2dx$.
+        Let $u = 2x - 1$, $du = 2dx$.
 
-          When $x = 1$, $u = 1$.
+        When $x = 1$, $u = 1$.
 
-          When $x = 2$, $u = 3$.
-          \begin{flalign*}
-              I & = \dfrac{1}{2}\int_1^3 u^{-3} d u                & \\
-                & = -\dfrac{1}{4}\bigg[u^{-2}\bigg]_1^3            & \\
-                & = -\dfrac{1}{4}\left(\dfrac{1}{9} - 1\right)     & \\
-                & = -\dfrac{1}{4} \cdot \left(-\dfrac{8}{9}\right) & \\
-                & = \dfrac{2}{9}
-          \end{flalign*}
+        When $x = 2$, $u = 3$.
+        \begin{flalign*}
+            I & = \dfrac{1}{2}\int_1^3 u^{-3} d u                & \\
+              & = -\dfrac{1}{4}\bigg[u^{-2}\bigg]_1^3            & \\
+              & = -\dfrac{1}{4}\left(\dfrac{1}{9} - 1\right)     & \\
+              & = -\dfrac{1}{4} \cdot \left(-\dfrac{8}{9}\right) & \\
+              & = \dfrac{2}{9}
+        \end{flalign*}
+    \end{multicols}
 
-    \item $\displaystyle\int_{-1}^1 x^2\left(x^3-1\right)^4 d x$
-          \sol{}
+    \begin{multicols}{2}
+        \item $\displaystyle\int_{-1}^1 x^2\left(x^3-1\right)^4 d x$
+        \sol{}
 
-          Let $u = x^3 - 1$, $du = 3x^2dx$.
+        Let $u = x^3 - 1$, $du = 3x^2dx$.
 
-          When $x = -1$, $u = -2$.
+        When $x = -1$, $u = -2$.
 
-          When $x = 1$, $u = 0$.
-          \begin{flalign*}
-              I & = \dfrac{1}{3}\int_{-2}^0 u^4 d u     & \\
-                & = \dfrac{1}{15}\bigg[u^5\bigg]_{-2}^0 & \\
-                & = \dfrac{32}{15}
-          \end{flalign*}
+        When $x = 1$, $u = 0$.
+        \begin{flalign*}
+            I & = \dfrac{1}{3}\int_{-2}^0 u^4 d u     & \\
+              & = \dfrac{1}{15}\bigg[u^5\bigg]_{-2}^0 & \\
+              & = \dfrac{32}{15}
+        \end{flalign*}
+        \columnbreak{}
 
-    \item $\displaystyle\int_1^6 x \sqrt{3 x-2} d x$
-          \sol{}
+        \item $\displaystyle\int_1^6 x \sqrt{3 x-2} d x$
+        \sol{}
 
-          Let $u = 3x - 2$, $du = 3dx$.
-    \item $\displaystyle\int_{-\dfrac{\pi}{4}}^{\frac{\pi}{4}} \sin ^2 \theta d \theta$
-    \item $\displaystyle\int_3^5 \dfrac{1}{x^2-x-2} d x$
+        Let $u = 3x - 2$, $du = 3dx$, $x = \dfrac{u + 2}{3}$.
+
+        When $x = 1$, $u = 1$.
+
+        When $x = 6$, $u = 16$.
+        \begin{flalign*}
+            I & = \dfrac{1}{3}\int_1^{16} \dfrac{u + 2}{3}\sqrt{u} d u                                     & \\
+              & = \dfrac{1}{9}\int_1^{16} \left(u^{\frac{3}{2}} + 2u^{\frac{1}{2}}\right) d u              & \\
+              & = \dfrac{1}{9}\bigg[\dfrac{2}{5}u^{\frac{5}{2}} + \dfrac{4}{3}u^{\frac{3}{2}}\bigg]_1^{16} & \\
+              & = \dfrac{1}{9}\left(\dfrac{2048}{5} + \dfrac{256}{3} - \dfrac{2}{5} - \dfrac{4}{3}\right)  & \\
+              & = \dfrac{274}{5}
+        \end{flalign*}
+    \end{multicols}
+
+    \newpage
+    \begin{multicols}{2}
+        \item $\displaystyle\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}} \sin ^2 \theta d \theta$
+        \sol{}
+        \begin{flalign*}
+            I & = \dfrac{1}{2}\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}} (1 - \cos 2\theta) d \theta              & \\
+              & = \dfrac{1}{2}\bigg[\theta - \dfrac{1}{2}\sin 2\theta\bigg]_{-\frac{\pi}{4}}^{\frac{\pi}{4}} & \\
+              & = \dfrac{1}{2}\left(\dfrac{\pi}{4} - \dfrac{1}{2} + \dfrac{\pi}{4} - \dfrac{1}{2}\right)     & \\
+              & = \dfrac{\pi}{4} - \dfrac{1}{2}                                                              & \\
+              & = \dfrac{\pi - 2}{4}
+        \end{flalign*}
+        \vfill{}\null{}
+
+        \columnbreak{}
+
+        \item $\displaystyle\int_3^5 \dfrac{1}{x^2-x-2} d x$
+        \sol{}
+        \begin{flalign*}
+            I & = \int_3^5 \dfrac{1}{(x-2)(x+1)} d x &
+        \end{flalign*}
+        Let $\dfrac{1}{(x-2)(x+1)} = \dfrac{A}{x-2} + \dfrac{B}{x+1}$.
+        \begin{flalign*}
+            Ax + A + Bx - 2B    & = 1 \\
+            (A + B)x + (A - 2B) & = 1
+        \end{flalign*}
+        \vspace{-2em}
+        \begin{flalign*}
+            \begin{cases}
+                A + B = 0 \\
+                A - 2B = 1
+            \end{cases}
+            \Rightarrow
+            \begin{cases}
+                A = \dfrac{1}{3} \\
+                B = -\dfrac{1}{3}
+            \end{cases}
+        \end{flalign*}
+        \vspace{-1em}
+        \begin{flalign*}
+            I & = \int_3^5 \left(\dfrac{1}{3(x-2)} - \dfrac{1}{3(x+1)}\right) d x       & \\
+              & = \dfrac{1}{3}\int_3^5 \left(\dfrac{1}{x-2} - \dfrac{1}{x+1}\right) d x & \\
+              & = \dfrac{1}{3}\bigg[\ln|x-2| - \ln|x+1|\bigg]_3^5                       & \\
+              & = \dfrac{1}{3}\left(\ln 3 - \ln 6 - \ln 1 + \ln 4\right)                & \\
+              & = \dfrac{1}{3}\ln 2
+        \end{flalign*}
+    \end{multicols}
+
     \item $\displaystyle\int_2^5 \dfrac{x}{x^3-x^2-x+1} d x$
     \item $\displaystyle\int_0^1 \dfrac{x^2}{x^2+2 x+1} d x$
     \item $\displaystyle\int_0^3 \dfrac{x}{\sqrt{25-x^2}} d x$
