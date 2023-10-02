@@ -1880,7 +1880,6 @@
 <details>
 <summary>Chapter 21 Non-profit-making Organisation Accounts</summary>
 
-- [Maker组实习考.docx](<./簿记与会计/Chapter 21 Non-profit-making Organisation Accounts/Maker组实习考.docx>)
 - [notebook chapter cover.docx](<./簿记与会计/Chapter 21 Non-profit-making Organisation Accounts/notebook chapter cover.docx>)
 - [Practice 1 Ans Sheet.docx](<./簿记与会计/Chapter 21 Non-profit-making Organisation Accounts/Practice 1 Ans Sheet.docx>)
 - [Practice 1 Ans.docx](<./簿记与会计/Chapter 21 Non-profit-making Organisation Accounts/Practice 1 Ans.docx>)
