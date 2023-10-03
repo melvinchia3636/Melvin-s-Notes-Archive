@@ -353,6 +353,8 @@
 
 - [diffeq.pdf](<./数学/Other Topics/Differential Equation/diffeq.pdf>)
 - [diffeq.tex](<./数学/Other Topics/Differential Equation/diffeq.tex>)
+- [uhh.pdf](<./数学/Other Topics/Differential Equation/uhh.pdf>)
+- [uhh.tex](<./数学/Other Topics/Differential Equation/uhh.tex>)
 
 </details>
 </dd></dl></dd></dl>
