@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{sus}
+\author{melvinchia }
+\date{October 2023}
+
+\begin{document}
+
+\begin{flalign*}
+    \dfrac{d^2x}{dt^2} + \dfrac{ga^2}{x^2} & = 0                                  \\
+    \dfrac{d^2x}{dt^2}                     & = -\dfrac{ga^2}{x^2}                 \\
+    2\dfrac{dx}{dt}\dfrac{d^2x}{dt^2}      & = -2\dfrac{dx}{dt}\dfrac{ga^2}{x^2}  \\
+    \left(\dfrac{dx}{dt}\right)^2          & = -2ga^2\int\dfrac{dx}{x^2}          \\
+                                           & = 2ga^2\left(\dfrac{1}{x} + A\right) \\
+                                           & = \dfrac{2ga^2}{x} + A               \\
+\end{flalign*}
+When $x = h$, $\dfrac{dx}{dt} = 0$,
+\begin{flalign*}
+    0                                          & = \dfrac{2ga^2}{h} + A                                 \\
+    A                                          & = -\dfrac{2ga^2}{h}                                    \\
+    \\
+    \left(\dfrac{dx}{dt}\right)^2              & = \dfrac{2ga^2}{x} - \dfrac{2ga^2}{h}                  \\
+                                               & = 2ga^2\left(\dfrac{1}{x} - \dfrac{1}{h}\right)        \\
+                                               & = 2ga^2\left(\dfrac{h - x}{xh}\right)                  \\
+    \dfrac{dx}{dt}                             & = \pm a\sqrt{2g}\cdot{\dfrac{\sqrt{h - x}}{\sqrt{xh}}} \\
+    \dfrac{\sqrt{xh}}{\sqrt{h-x}}dx            & = \pm a\sqrt{2g}dt                                     \\
+    \sqrt{h}\int\dfrac{\sqrt{x}}{\sqrt{h-x}}dx & = \pm a\sqrt{2g}t + B                                  \\
+\end{flalign*}
+
+Let $x = u^2$, $dx = 2udu$,
+\begin{flalign*}
+    \sqrt{h}\int\dfrac{2u^2}{\sqrt{h-u^2}}du & = \pm a\sqrt{2g}t + B \\
+    2\sqrt{h}\int\dfrac{u^2}{\sqrt{h-u^2}}du & = \pm a\sqrt{2g}t + B
+\end{flalign*}
+
+Let $u = \sqrt{h}\sin\theta$, $du = \sqrt{h}\cos\theta d\theta$,
+\begin{flalign*}
+    2\sqrt{h}\int\dfrac{h\sin^2\theta}{\sqrt{h-h\sin^2\theta}}\sqrt{h}\cos\theta d\theta                & = \pm a\sqrt{2g}t + B \\
+    2\sqrt{h}\int\dfrac{h\sin^2\theta}{\sqrt{h(1-\sin^2\theta)}}\sqrt{h}\cos\theta d\theta              & = \pm a\sqrt{2g}t + B \\
+    2\sqrt{h}\int\dfrac{h\sin^2\theta}{\sqrt{h\cos^2\theta}}\sqrt{h}\cos\theta d\theta                  & = \pm a\sqrt{2g}t + B \\
+    2\sqrt{h}\int \dfrac{h\sin^2\theta}{\sqrt{h}\cos\theta}\sqrt{h}\cos\theta d\theta                   & = \pm a\sqrt{2g}t + B \\
+    2\sqrt{h}\int h\sin^2\theta d\theta                                                                 & = \pm a\sqrt{2g}t + B \\
+    2h^{\frac{3}{2}}\int\sin^2\theta d\theta                                                            & = \pm a\sqrt{2g}t + B \\
+    2h^{\frac{3}{2}}\int\dfrac{1-\cos2\theta}{2}d\theta                                                 & = \pm a\sqrt{2g}t + B \\
+    h^{\frac{3}{2}}\int(1-\cos2\theta)d\theta                                                           & = \pm a\sqrt{2g}t + B \\
+    h^{\frac{3}{2}}\left(\theta - \dfrac{\sin2\theta}{2}\right)                                         & = \pm a\sqrt{2g}t + B \\
+    h^{\frac{3}{2}}\left(\theta - \sin\theta\cos\theta\right)                                           & = \pm a\sqrt{2g}t + B \\
+    h^{\frac{3}{2}}\left(\arcsin\dfrac{u}{\sqrt{h}} - \dfrac{u}{\sqrt{h}}\sqrt{\dfrac{h-u^2}{h}}\right) & = \pm a\sqrt{2g}t + B \\
+    h^{\frac{3}{2}}\left(\arcsin\dfrac{u}{\sqrt{h}} - \dfrac{u\sqrt{h-u^2}}{h}\right)                   & = \pm a\sqrt{2g}t + B \\
+    h^{\frac{3}{2}}\left(\arcsin\dfrac{\sqrt{x}}{\sqrt{h}} - \dfrac{\sqrt{x}\sqrt{h-x}}{h}\right)       & = \pm a\sqrt{2g}t + B \\
+    h^{\frac{3}{2}}\left(\arcsin\sqrt{\dfrac{x}{h}} - \dfrac{\sqrt{(h-x)x}}{h}\right)                   & = \pm a\sqrt{2g}t + B \\
+    h^{\frac{3}{2}}\arcsin\sqrt{\dfrac{x}{h}} - \sqrt{h}\sqrt{hx-x^2}                                   & = \pm a\sqrt{2g}t + B \\
+\end{flalign*}
+When $x = h$, $t = 0$,
+\begin{flalign*}
+    h^{\frac{3}{2}}\arcsin\sqrt{\dfrac{h}{h}} - \sqrt{h}\sqrt{h^2-h^2} & = \pm a\sqrt{2g}0 + B                             \\
+    h^{\frac{3}{2}}\arcsin1 - \sqrt{h}\sqrt{0}                         & = B                                               \\
+    h^{\frac{3}{2}}\dfrac{\pi}{2} - 0                                  & = B                                               \\
+    B                                                                  & = \dfrac{\pi}{2}h^{\frac{3}{2}}                   \\
+    \\
+    h^{\frac{3}{2}}\arcsin\sqrt{\dfrac{x}{h}} - \sqrt{h}\sqrt{hx-x^2}  & = \pm a\sqrt{2g}t + \dfrac{\pi}{2}h^{\frac{3}{2}} \\
+\end{flalign*}
+
+\end{document}
