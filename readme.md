@@ -1978,6 +1978,8 @@
 - [Practice 2.docx](<./簿记与会计/Chapter 24 Consignment Accounts/Practice 2.docx>)
 - [UEB 2010 Q6 Ans.docx](<./簿记与会计/Chapter 24 Consignment Accounts/UEB 2010 Q6 Ans.docx>)
 - [UEB 2010 Q6.docx](<./簿记与会计/Chapter 24 Consignment Accounts/UEB 2010 Q6.docx>)
+- [UEB 2010 Q6.pdf](<./簿记与会计/Chapter 24 Consignment Accounts/UEB 2010 Q6.pdf>)
+- [UEB 2013 Q4.docx](<./簿记与会计/Chapter 24 Consignment Accounts/UEB 2013 Q4.docx>)
 
 </details>
 </dd></dl>
