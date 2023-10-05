@@ -1949,7 +1949,6 @@
 
 - [Ans Sheet.docx](<./簿记与会计/Chapter 23 Bills of Exchange/Ans Sheet.docx>)
 - [notebook chapter cover.docx](<./簿记与会计/Chapter 23 Bills of Exchange/notebook chapter cover.docx>)
-- [Thousand Years.pdf](<./簿记与会计/Chapter 23 Bills of Exchange/Thousand Years.pdf>)
 - [Practice 1.docx](<./簿记与会计/Chapter 23 Bills of Exchange/Practice 1.docx>)
 - [Ans Sheet 2.docx](<./簿记与会计/Chapter 23 Bills of Exchange/Ans Sheet 2.docx>)
 - [Practice 2.docx](<./簿记与会计/Chapter 23 Bills of Exchange/Practice 2.docx>)
@@ -1977,6 +1976,8 @@
 - [Practice 2 Ans Sheet.docx](<./簿记与会计/Chapter 24 Consignment Accounts/Practice 2 Ans Sheet.docx>)
 - [Practice 2 Ans.docx](<./簿记与会计/Chapter 24 Consignment Accounts/Practice 2 Ans.docx>)
 - [Practice 2.docx](<./簿记与会计/Chapter 24 Consignment Accounts/Practice 2.docx>)
+- [UEB 2010 Q6 Ans.docx](<./簿记与会计/Chapter 24 Consignment Accounts/UEB 2010 Q6 Ans.docx>)
+- [UEB 2010 Q6.docx](<./簿记与会计/Chapter 24 Consignment Accounts/UEB 2010 Q6.docx>)
 
 </details>
 </dd></dl>
