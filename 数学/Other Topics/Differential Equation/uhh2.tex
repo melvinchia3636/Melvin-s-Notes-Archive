@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage[total={7in,8in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[T1]{fontenc}
+\usepackage{lxfonts}
+
+\title{sus}
+\author{melvinchia }
+\date{October 2023}
+
+\begin{document}
+\pagenumbering{gobble}
+
+\begin{enumerate}
+    \setcounter{enumi}{39}
+    \item By differentiating with respect to $t$, show that the result of eliminating $x$
+          from
+          \[3\dfrac{dx}{dt} + \dfrac{dy}{dt} + 2x = k;\ \dfrac{dx}{dt} + 4\dfrac{dy}{dt} + 3y = 0,\]
+          is \[11\dfrac{d^2y}{dt^2} + 17\dfrac{dy}{dt} + 6y = 0.\]
+
+          Hence, solve the original equations given $x = 0$, $y = 0$ when $t = 0$.\\
+
+          \textbf{Sol.}
+          \begin{flalign*}
+              3\dfrac{dx}{dt} + \dfrac{dy}{dt} + 2x & = k\ \cdots\ (1) \\
+              \dfrac{dx}{dt} + 4\dfrac{dy}{dt} + 3y & = 0\ \cdots\ (2)
+          \end{flalign*}
+          \begin{flalign*}
+              \text{From }(2): & \ \dfrac{dx}{dt} = - 4\dfrac{dy}{dt} - 3y\ \cdots\ (3)                       \\
+                               & \ \dfrac{d^2x}{dt^2} = - 4\dfrac{d^2y}{dt^2} - 3\dfrac{dy}{dt}\ \cdots\ (4)  \\
+              \text{From }(2): & \ 4\dfrac{dy}{dt} = - \dfrac{dx}{dt} - 3y                                    \\
+                               & \ \dfrac{dy}{dt} = - \dfrac{1}{4}\dfrac{dx}{dt} - \dfrac{3}{4}y\ \cdots\ (5)
+          \end{flalign*}
+          \begin{flalign*}
+              \text{Substituting }(5)\text{ into }(1): & \ 3\dfrac{dx}{dt} + \left(- \dfrac{1}{4}\dfrac{dx}{dt} - \dfrac{3}{4}y\right) + 2x = k             \\
+                                                       & \ \dfrac{11}{4}\dfrac{dx}{dt} - \dfrac{3}{4}y + 2x = k                                             \\
+                                                       & \ \dfrac{11}{4}\dfrac{d^2x}{dt^2} - \dfrac{3}{4}\dfrac{dy}{dt} + 2\dfrac{dx}{dt} = 0 \ \cdots\ (6)
+          \end{flalign*}
+          \begin{flalign*}
+              \text{Substituting }(3)\text{ and }(4)\text{ into }(6): & \ \dfrac{11}{4}\left(- 4\dfrac{d^2y}{dt^2} - 3\dfrac{dy}{dt}\right) - \dfrac{3}{4}\dfrac{dy}{dt} + 2\left(- 4\dfrac{dy}{dt} - 3y\right) = 0 \\
+                                                                      & \ -44\dfrac{d^2y}{dt^2} - 33\dfrac{dy}{dt} - 3\dfrac{dy}{dt} - 32\dfrac{dy}{dt} - 24y = 0                                                   \\
+                                                                      & \ -44\dfrac{d^2y}{dt^2} - 68\dfrac{dy}{dt} - 24y = 0                                                                                        \\
+                                                                      & \ 11\dfrac{d^2y}{dt^2} + 17\dfrac{dy}{dt} + 6y = 0\ \text{(shown)}\ \quad \blacksquare
+          \end{flalign*}
+          \newpage
+          \begin{flalign*}
+              \text{Auxiliary equation: } & \ 11m^2 + 17m + 6 = 0    \\
+                                          & \ (11m + 6)(m + 1) = 0   \\
+                                          & \ m = -1, -\dfrac{6}{11}
+          \end{flalign*}
+          $\therefore$ General solution is $y = Ae^{-t} + Be^{-\frac{6}{11}t}$
+          \begin{flalign*}
+              \dfrac{dy}{dt} & = -Ae^{-t} - \dfrac{6}{11}Be^{-\frac{6}{11}t}\ \cdots\ (7) \\
+          \end{flalign*}
+
+          When $t = 0$, $y = 0$,
+          \begin{flalign*}
+              0 & = Ae^0 + Be^0        \\
+              0 & = A + B\ \cdots\ (8)
+          \end{flalign*}
+          \begin{flalign*}
+              \text{Substituting }(2)\text{ into }(1): & \ 3\left(- 4\dfrac{dy}{dt} - 3y\right) + \dfrac{dy}{dt} + 2x = k \\
+                                                       & \ -12\dfrac{dy}{dt} - 9y + \dfrac{dy}{dt} + 2x = k               \\
+                                                       & \ -11\dfrac{dy}{dt} - 9y + 2x = k\ \cdots\ (9)
+          \end{flalign*}
+          \begin{flalign*}
+              \text{Substituting }(7)\text{ into }(9): & \ -11\left(-Ae^{-t} - \dfrac{6}{11}Be^{-\frac{6}{11}t}\right) - 9(Ae^{-t} + Be^{-\frac{6}{11}t}) + 2x = k \\
+                                                       & \ 11Ae^{-t} + 6Be^{-\frac{6}{11}t} - 9Ae^{-t} - 9Be^{-\frac{6}{11}t} + 2x = k                             \\
+                                                       & \ 2Ae^{-t} - 3Be^{-\frac{6}{11}t} + 2x = k
+          \end{flalign*}
+          When $t = 0$, $x = 0$, $y = 0$,
+          \begin{flalign*}
+              2A - 3B & = k\ \cdots\ (10)
+          \end{flalign*}
+          \begin{flalign*}
+              (8) \times 2: & \ 2A + 2B = 0\ \cdots\ (11) \\
+              (10) +-(11):  & \ -5B = k                   \\
+                            & \ B = -\dfrac{k}{5}         \\
+                            & \ A = \dfrac{k}{5}
+          \end{flalign*}
+          $\therefore\ y = \dfrac{k}{5}\left(e^{-t} - e^{-\frac{6}{11}t}\right)$ \quad $\blacksquare$
+          \newpage
+          \begin{flalign*}
+              \text{From }(3): & \ \dfrac{dx}{dt} = - 4\left(-\dfrac{k}{5}e^{-t} + \dfrac{6k}{55}e^{-\frac{6}{11}t}\right) - \dfrac{3k}{5}\left(e^{-t} - e^{-\frac{6}{11}t}\right) \\
+                               & \ \dfrac{dx}{dt} = \dfrac{4k}{5}e^{-t} - \dfrac{24k}{55}e^{-\frac{6}{11}t} - \dfrac{3k}{5}e^{-t} + \dfrac{3k}{5}e^{-\frac{6}{11}t}                \\
+                               & \ \dfrac{dx}{dt} = \dfrac{k}{5}e^{-t} + \dfrac{9k}{55}e^{-\frac{6}{11}t}\ \cdots                                                                  \\
+                               & \ x = -\dfrac{k}{5}e^{-t} - \dfrac{9k}{55}\cdot\dfrac{11}{6}e^{-\frac{6}{11}t} + C                                                                \\
+                               & \ x = -\dfrac{k}{5}e^{-t} - \dfrac{3k}{10}e^{-\frac{6}{11}t} + C
+          \end{flalign*}
+          When $t = 0$, $x = 0$,
+          \begin{flalign*}
+              0 & = -\dfrac{k}{5} - \dfrac{3k}{10} + C \\
+              C & = \dfrac{k}{2}
+          \end{flalign*}
+          \begin{flalign*}
+              \therefore\ x & = -\dfrac{k}{5}e^{-t} - \dfrac{3k}{10}e^{-\frac{6}{11}t} + \dfrac{k}{2}                               & \\
+                            & = \dfrac{k}{2}\left(1 - \dfrac{2}{5}e^{-t} - \dfrac{3}{5}e^{-\frac{6}{11}t}\right) \quad \blacksquare
+          \end{flalign*}
+
+\end{enumerate}
+
+\end{document}
