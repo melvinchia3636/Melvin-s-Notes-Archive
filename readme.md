@@ -355,6 +355,8 @@
 - [diffeq.tex](<./数学/Other Topics/Differential Equation/diffeq.tex>)
 - [uhh.pdf](<./数学/Other Topics/Differential Equation/uhh.pdf>)
 - [uhh.tex](<./数学/Other Topics/Differential Equation/uhh.tex>)
+- [uhh2.pdf](<./数学/Other Topics/Differential Equation/uhh2.pdf>)
+- [uhh2.tex](<./数学/Other Topics/Differential Equation/uhh2.tex>)
 
 </details>
 </dd></dl></dd></dl>
@@ -1982,6 +1984,8 @@
 - [UEB 2013 Q4.docx](<./簿记与会计/Chapter 24 Consignment Accounts/UEB 2013 Q4.docx>)
 - [UEB 2014 Q4 Ans.docx](<./簿记与会计/Chapter 24 Consignment Accounts/UEB 2014 Q4 Ans.docx>)
 - [UEB 2014 Q4.docx](<./簿记与会计/Chapter 24 Consignment Accounts/UEB 2014 Q4.docx>)
+- [UEB 2017 Q4 Ans.docx](<./簿记与会计/Chapter 24 Consignment Accounts/UEB 2017 Q4 Ans.docx>)
+- [UEB 2017 Q4.docx](<./簿记与会计/Chapter 24 Consignment Accounts/UEB 2017 Q4.docx>)
 
 </details>
 </dd></dl>
