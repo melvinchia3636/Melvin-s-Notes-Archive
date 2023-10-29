@@ -1,0 +1,54 @@
+\documentclass{report}
+\usepackage[total={6in,8in}]{geometry}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{Shaum's Outline\\Chapter 35: Improper Integrals}
+\author{Melvin Chia}
+\date{October 26, 2023}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+    \setcounter{enumi}{16}
+    \item Evaluate the given integrals:
+          \begin{enumerate}[label=(\alph*)]
+              \item $\displaystyle\int_0^1 \dfrac{d x}{\sqrt{x}}=2$
+                    \\\\ \textbf{Sol.}
+                    \begin{flalign*}
+                        \displaystyle\int_0^1 \dfrac{d x}{\sqrt{x}} & = \lim_{a \to 0} \int_a^1 \dfrac{d x}{\sqrt{x}} \\
+                                                                    & = \lim_{a \to 0} 2 \sqrt{x}\bigg]_a^1           \\
+                                                                    & = \lim_{a \to 0} \left(2 - 2 \sqrt{a}\right)    \\
+                                                                    & = 2
+                    \end{flalign*}
+
+              \item $\displaystyle\int_0^4 \dfrac{1}{4-x} d x=+\infty$
+                    \\\\ \textbf{Sol.}
+                    \begin{flalign*}
+                        \displaystyle\int_0^4 \dfrac{1}{4-x} d x & = \lim_{a \to 4} \int_0^a \dfrac{1}{4-x} d x    \\
+                                                                 & = \lim_{a \to 4} -\ln(4-x)\bigg]_0^a            \\
+                                                                 & = \lim_{a \to 4} \left(-\ln(4-a) + \ln 4\right) \\
+                                                                 & = +\infty
+                    \end{flalign*}
+
+              \item $\displaystyle\int_0^4 \dfrac{1}{\sqrt{4-x}} d x=4$
+                    \\\\ \textbf{Sol.}
+                    \begin{flalign*}
+                        \displaystyle\int_0^4 \dfrac{1}{\sqrt{4-x}} d x & = \lim_{a \to 4} \int_0^a \dfrac{1}{\sqrt{4-x}} d x \\
+                                                                        & = \lim_{a \to 4} -2 \sqrt{4-x}\bigg]_0^a            \\
+                                                                        & = \lim_{a \to 4} \left(-2 \sqrt{4-a} + 4\right)     \\
+                                                                        & = 4
+                    \end{flalign*}
+
+              \item $\displaystyle\int_0^4 \dfrac{1}{(4-x)^{3 / 2}} d x=+\infty$
+              \item $\displaystyle\int_{-2}^2 \dfrac{1}{\sqrt{4-x}} d x=\pi$
+              \item $\displaystyle\int_{-1}^8 \dfrac{1}{x^3} d x=\frac{9}{2}$
+              \item $\displaystyle\int_0^4 \dfrac{d x}{(x-2)^{2 / 3}}=6 \sqrt[3]{2}$
+              \item $\displaystyle\int_{-1}^1 \dfrac{d x}{x^4}=+\infty$
+              \item $\displaystyle\int_0^1 \ln x d x=-1$
+              \item $\displaystyle\int_0^1 x \ln x d x=-\frac{1}{4}$
+          \end{enumerate}
+\end{enumerate}
+\end{document}
