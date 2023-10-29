@@ -1271,6 +1271,7 @@ Since this topic is relatively straightforward also, there will be no examples.
 In Exercises 27-32, use the model for projectile motion, assuming there is no
 air resistance and $g=9.8$ meters per second per second.
 \begin{enumerate}
+    \setcounter{enumi}{26}
     \item  A baseball is hit from a height of 1 meter above the ground with an initial
           speed of 40 feet per second and at an angle of $22^{\circ}$ above the
           horizontal. Find the maximum height reached by the baseball. Determine whether
@@ -1389,20 +1390,86 @@ air resistance and $g=9.8$ meters per second per second.
                 & = 26\ \text{meters}
           \end{align*} \hfill$\blacksquare$
 
-    \item A baseball player at second base throws a ball 90 feet to the player at first
-          base. The ball is released at a point 5 feet above the ground with an initial
-          speed of 50 miles per hour and at an angle of $15^{\circ}$ above the
-          horizontal. At what height does the player at first base catch the ball?
+    \item A baseball player at second base throws a ball 28 meters to the player at first
+          base. The ball is released at a point 1.5 meters above the ground with an
+          initial speed of 80 kilometres per hour and at an angle of $15^{\circ}$ above
+          the horizontal. At what height does the player at first base catch the ball?
+
+          \textbf{Solution} Given that $h = 1.5$, $v_0 = 80$km/h$=80\times\dfrac{1000}{3600}=22\dfrac{2}{9}$m/s, $\theta = 15^{\circ}$ and $g = 9.8$,
+          \begin{align*}
+              \vec{r}(t) & = v_0\cos\theta t\hat{\imath} + \left[h + (v_0\sin\theta) t - \frac{1}{2}gt^2\right]\hat{\jmath}                                         \\
+                         & = 22\dfrac{2}{9}\cos{15^{\circ}} t\hat{\imath} + \left[1.5 + (22\dfrac{2}{9}\sin{15^{\circ}}) t - \frac{1}{2}(9.8)t^2\right]\hat{\jmath} \\
+                         & = 22\dfrac{2}{9}\cos{15^{\circ}} t\hat{\imath} + \left[1.5 + 22\dfrac{2}{9}\sin{15^{\circ}} t - 4.9t^2\right]\hat{\jmath}
+          \end{align*}
+          When the ball is caught, $x(t) = 28$
+          \begin{align*}
+              22\dfrac{2}{9}\cos{15^{\circ}} t & = 28 \implies t = \frac{28}{22\dfrac{2}{9}\cos{15^{\circ}}} \approx 1.305\ \text{seconds}
+          \end{align*}
+          The height of the ball is
+          \begin{align*}
+              y & = 1.5 + 22\dfrac{2}{9}\sin{15^{\circ}} \left(\frac{28}{22\dfrac{2}{9}\cos{15^{\circ}}}\right) - 4.9\left(\frac{28}{22\dfrac{2}{9}\cos{15^{\circ}}}\right)^2 \\
+                & \approx 0.66\ \text{meters}
+          \end{align*} \hfill$\blacksquare$
+
+          \newpage
     \item Eliminate the parameter $t$ from the position vector for the motion of a
           projectile to show that the rectangular equation is $$ y=-\frac{g \sec ^2
                   \theta}{2 v_0^2} x^2+(\tan \theta) x+h $$
-    \item The path of a ball is given by the rectangular equation $$ y=x-0.005 x^2 \text
-              {. } $$
-\end{enumerate}
 
-Use the result of Exercise 33 to find the position vector. Then find the speed
-and direction of the ball at the point at which it has traveled 60 feet
-horizontally.
+          \textbf{Solution}
+          \begin{align*}
+              \vec{r}(t) & = v_0\cos\theta t\hat{\imath} + \left[h + (v_0\sin\theta) t - \frac{1}{2}gt^2\right]\hat{\jmath}
+          \end{align*}
+          Let $x = v_0\cos\theta t$ and $y = h + (v_0\sin\theta) t - \dfrac{1}{2}gt^2$.
+          \begin{align*}
+              x & = v_0\cos\theta t                                                                                               \\
+              t & = \frac{x}{v_0\cos\theta}                                                                                       \\
+              y & = h + (v_0\sin\theta) t - \frac{1}{2}gt^2                                                                       \\
+                & = h + (v_0\sin\theta) \left(\frac{x}{v_0\cos\theta}\right) - \frac{1}{2}g\left(\frac{x}{v_0\cos\theta}\right)^2 \\
+                & = h + \frac{v_0\sin\theta}{v_0\cos\theta} x - \frac{1}{2}\frac{g}{v_0^2\cos^2\theta} x^2                        \\
+                & = h + (\tan\theta) x - \frac{1}{2}\frac{g}{v_0^2\cos^2\theta} x^2                                               \\
+                & = -\frac{g \sec ^2 \theta}{2 v_0^2} x^2+(\tan \theta) x+h
+          \end{align*} \hfill$\blacksquare$
+
+    \item The path of a ball is given by the rectangular equation $$ y=x-0.0245 x^2 \text
+              {. } $$ Use the result of Exercise 31 to find the position vector. Then find
+          the speed and direction of the ball at the point at which it has travelled 15
+          meters horizontally.
+
+          \textbf{Solution} Comparing the equation with the equation in Exercise 31,
+          \begin{align*}
+              \tan \theta                       & = 1                                                \\
+              \theta                            & = 45^{\circ}                                       \\
+              -\frac{g \sec ^2 \theta}{2 v_0^2} & = -0.0245                                          \\
+              \frac{9.8}{v_0^2}                 & = 0.0245                                           \\
+              v_0^2                             & = 400                                              \\
+              v_0                               & = 20\ \text{meters per second}\ \text{($v_0 > 0$)}
+          \end{align*}
+          Hence, the position vector is
+          \begin{align*}
+              \vec{r}(t) & = v_0\cos\theta t\hat{\imath} + \left[h + (v_0\sin\theta) t - \frac{1}{2}gt^2\right]\hat{\jmath}               \\
+                         & = 20\cos{45^{\circ}} t\hat{\imath} + \left[0 + (20\sin{45^{\circ}}) t - \frac{1}{2}(9.8)t^2\right]\hat{\jmath} \\
+                         & = 10\sqrt{2} t\hat{\imath} + \left[10\sqrt{2} t - 4.9t^2\right]\hat{\jmath}
+          \end{align*}
+          The time taken to travel 15 meters horizontally is
+          \begin{align*}
+              10\sqrt{2} t & = 15 \implies t = \frac{3\sqrt{2}}{2} \approx 2.12\ \text{seconds}
+          \end{align*}
+          The speed vector is
+          \begin{align*}
+              \vec{v}(t) & = (\vec{r})'(t) = 10\sqrt{2}\hat{\imath} + (10\sqrt{2} - 9.8t)\hat{\jmath}
+          \end{align*}
+          The direction of the ball is
+          \begin{align*}
+              \vec{v}\left(\frac{3\sqrt{2}}{2}\right) & = 10\sqrt{2}\hat{\imath} + (10\sqrt{2} - 9.8\left(\frac{3\sqrt{2}}{2}\right))\hat{\jmath} \\
+                                                      & = 10\sqrt{2}\hat{\imath} - 14.7\sqrt{2}\hat{\jmath}
+          \end{align*}
+          Hence, the speed of the ball is
+          \begin{align*}
+              \lVert\vec{v}\left(\frac{3\sqrt{2}}{2}\right)\rVert & = \sqrt{(10\sqrt{2})^2 + (-14.7\sqrt{2})^2} \\
+                                                                  & = 25.14\ \text{meters per second}
+          \end{align*} \hfill$\blacksquare$
+\end{enumerate}
 
 \newpage
 

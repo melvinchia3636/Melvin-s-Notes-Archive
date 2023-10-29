@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1698549078 "notes.xdv" "notes.pdf" "notes" 1698549079 0
-  "notes.xdv" 1698549078 317296 3dcab689d3e1adfea5840f52a43efbe5 "xelatex"
+["xdvipdfmx"] 1698553655 "notes.xdv" "notes.pdf" "notes" 1698553655 0
+  "notes.xdv" 1698553655 329180 e312cd5801e4bc6895d9c7fd8ba48db5 "xelatex"
   (generated)
   "notes.pdf"
   (rewritten before read)
-["xelatex"] 1698549077 "/Users/melvinchia/Documents/involution/数学/Calculus 3/notes.tex" "notes.xdv" "notes" 1698549079 0
-  "/Users/melvinchia/Documents/involution/数学/Calculus 3/notes.tex" 1698549076 77145 3fcec81791b57dff908d925603e0fc5f ""
+["xelatex"] 1698553654 "/Users/melvinchia/Documents/involution/数学/Calculus 3/notes.tex" "notes.xdv" "notes" 1698553655 0
+  "/Users/melvinchia/Documents/involution/数学/Calculus 3/notes.tex" 1698553653 81988 2438184c6b6c26b9b3ac887c850111ad ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -176,9 +176,9 @@
   "/usr/local/texlive/2023/texmf-var/web2c/xetex/xelatex.fmt" 1685458780 10502839 b14d95dbea05ddfdac2555cf378e04f5 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "assets/Direction_cosine_vector 1.png" 1698438626 11532 9d0328bf2616d1313469049be64d0045 ""
-  "notes.aux" 1698549078 3055 9772d359d2a607687e078d720bbbcf13 "xelatex"
-  "notes.tex" 1698549076 77145 3fcec81791b57dff908d925603e0fc5f ""
-  "notes.toc" 1698549078 1150 3816b3e8f5af232367e4a11e0ff93150 "xelatex"
+  "notes.aux" 1698553655 3055 182070f5b3c13b8395b78614a7a1c72b "xelatex"
+  "notes.tex" 1698553653 81988 2438184c6b6c26b9b3ac887c850111ad ""
+  "notes.toc" 1698553655 1150 6812ea0aa6ad39ae5b8fa860431a0ec5 "xelatex"
   (generated)
   "notes.aux"
   "notes.log"

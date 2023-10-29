@@ -13,4 +13,4 @@
 \contentsline {chapter}{\numberline {13}Limits of Vector-valued Functions}{35}{}%
 \contentsline {chapter}{\numberline {14}Derivatives and Integration of Vector-valued Functions}{36}{}%
 \contentsline {chapter}{\numberline {15}Velocity, Speed and Acceleration}{37}{}%
-\contentsline {chapter}{\numberline {16}Tangent Vectors and Normal Vectors}{42}{}%
+\contentsline {chapter}{\numberline {16}Tangent Vectors and Normal Vectors}{44}{}%
