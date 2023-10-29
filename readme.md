@@ -1,4 +1,5 @@
 # Table of Contents
+- [KPP01.docx](<./KPP01.docx>)
 
 <details>
 <summary>mrga</summary>
@@ -541,6 +542,24 @@
 
 <dl><dd><dl><dd>
 <details>
+<summary>Shaum's Outline</summary>
+
+<dl><dd><dl><dd><dl><dd>
+<details>
+<summary>Chapter 35 Improper Integrals</summary>
+
+- [Chapter 35 Improper Integrals.pdf](<./数学/Other Topics/Shaum's Outline/Chapter 35 Improper Integrals/Chapter 35 Improper Integrals.pdf>)
+- [Chapter 35 Improper Integrals.tex](<./数学/Other Topics/Shaum's Outline/Chapter 35 Improper Integrals/Chapter 35 Improper Integrals.tex>)
+
+</details>
+</dd></dl></dd></dl></dd></dl>
+
+
+</details>
+</dd></dl></dd></dl>
+
+<dl><dd><dl><dd>
+<details>
 <summary>2023 Math Competition</summary>
 
 - [comp.pdf](<./数学/Other Topics/2023 Math Competition/comp.pdf>)
@@ -762,6 +781,24 @@
 - [corr. coeff..py](<./数学/S2P2/corr. coeff..py>)
 - [S2P2.pdf](<./数学/S2P2/S2P2.pdf>)
 - [S2P2.tex](<./数学/S2P2/S2P2.tex>)
+
+</details>
+</dd></dl>
+
+<dl><dd>
+<details>
+<summary>Calculus 3</summary>
+
+- [notes.pdf](<./数学/Calculus 3/notes.pdf>)
+- [notes.tex](<./数学/Calculus 3/notes.tex>)
+<dl><dd><dl><dd>
+<details>
+<summary>assets</summary>
+
+
+</details>
+</dd></dl></dd></dl>
+
 
 </details>
 </dd></dl>
@@ -1997,10 +2034,13 @@
 - [Ans Sheet.docx](<./簿记与会计/Chapter 25 Joint Venture Accounts/Ans Sheet.docx>)
 - [Ans Sheet 2.docx](<./簿记与会计/Chapter 25 Joint Venture Accounts/Ans Sheet 2.docx>)
 - [Frank Wood BA 8Ed Q39.4A.docx](<./簿记与会计/Chapter 25 Joint Venture Accounts/Frank Wood BA 8Ed Q39.4A.docx>)
-- [UEB 1990 Q3.docx](<./簿记与会计/Chapter 25 Joint Venture Accounts/UEB 1990 Q3.docx>)
-- [UEB 1998 Q5.docx](<./簿记与会计/Chapter 25 Joint Venture Accounts/UEB 1998 Q5.docx>)
-- [UEB 2005 Q5.docx](<./簿记与会计/Chapter 25 Joint Venture Accounts/UEB 2005 Q5.docx>)
-- [UEB 2008 Q6.docx](<./簿记与会计/Chapter 25 Joint Venture Accounts/UEB 2008 Q6.docx>)
+- [UEB 1990 Q3 Ans.docx](<./簿记与会计/Chapter 25 Joint Venture Accounts/UEB 1990 Q3 Ans.docx>)
+- [UEB 1998 Q5 Ans.docx](<./簿记与会计/Chapter 25 Joint Venture Accounts/UEB 1998 Q5 Ans.docx>)
+- [UEB 2005 Q5 Ans.docx](<./簿记与会计/Chapter 25 Joint Venture Accounts/UEB 2005 Q5 Ans.docx>)
+- [UEB 2008 Q6 Ans.docx](<./簿记与会计/Chapter 25 Joint Venture Accounts/UEB 2008 Q6 Ans.docx>)
+- [UEB 2011 Q4.docx](<./簿记与会计/Chapter 25 Joint Venture Accounts/UEB 2011 Q4.docx>)
+- [UEB 2014 Q5 Ans.docx](<./簿记与会计/Chapter 25 Joint Venture Accounts/UEB 2014 Q5 Ans.docx>)
+- [UEB 2014 Q5.docx](<./簿记与会计/Chapter 25 Joint Venture Accounts/UEB 2014 Q5.docx>)
 
 </details>
 </dd></dl>
@@ -2029,6 +2069,8 @@
 - [Practice 6 Ans Sheet.docx](<./簿记与会计/Chapter 26 Hire Purchase Accounts/Practice 6 Ans Sheet.docx>)
 - [Practice 6 Ans.docx](<./簿记与会计/Chapter 26 Hire Purchase Accounts/Practice 6 Ans.docx>)
 - [Practice 6.docx](<./簿记与会计/Chapter 26 Hire Purchase Accounts/Practice 6.docx>)
+- [UEB 2020 Q6 Ans.docx](<./簿记与会计/Chapter 26 Hire Purchase Accounts/UEB 2020 Q6 Ans.docx>)
+- [UEB 2020 Q6.docx](<./簿记与会计/Chapter 26 Hire Purchase Accounts/UEB 2020 Q6.docx>)
 
 </details>
 </dd></dl>
