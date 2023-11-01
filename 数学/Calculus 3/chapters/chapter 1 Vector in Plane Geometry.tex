@@ -1,0 +1,158 @@
+\chapter{Vector in Plane Geometry}
+
+If $\vec{v}$ is a vector whose initial point is $(0, 0)$ and terminal point is
+$(v_1, v_2)$, then \[\vec{v} = \langle v_1, v_2 \rangle\] is the \textbf{component form} of $\vec{v}$. Here is the graph of the vector
+$\vec{v}$ in the cartesian plane.
+\begin{center}
+    \begin{tikzpicture}
+        %draw x and y axis
+        \draw[->] (-1, 0) -- (3, 0);
+        \draw[->] (0, -1) -- (0, 3);
+        %label x and y axis
+        \node[right] at (3, 0) {$x$};
+        \node[above] at (0, 3) {$y$};
+        %draw vector
+        \draw[->, thick] (0, 0) -- (2, 2);
+        %label terminal point
+        \node[above right] at (2, 2) {$(v_1, v_2)$};
+        %label vector
+        \node[above left] at (1, 1) {$\vec{v}$};
+    \end{tikzpicture}
+\end{center}
+Since the initial point is $(0, 0)$, we say that $\vec{v}$ is in \textbf{standard position}.\\
+
+\begin{framed}
+    \noindent\textbf{Note: }
+
+    \noindent The vector with initial point and terminal point $(0, 0)$ is called the
+    \textbf{zero vector} and is denoted by $\vec{0}$.
+\end{framed}
+
+\newpage
+\noindent Consider
+\begin{center}
+    \begin{tikzpicture}
+        %draw two points
+        \draw[fill] (0, 0) circle [radius=0.05];
+        \draw[fill] (2, 2) circle [radius=0.05];
+        %draw vector
+        \draw[->, thick] (0, 0) -- (2, 2);
+        %label points
+        \node[below left] at (0, 0) {$P(p_1, p_2)$};
+        \node[above right] at (2, 2) {$Q(q_1, q_2)$};
+        %label vector
+        \node[above left] at (1, 1) {$\vec{v}$};
+    \end{tikzpicture}
+\end{center}
+where $P$ is the initial point and $Q$ is the terminal point of the vector $\vec{v}$. $\vec{v}$ can be calculated by subtracting the coordinates of the terminal point from the coordinates of the initial point. That is, \[\vec{v} = \langle q_1 - p_1, q_2 - p_2 \rangle = \langle v_1, v_2 \rangle\]
+
+\section*{Length / Norm / Magnitude of a Vector}
+
+The \textbf{length} or \textbf{norm} or \textbf{magnitude} of a vector
+$\vec{v}$ is denoted by $\norm{\vec{v}}$ and is given by \[\norm{\vec{v}} = \sqrt{v_1^2 + v_2^2}\]
+If $\norm{\vec{v}} = 1$, then $\vec{v}$ is called a \textbf{unit vector}.\\\\
+\noindent\textbf{Example 1. } Find the length of the vector $\vec{v} = \langle
+    1, 2 \rangle$.
+\begin{align*}
+    \norm{\vec{v}} & = \sqrt{v_1^2 + v_2^2} \\
+                   & = \sqrt{1^2 + 2^2}     \\
+                   & = \sqrt{5}
+\end{align*}
+\noindent\textbf{Example 2. } Calculate the component form of the vector that starts with the point $P(1, 2)$ and ends with the point $Q(5, 4)$.
+\begin{align*}
+    \vec{v} & = \langle q_1 - p_1, q_2 - p_2 \rangle \\
+            & = \langle 5 - 1, 4 - 2 \rangle         \\
+            & = \langle 4, 2 \rangle
+\end{align*}
+By calculating the component form of the vector, we are basically just translating the vector to the origin. Hence, we can conclude that the component form of the vector is the vector that starts from the origin with the same direction and magnitude as the original vector.
+
+If two vectors of different initial and terminal points has the same component
+form, then the two vectors are said to be \textbf{equivalent}.
+
+\section*{Unit Vectors}
+
+There are two unit vectors that are commonly used in the cartesian plane. They
+are the \textbf{standard unit vectors} $\hat{\imath}$ and $\hat{\jmath}$. That
+is, \[\hat{\imath} = \langle 1, 0 \rangle \text{ and } \hat{\jmath} = \langle 0, 1 \rangle\]
+Below is a graph of the standard unit vectors.
+\begin{center}
+    \begin{tikzpicture}
+        %draw x and y axis
+        \draw[->] (-1, 0) -- (3, 0);
+        \draw[->] (0, -1) -- (0, 3);
+        %label x and y axis
+        \node[right] at (3, 0) {$x$};
+        \node[above] at (0, 3) {$y$};
+        %draw unit vectors
+        \draw[->, thick] (0, 0) -- (1, 0);
+        \draw[->, thick] (0, 0) -- (0, 1);
+        %label terminal point
+        \node[above] at (1, 0) {\footnotesize$(1, 0)$};
+        \node[right] at (0, 1) {\footnotesize$(0, 1)$};
+        %label unit vectors
+        \node[below] at (0.5, 0) {$\hat{\imath}$};
+        \node[left] at (0, 0.5) {$\hat{\jmath}$};
+    \end{tikzpicture}
+\end{center}
+Given a vector $\vec{v} = \langle v_1, v_2 \rangle$, we can split it into $\langle v_1, 0 \rangle + \langle 0, v_2 \rangle$. Then, factor out the scalars to get $v_1\langle 1, 0 \rangle + v_2\langle 0, 1 \rangle$. Hence, we can conclude that \[\vec{v} = v_1\hat{\imath} + v_2\hat{\jmath}\] where $\vec{v}$ known as the \textbf{linear combination} of $\hat{\imath}$ and
+$\hat{\jmath}$. The scalars $v_1$ and $v_2$ are known as the \textbf{horizontal
+    component} and \textbf{vertical component} of $\vec{v}$ respectively.
+
+Sometimes when we only care about the direction of the vector, we can convert
+any vector into a unit vector by dividing the vector by its length. That is, \[\hat{u} = \frac{\vec{u}}{\norm{\vec{u}}} \text{ where } \norm{\hat{u}} = 1\]
+A visual representation of this is shown below.
+\begin{center}
+    \begin{tikzpicture}
+        %draw x and y axis
+        \draw[->] (-1, 0) -- (3, 0);
+        \draw[->] (0, -1) -- (0, 3);
+        %label x and y axis
+        \node[right] at (3, 0) {$x$};
+        \node[above] at (0, 3) {$y$};
+        %draw vector
+        \draw[->, thick] (0, 0) -- (2, 2);
+        %draw unit vector
+        \draw[->, very thick] (0, 0) -- (1, 1);
+        %label terminal point
+        \node[above right] at (2, 2) {$(u_1, u_2)$};
+        %label vector
+        \node[above right] at (1.5, 1) {$\vec{u}$};
+        %label unit vector
+        \node[above left] at (0.5, 0.5) {$\hat{u}$};
+    \end{tikzpicture}
+\end{center}
+
+\newpage
+\noindent\textbf{Example 3. } Find the unit vector in the direction of $\vec{v} = \langle 1, 2 \rangle$.
+\begin{align*}
+    \hat{v} & = \frac{\vec{v}}{\norm{\vec{v}}}                                    \\
+            & = \frac{\langle 1, 2 \rangle}{\sqrt{5}}                             \\
+            & = \left\langle \frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}} \right\rangle
+\end{align*}
+\begin{framed}
+    \noindent\textbf{Note: }
+
+    \noindent If you are asked to normalize a vector, you are asked to find the unit vector in the direction of the vector.
+\end{framed}
+~\\
+\noindent\textbf{Example 4. } Find the magnitude of the vector $\vec{v} = 2\hat{\imath} + 3\hat{\jmath}$.
+\begin{align*}
+    \norm{\vec{v}} & = \sqrt{v_1^2 + v_2^2} \\
+                   & = \sqrt{2^2 + 3^2}     \\
+                   & = \sqrt{13}
+\end{align*}
+
+\noindent\textbf{Example 5. } Find the vector $\vec{u}$ with magnitude 4 and same direction as $\vec{v} = \langle 0, 3 \rangle$.
+~\\\\
+\noindent First, we find the unit vector in the direction of $\vec{v}$.
+\begin{align*}
+    \hat{v} & = \frac{\vec{v}}{\norm{\vec{v}}}                \\
+            & = \frac{\langle 0, 3 \rangle}{\sqrt{0^2 + 3^2}} \\
+            & = \langle 0, 1 \rangle
+\end{align*}
+Then, we multiply the unit vector by the magnitude of the target vector.
+\begin{align*}
+    \vec{u} & = 4\hat{v}              \\
+            & = 4\langle 0, 1 \rangle \\
+            & = \langle 0, 4 \rangle
+\end{align*}

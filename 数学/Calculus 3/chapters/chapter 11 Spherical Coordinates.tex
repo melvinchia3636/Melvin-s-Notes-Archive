@@ -1,0 +1,70 @@
+\chapter{Spherical Coordinates}
+
+Spherical coordinates are an ordered triple $P = (\rho, \theta, \phi)$, where
+$\rho$ is the distance between the origin and $P$ ($\rho \geq 0$ since it is a
+distance), $\theta$ is the angle from cylindrical coordinates where $r \geq 0$
+and $\phi$ is the angle between the positive $z$-axis and the line segment
+$\overrightarrow{OP}$ ($0 \leq \phi \leq \pi$).
+\begin{center}
+    \tdplotsetmaincoords{60}{110}
+    \begin{tikzpicture}[tdplot_main_coords,scale=0.8]
+        %draw x, y and z axis
+        \draw[->] (0, 0, 0) -- (5, 0, 0);
+        \draw[->] (0, 0, 0) -- (0, 5, 0);
+        \draw[->] (0, 0, 0) -- (0, 0, 5);
+        %draw point P
+        \draw[fill] (4, 4, 4) circle [radius=0.05];
+        %label point P
+        \node[left] at (0, 0, 0) {$O$};
+        \node[right] at (4, 4, 4) {$P$};
+        \draw[->, thick] (0, 0, 0) -- (4, 4, 4) node [above,midway] {$\rho$};
+        \node[above, right=1.2em] at (4, 4, 4) {$(x,y,z)$};
+        \node[below=1.4em, right=1.2em] at (4, 4, 4) {$(r,\theta,z)$};
+        %draw line connecting P to xy-plane
+        \draw[-, dashed] (4, 4, 4) -- (4, 4, 0);
+        %draw line connecting P to origin
+        \draw[-, dashed] (4, 4, 0) -- (0, 0, 0) node [above,midway] {$r$};
+        %draw arc
+        \tdplotdefinepoints(0, 0, 0)(4, 0, 0)(4, 4, 0)
+        \tdplotdrawpolytopearc[->,thick]{1}{below}{$\theta$}
+        \tdplotdefinepoints(0, 0, 0)(0, 0, 4)(4, 4, 4)
+        \tdplotdrawpolytopearc[->,thick]{2}{above right}{$\phi$}
+        %label x, y and z axis
+        \node[below left] at (5, 0, 0) {$x$};
+        \node[right] at (0, 5, 0) {$y$};
+        \node[above] at (0, 0, 5) {$z$};
+    \end{tikzpicture}
+\end{center}
+
+To convert from Cartesian coordinates to spherical coordinates, we use the
+following equations. \[\rho^2 = x^2 + y^2 + z^2 \qquad \tan\theta = \frac{y}{x} \qquad \cos\phi = \frac{z}{\rho}\]
+
+To convert from spherical coordinates to Cartesian coordinates, we use the
+following equations. \[x = \rho\sin\phi\cos\theta \qquad y = \rho\sin\phi\sin\theta \qquad z = \rho\cos\phi\]
+
+\noindent\textbf{Example 1. } Convert $\left(10, \dfrac{\pi}{6}, \dfrac{\pi}{4}\right)$ from spherical coordinates to Cartesian coordinates.
+\begin{align*}
+    x & = \rho\sin\phi\cos\theta                                         \\
+      & = 10\sin\left(\frac{\pi}{4}\right)\cos\left(\frac{\pi}{6}\right) \\
+      & = \frac{5\sqrt{6}}{2}                                            \\
+    y & = \rho\sin\phi\sin\theta                                         \\
+      & = 10\sin\left(\frac{\pi}{4}\right)\sin\left(\frac{\pi}{6}\right) \\
+      & = \frac{5\sqrt{2}}{2}                                            \\
+    z & = \rho\cos\phi                                                   \\
+      & = 10\cos\left(\frac{\pi}{4}\right)                               \\
+      & = 5\sqrt{2}
+\end{align*}
+Hence, $\left(\dfrac{5\sqrt{6}}{2}, \dfrac{5\sqrt{2}}{2}, 5\sqrt{2}\right)$ is the Cartesian coordinates of $\left(10, \dfrac{\pi}{6}, \dfrac{\pi}{4}\right)$.
+~\\\\
+\noindent\textbf{Example 2. } Convert $\left(-8, -8, \sqrt{19}\right)$ from Cartesian coordinates to spherical coordinates.
+\begin{align*}
+    \rho   & = \sqrt{x^2 + y^2 + z^2}                                                    \\
+           & = \sqrt{(-8)^2 + (-8)^2 + \left(\sqrt{19}\right)^2}                         \\
+           & = 7\sqrt{3}                                                                 \\
+    \theta & = \tan^{-1}\left(\frac{y}{x}\right)                                         \\
+           & = \tan^{-1}\left(\frac{-8}{-8}\right)                                       \\
+           & = \frac{5\pi}{4}\ \text{($3^{rd}$ quadrant since $x$ and $y$ are negative)} \\
+    \phi   & = \arccos\left(\frac{z}{\rho}\right)                                        \\
+           & = \arccos\left(\frac{\sqrt{19}}{7\sqrt{3}}\right)
+\end{align*}
+Hence, $\left(7\sqrt{3}, \dfrac{5\pi}{4}, \arccos\left(\dfrac{\sqrt{19}}{7\sqrt{3}}\right)\right)$ is the spherical coordinates of $\left(-8, -8, \sqrt{19}\right)$.

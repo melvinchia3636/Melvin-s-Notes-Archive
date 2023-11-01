@@ -1,0 +1,74 @@
+\chapter{Cylindrical Coordinates}
+
+Cylindrical coordinates are an extension of polar coordinates into three
+dimensions. A point $P(x, y, z)$ in space is represented by the ordered triple
+$(r, \theta, z)$, called the \textbf{cylindrical coordinates} of $P$. Here,
+$(r, \theta)$ are the polar representation of the projection of $P$ in the
+$xy$-plane, and $z$ is the direct distance from the $(r, \theta)$ to $P$.
+\begin{center}
+    \tdplotsetmaincoords{60}{110}
+    \begin{tikzpicture}[tdplot_main_coords,scale=0.8]
+        %draw x, y and z axis
+        \draw[->] (0, 0, 0) -- (5, 0, 0);
+        \draw[->] (0, 0, 0) -- (0, 5, 0);
+        \draw[->] (0, 0, 0) -- (0, 0, 5);
+        %draw point P
+        \draw[fill] (4, 4, 4) circle [radius=0.05];
+        %label point P
+        \node[left] at (4, 4, 4) {$P$};
+        \node[above=0.5em, right] at (4, 4, 4) {$(x,y,z)$};
+        \node[below right] at (4, 4, 4) {$(r,\theta,z)$};
+        %draw line connecting P to xy-plane
+        \draw[-, dashed] (4, 4, 4) -- (4, 4, 0);
+        %draw line connecting P to x-axis
+        \draw[-, dashed] (4, 4, 0) -- (4, 0, 0);
+        %draw line connecting P to y-axis
+        \draw[-, dashed] (4, 4, 0) -- (0, 4, 0);
+        %draw line connecting P to origin
+        \draw[-, dashed] (4, 4, 0) -- (0, 0, 0) node [above,midway] {$r$};
+        %draw arc
+        \tdplotdefinepoints(0, 0, 0)(4, 0, 0)(4, 4, 0)
+        \tdplotdrawpolytopearc[->,thick]{1}{below}{$\theta$}
+        %label x, y and z axis
+        \node[below left] at (5, 0, 0) {$x$};
+        \node[right] at (0, 5, 0) {$y$};
+        \node[above] at (0, 0, 5) {$z$};
+        %curly braces for x and y
+        \draw [decorate,decoration={brace,mirror,amplitude=5pt},yshift=-5pt]
+        (4, 0, 0) -- (4, 4, 0) node [black,midway,below=0.5em] {\footnotesize $y$};
+        \draw [decorate,decoration={brace,mirror,amplitude=5pt},xshift=-5pt]
+        (0, 0, 0) -- (4, 0, 0) node [black,midway,left=0.6em,above=0.3em] {\footnotesize $x$};
+    \end{tikzpicture}
+\end{center}
+
+To convert from Cartesian coordinates to cylindrical coordinates, we use the
+following equations. \[r^2 = x^2 + y^2 \qquad \tan\theta = \frac{y}{x} \qquad z = z\]
+
+To convert from cylindrical coordinates to Cartesian coordinates, we use the
+following equations. \[x = r\cos\theta \qquad y = r\sin\theta \qquad z = z\]
+
+\noindent\textbf{Example 1. } Convert $\left(4, \dfrac{5\pi}{6}, 3\right)$ from cylindrical coordinates to Cartesian coordinates.
+\begin{align*}
+    x & = r\cos\theta                      \\
+      & = 4\cos\left(\frac{5\pi}{6}\right) \\
+      & = -2\sqrt{3}                       \\
+    y & = r\sin\theta                      \\
+      & = 4\sin\left(\frac{5\pi}{6}\right) \\
+      & = 2                                \\
+    z & = z                                \\
+      & = 3
+\end{align*}
+Hence, $\left(-2\sqrt{3}, 2, 3\right)$ is the Cartesian coordinates of $\left(4, \dfrac{5\pi}{6}, 3\right)$.
+~\\\\
+\noindent\textbf{Example 2. } Convert $\left(1, \sqrt{3}, 2\right)$ from Cartesian coordinates to cylindrical coordinates.
+\begin{align*}
+    r      & = \sqrt{x^2 + y^2}                         \\
+           & = \sqrt{1^2 + \sqrt{3}^2}                  \\
+           & = 2                                        \\
+    \theta & = \tan^{-1}\left(\frac{y}{x}\right)        \\
+           & = \tan^{-1}\left(\frac{\sqrt{3}}{1}\right) \\
+           & = \frac{\pi}{3}                            \\
+    z      & = z                                        \\
+           & = 2
+\end{align*}
+Hence, $\left(2, \dfrac{\pi}{3}, 2\right)$ is the cylindrical coordinates of $\left(1, \sqrt{3}, 2\right)$.

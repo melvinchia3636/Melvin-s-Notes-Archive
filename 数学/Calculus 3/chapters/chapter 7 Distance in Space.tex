@@ -1,0 +1,33 @@
+\chapter{Distance in Space}
+
+\begin{center}
+    \begin{tikzpicture}[scale=0.8]
+        %draw x, y and z axis
+        \draw[->] (0, 0, 0) -- (5, 0, 0);
+        \draw[->] (0, 0, 0) -- (0, 5, 0);
+        \draw[->] (0, 0, 0) -- (0, 0, 5);
+        %draw point P_1 and P_2
+        \draw[fill] (0, 4, 3) circle [radius=0.05];
+        \draw[fill] (4, 3, 2) circle [radius=0.05];
+        %draw line connecting P_1 and P_2
+        \draw[-] (0, 4, 3) -- (4, 3, 2);
+        %label point P_1 and P_2
+        \node[above] at (0, 4, 3) {$P_1$};
+        \node[above] at (4, 3, 2) {$P_2$};
+        %label x, y and z axis
+        \node[right] at (5, 0, 0) {$y$};
+        \node[above] at (0, 5, 0) {$z$};
+        \node[below left] at (0, 0, 5) {$x$};
+    \end{tikzpicture}
+\end{center}
+The distance between two points $P_1(x_1, y_1, z_1)$ and $P_2(x_2, y_2, z_2)$
+in space is essentially the magnitude of the vector $\overrightarrow{P_1P_2}$,
+which is given by \[d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}\]
+~\\
+\noindent\textbf{Example 1. } Find the distance between the points $P_1(-3, 2, 5)$ and $P_2(4, 0, 8)$ in space.
+\begin{align*}
+    d & = \sqrt{(4 - (-3))^2 + (0 - 2)^2 + (8 - 5)^2} \\
+      & = \sqrt{7^2 + (-2)^2 + 3^2}                   \\
+      & = \sqrt{62}
+\end{align*}
+

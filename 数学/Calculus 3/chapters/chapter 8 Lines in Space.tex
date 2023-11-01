@@ -1,0 +1,76 @@
+\chapter{Lines in Space}
+
+\begin{center}
+    \begin{tikzpicture}[scale=0.8]
+        %draw x, y and z axis
+        \draw[->] (0, 0, 0) -- (5, 0, 0);
+        \draw[->] (0, 0, 0) -- (0, 5, 0);
+        \draw[->] (0, 0, 0) -- (0, 0, 5);
+        %draw point P_1 and P_2
+        \draw[fill] (0, 2, 3) circle [radius=0.05];
+        \draw[fill] (4, 3, 2) circle [radius=0.05];
+        %draw line connecting P_1 and P_2
+        \draw[-] (-1, 1.75, 3.25) -- (5, 3.25, 1.75);
+        \draw[->, thick] (0, 2, 3) -- (4, 3, 2);
+        \draw[->, thick] (0, 0, 0) -- ({8/(3*2^0.5)}, {2/(3*2^0.5)}, {-2/(3*2^0.5)});
+        %label point P_1 and P_2
+        \node[above left] at (0, 2, 3) {$P(x_1, y_1, z_1)$};
+        \node[below right] at (4, 3, 2) {$Q(x_2, y_2, z_2)$};
+        %label line
+        \node[above left] at (5, 3.25, 1.75) {$L$};
+        \node[above] at ({4/(3*2^0.5)}, {1/(3*2^0.5)}, {-1/(3*2^0.5)}) {$\vec{v}$};
+        %label x, y and z axis
+        \node[right] at (5, 0, 0) {$y$};
+        \node[above] at (0, 5, 0) {$z$};
+        \node[below left] at (0, 0, 5) {$x$};
+    \end{tikzpicture}
+\end{center}
+
+To find the equation of a line in space, we need a point $P(x_1, y_1, z_1)$ on
+the line and a vector $\vec{v} = \langle a, b, c \rangle$ that is parallel to
+the line. The vector $\vec{v}$ is called the \textbf{direction vector} of the
+line, while $a$, $b$ and $c$ are called the \textbf{direction numbers}.
+
+Since $\vec{v}$ is parallel to $L$, the vector $\overrightarrow{PQ}$ is also
+parallel to $L$, where $Q(x, y, z)$ is any point on $L$. Hence,
+$\overrightarrow{PQ}$ is a scalar multiple of $\vec{v}$, that is,
+\begin{align*}
+    \overrightarrow{PQ}                       & = t\vec{v}                   \\
+    \langle x - x_1, y - y_1, z - z_1 \rangle & = t\langle a, b, c \rangle   \\
+                                              & = \langle at, bt, ct \rangle
+\end{align*}
+Comparing both sides, we get \[x - x_1 = at \qquad y - y_1 = bt \qquad z - z_1 = ct\]
+Rearranging the equations, we get the \textbf{parametric equations} of the line
+$L$. \[x = x_1 + at \qquad y = y_1 + bt \qquad z = z_1 + ct\]
+
+If $a, b, c \neq 0$, we can solve for $t$ for each of the parametric equations
+to get the \textbf{symmetric equations} of the line $L$. \[\frac{x - x_1}{a} = \frac{y - y_1}{b} = \frac{z - z_1}{c}\]
+~\\
+\noindent\textbf{Example 1. } Find the equation of the line that passes through the point $P(-1, 4, 5)$ and is parallel to the vector $\vec{v} = 4i - j$.
+\begin{align*}
+    x & = -1 + 4t \\
+    y & = 4 - t   \\
+    z & = 5
+\end{align*}
+Note that it is impossible to find the symmetric equation of the line since $c = 0$.
+~\\\\
+\noindent\textbf{Example 2. } $L$ passes through the point $P(2, 7, 1)$ and is parallel to the vector $\vec{v} = \langle -2, -4, 6 \rangle$. Find the parametric and symmetric equations of $L$.
+\begin{align*}
+    x & = 2 - 2t \\
+    y & = 7 - 4t \\
+    z & = 1 + 6t
+\end{align*}
+\begin{align*}
+    \frac{x - 2}{-2} & = \frac{y - 7}{-4} = \frac{z - 1}{6}
+\end{align*}
+\noindent\textbf{Example 3. } Find the equation of the line passing through the point $(1, 0, 1)$ and parallel to the line given by the parametric equations \[x = 3 + 3t \qquad y = 5 - 2t \qquad z = -7 + t\]
+The line is parallel to the vector $\vec{v} = \langle 3, -2, 1 \rangle$. Hence,
+the equation of the line is given by \[x = 1 + 3t \qquad y = -2t \qquad z = 1 + t\]
+Also, the symmetric equations of the line is given by \[\frac{x - 1}{3} = \frac{y}{-2} = \frac{z - 1}{1}\]
+\noindent\textbf{Example 4. } Find the equation of the line passing through points $(7, -2, 6)$ and $(-3, 0, 6)$.
+\begin{align*}
+    \vec{v} & = \langle -3 - 7, 0 - (-2), 6 - 6 \rangle \\
+            & = \langle -10, 2, 0 \rangle
+\end{align*}
+The equation of the line is given by \[x = 7 - 10t \qquad y = -2 + 2t \qquad z = 6\]
+There is no symmetric equation of the line since $c = 0$.

@@ -1,0 +1,141 @@
+\chapter{Vector-valued Functions}
+
+A vector valued-function is a function that maps a real number to a vector. In
+the plane, a vector-valued function is given by \[\vec{r}(t) = \langle x(t),
+    y(t) \rangle\] and in space, a vector-valued function is given by \[\vec{r}(t) =
+    \langle x(t), y(t), z(t) \rangle\]
+
+Note that different functions can give the same curve. For example, \[\vec{r}(t) = \langle \cos t, \sin t \rangle \quad t \in [0, 2\pi]\]
+and \[\vec{r}(t) = \langle \cos 2t, \sin 2t \rangle \quad t \in [0, 2\pi]\]
+both give the unit circle.
+
+The domain of a vector-valued function $\vec{r}$ is the intersection of the
+domains of the component functions $x(t)$, $y(t)$ and $z(t)$. For example,
+given a vector-valued function $\vec{r}(t) = \dfrac{1}{t}\hat{\imath} +
+    \dfrac{1}{t-1}\hat{\jmath} + \dfrac{1}{\cos t}\hat{k}$ is $(-\infty, 0) \cup
+    (0, 1) \cup (1, \infty)$. The domain of each component function is \[D_{x(t)} = (-\infty, 0) \cup (0, \infty) \qquad D_{y(t)} = (-\infty, 1) \cup (1, \infty) \qquad D_{z(t)} = \mathbb{R}\]
+Combining the domains of the component functions, we get the domain of the
+vector-valued function $\vec{r}(t)$ \[(D_{x(t)} \cap D_{y(t)} \cap D_{z(t)}) = (-\infty, 0) \cup (0, 1) \cup (1, \infty)\]
+
+\newpage
+\noindent\textbf{Example 1. } Sketch the vector-valued function $\vec{r}(t) = \langle 2\cos t, -3\sin t \rangle$.
+\begin{align*}
+    x                                                        & = 2\cos t      \\
+    \cos t                                                   & = \frac{x}{2}  \\
+    y                                                        & = -3\sin t     \\
+    \sin t                                                   & = -\frac{y}{3} \\
+    \cos^2t + \sin^2t                                        & = 1            \\
+    \left(\frac{x}{2}\right)^2 + \left(-\frac{y}{3}\right)^2 & = 1            \\
+    \frac{x^2}{4} + \frac{y^2}{9}                            & = 1
+\end{align*}
+Hence, the graph of the vector-valued function $\vec{r}(t) = \langle 2\cos t, -3\sin t \rangle$ is an ellipse with major axis of length 6 and minor axis of length 4.
+
+To find the orientation of the function, we can plot points in increasing
+values of $t$. \\\\ \noindent When $t = 0$, $\vec{r}(0) = \langle 2\cos 0,
+    -3\sin 0 \rangle = \langle 2, 0 \rangle$. \\\\ \noindent When $t =
+    \dfrac{\pi}{2}$, $\vec{r}\left(\dfrac{\pi}{2}\right) = \langle 2\cos
+    \dfrac{\pi}{2}, -3\sin \dfrac{\pi}{2} \rangle = \langle 0, -3 \rangle$. \\\\
+\noindent Hence, the orientation of the function is clockwise. \vspace{2em}
+\begin{center}
+    \begin{tikzpicture}[scale=0.8]
+        %draw x and y axis
+        \draw[->] (-3, 0) -- (3, 0) node [right] {$x$};
+        \draw[->] (0, -4) -- (0, 4) node [above] {$y$};
+        %draw ellipse
+        \draw[thick] (0, 0) ellipse (2 and 3) [arrow inside one={opt={scale=1.5}}{0.12,0.4,0.6,0.92}];
+        %draw points
+        \fill (2, 0) circle (0.05) node [below right] {$2$};
+        \fill (-2, 0) circle (0.05) node [below left] {$-2$};
+        \fill (0, 3) circle (0.05) node [above right] {$3$};
+        \fill (0, -3) circle (0.05) node [below right] {$-3$};
+    \end{tikzpicture}
+\end{center}
+\newpage
+\noindent\textbf{Example 2. } Sketch the vector-valued function $\vec{r}(t) = \dfrac{t}{8}\hat{\imath} + (t - 1)\hat{\jmath}$.
+\begin{align*}
+    x  & = \frac{t}{8} \\
+    t  & = 8x          \\
+    \\
+    y  & = t - 1       \\
+    t  & = y + 1       \\
+    \\
+    8x & = y + 1       \\
+    y  & = 8x - 1
+\end{align*}
+Hence, the graph of the vector-valued function $\vec{r}(t) = \dfrac{t}{8}\hat{\imath} + (t - 1)\hat{\jmath}$ is a line with $y$-intercept of $-1$ and slope of $8$.
+\\\\
+When $t = 0$, $\vec{r}(0) = \dfrac{0}{8}\hat{\imath} + (0 - 1)\hat{\jmath} = <0, -1>$. \\\\ When $t = 8$, $\vec{r}(8) = \dfrac{8}{8}\hat{\imath} + (8 - 1)\hat{\jmath} = <1, 7>$. \\\\ Hence, the orientation of the function is going up.
+\vspace{1em}
+\begin{center}
+    \begin{tikzpicture}[scale=0.8]
+        %draw x and y axis
+        \draw[->] (-3, 0) -- (3, 0) node [right] {$x$};
+        \draw[->] (0, -2) -- (0, 8) node [above] {$y$};
+        %draw line
+        \draw[thick] (-1/8, -2) -- (7/8, 8) [arrow inside one={opt={scale=1.5}}{0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.92}];
+        %draw points
+        \fill (0, -1) circle (0.05) node [left] {$-1$};
+        \fill (0, 7) circle (0.05) node [left] {$7$};
+    \end{tikzpicture}
+\end{center}
+
+\newpage
+
+\noindent\textbf{Example 3. } Represent $y = x + 9$ as vector-valued function.
+\begin{align*}
+    x          & = t                                   \\
+    y          & = t + 9                               \\
+    \vec{r}(t) & = x(t)\hat{\imath} + y(t)\hat{\jmath} \\
+               & = t\hat{\imath} + (t+9)\hat{\jmath}
+\end{align*}
+\noindent\textbf{Example 4. } Represent $x^2 + y^2 = 64$ as vector-valued function.
+\begin{align*}
+    x          & = 8\cos{t}                                    \\
+    y          & = 8\sin{t}                                    \\
+    \vec{r}(t) & =x(t)\hat{\imath} + y(t)\hat{\jmath}          \\
+               & = 8\cos{t}\hat{\imath} + 8\sin{t}\hat{\jmath}
+\end{align*}
+\noindent\textbf{Example 5. } Represent $(x-2)^2 + (y + 1)^2 = 4$ as vector-valued function.
+\begin{align*}
+    2\cos{t}   & = x - 2                                                   \\
+    x          & = 2\cos{t} + 2                                            \\
+    2\sin{t}   & = y + 1                                                   \\
+    y          & = 2\sin{t} - 1                                            \\
+    \vec{r}(t) & = x(t)\hat{\imath} + y(t)\hat{\jmath}                     \\
+               & = (2\cos{t} + 2)\hat{\imath} + (2\sin{t} - 1)\hat{\jmath}
+\end{align*}
+Hence, we can conclude that the vector-valued function of a circle with radius $r$ and centre $(h, k)$ is \[\vec{r}(t) = (h + r\cos{t})\hat{\imath} + (k + r\sin{t})\hat{\jmath}\]
+\noindent\textbf{Example 6. } Represent $\dfrac{x^2}{9}+ \dfrac{y^2}{4} = 1$ as vector-valued function.
+\begin{align*}
+    x          & = 3\cos{t}                                    \\
+    y          & = 2\sin{t}                                    \\
+    \vec{r}(t) & = x(t)\hat{\imath} + y(t)\hat{\jmath}         \\
+               & = 3\cos{t}\hat{\imath} + 2\sin{t}\hat{\jmath}
+\end{align*}
+\noindent\textbf{Example 7. } Represent $\dfrac{(x-1)^2}{4}+ \dfrac{(y+2)^2}{25} = 1$ as vector-valued function.
+\begin{align*}
+    x - 1      & = 2\cos{t}                                                \\
+    x          & = 2\cos{t} + 1                                            \\
+    y + 2      & = 5\sin{t}                                                \\
+    y          & = 5\sin{t} - 2                                            \\
+    \vec{r}(t) & = x(t)\hat{\imath} + y(t)\hat{\jmath}                     \\
+               & = (2\cos{t} + 1)\hat{\imath} + (5\sin{t} - 2)\hat{\jmath}
+\end{align*}
+Hence, we can conclude that the vector-valued function of an ellipse with major axis of length $2a$ and minor axis of length $2b$ is \[\vec{r}(t) = (h + a\cos{t})\hat{\imath} + (k + b\sin{t})\hat{\jmath}\]
+\noindent\textbf{Example 8. } Represent $\dfrac{x^2}{25} - \dfrac{y^2}{16} = 1$ as vector-valued function.
+\begin{align*}
+    x          & = 5\cosh{t}                                     \\
+    y          & = 4\sinh{t}                                     \\
+    \vec{r}(t) & = x(t)\hat{\imath} + y(t)\hat{\jmath}           \\
+               & = 5\cosh{t}\hat{\imath} + 4\sinh{t}\hat{\jmath}
+\end{align*}
+\noindent\textbf{Example 9. } Represent $\dfrac{(x-1)^2}{4} - \dfrac{(y+7)^2}{9} = 1$ as vector-valued function.
+\begin{align*}
+    x - 1      & = 2\cosh{t}                                                 \\
+    x          & = 2\cosh{t} + 1                                             \\
+    y + 7      & = 3\sinh{t}                                                 \\
+    y          & = 3\sinh{t} - 7                                             \\
+    \vec{r}(t) & = x(t)\hat{\imath} + y(t)\hat{\jmath}                       \\
+               & = (2\cosh{t} + 1)\hat{\imath} + (3\sinh{t} - 7)\hat{\jmath}
+\end{align*}
+Hence, we can conclude that the vector-valued function of a hyperbola with centre $(h, k)$ is \[\vec{r}(t) = (h + a\cosh{t})\hat{\imath} + (k + b\sinh{t})\hat{\jmath}\]

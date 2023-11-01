@@ -1,0 +1,57 @@
+\chapter{Vector in Space}
+
+\section*{Space Coordinates}
+
+The cartesian plane that we are used to is a two-dimensional plane. However, if
+we extend the dimension further into the third dimension, we get the
+\textbf{three-dimensional space}, which is also known as \textbf{Euclidean
+    space}. Below is a graph of the three-dimensional space.
+\begin{center}
+    \begin{tikzpicture}
+        %draw x, y and z axis
+        \draw[->] (0, 0, 0) -- (3, 0, 0);
+        \draw[->] (0, 0, 0) -- (0, 3, 0);
+        \draw[->] (0, 0, 0) -- (0, 0, 3);
+        \draw[-, dashed] (0, 0, 0) -- (-1, 0, 0);
+        \draw[-, dashed] (0, 0, 0) -- (0, -1, 0);
+        \draw[-, dashed] (0, 0, 0) -- (0, 0, -1);
+        %label x, y and z axis
+        \node[right] at (3, 0, 0) {$y$};
+        \node[above] at (0, 3, 0) {$z$};
+        \node[below left] at (0, 0, 3) {$x$};
+    \end{tikzpicture}
+\end{center}
+A point in the three-dimensional space is represented by an ordered triple $(x, y, z)$, where $x$ is the horizontal component, $y$ is the vertical component and $z$ is the depth component.
+
+~\\
+\noindent\textbf{Example 1. } Find the magnitude of the vector $\vec{v} = \langle 3, -2, 1 \rangle$.
+\begin{align*}
+    \norm{\vec{v}} & = \sqrt{v_1^2 + v_2^2 + v_3^2} \\
+                   & = \sqrt{3^2 + (-2)^2 + 1^2}    \\
+                   & = \sqrt{14}
+\end{align*}
+\noindent\textbf{Example 2. } Find the magnitude of the vector $\vec{v} = -2\hat{\imath} + 3\hat{\jmath} + 4\hat{k}$.
+\begin{align*}
+    \norm{\vec{v}} & = \sqrt{v_1^2 + v_2^2 + v_3^2} \\
+                   & = \sqrt{(-2)^2 + 3^2 + 4^2}    \\
+                   & = \sqrt{29}
+\end{align*}
+To find the magnitude of a vector $\vec{v} = \langle v_1, v_2, v_3 \rangle$, we can use the formula \[\norm{\vec{v}} = \sqrt{v_1^2 + v_2^2 + v_3^2}\]
+\begin{framed}
+    \noindent\textbf{Note: }
+
+    \noindent For vector in any dimension, the magnitude of the vector is given by \[\norm{\vec{v}} = \sqrt{\sum_{i=1}^{n} v_i^2}\] where $n$ is the dimension of the vector.
+\end{framed}
+~\\
+\noindent\textbf{Example 3. } Find the vector $\vec{u}$ with magnitude 6 and same direction as $\vec{v} = \langle -6, 4, 0 \rangle$.
+\begin{align*}
+    \norm{\vec{v}} & = \sqrt{v_1^2 + v_2^2 + v_3^2}                                              \\
+                   & = \sqrt{(-6)^2 + 4^2 + 0^2}                                                 \\
+                   & = \sqrt{52}                                                                 \\
+                   & = 2\sqrt{13}                                                                \\\\
+    \hat{v}        & = \frac{\vec{v}}{\norm{\vec{v}}}                                            \\
+                   & = \frac{\langle -6, 4, 0 \rangle}{2\sqrt{13}}                               \\
+                   & = \left\langle -\frac{3}{\sqrt{13}}, \frac{2}{\sqrt{13}}, 0 \right\rangle   \\\\
+    \vec{u}        & = 6\hat{v}                                                                  \\
+                   & = \left\langle -\frac{18}{\sqrt{13}}, \frac{12}{\sqrt{13}}, 0 \right\rangle
+\end{align*}

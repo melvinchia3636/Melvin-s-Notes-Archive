@@ -1,0 +1,26 @@
+\chapter{Limits of Vector-valued Functions}
+
+The limit of a vector-valued function $\vec{r}(t) = \langle x(t), y(t), z(t)
+    \rangle$ as $t$ approaches $a$ is
+\begin{align*}
+    \lim_{t \to a} \vec{r}(t) & = \langle\lim_{t \to a} x(t), \lim_{t \to a} y(t), \lim_{t \to a} z(t) \rangle                   \\
+                              & = \lim_{t \to a} x(t)\hat{\imath} + \lim_{t \to a} y(t)\hat{\jmath} + \lim_{t \to a} z(t)\hat{k}
+\end{align*}
+\noindent\textbf{Example 1. } Find $\lim\limits_{t \to \pi}(t\hat{\imath} + \cos t\hat{\jmath} + \sin t\hat{k})$.
+\begin{align*}
+    \lim_{t \to \pi} (t\hat{\imath} + \cos t\hat{\jmath} + \sin t\hat{k}) & = \lim_{t \to \pi} t\hat{\imath} + \lim_{t \to \pi} \cos t\hat{\jmath} + \lim_{t \to \pi} \sin t\hat{k} \\
+                                                                          & = \pi\hat{\imath} + \cos \pi\hat{\jmath} + \sin \pi\hat{k}                                              \\
+                                                                          & = \pi\hat{\imath} - \hat{\jmath}
+\end{align*}
+\noindent\textbf{Example 2. } Find $\lim\limits_{t \to 0}(e^{6t}\hat{\imath} + \dfrac{\sin{2t}}{2t}\hat{\jmath} + e^{-5t}\hat{k})$.
+\begin{align*}
+    \lim_{t \to 0} (e^{6t}\hat{\imath} + \dfrac{\sin{2t}}{2t}\hat{\jmath} + e^{-5t}\hat{k}) & = \lim_{t \to 0} e^{6t}\hat{\imath} + \lim_{t \to 0} \dfrac{\sin{2t}}{2t}\hat{\jmath} + \lim_{t \to 0} e^{-5t}\hat{k} \\
+                                                                                            & = 1\hat{\imath} + 1\hat{\jmath} + 1\hat{k}                                                                            \\
+                                                                                            & = \hat{\imath} + \hat{\jmath} + \hat{k}
+\end{align*}
+\noindent\textbf{Example 3. } Find $\lim\limits_{t \to \infty}(e^{-t}\hat{\imath} + \dfrac{1}{t^2 + 7}\hat{\jmath} + e^{\arctan{t}}\hat{k})$.
+\begin{align*}
+    \lim_{t \to \infty} (e^{-t}\hat{\imath} + \dfrac{1}{t^2 + 7}\hat{\jmath} + e^{\arctan{t}}\hat{k}) & = \lim_{t \to \infty} e^{-t}\hat{\imath} + \lim_{t \to \infty} \dfrac{1}{t^2 + 7}\hat{\jmath} + \lim_{t \to \infty} e^{\arctan{t}}\hat{k} \\
+                                                                                                      & = 0\hat{\imath} + 0\hat{\jmath} + e^{\frac{\pi}{2}}\hat{k}                                                                                \\
+                                                                                                      & = e^{\frac{\pi}{2}}\hat{k}
+\end{align*}

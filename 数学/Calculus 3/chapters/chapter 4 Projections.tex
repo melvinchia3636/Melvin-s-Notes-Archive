@@ -1,0 +1,61 @@
+\chapter{Projections}
+
+Given two vectors $\vec{v}$ and $\vec{u}$. Construct a line from the terminal
+point of $\vec{u}$ perpendicular to $\vec{v}$. The vector that starts from the
+initial point of $\vec{u}$ and ends at the intersection of the line and
+$\vec{v}$ is called the \textbf{projection of $\vec{u}$ onto $\vec{v}$}, which
+is also known as the \textbf{vector component of $\vec{u}$ along $\vec{v}$}.
+
+Construct another vector from the initial point of $\vec{u}$ that is orthogonal
+to $\vec{w_1}$, and the projection of $\vec{u}$ onto that vector is called the
+\textbf{vector component of $\vec{u}$ orthogonal to $\vec{v}$}. The visual
+representation is shown below.
+\begin{center}
+    \begin{tikzpicture}[scale=1.8]
+        %draw vector u and v
+        \draw[->] (0, 0) -- (2, 2);
+        \draw[->] (0, 0) -- (3, 0);
+        %draw vector w_1, w_2
+        \draw[->, thick] (0, 0) -- (2, 0);
+        \draw[->, thick] (0, 0) -- (0, 2);
+        %draw dashed line
+        \draw[-, dashed] (2, 2) -- (2, 0);
+        %label vectors
+        \node[above left] at (1, 1) {$\vec{u}$};
+        \node[below] at (1, 0) {$\vec{w_1}$};
+        \node[below] at (2.5, 0) {$\vec{v}$};
+        \node[left] at (0, 1) {$\vec{w_2}$};
+    \end{tikzpicture}
+\end{center}
+
+From the diagram, it is not hard to see that \[\vec{u} = \vec{w_1} + \vec{w_2}\]
+
+Hence, the vector component of $\vec{u}$ orthogonal to $\vec{v}$ is given by \[\vec{w_2} = \vec{u} - \vec{w_1}\]
+
+The projection of $\vec{u}$ onto $\vec{v}$ is given by \[\vec{w_1} = proj_{\vec{v}}\vec{u} = \left(\frac{\vec{u} \cdot \vec{v}}{\norm{\vec{v}}^2}\right)\vec{v}\]
+
+\newpage
+\noindent\textbf{Example 1. } Find the projection of $\vec{u} = \langle 6, 7 \rangle$ onto $\vec{v} = \langle 1, 4 \rangle$. Hence, find the vector component of $\vec{u}$ orthogonal to $\vec{v}$.
+\begin{align*}
+    proj_{\vec{v}}\vec{u} & = \left(\frac{\vec{u} \cdot \vec{v}}{\norm{\vec{v}}^2}\right)\vec{v} \\
+                          & = \left(\frac{6(1) + 7(4)}{1^2 + 4^2}\right)\langle 1, 4 \rangle     \\
+                          & = \left(\frac{34}{17}\right)\langle 1, 4 \rangle                     \\
+                          & = \langle 2, 8 \rangle                                               \\
+    \\
+    \vec{w_2}             & = \vec{u} - \vec{w_1}                                                \\
+                          & = \langle 6, 7 \rangle - \langle 2, 8 \rangle                        \\
+                          & = \langle 4, -1 \rangle
+\end{align*}
+\noindent\textbf{Example 2. } Find the projection of $\vec{u} = 2i + 3j$ onto $\vec{v} = 5i + j$. Hence, find the vector component of $\vec{u}$ orthogonal to $\vec{v}$.
+\begin{align*}
+    proj_{\vec{v}}\vec{u} & = \left(\frac{\vec{u} \cdot \vec{v}}{\norm{\vec{v}}^2}\right)\vec{v}             \\
+                          & = \left(\frac{2(5) + 3(1)}{5^2 + 1^2}\right)(5i + j)                             \\
+                          & = \left(\frac{13}{26}\right)(5i + j)                                             \\
+                          & = \left(\frac{5}{2}\right)i + \left(\frac{1}{2}\right)j                          \\
+    \\
+    \vec{w_2}             & = \vec{u} - \vec{w_1}                                                            \\
+                          & = (2i + 3j) - \left(\left(\frac{5}{2}\right)i + \left(\frac{1}{2}\right)j\right) \\
+                          & = \left(-\frac{1}{2}\right)i + \left(\frac{5}{2}\right)j
+\end{align*}
+
+\noindent\textbf{Notes:} Application exercises are mixed in the exercises of the previous chapters.

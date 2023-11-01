@@ -1,0 +1,16 @@
+touch "chapters/chapter 1 Vector in Plane Geometry.tex" \
+"chapters/chapter 2 Vector in Space.tex" \
+"chapters/chapter 3 Dot Product.tex" \
+"chapters/chapter 4 Projections.tex" \
+"chapters/chapter 5 Direction Cosines and Direction Angles.tex" \
+"chapters/chapter 6 Cross Product.tex" \
+"chapters/chapter 7 Distance in Space.tex" \
+"chapters/chapter 8 Lines in Space.tex" \
+"chapters/chapter 9 Planes in Space.tex" \
+"chapters/chapter 10 Cylindrical Coordinates.tex" \
+"chapters/chapter 11 Spherical Coordinates.tex" \
+"chapters/chapter 12 Vector-valued Functions.tex" \
+"chapters/chapter 13 Limits of Vector-valued Functions.tex" \
+"chapters/chapter 14 Derivatives and Integration of Vector-valued Functions.tex" \
+"chapters/chapter 15 Velocity, Speed and Acceleration.tex" \
+"chapters/chapter 16 Tangent Vectors and Normal Vectors.tex"
