@@ -803,10 +803,35 @@
 
 - [notes.pdf](<./数学/Calculus 3/notes.pdf>)
 - [notes.tex](<./数学/Calculus 3/notes.tex>)
+- [test.txt](<./数学/Calculus 3/test.txt>)
 <dl><dd><dl><dd>
 <details>
 <summary>assets</summary>
 
+
+</details>
+</dd></dl></dd></dl>
+
+<dl><dd><dl><dd>
+<details>
+<summary>chapters</summary>
+
+- [chapter 1 Vector in Plane Geometry.tex](<./数学/Calculus 3/chapters/chapter 1 Vector in Plane Geometry.tex>)
+- [chapter 2 Vector in Space.tex](<./数学/Calculus 3/chapters/chapter 2 Vector in Space.tex>)
+- [chapter 3 Dot Product.tex](<./数学/Calculus 3/chapters/chapter 3 Dot Product.tex>)
+- [chapter 4 Projections.tex](<./数学/Calculus 3/chapters/chapter 4 Projections.tex>)
+- [chapter 5 Direction Cosines and Direction Angles.tex](<./数学/Calculus 3/chapters/chapter 5 Direction Cosines and Direction Angles.tex>)
+- [chapter 6 Cross Product.tex](<./数学/Calculus 3/chapters/chapter 6 Cross Product.tex>)
+- [chapter 7 Distance in Space.tex](<./数学/Calculus 3/chapters/chapter 7 Distance in Space.tex>)
+- [chapter 8 Lines in Space.tex](<./数学/Calculus 3/chapters/chapter 8 Lines in Space.tex>)
+- [chapter 9 Planes in Space.tex](<./数学/Calculus 3/chapters/chapter 9 Planes in Space.tex>)
+- [chapter 10 Cylindrical Coordinates.tex](<./数学/Calculus 3/chapters/chapter 10 Cylindrical Coordinates.tex>)
+- [chapter 11 Spherical Coordinates.tex](<./数学/Calculus 3/chapters/chapter 11 Spherical Coordinates.tex>)
+- [chapter 12 Vector-valued Functions.tex](<./数学/Calculus 3/chapters/chapter 12 Vector-valued Functions.tex>)
+- [chapter 13 Limits of Vector-valued Functions.tex](<./数学/Calculus 3/chapters/chapter 13 Limits of Vector-valued Functions.tex>)
+- [chapter 14 Derivatives and Integration of Vector-valued Functions.tex](<./数学/Calculus 3/chapters/chapter 14 Derivatives and Integration of Vector-valued Functions.tex>)
+- [chapter 15 Velocity, Speed and Acceleration.tex](<./数学/Calculus 3/chapters/chapter 15 Velocity, Speed and Acceleration.tex>)
+- [chapter 16 Tangent Vectors and Normal Vectors.tex](<./数学/Calculus 3/chapters/chapter 16 Tangent Vectors and Normal Vectors.tex>)
 
 </details>
 </dd></dl></dd></dl>
@@ -1694,7 +1719,9 @@
 <details>
 <summary>Chapter 13 Correction of Errors</summary>
 
+- [Master Notes.docx](<./簿记与会计/Chapter 13 Correction of Errors/Master Notes.docx>)
 - [notebook chapter cover.docx](<./簿记与会计/Chapter 13 Correction of Errors/notebook chapter cover.docx>)
+- [~$ster Notes.docx](<./簿记与会计/Chapter 13 Correction of Errors/~$ster Notes.docx>)
 - [Practice 1 Ans.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 1 Ans.docx>)
 - [Practice 1.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 1.docx>)
 - [Practice 2.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 2.docx>)
