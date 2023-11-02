@@ -134,3 +134,129 @@ Since the height of the parallelogram is $\norm{\vec{u}} \sin\theta$ and the bas
     \text{Unit vector} & = \frac{\vec{v} \times \vec{u}}{\norm{\vec{v} \times \vec{u}}}       \\
                        & = \frac{1}{\sqrt{59}}i + \frac{3}{\sqrt{59}}j + \frac{7}{\sqrt{59}}k
 \end{align*}
+
+\newpage
+
+\section*{Selected Exercises}
+
+\textit{Source: Larson Calculus 11th Ed. Exercise 11.4}
+
+\begin{enumerate}[label={}, leftmargin=*]
+    \item \textbf{Area} In Exercises and 28, find the area of the triangle with the given
+          vertices. (Hint: $\dfrac{1}{2}\|u \times v\|$ is the area of the triangle
+          having $u$ and $v$ as adjacent sides.)
+\end{enumerate}
+\begin{enumerate}
+    \setcounter{enumi}{24}
+    \item $A(0,0,0), B(1,0,3), C(-3,2,0)$
+          \sol{}
+          \begin{align*}
+              \vec{u}                & = \langle 1 - 0, 0 - 0, 3 - 0 \rangle = \langle 1, 0, 3 \rangle                    \\
+              \vec{v}                & = \langle -3 - 0, 2 - 0, 0 - 0 \rangle = \langle -3, 2, 0 \rangle                  \\
+              \vec{u} \times \vec{v} & = \begin{vmatrix}
+                                             \hat{\imath} & \hat{\jmath} & \hat{k} \\
+                                             1            & 0            & 3       \\
+                                             -3           & 2            & 0
+                                         \end{vmatrix}                        \\
+                                     & = \hat{\imath} \begin{vmatrix}
+                                                          0 & 3 \\
+                                                          2 & 0
+                                                      \end{vmatrix} - \hat{\jmath} \begin{vmatrix}
+                                                                                       1  & 3 \\
+                                                                                       -3 & 0
+                                                                                   \end{vmatrix} + \hat{k} \begin{vmatrix}
+                                                                                                               1  & 0 \\
+                                                                                                               -3 & 2
+                                                                                                           \end{vmatrix} \\
+                                     & = \hat{\imath}(-6) - \hat{\jmath}(9) + \hat{k}(2)                                  \\
+                                     & = \langle -6, -9, 2 \rangle
+          \end{align*}
+          Hence, the area of the triangle is \[\frac{1}{2}\norm{\vec{u} \times \vec{v}} = \frac{1}{2}\sqrt{(-6)^2 + (-9)^2 + 2^2} = \frac{1}{2}\sqrt{121} = \frac{11}{2} \text{ sq. units}\]
+          $\hfill\blacksquare$
+
+          \setcounter{enumi}{26}
+    \item Torque The brakes on a bicycle are applied using a downward force of 100
+          newtons on the pedal when the crank makes a $40^{\circ}$ angle with the
+          horizontal (see figure). The crank is 17 centimeters in length. Find the torque
+          at $P$.
+          \begin{center}
+              \includegraphics[scale=0.55]{assets/larson11.4q27.png}
+          \end{center}
+          \newpage
+          \sol{} Let the force $\vec{F} = \langle 0, 0, -100 \rangle$ and the position vector of the pedal $\vec{r} = \langle 0, 0.17\cos40^{\circ}, 0.17\sin40^{\circ} \rangle$.
+          \begin{align*}
+              \vec{\tau}        & = \vec{r} \times \vec{F}                                                                   \\
+                                & = \begin{vmatrix}
+                                        \hat{\imath} & \hat{\jmath}       & \hat{k}            \\
+                                        0            & 0.17\cos40^{\circ} & 0.17\sin40^{\circ} \\
+                                        0            & 0                  & -100
+                                    \end{vmatrix}               \\
+                                & = \hat{\imath} \begin{vmatrix}
+                                                     0.17\cos40^{\circ} & 0.17\sin40^{\circ} \\
+                                                     0                  & -100
+                                                 \end{vmatrix} - \hat{\jmath} \begin{vmatrix}
+                                                                                  0 & 0.17\sin40^{\circ} \\
+                                                                                  0 & -100
+                                                                              \end{vmatrix} + \hat{k} \begin{vmatrix}
+                                                                                                          0 & 0.17\cos40^{\circ} \\
+                                                                                                          0 & 0
+                                                                                                      \end{vmatrix} \\
+                                & = \hat{\imath}(-17\cos40^{\circ}) - \hat{\jmath}(0) + \hat{k}(0)                           \\
+                                & = \langle -17\cos40^{\circ}, 0, 0 \rangle                                                  \\
+              \norm{\vec{\tau}} & = \sqrt{(-17\cos40^{\circ})^2 + 0^2 + 0^2} = 17\cos40^{\circ} \approx 13.023 \text{ J}
+          \end{align*}
+          $\hfill\blacksquare$
+          \setcounter{enumi}{28}
+    \item \textbf{Optimization} A force of 180 newtons acts on the bracket shown in the figure.
+          \begin{center}
+              \includegraphics[scale=0.55]{assets/larson11.4q29.png}
+          \end{center}
+          \begin{enumerate}[label={(\alph{*})}]
+              \item Determine the vector $\overrightarrow{A B}$ and the vector $\mathbf{F}$
+                    representing the force. ( $\mathbf{F}$ will be in terms of $\theta$.) \sol{}
+                    The horizontal and vertical distances between $A$ and $B$ are $-40$cm and
+                    $32$cm respectively. Hence, $\overrightarrow{A B} = -0.4j + 0.32k$.
+                    $\hfill\blacksquare$ \newpage
+              \item Find the magnitude of the moment about $A$ by evaluating $\|\overrightarrow{A
+                            B} \times \mathbf{F}\|$. \sol{}
+                    \begin{align*}
+                        \overrightarrow{A B} \times \mathbf{F}        & = \begin{vmatrix}
+                                                                              \hat{\imath} & \hat{\jmath}   & \hat{k}        \\
+                                                                              0            & -0.4           & 0.32           \\
+                                                                              0            & -180\cos\theta & -180\sin\theta
+                                                                          \end{vmatrix}                   \\
+                                                                      & = \hat{\imath} \begin{vmatrix}
+                                                                                           -0.4           & 0.32           \\
+                                                                                           -180\cos\theta & -180\sin\theta
+                                                                                       \end{vmatrix} - \hat{\jmath} \begin{vmatrix}
+                                                                                                                        0 & 0.32           \\
+                                                                                                                        0 & -180\sin\theta
+                                                                                                                    \end{vmatrix} + \hat{k} \begin{vmatrix}
+                                                                                                                                                0 & -0.4           \\
+                                                                                                                                                0 & -180\cos\theta
+                                                                                                                                            \end{vmatrix} \\
+                                                                      & = \hat{\imath}(72\sin\theta + 57.6\cos\theta) - \hat{\jmath}(0) + \hat{k}(0)           \\
+                                                                      & = \langle 72\sin\theta + 57.6\cos\theta, 0, 0 \rangle                                  \\
+                        \\
+                        \norm{\overrightarrow{A B} \times \mathbf{F}} & = \sqrt{(72\sin\theta  57.6\cos\theta)^2 + 0^2 + 0^2}                                  \\
+                                                                      & = |72\sin\theta + 57.6\cos\theta|
+                    \end{align*}
+                    $\hfill\blacksquare$
+              \item Use the result of part (b) to determine the magnitude of the moment when
+                    $\theta=30^{\circ}$. \sol{} When $\theta=30^{\circ}$, \[\norm{\overrightarrow{A B} \times \mathbf{F}} = |72\sin30^{\circ} + 57.6\cos30^{\circ}| = 85.883 \text{ J}\]
+
+              \item Use the result of part (b) to determine the angle $\theta$ when the magnitude
+                    of the moment is maximum. At that angle, what is the relationship between the
+                    vectors $\mathbf{F}$ and $\overrightarrow{A B}$ ?
+                    $\dfrac{d}{d\theta}(|72\sin\theta + 57.6\cos\theta|) = 0$. Hence,
+                    \begin{align*}
+                        \dfrac{d}{d\theta}(|72\sin\theta + 57.6\cos\theta|) = \dfrac{72\cos\theta - 57.6\sin\theta}{|72\sin\theta + 57.6\cos\theta|} & = 0                                                         \\
+                        72\cos\theta                                                                                                                 & = 57.6\sin\theta                                            \\
+                        \tan\theta                                                                                                                   & = \dfrac{72}{57.6} = \dfrac{5}{4}                           \\
+                        \theta                                                                                                                       & = \tan^{-1}\left(\dfrac{5}{4}\right) \approx 51.340^{\circ} \\
+                        F \cdot \overrightarrow{A B}                                                                                                 & = 180\cos\theta \times -0.4 + 180\sin\theta \times 0.32     \\
+                                                                                                                                                     & = -72\cos
+                    \end{align*}
+                    When $\theta = 51.340^{\circ}$, $\mathbf{F}$ and $\overrightarrow{A B}$ are perpendicular to each other. $\hfill\blacksquare$
+          \end{enumerate}
+\end{enumerate}
