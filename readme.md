@@ -887,8 +887,20 @@
 <details>
 <summary>物理</summary>
 
-- [Motion.tex](<./物理/Motion.tex>)
+- [运动.pdf](<./物理/运动.pdf>)
+- [运动.tex](<./物理/运动.tex>)
 - [运动Motion.docx](<./物理/运动Motion.docx>)
+<dl><dd>
+<details>
+<summary>Newton Second Law of Motion</summary>
+
+- [exercises.pdf](<./物理/Newton Second Law of Motion/exercises.pdf>)
+- [exercises.tex](<./物理/Newton Second Law of Motion/exercises.tex>)
+- [22N-2nd-Law-selected-1.pdf](<./物理/Newton Second Law of Motion/22N-2nd-Law-selected-1.pdf>)
+
+</details>
+</dd></dl>
+
 
 </details>
 
@@ -1719,9 +1731,9 @@
 <details>
 <summary>Chapter 13 Correction of Errors</summary>
 
+- [Master Notes Ans.docx](<./簿记与会计/Chapter 13 Correction of Errors/Master Notes Ans.docx>)
 - [Master Notes.docx](<./簿记与会计/Chapter 13 Correction of Errors/Master Notes.docx>)
 - [notebook chapter cover.docx](<./簿记与会计/Chapter 13 Correction of Errors/notebook chapter cover.docx>)
-- [~$ster Notes.docx](<./簿记与会计/Chapter 13 Correction of Errors/~$ster Notes.docx>)
 - [Practice 1 Ans.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 1 Ans.docx>)
 - [Practice 1.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 1.docx>)
 - [Practice 2.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 2.docx>)
@@ -1732,6 +1744,11 @@
 - [Practice 7.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 7.docx>)
 - [Practice 8.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 8.docx>)
 - [Practice 9.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 9.docx>)
+- [Practice 13 Ans Sheet.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 13 Ans Sheet.docx>)
+- [Practice 13 Ans.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 13 Ans.docx>)
+- [Practice 13.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 13.docx>)
+- [Practice 15.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 15.docx>)
+- [Practice 16.docx](<./簿记与会计/Chapter 13 Correction of Errors/Practice 16.docx>)
 
 </details>
 </dd></dl>
@@ -2062,6 +2079,8 @@
 - [UEB 2014 Q4.docx](<./簿记与会计/Chapter 24 Consignment Accounts/UEB 2014 Q4.docx>)
 - [UEB 2017 Q4 Ans.docx](<./簿记与会计/Chapter 24 Consignment Accounts/UEB 2017 Q4 Ans.docx>)
 - [UEB 2017 Q4.docx](<./簿记与会计/Chapter 24 Consignment Accounts/UEB 2017 Q4.docx>)
+- [UEB 2020 Q4 Ans.docx](<./簿记与会计/Chapter 24 Consignment Accounts/UEB 2020 Q4 Ans.docx>)
+- [UEB 2020 Q4.docx](<./簿记与会计/Chapter 24 Consignment Accounts/UEB 2020 Q4.docx>)
 
 </details>
 </dd></dl>
