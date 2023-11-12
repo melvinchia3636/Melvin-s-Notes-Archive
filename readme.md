@@ -1669,7 +1669,9 @@
 - [UEB 2004 Q2.pdf](<./簿记与会计/Chapter 10 Control Accounts/UEB 2004 Q2.pdf>)
 - [UEB 2008 Q1(a).pdf](<./簿记与会计/Chapter 10 Control Accounts/UEB 2008 Q1(a).pdf>)
 - [UEB 2010 Q1(a).pdf](<./簿记与会计/Chapter 10 Control Accounts/UEB 2010 Q1(a).pdf>)
+- [UEB 2020 Q1.docx](<./簿记与会计/Chapter 10 Control Accounts/UEB 2020 Q1.docx>)
 - [BK Test 2022.pdf](<./簿记与会计/Chapter 10 Control Accounts/BK Test 2022.pdf>)
+- [UEB 2022 Q3.docx](<./簿记与会计/Chapter 10 Control Accounts/UEB 2022 Q3.docx>)
 
 </details>
 </dd></dl>
@@ -2068,6 +2070,8 @@
 - [UEB 2016 Q5.docx](<./簿记与会计/Chapter 23 Bills of Exchange/UEB 2016 Q5.docx>)
 - [UEB 2019 Q4.docx](<./簿记与会计/Chapter 23 Bills of Exchange/UEB 2019 Q4.docx>)
 - [FInal Year Exam 2021 Question 2.docx](<./簿记与会计/Chapter 23 Bills of Exchange/FInal Year Exam 2021 Question 2.docx>)
+- [UEB 2021 Q6 Ans.docx](<./簿记与会计/Chapter 23 Bills of Exchange/UEB 2021 Q6 Ans.docx>)
+- [~$B 2021 Q6.docx](<./簿记与会计/Chapter 23 Bills of Exchange/~$B 2021 Q6.docx>)
 - [Final Year Exam 2022 Question 2.docx](<./簿记与会计/Chapter 23 Bills of Exchange/Final Year Exam 2022 Question 2.docx>)
 
 </details>
@@ -2147,10 +2151,10 @@
 - [UEB 2017 Q5 Ans.docx](<./簿记与会计/Chapter 26 Hire Purchase Accounts/UEB 2017 Q5 Ans.docx>)
 - [UEB 2017 Q5.docx](<./簿记与会计/Chapter 26 Hire Purchase Accounts/UEB 2017 Q5.docx>)
 - [FInal Year Exam 2018 Question 3.docx](<./簿记与会计/Chapter 26 Hire Purchase Accounts/FInal Year Exam 2018 Question 3.docx>)
-- [FInal Year Exam 2018 Question 3.pdf](<./簿记与会计/Chapter 26 Hire Purchase Accounts/FInal Year Exam 2018 Question 3.pdf>)
 - [UEB 2020 Q6 Ans.docx](<./簿记与会计/Chapter 26 Hire Purchase Accounts/UEB 2020 Q6 Ans.docx>)
 - [UEB 2020 Q6.docx](<./簿记与会计/Chapter 26 Hire Purchase Accounts/UEB 2020 Q6.docx>)
 - [Final Year Exam 2022 Question 4.docx](<./簿记与会计/Chapter 26 Hire Purchase Accounts/Final Year Exam 2022 Question 4.docx>)
+- [UEB 2022 Q6 Ans.docx](<./簿记与会计/Chapter 26 Hire Purchase Accounts/UEB 2022 Q6 Ans.docx>)
 
 </details>
 </dd></dl>
