@@ -1,0 +1,77 @@
+\subsection{Practice 5}
+Find the following indefinite integral:
+\begin{enumerate}
+    \begin{multicols}{2}
+        \item $\displaystyle\int\sin2x\cos2x dx$
+        \sol{}
+        \begin{flalign*}
+            I & = \dfrac{1}{2}\int\sin4x dx & \\
+              & = -\dfrac{1}{8}\cos4x + C
+        \end{flalign*}
+        \vfill{}\null{}
+
+        \item $\displaystyle\int\cos^2 2x dx$
+        \sol{}
+        \begin{flalign*}
+            I & = \int\dfrac{1 + \cos 4x}{2} dx                    & \\
+              & = \dfrac{1}{2}\int dx + \dfrac{1}{2}\int\cos 4x dx & \\
+              & = \dfrac{1}{2}x + \dfrac{1}{8}\sin 4x + C
+        \end{flalign*}
+    \end{multicols}
+    \begin{multicols}{2}
+        \item $\displaystyle\int\sin^3 x dx$
+        \sol{}
+        \begin{flalign*}
+            I & = \int\sin^2 x\sin x dx                 & \\
+              & = \int(1 - \cos^2 x)\sin x dx           & \\
+              & = \int\sin x dx - \int\cos^2 x\sin x dx
+        \end{flalign*}
+        Let $u = \cos x$, $du = -\sin xdx$.
+        \begin{flalign*}
+            I & = -\int \cos x dx + \int u^2 du    & \\
+              & = -\sin x + \dfrac{1}{3}u^3 + C    & \\
+              & = \dfrac{1}{3}\cos^3 x -\sin x + C
+        \end{flalign*}
+
+        \item $\displaystyle\int\cos^3 x dx$
+        \sol{}
+        \begin{flalign*}
+            I & = \int\cos^2 x\cos x dx                 & \\
+              & = \int(1 - \sin^2 x)\cos x dx           & \\
+              & = \int\cos x dx - \int\sin^2 x\cos x dx
+        \end{flalign*}
+        Let $u = \sin x$, $du = \cos xdx$.
+        \begin{flalign*}
+            I & = \int \cos x dx - \int u^2 du      & \\
+              & = \sin x - \dfrac{1}{3}u^3 + C      & \\
+              & = \sin x - \dfrac{1}{3}\sin^3 x + C
+        \end{flalign*}
+    \end{multicols}
+    \begin{multicols}{2}
+        \item $\displaystyle\int\tan^4 x\sec^2 x dx$
+        \sol{}
+
+        Let $u = \tan x$, $du = \sec^2 xdx$.
+        \begin{flalign*}
+            I & = \int u^4 du              & \\
+              & = \dfrac{u^5}{5} + C       & \\
+              & = \dfrac{1}{5}\tan^5 x + C
+        \end{flalign*}
+        \vfill{}\null{}
+        \columnbreak
+        \item $\displaystyle\int\tan^4\dfrac{x}{2} dx$
+        \sol{}
+        \begin{flalign*}
+            I & = \int\tan^2\dfrac{x}{2}\tan^2\dfrac{x}{2} dx                             & \\
+              & = \int\left(\sec^2\dfrac{x}{2} - 1\right)\tan^2\dfrac{x}{2} dx            & \\
+              & = \int\sec^2\dfrac{x}{2}\tan^2\dfrac{x}{2} dx - \int\tan^2\dfrac{x}{2} dx
+        \end{flalign*}
+        Let $u = \tan\dfrac{x}{2}$, $du = \dfrac{1}{2}\sec^2\dfrac{x}{2}dx$.
+        \begin{flalign*}
+            I & = 2\int u^2 du - \int \tan^2\dfrac{x}{2} dx                     & \\
+              & = \dfrac{2u^3}{3} - \int \left(\sec^2\dfrac{x}{2} - 1\right) dx & \\
+              & = \dfrac{2u^3}{3} - \int \sec^2\dfrac{x}{2} dx + \int dx        & \\
+              & = \dfrac{2}{3}\tan^3\dfrac{x}{2} - 2\tan\dfrac{x}{2} + x + C
+        \end{flalign*}
+    \end{multicols}
+\end{enumerate}

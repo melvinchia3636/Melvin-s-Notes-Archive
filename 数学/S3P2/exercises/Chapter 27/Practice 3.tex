@@ -1,0 +1,31 @@
+\subsection{Practice 3}
+\begin{enumerate}
+    \begin{multicols}{2}
+        \item Prove that $\dfrac{d}{dx}\left(\dfrac{x^2 - 2}{x + 1}\right) = \dfrac{x^2 + 2x
+                + 2}{(x + 1)^2}$. Hence, \\find $\displaystyle\int{\dfrac{x^2 + 2x +
+                    2}{2(x+1)^2}}dx$. \sol{}
+        \begin{flalign*}
+            \dfrac{d}{dx}\left(\dfrac{x^2 - 2}{x + 1}\right) & = \dfrac{(x + 1)(2x) - (x^2 - 2)(1)}{(x + 1)^2}       & \\
+                                                             & = \dfrac{2x^2 + 2x - x^2 + 2}{(x + 1)^2}              & \\
+                                                             & = \dfrac{x^2 + 2x + 2}{(x + 1)^2} \qquad \blacksquare & \\
+                                                             &                                                         \\
+            \int{\dfrac{x^2 + 2x + 2}{2(x+1)^2}}dx           & = \dfrac{1}{2}\int{\dfrac{x^2 + 2x + 2}{(x+1)^2}}dx   & \\
+                                                             & = \dfrac{1}{2}\int{\dfrac{dy}{dx}}                    & \\
+                                                             & = \dfrac{1}{2}\left(\dfrac{x^2 - 2}{x + 1}\right) + C & \\
+                                                             & = \dfrac{x^2 - 2}{2(x + 1)} + C
+        \end{flalign*}
+        \vfill{}\null{}
+        \columnbreak{}
+
+        \item Given the function $y = \dfrac{3}{(5x + 7)^3}$, and $\dfrac{dy}{dx} = 5g(x)$,
+        find $\displaystyle\int\left[3 - g(x)\right]dx$. \sol{}
+        \begin{flalign*}
+            \dfrac{dy}{dx}              & = 5g(x)                                             & \\
+            g(x)                        & = \dfrac{1}{5}\dfrac{dy}{dx}                        & \\
+                                        &                                                       \\
+            \int\left[3 - g(x)\right]dx & = \int\left[3 - \dfrac{1}{5}\dfrac{dy}{dx}\right]dx & \\
+                                        & = 3x - \dfrac{1}{5}y + C                            & \\
+                                        & = 3x - \dfrac{3}{5(5x + 7)^3} + C
+        \end{flalign*}
+    \end{multicols}
+\end{enumerate}

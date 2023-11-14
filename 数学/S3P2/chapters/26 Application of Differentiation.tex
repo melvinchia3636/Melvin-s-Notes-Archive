@@ -1,0 +1,364 @@
+\chapter{Applications of Differentiation}
+
+\section{Tangent and Normal Lines}
+
+In the previous chapter, we have learnt that the gradient of the tangent to the
+curve $y=f(x)$ at point $P\big(x_0, f(x_0)\big)$ is
+\begin{flalign*}
+    m & = \lim_{\Delta x \to 0}\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} & \\
+      & = f'(x_0)
+\end{flalign*}
+
+\begin{multicols}{2}
+    Hence, in order to find the tangent to the curve $y = f(x)$ at $x = x_0$, we just have to find the derivative value $f'(x_0)$ of the curve $y = f(x)$ at $x = x_0$, then the equation of the tangent line can be acquired through the point gradient formula of linear equations.
+
+    As shown in the right figure, the line that passes through point $P$ and
+    perpendicular to the tangent line $PT$ is known as the normal line to the curve
+    $y = f(x)$. If two straight lines are perpendicular, the product of their
+    gradients is $-1$. Since the gradient of the curve $y = f(x)$ at point $x =
+        x_0$ is $f'(x_0)$, therefore when $f'(x_0) \neq 0$, the gradient of normal at
+    point $x = x_0$ is $-\dfrac{1}{f'(x_0)}$.
+
+    \columnbreak
+    \begin{center}
+        \includegraphics[scale=0.25]{assets/26-1.png}
+    \end{center}
+\end{multicols}
+
+\input{./exercises/Chapter 26/Practice 1.tex}
+\input{./exercises/Chapter 26/Exercise 26.1.tex}
+
+\newpage
+
+\section{Increasing and Decreasing Functions}
+
+\subsection*{Monotonic Functions}
+
+For a function $f(x)$ being defined in the interval $D$,
+\begin{enumerate}
+    \item For any two numbers $x_1$ and $x_2$ in $D$, when $x_1 < x_2$, $f(x)$ is an
+          increasing function in the interval $D$, as shown in the figure below.
+          \begin{center}
+              \includegraphics[scale=0.25]{assets/26-2.png}
+          \end{center}
+    \item For any two numbers $x_1$ and $x_2$ in $D$, when $x_1 > x_2$, $f(x)$ is a
+          decreasing function in the interval $D$, as shown in the figure below.
+          \begin{center}
+              \includegraphics[scale=0.25]{assets/26-3.png}
+          \end{center}
+\end{enumerate}
+If $f(x)$ is an increasing function or a decreasing function in the interval $D$, we call $f(x)$ a monotonic function in the interval $D$.
+\begin{center}
+    \includegraphics[scale=0.25]{assets/26-4.png}
+\end{center}
+The curve shown in the diagram above is the graph of the function $f(x)$ in the
+interval $[-5, 5]$. From the graph, we can see that the function $f(x)$ is a
+decreasing function in the intervals $[-5, 2]$ and $[1, 3]$, and an increasing
+function in the interval $[-2, 1]$ and $[3, 5]$.
+\newpage
+
+\subsection*{How to Judge the Increase or Decrease of Functions}
+
+As shown in the diagram below, when the function $f(x)$ is an increasing
+function in the interval $[a, b]$, the gradient of the tangent to the curve at
+any point in the interval $(a, b)$ is positive, i.e. $f'(x) > 0$; when the
+function $f(x)$ is a decreasing function in the interval $[b, c]$, the gradient
+of the tangent to the curve at any point in the interval $(b, c)$ is negative,
+i.e. $f'(x) < 0$.
+\begin{center}
+    \includegraphics[scale=0.25]{assets/26-5.png}
+\end{center}
+Therefore, we can judge whether a function is an increasing function or a decreasing function in an interval by the sign of the derivative value of the function in the interval:
+\begin{center}
+    \framebox{
+        \parbox[t][3.8cm]{14cm}{ \addvspace{0.6cm} \hspace{0.4cm}Let $f(x)$ be a continuous
+            function defined in the interval $[a, b]$, and can be differentiated in
+
+            \hspace{0.4cm}the interval $(a, b)$.
+
+            \begin{itemize}[leftmargin=0.76cm]
+                \item In the interval $(a, b)$, if $f'(x) > 0$, then $f(x)$ is an increasing function
+                      in the interval $[a, b]$.
+                \item In the interval $(a, b)$, if $f'(x) < 0$, then $f(x)$ is a decreasing function
+                      in the interval $[a, b]$.
+            \end{itemize} }}
+\end{center}
+\vspace{0.9em}
+
+\input{./exercises/Chapter 26/Practice 2.tex}
+\input{./exercises/Chapter 26/Exercise 26.2.tex}
+
+\section{Relative Maximum and Minimum Values of Functions}
+
+As shown in the diagram below, the function value $f(a)$ at the point where
+$x=a$ is the maximum compared to its nearby points, we call $f(a)$ the relative
+maximum value; the function value $f(b)$ at the point where $x=b$ is the
+minimum compared to its nearby points, we call $f(b)$ the relative minimum
+value.
+\begin{center}
+    \includegraphics[scale=0.25]{assets/26-6.png}
+\end{center}
+
+\begin{center}
+    \framebox{
+        \parbox[t][5cm]{14cm}{ \addvspace{0.6cm} \hspace{0.4cm}Let $f(x)$ be a defined
+            function near point $x=a$,
+            \begin{itemize}
+                \item \parbox[t]{12.5cm}{If the function value $f(a)$ is the maximum compared to its
+                          nearby points, we say that $f(x)$ has a relative maximum value $f(a)$ at point
+                          $x=a$, and the point $(a, f(a))$ is the relative maximum point of the
+                          function;}
+                \item \parbox[t]{12.5cm}{If the function value $f(a)$ is the minimum compared to its
+                          nearby points, we say that $f(x)$ has a relative minimum value $f(a)$ at point
+                          $x=a$, and the point $(a, f(a))$ is the relative minimum point of the
+                          function.}
+            \end{itemize}
+        }}
+\end{center}
+\vspace{0.9em}
+
+Relative maximum and minimum values are collectively known as the extreme
+values, and the points where the extreme values occur are collectively known as
+the extreme points.
+
+From the diagram above, we can also see that the gradients of the tangent to
+the curve at the extreme points are zero. Hence, the following theorem can be
+obtained:
+\begin{center}
+    \framebox{
+        \parbox[t][1.6cm]{14cm}{ \addvspace{0.4cm} \centering \parbox{13cm}{If the function $f(x)$ is differentiable at point $x=a$, and $f(x)$
+                has a relative maximum or minimum value at point $x=a$, then $f'(a)=0$.} }}
+\end{center}
+
+\begin{multicols}{2}
+    The points that satisfy $f'(x)=0$ are called the stationary points of the
+    function.
+
+    If the function can be differentiated at point $x=a$, then the extreme point
+    must be a stationary point. However, the stationary point is not necessarily an
+    extreme point. For example, the derivative of the function $f(x)=x^3$ is
+    $f'(x)=3x^2$, and $f'(0)=0$, i.e. $O(0, 0)$ is a stationary point of the
+    function $f(x)=x^3$, but it is not an extreme point of the function, as shown
+    in the right diagram. \vfill{}\null{}
+
+    \columnbreak
+    \begin{center}
+        \includegraphics[scale=0.25]{assets/26-7.png}
+    \end{center}
+\end{multicols}
+
+\subsection*{How to Find the Extreme Values of Functions}
+
+\begin{enumerate}
+    \item \textbf{First Derivative Test}
+
+          The curve has a positive gradient of tangent to the left of the relative
+          maximum point, and a negative gradient of tangent to the right; the curve has a
+          negative gradient of tangent to the left of the relative minimum point, and a
+          positive gradient of tangent to the right. Hence, the following theorem is
+          obtained:
+          \begin{center}
+              \framebox{
+                  \parbox[t][3.3cm]{14cm}{ \addvspace{0.4cm} \centering \parbox{13cm}{Let $f(x)$ be a function that is differentiable near point $x=a$, and
+                          $f'(a) = 0$,
+                          \begin{itemize}[leftmargin=0.4cm]
+                              \item \parbox[t]{12.5cm}{If $f'(x) > 0$ to the left of $x=a$ and $f'(x) < 0$ to the right
+                                        of $x=a$, then $f(a)$ is a relative maximum value;}
+                              \item \parbox[t]{12.5cm}{If $f'(x) < 0$ to the left of $x=a$ and $f'(x) > 0$ to the right
+                                        of $x=a$, then $f(a)$ is a relative minimum value.}
+                          \end{itemize} }
+                  }}
+          \end{center}
+          \vspace{0.9em}
+
+    \item \textbf{Second Derivative Test}
+          \begin{center}
+              \framebox{
+                  \parbox[t][2.5cm]{14cm}{ \addvspace{0.4cm} \centering \parbox{13cm}{Let $f(x)$ be a function that is second derivable near point $x=a$,
+                          and $f'(a) = 0$,
+                          \begin{itemize}[leftmargin=0.4cm]
+                              \item \parbox[t]{12.5cm}{If $f''(a) < 0$, then $f(a)$ is a relative maximum value;}
+                              \item \parbox[t]{12.5cm}{If $f''(a) > 0$, then $f(a)$ is a relative minimum value.}
+                          \end{itemize} }
+                  }}
+          \end{center}
+
+          Note that the second derivative test is invalid when $f''(a) = 0$, and the
+          first derivative test should be used instead.
+\end{enumerate}
+
+\input{exercises/Chapter 26/Practice 3.tex}
+\input{exercises/Chapter 26/Exercise 26.3.tex}
+
+\section{Absolute Maximum and Minimum Values of Functions}
+
+Shown in the diagram below is the graph of the curve of the function $f(x)$ in
+the interval $[a, b]$. From the diagram, we know that $f(x_1)$ and $f(x_3)$ are
+the relative minimum value, while $f(x_2)$ is the relative maximum value. In
+solving practical problems, we are often concerned with the maximum and minimum
+values of the function in the entire domain. In the diagram below, the absolute
+maximum value of the function $f(x)$ is $f(b)$, and the absolute minimum value
+is $f(x_3)$.
+\begin{center}
+    \includegraphics[scale=0.25]{assets/26-8.png}
+\end{center}
+
+\begin{center}
+    \framebox{
+        \parbox[t][1.6cm]{14cm}{ \addvspace{0.4cm} \centering \parbox{13.5cm}{If the function $f(x)$ is continuous in the close interval $[a,
+                            b]$, then the function $f(x)$ must have the absolute maximum value and the
+                absolute minimum value in the interval $[a, b]$.} }}
+\end{center}
+
+The function $f(x)$ that is continuous in the open interval $(a, b)$ may not
+have the absolute maximum value and the absolute minimum value. For example,
+the function $y = \dfrac{1}{x}$ is continuous in the interval $(0, \infty)$,
+but it does not have the absolute maximum value and the absolute minimum value.
+Also in the diagram above, if the domain is defined as the open interval $(a,
+    b)$, then the function $f(x)$ only has the relative minimum value but not the
+absolute minimum value.
+
+From the diagram above, if the function is continuous in the interval $[a, b]$,
+we just have to make comparison between all the extreme points and vertices of
+the function to find the absolute maximum value and the absolute minimum value
+of the function.
+
+\input{exercises/Chapter 26/Practice 4.tex}
+\input{exercises/Chapter 26/Exercise 26.4.tex}
+
+\section{The Convexity and the Point of Inflection of Functions}
+
+For a curve $y = f(x)$
+\begin{enumerate}
+    \item In a given interval, if the tangent line of the curve is always above the
+          curve, then the curve convex up in the interval, as shown in the diagram below.
+          \begin{center}
+              \includegraphics[scale=0.25]{assets/26-12.png}
+          \end{center}
+    \item In a given interval, if the tangent line of the curve is always below the
+          curve, then the curve is convex down in the interval, as shown in the diagram
+          below.
+          \begin{center}
+              \includegraphics[scale=0.25]{assets/26-13.png}
+          \end{center}
+\end{enumerate}
+
+If two sides of a point on a curve of a function $y = f(x)$ changes their
+concavity, then the demarcation point is called the point of inflection of the
+curve.
+
+Now we discuss the way to determine the convexity and the point of inflection
+of a function. In the diagram below, the left side of the point $x = x_0$
+convex down, and the right side convex up.
+\begin{center}
+    \includegraphics[scale=0.25]{assets/26-14.png}
+\end{center}
+In the interval $(-\infty, x_0)$ that convex up, when the tangents to the curve cut the curve at $P_1$, $P_2$, and $P_3$ respectively from left to right, the gradients of the tangent lines $m_1$, $m_2$, and $m_3$ are decreasing, i.e. the gradient of the tangent $f'(x)$ is decreasing.
+
+In the interval $(x_0, \infty)$ that convex down, when the tangents to the
+curve cut the curve at $P_4$, $P_5$, and $P_6$ respectively from left to right,
+the gradients of the tangent lines $m_4$, $m_5$, and $m_6$ are increasing, i.e.
+the gradient of the tangent $f'(x)$ is increasing.
+
+We have the following theorem:
+\begin{center}
+    \framebox{
+        \parbox[t][2.7cm]{14cm}{ \addvspace{0.4cm} \hspace{0.4cm}Let function $f(x)$ has
+            second derivative $f''(x)$.
+            \begin{itemize}[leftmargin=0.8cm]
+                \item \parbox[t]{12.5cm}{If $f''(x) > 0$ in a given interval, then the curve is convex
+                          up;}
+                \item \parbox[t]{12.5cm}{If $f''(x) < 0$ in a given interval, then the curve is convex
+                          down.}
+            \end{itemize} }}
+\end{center}
+
+\input{exercises/Chapter 26/Practice 5.tex}
+\input{exercises/Chapter 26/Exercise 26.5.tex}
+
+\section{Curve Sketching}
+
+Having learnt the derivatives, we can use the concepts of the increasing and
+decreasing of a function, the convexity and the point of inflection of a
+function to sketch the curve of a function in a rather accurate way. Listed
+below are the steps to sketch the curve of a function:
+\begin{enumerate}
+    \item Find the point of intersections of the curve with the axes;
+    \item Solve the equation $f'(x) = 0$, and determine the intervals where the function
+          is increasing or decreasing and the extreme values;
+    \item Solve the equation $f''(x) = 0$, and determine the intervals where the curve is
+          convex up or convex down and the points of inflection;
+    \item Draw the curve according to the above information.
+\end{enumerate}
+The steps above are not necessarily to be followed in the order listed, and can be adjusted according to the actual situation.
+
+\input{exercises/Chapter 26/Practice 6.tex}
+\input{exercises/Chapter 26/Exercise 26.6.tex}
+
+\section{Rate of Change and Related Rate of Change}
+
+The derivative of the function $y = f(x)$ at the point $x = x_0$ is known as
+the rate of change of the dependent value $y$ with respect to the independent
+value $x$ at the point $x = x_0$. For example, $\dfrac{d y}{d x} = 3$ means
+that when $x$ increases by $1$ unit, $y$ increases by $3$ units, i.e. $y$ and
+$x$ are both changing, and they are changing in the ratio of $3:1$.
+
+The same can be said that the derivative of the area function $A = A(t)$ at the
+time $t = t_0$ is the rate of change of the area with respect to the time at
+the time $t = t_0$. When the rate of change of the area at $t = t_0$ is
+$\dfrac{d A}{d t} = 4$cm$^2$/s, it means that the area is increasing in the
+rate of 4 square centimetres per second; while $\dfrac{d A}{d t} = -4$cm$^2$/s
+means that the area is decreasing in the rate of 4 square centimetres per
+second.
+
+If multiple variables are correlated by a specific relationship, these
+variables are all changing with respect to time, then there must be some kind
+of bonds between their respective rate of changes. This relationship between
+the rate of changes is called the related rate of change. If $y = f(x)$ is the
+function of $x$, and $x$ changes with respect to $t$, then since $y$ is
+changing with respect to $x$, $y$ is also changing with respect to $t$. In
+other words, $y$ is also a function of the time $t$. HEnce, from the chain
+rule, we can obtain the following relationship:
+\begin{cequation}
+    \dfrac{dy}{dt} = \dfrac{dy}{dx} \cdot \dfrac{dx}{dt}
+\end{cequation}
+i.e. the rate of change of $y$ is correlated to the rate of change of $x$.
+
+\input{exercises/Chapter 26/Practice 7.tex}
+\input{exercises/Chapter 26/Exercise 26.7.tex}
+
+\section{Approximate Calculation}
+
+In the previous chapter, we have learnt that the derivative of the function $y
+    = f(x)$ is
+\begin{cequation}
+    \dfrac{dy}{dx} = \lim_{\Delta x \to 0}\dfrac{\Delta y}{\Delta x} = \lim_{\Delta x \to 0}\dfrac{f(x + \Delta x) - f(x)}{\Delta x}
+\end{cequation}
+From the definition of limit, we know that when $\Delta x$ is small enough,
+\begin{cequation}
+    \dfrac{\Delta y}{\Delta x} = \dfrac{\Delta y}{\Delta x} \approx \dfrac{f(x + \Delta x) - f(x)}{\Delta x}
+\end{cequation}
+Hence,
+\begin{center}
+    \framebox{
+        \parbox[t][1.2cm]{9cm}{ \addvspace{0.25cm} \centering $\Delta y \approx
+                \dfrac{dy}{dx}\Delta x$ }}
+\end{center}
+or $f(x + \Delta x) - f(x) \approx f'(x)\Delta x$, i.e.
+\begin{center}
+    \framebox{
+        \parbox[t][1.2cm]{9cm}{ \addvspace{0.45cm} \centering $f(x + \Delta x) \approx f(x)
+                + f'(x)\Delta x$ }}
+\end{center}
+
+The expression above is a simple formula for approximate calculation that can
+be used to find the approximate value of a function.
+\begin{center}
+    \includegraphics[scale=0.25]{assets/26-16.png}
+\end{center}
+
+\input{exercises/Chapter 26/Practice 8.tex}
+\input{exercises/Chapter 26/Exercise 26.8.tex}
+
+\newpage
+\input{exercises/Chapter 26/Revision Exercise 26.tex}
