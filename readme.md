@@ -874,6 +874,92 @@
 </details>
 </dd></dl></dd></dl>
 
+<dl><dd><dl><dd>
+<details>
+<summary>chapters</summary>
+
+- [26 Application of Differentiation.tex](<./数学/S3P2/chapters/26 Application of Differentiation.tex>)
+- [27 Indefinite Integrals.tex](<./数学/S3P2/chapters/27 Indefinite Integrals.tex>)
+- [28 Definite Integrals.tex](<./数学/S3P2/chapters/28 Definite Integrals.tex>)
+
+</details>
+</dd></dl></dd></dl>
+
+<dl><dd><dl><dd>
+<details>
+<summary>exercises</summary>
+
+<dl><dd><dl><dd><dl><dd>
+<details>
+<summary>Chapter 26</summary>
+
+- [Practice 1.tex](<./数学/S3P2/exercises/Chapter 26/Practice 1.tex>)
+- [Practice 2.tex](<./数学/S3P2/exercises/Chapter 26/Practice 2.tex>)
+- [Practice 3.tex](<./数学/S3P2/exercises/Chapter 26/Practice 3.tex>)
+- [Practice 4.tex](<./数学/S3P2/exercises/Chapter 26/Practice 4.tex>)
+- [Practice 5.tex](<./数学/S3P2/exercises/Chapter 26/Practice 5.tex>)
+- [Practice 6.tex](<./数学/S3P2/exercises/Chapter 26/Practice 6.tex>)
+- [Practice 7.tex](<./数学/S3P2/exercises/Chapter 26/Practice 7.tex>)
+- [Practice 8.tex](<./数学/S3P2/exercises/Chapter 26/Practice 8.tex>)
+- [Exercise 26.1.tex](<./数学/S3P2/exercises/Chapter 26/Exercise 26.1.tex>)
+- [Exercise 26.2.tex](<./数学/S3P2/exercises/Chapter 26/Exercise 26.2.tex>)
+- [Exercise 26.3.tex](<./数学/S3P2/exercises/Chapter 26/Exercise 26.3.tex>)
+- [Exercise 26.4.tex](<./数学/S3P2/exercises/Chapter 26/Exercise 26.4.tex>)
+- [Exercise 26.5.tex](<./数学/S3P2/exercises/Chapter 26/Exercise 26.5.tex>)
+- [Exercise 26.6.tex](<./数学/S3P2/exercises/Chapter 26/Exercise 26.6.tex>)
+- [Exercise 26.7.tex](<./数学/S3P2/exercises/Chapter 26/Exercise 26.7.tex>)
+- [Exercise 26.8.tex](<./数学/S3P2/exercises/Chapter 26/Exercise 26.8.tex>)
+- [Revision Exercise 26.tex](<./数学/S3P2/exercises/Chapter 26/Revision Exercise 26.tex>)
+
+</details>
+</dd></dl></dd></dl></dd></dl>
+
+<dl><dd><dl><dd><dl><dd>
+<details>
+<summary>Chapter 27</summary>
+
+- [Practice 1.tex](<./数学/S3P2/exercises/Chapter 27/Practice 1.tex>)
+- [Practice 2.tex](<./数学/S3P2/exercises/Chapter 27/Practice 2.tex>)
+- [Practice 3.tex](<./数学/S3P2/exercises/Chapter 27/Practice 3.tex>)
+- [Practice 4.tex](<./数学/S3P2/exercises/Chapter 27/Practice 4.tex>)
+- [Practice 5.tex](<./数学/S3P2/exercises/Chapter 27/Practice 5.tex>)
+- [Practice 6.tex](<./数学/S3P2/exercises/Chapter 27/Practice 6.tex>)
+- [Practice 7.tex](<./数学/S3P2/exercises/Chapter 27/Practice 7.tex>)
+- [Exercise 27.2a.tex](<./数学/S3P2/exercises/Chapter 27/Exercise 27.2a.tex>)
+- [Exercise 27.2b.tex](<./数学/S3P2/exercises/Chapter 27/Exercise 27.2b.tex>)
+- [Exercise 27.3a.tex](<./数学/S3P2/exercises/Chapter 27/Exercise 27.3a.tex>)
+- [Exercise 27.3b.tex](<./数学/S3P2/exercises/Chapter 27/Exercise 27.3b.tex>)
+- [Exercise 27.4.tex](<./数学/S3P2/exercises/Chapter 27/Exercise 27.4.tex>)
+- [Exercise 27.5.tex](<./数学/S3P2/exercises/Chapter 27/Exercise 27.5.tex>)
+- [Revision Exercise 27.tex](<./数学/S3P2/exercises/Chapter 27/Revision Exercise 27.tex>)
+
+</details>
+</dd></dl></dd></dl></dd></dl>
+
+<dl><dd><dl><dd><dl><dd>
+<details>
+<summary>Chapter 28</summary>
+
+- [Practice 2.tex](<./数学/S3P2/exercises/Chapter 28/Practice 2.tex>)
+- [Practice 3.tex](<./数学/S3P2/exercises/Chapter 28/Practice 3.tex>)
+- [Practice 4.tex](<./数学/S3P2/exercises/Chapter 28/Practice 4.tex>)
+- [Practice 5.tex](<./数学/S3P2/exercises/Chapter 28/Practice 5.tex>)
+- [Practice 6.tex](<./数学/S3P2/exercises/Chapter 28/Practice 6.tex>)
+- [Practice 7.tex](<./数学/S3P2/exercises/Chapter 28/Practice 7.tex>)
+- [Practice 8.tex](<./数学/S3P2/exercises/Chapter 28/Practice 8.tex>)
+- [Exercise 28.1.tex](<./数学/S3P2/exercises/Chapter 28/Exercise 28.1.tex>)
+- [Exercise 28.2.tex](<./数学/S3P2/exercises/Chapter 28/Exercise 28.2.tex>)
+- [Exercise 28.3.tex](<./数学/S3P2/exercises/Chapter 28/Exercise 28.3.tex>)
+- [Exercise 28.4.tex](<./数学/S3P2/exercises/Chapter 28/Exercise 28.4.tex>)
+- [Revision Exercise 28.tex](<./数学/S3P2/exercises/Chapter 28/Revision Exercise 28.tex>)
+
+</details>
+</dd></dl></dd></dl></dd></dl>
+
+
+</details>
+</dd></dl></dd></dl>
+
 
 </details>
 </dd></dl>
