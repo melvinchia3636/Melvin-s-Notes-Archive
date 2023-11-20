@@ -1,0 +1,218 @@
+\documentclass{report}
+
+\usepackage[total={7in,9in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{enumitem}
+
+\newcommand{\sol}{\vspace{1em}\\\textbf{Solution.}\vspace{0.5em}}
+\newcommand{\qed}{‎\\‎\hfill$\blacksquare$\vspace{1em}}
+\allowdisplaybreaks
+
+\begin{document}
+\begin{center}
+    \Large{How to Prove It: A Structured Approach, Second Edition}\\
+    \vspace{1em}
+    \Large{\textbf{Exercises for Section 1.2}}\vspace{1em}
+\end{center}
+\begin{enumerate}[leftmargin=*]
+    \item 1. Make truth tables for the following formulas:
+          \begin{enumerate}
+              \item $\neg P \vee Q$. \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccc}
+                            $P$ & $Q$ & $\neg P$ & $\neg P \vee Q$ \\
+                            \hline
+                            T   & T   & F        & T               \\
+                            T   & F   & F        & F               \\
+                            F   & T   & T        & T               \\
+                            F   & F   & T        & T
+                        \end{tabular}
+                    \end{center}\qed
+
+              \item $(S \vee G) \wedge(\neg S \vee \neg G)$.\sol{}
+                    \begin{center}
+                        \begin{tabular}{ccccccc}
+                            $S$ & $G$ & $\neg S$ & $\neg G$ & $S \vee G$ & $\neg S \vee \neg G$ & $(S \vee G) \wedge(\neg S \vee \neg G)$ \\
+                            \hline
+                            T   & T   & F        & F        & T          & F                    & F                                       \\
+                            T   & F   & F        & T        & T          & T                    & T                                       \\
+                            F   & T   & T        & F        & T          & T                    & T                                       \\
+                            F   & F   & T        & T        & F          & T                    & F
+                        \end{tabular}
+                    \end{center}\qed
+          \end{enumerate}
+    \item Make truth tables for the following formulas:
+          \begin{enumerate}
+              \item $\neg[P \wedge(Q \vee \neg P)]$. \sol{}
+
+                    \begin{center}
+                        \begin{tabular}{cccccccc}
+                            $P$ & $Q$ & $\neg P$ & $Q \vee \neg P$ & $P \wedge(Q \vee \neg P)$ & $\neg[P \wedge(Q \vee \neg P)]$ \\
+                            \hline
+                            T   & T   & F        & T               & T                         & F                               \\
+                            T   & F   & F        & F               & F                         & T                               \\
+                            F   & T   & T        & T               & F                         & T                               \\
+                            F   & F   & T        & T               & F                         & T
+                        \end{tabular}
+                    \end{center}\qed
+
+              \item $(P \vee Q) \wedge(\neg P \vee R)$.
+                    \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccccccc}
+                            $P$ & $Q$ & $R$ & $\neg P$ & $P \vee Q$ & $\neg P \vee R$ & $(P \vee Q) \wedge(\neg P \vee R)$ \\
+                            \hline
+                            T   & T   & T   & F        & T          & T               & T                                  \\
+                            T   & T   & F   & F        & T          & F               & F                                  \\
+                            T   & F   & T   & F        & T          & T               & T                                  \\
+                            T   & F   & F   & F        & T          & F               & F                                  \\
+                            F   & T   & T   & T        & T          & T               & T                                  \\
+                            F   & T   & F   & T        & T          & T               & T                                  \\
+                            F   & F   & T   & T        & F          & T               & F                                  \\
+                            F   & F   & F   & T        & F          & T               & F
+                        \end{tabular}
+                    \end{center}\qed
+          \end{enumerate}
+
+    \item In this exercise we will use the symbol + to mean exclusive or. In other words,
+          $P+Q$ means " $P$ or $Q$, but not both."
+          \begin{enumerate}
+              \item Make a truth table for $P+Q$. \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccc}
+                            $P$ & $Q$ & $P+Q$ \\
+                            \hline
+                            T   & T   & F     \\
+                            T   & F   & T     \\
+                            F   & T   & T     \\
+                            F   & F   & F
+                        \end{tabular}
+                    \end{center}\qed
+
+              \item Find a formula using only the connectives $\wedge, \vee$, and $\neg$ that is
+                    equivalent to $P+Q$. Justify your answer with a truth table. \sol{}
+                    \[
+                        P+Q \equiv (P \vee Q) \wedge \neg(P \wedge Q)
+                    \]
+                    \begin{center}
+                        \begin{tabular}{cccccccc}
+                            $P$ & $Q$ & $P \wedge Q$ & $\neg(P \wedge Q)$ & $P \vee Q$ & $(P \vee Q) \wedge \neg(P \wedge Q)$ & $P+Q$ \\
+                            \hline
+                            T   & T   & T            & F                  & T          & F                                    & F     \\
+                            T   & F   & F            & T                  & T          & T                                    & T     \\
+                            F   & T   & F            & T                  & T          & T                                    & T     \\
+                            F   & F   & F            & T                  & F          & F                                    & F
+                        \end{tabular}
+                    \end{center}\qed
+          \end{enumerate}
+
+    \item Find a formula using only the connectives $\wedge$ and $\neg$ that is
+          equivalent to $P \vee Q$. Justify your answer with a truth table. \sol{}
+          \[
+              P \vee Q \equiv \neg(\neg P \wedge \neg Q)
+          \]
+          \begin{center}
+              \begin{tabular}{ccccccc}
+                  $P$ & $Q$ & $\neg P$ & $\neg Q$ & $\neg P \wedge \neg Q$ & $\neg(\neg P \wedge \neg Q)$ & $P \vee Q$ \\
+                  \hline
+                  T   & T   & F        & F        & F                      & T                            & T          \\
+                  T   & F   & F        & T        & F                      & T                            & T          \\
+                  F   & T   & T        & F        & F                      & T                            & T          \\
+                  F   & F   & T        & T        & T                      & F                            & F
+              \end{tabular}
+          \end{center}\qed
+
+    \item Some mathematicians use the symbol $\downarrow$ to mean nor. In other words, $P
+              \downarrow Q$ means "neither $P$ nor $Q$."
+          \begin{enumerate}
+              \item Make a truth table for $P \downarrow Q$. \sol{}
+                    \begin{center}
+                        \begin{tabular}{ccc}
+                            $P$ & $Q$ & $P \downarrow Q$ \\
+                            \hline
+                            T   & T   & F                \\
+                            T   & F   & F                \\
+                            F   & T   & F                \\
+                            F   & F   & T
+                        \end{tabular}
+                    \end{center}\qed
+
+              \item Find a formula using only the connectives $\wedge, \vee$, and $\neg$ that is
+                    equivalent to $P \downarrow Q$. \sol{}
+                    \[
+                        P \downarrow Q \equiv \neg(P \vee Q)
+                    \]
+                    \begin{center}
+                        \begin{tabular}{ccccccc}
+                            $P$ & $Q$ & $P \vee Q$ & $\neg(P \vee Q)$ & $P \downarrow Q$ \\
+                            \hline
+                            T   & T   & T          & F                & F                \\
+                            T   & F   & T          & F                & F                \\
+                            F   & T   & T          & F                & F                \\
+                            F   & F   & F          & T                & T
+                        \end{tabular}
+                    \end{center}\qed
+
+              \item Find formulas using only the connective $\downarrow$ that are equivalent to
+                    $\neg P$, $P \vee Q$, and $P \wedge Q$. \sol{}
+                    \[
+                        \neg P \equiv \neg (P \wedge P) \equiv P \downarrow P
+                    \]
+                    \[
+                        P \vee Q \equiv \neg (P \downarrow Q) \equiv (P \downarrow Q) \downarrow (P \downarrow Q)
+                    \]
+                    \[
+                        P \wedge Q \equiv \neg\neg (P \wedge Q) \equiv \neg(P \downarrow Q) \equiv (P \downarrow Q) \downarrow (P \downarrow Q)
+                    \] \qed
+          \end{enumerate}
+
+    \item Some mathematicians write $P \mid Q$ to mean " $P$ and $Q$ are not both true."
+          (This connective is called nand, and is used in the study of circuits in
+          computer science.)
+          \begin{enumerate}
+              \item Make a truth table for $P \mid Q$. \sol{}
+                    \begin{center}
+                        \begin{tabular}{ccc}
+                            $P$ & $Q$ & $P \mid Q$ \\
+                            \hline
+                            T   & T   & F          \\
+                            T   & F   & T          \\
+                            F   & T   & T          \\
+                            F   & F   & T
+                        \end{tabular}
+                    \end{center}\qed
+
+              \item Find a formula using only the connectives $\wedge, \vee$, and $\neg$ that is
+                    equivalent to $P \mid Q$. \sol{}
+                    \[
+                        P \mid Q \equiv \neg(P \wedge Q)
+                    \] \qed
+
+              \item Find formulas using only the connective | that are equivalent to $\neg P$, $P
+                        \vee Q$, and $P \wedge Q$.\sol{}
+                    \[
+                        \neg P \equiv P \mid P
+                    \]
+                    \[
+                        P \vee Q \equiv \neg P \mid \neg Q \equiv (P \mid P) \mid (Q \mid Q)
+                    \]
+                    \[
+                        P \wedge Q \equiv \neg(P \mid Q) \equiv (P \mid Q) \mid (P \mid Q)
+                    \] \qed
+          \end{enumerate}
+    \item Use truth tables to determine whether or not the arguments in exercise 7 of
+          Section 1.1 are valid.
+    \item Use truth tables to determine which of the following formulas are equivalent to
+          each other:
+          \begin{enumerate}
+              \item $(P \wedge Q) \vee(\neg P \wedge \neg Q)$.
+              \item $\neg P \vee Q$.
+              \item $(P \vee \neg Q) \wedge(Q \vee \neg P)$.
+              \item $\neg(P \vee Q)$.
+              \item $(Q \wedge P) \vee \neg P$.
+          \end{enumerate}
+    \item 9. Use truth tables to determine which of these statements are tautologies, which are contradictions, and which are neither:
+\end{enumerate}
+\end{document}
