@@ -5,9 +5,11 @@
 \usepackage{amssymb}
 \usepackage{multicol}
 \usepackage{enumitem}
+\usepackage[light,math]{iwona}
+\usepackage[T1]{fontenc}
 
 \newcommand{\sol}{\vspace{1em}\\\textbf{Solution.}\vspace{0.5em}}
-\newcommand{\qed}{‎\\‎\hfill$\blacksquare$\vspace{1em}}
+\newcommand{\qed}{\ \\\strut\hfill$\blacksquare$\vspace{1em}}
 \allowdisplaybreaks
 
 \begin{document}
@@ -57,7 +59,7 @@
                             F   & F   & T        & T               & F                         & T
                         \end{tabular}
                     \end{center}\qed
-
+                    \newpage
               \item $(P \vee Q) \wedge(\neg P \vee R)$.
                     \sol{}
                     \begin{center}
@@ -73,7 +75,7 @@
                             F   & F   & T   & T        & F          & T               & F                                  \\
                             F   & F   & F   & T        & F          & T               & F
                         \end{tabular}
-                    \end{center}\qed
+                    \end{center}\vspace{-2em}\qed
           \end{enumerate}
 
     \item In this exercise we will use the symbol + to mean exclusive or. In other words,
@@ -202,6 +204,7 @@
                         P \wedge Q \equiv \neg(P \mid Q) \equiv (P \mid Q) \mid (P \mid Q)
                     \] \qed
           \end{enumerate}
+
     \item Use truth tables to determine whether or not the arguments in exercise 7 of
           Section 1.1 are valid.
           \begin{enumerate}
@@ -306,6 +309,7 @@
                     is false, hence the argument is invalid.\qed
           \end{enumerate}
 
+          \newpage
     \item Use truth tables to determine which of the following formulas are equivalent to
           each other:
           \begin{enumerate}
@@ -374,8 +378,9 @@
                         \end{tabular}
                     \end{center}
           \end{enumerate}
-          Hence, (a) and (c) are equivalent, (b) and (e) are equivalent. \qed
+          Hence, (a) and (c) are equivalent, (b) and (e) are equivalent.\qed
 
+          \newpage
     \item Use truth tables to determine which of these statements are tautologies, which
           are contradictions, and which are neither:
           \begin{enumerate}
@@ -484,6 +489,7 @@
                     \end{center}\qed
 
           \end{enumerate}
+
     \item Use the laws stated in the text to find simpler formulas equivalent to these
           formulas. (See Examples 1.2.5 and 1.2.7.)
           \begin{enumerate}
@@ -502,6 +508,7 @@
                                                            & \equiv P                        & \text{(identity law)}
                     \end{align*} \qed
 
+                    \newpage
               \item $\neg(P \wedge \neg Q) \vee(\neg P \wedge Q)$.
                     \sol{}
                     \begin{align*}
@@ -544,7 +551,7 @@
                                                                    & \equiv P \wedge (R \vee \neg R) \vee (\neg R \wedge Q)            & \text{(distributive law)} \\
                                                                    & \equiv P \wedge \top \vee (\neg R \wedge Q)                       & \text{(complement law)}   \\
                                                                    & \equiv P \vee (\neg R \wedge Q)                                   & \text{(identity law)}     \\
-                    \end{align*} \qed
+                    \end{align*}\vspace{-2em}\qed
           \end{enumerate}
 
     \item Use the first DeMorgan's law and the double negation law to derive the second
@@ -583,6 +590,18 @@
                   $\mathrm{T}$        & $\mathrm{T}$ & $\mathrm{T}$
               \end{tabular}
           \end{center}
+          ‎\sol{}
+
+          Take the disjunction of all the cases where the result is true.
+          \begin{align*}
+              (\neg P \wedge \neg Q) \vee (P \wedge \neg Q) \vee (P \wedge Q) & \equiv \neg Q \wedge (\neg P \vee P) \vee (P \wedge Q) & \text{(distributive law)} \\
+                                                                              & \equiv \neg Q \wedge \top \vee (P \wedge Q)            & \text{(complement law)}   \\
+                                                                              & \equiv \neg Q \vee (P \wedge Q)                        & \text{(identity law)}     \\
+                                                                              & \equiv (\neg Q \vee P) \wedge (\neg Q \vee Q)          & \text{(distributive law)} \\
+                                                                              & \equiv (\neg Q \vee P) \wedge \top                     & \text{(complement law)}   \\
+                                                                              & \equiv \neg Q \vee P                                   & \text{(identity law)}
+          \end{align*}\vspace{-2em}\qed
+
     \item Find a formula involving the connectives $\wedge, \vee$, and $\neg$ that has
           the following truth table:
           \begin{center}
@@ -594,5 +613,14 @@
                   $\mathrm{T}$        & $\mathrm{T}$ & $\mathrm{F}$
               \end{tabular}
           \end{center}
-\end{enumerate}
+          ‎\sol{}
+
+          Take the conjunction of all the cases where the result is true
+          \begin{align*}
+              (\neg P \wedge Q) \vee (P \wedge \neg Q) & \equiv [(\neg P \wedge Q) \vee P] \wedge [(\neg P \wedge Q) \vee \neg Q]                        & \text{(distributive law)} \\
+                                                       & \equiv [(\neg P \vee P) \wedge (Q \vee P)] \wedge [(\neg P \vee \neg Q) \wedge (Q \vee \neg Q)] & \text{(distributive law)} \\
+                                                       & \equiv [\top \wedge (Q \vee P)] \wedge [(\neg P \vee \neg Q) \wedge \top]                       & \text{(complement law)}   \\
+                                                       & \equiv (P \vee Q) \wedge (\neg P \vee \neg Q)                                                   & \text{(identity law)}
+          \end{align*}
+\end{enumerate}\qed
 \end{document}
