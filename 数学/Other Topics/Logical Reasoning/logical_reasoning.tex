@@ -106,7 +106,7 @@ Among the propositions above, $p$ and $q$ are true propositions, while $r$ and $
               t: & \ \text{For any real number $x$, $2x + 1 > x$.}
           \end{flalign*}
 \end{enumerate}
-\begin{enumerate}[label=\textbf{Sol.}]
+\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
     \item \begin{enumerate}[label=]
               \item $p$ is a true proposition. The square of any number is non-negative.
               \item $q$ is a true proposition. The parabola $y = x^2 + 1$ is on top of the $x$-axis and its vertex is $(0, 1)$.
@@ -126,14 +126,14 @@ Among the propositions above, $p$ and $q$ are true propositions, while $r$ and $
               t: & \ \text{The line $3x - 4y + 1 = 0$ passes through the origin.}
           \end{flalign*}
 \end{enumerate}
-\begin{enumerate}[label=\textbf{Sol.}]
+\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
     \item \begin{enumerate}[label=]
               \item $p = 1 \qquad q = 1 \qquad r = 0 \qquad s = 1 \qquad t = 0$
           \end{enumerate}
 \end{enumerate}
 
 \subsection*{Exercise 11a}
-\begin{enumerate}
+\begin{enumerate}[leftmargin=*]
     \item State whether the following sentences are propositions.
           \begin{enumerate}[label=, leftmargin=*]
               \item $p$: The equation $x^2 - 5x + 6 = 0$ has two positive real roots.
@@ -155,7 +155,7 @@ Among the propositions above, $p$ and $q$ are true propositions, while $r$ and $
           \end{enumerate}
 \end{enumerate}
 
-\section*{Compound Propositions}
+\section{Compound Propositions}
 
 Lets consider the following propositions:
 \begin{enumerate}[label=]
@@ -182,14 +182,14 @@ propositions $r$, $s$, and $t$ above are compound propositions.
 \subsection*{Inverse Proposition and its Truth Table}
 
 Let $p$ be a proposition. Adding a logical connective "not" to $p$ gives us a
-new proposition, that is, the inverse proposition of $p$, denoted by $\sim p$,
+new proposition, that is, the inverse proposition of $p$, denoted by $\neg p$,
 read as "not $p$".
 
-The meaning of the inverse proposition $\sim p$ is the \textbf{negation} of the
+The meaning of the inverse proposition $\neg p$ is the \textbf{negation} of the
 original proposition $p$.
 
 \vspace{0.5cm}
-\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*]
+\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=3]
     \item Write down the inverse proposition of the following propositions:
           \begin{enumerate}[label=, leftmargin=*]
               \item $p$: $2 + 2 = 4$.
@@ -199,26 +199,619 @@ original proposition $p$.
               \item $t$: The base number $a$ of $\log_a x$ can be a negative number.
           \end{enumerate}
 \end{enumerate}
-\begin{enumerate}[label=\textbf{Sol.}]
+\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
     \item \begin{enumerate}[label=, leftmargin=*]
-              \item $\sim p$: $2 + 2 \neq 4$.
-              \item $\sim q$: 25 is not a multiple of 5.
-              \item $\sim r$: The equation $y = 3x^3 - x$ is not an odd function.
-              \item $\sim s$: The square of 15 is not 235.
-              \item $\sim t$: The base number $a$ of $\log_a x$ cannot be a negative number.
+              \item $\neg p$: $2 + 2 \neq 4$.
+              \item $\neg q$: 25 is not a multiple of 5.
+              \item $\neg r$: The equation $y = 3x^3 - x$ is not an odd function.
+              \item $\neg s$: The square of 15 is not 235.
+              \item $\neg t$: The base number $a$ of $\log_a x$ cannot be a negative number.
           \end{enumerate}
 \end{enumerate}
 
-Apparently, if $p$ is a true proposition, then $\sim p$ is a false proposition.
-If $p$ is a false proposition, then $\sim p$ is a true proposition. The truth
-value of $p$ and $\sim p$ are opposite to each other, and their truth table is
+Apparently, if $p$ is a true proposition, then $\neg p$ is a false proposition.
+If $p$ is a false proposition, then $\neg p$ is a true proposition. The truth
+value of $p$ and $\neg p$ are opposite to each other, and their truth table is
 as follows:
 \begin{center}
     \begin{NiceTabular}{|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines]
-        $p$ & $\sim p$ \\
+        $p$ & $\neg p$ \\
         1   & 0        \\
         0   & 1        \\
     \end{NiceTabular}
 \end{center}
+This kind of table consisting of true and false that is used to analyse a compound proposition is called a \textbf{truth table}.
 
+\vspace{0.5cm}
+\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=4]
+    \item Write down the inverse proposition of the following propositions:
+          \begin{enumerate}[label=, leftmargin=*]
+              \item $s$: All integers are positive numbers.
+              \item $t$: THe square root of 4 must be 2.
+              \item $u$: All equilateral triangles are isosceles triangles.
+              \item $v$: All even numbers are divisible by 3.
+          \end{enumerate}
+\end{enumerate}
+\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+    \item \begin{enumerate}[label=, leftmargin=*]
+              \item $\neg s$: There exists an integer that is not a positive number.
+              \item $\neg t$: The square root of 4 is not necessary 2.
+              \item $\neg u$: There exists an equilateral triangle that is not an isosceles triangle.
+              \item $\neg v$: All even numbers are not divisible by 3.
+          \end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}[label=\textbf{NOTE: }, leftmargin=*]
+    \item In the example above, proposition $s$ is a false proposition, expressing $\neg
+              s$ as ``There exists an integer that is not a positive number'' is not
+          accurate. Therefore caution must be taken that either the proposition or its
+          inverse proposition must be true, but not both, and they cannot be both false
+          either.
+\end{enumerate}
+
+\subsection*{Exercise 11b}
+\begin{enumerate}[leftmargin=*]
+    \item Write down the inverse proposition of the following propositions:
+          \begin{enumerate}[label=, leftmargin=*]
+              \item $p$: The sum of two sides of a triangle is greater than the third side.
+              \item $q$: The smallest natural number is 1.
+              \item $r$: $\pi$ belongs to the set of irrational numbers.
+              \item $s$: The equation $x^2 + 2x + 2 = 0$ has real roots.
+              \item $t$: Two lines with equal gradient are not necessary parallel to each other.
+              \item $u$: All the numbers with the last digit 3 are divisible by 3.
+              \item $v$: Regular polygons have equal sides.
+          \end{enumerate}
+    \item Write down the truth value of the propositions and their inverse propositions
+          in Question 1. If the proposition is true, give a reason. If the proposition
+\end{enumerate}
+
+\subsection*{Conjunctive Proposition and its Truth Table}
+
+Let $p$ and $q$ be two propositions. Adding a logical connective "and" to $p$
+and $q$ gives us a new proposition, that is, the conjunctive proposition of $p$
+and $q$, denoted by $p \land q$, read as "$p$ and $q$". In the field of
+Mathematics, $p \land q$ is also read as the \textbf{conjunction} of $p$ and
+$q$.
+
+\begin{enumerate}[label=\indent For example, leftmargin=*]
+    \item $p$: The weather is clear today.
+
+          $q$: Today is a warm day.
+
+          $p \land q$: The weather is clear and warm today.
+\end{enumerate}
+
+The definition of the conjunctive proposition $p \land q$ is that when $p$ and
+$q$ are both true, then $p \land q$ is true, otherwise $p \land q$ is false.
+
+The truth table of $p \land q$ is as follows:
+\begin{center}
+    \begin{NiceTabular}{|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines]
+        $p$ & $q$ & $p \land q$ \\
+        1   & 1   & 1           \\
+        1   & 0   & 0           \\
+        0   & 1   & 0           \\
+        0   & 0   & 0           \\
+    \end{NiceTabular}
+\end{center}
+
+\vspace{0.5cm}
+\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=5]
+    \item Write down the conjunctive proposition of the following pairs of propositions:
+          \begin{enumerate}[label=(\alph*), leftmargin=*]
+              \item $p$: 9 is an odd number.
+
+                    $q$: 9 is a composite number.
+
+              \item $p$: A trapezium has two parallel sides.
+
+                    $q$: A trapezium has at least two equal sides.
+
+              \item $p$: The equation $x^2 - 2x + 1 = 0$ has two distinct roots.
+
+                    $q$: The two roots of the equation $x^2 - 2x + 1 = 0$ are both negative numbers.
+
+              \item $p$: The probability of a sure event is 1.
+
+                    $q$: The probability of an impossible event is 0.
+          \end{enumerate}
+\end{enumerate}
+\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+    \item \begin{enumerate}[label=, leftmargin=*]
+              \item $p \land q$: 9 is an odd number and is a composite number.
+              \item $p \land q$: A trapezium has two parallel sides and has at least two equal sides.
+              \item $p \land q$: The equation $x^2 - 2x + 1 = 0$ has two distinct roots and the two roots are both negative numbers.
+              \item $p \land q$: The probability of a sure event is 1 and the probability of an impossible event is 0.
+          \end{enumerate}
+\end{enumerate}
+\vspace{0.1cm}
+\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=6]
+    \item Write down the truth value of the pairs of propositions and their conjunctive
+          propositions in Question 5.
+\end{enumerate}
+\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+    \item \begin{enumerate}[label=, leftmargin=*]
+              \item $p = 1 \qquad q = 1 \qquad p \land q = 1$
+              \item $p = 1 \qquad q = 0 \qquad p \land q = 0$
+              \item $p = 0 \qquad q = 0 \qquad p \land q = 0$
+              \item $p = 0 \qquad q = 0 \qquad p \land q = 0$
+          \end{enumerate}
+\end{enumerate}
+
+\subsection*{Exercise 11c}
+\begin{enumerate}[leftmargin=*]
+    \item Write down the conjunctive proposition of the following pairs of propositions:
+          \begin{enumerate}[label=(\alph*), leftmargin=*]
+              \item $p$: Four sides of a square are equal.
+
+                    $q$: Four angles of a square are equal.
+
+              \item $p$: There exists the smallest element in the set of natural numbers.
+
+                    $q$: There exists the largest element in the set of natural numbers.
+
+              \item $p$: The sum of two sides of a triangle is greater than the third side.
+
+                    $q$: The difference between two sides of a triangle is less than the third side.
+
+              \item $p$: The sign of the two roots of the equation $x^2 - 9 = 0$ are different.
+
+                    $q$: The absolute values of the two roots of the equation $x^2 - 9 = 0$ are different.
+
+              \item $p$: The solution set of the inequality $x^2 - 4x + 5 > 0$ is a set of positive real numbers.
+
+                    $q$: The solution set of the inequality $x^2 - 4x + 5 < 0$ is $\emptyset$.
+          \end{enumerate}
+
+    \item Write down the truth value of the pairs of propositions and their conjunctive
+          propositions in Question 1.
+
+    \item Given that $p = 1$, $q = 0$, $r = 0$, and $s = 1$, write down the truth value
+          of $(\neg p) \land (\neg q)$, $(\neg r) \land s$, and $(\neg q) \land (\neg
+              r)$, $(\neg p) \land (\neg s)$.
+\end{enumerate}
+
+\subsection*{Disjunctive Proposition and its Truth Table}
+
+Let $p$ and $q$ be two propositions. Adding a logical connective "or" to $p$
+and $q$ gives us a new proposition, that is, the disjunctive proposition of $p$
+and $q$, denoted by $p \lor q$, read as "$p$ or $q$". In the field of
+Mathematics, $p \lor q$ is also read as the \textbf{disjunction} of $p$ and
+$q$.
+
+The definition of the disjunctive proposition $p \lor q$ is that when either
+$p$ or $q$ is true, then $p \lor q$ is true. The only case when $p \lor q$ is
+false is when $p$ and $q$ are both false.
+
+The truth table of $p \lor q$ is as follows:
+\begin{center}
+    \begin{NiceTabular}{|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines]
+        $p$ & $q$ & $p \lor q$ \\
+        1   & 1   & 1          \\
+        1   & 0   & 1          \\
+        0   & 1   & 1          \\
+        0   & 0   & 0          \\
+    \end{NiceTabular}
+\end{center}
+\begin{enumerate}[label=\indent For example, leftmargin=*]
+    \item $p$: I will play basketball tomorrow.
+
+          $q$: I will go swimming tomorrow.
+
+          $p \lor q$: I will play basketball or go swimming tomorrow.
+\end{enumerate}
+
+If I said to you that I will play basketball or go swimming tomorrow, and I
+actually were to do one of them, then $p \lor q$ is undoubtedly true. If I were
+to play basketball but not go swimming, then you can't say I am lying to you,
+hence $p \lor q$ is still true. Only if I were to do neither of them, then you
+can say I am lying to you, hence $p \lor q$ is false. This matches what are
+being shown in the truth table.
+\begin{enumerate}[label=\textbf{NOTE: }, leftmargin=*]
+    \item In our daily life, sometimes the word ``or'' might have different meaning than
+          the one in the truth table. Take the word ``or'' in the restaurant menu as an
+          example, it means that only one of the two choices can be chosen, ``coffee or
+          tea'' means that if you choose coffee, you cannot choose tea, and vice versa.
+          All the propositions that will be mentioned in the later part of this chapter
+          are using the meaning of ``or'' in the truth table.
+\end{enumerate}
+
+\vspace{0.5cm}
+\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=7]
+    \item Write down the disjunctive proposition of the following pairs of propositions:
+          \begin{enumerate}[label=(\alph*), leftmargin=*]
+              \item $p$: 2 is a natural number.
+
+                    $q$: 2 is an even number.
+
+              \item $p$: The equation $x^2 + 4x + 3 = 0$ has two distinct real roots.
+
+                    $q$: The equation $x^2 + 4x + 3 = 0$ has two equal real roots.
+
+              \item $p$: The function $y = x^2 + 4x + 3$ has a maximum value.
+
+                    $q$: The function $y = x^2 + 4x + 3$ has a minimum value.
+
+              \item $p$: The sum of interior angles of a quadrilateral is $180^\circ$.
+
+                    $q$: The sum of exterior angles of a quadrilateral is $540^\circ$.
+          \end{enumerate}
+\end{enumerate}
+\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+    \item \begin{enumerate}[label=, leftmargin=*]
+              \item $p \lor q$: 2 is either a natural number, or an even number.
+              \item $p \lor q$: The equation $x^2 + 4x + 3 = 0$ has either two distinct real roots, or two equal real roots.
+              \item $p \lor q$: The function $y = x^2 + 4x + 3$ has either a maximum value or a minimum value.
+              \item $p \lor q$: The sum of interior angles of a quadrilateral is either $180^\circ$, or $540^\circ$.
+          \end{enumerate}
+\end{enumerate}
+\vspace{0.1cm}
+\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=8]
+    \item Write down the truth value of the pairs of propositions and their disjunctive
+          propositions in Question 7.
+\end{enumerate}
+\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+    \item \begin{enumerate}[label=, leftmargin=*]
+              \item $p = 1 \qquad q = 1 \qquad p \lor q = 1$
+              \item $p = 1 \qquad q = 0 \qquad p \lor q = 1$
+              \item $p = 0 \qquad q = 1 \qquad p \lor q = 1$
+              \item $p = 0 \qquad q = 0 \qquad p \lor q = 0$
+          \end{enumerate}
+\end{enumerate}
+
+\subsection*{Exercise 11d}
+\begin{enumerate}[leftmargin=*]
+    \item Write down the disjunctive proposition of the following pairs of propositions:
+          \begin{enumerate}[label=(\alph*), leftmargin=*]
+              \item $p$: The diagonals of a rhombus are perpendicular to each other.
+
+                    $q$: The diagonals of a rhombus bisects each other.
+
+              \item $p$: The diagonals of a rectangle are equal.
+
+                    $q$: The diagonals of a rectangle are perpendicular to each other.
+
+              \item $p$: The square of an even number is an odd number.
+
+                    $q$: The square of an even number is an even number.
+          \end{enumerate}
+
+    \item Write down the truth value of the pairs of propositions and their conjunctive
+          propositions in Question 1.
+
+    \item When $p \lor q = 0$, what is the truth value of $p \land q$? Explain your
+          answer.
+
+    \item When $p \land q = 0$, can the truth value of $p \lor q$ be determined? Explain
+          your answer.
+\end{enumerate}
+
+\section{Truth Table and Logical Equivalence}
+
+\subsection*{Truth Table}
+
+Regardless of the complexity of a proposition, its truth value in any case can
+always be calculated using a truth table. \vspace{0.5cm}
+\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=9]
+    \item Construct a truth table for $\neg(p\land\neg q)$.
+\end{enumerate}
+\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+    \item
+          \begin{NiceTabular}{|c|c|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
+              $p$ & $q$ & $\neg q$ & $p \land \neg q$ & $\neg(p \land \neg q)$ \\
+              1   & 1   & 0        & 0                & 1                      \\
+              1   & 0   & 1        & 1                & 0                      \\
+              0   & 1   & 0        & 0                & 1                      \\
+              0   & 0   & 1        & 0                & 1                      \\
+          \end{NiceTabular}
+\end{enumerate}
+
+The steps of constructing the table are as follows:
+\begin{enumerate}[leftmargin=*, label=\indent(\arabic*)]
+    \item The propositions $p$ and $q$ has two possibilities each, so when combining
+          them, there are $2 \times 2 = 4$ possibilities.
+    \item Find the truth value of $\neg q$, it is the opposite of $q$.
+    \item Find the conjunction of $p$ and $\neg q$, i.e. $p \land \neg q$. According to
+          the truth table of $p \land q$, when $p$ and $q$ are both true, $p \land q$ is
+          true, otherwise $p \land q$ is false.
+    \item Find the truth value of $\neg(p \land \neg q)$, it is the opposite of $p \land
+              \neg q$.
+\end{enumerate}
+
+\vspace{0.5cm}
+\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=10]
+    \item Construct a truth table for $(p \lor \neg q) \land q$.
+\end{enumerate}
+\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+    \item
+          \begin{NiceTabular}{|c|c|c|c|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
+              $p$ & $q$ & $\neg q$ & $p \lor \neg q$ & $(p \lor \neg q) \land q$ \\
+              1   & 1   & 0        & 1               & 1                         \\
+              1   & 0   & 1        & 1               & 0                         \\
+              0   & 1   & 0        & 0               & 0                         \\
+              0   & 0   & 1        & 1               & 0                         \\
+          \end{NiceTabular}
+\end{enumerate}
+
+Steps:
+\begin{enumerate}[leftmargin=*, label=\indent(\arabic*)]
+    \item Write down the combinations of the truth values of $p$ and $q$.
+    \item Find the truth value of $\neg q$.
+    \item Find the truth value of $p \lor \neg q$. According to the truth table of $p
+              \lor q$, When both $p$ and $q$ are false, $p \lor q$ is false, otherwise true.
+    \item Find the truth value of $(p \lor \neg q) \land q$.
+\end{enumerate}
+
+If a compound proposition is true in all cases, then this proposition is called
+a \textbf{tautology}. On the other hand, if a compound proposition is false in
+all cases, then this proposition is called a \textbf{contradiction}. For
+example,
+
+$p \lor \neg p$ is a tautology, its truth table is as follows:
+\begin{center}
+    \begin{NiceTabular}{|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
+        $p$ & $\neg p$ & $p \lor \neg p$ \\
+        1   & 0        & 1               \\
+        0   & 1        & 1               \\
+    \end{NiceTabular}
+\end{center}
+
+$p \land \neg p$ is a contradiction, its truth table is as follows:
+\begin{center}
+    \begin{NiceTabular}{|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
+        $p$ & $\neg p$ & $p \land \neg p$ \\
+        1   & 0        & 0                \\
+        0   & 1        & 0                \\
+    \end{NiceTabular}
+\end{center}
+
+\subsection*{Exercise 11e}
+\begin{enumerate}[leftmargin=*]
+    \item Construct a truth table for each of the following propositions:
+          \begin{enumerate}[leftmargin=*]
+              \item $\neg p \wedge q$
+              \item $\neg(p \vee q)$
+              \item $\neg(p \vee \neg q)$
+              \item $(\neg p \vee q) \wedge p$
+          \end{enumerate}
+    \item Determine whether the following propositions are tautologies or contradictions:
+          \begin{enumerate}[leftmargin=*]
+              \item $p \wedge \neg q$
+              \item $p \vee \neg(p \wedge q)$
+              \item $(p \wedge q) \wedge \neg(p \vee q)$
+              \item $(p \wedge \neg p) \wedge q$
+          \end{enumerate}
+    \item Construct a truth table for each of the following propositions:
+          \begin{enumerate}[leftmargin=*]
+              \item $p \wedge(q \vee r)$
+              \item $(\mathrm{p} \wedge q) \vee(p \wedge r)$
+          \end{enumerate}
+\end{enumerate}
+
+\subsection*{Logical Equivalence}
+
+Let $P$ and $Q$ be two compound propositions, if $P$ and $Q$ have the same
+truth table, that is, when the same truth values are being chosen for the
+simple propositions in $P$ and $Q$, $P$ and $Q$ have the same truth value, then
+$P$ and $Q$ are called \textbf{logically equivalent}, denoted by $P \equiv Q$.
+
+For example, the truth table of $\neg (p \land q)$ and $\neg p \lor \neg q$ is
+as follows:
+\begin{center}
+    \begin{NiceTabular}{|c|c|c|c|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
+        $p$ & $q$ & $p \land q$ & $\neg(p \land q)$ & $\neg p$ & $\neg q$ & $\neg p \lor \neg q$ \\
+        1   & 1   & 1           & 0                 & 0        & 0        & 0                    \\
+        1   & 0   & 0           & 1                 & 0        & 1        & 1                    \\
+        0   & 1   & 0           & 1                 & 1        & 0        & 1                    \\
+        0   & 0   & 0           & 1                 & 1        & 1        & 1                    \\
+    \end{NiceTabular}
+\end{center}
+
+From the truth table above, we can see that in all cases, $\neg (p \land q)$
+and $\neg p \lor \neg q$ have the same truth value, hence $\neg (p \land q)$
+and $\neg p \lor \neg q$ are logically equivalent, i.e. \noindent
+
+\begin{center}
+    \fbox{%
+        \parbox{20em}{\begin{center}
+                $\neg (p \land q) \equiv \neg p \lor \neg q$
+            \end{center}}}%
+\end{center}
+
+The meaning of this expression is that the negation of the conjunction of $p$
+and $q$ is logically equivalent to the disjunction of the negation of $\neg p$
+and $\neg q$.
+
+Similarly, we can list down the following truth table:
+\begin{center}
+    \begin{NiceTabular}{|c|c|c|c|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
+        $p$ & $q$ & $p \lor q$ & $\neg(p \lor q)$ & $\neg p$ & $\neg q$ & $\neg p \land \neg q$ \\
+        1   & 1   & 1          & 0                & 0        & 0        & 0                     \\
+        1   & 0   & 1          & 0                & 0        & 1        & 0                     \\
+        0   & 1   & 1          & 0                & 1        & 0        & 0                     \\
+        0   & 0   & 0          & 1                & 1        & 1        & 1                     \\
+    \end{NiceTabular}
+\end{center}
+
+From the truth table above, we can see that $\neg (p \lor q)$ and $\neg p \land
+    \neg q$ are logically equivalent, i.e.
+
+\begin{center}
+    \fbox{%
+        \parbox{20em}{\begin{center}
+                $\neg (p \lor q) \equiv \neg p \land \neg q$
+            \end{center}}}%
+\end{center}
+
+The meaning of this expression is that the negation of the disjunction of $p$
+and $q$ is logically equivalent to the conjunction of the negation of $\neg p$
+and $\neg q$.
+
+The two formulas above are known as the \textbf{De Morgan's Laws}.
+\vspace{0.5cm}
+\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=11]
+    \item Use the truth table to prove that $\neg (\neg p) \equiv p$.
+\end{enumerate}
+\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+    \item
+          \begin{NiceTabular}{|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
+              $p$ & $\neg p$ \\
+              1   & 0        \\
+              0   & 1        \\
+          \end{NiceTabular}\\
+
+          From the truth table above, we know that $\neg (\neg p) \equiv p$.
+
+          That means, negating the original proposition two times, we get the original
+          proposition itself.
+
+          $\neg (\neg p) \equiv p$ is known as the \textbf{double negation law}.
+\end{enumerate}
+
+\vspace{0.5cm}
+\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=12]
+    \item Find the inverse proposition of the following propositions:
+          \begin{enumerate}[label=(\alph*)]
+              \item The opposite sides of a parallelogram are parallel and equal to each other.
+              \item All the odd numbers are divisible by 3 or 5.
+          \end{enumerate}
+\end{enumerate}
+\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+    \item \begin{enumerate}[label=(\alph*)]
+              \item $p$: The opposite sides of a parallelogram are parallel to each other.
+
+                    $q$: The opposite sides of a parallelogram are equal to each other.
+
+                    $p \land q$: The opposite sides of a parallelogram are parallel and equal to each other.
+
+                    The target inverse proposition is $\neg(p \land q)$.
+
+                    And $\neg(p \land q) \equiv \neg p \lor \neg q$.
+
+                    $\neg p$: The opposite sides of a parallelogram are not parallel to each other.
+
+                    $\neg q$: The opposite sides of a parallelogram are not equal to each other.
+
+                    $\neg p \lor \neg q \equiv \neg(p \land q)$: The opposite sides of a parallelogram are not parallel to each other or are not equal to each other.
+
+              \item $p$: All the odd numbers are divisible by 3.
+
+                    $q$: All the odd numbers are divisible by 5.
+
+                    $p \lor q$: All the odd numbers are divisible by 3 or 5.
+
+                    And $\neg(p \lor q) \equiv \neg p \land \neg q$.
+
+                    $\neg p$: Not all the odd numbers are divisible by 3.
+
+                    $\neg q$: Not all the odd numbers are divisible by 5.
+
+                    $\therefore \neg p \land \neg q$: Not all the odd numbers are divisible by 3 and 5.
+          \end{enumerate}
+\end{enumerate}
+\vspace{0.1cm}
+\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=13]
+    \item Given that $p = 0$, $q = 1$, find the truth value of $\neg (p \land q)$ and
+          $\neg (p \lor q)$.
+\end{enumerate}
+
+\begin{enumerate}[label=\textbf{Sol. \arabic*}, leftmargin=*]
+    \item $\begin{aligned}[t]
+                   & \because p = 0, q = 1                                \\
+                   & \therefore p \land q = 0, p \lor q = 1               \\
+                   & \therefore \neg (p \land q) = 1, \neg (p \lor q) = 0
+              \end{aligned}$
+
+    \item $\begin{aligned}[t]
+                  \because   & \ p = 0, q = 1                                   \\
+                  \therefore & \ \neg p = 1, \neg q = 0                         \\
+                             & \ \neg (p \land q) \equiv \neg p \lor \neg q = 1 \\
+                             & \ \neg (p \lor q) \equiv \neg p \land \neg q = 0
+              \end{aligned}$
+\end{enumerate}
+
+\subsection*{Exercise 11f}
+\begin{enumerate}
+    \item Prove the following equivalences using truth tables:
+          \begin{enumerate}
+              \item (a) $p \vee q \equiv \sim(\sim p \wedge \sim q)$
+              \item $(p \wedge q) \wedge r \equiv p \wedge(q \wedge r)$
+              \item $p \vee(q \wedge r) \equiv(p \vee q) \wedge(p \vee r)$
+              \item $\sim(p \vee \sim q) \equiv \sim p \wedge q$
+          \end{enumerate}
+    \item  Find the inverse proposition of the following propositions and their truth
+          values:
+          \begin{enumerate}
+              \item The three center lines of a triangle intersect at one point, and the three
+                    altitude lines of the triangle also intersects at this point.
+              \item The odd number $2n$ is divisible by 2 or 4.
+          \end{enumerate}
+    \item \begin{enumerate}
+              \item Given $p=0, q=1$, find the truth values of $\sim(p \vee q)$ and $\sim(p \wedge
+                        q)$.
+              \item Given $p=1, q=0$, find the truth values of $\sim(p \vee q)$ and $\sim(p \wedge
+                        q)$.
+              \item Given $p=1, q=1$, find the truth values of $\sim(p \vee q)$ and $\sim(p \wedge
+                        q)$.
+          \end{enumerate}
+    \item Simplify the following propositions using De Morgan's Laws and double negation
+          law:
+          \begin{enumerate}
+              \item $\sim(\sim p \wedge q)$
+              \item $\sim(\sim p \vee \sim q)$
+              \item $\sim(\sim p \vee q)$
+          \end{enumerate}
+\end{enumerate}
+
+\section{Implication}
+
+Let $p$ and $q$ be two propositions, another proposition can be formed using
+the form ``if $p$ then $q$'', known as the \textbf{implication} of $p$ and $q$,
+denoted by $p \Rightarrow q$, read as ``$p$ implies $q$''. For example,
+
+$p$: $x = 3$
+
+$q$: $x^2 = 9$
+
+$p \Rightarrow q$: If $x = 3$, then $x^2 = 9$.
+
+\noindent In the implication $p \Rightarrow q$, $p$ is called the \textbf{hypothesis} or
+\textbf{antecedent}, and $q$ is called the \textbf{conclusion} or
+\textbf{consequent}. The truth value of $p \Rightarrow q$ is as follows:
+\begin{center}
+    \begin{NiceTabular}{|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines]
+        $p$ & $q$ & $p \Rightarrow q$ \\
+        1   & 1   & 1                 \\
+        1   & 0   & 0                 \\
+        0   & 1   & 1                 \\
+        0   & 0   & 1                 \\
+    \end{NiceTabular}
+\end{center}
+
+In the field of Mathematics, deriving $p \Rightarrow q = 1$ from $p = 1$ and $q
+    = 0$ is the most common way to prove the truthfulness of a proposition.
+
+When $p = 1$, $q = 0$, $p \Rightarrow q = 0$. This case can be easily
+understood.
+
+When $p = 0$, $q = 1$, $p \Rightarrow q = 1$. This case can be understood as
+follows: Although the hypothesis $p$ is not satisfied, the conclusion $q$ still
+stands, hence, $p \Rightarrow q = 1$. Take a look at this example: If it rains
+tonight, I will stay at home. Whe $p$ is false but $q$ is true, that means: It
+doesn't rain tonight, but I still stay at home. Since I only told that I will
+stay at home if it rains tonight, but I didn't mention anything about the case
+when it doesn't rain tonight, therefore this sentence is logically correct.
+Hence, when $p$ is false and $q$ is true, $p \Rightarrow q$ is true.
+
+When $p = 0$, $q = 0$, $p \Rightarrow q = 1$. This case can be understood using
+the following example.
+\begin{align*}
+    p & : \text{You can jump 100m.} \\
+    q & : \text{I can jump 200m.}
+\end{align*}
+Obviously, the proposition $p$ and $q$ are both false propositions. However, the proposition formed by $p$ and $q$ seems to be a logical joke, i.e.
+\[p \Rightarrow q : \text{If you can jump 100m, then I can jump 200m.}\]
+
+The reality is though, since you will never be able to jump 100m, I need not
+have to fulfil the matter of jumping 200m. Hence, $p \Rightarrow q$ is true.
 \end{document}
