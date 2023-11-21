@@ -9,22 +9,22 @@
 \usepackage{nicematrix}
 \usepackage[total={6.6in,9.2in}]{geometry}
 
-\setmainfont{Times New Roman}
-
-\title{\Huge{\textbf{Logical Reasoning}}}
-\author{Melvin Chia}
-\date{18 June 2023}
+\newcounter{example}
+\setcounter{example}{1}
 
 \setcounter{chapter}{10}
-
 \titleformat{\chapter}[display]
 {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
-
-% this alters "before" spacing (the second length argument) to 0
 \titlespacing*{\chapter}{0pt}{0pt}{40pt}
+\setmainfont{Times New Roman}
+
+\newlist{example}{enumerate}{2}
+\setlist[example]{label=\textbf{Example \arabic*}, leftmargin=*, ref=\theexample(\arabic*), resume}
+
+\newlist{solution}{enumerate}{2}
+\setlist[solution]{label=\textbf{Solution}, leftmargin=*}
 
 \begin{document}
-\maketitle
 
 \onehalfspacing
 
@@ -95,42 +95,42 @@ respectively.
 Among the propositions above, $p$ and $q$ are true propositions, while $r$ and $s$ are false propositions. The true or false of a proposition is called the \textbf{truth value} of the proposition. We stipulate that the truth value of a true proposition is 1, and the truth value of a false proposition is 0. For example, the propositions $p$ and $q$ above are true, denoted as $p = 1$ and $q = 1$, while the propositions $r$ and $s$ are false, denoted as $r = 0$ and $s = 0$.
 
 \vspace{0.5cm}
-\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*]
+\begin{example}
     \item State whether the following sentences are propositions. If it is a proposition,
-          state whether it is true or false and give the reason to your answer.
-          \begin{flalign*}
-              p: & \ \text{The square of any number is not less than zero.}                            & \\
-              q: & \ \text{The parabola $y = x^2 + 1$ has no point of intersection with the $x$-axis.}   \\
-              r: & \ x-y = 0.                                                                            \\
-              s: & \ \text{At least two interior angles of a triangle are acute angles.}                 \\
-              t: & \ \text{For any real number $x$, $2x + 1 > x$.}
-          \end{flalign*}
-\end{enumerate}
-\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+    state whether it is true or false and give the reason to your answer.
+    \begin{flalign*}
+        p: & \ \text{The square of any number is not less than zero.}                            & \\
+        q: & \ \text{The parabola $y = x^2 + 1$ has no point of intersection with the $x$-axis.}   \\
+        r: & \ x-y = 0.                                                                            \\
+        s: & \ \text{At least two interior angles of a triangle are acute angles.}                 \\
+        t: & \ \text{For any real number $x$, $2x + 1 > x$.}
+    \end{flalign*}
+\end{example}
+\begin{solution}
     \item \begin{enumerate}[label=]
-              \item $p$ is a true proposition. The square of any number is non-negative.
-              \item $q$ is a true proposition. The parabola $y = x^2 + 1$ is on top of the $x$-axis and its vertex is $(0, 1)$.
-              \item $r$ is not a proposition. For any $x$ and $y$, we cannot tell whether $x-y$ is equal to 0.
-              \item $s$ is a true proposition. The sum of the interior angles of a triangle is $180^\circ$, there cannot be more two obtuse angle or straight angle at the same time.
-              \item $t$ is a false proposition. For example, $2(-1) + 1 < -2$.
-          \end{enumerate}
-\end{enumerate}
+        \item $p$ is a true proposition. The square of any number is non-negative.
+        \item $q$ is a true proposition. The parabola $y = x^2 + 1$ is on top of the $x$-axis and its vertex is $(0, 1)$.
+        \item $r$ is not a proposition. For any $x$ and $y$, we cannot tell whether $x-y$ is equal to 0.
+        \item $s$ is a true proposition. The sum of the interior angles of a triangle is $180^\circ$, there cannot be more two obtuse angle or straight angle at the same time.
+        \item $t$ is a false proposition. For example, $2(-1) + 1 < -2$.
+    \end{enumerate}
+\end{solution}
 \newpage
-\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=2]
+\begin{example}
     \item Write down the truth value of the following propositions.
-          \begin{flalign*}
-              p: & \ \text{For any real number $x$, $x < x + 1$.}                 & \\
-              q: & \ \text{For any real number $a$, if $a^3 > 0$, then $a > 0$.}    \\
-              r: & \ \text{The period of the function $y = \sin x$ is $\pi$.}       \\
-              s: & \ \text{The equation $2\sin x - \cos x = 4$ has no solution.}    \\
-              t: & \ \text{The line $3x - 4y + 1 = 0$ passes through the origin.}
-          \end{flalign*}
-\end{enumerate}
-\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+    \begin{flalign*}
+        p: & \ \text{For any real number $x$, $x < x + 1$.}                 & \\
+        q: & \ \text{For any real number $a$, if $a^3 > 0$, then $a > 0$.}    \\
+        r: & \ \text{The period of the function $y = \sin x$ is $\pi$.}       \\
+        s: & \ \text{The equation $2\sin x - \cos x = 4$ has no solution.}    \\
+        t: & \ \text{The line $3x - 4y + 1 = 0$ passes through the origin.}
+    \end{flalign*}
+\end{example}
+\begin{solution}
     \item \begin{enumerate}[label=]
-              \item $p = 1 \qquad q = 1 \qquad r = 0 \qquad s = 1 \qquad t = 0$
-          \end{enumerate}
-\end{enumerate}
+        \item $p = 1 \qquad q = 1 \qquad r = 0 \qquad s = 1 \qquad t = 0$
+    \end{enumerate}
+\end{solution}
 
 \subsection*{Exercise 11a}
 \begin{enumerate}[leftmargin=*]
@@ -189,25 +189,25 @@ The meaning of the inverse proposition $\neg p$ is the \textbf{negation} of the
 original proposition $p$.
 
 \vspace{0.5cm}
-\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=3]
+\begin{example}
     \item Write down the inverse proposition of the following propositions:
-          \begin{enumerate}[label=, leftmargin=*]
-              \item $p$: $2 + 2 = 4$.
-              \item $q$: 25 is a multiple of 5.
-              \item $r$: The equation $y = 3x^3 - x$ is an odd function.
-              \item $s$: The square of 15 is 235.
-              \item $t$: The base number $a$ of $\log_a x$ can be a negative number.
-          \end{enumerate}
-\end{enumerate}
-\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+    \begin{enumerate}[label=, leftmargin=*]
+        \item $p$: $2 + 2 = 4$.
+        \item $q$: 25 is a multiple of 5.
+        \item $r$: The equation $y = 3x^3 - x$ is an odd function.
+        \item $s$: The square of 15 is 235.
+        \item $t$: The base number $a$ of $\log_a x$ can be a negative number.
+    \end{enumerate}
+\end{example}
+\begin{solution}
     \item \begin{enumerate}[label=, leftmargin=*]
-              \item $\neg p$: $2 + 2 \neq 4$.
-              \item $\neg q$: 25 is not a multiple of 5.
-              \item $\neg r$: The equation $y = 3x^3 - x$ is not an odd function.
-              \item $\neg s$: The square of 15 is not 235.
-              \item $\neg t$: The base number $a$ of $\log_a x$ cannot be a negative number.
-          \end{enumerate}
-\end{enumerate}
+        \item $\neg p$: $2 + 2 \neq 4$.
+        \item $\neg q$: 25 is not a multiple of 5.
+        \item $\neg r$: The equation $y = 3x^3 - x$ is not an odd function.
+        \item $\neg s$: The square of 15 is not 235.
+        \item $\neg t$: The base number $a$ of $\log_a x$ cannot be a negative number.
+    \end{enumerate}
+\end{solution}
 
 Apparently, if $p$ is a true proposition, then $\neg p$ is a false proposition.
 If $p$ is a false proposition, then $\neg p$ is a true proposition. The truth
@@ -223,23 +223,23 @@ as follows:
 This kind of table consisting of true and false that is used to analyse a compound proposition is called a \textbf{truth table}.
 
 \vspace{0.5cm}
-\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=4]
+\begin{example}
     \item Write down the inverse proposition of the following propositions:
-          \begin{enumerate}[label=, leftmargin=*]
-              \item $s$: All integers are positive numbers.
-              \item $t$: THe square root of 4 must be 2.
-              \item $u$: All equilateral triangles are isosceles triangles.
-              \item $v$: All even numbers are divisible by 3.
-          \end{enumerate}
-\end{enumerate}
-\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+    \begin{enumerate}[label=, leftmargin=*]
+        \item $s$: All integers are positive numbers.
+        \item $t$: THe square root of 4 must be 2.
+        \item $u$: All equilateral triangles are isosceles triangles.
+        \item $v$: All even numbers are divisible by 3.
+    \end{enumerate}
+\end{example}
+\begin{solution}
     \item \begin{enumerate}[label=, leftmargin=*]
-              \item $\neg s$: There exists an integer that is not a positive number.
-              \item $\neg t$: The square root of 4 is not necessary 2.
-              \item $\neg u$: There exists an equilateral triangle that is not an isosceles triangle.
-              \item $\neg v$: All even numbers are not divisible by 3.
-          \end{enumerate}
-\end{enumerate}
+        \item $\neg s$: There exists an integer that is not a positive number.
+        \item $\neg t$: The square root of 4 is not necessary 2.
+        \item $\neg u$: There exists an equilateral triangle that is not an isosceles triangle.
+        \item $\neg v$: All even numbers are not divisible by 3.
+    \end{enumerate}
+\end{solution}
 
 \begin{enumerate}[label=\textbf{NOTE: }, leftmargin=*]
     \item In the example above, proposition $s$ is a false proposition, expressing $\neg
@@ -296,47 +296,47 @@ The truth table of $p \land q$ is as follows:
 \end{center}
 
 \vspace{0.5cm}
-\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=5]
+\begin{example}
     \item Write down the conjunctive proposition of the following pairs of propositions:
-          \begin{enumerate}[label=(\alph*), leftmargin=*]
-              \item $p$: 9 is an odd number.
+    \begin{enumerate}[label=(\alph*), leftmargin=*]
+        \item $p$: 9 is an odd number.
 
-                    $q$: 9 is a composite number.
+              $q$: 9 is a composite number.
 
-              \item $p$: A trapezium has two parallel sides.
+        \item $p$: A trapezium has two parallel sides.
 
-                    $q$: A trapezium has at least two equal sides.
+              $q$: A trapezium has at least two equal sides.
 
-              \item $p$: The equation $x^2 - 2x + 1 = 0$ has two distinct roots.
+        \item $p$: The equation $x^2 - 2x + 1 = 0$ has two distinct roots.
 
-                    $q$: The two roots of the equation $x^2 - 2x + 1 = 0$ are both negative numbers.
+              $q$: The two roots of the equation $x^2 - 2x + 1 = 0$ are both negative numbers.
 
-              \item $p$: The probability of a sure event is 1.
+        \item $p$: The probability of a sure event is 1.
 
-                    $q$: The probability of an impossible event is 0.
-          \end{enumerate}
-\end{enumerate}
-\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+              $q$: The probability of an impossible event is 0.
+    \end{enumerate}
+\end{example}
+\begin{solution}
     \item \begin{enumerate}[label=, leftmargin=*]
-              \item $p \land q$: 9 is an odd number and is a composite number.
-              \item $p \land q$: A trapezium has two parallel sides and has at least two equal sides.
-              \item $p \land q$: The equation $x^2 - 2x + 1 = 0$ has two distinct roots and the two roots are both negative numbers.
-              \item $p \land q$: The probability of a sure event is 1 and the probability of an impossible event is 0.
-          \end{enumerate}
-\end{enumerate}
+        \item $p \land q$: 9 is an odd number and is a composite number.
+        \item $p \land q$: A trapezium has two parallel sides and has at least two equal sides.
+        \item $p \land q$: The equation $x^2 - 2x + 1 = 0$ has two distinct roots and the two roots are both negative numbers.
+        \item $p \land q$: The probability of a sure event is 1 and the probability of an impossible event is 0.
+    \end{enumerate}
+\end{solution}
 \vspace{0.1cm}
-\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=6]
+\begin{example}
     \item Write down the truth value of the pairs of propositions and their conjunctive
-          propositions in Question 5.
-\end{enumerate}
-\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+    propositions in Question 5.
+\end{example}
+\begin{solution}
     \item \begin{enumerate}[label=, leftmargin=*]
-              \item $p = 1 \qquad q = 1 \qquad p \land q = 1$
-              \item $p = 1 \qquad q = 0 \qquad p \land q = 0$
-              \item $p = 0 \qquad q = 0 \qquad p \land q = 0$
-              \item $p = 0 \qquad q = 0 \qquad p \land q = 0$
-          \end{enumerate}
-\end{enumerate}
+        \item $p = 1 \qquad q = 1 \qquad p \land q = 1$
+        \item $p = 1 \qquad q = 0 \qquad p \land q = 0$
+        \item $p = 0 \qquad q = 0 \qquad p \land q = 0$
+        \item $p = 0 \qquad q = 0 \qquad p \land q = 0$
+    \end{enumerate}
+\end{solution}
 
 \subsection*{Exercise 11c}
 \begin{enumerate}[leftmargin=*]
@@ -417,47 +417,47 @@ being shown in the truth table.
 \end{enumerate}
 
 \vspace{0.5cm}
-\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=7]
+\begin{example}
     \item Write down the disjunctive proposition of the following pairs of propositions:
-          \begin{enumerate}[label=(\alph*), leftmargin=*]
-              \item $p$: 2 is a natural number.
+    \begin{enumerate}[label=(\alph*), leftmargin=*]
+        \item $p$: 2 is a natural number.
 
-                    $q$: 2 is an even number.
+              $q$: 2 is an even number.
 
-              \item $p$: The equation $x^2 + 4x + 3 = 0$ has two distinct real roots.
+        \item $p$: The equation $x^2 + 4x + 3 = 0$ has two distinct real roots.
 
-                    $q$: The equation $x^2 + 4x + 3 = 0$ has two equal real roots.
+              $q$: The equation $x^2 + 4x + 3 = 0$ has two equal real roots.
 
-              \item $p$: The function $y = x^2 + 4x + 3$ has a maximum value.
+        \item $p$: The function $y = x^2 + 4x + 3$ has a maximum value.
 
-                    $q$: The function $y = x^2 + 4x + 3$ has a minimum value.
+              $q$: The function $y = x^2 + 4x + 3$ has a minimum value.
 
-              \item $p$: The sum of interior angles of a quadrilateral is $180^\circ$.
+        \item $p$: The sum of interior angles of a quadrilateral is $180^\circ$.
 
-                    $q$: The sum of exterior angles of a quadrilateral is $540^\circ$.
-          \end{enumerate}
-\end{enumerate}
-\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+              $q$: The sum of exterior angles of a quadrilateral is $540^\circ$.
+    \end{enumerate}
+\end{example}
+\begin{solution}
     \item \begin{enumerate}[label=, leftmargin=*]
-              \item $p \lor q$: 2 is either a natural number, or an even number.
-              \item $p \lor q$: The equation $x^2 + 4x + 3 = 0$ has either two distinct real roots, or two equal real roots.
-              \item $p \lor q$: The function $y = x^2 + 4x + 3$ has either a maximum value or a minimum value.
-              \item $p \lor q$: The sum of interior angles of a quadrilateral is either $180^\circ$, or $540^\circ$.
-          \end{enumerate}
-\end{enumerate}
+        \item $p \lor q$: 2 is either a natural number, or an even number.
+        \item $p \lor q$: The equation $x^2 + 4x + 3 = 0$ has either two distinct real roots, or two equal real roots.
+        \item $p \lor q$: The function $y = x^2 + 4x + 3$ has either a maximum value or a minimum value.
+        \item $p \lor q$: The sum of interior angles of a quadrilateral is either $180^\circ$, or $540^\circ$.
+    \end{enumerate}
+\end{solution}
 \vspace{0.1cm}
-\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=8]
+\begin{example}
     \item Write down the truth value of the pairs of propositions and their disjunctive
-          propositions in Question 7.
-\end{enumerate}
-\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+    propositions in Question 7.
+\end{example}
+\begin{solution}
     \item \begin{enumerate}[label=, leftmargin=*]
-              \item $p = 1 \qquad q = 1 \qquad p \lor q = 1$
-              \item $p = 1 \qquad q = 0 \qquad p \lor q = 1$
-              \item $p = 0 \qquad q = 1 \qquad p \lor q = 1$
-              \item $p = 0 \qquad q = 0 \qquad p \lor q = 0$
-          \end{enumerate}
-\end{enumerate}
+        \item $p = 1 \qquad q = 1 \qquad p \lor q = 1$
+        \item $p = 1 \qquad q = 0 \qquad p \lor q = 1$
+        \item $p = 0 \qquad q = 1 \qquad p \lor q = 1$
+        \item $p = 0 \qquad q = 0 \qquad p \lor q = 0$
+    \end{enumerate}
+\end{solution}
 
 \subsection*{Exercise 11d}
 \begin{enumerate}[leftmargin=*]
@@ -492,19 +492,19 @@ being shown in the truth table.
 
 Regardless of the complexity of a proposition, its truth value in any case can
 always be calculated using a truth table. \vspace{0.5cm}
-\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=9]
+\begin{example}
     \item Construct a truth table for $\neg(p\land\neg q)$.
-\end{enumerate}
-\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+\end{example}
+\begin{solution}
     \item
-          \begin{NiceTabular}{|c|c|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
-              $p$ & $q$ & $\neg q$ & $p \land \neg q$ & $\neg(p \land \neg q)$ \\
-              1   & 1   & 0        & 0                & 1                      \\
-              1   & 0   & 1        & 1                & 0                      \\
-              0   & 1   & 0        & 0                & 1                      \\
-              0   & 0   & 1        & 0                & 1                      \\
-          \end{NiceTabular}
-\end{enumerate}
+    \begin{NiceTabular}{|c|c|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
+        $p$ & $q$ & $\neg q$ & $p \land \neg q$ & $\neg(p \land \neg q)$ \\
+        1   & 1   & 0        & 0                & 1                      \\
+        1   & 0   & 1        & 1                & 0                      \\
+        0   & 1   & 0        & 0                & 1                      \\
+        0   & 0   & 1        & 0                & 1                      \\
+    \end{NiceTabular}
+\end{solution}
 
 The steps of constructing the table are as follows:
 \begin{enumerate}[leftmargin=*, label=\indent(\arabic*)]
@@ -519,19 +519,19 @@ The steps of constructing the table are as follows:
 \end{enumerate}
 
 \vspace{0.5cm}
-\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=10]
+\begin{example}
     \item Construct a truth table for $(p \lor \neg q) \land q$.
-\end{enumerate}
-\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+\end{example}
+\begin{solution}
     \item
-          \begin{NiceTabular}{|c|c|c|c|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
-              $p$ & $q$ & $\neg q$ & $p \lor \neg q$ & $(p \lor \neg q) \land q$ \\
-              1   & 1   & 0        & 1               & 1                         \\
-              1   & 0   & 1        & 1               & 0                         \\
-              0   & 1   & 0        & 0               & 0                         \\
-              0   & 0   & 1        & 1               & 0                         \\
-          \end{NiceTabular}
-\end{enumerate}
+    \begin{NiceTabular}{|c|c|c|c|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
+        $p$ & $q$ & $\neg q$ & $p \lor \neg q$ & $(p \lor \neg q) \land q$ \\
+        1   & 1   & 0        & 1               & 1                         \\
+        1   & 0   & 1        & 1               & 0                         \\
+        0   & 1   & 0        & 0               & 0                         \\
+        0   & 0   & 1        & 1               & 0                         \\
+    \end{NiceTabular}
+\end{solution}
 
 Steps:
 \begin{enumerate}[leftmargin=*, label=\indent(\arabic*)]
@@ -649,71 +649,71 @@ and $\neg q$.
 
 The two formulas above are known as the \textbf{De Morgan's Laws}.
 \vspace{0.5cm}
-\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=11]
+\begin{example}
     \item Use the truth table to prove that $\neg (\neg p) \equiv p$.
-\end{enumerate}
-\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+\end{example}
+\begin{solution}
     \item
-          \begin{NiceTabular}{|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
-              $p$ & $\neg p$ \\
-              1   & 0        \\
-              0   & 1        \\
-          \end{NiceTabular}\\
+    \begin{NiceTabular}{|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
+        $p$ & $\neg p$ \\
+        1   & 0        \\
+        0   & 1        \\
+    \end{NiceTabular}\\
 
-          From the truth table above, we know that $\neg (\neg p) \equiv p$.
+    From the truth table above, we know that $\neg (\neg p) \equiv p$.
 
-          That means, negating the original proposition two times, we get the original
-          proposition itself.
+    That means, negating the original proposition two times, we get the original
+    proposition itself.
 
-          $\neg (\neg p) \equiv p$ is known as the \textbf{double negation law}.
-\end{enumerate}
+    $\neg (\neg p) \equiv p$ is known as the \textbf{double negation law}.
+\end{solution}
 
 \vspace{0.5cm}
-\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=12]
+\begin{example}
     \item Find the inverse proposition of the following propositions:
-          \begin{enumerate}[label=(\alph*)]
-              \item The opposite sides of a parallelogram are parallel and equal to each other.
-              \item All the odd numbers are divisible by 3 or 5.
-          \end{enumerate}
-\end{enumerate}
-\begin{enumerate}[label=\textbf{Sol.}, leftmargin=*]
+    \begin{enumerate}[label=(\alph*)]
+        \item The opposite sides of a parallelogram are parallel and equal to each other.
+        \item All the odd numbers are divisible by 3 or 5.
+    \end{enumerate}
+\end{example}
+\begin{solution}
     \item \begin{enumerate}[label=(\alph*)]
-              \item $p$: The opposite sides of a parallelogram are parallel to each other.
+        \item $p$: The opposite sides of a parallelogram are parallel to each other.
 
-                    $q$: The opposite sides of a parallelogram are equal to each other.
+              $q$: The opposite sides of a parallelogram are equal to each other.
 
-                    $p \land q$: The opposite sides of a parallelogram are parallel and equal to each other.
+              $p \land q$: The opposite sides of a parallelogram are parallel and equal to each other.
 
-                    The target inverse proposition is $\neg(p \land q)$.
+              The target inverse proposition is $\neg(p \land q)$.
 
-                    And $\neg(p \land q) \equiv \neg p \lor \neg q$.
+              And $\neg(p \land q) \equiv \neg p \lor \neg q$.
 
-                    $\neg p$: The opposite sides of a parallelogram are not parallel to each other.
+              $\neg p$: The opposite sides of a parallelogram are not parallel to each other.
 
-                    $\neg q$: The opposite sides of a parallelogram are not equal to each other.
+              $\neg q$: The opposite sides of a parallelogram are not equal to each other.
 
-                    $\neg p \lor \neg q \equiv \neg(p \land q)$: The opposite sides of a parallelogram are not parallel to each other or are not equal to each other.
+              $\neg p \lor \neg q \equiv \neg(p \land q)$: The opposite sides of a parallelogram are not parallel to each other or are not equal to each other.
 
-              \item $p$: All the odd numbers are divisible by 3.
+        \item $p$: All the odd numbers are divisible by 3.
 
-                    $q$: All the odd numbers are divisible by 5.
+              $q$: All the odd numbers are divisible by 5.
 
-                    $p \lor q$: All the odd numbers are divisible by 3 or 5.
+              $p \lor q$: All the odd numbers are divisible by 3 or 5.
 
-                    And $\neg(p \lor q) \equiv \neg p \land \neg q$.
+              And $\neg(p \lor q) \equiv \neg p \land \neg q$.
 
-                    $\neg p$: Not all the odd numbers are divisible by 3.
+              $\neg p$: Not all the odd numbers are divisible by 3.
 
-                    $\neg q$: Not all the odd numbers are divisible by 5.
+              $\neg q$: Not all the odd numbers are divisible by 5.
 
-                    $\therefore \neg p \land \neg q$: Not all the odd numbers are divisible by 3 and 5.
-          \end{enumerate}
-\end{enumerate}
+              $\therefore \neg p \land \neg q$: Not all the odd numbers are divisible by 3 and 5.
+    \end{enumerate}
+\end{solution}
 \vspace{0.1cm}
-\begin{enumerate}[label=\textbf{Example \arabic*}, leftmargin=*, start=13]
+\begin{example}
     \item Given that $p = 0$, $q = 1$, find the truth value of $\neg (p \land q)$ and
-          $\neg (p \lor q)$.
-\end{enumerate}
+    $\neg (p \lor q)$.
+\end{example}
 
 \begin{enumerate}[label=\textbf{Sol. \arabic*}, leftmargin=*]
     \item $\begin{aligned}[t]
@@ -814,4 +814,5 @@ Obviously, the proposition $p$ and $q$ are both false propositions. However, the
 
 The reality is though, since you will never be able to jump 100m, I need not
 have to fulfil the matter of jumping 200m. Hence, $p \Rightarrow q$ is true.
+
 \end{document}
