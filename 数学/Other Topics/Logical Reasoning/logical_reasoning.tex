@@ -1,12 +1,14 @@
 \documentclass{report}
 
-\usepackage[fleqn]{amsmath}
+\usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{setspace}
 \usepackage{enumitem}
 \usepackage{fontspec}
 \usepackage{titlesec}
+\usepackage{multicol}
 \usepackage{nicematrix}
+\usepackage{mathtools}
 \usepackage[total={6.6in,9.2in}]{geometry}
 
 \newcounter{example}
@@ -19,7 +21,7 @@
 \setmainfont{Times New Roman}
 
 \newlist{example}{enumerate}{2}
-\setlist[example]{label=\textbf{Example \arabic*}, leftmargin=*, ref=\theexample(\arabic*), resume}
+\setlist[example]{label=\textbf{Example \arabic*}, leftmargin=5.5em, ref=\theexample(\arabic*), resume}
 
 \newlist{solution}{enumerate}{2}
 \setlist[solution]{label=\textbf{Solution}, leftmargin=*}
@@ -465,7 +467,7 @@ being shown in the truth table.
           \begin{enumerate}[label=(\alph*), leftmargin=*]
               \item $p$: The diagonals of a rhombus are perpendicular to each other.
 
-                    $q$: The diagonals of a rhombus bisects each other.
+                    $q$: The diagonals of a rhombus bisect each other.
 
               \item $p$: The diagonals of a rectangle are equal.
 
@@ -767,20 +769,20 @@ The two formulas above are known as the \textbf{De Morgan's Laws}.
 
 Let $p$ and $q$ be two propositions, another proposition can be formed using
 the form ``if $p$ then $q$'', known as the \textbf{implication} of $p$ and $q$,
-denoted by $p \Rightarrow q$, read as ``$p$ implies $q$''. For example,
+denoted by $p \rightarrow q$, read as ``$p$ implies $q$''. For example,
 
 $p$: $x = 3$
 
 $q$: $x^2 = 9$
 
-$p \Rightarrow q$: If $x = 3$, then $x^2 = 9$.
+$p \rightarrow q$: If $x = 3$, then $x^2 = 9$.
 
-\noindent In the implication $p \Rightarrow q$, $p$ is called the \textbf{hypothesis} or
+\noindent In the implication $p \rightarrow q$, $p$ is called the \textbf{hypothesis} or
 \textbf{antecedent}, and $q$ is called the \textbf{conclusion} or
-\textbf{consequent}. The truth value of $p \Rightarrow q$ is as follows:
+\textbf{consequent}. The truth value of $p \rightarrow q$ is as follows:
 \begin{center}
     \begin{NiceTabular}{|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines]
-        $p$ & $q$ & $p \Rightarrow q$ \\
+        $p$ & $q$ & $p \rightarrow q$ \\
         1   & 1   & 1                 \\
         1   & 0   & 0                 \\
         0   & 1   & 1                 \\
@@ -788,31 +790,610 @@ $p \Rightarrow q$: If $x = 3$, then $x^2 = 9$.
     \end{NiceTabular}
 \end{center}
 
-In the field of Mathematics, deriving $p \Rightarrow q = 1$ from $p = 1$ and $q
+In the field of Mathematics, deriving $p \rightarrow q = 1$ from $p = 1$ and $q
     = 0$ is the most common way to prove the truthfulness of a proposition.
 
-When $p = 1$, $q = 0$, $p \Rightarrow q = 0$. This case can be easily
+When $p = 1$, $q = 0$, $p \rightarrow q = 0$. This case can be easily
 understood.
 
-When $p = 0$, $q = 1$, $p \Rightarrow q = 1$. This case can be understood as
+When $p = 0$, $q = 1$, $p \rightarrow q = 1$. This case can be understood as
 follows: Although the hypothesis $p$ is not satisfied, the conclusion $q$ still
-stands, hence, $p \Rightarrow q = 1$. Take a look at this example: If it rains
+stands, hence, $p \rightarrow q = 1$. Take a look at this example: If it rains
 tonight, I will stay at home. Whe $p$ is false but $q$ is true, that means: It
 doesn't rain tonight, but I still stay at home. Since I only told that I will
 stay at home if it rains tonight, but I didn't mention anything about the case
 when it doesn't rain tonight, therefore this sentence is logically correct.
-Hence, when $p$ is false and $q$ is true, $p \Rightarrow q$ is true.
+Hence, when $p$ is false and $q$ is true, $p \rightarrow q$ is true.
 
-When $p = 0$, $q = 0$, $p \Rightarrow q = 1$. This case can be understood using
+When $p = 0$, $q = 0$, $p \rightarrow q = 1$. This case can be understood using
 the following example.
 \begin{align*}
     p & : \text{You can jump 100m.} \\
     q & : \text{I can jump 200m.}
 \end{align*}
 Obviously, the proposition $p$ and $q$ are both false propositions. However, the proposition formed by $p$ and $q$ seems to be a logical joke, i.e.
-\[p \Rightarrow q : \text{If you can jump 100m, then I can jump 200m.}\]
+\[p \rightarrow q : \text{If you can jump 100m, then I can jump 200m.}\]
 
 The reality is though, since you will never be able to jump 100m, I need not
-have to fulfil the matter of jumping 200m. Hence, $p \Rightarrow q$ is true.
+have to fulfil the matter of jumping 200m. Hence, $p \rightarrow q$ is true.
+\vspace{0.5cm}
+\begin{example}
+    \item According to each of the following pairs of $p$ and $q$, write down the
+    proposition $p \rightarrow q$. Hence, determine their truth values.
+    \begin{enumerate}[label=(\alph*), leftmargin=*]
+        \item $p$: $3^2 + 4^2 = 5^2$
 
+              $q$: The triangle with side lengths of 3, 4 and 5 respectively is a right-angled triangle.
+
+        \item $p$: $\dfrac{1}{3}$ is a repeating decimal.
+
+              $q$: $\dfrac{1}{3}$ is an irrational number.
+
+        \item $p$: $5 < 3$
+
+              $q$: $-5 < -3$
+
+        \item $p$: $\sin^2 x + \cos^2 x = 2$
+
+              $q$: $\tan x \cot x = 2$
+    \end{enumerate}
+\end{example}
+\begin{solution}
+    \item \begin{enumerate}[label=(\alph*), leftmargin=*]
+        \item $p \rightarrow q$: If $3^2 + 4^2 = 5^2$, then the triangle with side lengths of 3, 4 and 5 respectively is a right-angled triangle.
+
+              $\because p = 1$, $q = 1$
+
+              $\therefore p \rightarrow q = 1$
+
+        \item $p \rightarrow q$: If $\dfrac{1}{3}$ is a repeating decimal, then $\dfrac{1}{3}$ is an irrational number.
+
+              $\because p = 1$, $q = 0$
+
+              $\therefore p \rightarrow q = 0$
+
+        \item $p \rightarrow q$: If $5 < 3$, then $-5 < -3$.
+
+              $\because p = 0$, $q = 1$
+
+              $\therefore p \rightarrow q = 1$
+
+        \item $p \rightarrow q$: If $\sin^2 x + \cos^2 x = 2$, then $\tan x \cot x = 2$.
+
+              $\because p = 0$, $q = 0$
+
+              $\therefore p \rightarrow q = 1$
+    \end{enumerate}
+\end{solution}
+\vspace{0.1cm}
+\begin{example}
+    \item Prove that $p \rightarrow q \equiv \neg p \lor q$.
+\end{example}
+\begin{solution}
+    \item \begin{NiceTabular}{|c|c|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
+        $p$ & $q$ & $p \rightarrow q$ & $\neg p$ & $\neg p \lor q$ \\
+        1   & 1   & 1                 & 0        & 1               \\
+        1   & 0   & 0                 & 0        & 0               \\
+        0   & 1   & 1                 & 1        & 1               \\
+        0   & 0   & 1                 & 1        & 1               \\
+    \end{NiceTabular}\\
+
+    From the truth table above, we can see that $p \rightarrow q \equiv \neg p \lor
+        q$.
+\end{solution}
+
+\subsection*{Four Forms of Implication}
+
+First let's take a look at an example.
+\begin{align*}
+    \text{Let} & \ p:\ x = 3   \\
+               & \ q:\ x^2 = 9
+\end{align*}
+From $p$ and $q$, we can form the following four propositions:
+\begin{itemize}
+    \item $p \rightarrow q$: If $x = 3$, then $x^2 = 9$ (true)
+    \item $q \rightarrow p$: If $x^2 = 9$, then $x = 3$. (false)
+    \item $\neg p \rightarrow \neg q$: If $x \neq 3$, then $x^2 \neq 9$. (false)
+    \item $\neg q \rightarrow \neg p$: If $x^2 \neq 9$, then $x \neq 3$. (true)
+\end{itemize}
+
+We call $q \rightarrow p$ the \textbf{converse proposition} of $p \rightarrow
+    q$, $\neg p \rightarrow \neg q$ the \textbf{inverse proposition} of $p
+    \rightarrow q$ (note that it is different from the inverse proposition in
+section 11.2), and $\neg q \rightarrow \neg p$ the \textbf{contrapositive
+    proposition} of $p \rightarrow q$.
+
+The truth table of $p \rightarrow q$, and its contrapositive proposition is as
+follows:
+\begin{center}
+    \begin{NiceTabular}{|c|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines]
+        $p$ & $q$ & $p \rightarrow q$ & $\neg q \rightarrow \neg p$ \\
+        1   & 1   & 1                 & 1                           \\
+        1   & 0   & 0                 & 0                           \\
+        0   & 1   & 1                 & 1                           \\
+        0   & 0   & 1                 & 1                           \\
+    \end{NiceTabular}
+\end{center}
+
+From the table above, we can see that $p \rightarrow q$ and $\neg q \rightarrow
+    \neg p$ have the same truth value, i.e.
+
+\begin{center}
+    \fbox{%
+        \parbox{20em}{\begin{center}
+                $p \rightarrow q \equiv \neg q \rightarrow \neg p$
+            \end{center}}}%
+\end{center}
+That is to say, switching the hypothesis and conclusion of an implication while negating them at the same time, the truth value of the implication will not change. This is the origin of the technique of proving by contradiction, as saying goes, ``If you want to prove a proposition, you can try to prove its contrapositive proposition instead.''
+\vspace{0.5cm}
+\begin{example}
+    \item Write down four types of implications of the following pairs of $p$ and $q$.
+    Hence, determine their truth values.
+    \begin{enumerate}[label=(\alph*), leftmargin=*]
+        \item $p$: $x = y$
+
+              $q$: $x^2 = y^2$
+
+        \item $p$: In $\triangle ABC$, $\angle B = \angle C$.
+
+              $q$: In $\triangle ABC$, $AB = AC$.
+    \end{enumerate}
+\end{example}
+\begin{solution}
+    \item \begin{enumerate}[label=(\alph*), leftmargin=*]
+        \item $p \rightarrow q$: If $x = y$, then $x^2 = y^2$.
+
+              $p \rightarrow q = 1$
+
+              $q \rightarrow p$: If $x^2 = y^2$, then $x = y$.
+
+              $q \rightarrow p = 0$
+
+              $\neg p \rightarrow \neg q$: If $x \neq y$, then $x^2 \neq y^2$.
+
+              $\neg p \rightarrow \neg q = 0$
+
+              $\neg q \rightarrow \neg p$: If $x^2 \neq y^2$, then $x \neq y$.
+
+              $\neg q \rightarrow \neg p = 1$
+
+        \item $p \rightarrow q$: In $\triangle ABC$, if $\angle B = \angle C$, then $AB = AC$.
+
+              $p \rightarrow q = 1$
+
+              $q \rightarrow p$: In $\triangle ABC$, if $AB = AC$, then $\angle B = \angle C$.
+
+              $q \rightarrow p = 1$
+
+              $\neg p \rightarrow \neg q$: In $\triangle ABC$, if $\angle B \neq \angle C$, then $AB \neq AC$.
+
+              $\neg p \rightarrow \neg q = 1$
+
+              $\neg q \rightarrow \neg p$: In $\triangle ABC$, if $AB \neq AC$, then $\angle B \neq \angle C$.
+
+              $\neg q \rightarrow \neg p = 1$
+    \end{enumerate}
+\end{solution}
+
+\subsection*{Exercise 11g}
+\begin{enumerate}[leftmargin=*]
+    \item According to the following pairs of $p$ and $q$, write down the proposition $p
+              \rightarrow q$. Hence, determine its truth value.
+          \begin{enumerate}[label=(\alph*), leftmargin=*]
+              \item $p$: The sum of two sides of a triangle is larger than the third side.
+
+                    $q$: The difference between two sides of a triangle is smaller than the third side.
+
+              \item $p$: $a^2 + b^2 \leq 2ab$
+
+                    $q$: $a > 0, b > 0$
+
+              \item $p$: Any exterior angle of a triangle is obtuse angle.
+
+                    $q$: Any exterior angle is equal to the sum of the two interior opposite angles.
+
+              \item $p$: For any real number $x$, $|x| < x$ is true.
+
+                    $q$: For any real number $x$, $|x| > 0$ is true.
+          \end{enumerate}
+
+    \item According to the following pairs of $p$ and $q$, write down four types of
+          implications formed by $p$ and $q$. Hence, determine their truth values.
+          \begin{enumerate}[label=(\alph*), leftmargin=*]
+              \item $p$: All sides of $\triangle ABC$ are equal.
+
+                    $q$: All interior angles of $\triangle ABC$ are equal.
+
+              \item $p$: Quadrilateral $ABCD$ is a square.
+
+                    $q$: All four sides of quadrilateral $ABCD$ are equal.
+
+              \item $p$: For all real numbers $a$, $b$, $c$, there exists $ac > bc$.
+
+                    $q$: For all real numbers $a$, $b$, there exists $a > b$.
+
+              \item $p$: $\sin\alpha{} = 1$
+
+                    $q$: $\alpha{} = \dfrac{\pi}{2}$
+          \end{enumerate}
+
+    \item For the proposition ``opposite angles are equal'', it can be written as the
+          implication ``if two angles are opposite angles, then they are equal''. Take
+          this implication as an example, try to rewrite the following proposition in the
+          form of implication:
+          \begin{enumerate}[label=(\alph*), leftmargin=*]
+              \item The sum of the interior angles of a triangle is $180^\circ$.
+              \item The absolute value of a positive number is equal to itself.
+              \item The corresponding angles of two similar polygons are equal.
+          \end{enumerate}
+
+    \item Find the truth values of the following propositions:
+          \begin{enumerate}[label=(\alph*), leftmargin=*]
+              \item $(p \rightarrow q) \rightarrow (p \land q)$
+              \item $\neg p \rightarrow (q \rightarrow p)$
+          \end{enumerate}
+
+    \item Prove that $(p \land q) \rightarrow (p \lor q)$ is a tautology.
+    \item Prove that $p \rightarrow (q \land r) \equiv (p \rightarrow q) \land (p
+              \rightarrow r)$.
+    \item If $p \leftrightarrow q \equiv (p \rightarrow q) \land (q \rightarrow p)$,
+          construct a truth table for $p \leftrightarrow q$.
+\end{enumerate}
+
+\section{Arguments}
+
+\subsection*{Arguments}
+
+An \textbf{argument} is a thinking process of using some existing judgements
+(established propositions) $P_1$, $P_2$, $\cdots$, $P_n$ to derive a new
+judgement $Q$. Here, these existing judgements are called the \textbf{premises}
+of the argument, and the new judgement is called the \textbf{conclusion} of the
+argument, denoted by $P_1, P_2, \cdots, P_n;\ \therefore Q$. \vspace{0.5cm}
+
+\begin{example}
+    \item \begin{enumerate}[label=(\alph*), leftmargin=*]
+        \item If it is a parallelogram, then its diagonals bisect each other.
+
+              Rectangle is a parallelogram.
+
+              Therefore the diagonals of rectangle bisect each other.
+
+        \item Going to the cinema or going to the park on Sunday.
+
+              Going to the cinema on Sunday.
+
+              Therefore not going to the park on Sunday.
+
+        \item Committing crime is an act that damages the society.
+
+              Committing crime is an act that is against the law.
+
+              Therefore committing crime is an act that damages the society and is against
+              the law.
+    \end{enumerate}
+\end{example}
+
+The examples above are all judgements (conclusion) derived from a set of
+existing judgements (premises), albeit different in content. Hence, they are
+all arguments. These arguments can be expressed in logical symbols `$p$',
+`$q$', `$\land$', `$\lor$', `$\rightarrow$', etc.
+
+Take Example 17(a) as an example, let $p$ be the proposition ``It is a
+parallelogram.'', $q$ be the proposition ``Its diagonals bisect each other.'',
+then the argument can be expressed as follows:
+\begin{align*}
+    p          & \rightarrow q                \\
+               & p                            \\[-8pt]
+               & \mathclap{\rule{2cm}{0.4pt}} \\[-5pt]
+    \therefore & \ q                          \\[-8pt]
+               & \mathclap{\rule{2cm}{0.4pt}}
+\end{align*}
+
+The argument that is expressed in logical symbols are called \textbf{formal
+    arguments}. The argument above can also be written as $p \rightarrow q, p;\
+    \therefore q$.
+
+Now take a look at Example 17(b), if
+\begin{align*}
+    p & : \text{Going to the cinema on Sunday.} \\
+    q & : \text{Going to the park on Sunday.}
+\end{align*}
+then the argument can be expressed as follows:
+\begin{align*}
+    p          & \lor q                       \\
+               & p                            \\[-8pt]
+               & \mathclap{\rule{2cm}{0.4pt}} \\[-5pt]
+    \therefore & \ \neg q                     \\[-8pt]
+               & \mathclap{\rule{2cm}{0.4pt}}
+\end{align*}
+denoted as $p \lor q, p;\ \therefore \neg q$.
+
+for Example 17(c), if
+\begin{align*}
+    p & : \text{Committing crime is an act that damages the society.} \\
+    q & : \text{Committing crime is an act that is against the law.}
+\end{align*}
+then the argument can be expressed as follows:
+\begin{align*}
+                   & p                            \\
+                   & q                            \\[-8pt]
+                   & \mathclap{\rule{2cm}{0.4pt}} \\[-5pt]
+    \therefore \ p & \land q                      \\[-8pt]
+                   & \mathclap{\rule{2cm}{0.4pt}}
+\end{align*}
+denoted as $p, q;\ \therefore p \land q$.
+
+\subsection*{Validity of Arguments}
+
+When all the premises of an argument $P_1$, $P_2$, $\cdots$, $P_n$ are true,
+and the conclusion $Q$ is also true, then we say that the argument is a
+\textbf{valid argument}. \vspace{0.5cm}
+\begin{example}
+    \item Check the validity of the argument $p \rightarrow q;\ \therefore q$.
+\end{example}
+\begin{solution}
+    \item Truth table constructed for premises and conclusion is as follows:
+    \begin{center}
+        \begin{NiceTabular}{|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines]
+            $p$ & $q$ & $p \rightarrow q$ \\
+            1   & 1   & 1                 \\
+            1   & 0   & 0                 \\
+            0   & 1   & 1                 \\
+            0   & 0   & 1                 \\
+        \end{NiceTabular}
+    \end{center}
+    where in the first line, two premises $p$ and $q$ as well as the conclusion $p \rightarrow q$ are all true. Hence, the argument is valid.
+\end{solution}
+\newpage
+\begin{example}
+    \item Check the validity of the argument $p \lor q, p;\ \therefore \neg q$.
+\end{example}
+\begin{solution}
+    \item
+    \begin{NiceTabular}{|c|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
+        $p$ & $q$ & $p \lor q$ & $\neg q$ \\
+        1   & 1   & 1          & 0        \\
+        1   & 0   & 1          & 1        \\
+        0   & 1   & 1          & 0        \\
+        0   & 0   & 0          & 1        \\
+    \end{NiceTabular}\\
+
+    where in the first and the second lines, two premises $p$ and $q$ are both
+    true, but the conclusion $\neg q$ is false in the first line. Hence, the
+    argument is invalid.
+\end{solution}
+
+Due to the fact that when compound proposition $P_1 \land P_2 \land \cdots
+    \land P_n$ is true, every term $P_1$, $P_2$, $\cdots$, $P_n$ must also be true,
+therefore, the argument $P_1, P_2, \cdots, P_n;\ \therefore Q$ is valid if and
+only if $P_1 \land P_2 \land \cdots \land P_n \rightarrow Q$ is true. In other
+words, when $(P_1 \land P_2 \land \cdots \land P_n) \rightarrow Q$ is a
+tautology, the argument $P_1, P_2, \cdots, P_n;\ \therefore Q$ is valid.
+\vspace{0.5cm}
+\begin{example}
+    \item Check the validity of the argument $p \rightarrow q, q \rightarrow r;\
+        \therefore p \rightarrow r$.
+\end{example}
+\begin{solution}
+    \item Construct the truth table of $[(p \rightarrow q) \land (q \rightarrow r)]
+        \rightarrow (p \rightarrow r)$ as follows:
+    \begin{center}
+        \begin{NiceTabular}{|c|c|c|c|c|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
+            $p$ & $q$ & $r$ & $p \rightarrow q$ & $q \rightarrow r$ & $(p \rightarrow q) \land (q \rightarrow r)$ & $p \rightarrow r$ & $[(p \rightarrow q) \land (q \rightarrow r)] \rightarrow (p \rightarrow r)$ \\
+            1   & 1   & 1   & 1                 & 1                 & 1                                           & 1                 & 1                                                                           \\
+            1   & 1   & 0   & 1                 & 0                 & 0                                           & 0                 & 1                                                                           \\
+            1   & 0   & 1   & 0                 & 1                 & 0                                           & 1                 & 1                                                                           \\
+            1   & 0   & 0   & 0                 & 1                 & 0                                           & 0                 & 1                                                                           \\
+            0   & 1   & 1   & 1                 & 1                 & 1                                           & 1                 & 1                                                                           \\
+            0   & 1   & 0   & 1                 & 0                 & 0                                           & 1                 & 1                                                                           \\
+            0   & 0   & 1   & 1                 & 1                 & 1                                           & 1                 & 1                                                                           \\
+            0   & 0   & 0   & 1                 & 1                 & 1                                           & 1                 & 1                                                                           \\
+        \end{NiceTabular}
+    \end{center}
+    Since $[(p \rightarrow q) \land (q \rightarrow r)] \rightarrow (p \rightarrow
+        r)$ is a tautology,
+
+    $\therefore$ the argument $p \rightarrow q, q \rightarrow r;\ \therefore p
+        \rightarrow r$ is valid.
+\end{solution}
+\begin{enumerate}[label=\textbf{NOTE: }, leftmargin=*]
+    \item $p \rightarrow q, q \rightarrow r;\ \therefore p \rightarrow r$ is
+          called the \textbf{law of syllogism}.
+\end{enumerate}
+\begin{example}
+    \item Check the validity of the argument $p \rightarrow q, \neg p;\ \therefore \neg
+        q$.
+\end{example}
+\begin{solution}
+    \item Construct a truth table for $[(p \rightarrow q) \land \neg p] \rightarrow \neg
+        q$:
+    \begin{center}
+        \begin{NiceTabular}{|c|c|c|c|c|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
+            $p$ & $q$ & $\neg p$ & $p \rightarrow q$ & $\neg q$ & $(p \rightarrow q) \land \neg p$ & $[(p \rightarrow q) \land \neg p] \rightarrow \neg q$ \\
+            1   & 1   & 0        & 1                 & 0        & 0                                & 1                                                     \\
+            1   & 0   & 0        & 0                 & 1        & 0                                & 1                                                     \\
+            0   & 1   & 1        & 1                 & 0        & 1                                & 0                                                     \\
+            0   & 0   & 1        & 1                 & 1        & 1                                & 1                                                     \\
+        \end{NiceTabular}
+    \end{center}
+    Since $[(p \rightarrow q) \land \neg p] \rightarrow \neg q$ is not a tautology,
+
+    $\therefore$ the argument $p \rightarrow q, \neg p;\ \therefore \neg q$ is invalid.
+\end{solution}
+
+Now take a look at this example,
+\begin{align*}
+     & \text{If earth has wings, then it can fly.} \\
+     & \text{Earth has wings.}                     \\
+     & \therefore \text{Earth can fly.}
+\end{align*}
+Its formal argument is $p \rightarrow q, p;\ \therefore q$ which is a valid argument. However, the premises ``Earth has wings.'' and the conclusion ``Earth can fly'' are both false. Therefore, a valid argument does not necessarily mean that the conclusion is true. In order to construct an argument with a true conclusion, the following criteria must be met:
+\begin{enumerate}
+    \item It is a valid argument. That is, the premises and the conclusion are connected
+          together by a valid logical relationship.
+    \item All the premises are true.
+\end{enumerate}
+
+Considering the fact that the validity of premises must be resolved by other
+fields of knowledge, therefore, traditional and modern studies of logic only
+focus on the validity of arguments.
+
+\begin{example}
+    \item Check the validity of the following arguments:
+    \begin{enumerate}[label=(\alph*), leftmargin=*]
+        \item If two angles are corresponding angles, then they are equal.
+
+              This two angles are equal.
+
+              Therefore this two angles are corresponding angles.
+
+        \item This student is interested in entertainment or sports.
+
+              This student is not interested in entertainment.
+
+              Therefore this student is interested in sports.
+    \end{enumerate}
+\end{example}
+\begin{solution}
+    \item \begin{enumerate}[label=(\alph*), leftmargin=*]
+        \item Use $p$, $q$ to express ``This two angles are corresponding angles.'', ``This
+              two angles are equal.'' respectively.
+
+              Then the argument can be expressed as follows:
+              \begin{align*}
+                  p          & \rightarrow q                \\
+                             & q                            \\[-8pt]
+                             & \mathclap{\rule{2cm}{0.4pt}} \\[-5pt]
+                  \therefore & \ p                          \\[-8pt]
+                             & \mathclap{\rule{2cm}{0.4pt}}
+              \end{align*}
+              Construct a truth table for $[(p \rightarrow q) \land q] \rightarrow p$:
+              \begin{center}
+                  \begin{NiceTabular}{|c|c|c|c|c|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
+                      $p$ & $q$ & $p \rightarrow q$ & $q$ & $(p \rightarrow q) \land q$ & $[(p \rightarrow q) \land q] \rightarrow p$ \\
+                      1   & 1   & 1                 & 1   & 1                           & 1                                           \\
+                      1   & 0   & 0                 & 0   & 0                           & 1                                           \\
+                      0   & 1   & 1                 & 1   & 1                           & 0                                           \\
+                      0   & 0   & 1                 & 0   & 0                           & 1                                           \\
+                  \end{NiceTabular}
+              \end{center}
+              Since $[(p \rightarrow q) \land q] \rightarrow p$ is not a tautology, the argument is invalid.
+
+        \item Use $p$, $q$ to express ``This student is interested in entertainment.'',
+              ``This student is interested in sports.'' respectively.
+
+              Then the argument can be expressed as follows:
+              \begin{align*}
+                  p          & \lor q                       \\
+                             & \neg p                       \\[-8pt]
+                             & \mathclap{\rule{2cm}{0.4pt}} \\[-5pt]
+                  \therefore & \ q                          \\[-8pt]
+                             & \mathclap{\rule{2cm}{0.4pt}}
+              \end{align*}
+              Construct a truth table for $[(p \lor q) \land \neg p] \rightarrow q$:
+              \begin{center}
+                  \begin{NiceTabular}{|c|c|c|c|c|c|c|c|}[code-before = \rowcolor{lightgray}{1}, hvlines, t]
+                      $p$ & $q$ & $\neg p$ & $p \lor q$ & $(p \lor q) \land \neg p$ & $[(p \lor q) \land \neg p] \rightarrow q$ \\
+                      1   & 1   & 0        & 1          & 0                         & 1                                         \\
+                      1   & 0   & 0        & 1          & 0                         & 1                                         \\
+                      0   & 1   & 1        & 1          & 1                         & 1                                         \\
+                      0   & 0   & 1        & 0          & 0                         & 1                                         \\
+                  \end{NiceTabular}
+              \end{center}
+              Since $[(p \lor q) \land \neg p] \rightarrow q$ is a tautology, the argument is valid.
+    \end{enumerate}
+\end{solution}
+
+\subsection*{Exercise 11h}
+\begin{enumerate}
+    \item Check the validity of the following arguments:
+          \begin{enumerate}
+              \item $p \rightarrow q, \sim q ;\ \therefore \sim p$
+              \item $\sim p \rightarrow q, p ;\ \therefore \sim q$
+          \end{enumerate}
+
+    \item Prove that the following arguments are valid:
+          \begin{enumerate}
+              \item $p \rightarrow \sim q, r \rightarrow q, r ; \quad \therefore \sim p$
+              \item $\sim p \rightarrow \sim q, q ; \therefore \sim p$
+          \end{enumerate}
+
+    \item Determine whether the following arguments are valid:
+          \begin{enumerate}
+              \item If it is a square, then its diagonals bisect each other.
+
+                    It is a square.
+
+                    Therefore its diagonals bisect each other.
+
+              \item If it is a square, then its diagonals bisect each other.
+
+                    Its diagonals bisect each other.
+
+                    Therefore it is a square.
+
+              \item If it is a square, then its diagonals bisect each other.
+
+                    It is not a square.
+
+                    Therefore its diagonals do not bisect each other.
+
+              \item If it is a square, then its diagonals bisect each other.
+
+                    Its diagonals do not bisect each other.
+
+                    Therefore it is not a square.
+          \end{enumerate}
+
+    \item Determine the validity of the following arguments:
+          \begin{enumerate}
+              \item If 6 is not an even number, then 5 is not a prime number.
+
+                    6 is an even number.
+
+                    Therefore 5 is a prime number.
+
+              \item If being infected by pneumonia. then having fever.
+
+                    He is not infected by pneumonia.
+
+                    Therefore he does not have fever.
+
+              \item If a number can be divided by 6, then the number can be divided by 2.
+
+                    The number can be divided by 6.
+
+                    Therefore the number can be divided by 2.
+
+              \item If you are a good student, then you will not be absence from class.
+
+                    If you are a good student, then you will not fight with others.
+
+                    You are absence from class or you fight with others.
+
+                    Therefore you are not a good student.
+          \end{enumerate}
+
+    \item Determine the validity of the following arguments. Hence, state whether the
+          conclusion of each valid arguments is true:
+          \begin{enumerate}
+              \item If $x = 4$, then $x^2 = 16$.
+
+                    $x = 4$.
+
+                    Therefore $x^2 = 16$.
+
+              \item If 7 is less than 4, then 7 is not a prime number.
+
+                    7 is not less than 4.
+
+                    Therefore 7 is a prime number.
+
+              \item If 5 is a prime number, then 5 cannot divide 15.
+
+                    5 can divide 15.
+
+                    Therefore 5 is not a prime number.
+          \end{enumerate}
+\end{enumerate}
 \end{document}
