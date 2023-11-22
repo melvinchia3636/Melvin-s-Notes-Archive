@@ -34,7 +34,7 @@
 
 \section{Logic}
 
-\textbf{Logic} is a branch of science that studies the way we reason and its patterns. When we are reasoning, We need to use concepts, make judgments, and make inferences. Concept, judgment, and inference are the three basic elements of the thinking process. They are interconnected and follow a certain pattern.
+\textbf{Logic} is a branch of science that studies the way we reason and its patterns. When we are reasoning, We need to use concepts, make judgments, and make arguments. Concept, judgment, and argument are the three basic elements of the thinking process. They are interconnected and follow a certain pattern.
 
 The science of logic emerged over 2000 years ago. Ancient philosophers already
 started to study the formation of thinking and its patterns from a long time
@@ -192,7 +192,7 @@ original proposition $p$.
 
 \vspace{0.5cm}
 \begin{example}
-    \item Write down the inverse proposition of the following propositions:
+    \item Write down the negation of the following propositions:
     \begin{enumerate}[label=, leftmargin=*]
         \item $p$: $2 + 2 = 4$.
         \item $q$: 25 is a multiple of 5.
@@ -226,7 +226,7 @@ This kind of table consisting of true and false that is used to analyse a compou
 
 \vspace{0.5cm}
 \begin{example}
-    \item Write down the inverse proposition of the following propositions:
+    \item Write down the negation of the following propositions:
     \begin{enumerate}[label=, leftmargin=*]
         \item $s$: All integers are positive numbers.
         \item $t$: THe square root of 4 must be 2.
@@ -247,13 +247,12 @@ This kind of table consisting of true and false that is used to analyse a compou
     \item In the example above, proposition $s$ is a false proposition, expressing $\neg
               s$ as ``There exists an integer that is not a positive number'' is not
           accurate. Therefore caution must be taken that either the proposition or its
-          inverse proposition must be true, but not both, and they cannot be both false
-          either.
+          negation must be true, but not both, and they cannot be both false either.
 \end{enumerate}
 
 \subsection*{Exercise 11b}
 \begin{enumerate}[leftmargin=*]
-    \item Write down the inverse proposition of the following propositions:
+    \item Write down the negation of the following propositions:
           \begin{enumerate}[label=, leftmargin=*]
               \item $p$: The sum of two sides of a triangle is greater than the third side.
               \item $q$: The smallest natural number is 1.
@@ -263,8 +262,8 @@ This kind of table consisting of true and false that is used to analyse a compou
               \item $u$: All the numbers with the last digit 3 are divisible by 3.
               \item $v$: Regular polygons have equal sides.
           \end{enumerate}
-    \item Write down the truth value of the propositions and their inverse propositions
-          in Question 1. If the proposition is true, give a reason. If the proposition
+    \item Write down the truth value of the propositions and their negations in Question
+          1. If the proposition is true, give a reason. If the proposition
 \end{enumerate}
 
 \subsection*{Conjunctive Proposition and its Truth Table}
@@ -571,22 +570,22 @@ $p \land \neg p$ is a contradiction, its truth table is as follows:
 \begin{enumerate}[leftmargin=*]
     \item Construct a truth table for each of the following propositions:
           \begin{enumerate}[leftmargin=*]
-              \item $\neg p \wedge q$
-              \item $\neg(p \vee q)$
-              \item $\neg(p \vee \neg q)$
-              \item $(\neg p \vee q) \wedge p$
+              \item $\neg p \land q$
+              \item $\neg(p \lor q)$
+              \item $\neg(p \lor \neg q)$
+              \item $(\neg p \lor q) \land p$
           \end{enumerate}
     \item Determine whether the following propositions are tautologies or contradictions:
           \begin{enumerate}[leftmargin=*]
-              \item $p \wedge \neg q$
-              \item $p \vee \neg(p \wedge q)$
-              \item $(p \wedge q) \wedge \neg(p \vee q)$
-              \item $(p \wedge \neg p) \wedge q$
+              \item $p \land \neg q$
+              \item $p \lor \neg(p \land q)$
+              \item $(p \land q) \land \neg(p \lor q)$
+              \item $(p \land \neg p) \land q$
           \end{enumerate}
     \item Construct a truth table for each of the following propositions:
           \begin{enumerate}[leftmargin=*]
-              \item $p \wedge(q \vee r)$
-              \item $(\mathrm{p} \wedge q) \vee(p \wedge r)$
+              \item $p \land(q \lor r)$
+              \item $(\mathrm{p} \land q) \lor(p \land r)$
           \end{enumerate}
 \end{enumerate}
 
@@ -672,7 +671,7 @@ The two formulas above are known as the \textbf{De Morgan's Laws}.
 
 \vspace{0.5cm}
 \begin{example}
-    \item Find the inverse proposition of the following propositions:
+    \item Find the negation of the following propositions:
     \begin{enumerate}[label=(\alph*)]
         \item The opposite sides of a parallelogram are parallel and equal to each other.
         \item All the odd numbers are divisible by 3 or 5.
@@ -686,7 +685,7 @@ The two formulas above are known as the \textbf{De Morgan's Laws}.
 
               $p \land q$: The opposite sides of a parallelogram are parallel and equal to each other.
 
-              The target inverse proposition is $\neg(p \land q)$.
+              The target negation is $\neg(p \land q)$.
 
               And $\neg(p \land q) \equiv \neg p \lor \neg q$.
 
@@ -733,35 +732,34 @@ The two formulas above are known as the \textbf{De Morgan's Laws}.
 \end{enumerate}
 
 \subsection*{Exercise 11f}
-\begin{enumerate}
+\begin{enumerate}[leftmargin=*]
     \item Prove the following equivalences using truth tables:
-          \begin{enumerate}
-              \item (a) $p \vee q \equiv \sim(\sim p \wedge \sim q)$
-              \item $(p \wedge q) \wedge r \equiv p \wedge(q \wedge r)$
-              \item $p \vee(q \wedge r) \equiv(p \vee q) \wedge(p \vee r)$
-              \item $\sim(p \vee \sim q) \equiv \sim p \wedge q$
+          \begin{enumerate}[leftmargin=*]
+              \item (a) $p \lor q \equiv \neg(\neg p \land \neg q)$
+              \item $(p \land q) \land r \equiv p \land(q \land r)$
+              \item $p \lor(q \land r) \equiv(p \lor q) \land(p \lor r)$
+              \item $\neg(p \lor \neg q) \equiv \neg p \land q$
           \end{enumerate}
-    \item  Find the inverse proposition of the following propositions and their truth
-          values:
-          \begin{enumerate}
+    \item  Find the negation of the following propositions and their truth values:
+          \begin{enumerate}[leftmargin=*]
               \item The three center lines of a triangle intersect at one point, and the three
                     altitude lines of the triangle also intersects at this point.
               \item The odd number $2n$ is divisible by 2 or 4.
           \end{enumerate}
-    \item \begin{enumerate}
-              \item Given $p=0, q=1$, find the truth values of $\sim(p \vee q)$ and $\sim(p \wedge
+    \item \begin{enumerate}[leftmargin=*]
+              \item Given $p=0, q=1$, find the truth values of $\neg(p \lor q)$ and $\neg(p \land
                         q)$.
-              \item Given $p=1, q=0$, find the truth values of $\sim(p \vee q)$ and $\sim(p \wedge
+              \item Given $p=1, q=0$, find the truth values of $\neg(p \lor q)$ and $\neg(p \land
                         q)$.
-              \item Given $p=1, q=1$, find the truth values of $\sim(p \vee q)$ and $\sim(p \wedge
+              \item Given $p=1, q=1$, find the truth values of $\neg(p \lor q)$ and $\neg(p \land
                         q)$.
           \end{enumerate}
     \item Simplify the following propositions using De Morgan's Laws and double negation
           law:
-          \begin{enumerate}
-              \item $\sim(\sim p \wedge q)$
-              \item $\sim(\sim p \vee \sim q)$
-              \item $\sim(\sim p \vee q)$
+          \begin{enumerate}[leftmargin=*]
+              \item $\neg(\neg p \land q)$
+              \item $\neg(\neg p \lor \neg q)$
+              \item $\neg(\neg p \lor q)$
           \end{enumerate}
 \end{enumerate}
 
@@ -1228,7 +1226,7 @@ Now take a look at this example,
      & \therefore \text{Earth can fly.}
 \end{align*}
 Its formal argument is $p \rightarrow q, p;\ \therefore q$ which is a valid argument. However, the premises ``Earth has wings.'' and the conclusion ``Earth can fly'' are both false. Therefore, a valid argument does not necessarily mean that the conclusion is true. In order to construct an argument with a true conclusion, the following criteria must be met:
-\begin{enumerate}
+\begin{enumerate}[leftmargin=*]
     \item It is a valid argument. That is, the premises and the conclusion are connected
           together by a valid logical relationship.
     \item All the premises are true.
@@ -1305,21 +1303,21 @@ focus on the validity of arguments.
 \end{solution}
 
 \subsection*{Exercise 11h}
-\begin{enumerate}
+\begin{enumerate}[leftmargin=*]
     \item Check the validity of the following arguments:
-          \begin{enumerate}
-              \item $p \rightarrow q, \sim q ;\ \therefore \sim p$
-              \item $\sim p \rightarrow q, p ;\ \therefore \sim q$
+          \begin{enumerate}[leftmargin=*]
+              \item $p \rightarrow q, \neg q ;\ \therefore \neg p$
+              \item $\neg p \rightarrow q, p ;\ \therefore \neg q$
           \end{enumerate}
 
     \item Prove that the following arguments are valid:
-          \begin{enumerate}
-              \item $p \rightarrow \sim q, r \rightarrow q, r ; \quad \therefore \sim p$
-              \item $\sim p \rightarrow \sim q, q ; \therefore \sim p$
+          \begin{enumerate}[leftmargin=*]
+              \item $p \rightarrow \neg q, r \rightarrow q, r ; \quad \therefore \neg p$
+              \item $\neg p \rightarrow \neg q, q ; \therefore \neg p$
           \end{enumerate}
 
     \item Determine whether the following arguments are valid:
-          \begin{enumerate}
+          \begin{enumerate}[leftmargin=*]
               \item If it is a square, then its diagonals bisect each other.
 
                     It is a square.
@@ -1346,7 +1344,7 @@ focus on the validity of arguments.
           \end{enumerate}
 
     \item Determine the validity of the following arguments:
-          \begin{enumerate}
+          \begin{enumerate}[leftmargin=*]
               \item If 6 is not an even number, then 5 is not a prime number.
 
                     6 is an even number.
@@ -1376,7 +1374,7 @@ focus on the validity of arguments.
 
     \item Determine the validity of the following arguments. Hence, state whether the
           conclusion of each valid arguments is true:
-          \begin{enumerate}
+          \begin{enumerate}[leftmargin=*]
               \item If $x = 4$, then $x^2 = 16$.
 
                     $x = 4$.
@@ -1394,6 +1392,148 @@ focus on the validity of arguments.
                     5 can divide 15.
 
                     Therefore 5 is not a prime number.
+          \end{enumerate}
+\end{enumerate}
+
+\section*{Revision Exercise 11}
+
+\begin{enumerate}[leftmargin=*]
+    \item Write the truth values for the following propositions, and provide
+          counterexamples for false propositions:
+          \begin{enumerate}[label=,leftmargin=*]
+              \item $p$: The sum of two sides of a triangle is greater than the third side.
+              \item $q$: For any number $x$, $x$ is greater than $-x$.
+              \item $r$: For real numbers $x$ and $y$, $\dfrac{x^2 + y^2}{2} \geq xy$.
+              \item $t$: $\sin^2 x + 2\cos^2 x < 3$.
+          \end{enumerate}
+
+    \item Write the set $A$ that makes the following statements true:
+          \begin{enumerate}[label=,leftmargin=*]
+              \item $p$: If $x \in A$, then $\log_2 x \geq 1$.
+              \item $q$: If $x \in A$, then $x^2 - 5x + 6 < 0$.
+              \item $r$: If $x \in A$, then $\sin x = \dfrac{1}{2}$.
+              \item $t$: If $x \in A$, then $\sin x > 1$.
+          \end{enumerate}
+
+    \item Write the negations of the following propositions and determine their truth
+          values:
+          \begin{enumerate}[label=,leftmargin=*]
+              \item $p$: The equation $x^2 - 5x - 12 = 0$ has two distinct real roots.
+              \item $q$: $a^{\log_a N} = N$ (where $a > 0$ and $a \neq 1$).
+              \item $r$: If the product of the slopes of two lines is -1, then the lines are perpendicular.
+              \item $s$: The sum of the interior angles of an $n$-gon is not equal to $(n-2) \cdot 180^{\circ}$.
+          \end{enumerate}
+
+    \item Write the conjunction propositions for the following sets of propositions and
+          determine their truth values:
+          \begin{enumerate}[label=(\alph*)]
+              \item \begin{enumerate}[label=]
+                        \item $p$: When $x^2 + y^2 = 0$, then $x = y = 0$.
+                        \item $q$: When $x^2 + y^2 = 1$, then $xy \leq \dfrac{1}{2}$.
+                    \end{enumerate}
+
+              \item \begin{enumerate}[label=]
+                        \item $p$: For all real number $x$, $x^2 \geq 0$.
+                        \item $q$: For all real number $x$, $\sqrt{x^2} = x$.
+                    \end{enumerate}
+          \end{enumerate}
+
+    \item Write the disjunction propositions for the following sets and determine their
+          truth values:
+          \begin{enumerate}[label=(\alph*)]
+              \item $p$: $\pi$ is a positive number.
+
+                    $q$: $\pi$ is irrational.
+
+              \item $p$: The equation $x^2 - bx - 2b^2 = 0$ ($b \neq 0, b \in \mathbb{R}$) has real roots.
+
+                    $q$: The equation $x^2 + bx + 2b^2 = 0$ ($b \neq 0, b \in \mathbb{R}$) has real roots.
+
+              \item $p$: The equation $x^2 + 1 = x^2 + 2$ has real roots.
+
+                    $q$: The equation $x^2 + y^2 = -1$ has real roots.
+          \end{enumerate}
+
+    \item Given $p = 0, q = 1$, find the truth values of $\neg(p \lor q)$ and $\neg(p
+              \land q)$.
+
+    \item Prove that when $\neg(p \land q) = 0$, the truth values of $p$ and $q$ are both
+          $1$.
+
+    \item Based on the following pairs of $p$ and $q$, determine the truth value of the
+          implication proposition $p \rightarrow q$.
+          \begin{enumerate}[label=(\alph*)]
+              \item $p$: $a > b$ and $b > c$.
+
+                    $q$: $a > c$.
+
+              \item $p$: $|x| = |y|$.
+
+                    $q$: $x = y$.
+
+              \item $p$: Line $a$ is perpendicular to any line in plane $\alpha$.
+
+                    $q$: Line $a$ is perpendicular to plane $\alpha_0$.
+          \end{enumerate}
+
+    \item Given $p = 1, q = 0$, find the truth values of the four types of implications
+          formed by $p$ and $q$.
+
+    \item Find the truth tables for the following propositions:
+          \begin{enumerate}[label=(\alph*)]
+              \item $p \lor \neg q$
+              \item $\neg p \land \neg q$
+              \item $\neg(p \lor q) \rightarrow p$
+              \item $\neg(\neg p \lor \neg q)$
+          \end{enumerate}
+
+          \newpage
+    \item Prove:
+          \begin{enumerate}[label=(\alph*)]
+              \item $p \lor (p \land q) \equiv p$
+              \item $\neg(p \rightarrow q) \equiv p \land (\neg q)$
+          \end{enumerate}
+
+    \item Determine if the following propositions are tautologies or contradictions:
+          \begin{enumerate}[label=(\alph*)]
+              \item $(p \land q) \rightarrow (p \lor q)$
+              \item $\neg(p \rightarrow q) \land (\neg p \land q)$
+              \item $(p \land q) \land \neg(p \lor q)$
+              \item $[(p \rightarrow q) \land \neg q] \rightarrow \neg p$
+          \end{enumerate}
+
+    \item Check the validity of the following arguments:
+          \begin{enumerate}[label=(\alph*)]
+              \item $\neg p \rightarrow q, p;\ \therefore \neg q$
+              \item $p \rightarrow \neg q, r \rightarrow p, q;\ \therefore \neg r$
+          \end{enumerate}
+
+    \item Determine the validity of the following argument:
+          \begin{enumerate}[label=(\alph*)]
+              \item If a number is positive, then it is greater than zero.
+
+                    A number is positive.
+
+                    Therefore, it is greater than zero.
+
+              \item If he is a hard working student, then he passes the exam.
+
+                    If he wears glasses, then he is a hard working student.
+
+                    Therefore, if he wears glasses, he will not fail the exam.
+
+              \item If two triangles are congruent, then their corresponding angles are equal.
+
+                    The two triangles have equal corresponding angles.
+
+                    Hence, the two triangles are congruent.
+
+              \item If $\theta$ is an angle in the first quadrant, then $\sin \theta > 0$.
+
+                    $\theta$ is not an angle in the first quadrant.
+
+                    Therefore, $\sin \theta \nless 0$.
+
           \end{enumerate}
 \end{enumerate}
 \end{document}
