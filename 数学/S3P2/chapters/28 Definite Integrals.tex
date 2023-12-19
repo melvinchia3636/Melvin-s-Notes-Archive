@@ -266,11 +266,113 @@ of the region
 \input{exercises/Chapter 28/Practice 5.tex}
 
 \newpage
+If, in the internal $a \leq x \leq b$, $f_2(x) \geq f_1(x) \geq 0$, then the
+area of the region bounded by the curve $y = f_1(x)$, $y = f_2(x)$, the lines
+$x = a$ and $x = b$ can be found using definite integrals.
+\begin{center}
+    \includegraphics[scale=0.15]{assets/28-16.png}
+\end{center}
+
+As shown in the diagram above, split the interval $a \leq x \leq b$ into
+multiple smaller intervals. Take any one of the smaller intervals, and express
+it as $[x, x + \Delta x]$. The region in this smaller interval can be
+approximated by a rectangle with width of $\Delta x$ and height of the function
+value $f_2(x) - f_1(x)$, i.e.
+\begin{cequation}
+    \Delta A \approx [f_2(x) - f_1(x)]\Delta x
+\end{cequation}
+
+Summing up the approximated area of all the smaller intervals, then find the
+limit of the sum when $\Delta x \to 0$, we can get the area of the region
+bounded by the curve $y = f_1(x)$, $y = f_2(x)$, the lines $x = a$ and $x = b$,
+i.e.
+\begin{cequation}
+    A = \int_a^b [f_2(x) - f_1(x)]dx
+\end{cequation}
+
+\begin{center}
+    \includegraphics[scale=0.15]{assets/28-17.png}
+\end{center}
+
+Similarly, if, in the internal $c \leq y \leq d$, $g_2(y) \geq g_1(y) \geq 0$,
+then the area of the region bounded by the curve $x = g_1(y)$, $x = g_2(y)$,
+the lines $y = c$ and $y = d$ is given by
+\begin{cequation}
+    A = \int_c^d [g_2(y) - g_1(y)]dy
+\end{cequation}
+Note that when using these formulas, the function $f_2(x)$ must always be greater than or equal to $f_1(x)$ in the interval $[a, b]$.
+
+\newpage
 \input{exercises/Chapter 28/Practice 6.tex}
 
 \input{exercises/Chapter 28/Exercise 28.3.tex}
 
+\newpage
+\section{Volume of Revolution}
+The solid formed by rotating a flat surface around a certain straight line on
+the surface is called the \textbf{solid of revolution}, for example the right
+cylinder, right cone, and sphere.
+
+\begin{center}
+    \includegraphics[scale=0.3]{assets/28-22a.png}
+\end{center}
+The diagram above shows a solid of revolution formed by rotating the area
+bounded by the curve $y = f(x)$, the lines $x = a$, $x = b$, and the $x$-axis
+around the $x$-axis. We can utilize the methods discussed in the last section
+to find the volume of this solid of revolution.
+
+\begin{center}
+    \includegraphics[scale=0.3]{assets/28-22b.png}
+\end{center}
+Split the interval $a \leq x \leq b$ into multiple smaller intervals. Take any
+one of the smaller intervals, and express it as $[x, x + \Delta x]$. The region
+in this smaller interval can be approximated by a rectangle with width of
+$\Delta x$ and height of the function value $f(x)$. Rotate this rectangle
+around the $x$-axis, we get a cylinder with radius $f(x)$ and height $\Delta
+    x$, as shown in the diagram above. Hence, the approximated volume of the solid
+of revolution in this smaller interval is
+\begin{cequation}
+    \Delta V \approx \pi[f(x)]^2\Delta x
+\end{cequation}
+
+Summing up the approximated volume of all the smaller intervals, then find the
+limit of the sum when $\Delta x \to 0$, we can get the volume of the solid of
+revolution, i.e.
+\begin{cequation}
+    V = \pi\int_a^b[f(x)]^2dx
+\end{cequation}
+\begin{center}
+    \includegraphics[scale=0.3]{assets/28-23.png}
+\end{center}
+Similarly, if the solid of revolution is formed by rotating the area bounded by the curve $x = g(y)$, the lines $y = c$, $y = d$, and the $y$-axis around the $y$-axis, then the volume of the solid of revolution is given by
+\begin{cequation}
+    V = \pi\int_c^d[g(y)]^2dy
+\end{cequation}
+
+\newpage
 \input{exercises/Chapter 28/Practice 7.tex}
+
+If a region is bounded by the curve $y = f_1(x)$, $y = f_2(x)$, the lines $x =
+    a$, $x = b$, and the $x$-axis, and $f_2 \geq f_1 \geq 0$, then the volume of
+the solid of revolution formed by rotating this region around the $x$-axis, as
+shown in the diagram below, is given by
+\begin{cequation}
+    V = \pi\int_a^b[f_2(x)]^2dx - \pi\int_a^b[f_1(x)]^2dx = \pi\int_a^b\left\{[f_2(x)]^2 - [f_1(x)]^2\right\}dx
+\end{cequation}
+\begin{center}
+    \includegraphics[scale=0.15]{assets/28-29.png}
+\end{center}
+
+Similarly, if a region is bounded by the curve $x = g_1(y)$, $x = g_2(y)$, the
+lines $y = c$, $y = d$, and the $y$-axis, and $g_2 \geq g_1 \geq 0$, then the
+volume of the solid of revolution formed by rotating this region around the
+$y$-axis, as shown in the diagram below, is given by
+\begin{cequation}
+    V = \pi\int_c^d[g_2(y)]^2dy - \pi\int_c^d[g_1(y)]^2dy = \pi\int_c^d\left\{[g_2(y)]^2 - [g_1(y)]^2\right\}dy
+\end{cequation}
+\begin{center}
+    \includegraphics[scale=0.15]{assets/28-30.png}
+\end{center}
 
 \input{exercises/Chapter 28/Practice 8.tex}
 
