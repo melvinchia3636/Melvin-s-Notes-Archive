@@ -8,37 +8,35 @@
             \begin{flalign*}
                   A & = \int_2^5 3x^2 d x    & \\
                     & = \left[x^3\right]_2^5 & \\
-                    & = 125 - 8              & \\
-                    & = 117
+                    & = 125 - 8 = 117
             \end{flalign*}
+            \vfill\null
 
             \item $y=(x-1)^2, x=4, x$-axis, and $y$-axis
             \sol{}
             \begin{flalign*}
-                  A & = \int_0^4 (x-1)^2 d x                 & \\
-                    & = \left[\dfrac{1}{3}(x-1)^3\right]_0^4 & \\
-                    & = \dfrac{1}{3}(3^3 + 1)                & \\
-                    & = \dfrac{28}{3}
+                  A & = \int_0^4 (x-1)^2 d x                  & \\
+                    & = \left[\dfrac{1}{3}(x-1)^3\right]_0^4  & \\
+                    & = \dfrac{1}{3}(3^3 + 1) = \dfrac{28}{3}
             \end{flalign*}
+            \vfill\null
       \end{multicols}
-
-      \vfill\null
+      \vspace{-3em}
 
       \begin{multicols}{2}
-            \item $y=x^2+4 x-21$, and $x$-axis
+            \item $y=x^2+4 x-21$, and $x$-axis\sol{}
             \begin{flalign*}
-                  x^2 + 4x - 21        & = 0 & \\
                   (x + 7)(x - 3)       & = 0 & \\
                   x = -7 \text{ or } x & = 3
             \end{flalign*}
             In the interval $-7 \leq x \leq 3$, $x^2 + 4x - 21 \leq 0$.
             \begin{flalign*}
-                  A & = \left|\int_{-7}^3 (x^2 + 4x - 21) d x\right|                       & \\
-                    & = \left|\left[\dfrac{1}{3}x^3 + 2x^2 - 21x\right]_{-7}^3\right|      & \\
-                    & = \left|9 + 18 - 63 - \left(-\dfrac{343}{3} + 98 + 147\right)\right| & \\
-                    & = \dfrac{500}{3}
+                  A & = \left|\int_{-7}^3 (x^2 + 4x - 21) d x\right|                                        & \\
+                    & = \left|\left[\dfrac{1}{3}x^3 + 2x^2 - 21x\right]_{-7}^3\right|                       & \\
+                    & = \left|9 + 18 - 63 - \left(-\dfrac{343}{3} + 98 + 147\right)\right| = \dfrac{500}{3}
             \end{flalign*}
 
+            \columnbreak{}
             \item $y=e^{2 x}, x=0, x=4$, and $x$-axis
             \sol{}
             \begin{flalign*}
@@ -75,7 +73,6 @@
             \end{flalign*}
       \end{multicols}
 
-      \newpage
       \begin{multicols}{2}
             \item $x=y^2, y=3$, and $y$-axis
             \sol{}
@@ -158,31 +155,32 @@
             \end{flalign*}
       \end{multicols}
 
+      \vfill\null
       \begin{multicols}{2}
-            \item Find the area of the region bounded by the curve $y=\sin x$ and $y=-2 \sin x$
-            in the interval $0 \leq x \leq \pi$. \sol{}
-            \begin{flalign*}
-                  \sin x & = -2 \sin x & \\
-                  \sin x & = 0         & \\
-                  x      & = 0, \pi
-            \end{flalign*}
-            In the interval $0 \leq x \leq \pi$, $-2 \sin x \leq \sin x$.
-            \begin{flalign*}
-                  A & = \int_0^{\pi} (3 \sin x) d x   & \\
-                    & = \bigg[-3 \cos x\bigg]_0^{\pi} & \\
-                    & = 3 - (-3) = 6
-            \end{flalign*}
-            \vfill{}\null{}
+            \item Find the area of the region bounded by the curve \\$y=\sin x$ and $y=-2 \sin x$
+                  in the interval $0 \leq x \leq \pi$. \sol{}
+                  \begin{flalign*}
+                        \sin x & = -2 \sin x & \\
+                        \sin x & = 0         & \\
+                        x      & = 0, \pi
+                  \end{flalign*}
+                  In the interval $0 \leq x \leq \pi$, $-2 \sin x \leq \sin x$.
+                  \begin{flalign*}
+                        A & = \int_0^{\pi} (3 \sin x) d x   & \\
+                          & = \bigg[-3 \cos x\bigg]_0^{\pi} & \\
+                          & = 3 - (-3) = 6
+                  \end{flalign*}
+                  \vfill{}\null{}
 
-            \item Find the area of the region bounded by the curve $y=e^x, y=e^{-2 x}$ and the
-            lines $x=-2$ and $x=4$. \sol{}
-            \begin{flalign*}
-                  e^x & = e^{-2x} & \\
-                  x   & = 0
-            \end{flalign*}
-            In the interval $-2 \leq x \leq 0$, $e^x \leq e^{-2x}$.
+                  \item Find the area of the region bounded by the curve $y=e^x, y=e^{-2 x}$ and the
+                  lines $x=-2$ and $x=4$. \sol{}
+                  \begin{flalign*}
+                        e^x & = e^{-2x} & \\
+                        x   & = 0
+                  \end{flalign*}
+                  In the interval $-2 \leq x \leq 0$, $e^x \leq e^{-2x}$.
 
-            In the interval $0 \leq x \leq 4$, $e^{-2x} \leq e^x$.
+                  In the interval $0 \leq x \leq 4$, $e^{-2x} \leq e^x$.
             \begin{flalign*}
                   A & = \int_{-2}^0 (e^{-2x} - e^x) d x + \int_0^4 (e^x - e^{-2x}) d x                               & \\
                     & = \left[-\dfrac{1}{2}e^{-2x} - e^x\right]_{-2}^0 + \left[e^x + \dfrac{1}{2}e^{-2x}\right]_0^4  & \\
@@ -211,9 +209,6 @@
                     & = 64 - \dfrac{640}{3} + 192 - 324 + 720 - 432 + 64 - \dfrac{640}{3} + 192                                                    & \\
                     & = \dfrac{148}{3}
             \end{flalign*}
-            \vfill\null
-
-            \newpage
 
       \item Find the area of the region bounded by the curve $x=8 y-y^2, x=16 y-y^2-48$,
             and $y$-axis. \sol{}
@@ -222,10 +217,73 @@
                   8y       & = 48             & \\
                   y        & = 6
             \end{flalign*}
+            \begin{flalign*}
+                  8y - y^2 & = 0               & \\
+                  y(8 - y) & = 0               & \\
+                  y = 0    & \text{ or } y = 8
+            \end{flalign*}
+            \begin{flalign*}
+                  16y - y^2 - 48       & = 0 & \\
+                  y^2 - 16y + 48       & = 0 & \\
+                  (y-12)(y-4)          & = 0 & \\
+                  y = 12 \text{ or } y & = 4
+            \end{flalign*}
+            \begin{flalign*}
+                  A & = \int_4^6 (16y - y^2 - 48) d y + \int_6^8 (8y - y^2) d y                                 & \\
+                    & = \left[8y^2 - \dfrac{1}{3}y^3 - 48y\right]_4^6 + \left[4y^2 - \dfrac{1}{3}y^3\right]_6^8 & \\
+                    & = 288 - 72 - 288 - 128 + \dfrac{64}{3} + 192 + 256 - \dfrac{512}{3} - 144 + 72            & \\
+                    & = \dfrac{80}{3}
+            \end{flalign*}
 
       \item Find the area of the region bounded by the curve $x=2 y^2-8 y+10$ and
-            $x=y^2-y$.
+            $x=y^2-y$.\sol{}
+            \begin{flalign*}
+                  2y^2 - 8y + 10      & = y^2 - y & \\
+                  y^2 - 7y + 10       & = 0       & \\
+                  (y - 5)(y - 2)      & = 0       & \\
+                  y = 5 \text{ or } y & = 2
+            \end{flalign*}
+            In the interval $2 \leq y \leq 5$, $y^2 - y \geq 2y^2 - 8y + 10$.
+            \begin{flalign*}
+                  A & = \int_2^5 (y^2 - y - 2y^2 + 8y - 10) d y                        & \\
+                    & = \int_2^5 (-y^2 + 7y - 10) d y                                  & \\
+                    & = \left[-\dfrac{1}{3}y^3 + \dfrac{7}{2}y^2 - 10y\right]_2^5      & \\
+                    & = -\dfrac{125}{3} + \dfrac{175}{2} - 50 + \dfrac{8}{3} - 14 + 20 & \\
+                    & = \dfrac{9}{2}
+            \end{flalign*}
+
+            \vfill\null
       \item Given that the curve $y=f(x)$ passes through point $(1,0)$, and the gradient of
             any point on the curve $(x, y)$ is $3 x^2-3$. Find the area of the region
-            bounded by the curve, $x=2$ and $x$.
+            bounded by the curve, $x=2$ and $x$. \sol{} \vspace{-0.8cm}
+            \begin{multicols}{2}
+                  \begin{flalign*}
+                        \dfrac{d y}{d x} & = 3x^2 - 3           & \\
+                        dy               & = (3x^2 - 3) dx        \\
+                        \int dy          & = \int (3x^2 - 3) dx   \\
+                        y                & = x^3 - 3x + C
+                  \end{flalign*}
+                  When $x = 1$, $y = 0$.
+                  \begin{flalign*}
+                        0 & = 1 - 3 + C & \\
+                        C & = 2
+                  \end{flalign*}
+                  $\therefore$ The equation of the curve is $y = x^3 - 3x + 2$.
+                  \vfill{}\null{}\columnbreak{}
+                  \begin{flalign*}
+                        x^3 - 3x + 2          & = 0  & \\
+                        (x - 1)(x^2 + x - 2)  & = 0  & \\
+                        (x - 1)(x + 2)(x - 1) & = 0  & \\
+                        (x - 1)^2(x + 2)      & = 0  & \\
+                        x = 1 \text{ or } x   & = -2
+                  \end{flalign*}
+                  \begin{flalign*}
+                        A & = \int_{-2}^{2} (x^3 - 3x + 2) d x                             & \\
+                          & = \left[\dfrac{1}{4}x^4 - \dfrac{3}{2}x^2 + 2x\right]_{-2}^{2} & \\
+                          & = 4 - 6 + 4 - 4 + 6 + 4                                        & \\
+                          & = 8
+                  \end{flalign*}
+            \end{multicols}
+            \vfill\null
 \end{enumerate}
+\vfill{}\null{}

@@ -176,3 +176,409 @@ The normal vector of the plane is $\langle 8, 9, 3 \rangle$. Since the target pl
     -63(x - 3) + 64(y - 4) - 24(z - 1) & = 0 \\
     -63x + 64y - 24z - 43              & = 0
 \end{align*}
+
+\newpage
+
+\section*{Selected Exercises}
+
+\textit{Source: Larson Calculus 11th Ed. Exercise 11.5}
+
+\begin{enumerate}[label={},leftmargin=*]
+    \item \textbf{Checking Points in a Plane} In Exercises 37 and 38, determine whether each point
+          lies in the plane.
+\end{enumerate}
+
+\begin{enumerate}
+    \setcounter{enumi}{36}
+    \item $x+2 y-4 z-1=0$
+          \begin{enumerate}
+              \item $(-7,2,-1)$
+                    \sol{}
+                    \begin{align*}
+                        -7 + 2(2) - 4(-1) - 1 & = 0
+                    \end{align*}
+                    Therefore, $(-7,2,-1)$ lies in the plane. $\hfill\blacksquare$\\
+                    \begin{center}
+                        \includegraphics[scale=0.5]{assets/larson11.5q37agraph.png}
+                    \end{center}
+
+              \item[(c)] $(-6,1,-1)$ \sol{}
+                  \begin{align*}
+                      -6 + 2(1) - 4(-1) - 1 & = -1 \neq 0
+                  \end{align*}
+                  Therefore, $(-6,1,-1)$ does not lie in the plane. $\hfill\blacksquare$ \\
+                  \begin{center}
+                      \includegraphics[scale=0.5]{assets/larson11.5q37cgraph.png}
+                  \end{center}
+          \end{enumerate}
+\end{enumerate}
+
+\newpage
+\begin{enumerate}[label={},leftmargin=*]
+    \item \textbf{Finding an Equation of a Plane} In Exercises 39-44, find an equation of the plane that passes through the given point and is perpendicular to the given vector or line.
+\end{enumerate}
+
+\begin{enumerate}
+    \setcounter{enumi}{39}
+    \item Point $(0, -1, 4)$, perpendicular to $n = k$
+
+          \sol{} The normal vector of the
+          plane is $\langle 0, 0, 1 \rangle$.
+
+          Therefore, the equation of the plane is
+          \begin{align*}
+              0(x - 0) + 0(y + 1) + 1(z - 4) & = 0 \\
+              z - 4                          & = 0 \\
+              z                              & = 4
+          \end{align*} \hfill $\blacksquare$
+          \begin{center}
+              \includegraphics[scale=0.5]{assets/larson11.5q40graph.png}
+          \end{center}
+
+    \item Point $(3, 2, 2)$, perpendicular to $n = 2i + 3j - k$
+
+          \sol{} The normal vector
+          of the plane is $\langle 2, 3, -1 \rangle$.
+
+          Therefore, the equation of the plane is
+          \begin{align*}
+              2(x - 3) + 3(y - 2) - 1(z - 2) & = 0 \\
+              2x + 3y - z - 10               & = 0
+          \end{align*} \hfill $\blacksquare$
+          \begin{center}
+              \includegraphics[scale=0.5]{assets/larson11.5q41graph.png}
+          \end{center}
+
+          \newpage
+          \setcounter{enumi}{42}
+    \item Point $(-1, 4, 0)$, perpendicular to $x=-1+2 t, y=5-t, z=3-2 t$
+
+          \sol{} The normal vector of the plane is $\langle 2, -1, -2 \rangle$.
+
+          Therefore, the equation of the plane is
+          \begin{align*}
+              2(x + 1) - 1(y - 4) - 2(z - 0) & = 0 \\
+              2x - y - 2z + 6                & = 0
+          \end{align*} \hfill $\blacksquare$
+          \begin{center}
+              \includegraphics[scale=0.5]{assets/larson11.5q43graph.png}
+          \end{center}
+
+    \item Point $(3, 2, 2)$, perpendicular to line $\dfrac{x-1}{4}=y+2=\dfrac{z+3}{-3}$
+
+          \sol{} The normal vector of the plane is $\langle 4, 1, -3 \rangle$.
+
+          Therefore, the equation of the plane is
+          \begin{align*}
+              4(x - 3) + 1(y - 2) - 3(z - 2) & = 0 \\
+              4x + y - 3z - 8                & = 0
+          \end{align*} \hfill $\blacksquare$
+          \begin{center}
+              \includegraphics[scale=0.5]{assets/larson11.5q44graph.png}
+          \end{center}
+
+          \newpage
+\end{enumerate}
+
+\begin{enumerate}[label={},leftmargin=*]
+    \item \textbf{Finding an Equation} of a Plane In Exercises 45-56, find an equation of the plane with the given characteristics.
+\end{enumerate}
+
+\begin{enumerate}
+    \setcounter{enumi}{45}
+    \item The plane passes through $(3,-1,2),(2,1,5)$, and $(1,-2,-2)$. \sol{} Let $u =
+              \langle 3 - 2, -1 - 1, 2 - 5 \rangle = \langle 1, -2, -3 \rangle$ and $v =
+              \langle 1 - 2, -2 - 1, -2 - 5 \rangle = \langle -1, -3, -7 \rangle$. The normal
+          vector of the plane is
+          \begin{align*}
+              n & = u \times v                                                                   \\
+                & = \begin{vmatrix}
+                        \hat{\imath} & \hat{\jmath} & \hat{k} \\
+                        1            & -2           & -3      \\
+                        -1           & -3           & -7
+                    \end{vmatrix}                    \\
+                & = \begin{vmatrix}
+                        -2 & -3 \\
+                        -3 & -7
+                    \end{vmatrix}\hat{\imath} - \begin{vmatrix}
+                                                    1  & -3 \\
+                                                    -1 & -7
+                                                \end{vmatrix}\hat{\jmath} + \begin{vmatrix}
+                                                                                1  & -2 \\
+                                                                                -1 & -3
+                                                                            \end{vmatrix}\hat{k} \\
+                & = 5\hat{\imath} + 10\hat{\jmath} - 5\hat{k}                                    \\
+          \end{align*}
+          Hence, the equation of the plane is
+          \begin{align*}
+              5(x - 3) + 10(y + 1) - 5(z - 2) & = 0 \\
+              x - 3 + 2(y + 1) - (z - 2)      & = 0 \\
+              x + 2y - z + 1                  & = 0
+          \end{align*} \hfill $\blacksquare$
+          \begin{center}
+              \includegraphics[scale=0.5]{assets/larson11.5q46graph.png}
+          \end{center}
+
+          \newpage
+          \setcounter{enumi}{47}
+    \item The plane passes through the point $(1,2,3)$ and is parallel to the $y
+              z$-plane.
+
+          \sol{} The normal vector of the plane is $\langle 1, 0, 0 \rangle$.
+
+          Hence, the equation of the plane is
+          \begin{align*}
+              1(x - 1) + 0(y - 2) + 0(z - 3) & = 0 \\
+              x - 1                          & = 0 \\
+              x                              & = 1
+          \end{align*} \hfill $\blacksquare$
+
+          \setcounter{enumi}{49}
+    \item The plane contains the $y$-axis and makes an angle of $\pi / 6$ with the
+          positive $x$-axis.
+
+          \sol{} The line $u = \langle 0, 1, 0 \rangle$ and $v = \left\langle \cos\dfrac{\pi}{6}, 0, \sin\dfrac{\pi}{6} \right\rangle = \left\langle \dfrac{\sqrt{3}}{2}, 0, \dfrac{1}{2} \right\rangle$ are parallel to the plane. The normal vector of the plane is
+          \begin{align*}
+              n & = u \times v                                                                                    \\
+                & = \begin{vmatrix}
+                        \hat{\imath}        & \hat{\jmath} & \hat{k}      \\
+                        0                   & 1            & 0            \\
+                        \dfrac{\sqrt{3}}{2} & 0            & \dfrac{1}{2}
+                    \end{vmatrix}                         \\
+                & = \begin{vmatrix}
+                        1 & 0            \\
+                        0 & \dfrac{1}{2}
+                    \end{vmatrix}\hat{\imath} - \begin{vmatrix}
+                                                    0                   & 0            \\
+                                                    \dfrac{\sqrt{3}}{2} & \dfrac{1}{2}
+                                                \end{vmatrix}\hat{\jmath} + \begin{vmatrix}
+                                                                                0                   & 1 \\
+                                                                                \dfrac{\sqrt{3}}{2} & 0
+                                                                            \end{vmatrix}\hat{k} \\
+                & = \dfrac{1}{2}\hat{\imath} - \dfrac{\sqrt{3}}{2}\hat{k}
+          \end{align*}
+          Hence, the equation of the plane is
+          \begin{align*}
+              \dfrac{1}{2}(x - 0) + 0(y - 0) - \dfrac{\sqrt{3}}{2}(z - 0) & = 0 \\
+              \dfrac{1}{2}x - \dfrac{\sqrt{3}}{2}z                        & = 0
+          \end{align*} \hfill $\blacksquare$
+          \begin{center}
+              \includegraphics[scale=0.5]{assets/larson11.5q50graph.png}
+          \end{center}
+
+    \item The plane contains the lines given by $\dfrac{x-1}{-2}=y-4=z$ and
+          $\dfrac{x-2}{-3}=\dfrac{y-1}{4}=\dfrac{z-2}{-1}$
+
+          \sol{} The vector $\vec{u} = \langle -2, 1, 1 \rangle$ and $\vec{v} = \langle -3, 4, -1 \rangle$ are parallel to the plane. The normal vector of the plane is
+          \begin{align*}
+              n & = \vec{u} \times \vec{v}                                                       \\
+                & = \begin{vmatrix}
+                        \hat{\imath} & \hat{\jmath} & \hat{k} \\
+                        -2           & 1            & 1       \\
+                        -3           & 4            & -1
+                    \end{vmatrix}                    \\
+                & = \begin{vmatrix}
+                        1 & 1  \\
+                        4 & -1
+                    \end{vmatrix}\hat{\imath} - \begin{vmatrix}
+                                                    -2 & 1  \\
+                                                    -3 & -1
+                                                \end{vmatrix}\hat{\jmath} + \begin{vmatrix}
+                                                                                -2 & 1 \\
+                                                                                -3 & 4
+                                                                            \end{vmatrix}\hat{k} \\
+                & = (-1-4)\hat{\imath} - [2-(-3)]\hat{\jmath} + [-8-(-3)]\hat{k}                 \\
+                & = -5\hat{\imath} - 5\hat{\jmath} - 5\hat{k}
+          \end{align*}
+          Hence, the equation of the plane is
+          \begin{align*}
+              -5(x - 1) - 5(y - 4) - 5(z - 0) & = 0 \\
+              x - 1 + y - 4 + z - 0           & = 0 \\
+              x + y + z - 5                   & = 0
+          \end{align*} \hfill $\blacksquare$
+          \begin{center}
+              \includegraphics[scale=0.5]{assets/larson11.5q51graph.png}
+          \end{center}
+
+          \newpage
+    \item The plane passes through the point $(2,2,1)$ and contains the line given by $
+              \dfrac{x}{2}=\dfrac{y-4}{-1}=z $
+
+          \sol{} The vector $\vec{u} = \langle 2, -1, 1 \rangle$ and $\vec{v} = \langle 2 - 0, 2 - 4, 1 - 0 \rangle = \langle 2, -2, 1 \rangle$ are parallel to the plane. The normal vector of the plane is
+          \begin{align*}
+              n & = \vec{u} \times \vec{v}                                                       \\
+                & = \begin{vmatrix}
+                        \hat{\imath} & \hat{\jmath} & \hat{k} \\
+                        2            & -1           & 1       \\
+                        2            & -2           & 1
+                    \end{vmatrix}                    \\
+                & = \begin{vmatrix}
+                        -1 & 1 \\
+                        -2 & 1
+                    \end{vmatrix}\hat{\imath} - \begin{vmatrix}
+                                                    2 & 1 \\
+                                                    2 & 1
+                                                \end{vmatrix}\hat{\jmath} + \begin{vmatrix}
+                                                                                2 & -1 \\
+                                                                                2 & -2
+                                                                            \end{vmatrix}\hat{k} \\
+                & = [-1 - (-2)]\hat{\imath} - [2 - 2]\hat{\jmath} + [-4 - (-2)]\hat{k}           \\
+                & = \hat{\imath} - 2\hat{k}
+          \end{align*}
+          Hence, the equation of the plane is
+          \begin{align*}
+              1(x - 2) + 0(y - 2) - 2(z - 1) & = 0 \\
+              x - 2 - 2z + 2                 & = 0 \\
+              x - 2z                         & = 0
+          \end{align*} \hfill $\blacksquare$
+          \begin{center}
+              \includegraphics[scale=0.5]{assets/larson11.5q52graph.png}
+          \end{center}
+
+          \newpage
+          \setcounter{enumi}{53}
+    \item The plane passes through the points $(3,2,1)$ and $(3,1,-5)$ and is
+          perpendicular to the plane $ 6 x+7 y+2 z=10 $
+
+          \sol{} The normal vector of the given plane is $\langle 6, 7, 2 \rangle$, which is parallel to the target plane.
+
+          Let $u = \langle 3 - 3, 1 - 2, -5 - 1 \rangle = \langle 0, -1, -6 \rangle$ and
+          $v = \langle 6, 7, 2 \rangle$. The normal vector of the target plane is
+          \begin{align*}
+              n & = u \times v                                                                   \\
+                & = \begin{vmatrix}
+                        \hat{\imath} & \hat{\jmath} & \hat{k} \\
+                        0            & -1           & -6      \\
+                        6            & 7            & 2
+                    \end{vmatrix}                    \\
+                & = \begin{vmatrix}
+                        -1 & -6 \\
+                        7  & 2
+                    \end{vmatrix}\hat{\imath} - \begin{vmatrix}
+                                                    0 & -6 \\
+                                                    6 & 2
+                                                \end{vmatrix}\hat{\jmath} + \begin{vmatrix}
+                                                                                0 & -1 \\
+                                                                                6 & 7
+                                                                            \end{vmatrix}\hat{k} \\
+                & = (-2 - (-42))\hat{\imath} - [0 - (-36)]\hat{\jmath} + [0 - (-6)]\hat{k}       \\
+                & = 40\hat{\imath} - 36\hat{\jmath} + 6\hat{k}
+          \end{align*}
+          Hence, the equation of the plane is
+          \begin{align*}
+              40(x - 3) - 36(y - 2) + 6(z - 1) & = 0 \\
+              20(x - 3) - 18(y - 2) + 3(z - 1) & = 0 \\
+              20x - 18y + 3z - 27              & = 0
+          \end{align*} \hfill $\blacksquare$
+          \begin{center}
+              \includegraphics[scale=0.5]{assets/larson11.5q54graph.png}
+          \end{center}
+
+          \newpage
+          \setcounter{enumi}{55}
+    \item The plane passes through the points $(4,2,1)$ and $(-3,5,7)$ and is parallel to
+          the $z$-axis.
+
+          \sol{}
+          Let $u = \langle 4 - (-3), 2 - 5, 1 - 7 \rangle = \langle 7, -3, -6 \rangle$ and $v = \langle 0, 0, 1 \rangle$. The normal vector of the plane is
+          \begin{align*}
+              n & = u \times v                                                                   \\
+                & = \begin{vmatrix}
+                        \hat{\imath} & \hat{\jmath} & \hat{k} \\
+                        7            & -3           & -6      \\
+                        0            & 0            & 1
+                    \end{vmatrix}                    \\
+                & = \begin{vmatrix}
+                        -3 & -6 \\
+                        0  & 1
+                    \end{vmatrix}\hat{\imath} - \begin{vmatrix}
+                                                    7 & -6 \\
+                                                    0 & 1
+                                                \end{vmatrix}\hat{\jmath} + \begin{vmatrix}
+                                                                                7 & -3 \\
+                                                                                0 & 0
+                                                                            \end{vmatrix}\hat{k} \\
+                & = -3\hat{\imath} - 7\hat{\jmath}
+          \end{align*}
+          Hence, the equation of the plane is
+          \begin{align*}
+              -3(x - 4) - 7(y - 2) + 0(z - 1) & = 0 \\
+              -3x + 12 - 7y + 14              & = 0 \\
+              -3x - 7y + 26                   & = 0
+          \end{align*} \hfill $\blacksquare$
+          \begin{center}
+              \includegraphics[scale=0.5]{assets/larson11.5q56graph.png}
+          \end{center}
+\end{enumerate}
+
+\newpage
+\begin{enumerate}[label={},leftmargin=*]
+    \item \textbf{Finding an Equation of a Plane} In Exercises 57-60, find an equation of the plane that contains all the points that are equidistant from the given points.
+\end{enumerate}
+
+\begin{enumerate}
+    \setcounter{enumi}{58}
+    \item $(-3, 1, 2)$, $(6, -2, 4)$
+
+          \sol{} The midpoint of the line segment joining the two points is $M = \left(\dfrac{-3 + 6}{2}, \dfrac{1 - 2}{2}, \dfrac{2 + 4}{2}\right) = (1.5, -0.5, 3)$. The normal vector of the plane is $\langle 6 - (-3), -2 - 1, 4 - 2 \rangle = \langle 9, -3, 2 \rangle$.
+
+          Hence, the equation of the plane is
+          \begin{align*}
+              9(x - 1.5) - 3(y + 0.5) + 2(z - 3) & = 0 \\
+              9x - 13.5 - 3y - 1.5 + 2z - 6      & = 0 \\
+              9x - 3y + 2z - 21                  & = 0
+          \end{align*} \hfill $\blacksquare$
+          \begin{center}
+              \includegraphics[scale=0.5]{assets/larson11.5q59graph.png}
+          \end{center}
+\end{enumerate}
+
+\begin{enumerate}[label={},leftmargin=*]
+    \item \textbf{Intersection of Planes} In Exercises 65-68, (a) find the angle between the two planes and (b) find a set of parametric equations for the line of intersection of the planes.
+\end{enumerate}
+
+\begin{enumerate}
+    \setcounter{enumi}{65}
+    \item $\begin{aligned}[t] & -2 x+y+z=2 \\ & 6 x-3 y+2 z=4\end{aligned}$
+
+          \sol{}
+          \begin{enumerate}
+              \item The normal vector of the the two planes are $\langle -2, 1, 1 \rangle$ and
+                    $\langle 6, -3, 2 \rangle$. The angle between the two planes is
+                    \begin{align*}
+                        \cos\theta & = \dfrac{\langle -2, 1, 1 \rangle \cdot \langle 6, -3, 2 \rangle}{\left\lVert \langle -2, 1, 1 \rangle \right\rVert \left\lVert \langle 6, -3, 2 \rangle \right\rVert} \\
+                                   & = \dfrac{-12 - 3 + 2}{\sqrt{6} \sqrt{49}}                                                                                                                              \\
+                                   & = -\dfrac{13}{7\sqrt{6}}                                                                                                                                               \\
+                        \theta     & = \arccos \left( -\dfrac{13}{7\sqrt{6}} \right)                                                                                                                        \\
+                                   & \approx 139.3^{\circ}
+                    \end{align*} \hfill $\blacksquare$
+
+              \item Solving the two equations simultaneously,
+                    \begin{align*}
+                        \begin{cases}
+                            -2x + y + z  = 2\ \cdots\ (1) \\
+                            6x - 3y + 2z = 4\ \cdots\ (2)
+                        \end{cases}
+                    \end{align*}
+                    \begin{align*}
+                        (1) \times 2: & \ -4x + 2y + 2z = 4\ \cdots\ (3) \\
+                        (2) - (3):    & \ 10x - 5y = 0\ \cdots\ (4)      \\
+                                      & \ 2x - y = 0                     \\
+                                      & \ y = 2x
+                    \end{align*}
+                    Substituting $y = 2x$ into $(1)$,
+                    \begin{align*}
+                        -2x + 2x + z & = 2 \\
+                        z            & = 2
+                    \end{align*}
+                    Let $x = t$, then $y = 2t$ and $z = 2$. Hence, the parametric equations of the line of intersection of the two planes are
+                    \begin{align*}
+                        x & = t  \\
+                        y & = 2t \\
+                        z & = 2
+                    \end{align*} \hfill $\blacksquare$
+                    \begin{center}
+                        \includegraphics[scale=0.5]{assets/larson11.5q66graph.png}
+                    \end{center}
+          \end{enumerate}
+\end{enumerate}

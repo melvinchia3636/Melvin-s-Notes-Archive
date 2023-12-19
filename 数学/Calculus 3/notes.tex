@@ -20,41 +20,41 @@
 \usetikzlibrary{decorations.pathreplacing,angles,quotes,3d,decorations.markings}
 
 \tikzset{
-    set arrow inside one/.code={\pgfqkeys{/tikz/arrow inside one}{#1}},
-    set arrow inside one={end/.initial=<, opt/.initial=},
-    /pgf/decoration/Mark/.style={
-            mark/.expanded=at position #1 with
-                {
-                    \noexpand\arrow[\pgfkeysvalueof{/tikz/arrow inside one/opt}]{\pgfkeysvalueof{/tikz/arrow inside one/end}}
-                }
-        },
-    arrow inside one/.style 2 args={
-            set arrow inside one={#1},
-            postaction={
-                    decorate,decoration={
-                            markings,Mark/.list={#2}
-                        }
-                }
-        },
+        set arrow inside one/.code={\pgfqkeys{/tikz/arrow inside one}{#1}},
+        set arrow inside one={end/.initial=<, opt/.initial=},
+        /pgf/decoration/Mark/.style={
+                        mark/.expanded=at position #1 with
+                                {
+                                        \noexpand\arrow[\pgfkeysvalueof{/tikz/arrow inside one/opt}]{\pgfkeysvalueof{/tikz/arrow inside one/end}}
+                                }
+                },
+        arrow inside one/.style 2 args={
+                        set arrow inside one={#1},
+                        postaction={
+                                        decorate,decoration={
+                                                        markings,Mark/.list={#2}
+                                                }
+                                }
+                },
 }
 
 \tikzset{
-    set arrow inside two/.code={\pgfqkeys{/tikz/arrow inside two}{#1}},
-    set arrow inside two={end/.initial=>, opt/.initial=},
-    /pgf/decoration/Mark/.style={
-            mark/.expanded=at position #1 with
-                {
-                    \noexpand\arrow[\pgfkeysvalueof{/tikz/arrow inside two/opt}]{\pgfkeysvalueof{/tikz/arrow inside two/end}}
-                }
-        },
-    arrow inside two/.style 2 args={
-            set arrow inside two={#1},
-            postaction={
-                    decorate,decoration={
-                            markings,Mark/.list={#2}
-                        }
-                }
-        },
+        set arrow inside two/.code={\pgfqkeys{/tikz/arrow inside two}{#1}},
+        set arrow inside two={end/.initial=>, opt/.initial=},
+        /pgf/decoration/Mark/.style={
+                        mark/.expanded=at position #1 with
+                                {
+                                        \noexpand\arrow[\pgfkeysvalueof{/tikz/arrow inside two/opt}]{\pgfkeysvalueof{/tikz/arrow inside two/end}}
+                                }
+                },
+        arrow inside two/.style 2 args={
+                        set arrow inside two={#1},
+                        postaction={
+                                        decorate,decoration={
+                                                        markings,Mark/.list={#2}
+                                                }
+                                }
+                },
 }
 
 \newcommand{\sol}{~\\\textbf{Solution. }}
@@ -67,6 +67,8 @@
 \rhead{\thepage}
 \lhead{\leftmark}
 \rfoot{}
+
+\includeonly{chapters/chapter 9 Planes in Space}
 
 \begin{document}
 \maketitle
@@ -91,5 +93,6 @@
 \include{chapters/chapter 14 Derivatives and Integration of Vector-valued Functions}
 \include{chapters/chapter 15 Velocity, Speed and Acceleration}
 \include{chapters/chapter 16 Tangent Vectors and Normal Vectors}
+\include{chapters/chapter 17 Introduction to Partial Derivative}
 
 \end{document}

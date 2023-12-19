@@ -230,6 +230,9 @@ corresponding smaller curved trapezoid can be approximated by a rectangle with
 width of $\Delta x$ and height of the function value $f(x)$ at the point $x$.
 As such, the area of the smaller curved trapezoid is $\Delta A \approx
     f(x)\Delta x$.
+\begin{center}
+    \includegraphics[scale=0.3]{assets/28-8.png}
+\end{center}
 
 Summing up the approximated area of all the smaller curved trapezoid, then find
 the limit of the sum when $\Delta x \to 0$, we can get the area of the original
@@ -238,29 +241,33 @@ curved trapezoid, i.e.
     \sum\Delta A \approx \sum f(x)\Delta x\ \xrightarrow{\ \ \ \ \Delta x \to 0\ \ \ \ } \int_a^b f(x)dx
 \end{cequation}
 
+\begin{center}
+    \includegraphics[scale=0.2]{assets/28-9.png}
+\end{center}
 The same can be applied if $f(x) \leq 0$ in the interval $a \leq x \leq b$, as
-shown in the diagram below. The area of the curved trapezoid bounded by the
+shown in the diagram above. The area of the curved trapezoid bounded by the
 curve $y = f(x)$, the lines $x = a$ and $x = b$, the $x$-axis, and the $y$-axis
 is given by
 \begin{cequation}
     A = -\int_a^b f(x)dx
 \end{cequation}
 
+\begin{center}
+    \includegraphics[scale=0.2]{assets/28-10.png}
+\end{center}
 If the target area $A$ is bounded by the lines $y = c$, $y = d$, the $y$-axis,
 and the curve $x = f(y)$, where $f(y) \geq 0$ in the interval $c \leq y \leq
-    d$, as shown in the diagram below, using the same concept, we can get the area
+    d$, as shown in the diagram above, using the same concept, we can get the area
 of the region
 \begin{cequation}
     A = \int_c^d f(y)dy
 \end{cequation}
 
-\newpage
-
 \input{exercises/Chapter 28/Practice 5.tex}
 
+\newpage
 \input{exercises/Chapter 28/Practice 6.tex}
 
-\newpage
 \input{exercises/Chapter 28/Exercise 28.3.tex}
 
 \input{exercises/Chapter 28/Practice 7.tex}
