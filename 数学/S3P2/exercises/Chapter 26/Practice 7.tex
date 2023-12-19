@@ -1,8 +1,32 @@
 \subsection{Practice 7}
 \begin{enumerate}
-    \item A drop of ink gradually spread after being dropped onto a piece of paper. At
-          $t$ seconds, its area is $A = \left(3t^2 + \dfrac{1}{5}t + 2\right)$mm$^2$.
-          Find the rate of change of the ink spread at $t = 2$ second.
-    \item The radius of a sphere increases at a rate of $3$cm/s. When the radius is
-          $5$cm, find the rate of change of the surface area of the sphere.
+      \item A drop of ink gradually spread after being dropped onto a piece of paper. At
+            $t$ seconds, its area is $A = \left(3t^2 + \dfrac{1}{5}t + 2\right)$mm$^2$.
+            Find the rate of change of the ink spread at $t = 2$ second. \sol{}
+            \begin{flalign*}
+                  \dfrac{dA}{dt} & = 6t + \dfrac{1}{5}
+            \end{flalign*}
+            When $t = 2$,
+            \begin{flalign*}
+                  \dfrac{dA}{dt} & = 6(2) + \dfrac{1}{5}      \\
+                                 & = 12 + \dfrac{1}{5}        \\
+                                 & = \dfrac{61}{5}            \\
+                                 & = 12.2\text{mm}^2\text{/s}
+            \end{flalign*}
+
+      \item The radius of a sphere increases at a rate of $3$cm/s. When the radius is
+            $5$cm, find the rate of change of the surface area of the sphere. \sol{}
+            \begin{flalign*}
+                  \dfrac{dr}{dt} & = 3\text{cm/s}                      \\
+                  A              & = 4\pi r^2                          \\
+                  \dfrac{dA}{dr} & = 8\pi r                            \\
+                  \dfrac{dA}{dt} & = \dfrac{dA}{dr}\cdot\dfrac{dr}{dt} \\
+                                 & = 8\pi r\cdot 3\text{cm/s}          \\
+                                 & = 24\pi r\text{cm}^2\text{/s}
+            \end{flalign*}
+            When $r = 5$,
+            \begin{flalign*}
+                  \dfrac{dA}{dt} & = 24\pi(5)\text{cm}^2\text{/s} \\
+                                 & = 120\pi\text{cm}^2\text{/s}
+            \end{flalign*}
 \end{enumerate}
