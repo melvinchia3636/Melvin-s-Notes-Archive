@@ -4,6 +4,17 @@
 <summary>Meth Videos</summary>
 
 - [main.py](<./Meth Videos/main.py>)
+- [main2.py](<./Meth Videos/main2.py>)
+<dl><dd>
+<details>
+<summary>__pycache__</summary>
+
+- [main2.cpython-311.pyc](<./Meth Videos/__pycache__/main2.cpython-311.pyc>)
+- [main.cpython-311.pyc](<./Meth Videos/__pycache__/main.cpython-311.pyc>)
+
+</details>
+</dd></dl>
+
 
 </details>
 
@@ -111,6 +122,7 @@
 <summary>商业学</summary>
 
 - [Concept Chart.docx](<./商业学/Concept Chart.docx>)
+- [人力资源管理.docx](<./商业学/人力资源管理.docx>)
 - [商业报告.pdf](<./商业学/商业报告.pdf>)
 - [商业报告.tex](<./商业学/商业报告.tex>)
 - [高二商业学统测讲义.docx](<./商业学/高二商业学统测讲义.docx>)
