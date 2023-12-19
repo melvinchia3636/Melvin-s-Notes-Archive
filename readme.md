@@ -187,6 +187,7 @@
 <summary>xmind</summary>
 
 - [国内贸易文件.xmind](<./商业学/xmind/国内贸易文件.xmind>)
+- [金融市场.xmind](<./商业学/xmind/金融市场.xmind>)
 - [1.1 产品的类别.xmind](<./商业学/xmind/1.1 产品的类别.xmind>)
 - [1.2 商业的分支.xmind](<./商业学/xmind/1.2 商业的分支.xmind>)
 - [1.3 商业的重要性.xmind](<./商业学/xmind/1.3 商业的重要性.xmind>)
@@ -854,7 +855,8 @@
 - [chapter 13 Limits of Vector-valued Functions.tex](<./数学/Calculus 3/chapters/chapter 13 Limits of Vector-valued Functions.tex>)
 - [chapter 14 Derivatives and Integration of Vector-valued Functions.tex](<./数学/Calculus 3/chapters/chapter 14 Derivatives and Integration of Vector-valued Functions.tex>)
 - [chapter 15 Velocity, Speed and Acceleration.tex](<./数学/Calculus 3/chapters/chapter 15 Velocity, Speed and Acceleration.tex>)
-- [chapter 16 Tangent Vectors and Normal Vectors.tex](<./数学/Calculus 3/chapters/chapter 16 Tangent Vectors and Normal Vectors.tex>)
+- [chapter 16 Tangent Vectors and Normal Vectors.1.tex](<./数学/Calculus 3/chapters/chapter 16 Tangent Vectors and Normal Vectors.1.tex>)
+- [chapter 17 Introduction to Partial Derivative.tex](<./数学/Calculus 3/chapters/chapter 17 Introduction to Partial Derivative.tex>)
 
 </details>
 </dd></dl></dd></dl>
