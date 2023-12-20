@@ -16,6 +16,8 @@
               y - 18                                           & = 24x - 72   & \\
               y                                                & = 24x - 54
           \end{flalign*}
+          \vfill\null
+
     \item Find the equation of the normal of the curve $y = x(x-4)(x+1)$ at the points of
           intersection of the curve and the $x$-axis. \sol{} \vspace{-2em}
           \begin{multicols}{2}
@@ -57,6 +59,8 @@
               \vfill{}\null{}
           \end{multicols}
           Hence, the equations of the normals are $x - 4y = 0$, $x + 20y - 4 = 0$ and $x + 5y + 1 = 0$.
+          \vfill\null
+
           \newpage
           \setlength{\columnsep}{1cm}
           \begin{multicols}{2}
@@ -156,7 +160,7 @@
           interval $[0, 4]$.
 
           At the interval $(4, \infty)$, $f'(x) < 0$, hence $f(x)$ is decreasing at the
-          interval $[4, \infty)$.
+          interval $[4, \infty)$. \vfill\null
 
     \item $f(x) = 4x^3 - 3x^2 - 6x + 1$
           \sol{}
@@ -175,7 +179,7 @@
           decreasing at the interval $\left.\left[-\dfrac{1}{2}, 1\right]\right.$.
 
           At the interval $\left(1, \infty\right)$, $f'(x) > 0$, hence $f(x)$ is
-          increasing at the interval $\left.\left[1, \infty\right)\right.$.
+          increasing at the interval $\left.\left[1, \infty\right)\right.$. \vfill\null
 
           \newpage
           \begin{multicols}{2}
@@ -226,6 +230,8 @@
                    & \therefore\ f(4) = 16 \text{ is a relative maximum value.}
               \end{flalign*}
           \end{multicols}
+          \vfill\null
+
     \item Given that $y = 18x^2 + 12x + 7$ has a relative minimum value $q$ and the point
           where $x = p$. Find the value of $p$ and $q$. \sol{}
           \begin{flalign*}
@@ -242,6 +248,7 @@
                & y''            = 36 > 0                                 & \\
                & \therefore\ \text{The relative minimum value is }q = 5.
           \end{flalign*}
+          \vfill\null
 
           \newpage
     \item There's a rectangular field where one side of it is a wall and the other three
@@ -388,45 +395,368 @@
 \begin{enumerate}
     \setcounter{enumi}{14}
     \item $y = x^3 - 2$
+          \sol{}
+          \begin{flalign*}
+              y'    & = 3x^2 & \\
+              y''   & = 6x   & \\
+              6x    & = 0    & \\
+              x = 0 &
+          \end{flalign*}
+          When $x = 0$, $y = -2$.
+
+          Hence, the coordinate of the point of inflection is $(0, -2)$.
+
     \item $3x + {(2-x)}^3$
+          \sol{}
+          \begin{flalign*}
+              y'     & = 3 - 3{(2-x)}^2 & \\
+              y''    & = 6(2-x)         & \\
+              6(2-x) & = 0              & \\
+              x = 2  &
+          \end{flalign*}
+          When $x = 2$, $y = 6$.
+
+          Hence, the coordinate of the point of inflection is $(2, 6)$.
+
     \item Given the function $y = \dfrac{x}{1-x^2}$. Find the extreme values of the
           function, and determine the coordinates of the convex intervals and the point
-          of inflection.
+          of inflection. \sol{}
+          \begin{flalign*}
+              y'       & = \dfrac{1 - x^2 + 2x^2}{(1-x^2)^2} & \\
+                       & = \dfrac{x^2 + 1}{(1-x^2)^2}        & \\
+              y'       & = 0                                 & \\
+              x^2 + 1  & = 0                                 & \\
+              x^2      & = -1                                & \\
+              x \notin & \ \mathbb{R}
+          \end{flalign*}
+          Since $x \notin \mathbb{R}$, there are no extreme values of the function.
+          \begin{flalign*}
+              y'' & = \dfrac{2x(1-x^2)^2 + 2(x^2 + 1)(2x)(1-x^2)}{(1-x^2)^4} & \\
+                  & = \dfrac{(1 - x^2)(2x - 2x^3 + 4x^3 + 4x)}{(1-x^2)^4}    & \\
+                  & = \dfrac{2x^3 + 6x}{(1-x^2)^3}                           & \\
+                  & = \dfrac{2x(x^2 + 3)}{(1-x^2)^3}                         & \\
+              0   & = \dfrac{2x(x^2 + 3)}{(1-x^2)^3}                         & \\
+              x   & = 0
+          \end{flalign*}
+          When $x = 0$, $y = 0$.
+          \begin{flalign*}
+              1 - x^2 & = 0     & \\
+              x^2     & = 1     & \\
+              x       & = \pm 1
+          \end{flalign*}
+          The vertical asymptotes are $x = \pm 1$.
+
+          In the interval $(-\infty, -1)$, $y'' < 0$, hence the function is convex
+          downward.
+
+          In the interval $(-1, 0)$, $y'' > 0$, hence the function is convex upward.
+
+          In the interval $(0, 1)$, $y'' < 0$, hence the function is convex downward.
+
+          In the interval $(1, \infty)$, $y'' > 0$, hence the function is convex upward.
+
+          The point of inflection is $(0, 0)$.
+
+          \newpage
+
     \item Given the function $y = \dfrac{x}{x^2 + 1}$.
           \begin{enumerate}
-              \item Find the coordinates of the stationary points.
-              \item Determine which intervals the function is increasing or decreasing.
+              \item Find the coordinates of the stationary points. \sol{}
+                    \begin{flalign*}
+                        y'      & = \dfrac{(x^2 + 1) - x(2x)}{(x^2 + 1)^2} & \\
+                                & = \dfrac{1 - x^2}{(x^2 + 1)^2}           & \\
+                        y'      & = 0                                      & \\
+                        1 - x^2 & = 0                                      & \\
+                        x       & = \pm 1
+                    \end{flalign*}
+                    When $x = 1$, $y = \dfrac{1}{2}$.
+
+                    When $x = -1$, $y = -\dfrac{1}{2}$.
+
+              \item Determine which intervals does the function increase or decrease. \sol{}
+                    \begin{center}
+                        \begin{tabular}{|c|c|c|c|c|c|}
+                            \hline
+                            $x$  & $(-\infty, -1)$ & $-1$ & $(-1, 1)$  & $1$ & $(1, \infty)$ \\ \hline
+                            $y'$ & $-$             & $0$  & $+$        & $0$ & $+$           \\ \hline
+                            $y$  & $\searrow$      & $-$  & $\nearrow$ & $+$ & $\searrow$    \\ \hline
+                        \end{tabular}
+                    \end{center}
+                    ~\\
+                    The function is increasing at the interval $[-1, 1]$ and decreasing at the
+                    interval $(-\infty, -1]$ and $(1, \infty)$.
+
               \item Find the coordinates of the convex intervals and the point of inflection.
+                    \sol{}
+                    \begin{flalign*}
+                        y''         & = \dfrac{(-2x)(x^2 + 1)^2 - (1 - x^2)[2(x^2 + 1)(2x)]}{(x^2 + 1)^4} & \\
+                                    & = \dfrac{(x^2 + 1)(-2x^3 - 2x - 4x + 4x^3)}{(x^2 + 1)^4}            & \\
+                                    & = \dfrac{2x^3 - 6x}{(x^2 + 1)^3}                                    & \\
+                                    & = \dfrac{2x(x^2 - 3)}{(x^2 + 1)^3}                                  & \\
+                        0           & = \dfrac{2x(x^2 - 3)}{(x^2 + 1)^3}                                  & \\
+                        2x(x^2 - 3) & = 0                                                                 & \\
+                        x = 0       & \text{ or } x = \pm \sqrt{3}
+                    \end{flalign*}
+                    When $x = 0$, $y = 0$.
+
+                    When $x = \sqrt{3}$, $y = \dfrac{\sqrt{3}}{4}$.
+
+                    When $x = -\sqrt{3}$, $y = -\dfrac{\sqrt{3}}{4}$.
+
+                    In the interval $(-\infty, -\sqrt{3})$, $y'' < 0$, hence the function is convex
+                    upward.
+
+                    In the interval $(-\sqrt{3}, 0)$, $y'' > 0$, hence the function is convex
+                    downward.
+
+                    In the interval $(0, \sqrt{3})$, $y'' < 0$, hence the function is convex
+                    upward.
+
+                    In the interval $(\sqrt{3}, \infty)$, $y'' > 0$, hence the function is convex
+                    downward.
+
+                    The point of inflection is $(0, 0)$, $\left(\sqrt{3},
+                        \dfrac{\sqrt{3}}{4}\right)$ and $\left(-\sqrt{3}, -\dfrac{\sqrt{3}}{4}\right)$.
           \end{enumerate}
 \end{enumerate}
 \hspace{0.5em} \textit{Construct the graph of the following functions. (Question 19 to 20)}
 \begin{enumerate}
     \setcounter{enumi}{18}
     \item $y = x^3 - 5x^2 + 3x - 2$
-    \item $y = x^3 - 3x^2 + 4$
-    \item In a container, the relationship between the volume of water $V$ (cm$^3$) and
-          the depth of water $x$ (cm) is given by the equation $V = 4x^2 +
-              \dfrac{1}{6}x^3$. If the water is poured into the container at a rate of $6$
-          cm$^3$ per second, find the rate of change of the depth of water when $x=2$ cm.
-    \item The water is poured into a conical pool with a width and a base radius of $20$m
-          and $10$m respectively at a rate of $5$m$^3$/min. When the height of the water
-          is $10$cm, find
+          \sol{}
+          \begin{vwcol}[widths={0.5,0.5},justify=flush,rule=0pt,indent=1em]
+              When $x = 0$, $y = -2$. $\therefore$ The $y$-intercept is $(0, -2)$.
+              \begin{flalign*}
+                  y'               & = 3x^2 - 10x + 3  & \\
+                  y''              & = 6x - 10         & \\
+                  0                & = 3x^2 - 10x + 3  & \\
+                  (3x - 1)(x - 3)  & = 0               & \\
+                  x = \dfrac{1}{3} & \text{ or } x = 3
+              \end{flalign*}
+              When $x = \dfrac{1}{3}$,
+              \begin{flalign*}
+                  y   & = \left(\dfrac{1}{3}\right)^3 - 5\left(\dfrac{1}{3}\right)^2 + 3\left(\dfrac{1}{3}\right) - 2 & \\
+                      & = -\dfrac{41}{27}                                                                             & \\
+                  y'' & = 6\left(\dfrac{1}{3}\right) - 10                                                             & \\
+                      & = -8 < 0
+              \end{flalign*}
+
+              When $x = 3$,
+              \begin{flalign*}
+                  y   & = 3^3 - 5(3)^2 + 3(3) - 2 & \\
+                      & = -11                     & \\
+                  y'' & = 6(3) - 10               & \\
+                      & = 8 > 0
+              \end{flalign*}
+              $\therefore$ The function has a relative maximum point at $\left(\dfrac{1}{3},
+                  -\dfrac{41}{27}\right)$ and a relative minimum point at $(3, -11)$.
+              \begin{flalign*}
+                  6x - 10 & = 0            & \\
+                  x       & = \dfrac{5}{3}
+              \end{flalign*}
+              When $x = \dfrac{5}{3}$,
+              \begin{flalign*}
+                  y & = \left(\dfrac{5}{3}\right)^3 - 5\left(\dfrac{5}{3}\right)^2 + 3\left(\dfrac{5}{3}\right) - 2 & \\
+                    & = -\dfrac{169}{27}
+              \end{flalign*}
+              In the interval $(-\infty, \dfrac{5}{3})$, $y'' < 0$, hence the function is convex upward.
+
+              \noindent In the interval $(\dfrac{5}{3}, \infty)$, $y'' > 0$, hence the function is
+              convex downward.
+
+              \noindent The point of inflection is $\left(\dfrac{5}{3}, -\dfrac{169}{27}\right)$.
+
+              \pagebreak
+
+              \vspace*{3cm}
+
+              \includegraphics[scale=0.55]{assets/26-graph6.png}
+          \end{vwcol}
+
+          \begin{multicols}{2}
+              \item $y = x^3 - 3x^2 + 4$
+              \sol{}
+
+              When $y = 0$,
+              \begin{flalign*}
+                  x^3 - 3x^2 + 4      & = 0               & \\
+                  (x+1)(x^2 - 4x + 4) & = 0               & \\
+                  (x+1)(x-2)^2        & = 0               & \\
+                  x = -1              & \text{ or } x = 2
+              \end{flalign*}
+              $\therefore$ The $x$-intercepts are $(-1, 0)$ and $(2, 0)$.
+
+              When $x = 0$, $y = 4$.
+
+              $\therefore$ The $y$-intercept is $(0, 4)$.
+              \begin{flalign*}
+                  y'    & = 3x^2 - 6x       & \\
+                  y''   & = 6x - 6          & \\
+                  0     & = 3x^2 - 6x       & \\
+                  0     & = x(x - 2)        & \\
+                  x = 0 & \text{ or } x = 2
+              \end{flalign*}
+              When $x = 0$, $y'' = -6 < 0$.
+
+              When $x = 2$, $y'' = 6 > 0$.
+
+              $\therefore$ The function has a relative maximum point at $(0, 4)$ and a relative minimum point at $(2, 0)$.
+              \begin{flalign*}
+                  6x - 6 & = 0 & \\
+                  x      & = 1
+              \end{flalign*}
+              When $x = 1$, $y = (1)^3 - 3(1)^2 + 4 = 2$.
+
+              \noindent In the interval $(-\infty, 1)$, $y'' < 0$, hence the function is convex upward.
+
+              \noindent In the interval $(1, \infty)$, $y'' > 0$, hence the function is convex downward.
+
+              \noindent The point of inflection is $(1, 2)$.
+              \vspace{2em}
+              \begin{center}
+                  \includegraphics[scale=0.55]{assets/26-graph7.png}
+              \end{center}
+              \columnbreak
+
+              \item In a container, the relationship between the volume of water $V$ (cm$^3$) and
+              the depth of water $x$ (cm) is given by the equation $V = 4x^2 +
+                  \dfrac{1}{6}x^3$. If the water is poured into the container at a rate of $6$
+              cm$^3$ per second, find the rate of change of the depth of water when $x=2$ cm.
+              \sol{}
+              \begin{flalign*}
+                  V              & = 4x^2 + \dfrac{1}{6}x^3                         & \\
+                  \dfrac{dV}{dx} & = 8x + \dfrac{1}{2}x^2                           & \\
+                  \dfrac{dV}{dt} & = 6                                              & \\
+                  \dfrac{dx}{dt} & = \dfrac{dx}{dV} \cdot \dfrac{dV}{dt}            & \\
+                                 & = \dfrac{1}{\dfrac{dV}{dx}} \cdot \dfrac{dV}{dt} & \\
+                                 & = \dfrac{1}{8x + \dfrac{1}{2}x^2} \cdot 6        & \\
+                                 & = \dfrac{6}{8x + \dfrac{1}{2}x^2}
+              \end{flalign*}
+              When $x = 2$,
+              \begin{flalign*}
+                  \dfrac{dx}{dt} & = \dfrac{6}{8(2) + \dfrac{1}{2}(2)^2} & \\
+                                 & = \dfrac{6}{18}                       & \\
+                                 & = \dfrac{1}{3} \text{ cm s}^{-1}
+              \end{flalign*}
+          \end{multicols}
+
+          \newpage
+    \item The water is poured into a conical pool with a height and a base radius of
+          $20$m and $10$m respectively at a rate of $5$m$^3$/min. When the height of the
+          water is $10$m, find
           \begin{enumerate}
-              \item the rate of increasing of the height of the water.
-              \item the rate of change of the radius of the water surface.
+              \item the rate of increasing of the height of the water. \sol{}
+
+                    Let the height of the water be $h$cm and the radius of the water surface be
+                    $r$cm.
+                    \begin{flalign*}
+                        \dfrac{h}{20}  & = \dfrac{r}{10}                                  & \\
+                        r              & = \dfrac{h}{2}                                   & \\
+                        V              & = \dfrac{1}{3}\pi r^2 h                          & \\
+                                       & = \dfrac{1}{3}\pi \left(\dfrac{h}{2}\right)^2 h  & \\
+                                       & = \dfrac{1}{12}\pi h^3                           & \\
+                        \dfrac{dV}{dh} & = \dfrac{1}{4}\pi h^2                            & \\
+                        \dfrac{dV}{dt} & = 5                                              & \\
+                        \dfrac{dh}{dt} & = \dfrac{dh}{dV} \cdot \dfrac{dV}{dt}            & \\
+                                       & = \dfrac{1}{\dfrac{dV}{dh}} \cdot \dfrac{dV}{dt} & \\
+                                       & = \dfrac{1}{\dfrac{1}{4}\pi h^2} \cdot 5         & \\
+                                       & = \dfrac{20}{\pi h^2} \text{ m min}^{-1}
+                    \end{flalign*}
+                    When $h = 10$,
+                    \begin{flalign*}
+                        \dfrac{dh}{dt} & = \dfrac{20}{\pi (10)^2}             & \\
+                                       & = \dfrac{1}{5\pi} \text{ m min}^{-1}
+                    \end{flalign*}
+
+              \item the rate of change of the area of the water surface. \sol{}
+                    \begin{flalign*}
+                        A              & = \pi r^2                         & \\
+                                       & = \pi \left(\dfrac{h}{2}\right)^2 & \\
+                                       & = \dfrac{1}{4}\pi h^2             & \\
+                        \dfrac{dA}{dh} & = \dfrac{1}{2}\pi h
+                    \end{flalign*}
+                    When $h = 10$,
+                    \begin{flalign*}
+                        \dfrac{dh}{dt} & = \dfrac{1}{5\pi}                            & \\
+                        \dfrac{dA}{dt} & = \dfrac{dA}{dh} \cdot \dfrac{dh}{dt}        & \\
+                                       & = \dfrac{1}{2}\pi (10) \cdot \dfrac{1}{5\pi} & \\
+                                       & = 1 \text{ m}^2 \text{ min}^{-1}
+                    \end{flalign*}
           \end{enumerate}
+
     \item The radius of a spherical container decreases from $4$cm to $3.95$cm. Find the
           approximate amount of decrease in the volume and the surface area of the
-          container.
+          container. \sol{}
+          \begin{flalign*}
+              V                          & = \dfrac{4}{3}\pi r^3     & \\
+              A                          & = 4\pi r^2                & \\
+              \dfrac{dV}{dr}             & = 4\pi r^2                & \\
+              \dfrac{dA}{dr}             & = 8\pi r                  & \\
+              \dfrac{\Delta V}{\Delta r} & = \dfrac{dV}{dr}          & \\
+              \Delta V                   & = 4\pi r^2 \cdot \Delta r & \\
+              \dfrac{\Delta A}{\Delta r} & = \dfrac{dA}{dr}          & \\
+              \Delta A                   & = 8\pi r \cdot \Delta r
+          \end{flalign*}
+          When $r = 4$,$\Delta r = -0.05$,
+          \begin{flalign*}
+              \Delta V & = 4\pi (4)^2 (-0.05)   & \\
+                       & = -3.2\pi \text{ cm}^3 & \\
+              \Delta A & = 8\pi (4)(-0.05)      & \\
+                       & = -1.6\pi \text{ cm}^2
+          \end{flalign*}
+          $\therefore$ The approximate amount of decrease in the volume and the surface area of the container is $-3.2\pi$cm$^3$ and $-1.6\pi$cm$^2$ respectively.
+          \vfill\null
+
     \item The capacity of water of a spherical container is given by $V =
               \left[\dfrac{\pi h^2}{3}(15-h)\right]$cm$^3$, where $h$ is the depth of the
           water. Find the approximate amount of increase in the capacity of the container
-          when the depth of the water increases from $4$cm to $4.01$cm.
+          when the depth of the water increases from $4$cm to $4.01$cm. \sol{}
+          \begin{flalign*}
+              V                          & = 5\pi h^2 - \dfrac{1}{3}\pi h^3     & \\
+              \dfrac{dV}{dh}             & = 10\pi h - \pi h^2                  & \\
+              \dfrac{\Delta V}{\Delta h} & = \dfrac{dV}{dh}                     & \\
+              \Delta V                   & = (10\pi h - \pi h^2) \cdot \Delta h &
+          \end{flalign*}
+          When $h = 4$,$\Delta h = 0.01$,
+          \begin{flalign*}
+              \Delta V & = (10\pi (4) - \pi (4)^2) \cdot 0.01 & \\
+                       & = 0.24\pi \text{ cm}^3
+          \end{flalign*}
+          $\therefore$ The approximate amount of increase in the capacity of the container is $0.24\pi$cm$^3$.
+          \vfill\null
+
+          \newpage
+
     \item In a bowl, when the height of the water is $h$cm, the volume of the water is
-          given by $V = \left(h^2 + 3h^2 + 11h\right)$cm$^3$. When the height of the
+          given by $V = \left(h^3 + 3h^2 + 11h\right)$cm$^3$. When the height of the
           water is $7cm$, pour an additional $\Delta V$cm$^3$ of water into the bowl.
-          Find the approximate amount of increase in the height of the water.
-    \item If $y = \dfrac{1}{\sqrt[3][x]}$, find $\dfrac{dy}{dx}$. Hence, find the
-          approximate value of $\dfrac{1} {\sqrt[3][{130}}$. (Correct to 3 decimal
-          places)
+          Find the approximate amount of increase in the height of the water. \sol{}
+          \begin{flalign*}
+              \dfrac{dV}{dh}             & = 3h^2 + 6h + 11                   & \\
+              \dfrac{\Delta V}{\Delta h} & = \dfrac{dV}{dh}                   & \\
+              \Delta V                   & = (3h^2 + 6h + 11) \cdot \Delta h  & \\
+              \Delta h                   & = \dfrac{\Delta V}{3h^2 + 6h + 11}
+          \end{flalign*}
+          When $h = 7$,
+          \begin{flalign*}
+              \Delta h & = \dfrac{\Delta V}{3(7)^2 + 6(7) + 11} & \\
+                       & = \dfrac{\Delta V}{200} \text{ cm}
+          \end{flalign*}
+          $\therefore$ The approximate amount of increase in the height of the water is $\dfrac{\Delta V}{200}$cm.
+
+    \item If $y = \dfrac{1}{\sqrt[3]{x}}$, find $\dfrac{dy}{dx}$. Hence, find the
+          approximate value of $\dfrac{1} {\sqrt[3]{130}}$. (Correct to 3 decimal places)
+          \sol{}
+          \begin{flalign*}
+              y                          & = x^{-\frac{1}{3}}                             & \\
+              \dfrac{dy}{dx}             & = -\dfrac{1}{3}x^{-\frac{4}{3}}                & \\
+              \dfrac{\Delta y}{\Delta x} & = \dfrac{dy}{dx}                               & \\
+              \Delta y                   & = -\dfrac{1}{3}x^{-\frac{4}{3}} \cdot \Delta x
+          \end{flalign*}
+          When $x = 125$, $\Delta x = 5$,
+          \begin{flalign*}
+              \Delta y & = -\dfrac{1}{3}(125)^{-\frac{4}{3}} \cdot 5 & \\
+                       & = -0.003
+          \end{flalign*}
+          $\therefore$ The approximate value of $\dfrac{1} {\sqrt[3]{130}}$ is $\dfrac{1}{5} - 0.003 = 0.197$.
 \end{enumerate}

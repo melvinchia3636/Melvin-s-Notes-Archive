@@ -1,8 +1,65 @@
 \subsection{Practice 1}
 \begin{enumerate}
-    \item Find the equations of tangent and normal to the curve $y = x^3$ where $x = 2$.
-    \item Given that the gradient of tangent to the curve $y = x^2 - 2x + 3$ at point $Q$
-          is $4$, find the coordinates of the point $Q$.
-    \item Find the equations of the tangent and normal to the curve $x^3 - 2xy + y^2 = 1$
-          at point $(1, 2)$.
+      \item Find the equations of tangent and normal to the curve $y = x^3$ where $x = 2$.
+            \sol{} \vspace{-1cm}
+            \begin{multicols}{2}
+                  \begin{flalign*}
+                        y              & = x^3  & \\
+                        \dfrac{dy}{dx} & = 3x^2
+                  \end{flalign*}
+                  At $x = 2$, $y = (2)^3 = 8$
+                  \begin{flalign*}
+                        \text{Gradient of tangent } \dfrac{dy}{dx} & = 3(2)^2 = 12    & \\
+                        \text{Gradient of normal }                 & = -\dfrac{1}{12}
+                  \end{flalign*}
+                  \vfill\null
+                  \begin{flalign*}
+                        \therefore\ \text{Equation of tangent is } y - 8 & = 12(x - 2)             & \\
+                        y                                                & = 12x - 16              & \\
+                        \text{Equation of normal is } y - 8              & = -\dfrac{1}{12}(x - 2) & \\
+                        12y - 96                                         & = -x + 2                & \\
+                        x + 12y                                          & = 98                    & \\
+                  \end{flalign*}
+                  \vfill\null
+            \end{multicols}
+            \vspace{-1cm}
+
+      \item Given that the gradient of tangent to the curve $y = x^2 - 2x + 3$ at point $Q$
+            is $4$, find the coordinates of the point $Q$. \sol{}
+            \begin{flalign*}
+                  y              & = x^2 - 2x + 3 & \\
+                  \dfrac{dy}{dx} & = 2x - 2
+            \end{flalign*}
+            At point $Q$, $\dfrac{dy}{dx} = 4$
+            \begin{flalign*}
+                  4 & = 2x - 2             & \\
+                  x & = 3                  & \\
+                  y & = 3^2 - 2(3) + 3 = 6
+            \end{flalign*}
+            $\therefore$ Coordinates of point $Q$ is $(3, 6)$.
+            \vfill\null
+
+      \item Find the equations of the tangent and normal to the curve $x^3 - 2xy + y^2 = 1$
+            at point $(1, 2)$. \sol{}
+            \begin{flalign*}
+                  x^3 - 2xy + y^2                                 & = 1                          & \\
+                  3x^2 - 2y - 2x\dfrac{dy}{dx} + 2y\dfrac{dy}{dx} & = 0                          & \\
+                  (2x - 2y) \dfrac{dy}{dx}                        & = 3x^2 - 2y                  & \\
+                  \dfrac{dy}{dx}                                  & = \dfrac{3x^2 - 2y}{2x - 2y}
+            \end{flalign*}
+            At point $(1, 2)$,
+            \begin{flalign*}
+                  \text{Gradient of tangent } \dfrac{dy}{dx} & = \dfrac{3(1)^2 - 2(2)}{2(1) - 2(2)} & \\
+                                                             & = \dfrac{1}{2}                       & \\
+                  \text{Gradient of normal }                 & = -2
+            \end{flalign*}
+            \begin{flalign*}
+                  \therefore\ \text{Equation of tangent is } y - 2 & = \dfrac{1}{2}(x - 1) & \\
+                  2y - 4                                           & = x - 1               & \\
+                  x - 2y                                           & = -3                  & \\
+                  \text{Equation of normal is } y - 2              & = -2(x - 1)           & \\
+                  y - 2                                            & = -2x + 2             & \\
+                  y                                                & = -2x + 4
+            \end{flalign*}
+            \vfill\null
 \end{enumerate}

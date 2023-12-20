@@ -28,8 +28,7 @@
 \usepackage{tocloft}
 \usepackage{titlesec}
 \usepackage{vwcol}
-
-\includeonly{./chapters/26 Application of Differentiation}
+\usepackage{pdfpages}
 
 \setlength{\columnsep}{1cm}
 \def\nswe#1#2#3{#1$#2^\circ#3'$}
@@ -123,7 +122,7 @@
     \vspace{0.5\textheight}
 
     {\noindent Started on 12 June 2023}\\[\baselineskip]
-    {\noindent Finished on XX XX 2023}\\[\baselineskip]
+    {\noindent Finished on 20 Dec 2023}\\[\baselineskip]
     {\noindent Actual time spent: XX days}\\[\baselineskip]}
 
 \end{titlepage}
@@ -159,5 +158,12 @@
 \include{./chapters/27 Indefinite Integrals}
 
 \include{./chapters/28 Definite Integrals}
+
+\begin{appendix}
+    \centering
+    \includepdf[pages=1,scale=0.75,offset=0mm -50,pagecommand={
+                \chapter{Manuscript}\label{Manuscript}}, linktodoc=false]{manuscript.pdf}
+    \includepdf[pages=2-,offset=0mm 40,pagecommand={}, linktodoc=false]{manuscript.pdf}
+\end{appendix}
 
 \end{document}

@@ -627,7 +627,7 @@
       \item Shown in the diagram below is the shaded region bounded by the curve $y =
                   2\cos\pi x$, the line $y = 3x$, and the $y$-axis.
             \begin{center}
-                  \includegraphics[scale=0.2]{assets/28-rev-37.png}
+                  \includegraphics[scale=0.15]{assets/28-rev-37.png}
             \end{center}
             \begin{enumerate}
                   \item Prove that the $x$-coordinate of point $A$ is $\dfrac{1}{3}$. \prooff{}
@@ -647,9 +647,7 @@
                         \end{flalign*}
                         Let $u = 2\pi x$, then $du = 2\pi dx$.
 
-                        When $x = 0$, $u = 0$.
-
-                        When $x = \dfrac{1}{3}$, $u = \dfrac{2\pi}{3}$.
+                        When $x = 0$, $u = 0$, when $x = \dfrac{1}{3}$, $u = \dfrac{2\pi}{3}$.
                         \begin{flalign*}
                               V & = \pi\int_0^{\frac{1}{3}} (2 - 9x^2) d x + \int_0^{\frac{2\pi}{3}} \cos u d u      & \\
                                 & = \pi\bigg[2x - 3x^3\bigg]_0^{\frac{1}{3}} + \bigg[\sin u\bigg]_0^{\frac{2\pi}{3}} & \\
@@ -657,20 +655,22 @@
                                 & = \dfrac{5\pi}{9} + \dfrac{\sqrt{3}}{2}
                         \end{flalign*}
             \end{enumerate}
-            \newpage
       \item Given that a region is bounded by the curve $xy = 12$, the line $x = 4$, and $y
                   = 6$. Find the volume of the solid of revolution formed by rotating this region
-            about the $x$-axis and the $y$-axis respectively. \sol{}
-            \begin{flalign*}
-                  V_x & = \pi\int_2^4 \left(36 - \dfrac{144}{x^2}\right) d x & \\
-                      & = \pi\bigg[36x + \dfrac{144}{x}\bigg]_2^4            & \\
-                      & = \pi\left(144 + 36 - 72 - 72\right)                 & \\
-                      & = 36\pi
-            \end{flalign*}
-            \begin{flalign*}
-                  V_y & = \pi\int_3^6 \left(16 - \dfrac{144}{y^2}\right) d y & \\
-                      & = \pi\bigg[16y + \dfrac{144}{y}\bigg]_3^6            & \\
-                      & = \pi\left(96 + 24 - 48 - 48\right)                  & \\
-                      & = 24\pi
-            \end{flalign*}
+            about the $x$-axis and the $y$-axis respectively. \sol{} \vspace{-0.8cm}
+            \begin{multicols}{2}
+                  \begin{flalign*}
+                        V_x & = \pi\int_2^4 \left(36 - \dfrac{144}{x^2}\right) d x & \\
+                            & = \pi\bigg[36x + \dfrac{144}{x}\bigg]_2^4            & \\
+                            & = \pi\left(144 + 36 - 72 - 72\right)                 & \\
+                            & = 36\pi
+                  \end{flalign*}
+
+                  \begin{flalign*}
+                        V_y & = \pi\int_3^6 \left(16 - \dfrac{144}{y^2}\right) d y & \\
+                            & = \pi\bigg[16y + \dfrac{144}{y}\bigg]_3^6            & \\
+                            & = \pi\left(96 + 24 - 48 - 48\right)                  & \\
+                            & = 24\pi
+                  \end{flalign*}
+            \end{multicols}
 \end{enumerate}

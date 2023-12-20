@@ -76,12 +76,17 @@ that the value of the definite integral $\displaystyle\int_a^b f(x) dx$ is the
 area of the curved trapezoid bounded by the curve $y = f(x)$, the $x$-axis, and
 the lines $x = a$ and $x = b$, i.e. $A = \displaystyle\int_a^b f(x) dx$.
 
-If $f(x) \leq 0$ in the interval $[a, b]$, as shown in the diagram above,
-$f(\xi_i)\Delta x$ is the negative value of the area of the $i$-th smaller
-rectangle. Hence, the definite integral $\displaystyle\int_a^b f(x) dx$ is
-negative, and its absolute value is the area of the curved trapezoid bounded by
-the curve $y = f(x)$, the $x$-axis, and the lines $x = a$ and $x = b$, i.e. $A
-    = -\displaystyle\int_a^b f(x) dx$.
+\vspace{0.5cm}
+\begin{vwcol}[widths={0.7,0.3},justify=flush,rule=0pt,indent=1em]
+    If $f(x) \leq 0$ in the interval $[a, b]$, as shown in the diagram on the right-hand-side,
+    $f(\xi_i)\Delta x$ is the negative value of the area of the $i$-th smaller
+    rectangle. Hence, the definite integral $\displaystyle\int_a^b f(x) dx$ is
+    negative, and its absolute value is the area of the curved trapezoid bounded by
+    the curve $y = f(x)$, the $x$-axis, and the lines $x = a$ and $x = b$, i.e. $A
+        = -\displaystyle\int_a^b f(x) dx$.
+
+    \includegraphics[scale=0.15]{assets/28-4.png}
+\end{vwcol}
 
 \newpage
 
@@ -93,302 +98,315 @@ trapezoid. Let $x_0 > a$ and $f(x) \geq 0$. The area of the curved trapezoid
 bounded by the curve $y = f(x)$, the $x$-axis, and the lines $x = a$, $x = x_0$
 and $y = 0$ is $A(x_0) = \displaystyle\int_a^{x_0} f(x) dx$.
 
-When $x_0$ changes, the area $A(x_0)$ also changes. From the diagram above, we
-know that
-\begin{cequation}
-    m\Delta x \leq A(x_0 + \Delta x) - A(x_0) \leq M\Delta x,
-\end{cequation}
-where $m$ and $M$ are the minimum and maximum values of $f(x)$ in the interval $[x_0, x_0 + \Delta x]$. Hence,
-\begin{cequation}
-    m \leq \dfrac{A(x_0 + \Delta x) - A(x_0)}{\Delta x} \leq M.
-\end{cequation}
-Apparently, as $\Delta x$ approaches 0, both $m$ and $M$ approach $f(x_0)$. Besides, from the definition of derivative, $\lim_{\Delta x \to 0} \dfrac{A(x_0 + \Delta x) - A(x_0)}{\Delta x} = A'(x_0)$. Hence, we get $A'(x_0) = f(x_0)$. This relational expression is true for any $x_0 > a$. In other words, $A'(x) = f(x)$, i.e. the derivative of the area function $A(x)$ is the integrand $f(x)$.
-
-Let $\displaystyle\int f(x)d x = F(x) + C$, i.e. $F(x)$ is the primitive of
-$f(x)$. Then, from $A'(x) = f(x) = F'(x)$, we get $A(x) = F(x) + C$, where $C$
-is a constant. When $A(a) = 0$, $x = a$, we get $C = -F(a)$. Hence, $C =
-    -F(a)$, i.e. for any $x_0 > a$, we get $A(x_0) = F(x_0) - F(a)$.
-
-Let $x_0 = b$, we get $A(b) = \displaystyle\int_a^b f(x) dx = F(b) - F(a)$.
-This relational expression is true for any continuous function $f(x)$. In order
-to make the relational expression true for any $a$ and $b$, when $a > b$, the
-following definition is made.
-\begin{cequation}
-    \int_a^b f(x) dx = -\int_b^a f(x) dx.
-\end{cequation}
-
-Above all are the relationship between definite integrals and indefinite
-integrals, i.e. \vspace{-0.9em}
-\begin{center}
-    \framebox{
-
-        \parbox[t][1.3cm]{9cm}{ \addvspace{0.2cm} \centering If $\displaystyle\int f(x) dx
-                = F(x) + C$, then $\displaystyle\int_a^b f(x) dx = F(b) - F(a)$. }}
-\end{center}
-This relationship is called the fundamental theorem of calculus. Generally, we
-express the expression as follows:
-\begin{cequation}
-    \int_a^b f(x) dx = \big[F(x)\big]_a^b = F(b) - F(a).
-\end{cequation}
-where $F(x)$ is any primitive of $f(x)$.
-
-When finding the definite integral $\displaystyle\int_a^b f(x) dx$, we only
-have to find any primitive $F(x)$ of $f(x)$. The other primitive of $f(x)$ can
-be expressed as $F(x) + C$, where $C$ is a constant. Hence, the definite
-integral $\displaystyle\int_a^b f(x) dx$ is independent of the choice of
-primitive of $f(x)$. But,
-\begin{flalign*}
-     & \big[F(x) + C\big]_a^b    & \\
-     & = [F(b) + C] - [F(a) + C] & \\
-     & = F(b) - F(a)
-\end{flalign*}
-Hence, the value of the definite integral has nothing to do with the constant $C$. The value of the definite integral remains the same no matter which primitive of $f(x)$ is chosen.
-\\\\
-Note that $\big[F(x)\big]_a^b$ can also be written as $F(x)\big|_a^b$.
-
-\newpage
-\input{./exercises/Chapter 28/Practice 2.tex}
-\input{exercises/Chapter 28/Exercise 28.1.tex}
-
-\section{Properties and Calculations of Definite Integrals}
-
-\subsection*{Properties of Definite Integrals}
-
-\noindent \hspace{1.2em}\textit{The definite integrals have the following basic properties:}
-
-\begin{center}
-    \framebox{
-
-        \parbox[t][1.3cm]{10cm}{ \addvspace{0.2cm}\hspace{10pt}\textbf{Property 1}
-            \hspace{10pt} $\displaystyle\int_a^b kf(x) dx = k\int_a^b f(x) dx$}}
-\end{center}
-\begin{center}
-    \framebox{
-
-    \parbox[t][1.3cm]{10cm}{ \addvspace{0.2cm}\hspace{10pt} \textbf{Property 2}
-    \hspace{10pt} $\displaystyle\int_a^b [f(x) \pm g(x)] dx = \int_a^b f(x) dx \pm
-        \int_a^b g(x) dx$}}
-\end{center}
-\begin{center}
-    \framebox{
-
-        \parbox[t][1.3cm]{10cm}{ \addvspace{0.25cm}\hspace{10pt}\textbf{Property 3}
-            \hspace{10pt} $\displaystyle\int_c^a f(x) dx + \int_b^c f(x) dx = \int_b^a f(x)
-                dx$}}
-\end{center}
-
-\input{exercises/Chapter 28/Practice 3.tex}
-
-\subsection*{Integration by Substitution}
-
-In the last chapter, we have learned how to solve indefinite integrals using
-the method of integration by substitution: $\displaystyle\int f(g(x))g'(x)dx =
-    \int f(u)du$ where $u = g(x)$. From the basic theorem of calculus, the method
-of integration by substitution of definite integrals can be derived:
-\begin{center}
-    \framebox{
-
-        \parbox[t][1.3cm]{9cm}{ \addvspace{0.2cm} \centering $\displaystyle\int_a^b
-                f(g(x))g'(x)dx = \int_{g(a)}^{g(b)} f(u)du$ }}
-\end{center}
-\vspace{0.9em}
-The method of integration by substitution of definite integrals is similar to
-that of indefinite integrals. The only difference is that the limits of
-integration are changed accordingly.
-
-\input{exercises/Chapter 28/Practice 4.tex}
-
-\newpage
-
-\input{exercises/Chapter 28/Exercise 28.2.tex}
-
-\section{Area}
-
-When we first introduced the concept of definite integrals, we have studied
-that, if $f(x) \geq 0$ in the interval $a \leq x \leq b$, then the area of the
-curved trapezoid bounded by the curve $y = f(x)$, the lines $x = a$ and $x =
-    b$, the $x$-axis, and the $y$-axis is given by
-\begin{cequation}
-    A = \int_a^b f(x)dx
-\end{cequation}
-
-The applications of definite integrals are not limited to finding area of
-curved trapezoid. In fact, it is widely used in different fields of
-technologies. To solve real-life problems, the basic mindset is the steps
-described in the definition: splitting, approximating, finding sum, and taking
-limit. After understanding the concept, part of the steps can be skipped, and
-the related definite integrals can be written out straight away.
-
-Let's take finding the area of the curved trapezoid bounded by the line $x =
-    a$, $x = b$, the $x$-axis, and the curve $y = f(x)$ as an example and do some
-further elaboration. Since both sides of the curved trapezoid are the straight
-lines $x = a$ and $x = b$, we can split the interval $a \leq x \leq b$ into
-multiple smaller intervals, hence the original curved trapezoid is split into
-multiple smaller curved trapezoid. As shown in the diagram below, take any one
-of the smaller intervals, and express it as $[x, x + \Delta x]$, its
-corresponding smaller curved trapezoid can be approximated by a rectangle with
-width of $\Delta x$ and height of the function value $f(x)$ at the point $x$.
-As such, the area of the smaller curved trapezoid is $\Delta A \approx
-    f(x)\Delta x$.
-\begin{center}
-    \includegraphics[scale=0.3]{assets/28-8.png}
-\end{center}
-
-Summing up the approximated area of all the smaller curved trapezoid, then find
-the limit of the sum when $\Delta x \to 0$, we can get the area of the original
-curved trapezoid, i.e.
-\begin{cequation}
-    \sum\Delta A \approx \sum f(x)\Delta x\ \xrightarrow{\ \ \ \ \Delta x \to 0\ \ \ \ } \int_a^b f(x)dx
-\end{cequation}
-
-\begin{center}
-    \includegraphics[scale=0.2]{assets/28-9.png}
-\end{center}
-The same can be applied if $f(x) \leq 0$ in the interval $a \leq x \leq b$, as
-shown in the diagram above. The area of the curved trapezoid bounded by the
-curve $y = f(x)$, the lines $x = a$ and $x = b$, the $x$-axis, and the $y$-axis
-is given by
-\begin{cequation}
-    A = -\int_a^b f(x)dx
-\end{cequation}
-
-\begin{center}
-    \includegraphics[scale=0.2]{assets/28-10.png}
-\end{center}
-If the target area $A$ is bounded by the lines $y = c$, $y = d$, the $y$-axis,
-and the curve $x = f(y)$, where $f(y) \geq 0$ in the interval $c \leq y \leq
-    d$, as shown in the diagram above, using the same concept, we can get the area
-of the region
-\begin{cequation}
-    A = \int_c^d f(y)dy
-\end{cequation}
-
-\input{exercises/Chapter 28/Practice 5.tex}
-
-\newpage
-If, in the internal $a \leq x \leq b$, $f_2(x) \geq f_1(x) \geq 0$, then the
-area of the region bounded by the curve $y = f_1(x)$, $y = f_2(x)$, the lines
-$x = a$ and $x = b$ can be found using definite integrals.
-\begin{center}
-    \includegraphics[scale=0.15]{assets/28-16.png}
-\end{center}
-
-As shown in the diagram above, split the interval $a \leq x \leq b$ into
-multiple smaller intervals. Take any one of the smaller intervals, and express
-it as $[x, x + \Delta x]$. The region in this smaller interval can be
-approximated by a rectangle with width of $\Delta x$ and height of the function
-value $f_2(x) - f_1(x)$, i.e.
-\begin{cequation}
-    \Delta A \approx [f_2(x) - f_1(x)]\Delta x
-\end{cequation}
-
-Summing up the approximated area of all the smaller intervals, then find the
-limit of the sum when $\Delta x \to 0$, we can get the area of the region
-bounded by the curve $y = f_1(x)$, $y = f_2(x)$, the lines $x = a$ and $x = b$,
-i.e.
-\begin{center}
-    \framebox{
-
-    \parbox[t][1.3cm]{5cm}{ \addvspace{0.2cm} \centering $\displaystyle A = \int_a^b
-        [f_2(x) - f_1(x)]dx$ }}
-\end{center}
-
-\begin{center}
-    \includegraphics[scale=0.15]{assets/28-17.png}
-\end{center}
-
-Similarly, if, in the internal $c \leq y \leq d$, $g_2(y) \geq g_1(y) \geq 0$,
-then the area of the region bounded by the curve $x = g_1(y)$, $x = g_2(y)$,
-the lines $y = c$ and $y = d$ is given by
-\begin{center}
-    \framebox{
-
-    \parbox[t][1.3cm]{5cm}{ \addvspace{0.2cm} \centering $\displaystyle A = \int_c^d
-        [g_2(y) - g_1(y)]dy$ }}
-\end{center}
-Note that when using these formulas, the function $f_2(x)$ must always be greater than or equal to $f_1(x)$ in the interval $[a, b]$.
-
-\newpage
-\input{exercises/Chapter 28/Practice 6.tex}
-
-\input{exercises/Chapter 28/Exercise 28.3.tex}
-
-\newpage
-\section{Volume of Revolution}
-The solid formed by rotating a flat surface around a certain straight line on
-the surface is called the \textbf{solid of revolution}, for example the right
-cylinder, right cone, and sphere.
-
-\begin{center}
-    \includegraphics[scale=0.3]{assets/28-22a.png}
-\end{center}
-
-The diagram above shows a solid of revolution formed by rotating the area
-bounded by the curve $y = f(x)$, the lines $x = a$, $x = b$, and the $x$-axis
-around the $x$-axis. We can utilize the methods discussed in the last section
-to find the volume of this solid of revolution.
-
 \vspace{0.5cm}
-\begin{vwcol}[widths={0.7,0.3},justify=flush,rule=0pt,indent=1em]
-
-    Split the interval $a \leq x \leq b$ into multiple smaller intervals. Take any
-    one of the smaller intervals, and express it as $[x, x + \Delta x]$. The region
-    in this smaller interval can be approximated by a rectangle with width of
-    $\Delta x$ and height of the function value $f(x)$. Rotate this rectangle
-    around the $x$-axis, we get a cylinder with radius $f(x)$ and height $\Delta
-        x$, as shown in the diagram on the right-hand side. Hence, the approximated
-    volume of the solid of revolution in this smaller interval is
+\begin{vwcol}[widths={0.6,0.4},justify=flush,rule=0pt,indent=1em]
+    When $x_0$ changes, the area $A(x_0)$ also changes. From the diagram above, we
+    know that
     \begin{cequation}
-        \Delta V \approx \pi[f(x)]^2\Delta x
+        m\Delta x \leq A(x_0 + \Delta x) - A(x_0) \leq M\Delta x,
+    \end{cequation}
+    where $m$ and $M$ are the minimum and maximum values of $f(x)$ in the interval $[x_0, x_0 + \Delta x]$. Hence,
+    \begin{cequation}
+        m \leq \dfrac{A(x_0 + \Delta x) - A(x_0)}{\Delta x} \leq M.
     \end{cequation}
 
-    \includegraphics[scale=0.3]{assets/28-22b.png}
+    \includegraphics[scale=0.1]{assets/28-7.png}
 \end{vwcol}
 \vspace{0.5cm}
-Summing up the approximated volume of all the smaller intervals, then find the
-limit of the sum when $\Delta x \to 0$, we can get the volume of the solid of
-revolution, i.e.
-\begin{center}
-    \framebox{
 
-    \parbox[t][1.3cm]{4cm}{ \addvspace{0.2cm} \centering $\displaystyle V =
-        \pi\int_a^b[f(x)]^2dx$ }}
-\end{center}
-\begin{center}
-    \includegraphics[scale=0.3]{assets/28-23.png}
-\end{center}
+Apparently, as $\Delta x$ approaches 0, both $m$ and $M$ approach $f(x_0)$.
+Besides, from the definition of derivative, \\$\lim_{\Delta x \to 0}
+\dfrac{A(x_0 + \Delta x) - A(x_0)}{\Delta x} = A'(x_0)$. Hence, we get $A'(x_0)
+= f(x_0)$. This relational expression is true for any $x_0 > a$. In other
+    words, $A'(x) = f(x)$, i.e. the derivative of the area function $A(x)$ is the
+    integrand $f(x)$.
 
-Similarly, if the solid of revolution is formed by rotating the area bounded by
-the curve $x = g(y)$, the lines $y = c$, $y = d$, and the $y$-axis around the
+    Let $\displaystyle\int f(x)d x = F(x) + C$, i.e. $F(x)$ is the primitive of
+$f(x)$. Then, from $A'(x) = f(x) = F'(x)$, we get $A(x) = F(x) + C$, where $C$
+    is a constant. When $A(a) = 0$, $x = a$, we get $C = -F(a)$. Hence, $C =
+-F(a)$, i.e. for any $x_0 > a$, we get $A(x_0) = F(x_0) - F(a)$.
+
+    Let $x_0 = b$, we get $A(b) = \displaystyle\int_a^b f(x) dx = F(b) - F(a)$.
+    This relational expression is true for any continuous function $f(x)$. In order
+    to make the relational expression true for any $a$ and $b$, when $a > b$, the
+    following definition is made.
+    \begin{center}
+        \framebox{
+
+            \parbox[t][1.3cm]{6cm}{ \addvspace{0.2cm} \centering $\displaystyle\int_a^b f(x) dx
+                    = -\int_b^a f(x) dx$ }}
+    \end{center}
+
+    Above all are the relationship between definite integrals and indefinite
+    integrals, i.e. \vspace{-0.9em}
+    \begin{center}
+        \framebox{
+
+            \parbox[t][1.3cm]{9cm}{ \addvspace{0.2cm} \centering If $\displaystyle\int f(x) dx
+                    = F(x) + C$, then $\displaystyle\int_a^b f(x) dx = F(b) - F(a)$. }}
+    \end{center}
+    This relationship is called the fundamental theorem of calculus. Generally, we
+    express the expression as follows:
+    \begin{cequation}
+        \int_a^b f(x) dx = \big[F(x)\big]_a^b = F(b) - F(a).
+    \end{cequation}
+    where $F(x)$ is any primitive of $f(x)$.
+
+    When finding the definite integral $\displaystyle\int_a^b f(x) dx$, we only
+    have to find any primitive $F(x)$ of $f(x)$. The other primitive of $f(x)$ can
+    be expressed as $F(x) + C$, where $C$ is a constant. Hence, the definite
+    integral $\displaystyle\int_a^b f(x) dx$ is independent of the choice of
+    primitive of $f(x)$. But,
+    \begin{flalign*}
+         & \big[F(x) + C\big]_a^b = [F(b) + C] - [F(a) + C] = F(b) - F(a)
+    \end{flalign*}
+    Hence, the value of the definite integral has nothing to do with the constant $C$. The value of the definite integral remains the same no matter which primitive of $f(x)$ is chosen.
+
+    Note that $\big[F(x)\big]_a^b$ can also be written as $F(x)\big|_a^b$.
+
+    \newpage
+    \input{./exercises/Chapter 28/Practice 2.tex}
+    \input{exercises/Chapter 28/Exercise 28.1.tex}
+
+    \section{Properties and Calculations of Definite Integrals}
+
+    \subsection*{Properties of Definite Integrals}
+
+    \noindent \hspace{1.2em}\textit{The definite integrals have the following basic properties:}
+
+    \begin{center}
+        \framebox{
+
+            \parbox[t][1.3cm]{10cm}{ \addvspace{0.2cm}\hspace{10pt}\textbf{Property 1}
+                \hspace{10pt} $\displaystyle\int_a^b kf(x) dx = k\int_a^b f(x) dx$}}
+    \end{center}
+    \begin{center}
+        \framebox{
+
+        \parbox[t][1.3cm]{10cm}{ \addvspace{0.2cm}\hspace{10pt} \textbf{Property 2}
+        \hspace{10pt} $\displaystyle\int_a^b [f(x) \pm g(x)] dx = \int_a^b f(x) dx \pm
+            \int_a^b g(x) dx$}}
+    \end{center}
+    \begin{center}
+        \framebox{
+
+            \parbox[t][1.3cm]{10cm}{ \addvspace{0.25cm}\hspace{10pt}\textbf{Property 3}
+                \hspace{10pt} $\displaystyle\int_c^a f(x) dx + \int_b^c f(x) dx = \int_b^a f(x)
+                    dx$}}
+    \end{center}
+
+    \input{exercises/Chapter 28/Practice 3.tex}
+
+    \subsection*{Integration by Substitution}
+
+    In the last chapter, we have learned how to solve indefinite integrals using
+    the method of integration by substitution: $\displaystyle\int f(g(x))g'(x)dx =
+\int f(u)du$ where $u = g(x)$. From the basic theorem of calculus, the method
+    of integration by substitution of definite integrals can be derived:
+    \begin{center}
+        \framebox{
+
+            \parbox[t][1.3cm]{9cm}{ \addvspace{0.2cm} \centering $\displaystyle\int_a^b
+                    f(g(x))g'(x)dx = \int_{g(a)}^{g(b)} f(u)du$ }}
+    \end{center}
+    \vspace{0.9em}
+    The method of integration by substitution of definite integrals is similar to
+    that of indefinite integrals. The only difference is that the limits of
+    integration are changed accordingly.
+
+    \input{exercises/Chapter 28/Practice 4.tex}
+
+    \newpage
+
+    \input{exercises/Chapter 28/Exercise 28.2.tex}
+
+    \section{Area}
+
+    When we first introduced the concept of definite integrals, we have studied
+    that, if $f(x) \geq 0$ in the interval $a \leq x \leq b$, then the area of the
+    curved trapezoid bounded by the curve $y = f(x)$, the lines $x = a$ and $x =
+b$, the $x$-axis, and the $y$-axis is given by
+    \begin{cequation}
+        A = \int_a^b f(x)dx
+    \end{cequation}
+
+    The applications of definite integrals are not limited to finding area of
+    curved trapezoid. In fact, it is widely used in different fields of
+    technologies. To solve real-life problems, the basic mindset is the steps
+    described in the definition: splitting, approximating, finding sum, and taking
+    limit. After understanding the concept, part of the steps can be skipped, and
+    the related definite integrals can be written out straight away.
+
+    Let's take finding the area of the curved trapezoid bounded by the line $x =
+a$, $x = b$, the $x$-axis, and the curve $y = f(x)$ as an example and do some
+    further elaboration. Since both sides of the curved trapezoid are the straight
+    lines $x = a$ and $x = b$, we can split the interval $a \leq x \leq b$ into
+    multiple smaller intervals, hence the original curved trapezoid is split into
+    multiple smaller curved trapezoid. As shown in the diagram below, take any one
+    of the smaller intervals, and express it as $[x, x + \Delta x]$, its
+    corresponding smaller curved trapezoid can be approximated by a rectangle with
+    width of $\Delta x$ and height of the function value $f(x)$ at the point $x$.
+    As such, the area of the smaller curved trapezoid is $\Delta A \approx
+f(x)\Delta x$.
+    \begin{center}
+        \includegraphics[scale=0.3]{assets/28-8.png}
+    \end{center}
+
+    Summing up the approximated area of all the smaller curved trapezoid, then find
+    the limit of the sum when $\Delta x \to 0$, we can get the area of the original
+    curved trapezoid, i.e.
+    \begin{cequation}
+        \sum\Delta A \approx \sum f(x)\Delta x\ \xrightarrow{\ \ \ \ \Delta x \to 0\ \ \ \ } \int_a^b f(x)dx
+    \end{cequation}
+
+    \begin{center}
+        \includegraphics[scale=0.2]{assets/28-9.png}
+    \end{center}
+    The same can be applied if $f(x) \leq 0$ in the interval $a \leq x \leq b$, as
+    shown in the diagram above. The area of the curved trapezoid bounded by the
+    curve $y = f(x)$, the lines $x = a$ and $x = b$, the $x$-axis, and the $y$-axis
+    is given by
+    \begin{cequation}
+        A = -\int_a^b f(x)dx
+    \end{cequation}
+
+    \begin{center}
+        \includegraphics[scale=0.2]{assets/28-10.png}
+    \end{center}
+    If the target area $A$ is bounded by the lines $y = c$, $y = d$, the $y$-axis,
+    and the curve $x = f(y)$, where $f(y) \geq 0$ in the interval $c \leq y \leq
+d$, as shown in the diagram above, using the same concept, we can get the area
+    of the region
+    \begin{cequation}
+        A = \int_c^d f(y)dy
+    \end{cequation}
+
+    \input{exercises/Chapter 28/Practice 5.tex}
+
+    \newpage
+    If, in the internal $a \leq x \leq b$, $f_2(x) \geq f_1(x) \geq 0$, then the
+    area of the region bounded by the curve $y = f_1(x)$, $y = f_2(x)$, the lines
+$x = a$ and $x = b$ can be found using definite integrals.
+    \begin{center}
+        \includegraphics[scale=0.15]{assets/28-16.png}
+    \end{center}
+
+    As shown in the diagram above, split the interval $a \leq x \leq b$ into
+    multiple smaller intervals. Take any one of the smaller intervals, and express
+    it as $[x, x + \Delta x]$. The region in this smaller interval can be
+    approximated by a rectangle with width of $\Delta x$ and height of the function
+    value $f_2(x) - f_1(x)$, i.e.
+    \begin{cequation}
+        \Delta A \approx [f_2(x) - f_1(x)]\Delta x
+    \end{cequation}
+
+    Summing up the approximated area of all the smaller intervals, then find the
+    limit of the sum when $\Delta x \to 0$, we can get the area of the region
+    bounded by the curve $y = f_1(x)$, $y = f_2(x)$, the lines $x = a$ and $x = b$,
+    i.e.
+    \begin{center}
+        \framebox{
+
+        \parbox[t][1.3cm]{5cm}{ \addvspace{0.2cm} \centering $\displaystyle A = \int_a^b
+            [f_2(x) - f_1(x)]dx$ }}
+    \end{center}
+
+    \begin{center}
+        \includegraphics[scale=0.15]{assets/28-17.png}
+    \end{center}
+
+    Similarly, if, in the internal $c \leq y \leq d$, $g_2(y) \geq g_1(y) \geq 0$,
+    then the area of the region bounded by the curve $x = g_1(y)$, $x = g_2(y)$,
+    the lines $y = c$ and $y = d$ is given by
+    \begin{center}
+        \framebox{
+
+        \parbox[t][1.3cm]{5cm}{ \addvspace{0.2cm} \centering $\displaystyle A = \int_c^d
+            [g_2(y) - g_1(y)]dy$ }}
+    \end{center}
+    Note that when using these formulas, the function $f_2(x)$ must always be greater than or equal to $f_1(x)$ in the interval $[a, b]$.
+
+    \newpage
+    \input{exercises/Chapter 28/Practice 6.tex}
+
+    \input{exercises/Chapter 28/Exercise 28.3.tex}
+
+    \newpage
+    \section{Volume of Revolution}
+    The solid formed by rotating a flat surface around a certain straight line on
+    the surface is called the \textbf{solid of revolution}, for example the right
+    cylinder, right cone, and sphere.
+
+    \begin{center}
+        \includegraphics[scale=0.3]{assets/28-22a.png}
+    \end{center}
+
+    The diagram above shows a solid of revolution formed by rotating the area
+    bounded by the curve $y = f(x)$, the lines $x = a$, $x = b$, and the $x$-axis
+    around the $x$-axis. We can utilize the methods discussed in the last section
+    to find the volume of this solid of revolution.
+
+    \vspace{0.5cm}
+    \begin{vwcol}[widths={0.7,0.3},justify=flush,rule=0pt,indent=1em]
+
+        Split the interval $a \leq x \leq b$ into multiple smaller intervals. Take any
+        one of the smaller intervals, and express it as $[x, x + \Delta x]$. The region
+        in this smaller interval can be approximated by a rectangle with width of
+        $\Delta x$ and height of the function value $f(x)$. Rotate this rectangle
+        around the $x$-axis, we get a cylinder with radius $f(x)$ and height $\Delta
+            x$, as shown in the diagram on the right-hand side. Hence, the approximated
+        volume of the solid of revolution in this smaller interval is
+        \begin{cequation}
+            \Delta V \approx \pi[f(x)]^2\Delta x
+        \end{cequation}
+
+        \includegraphics[scale=0.3]{assets/28-22b.png}
+    \end{vwcol}
+    \vspace{0.5cm}
+    Summing up the approximated volume of all the smaller intervals, then find the
+    limit of the sum when $\Delta x \to 0$, we can get the volume of the solid of
+    revolution, i.e.
+    \begin{center}
+        \framebox{
+
+        \parbox[t][1.3cm]{4cm}{ \addvspace{0.2cm} \centering $\displaystyle V =
+            \pi\int_a^b[f(x)]^2dx$ }}
+    \end{center}
+    \begin{center}
+        \includegraphics[scale=0.3]{assets/28-23.png}
+    \end{center}
+
+    Similarly, if the solid of revolution is formed by rotating the area bounded by
+    the curve $x = g(y)$, the lines $y = c$, $y = d$, and the $y$-axis around the
 $y$-axis, then the volume of the solid of revolution is given by
-\begin{center}
-    \framebox{
+    \begin{center}
+        \framebox{
 
-    \parbox[t][1.3cm]{4cm}{ \addvspace{0.2cm} \centering $\displaystyle V =
-        \pi\int_c^d[g(y)]^2dy$ }}
-\end{center}
+        \parbox[t][1.3cm]{4cm}{ \addvspace{0.2cm} \centering $\displaystyle V =
+            \pi\int_c^d[g(y)]^2dy$ }}
+    \end{center}
 
-\newpage
-\input{exercises/Chapter 28/Practice 7.tex}
+    \newpage
+    \input{exercises/Chapter 28/Practice 7.tex}
 
-If a region is bounded by the curve $y = f_1(x)$, $y = f_2(x)$, the lines $x =
-    a$, $x = b$, and the $x$-axis, and $f_2 \geq f_1 \geq 0$, then the volume of
-the solid of revolution formed by rotating this region around the $x$-axis, as
-shown in the diagram below, is given by
-\begin{center}
-    \framebox{
+    If a region is bounded by the curve $y = f_1(x)$, $y = f_2(x)$, the lines $x =
+a$, $x = b$, and the $x$-axis, and $f_2 \geq f_1 \geq 0$, then the volume of
+    the solid of revolution formed by rotating this region around the $x$-axis, as
+    shown in the diagram below, is given by
+    \begin{center}
+        \framebox{
 
-    \parbox[t][1.3cm]{12cm}{ \addvspace{0.2cm} \centering $\displaystyle V =
-        \pi\int_a^b[f_2(x)]^2dx - \pi\int_a^b[f_1(x)]^2dx =
-        \pi\int_a^b\left\{[f_2(x)]^2 - [f_1(x)]^2\right\}dx$ }}
-\end{center}
-\begin{center}
-    \includegraphics[scale=0.15]{assets/28-29.png}
-\end{center}
+        \parbox[t][1.3cm]{12cm}{ \addvspace{0.2cm} \centering $\displaystyle V =
+            \pi\int_a^b[f_2(x)]^2dx - \pi\int_a^b[f_1(x)]^2dx =
+            \pi\int_a^b\left\{[f_2(x)]^2 - [f_1(x)]^2\right\}dx$ }}
+    \end{center}
+    \begin{center}
+        \includegraphics[scale=0.15]{assets/28-29.png}
+    \end{center}
 
-Similarly, if a region is bounded by the curve $x = g_1(y)$, $x = g_2(y)$, the
-lines $y = c$, $y = d$, and the $y$-axis, and $g_2 \geq g_1 \geq 0$, then the
-volume of the solid of revolution formed by rotating this region around the
+    Similarly, if a region is bounded by the curve $x = g_1(y)$, $x = g_2(y)$, the
+    lines $y = c$, $y = d$, and the $y$-axis, and $g_2 \geq g_1 \geq 0$, then the
+    volume of the solid of revolution formed by rotating this region around the
 $y$-axis, as shown in the diagram below, is given by \vspace{-0.9em}
 \begin{center}
     \framebox{
