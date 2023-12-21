@@ -888,6 +888,7 @@
 <details>
 <summary>S3P2</summary>
 
+- [manuscript.pdf](<./数学/S3P2/manuscript.pdf>)
 - [vercool.pdf](<./数学/S3P2/vercool.pdf>)
 - [vercool.tex](<./数学/S3P2/vercool.tex>)
 - [S3P2.pdf](<./数学/S3P2/S3P2.pdf>)
