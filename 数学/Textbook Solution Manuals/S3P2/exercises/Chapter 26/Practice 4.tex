@@ -1,0 +1,77 @@
+\subsection{Practice 4}
+
+\noindent \hspace{1.2em}\textit{Find the absolute maximum value and the absolute minimum value of the following functions (Question 1 to 2):}
+\begin{enumerate}
+    \begin{multicols}{2}
+        \item $f(x) = 3x^3 - 9x + 5$, $[-2, 2]$
+        \sol{}
+        \begin{flalign*}
+            f'(x)    & = 9x^2 - 9 & \\
+            9x^2 - 9 & = 0        & \\
+            x^2      & = 1          \\
+            x        & = \pm 1
+        \end{flalign*}
+        \begin{flalign*}
+            f(-1) & = 3(-1)^3 - 9(-1) + 5 = 11 & \\
+            f(1)  & = 3(1)^3 - 9(1) + 5   = -1 & \\
+            f(-2) & = 3(-2)^3 - 9(-2) + 5 = -1 & \\
+            f(2)  & = 3(2)^3 - 9(2) + 5   = 11
+        \end{flalign*}
+        $\therefore$ The absolute maximum value is $11$ and the absolute minimum value is $-1$ in the interval $[-2, 2]$.
+        \vfill\null
+        \item $f(x) = x^4 - 2x^2 + 5$, $[-2, 3]$
+        \sol{}
+        \begin{flalign*}
+            f'(x)      & = 4x^3 - 4x               & \\
+            4x^3 - 4x  & = 0                       & \\
+            x(x^2 - 1) & = 0                       & \\
+            x          & = 0 \text{ or } x = \pm 1
+        \end{flalign*}
+        \begin{flalign*}
+            f(-2) & = (-2)^4 - 2(-2)^2 + 5 = 13 & \\
+            f(-1) & = (-1)^4 - 2(-1)^2 + 5 = 4  & \\
+            f(0)  & = (0)^4 - 2(0)^2 + 5 = 5    & \\
+            f(1)  & = (1)^4 - 2(1)^2 + 5 = 4    & \\
+            f(3)  & = (3)^4 - 2(3)^2 + 5 = 68
+        \end{flalign*}
+        $\therefore$ The absolute maximum value is $68$ and the absolute minimum value is $4$ in the interval $[-2, 3]$.
+    \end{multicols}
+
+    \begin{multicols}{2}
+        \item If $x + y = 8$, find the absolute minimum value of $x^2 + y^2$. \sol{}
+
+        Let $f(x) = x^2 + y^2$,
+        \begin{flalign*}
+            f(x)    & = x^2 + y^2            & \\
+                    & = x^2 + (8 - x)^2      & \\
+                    & = x^2 + 64 - 16x + x^2 & \\
+                    & = 2x^2 - 16x + 64      & \\
+            f'(x)   & = 4x - 16              & \\
+            4x - 16 & = 0                    & \\
+            x       & = 4                    & \\
+            y       & = 8 - x = 8 - 4 = 4    & \\
+            f''(x)  & = 4 > 0
+        \end{flalign*}
+        $\therefore$ The absolute minimum value is $32$ when $x = 4$ and $y = 4$.
+        \vfill\null
+
+        \item A metal wire with a length of $100$cm is bent into a rectangle. Find the width
+        and the length of the rectangle so that the area of the rectangle is the
+        largest. \sol{}
+
+        Let the width and the length of the rectangle be $x$ and $y$ respectively,
+        \begin{flalign*}
+            2x + 2y & = 100          & \\
+            y       & = 50 - x       & \\
+            A(x)    & = xy           & \\
+                    & = x(50 - x)    & \\
+                    & = 50x - x^2    & \\
+            A'(x)   & = 50 - 2x      & \\
+            50 - 2x & = 0            & \\
+            x       & = 25           & \\
+            y       & = 50 - 25 = 25 & \\
+            A''(x)  & = -2 < 0
+        \end{flalign*}
+        $\therefore$ The width and the length of the rectangle are $25$cm and $25$cm respectively.
+    \end{multicols}
+\end{enumerate}

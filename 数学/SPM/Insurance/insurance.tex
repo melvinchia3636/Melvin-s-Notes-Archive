@@ -1,0 +1,335 @@
+\documentclass{report}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{multirow}
+\usepackage{setspace}
+
+\newcommand{\sol}{
+
+    \vspace{0.5em}\textbf{Solution:}\vspace{0.5em}}
+
+\begin{document}
+\onehalfspacing
+\begin{enumerate}
+    \item State three examples of risks that may be faced in our daily life. \sol{}
+          \begin{enumerate}
+              \item Getting injured when travelling
+              \item Car accident
+              \item House being burned down by fire
+          \end{enumerate}
+          \vspace{0.5cm}
+
+    \item State one disaster covered by
+          \begin{enumerate}
+              \item life insurance
+              \item fire insurance
+              \item health insurance
+          \end{enumerate}
+          \sol{}
+          \begin{enumerate}
+              \item Death
+              \item Property damage due to fire
+              \item Staying in hospital due to injury
+          \end{enumerate}
+          \vspace{0.5cm}
+
+    \item The table below shows the premiums for a travel insurance offered by SJM
+          Insurance Company for traveling to Japan and Australia.
+
+          \begin{tabular}{|c|c|c|c|c|c|c|}
+              \hline \multirow{2}{*}{\begin{tabular}{c}
+                                             Number \\
+                                             of days
+                                         \end{tabular}} & \multicolumn{2}{|c|}{\begin{tabular}{c}
+                                                                                   Policyholder \\
+                                                                                   (RM)
+                                                                               \end{tabular}} & \multicolumn{2}{|c|}{\begin{tabular}{c}
+                                                                                                                         Policyholder and \\
+                                                                                                                         spouse (RM)
+                                                                                                                     \end{tabular}} & \multicolumn{2}{|c|}{\begin{tabular}{c}
+                                                                                                                                                               Family             \\
+                                                                                                                                                               (Maximum 6 people) \\
+                                                                                                                                                               (RM)
+                                                                                                                                                           \end{tabular}}                           \\
+              \cline { 2 - 7 }                          & Japan                                   & Australia                               & Japan                                   & Australia & Japan & Australia \\
+              \hline $1-4$                              & 62                                      & 85                                      & 135                                     & 140       & 288   & 380       \\
+              \hline $5-8$                              & 88                                      & 112                                     & 164                                     & 175       & 360   & 480       \\
+              \hline $9-12$                             & 110                                     & 140                                     & 185                                     & 198       & 390   & 530       \\
+              \hline $13-16$                            & 150                                     & 175                                     & 210                                     & 210       & 460   & 600       \\
+              \hline \begin{tabular}{l}
+                         Annual
+                         premium \\
+                         (18-65
+                         years
+                         old)
+                     \end{tabular}                 & 540                                     & 720                                     & -                                       & -         & -     & -              \\
+              \hline
+          \end{tabular}
+          \begin{enumerate}
+              \item State the factors that cause the difference in premiums for travel insurance.
+                    \sol{}
+
+                    \begin{enumerate}
+                        \item The number of days of travel
+                        \item The destination of travel
+                        \item The number of people insured
+                    \end{enumerate}
+                    \vspace{0.5cm}
+
+              \item Mr Faud wants to travel to Japan with his wife and two children from 6 January
+                    2021 to 16 January 2021. Which package is suitable for $\mathrm{Mr}$ Faud?
+                    \sol{}
+
+                    Mr Faud should choose the 9 - 12 days family package for Japan. The total
+                    premium is RM390. \vspace{0.5cm}
+
+              \item Hui Ling wants to travel to Australia for 5 days every month to do an
+                    investigation. Which package is suitable for Hui Ling? Give your reason. \sol{}
+
+                    Hui Ling should choose the annual premium package for Australia. The total
+                    premium is RM720. \vspace{0.5cm}
+          \end{enumerate}
+
+    \item The table below shows the premium rates for every RM1 000 face value of a life
+          insurance offered by Deva Insurance Company.
+
+          \begin{tabular}{|c|c|c|c|c|}
+              \hline \multirow{2}{*}{ Age } & \multicolumn{2}{|c|}{ Male } & \multicolumn{2}{c|}{ Female }                              \\
+              \cline { 2 - 5 }              & \begin{tabular}{c}
+                                                  Non- \\
+                                                  smoker
+                                              \end{tabular}           & Smoker                        & \begin{tabular}{c}
+                                                                                                            Non- \\
+                                                                                                            smoker
+                                                                                                        \end{tabular} & Smoker          \\
+              \hline 25                     & 1.752                        & 1.932                         & 1.412              & 1.681 \\
+              \hline 26                     & 1.784                        & 1.985                         & 1.450              & 1.728 \\
+              \hline 27                     & 1.810                        & 2.046                         & 1.483              & 1.782 \\
+              \hline 28                     & 1.837                        & 2.101                         & 1.510              & 1.829 \\
+              \hline 29                     & 1.870                        & 2.153                         & 1.544              & 1.867 \\
+              \hline
+          \end{tabular}
+
+          Calculate the annual premium needed to be paid by each of the following
+          policyholders.
+          \begin{enumerate}
+              \item Ms Gui is 29 years old and a smoker. She wants to get a life insurance coverage
+                    of RM130 000. \sol{}
+
+                    According to the table, the premium rate for Ms Gui is 1.867
+                    \begin{align*}
+                        \text{Annual premium} & = \frac{\text{Face value}}{1000} \times \text{Premium rate} \\
+                                              & = \frac{130 000}{1000} \times 1.867                         \\
+                                              & = \text{RM } 242.71
+                    \end{align*}
+
+              \item Mr Sahrin is 26 years old and does not smoke. He wants to get a life insurance
+                    coverage of RM80 000 and add on a critical illness policy. Deva Insurance
+                    Company has offered a critical illness policy to Mr Sahrin with a coverage of
+                    $30 \%$ of basic face value and the premium rate for every RM1 000 is RM1.128.
+                    \sol{}
+
+                    According to the table, the premium rate for Mr Sahrin is 1.784
+
+                    The amount coverage for critical illness is $30 \%$ of basic face value, which
+                    is
+                    \begin{align*}
+                        \text{Amount coverage} & = \frac{30}{100} \times 80 000 \\
+                                               & = \text{RM } 24 000
+                    \end{align*}
+                    \begin{align*}
+                        \text{Annual premium} & = \text{Annual basic premium} + \text{Additional critical illness premium} \\
+                                              & = \frac{80 000}{1000} \times 1.784  + \frac{24 000}{1000} \times 1.128     \\
+                                              & = \text{RM } 169.80
+                    \end{align*}
+          \end{enumerate}
+
+    \item Mr Fazli wants to buy a motor insurance for his car in Sabah. The following
+          shows the information of his car.
+
+          \begin{tabular}{|lll|}
+              \hline Age of vehicle & $:$ & 5 years            \\
+              Engine capacity       & $:$ & $1600 \mathrm{cc}$ \\
+              NCD                   & $:$ & $45 \%$            \\
+              Sum insured           & $:$ & RM52 000           \\
+              \hline
+          \end{tabular}
+
+          Calculate the gross premium for Mr Fazli's car under each of the following
+          policies.
+          \begin{enumerate}
+              \item Comprehensive \sol{}
+
+                    According to the premium rate table under the Motor Tariff, the basic premium
+                    for the first RM 1000 is RM 220.50. The basic premium for the balance is
+                    \begin{align*}
+                        \text{Basic premium} & = \frac{52 000 - 1000}{1000} \times 20.30 \\
+                                             & = \text{RM } 1 035.30
+                    \end{align*}
+                    \vspace{-2em}
+                    \begin{align*}
+                        \text{Total basic premium} & = 220.00 + 1 035.30   \\
+                                                   & = \text{RM } 1 255.30
+                    \end{align*}
+                    \vspace{-2em}
+                    \begin{align*}
+                        \text{NCD 45\%} & = \frac{45}{100} \times 1 255.30 \\
+                                        & = \text{RM } 564.885
+                    \end{align*}
+                    \vspace{-2em}
+                    \begin{align*}
+                        \text{Gross premium} & = 1 255.80 - 564.885 \\
+                                             & = \text{RM } 690.42
+                    \end{align*}
+
+              \item Third party \sol{}
+
+                    According to the premium rate table under the Motor Tariff, the basic premium
+                    is RM 75.60.
+                    \begin{align*}
+                        \text{NCD 45\%}      & = \frac{45}{100} \times 75.60 \\
+                                             & = \text{RM } 34.02            \\
+                        \text{Gross premium} & = 75.60 - 34.02               \\
+                                             & = \text{RM } 41.58
+                    \end{align*}
+
+              \item Third party, fire and theft \sol{}
+                    \begin{align*}
+                        \text{Gross premium} & = \text{75\% of comprehensive policy's gross premium} \\
+                                             & = \frac{75}{100} \times 690.42                        \\
+                                             & = \text{RM } 517.82
+                    \end{align*}
+          \end{enumerate}
+
+    \item Determine whether each of the following policyholders can claim the
+          compensation from the loss suffered. Hence, state the amount of compensation
+          that can be claimed.
+          \begin{enumerate}
+              \item Motor insurance for Tsu Chin's car has a deductible provision of RM300. Tsu
+                    Chin has suffered an accident that causes a loss of RM648. \sol{}
+
+                    The amount of loss exceeds the deductible amount. Therefore, Tsu Chin can claim
+                    the compensation. The amount of compensation that can be claimed is $648 - 300
+                        = \text{RM } 348$.
+
+              \item Motor insurance for Madam Gayah's car has a deductible provision of RM500.
+                    Madam Gayah has suffered an accident that causes a loss of RM290. \sol{}
+
+                    The amount of loss does not exceed the deductible amount. Therefore, Madam
+                    Gayah cannot claim the compensation.
+          \end{enumerate}
+
+    \item Mariana bought a motor insurance for her car with a deductible provision of
+          RM400. Due to the flood, Mariana has suffered losses in three months as shown
+          in the following table.
+
+          \begin{tabular}{|c|c|}
+              \hline Month    & Loss (RM) \\
+              \hline January  & 500       \\
+              \hline May      & 340       \\
+              \hline November & 875       \\
+              \hline
+          \end{tabular}
+
+          Determine whether the loss can be claimed in each month. Hence, state the total
+          amount of compensation that can be claimed. \sol{}
+
+          \begin{enumerate}
+              \item January \sol{}
+
+                    The amount of loss exceeds the deductible amount. Therefore, Mariana can claim
+                    the compensation. The amount of compensation that can be claimed is $500 - 400
+                        = \text{RM } 100$.
+
+              \item May \sol{}
+
+                    The amount of loss does not exceed the deductible amount. Therefore, Mariana
+                    cannot claim the compensation.
+
+              \item November \sol{}
+
+                    The amount of loss exceeds the deductible amount. Therefore, Mariana can claim
+                    the compensation. The amount of compensation that can be claimed is $875 - 400
+                        = \text{RM } 475$.
+
+              \item Total amount of compensation \sol{}
+
+                    The total amount of compensation that can be claimed is $100 + 475 = \text{RM }
+                        575$.
+          \end{enumerate}`'
+
+    \item Calculate the amount of compensation that will be paid to each of the following
+          health insurance policyholders.
+          \begin{enumerate}
+              \item Health insurance of Mr Suman has a deductible provision of RM450 per year. He
+                    has made a treatment in three consecutive months for his illness in a private
+                    hospital. The table below shows the treatment costs in the three months.
+
+                    \begin{tabular}{|c|c|}
+                        \hline Month     & Treatment cost (RM) \\
+                        \hline July      & 830                 \\
+                        \hline August    & 360                 \\
+                        \hline September & 250                 \\
+                        \hline
+                    \end{tabular}
+                    \sol{}
+                    \begin{align*}
+                        \text{Accumulated treatment cost} & = 830 + 360 + 250  \\
+                                                          & = \text{RM } 1 440 \\
+                        \text{Amount of compensation}     & = 1 440 - 450      \\
+                                                          & = \text{RM } 990
+                    \end{align*}
+              \item Agatha has a medical insurance with an annual limit of RM50 000. The amount of
+                    deductible borne by Agatha is RM1 200 per year. She has been treated at a
+                    specialist hospital with a medical cost of RM40 000. \sol{}
+                    \begin{align*}
+                        \text{Amount of compensation} & = 40 000 - 1 200    \\
+                                                      & = \text{RM } 38 800
+                    \end{align*}
+
+          \end{enumerate}
+          \vfill\null
+
+    \item Insurable value of Madam Loke's house is RM360 000. She has bought a fire
+          insurance that has a co-insurance provision to insure $90 \%$ of the insurable
+          value of her house and a deductible of RM1 600. Madam Loke's house caught fire
+          and the amount of loss is RM67 000. Calculate the amount of compensation that
+          will be received by Madam Loke if she insures her house at
+          \begin{enumerate}
+              \item an amount of required insurance, \sol{}
+                    \begin{align*}
+                        \text{Amount of required insurance} & = 90 \% \times 360 000 \\
+                                                            & = \text{RM } 324 000
+                    \end{align*}
+                    The loss does not exceed the deductible amount. Therefore,
+                    \begin{align*}
+                        \text{Amount of compensation} & = 67 000 - 1 600    \\
+                                                      & = \text{RM } 65 400
+                    \end{align*}
+                    \vfill\null
+
+                    \newpage
+              \item a sum of RM180 000. \sol{}
+
+                    The amount of insured value is less than the required insurance. Therefore,
+                    \begin{align*}
+                        \text{Amount of compensation} & = \frac{\text{Amount of insured value}}{\text{Amount of required insurance}} \times \text{Amount of loss} - \text{Deductible} \\
+                                                      & = \frac{180 000}{324 000} \times 67 000 - 1 600                                                                               \\
+                                                      & = \text{RM } 35 622.22
+                    \end{align*}
+          \end{enumerate}
+
+    \item Awang Farid has a major medical insurance policy with a deductible provision of
+          RM1 000 and a 90/10 co-insurance percentage participation clause. If the
+          treatment cost of Awang Farid is RM26 400, calculate the amount of treatment
+          costs borne by insurance company and Awang Farid respectively. \sol{}
+          \begin{align*}
+              \text{Treatment cost after deductible}           & = 26 400 - 1 000      \\
+                                                               & = \text{RM } 25 400   \\
+              \text{Treatment cost borne by insurance company} & = 90 \% \times 25 400 \\
+                                                               & = \text{RM } 22 860   \\
+              \text{Treatment cost borne by Awang Farid}       & = 10 \% \times 25 400 \\
+                                                               & = \text{RM } 2 540
+          \end{align*}
+\end{enumerate}
+\end{document}

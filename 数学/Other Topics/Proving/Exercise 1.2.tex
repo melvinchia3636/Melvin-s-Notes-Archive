@@ -1,0 +1,626 @@
+\documentclass{report}
+
+\usepackage[total={7in,9in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[light,math]{iwona}
+\usepackage[T1]{fontenc}
+
+\newcommand{\sol}{\vspace{1em}\\\textbf{Solution.}\vspace{0.5em}}
+\newcommand{\qed}{\ \\\strut\hfill$\blacksquare$\vspace{1em}}
+\allowdisplaybreaks
+
+\begin{document}
+\begin{center}
+    \Large{How to Prove It: A Structured Approach, Second Edition}\\
+    \vspace{1em}
+    \Large{\textbf{Exercises for Section 1.2}}\vspace{1em}
+\end{center}
+\begin{enumerate}[leftmargin=*]
+    \item 1. Make truth tables for the following formulas:
+          \begin{enumerate}
+              \item $\neg P \vee Q$. \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccc}
+                            $P$ & $Q$ & $\neg P$ & $\neg P \vee Q$ \\
+                            \hline
+                            T   & T   & F        & T               \\
+                            T   & F   & F        & F               \\
+                            F   & T   & T        & T               \\
+                            F   & F   & T        & T
+                        \end{tabular}
+                    \end{center}\qed
+
+              \item $(S \vee G) \wedge(\neg S \vee \neg G)$.\sol{}
+                    \begin{center}
+                        \begin{tabular}{ccccccc}
+                            $S$ & $G$ & $\neg S$ & $\neg G$ & $S \vee G$ & $\neg S \vee \neg G$ & $(S \vee G) \wedge(\neg S \vee \neg G)$ \\
+                            \hline
+                            T   & T   & F        & F        & T          & F                    & F                                       \\
+                            T   & F   & F        & T        & T          & T                    & T                                       \\
+                            F   & T   & T        & F        & T          & T                    & T                                       \\
+                            F   & F   & T        & T        & F          & T                    & F
+                        \end{tabular}
+                    \end{center}\qed
+          \end{enumerate}
+    \item Make truth tables for the following formulas:
+          \begin{enumerate}
+              \item $\neg[P \wedge(Q \vee \neg P)]$. \sol{}
+
+                    \begin{center}
+                        \begin{tabular}{cccccccc}
+                            $P$ & $Q$ & $\neg P$ & $Q \vee \neg P$ & $P \wedge(Q \vee \neg P)$ & $\neg[P \wedge(Q \vee \neg P)]$ \\
+                            \hline
+                            T   & T   & F        & T               & T                         & F                               \\
+                            T   & F   & F        & F               & F                         & T                               \\
+                            F   & T   & T        & T               & F                         & T                               \\
+                            F   & F   & T        & T               & F                         & T
+                        \end{tabular}
+                    \end{center}\qed
+                    \newpage
+              \item $(P \vee Q) \wedge(\neg P \vee R)$.
+                    \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccccccc}
+                            $P$ & $Q$ & $R$ & $\neg P$ & $P \vee Q$ & $\neg P \vee R$ & $(P \vee Q) \wedge(\neg P \vee R)$ \\
+                            \hline
+                            T   & T   & T   & F        & T          & T               & T                                  \\
+                            T   & T   & F   & F        & T          & F               & F                                  \\
+                            T   & F   & T   & F        & T          & T               & T                                  \\
+                            T   & F   & F   & F        & T          & F               & F                                  \\
+                            F   & T   & T   & T        & T          & T               & T                                  \\
+                            F   & T   & F   & T        & T          & T               & T                                  \\
+                            F   & F   & T   & T        & F          & T               & F                                  \\
+                            F   & F   & F   & T        & F          & T               & F
+                        \end{tabular}
+                    \end{center}\vspace{-2em}\qed
+          \end{enumerate}
+
+    \item In this exercise we will use the symbol + to mean exclusive or. In other words,
+          $P+Q$ means " $P$ or $Q$, but not both."
+          \begin{enumerate}
+              \item Make a truth table for $P+Q$. \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccc}
+                            $P$ & $Q$ & $P+Q$ \\
+                            \hline
+                            T   & T   & F     \\
+                            T   & F   & T     \\
+                            F   & T   & T     \\
+                            F   & F   & F
+                        \end{tabular}
+                    \end{center}\qed
+
+              \item Find a formula using only the connectives $\wedge, \vee$, and $\neg$ that is
+                    equivalent to $P+Q$. Justify your answer with a truth table. \sol{}
+                    \[
+                        P+Q \equiv (P \vee Q) \wedge \neg(P \wedge Q)
+                    \]
+                    \begin{center}
+                        \begin{tabular}{cccccccc}
+                            $P$ & $Q$ & $P \wedge Q$ & $\neg(P \wedge Q)$ & $P \vee Q$ & $(P \vee Q) \wedge \neg(P \wedge Q)$ & $P+Q$ \\
+                            \hline
+                            T   & T   & T            & F                  & T          & F                                    & F     \\
+                            T   & F   & F            & T                  & T          & T                                    & T     \\
+                            F   & T   & F            & T                  & T          & T                                    & T     \\
+                            F   & F   & F            & T                  & F          & F                                    & F
+                        \end{tabular}
+                    \end{center}\qed
+          \end{enumerate}
+
+    \item Find a formula using only the connectives $\wedge$ and $\neg$ that is
+          equivalent to $P \vee Q$. Justify your answer with a truth table. \sol{}
+          \[
+              P \vee Q \equiv \neg(\neg P \wedge \neg Q)
+          \]
+          \begin{center}
+              \begin{tabular}{ccccccc}
+                  $P$ & $Q$ & $\neg P$ & $\neg Q$ & $\neg P \wedge \neg Q$ & $\neg(\neg P \wedge \neg Q)$ & $P \vee Q$ \\
+                  \hline
+                  T   & T   & F        & F        & F                      & T                            & T          \\
+                  T   & F   & F        & T        & F                      & T                            & T          \\
+                  F   & T   & T        & F        & F                      & T                            & T          \\
+                  F   & F   & T        & T        & T                      & F                            & F
+              \end{tabular}
+          \end{center}\qed
+
+    \item Some mathematicians use the symbol $\downarrow$ to mean nor. In other words, $P
+              \downarrow Q$ means "neither $P$ nor $Q$."
+          \begin{enumerate}
+              \item Make a truth table for $P \downarrow Q$. \sol{}
+                    \begin{center}
+                        \begin{tabular}{ccc}
+                            $P$ & $Q$ & $P \downarrow Q$ \\
+                            \hline
+                            T   & T   & F                \\
+                            T   & F   & F                \\
+                            F   & T   & F                \\
+                            F   & F   & T
+                        \end{tabular}
+                    \end{center}\qed
+
+              \item Find a formula using only the connectives $\wedge, \vee$, and $\neg$ that is
+                    equivalent to $P \downarrow Q$. \sol{}
+                    \[
+                        P \downarrow Q \equiv \neg(P \vee Q)
+                    \]
+                    \begin{center}
+                        \begin{tabular}{ccccccc}
+                            $P$ & $Q$ & $P \vee Q$ & $\neg(P \vee Q)$ & $P \downarrow Q$ \\
+                            \hline
+                            T   & T   & T          & F                & F                \\
+                            T   & F   & T          & F                & F                \\
+                            F   & T   & T          & F                & F                \\
+                            F   & F   & F          & T                & T
+                        \end{tabular}
+                    \end{center}\qed
+
+              \item Find formulas using only the connective $\downarrow$ that are equivalent to
+                    $\neg P$, $P \vee Q$, and $P \wedge Q$. \sol{}
+                    \[
+                        \neg P \equiv \neg (P \wedge P) \equiv P \downarrow P
+                    \]
+                    \[
+                        P \vee Q \equiv \neg (P \downarrow Q) \equiv (P \downarrow Q) \downarrow (P \downarrow Q)
+                    \]
+                    \[
+                        P \wedge Q \equiv \neg\neg (P \wedge Q) \equiv \neg(P \downarrow Q) \equiv (P \downarrow Q) \downarrow (P \downarrow Q)
+                    \] \qed
+          \end{enumerate}
+
+    \item Some mathematicians write $P \mid Q$ to mean " $P$ and $Q$ are not both true."
+          (This connective is called nand, and is used in the study of circuits in
+          computer science.)
+          \begin{enumerate}
+              \item Make a truth table for $P \mid Q$. \sol{}
+                    \begin{center}
+                        \begin{tabular}{ccc}
+                            $P$ & $Q$ & $P \mid Q$ \\
+                            \hline
+                            T   & T   & F          \\
+                            T   & F   & T          \\
+                            F   & T   & T          \\
+                            F   & F   & T
+                        \end{tabular}
+                    \end{center}\qed
+
+              \item Find a formula using only the connectives $\wedge, \vee$, and $\neg$ that is
+                    equivalent to $P \mid Q$. \sol{}
+                    \[
+                        P \mid Q \equiv \neg(P \wedge Q)
+                    \] \qed
+
+              \item Find formulas using only the connective | that are equivalent to $\neg P$, $P
+                        \vee Q$, and $P \wedge Q$.\sol{}
+                    \[
+                        \neg P \equiv P \mid P
+                    \]
+                    \[
+                        P \vee Q \equiv \neg P \mid \neg Q \equiv (P \mid P) \mid (Q \mid Q)
+                    \]
+                    \[
+                        P \wedge Q \equiv \neg(P \mid Q) \equiv (P \mid Q) \mid (P \mid Q)
+                    \] \qed
+          \end{enumerate}
+
+    \item Use truth tables to determine whether or not the arguments in exercise 7 of
+          Section 1.1 are valid.
+          \begin{enumerate}
+              \item $\neg(P \wedge R) \wedge (P \vee Q) \wedge
+                        R \Rightarrow Q$.
+                    \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccccccc}
+                            $P$ & $Q$ & $R$ & $P \wedge R$ & $\neg(P \wedge R)$ & $P \vee Q$ & $\neg(P \wedge R) \wedge (P \vee Q) \wedge R$ \\
+                            \hline
+                            T   & T   & T   & T            & F                  & T          & F                                             \\
+                            T   & T   & F   & F            & T                  & T          & F                                             \\
+                            T   & F   & T   & T            & F                  & T          & F                                             \\
+                            T   & F   & F   & F            & T                  & T          & F                                             \\
+                            F   & T   & T   & F            & T                  & T          & T                                             \\
+                            F   & T   & F   & F            & T                  & T          & F                                             \\
+                            F   & F   & T   & F            & T                  & F          & F                                             \\
+                            F   & F   & F   & F            & T                  & F          & F
+                        \end{tabular}
+                    \end{center}
+                    where
+
+                    $P$ is the statement ``Pete will win the math prize'',
+
+                    $Q$ is the statement ``Pete will win the chemistry prize'',
+
+                    $R$ is the statement ``Jane will win the math prize'',\\
+
+                    The result is true for all cases where the premises are true, hence the
+                    argument is valid.\qed
+
+              \item $(P \vee \neg P) \wedge (Q \vee \neg Q)
+                        \wedge \neg(\neg P \wedge \neg Q) \Rightarrow \neg(P \wedge Q)$.
+                    \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccccccc}
+                            $P$ & $Q$ & $\neg P$ & $\neg Q$ & $\neg P \wedge \neg Q$ & $\neg(\neg P \wedge \neg Q)$ & $\neg(P \wedge Q)$ & $(P \vee \neg P) \wedge (Q \vee \neg Q) \wedge \neg(\neg P \wedge \neg Q)$ \\
+                            \hline
+                            T   & T   & F        & F        & F                      & T                            & F                  & T                                                                          \\
+                            T   & F   & F        & T        & F                      & T                            & T                  & T                                                                          \\
+                            F   & T   & T        & F        & F                      & T                            & T                  & T                                                                          \\
+                            F   & F   & T        & T        & T                      & F                            & T                  & F
+                        \end{tabular}
+                    \end{center}
+                    where $P$ is the statement ``The main course will be beef'',
+
+                    $Q$ is the statement ``The vegetable will be peas'',\\
+
+                    The conclusion is false but the premises are all true when $P$ and $Q$ are
+                    true, hence the argument is invalid.\qed
+
+              \item $(P \vee Q) \wedge (\neg R \vee Q) \wedge
+                        (P \vee \neg R) \Rightarrow (P \vee \neg R)$.
+                    \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccccccc}
+                            $P$ & $Q$ & $R$ & $\neg R$ & $P \vee Q$ & $\neg R \vee Q$ & $P \vee \neg R$ & $(P \vee Q) \wedge (\neg R \vee Q) \wedge (P \vee \neg R)$ \\
+                            \hline
+                            T   & T   & T   & F        & T          & T               & T               & T                                                          \\
+                            T   & T   & F   & T        & T          & T               & T               & T                                                          \\
+                            T   & F   & T   & F        & T          & F               & T               & F                                                          \\
+                            T   & F   & F   & T        & T          & T               & T               & T                                                          \\
+                            F   & T   & T   & F        & T          & T               & F               & F                                                          \\
+                            F   & T   & F   & T        & T          & T               & T               & T                                                          \\
+                            F   & F   & T   & F        & F          & F               & F               & F                                                          \\
+                            F   & F   & F   & T        & F          & T               & T               & F
+                        \end{tabular}
+                    \end{center}
+                    where $P$ is the statement ``John is telling the truth'',
+
+                    $Q$ is the statement ``Bill is telling the truth'',
+
+                    $R$ is the statement ``Sam is telling the truth'',\\
+
+                    The conclusion is true for all cases where the conjunction of premises are
+                    true, hence the argument is valid.\qed
+
+              \item $(P \wedge R) \vee (Q \wedge \neg R)
+                        \Rightarrow \neg(P \wedge Q)$
+                    \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccccccc}
+                            $P$ & $Q$ & $R$ & $\neg R$ & $P \wedge R$ & $Q \wedge \neg R$ & $\neg(P \wedge Q)$ & $(P \wedge R) \vee (Q \wedge \neg R)$ \\
+                            \hline
+                            T   & T   & T   & F        & T            & F                 & F                  & T                                     \\
+                            T   & T   & F   & T        & F            & T                 & F                  & T                                     \\
+                            T   & F   & T   & F        & T            & F                 & T                  & T                                     \\
+                            T   & F   & F   & T        & F            & F                 & T                  & F                                     \\
+                            F   & T   & T   & F        & F            & F                 & T                  & F                                     \\
+                            F   & T   & F   & T        & F            & T                 & T                  & T                                     \\
+                            F   & F   & T   & F        & F            & F                 & T                  & F                                     \\
+                            F   & F   & F   & T        & F            & F                 & T                  & F
+                        \end{tabular}
+                    \end{center}
+                    where $P$ is the statement ``Sales will go up'',
+
+                    $Q$ is the statement ``Expenses will go up'',
+
+                    $R$ is the statement ``The boss will be happy'',\\
+
+                    there are cases where the conjunction of premises are true but the conclusion
+                    is false, hence the argument is invalid.\qed
+          \end{enumerate}
+
+          \newpage
+    \item Use truth tables to determine which of the following formulas are equivalent to
+          each other:
+          \begin{enumerate}
+              \item $(P \wedge Q) \vee(\neg P \wedge \neg Q)$.
+                    \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccccccc}
+                            $P$ & $Q$ & $\neg P$ & $\neg Q$ & $P \wedge Q$ & $\neg P \wedge \neg Q$ & $(P \wedge Q) \vee(\neg P \wedge \neg Q)$ \\
+                            \hline
+                            T   & T   & F        & F        & T            & F                      & T                                         \\
+                            T   & F   & F        & T        & F            & F                      & F                                         \\
+                            F   & T   & T        & F        & F            & F                      & F                                         \\
+                            F   & F   & T        & T        & F            & T                      & T
+                        \end{tabular}
+                    \end{center}
+
+              \item $\neg P \vee Q$.
+                    \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccc}
+                            $P$ & $Q$ & $\neg P$ & $\neg P \vee Q$ \\
+                            \hline
+                            T   & T   & F        & T               \\
+                            T   & F   & F        & F               \\
+                            F   & T   & T        & T               \\
+                            F   & F   & T        & T
+                        \end{tabular}
+                    \end{center}
+
+              \item $(P \vee \neg Q) \wedge(Q \vee \neg P)$.
+                    \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccccccc}
+                            $P$ & $Q$ & $\neg P$ & $\neg Q$ & $P \vee \neg Q$ & $Q \vee \neg P$ & $(P \vee \neg Q) \wedge(Q \vee \neg P)$ \\
+                            \hline
+                            T   & T   & F        & F        & T               & T               & T                                       \\
+                            T   & F   & F        & T        & T               & F               & F                                       \\
+                            F   & T   & T        & F        & F               & T               & F                                       \\
+                            F   & F   & T        & T        & T               & T               & T
+                        \end{tabular}
+                    \end{center}
+
+              \item $\neg(P \vee Q)$.
+                    \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccc}
+                            $P$ & $Q$ & $P \vee Q$ & $\neg(P \vee Q)$ \\
+                            \hline
+                            T   & T   & T          & F                \\
+                            T   & F   & T          & F                \\
+                            F   & T   & T          & F                \\
+                            F   & F   & F          & T
+                        \end{tabular}
+                    \end{center}
+
+              \item $(Q \wedge P) \vee \neg P$.
+                    \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccccccc}
+                            $P$ & $Q$ & $\neg P$ & $Q \wedge P$ & $(Q \wedge P) \vee \neg P$ \\
+                            \hline
+                            T   & T   & F        & T            & T                          \\
+                            T   & F   & F        & F            & F                          \\
+                            F   & T   & T        & F            & T                          \\
+                            F   & F   & T        & F            & T
+                        \end{tabular}
+                    \end{center}
+          \end{enumerate}
+          Hence, (a) and (c) are equivalent, (b) and (e) are equivalent.\qed
+
+          \newpage
+    \item Use truth tables to determine which of these statements are tautologies, which
+          are contradictions, and which are neither:
+          \begin{enumerate}
+              \item $(P \vee Q) \wedge(\neg P \vee \neg Q)$.
+                    \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccccccc}
+                            $P$ & $Q$ & $\neg P$ & $\neg Q$ & $P \vee Q$ & $\neg P \vee \neg Q$ & $(P \vee Q) \wedge(\neg P \vee \neg Q)$ \\
+                            \hline
+                            T   & T   & F        & F        & T          & F                    & F                                       \\
+                            T   & F   & F        & T        & T          & T                    & T                                       \\
+                            F   & T   & T        & F        & T          & T                    & T                                       \\
+                            F   & F   & T        & T        & F          & T                    & F
+                        \end{tabular}
+                    \end{center}
+                    Hence, the statement is neither a tautology nor a contradiction.\qed
+
+              \item $(P \vee Q) \wedge(\neg P \wedge \neg Q)$.
+                    \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccccccc}
+                            $P$ & $Q$ & $\neg P$ & $\neg Q$ & $P \vee Q$ & $\neg P \wedge \neg Q$ & $(P \vee Q) \wedge(\neg P \wedge \neg Q)$ \\
+                            \hline
+                            T   & T   & F        & F        & T          & F                      & F                                         \\
+                            T   & F   & F        & T        & T          & F                      & F                                         \\
+                            F   & T   & T        & F        & T          & F                      & F                                         \\
+                            F   & F   & T        & T        & F          & T                      & F
+                        \end{tabular}
+                    \end{center}
+                    Hence, the statement is a contradiction.\qed
+
+              \item $(P \vee Q) \vee(\neg P \vee \neg Q)$.
+                    \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccccccc}
+                            $P$ & $Q$ & $\neg P$ & $\neg Q$ & $P \vee Q$ & $\neg P \vee \neg Q$ & $(P \vee Q) \vee(\neg P \vee \neg Q)$ \\
+                            \hline
+                            T   & T   & F        & F        & T          & F                    & T                                     \\
+                            T   & F   & F        & T        & T          & T                    & T                                     \\
+                            F   & T   & T        & F        & T          & T                    & T                                     \\
+                            F   & F   & T        & T        & F          & T                    & T
+                        \end{tabular}
+                    \end{center}
+                    Hence, the statement is a tautology.\qed
+
+              \item $[P \wedge(Q \vee \neg R)] \vee(\neg P \vee R)$.
+                    \sol{}
+                    \begin{center}
+                        \begin{tabular}{cccccccc}
+                            $P$ & $Q$ & $R$ & $\neg P$ & $\neg R$ & $Q \vee \neg R$ & $P \wedge(Q \vee \neg R)$ & $[P \wedge(Q \vee \neg R)] \vee(\neg P \vee R)$ \\
+                            \hline
+                            T   & T   & T   & F        & F        & T               & T                         & T                                               \\
+                            T   & T   & F   & F        & T        & T               & T                         & T                                               \\
+                            T   & F   & T   & F        & F        & F               & F                         & T                                               \\
+                            T   & F   & F   & F        & T        & T               & T                         & T                                               \\
+                            F   & T   & T   & T        & F        & T               & F                         & T                                               \\
+                            F   & T   & F   & T        & T        & T               & F                         & T                                               \\
+                            F   & F   & T   & T        & F        & T               & F                         & T                                               \\
+                            F   & F   & F   & T        & T        & T               & F                         & T
+                        \end{tabular}
+                    \end{center}
+                    Hence, the statement is a tautology.\qed
+          \end{enumerate}
+
+    \item Use truth tables to check these laws:
+          \begin{enumerate}
+              \item The second DeMorgan's law. (The first was checked in the text.) \sol{}
+                    \begin{center}
+                        \begin{tabular}{ccccccccc}
+                            $P$ & $Q$ & $P \vee Q$ & $\neg(P \vee Q)$ & $\neg P$ & $\neg Q$ & $\neg P \wedge \neg Q$ & $\neg(P \vee Q) \equiv \neg P \wedge \neg Q$ \\
+                            \hline
+                            T   & T   & T          & F                & F        & F        & F                      & T                                            \\
+                            T   & F   & T          & F                & F        & T        & F                      & T                                            \\
+                            F   & T   & T          & F                & T        & F        & F                      & T                                            \\
+                            F   & F   & F          & T                & T        & T        & T                      & T
+                        \end{tabular}
+                    \end{center} \qed
+
+              \item The distributive laws.
+                    \begin{center}
+                        \begin{tabular}{ccccc}
+                            $P$ & $Q$ & $R$ & $Q \vee R$ & $P \wedge(Q \vee R)$ \\
+                            \hline
+                            T   & T   & T   & T          & T                    \\
+                            T   & T   & F   & T          & T                    \\
+                            T   & F   & T   & T          & T                    \\
+                            T   & F   & F   & F          & F                    \\
+                            F   & T   & T   & T          & F                    \\
+                            F   & T   & F   & T          & F                    \\
+                            F   & F   & T   & T          & F                    \\
+                            F   & F   & F   & F          & F
+                        \end{tabular}
+                        \hspace{2em}
+                        \begin{tabular}{cccccc}
+                            $P$ & $Q$ & $R$ & $P \wedge Q$ & $P \wedge R$ & $(P \wedge Q) \vee(P \wedge R)$ \\
+                            \hline
+                            T   & T   & T   & T            & T            & T                               \\
+                            T   & T   & F   & T            & F            & T                               \\
+                            T   & F   & T   & F            & T            & T                               \\
+                            T   & F   & F   & F            & F            & F                               \\
+                            F   & T   & T   & F            & F            & F                               \\
+                            F   & T   & F   & F            & F            & F                               \\
+                            F   & F   & T   & F            & F            & F                               \\
+                            F   & F   & F   & F            & F            & F
+                        \end{tabular}
+                    \end{center}\qed
+
+          \end{enumerate}
+
+    \item Use the laws stated in the text to find simpler formulas equivalent to these
+          formulas. (See Examples 1.2.5 and 1.2.7.)
+          \begin{enumerate}
+              \item $\neg(\neg P \wedge \neg Q)$.
+                    \sol{}
+                    \begin{align*}
+                        \neg(\neg P \wedge \neg Q) & \equiv \neg\neg P \vee \neg\neg Q & \text{(DeMorgan's law)}      \\
+                                                   & \equiv P \vee Q                   & \text{(double negation law)}
+                    \end{align*} \qed
+
+              \item $(P \wedge Q) \vee(P \wedge \neg Q)$.
+                    \sol{}
+                    \begin{align*}
+                        (P \wedge Q) \vee(P \wedge \neg Q) & \equiv P \wedge (Q \vee \neg Q) & \text{(distributive law)} \\
+                                                           & \equiv P \wedge \top            & \text{(complement law)}   \\
+                                                           & \equiv P                        & \text{(identity law)}
+                    \end{align*} \qed
+
+                    \newpage
+              \item $\neg(P \wedge \neg Q) \vee(\neg P \wedge Q)$.
+                    \sol{}
+                    \begin{align*}
+                        \neg(P \wedge \neg Q) \vee(\neg P \wedge Q) & \equiv (\neg P \vee Q) \vee(\neg P \wedge Q)                         & \text{(DeMorgan's law)}   \\
+                                                                    & \equiv [(\neg P \vee Q) \vee \neg P] \wedge [(\neg P \vee Q) \vee Q] & \text{(distributive law)} \\
+                                                                    & \equiv (\neg P \vee \neg P \vee Q) \wedge (\neg P \vee Q \vee Q)     & \text{(associative law)}  \\
+                                                                    & \equiv (\neg P \vee Q) \wedge (\neg P \vee Q)                        & \text{(idempotent law)}   \\
+                                                                    & \equiv \neg P \vee Q                                                 & \text{(idempotent law)}
+                    \end{align*} \qed
+          \end{enumerate}
+
+    \item Use the laws stated in the text to find simpler formulas equivalent to these
+          formulas. (See Examples 1.2.5 and 1.2.7.)
+          \begin{enumerate}
+              \item $\neg(\neg P \vee Q) \vee(P \wedge \neg R)$.
+                    \sol{}
+                    \begin{align*}
+                        \neg(\neg P \vee Q) \vee(P \wedge \neg R) & \equiv (\neg\neg P \wedge \neg Q) \vee(P \wedge \neg R) & \text{(DeMorgan's law)}      \\
+                                                                  & \equiv (P \wedge \neg Q) \vee(P \wedge \neg R)          & \text{(double negation law)} \\
+                                                                  & \equiv P \wedge (\neg Q \vee \neg R)                    & \text{(distributive law)}    \\
+                                                                  & \equiv P \wedge \neg(Q \wedge R)                        & \text{(DeMorgan's law)}
+                    \end{align*} \qed
+
+              \item $\neg(\neg P \wedge Q) \vee(P \wedge \neg R)$.
+                    \sol{}
+                    \begin{align*}
+                        \neg(\neg P \wedge Q) \vee(P \wedge \neg R) & \equiv (\neg\neg P \vee \neg Q) \vee(P \wedge \neg R)                & \text{(DeMorgan's law)}      \\
+                                                                    & \equiv (P \vee \neg Q) \vee(P \wedge \neg R)                         & \text{(double negation law)} \\
+                                                                    & \equiv [(P \vee \neg Q) \vee P] \wedge [(P \vee \neg Q) \vee \neg R] & \text{(distributive law)}    \\
+                                                                    & \equiv (P \vee \neg Q \vee P) \wedge (P \vee \neg Q \vee \neg R)     & \text{(associative law)}     \\
+                                                                    & \equiv (P \vee P \vee \neg Q) \wedge (P \vee \neg Q \vee \neg R)     & \text{(commutative law)}     \\
+                                                                    & \equiv (P \vee \neg Q) \wedge (P \vee \neg Q \vee \neg R)            & \text{(idempotent law)}      \\
+                                                                    & \equiv P \vee \neg Q                                                 & \text{(absorption law)}
+                    \end{align*} \qed
+
+              \item $(P \wedge R) \vee[\neg R \wedge(P \vee Q)]$.
+                    \sol{}
+                    \begin{align*}
+                        (P \wedge R) \vee[\neg R \wedge(P \vee Q)] & \equiv (P \wedge R) \vee (\neg R \wedge P) \vee (\neg R \wedge Q) & \text{(distributive law)} \\
+                                                                   & \equiv P \wedge (R \vee \neg R) \vee (\neg R \wedge Q)            & \text{(distributive law)} \\
+                                                                   & \equiv P \wedge \top \vee (\neg R \wedge Q)                       & \text{(complement law)}   \\
+                                                                   & \equiv P \vee (\neg R \wedge Q)                                   & \text{(identity law)}     \\
+                    \end{align*}\vspace{-2em}\qed
+          \end{enumerate}
+
+    \item Use the first DeMorgan's law and the double negation law to derive the second
+          DeMorgan's law. \sol{}
+          \begin{align*}
+              \neg(P \vee Q) & \equiv \neg(\neg\neg P \vee \neg\neg Q) & \text{(double negation law)}  \\
+                             & \equiv \neg\neg(\neg P \wedge \neg Q)   & \text{(first DeMorgan's law)} \\
+                             & \equiv \neg P \wedge \neg Q             & \text{(double negation law)}
+          \end{align*} \qed
+
+    \item Note that the associative laws say only that parentheses are unnecessary when
+          combining three statements with $\wedge$ or $\vee$. In fact, these laws can be
+          used to justify leaving parentheses out when more than three statements are
+          combined. Use associative laws to show that $[P \wedge(Q \wedge R)] \wedge S$
+          is equivalent to $(P \wedge Q) \wedge(R \wedge S)$. \sol{}
+          \begin{align*}
+              [P \wedge(Q \wedge R)] \wedge S & \equiv [(P \wedge Q) \wedge R] \wedge S \\
+                                              & \equiv (P \wedge Q) \wedge (R \wedge S)
+          \end{align*} \qed
+
+    \item How many lines will there be in the truth table for a statement containing $n$
+          letters? \sol{}
+
+          According to permutation and combination that will be one of the topic in the
+          syllabus of my final year exam tomorrow ;-;, the number of permutation for two
+          letters $T$ and $F$ when they can be repeated every time is $2^n$. Hence, the
+          number of lines will be $2^n$. \qed
+    \item Find a formula involving the connectives $\wedge, \vee$, and $\neg$ that has
+          the following truth table:
+          \begin{center}
+              \begin{tabular}{lll}
+                  $P$                 & $Q$          & $? ? ?$      \\
+                  \hline $\mathrm{F}$ & $\mathrm{F}$ & $\mathrm{T}$ \\
+                  $\mathrm{F}$        & $\mathrm{T}$ & $\mathrm{F}$ \\
+                  $\mathrm{T}$        & $\mathrm{F}$ & $\mathrm{T}$ \\
+                  $\mathrm{T}$        & $\mathrm{T}$ & $\mathrm{T}$
+              \end{tabular}
+          \end{center}
+          ‎\sol{}
+
+          Take the disjunction of all the cases where the result is true.
+          \begin{align*}
+              (\neg P \wedge \neg Q) \vee (P \wedge \neg Q) \vee (P \wedge Q) & \equiv \neg Q \wedge (\neg P \vee P) \vee (P \wedge Q) & \text{(distributive law)} \\
+                                                                              & \equiv \neg Q \wedge \top \vee (P \wedge Q)            & \text{(complement law)}   \\
+                                                                              & \equiv \neg Q \vee (P \wedge Q)                        & \text{(identity law)}     \\
+                                                                              & \equiv (\neg Q \vee P) \wedge (\neg Q \vee Q)          & \text{(distributive law)} \\
+                                                                              & \equiv (\neg Q \vee P) \wedge \top                     & \text{(complement law)}   \\
+                                                                              & \equiv \neg Q \vee P                                   & \text{(identity law)}
+          \end{align*}\vspace{-2em}\qed
+
+    \item Find a formula involving the connectives $\wedge, \vee$, and $\neg$ that has
+          the following truth table:
+          \begin{center}
+              \begin{tabular}{lll}
+                  $P$                 & $Q$          & $? ? ?$      \\
+                  \hline $\mathrm{F}$ & $\mathrm{F}$ & $\mathrm{F}$ \\
+                  $\mathrm{F}$        & $\mathrm{T}$ & $\mathrm{T}$ \\
+                  $\mathrm{T}$        & $\mathrm{F}$ & $\mathrm{T}$ \\
+                  $\mathrm{T}$        & $\mathrm{T}$ & $\mathrm{F}$
+              \end{tabular}
+          \end{center}
+          ‎\sol{}
+
+          Take the conjunction of all the cases where the result is true
+          \begin{align*}
+              (\neg P \wedge Q) \vee (P \wedge \neg Q) & \equiv [(\neg P \wedge Q) \vee P] \wedge [(\neg P \wedge Q) \vee \neg Q]                        & \text{(distributive law)} \\
+                                                       & \equiv [(\neg P \vee P) \wedge (Q \vee P)] \wedge [(\neg P \vee \neg Q) \wedge (Q \vee \neg Q)] & \text{(distributive law)} \\
+                                                       & \equiv [\top \wedge (Q \vee P)] \wedge [(\neg P \vee \neg Q) \wedge \top]                       & \text{(complement law)}   \\
+                                                       & \equiv (P \vee Q) \wedge (\neg P \vee \neg Q)                                                   & \text{(identity law)}
+          \end{align*}
+\end{enumerate}\qed
+\end{document}

@@ -1,0 +1,59 @@
+\subsection{Practice 8}
+
+\begin{enumerate}
+      \item The side length of a cube increases from 1cm to $1.01$cm, how much does its
+            surface area increase approximately? \sol{}
+
+            Let the side length be $x$cm, then the surface area is $A = 6x^2$.
+            \begin{flalign*}
+                  \dfrac{dA}{dx}             & = 12x                  & \\
+                  \dfrac{\Delta A}{\Delta x} & \approx \dfrac{dA}{dx} & \\
+                  \Delta A                   & \approx 12x\Delta x
+            \end{flalign*}
+            \vspace{-0.8em}
+            When $x = 1$cm, $\Delta x = 0.01$cm,
+            \begin{flalign*}
+                  \Delta A & \approx 12(1)(0.01) = 0.12\text{cm}^2 &
+            \end{flalign*}
+            $\therefore$ The surface area increases by $0.12$cm$^2$ approximately.
+
+            \begin{multicols}{2}
+                  \item After a metal ball was heated, its radius had increased form 4cm to $4.01$cm.
+                  Find the approximate increment of its volume and surface area. \sol{}
+
+                  Let the radius be $r$cm, then the volume is $V = \dfrac{4}{3}\pi r^3$ and the
+                  surface area is $A = 4\pi r^2$.
+                  \begin{flalign*}
+                        \dfrac{dV}{dr}             & = 4\pi r^2               & \\
+                        \dfrac{dA}{dr}             & = 8\pi r                 & \\
+                        \dfrac{\Delta V}{\Delta r} & \approx \dfrac{dV}{dr}   & \\
+                        \Delta V                   & \approx 4\pi r^2\Delta r & \\
+                        \dfrac{\Delta A}{\Delta r} & \approx \dfrac{dA}{dr}   & \\
+                        \Delta A                   & \approx 8\pi r\Delta r
+                  \end{flalign*}
+                  When $r = 4$cm, $\Delta r = 0.01$cm,
+                  \begin{flalign*}
+                        \Delta V & \approx 4\pi(4)^2(0.01) & \\
+                                 & = 0.64\pi\text{cm}^3    & \\
+                        \Delta A & \approx 8\pi(4)(0.01)   & \\
+                                 & = 0.32\pi\text{cm}^2
+                  \end{flalign*}
+                  $\therefore$ The volume increases by $0.64\pi$cm$^3$ and the surface area increases by $0.32\pi$cm$^2$ approximately.
+                  \columnbreak
+                  \item Find the approximate value of $\sqrt{15}$. \sol{}
+                  \begin{flalign*}
+                        f(x)                       & = \sqrt{x}                           & \\
+                        f'(x)                      & = \dfrac{1}{2\sqrt{x}}               & \\
+                        \dfrac{\Delta f}{\Delta x} & \approx \dfrac{df}{dx}               & \\
+                        \Delta f                   & \approx \dfrac{1}{2\sqrt{x}}\Delta x
+                  \end{flalign*}
+                  When $x = 16$, $\Delta x = -1$,
+                  \begin{flalign*}
+                        \Delta f & \approx \dfrac{1}{2\sqrt{16}}(-1) & \\
+                                 & = -\dfrac{1}{8}                   & \\
+                                 & = -0.125
+                  \end{flalign*}
+                  $\therefore$ $\sqrt{15} \approx \sqrt{16} - 0.125 = 3.875$.
+            \end{multicols}
+\end{enumerate}
+

@@ -1,0 +1,301 @@
+\documentclass{report}
+
+\usepackage[total={7in,9in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[light,math]{iwona}
+\usepackage[T1]{fontenc}
+
+\newcommand{\sol}{\vspace{1em}\\\textbf{Solution.}\vspace{0.5em}}
+\newcommand{\qed}{\ \\\strut\hfill$\blacksquare$\vspace{1em}}
+\allowdisplaybreaks
+
+\begin{document}
+\begin{center}
+      \Large{How to Prove It: A Structured Approach, Second Edition}\\
+      \vspace{1em}
+      \Large{\textbf{Exercises for Section 1.1}}\vspace{1em}
+\end{center}
+\begin{enumerate}[leftmargin=*]
+      \item  Analyze the logical forms of the following statements:
+            \begin{enumerate}
+                  \item We'll have either a reading assignment or homework problems, but we won't have
+                        both homework problems and a test. \sol{}
+
+                        Let $P$ be the statement ``We'll have a reading assignment'', $Q$ be the
+                        statement ``We'll have homework problems'', then the statement can be written
+                        as $P \vee Q \wedge \neg(P \wedge Q)$. \qed
+
+                  \item You won't go skiing, or you will and there won't be any snow. \sol{}
+
+                        Let $P$ be the statement ``You will go skiing'', $Q$ be the statement ``There
+                        will be snow'', then the statement can be written as $\neg P \vee (P \wedge
+                              \neg Q)$. \qed
+
+                  \item $\sqrt{7} \nleq 2$.
+                        \sol{}
+
+                        The statement can be written as $\neg\big[(\sqrt{7} > 2) \vee (\sqrt{7} =
+                                    2)\big]$. \qed
+            \end{enumerate}
+      \item Analyze the logical forms of the following statements:
+            \begin{enumerate}
+                  \item  Either John and Bill are both telling the truth, or neither of them is. \sol{}
+
+                        Let $P$ be the statement ``John is telling the truth'', $Q$ be the statement
+                        ``Bill is telling the truth'', then the statement can be written as $(P \wedge
+                              Q) \vee \neg(P \vee Q)$. \qed
+
+                  \item I'll have either fish or chicken, but I won't have both fish and mashed
+                        potatoes. \sol{}
+
+                        Let $P$ be the statement ``I'll have fish'', $Q$ be the statement ``I'll have
+                        chicken'', $R$ be the statement ``I'll have mashed potatoes'', then the
+                        statement can be written as $(P \vee Q) \wedge \neg(P \wedge R)$. \qed
+
+                  \item 3 is a common divisor of 6,9, and 15.
+                        \sol{}
+
+                        Let $P(n)$ be the statement ``3 is a divisor of $n$'', then the statement can
+                        be written as $P(6) \wedge P(9) \wedge P(15)$. \qed
+            \end{enumerate}
+
+      \item  Analyze the logical forms of the following statements:
+
+            Let $P$ be the statement ``Alice are in the room'', $Q$ be the statement ``Bob
+            are in the room'', then
+            \begin{enumerate}
+                  \item Alice and Bob are not both in the room. \sol{}
+
+                        The statement can be written as $\neg(P \wedge Q)$. \qed
+
+                  \item Alice and Bob are both not in the room. \sol{}
+
+                        The statement can be written as $\neg P \wedge \neg Q$, or $\neg(P \vee Q)$.
+                        \qed
+
+                  \item Either Alice or Bob is not in the room. \sol{}
+
+                        The statement can be written as $\neg P \vee \neg Q$, or $\neg(P \wedge Q)$.
+                        \qed
+
+                  \item Neither Alice nor Bob is in the room. \sol{}
+
+                        The statement can be written as $\neg P \wedge \neg Q$, or $\neg(P \vee Q)$.
+                        \qed
+            \end{enumerate}
+
+      \item  Which of the following expressions are well-formed formulas?
+            \begin{enumerate}
+                  \setlength{\columnsep}{1cm}
+                  \begin{multicols}{2}
+                        \item $\neg(\neg P \vee \neg \neg R)$. \sol{}
+
+                        Yes.\\
+
+                        \item $\neg(P, Q, \wedge R)$. \sol{}
+
+                        No, since the comma is not a logical connective.\\
+
+                        \vfill\null
+                        \columnbreak
+                        \item $P \wedge \neg P$. \sol{}
+
+                        Yes.\\
+
+                        \item $(P \wedge Q)(P \vee R)$. \sol{}
+
+                        No, since there are no logical connective between each pair of statements.\\
+                  \end{multicols}
+            \end{enumerate}\vspace{-2em}‎\qed
+
+      \item Let $P$ stand for the statement "I will buy the pants" and $S$ for the
+            statement "I will buy the shirt." What English sentences are represented by the
+            following expressions?
+            \begin{enumerate}
+                  \item $\neg(P \wedge \neg S)$.
+                        \sol{}
+
+                        I will not buy the pants without buying the shirt. \qed
+
+                  \item $\neg P \wedge \neg S$.
+                        \sol{}
+
+                        I will not buy the pants and I will not buy the shirt. \qed
+
+                  \item $\neg P \vee \neg S$.
+                        \sol{}
+
+                        Either I will not buy the pants or I will not buy the shirt. \qed
+            \end{enumerate}
+
+      \item Let $S$ stand for the statement "Steve is happy" and $G$ for "George is happy."
+            What English sentences are represented by the following expressions?
+            \begin{enumerate}
+                  \item $(S \vee G) \wedge(\neg S \vee \neg G)$. \sol{}
+                        \begin{align*}
+                              (S \vee G) \wedge(\neg S \vee \neg G) & \equiv (S \wedge \neg S) \vee (S \wedge \neg G) \vee (G \wedge \neg S) \vee (G \wedge \neg G) \\
+                                                                    & \equiv \bot \vee (S \wedge \neg G) \vee (G \wedge \neg S) \vee \bot                           \\
+                                                                    & \equiv (S \wedge \neg G) \vee (G \wedge \neg S)                                               \\
+                                                                    & \equiv \text{Either Steve is happy or George is happy, but not both.}
+                        \end{align*} \qed
+
+                  \item $[S \vee(G \wedge \neg S)] \vee \neg G$. \sol{}
+                        \begin{align*}
+                              [S \vee(G \wedge \neg S)] \vee \neg G & \equiv (S \vee \neg G) \vee [(G \wedge \neg S) \vee \neg G] \\
+                                                                    & \equiv (S \vee \neg G) \vee [\neg S \vee (G \vee \neg G)]   \\
+                                                                    & \equiv (S \vee \neg G) \vee [\neg S \vee \top]              \\
+                                                                    & \equiv (S \vee \neg G) \vee \top                            \\
+                                                                    & \equiv \top                                                 \\
+                                                                    & \equiv \text{George is either happy or unhappy.}
+                        \end{align*}
+                        Without simplification, the statement can be written as ``Either Steve is happy, or George is happy but Steve is not, or George is unhappy.'' \qed
+
+                  \item $S \vee[G \wedge(\neg S \vee \neg G)]$.
+                        \sol{}
+                        \begin{align*}
+                              S \vee[G \wedge(\neg S \vee \neg G)] & \equiv (S \vee G) \wedge [S \vee (\neg S \vee \neg G)]           \\
+                                                                   & \equiv (S \vee G) \wedge [(S \vee \neg S) \vee \neg G]           \\
+                                                                   & \equiv (S \vee G) \wedge [\top \vee \neg G]                      \\
+                                                                   & \equiv (S \vee G) \wedge \top                                    \\
+                                                                   & \equiv S \vee G                                                  \\
+                                                                   & \equiv \text{Either Steve is happy or George is happy, or both.}
+                        \end{align*}
+                        Without simplification, the statement can be written as ``Either Steve is happy, or George is happy while either Steve is not or George is not.'' \qed
+            \end{enumerate}
+
+      \item Identify the premises and conclusions of the following deductive arguments and
+            analyze their logical forms. Do you think the reasoning is valid? (Although you
+            will have only your intuition to guide you in answering this last question, in
+            the next section we will develop some techniques for determining the validity
+            of arguments.)
+            \begin{enumerate}
+                  \item Jane and Pete won't both win the math prize. Pete will win either the math
+                        prize or the chemistry prize. Jane will win the math prize. Therefore, Pete
+                        will win the chemistry prize.\sol{}
+
+                        Premises:
+                        \begin{enumerate}
+                              \item Jane and Pete won't both win the math prize.
+                              \item Pete will win either the math prize or the chemistry prize.
+                              \item Jane will win the math prize.
+                        \end{enumerate}
+                        \vspace{1em}
+                        Conclusion: Pete will win the chemistry prize.\\
+
+                        Let $P$ be the statement ``Pete will win the math prize'',
+
+                        $Q$ be the statement ``Pete will win the chemistry prize'',
+
+                        $R$ be the statement ``Jane will win the math prize'',\\
+
+                        then the argument can be written as $\neg(P \wedge R) \wedge (P \vee Q) \wedge
+                              R \Rightarrow Q$.\\
+
+                        Reasoning steps:
+                        \begin{enumerate}[label=(\arabic*)]
+                              \item Premise (iii) stated that Jane will win the math prize, but premise (i) stated
+                                    that Jane and Pete won't both win the math prize. Therefore, \textbf{Pete won't
+                                          win the math prize} since Jane will win it.
+                              \item From premise (ii), Pete will win either the math prize or the chemistry prize,
+                                    therefore \textbf{he will win the chemistry prize} since he won't win the math
+                                    prize.\\
+                              \item Hence, the conclusion is valid.
+                        \end{enumerate}\qed
+
+                  \item The main course will be either beef or fish. The vegetable will be either peas
+                        or corn. We will not have both fish as a main course and corn as a vegetable.
+                        Therefore, we will not have both beef as a main course and peas as a vegetable.
+                        \sol{}
+
+                        Premises:
+                        \begin{enumerate}
+                              \item The main course will be either beef or fish.
+                              \item The vegetable will be either peas or corn.
+                              \item We will not have both fish as a main course and corn as a vegetable.
+                        \end{enumerate}
+                        \vspace{1em}
+                        Conclusion: We will not have both beef as a main course and peas as a vegetable.\\
+
+                        Let $P$ be the statement ``The main course will be beef'',
+
+                        $Q$ be the statement ``The vegetable will be peas'',\\
+
+                        then the argument can be written as $(P \vee \neg P) \wedge (Q \vee \neg Q)
+                              \wedge \neg(\neg P \wedge \neg Q) \Rightarrow \neg(P \wedge Q)$.\\
+
+                        Reasoning steps:
+                        \begin{enumerate}
+                              \item Since the main course will be either beef or fish, not having beef as the main
+                                    course means that the main course will be fish.
+
+                              \item Since the vegetable will be either peas or corn, not having peas as the
+                                    vegetable means that the vegetable will be corn, which contradicts with premise
+                                    (iii).
+
+                              \item Hence, the conclusion is not valid.
+                        \end{enumerate} \qed
+
+                  \item Either John or Bill is telling the truth. Either Sam or Bill is lying.
+                        Therefore, either John is telling the truth or Sam is lying. \sol{}
+
+                        Premises:
+                        \begin{enumerate}
+                              \item Either John or Bill is telling the truth.
+                              \item Either Sam or Bill is lying.
+                        \end{enumerate}
+                        \vspace{1em}
+                        Conclusion: Either John is telling the truth or Sam is lying.\\
+
+                        Let $P$ be the statement ``John is telling the truth'',
+
+                        $Q$ be the statement ``Bill is telling the truth'',
+
+                        $R$ be the statement ``Sam is telling the truth'',\\
+
+                        then the argument can be written as $(P \vee Q) \wedge (\neg R \vee Q) \wedge
+                              (P \vee \neg R) \Rightarrow (P \vee \neg R)$.\\
+
+                        Reasoning steps:
+                        \begin{enumerate}
+                              \item If John is telling the truth, then from premise (i), Bill is lying.
+
+                              \item If Bill is lying, then from premise (ii), Sam is telling the truth.
+
+                              \item If John is lying, then from premise (i), Bill is telling the truth.
+
+                              \item If Bill is telling the truth, then from premise (ii), Sam is lying.
+
+                              \item Hence, the conclusion is valid.
+                        \end{enumerate} \qed
+
+                  \item Either sales will go up and the boss will be happy, or expenses will go up and
+                        the boss won't be happy. Therefore, sales and expenses will not both go up.
+                        \sol{}
+
+                        Premises:
+
+                        Either sales will go up and the boss will be happy, or expenses will go up and
+                        the boss won't be happy.\\
+
+                        Conclusion: Sales and expenses will not both go up.\\
+
+                        Let $P$ be the statement ``Sales will go up'',
+
+                        $Q$ be the statement ``Expenses will go up'',
+
+                        $R$ be the statement ``The boss will be happy'',\\
+
+                        then the argument can be written as $(P \wedge R) \vee (Q \wedge \neg R)
+                              \Rightarrow \neg(P \wedge Q)$.\\
+
+                        Reasoning steps:
+
+                        There is one case where sales will go up and the boss will be happy, and
+                        expenses will go up but the boss will not be happy as well. Therefore, the
+                        reasoning is not valid. \qed
+            \end{enumerate}
+\end{enumerate}
+\end{document}

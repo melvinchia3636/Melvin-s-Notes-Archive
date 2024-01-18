@@ -1,0 +1,44 @@
+\subsection{Practice 8}
+
+\begin{enumerate}
+      \item Given that the line $x + y = a$ splits the circle $x^2 + y^2 = a^2$ into two
+            parts, find the volume of the solid of revolution formed by rotating the
+            smaller part of the circle about the $x$-axis. \sol{}
+
+            Substituting $y = a - x$ into $x^2 + y^2 = a^2$,
+            \begin{flalign*}
+                  x^2 + (a - x)^2       & = a^2 & \\
+                  x^2 + a^2 - 2ax + x^2 & = a^2 & \\
+                  2x^2 - 2ax            & = 0   & \\
+                  x(x - a)              & = 0   & \\
+                  x = 0 \text{ or } x   & = a
+            \end{flalign*}
+            In the interval $0 \leq x \leq a$, $x^2 + y^2 = a^2 \geq x + y = a$.
+            \begin{flalign*}
+                  V & = \int_0^a \pi (a^2 - x^2)dx - \int_0^a \pi (a - x)^2 dx                                         & \\
+                    & = \int_0^a \pi (a^2 - x^2)dx - \int_0^a \pi (x^2 - 2ax + a^2) dx                                 & \\
+                    & = \pi\left[a^2x - \dfrac{1}{3}x^3\right]_0^a - \pi\left[\dfrac{1}{3}x^3 - ax^2 + a^2x\right]_0^a & \\
+                    & = \pi\left[a^3 - \dfrac{1}{3}a^3\right] - \pi\left[\dfrac{1}{3}a^3 - a^3 + a^3\right]            & \\
+                    & = \dfrac{2}{3} \pi a^3 - \dfrac{1}{3} \pi a^3                                                    & \\
+                    & = \dfrac{1}{3} \pi a^3
+            \end{flalign*}
+
+      \item Given that a region is bounded by the curve $y^2 = 8 - x$ and $y^2 = x - 4$.
+            Find the volume of the solid of revolution formed by rotating this region about
+            the $x$-axis and the $y$-axis respectively. \sol{}
+            \begin{flalign*}
+                  V_x & = \int_{4}^{6}\pi(x-4)dx + \int_{6}^{8}\pi(8-x)dx                                         & \\
+                      & = \pi\left[\dfrac{1}{2}x^2-4x\right]_{4}^{6} + \pi\left[8x-\dfrac{1}{2}x^2\right]_{6}^{8} & \\
+                      & = \pi\left[18 - 24 - 8 + 16\right] + \pi\left[64 - 32 -48 + 18\right]                     & \\
+                      & = 2\pi + 2\pi                                                                             & \\
+                      & = 4\pi
+            \end{flalign*}
+            \vspace{-0.8cm}
+            \begin{flalign*}
+                  V_y & = \int_{-\sqrt{2}}^{\sqrt{2}}\pi\left(8-y^{2}\right)^{2}dy-\int_{-\sqrt{2}}^{\sqrt{2}}\pi\left(y^{2}+4\right)^{2}dy                                                                                                                                           & \\
+                      & = \pi\int_{-\sqrt{2}}^{\sqrt{2}}\left(64-16y^{2}+y^{4}\right)dy-\pi\int_{-\sqrt{2}}^{\sqrt{2}}\left(y^{4}+8y^{2}+16\right)dy                                                                                                                                  & \\
+                      & = \pi\left[64y-\dfrac{16}{3}y^{3}+\dfrac{1}{5}y^{5}\right]_{-\sqrt{2}}^{\sqrt{2}}-\pi\left[\dfrac{1}{5}y^{5}+\dfrac{8}{3}y^{3}+16y\right]_{-\sqrt{2}}^{\sqrt{2}}                                                                                              & \\
+                      & = \pi\left[64\sqrt{2}-\dfrac{32}{3}\sqrt{2}+\dfrac{4}{5}\sqrt{2}+64\sqrt{2}-\dfrac{32}{3}\sqrt{2}+\dfrac{4}{5}\sqrt{2}\right] - \pi\left[\dfrac{4}{5}\sqrt{2}+\dfrac{16}{3}\sqrt{2}+16\sqrt{2} + \dfrac{4}{5}\sqrt{2}+\dfrac{16}{3}\sqrt{2}+16\sqrt{2}\right] & \\
+                      & = \dfrac{1624\sqrt{2}}{15}\pi - \dfrac{664\sqrt{2}}{15}\pi = 64\sqrt{2}\pi
+            \end{flalign*}
+\end{enumerate}

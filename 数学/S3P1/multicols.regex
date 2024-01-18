@@ -1,1 +1,0 @@
-((?<!\\begin\{multicols\}\{2\}\n)(?<!\\columnbreak\{\}\n)\\item(?:.|\s)*?)(\\item(?:.|\s)*?)(?=\\item)

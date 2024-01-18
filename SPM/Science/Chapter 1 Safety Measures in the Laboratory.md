@@ -14,10 +14,12 @@
 
 | Equipment                       | Description                                                  |
 | ------------------------------- | ------------------------------------------------------------ |
-| Laminar flow cabinet 生物安全柜 | Used to avoid contamination 污染 when microbiological 微生物的 activities are carried out. |
+| Laminar flow cabinet 层流柜 | Used to avoid contamination 污染 when microbiological 微生物的 activities are carried out. |
 | Safety shower                   | Used to immediately clean and rinse parts of the body or clothing that have come into contact with chemical substances. |
 | Fume chamber 通风柜             | Used to carry out experiments that use substances which are volatile 易挥发的, flammable, poisonous, corrosive 腐蚀性的 or pungent 呛鼻的. |
 | Eyewash station 洗眼器          | Used to immediately rince and wash the eye that was come into contact with chemical substances. |
+|Biochemical Safety Cabinet 生物安全柜 | Protect user and surroundings from pathogen|
+
 
 ## 1.2 Disposal of Waste
 
@@ -100,4 +102,15 @@ A fire extinguisher is a device that is used to control or extinguish fire.
 | Foam           | Cream | Flammable solids such as paper and wood as well as types of liquid or gas that are flamable such as oil, paint and natural gas. |
 | Carbon diovide | Black | Fire that involves electrical appliances, gas and vapour.    |
 | Dry powder     | Blue  | All types of fires.                                          |
+
+### Type of Fires
+
+| Class of Fire | Fire             | Type of Fire Extinguishers       |     |
+| ------------- | ---------------- | -------------------------------- | --- |
+| Class A       | Solid Flammable Stuff           | Water, Foam, Dry Powder          |     |
+| Class B       | Flammable Liquid | Foam, Dry Powder, Carbon Dioxide |     |
+| Class C       | Flammable Gas    | Dry Powder, Carbon Dioxide       |     |
+| Class D       | Reactive Metal   | Dry Powder                       |     |
+| Class E       | Electrical Fire     | Dry Powder, Carbon Dioxide       |     |
+| Class F       | Fat, Cooking Oil         | Dry Powder, Carbon Dioxide       |     |
 
