@@ -315,6 +315,8 @@
 <summary>Add Math II</summary>
 
 - [S2 chp14 14.4.pdf](<./数学/Add Math II/S2 chp14 14.4.pdf>)
+- [S2 chp14 14.5&14.6.pdf](<./数学/Add Math II/S2 chp14 14.5&14.6.pdf>)
+- [S2 chp16 16.2&16.3.pdf](<./数学/Add Math II/S2 chp16 16.2&16.3.pdf>)
 
 </details>
 </dd></dl>
