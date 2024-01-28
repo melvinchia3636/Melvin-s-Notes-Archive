@@ -1,0 +1,1063 @@
+\documentclass{report}
+
+\usepackage{amsmath, amssymb}
+\usepackage{ctex}
+\usepackage[total={7in, 9.6in}]{geometry}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\newcommand{\sol}{\vspace{0.2cm}\textbf{解}:}
+
+\begin{document}
+\chapter*{高一第十七章\\指数函数与对数函数}
+
+\setcounter{chapter}{17}
+\setcounter{section}{1}
+
+\setlength{\columnseprule}{0.4pt}
+\setlength{\columnsep}{3em}
+
+\allowdisplaybreaks
+
+\begin{multicols*}{2}
+    \section{对数}
+
+    \subsection*{（选择题）}
+
+    \begin{enumerate}[leftmargin=*]
+        \item $\log 500$ 等于
+
+              \sol{}
+              \begin{align*}
+                  \log 500 & =\log 5+\log 100      \\
+                           & =\log 5+2\log 10      \\
+                           & =\log 5+2             \\
+                           & = \log\dfrac{10}{2}+2 \\
+                           & = \log 10- \log 2+2   \\
+                           & = 1 - \log2 + 2       \\
+                           & = 3 - \log 2
+              \end{align*}
+
+        \item 若 $p=\log _7 \dfrac{14}{15}, q=\log _7 \dfrac{21}{20}, r=\log _7 \dfrac{49}{50}, p+q-r$ 之值是多少?
+
+              \sol{}
+              \begin{align*}
+                  p+q-r & = \log_7 \dfrac{14}{15} + \log_7 \dfrac{21}{20} - \log_7 \dfrac{49}{50}          \\
+                        & = \log_7 \left( \dfrac{14}{15} \cdot \dfrac{21}{20} \cdot \dfrac{50}{49} \right) \\
+                        & = \log_7 1                                                                       \\
+                        & = 0
+              \end{align*}
+
+        \item 如果 $0<\theta<\dfrac{\pi}{2}, \log \operatorname{cosec} \theta=$ ?
+
+              \sol{}
+              \begin{align*}
+                  \log \operatorname{cosec} \theta & = \log \dfrac{1}{\sin \theta} \\
+                                                   & = -\log \sin \theta
+              \end{align*}
+
+        \item 已知 $\log _2 3=p$ 与 $\log _2 5=q$, 求 $\log _2 60$ 之值。
+
+              \sol{}
+              \begin{align*}
+                  \log_2 60 & = \log_2 3 + \log_2 4 + \log_2 5 \\
+                            & = p + q + 2
+              \end{align*}
+
+        \item 求无穷级数 $\log _9 \sqrt{3}+\log _9 \sqrt{\sqrt{3}}+\log _9 \sqrt{\sqrt{\sqrt{3}}}+\cdots$ 之和。
+
+              \sol{}
+              \begin{align*}
+                   & \log_9 \sqrt{3}+\log_9 \sqrt{\sqrt{3}}+\log_9 \sqrt{\sqrt{\sqrt{3}}}+\cdots         \\
+                   & = \log_9 3^{\frac{1}{2}} + \log_9 3^{\frac{1}{4}} + \log_9 3^{\frac{1}{8}} + \cdots \\
+                   & = \log_9 3^{\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \cdots}                       \\
+                   & = \log_9 3^{\sum_{n=1}^{\infty} \left( \frac{1}{2} \right)^n}                       \\
+                   & = \log_9 3^\frac{\frac{1}{2}}{1-\frac{1}{2}}                                        \\
+                   & = \log_9 3                                                                          \\
+                   & = \frac{1}{2}
+              \end{align*}
+
+        \item 若 $f\left(10^x\right)=x$, 则 $f(3)=$ ?
+
+              \sol{}
+
+              设 $y = 10^x$, 则 $x = \log_{10} y$,
+              \begin{align*}
+                  f(y) & = \log_{10} y \\
+                  f(3) & = \log 3
+              \end{align*}
+    \end{enumerate}
+
+    \section{对数的换底公式}
+
+    \subsection*{（选择题）}
+
+    \begin{enumerate}[leftmargin=*]
+        \item 已知 $\log _9 x=u$, 求 $\log _x 81$ 。
+
+              \sol{}
+              \begin{align*}
+                  \log_x 81 & = \frac{\log_9 81}{\log_9 x} \\
+                            & = \frac{2}{u}
+              \end{align*}
+
+        \item $\dfrac{1}{\log _x(x y)}+\dfrac{1}{\log _y(x y)}=$ ?
+
+              \sol{}
+              \begin{align*}
+                  \dfrac{1}{\log _x(x y)}+\dfrac{1}{\log _y(x y)} & = \log_{xy} x + \log_{xy} y \\
+                                                                  & = \log_{xy} xy              \\
+                                                                  & = 1
+              \end{align*}
+
+        \item $\dfrac{\log _4 2-\log _2 4}{\log _{0.1} 10+\log _{0.2} 25}=?$
+
+              \sol{}
+              \begin{align*}
+                  \dfrac{\log _4 2-\log _2 4}{\log _{0.1} 10+\log _{0.2} 25} & = \dfrac{\dfrac{1}{2} - 2}{\dfrac{\log 10}{\log \dfrac{1}{10}} + \dfrac{\log_5 25}{\log_5 \dfrac{1}{5}}} \\
+                                                                             & = \dfrac{\dfrac{1}{2} - 2}{-1 - 2}                                                                       \\
+                                                                             & = \dfrac{3}{2} \cdot \dfrac{1}{3}                                                                        \\
+                                                                             & = \dfrac{1}{2}
+              \end{align*}
+
+        \item 计算 $\left[\log _2\left(4 \log _2 4\right)\right]\left(\log _8 2+1\right)$ 。
+
+              \sol{}
+              \begin{align*}
+                  \left[\log _2\left(4 \log _2 4\right)\right]\left(\log _8 2+1\right) & = \log_2 8 \cdot \left(\dfrac{1}{\log_2 8} + 1\right) \\
+                                                                                       & = 3 \cdot \dfrac{4}{3}                                \\
+                                                                                       & = 4
+              \end{align*}
+
+        \item 已知 $\log _2 3=p$ 及 $\log _2 5=q$, 求 $\log _5 9$ 值。
+
+              \sol{}
+              \begin{align*}
+                  \log_5 9 & = \dfrac{\log_2 9}{\log_2 5} \\
+                           & = \dfrac{\log_2 3^2}{q}      \\
+                           & = \dfrac{2 \log_2 3}{q}      \\
+                           & = \dfrac{2p}{q}
+              \end{align*}
+
+              \setcounter{enumi}{6}
+
+        \item 设 $\log \alpha$ 及 $\log \beta$ 为 $2 x^2+3 x+1=0$ 的两根, 则 $\log _\alpha \beta+\log _\beta \alpha=?$
+
+              \sol{}
+              \begin{align*}
+                  2x^2 + 3x + 1           & = 0                 \\
+                  (2x + 1)(x + 1)         & = 0                 \\
+                  x                       & = -\dfrac{1}{2}, -1 \\
+                  \\
+                  \therefore\ \log \alpha & = -\dfrac{1}{2},    \\
+                  \log \beta              & = -1
+              \end{align*}
+
+              \begin{align*}
+                  \log_\alpha \beta + \log_\beta \alpha & = \dfrac{\log \beta}{\log \alpha} + \dfrac{\log \alpha}{\log \beta} \\
+                                                        & = \dfrac{-1}{-\dfrac{1}{2}} + \dfrac{-\dfrac{1}{2}}{-1}             \\
+                                                        & = 2 + \dfrac{1}{2}                                                  \\
+                                                        & = \dfrac{5}{2}
+              \end{align*}
+
+        \item 如果 $\log _8 a+\log _4 b^2=5$ 及 $\log _8 b+\log _4 a^2=7$, 求 $\log _2 a b$ 的值。
+
+              \sol{}
+              \begin{align*}
+                  \log_8 a + \log_4 b^2                                   & = 5                   \\
+                  \log_8 a + 2 \log_4 b                                   & = 5                   \\
+                  \dfrac{\log_2 a}{3} + 2\left(\dfrac{\log_2 b}{2}\right) & = 5                   \\
+                  \dfrac{\log_2 a}{3} + \log_2 b                          & = 5                   \\
+                  \log_2 a + 3 \log_2 b                                   & = 15                  \\
+                  \log_2 a                                                & = 15 - 3 \log_2 b     \\
+                  \log_8 b + \log_4 a^2                                   & = 7                   \\
+                  \log_8 b + 2 \log_4 a                                   & = 7                   \\
+                  \dfrac{\log_2 b}{3} + 2\left(\dfrac{\log_2 a}{2}\right) & = 7                   \\
+                  \dfrac{\log_2 b}{3} + \log_2 a                          & = 7                   \\
+                  \log_2 b + 3 \log_2 a                                   & = 21                  \\
+                  \log_2 b + 3 \left(15 - 3 \log_2 b\right)               & = 21                  \\
+                  8 \log_2 b                                              & = 24                  \\
+                  \log_2 b                                                & = 3                   \\
+                  \log_2 ab                                               & = \log_2 a + \log_2 b \\
+                                                                          & = 15 - 3(3) + 3       \\
+                                                                          & = 9
+              \end{align*}
+
+        \item 若 $\log _4 m=a$ 与 $\log _{12} m=b$, 试以 $a$ 与 $b$ 表示 $\log _{48} 3$ 。
+
+              \sol{}
+              \begin{align*}
+                  \log_4 m            & = a            \\
+                  \dfrac{1}{\log_m 4} & = a            \\
+                  \log_m 4            & = \dfrac{1}{a}
+              \end{align*}
+              \begin{align*}
+                  \log_{12} m             & = b                           \\
+                  \log_m 12               & = \dfrac{1}{b}                \\
+                  \log_m 4 + \log_m 3     & = \dfrac{1}{b}                \\
+                  \dfrac{1}{a} + \log_m 3 & = \dfrac{1}{b}                \\
+                  \log_m 3                & = \dfrac{1}{b} - \dfrac{1}{a} \\
+                                          & = \dfrac{a-b}{ab}
+              \end{align*}
+              \begin{align*}
+                  \log_{48} 3 & = \dfrac{\log_m 3}{\log_m 48}                          \\
+                              & = \dfrac{\dfrac{a-b}{ab}}{\log_m 12 + \log_m 4}        \\
+                              & = \dfrac{\dfrac{a-b}{ab}}{\dfrac{1}{b} + \dfrac{1}{a}} \\
+                              & = \dfrac{a-b}{ab} \cdot \dfrac{ab}{a+b}                \\
+                              & = \dfrac{a-b}{a+b}
+              \end{align*}
+    \end{enumerate}
+
+    \subsection*{（作答题）}
+
+    \begin{enumerate}[leftmargin=*]
+        \item 若 $\log _8 3=p$ 与 $\log _3 5=q$, 以 $p$ 与 $q$ 表示 $\log _{10} 5$ 与 $\log _{10} 6$ 。
+
+              \sol{}
+              \begin{align*}
+                  \log_8 3                   & = p  \\
+                  \dfrac{\log_2 3}{\log_2 8} & = p  \\
+                  \dfrac{\log_2 3}{3}        & = p  \\
+                  \log_2 3                   & = 3p
+              \end{align*}
+
+              \begin{align*}
+                  \log_{10} 5 & = \dfrac{\log_3 5}{\log_3 10}        \\
+                              & = \dfrac{q}{\log_3 5 + \log_3 2}     \\
+                              & = \dfrac{q}{q + \log_3 2}            \\
+                              & = \dfrac{q}{q + \dfrac{1}{\log_2 3}} \\
+                              & = \dfrac{q}{q + \dfrac{1}{3p}}       \\
+                              & = \dfrac{q}{\dfrac{3pq + 1}{3p}}     \\
+                              & = \dfrac{3pq}{3pq + 1}
+              \end{align*}
+              \begin{align*}
+                  \log_{10} 6 & = \dfrac{\log_3 6}{\log_3 10}                              \\
+                              & = \dfrac{\log_3 2 + \log_3 3}{\log_3 5 + \log_3 2}         \\
+                              & = \dfrac{1 + \log_3 2}{q + \log_3 2}                       \\
+                              & = \dfrac{1 + \dfrac{1}{\log_2 3}}{q + \dfrac{1}{\log_2 3}} \\
+                              & = \dfrac{1 + \dfrac{1}{3p}}{q + \dfrac{1}{3p}}             \\
+                              & = \dfrac{3p + 1}{3pq + 1}
+              \end{align*}
+    \end{enumerate}
+
+    \section{指数方程式}
+
+    \subsection*{（选择题）}
+    \begin{enumerate}
+        \item 若 $32^x=16, x$ 的值为何?
+
+              \sol{}
+              \begin{align*}
+                  32^x   & = 16           \\
+                  2^{5x} & = 2^4          \\
+                  5x     & = 4            \\
+                  x      & = \dfrac{4}{5}
+              \end{align*}
+
+        \item 若 $e^{2 x}+e^x=6$, 则 $x$ 之值为
+
+              \sol{}
+
+              设 $y = e^x$, 则
+              \begin{align*}
+                  y^2 + y        & = 6     \\
+                  y^2 + y - 6    & = 0     \\
+                  (y + 3)(y - 2) & = 0     \\
+                  y              & = -3, 2
+              \end{align*}
+              当 $y = -3$ 时, $x$ 无解; 当 $y = 2$ 时, $x = \ln 2$.
+
+        \item 若 $2^x \cdot 4^y=16$ 及 $3^x-9^y=0$, 求 $x$ 与 $y$ 之值。
+
+              \sol{}
+              \begin{align*}
+                  2^x \cdot 4^y    & = 16     \\
+                  2^x \cdot 2^{2y} & = 16     \\
+                  2^{x+2y}         & = 16     \\
+                  x + 2y           & = 4      \\
+                  \\
+                  3^x - 9^y        & = 0      \\
+                  3^x              & = 9^y    \\
+                  3^x              & = 3^{2y} \\
+                  x                & = 2y     \\
+                  \\
+                  2y + 2y          & = 4      \\
+                  y                & = 1      \\
+                  x                & = 2
+              \end{align*}
+
+        \item 若 $e^{2 x}=e^x+12$, 则 $x$ 之值为
+
+              \sol{}
+
+              设 $y = e^x$, 则
+              \begin{align*}
+                  y^2            & = y + 12 \\
+                  y^2 - y - 12   & = 0      \\
+                  (y - 4)(y + 3) & = 0      \\
+                  y              & = 4, -3
+              \end{align*}
+              当 $y = -3$ 时, $x$ 无解; 当 $y = 4$ 时, $x = \ln 4 = 2\ln 2$.
+
+        \item 若 $e^{2 x}+e^x=12$, 求 $x$ 的值。
+
+              \sol{}
+              设 $y = e^x$, 则
+              \begin{align*}
+                  y^2 + y        & = 12    \\
+                  y^2 + y        & = 0     \\
+                  (y + 4)(y - 3) & = 0     \\
+                  y              & = -4, 3
+              \end{align*}
+              当 $y = -4$ 时, $x$ 无解; 当 $y = 3$ 时, $x = \ln 3$.
+
+        \item 若 $2^p=3^q=12^r$, 试以 $p$ 及 $q$ 表示 $r$ 的值。
+
+              \sol{}
+              \begin{align*}
+                  2^p        & = 3^q                         \\
+                  \log_2 2^p & = \log_2 3^q                  \\
+                  p          & = q \log_2 3                  \\
+                  \log_2 3   & = \dfrac{p}{q}                \\
+                  \\
+                  2^p        & = 12^r                        \\
+                  \log_2 2^p & = \log_2 12^r                 \\
+                  p          & = r \log_2 12                 \\
+                             & = r \log_2 (2^2 \cdot 3)      \\
+                             & = r (2 + \log_2 3)            \\
+                  r          & = \dfrac{p}{2 + \log_2 3}     \\
+                             & = \dfrac{p}{2 + \dfrac{p}{q}} \\
+                             & = \dfrac{pq}{2q + p}
+              \end{align*}
+
+        \item 已知 $3^x=5^y=15^z$, 则 $\dfrac{2(x+y)}{x y}=$ ?
+
+              \sol{}
+              \begin{align*}
+                  5^y        & = 15^z                 \\
+                  \log_5 5^y & = \log_5 15^z          \\
+                  y          & = z \log_5 15          \\
+                             & = z \log_5 (3 \cdot 5) \\
+                             & = z (1 + \log_5 3)     \\
+              \end{align*}
+              \begin{align*}
+                  3^x        & = 15^z                 \\
+                  \log_3 3^x & = \log_3 15^z          \\
+                  x          & = z \log_3 15          \\
+                             & = z \log_3 (3 \cdot 5) \\
+                             & = z (1 + \log_3 5)
+              \end{align*}
+              \begin{align*}
+                  \dfrac{2(x+y)}{xy} & = \dfrac{2\left[z(1 + \log_3 5) + z(1 + \log_5 3)\right]}{z(1 + \log_3 5)z(1 + \log_5 3)}                \\
+                                     & = \dfrac{2\left[\log_3 5 + 2 + \log_5 3\right]}{z(1 + \log_3 5\log_5 3 + \log_3 5 + \log_5 3)}           \\
+                                     & = \dfrac{2\left[\log_3 5 + 2 + \log_5 3\right]}{z(1 + \dfrac{\log_3 5}{\log_3 5} + \log_3 5 + \log_5 3)} \\
+                                     & = \dfrac{2\left[\log_3 5 + 2 + \log_5 3\right]}{z(1 + 1 + \log_3 5 + \log_5 3)}                          \\
+                                     & = \dfrac{2\left[\log_3 5 + 2 + \log_5 3\right]}{z(2 + \log_3 5 + \log_5 3)}                              \\
+                                     & = \dfrac{2}{z}
+              \end{align*}
+    \end{enumerate}
+
+    \subsection*{（作答题）}
+    \begin{enumerate}[leftmargin=*]
+        \item 解联立方程组 $\left\{\begin{array}{c}9^x-27^y=0 \\ 4^x \cdot 8^y=\dfrac{1}{16}\end{array}\right.$ 。
+
+              \sol{}
+              \begin{align*}
+                  9^x - 27^y          & = 0                           \\
+                  3^{2x} - 3^{3y}     & = 0                           \\
+                  2x                  & = 3y                          \\
+                  x                   & = \dfrac{3}{2} y\ \cdots\ (1) \\
+                  \\
+                  4^x \cdot 8^y       & = \dfrac{1}{16}               \\
+                  2^{2x} \cdot 2^{3y} & = 2^{-4}                      \\
+                  2x + 3y             & = -4\ \cdots\ (2)
+              \end{align*}
+              将 $(1)$ 代入 $(2)$, 得
+              \begin{align*}
+                  2 \cdot \dfrac{3}{2} y + 3y & = -4            \\
+                  6y                          & = -4            \\
+                  y                           & = -\dfrac{2}{3}
+              \end{align*}
+              将 $y = -\dfrac{2}{3}$ 代入 $(1)$, 得
+              \begin{align*}
+                  x & = \dfrac{3}{2} \cdot \left(-\dfrac{2}{3}\right) = -1
+              \end{align*}
+              $\therefore\ x = -1, y = -\dfrac{2}{3}$.
+
+        \item 若 $3^{x+2} \cdot 2^{x+1}=5^{x+1}$, 求 $x$ 之值准确至二个有效数字。
+
+              \sol{}
+              \begin{align*}
+                  3^{x+2} \cdot 2^{x+1}         & = 5^{x+1}                                       \\
+                  3^x \cdot 9 \cdot 2^x \cdot 2 & = 5 \cdot 5^x                                   \\
+                  6^x \cdot 18                  & = 5 \cdot 5^x                                   \\
+                  \left(\dfrac{6}{5}\right)^x   & = \dfrac{5}{18}                                 \\
+                  x                             & = \log_{\frac{6}{5}} \dfrac{5}{18}              \\
+                                                & = \dfrac{\log \dfrac{5}{18}}{\log \dfrac{6}{5}} \\
+                                                & \approx -7.0
+              \end{align*}
+
+        \item 试用对数表或计算机, 解方程式 $9^x \cdot 2^{2 x}=18$, 准确至二位小数。
+
+              \sol{}
+              \begin{align*}
+                  9^x \cdot 2^{2 x}   & = 18                                               \\
+                  3^{2x} \cdot 2^{2x} & = 18                                               \\
+                  6^{2x}              & = 18                                               \\
+                  2x                  & = \log_6 18                                        \\
+                  x                   & = \dfrac{1}{2}\left(\dfrac{\log 18}{\log 6}\right) \\
+                                      & \approx 0.81
+              \end{align*}
+
+        \item 解不等式 $3^{2 x+1}>27^{\frac{3}{4}}$ 。
+
+              \sol{}
+
+              \begin{align*}
+                  3^{2 x+1} & > 27^{\frac{3}{4}} \\
+                  3^{2 x+1} & > 3^{\frac{9}{4}}  \\
+                  2x + 1    & > \dfrac{9}{4}     \\
+                  2x        & > \dfrac{5}{4}     \\
+                  x         & > \dfrac{5}{8}
+              \end{align*}
+
+        \item 解方程式 $4^{x+1}+2^{x+3}-5=0$ 。
+
+              \sol{}
+
+              设 $y = 2^x$, 则
+              \begin{align*}
+                  4^{x+1} + 2^{x+3} - 5                & = 0                           \\
+                  2^{2x+2} + 2^{x+3} - 5               & = 0                           \\
+                  2^2 \cdot 2^{2x} + 2^3 \cdot 2^x - 5 & = 0                           \\
+                  4y^2 + 8y - 5                        & = 0                           \\
+                  (2y - 1)(2y + 5)                     & = 0                           \\
+                  y                                    & = \dfrac{1}{2}, -\dfrac{5}{2}
+              \end{align*}
+              当 $y = -\dfrac{5}{2}$ 时, $x$ 无解; 当 $y = \dfrac{1}{2}$ 时, $x = -1$.
+
+        \item 解联立方程组 $\left\{\begin{array}{c}3^x-5^{y+1}=8 \\ 3^{x-1}+5^{y+2}=8\end{array}\right.$ 。
+
+              \sol{}
+              \begin{align*}
+                  3^x - 5^{y+1}                             & = 8               \\
+                  3^x - 5 \cdot 5^y                         & = 8               \\
+                  3^x                                       & = 8 + 5 \cdot 5^y \\
+                  \\
+                  3^{x-1} + 5^{y+2}                         & = 8               \\
+                  \dfrac{3^x}{3} + 25 \cdot 5^y             & = 8               \\
+                  \dfrac{8 + 5 \cdot 5^y}{3} + 25 \cdot 5^y & = 8
+              \end{align*}
+              设 $t = 5^y$, 则
+              \begin{align*}
+                  \dfrac{8 + 5t}{3} + 25t & = 8                  \\
+                  8 + 5t + 75t            & = 24                 \\
+                  80t                     & = 16                 \\
+                  t                       & = \dfrac{1}{5}       \\
+                  y                       & = -1                 \\
+                  \\
+                  3^x                     & = 8 + 5 \cdot 5^{-1} \\
+                                          & = 8 + 1              \\
+                                          & = 9                  \\
+                  x                       & = 2
+              \end{align*}
+              $\therefore\ x = 2, y = -1$.
+
+        \item 求联立方程式组 $\left\{\begin{array}{r}2^x+2^y=9 \\ 2^{x+y}=8\end{array}\right.$ 的解集。
+
+              \sol{}
+              \begin{align*}
+                  2^{x+y} & = 8     \\
+                  x + y   & = 3     \\
+                  y       & = 3 - x
+              \end{align*}
+              设 $t = 2^x$, 则
+              \begin{align*}
+                  t + 2^{3-x}      & = 9    \\
+                  t + \dfrac{8}{t} & = 9    \\
+                  t^2 - 9t + 8     & = 0    \\
+                  (t - 1)(t - 8)   & = 0    \\
+                  t                & = 1, 8
+              \end{align*}
+              当 $t = 1$ 时, $x = 0$, $y = 3$; 当 $t = 8$ 时, $x = 3$, $y = 0$.
+
+              $\therefore\ \left\{\begin{array}{r}x=0 \\ y=3\end{array}\right.$ 或 $\left\{\begin{array}{r}x=3 \\ y=0\end{array}\right.$.
+
+        \item 解方程式 $3^x-3^{-x}=2$ 。
+
+              \sol{}
+
+              设 $y = 3^x$, 则
+              \begin{align*}
+                  y - \dfrac{1}{y} & = 2              \\
+                  y^2 - 1          & = 2y             \\
+                  y^2 - 2y - 1     & = 0              \\
+                  y                & = 1 \pm \sqrt{2}
+              \end{align*}
+              当 $y = 1 - \sqrt{2}$ 时, $x$ 无解; 当 $y = 1 + \sqrt{2}$ 时, $x = \log_3 (1 + \sqrt{2}) \approx 0.8023$.
+
+        \item 解 $5 \cdot 2^{x-1}=3 \cdot 7^x$ 。
+
+              \sol{}
+              \begin{align*}
+                  5 \cdot 2^{x-1}             & = 3 \cdot 7^x                                  \\
+                  \dfrac{5}{2} \cdot 2^x      & = 3 \cdot 7^x                                  \\
+                  \left(\dfrac{2}{7}\right)^x & = \dfrac{6}{5}                                 \\
+                  x                           & = \log_{\frac{2}{7}} \dfrac{6}{5}              \\
+                                              & = \dfrac{\log \dfrac{6}{5}}{\log \dfrac{2}{7}} \\
+                                              & \approx -0.1455
+              \end{align*}
+
+        \item 解方程式 $2^{x+1}+2^{-x}=3$ 。
+
+              \sol{}
+
+              设 $y = 2^x$, 则
+              \begin{align*}
+                  2y + \dfrac{1}{y} & = 3               \\
+                  2y^2 + 1          & = 3y              \\
+                  2y^2 - 3y + 1     & = 0               \\
+                  (2y - 1)(y - 1)   & = 0               \\
+                  y                 & = \dfrac{1}{2}, 1
+              \end{align*}
+              当 $y = \dfrac{1}{2}$ 时, $x = -1$; 当 $y = 1$ 时, $x = 0$.
+
+        \item 解方程式 $2 e^x+e^{-x}=3$ 。
+
+              \sol{}
+
+              设 $y = e^x$, 则
+              \begin{align*}
+                  2y + \dfrac{1}{y} & = 3               \\
+                  2y^2 + 1          & = 3y              \\
+                  2y^2 - 3y + 1     & = 0               \\
+                  (2y - 1)(y - 1)   & = 0               \\
+                  y                 & = \dfrac{1}{2}, 1
+              \end{align*}
+              当 $y = \dfrac{1}{2}$ 时, $x = -\ln 2$; 当 $y = 1$ 时, $x = 0$.
+
+        \item 解方程式 $4^{2 x+1}+3 \cdot 20^x-10 \cdot 25^x=0$ 。
+
+              \sol{}
+
+              无解
+
+        \item 解方程式 $3\left(4^{x+1}\right)-35\left(6^x\right)+2\left(9^{x+1}\right)=0$ 。
+
+              \sol{}
+              \begin{align*}
+                  3(4^{x+1}) - 35(6^x) + 2(9^{x+1})                      & = 0                                                    \\
+                  12(2^{x})^2 - 35 \cdot 3^{x} \cdot 2^{x} + 18(3^{x})^2 & = 0                                                    \\
+                  [4(2^x) - 9(3^{x})][3(2^x) - 2(3^{x})]                 & = 0                                                    \\
+                  4(2^x) - 9(3^{x})= 0                                   & \text{ or } 3(2^x) - 2(3^{x}) = 0                      \\
+                  \left(\dfrac{2}{3}\right)^x = \dfrac{9}{4}             & \text{ or } \left(\dfrac{2}{3}\right)^x = \dfrac{2}{3} \\
+                  x  = -2                                                & \text{ or } x = 1
+              \end{align*}
+
+        \item 解不等式 $84 \cdot 3^x-243 \geq 3^{2 x}$ 。
+
+              \sol{}
+              \begin{align*}
+                  (3^x)^2 - 84 \cdot 3^x + 243 & \leq 0  \\
+                  (3^x - 81)(3^x - 3)          & \leq 0  \\
+                  3 \leq 3^x                   & \leq 81 \\
+                  1 \leq x                     & \leq 4
+              \end{align*}
+    \end{enumerate}
+
+    \section{对数方程式}
+
+    \subsection*{（选择题）}
+
+    \begin{enumerate}[leftmargin=*]
+        \setcounter{enumi}{1}
+        \item 若 $x$ 是正数, 且 $\log x \geq \log 2+\dfrac{1}{2} \log x$, 则
+
+              \sol{}
+              \begin{align*}
+                  \log x   & \geq \log 2 + \dfrac{1}{2} \log x \\
+                  \log x   & \geq \log 2 + \log \sqrt{x}       \\
+                  \log x   & \geq \log 2 \sqrt{x}              \\
+                  x        & \geq 2 \sqrt{x}                   \\
+                  x^2      & \geq 4x                           \\
+                  x^2 - 4x & \geq 0                            \\
+                  x(x - 4) & \geq 0                            \\
+                  x        & \geq 4\ \text{或}\ x \leq 0
+              \end{align*}
+
+              \newpage
+        \item 已知 $\log _x 3+2 \log _3 x=3$, 则 $x=$ ?
+
+              \sol{}
+              \begin{align*}
+                  \log_x 3 + 2 \log_3 x          & = 3 \\
+                  \log_x 3 + \dfrac{2}{\log_x 3} & = 3
+              \end{align*}
+              设 $y = \log_x 3$, 则
+              \begin{align*}
+                  y + \dfrac{2}{y} & = 3    \\
+                  y^2 - 3y + 2     & = 0    \\
+                  (y - 1)(y - 2)   & = 0    \\
+                  y                & = 1, 2
+              \end{align*}
+              当 $y = 1$ 时, $x = 3$; 当 $y = 2$ 时, $x = \sqrt{3}$.
+
+        \item 若 $\log _4 x+\left(\log _4 x\right)^2+\left(\log _4 x\right)^3+\left(\log _4 x\right)^4+\cdots=1$, 求 $x$ 的值。
+
+              \sol{}
+              \begin{align*}
+                  \log_4 x + \left(\log_4 x\right)^2          & + \left(\log_4 x\right)^3 + \left(\log_4 x\right)^4 + \cdots  = 1 \\
+                  \sum_{n=1}^{\infty} \left(\log_4 x\right)^n & = 1                                                               \\
+                  \dfrac{\log_4 x}{1 - \log_4 x}              & = 1                                                               \\
+                  \log_4 x                                    & = 1 - \log_4 x                                                    \\
+                  2 \log_4 x                                  & = 1                                                               \\
+                  \log_4 x                                    & = \dfrac{1}{2}                                                    \\
+                  x                                           & = 4^{\frac{1}{2}}                                                 \\
+                                                              & = 2
+              \end{align*}
+
+        \item 若 $1+\log _a(5 x+2 a)=2 \log _a x+\log _a 3$, 式中 $a$ 为正数, 则 $x$ 的解集是
+
+              \sol{}
+              \begin{align*}
+                  1 + \log_a(5x + 2a) & = 2 \log_a x + \log_a 3 \\
+                  \log_a [a(5x + 2a)] & = \log_a (3x^2)         \\
+                  a(5x + 2a)          & = 3x^2                  \\
+                  3x^2 - 5ax - 2a^2   & = 0                     \\
+                  (3x + a)(x - 2a)    & = 0                     \\
+                  x                   & = -\dfrac{a}{3}, 2a
+              \end{align*}
+              $\therefore x$ 的解集为 $\left\{2a\right\}$.
+
+        \item 求方程式 $x^{\log x-1}=100$ 的解集。
+
+              \sol{}
+              \begin{align*}
+                  x^{\log x - 1}           & = 100                \\
+                  \log x^{\log x - 1}      & = \log 100           \\
+                  (\log x)(\log x - 1)     & = 2                  \\
+                  (\log x)^2 - \log x - 2  & = 0                  \\
+                  (\log x - 2)(\log x + 1) & = 0                  \\
+                  \log x                   & = 2, -1              \\
+                  x                        & = 100, \dfrac{1}{10}
+              \end{align*}
+              $\therefore x$ 的解集为 $\left\{100, 0.1\right\}$.
+
+        \item 若 $\ln \left[\log _3\left(\log _2 x\right)\right]=0$, 求 $x^{-\frac{1}{2}}$ 。
+
+              \sol{}
+              \begin{align*}
+                  \ln \left[\log _3\left(\log _2 x\right)\right] & = 0   \\
+                  \log _3\left(\log _2 x\right)                  & = 1   \\
+                  \log _2 x                                      & = 3   \\
+                  x                                              & = 2^3 \\
+                                                                 & = 8
+              \end{align*}
+              $\therefore x^{-\frac{1}{2}} = \dfrac{1}{\sqrt{8}} = \dfrac{1}{2\sqrt{2}}$.
+
+              \newpage
+        \item 解方程式 $\log _2 x+\log _8 x=2 \log _2 x \cdot \log _8 x$ 。
+
+              \sol{}
+              \begin{align*}
+                  \log_2 x + \log_8 x            & = 2 \log_2 x \cdot \log_8 x            \\
+                  \log_2 x + \dfrac{\log_2 x}{3} & = 2 \log_2 x \cdot \dfrac{\log_2 x}{3}
+              \end{align*}
+              设 $y = \log_2 x$, 则
+              \begin{align*}
+                  y + \dfrac{y}{3} & = 2y \cdot \dfrac{y}{3} \\
+                  y + \dfrac{y}{3} & = \dfrac{2y^2}{3}       \\
+                  3y + y           & = 2y^2                  \\
+                  y^2 - 2y         & = 0                     \\
+                  y(y - 2)         & = 0                     \\
+                  y                & = 0, 2
+              \end{align*}
+              当 $y = 0$ 时, $x = 1$; 当 $y = 2$ 时, $x = 4$.
+
+        \item 求对数方程式 $2 \log _x 8-3 \log _8 x=1$ 的解集。
+
+              \sol{}
+              \begin{align*}
+                  2 \log_x 8 - 3 \log_8 x                                     & = 1               \\
+                  \dfrac{2 \log_2 8}{\log_2 x} - \dfrac{3 \log_2 x}{\log_2 8} & = 1               \\
+                  \dfrac{6}{\log_2 x} - \dfrac{3 \log_2 x}{3}                 & = 1               \\
+                  \dfrac{6}{\log_2 x} - \log_2 x                              & = 1               \\
+                  \dfrac{6 - \log_2^2 x}{\log_2 x}                            & = 1               \\
+                  \log_2^2 x + \log_2 x - 6                                   & = 0               \\
+                  (\log_2 x - 2)(\log_2 x + 3)                                & = 0               \\
+                  \log_2 x                                                    & = 2, -3           \\
+                  x                                                           & = 4, \dfrac{1}{8}
+              \end{align*}
+              $\therefore$ 解集为 $\left\{4, \dfrac{1}{8}\right\}$.
+
+        \item 如果 $4^{\log _2\left(x^2-2 x-20\right)}=2^{\log _4 256}$, 求 $x$ 。
+
+              \sol{}
+              \begin{align*}
+                  4^{\log_2(x^2 - 2x - 20)}  & = 2^{\log_4 256} \\
+                  2^{2\log_2(x^2 - 2x - 20)} & = 2^{4}          \\
+                  \log_2(x^2 - 2x - 20)      & = 2              \\
+                  x^2 - 2x - 20              & = 4              \\
+                  x^2 - 2x - 24              & = 0              \\
+                  (x - 6)(x + 4)             & = 0              \\
+                  x                          & = 6, -4
+              \end{align*}
+
+        \item 解不等式 $\log \left(4-x^2\right)-\log (2+x)>0$ 。
+
+              \sol{}
+              \begin{align*}
+                  \log (4 - x^2) - \log (2 + x) & > 0     \\
+                  \log \dfrac{4 - x^2}{2 + x}   & > 0     \\
+                  \dfrac{4 - x^2}{2 + x}        & > 1     \\
+                  4 - x^2                       & > 2 + x \\
+                  x^2 + x - 2                   & < 0     \\
+                  (x + 2)(x - 1)                & < 0     \\
+                  -2 < x < 1
+              \end{align*}
+    \end{enumerate}
+
+    \subsection*{（作答题）}
+
+    \begin{enumerate}[leftmargin=*]
+        \item 若 $4 \log _9 x=4+3 \log _x 9$, 试求 $x$ 之值。
+
+              \sol{}
+              \begin{align*}
+                  4 \log_9 x          & = 4 + 3 \log_x 9 \\
+                  \dfrac{4}{\log_x 9} & = 4 + 3 \log_x 9 \\
+              \end{align*}
+              设 $y = \log_x 9$, 则
+              \begin{align*}
+                  \dfrac{4}{y}    & = 4 + 3y           \\
+                  4               & = 4y + 3y^2        \\
+                  3y^2 + 4y - 4   & = 0                \\
+                  (3y - 2)(y + 2) & = 0                \\
+                  y               & = \dfrac{2}{3}, -2
+              \end{align*}
+              当 $y = \dfrac{2}{3}$ 时,
+              \begin{align*}
+                  \log_x 9        & = \dfrac{2}{3}    \\
+                  x^{\frac{2}{3}} & = 9               \\
+                  x               & = 9^{\frac{3}{2}} \\
+                                  & = 27
+              \end{align*}
+              当 $y = -2$ 时,
+              \begin{align*}
+                  \log_x 9 & = -2           \\
+                  x^{-2}   & = 9            \\
+                  x        & = \dfrac{1}{3}
+              \end{align*}
+              $\therefore x = 27$ 或 $x = \dfrac{1}{3}$.
+
+        \item 解方程式 $\log _2 x=\log _x 4$, 答案准确至二位有效数字。
+
+              \sol{}
+              \begin{align*}
+                  \log_2 x     & = \log_x 4            \\
+                  \log_2 x     & = \dfrac{2}{\log_2 x} \\
+                  (\log_2 x)^2 & = 2                   \\
+                  \log_2 x     & = \sqrt{2}\ (x > 0)   \\
+                  x            & = 2^{\sqrt{2}}        \\
+                               & \approx 2.7
+              \end{align*}
+
+        \item 解不等式 $\log \dfrac{10 x-x^2}{21}>0$ 。
+
+              \sol{}
+              \begin{align*}
+                  \log \dfrac{10 x-x^2}{21} & > 0 \\
+                  \dfrac{10 x-x^2}{21}      & > 1 \\
+                  x^2 - 10x + 21            & < 0 \\
+                  (x - 3)(x - 7)            & < 0 \\
+                  3 < x < 7
+              \end{align*}
+
+        \item 解方程式 $4 \log _2 x=\log _x 4+\log _8 2$ 。
+
+              \sol{}
+              \begin{align*}
+                  4 \log_2 x & = \log_x 4 + \log_8 2                \\
+                  4 \log_2 x & = \dfrac{2}{\log_2 x} + \dfrac{1}{3}
+              \end{align*}
+              设 $y = \log_2 x$, 则
+              \begin{align*}
+                  4y               & = \dfrac{2}{y} + \dfrac{1}{3} \\
+                  12y^2 - y - 6    & = 0                           \\
+                  (4y - 3)(3y + 2) & = 0                           \\
+                  y                & = -\dfrac{2}{3}, \dfrac{3}{4}
+              \end{align*}
+              当 $y = -\dfrac{2}{3}$ 时,
+              \begin{align*}
+                  \log_2 x & = -\dfrac{2}{3}          \\
+                  x        & = 2^{-\frac{2}{3}}       \\
+                           & = \dfrac{1}{\sqrt[3]{4}}
+              \end{align*}
+              当 $y = \dfrac{3}{4}$ 时,
+              \begin{align*}
+                  \log_2 x & = \dfrac{3}{4}    \\
+                  x        & = 2^{\frac{3}{4}} \\
+                           & = \sqrt[4]{8}
+              \end{align*}
+              $\therefore x = \dfrac{1}{\sqrt[3]{4}}$ 或 $x = \sqrt[4]{8}$.
+
+        \item 解方程式 $\log _4 x+\log _2 x=6$ 。
+
+              \sol{}
+              \begin{align*}
+                  \log_4 x + \log_2 x            & = 6   \\
+                  \dfrac{\log_2 x}{2} + \log_2 x & = 6   \\
+                  \dfrac{3}{2} \log_2 x          & = 6   \\
+                  \log_2 x                       & = 4   \\
+                  x                              & = 2^4 \\
+                                                 & = 16
+              \end{align*}
+
+        \item 解方程式 $\dfrac{3}{2} \log _{10} x^3-\log _{10} \sqrt{x}-2 \log _{10} x=4$ 。
+
+              \sol{}
+              \begin{align*}
+                  \dfrac{3}{2} \log_{10} x^3 - \log_{10} \sqrt{x} - 2 \log_{10} x     & = 4 \\
+                  \dfrac{9}{2} \log_{10} x - \dfrac{1}{2} \log_{10} x - 2 \log_{10} x & = 4
+              \end{align*}
+              设 $y = \log_{10} x$, 则
+              \begin{align*}
+                  \dfrac{9}{2} y - \dfrac{1}{2} y - 2y & = 4    \\
+                  9y - y - 4y                          & = 8    \\
+                  4y                                   & = 8    \\
+                  y                                    & = 2    \\
+                  \log_{10} x                          & = 2    \\
+                  x                                    & = 10^2 \\
+                                                       & = 100
+              \end{align*}
+
+        \item 解方程式 $\log _2 x^2+\log _x 8=5$ 。
+
+              \sol{}
+              \begin{align*}
+                  \log_2 x^2 + \log_x 8           & = 5 \\
+                  2\log_2 x + \dfrac{3}{\log_2 x} & = 5
+              \end{align*}
+              设 $y = \log_2 x$, 则
+              \begin{align*}
+                  2y + \dfrac{3}{y} & = 5               \\
+                  2y^2 + 3          & = 5y              \\
+                  2y^2 - 5y + 3     & = 0               \\
+                  (2y - 3)(y - 1)   & = 0               \\
+                  y                 & = \dfrac{3}{2}, 1
+              \end{align*}
+              当 $y = \dfrac{3}{2}$ 时,
+              \begin{align*}
+                  \log_2 x & = \dfrac{3}{2} \\
+                  x        & = 2\sqrt{2}
+              \end{align*}
+              当 $y = 1$ 时,
+              \begin{align*}
+                  \log_2 x & = 1 \\
+                  x        & = 2
+              \end{align*}
+              $\therefore x = 2\sqrt{2}$ 或 $x = 2$.
+
+        \item 解方程式 $\log _3 x-2 \log _x 3=1$ 。
+
+              \sol{}
+              \begin{align*}
+                  \log_3 x - 2 \log_x 3          & = 1 \\
+                  \log_3 x - \dfrac{2}{\log_3 x} & = 1
+              \end{align*}
+              设 $y = \log_3 x$, 则
+              \begin{align*}
+                  y - \dfrac{2}{y} & = 1     \\
+                  y^2 - y - 2      & = 0     \\
+                  (y - 2)(y + 1)   & = 0     \\
+                  y                & = 2, -1
+              \end{align*}
+              当 $y = 2$ 时,
+              \begin{align*}
+                  \log_3 x & = 2 \\
+                  x        & = 9
+              \end{align*}
+              当 $y = -1$ 时,
+              \begin{align*}
+                  \log_3 x & = -1           \\
+                  x        & = \dfrac{1}{3}
+              \end{align*}
+
+        \item 解方程式 $\log \sqrt{x-21}+\dfrac{1}{2} \log x=1$ 。
+
+              \sol{}
+              \begin{align*}
+                  \log \sqrt{x-21} + \dfrac{1}{2} \log x & = 1            \\
+                  \log \sqrt{x-21} + \log \sqrt{x}       & = 1            \\
+                  \log \sqrt{x-21} \sqrt{x}              & = 1            \\
+                  \log \sqrt{x^2 - 21x}                  & = 1            \\
+                  \sqrt{x^2 - 21x}                       & = 10           \\
+                  x^2 - 21x                              & = 100          \\
+                  x^2 - 21x - 100                        & = 0            \\
+                  (x - 25)(x + 4)                        & = 0            \\
+                  x                                      & = 25\ (x > 21)
+              \end{align*}
+
+        \item 若 $\log _a\left(2 x^2-8\right)>\log _a\left(x^2-3 x+2\right)$, 其中 $0<a<1$, 求 $x$ 的限制范围。
+
+              \sol{}
+              \begin{align*}
+                  \log_a(2x^2 - 8) & > \log_a(x^2 - 3x + 2) \\
+                  2x^2 - 8         & < x^2 - 3x + 2         \\
+                  x^2 + 3x - 10    & < 0                    \\
+                  (x + 5)(x - 2)   & < 0                    \\
+                  -5 < x < 2
+              \end{align*}
+
+        \item 解方程式 $\log _2 x^2+\log _x 8=7$ 。
+
+              \sol{}
+              \begin{align*}
+                  \log_2 x^2 + \log_x 8           & = 7 \\
+                  2\log_2 x + \dfrac{3}{\log_2 x} & = 7
+              \end{align*}
+              设 $y = \log_2 x$, 则
+              \begin{align*}
+                  2y + \dfrac{3}{y} & = 7               \\
+                  2y^2 + 3          & = 7y              \\
+                  2y^2 - 7y + 3     & = 0               \\
+                  (2y - 1)(y - 3)   & = 0               \\
+                  y                 & = \dfrac{1}{2}, 3
+              \end{align*}
+              当 $y = \dfrac{1}{2}$ 时,
+              \begin{align*}
+                  \log_2 x & = \dfrac{1}{2} \\
+                  x        & = \sqrt{2}
+              \end{align*}
+              当 $y = 3$ 时,
+              \begin{align*}
+                  \log_2 x & = 3   \\
+                  x        & = 2^3 \\
+                           & = 8
+              \end{align*}
+              $\therefore x = \sqrt{2}$ 或 $x = 8$.
+
+        \item 解方程式 $\log _3\left(3^x+8\right)=\dfrac{x}{2}+1+\log _3 2$ 。
+
+              \sol{}
+              \begin{align*}
+                  \log _3\left(3^x+8\right)             & = \dfrac{x}{2}+1+\log _3 2  \\
+                  \log _3\left(3^x+8\right) - \log _3 2 & = \dfrac{x}{2}+1            \\
+                  \log _3\left(\dfrac{3^x+8}{2}\right)  & = \dfrac{x}{2}+1            \\
+                  \dfrac{3^x+8}{2}                      & = 3^{\frac{x}{2}+1}         \\
+                  3^x + 8                               & = 2 \cdot 3^{\frac{x}{2}+1} \\
+                  3^x + 8                               & = 6 \cdot 3^{\frac{x}{2}}
+              \end{align*}
+              设 $y = 3^{\frac{x}{2}}$, 则
+              \begin{align*}
+                  y^2 + 8        & = 6y   \\
+                  y^2 - 6y + 8   & = 0    \\
+                  (y - 2)(y - 4) & = 0    \\
+                  y              & = 2, 4
+              \end{align*}
+              当 $y = 2$ 时,
+              \begin{align*}
+                  3^{\frac{x}{2}} & = 2          \\
+                  \dfrac{x}{2}    & = \log_3 2   \\
+                  x               & = 2 \log_3 2
+              \end{align*}
+              当 $y = 4$ 时,
+              \begin{align*}
+                  3^{\frac{x}{2}} & = 4          \\
+                  \dfrac{x}{2}    & = \log_3 4   \\
+                  x               & = 4 \log_3 2
+              \end{align*}
+              $\therefore x = 2 \log_3 2$ 或 $x = 4 \log_3 2$.
+
+        \item 解方程式 $3^{2 \log x}-4\left(3^{\log x}\right)+3=0$ 。
+
+              \sol{}
+
+              设 $y = 3^{\log x}$, 则
+              \begin{align*}
+                  y^2 - 4y + 3   & = 0    \\
+                  (y - 3)(y - 1) & = 0    \\
+                  y              & = 3, 1
+              \end{align*}
+              当 $y = 3$ 时,
+              \begin{align*}
+                  3^{\log x} & = 3  \\
+                  \log x     & = 1  \\
+                  x          & = 10
+              \end{align*}
+              当 $y = 1$ 时,
+              \begin{align*}
+                  3^{\log x} & = 1 \\
+                  \log x     & = 0 \\
+                  x          & = 1
+              \end{align*}
+              $\therefore x = 10$ 或 $x = 1$.
+
+        \item 解方程式 $\log _4(3-x)+\log _{0.25}(3+x)=\log _4(1-x)+\log _{0.25}(2 x+1)$ 。
+
+              \sol{}
+              \begin{align*}
+                  \log_4(3 - x) + \log_{0.25}(3 + x) & = \log_4(1 - x)                    \\
+                                                     & \ \ \ \ + \log_{0.25}(2x + 1)      \\
+                  \log_4\dfrac{3-x}{1-x}             & = \log_{0.25}\dfrac{2x + 1}{3 + x} \\
+                                                     & = \log_4\dfrac{3 + x}{2x + 1}      \\
+                  \dfrac{3 - x}{1 - x}               & = \dfrac{3 + x}{2x + 1}            \\
+                  (3 - x)(2x + 1)                    & = (3 + x)(1 - x)                   \\
+                  -2x^2 + 5x + 3                     & = -x^2 - 2x + 3                    \\
+                  x^2 - 7x                           & = 0                                \\
+                  x(x - 7)                           & = 0                                \\
+                  x                                  & = 0, 7
+              \end{align*}
+    \end{enumerate}
+
+    \newpage
+    \section{对数函数及其图象}
+
+    \subsection*{（选择题）}
+    \begin{enumerate}[leftmargin=*]
+        \item 函数 $y=(0.2)^{-x}+1$ 的反函数是
+
+              \sol{}
+              设 $f(x) = (0.2)^{-x} + 1$,
+
+              设 $y = f^{-1}(x)$, 则 $f(y) = x$,
+              \begin{align*}
+                  (0.2)^{-y} + 1       & = x                                   \\
+                  (0.2)^{-y}           & = x - 1                               \\
+                  (0.2)^y              & = \dfrac{1}{x - 1}                    \\
+                  y                    & = \log_{\frac{1}{5}} \dfrac{1}{x - 1} \\
+                                       & = \log_5 (x - 1)                      \\
+                  \therefore f^{-1}(x) & = \log_5 (x - 1)
+              \end{align*}
+
+        \item 求函数 $f(x)=\sqrt{\log _2\left(x^2+8 x+8\right)}$ 的定义域。
+
+              \sol{}
+              \begin{align*}
+                  \log_2(x^2 + 8x + 8)    & \geq 0  \\
+                  x^2 + 8x + 8            & \geq 1  \\
+                  x^2 + 8x + 7            & \geq 0  \\
+                  (x + 1)(x + 7)          & \geq 0  \\
+                  x \leq -7 \ \text{或}\ x & \geq -1
+              \end{align*}
+              $\therefore$ 定义域为 $(-\infty, -7] \cup [-1, +\infty)$.
+    \end{enumerate}
+
+    \subsection*{（作答题）}
+    \begin{enumerate}[leftmargin=*]
+        \item 设函数 $f$ 的定义为 $f: x \rightarrow \log \left(9-x^2\right)$ 。试求函数的定义域及值域。
+
+              \sol{}
+              \begin{align*}
+                  9 - x^2        & > 0 \\
+                  (x + 3)(x - 3) & < 0 \\
+                  -3 < x < 3
+              \end{align*}
+              $\therefore$ 定义域为 $(-3, 3)$.
+
+              由于 $x^2 \geq 0$, $\therefore 9 - x^2 \leq 9$, $\therefore \log (9 - x^2) \leq \log 9$, $\therefore$ 值域为 $(-\infty, \log 9]$.
+    \end{enumerate}
+
+\end{multicols*}
+
+\end{document}
