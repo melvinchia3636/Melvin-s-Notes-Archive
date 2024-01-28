@@ -88,6 +88,7 @@
 - [年中考文学史.xlsx](<./华文/年中考文学史.xlsx>)
 - [年终考注释.docx](<./华文/年终考注释.docx>)
 - [年终考注释.pdf](<./华文/年终考注释.pdf>)
+- [毕业论文.docx](<./华文/毕业论文.docx>)
 - [高一古诗八首.md](<./华文/高一古诗八首.md>)
 - [应用文抄写1.docx](<./华文/应用文抄写1.docx>)
 - [2022年高一年中考课文注释.md](<./华文/2022年高一年中考课文注释.md>)
@@ -310,6 +311,7 @@
 <details>
 <summary>数学</summary>
 
+- [作业缴交情况清单.xlsx](<./数学/作业缴交情况清单.xlsx>)
 <dl><dd>
 <details>
 <summary>Add Math II</summary>
@@ -317,6 +319,7 @@
 - [S2 chp14 14.4.pdf](<./数学/Add Math II/S2 chp14 14.4.pdf>)
 - [S2 chp14 14.5&14.6.pdf](<./数学/Add Math II/S2 chp14 14.5&14.6.pdf>)
 - [S2 chp16 16.2&16.3.pdf](<./数学/Add Math II/S2 chp16 16.2&16.3.pdf>)
+- [S2 chp16 16.4.pdf](<./数学/Add Math II/S2 chp16 16.4.pdf>)
 
 </details>
 </dd></dl>
@@ -551,6 +554,18 @@
 </details>
 </dd></dl></dd></dl></dd></dl>
 
+
+</details>
+</dd></dl></dd></dl>
+
+<dl><dd><dl><dd>
+<details>
+<summary>Logarithmic & Exponential Functions</summary>
+
+- [UEAM II.pdf](<./数学/Other Topics/Logarithmic & Exponential Functions/UEAM II.pdf>)
+- [UEAM II.tex](<./数学/Other Topics/Logarithmic & Exponential Functions/UEAM II.tex>)
+- [981-3089-80-6.pdf](<./数学/Other Topics/Logarithmic & Exponential Functions/981-3089-80-6.pdf>)
+- [981-3089-80-6.tex](<./数学/Other Topics/Logarithmic & Exponential Functions/981-3089-80-6.tex>)
 
 </details>
 </dd></dl></dd></dl>
