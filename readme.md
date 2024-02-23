@@ -89,6 +89,7 @@
 - [年终考注释.docx](<./华文/年终考注释.docx>)
 - [年终考注释.pdf](<./华文/年终考注释.pdf>)
 - [毕业论文.docx](<./华文/毕业论文.docx>)
+- [谱集目录.docx](<./华文/谱集目录.docx>)
 - [高一古诗八首.md](<./华文/高一古诗八首.md>)
 - [应用文抄写1.docx](<./华文/应用文抄写1.docx>)
 - [2022年高一年中考课文注释.md](<./华文/2022年高一年中考课文注释.md>)
@@ -366,6 +367,16 @@
 - [Exercise 5a.tex](<./数学/Other Topics/Conic Section/Exercise 5a.tex>)
 - [Exercise 5b.pdf](<./数学/Other Topics/Conic Section/Exercise 5b.pdf>)
 - [Exercise 5b.tex](<./数学/Other Topics/Conic Section/Exercise 5b.tex>)
+- [Exercise 5c.pdf](<./数学/Other Topics/Conic Section/Exercise 5c.pdf>)
+- [Exercise 5c.tex](<./数学/Other Topics/Conic Section/Exercise 5c.tex>)
+<dl><dd><dl><dd><dl><dd>
+<details>
+<summary>assets</summary>
+
+
+</details>
+</dd></dl></dd></dl></dd></dl>
+
 
 </details>
 </dd></dl></dd></dl>
@@ -649,6 +660,34 @@
 - [insurance.tex](<./数学/SPM/Insurance/insurance.tex>)
 - [spm_practice.pdf](<./数学/SPM/Insurance/spm_practice.pdf>)
 - [spm_practice.tex](<./数学/SPM/Insurance/spm_practice.tex>)
+
+</details>
+</dd></dl></dd></dl>
+
+<dl><dd><dl><dd>
+<details>
+<summary>Model Paper</summary>
+
+<dl><dd><dl><dd><dl><dd>
+<details>
+<summary>Model 1</summary>
+
+- [paper1.pdf](<./数学/SPM/Model Paper/Model 1/paper1.pdf>)
+- [paper1.tex](<./数学/SPM/Model Paper/Model 1/paper1.tex>)
+- [paper2.pdf](<./数学/SPM/Model Paper/Model 1/paper2.pdf>)
+- [paper2.tex](<./数学/SPM/Model Paper/Model 1/paper2.tex>)
+<dl><dd><dl><dd><dl><dd><dl><dd>
+<details>
+<summary>assets</summary>
+
+
+</details>
+</dd></dl></dd></dl></dd></dl></dd></dl>
+
+
+</details>
+</dd></dl></dd></dl></dd></dl>
+
 
 </details>
 </dd></dl></dd></dl>
