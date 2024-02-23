@@ -378,31 +378,425 @@
                         \item $q$.
                     \end{enumerate}
           \end{enumerate}
+          \sol{}
+
+          Lazy to do this. =)
 
     \item Diagram 3 shows a straight line $A B$ which intersects a straight line $B C$ at
           point $B$. The point $C$ lies on the $y$-axis.
+          \begin{center}
+              \includegraphics[width=0.4\textwidth]{./assets/10.png}
+          \end{center}
+
+          \newpage
           \begin{enumerate}
               \item Find
                     \begin{enumerate}
                         \item the equation of the straight line $A B$,
+
+                              \sol{}
+                              \begin{align*}
+                                  2x - y -20 & = 0       \\
+                                  y          & = 2x - 20 \\
+                                  m          & = 2
+                              \end{align*}
+                              $\because$ $AB$ is perpendicular to the line $BC$.
+
+                              $\therefore$ the gradient of $AB$ is $-\dfrac{1}{2}$.
+                              \begin{align*}
+                                  y - 4  & = -\frac{1}{2}(x-2) \\
+                                  2y - 8 & = -x+2              \\
+                                  x + 2y & = 10
+                              \end{align*}
+
                         \item the coordinates of point $B$.
+
+                              \sol{}
+
+                              Point $B$ is touching the $x$-axis. Therefore, the $y$-coordinate of point $B$
+                              is 0.
+
+                              When $y=0$,
+                              \begin{align*}
+                                  0 & = 2x - 20 \\
+                                  x & = 10
+                              \end{align*}
+                              Therefore, the coordinates of point $B$ are $(10,0)$.
                     \end{enumerate}
 
               \item The straight line $A B$ is extended to point $D$ such that $A B: B D=1: 3$.
                     Find the coordinates of point $D$.
+
+                    \sol{}
+
+                    Let the coordinates of point $D$ be $(x, y)$.
+                    \begin{align*}
+                        \left(\dfrac{3(2) + 1(x)}{4}, \dfrac{3(4) + 1(y)}{4}\right) & = (10,0) \\
+                        \left(\dfrac{6 + x}{4}, \dfrac{12 + y}{4}\right)            & = (10,0) \\
+                        \dfrac{6 + x}{4}                                            & = 10     \\
+                        6 + x                                                       & = 40     \\
+                        x                                                           & = 34     \\
+                        \dfrac{12 + y}{4}                                           & = 0      \\
+                        12 + y                                                      & = 0      \\
+                        y                                                           & = -12
+                    \end{align*}
+                    Therefore, the coordinates of point $D$ are $(34,-12)$.
+
+                    \newpage
               \item Point $P$ moves such that its distance from point $A$ is always 5 units. Find
                     the equation of the locus of point $P$.
 
+                    \sol{}
+
+                    The locus of point $P$ is a circle with centre $(2, 4)$ and radius 5.
+                    \begin{align*}
+                        (x-2)^2 + (y-4)^2            & = 5^2 \\
+                        x^2 - 4x + 4 + y^2 - 8y + 16 & = 25  \\
+                        x^2 + y^2 - 4x - 8y - 5      & = 0
+                    \end{align*}
+
               \item Determine whether point $(2,6)$ lies in the locus of point $P$.
+
+                    \sol{}
+                    When $x=2$ and $y=6$,
+                    \begin{align*}
+                        2^2 + 6^2 - 4(2) - 8(6) - 5 & = 4 + 36 - 8 - 48 - 5 \\
+                                                    & = -21 \neq 0
+                    \end{align*}
+                    Therefore, point $(2,6)$ does not lie in the locus of point $P$.
           \end{enumerate}
     \item \begin{enumerate}
               \item Find the range of values of $x$ if $(x-2)^2>16-3 x$.
+
+                    \sol{}
+                    \begin{align*}
+                        (x-2)^2         & > 16-3x            \\
+                        x^2-4x+4        & > 16-3x            \\
+                        x^2-x-12        & > 0                \\
+                        (x-4)(x+3)      & > 0                \\
+                        x          < -3 & \ \text{or}\ x > 4
+                    \end{align*}
+
               \item Diagram 4 shows the curve of a quadratic function $f(x)=x^2+m x+8$. The curve
                     has a minimum point $B(3, h)$ and intersects the $f(x)$-axis at point $A$.
+                    \begin{center}
+                        \includegraphics[width=0.4\textwidth]{./assets/11b.png}
+                    \end{center}
                     \begin{enumerate}
                         \item Find the coordinates of point $A$.
-                        \item By using the method of completing the square, find the value of $m$ and of $h$. \item Determine the range of values of $x$ if $f(x)<8$.
+
+                              \sol{}
+
+                              When the curve intersects the $f(x)$-axis, $x=0$.
+                              \begin{align*}
+                                  f(0) & = 0^2 + m(0) + 8 \\
+                                       & = 8
+                              \end{align*}
+                              Therefore, the coordinates of point $A$ are $(0,8)$.
+
+                        \item By using the method of completing the square, find the value of $m$ and of $h$. 
+
+                              \sol{}
+                              \begin{align*}
+                                  f(x) & = x^2 + m x + 8                                              \\
+                                       & = \left(x^2 + m x + \frac{m^2}{4}\right) - \frac{m^2}{4} + 8 \\
+                                       & = \left(x+\frac{m}{2}\right)^2 - \frac{m^2}{4} + 8           \\
+                                       & = \left(x+\frac{m}{2}\right)^2 - \frac{m^2-32}{4}
+                              \end{align*}
+                              The minimum point is $\left(-\dfrac{m}{2}, \dfrac{m^2-32}{4}\right) = (3, h)$.
+                              \begin{align*}
+                                  -\frac{m}{2} & = 3  \\
+                                  m            & = -6
+                              \end{align*}
+                              \begin{align*}
+                                  h & = \frac{m^2-32}{4}    \\
+                                    & = \frac{(-6)^2-32}{4} \\
+                                    & = \frac{36-32}{4}     \\
+                                    & = 1
+                              \end{align*}
+                              Therefore, $m=-6$ and $h=1$.
+
+                        \item Determine the range of values of $x$ if $f(x)<8$.
+
+                              \sol{}
+                              \begin{align*}
+                                  f(x)     & < 8   \\
+                                  x^2-6x+8 & < 8   \\
+                                  x^2-6x   & < 0   \\
+                                  x(x-6)   & < 0   \\
+                                  0 <      & x < 6
+                              \end{align*}
                     \end{enumerate}
+          \end{enumerate}
+
+    \item A particle moves along a straight line and passes through a fixed point $O$
+          with a velocity of $14 \mathrm{~m} \mathrm{~s}^{-1}$. Its acceleration, a
+          $\mathrm{m} \mathrm{s}^{-2}$, at $t$ seconds after passing through $O$ is given
+          by $a=5-2 t$.
+          \begin{enumerate}
+              \item Find the instantaneous displacement, in $m$, of the particle when
+                    \begin{enumerate}
+                        \item $t=3$
+
+                              \sol{}
+                              \begin{align*}
+                                  a & = 5 - 2t            \\
+                                  v & = \int a \, dt      \\
+                                    & = \int (5-2t) \, dt \\
+                                    & = 5t - t^2 + C
+                              \end{align*}
+                              When $t=0$, $v=14$.
+                              \begin{align*}
+                                  14 & = 5(0) - (0)^2 + C \\
+                                  C  & = 14
+                              \end{align*}
+                              Therefore, $v=5t-t^2+14$.
+                              \begin{align*}
+                                  s & = \int v \, dt                              \\
+                                    & = \int (5t-t^2+14) \, dt                    \\
+                                    & = \frac{5}{2}t^2 - \frac{1}{3}t^3 + 14t + C
+                              \end{align*}
+                              When $t=0$, $s=0$.
+                              \begin{align*}
+                                  0 & = \frac{5}{2}(0)^2 - \frac{1}{3}(0)^3 + 14(0) + C \\
+                                  C & = 0
+                              \end{align*}
+                              Therefore, $s=\dfrac{5}{2}t^2 - \dfrac{1}{3}t^3 + 14t$.
+                              \begin{align*}
+                                  s(3) & = \dfrac{5}{2}(3)^2 - \dfrac{1}{3}(3)^3 + 14(3) \\
+                                       & = \dfrac{45}{2} - 9 + 42                        \\
+                                       & = 55.5 \text{ m}
+                              \end{align*}
+
+                        \item the particle is insantaneously at rest.
+
+                              \sol{}
+                              \begin{align*}
+                                  v          & = 0                                   \\
+                                  5t-t^2+14  & = 0                                   \\
+                                  t^2-5t-14  & = 0                                   \\
+                                  (t-7)(t+2) & = 0                                   \\
+                                  t= 7\      & \text{or}\ t = -2 \ (\text{rejected})
+                              \end{align*}
+                              When $t=7$,
+                              \begin{align*}
+                                  s & = \dfrac{5}{2}(7)^2 - \dfrac{1}{3}(7)^3 + 14(7) \\
+                                    & \approx 106.17 \text{ m}
+                              \end{align*}
+                    \end{enumerate}
+
+                    \newpage
+              \item Then, find the distance, in $m$, travelled by the particle at the $8^{\text {th
+                                }}$ second.
+
+                    \sol{}
+                    \begin{align*}
+                        s & = \left|s(8) - s(7)\right|                                                                                                             \\
+                          & = \left|\left(\dfrac{5}{2}(8)^2 - \dfrac{1}{3}(8)^3 + 14(8)\right) - \left(\dfrac{5}{2}(7)^2 - \dfrac{1}{3}(7)^3 + 14(7)\right)\right| \\
+                          & = \left|-4\dfrac{5}{6}\right|                                                                                                          \\
+                          & = 4\dfrac{5}{6} \text{ m}
+                    \end{align*}
+          \end{enumerate}
+
+    \item Use graph paper to answer this question.
+
+          A bookshop buys $x$ English storybooks and $y$ Malay storybooks. The prices of
+          each English storybook and Malay storybook are RM40 and RM30 respectively. The
+          purchase of the storybooks is based on the following constraints:
+
+          \begin{enumerate}[label=\Roman{*}:]
+              \item The total amount allocated is RM2 000.
+              \item The number of Malay storybooks is not more than four times the number of
+                    English storybooks.
+              \item The number of English storybooks is at most three times the number of Malay
+                    storybooks.
+          \end{enumerate}
+          \begin{enumerate}
+              \item Write three inequalities, other than $x \geqslant 0$ and $y \geqslant 0$ that
+                    satisfy all the given constraints.
+
+                    \sol{}
+                    \begin{enumerate}[label=\Roman{*}:]
+                        \item $40x + 30y \leq 2000$
+                        \item $y \leq 4x$
+                        \item $x \leq 3y$
+                    \end{enumerate}
+
+              \item Using a scale of $2 \mathrm{~cm}$ to 10 storybooks on both axes, construct and
+                    shade the region $R$ which satisfies all the given constraints.
+
+                    \sol{}
+                    \begin{center}
+                        \includegraphics[width=0.4\textwidth]{./assets/13.4.png}
+                    \end{center}
+              \item Using the graph constructed in 13(b), find
+                    \begin{enumerate}
+                        \item the minimum number of Malay storybooks bought if the number of English
+                              storybooks bought is 30,
+
+                              \sol{}
+
+                              According to the graph, the minimum number of Malay storybooks bought is 10.
+
+                        \item the maximum total number of storybooks that can be bought.
+
+                              \sol{}
+
+                              According to the graph, the maximum total number of storybooks that can be
+                              bought is 62.
+                    \end{enumerate}
+          \end{enumerate}
+    \item Table 2 shows the price indices and changes in price indices of four raw
+          materials, $A, B, C$ and $D$, used in the production of a type of snack in a
+          factory.
+          \begin{center}
+              \begin{tabular}{|c|c|c|}
+                  \hline \begin{tabular}{c}
+
+                             Raw \\ material
+                         \end{tabular} & \begin{tabular}{c}
+                                             Price index in the \\
+                                             year 2020 based    \\
+                                             on the year 2019
+                                         \end{tabular} & \begin{tabular}{c}
+                                                             Change in price  \\
+                                                             index from the   \\
+                                                             year 2020 to the \\
+                                                             year 2022
+                                                         \end{tabular}              \\
+                  \hline A                  & 130                                     & \begin{tabular}{c}
+
+                                                                                            $15 \%$ increase
+                                                                                        \end{tabular} \\
+                  \hline$B$                 & 110                                     & \begin{tabular}{c}
+
+                                                                                            $5 \%$ increase
+                                                                                        \end{tabular} \\
+                  \hline$C$                 & 150                                     & \begin{tabular}{c}
+
+                                                                                            No change
+                                                                                        \end{tabular} \\
+                  \hline$D$                 & 140                                     & \begin{tabular}{c}
+
+                                                                                            $10 \%$ decrease
+                                                                                        \end{tabular} \\
+                  \hline
+              \end{tabular}
+          \end{center}
+
+          Diagram 5 shows a bar chart which represents the mass of the raw materials used
+          to make the snacks in the year 2019.
+          \begin{center}
+              \includegraphics[width=0.5\textwidth]{./assets/14a.png}
+          \end{center}
+          \begin{enumerate}
+              \item The price of raw material $A$ in the year 2020 was RM110. Find the
+                    corresponding price in the year 2019.
+
+                    \sol{}
+                    \begin{align*}
+                        \text{Price index} & = \frac{P_{2020}}{P_{2019}} \times 100 \\
+                        130                & = \frac{110}{P_{2019}} \times 100      \\
+                        P_{2019}           & = \frac{110}{130} \times 100           \\
+                                           & = \text{RM }84.62
+                    \end{align*}
+
+              \item  Find the price index of each material in the year 2022 based on the year 2019.
+                    \sol{}
+                    \begin{align*}
+                        \text{Price Index of A}_{2022/2019} & = 130 \times 115\% = 149.5 \\
+                        \text{Price Index of B}_{2022/2019} & = 110 \times 105\% = 115.5 \\
+                        \text{Price Index of C}_{2022/2019} & = 150 \times 100\% = 150   \\
+                        \text{Price Index of D}_{2022/2019} & = 140 \times 90\% = 126
+                    \end{align*}
+
+                    \newpage
+              \item \begin{enumerate}
+                        \item Calculate the composite index for the cost of producing the snacks in the year
+                              2022 based on the year 2019.
+
+                              \sol{}
+                              \begin{align*}
+                                  \text{Composite index} & = \frac{149.5 \times 40 + 115.5 \times 20 + 150 \times 30 + 126 \times 35}{40+20+30+35} \\
+                                                         & = \frac{5980 + 2310 + 4500 + 4410}{125}                                                 \\
+                                                         & = \frac{17200}{125}                                                                     \\
+                                                         & = 137.6
+                              \end{align*}
+
+                        \item Hence, find the cost of producing the snacks in the year 2019 if the
+                              corresponding cost in the year 2022 is RM325.40.
+
+                              \sol{}
+                              \begin{align*}
+                                  \dfrac{P_{2022}}{P_{2019}} \times 100 & = 137.6                            \\
+                                  \dfrac{325.40}{P_{2019}} \times 100   & = 137.6                            \\
+                                  P_{2019}                              & = \dfrac{325.40}{137.6} \times 100 \\
+                                                                        & = \text{RM }236.48
+                              \end{align*}
+                    \end{enumerate}
+          \end{enumerate}
+
+    \item Diagram 6 shows a quadrilateral $P Q R S$ inscribed in a circle.
+
+          It is given that $P Q=12 \mathrm{~cm}, Q R=8 \mathrm{~cm}, R S=6 \mathrm{~cm}$
+          and $\angle P Q R=70^{\circ}$.
+          \begin{center}
+              \includegraphics[width=0.4\textwidth]{./assets/1555.png}
+          \end{center}
+          \begin{enumerate}
+              \item Calculate
+                    \begin{enumerate}
+                        \item the length, in $\mathrm{cm}$, of $P R$,
+
+                              \sol{}
+                              \begin{align*}
+                                  PR & = \sqrt{12^2 + 8^2 - 2(12)(8)\cos 70^{\circ}} \\
+                                     & \approx 11.93 \text{ cm}
+                              \end{align*}
+
+                        \item $\angle P R S$.
+
+                              \sol{}
+                              \begin{align*}
+                                  \angle PSR                      & = 180^{\circ} - 70^{\circ}                  \\
+                                                                  & = 110^{\circ}                               \\
+                                  \dfrac{PR}{\sin \angle PSR}     & = \dfrac{RS}{\sin \angle SPR}               \\
+                                  \dfrac{11.93}{\sin 110^{\circ}} & = \dfrac{6}{\sin \angle SPR}                \\
+                                  \sin \angle SPR                 & = \dfrac{6 \sin 110^{\circ}}{11.93}         \\
+                                                                  & \approx 0.47                                \\
+                                  \angle SPR                      & \approx 28.20^{\circ}                       \\
+                                  \angle PRS                      & = 180^{\circ} - 110^{\circ} - 28.20^{\circ} \\
+                                                                  & = 41.80^{\circ}
+                              \end{align*}
+                    \end{enumerate}
+
+              \item Find the area, in $\mathrm{cm}^2$, of triangle $P Q R$.
+
+                    \sol{}
+                    \begin{align*}
+                        \text{Area of triangle } PQR & = \frac{1}{2} \times 12 \times 8 \times \sin 70^{\circ} \\
+                                                     & \approx 45.11 \mathrm{~cm}^2
+                    \end{align*}
+
+              \item Find the shortest distance, in $\mathrm{cm}$, from point $Q$ to the straight
+                    line PR.
+
+                    \sol{}
+
+                    The shortest distance from point $Q$ to the straight line $PR$ is the
+                    perpendicular distance from point $Q$ to the straight line $PR$.
+
+                    Let the shortest distance be $h$.
+                    \begin{align*}
+                        \dfrac{QR}{\sin \angle RPQ} & = \dfrac{PR}{\sin \angle PQR}      \\
+                        \dfrac{8}{\sin RPQ}         & = \dfrac{11.93}{\sin 70^{\circ}}   \\
+                        \sin RPQ                    & = \dfrac{8 \sin 70^{\circ}}{11.93} \\
+                                                    & \approx 0.63                       \\
+                        \angle RPQ                  & \approx 39.06^{\circ}              \\
+                        \dfrac{h}{PQ}               & = \sin 39.06^{\circ}               \\
+                        h                           & = 12 \sin 39.06^{\circ}            \\
+                                                    & \approx 7.56 \mathrm{~cm}
+                    \end{align*}
           \end{enumerate}
 \end{enumerate}
 \end{document}
