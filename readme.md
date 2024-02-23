@@ -688,6 +688,24 @@
 </details>
 </dd></dl></dd></dl></dd></dl>
 
+<dl><dd><dl><dd><dl><dd>
+<details>
+<summary>Model 2</summary>
+
+- [paper1.pdf](<./数学/SPM/Model Paper/Model 2/paper1.pdf>)
+- [paper1.tex](<./数学/SPM/Model Paper/Model 2/paper1.tex>)
+<dl><dd><dl><dd><dl><dd><dl><dd>
+<details>
+<summary>assets</summary>
+
+
+</details>
+</dd></dl></dd></dl></dd></dl></dd></dl>
+
+
+</details>
+</dd></dl></dd></dl></dd></dl>
+
 
 </details>
 </dd></dl></dd></dl>
@@ -793,6 +811,24 @@
 
 - [Prac5.pdf](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 5 Probablity Distribution/Prac5.pdf>)
 - [Prac5.tex](<./数学/SPM/Praktis Intensif Dwibahasa Form 5/Praktis 5 Probablity Distribution/Prac5.tex>)
+
+</details>
+</dd></dl></dd></dl></dd></dl>
+
+
+</details>
+</dd></dl></dd></dl>
+
+<dl><dd><dl><dd>
+<details>
+<summary>2022</summary>
+
+- [paper1.pdf](<./数学/SPM/2022/paper1.pdf>)
+- [paper1.tex](<./数学/SPM/2022/paper1.tex>)
+<dl><dd><dl><dd><dl><dd>
+<details>
+<summary>assets</summary>
+
 
 </details>
 </dd></dl></dd></dl></dd></dl>
