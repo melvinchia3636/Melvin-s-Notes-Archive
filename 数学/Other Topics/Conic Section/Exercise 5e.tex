@@ -1,0 +1,162 @@
+\documentclass{report}
+\usepackage[a4paper,total={7in,10in}]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{tikz, pgfplots}
+\usepackage{multicol}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usetikzlibrary{arrows}
+
+\setcounter{chapter}{10}
+\setcounter{section}{2}
+
+\newcommand{\sol}{\vspace{1em}\\\textbf{Sol.}}
+\newcommand{\proof}{\vspace{1em}\\\textbf{Proof.}}
+\newcommand{\eos}{ \qquad \square}
+\counterwithout{equation}{chapter} % remove the chapter number
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+
+\begin{document}
+\section*{Exercise 5e}
+
+\onehalfspacing
+\begin{enumerate}[leftmargin=*]
+    \item Find the equation of the rectangular hyperbola that satisfies the following
+          conditions:
+          \begin{enumerate}[label=(\alph*)]
+              \item Vertex coordinates are $(-2,0)$ and $(2,0)$. \sol{}
+
+                    Since the vertices are on the x-axis, the equation of the hyperbola is of the
+                    form
+                    \begin{equation*}
+                        \frac{x^2}{a^2} - \frac{y^2}{b^2} = 1
+                    \end{equation*}
+                    Since $a = b$, the equation becomes
+                    \begin{align*}
+                        \frac{x^2}{a^2} - \frac{y^2}{a^2} & = 1   \\
+                        \frac{x^2 - y^2}{a^2}             & = 1   \\
+                        x^2 - y^2                         & = a^2
+                    \end{align*}
+                    Substituting the coordinates of the vertices, we get
+                    \begin{align*}
+                        (-2)^2 - 0^2 & = a^2 \\
+                        4            & = a^2
+                    \end{align*}
+                    Therefore, the equation of the hyperbola is
+                    \begin{equation*}
+                        x^2 - y^2 = 4 \eos
+                    \end{equation*}
+
+              \item Focus coordinates are $(0,0)$ and $(0,4)$. \sol{}
+
+                    The center of the hyperbola is at the midpoint of the foci, which is $(0,2)$.
+
+                    Translate the foci to the origin and form a new coordinates system such that
+                    \begin{align*}
+                        x' & = x - 0 \qquad \text{and} \qquad y' = y - 2
+                    \end{align*}
+                    The foci are now at $(0,-2)$ and $(0,2)$.
+
+                    Let the rectangular hyperbola be of the form
+                    \begin{equation*}
+                        x'^2 - y'^2 = a^2
+                    \end{equation*}
+                    \begin{align*}
+                        ae   & = 2            \\
+                        a^2  & = a^2e^2 - a^2 \\
+                             & = 4 - a^2      \\
+                        2a^2 & = 4            \\
+                        a^2  & = 2
+                    \end{align*}
+                    Therefore, the equation of the hyperbola is
+                    \begin{equation*}
+                        (y-2)^2 - x^2 = 2 \implies y^2 - 4y + 4 - x^2 = 2 \implies x^2 - y^2 + 4y - 2 = 0 \eos
+                    \end{equation*}
+          \end{enumerate}
+
+    \item Given that the equations of the asymptotes of a rectangular hyperbola are
+          $x-y-1=0$ and $x+y-3=0$, and it passes through the point $(4,1+\sqrt{3})$, find
+          its equation. \sol{}
+          \begin{align*}
+              x - y - 1 = 0     & \text{ or } x + y - 3 = 0  \\
+              x = y + 1         & \text{ or } x = -y + 3     \\
+              x - 2 = y - 1     & \text{ or } x - 2 = -y + 1 \\
+              x - 2             & = \pm(y - 1)               \\
+              (x-2)^2           & = (y-1)^2                  \\
+              (x-2)^2 - (y-1)^2 & = k
+          \end{align*}
+          Substituting the point $(4,1+\sqrt{3})$ into the equation, we get
+          \begin{align*}
+              (4-2)^2 - (1+\sqrt{3}-1)^2 & = k \\
+              2^2 - (\sqrt{3})^2         & = k \\
+              4 - 3                      & = k \\
+              k                          & = 1
+          \end{align*}
+          Therefore, the equation of the hyperbola is
+          \begin{align*}
+              (x-2)^2 - (y-1)^2           & = 1      \\
+              x^2 - 4x + 4 - y^2 + 2y - 1 & = 1      \\
+              x^2 - y^2 - 4x + 2y + 2     & = 0 \eos
+          \end{align*}
+
+    \item Find a point $\mathrm{P}(a, b)$ on the right branch of the rectangular
+          hyperbola $x^2-y^2=1$ such that the distance from point $\mathrm{P}$ to the
+          line $x-y=0$ is $\sqrt{2}$. \sol{}
+
+          Substituting $P(a,b)$ into the equation of the line, we get
+          \begin{align*}
+              a^2 - b^2                         & = 1 \implies a^2 = 1 + b^2        \\
+              a > 0 \implies a = \sqrt{1 + b^2} & > \sqrt{b^2} = |b| \implies a > b \\
+              \frac{|a - b|}{\sqrt{2}}          & = \sqrt{2}                        \\
+              a - b                             & = 2                               \\
+              a                                 & = b + 2                           \\
+              (b+2)^2 - b^2                     & = 1                               \\
+              b^2 + 4b + 4 - b^2                & = 1                               \\
+              4b                                & = -3                              \\
+              b                                 & = -\frac{3}{4}                    \\
+              a                                 & = -\frac{3}{4} + 2 = \frac{5}{4}
+          \end{align*}
+          Therefore, the point $P$ is $\left(\dfrac{5}{4}, -\dfrac{3}{4}\right)$. $\eos$
+
+    \item Prove that the product of the distances from any point on a rectangular
+          hyperbola to its two foci is equal to the square of the distance from that
+          point to the center of the hyperbola. \proof{}
+
+          Let the rectangular hyperbola be of the form
+          \begin{equation*}
+              x^2 - y^2 = a^2
+          \end{equation*}
+          The center of the hyperbola is at the origin, and the foci are at $(\pm ae, 0)$.
+          \begin{align*}
+              a^2  & = a^2e^2 - a^2 \\
+              2a^2 & = e^2a^2       \\
+              e^2  & = 2            \\
+              e    & = \sqrt{2}
+          \end{align*}
+          Therefore, the foci are at $(\pm \sqrt{2}a, 0)$.
+
+          The distance from $P$ to the foci is
+          \begin{align*}
+              d_1d_2 & = \sqrt{(x - \sqrt{2}a)^2 + y^2} \sqrt{(x + \sqrt{2}a)^2 + y^2}               \\
+                     & = \sqrt{x^2 - 2\sqrt{2}ax + 2a^2 + y^2} \sqrt{x^2 + 2\sqrt{2}ax + 2a^2 + y^2} \\
+                     & = \sqrt{(x^2 + y^2 + 2a^2)^2 - (2\sqrt{2}ax)^2}                               \\
+                     & = \sqrt{x^4 + y^4 + 4a^4 + 2x^2y^2 + 4a^2x^2 + 4a^2y^2 - 8a^2x^2}             \\
+                     & = \sqrt{(x^2 + y^2)^2 + 4a^4 + 4a^2y^2 - 4a^2x^2}                             \\
+                     & = \sqrt{(x^2 + y^2)^2 + 4a^4 - 4a^2(x^2 - y^2)}                               \\
+                     & = \sqrt{(x^2 + y^2)^2 + 4a^4 - 4a^2a^2}                                       \\
+                     & = \sqrt{(x^2 + y^2)^2}                                                        \\
+                     & = x^2 + y^2
+          \end{align*}
+          The distance from $P$ to the center of the hyperbola is
+          \begin{align*}
+              d_3^2 & = (\sqrt{x^2 + y^2})^2 = x^2 + y^2
+          \end{align*}
+          $\because d_1d_2 = d_3^2$,
+
+          $\therefore$ the product of the distances from any point on a rectangular hyperbola to its two foci is equal to the square of the distance from that point to the center of the hyperbola. $\eos$
+
+\end{enumerate}
+\end{document}

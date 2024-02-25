@@ -1,0 +1,413 @@
+\documentclass{report}
+\usepackage[a4paper,total={7in,10in}]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{tikz, pgfplots}
+\usepackage{multicol}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usetikzlibrary{arrows}
+
+\setcounter{chapter}{10}
+\setcounter{section}{2}
+
+\newcommand{\sol}{\vspace{1em}\\\textbf{Sol.}}
+\newcommand{\proof}{\vspace{1em}\\\textbf{Proof.}}
+\newcommand{\eos}{ \qquad \square}
+\counterwithout{equation}{chapter} % remove the chapter number
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+
+\begin{document}
+\section*{Exercise 5d}
+
+\onehalfspacing
+\begin{enumerate}[leftmargin=*]
+    \item Find the standard equations of hyperbolas that satisfy the following
+          conditions:
+          \begin{enumerate}
+              \item $a=4, b=3$, with foci on the $x$-axis.
+                    \sol{}
+
+                    Since the foci are on the $x$-axis, the hyperbola is of the form
+                    $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1$.
+
+                    Substituting $a=4, b=3$, we get $\dfrac{x^2}{16}-\dfrac{y^2}{9}=1$. $\eos$
+
+              \item $a=2 \sqrt{5}$, passing through the point $\mathrm{A}(2,-5)$, with foci on the $y$-axis.
+                    \sol{}
+
+                    Since the foci are on the $y$-axis, the hyperbola is of the form
+                    $\dfrac{y^2}{b^2}-\dfrac{x^2}{a^2}=1$.
+
+                    Substituting $a=2 \sqrt{5}$, and the point $\mathrm{A}(2,-5)$, we get
+                    $\dfrac{y^2}{20}-\dfrac{x^2}{b^2}=1$.
+
+                    Substituting the point $\mathrm{A}(2,-5)$, we get
+                    \begin{align*}
+                        \dfrac{(-5)^2}{20}-\dfrac{2^2}{b^2} & =1              \\
+                        \dfrac{25}{20}-\dfrac{4}{b^2}       & =1              \\
+                        \dfrac{5}{4}-\dfrac{4}{b^2}         & =1              \\
+                        \dfrac{1}{4}                        & =\dfrac{4}{b^2} \\
+                        b^2                                 & =16             \\
+                        b                                   & =4
+                    \end{align*}
+                    Hence, the equation of the hyperbola is $\dfrac{y^2}{20}-\dfrac{x^2}{16}=1$. $\eos$
+
+              \item Foci coordinates are $(0,-5), (0,5)$, eccentricity is $\dfrac{5}{4}$. \sol{}
+
+                    Since the foci are on the $y$-axis, the hyperbola is of the form
+                    $\dfrac{y^2}{a^2}-\dfrac{x^2}{b^2}=1$.
+                    \begin{align*}
+                        ae            & = 5            \\
+                        \dfrac{5}{4}a & = 5            \\
+                        a             & = 4            \\
+                        a^2e^2        & = 25           \\
+                        b^2           & = a^2e^2 - a^2 \\
+                                      & = 25 - 16      \\
+                                      & = 9            \\
+                        b             & = 3
+                    \end{align*}
+                    Hence, the equation of the hyperbola is $\dfrac{y^2}{16}-\dfrac{x^2}{9}=1$. $\eos$
+
+                    \newpage
+              \item Foci on the $x$-axis, passing through points $\mathrm{A}(-8,2), \mathrm{~B}(4
+                        \sqrt{3},-\sqrt{2})$. \sol{}
+
+                    Since the foci are on the $x$-axis, the hyperbola is of the form
+                    $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1$.
+
+                    Substituting the points $\mathrm{A}(-8,2), \mathrm{~B}(4 \sqrt{3},-\sqrt{2})$,
+                    we get
+                    \begin{align*}
+                        \dfrac{(-8)^2}{a^2}-\dfrac{2^2}{b^2}                   & =1                                 \\
+                        \dfrac{64}{a^2}-\dfrac{4}{b^2}                         & =1                                 \\
+                        64b^2-a^2b^2                                           & = 4a^2                             \\
+                        (64-a^2)b^2                                            & = 4a^2                             \\
+                        b^2                                                    & = \dfrac{4a^2}{64-a^2} \numberthis \\
+                        \dfrac{(4 \sqrt{3})^2}{a^2}-\dfrac{(-\sqrt{2})^2}{b^2} & =1 \numberthis
+                    \end{align*}
+                    Substituting equation (1) into equation (2), we get
+                    \begin{align*}
+                        \dfrac{48}{a^2}-\dfrac{2}{\dfrac{4a^2}{64-a^2}} & =1                           \\
+                        \dfrac{48}{a^2}-\dfrac{64-a^2}{2a^2}            & =1                           \\
+                        96-64+a^2                                       & =2a^2                        \\
+                        a^2                                             & = 32                         \\
+                        b^2                                             & = \dfrac{4 \times 32}{64-32} \\
+                        b^2                                             & = 4
+                    \end{align*}
+                    Hence, the equation of the hyperbola is $\dfrac{x^2}{32}-\dfrac{y^2}{4}=1$. $\eos$
+          \end{enumerate}
+
+    \item Find the equation of the hyperbola with foci $(-2,0), (6,0)$, and eccentricity
+          of 2. \sol{}
+
+          The center of the hyperbola is the midpoint of the foci, which is $(2,0)$.
+
+          Move the center of the hyperbola to the origin and form a new coordinate system
+          such that
+          \begin{align*}
+              x' = x-2 \qquad y' = y
+          \end{align*}
+          Since the foci are on the $x$-axis, the hyperbola is of the form
+          $\dfrac{x'^2}{a^2}-\dfrac{y'^2}{b^2}=1$.
+
+          The foci are now at $(-4, 0), (4, 0)$, and the eccentricity is 2.
+          \begin{align*}
+              ae  & = 4                 \\
+              a   & = 2                 \\
+              b^2 & = a^2e^2 - a^2 = 12
+          \end{align*}
+          Hence, the equation of the hyperbola is $\dfrac{x'^2}{4}-\dfrac{y'^2}{12}=1$.
+
+          Substituting $x' = x-2$, we get $\dfrac{(x-2)^2}{4}-\dfrac{y^2}{12}=1$. $\eos$
+
+    \item Find the equation of the hyperbola that has common foci with the ellipse
+          $\dfrac{x^2}{9}+\dfrac{y^2}{4}=1$, and eccentricity of $\dfrac{\sqrt{5}}{2}$.
+          \sol{}
+          \begin{align*}
+              e & = \dfrac{1}{3}\sqrt{3^2 - 2^2} = \dfrac{\sqrt{5}}{3}
+          \end{align*}
+          The foci of the ellipse are at $(\pm \sqrt{5}, 0)$.
+          \begin{align*}
+              ae                   & = \sqrt{5}     \\
+              \dfrac{\sqrt{5}}{2}a & = \sqrt{5}     \\
+              a                    & = 2            \\
+              b                    & = a^2e^2 - a^2 \\
+                                   & = 5 - 4        \\
+                                   & = 1
+          \end{align*}
+          Hence, the equation of the hyperbola is $\dfrac{x^2}{4}-\dfrac{y^2}{1}=1$. $\eos$
+
+    \item Find the asymptotes of the following hyperbolas:
+          \begin{enumerate}
+              \item $\dfrac{x^2}{25}-\dfrac{y^2}{144}=1$
+                    \sol{}
+                    \begin{align*}
+                        \dfrac{x^2}{25}-\dfrac{y^2}{144} & =0                            \\
+                        \dfrac{x^2}{25}                  & =\dfrac{y^2}{144}             \\
+                        25y^2                            & =144x^2                       \\
+                        y^2                              & =\dfrac{144}{25}x^2           \\
+                        y                                & =\pm\dfrac{12}{5}x            \\
+                        5y                               & =\pm 12x                      \\
+                        5y + 12x = 0                     & \text{ or } 5y - 12x = 0 \eos
+                    \end{align*}
+
+              \item $\dfrac{y^2}{9}-\dfrac{x^2}{16}=1$
+                    \sol{}
+                    \begin{align*}
+                        \dfrac{y^2}{9}-\dfrac{x^2}{16} & =0                           \\
+                        \dfrac{y^2}{9}                 & =\dfrac{x^2}{16}             \\
+                        16y^2                          & =9x^2                        \\
+                        y^2                            & =\dfrac{9}{16}x^2            \\
+                        y                              & =\pm\dfrac{3}{4}x            \\
+                        4y                             & =\pm 3x                      \\
+                        4y + 3x = 0                    & \text{ or } 4y - 3x = 0 \eos
+                    \end{align*}
+
+              \item $4 x^2-9 y^2+16 x-18 y-29=0$
+                    \sol{}
+                    \begin{align*}
+                        4x^2-9y^2+16x-18y-29                                                                     & =0                                              \\
+                        4(x^2+4x)-9(y^2-2y)-29                                                                   & =0                                              \\
+                        4(x^2+4x+4)-9(y^2-2y+1)                                                                  & =29+16-9                                        \\
+                        4(x+2)^2-9(y-1)^2                                                                        & =36                                             \\
+                        \dfrac{(x+2)^2}{9}-\dfrac{(y-1)^2}{4}                                                    & =1                                              \\
+                        \dfrac{(x+2)^2}{9}-\dfrac{(y-1)^2}{4}                                                    & =0                                              \\
+                        \left(\dfrac{x+2}{3} + \dfrac{y-1}{2}\right)\left(\dfrac{x+2}{3} - \dfrac{y-1}{2}\right) & =0                                              \\
+                        \dfrac{x+2}{3} + \dfrac{y-1}{2} = 0                                                      & \text{ or } \dfrac{x+2}{3} - \dfrac{y-1}{2} = 0 \\
+                        2x + 4 + 3y - 3 = 0                                                                      & \text{ or } 2x + 4 - 3y + 3 = 0                 \\
+                        2x + 3y + 1 = 0                                                                          & \text{ or } 2x - 3y + 7 = 0 \eos
+                    \end{align*}
+
+              \item $\dfrac{(x-2)^2}{3}-\dfrac{(y-1)^2}{12}=1$
+                    \sol{}
+                    \begin{align*}
+                        \dfrac{(x-2)^2}{3}-\dfrac{(y-1)^2}{12} & =0                          \\
+                        \dfrac{(x-2)^2}{3}                     & =\dfrac{(y-1)^2}{12}        \\
+                        12(x-2)^2                              & =3(y-1)^2                   \\
+                        4(x-2)^2                               & =(y-1)^2                    \\
+                        2(x-2)                                 & =\pm(y-1)                   \\
+                        2x-4                                   & =\pm(y-1)                   \\
+                        2x-4+y-1 = 0                           & \text{ or } 2x-4-y+1 = 0    \\
+                        2x+y-3 = 0                             & \text{ or } 2x-y+5 = 0 \eos
+                    \end{align*}
+          \end{enumerate}
+
+    \item I am lazy to do. =)
+
+    \item Find the equation of hyperbolas satisfying the following conditions:
+          \begin{enumerate}
+              \item Center at the origin, foci on the coordinate axes, eccentricity $e=\sqrt{2}$,
+                    passing through point $\mathrm{M}(-5,3)$. \sol{}
+
+                    Let the hyperbola be of the form $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1$.
+                    \begin{align*}
+                        b^2 & = a^2e^2 - a^2 \\
+                            & = 2a^2 - a^2   \\
+                            & = a^2
+                    \end{align*}
+                    Substituting the point $\mathrm{M}(-5,3)$ and $a^2=b$ into the equation of the hyperbola, we get
+                    \begin{align*}
+                        \dfrac{(-5)^2}{a^2}-\dfrac{3^2}{a^2} & =1   \\
+                        \dfrac{25}{a^2}-\dfrac{9}{a^2}       & =1   \\
+                        25-9                                 & =a^2 \\
+                        a^2                                  & =16  \\
+                        a                                    & =4   \\
+                        b                                    & =4
+                    \end{align*}
+                    Hence, the equation of the hyperbola is $\dfrac{x^2}{16}-\dfrac{y^2}{16}=1$. $\eos$
+
+              \item Imaginary axis length is 4, foci at $(0,2), (0,-10)$. \sol{}
+
+                    The center of the hyperbola is the midpoint of the foci, which is $(0,-4)$.
+
+                    Move the center of the hyperbola to the origin and form a new coordinate system
+                    such that
+                    \begin{align*}
+                        x' = x \qquad y' = y+4
+                    \end{align*}
+                    Since the foci are on the $y$-axis, the hyperbola is of the form
+                    $\dfrac{y'^2}{a^2}-\dfrac{x'^2}{b^2}=1$.
+
+                    The foci are now at $(0,6), (0,-6)$, and the imaginary axis length is 4.
+                    \begin{align*}
+                        ae                          & = 6            \\
+                        b^2                         & = a^2e^2 - a^2 \\
+                        \left(\dfrac{4}{2}\right)^2 & = 36 - a^2     \\
+                        a^2                         & = 32           \\
+                        b^2                         & = 36-32        \\
+                                                    & = 4
+                    \end{align*}
+                    Hence, the equation of the hyperbola is $\dfrac{y'^2}{32}-\dfrac{x'^2}{4}=1$.
+
+                    Substituting $y' = y+4$, we get $\dfrac{(y+4)^2}{32}-\dfrac{x^2}{4}=1$. $\eos$
+
+              \item Imaginary axis length is 6, vertices at $(3,2), (-5,2)$. \sol{} The center of
+                    the hyperbola is the midpoint of the vertices, which is $(-1,2)$.
+
+                    Move the center of the hyperbola to the origin and form a new coordinate system
+                    such that
+                    \begin{align*}
+                        x' = x+1 \qquad y' = y-2
+                    \end{align*}
+                    Since the vertices are on the $x$-axis, the hyperbola is of the form
+                    $\dfrac{x'^2}{a^2}-\dfrac{y'^2}{b^2}=1$.
+
+                    The vertices are now at $(4,0), (-4,0)$, and the imaginary axis length is 6.
+                    \begin{align*}
+                        a & = 4\qquad b = 3
+                    \end{align*}
+                    Hence, the equation of the hyperbola is $\dfrac{(x+1)^2}{16}-\dfrac{(y-2)^2}{9}=1$. $\eos$
+
+          \end{enumerate}
+
+    \item Find the equation of the hyperbola with vertices of the ellipse
+          $\dfrac{x^2}{8}+\dfrac{y^2}{5}=1$ as its foci, and with the foci of the ellipse
+          as its vertices. \sol{}
+          \begin{align*}
+              e & = \dfrac{1}{8}\sqrt{8-5} = \dfrac{1}{8}\sqrt{3}
+          \end{align*}
+          The foci of the ellipse are at $(\pm \sqrt{3}, 0)$, and the vertices are at $(\pm 2\sqrt{2}, 0)$.
+
+          The foci of the hyperbola are at $(\pm 2\sqrt{2}, 0)$, and the vertices are at
+          $(\pm \sqrt{3}, 0)$.
+
+          Since the foci are on the $x$-axis, the hyperbola is of the form
+          $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1$.
+          \begin{align*}
+              ae  & = 2\sqrt{2}    \\
+              b^2 & = a^2e^2 - a^2 \\
+                  & = 8 - 3        \\
+                  & = 5            \\
+              a^2 & = 3
+          \end{align*}
+          Hence, the equation of the hyperbola is $\dfrac{x^2}{3}-\dfrac{y^2}{5}=1$. $\eos$
+
+    \item A hyperbola passes through the point $(0,3)$, and its asymptotes have equations
+          $2x-y-3=0$ and $2x+y-5=0$. Find its equation. \sol{}
+          \begin{align*}
+              2x - y - 3 = 0         & \text{ or } 2x + y - 5 = 0                    \\
+              2x - 4                 & = y + 3 \text{ or } 2x = -y + 5               \\
+              2x - 4                 & = y + 3 - 4 \text{ or } 2x - 4 = -(y - 5) - 4 \\
+              2x - 4                 & = y - 1 \text{ or } 2x - 4 = - (y - 1)        \\
+              2x - 4                 & = \pm (y - 1)                                 \\
+              (2x - 4)^2             & = (y - 1)^2                                   \\
+              (2x - 4)^2 - (y - 1)^2 & = k
+          \end{align*}
+          Substituting the point $(0,3)$, we get
+          \begin{align*}
+              (2 \times 0 - 4)^2 - (3 - 1)^2 & = k      \\
+              16 - 4                         & = k      \\
+              k                              & = 12     \\
+              (2x - 4)^2 - (y - 1)^2         & = 12     \\
+              4x^2 - 16x + 16 - y^2 + 2y - 1 & = 12     \\
+              4x^2 - y^2 - 16x + 2y + 3      & = 0 \eos
+          \end{align*}
+
+          \newpage
+    \item Find the equation of the hyperbola with foci $(-2,-2)$ and $(8,-2)$, and one
+          asymptote with slope $\dfrac{3}{4}$. \sol{}
+
+          The center of the hyperbola is the midpoint of the foci, which is $(3,-2)$.
+
+          Move the center of the hyperbola to the origin and form a new coordinate system
+          such that
+          \begin{align*}
+              x' = x-3 \qquad y' = y+2
+          \end{align*}
+          Since the foci are on the $x$-axis, the hyperbola is of the form $\dfrac{x'^2}{a^2}-\dfrac{y'^2}{b^2}=1$.
+
+          The foci are now at $(-5,0), (5,0)$, and the slope of the asymptote is
+          $\dfrac{3}{4}$.
+
+          \begin{align*}
+              \dfrac{b}{a} & = \dfrac{3}{4}               \\
+              b            & = \dfrac{3}{4}a              \\
+              e            & = \dfrac{1}{a}\sqrt{a^2+b^2} \\
+              ae           & = \sqrt{a^2+b^2}             \\
+              (ae)^2       & = a^2 + b^2                  \\
+              25           & = a^2 + \dfrac{9}{16}a^2     \\
+              25           & = \dfrac{25}{16}a^2          \\
+              a^2          & = 16                         \\
+              b^2          & = 25 - 16                    \\
+                           & = 9
+          \end{align*}
+          Hence, the equation of the hyperbola is $\dfrac{x'^2}{16}-\dfrac{y'^2}{9}=1$.
+
+          Substituting $x' = x-3, y' = y+2$, we get
+          $\dfrac{(x-3)^2}{16}-\dfrac{(y+2)^2}{9}=1$. $\eos$
+
+          \newpage
+    \item \begin{enumerate}
+              \item Given that a chord of the hyperbola $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1$ has
+                    midpoint $(\alpha, \beta)$, prove that the equation of this chord is
+                    $y-\beta=\dfrac{b^2 \alpha}{a^2 \beta}(x-\alpha)$. \proof{}
+
+                    Let the two points on the chord be $(x_1, y_1)$ and $(x_2, y_2)$.
+                    \begin{align*}
+                        \dfrac{x_1^2}{a^2}-\dfrac{y_1^2}{b^2} & =1      \\
+                        b^2x_1^2-a^2y_1^2                     & =a^2b^2 \\
+                        \dfrac{x_2^2}{a^2}-\dfrac{y_2^2}{b^2} & =1      \\
+                        b^2x_2^2-a^2y_2^2                     & =a^2b^2
+                    \end{align*}
+                    Subtracting the second equation from the first, we get
+                    \begin{align*}
+                        b^2(x_1^2-x_2^2) - a^2(y_1^2-y_2^2)            & =0                 \\
+                        a^2(y_1^2-y_2^2)                               & =b^2(x_1^2-x_2^2)  \\
+                        \dfrac{y_1^2-y_2^2}{x_1^2-x_2^2}               & =\dfrac{2b^2}{a^2} \\
+                        \dfrac{(y_1+y_2)(y_1-y_2)}{(x_1+x_2)(x_1-x_2)} & =\dfrac{2b^2}{a^2}
+                    \end{align*}
+                    Since the midpoint of the chord is $(\alpha, \beta)$, we have
+                    \begin{align*}
+                        x_1+x_2 & = 2\alpha \\
+                        y_1+y_2 & = 2\beta
+                    \end{align*}
+                    Substituting, we get
+                    \begin{align*}
+                        \dfrac{2\beta(y_1-y_2)}{2\alpha(x_1-x_2)} & =\dfrac{b^2}{a^2}              \\
+                        \dfrac{\beta(y_1-y_2)}{\alpha(x_1-x_2)}   & =\dfrac{b^2}{a^2}              \\
+                        \dfrac{y_1-y_2}{x_1-x_2}                  & =\dfrac{\alpha b^2}{\beta a^2}
+                    \end{align*}
+
+                    Since $(x_1, y_1)$ and $(x_2, y_2)$ are on the chord,
+                    $m=\dfrac{y_1-y_2}{x_1-x_2}$.
+
+                    Since $(\alpha, \beta)$ is on the chord,the equation of the chord is
+                    $y-\beta=\dfrac{b^2 \alpha}{a^2 \beta}(x-\alpha)$. $\eos$
+
+                    \newpage
+              \item  Given that a moving chord of the hyperbola
+                    $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1$ passes through the fixed point $(h, k)$,
+                    prove that the locus of the midpoints of these chords is a hyperbola, and its
+                    center is $\left(\dfrac{h}{2}, \dfrac{k}{2}\right)$. \proof{}
+
+                    Let the midpoint of the chord be $(\alpha, \beta)$.
+
+                    From part (a), the equation of the chord is $y-\beta=\dfrac{b^2 \alpha}{a^2
+                            \beta}(x-\alpha)$.
+
+                    Substituting $(h, k)$, we get
+                    \begin{align*}
+                        k-\beta & =\dfrac{b^2 \alpha}{a^2 \beta}(h-\alpha)   \\
+                        \beta   & =k-\dfrac{b^2 \alpha}{a^2 \beta}(h-\alpha)
+                    \end{align*}
+                    Let $\beta = y$ and $\alpha = x$.
+                    \begin{align*}
+                        y                                                                                                                                                                 & =k-\dfrac{b^2 x}{a^2 y}(h-x) \\
+                        a^2y^2                                                                                                                                                            & =a^2ky-b^2hx+b^2x^2          \\
+                        b^2x^2 - b^2hx - a^2y^2 + a^2ky+                                                                                                                                  & = 0                          \\
+                        b^2(x^2 - hx) - a^2(y^2 - ky)                                                                                                                                     & = 0                          \\
+                        b^2\left(x^2 - 2\left(\dfrac{h}{2}\right)x + \left(\dfrac{h}{2}\right)^2\right) - a^2\left(y^2 - 2\left(\dfrac{k}{2}\right)y + \left(\dfrac{k}{2}\right)^2\right) & = \dfrac{b^2h^2 - a^2k^2}{4} \\
+                        b^2\left(x - \dfrac{h}{2}\right)^2 - a^2\left(y - \dfrac{k}{2}\right)^2                                                                                           & = \dfrac{b^2h^2 - a^2k^2}{4} \\
+                        \dfrac{4b^2\left(x - \dfrac{h}{2}\right)^2}{b^2h^2 - a^2k^2} - \dfrac{4a^2\left(y - \dfrac{k}{2}\right)^2}{b^2h^2 - a^2k^2}                                       & = 1
+                    \end{align*}
+                    $\because$ the equation of the locus is of the form $\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1$
+
+                    $\therefore$ the locus is a hyperbola, and its center is $\left(\dfrac{h}{2}, \dfrac{k}{2}\right)$. $\eos$
+
+          \end{enumerate}
+
+\end{enumerate}
+\end{document}
