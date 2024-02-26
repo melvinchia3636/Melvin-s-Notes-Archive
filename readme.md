@@ -369,6 +369,12 @@
 - [Exercise 5b.tex](<./数学/Other Topics/Conic Section/Exercise 5b.tex>)
 - [Exercise 5c.pdf](<./数学/Other Topics/Conic Section/Exercise 5c.pdf>)
 - [Exercise 5c.tex](<./数学/Other Topics/Conic Section/Exercise 5c.tex>)
+- [Exercise 5d.pdf](<./数学/Other Topics/Conic Section/Exercise 5d.pdf>)
+- [Exercise 5d.tex](<./数学/Other Topics/Conic Section/Exercise 5d.tex>)
+- [Exercise 5e.pdf](<./数学/Other Topics/Conic Section/Exercise 5e.pdf>)
+- [Exercise 5e.tex](<./数学/Other Topics/Conic Section/Exercise 5e.tex>)
+- [Revision Exercise 5.pdf](<./数学/Other Topics/Conic Section/Revision Exercise 5.pdf>)
+- [Revision Exercise 5.tex](<./数学/Other Topics/Conic Section/Revision Exercise 5.tex>)
 <dl><dd><dl><dd><dl><dd>
 <details>
 <summary>assets</summary>
