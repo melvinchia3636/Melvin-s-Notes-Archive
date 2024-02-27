@@ -317,12 +317,15 @@
 <details>
 <summary>Add Math II</summary>
 
+- [S1 chp1.pdf](<./数学/Add Math II/S1 chp1.pdf>)
+- [S1 chp12.pdf](<./数学/Add Math II/S1 chp12.pdf>)
 - [S1 chp13.pdf](<./数学/Add Math II/S1 chp13.pdf>)
-- [S2 chp14 14.4.pdf](<./数学/Add Math II/S2 chp14 14.4.pdf>)
-- [S2 chp14 14.5&14.6.pdf](<./数学/Add Math II/S2 chp14 14.5&14.6.pdf>)
-- [S2 chp16 16.2&16.3.pdf](<./数学/Add Math II/S2 chp16 16.2&16.3.pdf>)
-- [S2 chp16 16.4.pdf](<./数学/Add Math II/S2 chp16 16.4.pdf>)
-- [S2 chp16 16.5.pdf](<./数学/Add Math II/S2 chp16 16.5.pdf>)
+- [S1 chp17.pdf](<./数学/Add Math II/S1 chp17.pdf>)
+- [S1 chp2.pdf](<./数学/Add Math II/S1 chp2.pdf>)
+- [S1 chp4.pdf](<./数学/Add Math II/S1 chp4.pdf>)
+- [S2 chp14.pdf](<./数学/Add Math II/S2 chp14.pdf>)
+- [S2 chp16.pdf](<./数学/Add Math II/S2 chp16.pdf>)
+- [S2 chp4.pdf](<./数学/Add Math II/S2 chp4.pdf>)
 - [S3 chp11.pdf](<./数学/Add Math II/S3 chp11.pdf>)
 - [S3 chp3.pdf](<./数学/Add Math II/S3 chp3.pdf>)
 - [S3 chp8.pdf](<./数学/Add Math II/S3 chp8.pdf>)
