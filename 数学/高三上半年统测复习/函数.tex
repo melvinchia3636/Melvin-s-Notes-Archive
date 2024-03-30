@@ -1,0 +1,560 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{ctex}
+\setlength{\parskip}{\baselineskip}%
+\input{structure.tex}
+
+\newenvironment{cequation}{
+    \makeatletter
+    \setbool{@fleqn}{false}
+    \makeatother
+    \begin{equation*}
+        }{\end{equation*}}
+
+\title{2024年高三上半年数学统测复习} % Title of the assignment
+
+\author{Melvin Chia} % Author name and email address
+
+\date{高三商1 --- 2024年3月29日} % University, school and/or department name(s) and a date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title
+
+\section{函数} % Numbered section
+
+\subsection{啥是函数？}
+
+\textbf{函数（Function）}是一种特殊的关系，它把一个集合的元素对应到另一个集合的元素上。函数的\textbf{定义域（Domain）}是指所有可能输入/\textbf{原像（Preimage）}的集合，函数的\textbf{值域（Range）}是指所有可能输出/\textbf{映像（Image）}的集合。
+
+打个比方，全世界每个国家都有首都，那么我们可以把每个国家和它的首都对应起来，这就是一个函数。国家就是定义域，首都就是值域。
+
+\begin{info}[函数的定义]
+    设$X$和$Y$是两个非空集合，如果存在一个从$X$到$Y$的对应关系$f$，使得对于$X$中的任意一个元素$x$，都有唯一的$Y$中的元素$y$与之对应，那么称$f$为从$X$到$Y$的一个函数，记作$f:X\to Y$。
+\end{info}
+但是，正常情况下，一个国家只有一个首都。所以，如果有哪个国家经过这个对应关系对应到了两个首都，那么这个对应关系就不是函数。
+
+\begin{warn}[啥情况不是函数？]
+    如果对于$X$中的某个元素$x$，存在两个$Y$中的元素$y_1$和$y_2$与之对应，那么这个对应关系就不是函数。
+\end{warn}
+
+还有，有的国家没有首都，这也是不行的。所以，如果有哪个国家没有对应的首都，那么这个对应关系也不是函数。
+
+\begin{warn}[啥情况不是函数？]
+    如果$X$中的某个元素$x$没有对应的$Y$中的元素与之对应，那么这个对应关系就不是函数。
+\end{warn}
+
+\subsection{函数的表示}
+
+函数可以用很多种方式来表示，最常见的就是用公式来表示。拿上面的例子来说，国家与首都对应的关系可以表示为：
+\begin{cequation}
+    f(\text{国家}) = \text{该国家的首都}
+\end{cequation}
+但是，在数学里，我们一般用字母来表示函数，所以这个函数可以表示为：
+\begin{cequation}
+    f(x) = y
+\end{cequation}
+其中，$x$表示国家，$y$表示该国家的首都首都。
+
+如果我们要限制函数的定义域，那么我们可以这样表示：
+\begin{cequation}
+    f: A \to B,\ f(x) = y
+\end{cequation}
+这表示函数$f$的定义域是$A$，对应域是$B$。至于定义域和对应域是什么，开头我们已经概括了，并缺会在下一节细讲。
+
+打个比方，如果我们要限制函数$f$的定义域是所有亚洲国家的集合，值域是城市的集合，那么我们可以在前面加多一些东西
+\begin{cequation}
+    f: \text{亚洲国家} \to \text{城市},\ f(\text{国家}) = \text{该国家的首都}
+\end{cequation}
+好啦，现在我们来看专业一点的东西。如果我们不用国家和首都来举例，而是用数学里的东西，会发生什么事情呢？
+
+作为纯商科学生的我们，经济学都学过需求函数对吧？那就是一个函数，它把商品的价格对应到了商品的需求量上。经济学课本第一册告诉我们，需求函数的一般形式是：
+\begin{cequation}
+     Q_d(P) = a - bP
+\end{cequation}
+或者是，如果我们要限制需求函数的定义域是所有正数，值域是所有实数，那么我们可以表示为：
+\begin{cequation}
+    Q_d: \mathbb{R}^+ \to \mathbb{R},\ Q_d(P) = a - bP
+\end{cequation}
+毕竟，价格不能是负数，对吧？
+
+\begin{question}
+	已知函数$f(x) = 2x^2 - 3x + 1$，求$f(2)$。
+\end{question}
+
+\begin{solution}
+    将$x = 2$代入$f(x)$，得到
+    \begin{align*}
+        f(2) &= 2 \cdot 2^2 - 3 \cdot 2 + 1 &\\
+        &= 2 \cdot 4 - 6 + 1\\
+        &= 3
+    \end{align*}
+\end{solution}
+
+\begin{question}
+    已知函数$f(x) = 2x^2 - 3x + 1$，求$f(x) = 0$的解。
+\end{question}
+
+\begin{solution}
+    由$f(x) = 2x^2 - 3x + 1 = 0$，得到
+    \begin{align*}
+        2x^2 - 3x + 1 &= 0 &\\
+        (2x - 1)(x - 1) &= 0
+    \end{align*}
+    所以，$x = 1$或$x = \dfrac{1}{2}$。
+\end{solution}
+
+\begin{question}
+    已知函数$f(x) = x^2 - 3x + 1$，求$f(x) = -x$的解。
+\end{question}
+
+\begin{solution}
+    由$f(x) = x^2 - 3x + 1 = -x$，得到
+    \begin{align*}
+        x^2 - 3x + 1 &= -x &\\
+        x^2 - 2x + 1 &= 0\\
+        (x - 1)^2 &= 0
+    \end{align*}
+    所以，$x = 1$。
+\end{solution}
+
+\begin{question}
+    已知函数$f(x) = \begin{cases}
+        2x - 1, & x \geq 0\\
+        x^2 + 1, & x < 0
+    \end{cases}$，求$f(1)$。
+\end{question}
+
+\begin{solution}
+    由于$1 \geq 0$，所以$f(1) = 2 \cdot 1 - 1 = 1$。
+\end{solution}
+
+
+\subsection{定义域、对应域和值域} 
+
+我们继续拿国家和首都来当例子好了。给定一个函数:
+
+\vspace{-0.5cm}
+\begin{cequation}
+    f: \text{亚洲国家} \to \text{城市},\ f(\text{国家}) = \text{该国家的首都}
+\end{cequation}
+
+如果我叫你求$f(\text{中国})$，你会怎么做呢？很简单，你只要知道中国的首都是北京，然后你就可以得到$f(\text{中国}) = \text{北京}$。
+
+但是，如果我叫你求$f(\text{美国})$，这个时候你就会发现，你得不到答案。因为美国并不是亚洲国家，它不在函数的定义域里，所以它没有对应的值。
+
+因此，函数的\textbf{定义域（Domain）}是指所有可能输入的集合。在上面的例子里，亚洲国家就是函数的定义域。
+
+\begin{info}[定义域]
+    函数的定义域是指所有可能输入的集合, 记作$D_f$。
+\end{info}
+
+再来看看对应域。对应域是什么呢？上面的例子里，城市就是函数的\textbf{对应域（Codomain）}。对应域里的元素不一定需要是和定义域里的元素的映射。比如，对应域里可以包含一些不是首都的城市。
+
+世界上有千千万万座城市，但是不是每座城市都是一个国家的首都，更何况我们这个函数只对应亚洲国家的首都，比如新山虽然是一座城市，但却不是任何国家的首都。所以，函数的\textbf{值域（Range）}是指所有可能输出的集合。在上面的例子里，所有亚洲国家的首都就是函数的值域。
+
+\begin{info}[值域]
+    函数的值域是指所有可能输出的集合, 记作$R_f$。
+\end{info}
+
+所以，总的来说，
+\begin{info}[函数的定义域、对应域和值域之间]
+    给定一个函数$f: A \to B$，则其中$A$是函数的定义域，$B$是函数的对应域。函数的值域是$B$中所有可能的映像的集合。
+\end{info}
+
+举个数学的例子，如果我们有一个函数$f: \mathbb{R} \to \mathbb{R}$，它的定义域是所有实数，对应域是所有实数，那么它的值域是什么呢？这个时候，我们就需要看这个函数的公式了。
+
+我们假设这个函数的公式是$f(x) = x^2$，那么这个函数的值域是什么呢？如果你仔细思考，你会发现，无论$x$是正数还是负数，$x^2$都会是正数。所以，这个函数的值域是所有正数的集合。因此，
+
+\vspace{-0.5cm}
+\begin{cequation}
+    D_f = \mathbb{R},\ R_f = \{y \in \mathbb{R} | y \geq 0\}
+\end{cequation}
+
+在考试时，有时候会有一些题目会让你求函数的定义域和值域，即函数输入值（ $x$）的有效范围和输出值（ $y$）的可能范围。这个时候，你就需要根据函数的公式来判断。
+
+\begin{question}[（平方根函数）]
+    已知函数$f(x) = \sqrt{4 - x^2}$，求$f(x)$的定义域和值域。
+\end{question}
+
+\begin{solution}
+    由于$\sqrt{4 - x^2}$的根号里面不能是负数，所以$4 - x^2 \geq 0$，即$x^2 \leq 4$。所以，$-2 \leq x \leq 2$，即
+    \[
+        D_f = [-2, 2]
+    \]
+    又因为对于所有$x$，$\sqrt{4 - x^2} \geq 0$，所以
+    \[
+        R_f = \{y \in \mathbb{R} | y \geq 0\}
+    \]
+\end{solution}
+
+\begin{question}[（绝对值函数）]
+    已知函数$f(x) = |x - 2|$，求$f(x)$的定义域和值域。
+\end{question}
+
+\begin{solution}
+    若将任意实数$x$代入$f(x)$，则$|x - 2| \geq 0$。所以，
+    \[
+        D_f = \mathbb{R}
+    \]
+    又因为对于所有$x$，$|x - 2| \geq 0$，所以
+    \[
+        R_f = \{y \in \mathbb{R} | y \geq 0\}
+    \]
+\end{solution}
+
+\begin{question}[（分数函数）]
+    已知函数$f(x) = \dfrac{1}{x - 2}$，求$f(x)$的定义域和值域。
+\end{question}
+
+\begin{solution}
+    由于分母不能为零，所以$x - 2 \neq 0$，即$x \neq 2$。所以，
+    \[
+        D_f = \{x \in \mathbb{R} | x \neq 2\}
+    \]
+    又因为对于所有$x$，$\dfrac{1}{x - 2} \neq 0$，所以
+    \[
+        R_f = \{y \in \mathbb{R} | y \neq 0\}
+    \]
+\end{solution}
+
+\begin{question}[（增函数）]
+    已知函数$f(x) = x^2 + 3$，求$f(x)$的定义域和值域。
+\end{question}
+
+\begin{solution}
+    由于$x^2 + 3$对于所有$x$都有定义，所以
+    \[
+        D_f = \mathbb{R}
+    \]
+    又因为对于所有$x$，$x^2 \geq 0$，两侧加3得 $x^2 + 3 \geq 3$，所以
+    \[
+        R_f = \{y \in \mathbb{R} | y \geq 3\}
+    \]
+\end{solution}
+
+\begin{question}[（一元二次函数）]
+    已知函数$f(x) = x^2 - 3x + 1$，求$f(x)$的定义域和值域。
+\end{question}
+
+\begin{solution}
+    由于$x^2 - 2x + 10$对于所有$x$都有定义，所以
+    \[
+        D_f = \mathbb{R}
+    \]
+    由于此二次函数是开口向上的，所以它的最小值是在顶点处。要找到顶点，我们可以用配方法：
+\begin{align*}
+    f(x) &= x^2 - 2x + 10\\
+    &= x^2 - 2x + 1 - 1 + 10\\
+    &= (x - 1)^2 - 1 + 10\\
+    &= (x - 1)^2 + 9
+\end{align*}
+因此可得顶点为$(1, 9)$，所以f(x)的最小值为9，即
+\[
+    R_f = \{y \in \mathbb{R} | y \geq 9\}
+\]
+
+\end{solution}
+
+\begin{info}[区间表示法]
+    有时候，我们会用中括弧和小括弧而不是不等式来表达区间（两个数之间的任意数字的集合）。中括弧表示闭区间，小括弧表示开区间。比如，$[a, b]$表示闭区间，即$a \leq x \leq b$；$(a, b)$表示开区间，即$a < x < b$。如果是无穷大，我们用$\infty$表示。比如，$(-\infty, 2]$表示$x \leq 2$。注意，无穷大是开区间。
+\end{info}
+
+\newpage
+\begin{question}[（已知定义域的一元二次函数）]
+    已知函数$f(x) = x^2 - 4x - 8$，且$-1 \leq x \leq 3$，求$f(x)$的值域。
+\end{question}
+
+\begin{solution}
+    从题目可知，$-1 \leq x \leq 3$，所以
+    \[
+        D_f = [-1, 3]
+    \]
+    由于此二次函数是开口向上的，所以它的最小值是在顶点处。要找到顶点，我们可以用配方法：
+\begin{align*}
+    f(x) &= x^2 - 4x - 8\\
+    &= x^2 - 4x + 4 - 4 - 8\\
+    &= (x - 2)^2 - 12
+\end{align*}
+因此可得顶点为$(2, -12)$，所以f(x)的最小值为-12。
+
+现在我们来看最大值。由于$x^2 - 4x - 8$是一个开口向上的二次函数，所以它的最大值必定在两个端点处。我们已经找到了顶点处的最小值，所以我们只需要找两个端点处的值，然后比较大小即可。即，比较$f(-1)$和$f(3)$的大小。
+\begin{align*}
+    f(-1) &= (-1)^2 - 4 \cdot (-1) - 8= -3\\
+    f(3) &= 3^2 - 4 \cdot 3 - 8 = -11
+\end{align*}
+由于$f(-1) < f(3)$，所以$f(x)$的最大值为-3，即
+\[
+    R_f = \{y \in \mathbb{R} | -12 \leq y \leq -3\}
+\]
+\end{solution}
+
+\begin{info}[常用集合符号]
+    \begin{enumerate}
+        \item $\mathbb{N}$：自然数（非负整数）的集合，即$\{1, 2, 3, \ldots\}$
+        \item   $\mathbb{Z}$：整数，即$\{\ldots, -2, -1, 0, 1, 2, \ldots\}$
+        \item  $\mathbb{Q}$：有理数，可以被写成分数的数，即$\left\{\dfrac{a}{b} | a, b \in \mathbb{Z}, b \neq 0\right\}$
+        \item $\mathbb{R}$：实数，包括整数、分数、无限循环小数、圆周率等等
+        \item $\mathbb{R}^+$：正实数，即$x > 0$
+        \item $\mathbb{R}^-$：负实数，即$x < 0$
+        \item $\mathbb{I}$：虚数，即取平方根后得到负数的数
+        \item $\mathbb{C}$：复数，由实数和虚数组成的数，即$\{a + bi | a, b \in \mathbb{R}\}$
+    \end{enumerate}
+\end{info}
+
+\subsection{合成函数}
+
+\textbf{合成函数（Composite Function）}是指把一个函数的输出作为另一个函数的输入。比如，我们有两个函数$f(x)$和$g(x)$，那么它们的合成函数就是$f(g(x))$。
+
+打个比方，我们有两个函数，一个是把国家对应到首都的函数$f(x)$，另一个是把首都对应到人口的函数$g(x)$。那么，如果我们想知道一个国家首都的人口，我们就可以先用$f(x)$得到这个国家的首都，再把这个首都代入$g(x)$，就可以得到这个国家首都的人口，即
+
+\vspace{-0.5em}
+\begin{cequation}\text{国家}\ \xrightarrow{\displaystyle\text{某国的首都}} \text{该国家的首都}\ \xrightarrow{\displaystyle\text{某城市的人口} } \text{该国家首都的人口}\end{cequation}
+
+再来拿数学运算作为例子，假设我们有两个函数，一个是把一个数加上1的函数$f(x) = x + 1$，另一个是把一个数乘以2的函数$g(x) = 2x$。那么，如果我们想知道一个数加1后乘以2的结果，我们就可以先用$f(x)$得到这个数加1的结果，再把这个结果代入$g(x)$，就可以得到这个数加1后乘以2的结果，即
+
+\vspace{-0.5em}
+\begin{cequation}x\ \xrightarrow{\displaystyle\text{加1}} x + 1\ \xrightarrow{\displaystyle\text{乘2}} 2(x + 1)\end{cequation}
+
+继续那上面的例子，如果我们设“加一”函数为$f(x) = x+1$，“乘二”函数为$g(x) = 2x$，那么我们可以得到合成函数$f(g(x))$。这个合成函数的意思是，先把$x$乘以2，再把这个结果加1。所以，$f(g(x)) = 2x + 1$。
+
+合成函数不只是两个函数的合成，它可以是任意多个函数的合成。比如，我们有三个函数$f(x)$，$g(x)$和$h(x)$，那么它们的合成函数就是$f(g(h(x)))$。需要注意的是，合成函数的顺序是从括弧里面开始的，即先计算$h(x)$，再计算$g(h(x))$，最后计算$f(g(h(x)))$。因此，$f(g(x))$和$g(f(x))$是不一样的。
+
+如果今天给你10个函数组成的合成函数，要写一大堆括号，你会不会觉得很麻烦？所以，我们可以用一个更简单的方法来表示合成函数。比如，我们有三个函数$f(x)$，$g(x)$和$h(x)$，其合成函数 $f(g(h(x)))$ 可以表示为$(f \circ g \circ h)(x)$。当然，如果你用圈圈表示的话，它的运算顺序是从右往左的。同理，$(f \circ g)(x)$ 和 $(g \circ f)(x)$ 是不一样的。
+
+当然，一个函数也可以和自己合成。比如，我们有一个函数将一个数加1，那么这个函数和自己合成就是将一个数加1后再加1，即$(f \circ f)(x) = f(f(x)) = f(x + 1) = (x + 1) + 1 = x + 2$。
+
+但是，如果你今天要讲一个函数和自己合成100次，你不可能写100个括号，或是100个圈圈，对吧？所以，我们可以用一个更简单的方法来表示。比如，$(f \circ f \circ f \circ f \circ f)(x)$ 可以简写为 $f^5(x)$。
+
+\begin{info}[函数和自己合成]
+    对于所有的正整数$n$，$f^n(x)$ 表示将函数 $f(x)$ 和自己合成 $n$ 次。
+\end{info}
+
+\begin{question}
+    已知函数$f(x) = 2x + 1$，$g(x) = x^2$，求$f(g(x))$。
+\end{question}
+
+\begin{solution}
+    \vspace{-1em}
+    \begin{align*}
+        f(g(x)) &= f(x^2)\\
+        &= 2x^2 + 1
+    \end{align*}
+\end{solution}
+
+\begin{question}
+    已知函数$f(x) = x^2$，$g(x) = \sqrt{x}$，求$(f \circ g)(x)$。
+\end{question}
+
+\begin{solution}
+    \vspace{-1em}
+    \begin{align*}
+        (f \circ g)(x) &= f(g(x))\\
+        &= f(\sqrt{x})\\
+        &= (\sqrt{x})^2\\
+        &= x
+    \end{align*}
+\end{solution}
+
+\begin{question}
+    已知函数$f(x) = 2x + 1$，$g(x) = x^2 - 4$，求$(f \circ g)(x)$ 及 $(g \circ f)(x)$。
+\end{question}
+
+\begin{solution}
+    \vspace{-1em}
+    \begin{align*}
+        (f \circ g)(x) &= f(g(x))\\
+        &= f(x^2 - 4)\\
+        &= 2(x^2 - 4) + 1\\
+        &= 2x^2 - 8 + 1\\
+        &= 2x^2 - 7\\
+        \\
+        (g \circ f)(x) &= g(f(x))\\
+        &= g(2x + 1)\\
+        &= (2x + 1)^2 - 4\\
+        &= 4x^2 + 4x + 1 - 4\\
+        &= 4x^2 + 4x - 3
+    \end{align*}
+\end{solution}
+
+\newpage
+有时候，题目会给你一个函数$f(x)$和它与另外一个函数$g(x)$的合成函数。这时候会有两种情况，一种是其合成函数为$f(g(x))$，另一种是其合成函数为$g(f(x))$。两种情况都有不一样的解法，所以在解题时要注意。
+
+\begin{question}
+    已知函数$f(x) = x+3$，$f(g(x)) = x^2 + 6x + 10$，求$g(x)$。
+\end{question}
+
+\begin{solution}
+    \vspace{-1em}
+    \begin{align*}
+        f(g(x)) &= f(x^2 + 3)\\
+    g(x) + 3 &= x^2 + 6x + 10\\
+    g(x) &= x^2 + 6x + 7
+    \end{align*}
+\end{solution}
+
+\begin{question}
+    已知一函数的定义是$f(x) = x - 3$，另一函数$g(x)$满足$g(f(x)) = 4x^2 - 20x + 25$，求$g(x)$。
+\end{question}
+
+\begin{solution}
+    设$y = f(x) = x - 3$，移项后得到$x = y + 3$。
+    \begin{align*}
+        g(f(x)) &= 4x^2 - 20x + 25\\
+        g(y) &= 4(y + 3)^2 - 20(y + 3) + 25\\
+        &= 4(y^2 + 6y + 9) - 20y - 60 + 25\\
+        &= 4y^2 + 24y + 36 - 20y - 35\\
+        &= 4y^2 + 4y + 1\\
+        &= (2y + 1)^2
+    \end{align*}
+    将$y$换回$x$，得到$g(x) = (2x + 1)^2$。
+\end{solution}
+
+\newpage
+
+\subsection{一对一函数、映成函数、一一映成函数}
+
+我们继续拿国家和首都来当例，如果我们有一个函数$f(x)$，它把国家对应到首都，那么这个函数是不是一对一的呢？通常来说，一个首都不可能同时是两个国家的首都，对吧？所以，这个函数是一对一的，或者说将国家映射到首都的函数是一个\textbf{一对一函数（One-to-One Function）}。
+
+\begin{info}[一对一函数的定义]
+    如果对于函数$f: A \to B$，对于$B$中的任意一个元素$y$，最多只有一個的$A$中的元素$x$与之对应，那么称$f$是一个一对一函数。
+\end{info}
+
+那什么函数不是一对一函数呢？如果我们有一个函数$f(x)$，它把高三商1的学生对应到他们数学统测的分数水平\{$A$, $B$, $C$, $D$, $F$\}，那么这个函数就不是一对一的，因为肯定有不止一个学生在数学统测中拿到$A$。
+
+现在我们来看看什么是\textbf{映成函数（Onto Function）}。我们先来看看映成函数的定义：
+
+\begin{info}[映成函数的定义]
+    如果对于函数$f: A \to B$，对于$B$中的任意一个元素$y$，至少有一个$A$中的元素$x$与之对应，那么称$f$是一个映成函数。
+\end{info}
+
+如果我们有一个函数$f(x)$，它把一本教科书对应到它所属的学科，那么这个函数就是一个映成函数，因为每一本教科书都属于某一个学科，或者说每一个学科都至少有一本教科书。
+
+最后，我们来看看什么是\textbf{一一映成函数（One-to-One Onto Function）}。一一映成函数是一对一函数和映成函数的结合，它既是一对一函数，又是映成函数。也就是说，把它们的定义结合起来，就是一一映成函数的定义：
+
+\begin{info}[一一映成函数的定义]
+    如果对于函数$f: A \to B$，对于$B$中的任意一个元素$y$，恰好只有一个$A$中的元素$x$与之对应，那么称$f$是一个一一映成函数。
+\end{info}
+
+比如说，如果我们有一个函数$f(x)$，它把每个人对应到他们的身份证号，那么这个函数就是一个一一映成函数，因为每个人都有一个唯一的身份证号，而每个身份证号也只对应一个人。
+
+那数学的例子来说，如果我们有一个函数$f(x) = x + 1$，那么这个函数是不是一对一函数呢？是不是映成函数呢？是不是一一映成函数呢？我们来看看。
+
+首先，对于任何一个$x$，$f(x)$都是该数加1，不可能有两个数加1后得到同一个数，所以这个函数是一对一函数。其次，对于任何一个数$y$，只要$x = y - 1$，就可以得到$y$，所以这个函数是映成函数。最后，这个函数是一对一函数，也是映成函数，所以它是一一映成函数。
+
+再来，如果我们有一个函数$f(x) = x^2$，同一个数字，正负号不同的平方是一样的，所以这个函数不是一对一函数。其次，对于任何一个数$y$，只要$x = \sqrt{y}$或$x = -\sqrt{y}$，就可以得到$y$，所以这个函数是映成函数。
+
+\subsection{反函数}
+
+我们依旧拿国家和首都来当例子。如果我们有一个函数$f(x)$，它把国家对应到首都，那么我们可以定义一个反函数$f^{-1}(x)$，它把首都对应到国家。比如，如果$f(\text{中国}) = \text{北京}$，那么$f^{-1}(\text{北京}) = \text{中国}$。
+
+\begin{info}[反函数的定义]
+    如果函数$f: A \to B$是一个一一映成函数，那么存在一个函数$f^{-1}: B \to A$，使得$x$，$f^{-1}(f(x)) = x$，$f(f^{-1}(x)) = x$。
+\end{info}
+
+为什么一定要是一一映成函数才能有反函数呢？因为如果一个函数不是一一映成函数，那么就会有两个不同的$x$对应到同一个$y$，那么反函数就不知道应该把$y$对应到哪个$x$了。拿上面举过的例子，若一个函数$f(x)$，它把高三商1的学生对应到他们数学统测的分数水平\{$A$, $B$, $C$, $D$, $F$\}，这个函数就不是一对一的，因为肯定有不止一个学生在数学统测中拿到$A$。所以，如果硬要定义一个反函数$f^{-1}(x)$将分数水平对应到高三商1的学生，那么如果你输入$A$，这个反函数就会对应到不止一个学生，这就不符合函数的定义了。
+
+\begin{question}
+    已知函数$f(x) = 2x + 1$，求$f^{-1}(x)$。
+\end{question}
+
+\begin{solution}
+    首先，我们令$y = f^{-1}(x)$，那么$f(y) = x$。所以，
+    \begin{align*}
+        f(y) &= 2y + 1 = x\\
+        2y &= x - 1\\
+        y &= \dfrac{x - 1}{2}
+    \end{align*}
+\end{solution}
+
+\begin{question}
+    已知函数$f(x) = \dfrac{1}{x - 2}$，$x \neq 2$，求$f^{-1}(x)$。
+\end{question}
+
+\begin{solution}
+    首先，我们令$y = f^{-1}(x)$，那么$f(y) = x$。所以，
+    \begin{align*}
+        f(y) &= \dfrac{1}{y - 2} = x\\
+        y - 2 &= \dfrac{1}{x}\\
+        y &= \dfrac{1}{x} + 2
+    \end{align*}
+\end{solution}
+
+\subsection*{练习题}
+
+\subsubsection*{定义域和值域}
+
+\begin{enumerate}
+    \item 若$f(x) = x + \dfrac{1}{x}$, $x$ 为非零实数，则$f(x)$的值域是什么？
+    \item 试求函数$f(x) = \sqrt{x^2 - 1}{x^2 + 1}$的值域，式中$x \in \mathbb{R}$。
+    \item 若$f(x) = |2x - 3| + 1$，式中$0 \leq x \leq 4$，求$f(x)$的值域。
+    \item 函数$y = -2x^2 + 6x - 9$的值域是什么？
+    \item 已知函数$f: \mathbb{R} \to \mathbb{R}$，$f(x) = 2x^2 - 1$，$x \in (-1,3)$。求$f(x)$的值域。
+    \item 求函数$f(x) = \dfrac{\sqrt{3x - 1}}{x - 1}$的定义域。
+    \item 求函数$y = x^2 - 6x - 27$，$x \in \mathbb{R}$的值域。
+    \item 已知$f(x) = \dfrac{2x + k}{k - x}$，且$f(1) = 2$。当$x$取何值时，$f(x)$无意义？
+    \item 求实数函数$f(x) = \dfrac{1}{\sqrt{x+2}}$的定义域。
+    \item 求函数$f(x) = \dfrac{\sqrt{x + 1}}{x}$的定义域。
+    \item 已知函数$f(x) = x^2 - 4$的定义域为$[-1, 3]$，求$f(x)$的值域。
+    \item 函数$f(x)$定义成$f(x) = (x - 1)^2$，求$f(x)$的值域。
+\end{enumerate}
+
+\subsubsection*{合成函数}
+
+\begin{enumerate}
+    \item 已知函数$f(x) = x^2 - 2x + 3$，求$f(x-1)$。
+    \item 已知函数$f(x+1) = 2x^2 + 5x + 4$，求$f(3)$。
+    \item 设$f(x-1) = x^2 - 3x + 2$, 则$f(2)=$ ?
+    \item 已知函数$f(x) = 3x - 1$及$g(3x + 1) = f(x+2)$，求$g(x)$。
+    \item 若$g(x) = x - 2$, $(f \circ g)(x) = 2x^2 - 5x + 7$，求$f(x)$。
+    \item 若 $f: \mathbb{R} \rightarrow \mathbb{R}$ 定义成 $x \rightarrow 3 x-4$, 求另一函数 $g: \mathbb{R} \rightarrow \mathbb{R}$ 使得 $g \circ f: x \rightarrow 9 x^2+24 x+22$
+    \item 设 $f: x \rightarrow 2 x+3$ 及 $g: x \rightarrow \dfrac{x}{x+1}$, 式中 $x \neq-1$, 求 $f \circ g$。
+    \item 一函数定义成 $f: x \rightarrow x+1$ 。另一函数 $g$ 使到 $g \circ f: x \rightarrow 3 x^2+6 x$。求函数 $g$。
+    \item 一函数 $g: \mathbb{R} \rightarrow \mathbb{R}$ 定义成 $g(x)=3 x+1$, 另有一函数 $f$ 使得 $f \circ g(x)=9 x^2+6 x$ 。求函数 $f$。
+    \item 已知 $h(x)=x+5$ 及 $g(x)=x^2+8$。若 $g \circ h(a)=g(3)$, 求 $a$ 的值。
+    \item 二函数 $f, g$ 定义成 $f(x)=x^2$ 及 $g(x)=x+1$, 试求 $f \circ g(2)$ 之值。
+    \item 一函数 $f$ 的定义是 $f: x \rightarrow x-3$, 另一函数 $g$ 则使到 $g \circ f: x \rightarrow 4 x^2-20 x+25$, 那么 $g(x)$ 为
+    \item 已知 $f: x \rightarrow 2 x-1$ 及 $g: x \rightarrow \dfrac{x}{2}$, 求 $g \circ f$ 。
+    \item 已知 $f: x \rightarrow x+3$ 及 $f \circ g: x \rightarrow x^2+6 x+10$, 求 $g$ 。
+    \item 对于任意实数$x$而言，若$f(x) = 2x _ 1$，且$f[g(x)] = x^2 + x + g(x)$，则$g(x) =$ ?
+    \item 一函数 $f$ 定义成 $f(3 x-1)=9 x^2+3 x+5$, 则 $f(x)$ 的表达式为？
+    \item 假设函数 $f$ 与 $g$ 分别为 $f(x)=2 x+1, g(x)=x^2-4$ 。求合成函数
+    $g \circ f$ 和 $f \circ g$。
+    \item 设 $f(x)=3 x+2, g(x)=a x+b$, 求合成函数 $f \circ g$ 及 $g \circ f \circ$ 求出条件使得 $f \circ g=g \circ f$。
+    \item 设 $f(x)=3 x-2, g(x)=2 x^2+1, h(x)=a x+b$，求合成函数 $f \circ g$ 及 $g \circ f$。若 $(f \circ g \circ h)(x)=6 x^2+12 x+7$, 求 $a, b$ 之值。
+    \item 设 $f(x)=x+1, g(x)=x^2-4 x+1$，试求合成函数 $f \circ g$ 及 $g \circ f$。据此，试求使 $f \circ g(x)=g \circ f(x)$ 之 $x$ 值。
+    \item 函数 $f$ 与 $g$ 之定义为:
+    $f: x \rightarrow x^2+2 x$ 及 $g: x \rightarrow 3 x-2$ 。
+    求 $f(2), g(2),(f \circ g)(2)$ 及 $(g \circ f)(2)$ 之值。
+    \item 若 $f: x \rightarrow x+2$ 及 $g: x \rightarrow x^2-2 x+1$, 求合成函数 $g \circ f$ 及 $f \circ g$ 。从而求 $g \circ f(2)$ 及 $f \circ g(2)$ 之值。
+    \item 已知 $f: x \rightarrow 2 x-3$ 及 $f \circ g: x \rightarrow 6 x^2+10 x-15, x \in \mathbb{R}$, 求 $g(x)$。
+    \item 已知函数 $f: \mathbb{R}^{+} \rightarrow \mathbb{R}$ 定义成 $f(x)=\log x$, 函数 $g: S \rightarrow \mathbb{R}$ 定义成 $g(x)=\sqrt{2 x-3}-1$ 。试求 $\mathbb{R}$ 的最大子集 $S$, 使得 $f \circ g$ 有意义。
+\end{enumerate}
+
+\subsubsection*{反函数}
+
+\begin{enumerate}
+    \item 已知$f(1-2x) = 4x + 7$，求$f^{-1}(-5)$的值。
+    \item 已知$f(2x - 1) = \dfrac{x - 2}{4x + 3}$，求$f^{-1}(3)$的值。
+    \item 已知函数$g:\mathbb{R} \to \mathbb{R}$定义成$g(x) = x - 2$，$f:[0, \infty) \to (-\infty, 3]$为一函数使得$(g\circ f^{-1})(x) = \dfrac{x^2 - 6x + 1}{4}$，求$f(9)$的值。
+    \item 已知 $f: x \rightarrow \dfrac{a x+3}{4 x+5}$ 。若 $f^{-1}=f$, 则 $a$ 之值为?
+    \item 已知 $x>2$ 时, 函数 $f(x)=\dfrac{2 x-3}{x+a}$ 的反函数就是 $f(x)$ 本身, 则 $a$ 的值是?
+    \item 如果 $f: x \rightarrow x-3, g: x \rightarrow x^2-3$, 求 $\left(f^{-1} \circ g\right)(x)$。
+    \item 已知函数 $f: \mathbb{R} \rightarrow \mathbb{R}$ 定义成 $f(x)=a x+b,-10 \leq x \leq 10$ 其中 $a$ 与 $b$ 为常数。若 $f(4)=3$及 $f(-2)=6$, 求 $f^{-1}(-1)$ 的值。
+    \item 已知 $f^{-1}: x \rightarrow \dfrac{2 x-1}{x+3}, x \neq-3$, 求函数 $f$.
+   \item 已知 $f(x)=2 x^2+7$ 及 $(g \circ f)(x)=4 x^4+22 x^2+29$, 求 $g(x)$。
+    \item 若 $f: x \rightarrow 4 x+7$, 且 $g: x \rightarrow \dfrac{2 x+1}{x-1}$, 求 $f^{-1}(x)$，$g^{-1}(x)$，$g^{-1} \circ f^{-1}(3)$。
+    \item 设 $f: x \rightarrow 2 x+3$ 及 $g: x \rightarrow \frac{x}{x+1}$, 式中 $x \neq-1$, 求 $g^{-1}$ 。
+    \item 如果函数 $f: \mathbb{R} \rightarrow \mathbb{R}$ 定义成 $f(x+5)=x^3+7 x+8$, 求$f(8)$及$f^{-1}(8)$
+    4. 已知函数 $f(x)=\dfrac{2 x-3}{x+1}, x \neq-1$。求其反函数的解析式 $f^{-1}(x)$.
+    \item 若 $f: x \rightarrow 3+\log (x-2)$, 则 $f^{-1}(3)=$?
+    \item 若 $f(2 x-1)=x+1$, 则 $f^{-1}(x)=$
+    \item 已知 $f \circ g: x \rightarrow 3 x^2-1, x \in \mathbb{R}$ 且 $g^{-1} \circ f: x \rightarrow \sqrt{5 x+2}, x \in\left\{x \left\lvert\, x \geq-\frac{2}{5}\right.\right\}$, 求 $f^{-1} \circ f^{-1}(0)$的值。
+    \item 若函数 $f: \mathbb{R} \rightarrow \mathbb{R}$ 满足 $f(2 x-1)=5 x+2$, 求 $f^{-1}(3 x+1)$。
+    \item 设 $f(x)=\dfrac{10^x-10^{-x}}{10^x+10^{-x}}$, 试求其反函数 $f^{-1}$。
+    \item 函数 $f$ 与 $g$ 之定义为$f: x \rightarrow 5 x+3$；$g: x \rightarrow 2 x-7$。求$f \circ g$ 与 $(f \circ g)^{-1}$; $f^{-1}, g^{-1}$ 与 $g^{-1} \circ f^{-1}$。
+    \item 已知函数 $f$ 定义成 $f: x \rightarrow 3-\dfrac{x}{4}, x \in \mathbb{R}$。如果 $g \circ f^{-1}: x \rightarrow 2-5 x-3 x^2$, 求函数 $g$。
+\end{enumerate}
+
+\end{document}
