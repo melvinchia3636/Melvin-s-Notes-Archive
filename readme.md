@@ -1,4 +1,5 @@
 # Table of Contents
+- [吼吼.docx](<./吼吼.docx>)
 
 <details>
 <summary>Meth Videos</summary>
@@ -89,6 +90,7 @@
 - [年终考注释.docx](<./华文/年终考注释.docx>)
 - [年终考注释.pdf](<./华文/年终考注释.pdf>)
 - [毕业论文.docx](<./华文/毕业论文.docx>)
+- [第三课 出师表.docx](<./华文/第三课 出师表.docx>)
 - [谱集目录.docx](<./华文/谱集目录.docx>)
 - [高一古诗八首.md](<./华文/高一古诗八首.md>)
 - [应用文抄写1.docx](<./华文/应用文抄写1.docx>)
@@ -129,6 +131,7 @@
 - [人力资源管理.docx](<./商业学/人力资源管理.docx>)
 - [商业报告.pdf](<./商业学/商业报告.pdf>)
 - [商业报告.tex](<./商业学/商业报告.tex>)
+- [终极思维图.xmind](<./商业学/终极思维图.xmind>)
 - [高二商业学统测讲义.docx](<./商业学/高二商业学统测讲义.docx>)
 - [高二第一章商业学小测验范围.docx](<./商业学/高二第一章商业学小测验范围.docx>)
 - [高二第二章商业学测验范围.docx](<./商业学/高二第二章商业学测验范围.docx>)
@@ -327,6 +330,8 @@
 - [S2 chp16.pdf](<./数学/Add Math II/S2 chp16.pdf>)
 - [S2 chp4.pdf](<./数学/Add Math II/S2 chp4.pdf>)
 - [S3 chp11.pdf](<./数学/Add Math II/S3 chp11.pdf>)
+- [S3 chp12 12.1 & 12.3.pdf](<./数学/Add Math II/S3 chp12 12.1 & 12.3.pdf>)
+- [S3 chp12 12.1.pdf](<./数学/Add Math II/S3 chp12 12.1.pdf>)
 - [S3 chp3.pdf](<./数学/Add Math II/S3 chp3.pdf>)
 - [S3 chp8.pdf](<./数学/Add Math II/S3 chp8.pdf>)
 
@@ -891,6 +896,16 @@
 
 <dl><dd>
 <details>
+<summary>sus</summary>
+
+- [sus.pdf](<./数学/sus/sus.pdf>)
+- [sus.tex](<./数学/sus/sus.tex>)
+
+</details>
+</dd></dl>
+
+<dl><dd>
+<details>
 <summary>Textbook Solution Manuals</summary>
 
 <dl><dd><dl><dd>
@@ -1080,6 +1095,17 @@
 </details>
 </dd></dl></dd></dl>
 
+
+</details>
+</dd></dl>
+
+<dl><dd>
+<details>
+<summary>高三上半年统测复习</summary>
+
+- [structure.tex](<./数学/高三上半年统测复习/structure.tex>)
+- [函数.pdf](<./数学/高三上半年统测复习/函数.pdf>)
+- [函数.tex](<./数学/高三上半年统测复习/函数.tex>)
 
 </details>
 </dd></dl>
