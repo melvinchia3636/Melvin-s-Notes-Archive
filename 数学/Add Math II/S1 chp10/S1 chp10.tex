@@ -1,0 +1,1052 @@
+\documentclass{report}
+
+\usepackage{amsmath, amssymb}
+\usepackage{ctex}
+\usepackage[total={7in, 9.6in}]{geometry}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\newcommand{\sol}{\vspace{0.2cm}\textbf{解}:}
+
+\begin{document}
+\chapter*{\LARGE{高一第十章}\\\Huge{三角方程式}}
+
+\setcounter{chapter}{9}
+\setcounter{section}{0}
+
+\allowdisplaybreaks
+    \subsection*{（作答题）}
+
+    \begin{enumerate}[leftmargin=*]
+        \item 解方程式 $\sin 4 x+\cos 2 x=0$。
+        
+        \sol{}
+        \begin{align*}
+            \sin 4 x+\cos 2 x &= 0\\
+            2\sin 2 x\cos 2 x + \cos 2 x &= 0\\
+            \cos 2 x(2\sin 2 x + 1) &= 0\\
+            \cos 2 x = 0 \quad &\text{or} \quad \sin 2 x = -\dfrac{1}{2}\\
+            2x = k\pi + \dfrac{\pi}{2} \quad &\text{or} \quad 2x = k\pi + (-1)^{k+1} \dfrac{\pi}{6}\\
+            x = k\pi + \dfrac{\pi}{4} \quad &\text{or} \quad x = k\pi + (-1)^{k+1} \dfrac{\pi}{12} \quad \text{where } k \in \mathbb{Z} & \blacksquare
+        \end{align*}
+        
+        \item  解 $\dfrac{\cos x-\sin x}{\cos x+\sin x}=\cos ^2 x-\sin ^2 x$。
+        
+        \sol{}
+        \begin{align*}
+            \dfrac{\cos x-\sin x}{\cos x+\sin x} &= \cos^2 x - \sin^2 x\\
+            \dfrac{(\cos x - \sin x)^2}{(\cos^2 x - \sin^2 x)} &= \cos^2 x - \sin^2 x\\
+            \dfrac{\cos^2 x - 2\sin x\cos x + \sin^2 x}{\cos 2x} &= \cos 2x\\
+            1 - \sin 2x &= \cos^2 2x\\
+            1 - \sin 2x &= 1 - \sin^2 2x\\
+            \sin^2 2x - \sin 2x &= 0\\
+            \sin 2x(\sin 2x - 1) &= 0\\
+            \sin 2x = 0 \quad &\text{or} \quad \sin 2x = 1\\
+            2x = k\pi \quad &\text{or} \quad 2x = 2k\pi + \dfrac{\pi}{2}\\
+            x = k\pi \quad &\text{or} \quad x = k\pi + \dfrac{\pi}{4} \qquad \text{where } k \in \mathbb{Z} & \blacksquare
+        \end{align*}
+
+        \newpage
+        \item 解方程式 $\tan \left(\dfrac{\pi}{4}-x\right)+\cot \left(\dfrac{\pi}{4}-x\right)=4$。
+        
+        \sol{}
+        \begin{align*}
+            \tan \left(\dfrac{\pi}{4}-x\right)+\cot \left(\dfrac{\pi}{4}-x\right) &= 4\\
+           \tan \left(\dfrac{\pi}{4}-x\right)+\dfrac{1}{\tan \left(\dfrac{\pi}{4}-x\right)} &= 4\\
+              \dfrac{\tan^2 \left(\dfrac{\pi}{4}-x\right) + 1}{\tan \left(\dfrac{\pi}{4}-x\right)} &= 4\\
+                \dfrac{\sec^2 \left(\dfrac{\pi}{4}-x\right)}{\tan \left(\dfrac{\pi}{4}-x\right)} &= 4\\
+                \dfrac{1}{\sin \left(\dfrac{\pi}{4}-x\right)\cos \left(\dfrac{\pi}{4}-x\right)} &= 4\\
+                \dfrac{1}{2\sin \left(\dfrac{\pi}{2}-2x\right)} &= 2\\
+                \sin \left(\dfrac{\pi}{2}-2x\right) &= \dfrac{1}{2}\\
+                \cos 2x &= \dfrac{1}{2}\\
+                2x &= 2k\pi \pm \dfrac{\pi}{3}\\
+                x &= k\pi \pm \dfrac{\pi}{6} \qquad \text{where } k \in \mathbb{Z} & \blacksquare
+        \end{align*}
+       
+        \item 试证 $4 \cos x-3 \sin x \leq 5$。若 $4 \cos x-3 \sin x=5$, 求 $x$ 之一般值。
+        
+        \sol{}
+        \begin{align*}
+            y &= 4 \cos x - 3 \sin x\\
+            \dfrac{dy}{dx} &= -4 \sin x - 3 \cos x = 0\\
+            -4 \sin x &= 3 \cos x\\
+            \tan x &= -\dfrac{3}{4}\\
+            x &\approx -36.87^{\circ}\\
+            \dfrac{d^2y}{dx^2} &= -4 \cos x + 3 \sin x
+        \end{align*}
+        When $x = -36.87^{\circ}$,
+        \begin{align*}
+            \dfrac{d^2y}{dx^2} &= -4 \cos x + 3 \sin x\\
+            &= -4 \cos(-36.87^{\circ}) + 3 \sin(-36.87^{\circ})\\
+            &\approx -4 \times 0.8 + 3 \times -0.6\\
+            &\approx -5
+        \end{align*}
+        $\therefore$ $y$ is maximum when $x = -36.87^{\circ}$ and $y = 5$ $\implies$ $4 \cos x - 3 \sin x \leq 5$. \hfill $\blacksquare$
+
+        Let $t = \tan\dfrac{x}{2}$, then $\cos x = \dfrac{1-t^2}{1+t^2}$ and $\sin x = \dfrac{2t}{1+t^2}$.
+        \begin{align*}
+            4 \cos x - 3 \sin x &= 5\\
+            4 \left(\dfrac{1-t^2}{1+t^2}\right) - 3 \left(\dfrac{2t}{1+t^2}\right) &= 5\\
+            4 - 4t^2 - 6t &= 5 + 5t^2\\
+            9t^2 + 6t + 1 &= 0\\
+            (3t + 1)^2 &= 0\\
+            t &= -\dfrac{1}{3}\\
+            \tan \dfrac{x}{2} &= -\dfrac{1}{3}\\
+            \dfrac{x}{2} &= 180^{\circ} k - 18.43^{\circ}\\
+            x &= 360^{\circ} k - 36.87^{\circ} \quad \text{where } k \in \mathbb{Z}& \blacksquare
+        \end{align*}
+        
+        \item 求满足方程式 $4 \sin x-2 \cos x=3$ 的所有自 $0^{\circ}$ 至 $360^{\circ}$ 的角。
+        
+        \sol{}
+
+        Let $t = \tan\dfrac{x}{2}$, then $\cos x = \dfrac{1-t^2}{1+t^2}$ and $\sin x = \dfrac{2t}{1+t^2}$.
+        \begin{align*}
+            4 \sin x - 2 \cos x &= 3\\
+            4 \left(\dfrac{2t}{1+t^2}\right) - 2 \left(\dfrac{1-t^2}{1+t^2}\right) &= 3\\
+            8t - 2 + 2t^2 &= 3 + 3t^2\\
+            t^2 - 8t + 5 &= 0\\
+            t &= \dfrac{8 \pm \sqrt{64 - 4 \times 5}}{2}\\
+            & = 4 \pm \sqrt{11}\\
+            \tan\dfrac{x}{2} &= 4 \pm \sqrt{11}\\
+            \dfrac{x}{2} &= 180^{\circ} k + 82.22^{\circ} \quad \text{or} \quad 180^{\circ} k - 34.35^{\circ}\\
+            x &= 360^{\circ} k + 164.44^{\circ} \quad \text{or} \quad 360^{\circ} k - 68.7^{\circ} \quad \text{where } k \in \mathbb{Z}& \blacksquare
+        \end{align*}
+        
+        \item 解方程式 $3 \sin 2 x=2 \tan x$, 其中 $0 \leq x \leq 2 \pi$。
+        
+        \sol{}
+        \begin{align*}
+            3 \sin 2 x & = 2 \tan x\\
+            3 \sin x \cos x &= \dfrac{\sin x}{\cos x}\\
+            3 \sin x\cos^2 x - \sin x &= 0\\
+            \sin x(3\cos^2 x - 1) &= 0\\
+            \sin x &= 0 \quad \text{or} \quad 3\cos^2 x - 1 = 0\\
+            x &= k\pi \quad \text{or} \quad \cos x = \pm \dfrac{1}{\sqrt{3}}\\
+            x &= k\pi \quad \text{or} \quad x = 2k\pi \pm 0.955
+        \end{align*}
+        When $k = 0$, $x = 0$ or $x = \pm 0.955$.
+
+        When $k = 1$, $x = \pi$ or $x = \pi \pm 0.955$.
+
+        When $k = 2$, $x = 2\pi$ or $x = 2\pi \pm 0.955$.
+
+        Since $x \leq 2\pi$, the solutions are $0, \pi, 2\pi, 0.955, \pi \pm 0.955, 2\pi - 0.955$.\hfill $\blacksquare$
+        
+        \item 求满足方程式 $2 \sin 3 x+\cos 2 x=1$ 在 $0^{\circ} \leq x \leq 360^{\circ}$ 范围内 $x$ 的角度。
+        
+        \sol{}
+        \begin{align*}
+            2 \sin 3 x + \cos 2 x &= 1\\
+            2 (\sin x \cos 2x + \cos x \sin 2x) + 1 - 2\sin^2 x  &= 1\\
+            2 (\sin x (2\cos^2 x - 1) + \cos x (2\sin x \cos x))  - 2\sin^2 x &= 0\\
+            2 (2\cos^2 x \sin x - \sin x + 2\sin x \cos^2 x)  - 2\sin^2 x &= 0\\
+            2(4\sin x \cos^2 x - \sin x)  - 2\sin^2x & = 0\\
+            2(4\sin x (1-\sin^2 x) - \sin x)  - 2\sin^2 x & = 0\\
+            2(4\sin x - 4\sin^3 x - \sin x)  - 2\sin^2 x & = 0\\
+            2(3\sin x - 4\sin^3 x)  - 2\sin^2 x & = 0\\
+            6\sin x - 8\sin^3 x  - 2\sin^2 x & = 0\\
+            \sin x(4\sin^2 x + \sin x - 3) &= 0\\
+            \sin x(\sin x + 1)(4\sin x - 3) &= 0\\
+            \sin x = 0 \quad \text{or} \quad \sin x = -1 \quad &\text{or} \quad \sin x = \dfrac{3}{4}\\
+            x = 180^{\circ}k \quad \text{or} \quad x = 360^{\circ}k - 90^{\circ} \quad &\text{or} \quad x = 180^{\circ}k + (-1)^k \cdot 48.59^{\circ}
+        \end{align*}
+        When $k = 0$, $x = 0$ or $x = -90$ or $x = 48.59$.
+
+        When $k = 1$, $x = 180$ or $x = 270$ or $x = 131.41$.
+
+        When $k = 2$, $x = 360$ or $x = 630$ or $x = 408.59$.
+
+        Since $0 \leq x \leq 360$, the solutions are $0^{0}, 180^{0}, 270^{0}, 360^{0}, 48.59^{0}, 131.41^{0}$. \hfill $\blacksquare$
+
+        
+        \item 求满足方程式 $5 \cos 2 x+8 \sin x=3$ 的所有自 $0^{\circ}$ 至 $360^{\circ}$ 的 $x$ 值。
+        
+        \sol{}
+        \begin{align*}
+            5 \cos 2 x + 8 \sin x &= 3\\
+            5 (1 - 2\sin^2 x) + 8 \sin x &= 3\\
+            5 - 10\sin^2 x + 8\sin x &= 3\\
+            10\sin^2 x - 8\sin x - 2 &= 0\\
+            5\sin^2 x - 4\sin x - 1 &= 0\\
+            (5\sin x + 1)(\sin x - 1) &= 0\\
+            \sin x = -\dfrac{1}{5} \quad &\text{or} \quad \sin x = 1\\
+            x = 180^{\circ}k + (-1)^{k+1} \cdot 11.54^{\circ} \quad &\text{or} \quad x = 180^{\circ}k + 90^{\circ}
+        \end{align*}
+        When $k = 0$, $x = -11.54$ or $x = 90$.
+
+        When $k = 1$, $x = 191.54$ or $x = 270$.
+
+        When $k = 2$, $x = 348.46$ or $x = 450$.
+
+        Since $0 \leq x \leq 360$, the solutions are $90^{\circ}, 270^{\circ}, 191.54^{\circ}, 348.46^{\circ}$. \hfill $\blacksquare$
+        
+        \item 解方程式 $20 \cos x-15 \sin x=9$, 式中 $0^{\circ} \leq x \leq 360^{\circ}$。
+        
+        \sol{}
+
+        Let $t = \tan\dfrac{x}{2}$, then $\cos x = \dfrac{1-t^2}{1+t^2}$ and $\sin x = \dfrac{2t}{1+t^2}$.
+        \begin{align*}
+            20 \cos x - 15 \sin x &= 9\\
+            20 \left(\dfrac{1-t^2}{1+t^2}\right) - 15 \left(\dfrac{2t}{1+t^2}\right) &= 9\\
+            20 - 20t^2 - 30t &= 9 + 9t^2\\
+            29t^2 + 30t - 11 &= 0\\
+            t &= \dfrac{-30 \pm \sqrt{30^2 - 4 \times 29 \times -11}}{2 \times 29}\\
+            &= \dfrac{-15 \pm 4\sqrt{34}}{29}\\
+            \tan\dfrac{x}{2} &= \dfrac{-15 \pm 4\sqrt{34}}{29}\\
+            \dfrac{x}{2} &= 180^{\circ}k + \arctan\left(\dfrac{-15 \pm 4\sqrt{34}}{29}\right)\\
+            x & = 360^{\circ}k + 32.03^{\circ} \quad \text{or} \quad x = 360^{\circ}k - 105.8^{\circ} \quad \text{where } k \in \mathbb{Z}
+        \end{align*}
+        When $k = 0$, $x = 32.03$ or $x = -105.8$.
+
+        When $k = 1$, $x = 392.03$ or $x = 254.2$.
+
+        Since $0 \leq x \leq 360$, the solutions are $32.03^{\circ}, 254.2^{\circ}$. \hfill $\blacksquare$
+        
+        \item 试不用计算机或对数表, 求三角方程式 $\cos \theta+\sqrt{3} \sin \theta=\sqrt{2}$ 之一般解。
+        
+        \sol{}
+        \begin{align*}
+            \cos \theta + \sqrt{3} \sin \theta &= R\cos(\theta - \alpha) = R\cos\theta\cos\alpha + R\sin\theta\sin\alpha
+        \end{align*}
+        \begin{align*}
+            \begin{cases}
+                R\cos\alpha &= 1\ \cdots\ (1)\\
+                R\sin\alpha &= \sqrt{3}\ \cdots\ (2)
+            \end{cases}
+        \end{align*}
+        \begin{align*}
+            (1)^2 + (2)^2 &\Rightarrow R^2(\cos^2\alpha + \sin^2\alpha) = 1 + 3\\
+            R^2 &= 4\\
+            R &= \pm 2\\
+            \dfrac{(2)}{(1)} &\Rightarrow \tan\alpha = \sqrt{3}\\
+            \alpha &= \dfrac{\pi}{3}
+        \end{align*}
+        \begin{align*}
+            \cos \theta + \sqrt{3} \sin \theta &= \sqrt{2}\\
+            \pm 2\cos\left(\theta - \dfrac{\pi}{3}\right) &= \sqrt{2}\\
+            \cos\left(\theta - \dfrac{\pi}{3}\right) &= \pm \dfrac{\sqrt{2}}{2}\\
+            \theta - \dfrac{\pi}{3} &= 2k\pi \pm \dfrac{\pi}{4}\\
+            \theta &= 2k\pi + \dfrac{\pi}{3} \pm \dfrac{\pi}{4}\\
+            \theta &= 2k\pi + \dfrac{7\pi}{12} \quad \text{or} \quad \theta = 2k\pi + \dfrac{\pi}{12} \quad \text{where } k \in \mathbb{Z} & \blacksquare
+        \end{align*}
+        
+        
+        \item \begin{enumerate}
+            \item 解方程式 $3 \cos x-\sin x=1$, 式中 $0^{\circ} \leq x \leq 360^{\circ}$。
+            
+            \sol{}
+
+            Let $t = \tan\dfrac{x}{2}$, then $\cos x = \dfrac{1-t^2}{1+t^2}$ and $\sin x = \dfrac{2t}{1+t^2}$.
+            \begin{align*}
+                3 \cos x - \sin x &= 1\\
+                3 \left(\dfrac{1-t^2}{1+t^2}\right) - \left(\dfrac{2t}{1+t^2}\right) &= 1\\
+                3 - 3t^2 - 2t &= 1 + t^2\\
+                4t^2 + 2t - 2 &= 0\\
+                2t^2 + t - 1 &= 0\\
+                (2t - 1)(t + 1) &= 0\\
+                t &= \dfrac{1}{2} \quad \text{or} \quad t = -1\\
+                \tan\dfrac{x}{2} &= \dfrac{1}{2} \quad \text{or} \quad \tan\dfrac{x}{2} = -1\\
+                \dfrac{x}{2} &= 180^{\circ}k + 26.57^{\circ} \quad \text{or} \quad \dfrac{x}{2} = 180^{\circ}k - 45^{\circ}\\
+                x &= 360^{\circ}k + 53.14^{\circ} \quad \text{or} \quad x = 360^{\circ}k - 90^{\circ}
+            \end{align*}
+            When $k = 0$, $x = 53.14$ or $x = -90$.
+
+            When $k = 1$, $x = 413.14$ or $x = 270$.
+
+            Since $0 \leq x \leq 360$, the solutions are $53.14^{\circ}, 270^{\circ}$. \hfill $\blacksquare$
+        
+            \newpage
+            \item 求下列方程式的一般解:
+            
+            \begin{enumerate}
+                \item $\sin 2 \theta+\cos ^2 \theta=1$;
+                
+                \sol{}
+                \begin{align*}
+                    \sin 2 \theta + \cos^2 \theta &= 1\\
+                    2\sin\theta\cos\theta + 1 - \sin^2\theta &= 1\\
+                    2\sin\theta\cos\theta - \sin^2\theta &= 0\\
+                    \sin\theta(2\cos\theta - \sin\theta) &= 0\\
+                    \sin\theta = 0 \text{ or } 2\cos\theta - \sin\theta &= 0\\
+                    \sin\theta = 0 \text{ or } \tan\theta &= 2\\
+                    \theta &= k\pi \text{ or } \theta = k\pi + 1.107 \quad \text{where } k \in \mathbb{Z} & \blacksquare
+                \end{align*}
+        
+                \item $\cos 3 \theta+2 \cos \theta=0$。
+
+                \sol{}
+                \begin{align*}
+                    \cos 3 \theta+2 \cos \theta & = 0\\
+                    \cos 2\theta\cos\theta - \sin 2\theta\sin\theta + 2\cos\theta &= 0\\
+                    (1 - 2\sin^2\theta)\cos\theta - 2\sin^2 \theta\cos\theta + 2\cos\theta &= 0\\
+                    3\cos\theta - 4\sin^2\theta\cos\theta &= 0\\
+                    \cos\theta(3 - 4\sin^2\theta) &= 0\\
+                    \cos\theta = 0 \text{ or } 3 - 4(1 - \cos^2\theta) &= 0\\
+                    \cos\theta = 0 \text{ or } \cos^2\theta &= \dfrac{1}{4}\\
+                    \cos\theta = 0 \text{ or } 2\cos^2\theta &= \dfrac{1}{2}\\
+                    \cos\theta = 0 \text{ or } 1 - 2\cos^2\theta &= -\dfrac{1}{2}\\
+                    \cos\theta = 0 \text{ or } \cos2\theta &= -\dfrac{1}{2}\\
+                    \theta &= k\pi + \dfrac{\pi}{2} \text{ or } 2\theta = 2k\pi \pm \dfrac{2\pi}{3}\\
+                    \theta &= k\pi + \dfrac{\pi}{2} \text{ or } \theta = k\pi \pm \dfrac{\pi}{3} \quad \text{where } k \in \mathbb{Z} & \blacksquare
+                \end{align*}
+            \end{enumerate}
+        \end{enumerate}
+        
+        \item 求满足方程式 $\sin 5 x+\sin 3 x=\sin 8 x$ 在 $0 \leq x \leq \pi$ 的所有 $x$ 之值。
+        
+        \sol{}
+        \begin{align*}
+            \sin 5 x + \sin 3 x &= \sin 8 x\\
+            2\sin 4x\cos x &= 2\sin 4x\cos 4x\\
+            \sin 4x(\cos x - \cos 4x) &= 0\\
+            \sin 4x\left(2\sin \dfrac{5x}{2}\sin \dfrac{3x}{2}\right) &= 0\\
+            \sin 4x\sin \dfrac{5x}{2}\sin \dfrac{3x}{2} &= 0\\
+            \sin 4x = 0 \text{ or } \sin \dfrac{5x}{2} = 0 \text{ or } \sin \dfrac{3x}{2} = 0\\
+            4x = k\pi \text{ or } \dfrac{5x}{2} = k\pi \text{ or } \dfrac{3x}{2} = k\pi\\
+            x = \dfrac{k\pi}{4} \text{ or } x = \dfrac{2k\pi}{5} \text{ or } x = \dfrac{2k\pi}{3}
+        \end{align*}
+        When $k = 0$, $x = 0$ or $x = 0$ or $x = 0$.
+
+        When $k = 1$, $x = \dfrac{\pi}{4}$ or $x = \dfrac{2\pi}{5}$ or $x = \dfrac{2\pi}{3}$.
+
+        When $k = 2$, $x = \dfrac{\pi}{2}$ or $x = \dfrac{4\pi}{5}$ or $x = \dfrac{4\pi}{3}$.
+
+        When $k = 3$, $x = \dfrac{3\pi}{4}$ or $x = \dfrac{6\pi}{5}$ or $x = \dfrac{6\pi}{3}$.
+
+        When $k = 4$, $x = \pi$ or $x = \dfrac{8\pi}{5}$ or $x = 2\pi$.
+
+        Since $0 \leq x \leq \pi$, the solutions are $0, \dfrac{\pi}{4}, \dfrac{2\pi}{5}, \dfrac{\pi}{2}, \dfrac{2\pi}{3}, \dfrac{3\pi}{4}, \dfrac{4\pi}{5}, \pi$. \hfill $\blacksquare$
+        
+        \item 解方程式 $3 \sin 2 \theta-4 \cos 2 \theta=2$, 式中 $0^{\circ} \leq \theta \leq 180^{\circ}$。
+        
+        \sol{}
+        \begin{align*}
+            3 \sin 2 \theta-4 \cos 2 \theta &= 2\\
+            6\sin\theta\cos\theta - 4(\cos^2\theta - \sin^2\theta) &= 2\\
+            6\sin\theta\cos\theta - 4\cos^2\theta + 4\sin^2\theta &= 2\\
+            3\sin\theta\cos\theta - 2\cos^2\theta + 2\sin^2\theta &= 1\\
+            3\sin\theta\cos\theta - 2\cos^2\theta + 2\sin^2\theta &= \sin^2\theta + \cos^2\theta\\
+            3\sin\theta\cos\theta - 3\cos^2\theta + \sin^2\theta &= 0\\
+            \tan^2\theta + 3\tan\theta - 3 &= 0\\
+            \tan\theta &= \dfrac{-3 \pm \sqrt{21}}{2}\\
+            \theta &= 180^{\circ}k + \arctan\left(\dfrac{-3 \pm \sqrt{21}}{2}\right)\\
+            \theta &= 180^{\circ}k + 38.35^{\circ} \quad \text{or} \quad \theta = 180^{\circ}k - 75.22^{\circ}
+        \end{align*}
+        When $k = 0$, $\theta = 38.35$ or $\theta = -75.22$.
+
+        When $k = 1$, $\theta = 218.35$ or $\theta = 104.78$.
+
+        Since $0 \leq \theta \leq 180$, the solutions are $38.35^{\circ}, 104.78^{\circ}$. \hfill $\blacksquare$
+        
+        \newpage
+        \item 已知 $\alpha$ 是锐角且 $\cos \alpha=x-1$, 证明 $\cos 2 \alpha-3 \cos \alpha \sin ^2 \alpha=3 x^3-7 x^2+2 x+1$。然后解方程式 $\cos 2 \alpha-3 \cos \alpha \sin ^2 \alpha+1=0$。
+        
+        \sol{}
+        \begin{align*}
+            \cos 2 \alpha-3 \cos \alpha \sin ^2 \alpha &= 2\cos^2\alpha - 1 - 3\cos\alpha(1 - \cos^2\alpha)\\
+            & = 2\cos^2\alpha - 1 - 3\cos\alpha + 3\cos^3\alpha\\
+            & = 2(x - 1)^2 - 1 - 3(x - 1) + 3(x - 1)^3\\
+            & = 2(x^2 - 2x + 1) - 1 - 3x + 3 + 3(x^3 - 3x^2 + 3x - 1)\\
+            & = 2x^2 - 4x + 2 - 1 - 3x + 3 + 3x^3 - 9x^2 + 9x - 3\\
+            & = 3x^3 - 7x^2 + 2x + 1 & \blacksquare
+        \end{align*}
+        \begin{align*}
+            \cos 2 \alpha-3 \cos \alpha \sin ^2 \alpha+1 &= 0\\
+            3x^3 - 7x^2 + 2x + 1 + 1 &= 0\\
+            3x^3 - 7x^2 + 2x + 2 &= 0\\
+            (x - 1)(3x^2 - 4x - 2) &= 0\\
+            x - 1 = 0 \text{ or } 3x^2 - 4x - 2 &= 0\\
+            \cos \alpha = 1 \text{ or } \cos \alpha + 1 &= \dfrac{2 \pm \sqrt{10}}{3}\\
+            \alpha &= k\pi + \dfrac{\pi}{2} \text{ or } \alpha = 180^{\circ}k \pm 43.88^{\circ}
+        \end{align*}
+        When $n = 0$, $\alpha = 90^{\circ}$ or $\alpha = 43.88^{\circ}$ or $\alpha = -43.88^{\circ}$.
+
+        $\because$ $\alpha$ is acute, $\therefore$ $\alpha = 43.88^{\circ}$. \hfill $\blacksquare$
+        
+        \item \begin{enumerate}
+    
+            \item 若 $5 \cos \theta-12 \sin \theta=R \cos (\theta+\alpha)$, 式中 $\mathrm{R}$ 为常数, $\alpha$ 为锐角, 试求 $R$ 和 $\alpha$ 之值如果 $5 \cos \theta-12 \sin \theta=k$, 试证 $-13 \leq k \leq 13$。
+        
+            由此, 试解方程式 $5 \cos \theta-12 \sin \theta=4$, 式中 $0^{\circ} \leq \theta \leq 360^{\circ}$。
+
+            \sol{}
+            \begin{align*}
+                5 \cos \theta-12 \sin \theta &= R \cos (\theta+\alpha) = R\cos\theta\cos\alpha - R\sin\theta\sin\alpha
+            \end{align*}
+            \begin{align*}
+                \begin{cases}
+                    R\cos\alpha &= 5\ \cdots\ (1)\\
+                    R\sin\alpha &= 12\ \cdots\ (2)
+                \end{cases}
+            \end{align*}
+            \begin{align*}
+                (1)^2 + (2)^2 &\Rightarrow R^2(\cos^2\alpha + \sin^2\alpha) = 5^2 + 12^2\\
+                R &= 13 &\blacksquare\\
+                \dfrac{(2)}{(1)} &\Rightarrow \tan\alpha = \dfrac{12}{5}\\
+                \alpha &= 67.38^{\circ} &\blacksquare
+            \end{align*}
+            \newpage
+            \begin{align*}
+                 5 \cos \theta-12 \sin \theta &= k\\
+                 13\cos\left(\theta + 67.38^{\circ}\right) &= k\\
+                 -1 \leq \cos\left(\theta + 67.38^{\circ}\right) &\leq 1\\
+                    -13 \leq 13\cos\left(\theta + 67.38^{\circ}\right) &\leq 13\\
+                    -13 \leq k &\leq 13
+            \end{align*}
+            \begin{align*}
+                5 \cos \theta-12 \sin \theta &= 4\\
+                13\cos\left(\theta + 67.38^{\circ}\right) &= 4\\
+                \cos\left(\theta + 67.38^{\circ}\right) &= \dfrac{4}{13}\\
+                \theta + 67.38^{\circ} &= 360^{\circ}k \pm 72.08^{\circ}\\
+                \theta &= 360^{\circ}k - 67.38^{\circ} \pm 72.08^{\circ}\\
+                \theta &= 360^{\circ}k + 4.7^{\circ} \quad \text{or} \quad \theta = 360^{\circ}k - 139.46^{\circ}
+            \end{align*}
+            When $k = 0$, $\theta = 4.7$ or $\theta = -139.46$.
+
+            When $k = 1$, $\theta = 364.7$ or $\theta = 220.54$.
+
+            Since $0 \leq \theta \leq 360$, the solutions are $4.7^{\circ}, 220.54^{\circ}$. \hfill $\blacksquare$
+
+            \item 因式分解 $8 \cos ^3 x+6 \cos ^2 x-3 \cos x-1$。
+        
+            由此试求满足方程式 $8 \cos ^3 x+6 \cos ^2 x-3 \cos x-1=0$ 的所有 $x$ 之值,且 $0^{\circ} \leq \theta \leq 360^{\circ}$。
+
+            \sol{}
+
+            Let $u = \cos x$.
+            \begin{align*}
+                8\cos^3 x + 6\cos^2 x - 3\cos x - 1 &= 8u^3 + 6u^2 - 3u - 1\\
+                & = (2u-1)(4u^2 + 5u + 1)\\
+                & = (2u-1)(u+1)(4u+1)\\
+                & = (2\cos x - 1)(\cos x + 1)(4\cos x + 1) & \blacksquare
+            \end{align*}
+            \begin{align*}
+                8 \cos ^3 x+6 \cos ^2 x-3 \cos x-1 &= 0\\
+                (2\cos x - 1)(\cos x + 1)(4\cos x + 1) &= 0\\
+                2\cos x - 1 = 0 \text{ or } \cos x + 1 &= 0 \text{ or } 4\cos x + 1 = 0\\
+                \cos x = \dfrac{1}{2} \text{ or } \cos x = -1 \text{ or } \cos x = -\dfrac{1}{4}\\
+                x = 360^{\circ}k \pm 60^{\circ} \text{ or } x = 360^{\circ}k + 180^{\circ} \text{ or } x = 360^{\circ}k \pm 104.48^{\circ}
+            \end{align*}
+            When $k = 0$, $x = 60$ or $x = -60$ or $x = 180$ or $x = 104.48$ or $x = -104.48$.
+
+            When $k = 1$, $x = 420$ or $x = 300$ or $x = 540$ or $x = 464.48$ or $x = 255.52$.
+
+            Since $0 \leq x \leq 360$, the solutions are $60^{\circ}, 180^{\circ}, 300^{\circ}, 104.48^{\circ}, 255.52^{\circ}$.   \hfill $\blacksquare$
+        \end{enumerate}
+
+        \newpage
+        \item 试在 $0 \leq x \leq 2 \pi$ 范围内解方程式: $\sin x+\sin 3 x+\sin 5 x=0$。
+        
+        \sol{}
+        \begin{align*}
+            \sin x+\sin 3 x+\sin 5 x &= 0\\
+            \sin x + 2\sin 4x\cos x &= 0\\
+            \sin x + 4\sin 2x\cos 2x\cos x &= 0\\
+            \sin x + 4\sin 2x(1 - 2\sin^2 x)\cos x &= 0\\
+            \sin x + 4\sin 2x\cos x - 8\sin^2 x\sin 2x\cos x &= 0\\
+            \sin x + 4(2\sin x\cos x)\cos x - 8\sin^2 x(2\sin x\cos x)\cos x &= 0\\
+            \sin x + 8\sin x\cos^2 x - 16\sin^3 x\cos^2 x &= 0\\
+            \sin x + 8\sin x(1 - \sin^2 x) - 16\sin^3 x(1 - \sin^2 x) &= 0\\
+            \sin x + 8\sin x - 8\sin^3 x - 16\sin^3 x + 16\sin^5 x &= 0\\
+            16\sin^5 x - 24\sin^3 x + 9\sin x &= 0\\
+            \sin x(16\sin^4 x - 24\sin^2 x + 9) &= 0\\
+            \sin x(4\sin^2 x - 3)^2 &= 0\\
+            \sin x = 0 \text{ or } 4\sin^2 x - 3 &= 0\\
+            x = k\pi \text{ or } \sin x &= \pm\dfrac{\sqrt{3}}{2}\\
+            x = k\pi \text{ or } x &= k\pi \pm (-1)^k\left(\dfrac{\pi}{3}\right)\\
+            x = k\pi \text{ or } x &= k\pi \pm \dfrac{\pi}{3}
+        \end{align*}
+        When $k = 0$, $x = 0$ or $x = \dfrac{\pi}{3}$ or $x = -\dfrac{\pi}{3}$.
+
+        When $k = 1$, $x = \pi$ or $x = \dfrac{4\pi}{3}$ or $x = \dfrac{2\pi}{3}$.
+
+        When $k = 2$, $x = 2\pi$ or $x = \dfrac{5\pi}{3}$ or $x = \dfrac{7\pi}{3}$.
+
+        Since $0 \leq x \leq 2\pi$, the solutions are $0, \dfrac{\pi}{3}, \dfrac{2\pi}{3}, \pi, \dfrac{4\pi}{3}, \dfrac{5\pi}{3}, 2\pi$. \hfill $\blacksquare$
+
+        \item 如果 $3 \sin x+2 \cos x \equiv R \sin (x+\alpha)$, 式中 $R$ 是常数, $\alpha$ 是锐角, 求 $R$ 及 $\alpha$ 的值。据此或其他方法, 求:
+        
+        \sol{}
+        \begin{align*}
+            3 \sin x+2 \cos x &= R \sin (x+\alpha) = R\sin x\cos\alpha + R\cos x\sin\alpha\\
+            3\sin x + 2\cos x &= R\sin x\cos\alpha + R\cos x\sin\alpha
+        \end{align*}
+        \begin{align*}
+            \begin{cases}
+                R\cos\alpha &= 3\ \cdots\ (1)\\
+                R\sin\alpha &= 2\ \cdots\ (2)
+            \end{cases}
+        \end{align*}
+        \begin{align*}
+            (1)^2 + (2)^2 &\Rightarrow R^2(\cos^2\alpha + \sin^2\alpha) = 3^2 + 2^2\\
+            R &= \sqrt{13} &\blacksquare\\
+            \dfrac{(2)}{(1)} &\Rightarrow \tan\alpha = \dfrac{2}{3}\\
+            \alpha &= 33.69^{\circ} &\blacksquare
+        \end{align*}
+        
+        \begin{enumerate}
+        \item $\dfrac{1}{(3 \sin x+2 \cos x)^2}$ 的最小值;
+        
+        \sol{}
+        \begin{align*}
+            \dfrac{1}{(3 \sin x+2 \cos x)^2} &= \dfrac{1}{13\sin^2(x + 33.69^{\circ})}
+        \end{align*}
+        Since $\sin^2(x + 33.69^{\circ}) \leq 1$, the minimum value is $\dfrac{1}{13}$. \hfill $\blacksquare$
+        
+        \item 方程式 $3 \sin x+2 \cos x=3$ 在 $0^{\circ} \leq x \leq 180^{\circ}$ 的解。
+        
+        \sol{}
+        \begin{align*}
+            3 \sin x+2 \cos x &= 3\\
+            \sqrt{13}\sin(x + 33.69^{\circ}) &= 3\\
+            \sin(x + 33.69^{\circ}) &= \dfrac{3}{\sqrt{13}}\\
+            x + 33.69^{\circ} &= 180^{\circ}k + (-1)^k \cdot 56.31^{\circ}\\
+            x &= 180^{\circ}k + (-1)^k \cdot 56.31^{\circ} - 33.69^{\circ}
+        \end{align*}
+        When $k = 0$, $x = 22.62$.
+
+        When $k = 1$, $x = 90$.
+
+        Since $0 \leq x \leq 180$, the solutions are $22.62^{\circ}, 90^{\circ}$. \hfill $\blacksquare$
+        \end{enumerate}
+
+        \item 解方程式 $3 \cos x+4 \sin x=2$, 式中 $0^{\circ} \leq x \leq 360^{\circ}$。
+        
+        \sol{}
+        \begin{align*}
+            3 \cos x+4 \sin x &= R\sin(x + \alpha) = R\sin x\cos\alpha + R\cos x\sin\alpha
+        \end{align*}
+        \begin{align*}
+            \begin{cases}
+                R\sin\alpha &= 3\ \cdots\ (1)\\
+                R\cos\alpha &= 4\ \cdots\ (2)
+            \end{cases}
+        \end{align*}
+        \begin{align*}
+            (1)^2 + (2)^2 &\Rightarrow R^2(\sin^2\alpha + \cos^2\alpha) = 3^2 + 4^2\\
+            R &= 5\\
+            \dfrac{(1)}{(2)} &\Rightarrow \tan\alpha = \dfrac{3}{4}\\
+            \alpha &= 36.87^{\circ}
+        \end{align*}
+        \begin{align*}
+            3 \cos x+4 \sin x &= 2\\
+            5\sin(x + 36.87^{\circ}) &= 2\\
+            \sin(x + 36.87^{\circ}) &= \dfrac{2}{5}\\
+            x + 36.87^{\circ} &= 180^{\circ}k + (-1)^k \cdot 23.58^{\circ}\\
+            x &= 180^{\circ}k + (-1)^k \cdot 23.58^{\circ} - 36.87^{\circ}
+        \end{align*}
+        When $k = 0$, $x = -13.29$
+
+        When $k = 1$, $x = 119.55$
+
+        When $k = 2$, $x = 346.71$
+
+        Since $0 \leq x \leq 360$, the solutions are $119.55^{\circ}, 346.71^{\circ}$. \hfill $\blacksquare$
+
+        \item 求方程式 $\cos x+\cos 7 x=\cos 4 x$ 的一般解, 答案以弧度表示。
+        
+        \sol{}
+        \begin{align*}
+            \cos x+\cos 7 x &= \cos 4 x\\
+            2\cos 4x\cos 3x &= \cos 4x\\
+            \cos 4x(2\cos 3x - 1) &= 0\\
+            \cos 4x = 0 \text{ or } 2\cos 3x - 1 &= 0\\
+            4x = 2k\pi \pm \dfrac{\pi}{2} \text{ or } 3x = 2k\pi \pm \dfrac{\pi}{3}\\
+            x = \dfrac{k\pi}{2} \pm \dfrac{\pi}{8} \text{ or } x &= \dfrac{2k\pi}{3} \pm \dfrac{\pi}{9} \quad \text{where } k \in \mathbb{Z} & \blacksquare
+        \end{align*}
+        
+        \item 求方程式 $2 \cos ^2 \theta+\sqrt{3} \sin \theta+1=0$ 的一般解。
+        
+        \sol{}
+        \begin{align*}
+            2 \cos ^2 \theta+\sqrt{3} \sin \theta+1 &= 0\\
+            2(1 - \sin^2\theta) + \sqrt{3}\sin\theta + 1 &= 0\\
+            2 - 2\sin^2\theta + \sqrt{3}\sin\theta + 1 &= 0\\
+            2\sin^2\theta - \sqrt{3}\sin\theta - 3 &= 0\\
+            (\sin\theta - \sqrt{3})(2\sin\theta + \sqrt{3}) &= 0\\
+            \sin\theta = \sqrt{3} \text{ or } \sin\theta &= -\dfrac{\sqrt{3}}{2}\\
+            \theta = k\pi + (-1)^k\dfrac{\pi}{3} \text{ or } \theta &= k\pi + (-1)^{k+1}\dfrac{\pi}{3}\\
+        \end{align*}
+        $\because \theta = k\pi + (-1)^k\dfrac{\pi}{3}$ is included in $\theta = k\pi + (-1)^{k+1}\dfrac{\pi}{3}$,
+
+        $\therefore$ the general solution is $\theta = k\pi + (-1)^{k+1}\dfrac{\pi}{3}$. \hfill $\blacksquare$
+        
+        \newpage
+        \item 试证 $\cos \theta+2 \cos 2 \theta+\cos 3 \theta=4 \cos 2 \theta \cos ^2 \dfrac{1}{2} \theta$。
+
+        据此, 求满足方程式 $\cos \theta+2 \cos 2 \theta+\cos 3 \theta=0$ 的所有 $\theta$ 的值, 且 $0 \leq \theta \leq 2 \pi$。
+
+        \sol{}
+        \begin{align*}
+            L.H.S. = \cos \theta+2 \cos 2 \theta+\cos 3 \theta & = \cos \theta + 2(2\cos^2\theta - 1) + \cos 2\theta\cos\theta - \sin 2\theta\sin\theta\\
+            & = \cos \theta + 4\cos^2\theta - 2 + (2\cos^2\theta - 1)\cos\theta - 2\sin^2\theta\cos\theta\\
+            & = 4\cos^2\theta - 2 + 2\cos^3\theta - 2(1 - \cos^2\theta)\cos\theta\\
+            & = 4\cos^2\theta - 2 + 2\cos^3\theta - 2\cos\theta + 2\cos^3\theta\\
+            & = 4\cos^2\theta - 2 + 4\cos^3\theta - 2\cos\theta\\
+            R.H.S. = 4 \cos 2 \theta \cos ^2 \dfrac{1}{2} \theta & = 4(2\cos^2\theta - 1)\left(\dfrac{1 + \cos\theta}{2}\right)\\
+            & = 2(2\cos^2\theta - 1)(1 + \cos\theta)\\
+            & = 2(2\cos^2\theta - 1 + 2\cos^3\theta - \cos\theta)\\
+            & = 4\cos^2\theta - 2 + 4\cos^3\theta - 2\cos\theta
+        \end{align*}
+        Since $L.H.S. = R.H.S.$, the equation is true.
+        \begin{align*}
+            \cos \theta+2 \cos 2 \theta+\cos 3 \theta &= 0\\
+            4\cos 2\theta\cos^2\dfrac{1}{2}\theta &= 0\\
+            \cos 2\theta\cos^2\dfrac{1}{2}\theta &= 0\\
+            \cos 2\theta = 0 \text{ or } \cos\dfrac{1}{2}\theta = 0\\
+            2\theta = 2k\pi \pm \dfrac{\pi}{2} \text{ or } \dfrac{1}{2}\theta = 2k\pi \pm \dfrac{\pi}{2}\\
+            \theta = k\pi \pm \dfrac{\pi}{4} \text{ or } \theta = 4k\pi \pm \pi
+        \end{align*}
+        When $k = 0$, $\theta = \dfrac{\pi}{4}$ or $\theta = -\dfrac{\pi}{4}$ or $\theta = \pi$ or $\theta = -\pi$.
+
+        When $k = 1$, $\theta = \dfrac{5\pi}{4}$ or $\theta = \dfrac{3\pi}{4}$ or $\theta = 3\pi$ or $\theta = 5\pi$.
+
+        When $k = 2$, $\theta = \dfrac{9\pi}{4}$ or $\theta = \dfrac{7\pi}{4}$ or $\theta = 7\pi$ or $\theta = 9\pi$.
+
+        Since $0 \leq \theta \leq 2\pi$, the solutions are $\dfrac{\pi}{4}, \dfrac{3\pi}{4}, \pi, \dfrac{5\pi}{4}, \dfrac{7\pi}{4}$. \hfill $\blacksquare$
+
+        \item 求 $\dfrac{1-\tan x}{1+\tan x}=\cos 2 x$ 的一般解。
+        
+        \sol{}
+        \begin{align*}
+            \dfrac{1-\tan x}{1+\tan x} &= \cos 2 x\\
+            \dfrac{1-\dfrac{\sin x}{\cos x}}{1+\dfrac{\sin x}{\cos x}} &= \cos 2 x\\
+            \dfrac{\cos x - \sin x}{\cos x + \sin x} &= \cos 2 x\\
+            \dfrac{\cos x - \sin x}{\cos x + \sin x} &= \dfrac{1 - 2\sin^2 x}{1 + 2\sin x\cos x}\\
+            \dfrac{(\cos x - \sin x)^2}{\cos^2 x - \sin^2 x} &= \cos 2x\\
+            \dfrac{\cos^2 x - 2\cos x\sin x + \sin^2 x}{\cos 2x} &= \cos 2x\\
+            1 - \sin 2x &= \cos^2 2x\\
+            1 - \sin 2x &= 1 - \sin^2 2x\\
+            \sin^2 2x - \sin 2x &= 0\\
+            \sin 2x(\sin 2x - 1) &= 0\\
+            \sin 2x = 0 \text{ or } \sin 2x &= 1\\
+            2x = k\pi \text{ or } 2x &= \dfrac{\pi}{2} + 2k\pi\\
+            x = k\pi \text{ or } x &= \dfrac{\pi}{4} + k\pi \quad \text{where } k \in \mathbb{Z} & \blacksquare
+        \end{align*}
+        
+        \item 将 $y=\cos x-\sqrt{3} \sin x$ 表达成 $\mathrm{R} \cos (x+\alpha)$ 的形式, 其中 $\mathrm{R}>0$ 及 $0^{\circ}<\alpha<90^{\circ}$。据此或用其他方法, 求
+        
+        \sol{}
+        \begin{align*}
+            \cos x-\sqrt{3} \sin x &= R\cos(x + \alpha) = R\cos x\cos\alpha - R\sin x\sin\alpha
+        \end{align*}
+        \begin{align*}
+            \begin{cases}
+                R\cos\alpha &= 1\ \cdots\ (1)\\
+                R\sin\alpha &= \sqrt{3}\ \cdots\ (2)
+            \end{cases}
+        \end{align*}
+        \begin{align*}
+            (1)^2 + (2)^2 &\Rightarrow R^2(\cos^2\alpha + \sin^2\alpha) = 1^2 + 3\\
+            R &= 2\\
+            \dfrac{(2)}{(1)} &\Rightarrow \tan\alpha = \sqrt{3}\\
+            \alpha &= 60^{\circ}\\
+            y &= 2\cos(x + 60^{\circ}) & \blacksquare
+        \end{align*}
+
+        \begin{enumerate}
+            \item $y$ 的极大值与极小值;
+            \sol{}
+            
+            $y$ is maximum when $\cos(x + 60^{\circ}) = 1$, hence the maximum value is $2$.
+
+            $y$ is minimum when $\cos(x + 60^{\circ}) = -1$, hence the minimum value is $-2$. \hfill $\blacksquare$
+            
+            \item 当 $y=1$ 时， $x$ 的一般解。
+            
+            \sol{}
+            \begin{align*}
+                2\cos(x + 60^{\circ}) &= 1\\
+                \cos(x + 60^{\circ}) &= \dfrac{1}{2}\\
+                x + 60^{\circ} &= 360^{\circ}k \pm 60^{\circ}\\
+                x &= 360^{\circ}k - 60^{\circ} \pm 60^{\circ}\\
+                x &= 360^{\circ}k \text{ or } x = 360^{\circ}k - 120^{\circ} \quad \text{where } k \in \mathbb{Z} & \blacksquare
+            \end{align*}
+        \end{enumerate}
+
+        \item 证明 $\sin 2 x=\dfrac{2 \tan x}{1+\tan ^2 x}$。
+
+        据此, 或用其它方法, 解方程式 $\dfrac{1+\tan x}{1-\tan x}=1+\sin 2 x$, 式中 $2<x<12$, 且 $x$ 为弧度。
+
+
+        \sol{}
+        \begin{align*}
+            \dfrac{2\tan x}{1 + \tan^2 x} &= \dfrac{2\left(\dfrac{\sin x}{\cos x}\right)}{\sec^2 x}\\
+            &= \dfrac{2\sin x}{\cos x} \times \cos^2 x\\
+            &= 2\sin x\cos x\\
+            &= \sin 2x & \blacksquare
+        \end{align*}
+        \begin{align*}
+            \dfrac{1 + \tan x}{1 - \tan x} &= 1 + \sin 2x\\
+            \dfrac{1 + \tan x}{1 - \tan x} &= 1 + \dfrac{2\tan x}{1 + \tan^2 x}\\
+            \dfrac{1 + \tan x}{1 - \tan x} &= \dfrac{1 + \tan^2 x + 2\tan x}{1 + \tan^2 x}\\
+            \dfrac{(1 + \tan x)^2}{1 - \tan^2 x} &= \dfrac{(1 + \tan x)^2}{1 + \tan^2 x}\\
+            (1 + \tan x)^2\left(\dfrac{1}{1 - \tan^2 x} - \dfrac{1}{1 + \tan^2 x}\right) &= 0\\
+            (1 + \tan x)^2\left(\dfrac{1 + \tan^2 x - 1 + \tan^2 x}{1 - \tan^4 x}\right) &= 0\\
+            (1 + \tan x)^2\left(\dfrac{2\tan^2 x}{1 - \tan^4 x}\right) &= 0\\
+            1 + \tan x &= 0 \text{ or } \tan x = 0\\
+            \tan x &= -1 \text{ or } \tan x = 0\\
+            x &= k\pi - \dfrac{\pi}{4} \text{ or } x = k\pi
+        \end{align*}
+        When $k = 0$, $x = -\dfrac{\pi}{4}$ or $x = 0$.
+        
+        When $k = 1$, $x = \dfrac{3\pi}{4}$ or $x = \pi$.
+
+        When $k = 2$, $x = \dfrac{7\pi}{4}$ or $x = 2\pi$.
+
+        When $k = 3$, $x = \dfrac{11\pi}{4}$ or $x = 3\pi$.
+
+        When $k = 4$, $x = \dfrac{15\pi}{4}$ or $x = 4\pi$.
+
+        Since $2 < x < 12$, the solutions are $\dfrac{3\pi}{4}, \pi, \dfrac{7\pi}{4}, 2\pi, \dfrac{11\pi}{4}, 3\pi, \dfrac{15\pi}{4}$. \hfill $\blacksquare$
+
+        \newpage
+        \item 试证明 $\operatorname{cosec} \theta-\cot \theta=\tan \dfrac{1}{2} \theta$。
+        
+        \sol{}
+        \begin{align*}
+            \operatorname{cosec} \theta-\cot \theta &= \dfrac{1}{\sin\theta} - \dfrac{\cos\theta}{\sin\theta}\\
+            &= \dfrac{1 - \cos\theta}{\sin\theta}\\
+            &= \tan\dfrac{1}{2}\theta & \blacksquare
+        \end{align*}
+
+        据此或用其他方法,
+        \begin{enumerate}
+            \item 解方程式 $\operatorname{cosec} 3 \theta-\cot 3 \theta=\sqrt{3}$, 式中 $0 \leq \theta \leq \pi$。
+            
+            \sol{}
+            \begin{align*}
+                \operatorname{cosec} 3 \theta-\cot 3 \theta &= \sqrt{3}\\
+                \tan\dfrac{3\theta}{2} &= \sqrt{3}\\
+                \dfrac{3\theta}{2} &= \dfrac{\pi}{3} + k\pi\\
+                \theta &= \dfrac{2\pi}{9} + \dfrac{2k\pi}{3}
+            \end{align*}
+            When $k = 0$, $\theta = \dfrac{2\pi}{9}$.
+
+            When $k = 1$, $\theta = \dfrac{8\pi}{9}$.
+
+            Since $0 \leq \theta \leq \pi$, the solutions are $\dfrac{2\pi}{9}, \dfrac{8\pi}{9}$. \hfill $\blacksquare$
+            
+            \item 求 $\tan \dfrac{3}{8} \pi$ 的值, 答案以根式表示。
+            
+            \sol{}
+            \begin{align*}
+                \tan \dfrac{3}{8} \pi &= \tan \left(\dfrac{1}{2} \cdot \dfrac{3}{4} \pi\right)\\
+                & = \operatorname{cosec} \dfrac{3}{4} \pi - \cot \dfrac{3}{4} \pi\\
+                & = \sqrt{2} - 1 & \blacksquare
+            \end{align*}
+        \end{enumerate}
+    
+        \item 求 $\sin ^2 x-\cos ^2 x=1+\dfrac{1}{2} \sin 2 x$ 的一般解。
+        
+        \sol{}
+        \begin{align*}
+            \sin ^2 x-\cos ^2 x &= 1+\dfrac{1}{2} \sin 2 x\\
+            -\cos 2x &= 1 + \dfrac{1}{2}\sin 2x\\
+            -2\cos 2x &= 2 + \sin 2x
+        \end{align*}
+        \newpage
+        Let $u = 2x$.
+        \begin{align*}
+            -2\cos u &= 2 + \sin u\\
+            \sin u + 2\cos u &= -2
+        \end{align*}
+        Let $\tan\dfrac{u}{2} = t$, then $\cos u = \dfrac{1 - t^2}{1 + t^2}$ and $\sin u = \dfrac{2t}{1 + t^2}$.
+        \begin{align*}
+            \dfrac{2t}{1 + t^2} + 2\left(\dfrac{1 - t^2}{1 + t^2}\right) &= -2\\
+            2t &= -4\\
+            t &= -2\\
+            \tan\dfrac{u}{2} &= -2\\
+            \tan x &= -2\\
+            x &= k\pi - \arctan 2 \quad \text{where } k \in \mathbb{Z}
+        \end{align*}
+        
+
+        \item \begin{enumerate}
+            \item 将 $12 \cos \theta-5 \sin \theta$ 表达成 $R \cos (\theta+\alpha)$ 的形成, 式中 $R>0$ 及 $0^{\circ}<\alpha<90^{\circ}$。
+            
+            \sol{}
+            \begin{align*}
+                12 \cos \theta-5 \sin \theta &= R\cos(\theta + \alpha) = R\cos\theta\cos\alpha - R\sin\theta\sin\alpha
+            \end{align*}
+            \begin{align*}
+                \begin{cases}
+                    R\cos\alpha &= 12\ \cdots\ (1)\\
+                    R\sin\alpha &= 5\ \cdots\ (2)
+                \end{cases}
+            \end{align*}
+            \begin{align*}
+                (1)^2 + (2)^2 &\Rightarrow R^2(\cos^2\alpha + \sin^2\alpha) = 12^2 + 5^2\\
+                R &= 13\\
+                \dfrac{(2)}{(1)} &\Rightarrow \tan\alpha = \dfrac{5}{12}\\
+                \alpha &= 22.62^{\circ}\\
+                12 \cos \theta-5 \sin \theta &= 13\cos(\theta + 22.62^{\circ}) & \blacksquare
+            \end{align*}
+            
+            \item 函数 $g(x)$ 定义成 $g(x)=27 \cos ^2 x-10 \sin x \cos x+3 \sin ^2 x$。试将 $g(x)$ 表达成 $a \cos 2 x+b \sin 2 x+c$ 的形式, 式中 $a, b$ 及 $c$ 都是待定的常数。
+            
+            \sol{}
+            \begin{align*}
+                g(x) &= 27 \cos ^2 x-10 \sin x \cos x+3 \sin ^2 x\\
+                & = 27\left(\dfrac{1 + \cos 2x}{2}\right) - 5(2\sin x\cos x) + 3\left(\dfrac{1 - \cos 2x}{2}\right)\\
+                & = \dfrac{27 + 27\cos 2x + 3 - 3\cos 2x}{2} - 5\sin 2x\\
+                & = \dfrac{30 + 24\cos 2x}{2} - 5\sin 2x\\
+                & = 12\cos 2x - 5\sin 2x + 15 & \blacksquare
+            \end{align*}
+            
+            \newpage
+            \item 根据(a)和(b)的结果, 或用其他方法, 求
+            \begin{enumerate}[label=\roman*]
+                \item $g(x)$ 的极大值与极小值;
+                
+                \sol{}
+                \begin{align*}
+                    g(x) &= 12\cos 2x - 5\sin 2x + 15\\
+                    & = 13\cos(2x + 22.62^{\circ}) + 15
+                \end{align*}
+                $g(x)$ is maximum when $\cos(2x - 22.62^{\circ}) = 1$, hence the maximum value is $28$.
+
+                $g(x)$ is minimum when $\cos(2x - 22.62^{\circ}) = -1$, hence the minimum value is $2$. \hfill $\blacksquare$
+
+                \item 方程式 $g(x)=2$ 的一般解。
+                
+                \sol{}
+                \begin{align*}
+                    13\cos(2x + 22.62^{\circ}) + 15 &= 2\\
+                    \cos(2x + 22.62^{\circ}) &= -1\\
+                    2x + 22.62^{\circ} &= 360^{\circ}k + 180^{\circ}\\
+                2x &= 360^{\circ}k + 157.38^{\circ}\\
+                x &= 180^{\circ}k + 78.69^{\circ} \quad \text{where } k \in \mathbb{Z} & \blacksquare
+                \end{align*}
+            \end{enumerate}
+        \end{enumerate}
+
+        \item 求方程式 $5 \sin ^2 x+\sin 2 x-3 \cos ^2 x=2$ 的一般解。
+        
+        \sol{}
+        \begin{align*}
+            5 \sin ^2 x+\sin 2 x-3 \cos ^2 x &= 2\\
+            5 \sin ^2 x + 2\sin x\cos x - 3\cos ^2 x &= 2\sin^2 x + 2\cos^2 x\\
+            3\sin^2 x + 2\sin x\cos x - 5\cos^2 x &= 0\\
+            3\tan^2 x + 2\tan x - 5 &= 0\\
+            (3\tan x + 5)(\tan x - 1) &= 0\\
+            \tan x &= \dfrac{-5}{3} \text{ or } \tan x = 1\\
+            x &= k\pi - \arctan\dfrac{5}{3} \text{ or } x = k\pi + \dfrac{\pi}{4} \quad \text{where } k \in \mathbb{Z} & \blacksquare
+        \end{align*}
+
+        \item 求三角方程式 $\sin 4 \theta=\cos 5 \theta$ 的一般解。
+        
+        \sol{}
+        \begin{align*}
+            \sin 4 \theta &= \cos 5 \theta\\
+            \cos 5\theta &= \cos\left(\dfrac{\pi}{2} - 4\theta\right)\\
+            5\theta &= 2k\pi \pm \left(\dfrac{\pi}{2} - 4\theta\right)\\
+            5\theta &= 2k\pi + \dfrac{\pi}{2} - 4\theta \text{ or } 5\theta = 2k\pi - \dfrac{\pi}{2} + 4\theta\\
+            9\theta &= 2k\pi + \dfrac{\pi}{2} \text{ or } \theta = 2k\pi - \dfrac{\pi}{2}\\
+            \theta &= \dfrac{2k\pi}{9} + \dfrac{\pi}{18} \text{ or } \theta = 2k\pi - \dfrac{\pi}{2}\\
+            \theta &= \dfrac{\pi}{18}({4k + 1}) \text{ or } \theta = \dfrac{\pi}{2}({4k - 1}) \quad \text{where } k \in \mathbb{Z} & \blacksquare
+        \end{align*}
+
+        \item 解方程式 $\sin ^2 \theta+\sin ^2 2 \theta=\sin ^2 3 \theta$。
+        
+        \sol{}
+        \begin{align*}
+            \sin ^2 \theta+\sin ^2 2 \theta &= \sin ^2 3 \theta\\
+            \sin ^2 \theta + 4\sin^2\theta\cos^2\theta &= (\sin 2\theta\cos\theta + \cos 2\theta\sin\theta)^2\\
+            \sin ^2 \theta + 4\sin^2\theta\cos^2\theta &= [(2\sin\theta\cos\theta)\cos\theta + (1 - 2\sin^2\theta)\sin\theta]^2\\
+            \sin ^2 \theta + 4\sin^2\theta\cos^2\theta &= [2\sin\theta(1-\sin^2\theta) + \sin\theta - 2\sin^3\theta]^2\\
+            \sin ^2 \theta + 4\sin^2\theta\cos^2\theta &= (3\sin\theta - 4\sin^3\theta)^2\\
+            \sin ^2 \theta + 4\sin^2\theta\cos^2\theta &= 9\sin^2\theta - 24\sin^4\theta + 16\sin^6\theta\\
+            \sin ^2 \theta + 4\sin^2\theta\cos^2\theta - 9\sin^2\theta + 24\sin^4\theta - 16\sin^6\theta &= 0\\
+            \sin^2 \theta(-8 + 4\cos^2\theta + 24\sin^2\theta - 16\sin^4\theta) &= 0\\
+            \sin^2 \theta(2 - \cos^2\theta- 6\sin^2\theta + 4\sin^4\theta) &= 0\\
+            \sin^2 \theta(2 - \cos^2\theta- \sin^2\theta - 5\sin^2\theta + 4\sin^4\theta) &= 0\\
+            \sin^2 \theta(1 - 5\sin^2\theta + 4\sin^4\theta) &= 0\\
+            \sin^2 \theta(\sin^2\theta - 1)(4\sin^2\theta - 1) &= 0\\
+            \sin^2 \theta(-\cos^2\theta)(4\sin^2\theta - 1) &= 0\\
+            \sin\theta = 0 \text{ or } \cos\theta &= 0 \text{ or } \sin\theta = \pm\dfrac{1}{2}\\
+            \theta = k\pi \text{ or } \theta &= \dfrac{\pi}{2} + k\pi \text{ or } \theta = k\pi \pm \dfrac{\pi}{6}\\
+            \theta &= \dfrac{k\pi}{2} \text{ or } \theta = \dfrac{k\pi}{3} + \dfrac{\pi}{6}\\
+            \theta &= \dfrac{k\pi}{2} \text{ or } \theta = \dfrac{1}{6}(2k + 1)\pi \quad \text{where } k \in \mathbb{Z} & \blacksquare
+        \end{align*}
+        
+        \item 已知 $4 \cos \theta+3 \sin \theta=R \cos (\theta-\alpha)$, 式中 $\mathrm{R}>0$ 且 $\alpha$ 为锐角, 试求 $\mathrm{R}$ 与 $\alpha$ 的值。据之解方程式 $4 \cos \theta+3 \sin \theta=3,0^{\circ}<\theta<360^{\circ}$。
+        
+        \sol{}
+        \begin{align*}
+            4 \cos \theta+3 \sin \theta &= R\cos(\theta - \alpha) = R\cos\theta\cos\alpha + R\sin\theta\sin\alpha
+        \end{align*}
+        \begin{align*}
+            \begin{cases}
+                R\cos\alpha &= 4\ \cdots\ (1)\\
+                R\sin\alpha &= 3\ \cdots\ (2)
+            \end{cases}
+        \end{align*}
+        \begin{align*}
+            (1)^2 + (2)^2 &\Rightarrow R^2(\cos^2\alpha + \sin^2\alpha) = 16 + 9\\
+            R &= 5 & \blacksquare\\
+            \dfrac{(2)}{(1)} &\Rightarrow \tan\alpha = \dfrac{3}{4}\\
+            \alpha &= 36.87^{\circ}& \blacksquare
+        \end{align*}
+        \newpage
+        \begin{align*}
+            4 \cos \theta+3 \sin \theta &= 3\\
+            5\cos(\theta - 36.87^{\circ}) &= 3\\
+            \cos(\theta - 36.87^{\circ}) &= \dfrac{3}{5}\\
+            \theta - 36.87^{\circ} &= 360^{\circ}k \pm 53.13^{\circ}\\
+            \theta &= 360^{\circ}k + 36.87^{\circ} + 53.13^{\circ} \text{ or } \theta = 360^{\circ}k + 36.87^{\circ} - 53.13^{\circ}\\
+            \theta &= 360^{\circ}k + 90^{\circ} \text{ or } \theta = 360^{\circ}k - 16.26^{\circ}
+        \end{align*}
+        When $k = 0$, $\theta = 90^{\circ}$ or $\theta = -16.26^{\circ}$.
+
+        When $k = 1$, $\theta = 450^{\circ}$ or $\theta = 343.74^{\circ}$.
+
+        Since $0^{\circ} < \theta < 360^{\circ}$, the solutions are $90^{\circ}, 343.74^{\circ}$. \hfill $\blacksquare$
+
+    \item 已知函数 $f(x)=\cos 2 x+4 \sin ^2 x-\cos x-2$。
+    \begin{enumerate}
+        \item 解方程式 $f(x)=0$。
+        
+        \sol{}
+        \begin{align*}
+            \cos 2 x+4 \sin ^2 x-\cos x-2 &= 0\\
+            2\cos^2 x - 1 + 4(1 - \cos^2 x) - \cos x - 2 &= 0\\
+            2\cos^2 x - 1 + 4 - 4\cos^2 x - \cos x - 2 &= 0\\
+            -2\cos^2 x - \cos x + 1 &= 0\\
+            2\cos^2 x + \cos x - 1 &= 0\\
+            (2\cos x - 1)(\cos x + 1) &= 0\\
+            \cos x &= \dfrac{1}{2} \text{ or } \cos x = -1\\
+            x &= 2k\pi \pm \dfrac{\pi}{3} \text{ or } x = 2k\pi + \pi\\
+            x &= \dfrac{\pi}{3} + \dfrac{2k\pi}{3}\\
+            x &= \dfrac{\pi}{3}(2k + 1) \quad \text{where } k \in \mathbb{Z} & \blacksquare
+        \end{align*}
+
+        \item 在 $0 \leq x \leq 2 \pi$ 的条件下, 解不等式 $f(x)>0$。
+        
+        \sol{}
+        \begin{align*}
+            \cos 2 x+4 \sin ^2 x-\cos x-2 &> 0\\
+            2\cos^2 x - 1 + 4(1 - \cos^2 x) - \cos x - 2 &> 0\\
+            2\cos^2 x - 1 + 4 - 4\cos^2 x - \cos x - 2 &> 0\\
+            -2\cos^2 x - \cos x + 1 &> 0\\
+            2\cos^2 x + \cos x - 1 &< 0\\
+            (2\cos x - 1)(\cos x + 1) &< 0\\
+            -1 < \cos x &< \dfrac{1}{2} & \blacksquare
+        \end{align*}
+    \end{enumerate}
+
+    \item 如果 $\sin ^4 \theta+\sin ^2 \theta \cos ^2 \theta+\cos ^4 \theta \leq \dfrac{3}{4}$, 式中 $0 \leq \theta \leq 2 \pi$, 求 $\theta$ 的值。
+    
+    \sol{}
+    \begin{align*}
+        \sin ^4 \theta+\sin ^2 \theta \cos ^2 \theta+\cos ^4 \theta &\leq \dfrac{3}{4} \\
+        \sin^2\theta(\sin^2\theta + \cos^2\theta) + \cos^4\theta &\leq \dfrac{3}{4}\\
+        \sin^2\theta + \cos^4\theta &\leq \dfrac{3}{4}\\
+        1 - \cos^2\theta + \cos^4\theta &\leq \dfrac{3}{4}\\
+        \cos^4\theta - \cos^2\theta + \dfrac{1}{4} &\leq 0\\
+        \left(\cos^2\theta - \dfrac{1}{2}\right)^2 &\leq 0\\
+        \cos^2\theta &= \dfrac{1}{2}\\
+        \theta &= k\pi \pm \dfrac{\pi}{4}
+    \end{align*}
+    When $k = 0$, $\theta = \dfrac{\pi}{4}$ or $\theta = -\dfrac{\pi}{4}$.
+
+    When $k = 1$, $\theta = \dfrac{5\pi}{4}$ or $\theta = \dfrac{3\pi}{4}$.
+
+    When $k = 2$, $\theta = \dfrac{9\pi}{4}$ or $\theta = \dfrac{7\pi}{4}$.
+
+    Since $0 \leq \theta \leq 2\pi$, the solutions are $\dfrac{\pi}{4}, \dfrac{3\pi}{4}, \dfrac{5\pi}{4}, \dfrac{7\pi}{4}$. \hfill $\blacksquare$
+
+    \item 解方程式 $\cos ^3 x \sin x-\sin ^3 x \cos x=\dfrac{\sqrt{3}}{8}$, 其中 $x$ 以弧度为单位且 $0<x<\dfrac{\pi}{2}$。
+    
+    \sol{}
+    \begin{align*}
+        \cos ^3 x \sin x-\sin ^3 x \cos x &= \dfrac{\sqrt{3}}{8}\\
+        \sin x \cos x(\cos^2 x - \sin^2 x) &= \dfrac{\sqrt{3}}{8}\\
+        2\sin x \cos x\cos 2x &= \dfrac{\sqrt{3}}{4}\\
+        \sin 2x\cos 2x &= \dfrac{\sqrt{3}}{4}\\
+        2\sin 2x\cos 2x &= \dfrac{\sqrt{3}}{2}\\
+        \sin 4x &= \dfrac{\sqrt{3}}{2}\\
+        4x &= k\pi + (-1)^k\dfrac{\pi}{3}\\
+        x &= \dfrac{k\pi}{4} + (-1)^k\dfrac{\pi}{12}
+    \end{align*}
+    When $k = 0$, $x = \dfrac{\pi}{12}$.
+
+    When $k = 1$, $x = \dfrac{\pi}{6}$.
+
+    Since $0 < x < \dfrac{\pi}{2}$, the solutions are $\dfrac{\pi}{12}, \dfrac{\pi}{6}$. \hfill $\blacksquare$
+
+    \item 证明 $\dfrac{1-\cos \alpha}{1+\cos \alpha}=\tan ^2 \dfrac{\alpha}{2}$。
+
+    据此, 或用其他方法, 证明若 $\alpha \in(\pi, 2 \pi)$, 则 $\sqrt{\dfrac{1-\cos \alpha}{1+\cos \alpha}}+\sqrt{\dfrac{1+\cos \alpha}{1-\cos \alpha}}=-\dfrac{2}{\sin \alpha}$。
+
+    \sol{}
+    \begin{align*}
+        \dfrac{1-\cos \alpha}{1+\cos \alpha} &= \dfrac{1-\cos\alpha}{2} \div \dfrac{1+\cos\alpha}{2}\\
+        & = \left(\pm\sqrt{\dfrac{1-\cos\alpha}{2}}\right)^2 \div \left(\pm\sqrt{\dfrac{1+\cos\alpha}{2}}\right)^2\\
+        & = \dfrac{\sin^2\dfrac{\alpha}{2}}{\cos^2\dfrac{\alpha}{2}}\\
+        & = \tan^2\dfrac{\alpha}{2}
+    \end{align*}
+    \begin{align*}
+        \sqrt{\dfrac{1-\cos \alpha}{1+\cos \alpha}}+\sqrt{\dfrac{1+\cos \alpha}{1-\cos \alpha}} &= \tan\dfrac{\alpha}{2} + \cot\dfrac{\alpha}{2}\\
+        &= \dfrac{\sin\dfrac{\alpha}{2}}{\cos\dfrac{\alpha}{2}} + \dfrac{\cos\dfrac{\alpha}{2}}{\sin\dfrac{\alpha}{2}}\\
+        &= \dfrac{\sin^2\dfrac{\alpha}{2} + \cos^2\dfrac{\alpha}{2}}{\sin\dfrac{\alpha}{2}\cos\dfrac{\alpha}{2}}\\
+        &= \dfrac{1}{\sin\dfrac{\alpha}{2}\cos\dfrac{\alpha}{2}}\\
+        &= \dfrac{2}{\sin\alpha}
+    \end{align*}
+    $\because \alpha \in(\pi, 2\pi)$, $\therefore \sin\alpha < 0$.
+    
+    $\therefore \sqrt{\dfrac{1-\cos \alpha}{1+\cos \alpha}}+\sqrt{\dfrac{1+\cos \alpha}{1-\cos \alpha}}=-\dfrac{2}{\sin \alpha}$. \hfill $\blacksquare$
+
+    \item 证明 $\cos \theta+2 \cos 2 \theta+\cos 3 \theta=4 \cos 2 \theta \cos ^2 \dfrac{\theta}{2}$。
+
+    据此, 或用其它方法, 解方程式 $\cos \theta+2 \cos 2 \theta+\cos 3 \theta=0$, 其中 $0 \leq \theta \leq \pi$。
+    
+    \sol{}
+
+    Same as question 21.
+
+    The solutions are $\dfrac{\pi}{4}, \dfrac{3\pi}{4}, \pi$. \hfill $\blacksquare$
+
+    \newpage
+    \item 求方程式 $\cos ^2 x+3 \cos ^2 2 x=\cos ^2 3 x$ 的一般解。
+    
+    \sol{}
+    \begin{align*}
+        \cos ^2 x+3 \cos ^2 2 x &= \cos ^2 3 x\\
+        \cos ^2 x+3(2\cos^2 x - 1)^2 &= (4\cos^3 x - 3\cos x)^2\\
+        \cos ^2 x+3(4\cos^4 x - 4\cos^2 x + 1) &= 16\cos^6 x - 24\cos^4 x + 9\cos^2 x\\
+        \cos ^2 x+12\cos^4 x - 12\cos^2 x + 3 &= 16\cos^6 x - 24\cos^4 x + 9\cos^2 x\\
+        16\cos^6 x - 36\cos^4 x + 20\cos^2 x - 3 &= 0
+    \end{align*}
+    Let $u = \cos^2 x$.
+    \begin{align*}
+        16u^3 - 36u^2 + 20u - 3 &= 0\\
+        (2u - 3)(2u - 1)(4u - 1) &= 0\\
+        u &= \dfrac{3}{2} \text{ or } u = \dfrac{1}{2} \text{ or } u = \dfrac{1}{4}\\
+        \cos^2 x &= \dfrac{3}{2} \text{ or } \cos^2 x = \dfrac{1}{2} \text{ or } \cos^2 x = \dfrac{1}{4}\\
+        x &= 2k\pi \pm \dfrac{\pi}{3} \text{ or } x = 2k\pi \pm \dfrac{\pi}{4} \quad \text{where } k \in \mathbb{Z} & \blacksquare
+    \end{align*}
+
+    \item 证明 $\sin ^4 x+\cos ^4 x=1-\dfrac{1}{2} \sin ^2 2 x$。
+
+    据此, 求三角方程式 $2 \sin ^4 x+2 \cos ^4 x=\sin 2 x$ 的一般解。
+
+    \sol{}
+    \begin{align*}
+        \sin ^4 x+\cos ^4 x &= (\sin^2 x + \cos^2 x)^2 - 2\sin^2 x\cos^2 x\\
+        &= 1 - \dfrac{1}{2}(2\sin x\cos x)^2\\
+        &= 1 - \dfrac{1}{2}\sin^2 2x & \blacksquare
+    \end{align*}
+    \begin{align*}
+        2 \sin ^4 x+2 \cos ^4 x &= \sin 2x\\
+        2 - \sin^2 2x &= \sin 2x\\
+        \sin^2 2x + \sin 2x - 2 &= 0\\
+        (\sin 2x + 2)(\sin 2x - 1) &= 0\\
+        \sin 2x &= -2 \text{ or } \sin 2x = 1\\
+        2x &= 2k\pi + \dfrac{\pi}{2}\\
+        x &= k\pi + \dfrac{\pi}{4} \quad \text{where } k \in \mathbb{Z} & \blacksquare
+    \end{align*}
+    \end{enumerate}
+
+\end{document}
