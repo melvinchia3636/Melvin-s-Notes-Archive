@@ -334,6 +334,26 @@
 - [S3 chp12 12.1.pdf](<./数学/Add Math II/S3 chp12 12.1.pdf>)
 - [S3 chp3.pdf](<./数学/Add Math II/S3 chp3.pdf>)
 - [S3 chp8.pdf](<./数学/Add Math II/S3 chp8.pdf>)
+<dl><dd><dl><dd>
+<details>
+<summary>S1 chp10</summary>
+
+- [S1 chp10.pdf](<./数学/Add Math II/S1 chp10/S1 chp10.pdf>)
+- [S1 chp10.tex](<./数学/Add Math II/S1 chp10/S1 chp10.tex>)
+
+</details>
+</dd></dl></dd></dl>
+
+<dl><dd><dl><dd>
+<details>
+<summary>S1 chp9</summary>
+
+- [9.3.pdf](<./数学/Add Math II/S1 chp9/9.3.pdf>)
+- [9.3.tex](<./数学/Add Math II/S1 chp9/9.3.tex>)
+
+</details>
+</dd></dl></dd></dl>
+
 
 </details>
 </dd></dl>
@@ -2483,6 +2503,7 @@
 - [Practice 2.docx](<./簿记与会计/Chapter 29 Issues of Shares and Loan Notes/Practice 2.docx>)
 - [Practice 3.docx](<./簿记与会计/Chapter 29 Issues of Shares and Loan Notes/Practice 3.docx>)
 - [Practice 4.docx](<./簿记与会计/Chapter 29 Issues of Shares and Loan Notes/Practice 4.docx>)
+- [UEB 1977 Q2.docx](<./簿记与会计/Chapter 29 Issues of Shares and Loan Notes/UEB 1977 Q2.docx>)
 - [UEB 2001 Q4.docx](<./簿记与会计/Chapter 29 Issues of Shares and Loan Notes/UEB 2001 Q4.docx>)
 - [UEB 2004 Q5.docx](<./簿记与会计/Chapter 29 Issues of Shares and Loan Notes/UEB 2004 Q5.docx>)
 
