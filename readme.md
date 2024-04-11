@@ -1,4 +1,5 @@
 # Table of Contents
+- [吼吼.docx](<./吼吼.docx>)
 
 <details>
 <summary>Meth Videos</summary>
@@ -89,6 +90,7 @@
 - [年终考注释.docx](<./华文/年终考注释.docx>)
 - [年终考注释.pdf](<./华文/年终考注释.pdf>)
 - [毕业论文.docx](<./华文/毕业论文.docx>)
+- [第三课 出师表.docx](<./华文/第三课 出师表.docx>)
 - [谱集目录.docx](<./华文/谱集目录.docx>)
 - [高一古诗八首.md](<./华文/高一古诗八首.md>)
 - [应用文抄写1.docx](<./华文/应用文抄写1.docx>)
@@ -129,6 +131,7 @@
 - [人力资源管理.docx](<./商业学/人力资源管理.docx>)
 - [商业报告.pdf](<./商业学/商业报告.pdf>)
 - [商业报告.tex](<./商业学/商业报告.tex>)
+- [终极思维图.xmind](<./商业学/终极思维图.xmind>)
 - [高二商业学统测讲义.docx](<./商业学/高二商业学统测讲义.docx>)
 - [高二第一章商业学小测验范围.docx](<./商业学/高二第一章商业学小测验范围.docx>)
 - [高二第二章商业学测验范围.docx](<./商业学/高二第二章商业学测验范围.docx>)
@@ -317,15 +320,40 @@
 <details>
 <summary>Add Math II</summary>
 
+- [S1 chp1.pdf](<./数学/Add Math II/S1 chp1.pdf>)
+- [S1 chp12.pdf](<./数学/Add Math II/S1 chp12.pdf>)
 - [S1 chp13.pdf](<./数学/Add Math II/S1 chp13.pdf>)
-- [S2 chp14 14.4.pdf](<./数学/Add Math II/S2 chp14 14.4.pdf>)
-- [S2 chp14 14.5&14.6.pdf](<./数学/Add Math II/S2 chp14 14.5&14.6.pdf>)
-- [S2 chp16 16.2&16.3.pdf](<./数学/Add Math II/S2 chp16 16.2&16.3.pdf>)
-- [S2 chp16 16.4.pdf](<./数学/Add Math II/S2 chp16 16.4.pdf>)
-- [S2 chp16 16.5.pdf](<./数学/Add Math II/S2 chp16 16.5.pdf>)
+- [S1 chp17.pdf](<./数学/Add Math II/S1 chp17.pdf>)
+- [S1 chp2.pdf](<./数学/Add Math II/S1 chp2.pdf>)
+- [S1 chp4.pdf](<./数学/Add Math II/S1 chp4.pdf>)
+- [S2 chp14.pdf](<./数学/Add Math II/S2 chp14.pdf>)
+- [S2 chp16.pdf](<./数学/Add Math II/S2 chp16.pdf>)
+- [S2 chp4.pdf](<./数学/Add Math II/S2 chp4.pdf>)
 - [S3 chp11.pdf](<./数学/Add Math II/S3 chp11.pdf>)
+- [S3 chp12 12.1 & 12.3.pdf](<./数学/Add Math II/S3 chp12 12.1 & 12.3.pdf>)
+- [S3 chp12 12.1.pdf](<./数学/Add Math II/S3 chp12 12.1.pdf>)
 - [S3 chp3.pdf](<./数学/Add Math II/S3 chp3.pdf>)
 - [S3 chp8.pdf](<./数学/Add Math II/S3 chp8.pdf>)
+<dl><dd><dl><dd>
+<details>
+<summary>S1 chp10</summary>
+
+- [S1 chp10.pdf](<./数学/Add Math II/S1 chp10/S1 chp10.pdf>)
+- [S1 chp10.tex](<./数学/Add Math II/S1 chp10/S1 chp10.tex>)
+
+</details>
+</dd></dl></dd></dl>
+
+<dl><dd><dl><dd>
+<details>
+<summary>S1 chp9</summary>
+
+- [9.3.pdf](<./数学/Add Math II/S1 chp9/9.3.pdf>)
+- [9.3.tex](<./数学/Add Math II/S1 chp9/9.3.tex>)
+
+</details>
+</dd></dl></dd></dl>
+
 
 </details>
 </dd></dl>
@@ -888,6 +916,16 @@
 
 <dl><dd>
 <details>
+<summary>sus</summary>
+
+- [sus.pdf](<./数学/sus/sus.pdf>)
+- [sus.tex](<./数学/sus/sus.tex>)
+
+</details>
+</dd></dl>
+
+<dl><dd>
+<details>
 <summary>Textbook Solution Manuals</summary>
 
 <dl><dd><dl><dd>
@@ -1077,6 +1115,17 @@
 </details>
 </dd></dl></dd></dl>
 
+
+</details>
+</dd></dl>
+
+<dl><dd>
+<details>
+<summary>高三上半年统测复习</summary>
+
+- [structure.tex](<./数学/高三上半年统测复习/structure.tex>)
+- [函数.pdf](<./数学/高三上半年统测复习/函数.pdf>)
+- [函数.tex](<./数学/高三上半年统测复习/函数.tex>)
 
 </details>
 </dd></dl>
@@ -2454,6 +2503,7 @@
 - [Practice 2.docx](<./簿记与会计/Chapter 29 Issues of Shares and Loan Notes/Practice 2.docx>)
 - [Practice 3.docx](<./簿记与会计/Chapter 29 Issues of Shares and Loan Notes/Practice 3.docx>)
 - [Practice 4.docx](<./簿记与会计/Chapter 29 Issues of Shares and Loan Notes/Practice 4.docx>)
+- [UEB 1977 Q2.docx](<./簿记与会计/Chapter 29 Issues of Shares and Loan Notes/UEB 1977 Q2.docx>)
 - [UEB 2001 Q4.docx](<./簿记与会计/Chapter 29 Issues of Shares and Loan Notes/UEB 2001 Q4.docx>)
 - [UEB 2004 Q5.docx](<./簿记与会计/Chapter 29 Issues of Shares and Loan Notes/UEB 2004 Q5.docx>)
 
