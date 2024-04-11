@@ -1,5 +1,7 @@
 # Table of Contents
+- [Notice of Call for Submissions.docx](<./Notice of Call for Submissions.docx>)
 - [吼吼.docx](<./吼吼.docx>)
+- [数学报告.pptx](<./数学报告.pptx>)
 
 <details>
 <summary>Meth Videos</summary>
@@ -350,6 +352,8 @@
 
 - [9.3.pdf](<./数学/Add Math II/S1 chp9/9.3.pdf>)
 - [9.3.tex](<./数学/Add Math II/S1 chp9/9.3.tex>)
+- [9.4.pdf](<./数学/Add Math II/S1 chp9/9.4.pdf>)
+- [9.4.tex](<./数学/Add Math II/S1 chp9/9.4.tex>)
 
 </details>
 </dd></dl></dd></dl>
@@ -688,6 +692,21 @@
 
 <dl><dd>
 <details>
+<summary>Random Stuff</summary>
+
+- [maths2.pdf](<./数学/Random Stuff/maths2.pdf>)
+- [output2.pdf](<./数学/Random Stuff/output2.pdf>)
+- [maths3.pdf](<./数学/Random Stuff/maths3.pdf>)
+- [2020-A-Math-1-Paper-1-Questions.docx.pdf](<./数学/Random Stuff/2020-A-Math-1-Paper-1-Questions.docx.pdf>)
+- [2020-A-Maths-2-Paper-1-Questions.docx.pdf](<./数学/Random Stuff/2020-A-Maths-2-Paper-1-Questions.docx.pdf>)
+- [2021-A-Maths-1-Paper-1-Questions.docx.pdf](<./数学/Random Stuff/2021-A-Maths-1-Paper-1-Questions.docx.pdf>)
+- [2021-A-Maths-2-Paper-1-Questions.docx.pdf](<./数学/Random Stuff/2021-A-Maths-2-Paper-1-Questions.docx.pdf>)
+
+</details>
+</dd></dl>
+
+<dl><dd>
+<details>
 <summary>SPM</summary>
 
 - [SPM 高级数学.docx](<./数学/SPM/SPM 高级数学.docx>)
@@ -910,16 +929,6 @@
 </details>
 </dd></dl></dd></dl>
 
-
-</details>
-</dd></dl>
-
-<dl><dd>
-<details>
-<summary>sus</summary>
-
-- [sus.pdf](<./数学/sus/sus.pdf>)
-- [sus.tex](<./数学/sus/sus.tex>)
 
 </details>
 </dd></dl>
@@ -1192,6 +1201,29 @@
 - [exercises.pdf](<./物理/Newton Second Law of Motion/exercises.pdf>)
 - [exercises.tex](<./物理/Newton Second Law of Motion/exercises.tex>)
 - [22N-2nd-Law-selected-1.pdf](<./物理/Newton Second Law of Motion/22N-2nd-Law-selected-1.pdf>)
+
+</details>
+</dd></dl>
+
+<dl><dd>
+<details>
+<summary>Physics Worksheet</summary>
+
+- [17Projectile-ans-1.pdf](<./物理/Physics Worksheet/17Projectile-ans-1.pdf>)
+- [25MomentsEqm-ans-1.pdf](<./物理/Physics Worksheet/25MomentsEqm-ans-1.pdf>)
+- [27Work-Done.pdf](<./物理/Physics Worksheet/27Work-Done.pdf>)
+- [28Power.pdf](<./物理/Physics Worksheet/28Power.pdf>)
+- [29WE-PrinC.pdf](<./物理/Physics Worksheet/29WE-PrinC.pdf>)
+- [30Princ-MEnergy.pdf](<./物理/Physics Worksheet/30Princ-MEnergy.pdf>)
+- [33Barometer.pdf](<./物理/Physics Worksheet/33Barometer.pdf>)
+- [34Princ-Archimedes.pdf](<./物理/Physics Worksheet/34Princ-Archimedes.pdf>)
+- [35Hydrodynamics.pdf](<./物理/Physics Worksheet/35Hydrodynamics.pdf>)
+- [39Thermometers.pdf](<./物理/Physics Worksheet/39Thermometers.pdf>)
+- [40Thermometry.pdf](<./物理/Physics Worksheet/40Thermometry.pdf>)
+- [41Latent-Heat.pdf](<./物理/Physics Worksheet/41Latent-Heat.pdf>)
+- [42Heat-Expansion.pdf](<./物理/Physics Worksheet/42Heat-Expansion.pdf>)
+- [43HeatConduction.pdf](<./物理/Physics Worksheet/43HeatConduction.pdf>)
+- [44Ideal-Gas.pdf](<./物理/Physics Worksheet/44Ideal-Gas.pdf>)
 
 </details>
 </dd></dl>
