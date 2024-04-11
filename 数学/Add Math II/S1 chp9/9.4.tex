@@ -363,22 +363,87 @@
 
     \sol{}
     \begin{align*}
-        2 \sin ^2 3 \theta-2 \sin ^2 \theta &= 2\left(\dfrac{1 - \cos 6\theta}{2}\right) - 2\left(\dfrac{1 - \cos 2\theta}{2}\right) \\
-        & = 1 - \cos 6\theta - 1 + \cos 2\theta \\
-        & = \cos 2\theta - \cos 6\theta &\blacksquare\\
-        \\
+        2 \sin ^2 \dfrac{3\pi}{10}-2 \sin ^2 \dfrac{\pi}{10} &= \cos \dfrac{\pi}{5}-\cos \dfrac{3\pi}{5} \\
+        2\left(\sin^2 \dfrac{3\pi}{10} - \sin^2 \dfrac{\pi}{10}\right) &= 2\sin \dfrac{2\pi}{5}\sin \dfrac{\pi}{5} \\
+        \sin^2 \dfrac{3\pi}{10} - \sin^2 \dfrac{\pi}{10} &= \sin \dfrac{2\pi}{5}\sin \dfrac{\pi}{5} \\
+        \left(\sin \dfrac{3\pi}{10} - \sin \dfrac{\pi}{10}\right)\left(\sin \dfrac{3\pi}{10} + \sin \dfrac{\pi}{10}\right) &= \sin \dfrac{2\pi}{5}\sin \dfrac{\pi}{5} \\
+        \left(\sin \dfrac{3\pi}{10} - \sin \dfrac{\pi}{10}\right)\left(2\sin\dfrac{\pi}{5}\cos\dfrac{\pi}{10}\right) &= \sin \dfrac{2\pi}{5}\sin \dfrac{\pi}{5} \\
+        \left(\sin \dfrac{3\pi}{10} - \sin \dfrac{\pi}{10}\right)\left(2\sin\dfrac{\pi}{5}\sin\dfrac{2\pi}{5}\right) &= \sin \dfrac{2\pi}{5}\sin \dfrac{\pi}{5} \\
+        2\left(\sin \dfrac{3\pi}{10} - \sin \dfrac{\pi}{10}\right) &= 1\\
+        \sin \dfrac{3\pi}{10} - \sin \dfrac{\pi}{10} &= \dfrac{1}{2} &\blacksquare
     \end{align*}
 
     \item 在 $\triangle {ABC}$ 中, 试证明 $\dfrac{a+b}{c}=\dfrac{\sin {A}+\sin {B}}{\sin {C}}$。
+
+    \sol{}
+    \begin{align*}
+        \dfrac{c}{\sin C} &= \dfrac{a}{\sin A} = \dfrac{b}{\sin B} = R\\
+        a = R\sin A &\qquad b = R\sin B \qquad c = R\sin C \\
+        \dfrac{a+b}{c} &= \dfrac{R\sin A + R\sin B}{R\sin C} = \dfrac{\sin A + \sin B}{\sin C} &\blacksquare
+    \end{align*}
     
+    \newpage
     若在这三角形中, $a+b=2 c$ 及 ${A}-{B}=90^{\circ}$,
     \begin{enumerate}
         \item 试证明 $\sin \dfrac{C}{2}=\dfrac{1}{2 \sqrt{2}}$;
+
+        \sol{}
+        \begin{align*}
+            \dfrac{a+b}{c} & = \dfrac{\sin A + \sin B}{\sin C}\\
+            \dfrac{2c}{c} & = \dfrac{\sin A + \sin B}{\sin C}\\
+            2 & = \dfrac{\sin A + \sin B}{\sin C}\\
+            2\sin C & = \sin A + \sin B\\
+            2\sin C &= 2\sin\dfrac{A+B}{2}\cos\dfrac{A-B}{2} \\
+            2\sin C &= 2\cos\dfrac{180^{\circ} - (A+B)}{2}\cos 45^{\circ} \\
+            2\sin C &= \sqrt{2}\cos \dfrac{C}{2} \\
+            4\sin\dfrac{C}{2}\cos{\dfrac{C}{2}} &= \sqrt{2}\cos \dfrac{C}{2} \\
+            4\sin\dfrac{C}{2} &= \sqrt{2} \\
+            \sin \dfrac{C}{2} &= \dfrac{\sqrt{2}}{4} = \dfrac{1}{2\sqrt{2}} &\blacksquare
+        \end{align*}
         \item 求 ${A}, {B}$ 及 ${C}$ 的值。
+        
+        \sol{}
+        \begin{align*}
+            \sin \dfrac{C}{2} &= \dfrac{1}{2\sqrt{2}} \\
+            \dfrac{C}{2} &= \arcsin \dfrac{1}{2\sqrt{2}} \\
+            C &= 2\arcsin \dfrac{1}{2\sqrt{2}} &\blacksquare\\
+            &= 41.41^{\circ} \\
+            A + B + C &= 180^{\circ} \\
+            A + B &= 180^{\circ} - 41.41^{\circ} \\
+            & = 138.59^{\circ} \\
+            A - B &= 90^{\circ} \\
+            2A &= 228.59^{\circ} \\
+            A &= 114.30^{\circ} &\blacksquare\\
+            B &= 24.30^{\circ} &\blacksquare
+        \end{align*}
     \end{enumerate}
     
+    \newpage
     \item 若 $\sin 6 x=\dfrac{1}{\sin x}$, 证明 $\sin 5 x \sin 4 x-\sin 3 x \sin 2 x-\sin 8 x \sin x=1$。
+    
+    \sol{}
+    \begin{align*}
+        &\ \ \ \sin 5 x \sin 4 x-\sin 3 x \sin 2 x-\sin 8 x \sin x\\
+        & = \dfrac{1}{2}\left[-\cos 9x + \cos x + \cos 5x - \cos x + \cos 9x - \cos 7x\right] \\
+        & = -\dfrac{1}{2}(\cos 7x - \cos 5x) \\
+        & = \sin 6x \sin x \\
+        & = \dfrac{1}{\sin x} \cdot \sin x \\
+        & = 1 &\blacksquare
+    \end{align*}
+
     \item 在 $\triangle {ABC}$ 中, 试证 $4 \sin \dfrac{{A}}{2} \sin \dfrac{{B}}{2} \sin \dfrac{{C}}{2}=\cos {A}+\cos {B}+\cos {C}-1$。
+    
+    \sol{}
+    \begin{align*}
+        \cos {A}+\cos {B}+\cos {C} &= 2\cos \dfrac{A+B}{2}\cos \dfrac{A-B}{2} + 1 - 2\sin^2 \dfrac{C}{2} \\
+        &= 2\cos \dfrac{180^{\circ}-C}{2}\cos \dfrac{A-B}{2} - 2\sin^2 \dfrac{C}{2} + 1 \\
+        &= 2\sin \dfrac{C}{2}\cos \dfrac{A-B}{2} - 2\sin^2 \dfrac{C}{2} + 1 \\
+        &= 2\sin \dfrac{C}{2}\left(\cos \dfrac{A-B}{2} - \sin \dfrac{C}{2}\right) + 1 \\
+        &= 2\sin \dfrac{C}{2}\left(\cos \dfrac{A-B}{2} - \sin\dfrac{180^{\circ}-(A+B)}{2}\right) + 1 \\
+        &= 2\sin \dfrac{C}{2}\left(\cos \dfrac{A-B}{2} - \cos \dfrac{A+B}{2}\right) + 1 \\
+        &= 4\sin \dfrac{A}{2}\sin \dfrac{B}{2}\sin \dfrac{C}{2} + 1 \\
+        4 \sin \dfrac{{A}}{2} \sin \dfrac{{B}}{2} \sin \dfrac{{C}}{2} &= \cos {A}+\cos {B}+\cos {C}-1 &\blacksquare
+    \end{align*}
     \item 已知 $\sin \alpha+\sin \beta=\dfrac{1}{4}, \cos \alpha+\cos \beta=\dfrac{1}{3}$, 求 $\tan (\alpha+\beta)$ 的值。
     
     \sol{}
@@ -387,7 +452,6 @@
         2\sin\left(\dfrac{\alpha+\beta}{2}\right)\cos\left(\dfrac{\alpha-\beta}{2}\right) &= \dfrac{1}{4} \\
         \cos \alpha+\cos \beta &= \dfrac{1}{3} \\
         2\cos\left(\dfrac{\alpha+\beta}{2}\right)\cos\left(\dfrac{\alpha-\beta}{2}\right) &= \dfrac{1}{3} \\
-        \dfrac{\sin\left(\dfrac{\alpha+\beta}{2}\right)}{\cos\left(\dfrac{\alpha+\beta}{2}\right)} &= \dfrac{3}{4} \\
         \tan\left(\dfrac{\alpha+\beta}{2}\right) &= \dfrac{3}{4}
         \end{align*}
         \begin{center}
@@ -429,7 +493,17 @@
         & = \dfrac{\cos\dfrac{A+C}{2} + 2\cos \dfrac{A + C}{2}}{2\cos \dfrac{A + C}{2} - \cos\dfrac{A+C}{2}} \\
         & = \dfrac{3\cos \dfrac{A + C}{2}}{\cos \dfrac{A + C}{2}} = 3 &\blacksquare
     \end{align*}
-    \item 若 $A+B+C=180^{\circ}$ 且 $A \neq 90^{\circ}$, 证明 $\dfrac{\sin B}{\sin C}=\dfrac{\sin A \cos B-\sin C}{\sin A \cos C-\sin B}$。
+
+    \item 若 $A+B+C=180^{\circ}$ 且 $A \neq 90^{\circ}$, 证明 $\dfrac{\sin B}{\sin C}=\dfrac{\sin A \cos B-\sin C}{\sin A \cos C-\sin B}$
+    
+    \sol{}
+    \begin{align*}
+        \dfrac{\sin A \cos B-\sin C}{\sin A \cos C-\sin B} &= \dfrac{\sin A\cos B - \sin(180^{\circ} - (A + B))}{\sin A\cos C - \sin(180^{\circ} - (A + C))} \\
+        & = \dfrac{\sin A\cos B - \sin(A + B)}{\sin A\cos C - \sin(A + C)} \\
+        & = \dfrac{\sin A\cos B - \sin A\cos B - \cos A\sin B}{\sin A\cos C - \sin A\cos C - \cos A\sin C} \\
+        & = \dfrac{-\cos A\sin B}{-\cos A\sin C} \\
+        & = \dfrac{\sin B}{\sin C} &\blacksquare
+    \end{align*}
 \end{enumerate}
 
 \end{document}
