@@ -217,8 +217,8 @@
 	leftline=false, rightline=false,
 	nobreak,
 	singleextra={%
-		\fill[black](P-|O)circle[radius=0.4em];
-		\node at(P-|O){\color{white}\scriptsize\bf i};
+		\fill[black](P-|O)circle[radius=0.6em];
+		\node at(P-|O){\color{white}\scriptsize\bf \faInfo};
 		\draw[very thick](P-|O)++(0,-0.8em)--(O);%--(O-|P);
 	}
 }
@@ -246,9 +246,30 @@
 }
 
 % Define a custom environment for warning text
-\newenvironment{explore}[1][Explore:]{ % Set the default warning to "Warning:"
+\newenvironment{explore}[1][Exploration Activity:]{ % Set the default warning to "Warning:"
 	\medskip
 	\begin{mdframed}[style=explore]
+		\noindent{\large\textbf{#1}}
+}{
+	\end{mdframed}
+	\vspace{-0.5cm}
+}
+
+\mdfdefinestyle{think}{%
+	topline=false, bottomline=false,
+	leftline=false, rightline=false,
+	nobreak,
+	singleextra={%
+		\fill[black](P-|O)circle[radius=0.6em];
+		\node at(P-|O){\color{white}\scriptsize\bf \faQuestion};
+		\draw[very thick](P-|O)++(0,-0.8em)--(O);%--(O-|P);
+	}
+}
+
+% Define a custom environment for warning text
+\newenvironment{think}[1][Think about It:]{ % Set the default warning to "Warning:"
+	\medskip
+	\begin{mdframed}[style=think]
 		\noindent{\large\textbf{#1}}
 }{
 	\end{mdframed}
