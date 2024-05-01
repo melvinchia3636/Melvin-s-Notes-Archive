@@ -1145,8 +1145,8 @@
 <summary>AddMath S1P2</summary>
 
 - [structure.tex](<./数学/AddMath S1P2/structure.tex>)
-- [S1P2.pdf](<./数学/AddMath S1P2/S1P2.pdf>)
-- [S1P2.tex](<./数学/AddMath S1P2/S1P2.tex>)
+- [Chapter 8.pdf](<./数学/AddMath S1P2/Chapter 8.pdf>)
+- [Chapter 8.tex](<./数学/AddMath S1P2/Chapter 8.tex>)
 <dl><dd><dl><dd>
 <details>
 <summary>assets</summary>
