@@ -1144,12 +1144,39 @@
 <details>
 <summary>AddMath S1P2</summary>
 
-- [structure.tex](<./数学/AddMath S1P2/structure.tex>)
-- [Chapter 8.pdf](<./数学/AddMath S1P2/Chapter 8.pdf>)
-- [Chapter 8.tex](<./数学/AddMath S1P2/Chapter 8.tex>)
 <dl><dd><dl><dd>
 <details>
+<summary>chapter 8</summary>
+
+- [structure.tex](<./数学/AddMath S1P2/chapter 8/structure.tex>)
+- [Chapter 8.pdf](<./数学/AddMath S1P2/chapter 8/Chapter 8.pdf>)
+- [Chapter 8.tex](<./数学/AddMath S1P2/chapter 8/Chapter 8.tex>)
+<dl><dd><dl><dd><dl><dd>
+<details>
 <summary>assets</summary>
+
+
+</details>
+</dd></dl></dd></dl></dd></dl>
+
+
+</details>
+</dd></dl></dd></dl>
+
+<dl><dd><dl><dd>
+<details>
+<summary>chapter 9</summary>
+
+- [structure.tex](<./数学/AddMath S1P2/chapter 9/structure.tex>)
+- [Chapter 9.pdf](<./数学/AddMath S1P2/chapter 9/Chapter 9.pdf>)
+- [Chapter 9.tex](<./数学/AddMath S1P2/chapter 9/Chapter 9.tex>)
+<dl><dd><dl><dd><dl><dd>
+<details>
+<summary>assets</summary>
+
+
+</details>
+</dd></dl></dd></dl></dd></dl>
 
 
 </details>
@@ -2618,6 +2645,9 @@
 - [第五章 自创题目.docx](<./经济学/第五章 自创题目.docx>)
 - [第五章 自创题目.pdf](<./经济学/第五章 自创题目.pdf>)
 - [第四章 市场效率与政府干涉.docx](<./经济学/第四章 市场效率与政府干涉.docx>)
+- [第四章 市场效率与政府干涉.pdf](<./经济学/第四章 市场效率与政府干涉.pdf>)
+- [第四章 自创题目.docx](<./经济学/第四章 自创题目.docx>)
+- [第四章 自创题目.pdf](<./经济学/第四章 自创题目.pdf>)
 - [高二经济学 第三课 弹性理论.docx](<./经济学/高二经济学 第三课 弹性理论.docx>)
 - [高二经济学 第三课 弹性理论.pdf](<./经济学/高二经济学 第三课 弹性理论.pdf>)
 - [高二经济学 第二课 需求与供给.docx](<./经济学/高二经济学 第二课 需求与供给.docx>)
