@@ -5,7 +5,7 @@
 \usepackage{fontawesome}
 \usepackage{setspace}
 \usepackage{hyperref}
-\usepackage{enumitem}
+\usepackage[inline]{enumitem}
 \usepackage{multicol}
 \usepackage{xhfill}
 \usepackage[p,osf]{cochineal}
@@ -241,10 +241,10 @@
 	leftline=false, rightline=false,
 	nobreak,
 	singleextra={%
-		\draw(P-|O)++(-0.5em,0)node(tmp1){};
-		\draw(P-|O)++(0.5em,0)node(tmp2){};
+		\draw(P-|O)++(-0.6em,0)node(tmp1){};
+		\draw(P-|O)++(0.6em,0)node(tmp2){};
 		\fill[black,rotate around={45:(P-|O)}](tmp1)rectangle(tmp2);
-		\node at(P-|O){\color{white}\scriptsize\bf !};
+		\node at(P-|O){\color{white}\scriptsize\bf \faExclamation};
 		\draw[very thick](P-|O)++(0,-1em)--(O);%--(O-|P);
 	}
 }
