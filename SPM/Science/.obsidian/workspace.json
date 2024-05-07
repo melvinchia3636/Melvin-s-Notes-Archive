@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ae8e85947884b5cb",
+        "id": "34a2a4e2658a1fa5",
         "type": "tabs",
         "children": [
           {
-            "id": "158d93f55f7300eb",
+            "id": "a563ea97261709fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 1 Safety Measures in the Laboratory.md",
+                "file": "2024-05-07.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 1 Safety Measures in the Laboratory.md",
+                "file": "2024-05-07.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 1 Safety Measures in the Laboratory.md",
+                "file": "2024-05-07.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,11 +125,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 1 Safety Measures in the Laboratory.md"
+                "file": "2024-05-07.md"
               }
             }
+          },
+          {
+            "id": "3bc750a961c373f1",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -138,6 +147,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -146,6 +156,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "158d93f55f7300eb",
-  "lastOpenFiles": []
+  "active": "a563ea97261709fb",
+  "lastOpenFiles": [
+    "Untitled.canvas",
+    "2024-05-07.md",
+    "Chapter 1 Safety Measures in the Laboratory.md"
+  ]
 }
