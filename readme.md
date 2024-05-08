@@ -1188,6 +1188,26 @@
 
 <dl><dd><dl><dd>
 <details>
+<summary>chapter 10</summary>
+
+- [structure.tex](<./数学/AddMath S1P2/chapter 10/structure.tex>)
+- [sus.py](<./数学/AddMath S1P2/chapter 10/sus.py>)
+- [Chapter 10.pdf](<./数学/AddMath S1P2/chapter 10/Chapter 10.pdf>)
+- [Chapter 10.tex](<./数学/AddMath S1P2/chapter 10/Chapter 10.tex>)
+<dl><dd><dl><dd><dl><dd>
+<details>
+<summary>assets</summary>
+
+
+</details>
+</dd></dl></dd></dl></dd></dl>
+
+
+</details>
+</dd></dl></dd></dl>
+
+<dl><dd><dl><dd>
+<details>
 <summary>chapter 11</summary>
 
 - [structure.tex](<./数学/AddMath S1P2/chapter 11/structure.tex>)
