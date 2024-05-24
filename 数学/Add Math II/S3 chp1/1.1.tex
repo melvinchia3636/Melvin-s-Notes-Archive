@@ -1,0 +1,624 @@
+\documentclass{report}
+
+\usepackage{amsmath, amssymb}
+\usepackage{ctex}
+\usepackage[total={7in, 9.6in}]{geometry}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{tikz}
+
+\newcommand{\sol}{\vspace{0.2cm}\textbf{解}:}
+\newcommand{\proof}{\vspace{0.2cm}\textbf{证明}:}
+\newcommand{\qed}{\hfill $\blacksquare$}
+\pagenumbering{gobble}
+
+\setcounter{chapter}{1}
+\begin{document}
+
+\section{数学归纳法}
+
+\allowdisplaybreaks
+    \begin{enumerate}[leftmargin=*]
+        \item 试以数学归纳法证明 $1^2+2^2+3^2+\cdots+n^2=\dfrac{1}{6} n(n+1)(2 n+1)$ 。
+        
+        据之, 求 $2^2+4^2+6^2+\cdots+20^2$ 之和。
+
+        \proof{}
+        \begin{enumerate}[label=(\arabic*)]
+            \item 当 $n=1$ 时, 左式 $1^2=1$, 右式 $\dfrac{1}{6} \cdot 1 \cdot 2 \cdot 3 = 1$, 两边相等，等式成立。
+            \item 假设当 $n=k$ 时等式成立，即 $1^2+2^2+3^2+\cdots+k^2=\dfrac{1}{6} k(k+1)(2 k+1)$ 。
+            
+            当 $n=k+1$ 时, 
+            \begin{flalign*}
+                \text{左式} &= 1^2+2^2+3^2+\cdots+k^2+(k+1)^2 &\\
+                & = \dfrac{1}{6} k(k+1)(2 k+1) + (k+1)^2 \\
+                & = \dfrac{1}{6}(k+1)[k(2 k+1)+6(k+1)] \\
+                & = \dfrac{1}{6}(k+1)(2 k^2+k+6 k+6) \\
+                & = \dfrac{1}{6}(k+1)(2 k^2+7 k+6) \\
+                & = \dfrac{1}{6}(k+1)(k+2)(2 k+3) \\
+                & = \dfrac{1}{6}(k+1)[(k+1)+1][2(k+1)+1]
+            \end{flalign*}
+            即当 $n=k+1$ 时等式也成立。
+        \end{enumerate}
+        由数学归纳法原理, 知对一切自然数 $n$, 等式均成立。\qed
+        
+        \item 应用数学归纳法或其他方法, 证 $\displaystyle\sum_{r=1}^n \dfrac{1}{(2 r-1)(2 r+1)}=\dfrac{n}{2 n+1}$ 。
+       
+        据之, 求 $\displaystyle\sum_{r=1}^{\infty} \dfrac{1}{(2 r-1)(2 r+1)}$ 的值。
+
+        \proof{}
+        \begin{enumerate}[label=(\arabic*)]
+            \item 当 $n=1$ 时, 左式 $\dfrac{1}{(2 \cdot 1-1)(2 \cdot 1+1)}=\dfrac{1}{3}$, 右式 $\dfrac{1}{2 \cdot 1+1}=\dfrac{1}{3}$, 两边相等，等式成立。
+            \item 假设当 $n=k$ 时等式成立，即 $\displaystyle\sum_{r=1}^k \dfrac{1}{(2 r-1)(2 r+1)}=\dfrac{k}{2 k+1}$ 。
+            
+            当 $n=k+1$ 时,
+            \begin{flalign*}
+                \text{左式} &= \sum_{r=1}^{k} \dfrac{1}{(2 r-1)(2 r+1)} + \dfrac{1}{(2(k+1)-1)(2(k+1)+1)} &\\
+                & = \dfrac{k}{2 k+1} + \dfrac{1}{(2 k+1)(2 k+3)} \\
+                & = \dfrac{k(2 k+3)+1}{(2 k+1)(2 k+3)} \\
+                & = \dfrac{2 k^2+3 k+1}{(2 k+1)(2 k+3)} \\
+                & = \dfrac{(k+1)(2 k+1)}{(2 k+1)(2 k+3)} \\
+                & = \dfrac{k+1}{2(k+1)+1}
+            \end{flalign*}
+            即当 $n=k+1$ 时等式也成立。
+        \end{enumerate}
+        由数学归纳法原理, 知对一切自然数 $n$, 等式均成立。\qed
+        \begin{flalign*}
+            \sum_{r=1}^{\infty} \dfrac{1}{(2 r-1)(2 r+1)} &= \lim_{n \to \infty} \sum_{r=1}^{n} \dfrac{1}{(2 r-1)(2 r+1)} &\\
+            &= \lim_{n \to \infty} \dfrac{n}{2 n+1} \\
+            &= \lim_{n \to \infty} \dfrac{1}{2 + \dfrac{1}{n}} \\
+            &= \dfrac{1}{2 + 0} \\
+            &= \dfrac{1}{2} & \blacksquare
+        \end{flalign*}
+        
+        \item \begin{enumerate}
+            \item 试用数学归纳法证明 $\left(1+\dfrac{3}{1}\right)\left(1+\dfrac{5}{4}\right)\left(1+\dfrac{7}{9}\right) \cdots\left(1+\dfrac{2 n+1}{n^2}\right)=(n+1)^2, n \in \mathbf{N}$ 。
+
+            \proof{}
+            \begin{enumerate}[label=(\arabic*)]
+                \item 当 $n=1$ 时, 左式 $\left(1+\dfrac{3}{1}\right)=4$, 右式 $(1+1)^2=4$, 两边相等，等式成立。
+                \item 假设当 $n=k$ 时等式成立，即 $\left(1+\dfrac{3}{1}\right)\left(1+\dfrac{5}{4}\right)\left(1+\dfrac{7}{9}\right) \cdots\left(1+\dfrac{2 k+1}{k^2}\right)=(k+1)^2$ 。
+                
+                当 $n=k+1$ 时,
+                \begin{flalign*}
+                    \text{左式} &= \left(1+\dfrac{3}{1}\right)\left(1+\dfrac{5}{4}\right)\left(1+\dfrac{7}{9}\right) \cdots\left(1+\dfrac{2 k+1}{k^2}\right) \left(1+\dfrac{2(k+1)+1}{(k+1)^2}\right) &\\
+                    & = (k+1)^2 \left(1+\dfrac{2(k+1)+1}{(k+1)^2}\right) \\
+                    & = (k+1)^2 \left(1+\dfrac{2 k+3}{(k+1)^2}\right) \\
+                    & = (k+1)^2 \left(\dfrac{(k+1)^2+2 k+3}{(k+1)^2}\right) \\
+                    & = (k+1)^2 + 2 k + 3 \\
+                    & = k^2 + 2 k + 1 + 2 k + 3 \\
+                    &= k^2 + 4 k + 4 \\
+                    & = (k+2)^2 \\
+                    & = [(k+1)+1]^2
+                \end{flalign*}
+                即当 $n=k+1$ 时等式也成立。
+            \end{enumerate}
+            由数学归纳法原理, 知对一切自然数 $n$, 等式均成立。\qed
+
+            \newpage
+            \item 据此, 或用其它方法, 求 $\left(1+\dfrac{11}{25}\right)\left(1+\dfrac{13}{36}\right)\left(1+\dfrac{15}{49}\right) \cdots\left(1+\dfrac{51}{625}\right)$ 的值。
+            
+            \sol{}
+            \begin{flalign*}
+                &\left(1+\dfrac{11}{25}\right)\left(1+\dfrac{13}{36}\right)\left(1+\dfrac{15}{49}\right) \cdots\left(1+\dfrac{51}{625}\right)&\\
+                & = \left(1+\dfrac{2(5)+1}{5^2}\right)\left(1+\dfrac{2(6)+1}{6^2}\right)\left(1+\dfrac{2(7)+1}{7^2}\right) \cdots\left(1+\dfrac{2(25)+1}{25^2}\right) \\
+                & = \dfrac{(25+1)^2}{(4+1)^2} \\
+                & = 27\dfrac{1}{25}
+            \end{flalign*}
+        \end{enumerate}
+        
+        \item 利用数学归纳法, 证明 $\cos x+\cos 3 x+\cdots+\cos (2 n-1) x=\dfrac{\sin 2 n x}{2 \sin x}, n \in \mathbf{N}$ 。
+
+        \proof{}
+        \begin{enumerate}[label=(\arabic*)]
+            \item 当 $n=1$ 时, 左式 $\cos x$, 右式 $\dfrac{\sin 2 x}{2 \sin x} = \dfrac{2 \sin x \cos x}{2 \sin x} = \cos x$, 两边相等，等式成立。
+            \item 假设当 $n=k$ 时等式成立，即 $\cos x+\cos 3 x+\cdots+\cos (2 k-1) x=\dfrac{\sin 2 k x}{2 \sin x}$ 。
+            
+            当 $n=k+1$ 时,
+            \begin{flalign*}
+                \text{左式} &= \cos x+\cos 3 x+\cdots+\cos (2 k-1) x + \cos (2(k+1)-1) x &\\
+                & = \dfrac{\sin 2 k x}{2 \sin x} + \cos (2 k+1) x \\
+                & = \dfrac{\sin 2 k x}{2 \sin x} + \cos 2 k x \cos x - \sin 2 k x \sin x \\
+                & = \dfrac{\sin 2 k x + 2 \sin x \cos x \cos 2 k x - 2 \sin^2 x \sin 2 k x}{2 \sin x} \\
+                & = \dfrac{\sin 2 k x(1 - 2 \sin^2 x) + \sin 2 x \cos 2 k x}{2 \sin x} \\
+                & = \dfrac{\sin 2 k x \cos 2 x + \cos 2 k x \sin 2 x}{2 \sin x} \\
+                & = \dfrac{\sin (2kx + 2x)}{2 \sin x} \\
+                & = \dfrac{\sin 2(k+1)x}{2 \sin x}
+            \end{flalign*}
+            即当 $n=k+1$ 时等式也成立。
+        \end{enumerate}
+        由数学归纳法原理, 知对一切自然数 $n$, 等式均成立。\qed
+    \end{enumerate}
+
+    \newpage
+    \section{数学归纳法的应用}
+
+    \begin{enumerate}
+        \item 若 $a_1 \leq a_2 \leq a_3 \leq \cdots \leq a_n$ 为正数, 其等差中项与等比中项之定义为
+        \begin{flalign*}
+        & {A}=\dfrac{1}{n}\left(a_1+a_2+a_3+\cdots+a_n\right), &\\
+        & {G}=\left(a_1 a_2 a_3 \cdots a_n\right)^{\frac{1}{n}},
+        \end{flalign*}
+        求证:
+        \begin{enumerate}[label=(\roman*)]
+            \item ${A}\left(a_1+a_n-{A}\right) \geq a_1 a_n$;
+            \item 利用数学归纳法证明 ${A}^n \geq a_1 a_2 \cdots a_n$
+        \end{enumerate}
+
+        \proof{}
+
+        这是什么地狱题目啊，我不会做。;-;
+        
+        \item 设 $a, b, c, d, a_1, a_2, \cdots a_n, b_1, b_2, \cdots, b_n$ 都是正数。
+        \begin{enumerate}[label=(\alph*)]
+            \item 证明 $\dfrac{a}{b}<\dfrac{c}{d} \Rightarrow \dfrac{a}{b}<\dfrac{a+c}{b+d}<\dfrac{c}{d}$;
+
+            \proof{}
+            \begin{flalign*}
+                \dfrac{a}{b}&<\dfrac{c}{d}\\
+                ad &< bc \\
+                ad + ab &< bc + ab &\\
+                & a(b+d) < b(a+c) &\\
+                & \dfrac{a}{b} < \dfrac{a+c}{b+d}\ \cdots\ (1) &
+            \end{flalign*}
+            \begin{flalign*}
+                ad + cd &< bc + cd &\\
+                 d(a+c) &< c(b+d) &\\
+                & \dfrac{a+c}{b+d} < \dfrac{c}{d}\ \cdots\ (2) &
+            \end{flalign*}
+            由 $(1)$ 和 $(2)$, 知 $\dfrac{a}{b}<\dfrac{a+c}{b+d}<\dfrac{c}{d}$。\qed
+
+            \item 试用数学归纳法证明: 若 $\dfrac{a_1}{b_1}<\dfrac{a_2}{b_2}<\cdots<\dfrac{a_n}{b_n}$ 则 $\dfrac{a_1}{b_1}<\dfrac{a_1+a_2+\cdots+a_n}{b_1+b_2+\cdots+b_n}<\dfrac{a_n}{b_n}$ 。
+
+            \proof{}
+            \begin{enumerate}[label=(\arabic*)]
+                \item 当 $n=2$ 时, $\dfrac{a_1}{b_1}<\dfrac{a_2}{b_2}$, 则由 (a) 中的证明可知，$\dfrac{a_1}{b_1}<\dfrac{a_1+a_2}{b_1+b_2}<\dfrac{a_2}{b_2}$ 成立。
+                \item 假设当 $n=k$ 时不等式成立，即 $\dfrac{a_1}{b_1}<\dfrac{a_2}{b_2}<\cdots<\dfrac{a_k}{b_k}$ 则 $\dfrac{a_1}{b_1}<\dfrac{a_1+a_2+\cdots+a_k}{b_1+b_2+\cdots+b_k}<\dfrac{a_k}{b_k}$ 。
+                
+                根据假设，
+                \begin{flalign*}
+                    \dfrac{a_1}{b_1} &< \dfrac{a_1+a_2+\cdots+a_k}{b_1+b_2+\cdots+b_k}\ \cdots\ (1) &\\
+                \end{flalign*}
+                根据题意，$\dfrac{a_1}{b_1}<\dfrac{a_2}{b_2}<\cdots<\dfrac{a_{k+1}}{b_{k+1}}$，将不等式拆开，得到
+                \begin{flalign*}
+                    \dfrac{a_1}{b_1} &< \dfrac{a_{k+1}}{b_{k+1}} &\\
+                    &\ \ \vdots &\\
+                    \dfrac{a_k}{b_k} &< \dfrac{a_{k+1}}{b_{k+1}}
+                \end{flalign*}
+                将上述不等式消分母，得到
+                \begin{flalign*}
+                    a_1b_{k+1} &< a_{k+1}b_1 &\\
+                    &\ \ \vdots &\\
+                    a_kb_{k+1} &< a_{k+1}b_k
+                \end{flalign*}
+                将上述不等式相加，得到
+                \begin{flalign*}
+                    (a_1+a_2+\cdots+a_k)b_{k+1} &< (b_1+b_2+\cdots+b_k)a_{k+1} &\\
+                    \dfrac{a_1+a_2+\cdots+a_k}{b_1+b_2+\cdots+b_k} &< \dfrac{a_{k+1}}{b_{k+1}}\ \cdots\ (2)
+                \end{flalign*}
+                由 $(1)$ 和 $(2)$, 知 $\dfrac{a_1}{b_1}<\dfrac{a_1+a_2+\cdots+a_{k+1}}{b_1+b_2+\cdots+b_{k+1}}\ \cdots\ (3)$。
+
+                由于 $\dfrac{a_k}{b_k}<\dfrac{a_{k+1}}{b_{k+1}}$，且根据假设，$\dfrac{a_1+a_2+\cdots+a_k}{b_1+b_2+\cdots+b_k}<\dfrac{a_k}{b_k}$
+
+                所以 $\dfrac{a_1+a_2+\cdots+a_{k+1}}{b_1+b_2+\cdots+b_{k+1}}<\dfrac{a_{k+1}}{b_{k+1}}\ \cdots\ (4)$。
+
+                由 $(3)$ 和 $(4)$, 知 $\dfrac{a_1}{b_1}<\dfrac{a_1+a_2+\cdots+a_{k+1}}{b_1+b_2+\cdots+b_{k+1}}<\dfrac{a_{k+1}}{b_{k+1}}$。
+
+                即当 $n=k+1$ 时，不等式也成立。
+            \end{enumerate}
+            由数学归纳法原理, 知对一切自然数 $n$, 不等式均成立。\qed
+            
+        \end{enumerate}
+        
+        \item 若 $n$ 为正整数, 试利用数学归纳法证明 $3^{4 n+2}+2 \times 4^{3 n+1}$ 能被 17 整除。
+
+        \sol{}
+        \begin{enumerate}[label=(\arabic*)]
+            \item 当 $n=1$ 时, $3^{4 \times 1+2}+2 \times 4^{3 \times 1+1} = 3^6 + 2 \times 4^4 = 729 + 2 \times 256 = 1241$ 能被 17 整除。
+            \item 假设当 $n=k$ 时等式成立，即 $3^{4 k+2}+2 \times 4^{3 k+1}$ 能被 17 整除。
+            
+            当 $n=k+1$ 时,
+            \begin{flalign*}
+                \text{左式} &= 3^{4k+6} + 2 \times 4^{3k+4} &\\
+                & = 3^4 \times 3^{4k+2} + 2 \times 4^3 \times 4^{3k+1} \\
+                & = 81 \times 3^{4k+2} + 128 \times 4^{3k+1} \\
+                & = 17 \times 3^{4k+2} + 64 \times 3^{4k+2} + 128 \times 4^{3k+1} \\
+                & = 17 \times 3^{4k+2} + 64(3^{4k+2} + 2 \times 4^{3k+1})
+            \end{flalign*}
+            由假设, $3^{4k+2} + 4^{3k+1}$ 能被 17 整除, 所以 $3^{4(k+1)+2}+2 \times 4^{3(k+1)+1}$ 能被 17 整除。
+
+            即当 $n=k+1$ 时，式子也能被 17 整除。
+        \end{enumerate}
+        由数学归纳法原理, 知对一切正整数 $n$, $3^{4 n+2}+2 \times 4^{3 n+1}$ 能被 17 整除。\qed
+
+        \vfill\null
+        
+        \item 试用数学归纳法证明: 若 $n \geq 5$, 则 $2^n>n^2$ 。
+        
+        \sol{}
+        \begin{enumerate}[label=(\arabic*)]
+            \item 当 $n=5$ 时, $2^5=32$, $5^2=25$, $32>25$, 不等式成立。
+            \item 假设当 $n=k$ 时不等式成立，即 $2^k>k^2$ 。
+            
+            当 $n=k+1$ 时,
+            \begin{flalign*}
+                \text{左式} &= 2^{k+1} &\\
+                & = 2 \times 2^k \\
+                & > 2 \times k^2 \\
+                & = 2 k^2 
+            \end{flalign*}
+            现在我们需要证明对于$k \geq 5$，$2 k^2 > (k+1)^2$。
+            \begin{flalign*}
+                2k^2 - (k+1)^2 & = 2k^2 - k^2 - 2k - 1 &\\
+                & = k^2 - 2k - 1 &\\
+                & = (k-1)^2 - 2
+            \end{flalign*}
+            当 $k \geq 5$ 时, $(k-1)^2 - 2 > 0$，所以 $2 k^2 > (k+1)^2$。
+
+            即当 $n=k+1$ 时，不等式也成立。
+        \end{enumerate}
+        由数学归纳法原理, 知对一切自然数 $n \geq 5$, 不等式均成立。\qed
+        
+        \item 试应用归纳法或其他方法, 证明对所有实数 $a_1, a_2, a_3, \cdots, a_n$,
+        
+        $
+        n\left(a_1^2+a_2^2+a_3^2+\cdots+a_n^2\right) \geq\left(a_1+a_2+a_3+\cdots+a_n\right)^2 \text { 。 }
+        $
+        
+        \proof{}
+        \begin{enumerate}[label=(\roman*)]
+            \item 当 $n=1$ 时, 左式 $=a_1^2$, 右式 $=(a_1)^2$, $a_1^2 \geq (a_1)^2$, 两边相等，等式成立。
+            \item 假设当 $n=k$ 时等式成立，即 $k\left(a_1^2+a_2^2+a_3^2+\cdots+a_k^2\right) \geq\left(a_1+a_2+a_3+\cdots+a_k\right)^2$ 。
+            
+            当 $n=k+1$ 时, 我们需证明 
+            
+            $(k+1)\left(a_1^2+a_2^2+a_3^2+\cdots+a_k^2+a_{k+1}^2\right) \geq\left(a_1+a_2+a_3+\cdots+a_k+a_{k+1}\right)^2$。
+            \begin{flalign*}
+                \text{左式} &= (k+1)\left(a_1^2+a_2^2+a_3^2+\cdots+a_k^2+a_{k+1}^2\right) &\\
+                & = k\left(a_1^2+a_2^2+a_3^2+\cdots+a_k^2 \right) + (a_1^2+a_2^2+a_3^2+\cdots+a_k^2) + (k+1)a_{k+1}^2 \\
+                & \geq \left(a_1+a_2+a_3+\cdots+a_k\right)^2 + \left(a_1^2+a_2^2+a_3^2+\cdots+a_k^2\right) + (k+1)a_{k+1}^2 \\
+                \text{右式} &= \left(a_1+a_2+a_3+\cdots+a_k+a_{k+1}\right)^2 \\
+                & = \left(a_1+a_2+a_3+\cdots+a_k\right)^2 + 2\left(a_1+a_2+a_3+\cdots+a_k\right)a_{k+1} + a_{k+1}^2
+            \end{flalign*}
+            比较左右两式, 我们只需证明 
+            \begin{flalign*}
+                \left(a_1^2+a_2^2+a_3^2+\cdots+a_k^2\right) + (k+1)a_{k+1}^2 &\geq 2\left(a_1+a_2+a_3+\cdots+a_k\right)a_{k+1} + a_{k+1}^2 &\\
+                \left(a_1^2+a_2^2+a_3^2+\cdots+a_k^2\right) + ka_{k+1}^2 &\geq 2\left(a_1+a_2+a_3+\cdots+a_k\right)a_{k+1} &\\
+                \left(a_1^2+a_2^2+a_3^2+\cdots+a_k^2\right) + ka_{k+1}^2 &- 2\left(a_1+a_2+a_3+\cdots+a_k\right)a_{k+1} \geq 0 &\\
+                (a_1 - 2a_1a_{k+1} + a_{k+1}^2) + (a_2 - 2a_2a_{k+1} &+ a_{k+1}^2) + \cdots + (a_k - 2a_ka_{k+1} + a_{k+1}^2) \geq 0 &\\
+                (a_1 - a_{k+1})^2 + (a_2 - a_{k+1})^2 &+ \cdots + (a_k - a_{k+1})^2 \geq 0
+            \end{flalign*}
+            $\because$ 任何数的平方都大于等于 0, $\therefore$ 上式成立。
+
+            即当 $n=k+1$ 时等式也成立。
+        \end{enumerate}
+        由数学归纳法原理, 知对一切实数 $a_1, a_2, a_3, \cdots, a_n$, 等式均成立。\qed
+        
+        \item 用数学归纳法证明 $1 \times 1!+2 \times 2!+3 \times 3!+\cdots+n \times n!=(n+1)!-1$ 。
+        
+        \proof{}
+        \begin{enumerate}[label=(\arabic*)]
+            \item 当 $n=1$ 时, 左式 $1 \times 1!=1$, 右式 $(1+1)!-1=1$, 两边相等，等式成立。
+            \item 假设当 $n=k$ 时等式成立，即 $1 \times 1!+2 \times 2!+3 \times 3!+\cdots+k \times k!=(k+1)!-1$ 。
+            
+            当 $n=k+1$ 时,
+            \begin{flalign*}
+                \text{左式} &= 1 \times 1!+2 \times 2!+3 \times 3!+\cdots+k \times k! + (k+1) \times (k+1)! &\\
+                & = (k+1)! - 1 + (k+1) \times (k+1)! \\
+                & = (k+1)!(1 + k + 1) - 1 \\
+                & = (k+1)!(k+2) - 1 \\
+                & = (k+2)! - 1 \\
+                & = [(k+1)+1]! - 1
+            \end{flalign*}
+            即当 $n=k+1$ 时等式也成立。
+        \end{enumerate}
+        由数学归纳法原理, 知对一切自然数 $n$, 等式均成立。\qed
+
+        \item 试应用数学归纳法或其他方法, 证明对所有的正整数 $n$ 均有
+        
+        $
+        1 \times \dfrac{2!}{2^2}+2 \times \dfrac{3!}{2^3}+3 \times \dfrac{4!}{2^4}+\cdots+n \times \dfrac{(n+1)!}{2^{n+1}}=\dfrac{(n+2)!}{2^{n+1}}-1 \text { 。 }
+        $
+
+        \proof{}
+        \begin{enumerate}[label=(\roman*)]
+            \item 当 $n=1$ 时, 左式 $ = 1 \times \dfrac{2!}{2^2} = \dfrac{1}{2}$, 右式 $ = \dfrac{3!}{2^2} - 1 = \dfrac{6}{4} - 1 = \dfrac{1}{2}$, 两边相等，等式成立。
+            \item 假设当 $n=k$ 时等式成立，即 $1 \times \dfrac{2!}{2^2}+2 \times \dfrac{3!}{2^3}+3 \times \dfrac{4!}{2^4}+\cdots+k \times \dfrac{(k+1)!}{2^{k+1}}=\dfrac{(k+2)!}{2^{k+1}}-1$ 。
+            
+            当 $n=k+1$ 时,
+            \begin{flalign*}
+                \text{左式} &= 1 \times \dfrac{2!}{2^2}+2 \times \dfrac{3!}{2^3}+3 \times \dfrac{4!}{2^4}+\cdots+k \times \dfrac{(k+1)!}{2^{k+1}} + (k+1) \times \dfrac{(k+2)!}{2^{k+2}} &\\
+                & = \dfrac{2(k+2)!}{2^{k+2}} - 1 + \dfrac{(k+1)(k+2)!}{2^{k+2}} \\
+                & = \dfrac{2(k+2)! + (k+1)(k+2)!}{2^{k+2}} - 1 \\
+                & = \dfrac{(k+2)!(2 + k + 1)}{2^{k+2}} - 1 \\
+                & = \dfrac{(k+2)!(k+3)}{2^{k+2}} - 1 \\
+                & = \dfrac{(k+3)!}{2^{k+2}} - 1 \\
+                & = \dfrac{(k+3)!}{2^{k+2}} - 1\\
+                & = \dfrac{[(k+1)+2]!}{2^{(k+1)+1}} - 1
+            \end{flalign*}
+            即当 $n=k+1$ 时等式也成立。
+        \end{enumerate}
+        由数学归纳法原理, 知对一切自然数 $n$, 等式均成立。\qed
+
+        \item \begin{enumerate}
+            \item 设 ${A}=\left(\begin{array}{cc}\cos \theta & -\sin \theta \\ \sin \theta & \cos \theta\end{array}\right)$, 试用数学归纳法或其它方法证明 
+            
+            ${A}^n=\left(\begin{array}{cc}\cos n \theta & -\sin n \theta \\ \sin n \theta & \cos n \theta\end{array}\right)$, 对所有自然数 $n$ 都成立。
+
+            \proof{}
+            \begin{enumerate}[label=(\arabic*)]
+                \item 当 $n=1$ 时, ${A}=\left(\begin{array}{cc}\cos \theta & -\sin \theta \\ \sin \theta & \cos \theta\end{array}\right)$, ${A}^1=\left(\begin{array}{cc}\cos \theta & -\sin \theta \\ \sin \theta & \cos \theta\end{array}\right)$, 两边相等，等式成立。
+                \item 假设当 $n=k$ 时等式成立，即 ${A}^k=\left(\begin{array}{cc}\cos k \theta & -\sin k \theta \\ \sin k \theta & \cos k \theta\end{array}\right)$。
+                
+                当 $n=k+1$ 时,
+                \begin{flalign*}
+                    \text{左式} &= {A}^k \cdot {A} &\\
+                    & = \left(\begin{array}{cc}\cos k \theta & -\sin k \theta \\ \sin k \theta & \cos k \theta\end{array}\right) \cdot \left(\begin{array}{cc}\cos \theta & -\sin \theta \\ \sin \theta & \cos \theta\end{array}\right) \\
+                    & = \left(\begin{array}{cc}\cos k \theta \cos \theta - \sin k \theta \sin \theta & -\cos k \theta \sin \theta - \sin k \theta \cos \theta \\ \sin k \theta \cos \theta + \cos k \theta \sin \theta & -\sin k \theta \sin \theta + \cos k \theta \cos \theta\end{array}\right) \\
+                    & = \left(\begin{array}{cc}\cos (k\theta + \theta) & -\sin (k\theta + \theta) \\ \sin (k\theta + \theta) & \cos (k\theta + \theta)\end{array}\right) \\
+                    & = \left(\begin{array}{cc}\cos (k+1) \theta & -\sin (k+1) \theta \\ \sin (k+1) \theta & \cos (k+1) \theta\end{array}\right)
+                \end{flalign*}
+                即当 $n=k+1$ 时等式也成立。
+            \end{enumerate}
+
+            由数学归纳法原理, 知对一切自然数 $n$, 等式均成立。\qed
+            
+            \item 若 ${A}=\left(\begin{array}{cc}\cos \dfrac{\pi}{3} & -\sin \dfrac{\pi}{3} \\ \sin \dfrac{\pi}{3} & \cos \dfrac{\pi}{3}\end{array}\right)$, 试用(i)的结果求满足 ${A}^n=\left(\begin{array}{ll}1 & 0 \\ 0 & 1\end{array}\right)$ 的最小自然 $n$。
+            
+            \sol{}
+            由(i)的结果, ${A}^n=\left(\begin{array}{cc}\cos n \left(\dfrac{\pi}{3}\right) & -\sin n \left(\dfrac{\pi}{3}\right) \\ \sin n \left(\dfrac{\pi}{3}\right) & \cos n \left(\dfrac{\pi}{3}\right)\end{array}\right)$。
+
+            令 ${A}^n=\left(\begin{array}{ll}1 & 0 \\ 0 & 1\end{array}\right)$, 即 $\cos n \left(\dfrac{\pi}{3}\right) = 1$, $\sin n \left(\dfrac{\pi}{3}\right) = 0$。
+            \begin{flalign*}
+                & \cos n \left(\dfrac{\pi}{3}\right) = 1, &\\
+                & n \left(\dfrac{\pi}{3}\right) = 2k\pi, k \in \mathbf{Z}, \\
+                & n = 6k, k \in \mathbf{Z}\ \cdots\ (1)
+            \end{flalign*}
+            \begin{flalign*}
+                & \sin n \left(\dfrac{\pi}{3}\right) = 0, &\\
+                & n \left(\dfrac{\pi}{3}\right) = k\pi, k \in \mathbf{Z}, \\
+                & n = 3k, k \in \mathbf{Z}\ \cdots\ (2)
+            \end{flalign*}
+            由（1）和（2）可知, 因为 $n$ 是自然数, $n \neq 0$, 所以$n$ 的最小值为 6。\qed
+        \end{enumerate}
+       
+        \item 试用数学归纳法证明 $\displaystyle\sum_{r=1}^n \dfrac{r}{(r+1)!}=1-\dfrac{1}{(n+1)!}$。
+
+        \proof{}
+        \begin{enumerate}[label=(\roman*)]
+            \item 当 $n=1$ 时, 左式 $\dfrac{1}{(1+1)!}=\dfrac{1}{2}$, 右式 $1-\dfrac{1}{(1+1)!}=1-\dfrac{1}{2}=\dfrac{1}{2}$, 两边相等，等式成立。
+            \item 假设当 $n=k$ 时等式成立，即 $\displaystyle\sum_{r=1}^k \dfrac{r}{(r+1)!}=1-\dfrac{1}{(k+1)!}$ 。
+            
+            当 $n=k+1$ 时,
+            \begin{flalign*}
+                \text{左式} &= \sum_{r=1}^{k} \dfrac{r}{(r+1)!} + \dfrac{k+1}{(k+1+1)!} &\\
+                & = 1-\dfrac{1}{(k+1)!} + \dfrac{k+1}{(k+2)(k+1)!} \\
+                & = 1-\dfrac{k + 2 - k - 1}{(k+2)!} \\
+                & = 1-\dfrac{1}{(k+2)!} \\
+                & = 1-\dfrac{1}{[(k+1)+1]!}
+            \end{flalign*}
+            即当 $n=k+1$ 时等式也成立。
+        \end{enumerate}
+        由数学归纳法原理, 知对一切自然数 $n$, 等式均成立。\qed
+       
+        \item 已知 $f(x)$ 是一函数, 且 $f(x y)=f(x)+f(y)$, 应用数学归纳法, 试证 $f\left(x^n\right)=n f(x)$, $n \in \mathbf{N}$。
+        
+        \proof{}
+
+        设 $x = y = 1$,则 $f(1) = f(1) + f(1)$, 即 $f(1) = 0$。
+        \begin{enumerate}[label=(\roman*)]
+            \item 当 $n = 1$ 时, 左式 $= f(x)$, 右式 $= f(x) + f(1) = f(x)$, 两边相等，等式成立。
+            \item 假设当 $n = k$ 时等式成立，即 $f(x^k) = k f(x)$。
+            
+            当 $n = k + 1$ 时,
+            \begin{flalign*}
+                \text{左式} &= f(x^{k+1}) &\\
+                & = f(x^k \cdot x) \\
+                & = f(x^k) + f(x) \\
+                & = k f(x) + f(x) \\
+                & = (k + 1) f(x)
+            \end{flalign*}
+            即当 $n = k + 1$ 时等式也成立。
+        \end{enumerate}
+        由数学归纳法原理, 知对一切自然数 $n$, 等式均成立。\qed
+        
+        \item 试用数学归纳法证明 $\dfrac{1}{1 \times 2}+\dfrac{1}{2 \times 3}+\dfrac{1}{3 \times 4}+\cdots+\dfrac{1}{n(n+1)}=\dfrac{n}{n+1}, n \in \mathbf{Z}^{+}$。
+        
+        据此, 或其他方法, 计算下列的值:
+        
+        $
+        \dfrac{1}{100 \times 101}+\dfrac{1}{101 \times 102}+\dfrac{1}{102 \times 103}+\cdots+\dfrac{1}{199 \times 200}。
+        $
+
+        \proof{}
+        \begin{enumerate}[label=(\roman*)]
+            \item 当 $n=1$ 时, 左式 $\dfrac{1}{1 \times 2}=\dfrac{1}{2}$, 右式 $\dfrac{1}{1+1}=\dfrac{1}{2}$, 两边相等，等式成立。
+            \item 假设当 $n=k$ 时等式成立，即 $\dfrac{1}{1 \times 2}+\dfrac{1}{2 \times 3}+\dfrac{1}{3 \times 4}+\cdots+\dfrac{1}{k(k+1)}=\dfrac{k}{k+1}$ 。
+            
+            当 $n=k+1$ 时,
+            \begin{flalign*}
+                \text{左式} &= \dfrac{1}{1 \times 2}+\dfrac{1}{2 \times 3}+\dfrac{1}{3 \times 4}+\cdots+\dfrac{1}{k(k+1)} + \dfrac{1}{(k+1)(k+2)} &\\
+                & = \dfrac{k}{k+1} + \dfrac{1}{(k+1)(k+2)} \\
+                & = \dfrac{k(k+2)+1}{(k+1)(k+2)} \\
+                & = \dfrac{k^2+2k+1}{(k+1)(k+2)} \\
+                & = \dfrac{(k+1)^2}{(k+1)(k+2)} \\
+                & = \dfrac{k+1}{k+2}\\
+                & = \dfrac{k+1}{(k+1)+1}
+            \end{flalign*}
+            即当 $n=k+1$ 时等式也成立。
+        \end{enumerate}
+        由数学归纳法原理, 知对一切自然数 $n$, 等式均成立。\qed
+
+        \sol{}
+        \begin{flalign*}
+            &\dfrac{1}{100 \times 101}+\dfrac{1}{101 \times 102}+\dfrac{1}{102 \times 103}+\cdots+\dfrac{1}{199 \times 200} &\\
+            & = \dfrac{199}{199 + 1} - \dfrac{99}{99 + 1}\\
+            & = \dfrac{1}{200} & \blacksquare
+        \end{flalign*}
+
+        \item 用数学归纳法证明 $\displaystyle\sum_{r=1}^n \dfrac{2^r r}{(r+1)(r+2)}=\dfrac{2^{n+1}}{n+2}-1$。
+
+        \proof{}
+        \begin{enumerate}[label=(\arabic*)]
+            \item 当 $n=1$ 时, 左式 $\dfrac{2^1 \cdot 1}{(1+1)(1+2)}=\dfrac{2}{6}=\dfrac{1}{3}$, 右式 $\dfrac{2^2}{1+2}-1=\dfrac{4}{3}-1=\dfrac{1}{3}$, 两边相等，等式成立。
+            \item 假设当 $n=k$ 时等式成立，即 $\displaystyle\sum_{r=1}^k \dfrac{2^r r}{(r+1)(r+2)}=\dfrac{2^{k+1}}{k+2}-1$ 。
+            
+            当 $n=k+1$ 时,
+            \begin{flalign*}
+                \text{左式} &= \sum_{r=1}^{k} \dfrac{2^r r}{(r+1)(r+2)} + \dfrac{2^{k+1} (k+1)}{(k+1+1)(k+1+2)} &\\
+                & = \dfrac{2^{k+1}}{k+2}-1 + \dfrac{2^{k+1} (k+1)}{(k+3)(k+2)} \\
+                & = \dfrac{2^{k+1}}{k+2} + \dfrac{2^{k+1} (k+1)}{(k+3)(k+2)} - 1 \\
+                & = \dfrac{2^{k+1}(k+3) + 2^{k+1}(k+1)}{(k+3)(k+2)} - 1 \\
+                & = \dfrac{2^{k+1}(2k+4)}{(k+3)(k+2)} - 1 \\
+                & = \dfrac{2^{k+2}(k+2)}{(k+3)(k+2)} - 1 \\
+                & = \dfrac{2^{k+2}}{k+3} - 1 \\
+                & = \dfrac{2^{(k+1)+1}}{(k+1)+2} - 1
+            \end{flalign*}
+            即当 $n=k+1$ 时等式也成立。
+        \end{enumerate}
+        由数学归纳法原理, 知对一切自然数 $n$, 等式均成立。\qed
+
+        \item 已知当 $k \geq 0$ 时, $2 k+3>2 \sqrt{(k+1)(k+2)}$。
+        
+        用数学归纳法证明 $1+\dfrac{1}{\sqrt{2}}+\dfrac{1}{\sqrt{3}}+\cdots+\dfrac{1}{\sqrt{n}}>2(\sqrt{n+1}-1), n \in N$。
+
+        \proof{}
+        \begin{enumerate}[label=(\arabic*)]
+            \item 当 $n=1$ 时, 左式 $=1$, 右式 $2(\sqrt{1+1}-1)=2(\sqrt{2}-1) > 1$, 不等式成立。
+            \item 假设当 $n=k$ 时等式成立，即 $1+\dfrac{1}{\sqrt{2}}+\dfrac{1}{\sqrt{3}}+\cdots+\dfrac{1}{\sqrt{k}}>2(\sqrt{k+1}-1)$。
+            
+            当 $n=k+1$ 时,
+            \begin{flalign*}
+                \text{左式} &= 1+\dfrac{1}{\sqrt{2}}+\dfrac{1}{\sqrt{3}}+\cdots+\dfrac{1}{\sqrt{k}}+\dfrac{1}{\sqrt{k+1}} &\\
+                & > 2(\sqrt{k+1}-1) + \dfrac{1}{\sqrt{k+1}} \\
+                & = 2\sqrt{k+1} - 2 + \dfrac{1}{\sqrt{k+1}} \\
+                & = \dfrac{2(k+1) - 2\sqrt{k+1} + 1}{\sqrt{k+1}} \\
+                & = \dfrac{2k + 3 - 2\sqrt{k+1}}{\sqrt{k+1}} \\
+                & > \dfrac{2\sqrt{(k+1)(k+2)} - 2\sqrt{k+1}}{\sqrt{k+1}} \\
+                & = 2\sqrt{k+2} - 2 \\
+                & = 2(\sqrt{(k+1)+1} - 1)
+            \end{flalign*}
+            即当 $n=k+1$ 时等式也成立。
+        \end{enumerate}
+        由数学归纳法原理, 知对一切自然数 $n$, 等式均成立。\qed
+       
+        \item 用数学归纳法证明 $\displaystyle\sum_{k=1}^n k(k+1)(k+2)=\dfrac{n(n+1)(n+2)(n+3)}{4}, n \in N$。
+        
+        \proof{}
+        \begin{enumerate}[label=(\arabic*)]
+            \item 当 $n=1$ 时, 左式 $1 \times 2 \times 3 = 6$, 右式 $\dfrac{1 \times 2 \times 3 \times 4}{4} = 6$, 两边相等，等式成立。
+            \item 假设当 $n=k$ 时等式成立，即 $\displaystyle\sum_{k=1}^k k(k+1)(k+2)=\dfrac{k(k+1)(k+2)(k+3)}{4}$。
+            
+            当 $n=k+1$ 时,
+            \begin{flalign*}
+                \text{左式} &= \sum_{k=1}^{k} k(k+1)(k+2) + (k+1)(k+2)(k+3) &\\
+                & = \dfrac{k(k+1)(k+2)(k+3)}{4} + (k+1)(k+2)(k+3) \\
+                & = \dfrac{k(k+1)(k+2)(k+3)}{4} + \dfrac{4(k+1)(k+2)(k+3)}{4} \\
+                & = \dfrac{(k+1)(k+2)(k+3)(k+4)}{4} \\
+                & = \dfrac{(k+1)[(k+1)+1][(k+1)+2][(k+1)+3]}{4}
+            \end{flalign*}
+            即当 $n=k+1$ 时等式也成立。
+        \end{enumerate}
+        由数学归纳法原理, 知对一切自然数 $n$, 等式均成立。\qed
+
+        \item 已知 $n \geq 1$, 证明 $5\left(4 n^2+1\right)-4(n+1)^2-1>0$。
+        
+        据此, 用数学归纳法证明 $5^n \geq 4 n^2+1, n \in \mathbf{N}$。
+
+        \proof{}
+        \begin{flalign*}
+            &5\left(4 n^2+1\right)-4(n+1)^2-1 &\\
+            & = 20n^2+5-4n^2-8n-4-1 \\
+            & = 16n^2-8n \\
+            & = 8n(2n-1)
+        \end{flalign*}
+        $\because n \geq 1$, $\therefore 2n-1 \geq 1$, $\therefore 8n(2n-1) > 0$。
+
+        $\therefore 5\left(4 n^2+1\right)-4(n+1)^2-1>0$。 \qed
+        
+        \proof{}
+        \begin{enumerate}[label=(\arabic*)]
+            \item 当 $n=1$ 时, $5^1=5$, $4 \times 1^2+1=5$, $5 \geq 5$, 不等式成立。
+            \item 假设当 $n=k$ 时不等式成立，即 $5^k \geq 4 k^2+1$。
+           
+            当 $n=k+1$ 时,
+            \begin{flalign*}
+                5^{k+1} &= 5 \times 5^k &\\
+                & \geq 5(4 k^2+1)
+            \end{flalign*}
+            现在证明 $5(4 k^2+1) \geq 4(k+1)^2+1$。
+            \begin{flalign*}
+                5(4 k^2+1) & \geq 4(k+1)^2+1 &\\
+                5(4 k^2+1) - 4(k+1)^2-1 & \geq 0
+            \end{flalign*}
+            由上面的证明, 知 $5(4 k^2+1) - 4(k+1)^2-1 > 0$，所以
+            $5^{k+1} \geq 4(k+1)^2+1$。
+
+            即当 $n=k+1$ 时不等式也成立。
+        \end{enumerate}
+        由数学归纳法原理, 知对一切自然数 $n$, 不等式均成立。\qed
+        
+        \item 用数学归纳法证明, 对于所有 $n \in N, 7^{2 n+1}+1$ 是 8 的倍数。
+        
+        \proof{}
+        \begin{enumerate}[label=(\arabic*)]
+            \item 当 $n=1$ 时, $7^{2 \cdot 1+1}+1=7^3+1=344=8 \times 43$ 是 8 的倍数，等式成立。
+            \item 假设当 $n=k$ 时等式成立，即 $7^{2 k+1}+1=8 m$。
+            
+            当 $n=k+1$ 时,
+            \begin{flalign*}
+                7^{2(k+1)+1}+1 &= 7^{2 k+3}+1 &\\
+                &= 7^{2 k+1} \cdot 7^2+1 \\
+                &= 7^{2 k+1} \cdot 49+1 \\
+                &= 7^{2 k+1} \cdot 48+7^{2 k+1}+1 \\
+                &= 7^{2 k+1} \cdot 48+8 m \\
+                &= 8(7^{2 k+1} \cdot 6+m)
+            \end{flalign*}
+            即当 $n=k+1$ 时等式也成立。
+        \end{enumerate}
+        
+        \item 试用数学归纳法证明
+        
+        $
+        1 \times 2+3 \times 2^2+5 \times 2^3+\cdots+(2 n-1) 2^n=6+2^{n+1}(2 n-3), \quad n \geq 1 。
+        $
+
+        \proof{}
+        \begin{enumerate}[label=(\arabic*)]
+            \item 当 $n=1$ 时, 左式 $1 \times 2=2$, 右式 $6+2^{1+1}(2 \cdot 1-3)=6-2^2=6-4=2$, 两边相等，等式成立。
+            \item 假设当 $n=k$ 时等式成立，即 $1 \times 2+3 \times 2^2+5 \times 2^3+\cdots+(2 k-1) 2^k=6+2^{k+1}(2 k-3)$ 。
+            
+            当 $n=k+1$ 时,
+            \begin{flalign*}
+                \text{左式} &= 1 \times 2+3 \times 2^2+5 \times 2^3+\cdots+(2 k-1) 2^k+(2(k+1)-1) 2^{k+1} &\\
+                & = 6+2^{k+1}(2 k-3)+(2k+1)2^{k+1} \\
+                & = 6+2^{k+1}(2 k-3+2k+1) \\
+                & = 6+2^{k+1}(4 k-2) \\
+                & = 6+2^{k+2}(2 k-1) \\
+                & = 6+2^{(k+1)+1}(2(k+1)-3)
+            \end{flalign*}
+            即当 $n=k+1$ 时等式也成立。
+        \end{enumerate}
+        由数学归纳法原理, 知对一切自然数 $n$, 等式均成立。\qed
+        
+        \item 用数学归纳法证明对于所有正整数 $n, 1+\dfrac{2}{2}+\dfrac{3}{2^2}+\dfrac{4}{2^3}+\cdots+\dfrac{n}{2^{n-1}}=4-\dfrac{n+2}{2^{n-1}}$。
+
+        \proof{}
+        \begin{enumerate}[label=(\arabic*)]
+            \item 当 $n=1$ 时, 左式 $1$, 右式 $4-\dfrac{1+2}{2^{1-1}}=4-\dfrac{3}{1}=1$, 两边相等，等式成立。
+            \item 假设当 $n=k$ 时等式成立，即 $1+\dfrac{2}{2}+\dfrac{3}{2^2}+\dfrac{4}{2^3}+\cdots+\dfrac{k}{2^{k-1}}=4-\dfrac{k+2}{2^{k-1}}$。
+            
+            当 $n=k+1$ 时,
+            \begin{flalign*}
+                \text{左式} &= 1+\dfrac{2}{2}+\dfrac{3}{2^2}+\dfrac{4}{2^3}+\cdots+\dfrac{k}{2^{k-1}}+\dfrac{k+1}{2^k} &\\
+                & = 4-\dfrac{k+2}{2^{k-1}}+\dfrac{k+1}{2^k} \\
+                & = 4-\dfrac{2(k+2)-(k+1)}{2^k} \\
+                & = 4-\dfrac{k+3}{2^k} \\
+                & = 4-\dfrac{(k+1)+2}{2^{(k+1)-1}}
+            \end{flalign*}
+            即当 $n=k+1$ 时等式也成立。
+            \end{enumerate}
+            由数学归纳法原理, 知对一切自然数 $n$, 等式均成立。\qed
+    \end{enumerate}
+
+\end{document}
