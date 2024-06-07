@@ -1,0 +1,647 @@
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.5.30)  7 JUN 2024 18:06
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/melvinchia/Downloads/2024_06_05_971e6815482d5ecd2718g/2024_06_05_971e6815482d5ecd2718g.tex
+(/Users/melvinchia/Downloads/2024_06_05_971e6815482d5ecd2718g/2024_06_05_971e6815482d5ecd2718g.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count181
+\c@section=\count182
+\c@subsection=\count183
+\c@subsubsection=\count184
+\c@paragraph=\count185
+\c@subparagraph=\count186
+\c@figure=\count187
+\c@table=\count188
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen141
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen142
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count189
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count190
+\leftroot@=\count191
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count192
+\DOTSCASE@=\count193
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen143
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count194
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count195
+\dotsspace@=\muskip16
+\c@parentequation=\count196
+\dspbrk@lvl=\count197
+\tag@help=\toks19
+\row@=\count198
+\column@=\count199
+\maxfields@=\count266
+\andhelp@=\toks20
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
+\@envbody=\toks21
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/mhchem/mhchem.sty
+Package: mhchem 2021/12/31 v4.09 for typesetting chemical formulae
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-02-22 L3 programming layer (loader) 
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2023-01-16 L3 backend support: XeTeX
+\g__graphics_track_int=\count267
+\l__pdf_internal_box=\box53
+\g__pdf_backend_object_int=\count268
+\g__pdf_backend_annotation_int=\count269
+\g__pdf_backend_link_int=\count270
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count271
+\calc@Bcount=\count272
+\calc@Adimen=\dimen150
+\calc@Bdimen=\dimen151
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count273
+\calc@Cskip=\skip55
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/chemgreek/chemgreek.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-02-02 L3 Experimental document command parser
+)
+Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use in chemistry (CN)
+\l__chemgreek_tmpa_int=\count274
+\g__chemgreek_tmpa_int=\count275
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+))
+\l__mhchem_ce_distanceFromLastComma_int=\count276
+\__mhchem_arrow_extPgfLength_skip=\skip56
+\mhchem@minispace@tmp=\skip57
+\mhchem@minibackspace@tmp=\skip58
+\mhchem@bondwidth=\skip59
+\mhchem@bondheight=\skip60
+\mhchem@smallbondwidth@tmpA=\skip61
+\mhchem@smallbondwidth@tmpB=\skip62
+\mhchem@smallbondwidth=\skip63
+\mhchem@bondtmp@minussidebearingleft=\skip64
+\mhchem@bondtmp@minussidebearingright=\skip65
+\l__mhchem_option_version_int=\count277
+\mhchem@option@minusmathsidebearingleft=\dimen152
+\mhchem@option@minusmathsidebearingright=\dimen153
+\mhchem@option@minustextsidebearingleft=\dimen154
+\mhchem@option@minustextsidebearingright=\dimen155
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/stmaryrd/stmaryrd.sty
+Package: stmaryrd 1994/03/03 St Mary's Road symbol package
+\symstmry=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
+(Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+\Gin@req@height=\dimen156
+\Gin@req@width=\dimen157
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+)
+\XKV@depth=\count278
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box54
+)
+\tc@llx=\dimen158
+\tc@lly=\dimen159
+\tc@urx=\dimen160
+\tc@ury=\dimen161
+Package trimclip Info: Using driver 'tc-xetex.def'.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/adjustbox/tc-xetex.def
+File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
+))
+\adjbox@Width=\dimen162
+\adjbox@Height=\dimen163
+\adjbox@Depth=\dimen164
+\adjbox@Totalheight=\dimen165
+\adjbox@pwidth=\dimen166
+\adjbox@pheight=\dimen167
+\adjbox@pdepth=\dimen168
+\adjbox@ptotalheight=\dimen169
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count279
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box55
+\sift@deathcycles=\count280
+\@vwid@loff=\dimen170
+\@vwid@roff=\dimen171
+)) (/usr/local/texlive/2023/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+Package: xeCJK 2022/08/05 v3.9.1 Typesetting CJK scripts with XeLaTeX
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/ctex/ctexhook.sty
+Package: ctexhook 2022/07/14 v2.5.10 Document and package hooks (CTEX)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2023-02-02 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen172
+\l__xtemplate_tmp_int=\count281
+\l__xtemplate_tmp_muskip=\muskip17
+\l__xtemplate_tmp_skip=\skip66
+)
+\l__xeCJK_tmp_int=\count282
+\l__xeCJK_tmp_box=\box56
+\l__xeCJK_tmp_dim=\dimen173
+\l__xeCJK_tmp_skip=\skip67
+\g__xeCJK_space_factor_int=\count283
+\l__xeCJK_begin_int=\count284
+\l__xeCJK_end_int=\count285
+\c__xeCJK_CJK_class_int=\XeTeXcharclass1
+\c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
+\c__xeCJK_FullRight_class_int=\XeTeXcharclass3
+\c__xeCJK_HalfLeft_class_int=\XeTeXcharclass4
+\c__xeCJK_HalfRight_class_int=\XeTeXcharclass5
+\c__xeCJK_NormalSpace_class_int=\XeTeXcharclass6
+\c__xeCJK_CM_class_int=\XeTeXcharclass7
+\c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
+\l__xeCJK_last_skip=\skip68
+\c__xeCJK_none_node=\count286
+\g__xeCJK_node_int=\count287
+\c__xeCJK_CJK_node_dim=\dimen174
+\c__xeCJK_CJK-space_node_dim=\dimen175
+\c__xeCJK_default_node_dim=\dimen176
+\c__xeCJK_CJK-widow_node_dim=\dimen177
+\c__xeCJK_normalspace_node_dim=\dimen178
+\c__xeCJK_default-space_node_skip=\skip69
+\l__xeCJK_ccglue_skip=\skip70
+\l__xeCJK_ecglue_skip=\skip71
+\l__xeCJK_punct_kern_skip=\skip72
+\l__xeCJK_indent_box=\box57
+\l__xeCJK_last_penalty_int=\count288
+\l__xeCJK_last_bound_dim=\dimen179
+\l__xeCJK_last_kern_dim=\dimen180
+\l__xeCJK_widow_penalty_int=\count289
+
+Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
+(xtemplate)             argument(s) on line 2396.
+
+\l__xeCJK_fixed_punct_width_dim=\dimen181
+\l__xeCJK_mixed_punct_width_dim=\dimen182
+\l__xeCJK_middle_punct_width_dim=\dimen183
+\l__xeCJK_fixed_margin_width_dim=\dimen184
+\l__xeCJK_mixed_margin_width_dim=\dimen185
+\l__xeCJK_middle_margin_width_dim=\dimen186
+\l__xeCJK_bound_punct_width_dim=\dimen187
+\l__xeCJK_bound_margin_width_dim=\dimen188
+\l__xeCJK_margin_minimum_dim=\dimen189
+\l__xeCJK_kerning_total_width_dim=\dimen190
+\l__xeCJK_same_align_margin_dim=\dimen191
+\l__xeCJK_different_align_margin_dim=\dimen192
+\l__xeCJK_kerning_margin_width_dim=\dimen193
+\l__xeCJK_kerning_margin_minimum_dim=\dimen194
+\l__xeCJK_bound_dim=\dimen195
+\l__xeCJK_reverse_bound_dim=\dimen196
+\l__xeCJK_margin_dim=\dimen197
+\l__xeCJK_minimum_bound_dim=\dimen198
+\l__xeCJK_kerning_margin_dim=\dimen199
+\g__xeCJK_family_int=\count290
+\l__xeCJK_fam_int=\count291
+\g__xeCJK_fam_allocation_int=\count292
+\l__xeCJK_verb_case_int=\count293
+\l__xeCJK_verb_exspace_skip=\skip73
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count294
+\l__fontspec_language_int=\count295
+\l__fontspec_strnum_int=\count296
+\l__fontspec_tmp_int=\count297
+\l__fontspec_tmpa_int=\count298
+\l__fontspec_tmpb_int=\count299
+\l__fontspec_tmpc_int=\count300
+\l__fontspec_em_int=\count301
+\l__fontspec_emdef_int=\count302
+\l__fontspec_strong_int=\count303
+\l__fontspec_strongdef_int=\count304
+\l__fontspec_tmpa_dim=\dimen256
+\l__fontspec_tmpb_dim=\dimen257
+\l__fontspec_tmpc_dim=\dimen258
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/usr/local/texlive/2023/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+File: xeCJK.cfg 2022/08/05 v3.9.1 Configuration file for xeCJK package
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/polyglossia/polyglossia.sty
+Package: polyglossia 2023/02/11 v1.60 Modern multilingual typesetting with XeLaTeX and LuaLaTeX
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count305
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/makecmds/makecmds.sty
+Package: makecmds 2009/09/03 v1.0a extra command making commands
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+\xpg@normalclass=\XeTeXcharclass9
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/polyglossia/gloss-latex.lde
+Package: gloss-latex 2023/02/11 vv1.60 polyglossia: module for default language
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/DefineCommandsCmd}  =>  {use_none:n}.
+)
+Package polyglossia Info: Default language is latex.
+)
+
+Package xeCJK Warning: Fandol is being set as the default font for CJK text.
+(xeCJK)                Please make sure it has been properly installed.
+
+
+Package fontspec Warning: Font "FandolSong-Regular" does not contain requested
+(fontspec)                Script "CJK".
+
+
+Package fontspec Info: Font family 'FandolSong-Regular(0)' created for font
+(fontspec)             'FandolSong-Regular' with options
+(fontspec)             [Script={CJK},Extension={.otf},BoldFont={FandolSong-Bold},ItalicFont={FandolKai-Regular}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[FandolSong-Regular.otf]/OT:language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[FandolSong-Bold.otf]/OT:language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[FandolKai-Regular.otf]/OT:language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
+(./2024_06_05_971e6815482d5ecd2718g.aux
+LaTeX Info: Redefining \rmfamily on input line 4.
+LaTeX Info: Redefining \sffamily on input line 4.
+LaTeX Info: Redefining \ttfamily on input line 4.
+)
+\openout1 = `2024_06_05_971e6815482d5ecd2718g.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 22.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+
+Package chemgreek Info: Activating mapping `fontspec' on line 22.
+
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 22.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 22.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 22.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 22.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 22.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 22.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 22.
+LaTeX Font Info:    Redeclaring math accent \check on input line 22.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 22.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 22.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 22.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 22.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 22.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 22.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 22.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 22.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 22.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 22.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 22.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 22.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 22.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 22.
+The property list \__xpg_alias contains the pairs (without outer braces):
+>  {latex/target}  =>  {latex}.
+LaTeX Info: Redefining \rmfamily on input line 22.
+LaTeX Info: Redefining \sffamily on input line 22.
+LaTeX Info: Redefining \ttfamily on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 23.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
+
+] [2] [3]
+Missing character: There is no 、 (U+3001) in font [lmroman10-regular]:mapping=tex-text;!
+[4] [5]
+File: ./images//2024_06_05_971e6815482d5ecd2718g-10.jpg Graphic file (type bmp)
+<./images//2024_06_05_971e6815482d5ecd2718g-10.jpg>
+
+Overfull \hbox (24.99753pt too wide) in paragraph at lines 179--180
+ [] 
+ []
+
+[6] [7]
+Overfull \hbox (14.0384pt too wide) in paragraph at lines 238--239
+[]\TU/FandolSong-Regular(0)/m/n/10 如 右 图 所 示\TU/lmr/m/n/10 , \TU/FandolSong-Regular(0)/m/n/10 一 焦 点 为 $\OML/cmm/m/it/10 F[]$ \TU/FandolSong-Regular(0)/m/n/10 及 $\OML/cmm/m/it/10 F[]$ \TU/FandolSong-Regular(0)/m/n/10 的 椭 圆 经 过 $\OML/cmm/m/it/10 A; B; C; D$ \TU/FandolSong-Regular(0)/m/n/10 四 点。|  若 $\OML/cmm/m/it/10 ABF[]CDFF[]$
+ []
+
+File: ./images//2024_06_05_971e6815482d5ecd2718g-14.jpg Graphic file (type bmp)
+<./images//2024_06_05_971e6815482d5ecd2718g-14.jpg>
+
+Overfull \hbox (25.00333pt too wide) in paragraph at lines 240--241
+ [] 
+ []
+
+[8] [9]
+Overfull \hbox (39.46819pt too wide) in paragraph at lines 284--285
+[]\TU/FandolSong-Regular(0)/m/n/10 在 $\OML/cmm/m/it/10 P$ \TU/FandolSong-Regular(0)/m/n/10 及 $\OML/cmm/m/it/10 Q$ \TU/FandolSong-Regular(0)/m/n/10 两 点 上 抛 物 线 之 法 线 其 交 点 为 $[]$\TU/lmr/m/n/10 ; 
+ []
+
+
+Overfull \hbox (6.73282pt too wide) in paragraph at lines 306--307
+[]\TU/FandolSong-Regular(0)/m/n/10 自 点 $[]$ 引 法 线 至 抛 物 线 $\OML/cmm/m/it/10 y[] \OT1/cmr/m/n/10 = 4\OML/cmm/m/it/10 ax$\TU/lmr/m/n/10 , \TU/FandolSong-Regular(0)/m/n/10 交 抛 物 线 于 点 $[] \OML/cmm/m/it/10 ; []$
+ []
+
+[10] [11]
+File: ./images//2024_06_05_971e6815482d5ecd2718g-18.jpg Graphic file (type bmp)
+<./images//2024_06_05_971e6815482d5ecd2718g-18.jpg>
+
+Overfull \hbox (25.00375pt too wide) in paragraph at lines 387--388
+ [] 
+ []
+
+[12] [13]
+Overfull \hbox (1.27222pt too wide) in paragraph at lines 421--422
+[]\TU/FandolSong-Regular(0)/m/n/10 以 此 或 其 他 方 法\TU/lmr/m/n/10 , \TU/FandolSong-Regular(0)/m/n/10 证 明 在 $\OML/cmm/m/it/10 P$ \TU/FandolSong-Regular(0)/m/n/10 点 上 椭 圆 之 切 线 其 方 程 式 为 $\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 y [] ^^R \OT1/cmr/m/n/10 + 2\OML/cmm/m/it/10 x [] ^^R \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (47.7686pt too wide) in paragraph at lines 423--424
+[]\TU/FandolSong-Regular(0)/m/n/10 此 外\TU/lmr/m/n/10 , \TU/FandolSong-Regular(0)/m/n/10 再 证 明 在 $\OML/cmm/m/it/10 P$ \TU/FandolSong-Regular(0)/m/n/10 与 $\OML/cmm/m/it/10 Q$ \TU/FandolSong-Regular(0)/m/n/10 两 点 上 椭 圆 的 切 线 之 交 点 为 $[]$
+ []
+
+[14]
+Overfull \hbox (19.78839pt too wide) in paragraph at lines 456--457
+[]\TU/FandolSong-Regular(0)/m/n/10 试 证 连 接 椭 圆 $[] \OT1/cmr/m/n/10 + [] = 1$ \TU/FandolSong-Regular(0)/m/n/10 上 的 两 点 $\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a [] ^^R; b [] ^^R\OT1/cmr/m/n/10 )$ \TU/FandolSong-Regular(0)/m/n/10 和 $\OML/cmm/m/it/10 Q\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a [] ^^^; b [] ^^^\OT1/cmr/m/n/10 )$
+ []
+
+File: ./images//2024_06_05_971e6815482d5ecd2718g-21.jpg Graphic file (type bmp)
+<./images//2024_06_05_971e6815482d5ecd2718g-21.jpg>
+
+Overfull \hbox (25.00249pt too wide) in paragraph at lines 481--482
+ [] 
+ []
+
+[15] [16]
+Missing character: There is no 。 (U+3002) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 。 (U+3002) in font [lmroman10-regular]:mapping=tex-text;!
+
+Overfull \hbox (11.41685pt too wide) in paragraph at lines 520--521
+[]\TU/FandolSong-Regular(0)/m/n/10 若 $\OML/cmm/m/it/10 d$ \TU/FandolSong-Regular(0)/m/n/10 之 值 保 持 不 变\TU/lmr/m/n/10 , \TU/FandolSong-Regular(0)/m/n/10 试 推 论 出 $\OML/cmm/m/it/10 R$ \TU/FandolSong-Regular(0)/m/n/10 的 轨 迹 方 程 式 $\OT1/cmr/m/n/10 4\OML/cmm/m/it/10 c[] [] [] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (28.51346pt too wide) in paragraph at lines 528--529
+[]\TU/FandolSong-Regular(0)/m/n/10 若 $\OML/cmm/m/it/10 PQ$ \TU/FandolSong-Regular(0)/m/n/10 的 长 度 是 一 常 数 $\OML/cmm/m/it/10 l$\TU/lmr/m/n/10 , \TU/FandolSong-Regular(0)/m/n/10 试 证 明 $\OML/cmm/m/it/10 R$ \TU/FandolSong-Regular(0)/m/n/10 的 轨 迹 方 程 式 为 $\OT1/cmr/m/n/10 4 [] [] =
+ []
+
+[17] [18]
+Overfull \hbox (30.9575pt too wide) in paragraph at lines 594--595
+[]\TU/FandolSong-Regular(0)/m/n/10 试 以 微 分 法 求 证 $\OML/cmm/m/it/10 P$ \TU/FandolSong-Regular(0)/m/n/10 点 上 法 线 的 方 程 式 为 $[]\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 + []\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 = [] [] \OML/cmm/m/it/10 ^^R [] ^^R$
+ []
+
+
+Overfull \hbox (4.97379pt too wide) in paragraph at lines 595--596
+[]\TU/FandolSong-Regular(0)/m/n/10 试 证 线 段 \TU/lmr/m/n/10 LM \TU/FandolSong-Regular(0)/m/n/10 的 中 点 的 轨 迹 仍 为 双 曲 线\TU/lmr/m/n/10 , $[] \OMS/cmsy/m/n/10 ^^@ [] \OT1/cmr/m/n/10 =
+ []
+
+File: ./images//2024_06_05_971e6815482d5ecd2718g-26.jpg Graphic file (type bmp)
+<./images//2024_06_05_971e6815482d5ecd2718g-26.jpg>
+
+Overfull \hbox (24.99817pt too wide) in paragraph at lines 629--630
+ [] 
+ []
+
+[19] [20]
+
+Package xeCJK Warning: CJKfamily `FandolSong-Regular(0)' (FallBack) does not
+(xeCJK)                contain glyph `棈' (U+68C8) on line 669.
+
+Missing character: There is no 棈 (U+68C8) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+[21]
+
+Package xeCJK Warning: CJKfamily `FandolSong-Regular(0)' (FallBack) does not
+(xeCJK)                contain glyph `㮋' (U+3B8B) on line 673.
+
+Missing character: There is no 㮋 (U+3B8B) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+File: ./images//2024_06_05_971e6815482d5ecd2718g-30.jpg Graphic file (type bmp)
+<./images//2024_06_05_971e6815482d5ecd2718g-30.jpg>
+
+Overfull \hbox (25.0011pt too wide) in paragraph at lines 678--679
+ [] 
+ []
+
+[22]
+File: ./images//2024_06_05_971e6815482d5ecd2718g-31.jpg Graphic file (type bmp)
+<./images//2024_06_05_971e6815482d5ecd2718g-31.jpg>
+
+Overfull \hbox (24.99643pt too wide) in paragraph at lines 721--722
+ [] 
+ []
+
+[23] [24]
+File: ./images//2024_06_05_971e6815482d5ecd2718g-34.jpg Graphic file (type bmp)
+<./images//2024_06_05_971e6815482d5ecd2718g-34.jpg>
+
+Overfull \hbox (25.0114pt too wide) in paragraph at lines 764--765
+ [] 
+ []
+
+[25]
+File: ./images//2024_06_05_971e6815482d5ecd2718g-35.jpg Graphic file (type bmp)
+<./images//2024_06_05_971e6815482d5ecd2718g-35.jpg>
+
+Overfull \hbox (25.00703pt too wide) in paragraph at lines 780--781
+ [] 
+ []
+
+[26]
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/DefineCommandsCmd}  =>  {use_none:n}.
+The property list \__xpg_alias contains the pairs (without outer braces):
+>  {latex/target}  =>  {latex}.
+ [27] (./2024_06_05_971e6815482d5ecd2718g.aux
+LaTeX Info: Redefining \rmfamily on input line 4.
+LaTeX Info: Redefining \sffamily on input line 4.
+LaTeX Info: Redefining \ttfamily on input line 4.
+) ) 
+Here is how much of TeX's memory you used:
+ 10213 strings out of 476683
+ 258947 string characters out of 5804047
+ 1868018 words of memory out of 5000000
+ 30313 multiletter control sequences out of 15000+600000
+ 520549 words of font info for 83 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 70i,10n,81p,444b,379s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on 2024_06_05_971e6815482d5ecd2718g.xdv (27 pages, 207492 bytes).

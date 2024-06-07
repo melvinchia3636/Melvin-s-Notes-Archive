@@ -1,0 +1,114 @@
+\documentclass{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{2022年高三年终考}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+    \item 计算 $\displaystyle\lim_{x \to \infty} \dfrac{x^3-4x^2-12x}{2x^3+3x^2-2}$。
+    \begin{flalign*}
+    \displaystyle\lim_{x \to \infty} \dfrac{x^3-4x^2-12x}{2x^3+3x^2-2} = \displaystyle\lim_{x \to \infty} \dfrac{1 - \dfrac{4}{x} - \dfrac{12}{x^2}}{2 + \dfrac{3}{x} - \dfrac{2}{x^3}} = \dfrac{1 - 0 - 0}{2 + 0 - 0} = \dfrac{1}{2} && \blacksquare
+    \end{flalign*}
+
+    \item 计算 $\displaystyle\lim_{x \to -\infty} 2^x$
+    \begin{flalign*}
+    \lim_{x \to -\infty} 2^x = \lim_{x \to \infty} \dfrac{1}{2^{x}} = 0 && \blacksquare
+    \end{flalign*}
+
+    \item 已知方程式 $y=\dfrac{12}{x^2}$, 当 $x=2$ 时, 求 $\dfrac{dy}{dx}$ 的值。
+    \begin{flalign*}
+    y &= \dfrac{12}{x^2} = 12x^{-2} \\
+    \dfrac{dy}{dx} &= 12 \cdot (-2) x^{-3} = -24 x^{-3} \\
+    \text{当 } x=2 \text{ 时, }\dfrac{dy}{dx} &= -24 (2^{-3}) = -24 \cdot \dfrac{1}{8} = -3 && \blacksquare
+    \end{flalign*}
+
+    \item 求 $y=2x(2x^2-3)+2$ 的导数。
+    \begin{flalign*}
+    y &= 2x (2x^2 - 3) + 2 \\
+    &= 4x^3 - 6x + 2 \\
+    \dfrac{dy}{dx} &= 12x^2 - 6 &\blacksquare
+    \end{flalign*}
+
+    \item 已知 $y=(2-3x^2)^4$，当 $x=1$ 时，求 $\dfrac{dy}{dx}$ 之值
+    \begin{flalign*}
+    \dfrac{dy}{dx} &= 4(2-3x^2)^3 \cdot (-6x) = -24x (2 - 3x^2)^3 \\
+    \text{当 } x=1 \text{ 时, }\dfrac{dy}{dx} &= -24 \cdot (-1)^3 = 24 && \blacksquare
+    \end{flalign*}
+
+    \item 求 $f(x)=2x^2-4x-3$ 的值域，其中 $-2 < x < 2$
+    \begin{flalign*}
+    \text{先求函数的极值：}
+    f(x) &= 2x^2 - 4x - 3 \\
+    f'(x) &= 4x - 4 \\
+    4x - 4 &= 0 \Rightarrow x = 1 \\
+    f(1) &= 2 - 4 - 3 = -5 \\
+    \text{当 } x = -2 \text{ 和 } x = 2 \text{ 时,}
+    f(-2) &= 8 + 8 - 3 = 13 \\
+    f(2) &= 8 - 8 - 3 = -3 \\
+    \text{因此，} f(x) \text{ 的值域为} [-5, 13) && \blacksquare
+    \end{flalign*}
+
+    \item 若 $\log 2=a, \log 3=b$ 及 $\log 7=c$，则 $\log_3 56$
+    \begin{flalign*}
+    \log_3 56 &= \log_3 (2^3 \cdot 7)\\
+    & = 3 \log_3 2 + \log_3 7 \\
+    &= \dfrac{3\log 2}{\log 3} + \dfrac{\log 7}{\log 3} = \dfrac{3a + c}{b} && \blacksquare
+    \end{flalign*}
+
+    \item 已知函数 $f(x)=\left\{\begin{array}{ll}x, & x>0 \\ 0, & x=0 \\ x^2+1, & x<0\end{array}\right.$，求 $f(f(f(-1)))$ 的值
+    \begin{flalign*}
+    \text{先求 } f(-1), f(-1) &= (-1)^2 + 1 = 2\\
+    \text{再求 } f(f(-1)) = f(2), f(2) &= 2 \\
+    \text{再求 } f(f(f(-1))) = f(2), f(2) &= 2 && \blacksquare
+    \end{flalign*}
+
+    \item 函数 $y=\dfrac{1}{\log_2(x-2)}$ 的定义域是
+    \begin{flalign*}
+    \log_2(x-2) &\neq 0 \Rightarrow x-2 \neq 1 \Rightarrow x \neq 3 &\\
+    x - 2 &> 0 \Rightarrow x > 2 &
+    \end{flalign*}
+    因此，函数 $y=\dfrac{1}{\log_2(x-2)}$ 的定义域是 $x \in (2, 3) \cup (3, +\infty)$\hfill$\blacksquare$
+
+    \item 解 $4^{\log x}=2^{\log x+1}$。
+    \begin{flalign*}
+    4^{\log x} &= 2^{\log x+1} \\
+    2^{2\log x} &= 2^{\log x + 1} \\
+    2\log x &= \log x + 1 \\
+    \log x &= 1 \\
+    x &= 10 && \blacksquare
+    \end{flalign*}
+\end{enumerate}
+
+\newpage
+\subsection*{必答题}
+\begin{enumerate}
+    \item \begin{enumerate}
+        \item 求 $\displaystyle\lim_{x \rightarrow 0} \frac{x}{\sqrt{x+9}-3}$。
+    
+        \item 已知 $y=4 \sqrt{x}+\dfrac{5}{x^3}$，求 $\dfrac{d y}{d x}$。
+    \end{enumerate}
+    
+    \item \begin{enumerate}
+        \item 设 $g(x)=\dfrac{2 x-3}{5-x}$，求 $g^{\prime}(x)$ 及 $g^{\prime}(3)$。
+    
+        \item 求 $\displaystyle\lim _{x \rightarrow 3} \frac{x^2-5 x+6}{x^2-2 x-3}$
+    \end{enumerate}
+    
+    \item 已知曲线 $x^2+x y+y^2=4$，求：
+    \begin{enumerate}
+        \item[(a)] $\dfrac{d y}{d x}$；
+        \item[(b)] 此曲线在点 $A(2,-2)$ 的切线斜率。
+    \end{enumerate}
+    
+    \item 晨晨的银行户口有 RM80,000，年利率 $2.5\%$，以每半年结算一次的复利计算，三年后晨晨的户口增加了多少钱？
+\end{enumerate}
+
+\end{document}
