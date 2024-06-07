@@ -363,6 +363,16 @@
 </details>
 </dd></dl></dd></dl>
 
+<dl><dd><dl><dd>
+<details>
+<summary>S3 chp1</summary>
+
+- [1.1.pdf](<./数学/Add Math II/S3 chp1/1.1.pdf>)
+- [1.1.tex](<./数学/Add Math II/S3 chp1/1.1.tex>)
+
+</details>
+</dd></dl></dd></dl>
+
 
 </details>
 </dd></dl>
