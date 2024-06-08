@@ -343,6 +343,42 @@
 - [S3 chp8.pdf](<./数学/Add Math II/S3 chp8.pdf>)
 <dl><dd><dl><dd>
 <details>
+<summary>Conic Hell</summary>
+
+- [2024_06_05_971e6815482d5ecd2718g.pdf](<./数学/Add Math II/Conic Hell/2024_06_05_971e6815482d5ecd2718g.pdf>)
+- [2024_06_05_971e6815482d5ecd2718g.tex](<./数学/Add Math II/Conic Hell/2024_06_05_971e6815482d5ecd2718g.tex>)
+<dl><dd><dl><dd><dl><dd>
+<details>
+<summary>images</summary>
+
+
+</details>
+</dd></dl></dd></dl></dd></dl>
+
+
+</details>
+</dd></dl></dd></dl>
+
+<dl><dd><dl><dd>
+<details>
+<summary>Disgusting Circle</summary>
+
+- [circle.pdf](<./数学/Add Math II/Disgusting Circle/circle.pdf>)
+- [circle.tex](<./数学/Add Math II/Disgusting Circle/circle.tex>)
+<dl><dd><dl><dd><dl><dd>
+<details>
+<summary>images</summary>
+
+
+</details>
+</dd></dl></dd></dl></dd></dl>
+
+
+</details>
+</dd></dl></dd></dl>
+
+<dl><dd><dl><dd>
+<details>
 <summary>S1 chp10</summary>
 
 - [S1 chp10.pdf](<./数学/Add Math II/S1 chp10/S1 chp10.pdf>)
@@ -645,6 +681,8 @@
 
 - [logical_reasoning.pdf](<./数学/Other Topics/Logical Reasoning/logical_reasoning.pdf>)
 - [logical_reasoning.tex](<./数学/Other Topics/Logical Reasoning/logical_reasoning.tex>)
+- [逻辑谬误.docx](<./数学/Other Topics/Logical Reasoning/逻辑谬误.docx>)
+- [逻辑谬误.pdf](<./数学/Other Topics/Logical Reasoning/逻辑谬误.pdf>)
 
 </details>
 </dd></dl></dd></dl>
@@ -697,6 +735,32 @@
 
 - [comp.pdf](<./数学/Other Topics/2023 Math Competition/comp.pdf>)
 - [comp.tex](<./数学/Other Topics/2023 Math Competition/comp.tex>)
+
+</details>
+</dd></dl></dd></dl>
+
+
+</details>
+</dd></dl>
+
+<dl><dd>
+<details>
+<summary>Past Year Papers</summary>
+
+<dl><dd><dl><dd>
+<details>
+<summary>Senior 3 Mid Year</summary>
+
+<dl><dd><dl><dd><dl><dd>
+<details>
+<summary>2022</summary>
+
+- [2022.pdf](<./数学/Past Year Papers/Senior 3 Mid Year/2022/2022.pdf>)
+- [2022.tex](<./数学/Past Year Papers/Senior 3 Mid Year/2022/2022.tex>)
+
+</details>
+</dd></dl></dd></dl></dd></dl>
+
 
 </details>
 </dd></dl></dd></dl>
