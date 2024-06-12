@@ -332,10 +332,82 @@
 
   $\therefore$ 一个圆在另一个圆内。\hfill$\blacksquare$
   
-  \item 求罒心为 $(-3,0)$ 且栙四 $x^{2}+y^{2}+2 x-4 y+1=0$ 的罒周加以平分的团的方程式。
+  \item 求圆心为 $(-3,0)$ 且将圆 $x^{2}+y^{2}+2 x-4 y+1=0$ 的圆周加以平分的圆的方程式。
+
+  \sol{}
+  \begin{flalign*}
+    x^{2}+y^{2}+2 x-4 y+1 &= 0\\
+    (x+1)^{2}+(y-2)^{2} &= 4
+  \end{flalign*}
+  圆心为 $(-1, 2)$, 半径为 $2$。
+
+  所求圆的圆心和 $(-1, -2)$ 所成的线段的斜率为 $\dfrac{0-(-2)}{-3-(-1)} = \dfrac{2}{2} = 1$。
+
+  其过点 $(-1, 2)$ 的法线斜率为 $-1$，所以方程式为
+  \begin{flalign*}
+    y-2 &= -1(x+1)\\
+    y &= -x+1
+  \end{flalign*}
+  代入圆的方程得
+  \begin{flalign*}
+    (x+1)^{2} + (-x+1-2)^{2} &= 4\\
+    x^2 + 2x - 1 &= 0\\
+    x &= -1 \pm \sqrt{2}
+  \end{flalign*}
+  当 $x = -1 + \sqrt{2}$ 时, $y = 2 - \sqrt{2}$。
+
+  所以所求圆的半径为 $\sqrt{(-3-(-1+\sqrt{2}))^{2}+(0-(2-\sqrt{2}))^{2}} = 2\sqrt{3}$，方程式为
+  \begin{flalign*}
+    (x+3)^{2}+y^{2} &= (2\sqrt{3})^{2}\\
+    x^{2}+6x+9+y^{2} &= 12\\
+    x^{2}+6x+y^{2} - 3 &= 0
+  \end{flalign*}\hfill$\blacksquare$
+
   \item 如果圆 $x^{2}+y^{2}+\mathrm{D} x+\mathrm{E} y+\mathrm{F}=0$ 与 $x$ 轴相切于原点, 下列哪项是对的?
+
+  \sol{}
+
+  与$x$轴切于原点，则圆心在$y$轴上，半径等于圆心到原点的距离。
+  \begin{align*}
+    x^2 + (y - a)^2 &= a^2\\
+    x^2 + y^2 - 2ay + a^2 &= a^2\\
+    x^2 + y^2 - 2ay &= 0
+  \end{align*}
+  所以 $\mathrm{D} = 0$，$\mathrm{E} = -2a$，$\mathrm{F} = 0$。\hfill$\blacksquare$
+
   \item 已知 $\mathrm{P}$ 及 $\mathrm{Q}$ 分别是点 $(3,-2)$ 和 $(-1,4)$ 。若 $\mathrm{PQ}$ 是一圆的直径, 求此圆的方程式。
+  
+  \sol{}
+
+  圆心为 $\left(\dfrac{3-1}{2}, \dfrac{-2+4}{2}\right) = (1, 1)$, 半径为 $\dfrac{\sqrt{(3+1)^{2}+(-2-4)^{2}}}{2} = \dfrac{\sqrt{16+36}}{2} = \dfrac{\sqrt{52}}{2} = \sqrt{13}$。
+
+  所以方程式为
+  \begin{flalign*}
+    (x-1)^{2}+(y-1)^{2} &= (\sqrt{13})^{2}\\
+    x^{2}-2x+1+y^{2}-2y+1 &= 13\\
+    x^{2}-2x+y^{2}-2y-11 &= 0
+  \end{flalign*}\hfill$\blacksquare$
+  
   \item 一圆心在 $x$ 轴上的圆经过 $\mathrm{A}(-1,1)$ 及 $\mathrm{B}(1,3)$ 两点。求此圆的方程式。
+  
+  \sol{}
+  
+  设圆心为 $(x, 0)$，则
+  \begin{align*}
+    \sqrt{(x+1)^{2}+1} &= \sqrt{(x-1)^{2}+9}\\
+    (x+1)^{2}+1 &= (x-1)^{2}+9\\
+    x^{2}+2x+1+1 &= x^{2}-2x+1+9\\
+    4x &= 8\\
+    x &= 2
+  \end{align*}
+  所以圆心为 $(2, 0)$, 半径为 $\sqrt{(2+1)^{2}+1} = \sqrt{9+1} = \sqrt{10}$。
+
+  所以方程式为
+  \begin{flalign*}
+    (x-2)^{2}+y^{2} &= 10\\
+    x^{2}-4x+4+y^{2} &= 10\\
+    x^{2}+y^{2}-4x - 6 &= 0
+  \end{flalign*}\hfill$\blacksquare$
 \end{enumerate}
 
 % \section*{(作答题)}
