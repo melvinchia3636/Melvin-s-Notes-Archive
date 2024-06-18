@@ -70,12 +70,18 @@
 - [Minecraft.md](<./其他/Minecraft.md>)
 - [RAM.xmind](<./其他/RAM.xmind>)
 - [school sucks.md](<./其他/school sucks.md>)
+- [Untitled.pdf](<./其他/Untitled.pdf>)
 - [Web development Road.xmind](<./其他/Web development Road.xmind>)
 - [Why exam sucks.md](<./其他/Why exam sucks.md>)
 - [人人都适合当程序员吗.md](<./其他/人人都适合当程序员吗.md>)
 - [桌上型电脑硬件.md](<./其他/桌上型电脑硬件.md>)
+- [考试范围.docx](<./其他/考试范围.docx>)
+- [考试范围.pdf](<./其他/考试范围.pdf>)
 - [讲义文件夹.docx](<./其他/讲义文件夹.docx>)
 - [KPP01.docx](<./其他/KPP01.docx>)
+- [2024 年高三年中考考试范围.md](<./其他/2024 年高三年中考考试范围.md>)
+- [2024 年高三年中考考试范围.pdf](<./其他/2024 年高三年中考考试范围.pdf>)
+- [2024 年高三年中考考试范围.tex](<./其他/2024 年高三年中考考试范围.tex>)
 
 </details>
 
@@ -2085,7 +2091,8 @@
 <details>
 <summary>会计</summary>
 
-- [第一章 基础会计概念与准则.docx](<./簿记与会计/会计/第一章 基础会计概念与准则.docx>)
+- [MidYearRev.pdf](<./簿记与会计/会计/MidYearRev.pdf>)
+- [MidYearRev.tex](<./簿记与会计/会计/MidYearRev.tex>)
 
 </details>
 </dd></dl>
@@ -2855,6 +2862,7 @@
 - [Compo 2 sem 2.docx](<./英文/Compo 2 sem 2.docx>)
 - [Compo 2 sem 2.pdf](<./英文/Compo 2 sem 2.pdf>)
 - [Vocabularies Unit 2.md](<./英文/Vocabularies Unit 2.md>)
+- [Composition 3.docx](<./英文/Composition 3.docx>)
 - [Vocabulaires Unit 4.md](<./英文/Vocabulaires Unit 4.md>)
 - [Vocabularies Unit 7 Reading 1.md](<./英文/Vocabularies Unit 7 Reading 1.md>)
 - [Vocabularies Unit 7 Reading 2.md](<./英文/Vocabularies Unit 7 Reading 2.md>)
