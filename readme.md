@@ -343,6 +343,7 @@
 - [S1 chp12.pdf](<./数学/Add Math II/S1 chp12.pdf>)
 - [S1 chp13.pdf](<./数学/Add Math II/S1 chp13.pdf>)
 - [S1 chp14.pdf](<./数学/Add Math II/S1 chp14.pdf>)
+- [S1 chp16.pdf](<./数学/Add Math II/S1 chp16.pdf>)
 - [S1 chp17.pdf](<./数学/Add Math II/S1 chp17.pdf>)
 - [S1 chp2.pdf](<./数学/Add Math II/S1 chp2.pdf>)
 - [S1 chp4.pdf](<./数学/Add Math II/S1 chp4.pdf>)
@@ -353,6 +354,7 @@
 - [S2 chp16.pdf](<./数学/Add Math II/S2 chp16.pdf>)
 - [S2 chp3.pdf](<./数学/Add Math II/S2 chp3.pdf>)
 - [S2 chp4.pdf](<./数学/Add Math II/S2 chp4.pdf>)
+- [S2 chp7.pdf](<./数学/Add Math II/S2 chp7.pdf>)
 - [S3 chp10.pdf](<./数学/Add Math II/S3 chp10.pdf>)
 - [S3 chp11.pdf](<./数学/Add Math II/S3 chp11.pdf>)
 - [S3 chp12 12.1 & 12.3.pdf](<./数学/Add Math II/S3 chp12 12.1 & 12.3.pdf>)
@@ -368,24 +370,6 @@
 
 - [2024_06_05_971e6815482d5ecd2718g.pdf](<./数学/Add Math II/Conic Hell/2024_06_05_971e6815482d5ecd2718g.pdf>)
 - [2024_06_05_971e6815482d5ecd2718g.tex](<./数学/Add Math II/Conic Hell/2024_06_05_971e6815482d5ecd2718g.tex>)
-<dl><dd><dl><dd><dl><dd>
-<details>
-<summary>images</summary>
-
-
-</details>
-</dd></dl></dd></dl></dd></dl>
-
-
-</details>
-</dd></dl></dd></dl>
-
-<dl><dd><dl><dd>
-<details>
-<summary>Disgusting Circle</summary>
-
-- [circle.pdf](<./数学/Add Math II/Disgusting Circle/circle.pdf>)
-- [circle.tex](<./数学/Add Math II/Disgusting Circle/circle.tex>)
 <dl><dd><dl><dd><dl><dd>
 <details>
 <summary>images</summary>
@@ -417,6 +401,24 @@
 - [9.3.tex](<./数学/Add Math II/S1 chp9/9.3.tex>)
 - [9.4.pdf](<./数学/Add Math II/S1 chp9/9.4.pdf>)
 - [9.4.tex](<./数学/Add Math II/S1 chp9/9.4.tex>)
+
+</details>
+</dd></dl></dd></dl>
+
+<dl><dd><dl><dd>
+<details>
+<summary>S2 chp5</summary>
+
+- [circle.pdf](<./数学/Add Math II/S2 chp5/circle.pdf>)
+- [circle.tex](<./数学/Add Math II/S2 chp5/circle.tex>)
+<dl><dd><dl><dd><dl><dd>
+<details>
+<summary>images</summary>
+
+
+</details>
+</dd></dl></dd></dl></dd></dl>
+
 
 </details>
 </dd></dl></dd></dl>
