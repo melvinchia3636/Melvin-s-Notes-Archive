@@ -24,6 +24,132 @@
 \setcounter{section}{5}
 \setcounter{subsection}{1}
 \begin{document}
+\subsection{轨迹方程式}
+\subsection*{(选择题)}
+\begin{enumerate}[leftmargin=*]
+  \item 已知一曲线为一动点的轨迹, 此动点与两定点 $O(0,0)$, 及 $A(0,4)$ 的距离的比为 $1: 3$ 。求此曲线的方程式。
+
+        \sol{}
+
+        设动点为 $(x, y)$，
+        \begin{align*}
+          \dfrac{\sqrt{x^{2}+y^{2}}}{\sqrt{(x-0)^{2}+(y-4)^{2}}} & = \dfrac{1}{3}             \\
+          \dfrac{\sqrt{x^{2}+y^{2}}}{\sqrt{x^{2}+y^{2}-8y+16}}   & = \dfrac{1}{3}             \\
+          3\sqrt{x^{2}+y^{2}}                                    & = \sqrt{x^{2}+y^{2}-8y+16} \\
+          9(x^{2}+y^{2})                                         & = x^{2}+y^{2}-8y+16        \\
+          8x^{2}+8y^{2}+8y-16                                    & = 0                        \\
+          x^{2}+y^{2}+y-2                                        & = 0
+        \end{align*} \hfill$\blacksquare$
+
+  \item 一动点 $P(x, y)$ 分别到定点 $F(-2,0)$ 和定线 $x=2$ 的距离相同。求 P 的轨迹方程。
+        \sol{}
+        \begin{align*}
+          \left\vert \dfrac{x-2}{\sqrt{1^2+0^2}} \right\vert & = \sqrt{(x+2)^2+(y-0)^2} \\
+          (x - 2)^2                                          & = x^{2}+4x+4+y^{2}       \\
+          x^{2}-4x+4                                         & = x^{2}+4x+4+y^{2}       \\
+          y^{2}                                              & = -8x
+        \end{align*} \hfill$\blacksquare$
+\end{enumerate}
+
+\subsection*{(作答题)}
+\begin{enumerate}
+  \item 一动点 $P$ 分别到一定点 $(3,0)$ 及圆心为 $(-3,0)$ 半径为 $5$ 单位的一圆的圆周等距。求此动点 $P$ 的轨迹方程式。
+
+        \sol{}
+        \begin{align*}
+          \sqrt{(x-3)^{2}+y^{2}} & = \sqrt{(x+3)^{2}+y^{2}} - 5              \\
+          (x-3)^{2}              & = (x+3)^{2}-10\sqrt{(x+3)^{2}+y^{2}+9}+25 \\
+          x^{2}-6x+9             & = x^{2}+6x+9-10\sqrt{x^{2}+6x+y^{2}+9}+25 \\
+          12x + 25               & = 10\sqrt{x^{2}+6x+y^{2}+9}               \\
+          144x^{2} + 600x + 625  & = 100x^{2}+600x+100y^{2}+900              \\
+          44x^{2} - 100y^2 - 275 & = 0
+        \end{align*} \hfill$\blacksquare$
+
+        \newpage
+  \item $P$ 是圆 $x^2+y^2=4$ 上的一点。如果 $M$ 是 $Q(0,4)$ 与 $P$ 的连线的中点, 求 $M$ 的轨迹方程式。
+
+        \sol{}
+
+        设 $P$ 点的坐标为 $(x_1, y_1)$, 则 $M(x, y)$ 点的坐标为 $\left(\dfrac{x_1}{2}, \dfrac{y_1+4}{2}\right)$。
+        \begin{align*}
+          x   & = \dfrac{x_1}{2}   \\
+          x_1 & = 2x               \\
+          y   & = \dfrac{y_1+4}{2} \\
+          y_1 & = 2y-4
+        \end{align*}
+        代入圆的方程得
+        \begin{align*}
+          x_1^2 + y_1^2          & = 4 \\
+          (2x)^2 + (2y-4)^2      & = 4 \\
+          4x^2 + 4y^2 - 16y + 16 & = 4 \\
+          x^2 + y^2 - 4y + 4     & = 1 \\
+          x^2 + y^2 - 4y + 3     & = 0 \\
+          x^2 + (y-2)^2          & = 1
+        \end{align*} \hfill$\blacksquare$
+
+  \item 一条直线过定点 $P(4,6)$ 且交 $x$ 轴及 $y$ 轴于 A 及 B 两点。如果 $M$ 是 $A B$ 的中点, 求 M 的轨迹方程式。
+
+        \sol{}
+
+        设直线交 $x$ 轴于 $A(a, 0)$, 交 $y$ 轴于 $B(0, b)$, 则直线方程为$\dfrac{x}{a}+\dfrac{y}{b}=1$。
+
+        将 $P(4, 6)$ 代入直线方程得 $\dfrac{4}{a}+\dfrac{6}{b}=1$。
+
+        由于 $M$ 是 $A B$ 的中点, 所以 $M\left(\dfrac{a}{2}, \dfrac{b}{2}\right)$。
+
+        设 $M(x, y)$, 则 $x=\dfrac{a}{2} \implies a=2x$, $y=\dfrac{b}{2} \implies b=2y$。
+
+        代入直线方程得
+        \begin{align*}
+          \dfrac{4}{2x}+\dfrac{6}{2y} & = 1  \\
+          \dfrac{2}{x}+\dfrac{3}{y}   & = 1  \\
+          2y+3x                       & = xy \\
+          xy-3x-2y                    & = 0
+        \end{align*} \hfill$\blacksquare$
+
+        \newpage
+  \item 如下图所示, $P(4,2)$ 是圆 $x^2+y^2-24 x-28 y-36=0$ 内的一点, $A\left(x_{A}, y_{A}\right)$ 及 $B\left(x_{B}, y_{B}\right)$ 是圆上的两个点使得 $\angle APB=90^{\circ}$ 。若 $Q(a, b)$ 是弦 AB 的中点, 证明 $x_{A}^2+y_{A}^2+x_{B}^2+y_{B}^2=48 a+56 b+72$及 $x_{A} x_{B}+y_{A} y_{B}=8 a+4 b-20$ 。
+
+        据此, 证明 Q 的轨迹的方程式为 $x^2+y^2-16 x-16 y-8=0$ 。
+        \begin{center}
+          \includegraphics[width=0.35\textwidth]{./images/nice.png}
+        \end{center}
+
+        \sol{}
+
+        $\because$ $Q$ 是弦 $AB$ 的中点, $\therefore$ $Q(a, b)$ 的坐标为 $\left(\dfrac{x_{A}+x_{B}}{2}, \dfrac{y_{A}+y_{B}}{2}\right)$。
+
+        $\therefore$ $a = \dfrac{x_{A}+x_{B}}{2}$, $b = \dfrac{y_{A}+y_{B}}{2}$。
+
+        $\because$ $A, B$ 在圆上,
+        \begin{align*}
+          x_{A}^{2}+y_{A}^{2}-24 x_{A}-28 y_{A}-36 & = 0\ \cdots (1) \\
+          x_{B}^{2}+y_{B}^{2}-24 x_{B}-28 y_{B}-36 & = 0\ \cdots (2)
+        \end{align*}
+        \begin{align*}
+          (1) + (2) & \Rightarrow x_{A}^{2}+x_{B}^{2}+y_{A}^{2}+y_{B}^{2}-24(x_{A}+x_{B})-28(y_{A}+y_{B})-72 = 0 \\
+                    & \Rightarrow x_{A}^{2}+x_{B}^{2}+y_{A}^{2}+y_{B}^{2} = 48a+56b+72\ \cdots (3)
+        \end{align*} \hfill$\blacksquare$
+
+        $\because$ $\angle APB=90^{\circ}$,
+        \begin{align*}
+          \dfrac{y_{B}-2}{x_{B}-4} \cdot \dfrac{y_{A}-2}{x_{A}-4}    & = -1                               \\
+          (y_{B}-2)(y_{A}-2) + (x_{B}-4)(x_{A}-4)                    & = 0                                \\
+          y_{A}y_{B}-2(y_{A}+y_{B})+4 + x_{A}x_{B}-4(x_{A}+x_{B})+16 & = 0                                \\
+          x^{2}_{A}+x^{2}_{B}+y^{2}_{A}+y^{2}_{B}                    & = 4(x_{A}+x_{B})+2(y_{A}+y_{B})-20 \\
+          x^{2}_{A}+x^{2}_{B}+y^{2}_{A}+y^{2}_{B}                    & = 8a+4b-20\ \cdots (4)
+        \end{align*} \hfill$\blacksquare$
+        \begin{align*}
+          (3) + 2\times (4) & \Rightarrow x^{2}_{A}+2x_{A}x_{B}+x^{2}_{B}+y^{2}_{A}+2y_{A}y_{B}+y^{2}_{B} = 64a+64b+32 \\
+                            & \Rightarrow (x_{A}+x_{B})^{2}+(y_{A}+y_{B})^{2} = 64a+64b+32                             \\
+                            & \Rightarrow 4a^{2}+4b^{2} = 64a+64b+32                                                   \\
+                            & \Rightarrow a^{2}+b^{2} - 16a-16b-8 = 0
+        \end{align*}
+        $\therefore$ $Q$ 的轨迹的方程式为 $x^2+y^2-16 x-16 y-8=0$。\hfill$\blacksquare$
+
+\end{enumerate}
+
+\newpage
 \subsection{圆的标准方程式}
 \subsection*{(选择题)}
 
@@ -87,7 +213,7 @@
         所以另一端点的坐标为 $(-1, -5)$。\hfill$\blacksquare$
 \end{enumerate}
 
-\section*{(作答题)}
+\subsection*{(作答题)}
 \begin{enumerate}[leftmargin=*]
   \item 一正方形的四顶点 $A, B, C, D$ 顺序依反时针方向排列。若 $A$ 点的座标为 $(1,3), BD$落于直线 $2 x+y+5=0$ 上。试求出 $B, C, D$ 三点的坐标。(不准用图解法。)
 
@@ -95,8 +221,7 @@
 
         直线 $2x+y+5=0$ 的斜率为 $-2$, 该直线过点 $(1,3)$ 的法线斜率为 $\dfrac{1}{2}$, 所以法线方程为
         \begin{flalign*}
-          y-3 & = \dfrac{1}{2}(x-1)                \\
-          y   & = \dfrac{1}{2}x - \dfrac{1}{2} + 3 \\
+          y-3 & = \dfrac{1}{2}(x-1)            \\
           y   & = \dfrac{1}{2}x + \dfrac{5}{2}
         \end{flalign*}
         代入直线方程得
@@ -131,6 +256,10 @@
 
   \item 试求以 $A(2,0)$ 及 $B(6,0)$ 之联线为直径的圆之方程式。
 
+        若此圆与直线 $y=m x$ 相交于 $P$ 及 $Q$ 两点, 试证 $-\frac{1}{\sqrt{3}}<m<\frac{1}{\sqrt{3}}$ 。
+
+        又, 试求 $OP \times OQ$ 之值, 其中 $O$ 为原点。
+
         \sol{}
 
         圆心为 $\left(\dfrac{2+6}{2}, \dfrac{0+0}{2}\right) = (4, 0)$, 半径为 $\dfrac{\sqrt{(6-2)^{2}+(0-0)^{2}}}{2} = \dfrac{\sqrt{16}}{2} = 2$。
@@ -142,10 +271,6 @@
           x^{2}-8x+16+y^{2}   & = 4     \\
           x^{2}-8x+y^{2}+12   & = 0
         \end{flalign*}\hfill$\blacksquare$
-
-        若此圆与直线 $y=m x$ 相交于 $P$ 及 $Q$ 两点, 试证 $-\frac{1}{\sqrt{3}}<m<\frac{1}{\sqrt{3}}$ 。
-
-        \sol{}
         \begin{align*}
           x^{2}-8 x+(m x)^{2}+12  & = 0 \\
           x^{2}-8 x+m^{2}x^{2}+12 & = 0 \\
@@ -157,10 +282,6 @@
           m^{2} < \dfrac{1}{3}          \\
           -\dfrac{1}{\sqrt{3}} < m < \dfrac{1}{\sqrt{3}}
         \end{align*} \hfill$\blacksquare$
-
-        又, 试求 $OP \times OQ$ 之值, 其中 $O$ 为原点。
-
-        \sol{}
 
         设 $m = 0$, 则 $P(2, 0)$, $Q(6, 0)$, 所以 $OP \times OQ = 2 \times 6 = 12$。\hfill$\blacksquare$
 
@@ -247,17 +368,15 @@
 
         \sol{}
         \begin{align*}
-          r & = \sqrt{(-2)^{2}+(-5)^{2} - 4} \\
-            & = \sqrt{4+25-4} = 5
+          r & = \sqrt{(-2)^{2}+(-5)^{2} - 4} = \sqrt{4+25-4} = 5
         \end{align*} \hfill$\blacksquare$
 
   \item 求圆 $x^{2}+y^{2}-6 x-4 y+9=0$ 之面积。
 
         \sol{}
         \begin{align*}
-          r & = \sqrt{(-3)^{2}+(-2)^{2}-9} = \sqrt{9+4-9} = 2 \\
-          S & = \pi r^{2} = 4\pi
-        \end{align*}
+          r & = \sqrt{(-3)^{2}+(-2)^{2}-9} = \sqrt{9+4-9} = 2 \implies S = \pi r^{2} = 4\pi
+        \end{align*} \hfill$\blacksquare$
 
   \item 若 $A$ 及 $B$ 分别为圆 $x^{2}+y^{2}-6 y=0$ 及 $x^{2}+y^{2}-6 x=0$ 的圆心, 则直线 $AB$ 之方程式为
 
@@ -321,7 +440,7 @@
         \end{align*}
         圆心为 $(3, 0)$, 半径为 $3$。
 
-        $\because$ 两圆的圆新距离为 $\sqrt{(3-2)^{2}+(0-1)^{2}} = \sqrt{1+1} = \sqrt{2} < 5-3 = 2$。
+        $\because$ 两圆的圆心距离为 $\sqrt{(3-2)^{2}+(0-1)^{2}} = \sqrt{1+1} = \sqrt{2} < 5-3 = 2$。
 
         $\therefore$ 一个圆在另一个圆内。\hfill$\blacksquare$
 
@@ -730,7 +849,7 @@
                 \end{align*}
                 $\therefore$ $A(1, -1), B(3, 3), C(-1, 1), D(-3, -3)$。\hfill$\blacksquare$
 
-          \item 试证四边形 $\mathrm{ABCD}$ 是一个菱形。
+          \item 试证四边形 $ABCD$ 是一个菱形。
 
                 \sol{}
                 \begin{align*}
@@ -939,19 +1058,18 @@
           x^{2}-20x+100+y^{2}-16y+64 & = 15                                                           \\
           x^{2}+y^{2}-20x-16y+149    & = 0                                                            \\
           \text{切距}                  & = \sqrt{1^{2} + (-2)^{2} - 20 \times 1 - 16 \times (-2) + 149} \\
-                                     & = \sqrt{1 + 4 - 20 + 32 + 149}                                 \\
-                                     & = \sqrt{166}
-        \end{align*}
+                                     & = \sqrt{1 + 4 - 20 + 32 + 149} = \sqrt{166}
+        \end{align*} \hfill$\blacksquare$
 
   \item 求圆 $x^{2}+y^{2}=4$ 的切线的方程式, 它与圆的直径 $y=\frac{3}{4} x$ 平行。
 
         \sol{}
+
         $\because$ 切线与直径平行，所以切线的斜率为 $\dfrac{3}{4}$。
         \begin{align*}
           x^{2}+y^{2}          & = 4              \\
           2x+2y \dfrac{dy}{dx} & = 0              \\
           \dfrac{dy}{dx}       & = -\dfrac{x}{y}  \\
-          -\dfrac{x}{y}        & = \dfrac{3}{4}   \\
           y                    & = -\dfrac{4}{3}x
         \end{align*}
         代入圆的方程得
@@ -959,22 +1077,15 @@
           x^{2} + \left(-\dfrac{4}{3}x\right)^{2} & = 4                \\
           x^{2} + \dfrac{16}{9}x^{2}              & = 4                \\
           \dfrac{25}{9}x^{2}                      & = 4                \\
-          x^{2}                                   & = \dfrac{36}{25}   \\
           x                                       & = \pm \dfrac{6}{5}
         \end{align*}
-        当 $x = \dfrac{6}{5}$ 时, $y = -\dfrac{4}{3} \times \dfrac{6}{5} = -\dfrac{8}{5}$。
-
-        切线方程为
+        当 $x = \dfrac{6}{5}$ 时, $y = -\dfrac{4}{3} \times \dfrac{6}{5} = -\dfrac{8}{5}$，切线方程为
         \begin{align*}
           y + \dfrac{8}{5} & = \dfrac{3}{4}\left(x - \dfrac{6}{5}\right) \\
           y + \dfrac{8}{5} & = \dfrac{3}{4}x - \dfrac{9}{10}             \\
           y                & = \dfrac{3}{4}x - \dfrac{5}{2}
         \end{align*}
-
-        \newpage
-        当 $x = -\dfrac{6}{5}$ 时, $y = \dfrac{8}{5}$。
-
-        切线方程为
+        当 $x = -\dfrac{6}{5}$ 时, $y = \dfrac{8}{5}$，切线方程为
         \begin{align*}
           y - \dfrac{8}{5} & = \dfrac{3}{4}\left(x + \dfrac{6}{5}\right) \\
           y - \dfrac{8}{5} & = \dfrac{3}{4}x + \dfrac{9}{10}             \\
@@ -1058,7 +1169,6 @@
           3x - 4y + 5 & = 0
         \end{align*} $\hfill\blacksquare$
 
-        \newpage
   \item 两圆 $x^{2}+y^{2}+2 x-6 y-26=0$ 与 $x^{2}+y^{2}-4 x+2 y+4=0$ 有几条公切线?
 
         \sol{}
@@ -1089,7 +1199,7 @@
             & = \left\vert \dfrac{-50}{\sqrt{625}} \right\vert                                     \\
             & = \left\vert \dfrac{-50}{25} \right\vert                                             \\
             & = 2
-        \end{align*}
+        \end{align*} \hfill$\blacksquare$
 
   \item 求圆 $x^{2}+y^{2}-6 x-4 y+4=0$ 上两条平行切线之间的距离。
 
@@ -1103,9 +1213,8 @@
 
         $\because$ 两条平行切线之间的距离为圆的直径
 
-        $\therefore$ 两条平行切线之间的距离为 $2 \times 3 = 6$。
+        $\therefore$ 两条平行切线之间的距离为 $2 \times 3 = 6$。 \hfill$\blacksquare$
 
-        \newpage
   \item 若从点 $(a, 1)$ 到圆 $x^{2}+y^{2}+5 x+7 y+3=0$ 的切线长是5 , 求 $a$ 的值。
 
         \sol{}
@@ -1118,238 +1227,816 @@
           a^{2} + 5a - 14                                    & = 0               \\
           (a + 7)(a - 2)                                     & = 0               \\
           a = -7                                             & \text{ 或 }\ a = 2
-        \end{align*}
+        \end{align*} \hfill$\blacksquare$
 \end{enumerate}
 
-% \section*{(作答题)}
-% \begin{enumerate}[leftmargin=*]
-%   \item 直线 $AB, AC$ 分别切圆 $O$ 于 $B, C$ 两点。求证 $AB=AC$ 。
-
-%   \item 求切于 $x$ 轴及直线 $3 x-4 y+3=0$ 且约心在王线 $x+y=3$ 上的四之方罣式。
-
-% \end{enumerate}
-
-% [1978 年第 7 処]
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{2}
-%   \item 求自点 $P(4,2)$ 作因 $x^{2}+y^{2}-4 x+4 y-2=0$ 之切线的方䙵式。
-% \end{enumerate}
-
-% [1984 年第 3(a)题]
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{3}
-%   \item 求由一定点 $(2,2)$ 至圆 $2 x^{2}+2 y^{2}+2 x+4 y-1=0$ 的切距。
-% \end{enumerate}
-
-% [1987 年第 5(b)题]
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{4}
-%   \item 两圆都与 $x, y$ 两轴相切且通过点 $A(8,1)$ 。试求
-% \end{enumerate}
-
-% (i) 两圆的方程式:
-
-% (ii) 两圆的另一交点之坐标;
-
-% (iii) 在 $A$ 点每一圆的切线之方程式。
-
-% (iv) 在 $A$ 点两切线所夹锐角。
-
-% [1989 年第 6(a)题]
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{5}
-%   \item (a) 如果圆 $x^{2}+y^{2}+2 g x+2 f y+c=0$ 上一点 $\left(x_{0}, y_{0}\right)$ 所引切线与圆 $x^{2}+y^{2}=r^{2}$ 相切, 试证 $\left(g x_{0}+f y_{0}+c\right)^{2}=r^{2}\left(g^{2}+f^{2}-c\right)$ 。
-% \end{enumerate}
-
-% (b) 如果圆 $x^{2}+y^{2}-4 x-8 y-80=0$ 内的弦其长度及斜率分别为 $8 \sqrt{5}$ 及 $\frac{1}{2}$, 求这些弦的方程式。
-
-% $[1990$ 年第 9 题]
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{6}
-%   \item 已知直线 $y=x+b$ 是圆 $x^{2}+y^{2}=4$ 的一条切线, 求 $b$ 的可能值。
-% \end{enumerate}
-
-% $[2000$ 年第 $7(b)$ 题 $]$
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{7}
-%   \item 在圆 $x^{2}+y^{2}=a^{2}$ 上一动点 $P$ 的切线分别交座标轴 $OX, OY$ 于 $A$ 和 $B$, 且 $\mathrm{OAQB}$ 是一个长方形。试证明 $Q$ 点的轨迹方程式是 $\frac{a^{2}}{x^{2}}+\frac{a^{2}}{y^{2}}=1$ 。
-% \end{enumerate}
-
-% [2002 年第 9 (c)题]
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{8}
-%   \item (a) 求经过圆 $x^{2}+y^{2}+2 x-4 y+1=0$ 与直线 $2 x-y+4=0$ 的交点且与 $y$ 轴相切的两圆的方程式。
-% \end{enumerate}
-
-% (b) 求过原点到此二圆所作的另两条切线的方程式。
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{9}
-%   \item 求 $x^{2}+y^{2}+4 x-10 y-7=0$ 的想心及半经。䁌此, 或其他方法, 若 $y=2 x+c$ 是此四的切线, 来 $c$ 的设。
-% \end{enumerate}
-
-% $(3 \%)$
-
-% [2007 年第 7(a)廼]
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{10}
-%   \item 求两条由点 $(-2,3)$ 至目 $x^{2}+y^{2}+2 x-12 y+32=0$ 的切线方程式。
-% \end{enumerate}
-
-% [2010 年第 $7(b)$ 顷]
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{11}
-%   \item 求经过点 $M(3,-4)$ 且与圆 $x^{2}+y^{2}+2 x-6 y+5=0$ 相切于点 $P(1,2)$ 的圆的方程式。 $(6 \%)$ [2014 年第 $7(b)$ 輀 $]$
-% \end{enumerate}
-
-% \section*{[5.5] 两圆正切、正交}
-% \section*{(选择题)}
-% \begin{enumerate}[leftmargin=*]
-%   \item 两圆 $x^{2}+y^{2}+3 x-2 y-20=0$ 及 $x^{2}+y^{2}-2 x+3 y-5=0$ 的公共弦的方程式是\\
-% A $x+y-3=0$\\
-% B $x-y-3=0$\\
-% $x-y-5=0$\\
-% D $2 x+y-3=0$\\
-% E $\quad x-2 y+3=0$
-% \end{enumerate}
-
-% C
-
-% [1987 年第 6 题]
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{1}
-%   \item 已知两圆 $x^{2}+y^{2}+k x-6 y+5=0$ 与 $x^{2}+y^{2}+2 x+y-1=0$ 正交(Cut orthogonally), $k$之值为\begin{enumerate}[leftmargin=*]。\\
-% A -9\\
-% B $\quad-7$\\
-% C 5\\
-% D 7\\
-% E 9
-% \end{enumerate}
-
-% [1988 年第 19 题]
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{2}
-%   \item 如果两圆 $x^{2}+y^{2}=1$ 及 $x^{2}+y^{2}-6 x+a y+9=0$ 相切, 求 $a$ 的值。\\
-% A $\pm 10$\\
-% B $\pm 8$\\
-% C $\pm 6$\\
-% D $\pm 4$\\
-% E 0
-% \end{enumerate}
-
-% [1992 年第 13 题]
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{3}
-%   \item 如果两圆 $x^{2}+y^{2}-4=0$ 及 $x^{2}+y^{2}+2 a x-6 y+a=0$ 正交(Cut orthogonally), 则常数 $a$的值等于\begin{enumerate}[leftmargin=*] -\\
-% A 4\\
-% B 3\\
-% C 2\\
-% D 1\\
-% E 0
-% \end{enumerate}
-
-% [1992 年第 15 题]
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{4}
-%   \item 已知两圆 $(x-a)^{2}+(y-b)^{2}=c^{2}$ 与 $(x-b)^{2}+(y-a)^{2}=c^{2}$ 交于一点, 求 $a, b$ 及 $c$ 的关系。\\
-% A $(a-b)^{2}=2 c^{2}$\\
-% B $(a+b)^{2}=2 c^{2}$\\
-% C $(a-b)^{2}=c^{2}$\\
-% D $(a+b)^{2}=c^{2}$\\
-% E 以上都不是
-
-%   \item 若两圆 $x^{2}+y^{2}+6 x+10 y+c=0$ 与 $x^{2}+y^{2}+4 x-2 y+3=0$ 正交, 求 $c$ 的傎。\\
-% A 3\\
-% B 1\\
-% C -1\\
-% D $\quad-2$\\
-% E -3
-
-% \end{enumerate}
-
-% [2012 年第 15 题]
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{6}
-%   \item 若两圆 $x^{2}+y^{2}-k x-2 y-52=0$ 与 $x^{2}+y^{2}+(2 k+1) x+8 y+26=0$ 正交, 求 $k$ 的值。\\
-% A $-\frac{9}{2}$ 或 4\\
-% B $-\frac{9}{2}$ 或 2\\
-% C $\frac{9}{2}$ 或 -4\\
-% D $\frac{9}{2}$ 或 -2\\
-% E $\frac{9}{2}$ 或 2
-% \end{enumerate}
-
-% [2013 年第 15 题]
-
-% \section*{(作答题)}
-% \begin{enumerate}[leftmargin=*]
-%   \item 二圆外切于 $A$, 公切线 $PQ$ 切二圆于 $P, Q ; RAS$ 是一直线且再遇二圆于 $R, S$, 连 $RP$, $S Q$ 并延长之使交于 $X$ 。求证
-% \end{enumerate}
-
-% (a) $\triangle APQ \sim \triangle XRS$;
-
-% (b) $P, A, Q, X$ 四点共圆。
-
-% [1976 年第 9 题]
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{1}
-%   \item 已知 $a^{2}+b^{2}=c^{2}$, 试证两圆 $x^{2}+y^{2}+a x+b y=0$ 及 $x^{2}+y^{2}=c^{2}$ 相切, 并求其切点之座标。
-
-%   \item (a) 若两圆 $x^{2}+y^{2}+2 g_{1} x+2 f_{1} y+c_{1}=0$ 与 $x^{2}+y^{2}+2 g_{2} x+2 f_{2} y+c_{2}=0$ 正交, 证明
-
-% \end{enumerate}
-
-% $$
-% 2\left(g_{1} g_{2}+f_{1} f_{2}\right)=c_{1}+c_{2}
-% $$
-
-% (b) 若一直径的两端点为 $(0,4)$ 及 $(4,2)$ 的圆与另一圆 $x^{2}+y^{2}+2 k x-6 y+k=0$ 正交, 试应用(a)的结果或以其他方法求 $k$ 的值。
-
-% (3\%)
-
-% [1996 年第 $8(b)(c)$ 题]
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{3}
-%   \item 一圆的圆心落在第一象限上且与 $y$ 轴相切于点 $(0,3)$, 并与圆 $x^{2}+y^{2}-8 x+4 y-5=0$ 正交。求此圆的方程式。
-% \end{enumerate}
-
-% [2004 年第 7(a)题]
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{4}
-%   \item 如果一个动圆与圆 $x^{2}+y^{2}+2 g x+2 f y+c=0$ 正交, 且与 $x$ 轴相切。求这个动圆圆心的轨迹方程式。
-
-%   \item 已知两败的方侑式为 $x^{2}+y^{2}+2 x-6 y=0$ 及 $x^{2}+y^{2}+3 x-5 y+6=0$ 。 证明其中一完全在乐一婴内。
-
-% \end{enumerate}
-
-% $(40$
-
-% [2011 年第 8(b) 勘
-
-% \begin{enumerate}[leftmargin=*]
-%   \setcounter{enumi}{6}
-%   \item 已知一团 $C$ 的半径为 3. 其罒心在䛖械 $x+y=1$ 上。若圆 $x^{2}+y^{2}=4$ 内切于圆 $C, y$ C的所有可恠方㱐式。
-% \end{enumerate}
-
-% (4)
-
-% [2012 年第 9(a) 题
-
+\subsection*{(作答题)}
+\begin{enumerate}[leftmargin=*]
+  \item 直线 $AB, AC$ 分别切圆 $O$ 于 $B, C$ 两点。求证 $AB=AC$。
+
+        \sol{}
+        \begin{center}
+          \includegraphics[max width=0.3\textwidth]{./images/tangentLength.png}
+        \end{center}
+
+        $\because$ $\angle ABO = \angle ACO = 90^{\circ}$, $BO = CO = r$，$OA$ 为公共边。
+
+        $\therefore$ $\triangle ABO \cong \triangle ACO$。（Hypotenuse-Leg Similarity）
+
+        $\therefore$ $AB = AC$。\hfill$\blacksquare$
+
+  \item 求切于 $x$ 轴及直线 $3 x-4 y+3=0$ 且圆心在直线 $x+y=3$ 上的圆之方程式。
+
+        \sol{}
+
+        设圆心为$(x, 3-x)$，半径为$r$。
+
+        $x$ 轴上的切点为$(x, 0)$
+        \begin{align*}
+          r & = \sqrt{(x - x)^{2} + (3 - x - 0)^{2}} \\
+            & = 3 - x\ \cdots\ (1)
+        \end{align*}
+        \begin{align*}
+          r   & = \left\vert \dfrac{3x - 4(3 - x) + 3}{\sqrt{3^{2} + 4^{2}}} \right\vert \\
+              & = \left\vert \dfrac{3x - 12 + 4x + 3}{5} \right\vert                     \\
+              & = \left\vert \dfrac{7x - 9}{5} \right\vert                               \\
+          r^2 & = \left(\dfrac{7x - 9}{5}\right)^{2}
+        \end{align*}
+        代入$(1)$得
+        \begin{align*}
+          (3 - x)^{2}          & = \left(\dfrac{7x - 9}{5}\right)^{2} \\
+          9 - 6x + x^{2}       & = \dfrac{49x^{2} - 126x + 81}{25}    \\
+          225 - 150x + 25x^{2} & = 49x^{2} - 126x + 81                \\
+          24x^{2} + 24x - 144  & = 0                                  \\
+          x^{2} + x - 6        & = 0                                  \\
+          (x + 3)(x - 2)       & = 0                                  \\
+          x                    & = -3\ \text{或}\ 2
+        \end{align*}
+        当 $x = -3$ 时，$y = 6$, $r = 6$。
+
+        圆的方程式为
+        \begin{align*}
+          (x + 3)^{2} + (y - 6)^{2}     & = 6^{2} \\
+          x^2 + 6x + 9 + y^2 - 12y + 36 & = 36    \\
+          x^2 + y^2 + 6x - 12y + 9      & = 0
+        \end{align*} \hfill$\blacksquare$
+
+        当 $x = 2$ 时，$y = 1$, $r = 1$。
+
+        圆的方程式为
+        \begin{align*}
+          (x - 2)^{2} + (y - 1)^{2}   & = 1^{2} \\
+          x^2 - 4x + 4 + y^2 - 2y + 1 & = 1     \\
+          x^2 + y^2 - 4x - 2y + 4     & = 0
+        \end{align*} \hfill$\blacksquare$
+
+  \item 求自点 $P(4,2)$ 作圆 $x^{2}+y^{2}-4 x+4 y-2=0$ 之切线的方程式。
+
+        \sol{}
+        \begin{align*}
+          x^{2}+y^{2}-4 x+4 y-2 & = 0 \implies (x-2)^{2}+(y+2)^{2} & = 10
+        \end{align*}
+        圆心为$(2, -2)$，半径为$\sqrt{10}$。
+
+        设切线方程为 $y - 2 = k(x - 4)$，即 $kx - y - 4k + 2 = 0$。
+        \begin{align*}
+          \left\vert \dfrac{2k + 2 - 4k + 2}{\sqrt{k^{2} + 1}} \right\vert & = \sqrt{10}      \\
+          \dfrac{(4 - 2k)^{2}}{k^{2} + 1}                                  & = 10             \\
+          16 - 16k + 4k^{2}                                                & = 10k^{2} + 10   \\
+          3k^{2} + 8k - 3                                                  & = 0              \\
+          (3k - 1)(k + 3)                                                  & = 0              \\
+          k = \dfrac{1}{3}                                                 & \text{或}\ k = -3
+        \end{align*}
+
+        当 $k = \dfrac{1}{3}$ 时，切线方程为
+        \begin{align*}
+          y - 2      & = \dfrac{1}{3}(x - 4) \\
+          3y - 6     & = x - 4               \\
+          x - 3y + 2 & = 0
+        \end{align*} \hfill$\blacksquare$
+
+        当 $k = -3$ 时，切线方程为
+        \begin{align*}
+          y - 2       & = -3(x - 4) \\
+          y - 2       & = -3x + 12  \\
+          3x + y - 14 & = 0
+        \end{align*} \hfill$\blacksquare$
+
+  \item 求由一定点 $(2,2)$ 至圆 $2 x^{2}+2 y^{2}+2 x+4 y-1=0$ 的切距。
+
+        \sol{}
+        \begin{align*}
+          2x^{2}+2y^{2}+2x+4y-1 = 0                           & \Rightarrow x^{2}+y^{2}+x+2y-\dfrac{1}{2} = 0        \\
+          \text{切距} = \sqrt{2^{2}+2^{2}+2 + 4 - \dfrac{1}{2}} & = \dfrac{3\sqrt{3}}{\sqrt{2}} = \dfrac{3\sqrt{6}}{2}
+        \end{align*}
+
+  \item 两圆都与 $x, y$ 两轴相切且通过点 $A(8,1)$ 。试求
+        \begin{enumerate}
+          \item 两圆的方程式:
+
+                \sol{}
+                设圆的中心点为$(a, b)$，半径为$r$。
+
+                设圆与$x$轴的切点为$(a, 0)$，则 $r = \sqrt{(a - a)^{2} + (b - 0)^{2}} = b$
+
+                设圆与$y$轴的切点为$(0, b)$，则 $r = \sqrt{(0 - a)^{2} + (b - b)^{2}} = a$
+
+                所以$a = b$。
+
+                设圆的方程式为$(x - a)^{2} + (y - a)^{2} = a^{2}$。
+
+                代入$A(8, 1)$得
+                \begin{align*}
+                  (8 - a)^{2} + (1 - a)^{2}         & = a^{2}            \\
+                  64 - 16a + a^{2} + 1 - 2a + a^{2} & = a^{2}            \\
+                  a^{2} - 18a + 65                  & = 0                \\
+                  (a - 13)(a - 5)                   & = 0                \\
+                  a = 5                             & \ \text{或}\ a = 13
+                \end{align*}
+
+                当$a = 5$时，圆的方程式为
+                \begin{align*}
+                  (x - 5)^{2} + (y - 5)^{2}                                       & = 5^{2} \\
+                  x^{2} + y^{2} - 10x - 10y + 25 + x^{2} + y^{2} - 10x - 10y + 25 & = 25    \\
+                  2x^{2} + 2y^{2} - 20x - 20y + 50                                & = 25    \\
+                  x^{2} + y^{2} - 10x - 10y + 25                                  & = 0
+                \end{align*} \hfill$\blacksquare$
+
+                当$a = 13$时，圆的方程式为
+                \begin{align*}
+                  (x - 13)^{2} + (y - 13)^{2}                                       & = 13^{2} \\
+                  x^{2} + y^{2} - 26x - 26y + 169 + x^{2} + y^{2} - 26x - 26y + 169 & = 169    \\
+                  2x^{2} + 2y^{2} - 52x - 52y + 338                                 & = 169    \\
+                  x^{2} + y^{2} - 26x - 26y + 169                                   & = 0
+                \end{align*} \hfill$\blacksquare$
+
+          \item 两圆的另一交点之坐标;
+
+                \sol{}
+
+                两圆的方程式相减得
+                \begin{align*}
+                  16x + 16y - 144 & = 0     \\
+                  x               & = 9 - y
+                \end{align*}
+                代入其中一个圆的方程式得
+                \begin{align*}
+                  (9 - y - 5)^{2} + (y - 5)^{2}      & = 5^{2}           \\
+                  (4 - y)^{2} + (y - 5)^{2}          & = 25              \\
+                  16 - 8y + y^{2} + y^{2} - 10y + 25 & = 25              \\
+                  2y^{2} - 18y + 16                  & = 0               \\
+                  y^{2} - 9y + 8                     & = 0               \\
+                  (y - 1)(y - 8)                     & = 0               \\
+                  y = 1                              & \ \text{或}\ y = 8
+                \end{align*}
+
+                当$y = 1$时，$x = 9 - 1 = 8$。
+
+                当$y = 8$时，$x = 9 - 8 = 1$。
+
+                $\therefore$ 另一交点的坐标为$(1, 8)$。\hfill$\blacksquare$
+
+          \item 在 $A$ 点每一圆的切线之方程式。
+
+                \sol{}
+                \begin{align*}
+                  x^{2} + y^{2} - 10x - 10y + 25                  & = 0                    \\
+                  2x + 2y \dfrac{dy}{dx} - 10 - 10 \dfrac{dy}{dx} & = 0                    \\
+                  x + y \dfrac{dy}{dx} - 5 - 5 \dfrac{dy}{dx}     & = 0                    \\
+                  (y - 5) \dfrac{dy}{dx}                          & = 5 - x                \\
+                  \dfrac{dy}{dx}                                  & = \dfrac{5 - x}{y - 5}
+                \end{align*}
+                代入$A(8, 1)$得
+                \begin{align*}
+                  \dfrac{dy}{dx} & = \dfrac{5 - 8}{1 - 5}          \\
+                                 & = \dfrac{-3}{-4} = \dfrac{3}{4}
+                \end{align*}
+                切线方程为
+                \begin{align*}
+                  y - 1        & = \dfrac{3}{4}(x - 8) \\
+                  4y - 4       & = 3x - 24             \\
+                  3x + 4y - 20 & = 0
+                \end{align*} \hfill$\blacksquare$
+
+                \begin{align*}
+                  x^{2} + y^{2} - 26x - 26y + 169                 & = 0                      \\
+                  2x + 2y \dfrac{dy}{dx} - 26 - 26 \dfrac{dy}{dx} & = 0                      \\
+                  x + y \dfrac{dy}{dx} - 13 - 13 \dfrac{dy}{dx}   & = 0                      \\
+                  (y - 13) \dfrac{dy}{dx}                         & = 13 - x                 \\
+                  \dfrac{dy}{dx}                                  & = \dfrac{13 - x}{y - 13}
+                \end{align*}
+                代入$A(8, 1)$得
+                \begin{align*}
+                  \dfrac{dy}{dx} & = \dfrac{13 - 8}{1 - 13} \\
+                                 & = \dfrac{5}{-12}         \\
+                                 & = -\dfrac{5}{12}
+                \end{align*}
+                切线方程为
+                \begin{align*}
+                  y - 1         & = -\dfrac{5}{12}(x - 8) \\
+                  12y - 12      & = -5x + 40              \\
+                  5x + 12y - 52 & = 0
+                \end{align*} \hfill$\blacksquare$
+
+          \item 在 $A$ 点两切线所夹锐角。
+
+                \sol{}
+
+                已知两切线的斜率分别为$\dfrac{3}{4}$和$-\dfrac{5}{12}$。
+                \begin{align*}
+                  \tan \theta & = \left\vert \dfrac{\dfrac{3}{4} - \left(-\dfrac{5}{12}\right)}{1 + \dfrac{3}{4} \times \left(-\dfrac{5}{12}\right)} \right\vert \\
+                              & = \dfrac{56}{33}                                                                                                                 \\
+                  \theta      & = \arctan \dfrac{56}{33}                                                                                                         \\
+                              & = 59.49^{\circ}
+                \end{align*}
+
+                $\therefore$ 两切线所夹锐角为$59.49^{\circ}$。\hfill$\blacksquare$
+        \end{enumerate}
+
+  \item \begin{enumerate}
+          \item 如果圆 $x^{2}+y^{2}+2 g x+2 f y+c=0$ 上一点 $\left(x_{0}, y_{0}\right)$ 所引切线与圆 $x^{2}+y^{2}=r^{2}$ 相切, 试证 $\left(g x_{0}+f y_{0}+c\right)^{2}=r^{2}\left(g^{2}+f^{2}-c\right)$。
+
+                \sol{}
+                \begin{align*}
+                  x^{2} + y^{2} + 2gx + 2fy + c & = 0                 \\
+                  (x + g)^{2} + (y + f)^{2}     & = g^{2} + f^{2} - c
+                \end{align*}
+                $\because$ $(x_{0}, y_{0})$ 为圆 $x^{2} + y^{2} + 2gx + 2fy + c = 0$ 上的一点
+                \begin{align*}
+                  (x_{0} + g)^{2} + (y_{0} + f)^{2} & = g^{2} + f^{2} - c\ \cdots\ (1)
+                \end{align*}
+                过圆心及 $(x_{0}, y_{0})$ 的线段斜率为$\dfrac{y_{0} + f}{x_{0} + g}$，则过 $(x_{0}, y_{0})$ 的切线斜率为 $-\dfrac{x_{0} + g}{y_{0} + f}$。
+
+                所以切线方程为
+                \begin{align*}
+                  y - y_{0} & = -\dfrac{x_{0} + g}{y_{0} + f}(x - x_{0})                                                               \\
+                  y         & = -\dfrac{x_{0} + g}{y_{0} + f}x + \left(\dfrac{x_{0} + g}{y_{0} + f}x_{0} + y_{0}\right)                \\
+                  y         & = -\dfrac{x_{0} + g}{y_{0} + f}x + \left(\dfrac{x^{2}_{0} + gx_{0} + fy_{0} + y^2_{0}}{y_{0} + f}\right)
+                \end{align*}
+                $\because$ $x^{2} + y^{2} + 2gx + 2fy + c = 0$
+                \begin{align*}
+                  x^{2} + y^{2} + 2gx + 2fy + c     & = 0              \\
+                  x^2 + y^2 + gx + gx + fy + fy + c & = 0              \\
+                  x^2 + gx + fy + y^2               & = -(gx + fy + c)
+                \end{align*}
+                代入切线方程得
+                \begin{align*}
+                  y         & = -\dfrac{x_{0} + g}{y_{0} + f}x - \left(\dfrac{gx_{0} + fy_{0} + c}{y_{0} + f}\right)\ \cdots\ (2) \\
+                  x^2 + y^2 & = r^2\ \cdots\ (3)
+                \end{align*}
+                将$(2)$代入$(3)$得
+                \begin{align*}
+                  x^2 + \left[-\dfrac{x_{0} + g}{y_{0} + f}x - \left(\dfrac{gx_{0} + fy_{0} + c}{y_{0} + f}\right)\right]^2                                                                                                                      & = r^2 \\
+                  x^2 + \left[\dfrac{x_{0} + g}{y_{0} + f}x + \left(\dfrac{gx_{0} + fy_{0} + c}{y_{0} + f}\right)\right]^2                                                                                                                       & = r^2 \\
+                  x^2 + \left(\dfrac{x_{0} + g}{y_{0} + f}\right)^2x^2 + 2\left(\dfrac{x_{0} + g}{y_{0} + f}\right)\left(\dfrac{gx_{0} + fy_{0} + c}{y_{0} + f}\right)x + \left(\dfrac{gx_{0} + fy_{0} + c}{y_{0} + f}\right)^2                  & = r^2 \\
+                  \left[1 + \left(\dfrac{x_{0} + g}{y_{0} + f}\right)^2\right]x^2 + 2\left(\dfrac{x_{0} + g}{y_{0} + f}\right)\left(\dfrac{gx_{0} + fy_{0} + c}{y_{0} + f}\right)x + \left(\dfrac{gx_{0} + fy_{0} + c}{y_{0} + f}\right)^2 - r^2 & = 0   \\
+                  \left[(y_{0} + f)^2 + (x_{0} + g)^2\right]x^2 + 2(x_{0} + g)(gx_{0} + fy_{0} + c)x + (gx_{0} + fy_{0} + c)^2 - r^2(y_{0} + f)^2                                                                                                & = 0
+                \end{align*}
+                \begin{align*}
+                  b^2 - 4ac                                        & = 0                                                                                                  \\
+                  b                                                & = 4ac                                                                                                \\
+                  \left[2(x_{0} + g)(gx_{0} + fy_{0} + c)\right]^2 & = 4\left[(y_{0} + f)^2 + (x_{0} + g)^2\right]\left[(gx_{0} + fy_{0} + c)^2 - r^2(y_{0} + f)^2\right] \\
+                  (x_{0} + g)^2(gx_{0} + fy_{0} + c)^2             & = \left[(y_{0} + f)^2 + (x_{0} + g)^2\right]\left[(gx_{0} + fy_{0} + c)^2 - r^2(y_{0} + f)^2\right]  \\
+                  (x_{0} + g)^2(gx_{0} + fy_{0} + c)^2             & = (y_{0} + f)^2(gx_{0} + fy_{0} + c)^2 - r^2(y_{0} + f)^4 + (x_{0} + g)^2(gx_{0} + fy_{0} + c)^2     \\
+                                                                   & \ \ \ \  - r^2(x_{0} + g)^2(y_{0} + f)^2                                                             \\
+                  0                                                & = (y_{0} + f)^2(gx_{0} + fy_{0} + c)^2 - r^2(y_{0} + f)^4 - r^2(x_{0} + g)^2(y_{0} + f)^2            \\
+                  r^2(y_{0} + f)^2[(y_{0} + f)^2 + (x_{0} + g)^2]  & = (y_{0} + f)^2(gx_{0} + fy_{0} + c)^2                                                               \\
+                  (gx_{0} + fy_{0} + c)^2                          & = r^2[(y_{0} + f)^2 + (x_{0} + g)^2]
+                \end{align*}
+                由$(1)$得 $(gx_{0} + fy_{0} + c)^2 = r^2[(y_{0} + f)^2 + (x_{0} + g)^2]$。 \hfill$\blacksquare$
+
+          \item 如果圆 $x^{2}+y^{2}-4 x-8 y-80=0$ 内的弦其长度及斜率分别为 $8 \sqrt{5}$ 及 $\dfrac{1}{2}$, 求这些弦的方程式。
+
+                \sol{}
+                \begin{align*}
+                  x^{2} + y^{2} - 4x - 8y - 80 & = 0 \implies (x - 2)^{2} + (y - 4)^{2} & = 100
+                \end{align*}
+                圆心为$(2, 4)$，半径为$10$。
+
+                设弦的方程式为$y = \dfrac{1}{2}x + c$，即 $x - 2y + 2c = 0$。
+
+                圆心到弦的距离 $d = \left\vert \dfrac{2 - 8 + 2c}{\sqrt{1^{2} + 2^{2}}} \right\vert = \left\vert \dfrac{2c - 6}{\sqrt{5}} \right\vert$
+
+                弦的半长为 $\dfrac{L}{2} = 4\sqrt{5}$，由 $r^2 = d^2 + \left(\dfrac{L}{2}\right)^2$,
+                \begin{align*}
+                  100             & = \left(\dfrac{2c - 6}{\sqrt{5}}\right)^2 + 80 \\
+                  (2c - 6)^2      & = 100                                          \\
+                  4c^2 - 24c + 36 & = 100                                          \\
+                  4c^2 - 24c - 64 & = 0                                            \\
+                  c^2 - 6c - 16   & = 0                                            \\
+                  (c - 8)(c + 2)  & = 0                                            \\
+                  c = 8           & \ \text{或}\ c = -2
+                \end{align*}
+                当 $c = 8$ 时，弦的方程式为 $x - 2y + 16 = 0$。
+
+                当 $c = -2$ 时，弦的方程式为 $x - 2y - 4 = 0$。\hfill$\blacksquare$
+        \end{enumerate}
+
+  \item 已知直线 $y=x+b$ 是圆 $x^{2}+y^{2}=4$ 的一条切线, 求 $b$ 的可能值。
+
+        \sol{}
+        \begin{align*}
+          y                      & = x + b         \\
+          m                      & = 1             \\
+          x^{2} + x^{2}          & = 4             \\
+          2x + 2y \dfrac{dy}{dx} & = 0             \\
+          x + y \dfrac{dy}{dx}   & = 0             \\
+          \dfrac{dy}{dx}         & = -\dfrac{x}{y} \\
+          -\dfrac{x}{y}          & = 1             \\
+          x                      & = -y
+        \end{align*}
+        代入圆的方程式得
+        \begin{align*}
+          (-y)^{2} + y^{2} & = 4            \\
+          2y^{2}           & = 4            \\
+          y^{2}            & = 2            \\
+          y                & = \pm \sqrt{2}
+        \end{align*}
+        当 $y = \sqrt{2}$ 时，$x = -\sqrt{2}$, $b = \sqrt{2} + \sqrt{2} = 2\sqrt{2}$。
+
+        当 $y = -\sqrt{2}$ 时，$x = \sqrt{2}$, $b = -\sqrt{2} - \sqrt{2} = -2\sqrt{2}$。
+
+        $\therefore$ $b = \pm 2\sqrt{2}$。\hfill$\blacksquare$
+
+        \newpage
+  \item 在圆 $x^{2}+y^{2}=a^{2}$ 上一动点 $P$ 的切线分别交座标轴 $OX, OY$ 于 $A$ 和 $B$, 且 $OAQB$ 是一个长方形。试证明 $Q$ 点的轨迹方程式是 $\dfrac{a^{2}}{x^{2}}+\dfrac{a^{2}}{y^{2}}=1$ 。
+
+        \sol{}
+
+        \begin{align*}
+          x^2 + y^2              & = a^2           \\
+          2x + 2y \dfrac{dy}{dx} & = 0             \\
+          x + y \dfrac{dy}{dx}   & = 0             \\
+          \dfrac{dy}{dx}         & = -\dfrac{x}{y}
+        \end{align*}
+        设 $P$ 的坐标为 $(a\cos\theta, a\sin\theta)$，
+        \begin{align*}
+          \dfrac{dy}{dx} & = -\dfrac{a\cos\theta}{a\sin\theta} = -\dfrac{\cos\theta}{\sin\theta}
+        \end{align*}
+        切线方程为
+        \begin{align*}
+          y - a\sin\theta               & = -\dfrac{\cos\theta}{\sin\theta}(x - a\cos\theta) \\
+          y\sin\theta - a\sin^{2}\theta & = -x\cos\theta + a\cos^{2}\theta                   \\
+          y\sin\theta + x\cos\theta     & = a(\cos^{2}\theta + \sin^{2}\theta)               \\
+          y\sin\theta + x\cos\theta     & = a
+        \end{align*}
+        当 $x = 0$ 时，$y = \dfrac{a}{\sin\theta} \implies B\left(0, \dfrac{a}{\sin\theta}\right)$。
+
+        当 $y = 0$ 时，$x = \dfrac{a}{\cos\theta} \implies A\left(\dfrac{a}{\cos\theta}, 0\right)$。
+
+        $\therefore Q\left(\dfrac{a}{\cos\theta}, \dfrac{a}{\sin\theta}\right)$。
+        \begin{align*}
+          x = a\cos\theta & \implies \cos\theta = \dfrac{a}{x} \\
+          y = a\sin\theta & \implies \sin\theta = \dfrac{a}{y}
+        \end{align*}
+        $\because \cos^{2}\theta + \sin^{2}\theta = 1$，
+
+        $\therefore \dfrac{a^{2}}{x^{2}} + \dfrac{a^{2}}{y^{2}} = 1$。\hfill$\blacksquare$
+
+  \item \begin{enumerate}
+          \item 求经过圆 $x^{2}+y^{2}+2 x-4 y+1=0$ 与直线 $2 x-y+4=0$ 的交点且与 $y$ 轴相切的两圆的方程式。
+
+                \sol{}
+                \begin{align*}
+                  2 x-y+4 & = 0      \\
+                  y       & = 2x + 4
+                \end{align*}
+                代入圆的方程式得
+                \begin{align*}
+                  x^{2} + (2x + 4)^{2} + 2x - 4(2x + 4) + 1                                   & = 0                           \\
+                  x^{2} + 4x^{2} + 16x + 16 + 2x - 8x - 16 + 1                                & = 0                           \\
+                  5x^{2} + 10x + 1                                                            & = 0                           \\
+                  x = \dfrac{-10 \pm \sqrt{100 - 20}}{10} x = \dfrac{-10 \pm 4\sqrt{5}}{10} x & = -1 \pm \dfrac{2\sqrt{5}}{5}
+                \end{align*}
+                当 $x = -1 + \dfrac{2\sqrt{5}}{5}$ 时，$y = 2\left(-1 + \dfrac{2\sqrt{5}}{5}\right) + 4 = 2 + \dfrac{4\sqrt{5}}{5}$。
+
+                当 $x = -1 - \dfrac{2\sqrt{5}}{5}$ 时，$y = 2\left(-1 - \dfrac{2\sqrt{5}}{5}\right) + 4 = 2 - \dfrac{4\sqrt{5}}{5}$。
+
+                设所求圆的方程式为 $(x - a)^{2} + (y - b)^{2} = r^{2}$。
+
+                设圆与$y$轴的切点为$(0, b)$，则
+                \begin{align*}
+                  \sqrt{(0 - a)^{2} + (b - b)^{2}} & = r              \\
+                  r                                & = a\ \cdots\ (1)
+                \end{align*}
+                \begin{align*}
+                  \sqrt{\left(-1 + \dfrac{2\sqrt{5}}{5} - a\right)^{2} + \left(2 + \dfrac{4\sqrt{5}}{5} - b\right)^{2}}                              & = \sqrt{\left(-1 - \dfrac{2\sqrt{5}}{5} - a\right)^{2} + \left(2 - \dfrac{4\sqrt{5}}{5} - b\right)^{2}}                \\
+                  \left(-1 + \dfrac{2\sqrt{5}}{5} - a\right)^{2} + \left(2 + \dfrac{4\sqrt{5}}{5} - b\right)^{2}                                     & = \left(-1 - \dfrac{2\sqrt{5}}{5} - a\right)^{2} + \left(2 - \dfrac{4\sqrt{5}}{5} - b\right)^{2}                       \\
+                  \left(-1 + \dfrac{2\sqrt{5}}{5}\right)^{2} - 2\left(-1 + \dfrac{2\sqrt{5}}{5}\right)a                                              & + \left(2 + \dfrac{4\sqrt{5}}{5}\right)^{2} - 2\left(2 + \dfrac{4\sqrt{5}}{5}\right)b                                  \\
+                  = \left(-1 - \dfrac{2\sqrt{5}}{5}\right)^{2} - 2\left(-1 - \dfrac{2\sqrt{5}}{5}\right)a                                            & + \left(2 - \dfrac{4\sqrt{5}}{5}\right)^{2} - 2\left(2 - \dfrac{4\sqrt{5}}{5}\right)b                                  \\
+                  \left(-1 + \dfrac{2\sqrt{5}}{5}\right)^{2} - \left(1 + \dfrac{2\sqrt{5}}{5}\right)^{2} + \left(2 + \dfrac{4\sqrt{5}}{5}\right)^{2} & - \left(2 - \dfrac{4\sqrt{5}}{5}\right)^{2} = \left(\dfrac{8\sqrt{5}}{5}\right)a + \left(\dfrac{16\sqrt{5}}{5}\right)b \\
+                  \left(\dfrac{8\sqrt{5}}{5}\right)a + \left(\dfrac{16\sqrt{5}}{5}\right)b                                                           & = \dfrac{24\sqrt{5}}{5}                                                                                                \\
+                  8a + 16b                                                                                                                           & = 24                                                                                                                   \\
+                  a + 2b                                                                                                                             & = 3                                                                                                                    \\
+                  a                                                                                                                                  & = 3 - 2b                                                                                                               \\
+                  b                                                                                                                                  & = \dfrac{3 - a}{2}\ \cdots\ (2)
+                \end{align*}
+                将$(1)$代入$(2)$圆方程式得
+                \begin{align*}
+                  (x - a)^{2} + \left(y - \dfrac{3 - a}{2}\right)^{2}                  & = a^{2} \\
+                  x^2 - 2ax + a^2 + y^2 - y(3 - a) + \left(\dfrac{3 - a}{2}\right)^{2} & = a^{2} \\
+                  x^2 - 2ax + y^2 - 3y + ay + \dfrac{9 - 6a + a^2}{4}                  & = 0     \\
+                  4x^2 - 8ax + 4y^2 - 12y + 4ay + 9 - 6a + a^2                         & = 0     \\
+                  4x^2 + 4y^2 - 12y - 8ax + 4ay + (a - 3)^2                            & = 0
+                \end{align*}
+                \newpage
+                代入$\left(-1 + \dfrac{2\sqrt{5}}{5}, 2 + \dfrac{4\sqrt{5}}{5}\right)$得
+                \begin{align*}
+                  4\left(-1 + \dfrac{2\sqrt{5}}{5}\right)^{2} + 4\left(2 + \dfrac{4\sqrt{5}}{5}\right)^{2} - 12\left(2 + \dfrac{4\sqrt{5}}{5}\right) & - 8a\left(-1 + \dfrac{2\sqrt{5}}{5}\right) \\
+                  + 4a\left(2 + \dfrac{4\sqrt{5}}{5}\right) + (a - 3)^{2}                                                                            & = 0                                        \\
+                  12 - 8a\left(-1 + \dfrac{2\sqrt{5}}{5}\right) + 4a\left(2 + \dfrac{4\sqrt{5}}{5}\right) + (a - 3)^{2}                              & = 0                                        \\
+                  12 + 8a + 8a + a^{2} - 6a + 9                                                                                                      & = 0                                        \\
+                  a^{2} + 10a + 21                                                                                                                   & = 0                                        \\
+                  (a + 3)(a + 7)                                                                                                                     & = 0                                        \\
+                  a = -3                                                                                                                             & \ \text{或}\ a = -7
+                \end{align*}
+                当 $a = -3$ 时，$b = \dfrac{3 - (-3)}{2} = 3$，圆的方程式为
+                \begin{align*}
+                  (x + 3)^{2} + (y - 3)^{2}       & = 9 \\
+                  x^{2} + 6x + 9 + y^{2} - 6y + 9 & = 9 \\
+                  x^{2} + y^{2} + 6x - 6y + 9     & = 0
+                \end{align*} $\hfill\blacksquare$
+
+                当 $a = -7$ 时，$b = \dfrac{3 - (-7)}{2} = 5$，圆的方程式为
+                \begin{align*}
+                  (x + 7)^{2} + (y - 5)^{2}           & = 49 \\
+                  x^{2} + 14x + 49 + y^{2} - 10y + 25 & = 49 \\
+                  x^{2} + y^{2} + 14x - 10y + 25      & = 0
+                \end{align*} $\hfill\blacksquare$
+
+          \item 求过原点到此二圆所作的另两条切线的方程式。
+
+                \sol{}
+
+                设切线方程式为 $y = kx$，即 $kx - y = 0$。
+
+                从$(a)$可知，二圆的圆心及半径分别为$(-3, 3)$、$3$和$(-7, 5)$、$7$。
+
+                对于圆$x^{2} + y^{2} + 6x - 6y + 9 = 0$，由于圆心与$x$轴的距离为$3$，等于半径，所以该圆也与$x$轴相切。
+
+                $\therefore$ 该圆的另一切线方程式为$x = 0$。$\hfill\blacksquare$
+
+                对于圆$x^{2} + y^{2} + 14x - 10y + 25 = 0$，
+                \begin{align*}
+                  \left\vert \dfrac{-7k - 5}{\sqrt{k^{2} + 1}} \right\vert & = 7              \\
+                  \dfrac{(7k + 5)^{2}}{k^{2} + 1}                          & = 49             \\
+                  49k^{2} + 70k + 25                                       & = 49k^{2} + 49   \\
+                  70k                                                      & = 24             \\
+                  k                                                        & = \dfrac{12}{35}
+                \end{align*}
+                切线方程式为 $y = \dfrac{12}{35}x$。\hfill$\blacksquare$
+        \end{enumerate}
+
+  \item 求 $x^{2}+y^{2}+4 x-10 y-7=0$ 的圆心及半经。据此, 或其他方法, 若 $y=2 x+c$ 是此圆的切线, 求 $c$ 的值。
+
+        \sol{}
+        \begin{align*}
+          x^{2} + y^{2} + 4x - 10y - 7 & = 0          \\
+          (x + 2)^{2} + (y - 5)^{2}    & = 7 + 4 + 25 \\
+          (x + 2)^{2} + (y - 5)^{2}    & = 36         \\
+          (x + 2)^{2} + (y - 5)^{2}    & = 6^{2}
+        \end{align*}
+        圆心为$(-2, 5)$，半径为$6$。$\hfill\blacksquare$
+
+        \begin{align*}
+          y                                                               & = 2x + c          \\
+          2x - y + c                                                      & = 0               \\
+          \left\vert \dfrac{-4 - 5 + c}{\sqrt{2^{2} + 1^{2}}} \right\vert & = 6               \\
+          \left\vert \dfrac{c - 9}{\sqrt{5}} \right\vert                  & = 6               \\
+          c - 9                                                           & = \pm 6\sqrt{5}   \\
+          c                                                               & = 9 \pm 6\sqrt{5}
+        \end{align*} \hfill$\blacksquare$
+
+  \item 求两条由点 $(-2,3)$ 至目 $x^{2}+y^{2}+2 x-12 y+32=0$ 的切线方程式。
+
+        \sol{}
+
+        设切线方程式为 $y - 3 = k(x + 2)$，即 $kx - y + 3 + 2k = 0$。
+        \begin{align*}
+          x^{2}+y^{2}+2 x-12 y+32 & = 0       \\
+          (x+1)^{2}+(y-6)^{2}     & = 1+36-32 \\
+          (x+1)^{2}+(y-6)^{2}     & = 5
+        \end{align*}
+        圆心为$(-1, 6)$，半径为$\sqrt{5}$。
+        \begin{align*}
+          \left\vert \dfrac{-k - 6 + 3 + 2k}{\sqrt{k^{2} + 1}} \right\vert & = \sqrt{5}       \\
+          \dfrac{(k - 3)^{2}}{k^{2} + 1}                                   & = 5              \\
+          k^{2} - 6k + 9                                                   & = 5k^{2} + 5     \\
+          2k^{2} + 3k - 2                                                  & = 0              \\
+          (2k - 1)(k + 2)                                                  & = 0              \\
+          k = \dfrac{1}{2}                                                 & \text{或}\ k = -2
+        \end{align*}
+
+        当 $k = \dfrac{1}{2}$ 时，切线方程式为
+        \begin{align*}
+          y - 3      & = \dfrac{1}{2}(x + 2) \\
+          x - 2y + 8 & = 0
+        \end{align*} \hfill$\blacksquare$
+
+        当 $k = -2$ 时，切线方程式为
+        \begin{align*}
+          y - 3      & = -2(x + 2) \\
+          y - 3      & = -2x - 4   \\
+          2x + y + 1 & = 0
+        \end{align*} \hfill$\blacksquare$
+
+  \item 求经过点 $M(3,-4)$ 且与圆 $x^{2}+y^{2}+2 x-6 y+5=0$ 相切于点 $P(1,2)$ 的圆的方程式。
+
+        \sol{}
+
+        设所求圆的方程式为 $(x - a)^{2} + (y - b)^{2} = r^{2}$。
+        \begin{align*}
+          \sqrt{(a - 1)^{2} + (b - 2)^{2}} & = r \implies r^{2} = (a - 1)^{2} + (b - 2)^{2} \\
+          \sqrt{(a - 3)^{2} + (b + 4)^{2}} & = r \implies r^2 = (a - 3)^{2} + (b + 4)^{2}
+        \end{align*}
+        比较得
+        \begin{align*}
+          (a - 1)^{2} + (b - 2)^{2}       & = (a - 3)^{2} + (b + 4)^{2}        \\
+          a^{2} - 2a + 1 + b^{2} - 4b + 4 & = a^{2} - 6a + 9 + b^{2} + 8b + 16 \\
+          4a - 12b - 20                   & = 0                                \\
+          a - 3b - 5                      & = 0 \ \cdots\ (1)
+        \end{align*}
+        \begin{align*}
+          x^{2}+y^{2}+2 x-6 y+5   & = 0         \\
+          (x + 1)^{2}+(y - 3)^{2} & = 1 + 9 - 5 \\
+          (x + 1)^{2}+(y - 3)^{2} & = 5
+        \end{align*}
+        圆心为$(-1, 3)$，半径为$\sqrt{5}$。
+        \begin{align*}
+          m          & = \dfrac{2 - 3}{1 - (-1)} = -\dfrac{1}{2} \\
+          y - 3      & = -\dfrac{1}{2}(x + 1)                    \\
+          2y - 6     & = -x - 1                                  \\
+          x + 2y - 5 & = 0
+        \end{align*}
+        代入$(a, b)$, 得 $a + 2b - 5 = 0\ \cdots\ (2)$。
+        \begin{align*}
+          (2) - (1)    & \Rightarrow 5b = 0 \Rightarrow b = 0 \\
+          \text{代入}(1) & \Rightarrow a = 5                    \\
+          r^2          & = (5 - 3)^2 + (0 + 4)^2 = 20
+        \end{align*}
+        $\therefore$ 所求圆的方程式为
+        \begin{align*}
+          (x - 5)^{2} + y^{2}      & = 20 \\
+          x^{2} - 10x + 25 + y^{2} & = 20 \\
+          x^{2} + y^{2} - 10x + 5  & = 0
+        \end{align*} \hfill$\blacksquare$
+
+\end{enumerate}
+
+\subsection{两圆正切、正交}
+\subsection*{(选择题)}
+
+\begin{enumerate}[leftmargin=*]
+  \item 两圆 $x^{2}+y^{2}+3 x-2 y-20=0$ 及 $x^{2}+y^{2}-2 x+3 y-5=0$ 的公共弦的方程式是
+
+        \sol{}
+
+        两圆的方程式相减得
+        \begin{align*}
+          5x - 5y - 15 & = 0 \\
+          x - y - 3    & = 0
+        \end{align*} \hfill$\blacksquare$
+
+  \item 已知两圆 $x^{2}+y^{2}+k x-6 y+5=0$ 与 $x^{2}+y^{2}+2 x+y-1=0$ 正交(Cut orthogonally), $k$之值为
+
+        \sol{}
+
+        两圆的圆心分别为$\left(-\dfrac{k}{2}, 3\right)$和$\left(-1, -\dfrac{1}{2}\right)$，半径分别为$\sqrt{\dfrac{k^2}{4} + 4}$和$\sqrt{1 + \dfrac{1}{4} + 1} = \dfrac{3}{2}$。
+        \begin{align*}
+          \dfrac{49}{4}+\left(-\dfrac{k}{2} + 1\right)^{2} & = \dfrac{k^2}{4} + 4 + \dfrac{9}{4} \\
+          \dfrac{k^2}{4} - k + 1                           & = \dfrac{k^2}{4} - 6                \\
+          k                                                & = 7                                 \\
+        \end{align*} \hfill$\blacksquare$
+
+  \item 如果两圆 $x^{2}+y^{2}=1$ 及 $x^{2}+y^{2}-6 x+a y+9=0$ 相切, 求 $a$ 的值。
+
+        \sol{}
+
+        由圆的方程式可知，圆心分别为$(0, 0)$和$\left(3, -\dfrac{a}{2}\right)$, $r_1 = 1$, $r_2 = \sqrt{(-3)^2 + \left(-\dfrac{a}{2}\right)^2 - 9} = \sqrt{\dfrac{a^2}{4}} = \pm\dfrac{a}{2}$。
+        \begin{align*}
+          \sqrt{3^2 + \left(-\dfrac{a}{2}\right)^2} & = 1 \pm \dfrac{a}{2}       \\
+          9 + \dfrac{a^2}{4}                        & = 1 \pm a + \dfrac{a^2}{4} \\
+          \pm a                                     & = 8                        \\
+          a                                         & = \pm 8
+        \end{align*}
+
+  \item 如果两圆 $x^{2}+y^{2}-4=0$ 及 $x^{2}+y^{2}+2 a x-6 y+a=0$ 正交(Cut orthogonally), 则常数 $a$的值等于
+
+        \sol{}
+
+        两圆的圆心分别为$(0, 0)$和$\left(-a, 3\right)$，半径分别为$2$和$\sqrt{a^2 + 9 - a}$。
+        \begin{align*}
+          \left(\sqrt{9 + a^2}\right)^2 & = 2^2 + \left(\sqrt{a^2 + 9 - a}\right)^2 \\
+          9 + a^2                       & = 4 + a^2 + 9 - a                         \\
+          a                             & = 4
+        \end{align*} \hfill$\blacksquare$
+
+  \item 已知两圆 $(x-a)^{2}+(y-b)^{2}=c^{2}$ 与 $(x-b)^{2}+(y-a)^{2}=c^{2}$ 交于一点, 求 $a, b$ 及 $c$ 的关系。\\
+
+        \sol{}
+
+        两圆的圆心分别为$(a, b)$和$(b, a)$，半径均为$c$。
+        \begin{align*}
+          \sqrt{(a - b)^{2} + (b - a)^{2}} & = 2c     \\
+          \sqrt{2(a - b)^{2}}              & = 2c     \\
+          2(a - b)^{2}                     & = 4c^{2} \\
+          (a - b)^{2}                      & = 2c^{2}
+        \end{align*} \hfill$\blacksquare$
+
+  \item 若两圆 $x^{2}+y^{2}+6 x+10 y+c=0$ 与 $x^{2}+y^{2}+4 x-2 y+3=0$ 正交, 求 $c$ 的值。
+
+        \sol{}
+
+        两圆的圆心分别为$(-3, -5)$和$(-2, 1)$，半径分别为$\sqrt{9 + 25 - c} = \sqrt{34 - c}$和$\sqrt{4 + 1 - 3} = \sqrt{2}$
+        \begin{align*}
+          34 - c + 2 & = 36 + 1 \\
+          c          & = -1
+        \end{align*} \hfill$\blacksquare$
+
+  \item 若两圆 $x^{2}+y^{2}-k x-2 y-52=0$ 与 $x^{2}+y^{2}+(2 k+1) x+8 y+26=0$ 正交, 求 $k$ 的值。
+
+        \sol{}
+
+        两圆的圆心分别为$\left(\dfrac{k}{2}, 1\right)$和$\left(-\dfrac{2k + 1}{2}, -4\right)$，半径分别为$\sqrt{\dfrac{k^2}{4} + 1 + 52} = \sqrt{\dfrac{k^2}{4} + 53}$和$\sqrt{\left(\dfrac{2k + 1}{2}\right)^2 + 16 - 26} = \sqrt{\left(\dfrac{2k + 1}{2}\right)^2 - 10}$。
+        \begin{align*}
+          \left(\dfrac{k}{2} + \dfrac{2k + 1}{2}\right)^2 + (1 + 4)^2 & = \dfrac{k^2}{4} + 53 + \left(\dfrac{2k + 1}{2}\right)^2 - 10 \\
+          \left(\dfrac{3k + 1}{2}\right)^2                            & = \dfrac{k^2}{4} + \left(\dfrac{2k + 1}{2}\right)^2 + 18      \\
+          (3k + 1)^2                                                  & = k^2 + (2k + 1)^2 + 72                                       \\
+          9k^2 + 6k + 1                                               & = k^2 + 4k^2 + 4k + 1 + 72                                    \\
+          4k^2 + 2k - 72                                              & = 0                                                           \\
+          2k^2 + k - 36                                               & = 0                                                           \\
+          (2k + 9)(k - 4)                                             & = 0                                                           \\
+          k = -\dfrac{9}{2}                                           & \text{或}\ k = 4
+        \end{align*} \hfill$\blacksquare$
+\end{enumerate}
+
+\newpage
+\subsection*{(作答题)}
+\begin{enumerate}[leftmargin=*]
+  \item 二圆外切于 $A$, 公切线 $PQ$ 切二圆于 $P, Q ; RAS$ 是一直线且再遇二圆于 $R, S$, 连 $RP$, $S Q$ 并延长之使交于 $X$ 。求证
+  \item \begin{enumerate}
+          \item $\triangle APQ \sim \triangle XRS$;
+
+                \sol{}
+
+                题目过于晦涩，略 =) \hfill$\blacksquare$
+
+          \item  $P, A, Q, X$ 四点共圆。
+
+                \sol{}
+
+                题目过于晦涩，略 =) \hfill$\blacksquare$
+        \end{enumerate}
+
+  \item 已知 $a^{2}+b^{2}=c^{2}$, 试证两圆 $x^{2}+y^{2}+a x+b y=0$ 及 $x^{2}+y^{2}=c^{2}$ 相切, 并求其切点之座标。
+
+        \sol{}
+
+        两圆的圆心分别为$\left(-\dfrac{a}{2}, -\dfrac{b}{2}\right)$和$(0, 0)$，半径分别为$r = \sqrt{\dfrac{a^2}{4} + \dfrac{b^2}{4}} = \dfrac{c}{2}$和$R = c$。
+        \begin{align*}
+          \text{圆心距 }\ d & = \sqrt{\left(-\dfrac{a}{2}\right)^2 + \left(-\dfrac{b}{2}\right)^2} \\
+                         & = \sqrt{\dfrac{a^2 + b^2}{4}} = \dfrac{c}{2}
+        \end{align*}
+        $\because d = R - r = c - \dfrac{c}{2} = \dfrac{c}{2}$, $\therefore$ 两圆相切于一点。 \hfill$\blacksquare$
+
+        两圆方程式相减，得 $ax + by = -c^{2} y = -\dfrac{a}{b}x - \dfrac{c^{2}}{b}$
+
+        代入$x^{2} + y^{2} = c^{2}$得
+        \begin{align*}
+          x^{2} + \left(-\dfrac{a}{b}x - \dfrac{c^{2}}{b}\right)^{2}                         & = c^{2}                                \\
+          x^{2} + \dfrac{a^{2}}{b^{2}}x^{2} + \dfrac{2ac^{2}}{b^{2}}x + \dfrac{c^{4}}{b^{2}} & = c^{2}                                \\
+          b^2x^{2} + a^{2}x^{2} + 2ac^{2}x + c^{4} - b^{2}c^{2}                              & = 0                                    \\
+          (a^{2} + b^{2})x^{2} + 2ac^{2}x + c^{4} - b^{2}c^{2}                               & = 0                                    \\
+          c^2x^{2} + 2ac^{2}x + c^{4} - b^{2}c^{2}                                           & = 0                                    \\
+          x^{2} + 2ax + c^{2} - b^{2}                                                        & = 0                                    \\
+          x^{2} + 2ax + c^{2} -(c^{2} - a^{2})                                               & = 0                                    \\
+          x^2 + 2ax + a^{2}                                                                  & = 0                                    \\
+          (x + a)^{2}                                                                        & = 0                                    \\
+          x                                                                                  & = -a                                   \\
+          y                                                                                  & = -\dfrac{a}{b}(-a) - \dfrac{c^{2}}{b} \\
+                                                                                             & = \dfrac{a^{2}}{b} - \dfrac{c^{2}}{b}  \\
+                                                                                             & = \dfrac{-(c^2 - a^2)}{b}              \\
+                                                                                             & = \dfrac{-b^2}{b} = -b
+        \end{align*}
+        $\therefore$ 切点为$(-a, -b)$。 \hfill$\blacksquare$
+
+  \item \begin{enumerate}
+          \item 若两圆 $x^{2}+y^{2}+2 g_{1} x+2 f_{1} y+c_{1}=0$ 与 $x^{2}+y^{2}+2 g_{2} x+2 f_{2} y+c_{2}=0$ 正交, 证明 $2\left(g_{1} g_{2}+f_{1} f_{2}\right)=c_{1}+c_{2}$
+
+                \sol{}
+
+                两圆的圆心分别为$(-g_1, -f_1)$和$(-g_2, -f_2)$，半径分别为$\sqrt{g_1^2 + f_1^2 - c_1}$和$\sqrt{g_2^2 + f_2^2 - c_2}$。
+                \begin{align*}
+                  \left(\sqrt{(-f_1 + f_2)^2 + (-g_1 + g_2)^2}\right)^2 & = \left(\sqrt{g_1^2 + f_1^2 - c_1}\right)^2 + \left(\sqrt{g_2^2 + f_2^2 - c_2}\right)^2 \\
+                  (f_1 - f_2)^2 + (g_1 - g_2)^2                         & = g_1^2 + f_1^2 - c_1 + g_2^2 + f_2^2 - c_2                                             \\
+                  f_1^2 - 2f_1f_2 + f_2^2 + g_1^2 - 2g_1g_2 + g_2^2     & = g_1^2 + f_1^2 - c_1 + g_2^2 + f_2^2 - c_2                                             \\
+                  - 2f_1f_2 - 2g_1g_2                                   & = - c_1 - c_2                                                                           \\
+                  2(f_1f_2 + g_1g_2)                                    & = c_1 + c_2
+                \end{align*} \hfill$\blacksquare$
+
+          \item 若一直径的两端点为 $(0,4)$ 及 $(4,2)$ 的圆与另一圆 $x^{2}+y^{2}+2 k x-6 y+k=0$ 正交, 试应用(a)的结果或以其他方法求 $k$ 的值。
+                \begin{align*}
+                  d                           & = \sqrt{(4 - 0)^2 + (2 - 4)^2} = 2\sqrt{5}                 \\
+                  r                           & = \sqrt{5}                                                 \\
+                  C                           & = \left(\dfrac{0 + 4}{2}, \dfrac{4 + 2}{2}\right) = (2, 3) \\
+                  (x-2)^2 + (y-3)^2           & = 5                                                        \\
+                  x^2 - 4x + 4 + y^2 - 6y + 9 & = 5                                                        \\
+                  x^2 + y^2 - 4x - 6y + 8     & = 0                                                        \\
+                  \\
+                  2(f_1f_2 + g_1g_2)          & = c_1 + c_2                                                \\
+                  2[(2)(-k) + (3)(3)]         & = 8 + k                                                    \\
+                  -4k + 18                    & = 8 + k                                                    \\
+                  5k                          & = 10                                                       \\
+                  k                           & =2
+                \end{align*} \hfill$\blacksquare$
+        \end{enumerate}
+
+  \item 一圆的圆心落在第一象限上且与 $y$ 轴相切于点 $(0,3)$, 并与圆 $x^{2}+y^{2}-8 x+4 y-5=0$ 正交。求此圆的方程式。
+
+        \sol{}
+
+        设圆的方程式为 $(x - a)^{2} + (y - b)^{2} = r^{2}$。
+
+        $\because$ 圆心在第一象限，$\therefore$ $a > 0, b > 0$。
+
+        $\because$ 圆与 $y$ 轴相切于 $(0, 3)$，$\therefore$ $b = 3$，圆心为$(a, 3)$。
+        \begin{align*}
+          r & = \sqrt{a^2 + (3 - 3)^2} = a \\
+        \end{align*}
+
+        $\therefore$ 圆的方程式为 $(x - a)^{2} + (y - 3)^{2} = a^{2}$。
+        \begin{align*}
+          x^{2}+y^{2}-8 x+4 y-5     & = 0  \\
+          (x - 4)^{2} + (y + 2)^{2} & = 25
+        \end{align*}
+        两圆的圆心分别为$(a, 3)$和$(4, -2)$，半径分别为$a$和$5$。
+        \begin{align*}
+          \left(\sqrt{(a - 4)^{2} + (3 + 2)^{2}}\right)^{2} & = a^{2} + 25 \\
+          (a - 4)^{2}                                       & = a^{2}      \\
+          a^2 - 8a + 16                                     & = a^2        \\
+          8a                                                & = 16         \\
+          a                                                 & = 2
+        \end{align*}
+        $\therefore$ 圆的方程式为\begin{align*}
+          (x - 2)^{2} + (y - 3)^{2}       & = 2^{2} \\
+          x^{2} - 4x + 4 + y^{2} - 6y + 9 & = 4     \\
+          x^{2} + y^{2} - 4x - 6y + 9     & = 0
+        \end{align*} \hfill$\blacksquare$
+
+  \item 如果一个动圆与圆 $x^{2}+y^{2}+2 g x+2 f y+c=0$ 正交, 且与 $x$ 轴相切。求这个动圆圆心的轨迹方程式。
+
+        \sol{}
+        设动圆圆心为$(x, y)$，半径为$r$，
+
+        $\because$ 动圆与$x$轴相切，$\therefore$ $r = y$。
+
+        圆$x^{2}+y^{2}+2 g x+2 f y+c=0$的圆心为$(-g, -f)$，半径为$\sqrt{g^2 + f^2 - c}$。
+        \begin{align*}
+          \left(\sqrt{(x + g)^{2} + (y + f)^{2}}\right)^{2} & = y^2 + g^2 + f^2 - c \\
+          (x + g)^{2} + (y + f)^{2}                         & = y^2 + g^2 + f^2 - c \\
+          x^2 + 2gx + 2fy                                   & = - c                 \\
+          x^2 + 2gx + 2fy + c                               & = 0
+        \end{align*} \hfill$\blacksquare$
+
+
+  \item 已知两圆的方程式为 $x^{2}+y^{2}+2 x-6 y=0$ 及 $x^{2}+y^{2}+3 x-5 y+6=0$。证明其中一圆完全在另一圆内。
+
+        \sol{}
+
+        两圆的圆心分别为$(-1, 3)$和$\left(-\dfrac{3}{2}, \dfrac{5}{2}\right)$，半径分别为$r_1 = \sqrt{1 + 9} = \sqrt{10}$和$r_2 \sqrt{\dfrac{9}{4} + \dfrac{25}{4} - 6} = \dfrac{\sqrt{10}}{2}$。
+        \begin{align*}
+          \text{圆心距 }\ d & = \sqrt{\left(-1 + \dfrac{3}{2}\right)^2 + \left(3 - \dfrac{5}{2}\right)^2} \\
+                         & = \sqrt{\dfrac{1}{4} + \dfrac{1}{4}} = \dfrac{\sqrt{2}}{2}
+        \end{align*}
+        $\because$ $r_1 - r_2 = \sqrt{10} - \dfrac{\sqrt{10}}{2} = \dfrac{\sqrt{10}}{2} > \dfrac{\sqrt{2}}{2}$,
+
+        即$r_1 - r_2 > d$，
+
+        $\therefore$ 圆$x^{2}+y^{2}+3x-5y+6=0$完全在圆$x^{2}+y^{2}+2x-6y=0$内。 \hfill$\blacksquare$
+
+        \newpage
+  \item 已知一圆 $C$ 的半径为$3$. 其圆心在直线 $x+y=1$ 上。若圆 $x^{2}+y^{2}=4$ 内切于圆 $C$，求$C$的所有可能方程式。
+
+        \sol{}
+
+        设圆C的圆心为$(a, b)$，半径为$3$。
+
+        $\because$ 圆心在直线$x + y = 1$上，$\therefore$ $a + b = 1 \implies b = 1 - a$。
+
+        $\therefore$ 圆C的圆心为$(a, 1 - a)$。
+
+        圆$x^{2} + y^{2} = 4$的圆心为$(0, 0)$，半径为$2$。
+        \begin{align*}
+          \sqrt{(a - 0)^{2} + (1 - a - 0)^{2}} & = 3 - 2           \\
+          \sqrt{a^2 + (1 - a)^2}               & = 1               \\
+          a^2 + 1 - 2a + a^2                   & = 1               \\
+          2a^2 - 2a                            & = 0               \\
+          a(a - 1)                             & = 0               \\
+          a = 0                                & \ \text{或}\ a = 1
+        \end{align*}
+        当$a = 0$时，$b = 1 - a = 1$，圆C的方程式为$x^2 + (y - 1)^2 = 9$。
+
+        当$a = 1$时，$b = 1 - a = 0$，圆C的方程式为$(x - 1)^2 + y^2 = 9$。 \hfill$\blacksquare$
+\end{enumerate}
 
 \end{document}
