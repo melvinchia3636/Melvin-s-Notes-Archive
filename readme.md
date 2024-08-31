@@ -1,7 +1,4 @@
 # Table of Contents
-- [Notice of Call for Submissions.docx](<./Notice of Call for Submissions.docx>)
-- [吼吼.docx](<./吼吼.docx>)
-- [数学报告.pptx](<./数学报告.pptx>)
 
 <details>
 <summary>Meth Videos</summary>
@@ -334,6 +331,7 @@
 
 - [budgeted statement of cash flow.xlsx](<./数学/budgeted statement of cash flow.xlsx>)
 - [作业缴交情况清单.xlsx](<./数学/作业缴交情况清单.xlsx>)
+- [数学报告.pptx](<./数学/数学报告.pptx>)
 <dl><dd>
 <details>
 <summary>Add Math II</summary>
@@ -401,6 +399,16 @@
 - [9.3.tex](<./数学/Add Math II/S1 chp9/9.3.tex>)
 - [9.4.pdf](<./数学/Add Math II/S1 chp9/9.4.pdf>)
 - [9.4.tex](<./数学/Add Math II/S1 chp9/9.4.tex>)
+
+</details>
+</dd></dl></dd></dl>
+
+<dl><dd><dl><dd>
+<details>
+<summary>S2 chp1</summary>
+
+- [S2 chp1.pdf](<./数学/Add Math II/S2 chp1/S2 chp1.pdf>)
+- [S2 chp1.tex](<./数学/Add Math II/S2 chp1/S2 chp1.tex>)
 
 </details>
 </dd></dl></dd></dl>
@@ -1477,6 +1485,9 @@
 - [Table of Contents.docx](<./簿记与会计/Table of Contents.docx>)
 - [Table of Contents.pdf](<./簿记与会计/Table of Contents.pdf>)
 - [THE UNIFIED EXAMINATION.docx](<./簿记与会计/THE UNIFIED EXAMINATION.docx>)
+- [2019Q4 Ans.xlsx](<./簿记与会计/2019Q4 Ans.xlsx>)
+- [2019Q4 Workings.docx](<./簿记与会计/2019Q4 Workings.docx>)
+- [UEB 2020 Q2.xlsx](<./簿记与会计/UEB 2020 Q2.xlsx>)
 <dl><dd>
 <details>
 <summary>Past Year Paper</summary>
@@ -2920,6 +2931,7 @@
 - [第四章 市场效率与政府干涉.pdf](<./经济学/第四章 市场效率与政府干涉.pdf>)
 - [第四章 自创题目.docx](<./经济学/第四章 自创题目.docx>)
 - [第四章 自创题目.pdf](<./经济学/第四章 自创题目.pdf>)
+- [经济学选择题.docx](<./经济学/经济学选择题.docx>)
 - [高二经济学 第三课 弹性理论.docx](<./经济学/高二经济学 第三课 弹性理论.docx>)
 - [高二经济学 第三课 弹性理论.pdf](<./经济学/高二经济学 第三课 弹性理论.pdf>)
 - [高二经济学 第二课 需求与供给.docx](<./经济学/高二经济学 第二课 需求与供给.docx>)
@@ -2956,6 +2968,7 @@
 
 - [Appreciate.md](<./英文/Appreciate.md>)
 - [Appreciate.pdf](<./英文/Appreciate.pdf>)
+- [English.pptx](<./英文/English.pptx>)
 - [Extensive Reading First Semester.md](<./英文/Extensive Reading First Semester.md>)
 - [Extensive Reading.md](<./英文/Extensive Reading.md>)
 - [Hello.md](<./英文/Hello.md>)
