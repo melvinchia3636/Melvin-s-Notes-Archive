@@ -1,0 +1,155 @@
+\documentclass{report}
+
+\usepackage{amsmath, amssymb}
+\usepackage{ctex}
+\usepackage[total={7in, 9.6in}]{geometry}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{tikz}
+
+\newcommand{\sol}{\vspace{0.2cm}\textbf{解}:}
+\newcommand{\proof}{\vspace{0.2cm}\textbf{证明}:}
+\newcommand{\qed}{\hfill $\blacksquare$}
+\pagenumbering{gobble}
+
+\setcounter{chapter}{1}
+
+
+\begin{document}
+\section{行列式}
+
+\subsection*{(选择题)}
+\begin{enumerate}
+  \item 若 $\left|\begin{array}{cc}2 x & -1 \\ x & x\end{array}\right|=6$, 则
+
+        \sol{}
+        \begin{align*}
+          \left|\begin{array}{cc}2 x & -1 \\ x & x\end{array}\right| & = 2x^2 - (-x) \cdot x = 6 \\
+          2x^2 + x^2                                                 & = 6                       \\
+          3x^2                                                       & = 6                       \\
+          x^2                                                        & = 2                       \\
+          x                                                          & = \pm \sqrt{2}
+        \end{align*} \hfill$\blacksquare$
+
+  \item 若 $\left|\begin{array}{lll}a & 2 & 1 \\ 1 & 3 & 1 \\ 0 & 4 & 1\end{array}\right|=0$, 求 $a$ 之值。
+
+        \sol{}
+        \begin{align*}
+          \left|\begin{array}{lll}a & 2 & 1 \\ 1 & 3 & 1 \\ 0 & 4 & 1\end{array}\right| & = a \left|\begin{array}{ll}3 & 1 \\ 4 & 1\end{array}\right| - 2 \left|\begin{array}{ll}1 & 1 \\ 0 & 1\end{array}\right| + \left|\begin{array}{ll}1 & 3 \\ 0 & 4\end{array}\right| = 0 \\
+          a \left(3 - 4\right) - 2 \cdot 1 + 4                                          & = 0                                                                                                                                                                                   \\
+          -a - 2 + 4                                                                    & = 0                                                                                                                                                                                   \\
+          a                                                                             & = 2
+        \end{align*} \hfill$\blacksquare$
+
+  \item 计算行列式 $\left|\begin{array}{lll}1 & 2 & 3 \\ 2 & 3 & 1 \\ 3 & 1 & 2\end{array}\right|$ 之值。
+
+        \sol{}
+        \begin{align*}
+          \left|\begin{array}{lll}1 & 2 & 3 \\ 2 & 3 & 1 \\ 3 & 1 & 2\end{array}\right| & = 1 \left|\begin{array}{ll}3 & 1 \\ 1 & 2\end{array}\right| - 2 \left|\begin{array}{ll}2 & 1 \\ 3 & 2\end{array}\right| + 3 \left|\begin{array}{ll}2 & 3 \\ 3 & 1\end{array}\right| \\
+                                                                                        & = 1 \cdot 5 - 2 \cdot 1 - 3 \cdot 7                                                                                                                                                 \\
+                                                                                        & = 5 - 2 - 21                                                                                                                                                                        \\
+                                                                                        & = -18
+        \end{align*} \hfill$\blacksquare$
+
+  \item 求 $\left|\begin{array}{rrr}8 & -2 & -4 \\ 7 & 1 & -2 \\ 6 & 4 & 0\end{array}\right|$ 之值。
+
+        \sol{}
+        \begin{align*}
+          \left|\begin{array}{rrr}8 & -2 & -4 \\ 7 & 1 & -2 \\ 6 & 4 & 0\end{array}\right| & = 8 \left|\begin{array}{rr}1 & -2 \\ 4 & 0\end{array}\right| + 2 \left|\begin{array}{rr}7 & -2 \\ 6 & 0\end{array}\right| - 4 \left|\begin{array}{rr}7 & 1 \\ 6 & 4\end{array}\right| \\
+                                                                                           & = 8 \cdot 8 + 2 \cdot 12 - 4 \cdot 22                                                                                                                                                 \\
+                                                                                           & = 64 + 24 - 88                                                                                                                                                                        \\
+                                                                                           & = 0
+        \end{align*} \hfill$\blacksquare$
+
+  \item 求行列式 $\left|\begin{array}{lll}2 & 2 & 3 \\ 4 & 5 & 7 \\ 0 & 6 & 9\end{array}\right|$ 之值。
+
+        \sol{}
+        \begin{align*}
+          \left|\begin{array}{lll}2 & 2 & 3 \\ 4 & 5 & 7 \\ 0 & 6 & 9\end{array}\right| & = -6 \left|\begin{array}{ll}2 & 3 \\ 4 & 7\end{array}\right| + 9 \left|\begin{array}{ll}2 & 2 \\ 4 & 5\end{array}\right| \\
+                                                                                        & = -6 \cdot 2 + 9 \cdot 2                                                                                                 \\
+                                                                                        & = -12 + 18                                                                                                               \\
+                                                                                        & = 6
+        \end{align*} \hfill$\blacksquare$
+
+  \item 计算行列式 $\left|\begin{array}{lll}3 & 2 & 1 \\ 2 & 3 & 1 \\ 1 & 2 & 3\end{array}\right|$ 之值。
+
+        \sol{}
+        \begin{align*}
+          \left|\begin{array}{lll}3 & 2 & 1 \\ 2 & 3 & 1 \\ 1 & 2 & 3\end{array}\right| & = 3 \left|\begin{array}{ll}3 & 1 \\ 2 & 3\end{array}\right| - 2 \left|\begin{array}{ll}2 & 1 \\ 1 & 3\end{array}\right| + 1 \left|\begin{array}{ll}2 & 3 \\ 1 & 2\end{array}\right| \\
+                                                                                        & = 3 \cdot 7 - 2 \cdot 5 + 1 \cdot 1                                                                                                                                                 \\
+                                                                                        & = 21 - 10 + 1                                                                                                                                                                       \\
+                                                                                        & = 12
+        \end{align*} \hfill$\blacksquare$
+\end{enumerate}
+
+\subsection*{(作答题)}
+\begin{enumerate}
+  \item 计算行列式 $\left|\begin{array}{rrr}1 & 2 & 2 \\ 2 & 3 & 3 \\ 3 & -1 & 7\end{array}\right|$ 之值。
+
+        \sol{}
+        \begin{align*}
+          \left|\begin{array}{rrr}1 & 2 & 2 \\ 2 & 3 & 3 \\ 3 & -1 & 7\end{array}\right| & = 1 \left|\begin{array}{rr}3 & 3 \\ -1 & 7\end{array}\right| - 2 \left|\begin{array}{rr}2 & 3 \\ 3 & 7\end{array}\right| + 2 \left|\begin{array}{rr}2 & 3 \\ 3 & -1\end{array}\right| \\
+                                                                                         & = 1 \cdot 24 - 2 \cdot 5 + 2 \cdot -11                                                                                                                                                \\
+                                                                                         & = 24 - 10 - 22                                                                                                                                                                        \\
+                                                                                         & = -8
+        \end{align*} \hfill$\blacksquare$
+\end{enumerate}
+
+\section{行列式的性质}
+\subsection*{(选择题)}
+\begin{enumerate}
+  \item 若 $\alpha, \beta$ 及 $\gamma$ 为一个三角形的内角, 试求 $\left|\begin{array}{ccc}\tan \alpha & 1 & 1 \\ 1 & \tan \beta & 1 \\ 1 & 1 & \tan \gamma\end{array}\right|$ 之值。
+  \item 求 $\left|\begin{array}{llll}3 & 1 & 1 & 1 \\ 1 & 3 & 1 & 1 \\ 1 & 1 & 3 & 1 \\ 1 & 1 & 1 & 3\end{array}\right|$ 的值。
+  \item 计算 $\left|\begin{array}{llll}2 & 1 & 0 & 0 \\ 1 & 2 & 1 & 0 \\ 0 & 1 & 2 & 1 \\ 0 & 0 & 1 & 2\end{array}\right|$ 。
+  \item 若 $\left|\begin{array}{ccc}a-1 & -3 & -4 \\ a & 1 & -17 \\ a-2 & -3 & 1\end{array}\right|=0$, 则 $a=$ ?
+  \item $\left|\begin{array}{ccc}b+c & a & a \\ b & c+a & b \\ c & c & a+b\end{array}\right|=$ ?
+  \item 求 $\left|\begin{array}{ccc}1 & 1 & 1 \\ x^{2}+4 & x^{2}+9 & x^{2}+16 \\ 2 & 3 & 4\end{array}\right|$ 的值。
+\end{enumerate}
+
+\subsection*{(作答题)}
+
+\begin{enumerate}
+  \item 解方程式 $\left|\begin{array}{ccc}x & 2 a & a \\ a & x+a & a \\ 2 a & 2 a & x-a\end{array}\right|=0$ 。\\
+
+        \sol{}
+
+  \item 求行列式 $\left|\begin{array}{llll}2 & 1 & 1 & 1 \\ 1 & 2 & 1 & 1 \\ 1 & 1 & 2 & 1 \\ 1 & 1 & 1 & 2\end{array}\right|$ 之值。\\
+  \item 试证 $\left|\begin{array}{llll}a & 1 & 1 & 1 \\ 1 & a & 1 & 1 \\ 1 & 1 & a & 1 \\ 1 & 1 & 1 & a\end{array}\right|=(a-1)^{3}(a+3)$ 。\\
+  \item 解 $\left|\begin{array}{rrrr}1 & 1 & 1 & -1 \\ 2 & x & 2 & -2 \\ -3 & -2 & x & 3 \\ -5 & 2 & -4 & 2 x\end{array}\right|=0$ 。\\
+  \item 解方程式 $\left|\begin{array}{lll}x & 1 & 1 \\ 1 & x & 1 \\ 1 & 1 & x\end{array}\right|=0$ 。\\
+  \item 证明 $\left|\begin{array}{ccc}a & b & c \\ b c & c a & a b \\ 1 & 1 & 1\end{array}\right|=(a-b)(b-c)(c-a)$ 。\\
+\end{enumerate}
+
+% \section*{[1.3] 按行 (或列) 展开行列式}
+% \section*{(选择题)}
+% \begin{enumerate}
+%   \item $\left|\begin{array}{cccc}a_{1} & 0 & 0 & b_{1} \\ 0 & a_{2} & b_{2} & 0 \\ 0 & b_{3} & a_{3} & 0 \\ b_{4} & 0 & 0 & a_{4}\end{array}\right|=$ ?\\
+%         A $a_{1} a_{2} a_{3} a_{4}+b_{1} b_{2} b_{3} b_{4}$\\
+%         B $a_{1} a_{2} a_{3} a_{4}-b_{1} b_{2} b_{3} b_{4}$\\
+%         C $\left(a_{1} a_{4}+b_{1} b_{4}\right)\left(a_{2} a_{3}-b_{2} b_{3}\right)$\\
+%         D $\left(a_{1} a_{4}-b_{1} b_{4}\right)\left(a_{2} a_{3}-b_{2} b_{3}\right)$\\
+%         E $\left(a_{1} a_{2}-b_{1} b_{2}\right)\left(a_{3} a_{4}-b_{3} b_{4}\right)$\\
+%         [2001 年第 7 题
+% \end{enumerate}
+
+% \section*{[1.4] 克兰姆法则}
+% \section*{(作答题)}
+% \begin{enumerate}
+%   \item 若方程式组 $\left\{\begin{aligned}-k x+2 y+3 z & =0 \\ k x+y+2 z & =0 \\ x+y & =0\end{aligned}\right.$ 有非零解, 则 $k=$ ?\\
+%         A $-\frac{1}{2}$\\
+%         B $-\frac{1}{5}$\\
+%         C $\frac{1}{5}$\\
+%         D $\frac{1}{2}$\\
+%         E 5\\
+%         [1984 年第 15 题
+% \end{enumerate}
+
+% \section*{(作答题)}
+% \begin{enumerate}
+%   \item 利用 cramer 法则, 解下列方程组: $\left\{\begin{array}{r}x+2 y+2 z=0 \\ 2 x+3 y+3 z=0 \\ 3 x-y+7 z=0\end{array}\right.$
+%   \item 解联立方程式 $\left\{\begin{array}{c}x+y+z=2 \\ x+2 y+3 z=2 \text { 。 } \\ x+3 y+6 z=3\end{array}\right.$\\
+%         [1978 年第 3(a)题
+%   \item 若方程式 $\left\{\begin{array}{r}x+(k+1) y+1=0 \\ 2 k x+5 y-3=0 \\ 3 x+7 y+1=0\end{array}\right.$ 有解, 求 $k$ 之值。
+% \end{enumerate}
+
+\end{document}
