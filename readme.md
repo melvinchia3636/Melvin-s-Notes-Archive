@@ -144,6 +144,7 @@
 - [商业报告.pdf](<./商业学/商业报告.pdf>)
 - [商业报告.tex](<./商业学/商业报告.tex>)
 - [终极思维图.xmind](<./商业学/终极思维图.xmind>)
+- [高三毕业考复习范围.docx](<./商业学/高三毕业考复习范围.docx>)
 - [2023高二下半年统测范围.docx](<./商业学/2023高二下半年统测范围.docx>)
 - [2023高二商业学统测讲义.docx](<./商业学/2023高二商业学统测讲义.docx>)
 - [2023高二第一章商业学小测验范围.docx](<./商业学/2023高二第一章商业学小测验范围.docx>)
@@ -332,6 +333,24 @@
 - [budgeted statement of cash flow.xlsx](<./数学/budgeted statement of cash flow.xlsx>)
 - [作业缴交情况清单.xlsx](<./数学/作业缴交情况清单.xlsx>)
 - [数学报告.pptx](<./数学/数学报告.pptx>)
+<dl><dd>
+<details>
+<summary>ACKUM</summary>
+
+<dl><dd><dl><dd>
+<details>
+<summary>2023</summary>
+
+- [ACKUM2023.pdf](<./数学/ACKUM/2023/ACKUM2023.pdf>)
+- [ACKUM2023.tex](<./数学/ACKUM/2023/ACKUM2023.tex>)
+
+</details>
+</dd></dl></dd></dl>
+
+
+</details>
+</dd></dl>
+
 <dl><dd>
 <details>
 <summary>Add Math II</summary>
@@ -779,6 +798,7 @@
 <details>
 <summary>Past Year Papers</summary>
 
+- [GEM-2019-2023.pdf](<./数学/Past Year Papers/GEM-2019-2023.pdf>)
 <dl><dd><dl><dd>
 <details>
 <summary>Senior 3 Mid Year</summary>
@@ -2932,6 +2952,7 @@
 - [第四章 自创题目.docx](<./经济学/第四章 自创题目.docx>)
 - [第四章 自创题目.pdf](<./经济学/第四章 自创题目.pdf>)
 - [经济学选择题.docx](<./经济学/经济学选择题.docx>)
+- [高三经济学 第七章.docx](<./经济学/高三经济学 第七章.docx>)
 - [高二经济学 第三课 弹性理论.docx](<./经济学/高二经济学 第三课 弹性理论.docx>)
 - [高二经济学 第三课 弹性理论.pdf](<./经济学/高二经济学 第三课 弹性理论.pdf>)
 - [高二经济学 第二课 需求与供给.docx](<./经济学/高二经济学 第二课 需求与供给.docx>)
@@ -2971,11 +2992,17 @@
 - [English.pptx](<./英文/English.pptx>)
 - [Extensive Reading First Semester.md](<./英文/Extensive Reading First Semester.md>)
 - [Extensive Reading.md](<./英文/Extensive Reading.md>)
+- [Graduation Exam Vocab (Ans).docx](<./英文/Graduation Exam Vocab (Ans).docx>)
+- [Graduation Exam Vocab.docx](<./英文/Graduation Exam Vocab.docx>)
 - [Hello.md](<./英文/Hello.md>)
 - [Proposal.md](<./英文/Proposal.md>)
 - [script.md](<./英文/script.md>)
+- [Speaking Test.docx](<./英文/Speaking Test.docx>)
+- [Statement of Cash Flow 现金流动表.md](<./英文/Statement of Cash Flow 现金流动表.md>)
+- [tenses format.md](<./英文/tenses format.md>)
 - [Tenses.md](<./英文/Tenses.md>)
 - [The Living Photograph 鲜活的照片.md](<./英文/The Living Photograph 鲜活的照片.md>)
+- [Traits of Teacher.md](<./英文/Traits of Teacher.md>)
 - [word formation.md](<./英文/word formation.md>)
 - [yeah.md](<./英文/yeah.md>)
 - [Compo 1 second sem 2.md](<./英文/Compo 1 second sem 2.md>)
