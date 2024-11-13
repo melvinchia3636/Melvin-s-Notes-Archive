@@ -1,0 +1,39 @@
+# Fdb version 4
+["xdvipdfmx"] 1726308750.41021 "ACKUM2023.xdv" "ACKUM2023.pdf" "ACKUM2023" 1726308750.69221 0
+  "ACKUM2023.xdv" 1726308750.39667 1936 d34583bdc8516579ff91ff1e3c41d37f "xelatex"
+  (generated)
+  "ACKUM2023.pdf"
+  (rewritten before read)
+["xelatex"] 1726308750.10761 "/Users/melvinchia/Documents/Involution/数学/ACKUM/2023/ACKUM2023.tex" "ACKUM2023.xdv" "ACKUM2023" 1726308750.69191 0
+  "/Users/melvinchia/Documents/Involution/数学/ACKUM/2023/ACKUM2023.tex" 1726308749.89238 708 52e76faa53dbcef892801c66342c5cf0 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1246382020 940 75ac932a52f80982a9f8ea75d03a34cf ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty" 1359763108 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty" 1359763108 13829 94730e64147574077f8ecfea9bb69af4 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd" 1359763108 961 6518c6525a34feb5e8250ffa91731cff ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd" 1359763108 961 d02606146ba5601b5645f987c92e6193 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty" 1686341992 2222 499d61426192c39efd8f410ee1a52b9c ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty" 1686341992 4173 82ac04dfb1256038fad068287fbb4fe6 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty" 1686341992 88371 d84032c0f422c3d1e282266c01bef237 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty" 1686341992 4474 b811654f4bf125f11506d13d13647efb ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty" 1686341992 2444 0d0c1ee65478277e8015d65b86983da2 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/base/report.cls" 1705352648 23203 f5d913095ece2233436f0e628619cd37 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/base/size10.clo" 1705352648 8448 dbc0dbf4156c0bb9ba01a1c685d3bad0 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd" 1705352648 2430 fce77d7e103eb98b6c4d486ae1d466c0 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-xetex.def" 1708463273 31815 59e639f95c4a3bc971cad46c02998fac ""
+  "/usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf" 1708706663 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
+  "/usr/local/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1724812998 10850164 b4a71cf2ebac4d53f06f3d6f32c98358 ""
+  "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
+  "ACKUM2023.aux" 1726308750.39606 32 3985256e7290058c681f74d7a3565a19 "xelatex"
+  "ACKUM2023.tex" 1726308749.89238 708 52e76faa53dbcef892801c66342c5cf0 ""
+  (generated)
+  "ACKUM2023.aux"
+  "ACKUM2023.log"
+  "ACKUM2023.xdv"
+  (rewritten before read)

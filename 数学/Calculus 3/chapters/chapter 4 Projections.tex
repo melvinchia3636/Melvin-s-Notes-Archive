@@ -1,15 +1,11 @@
 \chapter{Projections}
 
-Given two vectors $\vec{v}$ and $\vec{u}$. Construct a line from the terminal
+Given two vectors $\vec{v}$ and $\vec{u}$. Construct a vector $\vec{w_1}$ from the terminal
 point of $\vec{u}$ perpendicular to $\vec{v}$. The vector that starts from the
 initial point of $\vec{u}$ and ends at the intersection of the line and
 $\vec{v}$ is called the \textbf{projection of $\vec{u}$ onto $\vec{v}$}, which
 is also known as the \textbf{vector component of $\vec{u}$ along $\vec{v}$}.
 
-Construct another vector from the initial point of $\vec{u}$ that is orthogonal
-to $\vec{w_1}$, and the projection of $\vec{u}$ onto that vector is called the
-\textbf{vector component of $\vec{u}$ orthogonal to $\vec{v}$}. The visual
-representation is shown below.
 \begin{center}
     \begin{tikzpicture}[scale=1.8]
         %draw vector u and v
@@ -28,11 +24,19 @@ representation is shown below.
     \end{tikzpicture}
 \end{center}
 
-From the diagram, it is not hard to see that \[\vec{u} = \vec{w_1} + \vec{w_2}\]
+\noindent From the diagram, it is not hard to see that $\vec{u} = \vec{w_1} + \vec{w_2}$
 
-Hence, the vector component of $\vec{u}$ orthogonal to $\vec{v}$ is given by \[\vec{w_2} = \vec{u} - \vec{w_1}\]
+\noindent Hence, the vector component of $\vec{u}$ orthogonal to $\vec{v}$ is given by $\vec{w_2} = \vec{u} - \vec{w_1}$
 
-The projection of $\vec{u}$ onto $\vec{v}$ is given by \[\vec{w_1} = proj_{\vec{v}}\vec{u} = \left(\frac{\vec{u} \cdot \vec{v}}{\norm{\vec{v}}^2}\right)\vec{v}\]
+\noindent Let $\vec{w_1} = t\vec{v}$, for some scalar $t$.
+
+\noindent Then $\vec{w_2} = \vec{u} - t\vec{v}$ is orthogonal to $\vec{v}$, which implies that $\vec{w_2} \cdot \vec{v} = 0$.
+\begin{align*}
+    \vec{w_2} \cdot \vec{v}                        & = (\vec{u} - t\vec{v}) \cdot \vec{v} = 0              \\
+    \vec{u} \cdot \vec{v} - t\vec{v} \cdot \vec{v} & = 0                                                   \\
+    t                                              & = \frac{\vec{u} \cdot \vec{v}}{\vec{v} \cdot \vec{v}}
+\end{align*}
+Therefore, The projection of $\vec{u}$ onto $\vec{v}$ is given by \[proj_{\vec{v}}\vec{u} = \vec{w_1} = t\vec{v} = \left(\dfrac{\vec{u} \cdot \vec{v}}{\vec{v} \cdot \vec{v}}\right)\vec{v} = \left(\frac{\vec{u} \cdot \vec{v}}{\norm{\vec{v}}^2}\right)\vec{v} = \left(\frac{\vec{u} \cdot \vec{v}}{\norm{\vec{v}}}\right)\dfrac{\vec{v}}{\norm{\vec{v}}}\] where $\dfrac{\vec{u} \cdot \vec{v}}{\norm{\vec{v}}}$ is the \textbf{scalar projection} of $\vec{u}$ onto $\vec{v}$, denoted by $comp_{\vec{v}}\vec{u}$.
 
 \newpage
 \noindent\textbf{Example 1. } Find the projection of $\vec{u} = \langle 6, 7 \rangle$ onto $\vec{v} = \langle 1, 4 \rangle$. Hence, find the vector component of $\vec{u}$ orthogonal to $\vec{v}$.
@@ -56,6 +60,18 @@ The projection of $\vec{u}$ onto $\vec{v}$ is given by \[\vec{w_1} = proj_{\vec{
     \vec{w_2}             & = \vec{u} - \vec{w_1}                                                            \\
                           & = (2i + 3j) - \left(\left(\frac{5}{2}\right)i + \left(\frac{1}{2}\right)j\right) \\
                           & = \left(-\frac{1}{2}\right)i + \left(\frac{5}{2}\right)j
+\end{align*}
+
+\newpage
+\noindent\textbf{Example 3. } Find the scalar projection of the force $\vec{F} = 4i - 2j + 3k$ in the direction of the vector $v = i - j + 2k$.
+
+\sol{}
+\begin{align*}
+    comp_{\vec{v}}\vec{F} & = \frac{\vec{F} \cdot \vec{v}}{\norm{\vec{v}}}             \\
+                          & = \frac{4(1) + (-2)(-1) + 3(2)}{\sqrt{1^2 + (-1)^2 + 2^2}} \\
+                          & = \frac{4 + 2 + 6}{\sqrt{6}}                               \\
+                          & = \frac{12}{\sqrt{6}}                                      \\
+                          & = 2\sqrt{6}
 \end{align*}
 
 \noindent\textbf{Notes:} Selected exercises are mixed in the exercises of the previous chapters.

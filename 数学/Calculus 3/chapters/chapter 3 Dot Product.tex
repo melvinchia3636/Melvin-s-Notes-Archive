@@ -176,11 +176,12 @@ Since $\vec{v} \cdot \vec{u} = 0$, $\vec{v}$ and $\vec{u}$ are orthogonal.
               \end{align*}
 
               \begin{align*}
-                  \dfrac{\norm{u}}{\norm{u + v}} & = \sin 8^{\circ}                  \\
+                  \dfrac{\norm{v}}{\norm{u + v}} & = \sin 8^{\circ}                  \\
                   \norm{v}                       & = 400 \sin 8^{\circ}              \\
                                                  & = 55.669 \mathrm{~m} / \mathrm{s}
               \end{align*}
               $\hfill\blacksquare$
+
           \end{multicols}
 
     \item \textbf{Inclined plane} Suppose that a box is being towed up an inclined plane as shown in the figure. Find the force $w$ needed to make the component of the force parallel to the inclined plane equal to $2.5 \mathrm{~N}$.
@@ -200,7 +201,10 @@ Since $\vec{v} \cdot \vec{u} = 0$, $\vec{v}$ and $\vec{u}$ are orthogonal.
                 & =\dfrac{2.5}{\cos 18^{\circ}} \langle \cos 33^{\circ}, \sin 33^{\circ} \rangle \\
                 & = \langle 2.205, 1.432 \rangle                                                 \\
           \end{align*}
+
           $\hfill\blacksquare$
+
+          \textit{\textbf{Note: } This question can be solved solely by using trigonometry.}
 
           \newpage
           \setcounter{enumi}{28}
@@ -407,4 +411,40 @@ Since $\vec{v} \cdot \vec{u} = 0$, $\vec{v}$ and $\vec{u}$ are orthogonal.
           \end{align*}
           $\hfill\blacksquare$
 
+          \setcounter{enumi}{69}
+
+          \newpage
+    \item \textbf{Proof} Use vectors to prove that a parallelogram is a rectangle if and only if its diagonals are equal in length.
+
+          \prooff{}
+
+          \begin{center}
+              \begin{tikzpicture}
+                  \draw (0, 0) -- (4, 0) -- (4, 3) -- (0, 3) -- cycle;
+                  \draw (0, 0) -- (4, 3);
+                  \draw (0, 3) -- (4, 0);
+                  \draw[|<->|] (0, -0.5) -- (4, -0.5) node[midway, below] {$\vec{a}$};
+                  \draw[|<->|] (4.5, 0) -- (4.5, 3) node[midway, right] {$\vec{b}$};
+                  \node[below left] at (0, 0) {$A$};
+                  \node[below right] at (4, 0) {$B$};
+                  \node[above right] at (4, 3) {$C$};
+                  \node[above left] at (0, 3) {$D$};
+              \end{tikzpicture}
+          \end{center}
+
+          Let $\vec{a} = \overrightarrow{AB} = \overrightarrow{CD}$ and $\vec{b} = \overrightarrow{AD} = \overrightarrow{BC}$ be the diagonals of the parallelogram $ABCD$ (Opposite sides of a parallelogram are congruent). Let $\overrightarrow{d1} = \overrightarrow{AC}$ and $\overrightarrow{d2} = \overrightarrow{BD}$ be the diagonals of the parallelogram $ABCD$.
+          \begin{align*}
+              \overrightarrow{d1} = \overrightarrow{AB} + \overrightarrow{BC} & = \vec{a} + \vec{b} \\
+              \overrightarrow{d2} = \overrightarrow{BC} + \overrightarrow{CD} & = \vec{b} - \vec{a}
+          \end{align*}
+
+          Assume that the diagonals of the parallelogram $ABCD$ are equal in length, then
+          \begin{align*}
+              \norm{\overrightarrow{d1}}                                             & = \norm{\overrightarrow{d2}}                                             \\
+              \overrightarrow{d1} \cdot \overrightarrow{d1}                          & = \overrightarrow{d2} \cdot \overrightarrow{d2}                          \\
+              (\vec{a} + \vec{b}) \cdot (\vec{a} + \vec{b})                          & = (\vec{b} - \vec{a}) \cdot (\vec{b} - \vec{a})                          \\
+              \vec{a} \cdot \vec{a} + 2\vec{a} \cdot \vec{b} + \vec{b} \cdot \vec{b} & = \vec{b} \cdot \vec{b} - 2\vec{a} \cdot \vec{b} + \vec{a} \cdot \vec{a} \\
+              4\vec{a} \cdot \vec{b}                                                 & = 0
+          \end{align*}
+          If $\vec{a} \neq \vec{0}$ and $\vec{b} \neq \vec{0}$, then $\vec{a} \cdot \vec{b} = 0$. Therefore, the side vectors $\vec{a}$ and $\vec{b}$ of the parallelogram $ABCD$ are orthogonal. From the definition of a rectangle, a rectangle is a parallelogram with all angles equal to $90^{\circ}$. Therefore, a parallelogram is a rectangle if and only if its diagonals are equal in length. $\hfill\blacksquare$
 \end{enumerate}

@@ -1,0 +1,28 @@
+INFO:  latexindent version 3.23.6, 2024-01-17, a script to indent .tex files
+       latexindent lives here: /usr/local/texlive/2024/texmf-dist/scripts/latexindent/
+       Wed Nov 13 09:10:14 2024
+       Filename: /Users/melvinchia/Documents/Involution/数学/Calculus 3/chapters/__latexindent_temp_chapter 4 Projections.tex
+INFO:  Processing switches:
+       -y|--yaml: YAML settings specified via command line
+       -c|--cruft: cruft directory
+INFO:  Directory for backup files and /Users/melvinchia/Documents/Involution/数学/Calculus 3//indent.log:
+       /Users/melvinchia/Documents/Involution/数学/Calculus 3/
+INFO:  YAML settings read: defaultSettings.yaml
+       Reading defaultSettings.yaml from /usr/local/texlive/2024/texmf-dist/scripts/latexindent/defaultSettings.yaml
+INFO:  YAML reading settings
+       Home directory is /Users/melvinchia
+       latexindent.pl didn't find indentconfig.yaml or .indentconfig.yaml
+       see all possible locations: https://latexindentpl.readthedocs.io/en/latest/sec-appendices.html#indentconfig-options)
+INFO:  YAML settings read: -y switch
+       YAML setting: defaultIndent:'    '
+       single-quoted string found in -y switch: '    ', substitute to     
+       Updating mainSettings with defaultIndent:     
+INFO:  Phase 1: searching for objects
+INFO:  Phase 2: finding surrounding indentation
+INFO:  Phase 3: indenting objects
+INFO:  Phase 4: final indentation check
+INFO:  Output routine:
+       Not outputting to file; see -w and -o switches for more options.
+       --------------
+INFO:  Please direct all communication/issues to:
+        https://github.com/cmhughes/latexindent.pl
