@@ -1490,6 +1490,7 @@
 <details>
 <summary>电脑与咨询工艺</summary>
 
+- [seniorone-excel.md](<./电脑与咨询工艺/seniorone-excel.md>)
 - [第一章 认识电脑.xmind](<./电脑与咨询工艺/第一章 认识电脑.xmind>)
 - [第二章 互联网.md](<./电脑与咨询工艺/第二章 互联网.md>)
 
